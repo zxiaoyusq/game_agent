@@ -1,0 +1,18 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+python-dotenv>=1.0
+python-multipart>=0.0.9
+
+# LLM provider：统一走 langchain 的 init_chat_model 接口
+langchain>=0.3
+langchain-core>=0.3
+# 各家具体实现包：按使用到的 provider 安装即可
+langchain-anthropic>=0.3
+langchain-deepseek>=0.1
+
+# Azure 图片生成走 httpx（FastAPI 自带 httpx，但显式声明便于 freeze 出版本）
+httpx>=0.27
+
+# 知识库：抽 .docx 段落正文给 LLM
+python-docx>=1.1

@@ -1,0 +1,96 @@
+# =====================================================================
+# 工程根目录 .gitignore
+# 子目录 backend/、frontend/ 已各自维护一份更细化的 .gitignore，
+# 这里集中处理跨目录的通用忽略项，避免误提交。
+# =====================================================================
+
+# -------------------- 系统/编辑器产物 --------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# JetBrains / VSCode / Vim
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# -------------------- Claude / AI 工具本地缓存 --------------------
+# Claude Code 的会话与 memory 不应进仓库
+.claude/
+
+# -------------------- 环境变量 / 密钥 --------------------
+# 任何位置的 .env 都不要进仓库；如需示例请使用 .env.example
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# -------------------- 运行时日志 --------------------
+# 根目录下的 logs 与各子目录下的 *.log 都忽略
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------- Python（backend） --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+
+# pytest / 覆盖率
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# -------------------- Node / 前端构建产物 --------------------
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.parcel-cache/
+*.local
+
+# 前端打包好的 dist 压缩包（按需可提交，但默认忽略）
+frontend/game-agent-demo-dist.tar.gz
+
+# -------------------- 后端运行时数据 --------------------
+# 仅保留目录骨架，不提交实际物料 / 任务记录 / 运行日志
+backend/data/tasks/*
+!backend/data/tasks/.gitkeep
+
+backend/data/logs/*
+!backend/data/logs/.gitkeep
+
+# 知识库：保留 模块/分类 目录骨架，忽略具体文件
+backend/data/knowledge/*/*/*
+!backend/data/knowledge/*/*/.gitkeep
+
+# 研发 Demo 生成的工程产物（每次跑都会生成新目录，体量大且高频变动）
+backend/data/dev_demo/*
+!backend/data/dev_demo/.gitkeep
+
+# -------------------- 其它临时文件 --------------------
+*.tmp
+*.bak
+*.orig
