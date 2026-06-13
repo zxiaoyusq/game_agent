@@ -196,7 +196,7 @@ async function submitNewFolder() {
 }
 
 async function removeFolder(folder) {
-  if (!confirm(`确认删除文件夹「${folder.name}」？\n仅能删除空文件夹。`)) return
+  if (!confirm(`确认删除文件夹「${folder.name}」？\n该操作会一并删除其下全部子文件夹与文件，且无法恢复。`)) return
   try {
     await apiDeleteFolder(activeModule.value, activeCategory.value, folder.path)
     await refreshKb()
@@ -604,7 +604,7 @@ function closePreview() {
               <button
                 class="folder-x"
                 type="button"
-                title="删除（仅当文件夹为空时）"
+                title="删除文件夹（连同其下所有子文件夹与文件）"
                 @click="removeFolder(f)"
               >
                 ×

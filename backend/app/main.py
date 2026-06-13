@@ -1,6 +1,6 @@
 """FastAPI 应用入口。
 
-启动方式（在 backend/ 目录下，conda activate base 后）：
+启动方式（在 backend/ 目录下，conda activate 313 后）：
     uvicorn app.main:app --reload --port 8000
 """
 

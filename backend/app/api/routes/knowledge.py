@@ -264,7 +264,7 @@ def delete_category_folder(
     category: str,
     path: str = Query(..., description="要删除的文件夹相对路径"),
 ) -> ApiResponse[KbDeleteResult]:
-    """删除一个空文件夹。仍含文件或子文件夹时拒绝删除。"""
+    """递归删除文件夹：连同其下全部子文件夹与文件一并清掉。"""
     try:
         ok = kb_service.delete_folder(module, category, path=path)
     except ValueError as e:

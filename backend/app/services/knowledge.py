@@ -654,7 +654,11 @@ def create_folder(
 
 
 def delete_folder(module: str, category: str, *, path: str) -> bool:
-    """删除文件夹。必须确保没有任何子文件夹与文件残留，否则报错并不删。"""
+    """删除文件夹（递归）。
+
+    会同时删除该文件夹下所有后代子文件夹与文件——前端在调用前已做二次确认，
+    这里不再因为"非空"而拒绝，避免用户为了删一个嵌套目录要先一层层手动清空。
+    """
     _validate_module_category(module, category)
     folder_path = _safe_folder_path(path)
     if not folder_path:
@@ -665,34 +669,24 @@ def delete_folder(module: str, category: str, *, path: str) -> bool:
     if target is None:
         return False
 
-    # 不允许有任何后代文件夹仍登记
-    has_child_folder = any(
-        f.path == folder_path or f.path.startswith(folder_path + "/")
-        for f in folders
-        if f.path != folder_path
-    )
-    if has_child_folder:
-        raise ValueError(f"文件夹下还有子文件夹，无法删除：{folder_path}")
+    # 计算"待清理"前缀：folder_path 本身 + 任何以 "folder_path/" 开头的后代
+    prefix = folder_path + "/"
 
-    # 不允许有文件落在该 folder 或其子 folder（理论上不会有，因为子 folder 都已被禁止）
-    items = _read_index(module, category)
-    has_item = any(
-        it.folder == folder_path or it.folder.startswith(folder_path + "/")
-        for it in items
-    )
-    if has_item:
-        raise ValueError(f"文件夹下还有文件，无法删除：{folder_path}")
+    def _under_target(p: str) -> bool:
+        return p == folder_path or p.startswith(prefix)
 
-    # 物理目录可能已不存在；存在就清掉
+    # 1) 物理目录：rmtree 一并清掉文件夹下所有文件 + 子目录（不存在则跳过）
     fs_dir = _category_dir(module, category) / folder_path
     if fs_dir.exists():
-        try:
-            shutil.rmtree(fs_dir)
-        except OSError:
-            pass
+        # ignore_errors=True：Windows 下偶发的"文件被占用"也不阻断索引清理
+        shutil.rmtree(fs_dir, ignore_errors=True)
 
-    new_folders = [f for f in folders if f.path != folder_path]
-    _write_index(module, category, items, new_folders)
+    # 2) 索引：剔除该文件夹及其后代登记的 folders 和 items
+    items = _read_index(module, category)
+    new_folders = [f for f in folders if not _under_target(f.path)]
+    new_items = [it for it in items if not _under_target(it.folder)]
+
+    _write_index(module, category, new_items, new_folders)
     return True
 
 

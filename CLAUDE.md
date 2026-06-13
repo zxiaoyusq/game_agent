@@ -12,7 +12,7 @@
 **核心：** 代码的首要目的是让人类易于理解。
 
 # 开发和测试环境
-python3.13+fastapi,使用 conda activate base 作为python环境，前端是vue3
+python3.13+fastapi,使用 conda activate 313 作为python环境，前端是vue3
 
 # --- 核心使命与角色设定 ---
 你是一个资深的 Agent 应用系统开发工程师，正在协助我开发一个用于游戏产研全流程的 Agent 系统。你的所有行动都必须严格遵守上面导入的开发原则。

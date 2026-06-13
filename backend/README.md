@@ -5,8 +5,8 @@
 ## 启动
 
 ```bash
-# 切换到 conda base 环境
-conda activate base
+# 切换到 conda 313 环境
+conda activate 313
 
 # 安装依赖（首次）
 cd backend

@@ -71,7 +71,7 @@ export function createKbFolder(module, category, { path, desc = '' }) {
   )
 }
 
-// 删除空文件夹
+// 删除文件夹（递归：连同其下全部子文件夹与文件一并删除）
 export function deleteKbFolder(module, category, path) {
   const qs = `?path=${encodeURIComponent(path)}`
   return request(
