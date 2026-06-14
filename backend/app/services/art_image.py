@@ -12,9 +12,11 @@ Azure 网关返回 b64_json 格式，本文件做一次解码后向上返回 raw
 
 from __future__ import annotations
 
+import asyncio
 import base64
 import json
 import logging
+import random
 from dataclasses import dataclass
 from typing import List, Optional, Tuple
 
@@ -46,6 +48,14 @@ ALLOWED_QUALITIES = {"low", "medium", "high", "auto"}
 
 # 默认请求超时：生图较慢，给到 2 分钟
 DEFAULT_TIMEOUT = 180.0
+
+# 上游遇到 429 / 5xx 时的退避重试参数。
+# Azure gpt-image-2 当前会高频出现"429 限流"和"500 上游 OpenAI 错误"，
+# 单次调用成功率很低；不重试的话用户在 UI 上几乎一次都点不通。
+RETRY_MAX_ATTEMPTS = 3            # 总共最多尝试 3 次（首次 + 2 次重试）
+RETRY_BASE_DELAY = 2.0            # 第一次重试等待 ~2s，之后指数级翻倍
+RETRY_MAX_DELAY = 12.0            # 单次等待上限，避免堆叠到几十秒
+RETRY_RETRYABLE_STATUSES = {408, 409, 425, 429, 500, 502, 503, 504}
 
 
 # ---- 异常 -----------------------------------------------------------------
@@ -130,8 +140,13 @@ async def generate(
         "api-key": AZURE_IMAGE_API_KEY,
     }
 
-    async with httpx.AsyncClient(timeout=timeout) as client:
-        resp = await client.post(url, json=payload, headers=headers)
+    resp = await _post_with_retry(
+        url,
+        timeout=timeout,
+        json=payload,
+        headers=headers,
+        op="generate",
+    )
     return _parse_image_response(resp)
 
 
@@ -172,14 +187,18 @@ async def edit(
         f"用户需求：{prompt}"
     )
 
+    # 注意：httpx 0.28+ 在 AsyncClient 上同时使用 data=list[tuple] + files= 时，
+    # 内部 multipart 编码会落到同步流路径，触发
+    # "Attempted to send an sync request with an AsyncClient instance."
+    # 这里所有字段名都是唯一的，用 dict 即可绕开该路径。
+    data: dict = {
+        "prompt": decorated_prompt,
+        "size": size,
+        "n": "1",
+        "quality": quality,
+        "output_format": "png",
+    }
     files: List[Tuple[str, Tuple[str, bytes, str]]] = []
-    data: List[Tuple[str, str]] = [
-        ("prompt", decorated_prompt),
-        ("size", size),
-        ("n", "1"),
-        ("quality", quality),
-        ("output_format", "png"),
-    ]
     for ref in references:
         files.append(
             (
@@ -188,9 +207,98 @@ async def edit(
             )
         )
 
-    async with httpx.AsyncClient(timeout=timeout) as client:
-        resp = await client.post(url, headers=headers, data=data, files=files)
+    # 注意：files 是包含 bytes 的内存对象，可以重复使用——httpx 不会在第一次请求里
+    # 消费掉 bytes（与文件句柄不同），这让我们能安全地把整个 (data, files) 一起重试。
+    resp = await _post_with_retry(
+        url,
+        timeout=timeout,
+        headers=headers,
+        data=data,
+        files=files,
+        op="edit",
+    )
     return _parse_image_response(resp)
+
+
+# ---- 公共：带退避重试的 POST ----------------------------------------------
+
+async def _post_with_retry(
+    url: str,
+    *,
+    timeout: float,
+    op: str,
+    headers: Optional[dict] = None,
+    json: Optional[dict] = None,
+    # data 用 dict 而不是 list[tuple]：见 edit() 里的注释，
+    # 后者会在 httpx 0.28+ 上触发 "sync request with AsyncClient" 错误。
+    data: Optional[dict] = None,
+    files: Optional[List[Tuple[str, Tuple[str, bytes, str]]]] = None,
+) -> httpx.Response:
+    """带退避重试的 httpx POST。
+
+    重试触发条件：
+      1) 网络层错误（httpx.TransportError、ReadTimeout 等）
+      2) 上游返回 429 / 5xx（详见 RETRY_RETRYABLE_STATUSES）
+    其它情况一律不重试，直接把响应交给上层做错误透传。
+    """
+    last_exc: Optional[BaseException] = None
+    last_resp: Optional[httpx.Response] = None
+
+    for attempt in range(1, RETRY_MAX_ATTEMPTS + 1):
+        try:
+            async with httpx.AsyncClient(timeout=timeout) as client:
+                resp = await client.post(
+                    url,
+                    headers=headers,
+                    json=json,
+                    data=data,
+                    files=files,
+                )
+        except (httpx.TransportError, httpx.TimeoutException) as e:
+            # 网络抖动 / 超时：明确属于可重试范畴
+            last_exc = e
+            last_resp = None
+            logger.warning(
+                "art_image[%s] attempt %d/%d transport error: %r",
+                op, attempt, RETRY_MAX_ATTEMPTS, e,
+            )
+        else:
+            # 拿到响应：成功或非可重试错误就立刻返回
+            if resp.status_code < 400 or resp.status_code not in RETRY_RETRYABLE_STATUSES:
+                return resp
+            last_resp = resp
+            logger.warning(
+                "art_image[%s] attempt %d/%d upstream %d: %s",
+                op, attempt, RETRY_MAX_ATTEMPTS, resp.status_code,
+                _short_error_text(resp),
+            )
+
+        # 走到这里说明本次失败但允许重试；如果已经是最后一次就跳出
+        if attempt >= RETRY_MAX_ATTEMPTS:
+            break
+
+        # 指数退避 + 抖动，避开"齐步走"的雪崩重试
+        delay = min(RETRY_MAX_DELAY, RETRY_BASE_DELAY * (2 ** (attempt - 1)))
+        delay += random.uniform(0, 0.5)
+        await asyncio.sleep(delay)
+
+    # 所有尝试都失败：优先把最后一次的 HTTP 响应抛回给上层（保留 status/detail）
+    if last_resp is not None:
+        return last_resp
+    # 全程网络层失败：把异常包成 ArtImageAPIError 让路由层走 502 分支
+    raise ArtImageAPIError(
+        f"调用 Azure 失败（{op}）：{last_exc!r}",
+        status_code=None,
+    )
+
+
+def _short_error_text(resp: httpx.Response) -> str:
+    """截短上游响应正文用于日志，避免 500 错误页污染日志文件。"""
+    try:
+        text = resp.text or ""
+    except Exception:  # noqa: BLE001 —— 仅用于日志兜底
+        return "<unreadable>"
+    return (text[:160] + "…") if len(text) > 160 else text
 
 
 # ---- 响应解析 -------------------------------------------------------------

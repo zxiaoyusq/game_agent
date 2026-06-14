@@ -550,6 +550,14 @@ def create_item(
         target_dir = target_dir / folder_path
         target_dir.mkdir(parents=True, exist_ok=True)
     target_path = target_dir / stored_name
+
+    # 关键顺序：先读 index（顺带做磁盘同步），再落盘新文件，最后写 index。
+    # 反过来会撞上 _read_index → _sync_with_disk 自动登记新文件的逻辑：
+    # 那条登记的 KbItem 与本函数随后 append 的 KbItem 是同一 stored_name → 同一 id，
+    # 结果索引里出现两条完全相同的记录，前端展示就会重复。
+    items = _read_index(module, category)
+    folders = _read_folders(module, category)
+
     # 写文件：用二进制模式直接落盘
     target_path.write_bytes(file_bytes)
 
@@ -574,10 +582,12 @@ def create_item(
         updated_at=now,
     )
 
-    items = _read_index(module, category)
-    folders = _read_folders(module, category)
     items.append(item)
     _write_index(module, category, items, folders)
+    # 落盘改了分类目录的 mtime，使刚才记录的指纹失效。
+    # 这里立即用"落盘后"的指纹刷新缓存，
+    # 避免下一次 _read_index 触发的 sync 把刚写入的 item 当成"未登记的磁盘文件"再处理一次。
+    _sync_cache[(module, category)] = _disk_signature(_category_dir(module, category))
     return item
 
 

@@ -22,6 +22,8 @@ const emit = defineEmits(['load', 'save', 'delete'])
         >
           🗑
         </button>
+        <!-- 父组件可在保存按钮旁注入额外操作（如"导出到知识库"） -->
+        <slot name="actions-pre" />
         <button class="action-btn primary" @click="emit('save')">
           💾 {{ saveLabel }}
         </button>
