@@ -24,7 +24,7 @@ BACKEND_LOG="$LOG_DIR/backend.log"
 FRONTEND_LOG="$LOG_DIR/frontend.log"
 
 BACKEND_PORT="${BACKEND_PORT:-8000}"
-CONDA_ENV="${CONDA_ENV:-313}"
+CONDA_ENV="${CONDA_ENV:-base}"
 
 # ---- 工具函数 -------------------------------------------------------------
 
