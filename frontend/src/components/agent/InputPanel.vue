@@ -202,12 +202,12 @@ function update(patch) {
 
 <style scoped>
 .input-panel {
-  width: 320px;
+  width: 360px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   background: var(--bg-secondary);
-  border-right: 1px solid var(--border-color);
+  border-right: 1.5px solid var(--border-color);
 }
 
 .panel-header {
@@ -215,14 +215,15 @@ function update(patch) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-tertiary);
 }
 
 .panel-header h2 {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .icon-btn {
@@ -234,7 +235,7 @@ function update(patch) {
   border-radius: var(--radius-sm);
   background: var(--bg-card);
   color: var(--text-secondary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   font-size: 16px;
   line-height: 1;
 }
@@ -242,6 +243,7 @@ function update(patch) {
 .icon-btn:hover {
   background: var(--bg-hover);
   color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .panel-body {
@@ -257,7 +259,7 @@ function update(patch) {
   font-size: 11px;
   font-weight: 700;
   color: var(--text-tertiary);
-  letter-spacing: 0.8px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -285,21 +287,23 @@ function update(patch) {
 }
 
 .form-row label {
-  font-size: 12px;
-  color: var(--text-secondary);
-  font-weight: 500;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .form-row input,
 .form-row textarea {
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 8px 10px;
   font-size: 13px;
   color: var(--text-primary);
   font-family: inherit;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
   outline: none;
 }
 
@@ -311,7 +315,7 @@ function update(patch) {
 .form-row input:focus,
 .form-row textarea:focus {
   border-color: var(--accent-blue);
-  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.15);
+  box-shadow: 0 0 0 2px rgba(77, 158, 255, 0.1);
 }
 
 .form-row-double {
@@ -333,7 +337,7 @@ function update(patch) {
   padding: 6px 10px;
   font-size: 12px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   color: var(--text-secondary);
   border-radius: var(--radius-sm);
   transition: all 0.15s;
@@ -342,16 +346,18 @@ function update(patch) {
 .toggle:hover {
   background: var(--bg-hover);
   color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .toggle.active {
   background: var(--accent-blue);
   border-color: var(--accent-blue);
   color: #fff;
+  font-weight: 600;
 }
 
 .hr {
-  height: 1px;
+  height: 1.5px;
   background: var(--border-color);
 }
 
@@ -363,7 +369,7 @@ function update(patch) {
   padding: 8px 6px;
   background: var(--bg-card);
   color: var(--text-secondary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-left: none;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-size: 16px;

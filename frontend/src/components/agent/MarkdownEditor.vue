@@ -361,8 +361,8 @@ onMounted(() => {
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-secondary);
+  border-bottom: 1.5px solid var(--border-color);
+  background: var(--bg-card);
 }
 
 .left {
@@ -372,14 +372,14 @@ onMounted(() => {
 }
 
 .badge {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--accent-purple);
-  background: rgba(188, 140, 255, 0.1);
-  border: 1px solid rgba(188, 140, 255, 0.25);
-  padding: 3px 8px;
+  background: var(--accent-purple-dim);
+  border: 1px solid rgba(168, 124, 255, 0.3);
+  padding: 2px 8px;
   border-radius: var(--radius-sm);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
 .meta {
@@ -390,7 +390,7 @@ onMounted(() => {
 .mode-switch {
   display: inline-flex;
   background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 3px;
   gap: 2px;
@@ -399,8 +399,10 @@ onMounted(() => {
 .mode-btn {
   padding: 5px 14px;
   font-size: 12px;
+  font-weight: 600;
   border-radius: 4px;
   color: var(--text-tertiary);
+  border: 1px solid transparent;
   transition: all 0.15s;
 }
 
@@ -411,7 +413,8 @@ onMounted(() => {
 .mode-btn.active {
   background: var(--bg-card);
   color: var(--accent-blue);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border-color: var(--border-color);
+  box-shadow: 1px 1px 0 var(--border-color);
 }
 
 .content {
@@ -423,25 +426,25 @@ onMounted(() => {
 .editor {
   width: 100%;
   height: 100%;
-  padding: 24px 32px;
+  padding: 24px 36px;
   background: transparent;
   color: var(--text-primary);
   border: none;
   outline: none;
   resize: none;
-  font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
-  font-size: 13px;
+  font-family: var(--font-mono);
+  font-size: 14px;
   line-height: 1.7;
 }
 
 .editor::selection {
-  background: rgba(88, 166, 255, 0.25);
+  background: rgba(77, 158, 255, 0.25);
 }
 
 .preview {
   width: 100%;
   height: 100%;
-  padding: 24px 32px;
+  padding: 24px 36px;
   overflow-y: auto;
   color: var(--text-secondary);
   font-size: 14px;
@@ -452,28 +455,30 @@ onMounted(() => {
   color: var(--text-primary);
   font-size: 26px;
   margin: 18px 0 12px;
-  font-weight: 700;
-  border-bottom: 1px solid var(--border-color);
+  font-weight: 800;
+  border-bottom: 1.5px solid var(--border-color);
   padding-bottom: 8px;
+  letter-spacing: -0.02em;
 }
 
 .preview :deep(h2) {
   color: var(--text-primary);
   font-size: 20px;
   margin: 16px 0 10px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .preview :deep(h3) {
   color: var(--text-primary);
   font-size: 16px;
   margin: 12px 0 8px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .preview :deep(strong) {
   color: var(--accent-blue);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .preview :deep(em) {
@@ -485,7 +490,7 @@ onMounted(() => {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 1px 6px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
   color: var(--accent-cyan);
 }
@@ -500,14 +505,15 @@ onMounted(() => {
   margin: 4px 0;
 }
 
-/* 注入到 VersionFooter 的「导出」按钮，跟 .action-btn 风格保持一致 */
+/* 导出按钮 */
 .action-btn.export {
   padding: 4px 10px;
   font-size: 12px;
   border-radius: var(--radius-sm);
   background: var(--bg-card);
   color: var(--accent-purple);
-  border: 1px solid rgba(188, 140, 255, 0.4);
+  border: 1px solid rgba(168, 124, 255, 0.4);
+  box-shadow: 2px 2px 0 var(--shadow-purple);
   transition: all 0.15s;
   display: inline-flex;
   align-items: center;
@@ -515,17 +521,19 @@ onMounted(() => {
 }
 
 .action-btn.export:hover:not(:disabled) {
-  background: rgba(188, 140, 255, 0.12);
-  color: var(--accent-purple);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-purple);
+  background: var(--accent-purple-dim);
   border-color: var(--accent-purple);
 }
 
 .action-btn.export:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
-/* ---- 导出弹窗 ----------------------------------------------------------- */
+/* 导出弹窗 */
 .md-modal-mask {
   position: fixed;
   inset: 0;
@@ -543,9 +551,9 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 4px 0 var(--border-color), 0 20px 60px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -554,12 +562,13 @@ onMounted(() => {
   align-items: center;
   justify-content: space-between;
   padding: 14px 20px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-tertiary);
 }
 
 .md-modal-head strong {
   font-size: 14px;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -570,7 +579,7 @@ onMounted(() => {
   font-size: 18px;
   color: var(--text-tertiary);
   background: transparent;
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
   transition: all 0.15s;
 }
 
@@ -597,16 +606,16 @@ onMounted(() => {
   font-size: 12px;
   color: #f85149;
   background: rgba(248, 81, 73, 0.08);
-  border: 1px solid rgba(248, 81, 73, 0.25);
+  border: 1.5px solid rgba(248, 81, 73, 0.3);
   padding: 6px 10px;
   border-radius: var(--radius-sm);
 }
 
 .md-modal-ok {
   font-size: 12px;
-  color: #3fb950;
-  background: rgba(63, 185, 80, 0.1);
-  border: 1px solid rgba(63, 185, 80, 0.3);
+  color: var(--accent-green);
+  background: var(--accent-green-dim);
+  border: 1.5px solid rgba(46, 160, 67, 0.35);
   padding: 6px 10px;
   border-radius: var(--radius-sm);
 }
@@ -632,14 +641,16 @@ onMounted(() => {
 .md-field span {
   font-size: 11px;
   color: var(--text-tertiary);
-  letter-spacing: 0.3px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .md-field input,
 .md-field select,
 .md-field textarea {
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 7px 10px;
   font-size: 13px;
@@ -666,7 +677,7 @@ onMounted(() => {
   justify-content: flex-end;
   gap: 8px;
   padding: 12px 20px;
-  border-top: 1px solid var(--border-color);
+  border-top: 1.5px solid var(--border-color);
   background: var(--bg-tertiary);
 }
 
@@ -674,7 +685,8 @@ onMounted(() => {
   padding: 7px 16px;
   font-size: 13px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
+  font-weight: 600;
   transition: all 0.15s;
 }
 
@@ -686,20 +698,24 @@ onMounted(() => {
 .md-btn.ghost:hover:not(:disabled) {
   background: var(--bg-hover);
   color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .md-btn.primary {
   background: var(--accent-blue);
   color: #fff;
-  border-color: var(--accent-blue);
+  border-color: rgba(77, 158, 255, 0.6);
+  box-shadow: 2px 2px 0 var(--shadow-blue);
 }
 
 .md-btn.primary:hover:not(:disabled) {
-  filter: brightness(1.05);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-blue);
 }
 
 .md-btn:disabled {
   opacity: 0.55;
   cursor: not-allowed;
+  box-shadow: none;
 }
 </style>

@@ -929,13 +929,13 @@ onMounted(() => {
 
 /* --- 顶部栏 --- */
 .topbar {
-  height: 52px;
+  height: 56px;
   flex-shrink: 0;
   padding: 0 16px;
   display: flex;
   align-items: center;
   gap: 16px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-secondary);
 }
 
@@ -945,7 +945,7 @@ onMounted(() => {
   font-size: 13px;
   color: var(--text-secondary);
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   transition: all 0.15s;
 }
@@ -954,6 +954,7 @@ onMounted(() => {
 .ghost-btn:hover {
   background: var(--bg-hover);
   color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .crumbs {
@@ -971,8 +972,8 @@ onMounted(() => {
 }
 
 .crumb.current {
-  color: var(--text-primary);
-  font-weight: 500;
+  color: var(--accent-green);
+  font-weight: 700;
 }
 
 .sep {
@@ -1015,10 +1016,11 @@ onMounted(() => {
   border-radius: var(--radius-lg);
   background: linear-gradient(
     135deg,
-    rgba(63, 185, 80, 0.12),
+    rgba(46, 160, 67, 0.12),
     rgba(88, 166, 255, 0.06)
   );
-  border: 1px solid rgba(63, 185, 80, 0.25);
+  border: 1.5px solid rgba(46, 160, 67, 0.5);
+  box-shadow: 2px 2px 0 var(--shadow-green);
 }
 
 .banner-icon {
@@ -1066,7 +1068,7 @@ onMounted(() => {
   gap: 12px;
   padding: 20px;
   background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   text-align: left;
   transition: all 0.18s;
@@ -1087,9 +1089,9 @@ onMounted(() => {
 }
 
 .module-card:hover {
-  transform: translateY(-2px);
+  transform: translate(-2px, -3px);
   border-color: var(--card-accent);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  box-shadow: 4px 4px 0 var(--shadow-dark);
 }
 
 .module-card:hover::before {
@@ -1107,10 +1109,11 @@ onMounted(() => {
 }
 
 .card-name {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   color: var(--text-primary);
   line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .card-sub {
@@ -1237,14 +1240,14 @@ onMounted(() => {
 
 .ctx-status.success {
   color: var(--accent-green);
-  background: rgba(63, 185, 80, 0.12);
-  border: 1px solid rgba(63, 185, 80, 0.35);
+  background: var(--accent-green-dim);
+  border: 1px solid rgba(22, 163, 74, 0.35);
 }
 
 .ctx-status.progress {
   color: var(--accent-blue);
-  background: rgba(88, 166, 255, 0.12);
-  border: 1px solid rgba(88, 166, 255, 0.35);
+  background: var(--accent-blue-dim);
+  border: 1px solid rgba(26, 111, 255, 0.35);
 }
 
 .ctx-status.idle {
@@ -1350,7 +1353,7 @@ code {
 
 .panel-section {
   background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 16px 20px;
   display: flex;
@@ -1454,8 +1457,8 @@ code {
 .file-score {
   font-size: 11px;
   color: var(--accent-green);
-  background: rgba(63, 185, 80, 0.12);
-  border: 1px solid rgba(63, 185, 80, 0.35);
+  background: var(--accent-green-dim);
+  border: 1px solid rgba(22, 163, 74, 0.35);
   padding: 1px 6px;
   border-radius: 999px;
 }
@@ -1479,7 +1482,7 @@ code {
 .diff-block {
   margin: 0;
   padding: 12px 14px;
-  background: #0d1117;
+  background: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -1521,20 +1524,20 @@ code {
 
 .artifact-type[data-type='script'] {
   color: var(--accent-blue);
-  border-color: rgba(88, 166, 255, 0.45);
-  background: rgba(88, 166, 255, 0.1);
+  border-color: rgba(26, 111, 255, 0.45);
+  background: var(--accent-blue-dim);
 }
 
 .artifact-type[data-type='config'] {
   color: var(--accent-orange);
-  border-color: rgba(240, 136, 62, 0.45);
-  background: rgba(240, 136, 62, 0.1);
+  border-color: rgba(234, 88, 12, 0.45);
+  background: var(--accent-orange-dim);
 }
 
 .artifact-type[data-type='asset'] {
   color: var(--accent-pink);
-  border-color: rgba(247, 120, 186, 0.45);
-  background: rgba(247, 120, 186, 0.1);
+  border-color: rgba(219, 39, 119, 0.45);
+  background: var(--accent-pink-dim);
 }
 
 .artifact-path {
@@ -1560,14 +1563,15 @@ code {
   background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
   color: #fff;
   font-size: 12px;
-  font-weight: 500;
-  border: 1px solid transparent;
+  font-weight: 600;
+  border: 1.5px solid rgba(46, 160, 67, 0.5);
+  box-shadow: 2px 2px 0 var(--shadow-green);
   transition: all 0.15s;
 }
 
 .primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(63, 185, 80, 0.3);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-green);
 }
 
 .ghost {
@@ -1592,8 +1596,8 @@ code {
   gap: 0;
   padding: 14px 16px;
   background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
 }
 
 .phase-step {
@@ -1631,7 +1635,7 @@ code {
   background: var(--accent-blue);
   border-color: var(--accent-blue);
   color: #fff;
-  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.18);
+  box-shadow: 0 0 12px var(--accent-blue);
 }
 
 .phase-meta {
@@ -1766,11 +1770,12 @@ code {
 
 .plan-step.running {
   border-color: var(--accent-blue);
-  background: rgba(88, 166, 255, 0.06);
+  background: var(--accent-blue-dim);
+  box-shadow: 2px 2px 0 var(--shadow-blue);
 }
 
 .plan-step.done {
-  border-color: rgba(63, 185, 80, 0.4);
+  border-color: rgba(22, 163, 74, 0.4);
 }
 
 .plan-step-num {
@@ -1829,14 +1834,14 @@ code {
 
 .plan-step-badge.success {
   color: var(--accent-green);
-  background: rgba(63, 185, 80, 0.12);
-  border: 1px solid rgba(63, 185, 80, 0.35);
+  background: var(--accent-green-dim);
+  border: 1px solid rgba(22, 163, 74, 0.35);
 }
 
 .plan-step-badge.progress {
   color: var(--accent-blue);
-  background: rgba(88, 166, 255, 0.12);
-  border: 1px solid rgba(88, 166, 255, 0.35);
+  background: var(--accent-blue-dim);
+  border: 1px solid rgba(26, 111, 255, 0.35);
 }
 
 .plan-step-badge.idle {
@@ -1846,14 +1851,14 @@ code {
 }
 
 .plan-step-badge.error {
-  color: var(--accent-red, #f85149);
-  background: rgba(248, 81, 73, 0.12);
-  border: 1px solid rgba(248, 81, 73, 0.4);
+  color: var(--accent-red, #dc2626);
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.35);
 }
 
 .plan-step.error {
-  border-color: rgba(248, 81, 73, 0.4);
-  background: rgba(248, 81, 73, 0.04);
+  border-color: rgba(220, 38, 38, 0.4);
+  background: rgba(220, 38, 38, 0.04);
 }
 
 .plan-step.error .plan-step-num {
@@ -1866,7 +1871,7 @@ code {
 .thinking-block {
   margin: 0;
   padding: 8px 12px;
-  background: #0d1117;
+  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -1890,9 +1895,9 @@ code {
   margin: 8px 0 0;
   padding: 8px 12px;
   font-size: 12px;
-  color: var(--accent-red, #f85149);
-  background: rgba(248, 81, 73, 0.08);
-  border: 1px solid rgba(248, 81, 73, 0.35);
+  color: var(--accent-red);
+  background: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(220, 38, 38, 0.35);
   border-radius: var(--radius-sm);
 }
 
@@ -1900,7 +1905,7 @@ code {
 .step-error {
   margin: 6px 0 0;
   font-size: 11.5px;
-  color: var(--accent-red, #f85149);
+  color: var(--accent-red);
 }
 
 .plan-step-desc {

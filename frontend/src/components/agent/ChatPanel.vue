@@ -116,14 +116,15 @@ function submit() {
   align-items: center;
   gap: 8px;
   padding: 14px 16px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-tertiary);
 }
 
 .chat-header h2 {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .dot {
@@ -136,13 +137,14 @@ function submit() {
 
 .badge {
   margin-left: auto;
-  font-size: 10px;
+  font-size: 11px;
   color: var(--accent-blue);
-  background: rgba(88, 166, 255, 0.1);
-  border: 1px solid rgba(88, 166, 255, 0.25);
+  background: var(--accent-blue-dim);
+  border: 1px solid rgba(77, 158, 255, 0.3);
   padding: 2px 8px;
-  border-radius: 999px;
-  letter-spacing: 0.3px;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
 }
 
 .model-select {
@@ -150,12 +152,13 @@ function submit() {
   font-size: 11px;
   color: var(--text-primary);
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 4px 8px;
   outline: none;
   transition: border-color 0.15s;
   font-family: inherit;
+  font-weight: 500;
 }
 
 .model-select:hover {
@@ -218,15 +221,16 @@ function submit() {
 }
 
 .bubble.user {
-  background: var(--accent-blue);
-  color: #fff;
+  background: rgba(77, 158, 255, 0.1);
+  color: var(--text-primary);
+  border: 1px solid rgba(77, 158, 255, 0.2);
   border-bottom-right-radius: 4px;
 }
 
 .bubble.model {
   background: var(--bg-card);
   color: var(--text-primary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-bottom-left-radius: 4px;
 }
 
@@ -240,7 +244,7 @@ function submit() {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--text-tertiary);
+  background: var(--accent-blue);
   animation: bounce 1.2s infinite ease-in-out;
 }
 
@@ -258,7 +262,7 @@ function submit() {
 
 .input-bar {
   padding: 12px;
-  border-top: 1px solid var(--border-color);
+  border-top: 1.5px solid var(--border-color);
   background: var(--bg-tertiary);
   display: flex;
   gap: 8px;
@@ -267,19 +271,19 @@ function submit() {
 .input-bar input {
   flex: 1;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 10px 14px;
   font-size: 13px;
   color: var(--text-primary);
   outline: none;
   font-family: inherit;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .input-bar input:focus {
   border-color: var(--accent-blue);
-  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.15);
+  box-shadow: 0 0 0 2px rgba(77, 158, 255, 0.1);
 }
 
 .input-bar input:disabled {
@@ -294,16 +298,19 @@ function submit() {
   border-radius: var(--radius-md);
   font-size: 14px;
   font-weight: 700;
+  border: 1.5px solid rgba(77, 158, 255, 0.5);
+  box-shadow: 2px 2px 0 var(--shadow-blue);
   transition: all 0.15s;
 }
 
 .send-btn:hover:not(:disabled) {
-  transform: translateX(2px);
-  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-blue);
 }
 
 .send-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+  box-shadow: none;
 }
 </style>

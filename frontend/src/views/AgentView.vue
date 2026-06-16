@@ -408,13 +408,13 @@ async function sendMessage(text) {
 
 /* Top bar */
 .agent-topbar {
-  height: 52px;
+  height: 56px;
   flex-shrink: 0;
   padding: 0 16px;
   display: flex;
   align-items: center;
   gap: 16px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-secondary);
 }
 
@@ -423,14 +423,15 @@ async function sendMessage(text) {
   font-size: 13px;
   color: var(--text-secondary);
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   transition: all 0.15s;
 }
 
 .back-btn:hover {
   background: var(--bg-hover);
-  color: var(--text-primary);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
 }
 
 .crumbs {
@@ -448,8 +449,8 @@ async function sendMessage(text) {
 }
 
 .crumb.current {
-  color: var(--text-primary);
-  font-weight: 500;
+  color: var(--accent-blue);
+  font-weight: 700;
 }
 
 .sep {
@@ -468,7 +469,7 @@ async function sendMessage(text) {
   font-size: 12px;
   color: var(--text-secondary);
   background: transparent;
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   transition: all 0.15s;
 }
@@ -476,6 +477,7 @@ async function sendMessage(text) {
 .ghost-btn:hover {
   background: var(--bg-card);
   color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .avatar-mini {
@@ -512,10 +514,10 @@ async function sendMessage(text) {
   padding: 20px 24px;
   background: linear-gradient(
     135deg,
-    rgba(88, 166, 255, 0.08),
-    rgba(188, 140, 255, 0.05)
+    rgba(77, 158, 255, 0.10),
+    rgba(168, 124, 255, 0.06)
   );
-  border: 1px solid rgba(88, 166, 255, 0.2);
+  border: 1.5px solid rgba(77, 158, 255, 0.4);
   border-radius: var(--radius-lg);
   margin-bottom: 28px;
 }
@@ -524,8 +526,8 @@ async function sendMessage(text) {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-md);
-  background: rgba(88, 166, 255, 0.12);
-  border: 1px solid rgba(88, 166, 255, 0.3);
+  background: var(--accent-blue-dim);
+  border: 1.5px solid rgba(77, 158, 255, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -540,9 +542,10 @@ async function sendMessage(text) {
 
 .banner-title {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 4px;
+  letter-spacing: -0.01em;
 }
 
 .banner-desc {
@@ -565,12 +568,13 @@ async function sendMessage(text) {
 .b-tag {
   font-size: 10px;
   color: var(--accent-blue);
-  background: rgba(88, 166, 255, 0.1);
-  border: 1px solid rgba(88, 166, 255, 0.25);
+  background: var(--accent-blue-dim);
+  border: 1px solid rgba(77, 158, 255, 0.3);
   padding: 2px 8px;
-  border-radius: 999px;
+  border-radius: 3px;
   text-align: center;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
 }
 
 .dashboard-section {
@@ -587,18 +591,22 @@ async function sendMessage(text) {
 
 .section-title > span:first-child {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .section-hint {
   font-size: 12px;
   color: var(--text-tertiary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .module-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
 }
 
@@ -607,14 +615,14 @@ async function sendMessage(text) {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  padding: 20px;
+  padding: 22px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   text-align: left;
   cursor: pointer;
   transition: all 0.2s;
-  min-height: 150px;
+  min-height: 160px;
 }
 
 .module-card:hover {
@@ -629,7 +637,7 @@ async function sendMessage(text) {
   height: 44px;
   border-radius: var(--radius-md);
   background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -639,14 +647,15 @@ async function sendMessage(text) {
 }
 
 .module-card:hover .module-icon {
-  background: rgba(88, 166, 255, 0.1);
-  border-color: rgba(88, 166, 255, 0.3);
+  background: var(--accent-blue-dim);
+  border-color: rgba(77, 158, 255, 0.35);
 }
 
 .module-name {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .module-desc {
@@ -661,7 +670,10 @@ async function sendMessage(text) {
   color: var(--text-tertiary);
   padding-top: 8px;
   width: 100%;
-  border-top: 1px dashed var(--border-color);
+  border-top: 1px solid var(--border-color);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .module-card:hover .module-foot {
@@ -677,23 +689,23 @@ async function sendMessage(text) {
 }
 
 .chat-col {
-  width: 360px;
+  width: 400px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--border-color);
+  border-right: 1.5px solid var(--border-color);
   min-height: 0;
 }
 
 .chat-col.collapsed {
-  width: 400px;
+  width: 440px;
 }
 
 .back-strip {
   flex-shrink: 0;
-  padding: 8px 16px;
+  padding: 10px 20px;
   background: var(--bg-tertiary);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -705,19 +717,21 @@ async function sendMessage(text) {
   color: var(--text-tertiary);
   padding: 4px 8px;
   border-radius: var(--radius-sm);
+  border: 1px solid transparent;
   transition: all 0.15s;
 }
 
 .back-mini:hover {
   background: var(--bg-card);
   color: var(--text-primary);
+  border-color: var(--border-color);
 }
 
 .ctx-title {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   color: var(--accent-blue);
-  letter-spacing: 0.3px;
+  letter-spacing: 0.02em;
 }
 
 .doc-col {
@@ -741,7 +755,7 @@ async function sendMessage(text) {
   text-align: center;
   padding: 40px;
   background: var(--bg-secondary);
-  border: 1px dashed var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
 }
 
@@ -752,9 +766,10 @@ async function sendMessage(text) {
 
 .placeholder-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 
 .placeholder-desc {
@@ -765,17 +780,19 @@ async function sendMessage(text) {
 }
 
 .primary-btn {
-  padding: 10px 20px;
+  padding: 10px 24px;
   background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
   color: #fff;
-  border-radius: var(--radius-sm);
+  border: 1.5px solid rgba(77, 158, 255, 0.5);
+  border-radius: var(--radius-md);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 var(--shadow-blue);
   transition: all 0.15s;
 }
 
 .primary-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-blue);
 }
 </style>

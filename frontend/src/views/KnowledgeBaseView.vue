@@ -881,7 +881,7 @@ function closePreview() {
   align-items: center;
   gap: 16px;
   padding: 16px 28px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-secondary);
 }
 
@@ -889,7 +889,7 @@ function closePreview() {
 .refresh {
   padding: 7px 14px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
   font-size: 13px;
@@ -900,6 +900,7 @@ function closePreview() {
 .refresh:hover:not(:disabled) {
   background: var(--bg-hover);
   color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .refresh:disabled {
@@ -946,14 +947,14 @@ function closePreview() {
 .main {
   flex: 1;
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 0;
   min-height: 0;
 }
 
 /* 左侧导航 */
 .sidebar {
-  border-right: 1px solid var(--border-color);
+  border-right: 1.5px solid var(--border-color);
   background: var(--bg-secondary);
   padding: 16px 12px;
   overflow-y: auto;
@@ -1021,7 +1022,8 @@ function closePreview() {
   border: 1px solid transparent;
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 500;
   text-align: left;
   transition: all 0.12s;
 }
@@ -1035,6 +1037,8 @@ function closePreview() {
   background: rgba(88, 166, 255, 0.08);
   border-color: rgba(88, 166, 255, 0.4);
   color: var(--accent-blue);
+  border-left: 3px solid var(--accent-blue);
+  padding-left: 9px;
 }
 
 .cat-count {
@@ -1056,7 +1060,7 @@ function closePreview() {
 
 .card {
   background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 18px 22px;
   display: flex;
@@ -1147,7 +1151,7 @@ function closePreview() {
   gap: 12px;
   padding: 12px 14px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-md);
   text-align: left;
   transition: all 0.15s;
@@ -1296,9 +1300,10 @@ function closePreview() {
 }
 
 .card-head strong {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .card-sub {
@@ -1372,7 +1377,7 @@ function closePreview() {
 .text-input {
   padding: 7px 10px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   font-size: 13px;
@@ -1434,15 +1439,17 @@ function closePreview() {
   padding: 7px 18px;
   background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
   color: #fff;
-  border: 1px solid transparent;
+  border: 1.5px solid rgba(77, 158, 255, 0.5);
   border-radius: var(--radius-sm);
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
+  box-shadow: 2px 2px 0 var(--shadow-blue);
+  transition: all 0.15s;
 }
 
 .primary:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-blue);
 }
 
 .primary:disabled {
@@ -1471,9 +1478,15 @@ function closePreview() {
   gap: 14px;
   padding: 12px 14px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-sm);
   align-items: flex-start;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.row:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-hover);
 }
 
 .row-main {

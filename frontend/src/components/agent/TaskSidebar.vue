@@ -40,7 +40,7 @@ const emit = defineEmits(['select', 'add'])
   display: flex;
   flex-direction: column;
   background: var(--bg-secondary);
-  border-right: 1px solid var(--border-color);
+  border-right: 1.5px solid var(--border-color);
 }
 
 .sidebar-header {
@@ -48,15 +48,15 @@ const emit = defineEmits(['select', 'add'])
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-tertiary);
+  border-bottom: 1.5px solid var(--border-color);
+  background: var(--bg-secondary);
 }
 
 .sidebar-header h2 {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: 0.3px;
+  letter-spacing: -0.01em;
 }
 
 .count {
@@ -64,8 +64,9 @@ const emit = defineEmits(['select', 'add'])
   color: var(--text-tertiary);
   background: var(--bg-card);
   padding: 2px 8px;
-  border-radius: 999px;
+  border-radius: 3px;
   border: 1px solid var(--border-color);
+  font-weight: 600;
 }
 
 .task-list {
@@ -82,6 +83,7 @@ const emit = defineEmits(['select', 'add'])
   padding: 10px 20px;
   text-align: left;
   font-size: 13px;
+  font-weight: 500;
   color: var(--text-secondary);
   border-left: 3px solid transparent;
   transition: all 0.15s;
@@ -96,7 +98,7 @@ const emit = defineEmits(['select', 'add'])
   background: var(--bg-hover);
   color: var(--text-primary);
   border-left-color: var(--accent-blue);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .task-dot {
@@ -109,7 +111,7 @@ const emit = defineEmits(['select', 'add'])
 
 .task-item.active .task-dot {
   background: var(--accent-blue);
-  box-shadow: 0 0 8px var(--accent-blue);
+  box-shadow: 0 0 10px var(--accent-blue);
 }
 
 .task-name {
@@ -128,16 +130,17 @@ const emit = defineEmits(['select', 'add'])
   gap: 6px;
   background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
   color: #fff;
+  border: 1.5px solid rgba(77, 158, 255, 0.5);
   border-radius: var(--radius-sm);
   font-size: 13px;
-  font-weight: 500;
-  transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(88, 166, 255, 0.2);
+  font-weight: 600;
+  box-shadow: 2px 2px 0 var(--shadow-blue);
+  transition: all 0.15s;
 }
 
 .add-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-blue);
 }
 
 .plus {

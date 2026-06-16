@@ -1226,13 +1226,13 @@ function runMockJob() {
 
 /* 顶部栏 */
 .art-topbar {
-  height: 52px;
+  height: 56px;
   flex-shrink: 0;
   padding: 0 16px;
   display: flex;
   align-items: center;
   gap: 16px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-secondary);
 }
 
@@ -1241,13 +1241,14 @@ function runMockJob() {
   font-size: 13px;
   color: var(--text-secondary);
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   transition: all 0.15s;
 }
 .back-btn:hover {
   background: var(--bg-hover);
-  color: var(--text-primary);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
 }
 
 .crumbs {
@@ -1263,8 +1264,8 @@ function runMockJob() {
   white-space: nowrap;
 }
 .crumb.current {
-  color: var(--text-primary);
-  font-weight: 500;
+  color: var(--accent-pink);
+  font-weight: 700;
 }
 .sep {
   color: var(--text-tertiary);
@@ -1282,13 +1283,14 @@ function runMockJob() {
   font-size: 12px;
   color: var(--text-secondary);
   background: transparent;
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   transition: all 0.15s;
 }
 .ghost-btn:hover {
   background: var(--bg-card);
   color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .avatar-mini {
@@ -1313,13 +1315,13 @@ function runMockJob() {
 
 /* 侧边栏 */
 .art-sidebar {
-  width: 280px;
+  width: 260px;
   flex-shrink: 0;
   background: var(--bg-secondary);
-  border-right: 1px solid var(--border-color);
+  border-right: 1.5px solid var(--border-color);
   display: flex;
   flex-direction: column;
-  padding: 18px 14px;
+  padding: 16px 12px;
   overflow-y: auto;
 }
 
@@ -1334,12 +1336,13 @@ function runMockJob() {
 .brand-mark {
   width: 40px;
   height: 40px;
-  border-radius: var(--radius-md);
+  clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px);
   display: grid;
   place-items: center;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(135deg, var(--accent-pink), var(--accent-orange));
+  background: var(--accent-pink);
+  border: 1.5px solid rgba(240, 107, 160, 0.5);
   font-size: 14px;
 }
 
@@ -1349,7 +1352,7 @@ function runMockJob() {
 
 .brand-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -1370,9 +1373,9 @@ function runMockJob() {
   grid-template-columns: 32px 1fr;
   gap: 12px;
   width: 100%;
-  min-height: 70px;
+  min-height: 66px;
   padding: 12px;
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-md);
   color: var(--text-secondary);
   background: transparent;
@@ -1387,7 +1390,8 @@ function runMockJob() {
 
 .module-button.active {
   border-color: var(--accent-pink);
-  background: rgba(247, 120, 186, 0.08);
+  background: var(--accent-pink-dim);
+  box-shadow: 2px 2px 0 var(--shadow-pink);
 }
 
 .step {
@@ -1395,11 +1399,12 @@ function runMockJob() {
   place-items: center;
   width: 28px;
   height: 28px;
-  border-radius: 8px;
+  border-radius: 4px;
   background: var(--bg-tertiary);
   color: var(--text-secondary);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 10px;
+  letter-spacing: 0.05em;
   border: 1px solid var(--border-color);
 }
 
@@ -1416,8 +1421,8 @@ function runMockJob() {
 }
 
 .module-text strong {
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -1431,7 +1436,7 @@ function runMockJob() {
   margin-top: auto;
   padding: 12px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-md);
   font-size: 11px;
   color: var(--text-tertiary);
@@ -1459,20 +1464,24 @@ function runMockJob() {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px solid var(--border-color);
 }
 
 .eyebrow {
   margin: 0 0 4px;
-  color: var(--text-tertiary);
+  color: var(--accent-pink);
   font-size: 12px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .ws-title {
   margin: 0;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 800;
   color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .ws-refresh {
@@ -1483,7 +1492,7 @@ function runMockJob() {
   max-width: 1120px;
   margin: 0 0 16px;
   padding: 10px 12px;
-  border: 1px solid rgba(255, 99, 71, 0.4);
+  border: 1.5px solid rgba(255, 99, 71, 0.4);
   border-radius: var(--radius-md);
   background: rgba(255, 99, 71, 0.08);
   color: #ff8b75;
@@ -1495,8 +1504,8 @@ function runMockJob() {
   max-width: 1120px;
   margin-bottom: 22px;
   padding: 18px;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-xl);
   background: var(--bg-secondary);
 }
 
@@ -1508,14 +1517,16 @@ function runMockJob() {
 
 .field-label {
   color: var(--text-secondary);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 textarea,
 select {
   width: 100%;
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   background: var(--bg-tertiary);
   color: var(--text-primary);
@@ -1534,6 +1545,7 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--accent-pink);
+  box-shadow: 0 0 0 2px rgba(240, 107, 160, 0.1);
 }
 
 select {
@@ -1564,7 +1576,7 @@ select {
   gap: 14px;
   margin: -4px 0 14px;
   padding: 10px;
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-md);
   background: var(--bg-tertiary);
 }
@@ -1607,14 +1619,15 @@ select {
   background: linear-gradient(135deg, var(--accent-pink), var(--accent-orange));
   color: #fff;
   font-size: 13px;
-  font-weight: 500;
-  border: 1px solid transparent;
+  font-weight: 700;
+  border: 1.5px solid rgba(240, 107, 160, 0.5);
+  box-shadow: 2px 2px 0 var(--shadow-pink);
   transition: all 0.15s;
 }
 
 .primary-btn:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(247, 120, 186, 0.3);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--shadow-pink);
 }
 
 .primary-btn:disabled {
@@ -1689,13 +1702,13 @@ select {
 }
 
 .job-status.failed {
-  border-color: rgba(255, 99, 71, 0.4);
-  background: rgba(255, 99, 71, 0.08);
+  border-color: rgba(220, 38, 38, 0.4);
+  background: rgba(220, 38, 38, 0.06);
 }
 
 .job-status.running {
-  border-color: rgba(88, 166, 255, 0.4);
-  background: rgba(88, 166, 255, 0.06);
+  border-color: rgba(26, 111, 255, 0.4);
+  background: rgba(26, 111, 255, 0.06);
 }
 
 .job-status.running strong {
@@ -1790,8 +1803,8 @@ select {
   margin: 0;
   padding: 12px;
   overflow: auto;
-  background: #0b1019;
-  color: #c8d4dd;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
   font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
   font-size: 12px;
   line-height: 1.55;
@@ -1803,7 +1816,7 @@ select {
   aspect-ratio: auto;
   min-height: 240px;
   max-height: 340px;
-  background: #0b1019;
+  background: var(--bg-tertiary);
 }
 
 .asset-item-paired {
@@ -1829,7 +1842,7 @@ select {
   flex-direction: column;
   min-width: 0;
   height: 440px;
-  background: #0b1019;
+  background: var(--bg-tertiary);
 }
 
 .paired-json-header {
@@ -1838,9 +1851,9 @@ select {
   justify-content: space-between;
   gap: 12px;
   padding: 8px 12px;
-  background: #131b29;
-  color: #c8d4dd;
-  border-bottom: 1px solid #1f2a3d;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
   flex-shrink: 0;
 }
 
@@ -1964,7 +1977,7 @@ select {
 
 .ref-zone.drag-over {
   border-color: var(--accent-blue);
-  background: rgba(88, 166, 255, 0.08);
+  background: var(--accent-blue-dim);
 }
 
 .ref-empty {

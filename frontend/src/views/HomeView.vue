@@ -81,10 +81,7 @@ function openKnowledge() {
 
     <!-- Hero 区 -->
     <section class="hero">
-      <div class="demo-notice">
-        <span class="demo-notice-tag">PS</span>
-        演示 DEMO 只完成了策划和美术的 Agent 模块，可点击交互；后端接口均未实现，主要展示整体架构与交互逻辑。
-      </div>
+      <div class="hero-pixel-dots"></div>
       <div class="hero-stats">
         <div class="stat">
           <div class="stat-num">4</div>
@@ -107,7 +104,7 @@ function openKnowledge() {
     <section class="section">
       <div class="section-head">
         <div>
-          <h2 class="section-title">选择 Agent 模块</h2>
+          <h2 class="section-title"><span class="title-mark">◆</span> 选择 Agent 模块</h2>
           <p class="section-desc">每个 Agent 对应真实业务环节，读取对应知识库并产出可用成果物</p>
         </div>
       </div>
@@ -150,7 +147,7 @@ function openKnowledge() {
     <section class="section">
       <div class="section-head">
         <div>
-          <h2 class="section-title">系统级模块</h2>
+          <h2 class="section-title"><span class="title-mark">◆</span> 系统级模块</h2>
           <p class="section-desc">底层数据资产和跨模块协作支撑</p>
         </div>
       </div>
@@ -184,7 +181,7 @@ function openKnowledge() {
     <section class="section">
       <div class="section-head">
         <div>
-          <h2 class="section-title">典型协作流</h2>
+          <h2 class="section-title"><span class="title-mark">◆</span> 典型协作流</h2>
           <p class="section-desc">上游产出经确认后流转到下游，最终沉淀到知识库</p>
         </div>
       </div>
@@ -243,17 +240,29 @@ function openKnowledge() {
 
 /* 顶部导航 */
 .topbar {
-  height: 64px;
-  padding: 0 32px;
+  height: 76px;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background: var(--bg-secondary);
   position: sticky;
   top: 0;
   z-index: 10;
   backdrop-filter: blur(8px);
+}
+
+.topbar::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-blue) 20%, var(--accent-pink) 50%, var(--accent-green) 80%, transparent);
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 .brand {
@@ -263,22 +272,34 @@ function openKnowledge() {
 }
 
 .brand-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  width: 44px;
+  height: 44px;
+  background: var(--accent-blue);
+  border: 1.5px solid rgba(77, 158, 255, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 900;
+  font-size: 22px;
   color: #fff;
+  clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px);
+  position: relative;
+}
+
+.brand-logo::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 1px dashed rgba(26, 111, 255, 0.3);
+  clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px);
+  pointer-events: none;
 }
 
 .brand-name {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 800;
   color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .brand-sub {
@@ -298,14 +319,15 @@ function openKnowledge() {
   font-size: 13px;
   color: var(--text-secondary);
   background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
-  transition: all 0.2s;
+  transition: all 0.15s;
 }
 
 .ghost-btn:hover {
   background: var(--bg-hover);
-  color: var(--text-primary);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
 }
 
 .avatar {
@@ -325,10 +347,38 @@ function openKnowledge() {
 .hero {
   padding: 48px 32px 40px;
   text-align: center;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   background:
-    radial-gradient(ellipse at 30% 0%, rgba(88, 166, 255, 0.08), transparent 60%),
-    radial-gradient(ellipse at 70% 0%, rgba(247, 120, 186, 0.06), transparent 60%);
+    radial-gradient(ellipse at 30% 0%, rgba(26, 111, 255, 0.06), transparent 60%),
+    radial-gradient(ellipse at 70% 0%, rgba(219, 39, 119, 0.05), transparent 60%),
+    var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 像素点阵装饰 */
+.hero-pixel-dots {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(circle, var(--border-hover) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero-pixel-dots::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: -120px;
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(circle, var(--border-hover) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  opacity: 0.6;
 }
 
 .hero-tag {
@@ -336,11 +386,12 @@ function openKnowledge() {
   padding: 4px 14px;
   font-size: 12px;
   color: var(--accent-blue);
-  background: rgba(88, 166, 255, 0.1);
-  border: 1px solid rgba(88, 166, 255, 0.2);
+  background: var(--accent-blue-dim);
+  border: 1.5px solid rgba(26, 111, 255, 0.3);
   border-radius: 999px;
   margin-bottom: 24px;
   letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 .demo-notice {
@@ -354,12 +405,12 @@ function openKnowledge() {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  color: #ff6b6b;
-  background: rgba(255, 80, 80, 0.08);
-  border: 1px solid rgba(255, 80, 80, 0.45);
+  color: var(--accent-red);
+  background: rgba(220, 38, 38, 0.06);
+  border: 2px solid rgba(220, 38, 38, 0.5);
   border-radius: var(--radius-md);
   text-align: left;
-  box-shadow: 0 0 0 1px rgba(255, 80, 80, 0.08), 0 4px 18px rgba(255, 80, 80, 0.12);
+  box-shadow: 3px 3px 0 rgba(180, 20, 20, 0.25);
 }
 
 .demo-notice-tag {
@@ -367,10 +418,11 @@ function openKnowledge() {
   padding: 2px 10px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: #fff;
-  background: #ff5f5f;
-  border-radius: 999px;
+  background: var(--accent-red);
+  border-radius: 3px;
 }
 
 .hero-stats {
@@ -378,22 +430,27 @@ function openKnowledge() {
   align-items: center;
   gap: 32px;
   padding: 16px 32px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
   border-radius: var(--radius-md);
+  box-shadow: 4px 4px 0 var(--shadow-dark);
 }
 
 .stat-num {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--accent-blue);
   line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 .stat-label {
-  margin-top: 6px;
-  font-size: 12px;
+  margin-top: 8px;
+  font-size: 11px;
   color: var(--text-tertiary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .divider {
@@ -415,62 +472,81 @@ function openKnowledge() {
 }
 
 .section-title {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 900;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-mark {
+  font-size: 16px;
+  color: var(--accent-blue);
+  font-weight: 900;
+  opacity: 0.8;
+  flex-shrink: 0;
 }
 
 .section-desc {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-tertiary);
 }
 
 /* Agent 卡片 */
 .agent-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
 }
 
 .agent-card {
   position: relative;
-  padding: 24px;
+  padding: 28px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-xl);
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   overflow: hidden;
 }
 
-.agent-card::before {
+/* 像素角标：右下角切角装饰 */
+.agent-card::after {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(135deg, transparent, transparent);
-  opacity: 0;
-  transition: opacity 0.25s;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
+  border-radius: 0 0 0 2px;
   pointer-events: none;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  transition: border-color 0.2s;
 }
+
+/* 顶部 accent 色条 — 常驻不需 hover */
+.agent-card.accent-blue  { border-top: 4px solid var(--accent-blue); }
+.agent-card.accent-pink  { border-top: 4px solid var(--accent-pink); }
+.agent-card.accent-green { border-top: 4px solid var(--accent-green); }
+.agent-card.accent-orange { border-top: 4px solid var(--accent-orange); }
 
 .agent-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--border-hover);
-  box-shadow: var(--shadow-lg);
+  transform: translate(-2px, -3px);
 }
 
-.agent-card.accent-blue:hover { border-color: var(--accent-blue); }
-.agent-card.accent-pink:hover { border-color: var(--accent-pink); }
-.agent-card.accent-green:hover { border-color: var(--accent-green); }
-.agent-card.accent-orange:hover { border-color: var(--accent-orange); }
+.agent-card.accent-blue:hover  { border-color: var(--accent-blue);  box-shadow: 5px 5px 0 var(--shadow-blue); }
+.agent-card.accent-pink:hover  { border-color: var(--accent-pink);  box-shadow: 5px 5px 0 var(--shadow-pink); }
+.agent-card.accent-green:hover { border-color: var(--accent-green); box-shadow: 5px 5px 0 var(--shadow-green); }
+.agent-card.accent-orange:hover { border-color: var(--accent-orange); box-shadow: 5px 5px 0 var(--shadow-orange); }
+
+.agent-card.accent-blue:hover::after  { border-color: var(--accent-blue); }
+.agent-card.accent-pink:hover::after  { border-color: var(--accent-pink); }
+.agent-card.accent-green:hover::after { border-color: var(--accent-green); }
+.agent-card.accent-orange:hover::after { border-color: var(--accent-orange); }
 
 .agent-card-head {
   display: flex;
@@ -479,36 +555,44 @@ function openKnowledge() {
   margin-bottom: 12px;
 }
 
+/* icon 根据 accent 有色背景 */
 .agent-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-sm);
-  background: var(--bg-tertiary);
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
-  border: 1px solid var(--border-color);
+  font-size: 28px;
+  flex-shrink: 0;
 }
+
+.agent-card.accent-blue  .agent-icon { background: var(--accent-blue-dim);   border: 2px solid rgba(26,111,255,0.35); }
+.agent-card.accent-pink  .agent-icon { background: var(--accent-pink-dim);   border: 2px solid rgba(219,39,119,0.35); }
+.agent-card.accent-green .agent-icon { background: var(--accent-green-dim);  border: 2px solid rgba(22,163,74,0.35); }
+.agent-card.accent-orange .agent-icon { background: var(--accent-orange-dim); border: 2px solid rgba(234,88,12,0.35); }
 
 .agent-meta {
   flex: 1;
 }
 
 .agent-name {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 900;
   color: var(--text-primary);
+  letter-spacing: -0.025em;
 }
 
 .agent-sub {
   font-size: 12px;
   color: var(--text-tertiary);
   letter-spacing: 0.3px;
+  margin-top: 2px;
 }
 
 .agent-arrow {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
   color: var(--text-tertiary);
   transition: transform 0.2s;
 }
@@ -519,27 +603,28 @@ function openKnowledge() {
 }
 
 .agent-desc {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 16px;
-  min-height: 42px;
+  min-height: 48px;
 }
 
 .agent-section {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .agent-section-label {
   font-size: 11px;
   color: var(--text-tertiary);
   margin-bottom: 6px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .agent-section-text {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-secondary);
 }
 
@@ -550,28 +635,32 @@ function openKnowledge() {
 }
 
 .tag {
-  font-size: 11px;
-  padding: 3px 8px;
-  border-radius: 4px;
+  font-size: 13px;
+  padding: 3px 12px;
+  border-radius: 3px;
   background: var(--bg-tertiary);
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
+  letter-spacing: 0.03em;
 }
 
-.agent-card.accent-blue .tag { color: var(--accent-blue); border-color: rgba(88,166,255,0.25); }
-.agent-card.accent-pink .tag { color: var(--accent-pink); border-color: rgba(247,120,186,0.25); }
-.agent-card.accent-green .tag { color: var(--accent-green); border-color: rgba(63,185,80,0.25); }
-.agent-card.accent-orange .tag { color: var(--accent-orange); border-color: rgba(240,136,62,0.25); }
+.agent-card.accent-blue   .tag { color: var(--accent-blue);   border-color: rgba(26,111,255,0.4); background: var(--accent-blue-dim); }
+.agent-card.accent-pink   .tag { color: var(--accent-pink);   border-color: rgba(219,39,119,0.4); background: var(--accent-pink-dim); }
+.agent-card.accent-green  .tag { color: var(--accent-green);  border-color: rgba(22,163,74,0.4); background: var(--accent-green-dim); }
+.agent-card.accent-orange .tag { color: var(--accent-orange); border-color: rgba(234,88,12,0.4); background: var(--accent-orange-dim); }
 
 .agent-card-foot {
   margin-top: 18px;
   padding-top: 14px;
-  border-top: 1px dashed var(--border-color);
+  border-top: 1px solid var(--border-color);
 }
 
 .enter-btn {
   font-size: 12px;
   color: var(--text-tertiary);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .agent-card:hover .enter-btn {
@@ -584,29 +673,29 @@ function openKnowledge() {
   align-items: center;
   gap: 24px;
   padding: 24px;
-  background: linear-gradient(135deg, var(--bg-card), var(--bg-tertiary));
-  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   cursor: pointer;
-  transition: all 0.25s;
+  transition: all 0.2s;
 }
 
 .kb-card:hover {
   border-color: var(--accent-cyan);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--shadow-cyan);
 }
 
 .kb-icon {
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   border-radius: var(--radius-md);
-  background: rgba(57, 197, 207, 0.1);
-  border: 1px solid rgba(57, 197, 207, 0.3);
+  background: rgba(8, 145, 178, 0.1);
+  border: 1.5px solid rgba(8, 145, 178, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  font-size: 34px;
   flex-shrink: 0;
 }
 
@@ -615,9 +704,10 @@ function openKnowledge() {
 }
 
 .kb-name {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 800;
   color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .kb-sub {
@@ -627,7 +717,7 @@ function openKnowledge() {
 }
 
 .kb-desc {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-secondary);
   margin-top: 6px;
 }
@@ -636,8 +726,8 @@ function openKnowledge() {
   display: flex;
   gap: 32px;
   padding: 0 24px;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+  border-left: 1.5px solid var(--border-color);
+  border-right: 1.5px solid var(--border-color);
 }
 
 .kb-stat {
@@ -645,15 +735,19 @@ function openKnowledge() {
 }
 
 .kb-stat-num {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 900;
   color: var(--accent-cyan);
+  letter-spacing: -0.03em;
 }
 
 .kb-stat-label {
   font-size: 11px;
   color: var(--text-tertiary);
   margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
 }
 
 .kb-arrow {
@@ -674,18 +768,17 @@ function openKnowledge() {
   justify-content: space-between;
   gap: 8px;
   padding: 28px 24px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   overflow-x: auto;
 }
 
 .flow-node {
   flex: 1;
-  min-width: 110px;
-  padding: 16px 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  min-width: 120px;
+  padding: 20px 14px;
+  background: var(--bg-secondary);
   border-radius: var(--radius-md);
   text-align: center;
   transition: transform 0.2s;
@@ -695,27 +788,29 @@ function openKnowledge() {
   transform: translateY(-3px);
 }
 
-.flow-node.accent-blue { border-color: rgba(88,166,255,0.4); }
-.flow-node.accent-pink { border-color: rgba(247,120,186,0.4); }
-.flow-node.accent-green { border-color: rgba(63,185,80,0.4); }
-.flow-node.accent-orange { border-color: rgba(240,136,62,0.4); }
-.flow-node.accent-purple { border-color: rgba(188,140,255,0.4); }
-.flow-node.accent-cyan { border-color: rgba(57,197,207,0.4); }
+.flow-node.accent-blue   { border: 2px solid rgba(26,111,255,0.6); }
+.flow-node.accent-pink   { border: 2px solid rgba(219,39,119,0.6); }
+.flow-node.accent-green  { border: 2px solid rgba(22,163,74,0.6); }
+.flow-node.accent-orange { border: 2px solid rgba(234,88,12,0.6); }
+.flow-node.accent-purple { border: 2px solid rgba(124,58,237,0.6); }
+.flow-node.accent-cyan   { border: 2px solid rgba(8,145,178,0.6); }
 
 .flow-icon {
-  font-size: 24px;
-  margin-bottom: 6px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  line-height: 1;
 }
 
 .flow-name {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 800;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .flow-text {
   margin-top: 4px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-tertiary);
 }
 
@@ -723,8 +818,8 @@ function openKnowledge() {
   flex: 0 0 auto;
   align-self: center;
   width: 24px;
-  height: 1px;
-  background: var(--border-color);
+  height: 2px;
+  background: var(--border-hover);
   position: relative;
 }
 
@@ -735,8 +830,8 @@ function openKnowledge() {
   top: -3px;
   width: 7px;
   height: 7px;
-  border-top: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+  border-top: 2px solid var(--border-hover);
+  border-right: 2px solid var(--border-hover);
   transform: rotate(45deg);
 }
 
