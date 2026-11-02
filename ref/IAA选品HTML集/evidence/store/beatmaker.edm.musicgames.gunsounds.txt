@@ -1,0 +1,339 @@
+# Google Play public snapshot: beatmaker.edm.musicgames.gunsounds
+URL: https://play.google.com/store/apps/details?id=beatmaker.edm.musicgames.gunsounds&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:03.465Z
+HTTP status: 200
+Raw HTML SHA-256: 3d92853402d4b7be3e8611df2614906cc36aeab9ed93122ab656b57bffbecc1a
+Raw HTML: research/html-data/store-snapshots/beatmaker.edm.musicgames.gunsounds.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Beat Fire - Edm Gun Music Game
+Adaric Music
+Contains ads
+In-app purchases
+3.7
+star
+326K reviews
+Rated for 12+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 12+
+Mild Swearing
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+A special game in different genres of piano games with wonderful gameplay! Beat Fire creates a music feast suitable for YOU.
+Totally innovative with feel-good gun sounds. Play it at home to release stress!
+Try this great time killer now. Let BeatFire make your day!
+How to play:
+- Tiles fall with EDM music.
+- Use your finger to control. Hold & drag to aim and smash tiles.
+-Try not to miss any tiles to keep the game going.
+-Enjoy addictive challenges and EDM beats designed for each song.
+Game Features:
+- Amounts of songs to satisfy different tastes! Enjoy the DJ and Hop music, relax in epic music!
+- Background color change brings you a new experience every plays!
+- One-tap control, easy to play.
+- 10+ cool Skins and Weapons to choose from.️
+Beat Fire - EDM Music with Gun Sounds is easy to play! Simple one-touch gameplay will keep you entertained for hours! Play this EDM music game now!
+If any music producers or labels have a problem with the music and images used in the game, or any players have any advice to help us improve, please feel free to contact us at adaricmusic@gmail.com
+Music games can be fights, come and take your gun to shoot at music tiles!
+Updated on
+Sep 16, 2026
+Music
+Performance
+Arcade
+Single player
+Abstract
+Weapons
+Gun
+Intense
+Offline
+Play Pass
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Beat Fire - Edm Gun Music Game",
+  "url": "https://play.google.com/store/apps/details/Beat_Fire_Edm_Gun_Music_Game?id=beatmaker.edm.musicgames.gunsounds&hl=en",
+  "description": "Music games can be fights, come and take your gun to shoot at music tiles!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_MUSIC",
+  "image": "https://play-lh.googleusercontent.com/FaAtOn-90leLkjfyT-_6KBlYIE7nDUAJf1Jmrdz0OxSpPVshL2tWHGmW5ak_ctOVYu0qA51kW6MChqLFO2hj1g",
+  "contentRating": "Rated for 12+",
+  "author": {
+    "@type": "Person",
+    "name": "Adaric Music",
+    "url": "http://musicgamestudio.top"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.7067668437957764",
+    "ratingCount": "326362"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Beat Fire - Edm Gun Music Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Beat Fire - Edm Gun Music Game
+Adaric Music
+Contains ads
+In-app purchases
+3.7
+star
+326K reviews
+Rated for 12+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 12+
+Mild Swearing
+Learn more
+About this game
+arrow_forward
+A special game in different genres of piano games with wonderful gameplay! Beat Fire creates a music feast suitable for YOU.
+Totally innovative with feel-good gun sounds. Play it at home to release stress!
+Try this great time killer now. Let BeatFire make your day!
+How to play:
+- Tiles fall with EDM music.
+- Use your finger to control. Hold & drag to aim and smash tiles.
+-Try not to miss any tiles to keep the game going.
+-Enjoy addictive challenges and EDM beats designed for each song.
+Game Features:
+- Amounts of songs to satisfy different tastes! Enjoy the DJ and Hop music, relax in epic music!
+- Background color change brings you a new experience every plays!
+- One-tap control, easy to play.
+- 10+ cool Skins and Weapons to choose from.️
+Beat Fire - EDM Music with Gun Sounds is easy to play! Simple one-touch gameplay will keep you entertained for hours! Play this EDM music game now!
+If any music producers or labels have a problem with the music and images used in the game, or any players have any advice to help us improve, please feel free to contact us at adaricmusic@gmail.com
+Music games can be fights, come and take your gun to shoot at music tiles!
+Updated on
+Sep 16, 2026
+Music
+Performance
+Arcade
+Single player
+Abstract
+Weapons
+Gun
+Intense
+Offline
+Play Pass
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Location, App activity and 2 others
+Data isn’t encrypted
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+3.7
+292K reviews
+5
+4
+3
+2
+1
+Jim
+more_vert
+Flag inappropriate
+July 10, 2026
+I have the app with play pass and it clearly states no in app purchtor ads with your play pass subscription. I wonder if Google knows that they're not honoring the play pass TOS for developers, and as I play the game, it gets to force a 3 day free trial, it forces ads from the beginning with no way to explain you have the play pass edition. So uninstalling and deleting my account, and reporting to Google about their violating Google Terms of Service agreement in the play pass section.
+22 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Jasmine Placio
+more_vert
+Flag inappropriate
+August 14, 2026
+This game is very challenging and beautiful, especially my favorite songs are the FatRat, NCS, and others, so sometimes I have difficulty with different levels of the game, I really liked it, NICE G!
+9 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Nicholas Gonsalves Official
+more_vert
+Flag inappropriate
+Show review history
+July 5, 2026
+I love this piano game great selection of songs and i like the download function in settings where we can download all the songs in the game one time so we can have them offline all the time and I also like the feature where we can save our progress in the game
+13 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+News Flash!
+✨The Login function is now available!
+Save your game data by Login via Meta or Google Account, your game record could be retained across different devices!
+🎤Four new songs have been added, enrich your music library!
+🚀Game experience optimization and bug fixes.
+flag
+Flag as inappropriate
+Rated for 12+
+Mild Swearing
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+adaricmusic@gmail.com
+shield
+Privacy Policy
+About the developer
+上海旭笛信息科技有限公司
+adaricmusic@gmail.com
+中国
+上海市闵行区
+闵行区联航路1588号2幢科创楼203室
+邮政编码: 201112
++86 185 1632 6073
+More by Adaric Music
+arrow_forward
+Piano Fire: Edm Music & Piano
+Adaric Music
+4.5
+star
+Piano Fire 2: Slide Challenge
+Adaric Music
+4.2
+star
+Rhythm Fire-EDM Shooting Game
+Adaric Music
+4.1
+star
+Music Racing : Beat Racing GT
+Adaric Music
+3.1
+star
+Cyber Beat: Neon Rhythm Rush
+Adaric Music
+3.1
+star
+2248 Blast: Merge Puzzle
+Adaric Music
+4.1
+star
+Similar games
+arrow_forward
+Cyber Surfer : Rhythm Odyssey
+BADSNOWBALL HONGKONG LIMITED
+4.2
+star
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+4.3
+star
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+Guitar Band: Rock Battle
+Supercharge Mobile
+3.8
+star
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

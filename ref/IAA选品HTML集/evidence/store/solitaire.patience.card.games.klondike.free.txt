@@ -1,0 +1,350 @@
+# Google Play public snapshot: solitaire.patience.card.games.klondike.free
+URL: https://play.google.com/store/apps/details?id=solitaire.patience.card.games.klondike.free&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:41.796Z
+HTTP status: 200
+Raw HTML SHA-256: f9f0185cc94c1ecd100bdfa6d7983a32fabb4768833dc2181a786c50d9dde696
+Raw HTML: research/html-data/store-snapshots/solitaire.patience.card.games.klondike.free.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Solitaire - Classic Card Games
+Guru Puzzle Game
+Contains ads
+In-app purchases
+4.8
+star
+706K reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+The Most Relaxing & Addictive FREE Classic Solitaire Card Games, original Solitaire or Patience
+, is just for you!
+Enjoy the best free and popular original Solitaire card games in the world for free at any time and place!
+It's time to train your brain, challenge yourself and be a Solitaire or Patience master, try this original, classic and free Patience Solitaire card game!
+Solitaire games, also known as Patience in Europe (such as the United Kingdom, French, etc.), are Solitaire card games, and can be played by a single player.
+This is not a social casino game. You can enjoy original Solitaire anytime and anywhere, without money in and money out.
+How to play this free original solitaire card games
+To solve this FREE Solitaire card puzzle, you should move all solitaire cards of 4 suits - hearts, diamonds, spades and crosses to the Solitaire Foundations. There is one deck - 52 solitaire cards in the classic Solitaire game.
+You need to stack solitaire cards by suit, from Aces to King (A, 2, 3 and more). You can also move solitaire cards between columns, and stack solitaire cards in descending order and differentiate between red and black suits. For example, a black 10 could only be followed by a red 9. Only a King could be placed in the Free Column. You can move the stack of solitaire cards by dragging the whole stack to another column.
+Solitaire game or Patience game is an addictive solitaire card game from the Classic Solitaire collection, which is similar to other Solitaire card/board games, such as Cube, Freecell, Spider, Tri Peaks, Pyramind, Golf, Mahjong and Yukon. Classic never fades. Solitaire, or Patience is the best way for you to relax and pass the time, play it anytime, anywhere with patience and insistence. You would absolutely love playing this free Solitaire card game.
+Key Features of Solitaire Card Games
+- Original and Classic solitaire gameplay, super fun and addictive
+- Left-hand mode, more convenient for you
+- Solitaire 3 Draw Mode, more challenging to play games
+- Statistics section, keep improving and challenging yourself during solitaire games
+- Daily Challenge, start every day with fun and relaxing Solitaire games
+- Unlimited hints and undo. Playing solitaire could be easier.
+- Play Joker. Get stuck? No worries, the Joker card is here for you to play solitaire card games smoothly
+- Various backgrounds - the classic green one, those with beautiful scenery, and cute animals, etc. Select the one you like, customize your solitaire game, and enjoy!
+- Kinds of card faces and card backs. Playing solitaire is more than a relax, snowman, dogs and cats are here for you to choose from.
+- Dynamic background animation. It brings more fun while playing. You'll love it!
+Some solitaire games are unsolvable, according to the classic solitaire rules. If you get stuck, you can try a new solitaire deal or try some boosters in the solitaire game for help.
+We are always keeping improving to make this free solitaire game better and better. Try this solitaire game, you will find it's really fun and relaxing! Enjoy yourself with the popular and classic solitaire card games for free!
+Privacy Policy: https://solitaire.gurugame.ai/policy.html
+Terms of Service: https://solitaire.gurugame.ai/termsofservice.html
+Relax Now! The Most Addictive Classic Solitaire Card Games for You!
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows
+Card
+Solitaire
+Casual
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Solitaire - Classic Card Games",
+  "url": "https://play.google.com/store/apps/details/Solitaire_Classic_Card_Games?id=solitaire.patience.card.games.klondike.free&hl=en",
+  "description": "Relax Now! The Most Addictive Classic Solitaire Card Games for You!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/nVTU-EbcHkMg-KXt93shtsgX506v_zDBLG04H2pnp4Lom2J_mSp5gHO5YtZhCSpDpLJUgBYneCd5h6oDduKJ6Q",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Guru Puzzle Game",
+    "url": "https://solitaire.gurugame.ai/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.84011697769165",
+    "ratingCount": "706043"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Solitaire - Classic Card Games - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Solitaire - Classic Card Games
+Guru Puzzle Game
+Contains ads
+In-app purchases
+4.8
+star
+706K reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+The Most Relaxing & Addictive FREE Classic Solitaire Card Games, original Solitaire or Patience
+, is just for you!
+Enjoy the best free and popular original Solitaire card games in the world for free at any time and place!
+It's time to train your brain, challenge yourself and be a Solitaire or Patience master, try this original, classic and free Patience Solitaire card game!
+Solitaire games, also known as Patience in Europe (such as the United Kingdom, French, etc.), are Solitaire card games, and can be played by a single player.
+This is not a social casino game. You can enjoy original Solitaire anytime and anywhere, without money in and money out.
+How to play this free original solitaire card games
+To solve this FREE Solitaire card puzzle, you should move all solitaire cards of 4 suits - hearts, diamonds, spades and crosses to the Solitaire Foundations. There is one deck - 52 solitaire cards in the classic Solitaire game.
+You need to stack solitaire cards by suit, from Aces to King (A, 2, 3 and more). You can also move solitaire cards between columns, and stack solitaire cards in descending order and differentiate between red and black suits. For example, a black 10 could only be followed by a red 9. Only a King could be placed in the Free Column. You can move the stack of solitaire cards by dragging the whole stack to another column.
+Solitaire game or Patience game is an addictive solitaire card game from the Classic Solitaire collection, which is similar to other Solitaire card/board games, such as Cube, Freecell, Spider, Tri Peaks, Pyramind, Golf, Mahjong and Yukon. Classic never fades. Solitaire, or Patience is the best way for you to relax and pass the time, play it anytime, anywhere with patience and insistence. You would absolutely love playing this free Solitaire card game.
+Key Features of Solitaire Card Games
+- Original and Classic solitaire gameplay, super fun and addictive
+- Left-hand mode, more convenient for you
+- Solitaire 3 Draw Mode, more challenging to play games
+- Statistics section, keep improving and challenging yourself during solitaire games
+- Daily Challenge, start every day with fun and relaxing Solitaire games
+- Unlimited hints and undo. Playing solitaire could be easier.
+- Play Joker. Get stuck? No worries, the Joker card is here for you to play solitaire card games smoothly
+- Various backgrounds - the classic green one, those with beautiful scenery, and cute animals, etc. Select the one you like, customize your solitaire game, and enjoy!
+- Kinds of card faces and card backs. Playing solitaire is more than a relax, snowman, dogs and cats are here for you to choose from.
+- Dynamic background animation. It brings more fun while playing. You'll love it!
+Some solitaire games are unsolvable, according to the classic solitaire rules. If you get stuck, you can try a new solitaire deal or try some boosters in the solitaire game for help.
+We are always keeping improving to make this free solitaire game better and better. Try this solitaire game, you will find it's really fun and relaxing! Enjoy yourself with the popular and classic solitaire card games for free!
+Privacy Policy: https://solitaire.gurugame.ai/policy.html
+Terms of Service: https://solitaire.gurugame.ai/termsofservice.html
+Relax Now! The Most Addictive Classic Solitaire Card Games for You!
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows
+Card
+Solitaire
+Casual
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Personal info, App activity and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.8
+650K reviews
+5
+4
+3
+2
+1
+Micheal Bohmer
+more_vert
+Flag inappropriate
+September 8, 2026
+not only are there a lot of ads,but they are horrendously difficult to skip past without being dragged all over the Play Store and shutting 2 or 3 pop-ups for the same unwanted game (yes, I'm sure I don't want to install your game that has no relation to solitaire!). I don't mind ads on a free game, but these are repetitive and purposefully difficult to close. Uninstalled and bought a pack of cards.
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Guru Puzzle Game
+September 8, 2026
+Hi, sorry for such inconvenience. As a startup, we have to survive by integrating with ads. Some ads can be skipped after 5 seconds. You can also purchase the "Remove Ads" service to enjoy a no-ads game. If anything else, please reach us at card@fungame.studio. Thanks for your understanding. - Jenny
+C
+more_vert
+Flag inappropriate
+September 17, 2026
+card game itself is okay, but when you play events it gives you impossible scenarios where the hand dealt can not be finished unless you spend coins tonplay a joker card. The further you go into the even the more coins are required. Another reason why 1 star is that after every single game,.you get an ad. same.boring ad that you can't get out of. It just spams you with them. They last forever.
+Did you find this helpful?
+Yes
+No
+Guru Puzzle Game
+September 18, 2026
+Hi, sorry for that. As a startup, we rely on ads. Some ads can be skipped after 5 seconds. You can also purchase the "Remove Ads" service to enjoy a no-ads game. We have forwarded your feedback to our development team If anything else, please reach us at card@fungame.studio. Thanks. - Jenny
+Rocky Rockmaker
+more_vert
+Flag inappropriate
+August 29, 2026
+Ads that prevent returning to game. Busy confusing points scoring. Have to rack up points before you can even see how the normal deck looks. I was just looking for a straight solitaire app and if the interface and cards looked good I'd pay for it. This has the option to purchase, but there's so much other nonsense mucking up the basic gameplay, and such an intense focus on intrusive ads, it was a waste of time to even check out. Frankly, it's garbage. Zero stars.
+7 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Guru Puzzle Game
+August 29, 2026
+Hi, sorry for such inconvenience. As a startup, we have to survive by integrating with ads. Some ads can be skipped after 5 seconds. You can also purchase the "Remove Ads" service to enjoy a no-ads game. We have forwarded your request to our development team. Please reach us at card@fungame.studio. Thanks for your understanding. - Jenny
+See all reviews
+What’s new
+Hey Solitaire players,
+This update includes bug fixes and performance improvements.
+Enjoy yourself with this popular and classic game!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+card@fungame.studio
+shield
+Privacy Policy
+About the developer
+CHAMOMILE PTE. LTD.
+developer@fungame.studio
+C/O: SINGAPORE FOZL GROUP PTE. LTD. 6 Raffles Quay #14-06
+Singapore 048580
++852 6064 1953
+More by Guru Puzzle Game
+arrow_forward
+Ball Sort Puzzle - Color Game
+Guru Puzzle Game
+4.7
+star
+Water Sort Puzzle - Sort Color
+Guru Puzzle Game
+4.7
+star
+Crossmath® - Math Puzzle Games
+Guru Puzzle Game
+4.8
+star
+Goods Puzzle: 3D Sorting Games
+Guru Puzzle Game
+4.8
+star
+Differences - Find & Spot It
+Guru Puzzle Game
+4.8
+star
+Find It Out® - Hidden Object
+Guru Puzzle Game
+4.9
+star
+Similar games
+arrow_forward
+Solitaire - Classic Card Games
+nerByte GmbH
+4.1
+star
+Solitaire - Classic Card Games
+Oakever Games
+4.1
+star
+Spider Solitaire - Card Games
+Fantasy Games Ltd
+4.2
+star
+Solitaire
+Mouse Games
+4.2
+star
+Solitaire
+LinkDesks - Jewel Games Star
+4.4
+star
+Solitaire for Seniors Game
+Guru Puzzle Game
+4.8
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

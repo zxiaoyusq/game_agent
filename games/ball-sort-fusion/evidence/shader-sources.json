@@ -1,0 +1,27 @@
+[
+  {
+    "source": "https://github.com/cocos/cocos-engine/blob/411f98df047c25902f93440d4b22925c2fb65461/tests/fixtures/builtin-effects.ts",
+    "sha256": "a8493532814122e78b489e9a2fbd847ba72abf0112c3cc7b397763ce247fb44b",
+    "processing": "官方元信息保留；展开全局和局部Uniform；保留2D顶点色、纹理采样和抗锯齿；转换GLSL1语法"
+  },
+  {
+    "source": "https://github.com/cocos/cocos-engine/blob/411f98df047c25902f93440d4b22925c2fb65461/editor/assets/effects/internal/builtin-graphics.effect",
+    "sha256": "a67956e09e15b56eb8e8d3f1580f52e6657ff7041c74522ff449a0692c7ed768",
+    "processing": "官方元信息保留；展开全局和局部Uniform；保留2D顶点色、纹理采样和抗锯齿；转换GLSL1语法"
+  },
+  {
+    "source": "https://github.com/cocos/cocos-engine/blob/411f98df047c25902f93440d4b22925c2fb65461/editor/assets/effects/for2d/builtin-sprite.effect",
+    "sha256": "c96f9d8b9f06c7b7d79f881a39eebfac712d0a9cde7ed7cd88d26e42bc2098f1",
+    "processing": "官方元信息保留；展开全局和局部Uniform；保留2D顶点色、纹理采样和抗锯齿；转换GLSL1语法"
+  },
+  {
+    "source": "https://github.com/cocos/cocos-engine/blob/411f98df047c25902f93440d4b22925c2fb65461/editor/assets/chunks/builtin/uniforms/cc-global.chunk",
+    "sha256": "4036cab1daf2dbaa906ac5b934a608ac66836478a96c9e94d51025f44a5f75b6",
+    "processing": "官方元信息保留；展开全局和局部Uniform；保留2D顶点色、纹理采样和抗锯齿；转换GLSL1语法"
+  },
+  {
+    "source": "https://github.com/cocos/cocos-engine/blob/411f98df047c25902f93440d4b22925c2fb65461/editor/assets/chunks/builtin/uniforms/cc-local.chunk",
+    "sha256": "e7ee504b5dd91c441574490e1b27d63c04fdb198b7703d175692f05c5710aceb",
+    "processing": "官方元信息保留；展开全局和局部Uniform；保留2D顶点色、纹理采样和抗锯齿；转换GLSL1语法"
+  }
+]

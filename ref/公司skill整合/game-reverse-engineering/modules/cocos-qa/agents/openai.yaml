@@ -1,0 +1,8 @@
+interface:
+  display_name: "Cocos 构建/QA 验收"
+  short_description: "Cocos Creator 项目完整 QA 验收流水线：构建、测试、装机、截图"
+  brand_color: "#3B82F6"
+  default_prompt: "Use $game-reverse-engineering to run the Cocos build, device and visual acceptance pipeline."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,350 @@
+# Google Play public snapshot: com.pixel.art.coloring.color.number
+URL: https://play.google.com/store/apps/details?id=com.pixel.art.coloring.color.number&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:54.541Z
+HTTP status: 200
+Raw HTML SHA-256: 851b1ee91fe8c9c5623bc60eb467d52a9c2f8c46ee73864bed34336ce1389523
+Raw HTML: research/html-data/store-snapshots/com.pixel.art.coloring.color.number.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Happy Color®: Color by Number
+X-FLOW
+Contains ads
+In-app purchases
+4.4
+star
+3.89M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Happy Color® is the ultimate color by number zen experience, loved by millions of users worldwide! Discover over 40,000 FREE high‑quality coloring pages in one app. From nature, animals, and mandalas to unique Disney and Marvel scenes and original art coloring, there’s something for everyone.
+Whether you’re looking for zen and relaxation, stress relief, or art therapy, adult coloring with Happy Color® is the perfect way to unwind. Just tap to paint by numbers and watch your drawings come to life – anytime, anywhere.
+Reasons to download Happy Color®
+FIND PICTURES YOU LOVE
+Happy Color® now includes a powerful search feature that can help you explore the world of paint by number. Search, discover, and color the pictures that matter to you, whether they relate to your hobbies, passions, zen, or favorite topics. That’s what makes our coloring book so special—everyone can find joy in coloring what they love most.
+ICONIC MARVEL HEROES
+Marvel has officially joined Happy Color, and your next coloring adventure starts now! Discover iconic heroes, dive into spectacular artwork, and explore a universe that has inspired generations of fans around the world. Start exploring the pictures today – and don’t put your cape away just yet. More Marvel pictures are already on the way!
+UNIQUE DISNEY CONTENT
+Happy Color® collaborates with world-renowned studios to bring you unique content. Rediscover unforgettable moments and color some of your favorite characters in iconic scenes from Star Wars, Disney's Beauty and the Beast, The Lion King, Aladdin, Cinderella, Winnie the Pooh, and many more in Happy Color®.
+COLOR ANYWHERE, ANYTIME
+Enjoy coloring for adults at home, during a break, or on the go. Whether you want a moment of zen, need a little stress relief, or just love paint by number art, Happy Color® is always ready.
+COLOR FOR A GOOD CAUSE
+Happy Color® proudly supports global charitable initiatives. Through our special color by number charity events, you can color for a purpose: learn about meaningful causes, enjoy unique drawing collections, and make an impact. You color, we donate.
+ART CREATED BY PROFESSIONAL ARTISTS
+More than 100 talented artists from all over the world create exclusive art coloring pages for Happy Color®. Each drawing in our coloring book for adults is hand‑crafted with care, from detailed mandalas to soothing nature scenes. Enjoy art therapy at its best while exploring unique, inspiring styles that help you relax and recharge.
+FREE FOR EVERYONE
+All 40,000+ paint by number pictures are absolutely FREE. We believe that adult coloring should be accessible to everyone – quality coloring books shouldn’t come at a cost.
+Happy Color® is special. It is not just a color by number app – it’s a global community of people who love art, zen, drawing, and coloring for adults. Our users find zen, creativity, and positivity in their everyday lives through art therapy. Every tap in this paint by number app is a small moment of joy.
+This coloring book for adults combines creativity, mindfulness, and paint by number fun into one app. Whether you’re into detailed art coloring, want to improve your drawing focus, or simply need relaxing art therapy, Happy Color® is here to bring you zen and joy – picture by picture.
+Made with love and loved by millions of users worldwide
+⭐⭐⭐⭐⭐
+"I absolutely LOVE this app! If I could give it 100 stars, I would. It’s so much fun to color, and unlike other color‑by‑number apps, this one has a massive art library with new pictures added every day. I adore the variety – nature, birds, butterflies, art, and the mystery pictures are my favorite. I’m a lifelong fan now!" (c)
+Join our community: Facebook: https://mobile.facebook.com/happycolorbynumber/ Instagram: https://instagram.com/happycolor_official
+Support: support@happycolorapp.com
+Terms: https://xflowgames.com/terms-of-use.html
+Privacy: https://xflowgames.com/privacy-policy.html
+© Disney
+© Disney/Pixar
+© & ™ Lucasfilm Ltd
+© 2026 MARVEL
+Zen coloring book for adults, paint by number art game and unique Disney pics
+Updated on
+Sep 7, 2026
+Puzzle
+Coloring
+Casual
+Single player
+Stylized
+Handicraft
+Crafting
+Light-hearted
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Happy Color®: Color by Number",
+  "url": "https://play.google.com/store/apps/details/Happy_Color_Color_by_Number?id=com.pixel.art.coloring.color.number&hl=en",
+  "description": "Zen coloring book for adults, paint by number art game and unique Disney pics",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/SrSr_L4l99jgmGMy79N0_mEhpdn-fBqpg1hxobrs_daqRyZU-IUaiz3_07Bx-c5fB8JtHE0R5HpB2S8V3XAfJTs",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "X-FLOW",
+    "url": "https://xflowgames.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.366418838500977",
+    "ratingCount": "3894686"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Happy Color®: Color by Number - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Happy Color®: Color by Number
+X-FLOW
+Contains ads
+In-app purchases
+4.4
+star
+3.89M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Happy Color® is the ultimate color by number zen experience, loved by millions of users worldwide! Discover over 40,000 FREE high‑quality coloring pages in one app. From nature, animals, and mandalas to unique Disney and Marvel scenes and original art coloring, there’s something for everyone.
+Whether you’re looking for zen and relaxation, stress relief, or art therapy, adult coloring with Happy Color® is the perfect way to unwind. Just tap to paint by numbers and watch your drawings come to life – anytime, anywhere.
+Reasons to download Happy Color®
+FIND PICTURES YOU LOVE
+Happy Color® now includes a powerful search feature that can help you explore the world of paint by number. Search, discover, and color the pictures that matter to you, whether they relate to your hobbies, passions, zen, or favorite topics. That’s what makes our coloring book so special—everyone can find joy in coloring what they love most.
+ICONIC MARVEL HEROES
+Marvel has officially joined Happy Color, and your next coloring adventure starts now! Discover iconic heroes, dive into spectacular artwork, and explore a universe that has inspired generations of fans around the world. Start exploring the pictures today – and don’t put your cape away just yet. More Marvel pictures are already on the way!
+UNIQUE DISNEY CONTENT
+Happy Color® collaborates with world-renowned studios to bring you unique content. Rediscover unforgettable moments and color some of your favorite characters in iconic scenes from Star Wars, Disney's Beauty and the Beast, The Lion King, Aladdin, Cinderella, Winnie the Pooh, and many more in Happy Color®.
+COLOR ANYWHERE, ANYTIME
+Enjoy coloring for adults at home, during a break, or on the go. Whether you want a moment of zen, need a little stress relief, or just love paint by number art, Happy Color® is always ready.
+COLOR FOR A GOOD CAUSE
+Happy Color® proudly supports global charitable initiatives. Through our special color by number charity events, you can color for a purpose: learn about meaningful causes, enjoy unique drawing collections, and make an impact. You color, we donate.
+ART CREATED BY PROFESSIONAL ARTISTS
+More than 100 talented artists from all over the world create exclusive art coloring pages for Happy Color®. Each drawing in our coloring book for adults is hand‑crafted with care, from detailed mandalas to soothing nature scenes. Enjoy art therapy at its best while exploring unique, inspiring styles that help you relax and recharge.
+FREE FOR EVERYONE
+All 40,000+ paint by number pictures are absolutely FREE. We believe that adult coloring should be accessible to everyone – quality coloring books shouldn’t come at a cost.
+Happy Color® is special. It is not just a color by number app – it’s a global community of people who love art, zen, drawing, and coloring for adults. Our users find zen, creativity, and positivity in their everyday lives through art therapy. Every tap in this paint by number app is a small moment of joy.
+This coloring book for adults combines creativity, mindfulness, and paint by number fun into one app. Whether you’re into detailed art coloring, want to improve your drawing focus, or simply need relaxing art therapy, Happy Color® is here to bring you zen and joy – picture by picture.
+Made with love and loved by millions of users worldwide
+⭐⭐⭐⭐⭐
+"I absolutely LOVE this app! If I could give it 100 stars, I would. It’s so much fun to color, and unlike other color‑by‑number apps, this one has a massive art library with new pictures added every day. I adore the variety – nature, birds, butterflies, art, and the mystery pictures are my favorite. I’m a lifelong fan now!" (c)
+Join our community: Facebook: https://mobile.facebook.com/happycolorbynumber/ Instagram: https://instagram.com/happycolor_official
+Support: support@happycolorapp.com
+Terms: https://xflowgames.com/terms-of-use.html
+Privacy: https://xflowgames.com/privacy-policy.html
+© Disney
+© Disney/Pixar
+© & ™ Lucasfilm Ltd
+© 2026 MARVEL
+Zen coloring book for adults, paint by number art game and unique Disney pics
+Updated on
+Sep 7, 2026
+Puzzle
+Coloring
+Casual
+Single player
+Stylized
+Handicraft
+Crafting
+Light-hearted
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 4 others
+This app may collect these data types
+Location, Personal info and 4 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.3
+3.31M reviews
+5
+4
+3
+2
+1
+April Szarek
+more_vert
+Flag inappropriate
+June 6, 2025
+It's alright in terms of paint by number "games". I like that there is no music but there are too many ads. I get having an ad before I start a photo, but to have one when my screen turned off for a second while still in the menu? No thanks! The selection of pictures is not great compared to other similar apps. I am not a fan of the "realistic" blended ones. I accidentally seem to click on them all the time because the subject is nice, but I don't like the coloring style.
+344 people found this review helpful
+Did you find this helpful?
+Yes
+No
+X-FLOW
+June 8, 2025
+Thanks for your thoughtful feedback! We hear your concerns about the ads and picture styles. We’ll pass your comments along to the team. If you have suggestions on the type of images you’d like to see more of, we’d love to hear them!
+Casey Dickerson
+more_vert
+Flag inappropriate
+Show review history
+August 14, 2025
+I can tolerate the ads, but the ai art is atrocious. Sometimes I can't tell if it's ai until I start coloring. The ai art really ruins the mood. I wish there was a way to hide the ai art. the colors on them are wonky, the shaping of things is weird, and usually with the ai art they make some of the color spots sooooo tiny. The ai art is frustrating and I hate it. I also wish there were more 20 or less color pictures. Sometimes i just want an easy experience with instant gratification.
+851 people found this review helpful
+Did you find this helpful?
+Yes
+No
+X-FLOW
+August 6, 2025
+Thanks for sharing your thoughts! 😊 We really appreciate your honesty and understand how important the coloring experience is. We’re always working to improve the art quality and make sure it’s enjoyable for everyone. Your feedback helps us a lot—thanks again for helping us get better! 🎨✨
+Ashley
+more_vert
+Flag inappropriate
+Show review history
+January 7, 2026
+Probably my most favorite game. I play every day for hours. I love the variety of art styles and difficulties; I can get multiple easy ones done or spend lots of time focusing on the classic paintings. I don't see anything to change about it. They add at least 5 pages a day, with extras for the holidays, and stuff still seems so original and unique every time. edit - I'm starting to lose interest with all the AI pics. I don't use it quite as much as I used to.
+2,319 people found this review helpful
+Did you find this helpful?
+Yes
+No
+X-FLOW
+January 7, 2026
+We’re thrilled you’ve loved Happy Color! Most pages are original artwork by our in-house artists, plus licensed and community content. You can also explore our Facebook page for artist interviews or share your own ideas to keep the creativity fresh.
+See all reviews
+What’s new
+• The Floral Couture collection turns Jeff Leatham’s spectacular floral installations into a breathtaking coloring experience.
+• Power, style, and nostalgia come together in Legends of the Road, a muscle car collection by automotive artist Michael Irvine.
+• Dive into the mesmerizing ocean depths with The Underwater Kingdom collection by Dakota Daetwiler.
+• A pirate, a princess, an inventor, and other quirky cats are waiting for you in The Furrytails Family collection by Sarah Richter.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@happycolorapp.com
+shield
+Privacy Policy
+About the developer
+X-FLOW LTD
+contact@xflowgames.com
+8 Genethliou Mitella
+Limassol 3036
+Cyprus
++357 25 252669
+More by X-FLOW
+arrow_forward
+1LINE –One Line with One Touch
+X-FLOW
+4.1
+star
+Similar games
+arrow_forward
+Pixel Art - Color by Number
+Easybrain
+4.7
+star
+Coloring Book: Color by Number
+Candy Mobile
+4.1
+star
+Pixel Art Coloring: Art Games
+HDuo Fun Games
+4.7
+star
+Art Color: Color by Number
+Color Joy
+3.6
+star
+Jigsaw Puzzles - Puzzle Games
+Easybrain
+4.5
+star
+Word Search Explorer
+PlaySimple Games
+4.8
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

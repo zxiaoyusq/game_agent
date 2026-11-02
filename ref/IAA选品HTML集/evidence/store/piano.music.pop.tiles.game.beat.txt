@@ -1,0 +1,283 @@
+# Google Play public snapshot: piano.music.pop.tiles.game.beat
+URL: https://play.google.com/store/apps/details?id=piano.music.pop.tiles.game.beat&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:19.329Z
+HTTP status: 200
+Raw HTML SHA-256: 8937de049c34b366af61bfa772fbc1a679e87d3677777801bcb48fd340506341
+Raw HTML: research/html-data/store-snapshots/piano.music.pop.tiles.game.beat.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Piano Music Heart: Pop Tiles
+CodiPlayer
+Contains ads
+4.5
+star
+15.9K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Experience the new generation of music games with Piano Music Heart, a new type of rhythm game that MUSIC your heart.
+Play your favorite song with Piano Music Heart, which provides various types of music: Pop, Rap, EDM,K-pop... All the hit songs of 2025 are on your choice!
+Do not hesitate to try free piano online!
+EASY TO PLAY
+● Tap every piano tile to win!
+● Keep tapping to the beat of every song.
+● Feel the rhythm through your fingers.
+COOL FEATURES
+● 2022 top playlist of albums and songs of various styles.
+● Real music feeling when tapping the tiles.
+● Easy to play, hard to master!
+Do not hesitate to try Piano Music Heart: Pop Tiles! This excellent piano game has more surprises for you than you can imagine!
+Play pop songs of 2025! Enjoy the rhythm of piano music.
+Updated on
+Sep 21, 2026
+Available on
+Android,
+Windows*
+#9 top free music
+Music
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Piano Music Heart: Pop Tiles",
+  "url": "https://play.google.com/store/apps/details/Piano_Music_Heart_Pop_Tiles?id=piano.music.pop.tiles.game.beat&hl=en",
+  "description": "Play pop songs of 2025! Enjoy the rhythm of piano music.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_MUSIC",
+  "image": "https://play-lh.googleusercontent.com/NoaW9Q3wi3hetAYZSPgFh6fQCAPksMR-rwsrXN84g7zNCd0NHfREuuMNlETq2uLmDZ-rznqAbktFFm7SIy47Lw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "CodiPlayer",
+    "url": "https://codiplayer.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.543806552886963",
+    "ratingCount": "15905"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Piano Music Heart: Pop Tiles - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Piano Music Heart: Pop Tiles
+CodiPlayer
+Contains ads
+4.5
+star
+15.9K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Experience the new generation of music games with Piano Music Heart, a new type of rhythm game that MUSIC your heart.
+Play your favorite song with Piano Music Heart, which provides various types of music: Pop, Rap, EDM,K-pop... All the hit songs of 2025 are on your choice!
+Do not hesitate to try free piano online!
+EASY TO PLAY
+● Tap every piano tile to win!
+● Keep tapping to the beat of every song.
+● Feel the rhythm through your fingers.
+COOL FEATURES
+● 2022 top playlist of albums and songs of various styles.
+● Real music feeling when tapping the tiles.
+● Easy to play, hard to master!
+Do not hesitate to try Piano Music Heart: Pop Tiles! This excellent piano game has more surprises for you than you can imagine!
+Play pop songs of 2025! Enjoy the rhythm of piano music.
+Updated on
+Sep 21, 2026
+Available on
+Android,
+Windows*
+#9 top free music
+Music
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Location, App activity and 2 others
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+tablet_android
+Tablet
+4.5
+14.5K reviews
+5
+4
+3
+2
+1
+Samreen Siddiqui
+more_vert
+Flag inappropriate
+September 8, 2026
+Its really nice and updated for 2026 with popular songs like stateside and dai dai but I really think there could be more songs added and variety could be increased its overall really nice and fun to play and its unique not like other games where there are old boring songs : )
+Did you find this helpful?
+Yes
+No
+Obedient Mazibuko
+more_vert
+Flag inappropriate
+September 9, 2026
+This app is greatest music tyle i ever played but the reason I gave it 4 stars is that when I use the money I earned to buy music that i don't have it would not let me play them it needs WiFi connection even when I buy the songs because my phone is very laggy when playing games while Wi-Fi is on pls make that you can buy the songs pls🙁
+Did you find this helpful?
+Yes
+No
+Charles Kosichukwu
+more_vert
+Flag inappropriate
+September 3, 2026
+some songs that I was not expecting was also there ,cudos to the creator of this game💕💕💕💕💕😍🤗🤗🤗🤗but1 thing about the game is when you use data to unlock some songs when you don't have data some won't work but I still love the game thanks to the creator💟💟
+6 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+New Piano Music Game!
+The update log:
+1.Hot songs are continuously being updated.
+2.Fixed some issues.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+contact@codiplayer.com
+shield
+Privacy Policy
+About the developer
+ADARIC PTE. LTD.
+contact@codiplayer.com
+1 North Bridge Road #17-05 High Street Centre
+Singapore 179094
++65 8820 3907
+Similar games
+arrow_forward
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+4.3
+star
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+Piano Star: Rhythm Music Game
+XGAME STUDIO
+3.5
+star
+Cat Tiles: Cute Piano Game
+WingsMob
+4.2
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

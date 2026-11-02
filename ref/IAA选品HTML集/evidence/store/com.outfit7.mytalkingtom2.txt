@@ -1,0 +1,398 @@
+# Google Play public snapshot: com.outfit7.mytalkingtom2
+URL: https://play.google.com/store/apps/details?id=com.outfit7.mytalkingtom2&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:56.551Z
+HTTP status: 200
+Raw HTML SHA-256: f36072431b6b07b0e37c1fc93683be5759f11fb2cb84eb680366bac5f8bc2d44
+Raw HTML: research/html-data/store-snapshots/com.outfit7.mytalkingtom2.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+My Talking Tom 2: Pet Game
+Outfit7 Limited
+Contains ads
+In-app purchases
+4.2
+star
+6.75M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+My Talking Tom 2 is a
+virtual pet game
+where you care for Tom, play offline mini-games, and explore fun worlds. Feed him, customise his look, collect pets, and enjoy his iconic talk-back reactions.
+🛁 Virtual Pet Care
+Look after Tom by feeding him, making sure he gets enough sleep, and keeping him happy. Watch him react to what you do — he’ll repeat what you say in his funny voice, laugh at your jokes, and show expressive emotions.
+Help with daily routines like brushing teeth, bathing, and bathroom visits, then jump back into play whenever you like.
+✈️ Explore Worlds by Plane
+Fly Tom’s plane to visit colourful destinations, each with surprises and collectibles:
+✓ Candy Kingdom
+✓ Pirate Island
+✓ Underwater Home
+✓ Adventure Beach
+✓ Magic Forest
+✓ Cyber City
+✓ Dragon Kingdom
+✓ Alien Planet
+🎮 Offline Mini-Games
+Play offline mini-games to earn coins and unlock rewards:
+✓ Space Trails
+✓ Sky Race
+✓ Dunk-a-Pet
+✓ Build Your Plane
+🎨 Customisation and Home Decoration
+Choose from hundreds of outfits and fun styles, change Tom’s look, and decorate his home with items you unlock as you play.
+🐾 Pets and Skills
+Tom has pet companions that join your adventures. Care for them, play together, and watch their interactions.
+Teach Tom new skills like playing drums, shooting hoops, and boxing to unlock fresh animations and moments.
+💬 Talk-Back Reactions
+Tom’s iconic feature returns — he repeats what you say and reacts when you poke or chat to him, keeping every visit lively.
+✅ Play Anywhere
+No Wi-Fi? No problem. Play offline after installation — great for travel and on-the-go sessions.
+Technical Information
+Free to download with optional in-app purchases. Progress saves automatically. Regular updates add seasonal content, outfits, and events. Supports multiple languages, including English, Spanish, Portuguese, French, German, Russian, Turkish, and Arabic.
+This app contains:
+- Promotion of Outfit7's products and advertising;
+- Links that direct customers to Outfit7’s websites and other apps;
+- Personalisation of content to encourage users to play the app again;
+- The option to make in-app purchases;
+- Items to purchase (available at different prices) using virtual currency, depending on the player’s progress;
+- Alternative options to access all functionalities of the app without making any in-app purchases using real money.
+- Some features may be subject to different pricing and availability.
+Terms of use: https://talkingtomandfriends.com/eula/en/
+Privacy policy for games: https://talkingtomandfriends.com/privacy-policy-games/en
+Customer support: support@outfit7.com
+From Outfit7
+From the creators of My Talking Angela 2, My Talking Tom Friends, and Talking Tom Gold Run.
+Offline pet game: care for virtual cat Tom, play mini-games, explore worlds.
+Updated on
+Sep 7, 2026
+Available on
+Android,
+Windows
+#6 top free casual
+Simulation
+Care
+Pet
+Casual
+Single player
+Stylized
+Cartoon
+Animals
+Cat
+House & garden
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "My Talking Tom 2: Pet Game",
+  "url": "https://play.google.com/store/apps/details/My_Talking_Tom_2_Pet_Game?id=com.outfit7.mytalkingtom2&hl=en",
+  "description": "Offline pet game: care for virtual cat Tom, play mini-games, explore worlds.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CASUAL",
+  "image": "https://play-lh.googleusercontent.com/haIV9mm4xqeGBwn3YXnvuEocCwV_8eMUZ8bE4eoFYQGtv2Ax43ewpah_fmM9mWO8SgHniZp6OcaayDaQLT9JIg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Outfit7 Limited",
+    "url": "https://talkingtomandfriends.com/support/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.178391933441162",
+    "ratingCount": "6749102"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+My Talking Tom 2: Pet Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+My Talking Tom 2: Pet Game
+Outfit7 Limited
+Contains ads
+In-app purchases
+4.2
+star
+6.75M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+My Talking Tom 2 is a
+virtual pet game
+where you care for Tom, play offline mini-games, and explore fun worlds. Feed him, customise his look, collect pets, and enjoy his iconic talk-back reactions.
+🛁 Virtual Pet Care
+Look after Tom by feeding him, making sure he gets enough sleep, and keeping him happy. Watch him react to what you do — he’ll repeat what you say in his funny voice, laugh at your jokes, and show expressive emotions.
+Help with daily routines like brushing teeth, bathing, and bathroom visits, then jump back into play whenever you like.
+✈️ Explore Worlds by Plane
+Fly Tom’s plane to visit colourful destinations, each with surprises and collectibles:
+✓ Candy Kingdom
+✓ Pirate Island
+✓ Underwater Home
+✓ Adventure Beach
+✓ Magic Forest
+✓ Cyber City
+✓ Dragon Kingdom
+✓ Alien Planet
+🎮 Offline Mini-Games
+Play offline mini-games to earn coins and unlock rewards:
+✓ Space Trails
+✓ Sky Race
+✓ Dunk-a-Pet
+✓ Build Your Plane
+🎨 Customisation and Home Decoration
+Choose from hundreds of outfits and fun styles, change Tom’s look, and decorate his home with items you unlock as you play.
+🐾 Pets and Skills
+Tom has pet companions that join your adventures. Care for them, play together, and watch their interactions.
+Teach Tom new skills like playing drums, shooting hoops, and boxing to unlock fresh animations and moments.
+💬 Talk-Back Reactions
+Tom’s iconic feature returns — he repeats what you say and reacts when you poke or chat to him, keeping every visit lively.
+✅ Play Anywhere
+No Wi-Fi? No problem. Play offline after installation — great for travel and on-the-go sessions.
+Technical Information
+Free to download with optional in-app purchases. Progress saves automatically. Regular updates add seasonal content, outfits, and events. Supports multiple languages, including English, Spanish, Portuguese, French, German, Russian, Turkish, and Arabic.
+This app contains:
+- Promotion of Outfit7's products and advertising;
+- Links that direct customers to Outfit7’s websites and other apps;
+- Personalisation of content to encourage users to play the app again;
+- The option to make in-app purchases;
+- Items to purchase (available at different prices) using virtual currency, depending on the player’s progress;
+- Alternative options to access all functionalities of the app without making any in-app purchases using real money.
+- Some features may be subject to different pricing and availability.
+Terms of use: https://talkingtomandfriends.com/eula/en/
+Privacy policy for games: https://talkingtomandfriends.com/privacy-policy-games/en
+Customer support: support@outfit7.com
+From Outfit7
+From the creators of My Talking Angela 2, My Talking Tom Friends, and Talking Tom Gold Run.
+Offline pet game: care for virtual cat Tom, play mini-games, explore worlds.
+Updated on
+Sep 7, 2026
+Available on
+Android,
+Windows
+#6 top free casual
+Simulation
+Care
+Pet
+Casual
+Single player
+Stylized
+Cartoon
+Animals
+Cat
+House & garden
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, App info and performance, and Device or other IDs
+This app may collect these data types
+Financial info, App activity and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.2
+5.92M reviews
+5
+4
+3
+2
+1
+Kulvinder
+more_vert
+Flag inappropriate
+Show review history
+June 28, 2026
+came back after 2–3 years expecting the game I loved, but this feels completely different. The old version was simple, relaxing, and actually fun. Now everything feels cluttered, confusing, and full of unnecessary changes. It honestly doesn't even feel like My Talking Tom 2 anymore. I'm really disappointed and regret downloading it. Please bring back the old style because this version has lost the charm that made the game special.
+32 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Adrin Cook
+more_vert
+Flag inappropriate
+September 3, 2026
+The amount of ads is really annoying. I'm well aware of the option to remove them with a purchase, but this game isn't worth putting much money into. It's not bad, but the ads are constantly in the way and make it hard to enjoy. The pop up ads are what I have issues with, everything else is fine if a bit lack-luster in terms of play.
+5 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Outfit7 Limited
+September 4, 2026
+Hello! Thanks for your feedback on the ads. You can remove them with a purchase. For any payment questions, contact our support team at support@outfit7.com or via our contact form. We hope you keep enjoying the game!
+P A
+more_vert
+Flag inappropriate
+September 7, 2026
+Sorry, but this game is far too hard to understand, even after looking at a couple of the video's on How To Play! even they made not a lot of sense. Sorry, but you need more in game instructions ! in other words, as you play, you are guided around the game and how to play and what to do ! for a few games at least, until you get the gist of it, as such. Deleted, sorry !
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Bug fixes and minor gameplay improvements.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@outfit7.com
+shield
+Privacy Policy
+About the developer
+OUTFIT7 LIMITED
+android.cy@outfit7.com
+2 Agiou Ioanni
+Germasogeia 4045
+Cyprus
++357 25 211999
+More by Outfit7 Limited
+arrow_forward
+My Talking Tom Friends
+Outfit7 Limited
+4.3
+star
+My Talking Tom
+Outfit7 Limited
+4.1
+star
+Talking Tom Cat
+Outfit7 Limited
+4.0
+star
+Talking Tom Gold Run
+Outfit7 Limited
+4.3
+star
+My Talking Angela 2
+Outfit7 Limited
+4.3
+star
+My Talking Tom Friends 2
+Outfit7 Limited
+4.2
+star
+Similar games
+arrow_forward
+My Talking Tom Friends 2
+Outfit7 Limited
+4.2
+star
+My Talking Hank: Islands
+Outfit7 Limited
+4.2
+star
+My Talking Angela 2
+Outfit7 Limited
+4.3
+star
+My Talking Angela
+Outfit7 Limited
+4.1
+star
+Talking Tom Hero Dash
+Outfit7 Limited
+4.3
+star
+Talking Tom Gold Run
+Outfit7 Limited
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

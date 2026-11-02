@@ -22,10 +22,14 @@ DEV_DEMO_DIR = DATA_DIR / "dev_demo"
 # 例如 art.images 落到 data/knowledge/art/images/。
 # 与前端 frontend/src/data/knowledgeBase.js 中的 KB_MODULES 一致。
 KB_MODULE_CATEGORIES: dict[str, list[str]] = {
+    "selection": ["docs"],
     "planning": ["docs"],
     "art": ["docs", "images", "videos", "motion", "facial"],
     "dev": ["docs"],
     "ops": ["docs"],
+    "skill": ["docs"],
+    "genre": ["docs"],
+    "framework": ["docs"],
 }
 
 # 单文件上传大小上限（字节）。默认 50MB，可通过环境变量调整。
@@ -43,7 +47,7 @@ for _module, _cats in KB_MODULE_CATEGORIES.items():
 # CORS 允许的前端来源；本地开发时 Vite 默认 5173/5174 都放行
 CORS_ALLOW_ORIGINS = os.getenv(
     "CORS_ALLOW_ORIGINS",
-    "http://localhost:5173,http://localhost:5174",
+    "http://localhost:5173,http://localhost:5174,http://pagent.ahagamecenter.com,http://pagent.ahagamecenter.com:24681",
 ).split(",")
 
 # ---- LLM 配置 -------------------------------------------------------------

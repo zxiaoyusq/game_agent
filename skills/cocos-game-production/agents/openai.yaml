@@ -1,0 +1,6 @@
+interface:
+  display_name: "Cocos 游戏生产与验收"
+  short_description: "融合参考游戏、制作真实 Cocos 工程并完成四阶段生产与验收"
+  default_prompt: "使用 $cocos-game-production 把参考游戏融合成可玩 Cocos 成品，并用实际构建和测试证据完成四阶段工作流。"
+policy:
+  allow_implicit_invocation: true

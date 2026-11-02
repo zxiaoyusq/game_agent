@@ -1,0 +1,295 @@
+# Google Play public snapshot: com.JindoBlu.Antistress
+URL: https://play.google.com/store/apps/details?id=com.JindoBlu.Antistress&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:57.351Z
+HTTP status: 200
+Raw HTML SHA-256: 16a343bbc72ee03446d8fdba899679a13c8f748bf0b85656c20500ce8fe6f074
+Raw HTML: research/html-data/store-snapshots/com.JindoBlu.Antistress.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Antistress - relaxation toys
+JindoBlu
+Contains ads
+In-app purchases
+4.2
+star
+976K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+When you need relaxation, diversion or just a moment of distraction enjoy this collection of toys: hear the sound of a bamboo chime, play with wooden boxes, swipe gently your finger in the water, tap buttons, draw with chalks and so on! Are you waiting for something and you need a diversion? Open Antistress app and start playing with a Newton's cradle! Are you furious with someone? Have some relaxation with the never-old fifteen game! Do you need distraction from study? Open Antistress app and choose one among dozens of toys to play!
+Take your time and live a moment of diversion. This game include also an antistress Bamboo chime, a finger scale and some dirty windows to clean!
+Plus, this stress relief app is constantly updated with new antistress toys every 2 weeks, to help you calm down your anxiety with always fresh contents, like finger spinner, finger cube, slime and a bunch of anxiety free toys.
+Privacy policy : https://www.jindoblu.com/privacy-policy/
+Relax your mind and have something to do in boring moments! Have a break!
+Updated on
+Sep 10, 2026
+Casual
+Hypercasual
+Single player
+Realistic
+Miscellaneous
+Puzzles
+Offline
+Events & offers
+Update available
+New wood chopping game ! Take a log, swing the axe and split it into firewood !
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Antistress - relaxation toys",
+  "url": "https://play.google.com/store/apps/details/Antistress_relaxation_toys?id=com.JindoBlu.Antistress&hl=en",
+  "description": "Relax your mind and have something to do in boring moments! Have a break!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/YbYfgzUMPwExbK0Qi5D_wwPbj7dTv1LCrusjvl4diAn6u4TZHMjyAJq34KWr2LbmwvFULfyXHzWrQEXLdC6_uzk",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "JindoBlu",
+    "url": "https://www.jindoblu.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.1854681968688965",
+    "ratingCount": "976022"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Antistress - relaxation toys - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Antistress - relaxation toys
+JindoBlu
+Contains ads
+In-app purchases
+4.2
+star
+976K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+When you need relaxation, diversion or just a moment of distraction enjoy this collection of toys: hear the sound of a bamboo chime, play with wooden boxes, swipe gently your finger in the water, tap buttons, draw with chalks and so on! Are you waiting for something and you need a diversion? Open Antistress app and start playing with a Newton's cradle! Are you furious with someone? Have some relaxation with the never-old fifteen game! Do you need distraction from study? Open Antistress app and choose one among dozens of toys to play!
+Take your time and live a moment of diversion. This game include also an antistress Bamboo chime, a finger scale and some dirty windows to clean!
+Plus, this stress relief app is constantly updated with new antistress toys every 2 weeks, to help you calm down your anxiety with always fresh contents, like finger spinner, finger cube, slime and a bunch of anxiety free toys.
+Privacy policy : https://www.jindoblu.com/privacy-policy/
+Relax your mind and have something to do in boring moments! Have a break!
+Updated on
+Sep 10, 2026
+Casual
+Hypercasual
+Single player
+Realistic
+Miscellaneous
+Puzzles
+Offline
+Events & offers
+Update available
+New wood chopping game ! Take a log, swing the axe and split it into firewood !
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 2 others
+This app may collect these data types
+Location, Personal info and 2 others
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.2
+876K reviews
+5
+4
+3
+2
+1
+LoLo_Dixon Dixon
+more_vert
+Flag inappropriate
+March 8, 2025
+It is really nice, the ads are a little annoying but they are only around evrey 3-5 minutes I don't really know, but there are so many options I've had it for around 2 months and there is still more to explore! There are additional games, and I can't wait to try them! Also, this app is able to be offline, perfect for the ♡car rides♡. Anyways all of the 'games(?)' There are on here are so perfect I have not had one bug! (Technology bug) so I really love it!
+8,787 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Oskar Jank
+more_vert
+Flag inappropriate
+September 4, 2024
+This game is excellent, in my opinion. It has realistic games and sounds and a whole variety of things to do. Although, I have one suggestion. See the game where you have the cauldron and the red crystal, mushroom and feather, could you please add more materials? It would make it more fun but also add a wider range of potion-making.
+6,238 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Suzi Suzanna
+more_vert
+Flag inappropriate
+August 27, 2024
+I was looking for something. Didn't know this game was exactly what I was looking for. Let my daughter try it out, and it's exactly what I needed. An activity centre! So many choices. The graphics and physics are lovely and realistic. We LOVE that you can affect things by tilting or shaking the phone. Multiple finger touch screen. I paid for the ad free right away. What a wonderful game!
+14,017 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+• New game: Firewood Split
+• Bug fixes and improvements
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+jindofrog@gmail.com
+shield
+Privacy Policy
+About the developer
+JindoJindo Ltd.
+jindofrog@gmail.com
+LEVEL 3 (SUITE 3230) TOWER BUSINESS CENTRE, TRIQ IT-TORRI
+SWATAR BIRKIRKARA
+Malta
++39 371 777 3891
+More by JindoBlu
+arrow_forward
+1 2 3 4 Player Games - Offline
+JindoBlu
+4.2
+star
+Offline Games - No Wifi Games
+JindoBlu
+4.3
+star
+2 Player games : the Challenge
+JindoBlu
+4.5
+star
+Similar games
+arrow_forward
+Antistress relaxing toy game
+XGAME STUDIO
+3.6
+star
+2 3 4 Player Mini Games
+Better World Games
+4.1
+star
+Offline Games: No WiFi - FunOn
+Fun Offline Games
+4.4
+star
+Stickman Party 234 MiniGames
+PlayMax Game Studio
+4.4
+star
+Offline Games - No Wifi Games
+JindoBlu
+4.3
+star
+My Talking Tom Friends
+Outfit7 Limited
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

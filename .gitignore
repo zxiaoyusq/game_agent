@@ -90,6 +90,10 @@ backend/data/knowledge/*/*/*
 backend/data/dev_demo/*
 !backend/data/dev_demo/.gitkeep
 
+# 真实工作流的项目、事件、产物快照与 SQLite 检查点保留在本机。
+backend/data/workflow/*
+!backend/data/workflow/.gitkeep
+
 # -------------------- 其它临时文件 --------------------
 *.tmp
 *.bak

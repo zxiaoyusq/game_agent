@@ -1,0 +1,348 @@
+# Google Play public snapshot: com.JindoBlu.TwoPlayerGamesChallenge
+URL: https://play.google.com/store/apps/details?id=com.JindoBlu.TwoPlayerGamesChallenge&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:51.999Z
+HTTP status: 200
+Raw HTML SHA-256: 7be59172b985d14045a67650d4a9072419a8d68c775ce1fd3f82debc9124d573
+Raw HTML: research/html-data/store-snapshots/com.JindoBlu.TwoPlayerGamesChallenge.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+2 Player games : the Challenge
+JindoBlu
+Contains ads
+In-app purchases
+4.5
+star
+731K reviews
+Rated for 7+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 7+
+Mild Violence
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+If you want to play with your friend on the same device, this is the right game!
+But also if you have no friends to have fun in multiplayer on one device, just play alone against the AI!
+Challenge your friend with this collection of 2 player games and enjoy the beautiful graphics of the minigames!
+Choose between one of the 2 player games ( and remember that you can also play alone against the AI if you have no possibility to multiplayer):
+Ping Pong :
+Move the racket with your finger and challenge your friends!
+Spinner war :
+Push your opponent outside the stage! Two players on a small area are too much!
+Air hockey :
+Use your finger to move the paddle and score letting the puck entering in your friend's goal!
+Snakes :
+Don't touch your opponent's body and stay alive!
+Pool :
+The classic pool game for 2 player on one device!
+Tic tac toe :
+Instead of using pen and paper just open the app and challenge your friend on the same device! A two player classic!
+Penalty kicks :
+Let the goalkeeper dive and kick the soccer ball to make goal!
+Sumo :
+The multiplayer version of a famous Japanese sport!
+And much more! (Like minigolf, racing cars, sword duels, chess...)
+This collection of 2 player games features beautiful minimal graphics to keep your focused on the duel with your opponent and it saves scores between matches, this way you can dispute a 2 player cup and let the challenge go on between minigames!
+Unleash the power of local multiplayer on one device / one phone / one tablet, and bring the fun to the party!
+Disclaimer: this multiplayer game can ruin friendships!
+Challenge your friends in this game! Two players on one device!
+Updated on
+Sep 9, 2026
+Board
+Party
+Casual
+Minigames
+Multiplayer
+Competitive multiplayer
+Single player
+Stylized
+Party & clubbing
+Miscellaneous
+Puzzles
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "2 Player games : the Challenge",
+  "url": "https://play.google.com/store/apps/details/2_Player_games_the_Challenge?id=com.JindoBlu.TwoPlayerGamesChallenge&hl=en",
+  "description": "Challenge your friends in this game! Two players on one device!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ARCADE",
+  "image": "https://play-lh.googleusercontent.com/XwU0XoMDOrKlC9Ur-qsi9ZBaqtPoZUicf_UX2QHx2hqNQd4V7ggI6lZZOB6yFmt2stbtegP2-6gfcZARDZ9uIA",
+  "contentRating": "Rated for 7+",
+  "author": {
+    "@type": "Person",
+    "name": "JindoBlu",
+    "url": "https://www.jindoblu.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.494842529296875",
+    "ratingCount": "730557"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+2 Player games : the Challenge - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+2 Player games : the Challenge
+JindoBlu
+Contains ads
+In-app purchases
+4.5
+star
+731K reviews
+Rated for 7+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 7+
+Mild Violence
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+If you want to play with your friend on the same device, this is the right game!
+But also if you have no friends to have fun in multiplayer on one device, just play alone against the AI!
+Challenge your friend with this collection of 2 player games and enjoy the beautiful graphics of the minigames!
+Choose between one of the 2 player games ( and remember that you can also play alone against the AI if you have no possibility to multiplayer):
+Ping Pong :
+Move the racket with your finger and challenge your friends!
+Spinner war :
+Push your opponent outside the stage! Two players on a small area are too much!
+Air hockey :
+Use your finger to move the paddle and score letting the puck entering in your friend's goal!
+Snakes :
+Don't touch your opponent's body and stay alive!
+Pool :
+The classic pool game for 2 player on one device!
+Tic tac toe :
+Instead of using pen and paper just open the app and challenge your friend on the same device! A two player classic!
+Penalty kicks :
+Let the goalkeeper dive and kick the soccer ball to make goal!
+Sumo :
+The multiplayer version of a famous Japanese sport!
+And much more! (Like minigolf, racing cars, sword duels, chess...)
+This collection of 2 player games features beautiful minimal graphics to keep your focused on the duel with your opponent and it saves scores between matches, this way you can dispute a 2 player cup and let the challenge go on between minigames!
+Unleash the power of local multiplayer on one device / one phone / one tablet, and bring the fun to the party!
+Disclaimer: this multiplayer game can ruin friendships!
+Challenge your friends in this game! Two players on one device!
+Updated on
+Sep 9, 2026
+Board
+Party
+Casual
+Minigames
+Multiplayer
+Competitive multiplayer
+Single player
+Stylized
+Party & clubbing
+Miscellaneous
+Puzzles
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 2 others
+This app may collect these data types
+Location, Personal info and 2 others
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+654K reviews
+5
+4
+3
+2
+1
+Ahmed
+more_vert
+Flag inappropriate
+Show review history
+September 7, 2026
+This game is actually Sooo Good, like all those 24 games in one single app!!!!! It's all good but I have a suggestion that if the app can have an option of inviting friends, or playing with our friends or cousins who are far away from us. I mean to say if you can add online multiplayer or online chatting mode. This could make the game more engaging and appealing
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Aria L
+more_vert
+Flag inappropriate
+July 12, 2026
+the games are great but there's something I don't like about the new feature. before, in sudoku, the hard level had lesser spots filled and even a count for how many boxes we needed to fill, around 56 in hard mode. but now, after the update, the counter of the number of boxes we needed to fill are removed and there are more spots that are already filled. Still a good app though. I love the games.
+20 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Sreeram Jagannath
+more_vert
+Flag inappropriate
+August 28, 2023
+I really appreciate having a variety of games in one app. I do have a suggestion, though. Could we consider determining the winner of the "Hammer Hit" game based on the total score of three hits, instead of just the highest score? This would make the game more engaging, especially when playing against the computer, as a single high score can currently end the game too quickly.
+38,404 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+• New game: Fruit Merge
+• New game: Snakes
+• New game: Yazy Classic
+• New game: Ball Run
+• New game: Reflex Race
+• Fix graphics artifacts on some devices
+• Bug fixes and improvements
+flag
+Flag as inappropriate
+Rated for 7+
+Mild Violence
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+jindofrog@gmail.com
+shield
+Privacy Policy
+About the developer
+JindoJindo Ltd.
+jindofrog@gmail.com
+LEVEL 3 (SUITE 3230) TOWER BUSINESS CENTRE, TRIQ IT-TORRI
+SWATAR BIRKIRKARA
+Malta
++39 371 777 3891
+More by JindoBlu
+arrow_forward
+1 2 3 4 Player Games - Offline
+JindoBlu
+4.2
+star
+Offline Games - No Wifi Games
+JindoBlu
+4.3
+star
+Antistress - relaxation toys
+JindoBlu
+4.2
+star
+Similar games
+arrow_forward
+2 3 4 Player Mini Games
+Better World Games
+4.1
+star
+Stickman Party 234 MiniGames
+PlayMax Game Studio
+4.4
+star
+2 3 4 Player Party MiniGames
+PlayMax Game Studio
+4.3
+star
+Supreme Duelist
+Neron's Brother
+4.4
+star
+Offline Games - No Wifi Games
+JindoBlu
+4.3
+star
+Tic Tac Toe 2 Player: XO Game
+Onetap Global
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

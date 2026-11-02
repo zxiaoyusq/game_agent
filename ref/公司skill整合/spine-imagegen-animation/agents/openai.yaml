@@ -1,0 +1,8 @@
+interface:
+  display_name: "Spine ImageGen Animation"
+  short_description: "Export ImageGen character art for Spine"
+  brand_color: "#D48645"
+  default_prompt: "Use $spine-imagegen-animation to split this character into complete transparent parts and export a Spine idle animation."
+
+policy:
+  allow_implicit_invocation: true

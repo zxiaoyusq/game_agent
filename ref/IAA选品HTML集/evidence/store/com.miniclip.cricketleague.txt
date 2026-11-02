@@ -1,0 +1,358 @@
+# Google Play public snapshot: com.miniclip.cricketleague
+URL: https://play.google.com/store/apps/details?id=com.miniclip.cricketleague&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:50.810Z
+HTTP status: 200
+Raw HTML SHA-256: 6dda3a37006e89506bbf3250ddaa133b1eb33bc2f1139b591ba5c1895bb24616
+Raw HTML: research/html-data/store-snapshots/com.miniclip.cricketleague.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Cricket League
+Miniclip.com
+Contains ads
+In-app purchases
+4.5
+star
+3.77M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Play quick two over matches against your friends or players around the world in just a few minutes! Ready..Set..Start your own Cricket saga now!
+FREE Online 3D Cricket Game!
+🏏 3D Multiplayer Cricket Sports Game
+🏏 Easy to learn Batting and Bowling
+🏏 Win matches to get coins and build your dream team!
+🏏 Play with your friends and family!
+🏏 Create your team and top the leagues
+Travel all over the world playing against the best cricketers from the best pitches all over the world where the top ODI,T20 matches have taken place:
+Mumbai | Karachi | Adelaide | Dubai | Johannesburg | Dhaka | Melbourne | London
+Have an amazing mobile Cricket experience!
+🏏 Play Quick 2 Over matches in 3-5 mins!
+🏏 Learn Cricket controls in under a minute!
+🏏 Play with your friends from around the world
+🏏 Unlock the dream team and battle to reach the highest level.
+🏏 Collect over 25 characters!
+🏏 Level up your players to unlock new ways to play
+🏏 Buy new types of balls to increase your chances of winning!
+🏏 Play with awesome deliveries like Doosra, Sling, In/Out Swings
+🏏 Compete in leagues and become the master team in this great sport!
+🏏 Play in multiple different locations around the world like India,Bangladesh, England, Australia and South Africa!
+🏏 Unlock new locations to win even more coins!
+🏏 Stick to the best strategies and match with the best players!
+🏏 Super Smooth gameplay even on a 2G/3G network!
+This game includes optional in-game purchases (includes random items)
+Don’t miss out on the latest news:
+Like Miniclip: http://facebook.com/miniclip
+Follow us on Twitter: http://twitter.com/miniclip
+------------------------------------
+Find out more about Miniclip: http://www.miniclip.com
+TERMS AND CONDITIONS: https://www.miniclip.com/terms-and-conditions
+PRIVACY POLICY: https://www.miniclip.com/privacy-policy
+Blazing fast 1v1 cricket game with 2 overs of bowling, batting & tons of tactics
+Updated on
+Sep 7, 2026
+#3 top free sports
+Sports
+Cricket
+Casual
+Multiplayer
+Competitive multiplayer
+Stylized
+Sports
+Competitive
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Cricket League",
+  "url": "https://play.google.com/store/apps/details/Cricket_League?id=com.miniclip.cricketleague&hl=en",
+  "description": "Blazing fast 1v1 cricket game with 2 overs of bowling, batting & tons of tactics",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_SPORTS",
+  "image": "https://play-lh.googleusercontent.com/4iihkuMjs778kJ95p-cBE8rATGJmgRmigYQMuvbhesaqRLnJFHZ9xkb_YuOPaCGzAOlEi5uGaxvuoQZgG21Rsg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Miniclip.com",
+    "url": "https://www.miniclip.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.548640251159668",
+    "ratingCount": "3767447"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Cricket League - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Cricket League
+Miniclip.com
+Contains ads
+In-app purchases
+4.5
+star
+3.77M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+About this game
+arrow_forward
+Play quick two over matches against your friends or players around the world in just a few minutes! Ready..Set..Start your own Cricket saga now!
+FREE Online 3D Cricket Game!
+🏏 3D Multiplayer Cricket Sports Game
+🏏 Easy to learn Batting and Bowling
+🏏 Win matches to get coins and build your dream team!
+🏏 Play with your friends and family!
+🏏 Create your team and top the leagues
+Travel all over the world playing against the best cricketers from the best pitches all over the world where the top ODI,T20 matches have taken place:
+Mumbai | Karachi | Adelaide | Dubai | Johannesburg | Dhaka | Melbourne | London
+Have an amazing mobile Cricket experience!
+🏏 Play Quick 2 Over matches in 3-5 mins!
+🏏 Learn Cricket controls in under a minute!
+🏏 Play with your friends from around the world
+🏏 Unlock the dream team and battle to reach the highest level.
+🏏 Collect over 25 characters!
+🏏 Level up your players to unlock new ways to play
+🏏 Buy new types of balls to increase your chances of winning!
+🏏 Play with awesome deliveries like Doosra, Sling, In/Out Swings
+🏏 Compete in leagues and become the master team in this great sport!
+🏏 Play in multiple different locations around the world like India,Bangladesh, England, Australia and South Africa!
+🏏 Unlock new locations to win even more coins!
+🏏 Stick to the best strategies and match with the best players!
+🏏 Super Smooth gameplay even on a 2G/3G network!
+This game includes optional in-game purchases (includes random items)
+Don’t miss out on the latest news:
+Like Miniclip: http://facebook.com/miniclip
+Follow us on Twitter: http://twitter.com/miniclip
+------------------------------------
+Find out more about Miniclip: http://www.miniclip.com
+TERMS AND CONDITIONS: https://www.miniclip.com/terms-and-conditions
+PRIVACY POLICY: https://www.miniclip.com/privacy-policy
+Blazing fast 1v1 cricket game with 2 overs of bowling, batting & tons of tactics
+Updated on
+Sep 7, 2026
+#3 top free sports
+Sports
+Cricket
+Casual
+Multiplayer
+Competitive multiplayer
+Stylized
+Sports
+Competitive
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 5 others
+This app may collect these data types
+Location, Personal info and 6 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+3.71M reviews
+5
+4
+3
+2
+1
+Nishan
+more_vert
+Flag inappropriate
+July 16, 2026
+I am reporting a serious issue that caused me to lose my match unfairly. During the game, the screen became unresponsive because of a bug. I had 3 balls no ball , but I was unable to play because the controls stopped working properly. As a result, I lost the match through no fault of my own and unfairly lost my coins. This was clearly a technical issue on your side, not a gameplay mistake. I request that you investigate the match logs and verify the bug. and refund my coin
+20 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Ankit Jain
+more_vert
+Flag inappropriate
+July 16, 2026
+After the latest update, the game incorrectly detects my phone as rooted and refuses to run, even though my device is not rooted. It keeps showing the message: "You seem to have a rooted device. Please remove the device rooting and reinstall the game." This is very frustrating because I can no longer play after the update. Please fix the root detection issue or provide a proper solution. Many legitimate users are being affected.
+23 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Deepika Nath
+more_vert
+Flag inappropriate
+June 27, 2026
+I have played this game before, and back then, there were no ads; however, now that I’ve reinstalled it, ads keep popping up every now and then. I really like this game, but these days, there are more ads of all different kinds than actual gameplay. These ads ruin the mood, and I end up losing the desire to play altogether. And while playing the game, if my network drops for even a single second, the game exits automatically and I lose my coins. This shouldn't happen. 😕
+32 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+New customization options are here! Pick your team's shirt, customize fan reactions, wicket celebrations, and winning celebrations to create your unique identity.
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@miniclip.com
+shield
+Privacy Policy
+About the developer
+Miniclip SA
+support@miniclip.com
+rue des Beaux-Arts 8
+2000 Neuchâtel
+Switzerland
++41 32 560 38 68
+More by Miniclip.com
+arrow_forward
+Carrom Pool: Disc Game
+Miniclip.com
+4.6
+star
+Pure Sniper: Gun Shooter Games
+Miniclip.com
+4.5
+star
+8 Ball Pool
+Miniclip.com
+4.7
+star
+Chess Clash: Online & Offline
+Miniclip.com
+4.4
+star
+Mini Militia - War.io
+Miniclip.com
+4.1
+star
+Football Strike: Online Soccer
+Miniclip.com
+4.6
+star
+Similar games
+arrow_forward
+Real Cricket™
+KRAFTON, Inc.
+4.4
+star
+Real Cricket™ Swipe
+Nautilus Mobile
+4.3
+star
+Real Cricket™ 20
+Nautilus Mobile
+4.1
+star
+World Cricket Championship 2
+Nextwave Multimedia
+4.1
+star
+Sachin Saga Pro Cricket
+JetSynthesys Inc
+4.2
+star
+Dream Cricket 2026
+Sporta Technologies Private Limited
+4.2
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

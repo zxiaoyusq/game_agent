@@ -1,0 +1,349 @@
+# Google Play public snapshot: com.imangi.templerun2
+URL: https://play.google.com/store/apps/details?id=com.imangi.templerun2&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:48.056Z
+HTTP status: 200
+Raw HTML SHA-256: d74895036ce1bff49d1a488f162e40404e56632ae129de2494406c23c02c7412
+Raw HTML: research/html-data/store-snapshots/com.imangi.templerun2.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Temple Run 2
+Imangi Studios
+Contains ads
+In-app purchases
+4.0
+star
+9.83M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Temple Run 2: The Ultimate Endless Runner Action Adventure Game
+Dash into the world of Temple Run 2, the best endless runner game where arcade action, strategy, and adventure collide! Take on fun challenges with millions of players worldwide as you run, jump, and escape through stunning jungle worlds. Can you survive the endless chase of the Demon Monkey and become the ultimate runner in this top rated free game?
+Why Temple Run 2?
+• Endless Arcade Action and Adventure Awaits: Run through lush jungles, perilous cliffs, fiery volcanoes, and snowy mountains. Every run is a chance to explore new adventures in breathtaking locations.
+• Non-Stop Arcade Action: Swipe to turn, jump, slide, dash, parkour, and dodge obstacles in a thrilling race for survival. Escape the Demon Monkey as you jump onto mining karts going down train tracks, surf down an icy mountain, and zipline down cliffs. With fast-paced action and intuitive controls, every run is a new challenge.
+• Legendary Characters: Play as fan favorites like Guy Dangerous, Scarlett Fox, Karma Lee, with unique abilities to enhance your gameplay. Unlock power new heroes with fantasy, sci-fi, sports, and Chinese folklore themes. Customize their outfits with pets and hats and dominate the leaderboard.
+• Powerful Power-Ups: Use shields, coin magnets, and speed boosts to power up your runs and achieve super sonic speeds. These game-changing power-ups will keep you ahead of the danger.
+• Compete and Conquer: Challenge players worldwide in this free offline game. Climb the leaderboard and prove you’re the best runner in the world!
+• No WiFi game, no internet needed: Enjoy endless fun offline without an internet connection. Temple Run 2 is perfect for gaming on the go.
+What’s New in Temple Run 2?
+• New Locations: Discover recently added jungle worlds and limited-time environments that bring more adventure and excitement.
+• Seasonal Events: Celebrate with special updates, exclusive characters, and festive challenges for every holiday.
+• Enhanced Gameplay: Experience smoother controls, faster load times, and upgraded visuals for an unbeatable running game experience.
+Key Features of Temple Run 2
+• Explore jungle adventures and breathtaking worlds.
+• Varied level designs with mining karts going down train tracks, surfing down icy mountains, dangerous traps, and ziplines down cliffs.
+• Unlock heroes and use game-changing power-ups to boost your runs.
+• Play the ultimate no WiFi action arcade adventure game, perfect for gaming anytime.
+• Compete in global leaderboards and challenge friends.
+• Enjoy the thrill of running, jumping, parkouring, and escaping in the best endless runner game.
+Why Millions Love Temple Run 2
+• A combination of adventure, skill, and non-stop action.
+• Perfect for fans of free offline games, adventure games, action arcade, and running games.
+• Easy to play, yet addictive and challenging.
+Download Temple Run 2 Now!
+Start your escape today in the most thrilling free endless runner game. Run, jump, and slide your way to glory while enjoying the ultimate jungle adventure. Download now and join the excitement of Temple Run 2!
+Run, jump, and escape in the ultimate endless jungle adventure game!
+Updated on
+Sep 9, 2026
+#4 top free action
+Action
+Platformer
+Runner
+Arcade
+Single player
+Stylized
+Miscellaneous
+Relics
+Intense
+Offline
+Events & offers
+Ends in 5h
+Collect Coins. Reach New Heights.
+Expires on 10/11
+Hercules + Rewards Await
+Update available
+A New World Awaits
+Update available
+Unlock the Hero of Olympus
+Ends on 10/12
+A New Temple Pass Awaits!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Temple Run 2",
+  "url": "https://play.google.com/store/apps/details/Temple_Run_2?id=com.imangi.templerun2&hl=en",
+  "description": "Run, jump, and escape in the ultimate endless jungle adventure game!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ACTION",
+  "image": "https://play-lh.googleusercontent.com/48yHWnGUQ5S8qgQ13CAtp0EOuPN23443EM7K_NG0HiX_icUINAbUPLJoVOuGSTy9zTIPIDJ9shcSVPhe-VHmCE0",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Imangi Studios",
+    "url": "http://www.imangistudios.com/contact.html"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.045004844665527",
+    "ratingCount": "9834519"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Temple Run 2 - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Temple Run 2
+Imangi Studios
+Contains ads
+In-app purchases
+4.0
+star
+9.83M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Temple Run 2: The Ultimate Endless Runner Action Adventure Game
+Dash into the world of Temple Run 2, the best endless runner game where arcade action, strategy, and adventure collide! Take on fun challenges with millions of players worldwide as you run, jump, and escape through stunning jungle worlds. Can you survive the endless chase of the Demon Monkey and become the ultimate runner in this top rated free game?
+Why Temple Run 2?
+• Endless Arcade Action and Adventure Awaits: Run through lush jungles, perilous cliffs, fiery volcanoes, and snowy mountains. Every run is a chance to explore new adventures in breathtaking locations.
+• Non-Stop Arcade Action: Swipe to turn, jump, slide, dash, parkour, and dodge obstacles in a thrilling race for survival. Escape the Demon Monkey as you jump onto mining karts going down train tracks, surf down an icy mountain, and zipline down cliffs. With fast-paced action and intuitive controls, every run is a new challenge.
+• Legendary Characters: Play as fan favorites like Guy Dangerous, Scarlett Fox, Karma Lee, with unique abilities to enhance your gameplay. Unlock power new heroes with fantasy, sci-fi, sports, and Chinese folklore themes. Customize their outfits with pets and hats and dominate the leaderboard.
+• Powerful Power-Ups: Use shields, coin magnets, and speed boosts to power up your runs and achieve super sonic speeds. These game-changing power-ups will keep you ahead of the danger.
+• Compete and Conquer: Challenge players worldwide in this free offline game. Climb the leaderboard and prove you’re the best runner in the world!
+• No WiFi game, no internet needed: Enjoy endless fun offline without an internet connection. Temple Run 2 is perfect for gaming on the go.
+What’s New in Temple Run 2?
+• New Locations: Discover recently added jungle worlds and limited-time environments that bring more adventure and excitement.
+• Seasonal Events: Celebrate with special updates, exclusive characters, and festive challenges for every holiday.
+• Enhanced Gameplay: Experience smoother controls, faster load times, and upgraded visuals for an unbeatable running game experience.
+Key Features of Temple Run 2
+• Explore jungle adventures and breathtaking worlds.
+• Varied level designs with mining karts going down train tracks, surfing down icy mountains, dangerous traps, and ziplines down cliffs.
+• Unlock heroes and use game-changing power-ups to boost your runs.
+• Play the ultimate no WiFi action arcade adventure game, perfect for gaming anytime.
+• Compete in global leaderboards and challenge friends.
+• Enjoy the thrill of running, jumping, parkouring, and escaping in the best endless runner game.
+Why Millions Love Temple Run 2
+• A combination of adventure, skill, and non-stop action.
+• Perfect for fans of free offline games, adventure games, action arcade, and running games.
+• Easy to play, yet addictive and challenging.
+Download Temple Run 2 Now!
+Start your escape today in the most thrilling free endless runner game. Run, jump, and slide your way to glory while enjoying the ultimate jungle adventure. Download now and join the excitement of Temple Run 2!
+Run, jump, and escape in the ultimate endless jungle adventure game!
+Updated on
+Sep 9, 2026
+#4 top free action
+Action
+Platformer
+Runner
+Arcade
+Single player
+Stylized
+Miscellaneous
+Relics
+Intense
+Offline
+Events & offers
+Ends in 5h
+Collect Coins. Reach New Heights.
+Expires on 10/11
+Hercules + Rewards Await
+Update available
+A New World Awaits
+Update available
+Unlock the Hero of Olympus
+Ends on 10/12
+A New Temple Pass Awaits!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Financial info, App activity and 2 others
+This app may collect these data types
+Financial info, App activity and 2 others
+Data isn’t encrypted
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.0
+8.86M reviews
+5
+4
+3
+2
+1
+Zafar Alam
+more_vert
+Flag inappropriate
+Show review history
+August 20, 2026
+Temple Run 2 is an exciting endless-running adventure game. You control a character who runs through forests, temples, mines, and other dangerous locations while avoiding obstacles and collecting coins. You can jump, slide, turn, and use power-ups to run farther. The game is fast-paced, colorful, and fun for players who enjoy action and adventure games.
+9 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Nihar Parekh
+more_vert
+Flag inappropriate
+Show review history
+March 15, 2021
+I've been playing this game for 3 years but most worst thing is too lose all your progress,jems, character that you unlocked. I bought a new phone and all my data is gone so what's the point spending time to play, try to make high score, collecting character. It doesn't make sense if we lose all of it in the end. They should give us a space store our progress on server like the other games. I really hate this.
+113,602 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Ankita Sarkar
+more_vert
+Flag inappropriate
+March 5, 2022
+Its a very addicting game! But the reason I gave it a 4 stars is because the update kind of made things a bit harder ( in my opinion). For example, I just cant find the settings to change our coin skins. But otherwise, this game would be a full 5 star for sure! At the end, this really is a good game because of the different runner skins, the different maps, the cool features and much more!
+184,687 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Return to Twilight Palace, where mysterious halls hide powerful relics and ancient secrets.
+- Unlock new runner Lucien Cross through limited-time challenges.
+- Explore the returning Twilight Palace map.
+- Run with fan favorites Selene Celeste, Nezha, Fan Jia Ming, and more.
+- Complete Global Challenges to earn exclusive rewards.
+Every lesson is an adventure. Every run reveals a new secret. Join the run!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support-tr2@imangistudios.com
+shield
+Privacy Policy
+About the developer
+IMANGI STUDIOS LLC
+contact@imangistudios.com
+9650 Strickland Rd Ste 103
+Raleigh, NC 27615
+United States
++1 919-424-1511
+Similar games
+arrow_forward
+Subway Surfers
+SYBO Games
+4.4
+star
+Subway Princess Runner
+Ivy
+4.0
+star
+Kooply Run™: Play and Create!
+KOOPLY
+3.9
+star
+Sonic Dash Run
+SEGA
+4.5
+star
+Hunter Assassin
+Ruby Games AS
+4.1
+star
+Cat Runner: Decorate Home
+Ivy
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

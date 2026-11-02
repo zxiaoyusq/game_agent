@@ -1,0 +1,347 @@
+# Google Play public snapshot: com.oakever.arrows
+URL: https://play.google.com/store/apps/details?id=com.oakever.arrows&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:00.793Z
+HTTP status: 200
+Raw HTML SHA-256: a8d08d58cf90d73eda8afe5f541b18b7932a47948983936dcf9f56ec3f70ebfb
+Raw HTML: research/html-data/store-snapshots/com.oakever.arrows.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Amaze GO!
+Oakever Games
+Contains ads
+4.3
+star
+239K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Welcome to Amaze GO! A clean arrow puzzle game built to calm a busy mind. Every arrow points the way — what you need to do is to choose the right order. The design cuts visual noise, reduces chaos, and helps you organize thoughts as you play. Pick up an arrow. Find its lane. Repeat until the grid is yours. Enjoy the quiet flow offline anywhere and anytime.
+What makes Amaze GO! great
+1. Simple arrow mechanics, zero visual noise
+2. Works offline with a clean interface that keeps attention on the board
+3. Calm play loop for smart brains: think clearly, move each arrow with strategy
+4. Smooth tap controls, clear path feedback, and satisfying release moments like ASMR
+How to Play
+- Find an arrow with a free path to the edge
+- Tap to slide that arrow off the grid and open a lane for the next move
+- Plan the order to secure a safe route and a clean board
+- Long-Press to use Guidance to highlight directions when your path is unclear
+- A wrong tap costs a heart for the level
+- Clear the board to finish the level and aim for a perfect run
+- Hints help focus when the grid feels tight
+Why love this arrow puzzle
+· Simple rules, profound strategy, and a meditative arrow puzzle
+· Short breaks ease stress and sharpen focus
+· The last arrow leaves the board with a satisfying mental reset
+· Cognitive workout for sequencing and brain teasers
+· Quiet visuals, plus a satisfying whoosh as each arrow flies off the grid — feedback that soothes instead of nags
+Made for the in-between moments
+- The ten minutes before a meeting starts
+- The metro ride too short for a podcast
+- The flight where your signal drops
+- The wind-down after a noisy workday
+Amaze GO! - Puzzle Games is a calm arrow puzzle made for sharp minds and calm moments. Learn fast, then master timing and order. Send every arrow off the board, untangle the grid, and feel disorder turn into clarity. Amaze GO! is the puzzle you reach for when the rest of the day was too loud — one good move, then another, then a quiet board. Download now, plan smart paths, keep hearts safe, and enjoy pure focus anytime, anywhere!
+Tap to clear the board, solve brain puzzles!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows*
+#2 top free puzzle
+Puzzle
+Logic
+Single player
+Abstract
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Amaze GO!",
+  "url": "https://play.google.com/store/apps/details/Amaze_GO?id=com.oakever.arrows&hl=en",
+  "description": "Tap to clear the board, solve brain puzzles!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/z54K2UZPuABcdfrjgcRc0_--d3V1WMPFcrvYku299sV4PJXEz7oosH8G3ZvZtkTjbiXpyc196MGWMi9zcVa9TA",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Oakever Games",
+    "url": "https://oakevergames.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.346500873565674",
+    "ratingCount": "239358"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Amaze GO! - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Amaze GO!
+Oakever Games
+Contains ads
+4.3
+star
+239K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Welcome to Amaze GO! A clean arrow puzzle game built to calm a busy mind. Every arrow points the way — what you need to do is to choose the right order. The design cuts visual noise, reduces chaos, and helps you organize thoughts as you play. Pick up an arrow. Find its lane. Repeat until the grid is yours. Enjoy the quiet flow offline anywhere and anytime.
+What makes Amaze GO! great
+1. Simple arrow mechanics, zero visual noise
+2. Works offline with a clean interface that keeps attention on the board
+3. Calm play loop for smart brains: think clearly, move each arrow with strategy
+4. Smooth tap controls, clear path feedback, and satisfying release moments like ASMR
+How to Play
+- Find an arrow with a free path to the edge
+- Tap to slide that arrow off the grid and open a lane for the next move
+- Plan the order to secure a safe route and a clean board
+- Long-Press to use Guidance to highlight directions when your path is unclear
+- A wrong tap costs a heart for the level
+- Clear the board to finish the level and aim for a perfect run
+- Hints help focus when the grid feels tight
+Why love this arrow puzzle
+· Simple rules, profound strategy, and a meditative arrow puzzle
+· Short breaks ease stress and sharpen focus
+· The last arrow leaves the board with a satisfying mental reset
+· Cognitive workout for sequencing and brain teasers
+· Quiet visuals, plus a satisfying whoosh as each arrow flies off the grid — feedback that soothes instead of nags
+Made for the in-between moments
+- The ten minutes before a meeting starts
+- The metro ride too short for a podcast
+- The flight where your signal drops
+- The wind-down after a noisy workday
+Amaze GO! - Puzzle Games is a calm arrow puzzle made for sharp minds and calm moments. Learn fast, then master timing and order. Send every arrow off the board, untangle the grid, and feel disorder turn into clarity. Amaze GO! is the puzzle you reach for when the rest of the day was too loud — one good move, then another, then a quiet board. Download now, plan smart paths, keep hearts safe, and enjoy pure focus anytime, anywhere!
+Tap to clear the board, solve brain puzzles!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows*
+#2 top free puzzle
+Puzzle
+Logic
+Single player
+Abstract
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 3 others
+This app may collect these data types
+Personal info and Financial info
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.3
+226K reviews
+5
+4
+3
+2
+1
+Mistuba Takanashi
+more_vert
+Flag inappropriate
+June 3, 2026
+This game was so much fun! It was recommended to me by a friend. One accessibility issue I want to address is the difficulty with clicking on lines. Sometimes they are too close together, and you accidentally click the wrong one due to a fat finger. It would be nice to have a "hold to select" feature, allowing you to drag release the figure to click the highlighted arrow. "drag down" to cancel. Optionally a magnified view. for vision problems
+29 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Virginia G
+more_vert
+Flag inappropriate
+April 10, 2026
+While fun and challenging, by the time you get to 315 games, you can see they've rehashed the same games several times over, because you "get" the pattern, therefore not challenging anymore. To "avoid" the ads, you need to exit the game, and re-enter again. overall fun at first, but the kicker for me was an ad/threat that told me hackers had already accessed my phone. I'm tech savvy and knew it wasn't legit, but still count it very poor form. It's a GOOD BYE from me.
+52 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Oakever Games
+April 10, 2026
+Thank you for your feedback! We’re sorry for the frustration caused by repeated puzzles and intrusive ads. We’ve passed your comments to our team to optimize puzzle content and ad settings. We’ll keep working to provide a better gaming experience and appreciate your support.
+Nick Hollister
+more_vert
+Flag inappropriate
+April 30, 2026
+Fun little game with encroaching ads. simple and enjoyable. clean interface and intuitive controls. game was great! until level 15 and then I started getting the long ads in between every single level. The ones where you have to let it play for a minute, then go to the Play store and decline, and then forward past it. no way to buy the game to turn them off that I could see. I'm not against ads, but I don't need to deal with them between every level when I'm solving levels under 60 seconds.
+40 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Oakever Games
+May 15, 2026
+Thank you for your feedback. Our current version does not feature VIP purchasing options. However, our technical team is actively researching this aspect. This iteration is not final, and we will certainly take your feedback into consideration in the future. Wishing you a pleasant day ahead.
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@oakevergames.com
+shield
+Privacy Policy
+About the developer
+OAKEVER GAMES PTE. LTD.
+support@oakevergames.com
+C/O: FIDELIUM GROUP PTE. LTD.
+400 Orchard Road #11-08 Orchard Towers
+Singapore 238875
++65 9359 0734
+More by Oakever Games
+arrow_forward
+Tile Explorer - Triple Match
+Oakever Games
+4.5
+star
+Meowdoku: Brain Puzzle Games
+Oakever Games
+4.7
+star
+Paint by Number: Coloring Game
+Oakever Games
+4.3
+star
+Zen Color - Color By Number
+Oakever Games
+4.9
+star
+Hidden Fest: Words in Pictures
+Oakever Games
+4.5
+star
+Sudoku - Classic Sudoku Puzzle
+Oakever Games
+4.8
+star
+Similar games
+arrow_forward
+Arrows – Puzzle Escape
+Lessmore GmbH
+4.5
+star
+Mahjong Blast: Puzzle Match
+Nebula Studio
+4.6
+star
+Vita Mahjong
+Vita Studio.
+4.6
+star
+Tile Club - Match Puzzle Games
+GamoVation
+4.4
+star
+Car Jam Solver: Traffic Jam
+Ladaneta Games
+4.6
+star
+Block Blast!
+HungryStudio
+4.6
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

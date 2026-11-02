@@ -1,0 +1,365 @@
+# Google Play public snapshot: com.soccer.score.star
+URL: https://play.google.com/store/apps/details?id=com.soccer.score.star&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:49.288Z
+HTTP status: 200
+Raw HTML SHA-256: f1e7a03250238f9ccfa11e77ec6444c3eb0d7afe323bc0c99d2b59ba60d3bd7f
+Raw HTML: research/html-data/store-snapshots/com.soccer.score.star.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Soccer Superstar
+Real Freestyle Soccer
+Contains ads
+In-app purchases
+4.4
+star
+3.5M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Step onto the pitch and become the hero of every moment in Soccer Super Star!
+Swipe, curve, and score through 5000+ levels of fast, skill-based soccer action. This is your road to 2026 glory on the world stage as you chase the ultimate cup.
+No energy limits. No waiting. No pressure.
+Just pure soccer, played your way anytime and anywhere, even offline.
+Easy to pick up and challenging to master, every goal is in your hands.
+With simple flick controls and realistic ball physics, you can draw passes, bend shots, and curve the ball exactly where you want.
+Sounds easy? As you progress, you’ll need precision and creativity to unlock defenses and find the perfect path to goal.
+Every level is a smart, rewarding challenge where placement and control make the difference.
+Experience dynamic gameplay across beautifully designed pitches and evolving match conditions.
+From clean finishes to complex attacking plays, every scenario feels fresh and satisfying.
+Take on thousands of handcrafted levels and rise through your journey toward football glory.
+Build your path, chase the moment, and make every shot count to get one step closer to lifting the cup on the world arena.
+Discover new ways to play with special modes and unique challenges that put you in key moments.
+Take decisive shots, complete crucial plays, and step into goalkeeping situations when it matters most.
+Enjoy smooth, responsive gameplay powered by improved AI and fluid match flow.
+Every pass, every curve, and every goal feels natural and satisfying.
+Play anytime and anywhere, even offline.
+Whether you have a quick break or time for a longer session, the pitch is always ready.
+Download now and start your journey.
+The next unforgettable goal is just one swipe away.
+GAME FEATURES:
+INTUITIVE FLICK CONTROLS
+Swipe to pass, shoot, and curve the ball with precision.
+5000+ LEVELS
+Massive, handcrafted challenges with increasing difficulty.
+NO ENERGY LIMITS
+Play as much as you want with no waiting and no interruptions.
+OFFLINE PLAY
+Enjoy the full game anytime and anywhere.
+REALISTIC BALL PHYSICS
+Feel every pass and shot with responsive, satisfying control.
+DYNAMIC MATCH ENVIRONMENTS
+Varied pitches and evolving conditions keep gameplay fresh.
+SMOOTH & SMART GAMEPLAY
+Enhanced AI and fluid match flow for a better experience.
+We love to hear from you! Please email us with your thoughts to soccersuperstarteam@gmail.com
+FOLLOW US:
+facebook.com/playsoccersuperstar/ instagram.com/soccersuperstarofficial/
+tiktok.com/@soccersuperstar
+Kick into action! Score goals & climb 5000 levels to become a soccer super star!
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows*
+#10 top free sports
+Sports
+Soccer
+Casual
+Single player
+Stylized
+Sports
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Soccer Superstar",
+  "url": "https://play.google.com/store/apps/details/Soccer_Superstar?id=com.soccer.score.star&hl=en",
+  "description": "Kick into action! Score goals & climb 5000 levels to become a soccer super star!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_SPORTS",
+  "image": "https://play-lh.googleusercontent.com/MdoTVASukr_V4kJr04Q8VyQa9VXk7IUKZszDVBWgA1GUrwOXlrH0cIjQnVIvklg-jjYUXdxEwZCxtLl6hn25",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Real Freestyle Soccer",
+    "url": "http://soccer-star-52646070.firebaseapp.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.44621467590332",
+    "ratingCount": "3496229"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Soccer Superstar - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Soccer Superstar
+Real Freestyle Soccer
+Contains ads
+In-app purchases
+4.4
+star
+3.5M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Step onto the pitch and become the hero of every moment in Soccer Super Star!
+Swipe, curve, and score through 5000+ levels of fast, skill-based soccer action. This is your road to 2026 glory on the world stage as you chase the ultimate cup.
+No energy limits. No waiting. No pressure.
+Just pure soccer, played your way anytime and anywhere, even offline.
+Easy to pick up and challenging to master, every goal is in your hands.
+With simple flick controls and realistic ball physics, you can draw passes, bend shots, and curve the ball exactly where you want.
+Sounds easy? As you progress, you’ll need precision and creativity to unlock defenses and find the perfect path to goal.
+Every level is a smart, rewarding challenge where placement and control make the difference.
+Experience dynamic gameplay across beautifully designed pitches and evolving match conditions.
+From clean finishes to complex attacking plays, every scenario feels fresh and satisfying.
+Take on thousands of handcrafted levels and rise through your journey toward football glory.
+Build your path, chase the moment, and make every shot count to get one step closer to lifting the cup on the world arena.
+Discover new ways to play with special modes and unique challenges that put you in key moments.
+Take decisive shots, complete crucial plays, and step into goalkeeping situations when it matters most.
+Enjoy smooth, responsive gameplay powered by improved AI and fluid match flow.
+Every pass, every curve, and every goal feels natural and satisfying.
+Play anytime and anywhere, even offline.
+Whether you have a quick break or time for a longer session, the pitch is always ready.
+Download now and start your journey.
+The next unforgettable goal is just one swipe away.
+GAME FEATURES:
+INTUITIVE FLICK CONTROLS
+Swipe to pass, shoot, and curve the ball with precision.
+5000+ LEVELS
+Massive, handcrafted challenges with increasing difficulty.
+NO ENERGY LIMITS
+Play as much as you want with no waiting and no interruptions.
+OFFLINE PLAY
+Enjoy the full game anytime and anywhere.
+REALISTIC BALL PHYSICS
+Feel every pass and shot with responsive, satisfying control.
+DYNAMIC MATCH ENVIRONMENTS
+Varied pitches and evolving conditions keep gameplay fresh.
+SMOOTH & SMART GAMEPLAY
+Enhanced AI and fluid match flow for a better experience.
+We love to hear from you! Please email us with your thoughts to soccersuperstarteam@gmail.com
+FOLLOW US:
+facebook.com/playsoccersuperstar/ instagram.com/soccersuperstarofficial/
+tiktok.com/@soccersuperstar
+Kick into action! Score goals & climb 5000 levels to become a soccer super star!
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows*
+#10 top free sports
+Sports
+Soccer
+Casual
+Single player
+Stylized
+Sports
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+App info and performance
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.4
+3.28M reviews
+5
+4
+3
+2
+1
+Suman Pankaj
+more_vert
+Flag inappropriate
+Show review history
+July 31, 2026
+absolute sensational! Since everybody is talking good, I am going to the points you can improve. 1. The gui is a bit of disappointing compared to the gameplay. 2. The AI needs improvement, there's no head to head competition. 3. Unless you're going for a new way, I advise to make it similar to other football games by introducing packs but not players but skills. This way you can also have a source of income if it blows up. 4. Introducing different types of level can make it more addictive.
+18 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Kenny Leblond
+more_vert
+Flag inappropriate
+July 1, 2026
+very addictive! this is a great game. Just a few points, why does the AI KICK THE BALL OUT OF THE FIELD for no reason ? can you replace it by making different techniques and reduce the rewind to one per match to make it more challenging? beside this not much to say, just add more trophy increase the difficulty level when you add hard make it really hard 👍. this game deserves a 5 star ⭐⭐⭐ ⭐⭐. thank-you
+35 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Naman Jain
+more_vert
+Flag inappropriate
+May 16, 2026
+I am fan of this game but one thing I don't like is that when your AI opponent gets the ball , he kicks the ball outside the field for no reason . I request the developers to fix this problem and introduce a better tackle technic . Also, introduce some female players and make this game more challenging by reducing the no. of rewind and so on....
+47 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Optimized hair visual effects
+Add new season
+Bug fixes
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+soccersuperstarteam@gmail.com
+shield
+Privacy Policy
+About the developer
+Simface Limited
+soccersuperstarteam@gmail.com
+Rm 19H MAXGRAND PLZ
+3 TAI YAU ST
+新蒲崗
+九龍
+Hong Kong
++852 6271 6333
+Similar games
+arrow_forward
+Football League 2026
+MOBILE SOCCER
+4.4
+star
+Top Eleven Be a Soccer Manager
+Nordeus
+4.4
+star
+Soccer Star Super Football
+Redvel Sports Games
+4.0
+star
+Mini Soccer Star 2026 Football
+Viva Games Studios
+4.6
+star
+I, The One — Fun Fighting Game
+CASUAL AZUR GAMES
+4.2
+star
+Football World - Online Soccer
+Audify Player.
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

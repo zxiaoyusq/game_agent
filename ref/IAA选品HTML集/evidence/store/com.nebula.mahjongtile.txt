@@ -1,0 +1,374 @@
+# Google Play public snapshot: com.nebula.mahjongtile
+URL: https://play.google.com/store/apps/details?id=com.nebula.mahjongtile&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:10.682Z
+HTTP status: 200
+Raw HTML SHA-256: a668b9e1789e33f2bfab3a8f38e82c655d249a2b3a7f9071a4b1791e28677ebd
+Raw HTML: research/html-data/store-snapshots/com.nebula.mahjongtile.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Mahjong Blast: Puzzle Match
+Nebula Studio
+Contains ads
+In-app purchases
+4.6
+star
+2.4M reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+☕️ Relax with Mahjong Blast, a fun choice for fans of Mahjong board puzzle games, classic tile puzzles, and relaxing board games. Enjoy a calm Mahjong board puzzle game that blends classic pair matching, tile puzzles, and laid-back board gameplay. Match identical tiles, clear each layout step by step, and enjoy smooth gameplay with no timer or pressure.
+Whether you love board puzzle games, puzzle match games, or board games offline, play at your own pace. Mahjong Blast is an approachable board puzzle game for adults seeking low-pressure fun during quick breaks or longer sessions.
+🀄 INTUITIVE TILE-MATCHING & LOGIC PUZZLES
+Rooted in traditional mahjong solitaire, every board follows familiar pair-matching logic: find two free tiles, remove the pair, and clear the layout. Clean boards and readable tiles make this board puzzle game easy to learn and satisfying to complete.
+Fans of logic puzzle games can observe patterns, plan ahead, and avoid blocking useful tiles. Each Mahjong match puzzle rewards smart choices instead of fast reflexes.
+🎮 BOARD PUZZLE GAMES WITH HUNDREDS OF LEVELS
+Mahjong Blast combines tile pairing with the satisfying progression of puzzle match games. Match tiles, open new paths, and solve hundreds of layouts, from quick five-minute puzzles to longer challenges.
+For players seeking puzzle games for adults with levels, every stage offers focused gameplay based on observation and planning. Progress at your own pace and master Mahjong skills one board at a time.
+📅 DAILY MAHJONG & MAHJONG PRACTICE
+Enjoy daily Mahjong with fresh layouts inspired by American Mahjong style. Each daily Mahjong match helps you recognize patterns, improve your strategy, and complete a clear goal.
+Gentle Mahjong practice builds memory and attention without pressure, with fresh board puzzles ready whenever you return.
+📴 OFFLINE BOARD PUZZLE GAME WITH NO ADS
+Mahjong Blast is a free mahjong solitaire board game that works offline. If you enjoy board games offline, every level remains available at home, while traveling, or whenever Wi-Fi and mobile data are unavailable.
+Enjoy an ad-free board puzzle experience with simple controls, clear goals and calm gameplay wherever you go.
+🧩 3D PUZZLE MATCH & CLASSIC PAIRING
+Enjoy a smooth 3D puzzle match experience with polished 3D-style tiles. For fans of triple match 3D puzzles, this Mahjong match 3D game offers a calmer two-tile alternative based on observation and memory.
+🇺🇸 AMERICAN MAHJONG STYLE & PATTERN PUZZLES
+Explore boards inspired by American Mahjong style, familiar symbols, and flexible choices. This relaxed take on mahjong solitaire offers pattern puzzles without competitive rules and builds pattern recognition through play.
+👴 MAHJONG FOR SENIORS & ADULTS
+Large tiles, clear layouts, and simple controls make this Mahjong board game comfortable and easy to follow for seniors. The calm pace also suits anyone looking for easy puzzle games for seniors, board games for adults, or low-pressure matching games.
+🌿 WHY CHOOSE MAHJONG BLAST?
+✅ Classic mahjong solitaire with pair-matching rules.
+✅ Daily Mahjong matches with fresh board puzzle layouts.
+✅ Mahjong practice based on observation and planning.
+✅ Board puzzle games with hundreds of levels.
+✅ Puzzle match games with satisfying progression.
+✅ Board games offline with no Wi-Fi required.
+✅ Relaxing board puzzle gameplay, free to play anytime.
+✅ Logic puzzles with no timer or time pressure.
+✅ Puzzle games for adults with progressive levels.
+✅ Large tiles and simple controls for seniors.
+✅ Ad-free gameplay with no interruptions.
+If you love mahjong solitaire, classic tile matching and relaxing board games, Mahjong Blast is built for you. Enjoy a smooth blend of board puzzle games, daily Mahjong and logic puzzle gameplay.
+Download Mahjong Blast and enjoy a free board puzzle game with daily challenges, offline play, and satisfying levels for adults and seniors.
+Enjoy Mahjong board puzzle & tile match games. Play offline, relax & match daily
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Pair matching
+Mahjong solitaire
+Single player
+Realistic
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 3 days
+Oktoberfest Mahjong on Tap: Clear beer tiles & help the little duck sip at last!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Mahjong Blast: Puzzle Match",
+  "url": "https://play.google.com/store/apps/details/Mahjong_Blast_Puzzle_Match?id=com.nebula.mahjongtile&hl=en",
+  "description": "Enjoy Mahjong board puzzle & tile match games. Play offline, relax & match daily",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/lamvwfGw4eEjWFFfcL19XAwFpCKZJjdCBNBs0DFnsOwhBAsK9X738lDrDFqosGp7CLinvREDBdhJyQdmot6KbQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Nebula  Studio",
+    "url": "https://www.hurelax.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.606653213500977",
+    "ratingCount": "2399924"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Mahjong Blast: Puzzle Match - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Mahjong Blast: Puzzle Match
+Nebula Studio
+Contains ads
+In-app purchases
+4.6
+star
+2.4M reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+☕️ Relax with Mahjong Blast, a fun choice for fans of Mahjong board puzzle games, classic tile puzzles, and relaxing board games. Enjoy a calm Mahjong board puzzle game that blends classic pair matching, tile puzzles, and laid-back board gameplay. Match identical tiles, clear each layout step by step, and enjoy smooth gameplay with no timer or pressure.
+Whether you love board puzzle games, puzzle match games, or board games offline, play at your own pace. Mahjong Blast is an approachable board puzzle game for adults seeking low-pressure fun during quick breaks or longer sessions.
+🀄 INTUITIVE TILE-MATCHING & LOGIC PUZZLES
+Rooted in traditional mahjong solitaire, every board follows familiar pair-matching logic: find two free tiles, remove the pair, and clear the layout. Clean boards and readable tiles make this board puzzle game easy to learn and satisfying to complete.
+Fans of logic puzzle games can observe patterns, plan ahead, and avoid blocking useful tiles. Each Mahjong match puzzle rewards smart choices instead of fast reflexes.
+🎮 BOARD PUZZLE GAMES WITH HUNDREDS OF LEVELS
+Mahjong Blast combines tile pairing with the satisfying progression of puzzle match games. Match tiles, open new paths, and solve hundreds of layouts, from quick five-minute puzzles to longer challenges.
+For players seeking puzzle games for adults with levels, every stage offers focused gameplay based on observation and planning. Progress at your own pace and master Mahjong skills one board at a time.
+📅 DAILY MAHJONG & MAHJONG PRACTICE
+Enjoy daily Mahjong with fresh layouts inspired by American Mahjong style. Each daily Mahjong match helps you recognize patterns, improve your strategy, and complete a clear goal.
+Gentle Mahjong practice builds memory and attention without pressure, with fresh board puzzles ready whenever you return.
+📴 OFFLINE BOARD PUZZLE GAME WITH NO ADS
+Mahjong Blast is a free mahjong solitaire board game that works offline. If you enjoy board games offline, every level remains available at home, while traveling, or whenever Wi-Fi and mobile data are unavailable.
+Enjoy an ad-free board puzzle experience with simple controls, clear goals and calm gameplay wherever you go.
+🧩 3D PUZZLE MATCH & CLASSIC PAIRING
+Enjoy a smooth 3D puzzle match experience with polished 3D-style tiles. For fans of triple match 3D puzzles, this Mahjong match 3D game offers a calmer two-tile alternative based on observation and memory.
+🇺🇸 AMERICAN MAHJONG STYLE & PATTERN PUZZLES
+Explore boards inspired by American Mahjong style, familiar symbols, and flexible choices. This relaxed take on mahjong solitaire offers pattern puzzles without competitive rules and builds pattern recognition through play.
+👴 MAHJONG FOR SENIORS & ADULTS
+Large tiles, clear layouts, and simple controls make this Mahjong board game comfortable and easy to follow for seniors. The calm pace also suits anyone looking for easy puzzle games for seniors, board games for adults, or low-pressure matching games.
+🌿 WHY CHOOSE MAHJONG BLAST?
+✅ Classic mahjong solitaire with pair-matching rules.
+✅ Daily Mahjong matches with fresh board puzzle layouts.
+✅ Mahjong practice based on observation and planning.
+✅ Board puzzle games with hundreds of levels.
+✅ Puzzle match games with satisfying progression.
+✅ Board games offline with no Wi-Fi required.
+✅ Relaxing board puzzle gameplay, free to play anytime.
+✅ Logic puzzles with no timer or time pressure.
+✅ Puzzle games for adults with progressive levels.
+✅ Large tiles and simple controls for seniors.
+✅ Ad-free gameplay with no interruptions.
+If you love mahjong solitaire, classic tile matching and relaxing board games, Mahjong Blast is built for you. Enjoy a smooth blend of board puzzle games, daily Mahjong and logic puzzle gameplay.
+Download Mahjong Blast and enjoy a free board puzzle game with daily challenges, offline play, and satisfying levels for adults and seniors.
+Enjoy Mahjong board puzzle & tile match games. Play offline, relax & match daily
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Pair matching
+Mahjong solitaire
+Single player
+Realistic
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 3 days
+Oktoberfest Mahjong on Tap: Clear beer tiles & help the little duck sip at last!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+App activity
+This app may collect these data types
+Personal info, App activity and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.6
+2.3M reviews
+5
+4
+3
+2
+1
+Rajan Bali
+more_vert
+Flag inappropriate
+September 8, 2026
+Great game, I can play it for hours! However, there is a bug with the 10-minute 'unlimited shuffle' reward. When it activates, it doesn't actually give unlimited use. Instead, it quietly depletes my existing stash of shuffles. I lost my entire inventory because the game used my saved powers instead of the temporary unlimited ones. Please look into fixing this glitch!!!
+Did you find this helpful?
+Yes
+No
+rob cutler
+more_vert
+Flag inappropriate
+May 6, 2026
+Love the game... HATE THE ADS. It's just too many. An ad between levels (that takes far too long to get rid of) and ads after that when the next level starts. It cuts from the screen once it loads to yet another ad before you can play the level. And, honestly, if I say I'm not interested in a game...STOP SHOWING ME THE ADS FOR THAT GAME. I get it, there are going to be ads, but when there are far more ads than game play.... something needs to be done to reel that in.
+47 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Sarah White
+more_vert
+Flag inappropriate
+April 8, 2026
+Just completed 7 consecutive days of play. The reward was 1 shuffle and 1 hint - I earn that by completing a level! I expected more; at the very least, something different. I've already played over 250 rounds of the main version. I liked the Easter challenge because it gave trophies. I really enjoy the game otherwise.
+49 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Nebula Studio
+April 8, 2026
+Thanks for your dedication with 7 consecutive days of play! We hear you about the daily rewards feeling similar to level completion – we'll definitely note your feedback. 😊 We're thrilled you liked the Easter challenge and trophies! Your support in our tile-matching puzzle game means a lot. Keep enjoying the board game fun!
+See all reviews
+What’s new
+We refined the app to ensure better speed and stability.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@hurelax.com
+shield
+Privacy Policy
+About the developer
+HURELAX PTE. LTD.
+support@hurelax.com
+6 Raffles Quay
+#14-02
+Singapore 048580
++1 346-303-4073
+More by Nebula Studio
+arrow_forward
+GOGO! Blast
+Nebula Studio
+4.7
+star
+Tap Tile!
+Nebula Studio
+4.5
+star
+Word Solitaire Go
+Nebula Studio
+4.8
+star
+Block Bloom: Color Blast
+Nebula Studio
+4.8
+star
+Splash Buster: Smash Fest 3D
+Nebula Studio
+4.8
+star
+Zoodoku: Brain Puzzle Games
+Nebula Studio
+4.4
+star
+Similar games
+arrow_forward
+Vita Mahjong
+Vita Studio.
+4.6
+star
+Mahjong Scapes®
+PARTYPOP PTE. LTD.
+4.5
+star
+Tile Explorer - Triple Match
+Oakever Games
+4.5
+star
+Mahjong Club - Solitaire Game
+GamoVation
+4.4
+star
+Mahjong Triple - Match 3 Tile
+GamoVation
+4.4
+star
+Tile Club - Match Puzzle Games
+GamoVation
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

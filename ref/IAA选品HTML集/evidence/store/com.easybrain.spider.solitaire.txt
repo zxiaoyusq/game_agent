@@ -1,0 +1,377 @@
+# Google Play public snapshot: com.easybrain.spider.solitaire
+URL: https://play.google.com/store/apps/details?id=com.easybrain.spider.solitaire&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:41.796Z
+HTTP status: 200
+Raw HTML SHA-256: 6c8ee7d62bef1d070a19df5bbc7f94fc72ab59a4d5c1e430d5bdc84bb99b541d
+Raw HTML: research/html-data/store-snapshots/com.easybrain.spider.solitaire.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Spider Solitaire
+Easybrain
+Contains ads
+In-app purchases
+4.3
+star
+157K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Spider Solitaire combines the original rules of one of the most popular classic card games with a set of exciting features. Enjoy a whole new experience with your favorite solitaire card game, brought to you by the game experts of a top developer! Challenge your mind by playing classic spider solitaire, reach higher stages with every consecutive win and beat your high score!
+Spider Solitaire highlights:
+- Classic spider solitaire gameplay
+Stack the cards of a suit in descending order (from King to Ace) to solve free solitaire spider games. Adjust the solitaire difficulty level by playing with 1, 2 or 4 suits.
+- Keep your mind active
+Train your brain and practice your focus and patience to reach higher stages in this solitaire card game and earn as many points as you can. Complete daily challenges and seasonal events playing classic spider solitaire.
+- Relax and unwind
+Flip the switch from the daily grind to a relaxing pastime with free spider solitaire. Play card games during your breaks or after a long work day wherever you are on your mobile device. Become a spider solitaire master!
+Spider Solitaire features:
+- Various difficulty levels
+Choose the number of suits - 1, 2 or 4 - to adjust the spider-solitaire card game to your experience and have as much fun as you want. Play solitaire anytime, anywhere!
+- Stages
+Master your strategy to win classic spider solitaire games, move to higher stages and beat your best score! The higher the stage you reach, the more points you get for moving the cards correctly. Set your own record in spider solitaire game!
+- Seasonal Events
+Reveal unique pictures while playing solitaire card games of several difficulty levels. Play free Spider Solitaire, complete Seasonal Events and build your own collection of specially crafted postcards!
+- Daily Challenges
+Earn trophies every month by playing spider solitaire challenges every day.
+- Customizable solitaire cards and backgrounds
+Choose from a variety of themes to help you keep focused and enjoy free spider solitaire games.
+- Hints and undos
+Made a wrong move or unsure what to do in a classic spider solitaire game? Smart Hints and Undos will have you covered!
+- Simple tap or drag controls
+Enjoy the smooth spider solitaire experience by simply tapping or dragging cards.
+- Auto-save
+Continue playing classic spider solitaire free game where you left off.
+- Left-hand mode
+A special interface for left-handed people to comfortably play spider solitaire free card games!
+Train your brain with card game and have limitless fun on the way to beating your high score in spider solitaire games!
+Terms of Use:
+https://easybrain.com/terms
+Privacy Policy:
+https://easybrain.com/privacy
+Spider Solitaire is a challenging game from a classic card games collection.
+Updated on
+Aug 11, 2026
+Card
+Solitaire
+Spider solitaire
+Casual
+Single player
+Realistic
+Miscellaneous
+Cards
+Peaceful
+Offline
+Events & offers
+Ends in 6 days
+Get Sports and Health postcards!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Spider Solitaire",
+  "url": "https://play.google.com/store/apps/details/Spider_Solitaire?id=com.easybrain.spider.solitaire&hl=en",
+  "description": "Spider Solitaire is a challenging game from a classic card games collection.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/aHryg9Zxex62QIBNGgCyFQWyw8DVN8meaTE40dSwI-HNwEgKBo_L0vXMcZSj_8pp30pj45gs0WnZ9Md29L_OIg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Easybrain",
+    "url": "http://www.easybrain.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.263228416442871",
+    "ratingCount": "156689"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Spider Solitaire - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Spider Solitaire
+Easybrain
+Contains ads
+In-app purchases
+4.3
+star
+157K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Spider Solitaire combines the original rules of one of the most popular classic card games with a set of exciting features. Enjoy a whole new experience with your favorite solitaire card game, brought to you by the game experts of a top developer! Challenge your mind by playing classic spider solitaire, reach higher stages with every consecutive win and beat your high score!
+Spider Solitaire highlights:
+- Classic spider solitaire gameplay
+Stack the cards of a suit in descending order (from King to Ace) to solve free solitaire spider games. Adjust the solitaire difficulty level by playing with 1, 2 or 4 suits.
+- Keep your mind active
+Train your brain and practice your focus and patience to reach higher stages in this solitaire card game and earn as many points as you can. Complete daily challenges and seasonal events playing classic spider solitaire.
+- Relax and unwind
+Flip the switch from the daily grind to a relaxing pastime with free spider solitaire. Play card games during your breaks or after a long work day wherever you are on your mobile device. Become a spider solitaire master!
+Spider Solitaire features:
+- Various difficulty levels
+Choose the number of suits - 1, 2 or 4 - to adjust the spider-solitaire card game to your experience and have as much fun as you want. Play solitaire anytime, anywhere!
+- Stages
+Master your strategy to win classic spider solitaire games, move to higher stages and beat your best score! The higher the stage you reach, the more points you get for moving the cards correctly. Set your own record in spider solitaire game!
+- Seasonal Events
+Reveal unique pictures while playing solitaire card games of several difficulty levels. Play free Spider Solitaire, complete Seasonal Events and build your own collection of specially crafted postcards!
+- Daily Challenges
+Earn trophies every month by playing spider solitaire challenges every day.
+- Customizable solitaire cards and backgrounds
+Choose from a variety of themes to help you keep focused and enjoy free spider solitaire games.
+- Hints and undos
+Made a wrong move or unsure what to do in a classic spider solitaire game? Smart Hints and Undos will have you covered!
+- Simple tap or drag controls
+Enjoy the smooth spider solitaire experience by simply tapping or dragging cards.
+- Auto-save
+Continue playing classic spider solitaire free game where you left off.
+- Left-hand mode
+A special interface for left-handed people to comfortably play spider solitaire free card games!
+Train your brain with card game and have limitless fun on the way to beating your high score in spider solitaire games!
+Terms of Use:
+https://easybrain.com/terms
+Privacy Policy:
+https://easybrain.com/privacy
+Spider Solitaire is a challenging game from a classic card games collection.
+Updated on
+Aug 11, 2026
+Card
+Solitaire
+Spider solitaire
+Casual
+Single player
+Realistic
+Miscellaneous
+Cards
+Peaceful
+Offline
+Events & offers
+Ends in 6 days
+Get Sports and Health postcards!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Financial info and 3 others
+This app may collect these data types
+Location, Financial info and 3 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.3
+151K reviews
+5
+4
+3
+2
+1
+H. A. England
+more_vert
+Flag inappropriate
+April 14, 2026
+I get that the game is here to make people money, but ads every three backup moves... on spider solitaire? and not being able to go back more than one on SPIDER SOLITAIRE? this is literally the first SS game I've ever played by those rules. to me, SS is more like a puzzle. I play as far as I can go, then back up as many times as needed and go another route. it's there for relaxation and passing the time, I can't do that here so the game's really not something I'm too happy with.
+16 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+April 14, 2026
+Hello, thank you for reaching out to us! We apologize for the frustration caused. The limitation on undo moves is designed to make the game more challenging and strategic. Ads play an important role in supporting the ongoing maintenance of the app. Your feedback is valuable, and we will use it as we continue refining the overall experience.
+Manny Marcy
+more_vert
+Flag inappropriate
+September 7, 2026
+1st I have *NO PROBLEM* with ads, because F2P apps need them to continue. HOWEVER, what I will not tolerate is EXCESSIVE ADS! When first starting I got 1 ad before a game, & 1 after I finished it. I was content with that! Now? Ad every time I finish a sequence, if I even touch the draw pile, & in the middle of the game for no reason! This is predatory advertisement, I'll not have it & uninstalled! (If they respond with "but we need ads" we'll know they couldn't bother to read the ENTIRE review.)
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+September 7, 2026
+Hi Manny, thank you for taking the time to leave your feedback! We understand that ads can sometimes disrupt the experience, and we’re committed to finding a better balance. Ads help us keep the app free and fund new improvements, but we’re also actively reviewing how and when they appear. We hope to offer more comfort in the future.
+Ann Chappell
+more_vert
+Flag inappropriate
+September 11, 2026
+I'm deleting this app because spider solitaire is hard enough without unlimited undo's plus whomever designed this game keeps most of the cards in play difficult to see the possibility next move.otherwise it's a great game
+Did you find this helpful?
+Yes
+No
+Easybrain
+September 13, 2026
+Hello Ann, thank you for your review! We apologize for any frustration caused. Please note that each deal has a different chance of winning. Event games and Daily Challenges are carefully chosen and tested to increase your success rate. Regular games are dealt randomly, which might make some of them more difficult.
+See all reviews
+What’s new
+- Performance and stability improvements
+Thanks for playing Spider Solitaire! We read all your reviews carefully. Please leave us feedback about why you love this game and what features you would like to see next!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@easybrain.com
+shield
+Privacy Policy
+About the developer
+EASYBRAIN LTD
+d@easybrain.com
+Trilogy Limassol Seafront,, Floor 14, West Tower, 335 28 Oktovriou
+Limassol 3106
+Cyprus
++357 99 098190
+More by Easybrain
+arrow_forward
+Arrow Puzzle: Tap Puzzle Games
+Easybrain
+4.5
+star
+Art Puzzle - Puzzle Games
+Easybrain
+4.4
+star
+Sudoku.com - Sudoku Puzzle
+Easybrain
+4.7
+star
+Jigsaw Puzzles - Puzzle Games
+Easybrain
+4.5
+star
+Number Match - Number Games
+Easybrain
+4.6
+star
+Crossword Master - Word Puzzle
+Easybrain
+4.7
+star
+Similar games
+arrow_forward
+Spider Solitaire - Card Games
+Fantasy Games Ltd
+4.2
+star
+Spider Solitaire
+nerByte GmbH
+4.2
+star
+Spider Solitaire: Card Games
+MobilityWare
+4.5
+star
+Solitaire
+Aged Studio Limited
+3.8
+star
+Spider Solitaire Classic Games
+Guru Puzzle Game
+4.8
+star
+Spider Solitaire
+Classic Puzzle Games Maker
+4.8
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

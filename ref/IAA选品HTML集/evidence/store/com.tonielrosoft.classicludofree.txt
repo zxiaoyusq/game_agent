@@ -1,0 +1,384 @@
+# Google Play public snapshot: com.tonielrosoft.classicludofree
+URL: https://play.google.com/store/apps/details?id=com.tonielrosoft.classicludofree&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:44.892Z
+HTTP status: 200
+Raw HTML SHA-256: e398cae03043abc7e6be0453db1efa21baa8995417c5f068263e8d1c0c79fc75
+Raw HTML: research/html-data/store-snapshots/com.tonielrosoft.classicludofree.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Naija Ludo
+Tonielrosoft
+Contains ads
+In-app purchases
+3.5
+star
+47.1K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Ludo is a classic dice and race game, played with four pieces per house and a set of dice.
+FEATURES
+More boards added: you can choose among three colourful boards.(use the more button from the first screen to access this feature).
+**Online multiplayer: you can play with any of you friends or family members any where in the world from the comfort of your home.
+**Visual hand added
+**Online Multiplayer supported
+**Bluetooth multiplayer supported
+**Difficulty level added(Easy, Normal, Hard and Advanced)
+**Speed control added. You can control how fast a Piece move.
+**You can enable or disable barrier
+**You can enable or disable safe-house
+**You can position board the way you like
+**You can choose to play with one die or two dice
+**You can decide to remove a piece when it captures opponent's piece or not
+**You can decided to play again when you capture opponent's piece irrespective of the outcome.
+All these features are accessible through Options.
+--------SUPPORTED LANGUAGES------
+** English
+** French
+** Italian
+** Indonesian
+** German
+** Spanish
+** Portuguese
+------------HOW TO PLAY--------------
+Ludo is a classic dice and race game, played with four pieces per player and a set of dice. This Ludo currently support two players with two houses each. In this game, each player controls eight pieces. The goal of the game is to move all eight pieces home before your opponent.
+------------MOVEMENT OF PIECE--------
+A player with red house starts the game (in a case of winning, the loser starts the game with red house).
+A piece can only come out of house when a die outcome is 6 but a piece that is already on the track can move with any dice outcome. Pieces travel through the track starting from home to the middle of the board. A track contains 56 steps.
+A piece can only be removed if it successfully travels through the 56 steps or if it captures opponent's piece.
+----------------PIECE CAPTURE-------------------
+A player's piece can capture opponent's piece if it ends in a block that is occupied by an opponent's. The captured piece must be returned home while the player's piece is removed from the board.
+The secret of the game is to capture your opponent's piece as many as possible and avoid being captured by your opponent's piece.
+A piece cannot capture opponent's piece if the remaining outcome cannot be used.
+----------IMPORTANT NOTE-----------
+1. A player can only roll dice twice consecutively or more as far as each dice outcome is 6 (first dice outcome = 6 and second dice outcome = 6).
+2. Dice outcome must be played before rolling another one no matter the outcome.
+3. For fast and smooth play, go to settings and turn on DIRECT COUNT.
+Naija Ludo is a classic dice and race game for all ages.
+Updated on
+Sep 3, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Naija Ludo",
+  "url": "https://play.google.com/store/apps/details/Naija_Ludo?id=com.tonielrosoft.classicludofree&hl=en",
+  "description": "Naija Ludo is a classic dice and race game for all ages.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/kBRLGKr_2Fx7XldSsWiQHOVuKwwoRdyvnAT95mugF-fXHGbnLut9awbOaIztc9F6QygQUyERZjVE4ct-XUXs_Q",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Tonielrosoft",
+    "url": "https://tonielrosoft.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.4803922176361084",
+    "ratingCount": "47053"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Naija Ludo - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Naija Ludo
+Tonielrosoft
+Contains ads
+In-app purchases
+3.5
+star
+47.1K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Ludo is a classic dice and race game, played with four pieces per house and a set of dice.
+FEATURES
+More boards added: you can choose among three colourful boards.(use the more button from the first screen to access this feature).
+**Online multiplayer: you can play with any of you friends or family members any where in the world from the comfort of your home.
+**Visual hand added
+**Online Multiplayer supported
+**Bluetooth multiplayer supported
+**Difficulty level added(Easy, Normal, Hard and Advanced)
+**Speed control added. You can control how fast a Piece move.
+**You can enable or disable barrier
+**You can enable or disable safe-house
+**You can position board the way you like
+**You can choose to play with one die or two dice
+**You can decide to remove a piece when it captures opponent's piece or not
+**You can decided to play again when you capture opponent's piece irrespective of the outcome.
+All these features are accessible through Options.
+--------SUPPORTED LANGUAGES------
+** English
+** French
+** Italian
+** Indonesian
+** German
+** Spanish
+** Portuguese
+------------HOW TO PLAY--------------
+Ludo is a classic dice and race game, played with four pieces per player and a set of dice. This Ludo currently support two players with two houses each. In this game, each player controls eight pieces. The goal of the game is to move all eight pieces home before your opponent.
+------------MOVEMENT OF PIECE--------
+A player with red house starts the game (in a case of winning, the loser starts the game with red house).
+A piece can only come out of house when a die outcome is 6 but a piece that is already on the track can move with any dice outcome. Pieces travel through the track starting from home to the middle of the board. A track contains 56 steps.
+A piece can only be removed if it successfully travels through the 56 steps or if it captures opponent's piece.
+----------------PIECE CAPTURE-------------------
+A player's piece can capture opponent's piece if it ends in a block that is occupied by an opponent's. The captured piece must be returned home while the player's piece is removed from the board.
+The secret of the game is to capture your opponent's piece as many as possible and avoid being captured by your opponent's piece.
+A piece cannot capture opponent's piece if the remaining outcome cannot be used.
+----------IMPORTANT NOTE-----------
+1. A player can only roll dice twice consecutively or more as far as each dice outcome is 6 (first dice outcome = 6 and second dice outcome = 6).
+2. Dice outcome must be played before rolling another one no matter the outcome.
+3. For fast and smooth play, go to settings and turn on DIRECT COUNT.
+Naija Ludo is a classic dice and race game for all ages.
+Updated on
+Sep 3, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Personal info, App info and performance, and Device or other IDs
+No data collected
+Learn more
+about how developers declare collection
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Desktop
+tablet_android
+Tablet
+3.5
+46.1K reviews
+5
+4
+3
+2
+1
+Aba Sam
+more_vert
+Flag inappropriate
+Show review history
+September 6, 2026
+the only thing I want reviewed is the continues reading of the scores which are not deletable by choice. if someone sees you have played up to 2000 times , yo inu may be called names or other things and other things are that the game crashes when you have a call and return
+34 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Precious Obinwe
+more_vert
+Flag inappropriate
+August 22, 2026
+game is fun, but pls work on it whenever I stop playing the game to take a rest and I come back to continue, they reshuffle the game, even tho I've gone far and because of that I always have to restart the game from the beginning, which isn't fair pls work on this issue, I shouldn't have to restart my game from the beginning because ludo won't let me continue from where I stopped ..
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Christian Okolie
+more_vert
+Flag inappropriate
+August 9, 2026
+I was enjoying this game until it started doing magic. Since the last two updates, my opponent started picking seeds out, in a magical way, without k!ll!ng another seed but, I patiently WAITED for an update. Sadly, after this update, the issue has worsened. This has spoiled the fun as I've stopped playing the game for now.
+10 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Online challenge error fixed.
+Multiplayer improved.
+Minor bug fixes.
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+phone
+Phone number
++2348131249979
+email
+Support email
+support@tonielrosoft.com
+shield
+Privacy Policy
+About the developer
+TONIELROSOFT STUDIOS LTD
+support@tonielrosoft.com
+1st Avenue, Shinko Road
+Behind Jos City Park, Rayfield
+Jos
+Plateau
+Nigeria
++234 813 124 9979
+More by Tonielrosoft
+arrow_forward
+Sliding Saga
+Tonielrosoft
+Naija Ludo Pro
+Tonielrosoft
+₹310.00
+Naija Snakes & Ladders
+Tonielrosoft
+3.4
+star
+HotSeat Quiz
+Tonielrosoft
+2.9
+star
+Naija Whot
+Tonielrosoft
+4.5
+star
+Naija Whot Pro
+Tonielrosoft
+3.9
+star
+Similar games
+arrow_forward
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+Puzzle Game
+Block Puzzle Games 2018
+3.8
+star
+Jungle Marble Blast 3
+coolstudios
+3.9
+star
+Jungle Marble Blast 2
+coolstudios
+4.2
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,397 @@
+# Google Play public snapshot: com.snake.io.slither.worms
+URL: https://play.google.com/store/apps/details?id=com.snake.io.slither.worms&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:46.371Z
+HTTP status: 200
+Raw HTML SHA-256: 6b77d4a2751fe20266a214838636ba9176c82cb126256ee98485053a9fc5fe25
+Raw HTML: research/html-data/store-snapshots/com.snake.io.slither.worms.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Snake Lite® - Worm Snake Game
+Hippo Lab
+Contains ads
+In-app purchases
+3.9
+star
+487K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+📍
+Snake Lite
+-Join a global community of over a hundred million players. As one of the top-rated snake IO games on the market, Snake Lite is trusted by millions for its smooth performance and addictive battle royale gameplay.
+📍Looking for a low-storage snake game that runs smoothly on older Android devices? Snake Lite is the ultimate offline worm io game designed for a lag-free experience even without Wi-Fi.
+📍Snake Lite is a classic, fun, and dynamic action PVP hungry io snake game — Relax, the rules are simple. Slither, eat, grow, defeat the snake of rivals! Snake Lite is designed for smooth controls, fast performance in the free slider dynamic io games. Unique graphics are kept minimalistic and simple.
+📍Whether you're a casual player looking for quick fun or a competitive slither-master aiming for the top of the leaderboard, Snake Lite offers the smoothest gameplay and the most vibrant 3D graphics in the .io universe.
+📍 play this casual IO game and join the battle royale multiplayer game! Defeat them by upgrading your warm, and survivor to sneaker. Now, this awesome io game has upgraded gameplay. You can play offline alone, no matter where you are.
+🎮Game features:
+- Slither through to eat a field of sugars or yummies and make your snake body grow up
+- Hit other worms by sneaking and encircling them into your worm's body cleverly.
+- You can choose to snake battle multiple modes: Infinite, Time mode, Survival(battle royale), and Speed Mode.
+- Online &offline hungry-snake games with better performance on your device.
+- 3D snake and beautiful skins to make your warmzone great!
+- Battle with other snakes and the boss worm.
+- Defeat rivals to get a high score with slithers on the ranking online.
+- The fun io game version of snake&worm .io.
+- Play anytime, anywhere. It's fun with light size game.
+- Whether you’re offline or online!
+🎮Addicting worm battle paper games, Slither to the top rank
+Eat all the food and become the biggest snake in the wormzone! Play and slither like a snake in the world player. If you like .io games as rivals worm and Sneak.io Arena, don’t hesitate to download Snake Lite. And start slithering your worm now! Slink into this crazy arcade-hungry sneak warmzone.io game!
+Which game modes are supported?
+Infinite, Time Attack, Survival (Battle Royale), Speed Mode, Boss Battle
+Play offline or online PVP
+3D graphics with customizable skins
+Smooth mobile controls
+Lightweight - runs on all devices
+Free with optional IAP
+What are some popular themed events in the game?
+Themed events will be updated at least once a month. Such as: Holi Festival (India's festival of sprinkling flowers), Easter, Christmas, kite festivals, Halloween, and more.
+How do I unlock the new 3D Skins?
+Merging: Combine smaller snakes in the "Merge" lobby to unlock high-tier 3D skins.
+Daily Challenges: Complete specific regional tasks to earn "Culta-Skins."
+Boss Defeat:Take down the Giant Boss Worm to loot rare visual effects.
+Can I play Snake Lite offline?
+Yes! Full offline support! While competitors often rely on constant server connections, Snake Lite features an advanced **Offline Mode**. You can enjoy the full Battle Royale, Time Mode, and Infinite Mode experiences anywhere—perfect for commuting or areas with unstable internet.
+Does it support cross-device gaming?
+Yes. Android, Chromebook, Windows PC (Google Play Games). By linking your account to Google Play Games or Facebook, your skins, coins, and leaderboard ranks are cloud-synced.
+How does Snake Lite differ from other .io games?/b>
+Unlike many heavy .io games that require high-end specs, Snake Lite is optimized for
+ultra-smooth performance
+on all devices. We focus on a "Lite" experience—meaning faster loading times, smaller storage footprint, and without any lag.
+Join our Snake Lite community!
+Follow our official Facebook page to get all the latest news and updates: https://www.facebook.com/SnakeZoneGame2022
+Hit other worms to grow faster, play the fun action hungry slither&snake games
+Updated on
+Sep 10, 2026
+Available on
+Android,
+Windows*
+#5 top free action
+Action
+IO game
+Single player
+Stylized
+Cartoon
+Animals
+Snake
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 09/30
+Act Like a Kid Again! Collect Mischief Skins and Rule the Playground!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Snake Lite® - Worm Snake Game",
+  "url": "https://play.google.com/store/apps/details/Snake_Lite_Worm_Snake_Game?id=com.snake.io.slither.worms&hl=en",
+  "description": "Hit other worms to grow faster, play the fun action hungry slither&snake games",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ACTION",
+  "image": "https://play-lh.googleusercontent.com/gM_JPaWYsjgOdujA5fGjUbLfylGtZIw1jjLVD5Pdm12NrC-lqlnx0LUMBbHBlVN0rXaWAAxYFiVnfYK09-mVoA",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Hippo Lab",
+    "url": "https://snakelite.fun/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.893435478210449",
+    "ratingCount": "487119"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Snake Lite® - Worm Snake Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Snake Lite® - Worm Snake Game
+Hippo Lab
+Contains ads
+In-app purchases
+3.9
+star
+487K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+📍
+Snake Lite
+-Join a global community of over a hundred million players. As one of the top-rated snake IO games on the market, Snake Lite is trusted by millions for its smooth performance and addictive battle royale gameplay.
+📍Looking for a low-storage snake game that runs smoothly on older Android devices? Snake Lite is the ultimate offline worm io game designed for a lag-free experience even without Wi-Fi.
+📍Snake Lite is a classic, fun, and dynamic action PVP hungry io snake game — Relax, the rules are simple. Slither, eat, grow, defeat the snake of rivals! Snake Lite is designed for smooth controls, fast performance in the free slider dynamic io games. Unique graphics are kept minimalistic and simple.
+📍Whether you're a casual player looking for quick fun or a competitive slither-master aiming for the top of the leaderboard, Snake Lite offers the smoothest gameplay and the most vibrant 3D graphics in the .io universe.
+📍 play this casual IO game and join the battle royale multiplayer game! Defeat them by upgrading your warm, and survivor to sneaker. Now, this awesome io game has upgraded gameplay. You can play offline alone, no matter where you are.
+🎮Game features:
+- Slither through to eat a field of sugars or yummies and make your snake body grow up
+- Hit other worms by sneaking and encircling them into your worm's body cleverly.
+- You can choose to snake battle multiple modes: Infinite, Time mode, Survival(battle royale), and Speed Mode.
+- Online &offline hungry-snake games with better performance on your device.
+- 3D snake and beautiful skins to make your warmzone great!
+- Battle with other snakes and the boss worm.
+- Defeat rivals to get a high score with slithers on the ranking online.
+- The fun io game version of snake&worm .io.
+- Play anytime, anywhere. It's fun with light size game.
+- Whether you’re offline or online!
+🎮Addicting worm battle paper games, Slither to the top rank
+Eat all the food and become the biggest snake in the wormzone! Play and slither like a snake in the world player. If you like .io games as rivals worm and Sneak.io Arena, don’t hesitate to download Snake Lite. And start slithering your worm now! Slink into this crazy arcade-hungry sneak warmzone.io game!
+Which game modes are supported?
+Infinite, Time Attack, Survival (Battle Royale), Speed Mode, Boss Battle
+Play offline or online PVP
+3D graphics with customizable skins
+Smooth mobile controls
+Lightweight - runs on all devices
+Free with optional IAP
+What are some popular themed events in the game?
+Themed events will be updated at least once a month. Such as: Holi Festival (India's festival of sprinkling flowers), Easter, Christmas, kite festivals, Halloween, and more.
+How do I unlock the new 3D Skins?
+Merging: Combine smaller snakes in the "Merge" lobby to unlock high-tier 3D skins.
+Daily Challenges: Complete specific regional tasks to earn "Culta-Skins."
+Boss Defeat:Take down the Giant Boss Worm to loot rare visual effects.
+Can I play Snake Lite offline?
+Yes! Full offline support! While competitors often rely on constant server connections, Snake Lite features an advanced **Offline Mode**. You can enjoy the full Battle Royale, Time Mode, and Infinite Mode experiences anywhere—perfect for commuting or areas with unstable internet.
+Does it support cross-device gaming?
+Yes. Android, Chromebook, Windows PC (Google Play Games). By linking your account to Google Play Games or Facebook, your skins, coins, and leaderboard ranks are cloud-synced.
+How does Snake Lite differ from other .io games?/b>
+Unlike many heavy .io games that require high-end specs, Snake Lite is optimized for
+ultra-smooth performance
+on all devices. We focus on a "Lite" experience—meaning faster loading times, smaller storage footprint, and without any lag.
+Join our Snake Lite community!
+Follow our official Facebook page to get all the latest news and updates: https://www.facebook.com/SnakeZoneGame2022
+Hit other worms to grow faster, play the fun action hungry slither&snake games
+Updated on
+Sep 10, 2026
+Available on
+Android,
+Windows*
+#5 top free action
+Action
+IO game
+Single player
+Stylized
+Cartoon
+Animals
+Snake
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 09/30
+Act Like a Kid Again! Collect Mischief Skins and Rule the Playground!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Personal info and Device or other IDs
+This app may collect these data types
+Personal info and App activity
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+3.9
+466K reviews
+5
+4
+3
+2
+1
+Myrlle Bahala
+more_vert
+Flag inappropriate
+April 11, 2026
+The game is fun and enjoyable, especially since it works offline, which makes it very convenient to play anytime. However, I noticed that only the top players have names. It would be better if all the snakes you encounter had usernames, whether real or not, so the game feels more interactive. Adding names to every snake you encounter would make it more engaging and interesting because you know their names already. Overall I love the game, and I hope you will notice my suggestion:)
+57 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Breezy
+more_vert
+Flag inappropriate
+September 2, 2026
+This game is way too easy The other worms just slam into you volunteerilly, they don't even try to take you out
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Fozia Mobeen
+more_vert
+Flag inappropriate
+August 15, 2026
+it is only ok we cannot decide how our snake might look like☹️😡😡😡🤬🤬🤮🤮🤢🤢 I prefer to paper Io there is no snake but we can decide our emoji👍😌☺️😊
+11 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+★ Play the snake & worms game!!
+★ Enjoy it for free with your family and friends!!
+★ New Events Online!
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+hippogame2018@gmail.com
+shield
+Privacy Policy
+About the developer
+Hippo Entertainment Limited
+hippostudio2018@gmail.com
+Rm 1502 EASEY COML BLDG
+253-261 HENNESSY RD
+灣仔
+香港島
+Hong Kong
++86 186 1317 0624
+More by Hippo Lab
+arrow_forward
+Callbreak Master - Card Game
+Hippo Lab
+3.6
+star
+Ludo Master™ - Ludo Board Game
+Hippo Lab
+3.7
+star
+Worms Merge-io&idle snake game
+Hippo Lab
+3.3
+star
+Ludo Master™ Lite - Dice Game
+Hippo Lab
+3.6
+star
+Block Puzzle Guardian
+Hippo Lab
+3.9
+star
+Snake Doodle - Worm .io Game
+Hippo Lab
+3.5
+star
+Similar games
+arrow_forward
+Worms Zone .io - Hungry Snake
+CASUAL AZUR GAMES
+4.3
+star
+Snake Clash!
+Supercent, Inc.
+4.2
+star
+Snake.io - Fun Snake .io Games
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+Subway Princess Runner
+Ivy
+4.0
+star
+Hunter Assassin
+Ruby Games AS
+4.1
+star
+Kooply Run™: Play and Create!
+KOOPLY
+3.9
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

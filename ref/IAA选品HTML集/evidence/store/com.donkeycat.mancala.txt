@@ -1,0 +1,315 @@
+# Google Play public snapshot: com.donkeycat.mancala
+URL: https://play.google.com/store/apps/details?id=com.donkeycat.mancala&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:10.405Z
+HTTP status: 200
+Raw HTML SHA-256: 9dc434f3baa2db0c09c841225a5c34807cc4afd2e4ef20be733e5e772529ffb0
+Raw HTML: research/html-data/store-snapshots/com.donkeycat.mancala.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Mancala Online - Congklak
+DonkeyCat Games
+Contains ads
+In-app purchases
+4.7
+star
+10.6K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Play Mancala with friends online or offline. The board game is now available with online multiplayer. You can also play offline against challenging computer opponents or in the two player mode.
+Mancala is a simple but demanding puzzle strategy game where you try to move stones in your Mangala and capture opponent's stones to win the game.
+Online multiplayer 👥
+Play a quick Mancala game online against players all around the world. No login is necessary. Send your opponents emojis during the game.
+Offline multiplayer 🆚
+Play Mancala and friends on one device with the tow player mode.
+Computer opponents 👤🤖
+If you don't want to play Mangala with friends, try to improve your strategy and practice against the computer in 2 player mode. Play against three different computer opponents offline.
+Test your skills against three different computer opponents.
+Leaderboard 🏆
+Compare your sills and your game statistics with other players. Get a detailed overview of your skill development.
+Community
+Join the Ayo Online community and play Mangala with Friends.
+Start right away
+No login necessary, play Mancala with friends right away.
+Classic Board Game 🎲
+Mancala is known around the world and has lots of different names like Mangala, Ayo, Mankalah, Manqala, Mankala, Sungka, Congklak , Magala, Macala
+Mancala is a fast strategy game that is easy to learn and offers both beginners and experienced players strategic challenges for your brain
+If you're an advanced player already, try to win against the best players online!
+If you are a beginner and don't have a strategy yet. You can start with training against the Computer or in the offline 2 player mode before you enter the challenging world of Mancala. 😉
+Mancala Online or Congklak a challenging board game with online and offline mode
+Updated on
+Aug 10, 2026
+Casual
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Mancala Online - Congklak",
+  "url": "https://play.google.com/store/apps/details/Mancala_Online_Congklak?id=com.donkeycat.mancala&hl=en",
+  "description": "Mancala Online or Congklak a challenging board game with online and offline mode",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/afcIRlx2vDxtUTUdzhA7kEfDblkjK8q2TkRDexL_CRL589zIhxDfdb5GbDWZdHmDo0XYwJd0LuURovJK4SXuOoA",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "DonkeyCat Games",
+    "url": "https://coolplay.io"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.670000076293945",
+    "ratingCount": "10572"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Mancala Online - Congklak - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Mancala Online - Congklak
+DonkeyCat Games
+Contains ads
+In-app purchases
+4.7
+star
+10.6K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Play Mancala with friends online or offline. The board game is now available with online multiplayer. You can also play offline against challenging computer opponents or in the two player mode.
+Mancala is a simple but demanding puzzle strategy game where you try to move stones in your Mangala and capture opponent's stones to win the game.
+Online multiplayer 👥
+Play a quick Mancala game online against players all around the world. No login is necessary. Send your opponents emojis during the game.
+Offline multiplayer 🆚
+Play Mancala and friends on one device with the tow player mode.
+Computer opponents 👤🤖
+If you don't want to play Mangala with friends, try to improve your strategy and practice against the computer in 2 player mode. Play against three different computer opponents offline.
+Test your skills against three different computer opponents.
+Leaderboard 🏆
+Compare your sills and your game statistics with other players. Get a detailed overview of your skill development.
+Community
+Join the Ayo Online community and play Mangala with Friends.
+Start right away
+No login necessary, play Mancala with friends right away.
+Classic Board Game 🎲
+Mancala is known around the world and has lots of different names like Mangala, Ayo, Mankalah, Manqala, Mankala, Sungka, Congklak , Magala, Macala
+Mancala is a fast strategy game that is easy to learn and offers both beginners and experienced players strategic challenges for your brain
+If you're an advanced player already, try to win against the best players online!
+If you are a beginner and don't have a strategy yet. You can start with training against the Computer or in the offline 2 player mode before you enter the challenging world of Mancala. 😉
+Mancala Online or Congklak a challenging board game with online and offline mode
+Updated on
+Aug 10, 2026
+Casual
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+Personal info, Financial info and 4 others
+Data isn’t encrypted
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+tablet_android
+Tablet
+4.7
+9.98K reviews
+5
+4
+3
+2
+1
+Scootermom
+more_vert
+Flag inappropriate
+Show review history
+August 10, 2022
+UPDATE: I enjoyed the game's graphics and being able to play offline. The structure was similar to that of their other games (like Mills). I hadn't played for awhile and came back to play today. The entire structure & design was completely changed! I don't like the way it looks now at all! The pieces are very cartoonish and smaller (hard to see!). I had given the app 5 stars a few months ago. Changed it to 1 & uninstalled until they bring the former structure & design back.
+54 people found this review helpful
+Did you find this helpful?
+Yes
+No
+DonkeyCat Games
+August 13, 2022
+You can change the design in the settings to the classic mode, where everything looks like you were used to it....
+thrak
+more_vert
+Flag inappropriate
+Show review history
+January 7, 2022
+I am responding to the previous comment made by Gerardo. There seems to be some misunderstanding here about the game. Mancala, at least the version of the game played here (and there are many) is a "perfect game" in the sense that the player who moves first and makes the best move on each turn, will always win. As such, in practical play, the player who moves first has a huge advantage. For example, I just played a player ranked 2000 ELO points higher than me and easily beat that player because I was able to move first. All of the top players know this and many of the lower ranked players suspect this. The top players want to protect their ELO rating and will purposely avoid playing lower ranked players out of fear of losing rating points if they do not get to move first. And even if they do get to move first, the higher rated player will only get a few ELO points when beating a much lower ranked player. So there is not much incentive for them to play lower ranked players. Since this mancala app allows you to choose your opponent, there is a lot of declines on invites made in the game for the reasons stated above. Another more popular mancala game in the Play Store does not allow the player to choose his opponent and does not allow a player to decline to play without loosing the game. So in that app, there is much more games taking place than in this app. My suggestion to the app developer is to use the same format for this app so there is more people playing and less people declining to play.
+73 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Padma Priya
+more_vert
+Flag inappropriate
+July 27, 2026
+the UI can be slightly bigger . but i like this version without too much graphics
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@coolplay.io
+shield
+Privacy Policy
+About the developer
+DonkeyCat GmbH
+appsupport@donkeycat.com
+Lindengasse 43/19
+1070 Wien
+Austria
++43 1 23879671001
+More by DonkeyCat Games
+arrow_forward
+Mills | Nine Men's Morris
+DonkeyCat Games
+4.7
+star
+Four in a row - Connect Online
+DonkeyCat Games
+4.9
+star
+President Card Game Online
+DonkeyCat Games
+4.0
+star
+NomadTracks: PDF Maps & GPS
+DonkeyCat Games
+your.move: Couples Card Game
+DonkeyCat Games
+Triviarena - Live Online Quiz
+DonkeyCat Games
+Similar games
+arrow_forward
+Dominoes Online - Classic Game
+MegaJogos
+4.1
+star
+Checkers - Online & Offline
+GamoVation
+4.3
+star
+Ludo Super: Fun Board Game
+Comfun
+3.1
+star
+Yatzy - Fun Classic Dice Game
+Bluetile
+4.0
+star
+Domino Legends: Classic Game
+Bluetile
+4.5
+star
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

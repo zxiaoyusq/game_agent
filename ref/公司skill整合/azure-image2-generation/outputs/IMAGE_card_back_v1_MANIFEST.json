@@ -1,0 +1,17 @@
+{
+  "mode": "generation",
+  "prompt": "竖屏休闲拼图游戏的卡牌背面图案，正方形构图，深藏青蓝底色，中央一枚金色扑克黑桃纹章，四周对称的金色卷草花纹边框，底纹是细密菱形暗纹，油画质感，柔和金色光晕，复古怀旧风格，四角装饰对称，无文字，无数字，无人物",
+  "size": "1024x1024",
+  "quality": "low",
+  "reference_images": [],
+  "endpoint": "https://aha-inhouse-eastus2.cognitiveservices.azure.com",
+  "deployment": "gpt-image-2",
+  "gen_api_version": "2024-02-01",
+  "edit_api_version": "2025-04-01-preview",
+  "output_path": "outputs/card_back_v1.png",
+  "sha256": "6a1a1085d0311a289d965d9e214c7b096e1d16512b4a1cfe175af10a59a11623",
+  "width": 1024,
+  "height": 1024,
+  "img_mode": "RGB",
+  "status": "ok"
+}

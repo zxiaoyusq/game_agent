@@ -1,0 +1,312 @@
+# Google Play public snapshot: com.LoopGames.Domino
+URL: https://play.google.com/store/apps/details?id=com.LoopGames.Domino&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:46.356Z
+HTTP status: 200
+Raw HTML SHA-256: eff8fec74126a62ac00265c84a0ae38bdf9b27f86661f182329a0c0c364eef5c
+Raw HTML: research/html-data/store-snapshots/com.LoopGames.Domino.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Dominoes
+Loop Games
+Contains ads
+In-app purchases
+4.5
+star
+2.13M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Dominoes is definitely one of the most famous board game in the world. There are dozens of rules out there, but three modes are getting most of the attention:
+- Draw dominoes: simple, relaxing, play your tiles on either side of the board. You only need to match the tile you have with one of the 2 ends already on the board.
+- Block dominoes: basically the same as Draw Dominoes. The main difference is you have to pass your turn if you run out of options (whereas you can pick an extra domino from the boneyard in the previous mode).
+- Dominoes All Five: slightly more complex. Each turn, you need to add all ends of the board, and count the number of pips on them. If it is a multiple of five, you score those points. A bit difficult at first but you will quickly get it!
+NEW - Become VIP: Choose your subscription’s type (weekly, monthly, yearly) and enjoy your Domino game without any advertisement.
+Beautiful, simple, relaxing, easy to learn yet complex if you get to learn all the tricks! Will you be a Dominoes master?
+🁬 🂋 Play one of the most famous board game in the world: Dominoes ! 🂏 🂂
+Updated on
+Sep 7, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Single player
+Realistic
+Miscellaneous
+Board games
+Connect
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 1 day
+Kick off the school year with classic Dominoes tile matching fun!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dominoes",
+  "url": "https://play.google.com/store/apps/details/Dominoes?id=com.LoopGames.Domino&hl=en",
+  "description": "🁬 🂋 Play one of the most famous board game in the world: Dominoes ! 🂏 🂂",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/-1iq1jG2hpEQUamyqyNKuB0gfR3Pbe3TqhaChbmqxNrKmYsGEw84Lyarcvz1RG6Q1hDr0cD-QsoWWYoeoUO_fw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Loop Games",
+    "url": "https://loop.games/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.486711025238037",
+    "ratingCount": "2127239"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Dominoes - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Dominoes
+Loop Games
+Contains ads
+In-app purchases
+4.5
+star
+2.13M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Dominoes is definitely one of the most famous board game in the world. There are dozens of rules out there, but three modes are getting most of the attention:
+- Draw dominoes: simple, relaxing, play your tiles on either side of the board. You only need to match the tile you have with one of the 2 ends already on the board.
+- Block dominoes: basically the same as Draw Dominoes. The main difference is you have to pass your turn if you run out of options (whereas you can pick an extra domino from the boneyard in the previous mode).
+- Dominoes All Five: slightly more complex. Each turn, you need to add all ends of the board, and count the number of pips on them. If it is a multiple of five, you score those points. A bit difficult at first but you will quickly get it!
+NEW - Become VIP: Choose your subscription’s type (weekly, monthly, yearly) and enjoy your Domino game without any advertisement.
+Beautiful, simple, relaxing, easy to learn yet complex if you get to learn all the tricks! Will you be a Dominoes master?
+🁬 🂋 Play one of the most famous board game in the world: Dominoes ! 🂏 🂂
+Updated on
+Sep 7, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Single player
+Realistic
+Miscellaneous
+Board games
+Connect
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 1 day
+Kick off the school year with classic Dominoes tile matching fun!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+App activity, App info and performance, and Device or other IDs
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+2.04M reviews
+5
+4
+3
+2
+1
+Legend
+more_vert
+Flag inappropriate
+September 8, 2026
+The reason for the 1 🌟 is cause way too many dang ads after ever hand ad that makes the game boring. I love the game cause it stuck to the rules for that yes I enjoy it alot. If they fix that ad issue I will rais my 🌟 every other hand or every 5 or 10 hand would be awesome. but every hand naw
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Sophia Nickson
+more_vert
+Flag inappropriate
+Show review history
+September 9, 2026
+These developers are a trip. The flagrant and utterly in-your-face programmed cheating is so ridiculous. They have the game rigged to do stupid things like this: when the game itself "dominoes", it counts points that aren't there, and when you Domino yourself WITH POINTS, the game is set up to NOT add your points to your score. I get it though, they are tired of getting their asses handed to them by people who know how to play like me. Hilarious.
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Erick Vestey
+more_vert
+Flag inappropriate
+September 8, 2026
+score miscalculation and doubling of opponents score. this is something recent. I pay to not have ads but this is getting to the point I want to uninstall the app and cancel my subscription.
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+loopgamesinc@gmail.com
+shield
+Privacy Policy
+About the developer
+LOOP GAMES
+loopgamesinc@gmail.com
+SHAREWOOD - BAT. B 28 RUE PARMENTIER
+59650 VILLENEUVE D'ASCQ
+France
++33 6 87 55 75 30
+More by Loop Games
+arrow_forward
+Blockub
+Loop Games
+Math Crossword - Notebook
+Loop Games
+WordiCub: Word Puzzle Game
+Loop Games
+Motto: Word Puzzle & Strategy
+Loop Games
+Spider Solitaire - Master
+Loop Games
+Beverage Sort - Puzzle Game
+Loop Games
+Similar games
+arrow_forward
+Dominoes: Classic Dominos Game
+NewPubCo
+4.5
+star
+Domino - Dominos online game
+ZiMAD
+4.9
+star
+Domino Legends: Classic Game
+Bluetile
+4.5
+star
+Dominoes Online - Classic Game
+MegaJogos
+4.1
+star
+Arcadia Dominoes for Seniors
+Metajoy
+4.5
+star
+Domino Duel - Online Dominoes
+ZARIBA GAMES - Card & Board Games Online
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

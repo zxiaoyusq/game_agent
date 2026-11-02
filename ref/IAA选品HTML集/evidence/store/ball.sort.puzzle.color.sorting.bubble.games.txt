@@ -1,0 +1,366 @@
+# Google Play public snapshot: ball.sort.puzzle.color.sorting.bubble.games
+URL: https://play.google.com/store/apps/details?id=ball.sort.puzzle.color.sorting.bubble.games&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:59.410Z
+HTTP status: 200
+Raw HTML SHA-256: 35965a5e897099238361499756e56af5c9e532af3000bed14b73949864eec680
+Raw HTML: research/html-data/store-snapshots/ball.sort.puzzle.color.sorting.bubble.games.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ball Sort Puzzle - Color Game
+Guru Puzzle Game
+Contains ads
+In-app purchases
+4.7
+star
+950K reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+As the most relaxing and addictive color sorting game, this ball puzzle is engineered to both entertain and sharpen your cognitive faculties.
+While strategically sorting the colored balls to fill each bottle with the same color, the Zen-like focus it cultivates will relieve stress and provide a necessary distraction from daily routines.
+This classic color sorting game is intuitive to play, but difficult to master. Tap to transfer a colored ball from one bottle and stack it into another. Success requires careful strategic moves and advanced planning skills. With thousands of challenging ball sort puzzles available, each move demands foresight. One misstep can lead to an inescapable block! This Ball Sort game is the best mental exercise for you to train logical thinking and maintain mental agility.
+KEY FEATURES
+🆓 Absolutely FREE sorting game for adults
+➡️ Intuitive control, just tap to sort the ball
+✅ Thousands of levels to challenge, varying difficulty & infinite joy
+⏳ NO TIMER, enjoy the Ball Sort puzzles at your own Zen pace
+▶️ NO penalties, you can restart your current level at any time
+💡 Use "Undo" to go back to previous steps, or click "Add" to add an extra bottle
+🧠 Sharpen your mind in relaxing games
+🎮 Strategic but highly addictive gameplay
+📶 OFFLINE game, no need for network connection
+👤 Designed for adults and logical thinkers
+HOW TO PLAY
+- Tap any bottle to pick up the top ball, then tap another bottle to move the ball into it.
+- You can only stack the ball into a bottle with the same color ball on top and enough space.
+- The level is conquered when balls of the same color are sorted into a single bottle.
+- Each bottle can only be placed with 4 balls.
+- Use "Undo" to go back to previous steps.
+- Add an extra bottle if you get stuck.
+- You can restart the current level at any time.
+This challenging yet mindful Ball Sort game offers sustained strategic engagement through its color sorting puzzles. Share this brain training tool with fellow adults and enjoy a focused, relaxing experience of sorting games.
+Engage your strategic mind in this ball color matching game. Download now to conquer every sorting challenge and be the master of Color Sorting!
+Privacy Policy: https://ballsort.gurugame.ai/policy.html
+Terms of Service: https://ballsort.gurugame.ai/termsofservice.html
+Challenging but addictive color sorting game. Play offline & train your brain!
+Updated on
+Sep 16, 2026
+Puzzle
+Sort
+Casual
+Single player
+Stylized
+Miscellaneous
+Bubble
+Light-hearted
+Offline
+Events & offers
+Update available
+Fruitful Ball Sort in the Autumn Orchard
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ball Sort Puzzle - Color Game",
+  "url": "https://play.google.com/store/apps/details/Ball_Sort_Puzzle_Color_Game?id=ball.sort.puzzle.color.sorting.bubble.games&hl=en",
+  "description": "Challenging but addictive color sorting game. Play offline & train your brain!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/A-E2jczrwGXsu42MoQdEFQ0YFhMT_9Svyk_7eOCiyYQx8PVcs6gUV99ZYycWiqGca2Zzr8YqUHtxSHhdmm1uw0I",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Guru Puzzle Game",
+    "url": "https://ballsort.gurugame.ai/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.737534999847412",
+    "ratingCount": "949537"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ball Sort Puzzle - Color Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Ball Sort Puzzle - Color Game
+Guru Puzzle Game
+Contains ads
+In-app purchases
+4.7
+star
+950K reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+As the most relaxing and addictive color sorting game, this ball puzzle is engineered to both entertain and sharpen your cognitive faculties.
+While strategically sorting the colored balls to fill each bottle with the same color, the Zen-like focus it cultivates will relieve stress and provide a necessary distraction from daily routines.
+This classic color sorting game is intuitive to play, but difficult to master. Tap to transfer a colored ball from one bottle and stack it into another. Success requires careful strategic moves and advanced planning skills. With thousands of challenging ball sort puzzles available, each move demands foresight. One misstep can lead to an inescapable block! This Ball Sort game is the best mental exercise for you to train logical thinking and maintain mental agility.
+KEY FEATURES
+🆓 Absolutely FREE sorting game for adults
+➡️ Intuitive control, just tap to sort the ball
+✅ Thousands of levels to challenge, varying difficulty & infinite joy
+⏳ NO TIMER, enjoy the Ball Sort puzzles at your own Zen pace
+▶️ NO penalties, you can restart your current level at any time
+💡 Use "Undo" to go back to previous steps, or click "Add" to add an extra bottle
+🧠 Sharpen your mind in relaxing games
+🎮 Strategic but highly addictive gameplay
+📶 OFFLINE game, no need for network connection
+👤 Designed for adults and logical thinkers
+HOW TO PLAY
+- Tap any bottle to pick up the top ball, then tap another bottle to move the ball into it.
+- You can only stack the ball into a bottle with the same color ball on top and enough space.
+- The level is conquered when balls of the same color are sorted into a single bottle.
+- Each bottle can only be placed with 4 balls.
+- Use "Undo" to go back to previous steps.
+- Add an extra bottle if you get stuck.
+- You can restart the current level at any time.
+This challenging yet mindful Ball Sort game offers sustained strategic engagement through its color sorting puzzles. Share this brain training tool with fellow adults and enjoy a focused, relaxing experience of sorting games.
+Engage your strategic mind in this ball color matching game. Download now to conquer every sorting challenge and be the master of Color Sorting!
+Privacy Policy: https://ballsort.gurugame.ai/policy.html
+Terms of Service: https://ballsort.gurugame.ai/termsofservice.html
+Challenging but addictive color sorting game. Play offline & train your brain!
+Updated on
+Sep 16, 2026
+Puzzle
+Sort
+Casual
+Single player
+Stylized
+Miscellaneous
+Bubble
+Light-hearted
+Offline
+Events & offers
+Update available
+Fruitful Ball Sort in the Autumn Orchard
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+App activity, App info and performance, and Device or other IDs
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.7
+924K reviews
+5
+4
+3
+2
+1
+Su Triv
+more_vert
+Flag inappropriate
+July 8, 2026
+Very disappointing game. The levels become too difficult too fast, and many colors look almost the same, making it hard to tell them apart. Level 63 is especially unfair. It feels like the game is designed to make players fail and replay the same level over and over instead of rewarding points. Watching ads also does not give any rewards. The extra bottle feature does not work. It is frustrating to play when the game does not work as expected. Please fix these problems.
+18 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Guru Puzzle Game
+July 8, 2026
+Hi! We're so sorry to hear about this issue. Could you take a screen video of the issue and send it to ballsort@fungame.studio? We'll do our best to make the game a success for you. Thank you so much for your support! :-) — Devin
+Jessica Kerns
+more_vert
+Flag inappropriate
+March 13, 2025
+It's a fairly fun game. There are a couple of improvements that could be made to it. I know most people complain about ads, and yes there are a bit too many and they are annoying. But my biggest issue is the 'coins' you collect after however many levels. You can't use them for anything practical, like an extra tube. No, to get a tube, you have to watch an extra long ad. Coins can only be used to buy 'skins' that you haven't unlocked yet. To me, that's a waste.
+672 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Guru Puzzle Game
+March 14, 2025
+We will forward your feedback to our product team and continue to optimize our game to deliver a better and better gaming experience. Please feel free to reach us at ballsort@fungame.studio with any other suggestions or feedback. Thanks a lot! :-) - Devin
+John Skeats (Yonten Rabgye)
+more_vert
+Flag inappropriate
+Show review history
+May 16, 2025
+I really liked this game, but it was destroyed by ads interrupting gameplay. I was planning multiple steps ahead when the ads completely disrupted my thoughts. I would have given it 5 stars for the game but took away 2 stars due to the ad interruptions. It is reasonable for developers to use ads to generate revenue, but destroying game play with ads is inexcusable.
+293 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Guru Puzzle Game
+May 10, 2025
+Hi, sorry for such inconvenience. As a startup, we rely on ads. Some ads can be skipped after 5 seconds. You can purchase the "Remove Ads" service. If anything else, please reach us at ballsort@fungame.studio. Thanks. :-) - Devin
+See all reviews
+What’s new
+Hi Ball Sort Puzzle Players,
+This update includes bug fixes and performance improvements.
+Train your brain with colorful sorting games! Play and relax!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+ballsort@fungame.studio
+shield
+Privacy Policy
+About the developer
+CHAMOMILE PTE. LTD.
+developer@fungame.studio
+C/O: SINGAPORE FOZL GROUP PTE. LTD. 6 Raffles Quay #14-06
+Singapore 048580
++852 6064 1953
+More by Guru Puzzle Game
+arrow_forward
+Water Sort Puzzle - Sort Color
+Guru Puzzle Game
+4.7
+star
+Crossmath® - Math Puzzle Games
+Guru Puzzle Game
+4.8
+star
+Goods Puzzle: 3D Sorting Games
+Guru Puzzle Game
+4.8
+star
+Differences - Find & Spot It
+Guru Puzzle Game
+4.8
+star
+Solitaire - Classic Card Games
+Guru Puzzle Game
+4.8
+star
+Find It Out® - Hidden Object
+Guru Puzzle Game
+4.9
+star
+Similar games
+arrow_forward
+Ball Sort: Sorting-Bubble Sort
+HDuo Fun Games
+4.3
+star
+Ball Sort Master - Puzzle Game
+Kasur Games
+4.1
+star
+SortPuz™: Water Sort Puzzle
+Dark Halo
+4.4
+star
+Tile Club - Match Puzzle Games
+GamoVation
+4.4
+star
+Tile Explorer - Triple Match
+Oakever Games
+4.5
+star
+Bubble Shooter - Classic Pop
+Bubble Shooter
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

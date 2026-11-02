@@ -1,0 +1,56 @@
+{
+  "batch": "jigsawcard-2026-09",
+  "project": "E:/Gameprogram/jigsawcard-godot",
+  "style": "mediterranean-casual-3d",
+  "work_root": "E:/Gameprogram/jigsawcard-godot/_art_rebuild",
+  "_comment": "work_root 若在项目内，脚本会自动写 .gdignore；不想污染项目就指到项目外。",
+  "items": [
+    {
+      "id": "book_olive",
+      "_type": "普通素材：整张重绘，内容框对齐原图内容框",
+      "file": "assets/textures/954406831b3f4765b504e305a1496258c73608db2 1.png",
+      "prompt": "一本平放的古典精装书图标：红棕皮革封面，封面中央金色浮雕橄榄枝（多片金叶 + 两颗金橄榄），封面外沿一圈细金装饰线框且四角为内凹花角，右侧一条圆角皮革搭扣带（带缝线），右下角一枚金色护角，底部露出厚实米白书页垛，左下角一小段金黄色丝带书签。",
+      "notes": "透视与倾斜角度与原图一致；不要书脊凸起横带。",
+      "use_ref": "original",
+      "candidates": 2,
+      "pick": 1,
+      "fit": "bbox"
+    },
+    {
+      "id": "atlas_combo",
+      "_type": "图集切片（点选）：原位局部重绘，位置/轮廓/region 全由原图锁定",
+      "mode": "atlas",
+      "file": "assets/spine/combo/combo.png",
+      "at": "440,120",
+      "bleed": 16,
+      "context": 96,
+      "alpha_from": "original",
+      "prompt": "把这一块分数条重新绘制成地中海古典风格的金属质感条。",
+      "candidates": 2,
+      "pick": 1
+    },
+    {
+      "id": "atlas_by_rect",
+      "_type": "图集切片（显式矩形）：最可靠；非透明切片图集必须用这种",
+      "mode": "atlas",
+      "file": "assets/spine/effect_cat_face_01/effect_cat_face_01.png",
+      "regions": [{"name": "face", "x": 0, "y": 0, "w": 128, "h": 128}],
+      "bleed": 16,
+      "alpha_from": "original",
+      "prompt": "把这块猫咪头像重绘成地中海古典配色。",
+      "candidates": 1,
+      "pick": 1
+    },
+    {
+      "id": "example_bg",
+      "_type": "不透明背景原画：整幅缩放（fit=full）",
+      "file": "assets/textures/some_background.png",
+      "prompt": "地中海小镇屋顶俯瞰的休闲插画背景：陶土红屋顶、白墙暖石、远处爱琴海与天空。",
+      "notes": "构图与远景近景比例与原图同构；细节克制，别抢 UI 可读性。",
+      "use_ref": "original",
+      "candidates": 2,
+      "pick": 1,
+      "fit": "full"
+    }
+  ]
+}

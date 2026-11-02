@@ -1,0 +1,347 @@
+# Google Play public snapshot: com.wildspike.wormszone
+URL: https://play.google.com/store/apps/details?id=com.wildspike.wormszone&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:46.696Z
+HTTP status: 200
+Raw HTML SHA-256: e7673e35885600b391cc0eb5d5898acd6f63cac6ac4873638d73626852c388a9
+Raw HTML: research/html-data/store-snapshots/com.wildspike.wormszone.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Worms Zone .io - Hungry Snake
+CASUAL AZUR GAMES
+Contains ads
+In-app purchases
+4.3
+star
+3.24M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+You love games with tons of real fun and dynamic action? Then welcome to the Worms Zone.io, an awesome arcade, where you can become the great champion of the arena! Collect yummies and different powerups, defeat enemies, and become the biggest worm of them all!
+You think it's hard? Relax, the rules are simple - explore the arena, collect all the food you see, and grow your worms as big as you can imagine - there are no limits!
+Stand out from the other players, choose a skin from the wardrobe, or create your own unique style. The further you go, the more skins you unlock.
+Worms Zone is also a PVP action game! Watch out for other players and try not to bump into them, otherwise you’ll have to start from scratch. However, if you manage to sneak and encircle them, you’ll get more points and all the food they had. It is so yummy!
+There are several tactics for becoming a champion: “fighter”, “trickster” or “builder”. Which one will you be?
+Worms Zone also has unique graphics! We keep it minimalistic and simple and you'll love it!
+We are happy when our players are happy, so if you have any thoughts, complaints, or cool ideas - feel free to share them and contact us at support@wildspike.com.
+Join our community! Follow our official Facebook page to get all the latest news and updates: https://www.facebook.com/wormszone/
+Start growing your worm now! Slither into this crazy arcade and enjoy!
+A fun, dynamic game with cool graphics! Get growing your worm right now!
+Updated on
+Sep 9, 2026
+Available on
+Android,
+Windows
+#7 top free action
+Action
+IO game
+Casual
+Single player
+Stylized
+Animals
+Worm
+Animals
+Insect
+Offline
+Play Pass
+Events & offers
+Ends in 4 days
+Retro Day: Film rolls, worms, and vintage charm!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Worms Zone .io - Hungry Snake",
+  "url": "https://play.google.com/store/apps/details/Worms_Zone_io_Hungry_Snake?id=com.wildspike.wormszone&hl=en",
+  "description": "A fun, dynamic game with cool graphics! Get growing your worm right now!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ACTION",
+  "image": "https://play-lh.googleusercontent.com/CeH-dTW_RmKEp5Y-1SmdfUhWFutk9uX8pNWJJZ64OqPNQvbvpGp4uG7JiJAJPYojunN8CcBsQx_6SC99kzuTXw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "CASUAL AZUR GAMES",
+    "url": "https://aigames.ae/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.251434326171875",
+    "ratingCount": "3239459"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Worms Zone .io - Hungry Snake - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Worms Zone .io - Hungry Snake
+CASUAL AZUR GAMES
+Contains ads
+In-app purchases
+4.3
+star
+3.24M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+You love games with tons of real fun and dynamic action? Then welcome to the Worms Zone.io, an awesome arcade, where you can become the great champion of the arena! Collect yummies and different powerups, defeat enemies, and become the biggest worm of them all!
+You think it's hard? Relax, the rules are simple - explore the arena, collect all the food you see, and grow your worms as big as you can imagine - there are no limits!
+Stand out from the other players, choose a skin from the wardrobe, or create your own unique style. The further you go, the more skins you unlock.
+Worms Zone is also a PVP action game! Watch out for other players and try not to bump into them, otherwise you’ll have to start from scratch. However, if you manage to sneak and encircle them, you’ll get more points and all the food they had. It is so yummy!
+There are several tactics for becoming a champion: “fighter”, “trickster” or “builder”. Which one will you be?
+Worms Zone also has unique graphics! We keep it minimalistic and simple and you'll love it!
+We are happy when our players are happy, so if you have any thoughts, complaints, or cool ideas - feel free to share them and contact us at support@wildspike.com.
+Join our community! Follow our official Facebook page to get all the latest news and updates: https://www.facebook.com/wormszone/
+Start growing your worm now! Slither into this crazy arcade and enjoy!
+A fun, dynamic game with cool graphics! Get growing your worm right now!
+Updated on
+Sep 9, 2026
+Available on
+Android,
+Windows
+#7 top free action
+Action
+IO game
+Casual
+Single player
+Stylized
+Animals
+Worm
+Animals
+Insect
+Offline
+Play Pass
+Events & offers
+Ends in 4 days
+Retro Day: Film rolls, worms, and vintage charm!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Financial info and 3 others
+This app may collect these data types
+Location, Financial info and 3 others
+Data isn’t encrypted
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.2
+3.11M reviews
+5
+4
+3
+2
+1
+SMARTY BOY
+more_vert
+Flag inappropriate
+Show review history
+August 7, 2026
+Hello Worms Zone Team, I love this game! Please show every player's name above their worm at all times. Also, when a worm becomes very large, its turning speed and control become too slow. Please improve turning speed and movement so big worms stay smooth and responsive. Winning should depend on skill, not slow controls. These changes would make the game much more fun and competitive. Thank you!
+16 people found this review helpful
+Did you find this helpful?
+Yes
+No
+CASUAL AZUR GAMES
+August 7, 2026
+Thank you for your suggestions. We will recommend them to the related department.
+Naveen prakash
+more_vert
+Flag inappropriate
+July 20, 2026
+The game is really good, but it feels like all the other snakes are bots. When I try to read a notification from my phone's notification drawer, the game pauses, and every snake—including mine—stops moving. When I return to the game, all the snakes, including mine, continue moving from where they left off. That makes it seem like the other snakes are bots rather than real players. 🤧
+20 people found this review helpful
+Did you find this helpful?
+Yes
+No
+CASUAL AZUR GAMES
+July 20, 2026
+Hello! Thank you for your feedback! Tell us, please, what should we improve in the game to you give us a five stars?🤔😉
+Niyas Ali
+more_vert
+Flag inappropriate
+Show review history
+March 6, 2024
+It's a good game and addictive.. there are few major problems which I would like to share it here. 1. Statistics can be made much better. Overall statistics is a waste, since different types of game means seperate statistics. 2. There should be an option to see the kill numbers while playing the game. 3. If we can apply the skin of the worm we defeated, it would be awesome 4. Frequent ads makes me less interested in game
+36,247 people found this review helpful
+Did you find this helpful?
+Yes
+No
+CASUAL AZUR GAMES
+April 2, 2024
+We've forwarded your feedback to our developers. Thank you for taking out the time to send us your suggestions!
+See all reviews
+What’s new
+Welcome to Retro Day! Dive into retro vibes and meet our new animated worm, Gentleman. Pirate Day starts October 2nd with minor updates! Includes multiple technical fixes.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@peakymuzzle.com
+shield
+Privacy Policy
+About the developer
+AI GAMES FZ LLC
+aigamesdubai@gmail.com
+Office 51,Ground Floor, Building 17
+إمارة دبيّ
+United Arab Emirates
++971 4 456 1856
+More by CASUAL AZUR GAMES
+arrow_forward
+Rollance : Adventure Balls
+CASUAL AZUR GAMES
+3.4
+star
+Harvest.io – 3D Farming Arcade
+CASUAL AZUR GAMES
+4.0
+star
+I, The One — Fun Fighting Game
+CASUAL AZUR GAMES
+4.2
+star
+Web Master: Stickman Superhero
+CASUAL AZUR GAMES
+3.9
+star
+Sword Play! Ninja Slice Runner
+CASUAL AZUR GAMES
+4.3
+star
+Iron Suit: Superhero Simulator
+CASUAL AZUR GAMES
+3.8
+star
+Similar games
+arrow_forward
+Snake Lite® - Worm Snake Game
+Hippo Lab
+3.9
+star
+Snake.io - Fun Snake .io Games
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+Worms Merge-io&idle snake game
+Hippo Lab
+3.3
+star
+Snake Clash!
+Supercent, Inc.
+4.2
+star
+Temple Run 2
+Imangi Studios
+4.0
+star
+Hunter Assassin
+Ruby Games AS
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

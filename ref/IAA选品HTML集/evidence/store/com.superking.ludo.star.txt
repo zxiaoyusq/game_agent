@@ -1,0 +1,367 @@
+# Google Play public snapshot: com.superking.ludo.star
+URL: https://play.google.com/store/apps/details?id=com.superking.ludo.star&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:12.045Z
+HTTP status: 200
+Raw HTML SHA-256: f563859000d5c294995b63130699ad89e76ab929d78f358857dadb02168eb4b5
+Raw HTML: research/html-data/store-snapshots/com.superking.ludo.star.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo STAR
+Gameberry Labs
+Contains ads
+In-app purchases
+4.4
+star
+1.59M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, Digital Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Ludo STAR is the amazing game that you can play with your friends & family.
+The game has four colors: red, blue, green and yellow. Are your friends kings of Ludo? Bring them all to the classic game played by the Indian emperors.
+Ludo Classic Features:
+★--> Login with Facebook and invite friends to play with you
+★--> Play with random player in 2 or 4 player matches
+★--> Play different variations: Classic, Master or Quick
+★--> Pair with other players to play Team Up
+★--> Play with your favorite rules like :
+Doubling of pieces
+,
+kill 1 before entering home
+etc.
+★--> Feels like 3d Ludo with 3d dice
+★--> Chat and send emojis & gifts to other players while you play.
+★-->Send lucky dices to your friends and pick daily cards to earn gold and gems
+★-->Collect 100s of amazing dices.
+Bring your friends while you play.
+★--> Download for Free!
+★--> Suitable for all Ages!
+Tips: The more you play, the more exciting it becomes .
+Enjoy the amazing game played by players since 2017.
+Play this royal game of Kings and Queens You will never regret it!
+NOTE:
+Use of this application is governed by Gameberry Labs Pvt. Ltd. Terms of Use. Collection and use of personal data are subject to Gameberry Labs Privacy Policy. Both policies are available at www.gameberrylabs.com.
+Ludo STAR is the classic Ludo board game played by king. Join the Ludo club now
+Updated on
+Sep 10, 2026
+#6 top grossing board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Puzzles
+Miscellaneous
+Dice
+Events & offers
+Ends in 6 days
+Wrath of the Desert
+Ends on 10/04
+Deep Sea Treasure is Calling!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo STAR",
+  "url": "https://play.google.com/store/apps/details/Ludo_STAR?id=com.superking.ludo.star&hl=en",
+  "description": "Ludo STAR is the classic Ludo board game played by king. Join the Ludo club now",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/ZNXQTsJHocQy7zbb17KgpowEK8KRZFb7Egk-mLkmomAau2jiHOd7RQRKyVN0ToyLanF7yxYPYuZxEdqtCO1jqQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Gameberry Labs",
+    "url": "https://www.gameberrylabs.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4297380447387695",
+    "ratingCount": "1593340"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo STAR - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Ludo STAR
+Gameberry Labs
+Contains ads
+In-app purchases
+4.4
+star
+1.59M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, Digital Purchases
+Learn more
+About this game
+arrow_forward
+Ludo STAR is the amazing game that you can play with your friends & family.
+The game has four colors: red, blue, green and yellow. Are your friends kings of Ludo? Bring them all to the classic game played by the Indian emperors.
+Ludo Classic Features:
+★--> Login with Facebook and invite friends to play with you
+★--> Play with random player in 2 or 4 player matches
+★--> Play different variations: Classic, Master or Quick
+★--> Pair with other players to play Team Up
+★--> Play with your favorite rules like :
+Doubling of pieces
+,
+kill 1 before entering home
+etc.
+★--> Feels like 3d Ludo with 3d dice
+★--> Chat and send emojis & gifts to other players while you play.
+★-->Send lucky dices to your friends and pick daily cards to earn gold and gems
+★-->Collect 100s of amazing dices.
+Bring your friends while you play.
+★--> Download for Free!
+★--> Suitable for all Ages!
+Tips: The more you play, the more exciting it becomes .
+Enjoy the amazing game played by players since 2017.
+Play this royal game of Kings and Queens You will never regret it!
+NOTE:
+Use of this application is governed by Gameberry Labs Pvt. Ltd. Terms of Use. Collection and use of personal data are subject to Gameberry Labs Privacy Policy. Both policies are available at www.gameberrylabs.com.
+Ludo STAR is the classic Ludo board game played by king. Join the Ludo club now
+Updated on
+Sep 10, 2026
+#6 top grossing board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Puzzles
+Miscellaneous
+Dice
+Events & offers
+Ends in 6 days
+Wrath of the Desert
+Ends on 10/04
+Deep Sea Treasure is Calling!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Financial info and 3 others
+This app may collect these data types
+Location, Personal info and 5 others
+Data isn’t encrypted
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.4
+1.53M reviews
+5
+4
+3
+2
+1
+Shajia Azmin
+more_vert
+Flag inappropriate
+August 26, 2026
+To ludo star team: Try to fix this problem without providing any explanation. Very annoying game, very disappointing game Most of the time no matter how good your strategy is the game never lets you win, you are never going to get the numbers that you need, whereas your opponent gets all the right things happening at the right time. Extremely one sided. Which is frustrating. Not sure if it's a logic, algorithm, or bots playing on the other side I'm deleting it.
+9 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Gameberry Labs
+August 27, 2026
+Hello, please note that the dice generate random results, and you can get any set of numbers from 1 to 6. We prioritise providing all players with a fair and natural gaming. In case of any queries, please contact us through game support:. - Team Ludo Star
+Monib A Khan
+more_vert
+Flag inappropriate
+September 3, 2026
+The game's very pathetic, just the wastage of time & energy. You have lesser entertainment against what you're giving. Moreover, the game can only be played either by paying money or watching ads – and believe me, you get ads as longer as more than three and a half (3½) minutes. I wanted to share the examples (the ad duration recordings), so you could view the duration of the ads in these recordings. Also, both recordings start when the duration bars are midway.
+5 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Gameberry Labs
+September 5, 2026
+Hello, we're very sorry to see that you have had a negative experience with the game. Please contact us through the in-game support button from settings and let us know what went wrong so we can check and help you further. - Team Ludo Star
+Zia Ur Rahman
+more_vert
+Flag inappropriate
+September 4, 2026
+I have been playing LUDO STAR for quite some time, but unfortunately the game has become very frustrating due to frequent issues, bugs, and technical problems. The most disappointing part is the customer support. When players report a genuine problem, the support team is often unhelpful and does not properly investigate or resolve the issue. Instead of getting a clear solution, players are left waiting or receive generic responses.
+6 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Gameberry Labs
+September 18, 2026
+Hello Rahman, We’re truly sorry to hear about your frustrating experience. We take your feedback seriously and will share it with the team for review. If you are facing a specific issue, please contact us through in game support in Settings with the details so our team can investigate it properly and assist you.
+Team Ludo Star
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, Digital Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@gameberrylabs.com
+shield
+Privacy Policy
+About the developer
+GAMEBERRY LABS PRIVATE LIMITED
+contact@gameberrylabs.com
+No. 78/9, Bellandur Village, Varthur Hobli
+Bangalore East, Bellandur
+Bengaluru, Karnataka 560103
+India
++91 99167 04615
+More by Gameberry Labs
+arrow_forward
+Ludo Titan - Online Ludo Game
+Gameberry Labs
+3.8
+star
+Monopoly Deal
+Gameberry Labs
+Parchisi STAR Online
+Gameberry Labs
+3.8
+star
+Sorry! World - Board Game
+Gameberry Labs
+3.6
+star
+Parchisi STAR Rush
+Gameberry Labs
+Jackaroo Star-Fastest Jackaroo
+Gameberry Labs
+4.5
+star
+Similar games
+arrow_forward
+Yalla Ludo - Ludo&Jackaroo
+Aviva Sun
+3.7
+star
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+4.0
+star
+Ludo King®
+Gametion
+4.0
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Ludo Super: Fun Board Game
+Comfun
+3.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

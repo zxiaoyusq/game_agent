@@ -1,0 +1,427 @@
+# Google Play public snapshot: com.miniclip.carrom
+URL: https://play.google.com/store/apps/details?id=com.miniclip.carrom&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:50.633Z
+HTTP status: 200
+Raw HTML SHA-256: fd5a3605183e760960be7828a5b591ff14d0a07a3ab175fbee5636af0de9f09e
+Raw HTML: research/html-data/store-snapshots/com.miniclip.carrom.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Carrom Pool: Disc Game
+Miniclip.com
+Contains ads
+In-app purchases
+4.6
+star
+7.95M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Carrom
+is an
+easy-to-play
+multiplayer board game. Pot all your pieces before your opponent. Can you become the best at this
+Carrom Board game
+?
+With
+simple
+gameplay,
+smooth
+controls and
+great
+physics, travel around the world and play against worthy opponents. Are you up for the challenge?
+Play multiplayer matches with your friends. Carrom Pool is a physics based online game that can be played by upto four players. Challenge and compete with players from around the world in the best board game.
+Enjoy various Carrom game modes in both offline and online mode. You can play with your friends on the same device. Get matched with players of similar skill and have a fun.
+Customise your pieces with a huge variety of unlock-able items! Show off your style to players from all over the world!
+Features:
+► Play a brand new 2v2 game mode. Play classic 4 player Carrom matches with your family and friends
+► Enjoy voice and video chat while playing a match. This feature is accessible to Carrom Pass owners only
+► Try your luck at opening the lucky box. Get a free attempt on a daily basis and see how many free rewards you can unlock.
+► Weekly new time-limited events that will keep you hooked. Play more to win more.
+► Spin the wheel and unlock premium strikers, pucks and much more
+►Play
+multiplayer
+matches in 3 game modes:
+Carrom, Free Style
+and
+Disc Pool
+.
+►Play with your
+friends
+.
+►Compete with
+top
+players.
+►Try your luck at
+free
+daily golden shot and
+win
+big prizes.
+►Play around the
+world
+in
+glorious arenas
+.
+►
+Smooth
+controls and
+realistic
+physics.
+►Unlock a wide range of
+strikers
+and pucks.
+►Win
+free
+victory chests with
+exciting
+rewards.
+►Upgrade your strikers and unleash frenzy.
+►Supports
+offline play
+.
+Challenge your friends in one-on-one matches and show what you are worth!
+Relive your childhood memories in this hit multiplayer Carrom board game!
+Updated on
+Aug 31, 2026
+#1 top free sports
+Sports
+Billiards
+Casual
+Multiplayer
+Competitive multiplayer
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Carrom Pool: Disc Game",
+  "url": "https://play.google.com/store/apps/details/Carrom_Pool_Disc_Game?id=com.miniclip.carrom&hl=en",
+  "description": "Relive your childhood memories in this hit multiplayer Carrom board game!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_SPORTS",
+  "image": "https://play-lh.googleusercontent.com/6DjZbXbh4A40BWTM6_NkeFImq6fdLzq3GR5XTz1gRJqSJ6j-kT6osANeGuDQXwn6_zBbb_D8XJlhlHi1pwhGvg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Miniclip.com",
+    "url": "https://www.miniclip.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.581702709197998",
+    "ratingCount": "7947415"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Carrom Pool: Disc Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Carrom Pool: Disc Game
+Miniclip.com
+Contains ads
+In-app purchases
+4.6
+star
+7.95M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+About this game
+arrow_forward
+Carrom
+is an
+easy-to-play
+multiplayer board game. Pot all your pieces before your opponent. Can you become the best at this
+Carrom Board game
+?
+With
+simple
+gameplay,
+smooth
+controls and
+great
+physics, travel around the world and play against worthy opponents. Are you up for the challenge?
+Play multiplayer matches with your friends. Carrom Pool is a physics based online game that can be played by upto four players. Challenge and compete with players from around the world in the best board game.
+Enjoy various Carrom game modes in both offline and online mode. You can play with your friends on the same device. Get matched with players of similar skill and have a fun.
+Customise your pieces with a huge variety of unlock-able items! Show off your style to players from all over the world!
+Features:
+► Play a brand new 2v2 game mode. Play classic 4 player Carrom matches with your family and friends
+► Enjoy voice and video chat while playing a match. This feature is accessible to Carrom Pass owners only
+► Try your luck at opening the lucky box. Get a free attempt on a daily basis and see how many free rewards you can unlock.
+► Weekly new time-limited events that will keep you hooked. Play more to win more.
+► Spin the wheel and unlock premium strikers, pucks and much more
+►Play
+multiplayer
+matches in 3 game modes:
+Carrom, Free Style
+and
+Disc Pool
+.
+►Play with your
+friends
+.
+►Compete with
+top
+players.
+►Try your luck at
+free
+daily golden shot and
+win
+big prizes.
+►Play around the
+world
+in
+glorious arenas
+.
+►
+Smooth
+controls and
+realistic
+physics.
+►Unlock a wide range of
+strikers
+and pucks.
+►Win
+free
+victory chests with
+exciting
+rewards.
+►Upgrade your strikers and unleash frenzy.
+►Supports
+offline play
+.
+Challenge your friends in one-on-one matches and show what you are worth!
+Relive your childhood memories in this hit multiplayer Carrom board game!
+Updated on
+Aug 31, 2026
+#1 top free sports
+Sports
+Billiards
+Casual
+Multiplayer
+Competitive multiplayer
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 2 others
+This app may collect these data types
+Location, Personal info and 5 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.6
+7.84M reviews
+5
+4
+3
+2
+1
+Ahmed Khan
+more_vert
+Flag inappropriate
+Show review history
+September 9, 2026
+⭐⭐⭐⭐⭐ One of the best carrom games I have played! The gameplay is smooth, the controls are easy to understand, and the physics feel really realistic. I especially enjoy playing with friends and competing in different matches. The graphics and sound effects also make the game more enjoyable. Overall, it’s fun, addictive, and perfect for anyone who loves playing carrom. Highly recommended! ❤️🎯
+Did you find this helpful?
+Yes
+No
+Adhirath Priyanshu
+more_vert
+Flag inappropriate
+September 2, 2026
+best game in the world 😎 Comprehensive Gameplay and Features Review Carrom Pool is a digital multiplayer carrom game that offers an engaging experience with simple gameplay, smooth controls, and realistic physics, making it a convenient mobile adaptation of the traditional game. The game allows players to engage in head-to-head matches against global opponents or friends, with various modes including Disc Pool, Carrom, and Freestyle. It supports both online and offline play, and players can
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Krishna Murthy Krishna Murthy
+more_vert
+Flag inappropriate
+September 3, 2026
+Carrom Disc Pool is a really fun and enjoyable game that I have been playing for a long time. The game is simple to understand, but it also requires good aim, timing, patience, and skill. I really like how the game gives the feeling of playing carrom while adding a modern and exciting style to it. The controls are smooth and easy to use. The aiming system makes it possible to plan shots carefully, and with practice, players can improve their accuracy and become better at the game.
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+- This update introduces new features that will be rolling out in the coming days! Keep logging in to discover them.
+- Bug fixes and small improvements for a smoother experience
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@miniclip.com
+shield
+Privacy Policy
+About the developer
+Miniclip SA
+support@miniclip.com
+rue des Beaux-Arts 8
+2000 Neuchâtel
+Switzerland
++41 32 560 38 68
+More by Miniclip.com
+arrow_forward
+Cricket League
+Miniclip.com
+4.5
+star
+Pure Sniper: Gun Shooter Games
+Miniclip.com
+4.5
+star
+8 Ball Pool
+Miniclip.com
+4.7
+star
+Chess Clash: Online & Offline
+Miniclip.com
+4.4
+star
+Mini Militia - War.io
+Miniclip.com
+4.1
+star
+Football Strike: Online Soccer
+Miniclip.com
+4.6
+star
+Similar games
+arrow_forward
+Ludo King®
+Gametion
+4.0
+star
+Carrom King™
+Gametion
+3.9
+star
+World Of Carrom :3D Board Game
+AppOn Innovate
+3.9
+star
+Yalla Ludo - Ludo&Jackaroo
+Aviva Sun
+3.7
+star
+Carrom - A Disc Board Game
+Brainit Games
+3.7
+star
+Carrom Meta-Board Disc Game
+Comfun
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,361 @@
+# Google Play public snapshot: com.gamovation.tileclub
+URL: https://play.google.com/store/apps/details?id=com.gamovation.tileclub&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:57.897Z
+HTTP status: 200
+Raw HTML SHA-256: f2006280fc112e97aec5f19e9ceaafc92be8675111648bc5a9227164f7a986e8
+Raw HTML: research/html-data/store-snapshots/com.gamovation.tileclub.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Tile Club - Match Puzzle Games
+GamoVation
+Contains ads
+In-app purchases
+4.4
+star
+853K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Playing Tile Club for 10 minutes a day sharpens your mind, boosts your memory, and prepares you for your daily life explorer challenges! We are one of the best puzzle games in the world!
+Are you looking for a new and exciting 3 tile matching puzzle game? Look no further than TileClub - the classic matching tile game for tile matching puzzle games enthusiasts! Super fun, easy-to-learn and challenging mahjong puzzle inspired matching game. Master your skills, match 3 tiles, and become the matching explorer master!
+With over 10,000 levels, the Tile Club matching game offers a challenging and relaxing puzzle game experience for players of all skill levels. Explore puzzles, match tiles, and master the classic game of tile matching. Join a club to chat, engage, and help other players, travel through the world by exploring levels, and participate in tournaments. If you find your zen in matching games, this tile game app is designed just for you!
+Our Tile Club Matching Game features include:
+- Thousands of best classic matching game levels with increasing difficulty, from easy tiles, to medium, hard, and advanced tiles, providing endless hours of gameplay.
+- Join clubs and communities from other players online, chat, engage, and help each other to solve challenging puzzles and match 3 tiles puzzle.
+- Become a real tile explorer by completing matching levels, and unlock new locations. Different cities, countries and their beautiful nature landscapes!
+- Compete in tournaments to challenge yourself and compare your match-3 puzzle game matching skills with other players from different countries all around the world!
+- Classic tile matching gameplay with a modern twist, providing a relaxing and brain-training experience to get zen, keeping you entertained for hours to train your brain and match master your mind through a unique tile journey.
+- A wide variety of cute tiles including fruit, cakes, animals and more that gives you a unique 3D match game experience with beautiful graphics!
+- Stuck in a hard puzzle? Our powerful boosters will help you pass the most challenging levels and continue your tile rush journey!
+Why Tile Club?
+This game offers a unique blend of classic triple matching tile gameplay with beautiful nature landscapes and lovely tile graphics. Whether you like to connect fruits, match candy, or find animal 3-tile, we offer various tileset designs in our 3 tiles matching game. From easy puzzle games to ultimate tile club master in a very short period!
+Online communities and clubs are available for chat and play with other players to help each other solve challenging puzzle from our matching games for adults and match triple 3D tiles. As you progress through the levels, you will travel through different locations and unlock new backgrounds. With tournaments, you can challenge yourself and compare your tile matching skills with other players. Engage in your daily brain time activity and enjoy our 3 tiles match solitaire puzzle game!
+Tile Club - 3 tile matching game is available to play on mobile and tablet devices, and can be played offline. Get ready to join the Tile Club match puzzle game and embark on a journey of tile crush and puzzle solving. With thousands of unique puzzle games, this offline matching game offers hours of fun and challenging triple match tiles game. Relax with match tile games and boost your skills with this matching puzzle game.
+We value your input! Please share your thoughts and suggestions with us. Our team is dedicated to reading your reviews and considering your feedback.
+Dive into the immersive world of matching games and challenge your mind with various 3 tile matching game levels! Install and join Tile Club today!
+Terms of Service can be found here: https://www.gamovation.com/legal/tos-tileclub.pdf
+Privacy Policy can be found here: https://www.gamovation.com/legal/privacy-policy.pdf
+Match and master your way through exciting puzzles in this tile matching game!
+Updated on
+Jul 29, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Match 3
+Casual
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 1 day
+New Flower Season: Hibiscus!
+Ends in 1 day
+Banana Bonanza Matching Game event in Tile Club!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Tile Club - Match Puzzle Games",
+  "url": "https://play.google.com/store/apps/details/Tile_Club_Match_Puzzle_Games?id=com.gamovation.tileclub&hl=en",
+  "description": "Match and master your way through exciting puzzles in this tile matching game!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/1usfjsEcGLj5t00kTHmqUuLtrVtDVbuBIECR-1kbjhJyv_n_1omuFYnzH7EkdKJh6Pv4IvCQX4J1MWKYbXn0BlU",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "GamoVation",
+    "url": "https://www.gamovation.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3871917724609375",
+    "ratingCount": "852951"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Tile Club - Match Puzzle Games - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Tile Club - Match Puzzle Games
+GamoVation
+Contains ads
+In-app purchases
+4.4
+star
+853K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Playing Tile Club for 10 minutes a day sharpens your mind, boosts your memory, and prepares you for your daily life explorer challenges! We are one of the best puzzle games in the world!
+Are you looking for a new and exciting 3 tile matching puzzle game? Look no further than TileClub - the classic matching tile game for tile matching puzzle games enthusiasts! Super fun, easy-to-learn and challenging mahjong puzzle inspired matching game. Master your skills, match 3 tiles, and become the matching explorer master!
+With over 10,000 levels, the Tile Club matching game offers a challenging and relaxing puzzle game experience for players of all skill levels. Explore puzzles, match tiles, and master the classic game of tile matching. Join a club to chat, engage, and help other players, travel through the world by exploring levels, and participate in tournaments. If you find your zen in matching games, this tile game app is designed just for you!
+Our Tile Club Matching Game features include:
+- Thousands of best classic matching game levels with increasing difficulty, from easy tiles, to medium, hard, and advanced tiles, providing endless hours of gameplay.
+- Join clubs and communities from other players online, chat, engage, and help each other to solve challenging puzzles and match 3 tiles puzzle.
+- Become a real tile explorer by completing matching levels, and unlock new locations. Different cities, countries and their beautiful nature landscapes!
+- Compete in tournaments to challenge yourself and compare your match-3 puzzle game matching skills with other players from different countries all around the world!
+- Classic tile matching gameplay with a modern twist, providing a relaxing and brain-training experience to get zen, keeping you entertained for hours to train your brain and match master your mind through a unique tile journey.
+- A wide variety of cute tiles including fruit, cakes, animals and more that gives you a unique 3D match game experience with beautiful graphics!
+- Stuck in a hard puzzle? Our powerful boosters will help you pass the most challenging levels and continue your tile rush journey!
+Why Tile Club?
+This game offers a unique blend of classic triple matching tile gameplay with beautiful nature landscapes and lovely tile graphics. Whether you like to connect fruits, match candy, or find animal 3-tile, we offer various tileset designs in our 3 tiles matching game. From easy puzzle games to ultimate tile club master in a very short period!
+Online communities and clubs are available for chat and play with other players to help each other solve challenging puzzle from our matching games for adults and match triple 3D tiles. As you progress through the levels, you will travel through different locations and unlock new backgrounds. With tournaments, you can challenge yourself and compare your tile matching skills with other players. Engage in your daily brain time activity and enjoy our 3 tiles match solitaire puzzle game!
+Tile Club - 3 tile matching game is available to play on mobile and tablet devices, and can be played offline. Get ready to join the Tile Club match puzzle game and embark on a journey of tile crush and puzzle solving. With thousands of unique puzzle games, this offline matching game offers hours of fun and challenging triple match tiles game. Relax with match tile games and boost your skills with this matching puzzle game.
+We value your input! Please share your thoughts and suggestions with us. Our team is dedicated to reading your reviews and considering your feedback.
+Dive into the immersive world of matching games and challenge your mind with various 3 tile matching game levels! Install and join Tile Club today!
+Terms of Service can be found here: https://www.gamovation.com/legal/tos-tileclub.pdf
+Privacy Policy can be found here: https://www.gamovation.com/legal/privacy-policy.pdf
+Match and master your way through exciting puzzles in this tile matching game!
+Updated on
+Jul 29, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Match 3
+Casual
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 1 day
+New Flower Season: Hibiscus!
+Ends in 1 day
+Banana Bonanza Matching Game event in Tile Club!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 2 others
+This app may collect these data types
+Location, Personal info and 5 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.4
+804K reviews
+5
+4
+3
+2
+1
+Candice Dichiaro
+more_vert
+Flag inappropriate
+September 10, 2026
+Please, if you're looking for a calming, relaxing, fun, stress relieving game, this is the one! Plus, I have had strokes, so this game really helps with cognition, hand/eye coordination, color recognition, and brain strengthening/structure building. I wish everyone knew about this game.. I recommend it to anybody I meet!!
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+GamoVation
+September 11, 2026
+Thanks for the thoughtful review! We are happy Tile Club feels calming and helpful for you.
+Debbie G
+more_vert
+Flag inappropriate
+August 23, 2026
+I have been playing this game for quite some time now. It keeps me entertained. There have been changes to the game that enhance it but a recent change has made it unbearable. to play with the sound on. The voice overs one every match are intolerable. GREAT...PERFECT...WONDERFUL...PERFECT X2...ETC. PLEASE MAKE IT STOP!!!! Without this I would give the game 5 stars!!
+9 people found this review helpful
+Did you find this helpful?
+Yes
+No
+GamoVation
+August 23, 2026
+Thanks for the detailed feedback. We are glad Tile Club has kept you entertained, but we understand how annoying the new voice-over sounds can be when they repeat after matches. We will share this sound feedback with the team.
+Janet Bee
+more_vert
+Flag inappropriate
+August 7, 2026
+Upgraded from 1 star to 3 as the server issues are very infrequent now, so that's a huge improvement. Thanks for sorting that. Now, please can you remove the very annoying voice that says; amazing, excellent, great? I like the tiles noise but I've had to turn it off to get rid of the voice so I'm playing the game in silence 😢 Otherwise it would have been 5 stars as the game is great.
+1,749 people found this review helpful
+Did you find this helpful?
+Yes
+No
+GamoVation
+August 7, 2026
+Thanks for updating your review, and we are glad the server issues are much less frequent now. We understand the voice callouts are annoying when you still want the tile sounds, and we will share that sound-setting feedback with the team.
+See all reviews
+What’s new
+We fixed some bugs and made minor improvements to enhance your Tile Club experience!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+info@gamovation.com
+shield
+Privacy Policy
+About the developer
+GamoVation B.V.
+info@gamovation.com
+Dokter van Deenweg 162
+8025 BM Zwolle
+Netherlands
++31 6 17336496
+More by GamoVation
+arrow_forward
+Chess - Offline Board Game
+GamoVation
+4.7
+star
+Sudoku Game - Daily Puzzles
+GamoVation
+4.9
+star
+Goods Sort Match - Sorting Fun
+GamoVation
+4.5
+star
+Water Sort Club - Puzzle Game
+GamoVation
+4.0
+star
+Mahjong Triple - Match 3 Tile
+GamoVation
+4.4
+star
+Checkers - Online & Offline
+GamoVation
+4.3
+star
+Similar games
+arrow_forward
+Tiledom: Match Beautiful Tiles
+Funvent Studios Fzco
+4.3
+star
+Tile Explorer - Triple Match
+Oakever Games
+4.5
+star
+Bubble Shooter - Classic Pop
+Bubble Shooter
+4.3
+star
+Matching Tiles: City Scape
+Lynn Mobile Puzzle Games
+3.7
+star
+Onet Puzzle - Tile Match Game
+Infinite Joy Ltd.
+3.6
+star
+Mahjong Triple - Match 3 Tile
+GamoVation
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

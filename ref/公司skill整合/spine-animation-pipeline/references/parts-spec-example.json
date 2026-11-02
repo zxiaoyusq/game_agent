@@ -1,0 +1,51 @@
+{
+  "_comment": "Example spec for `gen_parts.py --parts references/parts-spec-example.json`. Every key except `name` is optional: omit them all and the built-in occlusion-complete prompt is used. Use this file when the character needs a naming convention or per-part detail the defaults cannot guess. Drop the _comment keys before use if you prefer strict JSON.",
+  "reference": "reference.png",
+  "parts": [
+    {
+      "name": "head",
+      "label": "the character's head",
+      "kind": "head",
+      "extra": "Keep the freckles and the cowlick from image 1."
+    },
+    {
+      "name": "hat",
+      "kind": "hat",
+      "extra": "Match the hat's exact colour and stitching from image 1.",
+      "negative": "a head, hair, a face, a person wearing it"
+    },
+    {
+      "name": "torso",
+      "kind": "torso",
+      "extra": "Include the whole jacket and the belt buckle in the centre."
+    },
+    {
+      "name": "arm_l",
+      "kind": "upper_arm",
+      "extra": "The sleeve must match image 1 exactly.",
+      "negative": "a hand, a torso, a shoulder pad"
+    },
+    {
+      "name": "arm_r",
+      "kind": "upper_arm",
+      "extra": "Same sleeve as arm_l, mirrored for the other side.",
+      "negative": "a hand, a torso, a shoulder pad"
+    },
+    {
+      "name": "leg_l",
+      "kind": "upper_leg",
+      "extra": "Include the trouser cuff."
+    },
+    {
+      "name": "leg_r",
+      "kind": "upper_leg",
+      "extra": "Same trouser cuff as leg_l, mirrored."
+    },
+    {
+      "name": "tail",
+      "kind": "tail",
+      "occlusion": "complete",
+      "extra": "The tail is fluffy; draw the whole shape including the base."
+    }
+  ]
+}

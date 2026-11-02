@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "testedAt": "2026-09-21T13:15:26.498Z",
+  "browser": "Chrome headless via CDP",
+  "mode": "file:// + offline network",
+  "checks": [
+    {
+      "name": "Counts: 32 core / 70 total / 12 docs / 4 industry",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Offline report has no remote content requests",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Default 32 product rows",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Supplementary view 70 rows",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Missing-rating supplementary product remains searchable",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Family filter returns 2 core solitaire products",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Country filter yields only Kenya-backed products",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Text search works",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Empty state works",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Rating sorting is descending",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Comparison capped at four",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Comparison dialog has four product columns",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Shortlist-only filter works",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Detail displays source, definitions and raw snapshot",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Shortlist and notes survive reload",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "CSV download created on disk",
+      "status": "pass"
+    },
+    {
+      "name": "Export includes notes on products not shortlisted",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked localStorage shows backup warning",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "CSV backs up notes when localStorage is blocked",
+      "status": "pass"
+    },
+    {
+      "name": "India Games subset has 51 source rows",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Known rank identity retained: India Games S3 U5",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Rank pagination advances",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "All industry cards display historical scope and citations",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Document full-text search filters results",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: summary",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: wide-pool",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: music-cards",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: first-round",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: africa",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: south-asia",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: music-evidence",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: cards-evidence",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: puzzle-ranks",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: games-ranks",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: industry-evidence",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Full document rendered: store-qa",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Document HTML has no unsafe URL schemes",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Mobile overview no page-level horizontal overflow",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Mobile products constrain horizontal overflow to table",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Standalone document search highlights text",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "Standalone links back to index",
+      "status": "pass",
+      "result": true
+    },
+    {
+      "name": "All 12 source hashes and standalone HTML files verified",
+      "status": "pass"
+    }
+  ],
+  "httpRequests": [],
+  "runtimeErrors": [],
+  "screenshots": [
+    "overview-desktop.png",
+    "products-desktop.png",
+    "industry-desktop.png",
+    "documents-desktop.png",
+    "overview-mobile.png",
+    "products-mobile.png"
+  ]
+}

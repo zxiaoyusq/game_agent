@@ -1,0 +1,7 @@
+# 本流程实际验证过的解析工具版本，建议装入隔离目录。
+UnityPy==1.25.3
+androguard==4.1.4
+pyelftools==0.33
+TypeTreeGeneratorAPI==0.0.10
+capstone==5.0.9
+Pillow==12.3.0

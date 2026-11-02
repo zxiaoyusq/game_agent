@@ -1,0 +1,405 @@
+# Google Play public snapshot: com.zariba.viphearts.single
+URL: https://play.google.com/store/apps/details?id=com.zariba.viphearts.single&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:18.201Z
+HTTP status: 200
+Raw HTML SHA-256: 92d99261c7c7a869db0a984b6521de8e0639cda7998cad0a7372cf3178ae7f7f
+Raw HTML: research/html-data/store-snapshots/com.zariba.viphearts.single.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Hearts Single Player - Offline
+Prometheus Interactive LLC
+Contains ads
+In-app purchases
+4.6
+star
+4.74K reviews
+Rated for 3+
+info
+500K+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Start a ♥️
+free Hearts game
+♥️ as a single player! Play the classic hearts card game free and train against advanced AI players! The ♥️
+Hearts offline card game
+♥️ is perfect for spending hours of fun whether you’re a newbie or a professional. Master the offline hearts game!
+Hearts single-player is a free hearts game version of the classic Hearts trick-taking card game. Play one of the popular card games, Hearts FREE
+without an internet connection
+.
+Join the Thrill of Hearts! Click to Download Now and Start Mastering Your Strategy. 👍
+The game of Hearts is similar to other trick-taking card games, such as Euchre, Canasta, and Pinochle. The game is a member of the Whist family of trick-taking games which also includes Bridge and Spades. It is also known as “Black Lady”, “Black Queen” or “Queen of Spades”.
+⭐
+FEATURES OF THIS OFFLINE HEARTS GAME
+⭐
+★ Play single-player game vs AI opponents.
+★ Play your free
+hearts offline card game
+.
+★ No need for an Internet connection.
+★ Choose a max. score - 50, 100, 150.
+★ Customise your avatar and table.
+★ Enable pass or skip passing cards.
+★ A random card-dealing system with as close to real shuffling as possible!
+★ Score summary after every round.
+★ Learn exactly
+how to play from the Rules section
+.
+★ Keep an eye on the game Statistics.
+★ Modify your opponent's avatars.
+★ Nice and simple gameplay.
+★ It can be played on both tablets and phones.
+★ Portrait and Landscape orientation.
+Your next favorite game is just a tap away! 💯
+♥️
+POPULAR HEARTS CARD GAME OPTIONS
+♥️ 💯
+🌟 Jack of Diamonds - Jack of Diamonds or sometimes the Ten of Diamonds is a bonus card, counting minus 10 points for the person taking it. With this form of scoring, the game is known as Omnibus Hearts.
+🌟 Shoot the Moon - To shoot the moon in Hearts, you need all the hearts and the spade Q, and as usual, you can choose to have 26 points deducted from your score or added to everyone else's.
+🌟 Hearts Offline - Single Player allows you to play at your pace and level.
+Whether you’re a beginner or a pro, Hearts Offline is the ideal free Hearts game for all Hearts players and card games lovers.
+Offline games, especially card games, are a great way to entertain yourself. The free Hearts card game is perfect when you find yourself without access to the internet. Improve your skills as a Hearts player offline!
+***HEARTS GAME RULES***
+✅ The Hearts game is played with a standard French deck of 52 cards. The suit rank goes as follows: from Ace (A) being the highest to 2 being the lowest. Whoever holds the 2 of Clubs card starts the game.
+✅ Players are obliged to follow the suit and if they cannot they can continue with any other card.
+✅ There is no trump suit.
+✅ Whoever plays the highest card, wins the trick, and has to initiate the next one.
+✅ Dealing starts in clockwise order, with every player receiving 13 cards and asked to pass and receive 3 cards from another player in the beginning.
+✅ The game goal is to collect as few penalty cards as possible or to collect them all.
+✅ The Hearts cards and Queen of Spades are the penalty cards. Each heart's card gives 1 point, and the Queen of Spades is 13 points.
+✅ If a player collects all the penalty cards and Q of ♠, you score 0 points, and opponents score 26 points instead. It’s called “
+Shooting the Moon
+”.
+✅ Hearts cards and Q of ♠ can be played in certain conditions: if you don’t have any other cards to play or if someone else “breaks the Hearts”. You can’t do this on the first trick.
+The winner of the game is whoever has the lowest score.
+⭐ Start playing a top offline card game!
+Play Hearts card game offline! Hearts is a classic trick-taking card game!
+Updated on
+Oct 30, 2025
+Card
+Single player
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hearts Single Player - Offline",
+  "url": "https://play.google.com/store/apps/details/Hearts_Single_Player_Offline?id=com.zariba.viphearts.single&hl=en",
+  "description": "Play Hearts card game offline! Hearts is a classic trick-taking card game!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/0XysPCy60AeTluADBFF8_99RkpowKQvt-QqFQ6QTH6CFF3VULltHhbfRpdKiVtf-WVjb5f0yzNS2X2Q54kvE9BU",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Prometheus Interactive LLC",
+    "url": "https://useprometheus.app/hearts"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.630000114440918",
+    "ratingCount": "4735"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Hearts Single Player - Offline - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Hearts Single Player - Offline
+Prometheus Interactive LLC
+Contains ads
+In-app purchases
+4.6
+star
+4.74K reviews
+Rated for 3+
+info
+500K+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Start a ♥️
+free Hearts game
+♥️ as a single player! Play the classic hearts card game free and train against advanced AI players! The ♥️
+Hearts offline card game
+♥️ is perfect for spending hours of fun whether you’re a newbie or a professional. Master the offline hearts game!
+Hearts single-player is a free hearts game version of the classic Hearts trick-taking card game. Play one of the popular card games, Hearts FREE
+without an internet connection
+.
+Join the Thrill of Hearts! Click to Download Now and Start Mastering Your Strategy. 👍
+The game of Hearts is similar to other trick-taking card games, such as Euchre, Canasta, and Pinochle. The game is a member of the Whist family of trick-taking games which also includes Bridge and Spades. It is also known as “Black Lady”, “Black Queen” or “Queen of Spades”.
+⭐
+FEATURES OF THIS OFFLINE HEARTS GAME
+⭐
+★ Play single-player game vs AI opponents.
+★ Play your free
+hearts offline card game
+.
+★ No need for an Internet connection.
+★ Choose a max. score - 50, 100, 150.
+★ Customise your avatar and table.
+★ Enable pass or skip passing cards.
+★ A random card-dealing system with as close to real shuffling as possible!
+★ Score summary after every round.
+★ Learn exactly
+how to play from the Rules section
+.
+★ Keep an eye on the game Statistics.
+★ Modify your opponent's avatars.
+★ Nice and simple gameplay.
+★ It can be played on both tablets and phones.
+★ Portrait and Landscape orientation.
+Your next favorite game is just a tap away! 💯
+♥️
+POPULAR HEARTS CARD GAME OPTIONS
+♥️ 💯
+🌟 Jack of Diamonds - Jack of Diamonds or sometimes the Ten of Diamonds is a bonus card, counting minus 10 points for the person taking it. With this form of scoring, the game is known as Omnibus Hearts.
+🌟 Shoot the Moon - To shoot the moon in Hearts, you need all the hearts and the spade Q, and as usual, you can choose to have 26 points deducted from your score or added to everyone else's.
+🌟 Hearts Offline - Single Player allows you to play at your pace and level.
+Whether you’re a beginner or a pro, Hearts Offline is the ideal free Hearts game for all Hearts players and card games lovers.
+Offline games, especially card games, are a great way to entertain yourself. The free Hearts card game is perfect when you find yourself without access to the internet. Improve your skills as a Hearts player offline!
+***HEARTS GAME RULES***
+✅ The Hearts game is played with a standard French deck of 52 cards. The suit rank goes as follows: from Ace (A) being the highest to 2 being the lowest. Whoever holds the 2 of Clubs card starts the game.
+✅ Players are obliged to follow the suit and if they cannot they can continue with any other card.
+✅ There is no trump suit.
+✅ Whoever plays the highest card, wins the trick, and has to initiate the next one.
+✅ Dealing starts in clockwise order, with every player receiving 13 cards and asked to pass and receive 3 cards from another player in the beginning.
+✅ The game goal is to collect as few penalty cards as possible or to collect them all.
+✅ The Hearts cards and Queen of Spades are the penalty cards. Each heart's card gives 1 point, and the Queen of Spades is 13 points.
+✅ If a player collects all the penalty cards and Q of ♠, you score 0 points, and opponents score 26 points instead. It’s called “
+Shooting the Moon
+”.
+✅ Hearts cards and Q of ♠ can be played in certain conditions: if you don’t have any other cards to play or if someone else “breaks the Hearts”. You can’t do this on the first trick.
+The winner of the game is whoever has the lowest score.
+⭐ Start playing a top offline card game!
+Play Hearts card game offline! Hearts is a classic trick-taking card game!
+Updated on
+Oct 30, 2025
+Card
+Single player
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+No data collected
+Learn more
+about how developers declare collection
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.6
+4.31K reviews
+5
+4
+3
+2
+1
+A Google user
+more_vert
+Flag inappropriate
+January 4, 2019
+Decent rendition of the classic game. As I'm sure it's difficult to make a good AI, I'll (sort of) give this game's AI a pass. I'll just say this about it: I've played 5 games on this app and I've already figured out how to beat the AI every time (excepting for extraordinary bad luck.) The only feature missing is a way to keep track of your win% and best scores
+266 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Jason Castleberry
+more_vert
+Flag inappropriate
+Show review history
+June 19, 2026
+There are better options for Hearts. The AI is too easy. The ads aren't super frequent, but the rating pop up is way too frequent. I can't get it to go away either, because once filled, it creates a zip on my phone to share... Updated to 4 stars because I appreciate you reaching out! FYI my device is an S26 Ultra.
+23 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Prometheus Interactive LLC
+June 20, 2026
+Hello! We hope that you do not face any issues when using the App and will be happy to assist you should you have any questions or experience any inconveniences. You can always reach out to us by email - our Support Team can advise you properly.
+Larry Couch
+more_vert
+Flag inappropriate
+Show review history
+June 11, 2026
+the game is almost a person... it's fun, 😁 if you can keep up, not from being hard, but funny if you're willing to lose to gain the win... it's cool. learn the quirks of the game & you'll belly laugh at it... the players are sneaky but if you're sharp, it will keep you wanting more. I really recommend this hearts game. when you don't have real people in front of you let God bless you with it. but it may make you mad 😡 ! 🤔 yep 😋 and it does with traps, stay sharp & exercise your brain 🧠
+30 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+The novelties include:
+- Privacy and security updates
+- Modifying the table colour
+- Personalising your avatar
+- Section "Statistics"
+- Learn how to play from the "Rules" section
+- New game interface and deck of cards
+- Game events animations
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support.hearts@useprometheus.app
+shield
+Privacy Policy
+About the developer
+Alvva Inc.
+support@useprometheus.app
+8 The Grn Ste 4184
+Dover, DE 19901-3618
+United States
++1 270-515-6031
+More by Prometheus Interactive LLC
+arrow_forward
+Voice Search: Search Assistant
+Prometheus Interactive LLC
+4.2
+star
+Fingerprint Live Animation
+Prometheus Interactive LLC
+4.3
+star
+All Video Player Media Player
+Prometheus Interactive LLC
+3.5
+star
+Shake Flashlight - Fast Torch
+Prometheus Interactive LLC
+4.5
+star
+Calculator
+Prometheus Interactive LLC
+4.5
+star
+Share Apps: APK Share & Backup
+Prometheus Interactive LLC
+4.4
+star
+Similar games
+arrow_forward
+Solitaire for Seniors Game
+Guru Puzzle Game
+4.8
+star
+Solitaire, Klondike Card Games
+Solitaire Card Studio
+4.5
+star
+Solitaire
+Aged Studio Limited
+3.8
+star
+Spades: Classic Card Game
+People Lovin Games
+4.4
+star
+Solitaire - Classic Card Games
+Oakever Games
+4.1
+star
+Gin Rummy Classic
+MobilityWare
+3.9
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

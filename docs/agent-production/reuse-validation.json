@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-10-18T00:14:44.684577+00:00",
+  "passed": true,
+  "scope": "跨品类配置、知识读取、原型规则与现有成品兼容性；非第二款完整游戏验收",
+  "project_id": "435fe625fd384b2096d6fd87a065fa16",
+  "run_id": "32669e7849994c82ba1f64ee1f89a95b",
+  "status": "completed",
+  "stage_states": [
+    {
+      "id": "prototype",
+      "label": "原型定义",
+      "status": "completed",
+      "run_id": "32669e7849994c82ba1f64ee1f89a95b",
+      "confirmed_at": "2026-10-18T00:13:44.526393+00:00"
+    },
+    {
+      "id": "art",
+      "label": "美术资源",
+      "status": "pending",
+      "run_id": null,
+      "confirmed_at": null
+    },
+    {
+      "id": "code",
+      "label": "代码与集成",
+      "status": "pending",
+      "run_id": null,
+      "confirmed_at": null
+    },
+    {
+      "id": "test",
+      "label": "测试验收",
+      "status": "pending",
+      "run_id": null,
+      "confirmed_at": null
+    }
+  ],
+  "genre_id": "block-placement",
+  "framework_id": "canvas-web",
+  "references": [],
+  "profile_sha256": "38020e59441389da9ff27926da0b136752c5217aa8ca51a0c75f30904966b819",
+  "model": "gpt-6.1-sol",
+  "model_calls": 6,
+  "knowledge": [
+    {
+      "path": "genre/docs/general.md",
+      "sha256": "8d5058f8368fece60ae844b0d40217481746a7d8f0697b8f95cda9d78de64047",
+      "chars": 745
+    },
+    {
+      "path": "genre/docs/block-placement.md",
+      "sha256": "46e0fb64f53c48d3f955139222991e29f0f0b2401e41657236f49fc9cde67bbf",
+      "chars": 584
+    },
+    {
+      "path": "framework/docs/web-common.md",
+      "sha256": "5631072d40b38dfcb641838ceb1836e65d2a9ed07347215f8eb90819e25ceb08",
+      "chars": 1428
+    },
+    {
+      "path": "framework/docs/canvas-web.md",
+      "sha256": "ef6ec5c4232be8c692c2ddb567d8353f82266baa5502f96a846ce999d994aad5",
+      "chars": 919
+    },
+    {
+      "path": "framework/docs/engine-selection.md",
+      "sha256": "84dd29314596055e9adb25a51ba80d8b9e41a2ea1e5d1afda6ad35c3a4267386",
+      "chars": 813
+    }
+  ],
+  "knowledge_reads": [
+    {
+      "path": "genre/docs/block-placement.md",
+      "sha256": "46e0fb64f53c48d3f955139222991e29f0f0b2401e41657236f49fc9cde67bbf",
+      "offset": 0,
+      "end": 584,
+      "total_chars": 584
+    },
+    {
+      "path": "genre/docs/general.md",
+      "sha256": "8d5058f8368fece60ae844b0d40217481746a7d8f0697b8f95cda9d78de64047",
+      "offset": 0,
+      "end": 745,
+      "total_chars": 745
+    },
+    {
+      "path": "framework/docs/engine-selection.md",
+      "sha256": "84dd29314596055e9adb25a51ba80d8b9e41a2ea1e5d1afda6ad35c3a4267386",
+      "offset": 0,
+      "end": 813,
+      "total_chars": 813
+    },
+    {
+      "path": "framework/docs/web-common.md",
+      "sha256": "5631072d40b38dfcb641838ceb1836e65d2a9ed07347215f8eb90819e25ceb08",
+      "offset": 0,
+      "end": 1428,
+      "total_chars": 1428
+    },
+    {
+      "path": "framework/docs/canvas-web.md",
+      "sha256": "ef6ec5c4232be8c692c2ddb567d8353f82266baa5502f96a846ce999d994aad5",
+      "offset": 0,
+      "end": 919,
+      "total_chars": 919
+    }
+  ],
+  "validation": {
+    "command": "node --test prototype/rules.test.mjs",
+    "exit_code": 0,
+    "output": "TAP version 13\n# Subtest: 越界、重叠和无效槽位拒绝，输入保持不变\nok 1 - 越界、重叠和无效槽位拒绝，输入保持不变\n  ---\n  duration_ms: 1.615406\n  type: 'test'\n  ...\n# Subtest: 合法放置只消费选定形状，增加占格分且不修改输入\nok 2 - 合法放置只消费选定形状，增加占格分且不修改输入\n  ---\n  duration_ms: 0.392128\n  type: 'test'\n  ...\n# Subtest: 同时满行满列统一清除，交叉格只计一次，清除后判断终局\nok 3 - 同时满行满列统一清除，交叉格只计一次，清除后判断终局\n  ---\n  duration_ms: 0.959132\n  type: 'test'\n  ...\n# Subtest: 终局按所有待放形状判断，合法放置后可以自然失败\nok 4 - 终局按所有待放形状判断，合法放置后可以自然失败\n  ---\n  duration_ms: 0.50653\n  type: 'test'\n  ...\n# Subtest: 整组耗尽才补三块，种子可复现，补充后重新判定\nok 5 - 整组耗尽才补三块，种子可复现，补充后重新判定\n  ---\n  duration_ms: 0.332828\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 55.138907\n",
+    "attempt": 1,
+    "source_before": "e0d4ccac54b7db79dfdcd9d48959bb5b4ac6921fe212d85a067054e53cc19f33",
+    "source_after": "e0d4ccac54b7db79dfdcd9d48959bb5b4ac6921fe212d85a067054e53cc19f33",
+    "changed_paths": []
+  },
+  "source_fingerprint": "e0d4ccac54b7db79dfdcd9d48959bb5b4ac6921fe212d85a067054e53cc19f33",
+  "artifacts": [
+    {
+      "id": "9d97e34119c841c38de83f7359e64955",
+      "name": "rules.test.mjs",
+      "path": "prototype/rules.test.mjs",
+      "stored_path": "prototype/rules.test.mjs",
+      "kind": "text",
+      "size": 3579,
+      "sha256": "e32d96236e25749dd681a584a2c380eba4cbe371346996e5b3fb6c0171514044",
+      "provenance": "agent_edit",
+      "url": "/api/workflow/artifacts/32669e7849994c82ba1f64ee1f89a95b/9d97e34119c841c38de83f7359e64955"
+    },
+    {
+      "id": "bce54d84a293490b81d6d73c07257b90",
+      "name": "rules.mjs",
+      "path": "prototype/rules.mjs",
+      "stored_path": "prototype/rules.mjs",
+      "kind": "text",
+      "size": 2892,
+      "sha256": "5808541bcfd2ee6252c212975934a725d1a542b0398a6d1b44a9281965a13464",
+      "provenance": "agent_edit",
+      "url": "/api/workflow/artifacts/32669e7849994c82ba1f64ee1f89a95b/bce54d84a293490b81d6d73c07257b90"
+    },
+    {
+      "id": "f51751c2b4914c75aadd45f899d46d82",
+      "name": "prototype.md",
+      "path": "workflow/prototype.md",
+      "stored_path": "workflow/prototype.md",
+      "kind": "text",
+      "size": 8191,
+      "sha256": "72213e47f32437c5bb995111896aebec1086110c33f7f67b020d34476050578d",
+      "provenance": "agent_edit",
+      "url": "/api/workflow/artifacts/32669e7849994c82ba1f64ee1f89a95b/f51751c2b4914c75aadd45f899d46d82"
+    }
+  ],
+  "backend_tests": {
+    "command": "python -m unittest tests.test_workflow tests.test_skill_library tests.test_production_library -q",
+    "tests": 35,
+    "exit_code": 0
+  },
+  "frontend_build": {
+    "command": "npm run build",
+    "exit_code": 0
+  },
+  "ui_evidence": [
+    "logs/reuse-workflow-ui.json",
+    "logs/reuse-workflow-final-ui.json"
+  ],
+  "legacy_project": {
+    "project_id": "0a850241a9fc4bee925af55617fead85",
+    "all_stages_completed": true,
+    "source_fingerprint": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+    "audit": "docs/agent-production/reuse-compatibility.json"
+  },
+  "catalog": {
+    "genres": 7,
+    "frameworks": 2,
+    "documents": 11
+  },
+  "limits": [
+    "仅新方块原型及5项规则验证，尚无Canvas页面和浏览器玩法验收",
+    "其它新指南未完成整款游戏验证",
+    "Unity/Godot/Creator原生仍待执行适配",
+    "可信本机单用户单后端进程"
+  ]
+}

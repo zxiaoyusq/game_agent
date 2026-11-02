@@ -1,0 +1,12 @@
+{
+  "classic": 100,
+  "challenge": 12,
+  "challengeCapacities": {
+    "6": 6,
+    "8": 6
+  },
+  "mystery": 20,
+  "total": 132,
+  "allSolutionsReplayed": true,
+  "rule": "管底到管口；连续同色批量移动；容量约束；完成必须满管同色"
+}

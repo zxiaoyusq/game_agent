@@ -1,0 +1,365 @@
+# Google Play public snapshot: com.easybrain.jigsaw.puzzles
+URL: https://play.google.com/store/apps/details?id=com.easybrain.jigsaw.puzzles&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:55.158Z
+HTTP status: 200
+Raw HTML SHA-256: 8b3111b2e0f857a21ba3418f5f8792aabf6f958ce1452c4c1ed8210fd731d6e8
+Raw HTML: research/html-data/store-snapshots/com.easybrain.jigsaw.puzzles.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Jigsaw Puzzles - Puzzle Games
+Easybrain
+Contains ads
+In-app purchases
+4.5
+star
+2.38M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Get an engaging experience with jigsaw puzzles in one of the world’s most-downloaded puzzle games from a top developer!
+Jigsaw Puzzles is an addictive, easy-to-play game with over 30,000 FREE cute HD pictures. Keep your favorite puzzles at hand and enjoy them even when you're offline. No points, no gimmicks, and no missing pieces, simply enjoy hours of fun putting jigsaw puzzles together to calm down and relax.
+Created by game experts and played by millions of puzzle lovers worldwide, Jigsaw Puzzles helps you exercise your short-term memory and concentration, while passing the time with real jigsaw puzzles and without taking up as much room.
+Indulge yourself and plunge into the wonderful world of offline jigsaw puzzle games for seniors! Enjoy piecing new bright magic jigsaw puzzles together every day!
+Our free puzzle game for adults includes a large number of beautiful images of different difficulty puzzles from easy to hard. The game difficulty is based on the number of jigsaw puzzle pieces, which should be put together.
+A free jigsaw puzzle app on your device encompasses a wide range of HD pictures and is as challenging and attractive as real puzzles. If you are excited about playing offline puzzle games, you will definitely love our Jigsaw Puzzles for adults!
+Being a stress relieving and relaxing offline game, daily jigsaw puzzles for adults will help you to take a break and get rid of the everyday routine.
+Discover the colorful world of jigsaw puzzles for free!
+Features:
+• Tons of jigsaw puzzles for free with beautiful, high quality pictures. Choose from a variety of categories such as Colors, Flowers, Nature, Animals, Art, Landmarks, Hard picture puzzles and others
+• Daily free puzzle games for seniors. Get a new HD jigsaw puzzle every day and try to solve it
+• Coins for exclusive content. Get coins by completing HD jigsaw puzzles. Spend them to get exclusive puzzles and collections!
+• Mystery jigsaw puzzles for seniors. Challenge yourself to reveal what is hidden in a picture
+• Daily updated gallery. You’ll never run out of free puzzles in our jigsaw box
+• Offline games. Download puzzle pictures and play without internet
+• Helpful hints. Use Hint to match the next piece to the picture puzzle if you are stuck
+• From 36 to 400 puzzle pieces. The more pieces, the harder your jigsaw puzzle games become
+• Custom backgrounds. Choose your favourite appearance to solve free jigsaw puzzle games for seniors with more pleasure.
+Make every day relaxing and entertaining putting jigsaw puzzle pieces together! Enjoy our free puzzle games!
+Terms of Use:
+https://easybrain.com/terms
+Privacy Policy:
+https://easybrain.com/privacy
+Jigsaw puzzle games for adults. Enjoy relaxing jigsaw puzzles, even offline!
+Updated on
+Sep 11, 2026
+Puzzle
+Jigsaw
+Casual
+Single player
+Realistic
+Miscellaneous
+Puzzles
+Light-hearted
+Offline
+Play Pass
+Events & offers
+Ends in 6 days
+Collect Sports and Health jigsaw puzzles
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Jigsaw Puzzles - Puzzle Games",
+  "url": "https://play.google.com/store/apps/details/Jigsaw_Puzzles_Puzzle_Games?id=com.easybrain.jigsaw.puzzles&hl=en",
+  "description": "Jigsaw puzzle games for adults. Enjoy relaxing jigsaw puzzles, even offline!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/hQlCFb-E7gnmIF63M5JuVLsENCifqBgrf_oVAt9uS9u0rkKAdU05Dg7JCWN3aXMYnR15-ulbs32fk15Igy9HJe8",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Easybrain",
+    "url": "http://www.easybrain.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.474958896636963",
+    "ratingCount": "2375237"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Jigsaw Puzzles - Puzzle Games - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Jigsaw Puzzles - Puzzle Games
+Easybrain
+Contains ads
+In-app purchases
+4.5
+star
+2.38M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Get an engaging experience with jigsaw puzzles in one of the world’s most-downloaded puzzle games from a top developer!
+Jigsaw Puzzles is an addictive, easy-to-play game with over 30,000 FREE cute HD pictures. Keep your favorite puzzles at hand and enjoy them even when you're offline. No points, no gimmicks, and no missing pieces, simply enjoy hours of fun putting jigsaw puzzles together to calm down and relax.
+Created by game experts and played by millions of puzzle lovers worldwide, Jigsaw Puzzles helps you exercise your short-term memory and concentration, while passing the time with real jigsaw puzzles and without taking up as much room.
+Indulge yourself and plunge into the wonderful world of offline jigsaw puzzle games for seniors! Enjoy piecing new bright magic jigsaw puzzles together every day!
+Our free puzzle game for adults includes a large number of beautiful images of different difficulty puzzles from easy to hard. The game difficulty is based on the number of jigsaw puzzle pieces, which should be put together.
+A free jigsaw puzzle app on your device encompasses a wide range of HD pictures and is as challenging and attractive as real puzzles. If you are excited about playing offline puzzle games, you will definitely love our Jigsaw Puzzles for adults!
+Being a stress relieving and relaxing offline game, daily jigsaw puzzles for adults will help you to take a break and get rid of the everyday routine.
+Discover the colorful world of jigsaw puzzles for free!
+Features:
+• Tons of jigsaw puzzles for free with beautiful, high quality pictures. Choose from a variety of categories such as Colors, Flowers, Nature, Animals, Art, Landmarks, Hard picture puzzles and others
+• Daily free puzzle games for seniors. Get a new HD jigsaw puzzle every day and try to solve it
+• Coins for exclusive content. Get coins by completing HD jigsaw puzzles. Spend them to get exclusive puzzles and collections!
+• Mystery jigsaw puzzles for seniors. Challenge yourself to reveal what is hidden in a picture
+• Daily updated gallery. You’ll never run out of free puzzles in our jigsaw box
+• Offline games. Download puzzle pictures and play without internet
+• Helpful hints. Use Hint to match the next piece to the picture puzzle if you are stuck
+• From 36 to 400 puzzle pieces. The more pieces, the harder your jigsaw puzzle games become
+• Custom backgrounds. Choose your favourite appearance to solve free jigsaw puzzle games for seniors with more pleasure.
+Make every day relaxing and entertaining putting jigsaw puzzle pieces together! Enjoy our free puzzle games!
+Terms of Use:
+https://easybrain.com/terms
+Privacy Policy:
+https://easybrain.com/privacy
+Jigsaw puzzle games for adults. Enjoy relaxing jigsaw puzzles, even offline!
+Updated on
+Sep 11, 2026
+Puzzle
+Jigsaw
+Casual
+Single player
+Realistic
+Miscellaneous
+Puzzles
+Light-hearted
+Offline
+Play Pass
+Events & offers
+Ends in 6 days
+Collect Sports and Health jigsaw puzzles
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Financial info and 3 others
+This app may collect these data types
+Location, Financial info and 3 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+2.04M reviews
+5
+4
+3
+2
+1
+H. A. England
+more_vert
+Flag inappropriate
+Show review history
+June 15, 2025
+Commercial every 2 pieces on average. No joke. Had 3 different 'breaks' while listening to a normal 3.5 minute song. I recently found myself realizing I'd made it 3 whole pieces without getting one this time! It's BEYOND frustrating. No wonder they have such a high scoring rate on the play-for-point apps. No one would put up with this otherwise. And if it glitches, get ready to start all over again! HIGHLY recommend finding a different puzzle game if you don't want a bazillion commercials.
+394 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+June 16, 2025
+Hello! We extend our apologies if our actions ruined your gaming experience — it was never our intention to make you feel this way. We appreciate your feedback, as it will allow us to evaluate and improve our ads policy. Meanwhile, we remind you that our ads are always skippable. If you are unable to skip them you are most welcome to contact us.
+Debra Brown
+more_vert
+Flag inappropriate
+November 18, 2024
+I loved this app and have had it for years. The puzzles are beautiful but in the last few months the numbers of ads during the puzzled has increased so much i get frustrated and don't even want to finish the puzzle. When i first got it there was an ad at the beginning, 25% done, halfway done and the end. Now it's every 4 or 5 puzzle pieces
+220 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+November 18, 2024
+Hi. We appreciate your long-time support and love for the beautiful puzzles. It's concerning to hear about the increase in ads disrupting your experience. Your feedback is important to us, and we value your input as we continue to enhance the game. Thank you for sharing your thoughts!
+Veronique Robichaud
+more_vert
+Flag inappropriate
+April 8, 2026
+Awful, I had this downloaded a few years ago and loved it but hadn't used it in a while until tonight, the app now sucks, you're forced to work on the puzzle in sections instead of zooming in and working in an area you want to choose yourself, and the ads are unbearable.. sometimes feel like you get an ad every 3-5 puzzle pieces, I'm deleting this and finding another puzzle app to use
+42 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+April 8, 2026
+Hello! We're sorry to hear your recent experience hasn't matched your previous enjoyment. Thank you for your feedback on the puzzle mechanics and ad frequency; it helps us improve. We hope you find joy in puzzle-solving again soon. We value your thoughts and wish you a better experience ahead!
+See all reviews
+What’s new
+- Performance and stability improvements
+We read all your reviews and always try to make the game better. Please leave us some feedback if you love what we do and feel free to suggest any improvements. Make every day relaxing and fun putting puzzle pieces together!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@easybrain.com
+shield
+Privacy Policy
+About the developer
+EASYBRAIN LTD
+d@easybrain.com
+Trilogy Limassol Seafront,, Floor 14, West Tower, 335 28 Oktovriou
+Limassol 3106
+Cyprus
++357 99 098190
+More by Easybrain
+arrow_forward
+Arrow Puzzle: Tap Puzzle Games
+Easybrain
+4.5
+star
+Art Puzzle - Puzzle Games
+Easybrain
+4.4
+star
+Sudoku.com - Sudoku Puzzle
+Easybrain
+4.7
+star
+Number Match - Number Games
+Easybrain
+4.6
+star
+Crossword Master - Word Puzzle
+Easybrain
+4.7
+star
+Bird Find - Logic Puzzle Game
+Easybrain
+4.6
+star
+Similar games
+arrow_forward
+Jigsaw Puzzles HD Puzzle Games
+Guru Puzzle Game
+4.4
+star
+Magic Jigsaw Puzzles－Games HD
+ZiMAD
+4.6
+star
+Jigsawscapes® - Jigsaw Puzzles
+Oakever Games
+4.2
+star
+Jigsaw Puzzles for Adults
+Veraxen Ltd.
+4.4
+star
+Art Puzzle - Puzzle Games
+Easybrain
+4.4
+star
+Cozy Home Jigsaw Puzzles
+LoveColoring Game
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

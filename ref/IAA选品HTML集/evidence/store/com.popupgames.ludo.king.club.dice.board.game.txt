@@ -1,0 +1,452 @@
+# Google Play public snapshot: com.popupgames.ludo.king.club.dice.board.game
+URL: https://play.google.com/store/apps/details?id=com.popupgames.ludo.king.club.dice.board.game&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:13.514Z
+HTTP status: 200
+Raw HTML SHA-256: 5aa6ceb4a7b268321b9a181ef6e34b6f58cc190eb8eb87b6ddf9c0ea65351b3f
+Raw HTML: research/html-data/store-snapshots/com.popupgames.ludo.king.club.dice.board.game.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo Buzz - Multiplayer Game
+Popup Games
+Contains ads
+In-app purchases
+3.5
+star
+17.8K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+🎲 Play Ludo Buzz - The Ultimate Online & Offline Multiplayer Ludo Game India! 🇮🇳🔥
+Ready to roll the dice and become the Ludo King? 👑
+Welcome to Ludo Buzz, the most exciting Online & Offline Multiplayer Ludo Game in India, where fun, strategy, and competition come together!
+Enjoy the classic Ludo Board Game loved across India and all over the world - now with modern features, smooth gameplay, and multiple exciting modes. Play with friends, family, or real players anytime, anywhere! 🎯
+🌟 Why Ludo Buzz is the Best Ludo Game in India?
+✅ Online & Offline Free Ludo Game - Play with or without internet 📶❌
+✅ Multiplayer Ludo with Friends - Invite & challenge your friends 🤝
+✅ Play With Friends & Family - Perfect Timepass Game India 🇮🇳
+✅ Up to 6 Players Mode - More players, more fun! 🎮
+✅ Ludo Offline India - No Internet? No problem! Play anytime, anywhere.
+✅ Smooth & Fast Gameplay - Optimized for all devices ⚡
+✅ Lightweight Game - Runs perfectly on all phones, including low-end devices 📱
+✅ Daily Fun & Endless Entertainment - Non-stop fun!
+🔥 Every dice roll brings that classic thrill - the perfect Ludo Game India / भारतीय लूडो गेम (Bharatiya Ludo Game) experience!
+🌐 Play Online or Offline - Anytime Anywhere
+🌍 Online Ludo Multiplayer - Play against real players around the world.
+📴 Offline Ludo Game - Enjoy matches without an internet connection.
+🎯 Daily Events & Tournaments - Compete and win exciting rewards.
+🎲 Pass & Play Mode - Play with friends on a single device.
+Wherever you are, Ludo Buzz makes every moment a fun Ludo experience.
+🎮 Exciting Game Modes You’ll Love
+👑 Classic Ludo - Traditional board game experience
+⚔️ Battle Mode - Kill opponent pawns & dominate the match
+⚡ Quick Mode - Fast-paced gameplay, win in minutes
+🧩 Mini Ludo - Small board, quicker matches
+🤝 Team Up Mode - Play 2v2 team battles
+👪 Family Mode - Perfect family timepass game
+🧠 2, 4, & 6 Player Ludo - Play your way
+🎯 Top Features That Make It Addictive
+🎲 Real-Time Multiplayer Matches - Play with real players across India
+🏠 Offline Local Mode - Best local multiplayer Ludo India
+🎨 Custom Dice, Board, Pawns & Avatars
+🗺️ Multiple Boards - Classic, Battle, Quick, Mini & more
+💾 Save & Load Game - Continue anytime
+🎮 Game Zone - Enjoy mini games like:
+🧠 Pull the Pin | ⭕ Tic Tac Toe | 🔷 16 Beads (Sholo Guti)
+🧩 Tile Connect | 🀄 3 Tile Match | 💧 Water Sort Puzzle
+🎲 How to Play Ludo? (Simple & Fun!)
+Roll the dice, move your tokens, and race to the center!
+✔️ Roll a 6 to unlock tokens & get extra turns
+✔️ Capture opponent tokens to send them back 🔥
+✔️ Block opponents & plan smart strategies 🧠
+✔️ First player to bring all tokens home wins 🏆
+🕹️ 🎯 Mini Games Inside Ludo Buzz
+Not just Ludo - enjoy a complete timepass game collection!
+🧠 Pull the Pin - Solve puzzles
+⭕ Tic Tac Toe - Classic quick game
+🔷 16 Beads - Traditional strategy game
+🧩 Tile Connect - Match & clear
+🀄 3 Tile Match - Fast puzzle fun
+💧 Water Sort Puzzle - Relax & play
+🌍 Loved Across India & Worldwide
+Ludo originated from ancient India as Pachisi and is still one of the most loved dice board games today ❤️
+Also known as Parcheesi, Parchís, Chaupar, and more!
+🚀 Why Players in India Love Ludo Buzz 🇮🇳
+✔️ Best Ludo game in India for friends & family
+✔️ Perfect timepass game for daily fun
+✔️ Great offline game in India for travel
+✔️ Fun for kids, teens & adults
+✔️ Smooth performance on all devices
+🔥 Download Ludo Buzz Now & Start Your Journey!
+Roll the dice 🎲
+Beat your opponents ⚔️
+Become the Ludo Master & Ludo King 👑
+👉 Install now and enjoy the best Indian Ludo game online & offline! 🇮🇳✨
+Fast & Smooth Multiplayer Ludo. Play With Friends & Family Anytime, Anywhere.
+Updated on
+Jul 9, 2026
+Available on
+Android,
+Windows*
+#8 top free board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Dice
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo Buzz - Multiplayer Game",
+  "url": "https://play.google.com/store/apps/details/Ludo_Buzz_Multiplayer_Game?id=com.popupgames.ludo.king.club.dice.board.game&hl=en",
+  "description": "Fast & Smooth Multiplayer Ludo. Play With Friends & Family Anytime, Anywhere.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/1wPvg9Yo4SwgSiNjN5ygcMMBLwVMrNg8XMSULGARWBEqzlyjkz2_hYz1RrNuLtvDd1mGRWqpHuPETbEVE3uf_P8",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Popup Games",
+    "url": "https://popup.games"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.4573426246643066",
+    "ratingCount": "17773"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo Buzz - Multiplayer Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Ludo Buzz - Multiplayer Game
+Popup Games
+Contains ads
+In-app purchases
+3.5
+star
+17.8K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+🎲 Play Ludo Buzz - The Ultimate Online & Offline Multiplayer Ludo Game India! 🇮🇳🔥
+Ready to roll the dice and become the Ludo King? 👑
+Welcome to Ludo Buzz, the most exciting Online & Offline Multiplayer Ludo Game in India, where fun, strategy, and competition come together!
+Enjoy the classic Ludo Board Game loved across India and all over the world - now with modern features, smooth gameplay, and multiple exciting modes. Play with friends, family, or real players anytime, anywhere! 🎯
+🌟 Why Ludo Buzz is the Best Ludo Game in India?
+✅ Online & Offline Free Ludo Game - Play with or without internet 📶❌
+✅ Multiplayer Ludo with Friends - Invite & challenge your friends 🤝
+✅ Play With Friends & Family - Perfect Timepass Game India 🇮🇳
+✅ Up to 6 Players Mode - More players, more fun! 🎮
+✅ Ludo Offline India - No Internet? No problem! Play anytime, anywhere.
+✅ Smooth & Fast Gameplay - Optimized for all devices ⚡
+✅ Lightweight Game - Runs perfectly on all phones, including low-end devices 📱
+✅ Daily Fun & Endless Entertainment - Non-stop fun!
+🔥 Every dice roll brings that classic thrill - the perfect Ludo Game India / भारतीय लूडो गेम (Bharatiya Ludo Game) experience!
+🌐 Play Online or Offline - Anytime Anywhere
+🌍 Online Ludo Multiplayer - Play against real players around the world.
+📴 Offline Ludo Game - Enjoy matches without an internet connection.
+🎯 Daily Events & Tournaments - Compete and win exciting rewards.
+🎲 Pass & Play Mode - Play with friends on a single device.
+Wherever you are, Ludo Buzz makes every moment a fun Ludo experience.
+🎮 Exciting Game Modes You’ll Love
+👑 Classic Ludo - Traditional board game experience
+⚔️ Battle Mode - Kill opponent pawns & dominate the match
+⚡ Quick Mode - Fast-paced gameplay, win in minutes
+🧩 Mini Ludo - Small board, quicker matches
+🤝 Team Up Mode - Play 2v2 team battles
+👪 Family Mode - Perfect family timepass game
+🧠 2, 4, & 6 Player Ludo - Play your way
+🎯 Top Features That Make It Addictive
+🎲 Real-Time Multiplayer Matches - Play with real players across India
+🏠 Offline Local Mode - Best local multiplayer Ludo India
+🎨 Custom Dice, Board, Pawns & Avatars
+🗺️ Multiple Boards - Classic, Battle, Quick, Mini & more
+💾 Save & Load Game - Continue anytime
+🎮 Game Zone - Enjoy mini games like:
+🧠 Pull the Pin | ⭕ Tic Tac Toe | 🔷 16 Beads (Sholo Guti)
+🧩 Tile Connect | 🀄 3 Tile Match | 💧 Water Sort Puzzle
+🎲 How to Play Ludo? (Simple & Fun!)
+Roll the dice, move your tokens, and race to the center!
+✔️ Roll a 6 to unlock tokens & get extra turns
+✔️ Capture opponent tokens to send them back 🔥
+✔️ Block opponents & plan smart strategies 🧠
+✔️ First player to bring all tokens home wins 🏆
+🕹️ 🎯 Mini Games Inside Ludo Buzz
+Not just Ludo - enjoy a complete timepass game collection!
+🧠 Pull the Pin - Solve puzzles
+⭕ Tic Tac Toe - Classic quick game
+🔷 16 Beads - Traditional strategy game
+🧩 Tile Connect - Match & clear
+🀄 3 Tile Match - Fast puzzle fun
+💧 Water Sort Puzzle - Relax & play
+🌍 Loved Across India & Worldwide
+Ludo originated from ancient India as Pachisi and is still one of the most loved dice board games today ❤️
+Also known as Parcheesi, Parchís, Chaupar, and more!
+🚀 Why Players in India Love Ludo Buzz 🇮🇳
+✔️ Best Ludo game in India for friends & family
+✔️ Perfect timepass game for daily fun
+✔️ Great offline game in India for travel
+✔️ Fun for kids, teens & adults
+✔️ Smooth performance on all devices
+🔥 Download Ludo Buzz Now & Start Your Journey!
+Roll the dice 🎲
+Beat your opponents ⚔️
+Become the Ludo Master & Ludo King 👑
+👉 Install now and enjoy the best Indian Ludo game online & offline! 🇮🇳✨
+Fast & Smooth Multiplayer Ludo. Play With Friends & Family Anytime, Anywhere.
+Updated on
+Jul 9, 2026
+Available on
+Android,
+Windows*
+#8 top free board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Dice
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Location, App activity and 2 others
+Data isn’t encrypted
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+3.4
+17.4K reviews
+5
+4
+3
+2
+1
+Jyothi Hemi
+more_vert
+Flag inappropriate
+Show review history
+July 15, 2026
+I am disappointed with this game. It feels like the computer always wins, no matter how well I play. The dice rolls often seem unfair, and the AI gets lucky too frequently. Sometimes it feels impossible to win against the computer because it makes perfect moves every time. I enjoy playing Ludo, but this experience is frustrating and takes away the fun of the game. I hope the developers improve the game balance and make the computer opponents fairer so that all players have an equal chance of win
+25 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Popup Games
+August 20, 2026
+Thank you for playing Ludo Buzz! 🙏 We understand how frustrating it feels when the computer seems to win too often or gets better rolls. Ludo Buzz is designed for fair gameplay and not to intentionally favor the computer. We truly value your feedback about AI difficulty and game balance. 🎲
+Md Rahik Islam
+more_vert
+Flag inappropriate
+September 15, 2026
+this game make me very disappoint. sometimes the local matches reacts very badly. if we play two players then one player gets good dice than other one. i also lose by 1.7 rating
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+Adrika Mathur
+more_vert
+Flag inappropriate
+June 27, 2026
+After recent update, the app has become very predictive knowing what number will come in dice next. Also increased in between ads. Not remain interested to play anymore.
+24 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Popup Games
+August 20, 2026
+Thank you for playing Ludo Buzz! 🙏 We understand how frustrating predictable-feeling dice and increased ads can be. Ludo Buzz is designed for fair gameplay and not to intentionally favor any player. You’re on version 263, so please update to the latest version. Ads help keep the game free, and No Ads is available anytime. 🎲
+See all reviews
+What’s new
+Bug Fix
+New Collectables
+UI Polish
+New Features
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+hello@popup.games
+shield
+Privacy Policy
+About the developer
+Popup Games LLC
+hello@popup.games
+30 N Gould St Ste N
+Sheridan, WY 82801-6317
+United States
++1 909-440-6317
+More by Popup Games
+arrow_forward
+Parchisi Buzz - Board Game
+Popup Games
+2.4
+star
+Ludo Gold : Ludo & Mini Games
+Popup Games
+3.3
+star
+2 Pics 1 Word : Guess The Word
+Popup Games
+4.3
+star
+Color Block Blast Puzzle Game
+Popup Games
+Logo Puzzle: Brain Teasers
+Popup Games
+3.9
+star
+4 Pics 1 Word - Brain Puzzle
+Popup Games
+3.6
+star
+Similar games
+arrow_forward
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Ludo STAR
+Gameberry Labs
+4.4
+star
+Ludo King®
+Gametion
+4.0
+star
+Yalla Ludo - Ludo&Jackaroo
+Aviva Sun
+3.7
+star
+Ludo Super: Fun Board Game
+Comfun
+3.1
+star
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

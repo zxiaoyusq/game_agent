@@ -1,0 +1,27 @@
+{
+  "mediterranean-casual-3d": {
+    "title": "地中海古典 · 简约圆润 3D 明亮休闲风",
+    "version": "1.0.0",
+    "style_block": "风格锚定：轻快明亮的 3D 立体休闲游戏美术。stylized casual mobile game art, chunky rounded volumes, simple clean forms, smooth soft bevels, delicate glossy specular highlights, crisp clean silhouette, soft studio lighting with a warm sunlit rim light, bright and airy, saturated but clean colors, high readability at small sizes, friendly and cute.\n材质语言：半哑光塑胶/黏土质感 + 温润黄铜金（brushed warm gold）。不要写实皮革毛孔、不要做旧破损、不要脏污划痕、不要高频噪点纹理。\n配色（地中海古典）：陶土红/砖红 #C8563C、深砖红 #9C3B2A、象牙米白 #F4E9D4、暖米 #E6D2AE、橄榄绿 #7C8F45、爱琴海蓝 #2E86C1、深海蓝 #1B4F72、日照金/黄铜金 #E8B04B、白墙暖石 #F7F3EA。整体高明度、中高饱和、通透；暗部与投影一律用暖色（如 #6B4A3A），不用纯黑或冷灰。\n形体与构图：单一主体居中，形体饱满圆润、大色块概括，必要的细节才保留，保证缩到 32~128px 仍能一眼认出是什么。",
+    "negative_block": "严禁（负面约束）：photorealistic 照片写实、hyper-realistic oil painting 厚涂写实、gritty/weathered 脏旧风化、stone carving 石雕质感、medieval grim 中世纪阴郁、dark museum relic 昏暗古董感、dirty dark shadows 脏黑阴影、muddy desaturated colors 混浊发灰配色、high-frequency noise texture 高频噪点、cracks/rust 裂纹锈迹、realistic leather pores 写实皮革毛孔；不要文字、水印、logo、签名、边框、外描边、外发光、投影、地面；不要多个主体、不要拼图/九宫格/分屏。",
+    "palette": {
+      "terracotta": "#C8563C 陶土红 / 砖红（主色：封面、屋顶、陶器、织物）",
+      "deep_brick": "#9C3B2A 深砖红（暗部、结构线）",
+      "ivory": "#F4E9D4 象牙米白（纸张、书页、白墙、布料）",
+      "cream_warm": "#E6D2AE 暖米（次高光、砂岩）",
+      "olive_green": "#7C8F45 橄榄绿（枝叶、植被、织物）",
+      "aegean_blue": "#2E86C1 爱琴海蓝（天空、水面、点缀色）",
+      "deep_sea": "#1B4F72 深海蓝（深色暗部）",
+      "sun_gold": "#E8B04B 日照金 / 黄铜金（金属件、徽记、描边）",
+      "whitewash": "#F7F3EA 白墙暖石（底色、留白）",
+      "shadow_warm": "#6B4A3A 暖阴影（所有投影与暗部用它，不用纯黑）"
+    }
+  },
+  "casual-3d-clean": {
+    "title": "通用简约圆润 3D 休闲风（不限定地中海配色）",
+    "version": "1.0.0",
+    "style_block": "风格锚定：stylized casual 3D game art, chunky rounded volumes, smooth soft bevels, glossy specular highlights, clean crisp silhouette, soft studio lighting, bright saturated colors, high readability at small sizes, friendly and cute. 材质为半哑光塑胶/黏土 + 抛光金属点缀，不要写实材质与做旧。",
+    "negative_block": "严禁：photorealistic、hyperrealistic、gritty、weathered、dirty、cracked、rusted、dark shadows、muddy colors、noisy texture、text、watermark、logo、signature、border、drop shadow、ground plane、multiple subjects、collage、grid。",
+    "palette": {}
+  }
+}

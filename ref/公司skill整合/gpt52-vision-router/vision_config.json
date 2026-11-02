@@ -1,0 +1,6 @@
+{
+  "base_url": "https://api.xiaomimimo.com/v1",
+  "model": "mimo-v2.5",
+  "api_key": "YOUR_API_KEY_HERE",
+  "notes": "Codex 副本专用识图配置（MiMo mimo-v2.5），优先于 ~/.gameartagent/user_models.json。"
+}

@@ -1,0 +1,424 @@
+# Google Play public snapshot: com.ludo.king
+URL: https://play.google.com/store/apps/details?id=com.ludo.king&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:44.891Z
+HTTP status: 200
+Raw HTML SHA-256: 0851015ad62189af5f836f63ec97627f0df5a70267c0c3d0b0b8146192fd7ec6
+Raw HTML: research/html-data/store-snapshots/com.ludo.king.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo King®
+Gametion
+Contains ads
+In-app purchases
+4.0
+star
+10.3M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+*THIS IS OFFICIAL LUDO KING® GAME
+2 Billion Downloads
+Adda (Club) is live! Create your own or join others to chat and hang out.
+Ludo King® is board game played between friends, family & kids.
+* 2/3/4/5/6 Players online Ludo game mode available
+* 2/3/4 Players Snakes and Ladders game mode available
+* 8 Players tournament available
+* New Ludo season released each month
+* Play daily goals and get free dice, coins and diamonds
+Ludo King® is a classic board game played between friends and family. Play the dice game of kings! Recall your childhood! In some places, Ludo is also known as Parchisi, Pachisi, parcheesi or Parchisi game.
+Ludo King is a cross platform multiplayer game that supports Desktop, Android, iOS, HTML5 and Windows mobile platform at same time. This game also support offline mode, where player can play with Computer or, Local multiplayer (pass and play mode). Play this dice game Ludo King. Best casual game in board games.
+New Game Themes available:
+Disco / Night mode Theme
+Nature Theme
+Egypt Theme
+Pinball Theme
+Candy Theme
+Christmas Theme
+Penguin Theme
+Battle Theme
+Diwali Theme
+Pirate Theme
+Sui Dhaaga Theme
+Marble Theme
+Alien Theme
+Octopus Theme
+Taj Mahal Theme
+What's new:
+* Social chat (text and voice)
+* Search- Worldwide players search
+* Quick mode
+* Tournament available
+* Real chat with friends and buddies
+* Challenge Facebook friends/buddies
+* Save/Load Ludo game option
+* More user-friendly UI
+* Low end devices support
+Ludo King is the modern version of the royal game of Pachisi. A Ludo game which was played between Indian kings and queens in ancient times. Roll the Ludo dice and move your tokens to reach the center of the Ludo board. Beat other players, become the Ludo King.
+Ludo King follows the traditional rules and the old school look of the Ludo game. Just like the kings and queens of India's golden age, your fate depends on the roll of the Ludo's dice and your strategy of moving the tokens effectively.
+Features of Ludo King:
+* No internet connection required! Play against the computer
+* Play with your family and friends through Local and Online Multiplayer
+* Play 2 to 6 Player Local Multiplayer Mode
+* Invite and challenge your Facebook Friends in a private game room and beat them to become Ludo King
+* Private chat with your Facebook friends & Buddies
+* Play Snake and Ladders on 7 different game board variations
+Ludo King is a friends and family game that was once played by kings and now it can be enjoyed by you and your family and friends. You'll be playing this Ludo for hours and its fun for the whole family.
+Ludo King is a perfect time pass game of Ludo board game. You played Ludo in your childhood, now play on your phone and tablet.
+Another nostalgic game similar in structure is Snakes and Ladders. Like Ludo, you may have played this board game when you were young. Ludo King now incorporates this classic Snakes and Ladders game as a whole new level. The objective of the game is simple: you have to be the first one to make it to 100. However, you can only move the same number of tiles as the number you roll on a die. If you land on the same tile as the beginning of a ladder, then you can take the ladder as a shortcut and move on up. A game of ups and down, Snakes and Ladders has been a favorite for generations; and now you can play it too, with Ludo King.
+Ludo has different names in different regions and countries like Fia, Fia-spel (Fia the game), Le Jeu de Dada (The Game of Dada), Non t'arrabbiare, Fia med knuff (Fia with push), Cờ cá ngựa, Uckers, Griniaris, Petits Chevaux (Little Horses), Ki nevet a végén, برسي (Barjis/Barjees). People also misspell Ludo as Loodo, Chakka, Lido, Lado, Ledo, Leedo, Laado, or Lodo.
+Follow us to get news and updates:
+* Facebook: https://www.facebook.com/ludokinggame
+* Twitter: https://twitter.com/LudoKingGame
+* YouTube: https://www.youtube.com/c/LudoKing
+* Instagram: https://www.instagram.com/ludokinggame/
+* https://ludoking.com
+IGRS RATING: 13+
+Ludo King is a board game played between friends and family. A fun dice game.
+Updated on
+Sep 8, 2026
+Available on
+Android,
+Windows
+#1 top free board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Stylized
+Miscellaneous
+Board games
+Competitive
+Events & offers
+Ends on 09/29
+Dance Season: It’s time to move, groove, and roll!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo King®",
+  "url": "https://play.google.com/store/apps/details/Ludo_King?id=com.ludo.king&hl=en",
+  "description": "Ludo King is a board game played between friends and family. A fun dice game.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/qSN0Eb6mDVPIX4PRggTB3PsEU1oyPorteUfiuJ709P9cZxdWP9Y-kV0htG7rtJNYywGE-3wlrC_7Gix0h0-Urw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Gametion",
+    "url": "https://gametion.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.970860242843628",
+    "ratingCount": "10319393"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo King® - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Ludo King®
+Gametion
+Contains ads
+In-app purchases
+4.0
+star
+10.3M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+*THIS IS OFFICIAL LUDO KING® GAME
+2 Billion Downloads
+Adda (Club) is live! Create your own or join others to chat and hang out.
+Ludo King® is board game played between friends, family & kids.
+* 2/3/4/5/6 Players online Ludo game mode available
+* 2/3/4 Players Snakes and Ladders game mode available
+* 8 Players tournament available
+* New Ludo season released each month
+* Play daily goals and get free dice, coins and diamonds
+Ludo King® is a classic board game played between friends and family. Play the dice game of kings! Recall your childhood! In some places, Ludo is also known as Parchisi, Pachisi, parcheesi or Parchisi game.
+Ludo King is a cross platform multiplayer game that supports Desktop, Android, iOS, HTML5 and Windows mobile platform at same time. This game also support offline mode, where player can play with Computer or, Local multiplayer (pass and play mode). Play this dice game Ludo King. Best casual game in board games.
+New Game Themes available:
+Disco / Night mode Theme
+Nature Theme
+Egypt Theme
+Pinball Theme
+Candy Theme
+Christmas Theme
+Penguin Theme
+Battle Theme
+Diwali Theme
+Pirate Theme
+Sui Dhaaga Theme
+Marble Theme
+Alien Theme
+Octopus Theme
+Taj Mahal Theme
+What's new:
+* Social chat (text and voice)
+* Search- Worldwide players search
+* Quick mode
+* Tournament available
+* Real chat with friends and buddies
+* Challenge Facebook friends/buddies
+* Save/Load Ludo game option
+* More user-friendly UI
+* Low end devices support
+Ludo King is the modern version of the royal game of Pachisi. A Ludo game which was played between Indian kings and queens in ancient times. Roll the Ludo dice and move your tokens to reach the center of the Ludo board. Beat other players, become the Ludo King.
+Ludo King follows the traditional rules and the old school look of the Ludo game. Just like the kings and queens of India's golden age, your fate depends on the roll of the Ludo's dice and your strategy of moving the tokens effectively.
+Features of Ludo King:
+* No internet connection required! Play against the computer
+* Play with your family and friends through Local and Online Multiplayer
+* Play 2 to 6 Player Local Multiplayer Mode
+* Invite and challenge your Facebook Friends in a private game room and beat them to become Ludo King
+* Private chat with your Facebook friends & Buddies
+* Play Snake and Ladders on 7 different game board variations
+Ludo King is a friends and family game that was once played by kings and now it can be enjoyed by you and your family and friends. You'll be playing this Ludo for hours and its fun for the whole family.
+Ludo King is a perfect time pass game of Ludo board game. You played Ludo in your childhood, now play on your phone and tablet.
+Another nostalgic game similar in structure is Snakes and Ladders. Like Ludo, you may have played this board game when you were young. Ludo King now incorporates this classic Snakes and Ladders game as a whole new level. The objective of the game is simple: you have to be the first one to make it to 100. However, you can only move the same number of tiles as the number you roll on a die. If you land on the same tile as the beginning of a ladder, then you can take the ladder as a shortcut and move on up. A game of ups and down, Snakes and Ladders has been a favorite for generations; and now you can play it too, with Ludo King.
+Ludo has different names in different regions and countries like Fia, Fia-spel (Fia the game), Le Jeu de Dada (The Game of Dada), Non t'arrabbiare, Fia med knuff (Fia with push), Cờ cá ngựa, Uckers, Griniaris, Petits Chevaux (Little Horses), Ki nevet a végén, برسي (Barjis/Barjees). People also misspell Ludo as Loodo, Chakka, Lido, Lado, Ledo, Leedo, Laado, or Lodo.
+Follow us to get news and updates:
+* Facebook: https://www.facebook.com/ludokinggame
+* Twitter: https://twitter.com/LudoKingGame
+* YouTube: https://www.youtube.com/c/LudoKing
+* Instagram: https://www.instagram.com/ludokinggame/
+* https://ludoking.com
+IGRS RATING: 13+
+Ludo King is a board game played between friends and family. A fun dice game.
+Updated on
+Sep 8, 2026
+Available on
+Android,
+Windows
+#1 top free board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Stylized
+Miscellaneous
+Board games
+Competitive
+Events & offers
+Ends on 09/29
+Dance Season: It’s time to move, groove, and roll!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Personal info, App info and performance, and Device or other IDs
+This app may collect these data types
+Personal info, Financial info and 3 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.0
+10.1M reviews
+5
+4
+3
+2
+1
+Dilip Patel
+more_vert
+Flag inappropriate
+September 12, 2026
+This has to be one of the most frustrating games ever created. There's almost zero skillinvolved — it's completely based on luck .No matter how well you plan, the dice decides everything, which makes it super annoying, Playing with friends is supposed to be fun, but it usually ends in arguments .Just when your token is about to reach home, someone cuts it and ruins everything g.It feels less like a game and more like a stress generator.👎👎
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Sabreen Tabasiya Sk
+more_vert
+Flag inappropriate
+Show review history
+September 14, 2026
+This is one of the most frustrating and unfair games I have ever played. The dice rolls feel completely biased and sometimes it seems like the winner is already decided. You can play with a proper strategy, but the game gives the opponent exactly what they need while you keep getting useless numbers. Instead of being fun, this game causes anger, frustration, and unnecessary stress. Very disappointing gameplay and a complete waste of time. I definitely would not recommend Ludo King. 👎
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+OM KUMAR
+more_vert
+Flag inappropriate
+September 11, 2026
+First of all, I have to admit it's a wonderful playing app. Me and my family play this game every night, and we kept enjoying the play. But the elephant in the room is the "Friends" mode, when you and your family are away it says you need 4 devices to connect and make a room. That's a BIG PROBLEM. Why not keep an alternate option like 'Pass n play' with "friends"? At least then it will take 2 devices? It will be more comfortable.
+Did you find this helpful?
+Yes
+No
+Gametion
+September 15, 2026
+Thank you for the wonderful feedback! We’re glad you and your family are enjoying the game. ❤️ For friends or family who are far away, they can connect only through the internet using their individual devices. We really appreciate your suggestion and feedback on making the online experience more convenient!
+See all reviews
+What’s new
+- New Mode Added
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@ludoking.com
+shield
+Privacy Policy
+About the developer
+GAMETION GLOBAL TECHNOLOGIES PTE. LIMITED
+support@gametion.com
+435 Orchard Road
+#11-00 Wisma Atria
+Singapore 238877
++91 80975 97532
+More by Gametion
+arrow_forward
+Carrom King™
+Gametion
+3.9
+star
+Snakes and Ladders King
+Gametion
+3.5
+star
+Teen Patti King 3 Patti Rummy
+Gametion
+Addictive Games™
+Gametion
+3.4
+star
+Ludo King® TV
+Gametion
+4.0
+star
+Bubble Shooter King
+Gametion
+3.7
+star
+Similar games
+arrow_forward
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Yalla Ludo - Ludo&Jackaroo
+Aviva Sun
+3.7
+star
+Ludo STAR
+Gameberry Labs
+4.4
+star
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+4.0
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Tic Tac Toe 2 Player: XO Game
+Onetap Global
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

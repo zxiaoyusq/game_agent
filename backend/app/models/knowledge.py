@@ -1,7 +1,7 @@
 """知识库相关 Pydantic 模型。
 
 知识库按「模块 / 分类」两级组织：
-- module: planning / art / dev / ops，对应四个岗位
+- module: selection / planning / art / dev / ops / skill，对应选品分析、策划、美术、程序、运营、技能
 - category: 每个模块下的分类，例如 art 下有 docs / images / videos / motion / facial
 
 每条记录对应一份原始物料文件（文档或多模态素材），
@@ -17,9 +17,9 @@ class KbItem(BaseModel):
     """知识库条目元信息。"""
 
     id: str = Field(..., description="条目唯一 ID（uuid hex）")
-    module: str = Field(..., description="所属模块：planning/art/dev/ops")
+    module: str = Field(..., description="所属模块：selection/planning/art/dev/ops/skill")
     category: str = Field(..., description="所属分类：docs/images/...")
-    # 所属文件夹相对路径，"" 表示分类根目录；多级用 / 分隔，深度 ≤ 4
+    # 所属文件夹相对路径，"" 表示分类根目录；普通模块最多 4 层，Skill 最多 8 层。
     folder: str = Field(default="", description="所属文件夹相对路径，'' 为根目录")
 
     # 业务展示字段

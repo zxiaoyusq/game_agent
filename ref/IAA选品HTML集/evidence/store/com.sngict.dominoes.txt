@@ -1,0 +1,346 @@
+# Google Play public snapshot: com.sngict.dominoes
+URL: https://play.google.com/store/apps/details?id=com.sngict.dominoes&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:16.403Z
+HTTP status: 200
+Raw HTML SHA-256: c46ec6e1c3848c986fbfc3916fb3be640af6f459f50e9a309729d1d9fb1eaf09
+Raw HTML: research/html-data/store-snapshots/com.sngict.dominoes.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Dominoes - Offline Domino Game
+SNG Games
+Contains ads
+3.9
+star
+70.8K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Dominoes Offline by SNG is now available for android mobile phones and tablets with its high quality. Download now and play. You can play Domino - Offline game anywhere you want. There is no need for an internet or wifi connection. You can earn millions of chips and play in high-bet rooms against different levels of artificial intelligence if you are a really good Dominoes player.
+New Features:
+- Online mode: You can play against human players. There is a time limit for each move in this mode. Challenge your friends and show your Dominoes skills to all your friends.
+- Daily and weekly quests: You can earn more gold and enable new features.
+Dominoes is a very popular board game all around the world. It is known as Bergen (a version of Draw) in Scandinavian countries, Matador in Spain, QuiQui or Gaple ( a version of block) in Indonesia, Domino in Brazil and other popular names are Mexican Train, "naval kozel", cross and human-human-wolf.
+Features:
+- Three different Dominoes modes (Muggins or All Fives, Block and Draw or Classic)
+- Simple and Smooth game play
+- Challenging AI bots
+- Rooms with different bet amount and difficulty levels
+- Daily Bonus
+- Various themes
+- No need to the internet
+- Offline mode (no wifi games)
+- Online mode (play with human opponents)
+-2 or 4 players mode.
+- Daily and weekly quests for more gold.
+Dominoes Offline is a board game for two players, played with domino tiles. The main contribution of our game is playing dominoes game offline plus its bet and room structure. You cannot consume all of your chips. We always send you millions of chips as gift. By this way, you can always play in high-bet rooms.
+Play the offline dominoes game Dominoes and improve your skills.
+SNG Games publishes offline games that don't need wifi. Try our offline games Hearts Offline, Spades Offline, Yatzy Offline, Gin Rummy Offline, Backgammon Offline and Rummy Offline. Have a blast gaming anytime, anywhere!
+Dominoes offline is intended for adult audiences and does not offer "real money gambling" or an opportunity to win real money or prizes. Practice or success at our game does not imply future success at "real money gambling".
+Play the classic board game Dominoes. Offline and online family board game.
+Updated on
+Jul 31, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dominoes - Offline Domino Game",
+  "url": "https://play.google.com/store/apps/details/Dominoes_Offline_Domino_Game?id=com.sngict.dominoes&hl=en",
+  "description": "Play the classic board game Dominoes. Offline and online family board game.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/cjtddP2Y3GDEguTBiFK11LlhAXiG-y8NwQly8N3oD3egPepNBTcxzcb-68PNe7py7wvW-d-RV4FHGTDAw6zwmrY",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "SNG Games",
+    "url": "http://www.sngict.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.9000000953674316",
+    "ratingCount": "70769"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Dominoes - Offline Domino Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Dominoes - Offline Domino Game
+SNG Games
+Contains ads
+3.9
+star
+70.8K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Dominoes Offline by SNG is now available for android mobile phones and tablets with its high quality. Download now and play. You can play Domino - Offline game anywhere you want. There is no need for an internet or wifi connection. You can earn millions of chips and play in high-bet rooms against different levels of artificial intelligence if you are a really good Dominoes player.
+New Features:
+- Online mode: You can play against human players. There is a time limit for each move in this mode. Challenge your friends and show your Dominoes skills to all your friends.
+- Daily and weekly quests: You can earn more gold and enable new features.
+Dominoes is a very popular board game all around the world. It is known as Bergen (a version of Draw) in Scandinavian countries, Matador in Spain, QuiQui or Gaple ( a version of block) in Indonesia, Domino in Brazil and other popular names are Mexican Train, "naval kozel", cross and human-human-wolf.
+Features:
+- Three different Dominoes modes (Muggins or All Fives, Block and Draw or Classic)
+- Simple and Smooth game play
+- Challenging AI bots
+- Rooms with different bet amount and difficulty levels
+- Daily Bonus
+- Various themes
+- No need to the internet
+- Offline mode (no wifi games)
+- Online mode (play with human opponents)
+-2 or 4 players mode.
+- Daily and weekly quests for more gold.
+Dominoes Offline is a board game for two players, played with domino tiles. The main contribution of our game is playing dominoes game offline plus its bet and room structure. You cannot consume all of your chips. We always send you millions of chips as gift. By this way, you can always play in high-bet rooms.
+Play the offline dominoes game Dominoes and improve your skills.
+SNG Games publishes offline games that don't need wifi. Try our offline games Hearts Offline, Spades Offline, Yatzy Offline, Gin Rummy Offline, Backgammon Offline and Rummy Offline. Have a blast gaming anytime, anywhere!
+Dominoes offline is intended for adult audiences and does not offer "real money gambling" or an opportunity to win real money or prizes. Practice or success at our game does not imply future success at "real money gambling".
+Play the classic board game Dominoes. Offline and online family board game.
+Updated on
+Jul 31, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, App activity and 2 others
+This app may collect these data types
+Location, App activity and 2 others
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+3.9
+67.6K reviews
+5
+4
+3
+2
+1
+Victor Musonda
+more_vert
+Flag inappropriate
+August 17, 2026
+This is a good app for entrepreneurs. Dominoes has been a perfect game for unlocking strategies for 'offence and defence'. I give it a 1000 stars ✨.
+6 people found this review helpful
+Did you find this helpful?
+Yes
+No
+A Google user
+more_vert
+Flag inappropriate
+December 16, 2019
+Entertaining, to some degree addictive. Nothing "overspecial", but its simplicity is what makes it better. Still, it has more modes of playing than other Domino games (online/offline, multiplayer up to 4, competition, etc) which makes it more interesting. It's not always user-friendly as the tiles sometimes move to the wrong side for whatever reason, so that's why I didn't put 5 stars. But if the developer team works a bit more on fixing that bug, I think it would deserve the best ratting.
+103 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Lon Lehr
+more_vert
+Flag inappropriate
+October 6, 2020
+I liked this initially, 3 types of domino game, cool. But after a while, I realized the objectives for experience don't make any sense, you don't progress, they're repetitive... And more importantly, the computer logic seems to make it very heavily favored that if you would a game you get the least amount t if points, almost to the point of feeling like it cheats. Not every time, but enough to make me not want to keep this game for sure. There's probably a better game.. Any other one, really.
+116 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@sngict.com
+shield
+Privacy Policy
+About the developer
+SNG BILISIM YAZILIM DANISMANLIK VE PAZARLAMA DIS TICARET LIMITED SIRKETI
+support@sngict.com
+K1-13, NO: 29 GUMUS BLOK UNIVERSITELER MAHALLESI
+IHSAN DOGRAMACI BULVARI, CANKAYA
+06800 Ankara
+Türkiye
++90 533 269 71 74
+More by SNG Games
+arrow_forward
+Gin Rummy - Offline Card Games
+SNG Games
+4.3
+star
+Gin Rummy - Online Card Games
+SNG Games
+4.1
+star
+8 Ball Billiards Offline Pool
+SNG Games
+4.1
+star
+Ludo - Offline Board Game
+SNG Games
+3.8
+star
+Solitaire - Offline Card Games
+SNG Games
+4.3
+star
+Hearts - Offline Card Games
+SNG Games
+4.3
+star
+Similar games
+arrow_forward
+Dominoes: Classic Dominos Game
+NewPubCo
+4.5
+star
+Dominoes Online - Classic Game
+MegaJogos
+4.1
+star
+Domino Legends: Classic Game
+Bluetile
+4.5
+star
+Domino - Dominos online game
+ZiMAD
+4.9
+star
+Arcadia Dominoes for Seniors
+Metajoy
+4.5
+star
+Domino Duel - Online Dominoes
+ZARIBA GAMES - Card & Board Games Online
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

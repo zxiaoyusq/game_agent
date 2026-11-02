@@ -1,0 +1,314 @@
+# Google Play public snapshot: com.h8games.helixjump
+URL: https://play.google.com/store/apps/details?id=com.h8games.helixjump&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:50.896Z
+HTTP status: 200
+Raw HTML SHA-256: 731c73ca49b401210fbfbddde68dd940fab68209a4b653089d223627f493bbc4
+Raw HTML: research/html-data/store-snapshots/com.h8games.helixjump.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Helix Jump
+VOODOO
+Contains ads
+In-app purchases
+4.1
+star
+4.14M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Helix Jump is the ultimate 3D arcade game that will keep you on the edge of your seat! Smash, bump, and bounce your way through the revolving helix platforms to reach the end. But be warned, it's not as easy as it sounds!
+As you drop like a ball through the colorful helix platforms, you'll encounter traps and obstacles that will test your skills and strategy. One wrong move and it's game over! Your ball shatters into pieces and you have to start from the beginning.
+Luckily, there's a way to unleash your inner fireball and conquer the game. Speed up like a madman or wait for the perfect moment to play, roll and jump your way to victory. The choice is yours!
+Helix Jump is designed with addictive gameplay mechanics that will keep you coming back for more. With crazy fast speed and high bounce intensity, you'll have to stay alert and focused to make it to the ultimate end.
+The bright, vibrant graphics and simple, easy-to-learn controls make Helix Jump the perfect game to play anytime, anywhere. Whether you're waiting in line or looking for a quick break, this game is sure to amaze and satisfy your need for excitement.
+Other games wish they were this great! Helix Jump is the ultimate test of your skills and reflexes. With increased density on bounce, fireball, speed, games, skills, amaze, wait, perfect, and ultimate, this game is guaranteed to keep you entertained for hours on end.
+Download Helix Jump now and get ready for the ultimate bouncing adventure! Don't miss out on the chance to experience the best ball game out there!
+Get to the bottom!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows*
+Casual
+Hypercasual
+Single player
+Abstract
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Helix Jump",
+  "url": "https://play.google.com/store/apps/details/Helix_Jump?id=com.h8games.helixjump&hl=en",
+  "description": "Get to the bottom!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ACTION",
+  "image": "https://play-lh.googleusercontent.com/yuBPuY7rd8mhhWdENBaefddYWl8q9u1eW38eYu8-NQlMhnGkend-I83E_mts6S9HvVdAHq7R2BzvpGloz4yewg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "VOODOO",
+    "url": "https://www.voodoo.io"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.131903648376465",
+    "ratingCount": "4144730"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Helix Jump - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Helix Jump
+VOODOO
+Contains ads
+In-app purchases
+4.1
+star
+4.14M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Helix Jump is the ultimate 3D arcade game that will keep you on the edge of your seat! Smash, bump, and bounce your way through the revolving helix platforms to reach the end. But be warned, it's not as easy as it sounds!
+As you drop like a ball through the colorful helix platforms, you'll encounter traps and obstacles that will test your skills and strategy. One wrong move and it's game over! Your ball shatters into pieces and you have to start from the beginning.
+Luckily, there's a way to unleash your inner fireball and conquer the game. Speed up like a madman or wait for the perfect moment to play, roll and jump your way to victory. The choice is yours!
+Helix Jump is designed with addictive gameplay mechanics that will keep you coming back for more. With crazy fast speed and high bounce intensity, you'll have to stay alert and focused to make it to the ultimate end.
+The bright, vibrant graphics and simple, easy-to-learn controls make Helix Jump the perfect game to play anytime, anywhere. Whether you're waiting in line or looking for a quick break, this game is sure to amaze and satisfy your need for excitement.
+Other games wish they were this great! Helix Jump is the ultimate test of your skills and reflexes. With increased density on bounce, fireball, speed, games, skills, amaze, wait, perfect, and ultimate, this game is guaranteed to keep you entertained for hours on end.
+Download Helix Jump now and get ready for the ultimate bouncing adventure! Don't miss out on the chance to experience the best ball game out there!
+Get to the bottom!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows*
+Casual
+Hypercasual
+Single player
+Abstract
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, App activity and 2 others
+This app may collect these data types
+Location, App activity and 2 others
+Data isn’t encrypted
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.1
+3.8M reviews
+5
+4
+3
+2
+1
+Kana Kanum Kalangal
+more_vert
+Flag inappropriate
+February 10, 2025
+I have played this game in 2018 and it was so good back then. But now there are so many ads. But even that is fine. In the bonus section of each level, I can never go beyond 25×. Even if I don't land on the level and the ball is in the gap, I still end up stopping at 25×. And the game keeps crashing and it's too annoying. And when I came to the playstore to try updating the app, the What's New section told that there was a bug fix. But I don't think anything was fixed. So goddamn annoying!!
+272 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Raju M
+more_vert
+Flag inappropriate
+Show review history
+August 23, 2020
+Helix jump is a very good game. Each level is unique with different colours and combination of shades. I have finished more than 50 levels, but I am so interested even now as I was when I downloaded the game. Those who are reading this review, please download the game. Edit : I have seen many others reviewing that there are too many ads. I have a trick for it. When an ad comes, you can just go to the home screen and enter the game. This trick will surely work. Hope it worked for you.
+1,716 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Haseeb Lakhani
+more_vert
+Flag inappropriate
+August 30, 2026
+re-downloaded out of nostalgia years later and the gameplay has genuinely become like those game ads being played by re*ards. with an Ad after EVERY click. cant even turn off the wifi otherwise the game simply does not play.
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+A brand new Helix Jump update is here!
+Enjoy smoother gameplay, improved performance, and bug fixes.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@voodoo.io
+shield
+Privacy Policy
+About the developer
+VOODOO
+support@voodoo.io
+59 RUE JEAN-JACQUES ROUSSEAU
+75001 PARIS
+France
++33 6 69 01 53 92
+Similar games
+arrow_forward
+Color Switch: Endless Play Fun
+Color Switch Phoenix LLC
+4.6
+star
+Hexa Sort
+Lion Studios Plus
+4.1
+star
+Dancing Road: Color Ball Run!
+AMANOTES PTE. LTD.
+4.4
+star
+Peggle Blast
+ELECTRONIC ARTS
+4.0
+star
+Smash Hit
+Mediocre
+4.5
+star
+Rise Up: Balloon Game
+CASUAL AZUR GAMES
+4.0
+star
+More by VOODOO
+arrow_forward
+Mob Control
+VOODOO
+4.1
+star
+Paper.io 2
+VOODOO
+4.3
+star
+Hole.io
+VOODOO
+4.0
+star
+Castle Busters
+VOODOO
+4.5
+star
+Aquapark.io
+VOODOO
+4.4
+star
+Slap and Run
+VOODOO
+4.2
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,238 @@
+# Google Play public snapshot: com.gaitco.domono
+URL: https://play.google.com/store/apps/details?id=com.gaitco.domono&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:16.419Z
+HTTP status: 200
+Raw HTML SHA-256: 27a0fc980750c54427893e7019f5e6271dd7685ce441faf5420ab6642be7ae23
+Raw HTML: research/html-data/store-snapshots/com.gaitco.domono.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Domono - Egyptian Dominoes
+GAIT
+In-app purchases
+Rated for 3+
+info
+50K+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Domono is the #1 Egyptian dominoes game for your phone! Challenge friends and rivals from
+everywhere in the most fun and fastest dominoes experience, with a polished design and
+smooth play.
+Game modes:
+• Online: quick matches against real players from around the world.
+• Offline: practice against bots at multiple difficulty levels, anytime, anywhere.
+• With friends: play over your local network (LAN) or invite friends with a table code.
+• Solo & teams: 1v1 matches, or 2v2 team play with your partner.
+Features:
+• Tables & clubs: build your own club and play with your community.
+• Tournaments: compete in knockout brackets and climb to the top.
+• Ranks: rise from Bronze all the way to Diamond through a fair rating system.
+• Leaderboards: compare your results with the best players daily and weekly.
+• Daily missions & achievements: fresh rewards every day to keep you on top.
+• Voice chat: talk with teammates and opponents during the match.
+• Themes & cosmetics: customize your table and dominoes in style.
+Gather your friends, pick your table, and prove you're the best dominoes player. Download
+Domono now and play for free
+Play Egyptian dominoes online with friends: 1v1 & teams, tournaments, clubs!
+Updated on
+Sep 14, 2026
+Board
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Domono - Egyptian Dominoes",
+  "url": "https://play.google.com/store/apps/details/Domono_Egyptian_Dominoes?id=com.gaitco.domono&hl=en",
+  "description": "Play Egyptian dominoes online with friends: 1v1 & teams, tournaments, clubs!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/gSH3ZoiAvFpapxQhG4jcEzWKLZEX8tqpCMAuhj9vgCGQXxMTQBsw5aNQCGy13ABeNr2NOIPtHQzPiplHEEX7nKw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "GAIT",
+    "url": "https://domono.3lahwa.com"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Domono - Egyptian Dominoes - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Domono - Egyptian Dominoes
+GAIT
+In-app purchases
+Rated for 3+
+info
+50K+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Domono is the #1 Egyptian dominoes game for your phone! Challenge friends and rivals from
+everywhere in the most fun and fastest dominoes experience, with a polished design and
+smooth play.
+Game modes:
+• Online: quick matches against real players from around the world.
+• Offline: practice against bots at multiple difficulty levels, anytime, anywhere.
+• With friends: play over your local network (LAN) or invite friends with a table code.
+• Solo & teams: 1v1 matches, or 2v2 team play with your partner.
+Features:
+• Tables & clubs: build your own club and play with your community.
+• Tournaments: compete in knockout brackets and climb to the top.
+• Ranks: rise from Bronze all the way to Diamond through a fair rating system.
+• Leaderboards: compare your results with the best players daily and weekly.
+• Daily missions & achievements: fresh rewards every day to keep you on top.
+• Voice chat: talk with teammates and opponents during the match.
+• Themes & cosmetics: customize your table and dominoes in style.
+Gather your friends, pick your table, and prove you're the best dominoes player. Download
+Domono now and play for free
+Play Egyptian dominoes online with friends: 1v1 & teams, tournaments, clubs!
+Updated on
+Sep 14, 2026
+Board
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+No data collected
+Learn more
+about how developers declare collection
+See details
+What’s new
+Stability fixes for game transitions, dialogs and voice audio routing. Improved diagnostics for missing domino tiles.
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+phone
+Phone number
++201013001322
+email
+Support email
+3bdullah.ghanem@gmail.com
+shield
+Privacy Policy
+About the developer
+GHANEM ARTIFICIAL INTELLIGENCE TECHNOLOGY
+3bdullah.ghanem@gmail.com
+Apartment 3, Third floor, 9th Street, Al Sharq
+Cairo
+Egypt
++20 15 52120907
+More by GAIT
+arrow_forward
+Karak & Questions
+GAIT
+Slinga
+GAIT
+gaitco
+GAIT
+Zozta
+GAIT
+Ebsar
+GAIT
+الشيخ — مصحف وحفظ
+GAIT
+Similar games
+arrow_forward
+Domino - Dominos online game
+ZiMAD
+4.9
+star
+Dominoes: Classic Dominos Game
+NewPubCo
+4.5
+star
+Arcadia Dominoes for Seniors
+Metajoy
+4.5
+star
+Domino Legends: Classic Game
+Bluetile
+4.5
+star
+DailyPool-Tiantian Billiards
+Beijing Xianqu Huyu Technology Co., Ltd.
+4.3
+star
+Yalla Jackaroo - Classic
+Yalla Technology FZ-LLC
+3.8
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

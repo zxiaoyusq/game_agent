@@ -1,0 +1,352 @@
+# Google Play public snapshot: com.playvalve.mahjong
+URL: https://play.google.com/store/apps/details?id=com.playvalve.mahjong&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:13.485Z
+HTTP status: 200
+Raw HTML SHA-256: 07075399d9b2650da443a2099eaa91686307fa17ea80521e31f5af07c1373d33
+Raw HTML: research/html-data/store-snapshots/com.playvalve.mahjong.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Mahjong Voyage: Tile Matching
+Bluetile
+Contains ads
+In-app purchases
+4.7
+star
+213K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Mahjong Voyage: Tile Match Puzzle Game - Build Your Zen Paradise
+Embark on an enchanting puzzle adventure with Mahjong Voyage 🏝️! Where classic Mahjong meets beautiful landscapes and rewarding challenges in this free tile match game. Match tiles to unlock pieces of your own zen paradise! Perfect for puzzle lovers seeking both relaxation and creative building fun. Discover hundreds of uniquely crafted levels in this free Mahjong game while building your dream island piece by piece! ✨
+Enjoy stress-free puzzle gaming designed for your comfort, featuring crystal-clear tiles and soothing atmospheres. Play at your own pace - no rush, just pure enjoyment in this relaxing Mahjong game. 🌴
+Your Mahjong Adventure Features:
+🎯 Classic Tile Match Excellence: Master traditional tile matching with our enhanced, user-friendly puzzle design. Clear beautiful boards and collect special tiles to expand your island paradise.
+🏯 Build Your Dream Zen Island: Transform collected tiles into beautiful pagodas, zen gardens, and traditional buildings. Watch your personal paradise grow with every level completed in this free puzzle game!
+🌅 Voyage Through Beautiful Worlds: Each level brings stunning new scenes and layouts. Progress through varied landscapes as you solve increasingly rewarding puzzles and unlock new island features!
+🧘‍♀️ Mindful Gaming Experience: Enjoy peaceful gameplay with no time pressure. Perfect for relaxation breaks or thoughtful evening entertainment in this free Mahjong puzzle game.
+Why Players Love Mahjong Voyage:
+🏗️ Creative Island Building: Use your tile matching skills to collect resources and construct beautiful zen-inspired buildings. Every match brings you closer to completing your island paradise!
+👀 Perfectly Clear Design: Large tiles and thoughtful layouts ensure comfortable play for everyone, especially those who value eye-friendly gaming.
+🌟 Helpful Features: Never get stuck with smart hints, unlimited undos, and board shuffles that keep your puzzle Voyage flowing smoothly.
+🎁 Daily Rewards & Challenges: Log in daily for special building materials and exciting new puzzles. Every day brings fresh opportunities to expand your island in this free Mahjong game!
+✈️ Play Anywhere: No internet required - enjoy your Mahjong puzzle adventure and build your paradise anytime, anywhere.
+🏆 Achievement System: Track your progress, earn trophies, and celebrate your matching expertise with rewarding achievements. Unlock special buildings as you master the game!
+Download Mahjong Voyage now and start building your own piece of paradise! Discover why millions of players choose our free puzzle game for their daily dose of fun, creativity, and mental stimulation. 🎮✨
+Match tiles, build your dream zen paradise in this classic Mahjong Game
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Pair matching
+Mahjong solitaire
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 5 days
+Golden September: match tiles under an autumn glow
+Begins in 5 days
+Starlight Festival: match tiles beneath a sky of lanterns
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Mahjong Voyage: Tile Matching",
+  "url": "https://play.google.com/store/apps/details/Mahjong_Voyage_Tile_Matching?id=com.playvalve.mahjong&hl=en",
+  "description": "Match tiles, build your dream zen paradise in this classic Mahjong Game",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/t19BTziVMoBLrRLa3kYxFtyEZosHHXctMnj09Odwbi3HQkTzd5T1ShL70bH00mP-FeAs_P9YpFBk5tdLwdKszw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Bluetile",
+    "url": "https://www.bluetile.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.699999809265137",
+    "ratingCount": "212519"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Mahjong Voyage: Tile Matching - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Mahjong Voyage: Tile Matching
+Bluetile
+Contains ads
+In-app purchases
+4.7
+star
+213K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Mahjong Voyage: Tile Match Puzzle Game - Build Your Zen Paradise
+Embark on an enchanting puzzle adventure with Mahjong Voyage 🏝️! Where classic Mahjong meets beautiful landscapes and rewarding challenges in this free tile match game. Match tiles to unlock pieces of your own zen paradise! Perfect for puzzle lovers seeking both relaxation and creative building fun. Discover hundreds of uniquely crafted levels in this free Mahjong game while building your dream island piece by piece! ✨
+Enjoy stress-free puzzle gaming designed for your comfort, featuring crystal-clear tiles and soothing atmospheres. Play at your own pace - no rush, just pure enjoyment in this relaxing Mahjong game. 🌴
+Your Mahjong Adventure Features:
+🎯 Classic Tile Match Excellence: Master traditional tile matching with our enhanced, user-friendly puzzle design. Clear beautiful boards and collect special tiles to expand your island paradise.
+🏯 Build Your Dream Zen Island: Transform collected tiles into beautiful pagodas, zen gardens, and traditional buildings. Watch your personal paradise grow with every level completed in this free puzzle game!
+🌅 Voyage Through Beautiful Worlds: Each level brings stunning new scenes and layouts. Progress through varied landscapes as you solve increasingly rewarding puzzles and unlock new island features!
+🧘‍♀️ Mindful Gaming Experience: Enjoy peaceful gameplay with no time pressure. Perfect for relaxation breaks or thoughtful evening entertainment in this free Mahjong puzzle game.
+Why Players Love Mahjong Voyage:
+🏗️ Creative Island Building: Use your tile matching skills to collect resources and construct beautiful zen-inspired buildings. Every match brings you closer to completing your island paradise!
+👀 Perfectly Clear Design: Large tiles and thoughtful layouts ensure comfortable play for everyone, especially those who value eye-friendly gaming.
+🌟 Helpful Features: Never get stuck with smart hints, unlimited undos, and board shuffles that keep your puzzle Voyage flowing smoothly.
+🎁 Daily Rewards & Challenges: Log in daily for special building materials and exciting new puzzles. Every day brings fresh opportunities to expand your island in this free Mahjong game!
+✈️ Play Anywhere: No internet required - enjoy your Mahjong puzzle adventure and build your paradise anytime, anywhere.
+🏆 Achievement System: Track your progress, earn trophies, and celebrate your matching expertise with rewarding achievements. Unlock special buildings as you master the game!
+Download Mahjong Voyage now and start building your own piece of paradise! Discover why millions of players choose our free puzzle game for their daily dose of fun, creativity, and mental stimulation. 🎮✨
+Match tiles, build your dream zen paradise in this classic Mahjong Game
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Pair matching
+Mahjong solitaire
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 5 days
+Golden September: match tiles under an autumn glow
+Begins in 5 days
+Starlight Festival: match tiles beneath a sky of lanterns
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+App activity, App info and performance, and Device or other IDs
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.7
+200K reviews
+5
+4
+3
+2
+1
+Cindy Larkins
+more_vert
+Flag inappropriate
+Show review history
+September 27, 2025
+Average game play, like many other mahjong games I've played, but instead of just ads between levels, it also has ads in the middle of levels, interrupting play. It will even stop you in the middle of a match which is super frustrating. I understand that ads are how the developers pay for the game, but interrupting play in the middle of a level is a deal breaker. There are much better mahjong apps out there. I will be uninstalling.
+136 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Bluetile
+September 29, 2025
+Hello, we understand that ads can get annoying. Unfortunately, we need them so you can continue playing our games for free! If you have any questions or feedback, you can reach us at contact@playvalve.com
+Beth Anne
+more_vert
+Flag inappropriate
+August 4, 2026
+TLDR: You'll spend more time watching ads than playing the game, play any other Mahjong game available, it'll be better. This has frustrating visuals and extremely excessive ads. There's a huge difference between "ads are required to keep the game free to play", and interrupting gameplay no less than every 30 seconds to play a 30 second ad, plus ads between every match. The visuals every time you make a match are incredibly annoying and it's not possible to turn them off.
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Bluetile
+August 4, 2026
+Hello, we understand that ads can get annoying. Unfortunately, we need them so you can continue playing our games for free! If you have any questions or feedback, you can reach us at contact@bluetile.com
+Annarose Longfellow
+more_vert
+Flag inappropriate
+August 28, 2026
+I love playing this game. I just wish they would stop trying to get you on another game that's harder. I've changed 3 times. on 1 game I was only at #12, and it wanted me to try another one similar to this one. I just want to play a far as I can go. we shouldn't be interrupted with all the other games that they try to get you to go on.
+8 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+New levels, bug fixing and various improvements.
+Welcome to Mahjong and thank you for playing! We hope you like our game and would love to see your reviews!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+contact@bluetile.com
+shield
+Privacy Policy
+About the developer
+BLUETILE GAMES, S.L.
+contact@bluetile.com
+CALLE ARAGO, 383 - P. 10
+08013 BARCELONA
+Spain
++1 573-207-4277
+More by Bluetile
+arrow_forward
+Word Search - Word Puzzle Game
+Bluetile
+4.5
+star
+Wildoku: Animal Sudoku
+Bluetile
+Spades Stars - Card Game
+Bluetile
+4.5
+star
+Hole Rush: Eat All Puzzle
+Bluetile
+4.8
+star
+Solitaire - Classic Card Game
+Bluetile
+4.7
+star
+Block Blitz: Puzzle Adventure
+Bluetile
+4.4
+star
+Similar games
+arrow_forward
+Zen Tiles - Mahjong Match
+Bluetile
+4.8
+star
+Shanghai Mahjongg
+UniRise Studio
+4.4
+star
+Daily Mahjong Match
+Big Cake
+4.8
+star
+Mahjong Titan
+Kristanix Games
+4.4
+star
+Mahjong Infinite
+GB Games
+4.5
+star
+Mahjong 3
+Mahjong Brain Puzzles
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

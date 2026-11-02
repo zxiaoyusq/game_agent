@@ -7,7 +7,7 @@
 #   ./dev.sh frontend       # 只起前端
 #   BACKEND_PORT=8001 ./dev.sh   # 自定义后端端口（前端 vite 的 proxy 也会同步指过去）
 #
-# 默认端口：后端 8000，前端 由 vite 自行选择 (5173+)
+# 默认端口：后端 8003，前端 24681
 # 日志文件：./logs/backend.log、./logs/frontend.log
 
 set -u  # 未定义变量直接报错；不开 -e，因为我们要自己处理子进程退出
@@ -23,7 +23,7 @@ mkdir -p "$LOG_DIR"
 BACKEND_LOG="$LOG_DIR/backend.log"
 FRONTEND_LOG="$LOG_DIR/frontend.log"
 
-BACKEND_PORT="${BACKEND_PORT:-8000}"
+BACKEND_PORT="${BACKEND_PORT:-8003}"
 CONDA_ENV="${CONDA_ENV:-base}"
 
 # ---- 工具函数 -------------------------------------------------------------
@@ -101,7 +101,7 @@ start_frontend() {
   info "启动前端 vite，日志：$(c_dim "$FRONTEND_LOG")"
   (
     cd "$FRONTEND_DIR" &&
-    exec npm run dev
+    exec env BACKEND_PORT="$BACKEND_PORT" npm run dev
   ) >"$FRONTEND_LOG" 2>&1 &
   FRONTEND_PID=$!
   echo "$FRONTEND_PID" > "$LOG_DIR/frontend.pid"
@@ -156,7 +156,7 @@ esac
 info "$(c_green "全部启动完成")。"
 echo
 echo "   后端: http://127.0.0.1:$BACKEND_PORT/docs"
-echo "   前端: 见上方 vite 输出的 Local 地址（默认 http://localhost:5173/）"
+echo "   前端: http://localhost:24681/"
 echo
 info "实时日志（Ctrl+C 退出）："
 echo

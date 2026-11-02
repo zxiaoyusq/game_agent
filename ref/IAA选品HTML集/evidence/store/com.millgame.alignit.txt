@@ -1,0 +1,354 @@
+# Google Play public snapshot: com.millgame.alignit
+URL: https://play.google.com/store/apps/details?id=com.millgame.alignit&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:12.119Z
+HTTP status: 200
+Raw HTML SHA-256: 06e0d7c0cb882d24bcdf15fed02c715d8c77a8703b065fb523bef9881d1cb85a
+Raw HTML: research/html-data/store-snapshots/com.millgame.alignit.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Align It | Char Bhar Online
+AlignIt Games
+Contains ads
+In-app purchases
+4.2
+star
+21.5K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+With around 3.5 million users, Align It - Board Game already enjoyed by many players around the world!. Now get more of the exhilarating HD Graphics, UX, exciting Levels and Jumping mode in Align It 2!
+Align it based on world-famous Twelve Men's Morris or Morabaraba game and Nine Men's Morris game(Bead 9 Game).
+Our free Align it Board game offers:
+- single-player Mill game (play with CPU)
+- 2 players game
+- easy, medium, and hard mode in the single-player game
+- play online with Anyone and Chat with EMOJIs
+- Invite And play online with Friends(multiplayer)
+- play via Bluetooth(multiplayer 9 bead game)
+- chat option in online mode
+- the leaderboard in online mode
+- game statistics
+- Unlock Achievements by progressing in the game
+- 2 games (Nine Men's Morris and Morabaraba or 12 Men's Morris ) with easy medium and hard modes.
+Align it Board game is a traditional two-player strategy board game for two players. It is also known as Mmele game a Traditional game played throughout Southern Africa and Char Bhar(9 goti) Game in India.
+Align it is a great way to pass your free time. In this variant of 12 Men's Morris game, you can play with your opponents from all over the world in online mode. This mill game shows ranking between friends and global ranking in the leader board. In this variant of the Morabaraba game, you can play many levels with increased difficulty level in easy, medium and hard mode respectively.
+9 men's morris game is a variant of Hungarian game Malom in single player. Now you can enjoy nine men's morris as well as 12 men's morris variants in a single game. This game is played with 9 and 12 pieces so it is called 9 goti (9 guti) and 12 goti game also.
+Nine Men's Morris is a strategy board game for two players dating at least to the Roman Empire. It is known as Saalu Mane Ata or Jodpi Ata or Char-Par in Kannada, Navkakri in Gujarati and Daadi (Daddy) Game in Telugu.
+So start playing Align It HD Morris game on your Android device for free. Get the Align it now and let the fun begins!. We are constantly working hard to improve this game so please share your feedback at regleware@gmail.com to improve this game and keep Playing Align it.
+Become a fan of Align It Games on Facebook:
+https://www.facebook.com/alignitgames/
+Play Highest Rated Desi Board Game Nine Men's Morris - 9 Goti, Mills!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Abstract
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Align It | Char Bhar Online",
+  "url": "https://play.google.com/store/apps/details/Align_It_Char_Bhar_Online?id=com.millgame.alignit&hl=en",
+  "description": "Play Highest Rated Desi Board Game Nine Men's Morris - 9 Goti, Mills!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/usdCpvrXj3l5WYLTQsvf2rSo0hQd_4pYuy9OTrpBy32RKz2To8S8LH1btuS_Yl7hSs2aZE8FuQneYcy0R9WnsA",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "AlignIt Games",
+    "url": "https://www.alignitgames.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.234592437744141",
+    "ratingCount": "21452"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Align It | Char Bhar Online - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Align It | Char Bhar Online
+AlignIt Games
+Contains ads
+In-app purchases
+4.2
+star
+21.5K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact
+Learn more
+About this game
+arrow_forward
+With around 3.5 million users, Align It - Board Game already enjoyed by many players around the world!. Now get more of the exhilarating HD Graphics, UX, exciting Levels and Jumping mode in Align It 2!
+Align it based on world-famous Twelve Men's Morris or Morabaraba game and Nine Men's Morris game(Bead 9 Game).
+Our free Align it Board game offers:
+- single-player Mill game (play with CPU)
+- 2 players game
+- easy, medium, and hard mode in the single-player game
+- play online with Anyone and Chat with EMOJIs
+- Invite And play online with Friends(multiplayer)
+- play via Bluetooth(multiplayer 9 bead game)
+- chat option in online mode
+- the leaderboard in online mode
+- game statistics
+- Unlock Achievements by progressing in the game
+- 2 games (Nine Men's Morris and Morabaraba or 12 Men's Morris ) with easy medium and hard modes.
+Align it Board game is a traditional two-player strategy board game for two players. It is also known as Mmele game a Traditional game played throughout Southern Africa and Char Bhar(9 goti) Game in India.
+Align it is a great way to pass your free time. In this variant of 12 Men's Morris game, you can play with your opponents from all over the world in online mode. This mill game shows ranking between friends and global ranking in the leader board. In this variant of the Morabaraba game, you can play many levels with increased difficulty level in easy, medium and hard mode respectively.
+9 men's morris game is a variant of Hungarian game Malom in single player. Now you can enjoy nine men's morris as well as 12 men's morris variants in a single game. This game is played with 9 and 12 pieces so it is called 9 goti (9 guti) and 12 goti game also.
+Nine Men's Morris is a strategy board game for two players dating at least to the Roman Empire. It is known as Saalu Mane Ata or Jodpi Ata or Char-Par in Kannada, Navkakri in Gujarati and Daadi (Daddy) Game in Telugu.
+So start playing Align It HD Morris game on your Android device for free. Get the Align it now and let the fun begins!. We are constantly working hard to improve this game so please share your feedback at regleware@gmail.com to improve this game and keep Playing Align it.
+Become a fan of Align It Games on Facebook:
+https://www.facebook.com/alignitgames/
+Play Highest Rated Desi Board Game Nine Men's Morris - 9 Goti, Mills!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Abstract
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 3 others
+This app may collect these data types
+Location, Personal info and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+tablet_android
+Tablet
+4.2
+20.9K reviews
+5
+4
+3
+2
+1
+A Google user
+more_vert
+Flag inappropriate
+Show review history
+June 15, 2019
+I have been looking the mobile version of this as I didn't know how the game is called, and glad i found this. But I think it would be better if there are more levels than this 24 levels each for easy, medium and hard mode. And, is there a way to offer players to customize the board color, background and most importantly, the color of candies (what those are called in the game) by theirselves? Other than that, i would say this is one great game with valid moves by computer.
+525 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AlignIt Games
+June 15, 2019
+Thank you very much for your review concerning our game..Thankfully we already working on all your suggestions,We are working on providing option of candies (disks) and game theme (this will include background color board color and music ). Soon we are increasing the levels to 36 and adding some challenges also.
+With Regards,
+Team Align It
+Moses Mathebula
+more_vert
+Flag inappropriate
+November 18, 2024
+I like this game so much I play it anytime of the day when given the opportunity. This means that whenever am not doing anything, am likely to play it and anytime for that matter. I have one problem however, the game doesn't undo moves. At times you want to play a specific move but touch the wrong part of your screen and it makes an unwanted move. Can anyone tell us how that (undo) is done. it would be nice to have undo's, even if the were limited to one or two moves per game.
+553 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AlignIt Games
+December 13, 2024
+Dear user, thanks for your kind feedback and support. You can use undo by clicking on the Undo button given in the top middle section of the gameplay screen. To use undo you need gems, you can collect gems through reward ads and in daily rewards. Thanks keep enjoying...
+A Google user
+more_vert
+Flag inappropriate
+April 17, 2020
+The game is intermediate in it's design. What makes it difficult are the restrictions in terms of the number of moves (which is good) one can make and not necessary the design/layout. What I found to be limiting/restrictive is which pieces of the opponent one can collect this should be opened up to any pieces on the board. The game is a childhood favorite and there is a last layer which can be added to make it much more interesting. But Kudo's to the design team.
+981 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AlignIt Games
+April 17, 2020
+Hello Sithembile,
+Thanks for detailed feedback, You can't pick pieces that form a mill on board you only pick pieces that are not in any mill. If the opponent's all pieces in a mill that you can pick any piece. And this rule is the same for you as well as for your opponent. For more information please contact us at regleware@gmail.com
+See all reviews
+What’s new
+• Quick Chat redesigned, now with animated emoji reactions
+• Unlock several badges at once with the new badge reveal
+• Full support for Android 16
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+regleware@gmail.com
+shield
+Privacy Policy
+About the developer
+Sunita Devanda
+regleware@gmail.com
+DEVANDA KI DHANI MOHANPURA SANGANER JAIPUR
+Jaipur, Rajasthan 302020
+India
+More by AlignIt Games
+arrow_forward
+Ludo Offline
+AlignIt Games
+4.2
+star
+Bead 16 - 16 Guti Board Game
+AlignIt Games
+4.2
+star
+Tic Tac Toe Online - XO Game
+AlignIt Games
+4.0
+star
+Chess - Online & Offline
+AlignIt Games
+4.3
+star
+Bead 12 - 12 Guti Board Game
+AlignIt Games
+3.9
+star
+Water Sort - Water Color Sort
+AlignIt Games
+3.8
+star
+Similar games
+arrow_forward
+Checkers
+Gamma Play
+4.1
+star
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Air Hockey Challenge
+mobirix
+4.1
+star
+Pool Billiards offline
+Andregal
+4.1
+star
+Carrom - A Disc Board Game
+Brainit Games
+3.7
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

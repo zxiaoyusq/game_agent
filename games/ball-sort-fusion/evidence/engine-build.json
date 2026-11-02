@@ -1,0 +1,39 @@
+{
+  "version": "3.8.8",
+  "source": "https://github.com/cocos/cocos-engine/releases/tag/3.8.8",
+  "commit": "411f98df047c25902f93440d4b22925c2fb65461",
+  "expectedCommit": "411f98df047c25902f93440d4b22925c2fb65461",
+  "gitCommit": null,
+  "gitDirty": null,
+  "expectedTarballSha256": "8af14ad3f861b9edd1d90c928a676ccaec4d9ec6d0bce42f56c59c9b3a82afa5",
+  "sourceComparison": {
+    "matched": true,
+    "checkedFiles": 6340,
+    "mismatches": [],
+    "excluded": [
+      "package-lock.json"
+    ]
+  },
+  "sourceIdentityVerified": true,
+  "runtimeSha256": "c5dbfbd9008357af024539cb96071774d8d9809a5a1d3850b88389f7ac8fa1a0",
+  "builderVersion": "2.3.23",
+  "tarballSha256": "8af14ad3f861b9edd1d90c928a676ccaec4d9ec6d0bce42f56c59c9b3a82afa5",
+  "sourceVersionVerified": "3.8.8",
+  "builtAt": "2026-10-17T19:32:51.350Z",
+  "result": {
+    "chunkAliases": {},
+    "exports": {
+      "cc": "cc.js"
+    },
+    "chunkDepGraph": {
+      "cc.js": []
+    },
+    "assetDepGraph": {
+      "cc.js": []
+    },
+    "hasCriticalWarns": false,
+    "dependencyGraph": {
+      "cc.js": []
+    }
+  }
+}

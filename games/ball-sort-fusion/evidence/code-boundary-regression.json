@@ -1,0 +1,259 @@
+{
+  "storage": [
+    {
+      "action": "移动动画结束",
+      "moves": 1,
+      "extra": false,
+      "message": "本次进度暂未保存，当前局面仍可继续"
+    },
+    {
+      "action": "撤销",
+      "moves": 0,
+      "extra": false,
+      "message": "本次进度暂未保存，当前局面仍可继续"
+    },
+    {
+      "action": "加管",
+      "moves": 0,
+      "extra": true,
+      "message": "本次进度暂未保存，当前局面仍可继续"
+    },
+    {
+      "action": "设置",
+      "moves": 0,
+      "extra": true,
+      "message": "本次进度暂未保存，当前局面仍可继续"
+    },
+    {
+      "action": "主题重绘",
+      "moves": 0,
+      "extra": true,
+      "message": "本次进度暂未保存，当前局面仍可继续"
+    }
+  ],
+  "savedSession": {
+    "mode": "classic",
+    "index": 0,
+    "board": [
+      [
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        3,
+        3,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2,
+        2
+      ],
+      [],
+      []
+    ],
+    "history": [
+      {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          []
+        ],
+        "moves": 0,
+        "extra": false
+      }
+    ],
+    "historyBoundary": null,
+    "moves": 0,
+    "extra": true,
+    "won": false
+  },
+  "final": {
+    "mode": "classic",
+    "index": 3,
+    "board": [
+      [
+        5,
+        4,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        4,
+        5,
+        5,
+        3
+      ],
+      [
+        3,
+        4,
+        5,
+        4
+      ],
+      [
+        1,
+        1,
+        2,
+        2
+      ],
+      [],
+      []
+    ],
+    "moves": 0,
+    "selected": -1,
+    "busy": false,
+    "won": false,
+    "extra": false,
+    "theme": 1,
+    "symbols": false,
+    "storageRecovered": false,
+    "message": "先点选试管，再点同色管口或空管",
+    "hintPair": null,
+    "lastHint": null,
+    "lastHintSource": null,
+    "overlay": false,
+    "capacity": 4,
+    "solution": [
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "tubePositions": [
+      {
+        "x": -147,
+        "y": 120,
+        "width": 50,
+        "height": 199,
+        "size": 43,
+        "bottom": 52
+      },
+      {
+        "x": -49,
+        "y": 120,
+        "width": 50,
+        "height": 199,
+        "size": 43,
+        "bottom": 52
+      },
+      {
+        "x": 49,
+        "y": 120,
+        "width": 50,
+        "height": 199,
+        "size": 43,
+        "bottom": 52
+      },
+      {
+        "x": 147,
+        "y": 120,
+        "width": 50,
+        "height": 199,
+        "size": 43,
+        "bottom": 52
+      },
+      {
+        "x": -98,
+        "y": -118,
+        "width": 50,
+        "height": 199,
+        "size": 43,
+        "bottom": -186
+      },
+      {
+        "x": 0,
+        "y": -118,
+        "width": 50,
+        "height": 199,
+        "size": 43,
+        "bottom": -186
+      },
+      {
+        "x": 98,
+        "y": -118,
+        "width": 50,
+        "height": 199,
+        "size": 43,
+        "bottom": -186
+      }
+    ],
+    "completed": 3
+  },
+  "errors": [],
+  "realPointer": true,
+  "realSolutionCompletion": true
+}

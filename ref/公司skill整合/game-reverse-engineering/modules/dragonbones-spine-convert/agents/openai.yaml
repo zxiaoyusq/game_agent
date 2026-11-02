@@ -1,0 +1,4 @@
+interface:
+  display_name: "龙骨转Spine3.8与QA"
+  short_description: "DB骨骼转Spine3.8并做真实Spine全量QA"
+  default_prompt: "Use $game-reverse-engineering to convert DragonBones resources to Spine 3.8 and run full QA with the real Spine runtime/viewer."

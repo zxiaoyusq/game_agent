@@ -1,0 +1,348 @@
+# Google Play public snapshot: com.oakever.tiletrip
+URL: https://play.google.com/store/apps/details?id=com.oakever.tiletrip&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:53.344Z
+HTTP status: 200
+Raw HTML SHA-256: c1a6cf026d2ef67158effd3481a6e13db04ad20ad1c601e9e4f76ca9f22d3468
+Raw HTML: research/html-data/store-snapshots/com.oakever.tiletrip.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Tile Explorer - Triple Match
+Oakever Games
+Contains ads
+In-app purchases
+4.5
+star
+2.27M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Are you looking for a new match-3 game? Do you want to find relaxation and joy in it? Prepare to embark on the enchanting world of Tile Explorer, the relaxing tile match puzzle game. Tile Explorer transforms the act of tile matching into an art form. With each level, Tile Explorer invites you to immerse yourself in puzzle-solving fun, where each tile holds the potential for both relaxation and triumph!
+🍓Unlock a Journey of Innovative Tile Challenges🍓
+Tile Explorer is a blend of traditional tile match games and innovative puzzle mechanics, offering a fresh twist on the beloved match puzzle genre. Here, matching tiles becomes more than a game—it's a journey. As you navigate through the myriad puzzles, Tile Explorer evolves, presenting new challenges that require you to think differently about your strategy. The thrill of making a triple tile match and clearing the board is unmatched, offering both satisfaction and the eagerness to tackle the next puzzle challenge.
+Four Features of Tile Explorer:
+- 🌺EMBARK ON A TILE Explorer: Journey through serene puzzles, matching tiles for tranquility. Engage in a tile-matching saga that delights both mind and sight.
+- 🌼MASTER TILE MATCHING: Elevate your intellect with every level of our match challenges. Dive into a realm where classic puzzles meet innovative tile matching, sharpening your cognitive skills.
+- 🪷EXPLORE A WORLD OF MATCH ADVENTURES: Navigate through diverse landscapes, from tranquil seasides to lush rainforests, as you progress in our tile-matching journey. Each new level brings a fresh backdrop, inviting you to a world where every match is a discovery.
+- 🪻DISCOVER THOUSANDS OF PEACEFUL PUZZLES AND BRAIN CHALLENGES: Find solace and stimulation in a vast collection of tile-matching puzzles designed to relax and challenge.
+🌸Explore a New Adventure🌸
+Embark on a journey with Tile Explorer, the ultimate tile-matching adventure that redefines relaxation and mental stimulation. With a simple tap, match, and relax mechanism, Tile Explorer invites you to dive into a world where matching three tiles unravels endless possibilities and hours of enjoyment.
+Tile Explorer isn’t just a game; it’s an expedition across captivating landscapes, challenging your intellect with every move. With puzzles that tease the brain and matching games that test your skills, Tile Explorer offers a comprehensive experience that sharpens your mind while providing immense satisfaction through tile puzzle triumphs.
+🌹Start Your Journey with Others🌹
+Download Tile Explorer today and start your adventure through the world of triple tile matching. Whether you’re a seasoned puzzle pro or new to the world of relaxing puzzle games, Tile Explorer offers an unparalleled experience that promises hours of fun.
+Join the millions who have discovered the joy and challenge of Tile Explorer. With every tap, tile match, and level conquered, you’re not just playing a game; you’re embarking on a journey of discovery, relaxation, and mental fortification through engaging puzzles.
+🍊Upcoming Features and Enhancements🍊
+In the upcoming months, Tile Explorer will be enriched with numerous exciting features and additional puzzle levels. We warmly invite you to share your ideas and preferences for what you'd love to see included in this tile-matching game adventure!
+For any questions—including gameplay, rewards, or bundle purchase/refund—please visit Settings > Support in the app to contact our Customer Support team.
+Tiles await! Can your mind conquer the thrilling challenge of Tile Explorer?
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows*
+#5 top free puzzle
+Puzzle
+Match 3
+Casual
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 09/29
+Fierce Desert Roses
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Tile Explorer - Triple Match",
+  "url": "https://play.google.com/store/apps/details/Tile_Explorer_Triple_Match?id=com.oakever.tiletrip&hl=en",
+  "description": "Tiles await! Can your mind conquer the thrilling challenge of Tile Explorer?",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/wKjQKwVmmmszLHE3YfgRqiSZcDKHcnpGBeLDVs2PERYUq0B9c_LxpM8jOXYcdE-oVhPmXcWnfqUaBKR656TSBA",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Oakever Games",
+    "url": "https://oakevergames.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.469863414764404",
+    "ratingCount": "2269425"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Tile Explorer - Triple Match - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Tile Explorer - Triple Match
+Oakever Games
+Contains ads
+In-app purchases
+4.5
+star
+2.27M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Are you looking for a new match-3 game? Do you want to find relaxation and joy in it? Prepare to embark on the enchanting world of Tile Explorer, the relaxing tile match puzzle game. Tile Explorer transforms the act of tile matching into an art form. With each level, Tile Explorer invites you to immerse yourself in puzzle-solving fun, where each tile holds the potential for both relaxation and triumph!
+🍓Unlock a Journey of Innovative Tile Challenges🍓
+Tile Explorer is a blend of traditional tile match games and innovative puzzle mechanics, offering a fresh twist on the beloved match puzzle genre. Here, matching tiles becomes more than a game—it's a journey. As you navigate through the myriad puzzles, Tile Explorer evolves, presenting new challenges that require you to think differently about your strategy. The thrill of making a triple tile match and clearing the board is unmatched, offering both satisfaction and the eagerness to tackle the next puzzle challenge.
+Four Features of Tile Explorer:
+- 🌺EMBARK ON A TILE Explorer: Journey through serene puzzles, matching tiles for tranquility. Engage in a tile-matching saga that delights both mind and sight.
+- 🌼MASTER TILE MATCHING: Elevate your intellect with every level of our match challenges. Dive into a realm where classic puzzles meet innovative tile matching, sharpening your cognitive skills.
+- 🪷EXPLORE A WORLD OF MATCH ADVENTURES: Navigate through diverse landscapes, from tranquil seasides to lush rainforests, as you progress in our tile-matching journey. Each new level brings a fresh backdrop, inviting you to a world where every match is a discovery.
+- 🪻DISCOVER THOUSANDS OF PEACEFUL PUZZLES AND BRAIN CHALLENGES: Find solace and stimulation in a vast collection of tile-matching puzzles designed to relax and challenge.
+🌸Explore a New Adventure🌸
+Embark on a journey with Tile Explorer, the ultimate tile-matching adventure that redefines relaxation and mental stimulation. With a simple tap, match, and relax mechanism, Tile Explorer invites you to dive into a world where matching three tiles unravels endless possibilities and hours of enjoyment.
+Tile Explorer isn’t just a game; it’s an expedition across captivating landscapes, challenging your intellect with every move. With puzzles that tease the brain and matching games that test your skills, Tile Explorer offers a comprehensive experience that sharpens your mind while providing immense satisfaction through tile puzzle triumphs.
+🌹Start Your Journey with Others🌹
+Download Tile Explorer today and start your adventure through the world of triple tile matching. Whether you’re a seasoned puzzle pro or new to the world of relaxing puzzle games, Tile Explorer offers an unparalleled experience that promises hours of fun.
+Join the millions who have discovered the joy and challenge of Tile Explorer. With every tap, tile match, and level conquered, you’re not just playing a game; you’re embarking on a journey of discovery, relaxation, and mental fortification through engaging puzzles.
+🍊Upcoming Features and Enhancements🍊
+In the upcoming months, Tile Explorer will be enriched with numerous exciting features and additional puzzle levels. We warmly invite you to share your ideas and preferences for what you'd love to see included in this tile-matching game adventure!
+For any questions—including gameplay, rewards, or bundle purchase/refund—please visit Settings > Support in the app to contact our Customer Support team.
+Tiles await! Can your mind conquer the thrilling challenge of Tile Explorer?
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows*
+#5 top free puzzle
+Puzzle
+Match 3
+Casual
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 09/29
+Fierce Desert Roses
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 3 others
+This app may collect these data types
+Location, Personal info and 5 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+2.18M reviews
+5
+4
+3
+2
+1
+saravanan 96
+more_vert
+Flag inappropriate
+Show review history
+July 10, 2026
+The ads are too frequent. Ads appear before I can even finish a level, which ruins the gameplay. Please reduce the number of ads or show them only after completing a level. "Stop the game completely and release the full ad. That would be the right thing to do." "Just stop the game and play the full ad. That's the right way to do it." worst worst worst
+19 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Oakever Games
+July 10, 2026
+We’re really sorry for the experience. We strive to balance free gameplay with necessary ads and have shared your feedback with the team. If you encounter inappropriate ads or disruptive ads during gameplay, please contact us via the in-game help center.
+Gouse Ahmed
+more_vert
+Flag inappropriate
+July 13, 2026
+"I really love this game, but the amount of ads is getting ridiculous. Half the time it won't let me watch an ad for a power-up, saying it's 'buffering,' but the second I lose a level? Instant unskippable ad. It even forces ads right in the middle of active gameplay. On top of that, several of the repetitive ads completely freeze the app. I don't mind a few ads to support the game, but right now there is way more ad-watching than actual gameplay. It’s a shame because the game itself is really
+18 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Oakever Games
+July 18, 2026
+We’re very sorry for the bad experience you’ve had with the game. Please contact us through the in-game Help Center and provide more details so we can review your case. We appreciate your support and understanding.
+Lori Edmonds
+more_vert
+Flag inappropriate
+June 7, 2025
+I absolutely love this game! It is a great way to relax because there aren't any I-can't-get-past-this-level-without-"spending"-everything-and-now-I'm-stuck levels. If you fill all your spots, you simply watch a little ad and it shuffles the tiles and you keep right on going! Thank you for making a game that is simply satisfying! I am quick to delete games, but this one is a keeper!
+16,889 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+◆ Feature updates.
+◆ Performance improvements.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@oakevergames.com
+shield
+Privacy Policy
+About the developer
+OAKEVER GAMES PTE. LTD.
+support@oakevergames.com
+C/O: FIDELIUM GROUP PTE. LTD.
+400 Orchard Road #11-08 Orchard Towers
+Singapore 238875
++65 9359 0734
+More by Oakever Games
+arrow_forward
+Amaze GO!
+Oakever Games
+4.3
+star
+Meowdoku: Brain Puzzle Games
+Oakever Games
+4.7
+star
+Paint by Number: Coloring Game
+Oakever Games
+4.3
+star
+Zen Color - Color By Number
+Oakever Games
+4.9
+star
+Hidden Fest: Words in Pictures
+Oakever Games
+4.5
+star
+Sudoku - Classic Sudoku Puzzle
+Oakever Games
+4.8
+star
+Similar games
+arrow_forward
+Tile Club - Match Puzzle Games
+GamoVation
+4.4
+star
+Tiledom: Match Beautiful Tiles
+Funvent Studios Fzco
+4.3
+star
+Vita Mahjong
+Vita Studio.
+4.6
+star
+Mahjong Blast: Puzzle Match
+Nebula Studio
+4.6
+star
+Matching Tiles: City Scape
+Lynn Mobile Puzzle Games
+3.7
+star
+Mahjong Triple - Match 3 Tile
+GamoVation
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,383 @@
+# Google Play public snapshot: io.teslatech.callbreak
+URL: https://play.google.com/store/apps/details?id=io.teslatech.callbreak&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:43.296Z
+HTTP status: 200
+Raw HTML SHA-256: a8426752ae4042e796db4463259bfd390b93dd40c9b8459acf7a342eba7c3889
+Raw HTML: research/html-data/store-snapshots/io.teslatech.callbreak.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Callbreak.com - Tash Game
+Teslatech
+Contains ads
+In-app purchases
+4.3
+star
+546K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Welcome to Callbreak, the classic trick-taking card game loved across India! Whether you call it Lakadi, Lakdi, or taash game, this strategic 4-player game delivers non-stop entertainment with smart AI and online multiplayer.
+If you enjoy popular trick-taking card games like Spades, Call Bridge, or 29 card game, or love playing card games like Teen Patti (3 patti) and Indian Rummy, Callbreak offers the ultimate test of bidding skill and taash strategy!
+KEY FEATURES & GAME MODES
+🔸Online Multiplayer: Compete with real players across India and across the World and climb the global leaderboards.
+🔸Private Tables: Create private rooms to play Call break game with friends and family.
+🔸Smart AI Bots: Practice playing cards against adaptive AI opponents anytime in this taash game.
+🔸Custom Themes: Personalize your table with beautiful card decks and rich wallpapers.
+🔸Speed Control & Autoplay: Adjust card game speed from fast to relaxed, or toggle autoplay when needed.
+🔸Interactive Tutorial: Learn how to play Callbreak and master bidding strategy in under 2 minutes.
+HOW TO PLAY CALLBREAK (LAKDI)
+Callbreak is played with a standard 52-card deck among 4 players (13 cards each). Spades are always the trump suit:
+🔸The Deal: All 52 cards are dealt equally (13 cards per player).
+🔸Bidding (Call): Players make a bid ("Call") from 1 to 13 tricks based on hand strength.
+🔸Trick Play: Players must follow the led suit if possible. If out of suit, play a Spade (trump) or any other card.
+🔸Scoring: Reach or exceed your bid to score positive points. Winning fewer tricks than your bid results in a point penalty!
+FREQUENTLY ASKED QUESTIONS
+🔸What is Callbreak?
+Callbreak (also known as Call break, Lakdi, Lakadi, or Callbridge) is a strategic trick-taking card game popular in India and Nepal. It is widely searched as ताश गेम (tash game), tash wala game, or लकड़ी गेम.
+🔸Can I play Callbreak offline?
+Yes! This offline card game works completely without internet or wifi. Play against intelligent AI opponents whenever you are on the go.
+🔸Is Callbreak free to play?
+Yes, this card game is 100% free to download and play, with customizable features and daily play rewards.
+LOCAL & REGIONAL NAMES
+Callbreak is played under various localized names across different regions:
+🔸Indian Regional & Tash Keywords:
+Lakadi • Lakdi • लकड़ी • Taash Game • Tash Wala Game • Tash Khela • Tash Tash • Tash Patti • Patta Game • Patti Game • Patte Wala Game
+🔸Spelling & Script Keywords:
+Call break • Calbreak • Tas • Taas • ताश का गेम • कलब्रेक • तास वाला GAME • फ्री कार्ड गेम
+🔸Comparative Card Games:
+Call bridge • Spades • Tarneeb • 29 Card Game • Kathi • Ghochi • Teen Patti Game • 3 Patti
+If you are looking for an authentic tash wala game experience with smooth gameplay, smart bots, and real multiplayer action, download Callbreak today and become the ultimate trick-taking master!
+Email: support@callbreak.com
+Play Callbreak with friends. Classic Lakadi, Call Bridge & tash game online!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows*
+#1 top free card
+Card
+Classic cards
+Spades
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Callbreak.com - Tash Game",
+  "url": "https://play.google.com/store/apps/details/Callbreak_com_Tash_Game?id=io.teslatech.callbreak&hl=en",
+  "description": "Play Callbreak with friends. Classic Lakadi, Call Bridge & tash game online!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/mIbPjJ5ofaTRYzOI3fXzjRZqs3qtzhuAXcs518faSN1rPc9eYR8VUDrDYMGhtwFjoV8cM_u3pBaQ8qINDSPb",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Teslatech",
+    "url": "https://callbreak.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3277459144592285",
+    "ratingCount": "546346"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Callbreak.com - Tash Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Callbreak.com - Tash Game
+Teslatech
+Contains ads
+In-app purchases
+4.3
+star
+546K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Welcome to Callbreak, the classic trick-taking card game loved across India! Whether you call it Lakadi, Lakdi, or taash game, this strategic 4-player game delivers non-stop entertainment with smart AI and online multiplayer.
+If you enjoy popular trick-taking card games like Spades, Call Bridge, or 29 card game, or love playing card games like Teen Patti (3 patti) and Indian Rummy, Callbreak offers the ultimate test of bidding skill and taash strategy!
+KEY FEATURES & GAME MODES
+🔸Online Multiplayer: Compete with real players across India and across the World and climb the global leaderboards.
+🔸Private Tables: Create private rooms to play Call break game with friends and family.
+🔸Smart AI Bots: Practice playing cards against adaptive AI opponents anytime in this taash game.
+🔸Custom Themes: Personalize your table with beautiful card decks and rich wallpapers.
+🔸Speed Control & Autoplay: Adjust card game speed from fast to relaxed, or toggle autoplay when needed.
+🔸Interactive Tutorial: Learn how to play Callbreak and master bidding strategy in under 2 minutes.
+HOW TO PLAY CALLBREAK (LAKDI)
+Callbreak is played with a standard 52-card deck among 4 players (13 cards each). Spades are always the trump suit:
+🔸The Deal: All 52 cards are dealt equally (13 cards per player).
+🔸Bidding (Call): Players make a bid ("Call") from 1 to 13 tricks based on hand strength.
+🔸Trick Play: Players must follow the led suit if possible. If out of suit, play a Spade (trump) or any other card.
+🔸Scoring: Reach or exceed your bid to score positive points. Winning fewer tricks than your bid results in a point penalty!
+FREQUENTLY ASKED QUESTIONS
+🔸What is Callbreak?
+Callbreak (also known as Call break, Lakdi, Lakadi, or Callbridge) is a strategic trick-taking card game popular in India and Nepal. It is widely searched as ताश गेम (tash game), tash wala game, or लकड़ी गेम.
+🔸Can I play Callbreak offline?
+Yes! This offline card game works completely without internet or wifi. Play against intelligent AI opponents whenever you are on the go.
+🔸Is Callbreak free to play?
+Yes, this card game is 100% free to download and play, with customizable features and daily play rewards.
+LOCAL & REGIONAL NAMES
+Callbreak is played under various localized names across different regions:
+🔸Indian Regional & Tash Keywords:
+Lakadi • Lakdi • लकड़ी • Taash Game • Tash Wala Game • Tash Khela • Tash Tash • Tash Patti • Patta Game • Patti Game • Patte Wala Game
+🔸Spelling & Script Keywords:
+Call break • Calbreak • Tas • Taas • ताश का गेम • कलब्रेक • तास वाला GAME • फ्री कार्ड गेम
+🔸Comparative Card Games:
+Call bridge • Spades • Tarneeb • 29 Card Game • Kathi • Ghochi • Teen Patti Game • 3 Patti
+If you are looking for an authentic tash wala game experience with smooth gameplay, smart bots, and real multiplayer action, download Callbreak today and become the ultimate trick-taking master!
+Email: support@callbreak.com
+Play Callbreak with friends. Classic Lakadi, Call Bridge & tash game online!
+Updated on
+Sep 17, 2026
+Available on
+Android,
+Windows*
+#1 top free card
+Card
+Classic cards
+Spades
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+App info and performance and Device or other IDs
+This app may collect these data types
+Personal info, Messages and 3 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Desktop
+tablet_android
+Tablet
+4.3
+543K reviews
+5
+4
+3
+2
+1
+Avinash Dwivedi
+more_vert
+Flag inappropriate
+Show review history
+July 4, 2026
+Poor algorithm. It's pre decided that who is going to win. 99%. It seems to be biased, as some of the players are having very high win rate few ones have merely 5 %. How can it be possible if it's algorithm is working properly. The only thing is that you don't have a good competition so far. It's frustrating. Minus rating. 👎
+6,819 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Teslatech
+March 28, 2023
+Hello, we are sorry to see you are having problems! The performance of the game is a priority for us and something we will continue to optimize. The team has already fixed it, please update. Kindly provide your valuable review and rating again accordingly. Meanwhile, you can still play previous version which is now newly released as Callbreak Lite.
+Levi Rongmei
+more_vert
+Flag inappropriate
+August 16, 2026
+guys don't download or recharge the premium membership, bcoz they only give one voice call free the rest you have to recharge for another call and no video call available only chatting is free.. and no private photo is showing only normal photo shows by the AI girl.. it's a fake and fraud app. coz I've gone through the app.
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Yash Bhai
+more_vert
+Flag inappropriate
+August 27, 2026
+this game is very irritating because in this game we can't play a card what I would want the game features has suggested to show a card so in this regarding our points were loss . game had need more updates to regarding this mistake
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Teslatech
+August 31, 2026
+We hear you. In standard Callbreak rule, players must throw a higher card of the same suit if they have one. Playing any card you prefer is a rule from Spades, which works a bit differently. Our system highlights valid moves based on Callbreak rules to keep the match fair. We really value your honest and direct feedback.
+See all reviews
+What’s new
+- Bug Fixes and Optimizations
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@callbreak.com
+shield
+Privacy Policy
+About the developer
+TESLATECH
+support@teslatech.com.np
+Pulchowk, ward no. 3
+Lalitpur 44700
+Nepal
++977 980-1968077
+More by Teslatech
+arrow_forward
+Callbreak Lite: Offline Tash
+Teslatech
+3.6
+star
+Ludo Life: Ludo Online game
+Teslatech
+3.0
+star
+Rummy Life - Rummy Card Game
+Teslatech
+4.0
+star
+Spades Life: Card Games
+Teslatech
+2.8
+star
+Shabda Paheli - नेपाली
+Teslatech
+3.9
+star
+Calculator - Devanagari
+Teslatech
+4.1
+star
+Similar games
+arrow_forward
+Callbreak: Classic Card Games
+People Lovin Games
+4.2
+star
+Spades Solitaire - Card Games
+Topy Games
+4.7
+star
+Spades: Classic Card Game
+People Lovin Games
+4.4
+star
+Aces® Spades
+Concrete Software, Inc.
+4.1
+star
+Spades - Expert AI
+NeuralPlay, LLC
+3.5
+star
+Spades Stars - Card Game
+Bluetile
+4.5
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

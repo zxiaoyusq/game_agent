@@ -1,0 +1,857 @@
+[
+  {
+    "id": "summary",
+    "title": "选品汇总：内部讨论稿",
+    "status": "当前汇总",
+    "topic": "策略共识",
+    "sourcePath": "research/html-data/选品汇总_内部讨论稿.md",
+    "words": 1872,
+    "headings": [
+      {
+        "level": 1,
+        "id": "summary-h1",
+        "text": "IAA选品汇总：范围、依据与下一步"
+      },
+      {
+        "level": 2,
+        "id": "summary-h2",
+        "text": "我们这轮要解决什么"
+      },
+      {
+        "level": 2,
+        "id": "summary-h3",
+        "text": "当前共识：14组机会池，先比较8条主线"
+      },
+      {
+        "level": 2,
+        "id": "summary-h4",
+        "text": "如何阅读这套新增数据"
+      },
+      {
+        "level": 2,
+        "id": "summary-h5",
+        "text": "现阶段的数据支持什么"
+      },
+      {
+        "level": 2,
+        "id": "summary-h6",
+        "text": "后续怎么筛选"
+      },
+      {
+        "level": 2,
+        "id": "summary-h7",
+        "text": "交互报告怎么用"
+      }
+    ]
+  },
+  {
+    "id": "wide-pool",
+    "title": "宽口径候选池：14组方向",
+    "status": "最新范围",
+    "topic": "完整选品边界",
+    "sourcePath": "IAA宽口径候选池_2026-09-21.md",
+    "words": 9492,
+    "headings": [
+      {
+        "level": 1,
+        "id": "wide-pool-h1",
+        "text": "IAA 宽口径候选池：从目标用户画像出发，而非从消除玩法出发"
+      },
+      {
+        "level": 2,
+        "id": "wide-pool-h2",
+        "text": "1. 对选品逻辑的修正"
+      },
+      {
+        "level": 3,
+        "id": "wide-pool-h3",
+        "text": "不再采用的过窄条件"
+      },
+      {
+        "level": 2,
+        "id": "wide-pool-h4",
+        "text": "2. 扩展后的14组机会池"
+      },
+      {
+        "level": 2,
+        "id": "wide-pool-h5",
+        "text": "3. 拓宽后的关键总榜证据"
+      },
+      {
+        "level": 2,
+        "id": "wide-pool-h6",
+        "text": "4. 可直接打开的参考产品清单"
+      },
+      {
+        "level": 2,
+        "id": "wide-pool-h7",
+        "text": "5. 宽选之后怎样筛，而不是再凭偏好收窄"
+      },
+      {
+        "level": 3,
+        "id": "wide-pool-h8",
+        "text": "第一层：市场需求和用户认知"
+      },
+      {
+        "level": 3,
+        "id": "wide-pool-h9",
+        "text": "第二层：入门体验"
+      },
+      {
+        "level": 3,
+        "id": "wide-pool-h10",
+        "text": "第三层：IAA模型"
+      },
+      {
+        "level": 3,
+        "id": "wide-pool-h11",
+        "text": "第四层：可交付性"
+      },
+      {
+        "level": 2,
+        "id": "wide-pool-h12",
+        "text": "6. 交付与研究限制"
+      }
+    ]
+  },
+  {
+    "id": "music-cards",
+    "title": "音游与纸牌：扩展讨论",
+    "status": "专题研究",
+    "topic": "细分玩法与IAA",
+    "sourcePath": "IAA扩展讨论_音游与纸牌_2026-09-21.md",
+    "words": 9305,
+    "headings": [
+      {
+        "level": 1,
+        "id": "music-cards-h1",
+        "text": "IAA 扩展选品讨论：音游与纸牌"
+      },
+      {
+        "level": 2,
+        "id": "music-cards-h2",
+        "text": "一、先修正选品边界"
+      },
+      {
+        "level": 2,
+        "id": "music-cards-h3",
+        "text": "二、音游有没有机会？有，重点是轻操作音游"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h4",
+        "text": "2.1 已取得的跨国证据"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h5",
+        "text": "2.2 三种音游方向要分开"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h6",
+        "text": "2.3 不考虑版权后，真正要验证什么"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h7",
+        "text": "2.4 音游参考产品：中文名与商店地址"
+      },
+      {
+        "level": 2,
+        "id": "music-cards-h8",
+        "text": "三、纸牌有没有机会？有，而且不能只研究复杂对战牌"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h9",
+        "text": "3.1 我会把纸牌拆成三条线"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h10",
+        "text": "3.2 榜单支持什么、还不能支持什么"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h11",
+        "text": "3.3 纸牌的IAA优势与坑"
+      },
+      {
+        "level": 3,
+        "id": "music-cards-h12",
+        "text": "3.4 纸牌参考产品：中文名与商店地址"
+      },
+      {
+        "level": 2,
+        "id": "music-cards-h13",
+        "text": "四、据此如何调整首轮候选"
+      },
+      {
+        "level": 2,
+        "id": "music-cards-h14",
+        "text": "五、证据边界与下一步"
+      }
+    ]
+  },
+  {
+    "id": "first-round",
+    "title": "第一轮选品研究",
+    "status": "阶段版",
+    "topic": "视觉解谜子集，不是最终范围",
+    "sourcePath": "IAA选品报告_非洲南亚_2026-09-21.md",
+    "words": 13641,
+    "headings": [
+      {
+        "level": 1,
+        "id": "first-round-h1",
+        "text": "非洲、南亚 Android IAA 游戏选品报告（第一轮）"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h2",
+        "text": "一、结论先行"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h3",
+        "text": "二、数据可信度与口径"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h4",
+        "text": "2.1 已核查的数据"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h5",
+        "text": "2.2 一个必须注意的榜单陷阱"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h6",
+        "text": "三、跨国榜单证据"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h7",
+        "text": "3.1 同一产品在七国 Puzzle 分榜的排名"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h8",
+        "text": "3.2 用 Games 总榜补证，避免只看小分类"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h9",
+        "text": "四、候选排序与开发取舍"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h10",
+        "text": "4.1 为什么首推箭头解阻"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h11",
+        "text": "4.2 第二原型：槽位三消，而不是重型装修三消"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h12",
+        "text": "4.3 分类作为稳健候补，球／水不要重复算赛道"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h13",
+        "text": "五、地区文化：用本地规则，而不只是贴地方皮肤"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h14",
+        "text": "尼日利亚：Ludo 本地规则有明确产品信号"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h15",
+        "text": "印度／孟加拉国：Carrom 有榜单基础，但操作不如点按解谜简单"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h16",
+        "text": "埃及：Domino 有文化与多产品证据，但只做定向试验"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h17",
+        "text": "跨地区落地原则"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h18",
+        "text": "六、为什么暂不选其他方向"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h19",
+        "text": "七、IAA 成立条件：可玩的大盘，不等于可变现的大盘"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h20",
+        "text": "八、从选品到开发的低成本验证方案"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h21",
+        "text": "阶段 A：补齐商业数据，收窄到两个市场"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h22",
+        "text": "阶段 B：先理解与性能，再广告"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h23",
+        "text": "阶段 C：软启动与停止条件"
+      },
+      {
+        "level": 3,
+        "id": "first-round-h24",
+        "text": "建议执行顺序"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h25",
+        "text": "九、下一轮最需要的公司输入"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h26",
+        "text": "十、交付与证据文件说明"
+      },
+      {
+        "level": 2,
+        "id": "first-round-h27",
+        "text": "十一、核心参考产品：中文名称与商店地址"
+      }
+    ]
+  },
+  {
+    "id": "africa",
+    "title": "非洲四国：证据核查",
+    "status": "证据附录",
+    "topic": "Games / Board与文化",
+    "sourcePath": "research/africa-evidence.md",
+    "words": 9809,
+    "headings": [
+      {
+        "level": 1,
+        "id": "africa-h1",
+        "text": "非洲 Android IAA 游戏公开证据核查"
+      },
+      {
+        "level": 2,
+        "id": "africa-h2",
+        "text": "1. 必须保留的数据口径"
+      },
+      {
+        "level": 2,
+        "id": "africa-h3",
+        "text": "2. 国家 Games 总榜证据"
+      },
+      {
+        "level": 3,
+        "id": "africa-h4",
+        "text": "尼日利亚"
+      },
+      {
+        "level": 3,
+        "id": "africa-h5",
+        "text": "肯尼亚"
+      },
+      {
+        "level": 3,
+        "id": "africa-h6",
+        "text": "南非"
+      },
+      {
+        "level": 3,
+        "id": "africa-h7",
+        "text": "埃及"
+      },
+      {
+        "level": 2,
+        "id": "africa-h8",
+        "text": "3. Board 分榜证据"
+      },
+      {
+        "level": 3,
+        "id": "africa-h9",
+        "text": "尼日利亚"
+      },
+      {
+        "level": 3,
+        "id": "africa-h10",
+        "text": "肯尼亚"
+      },
+      {
+        "level": 3,
+        "id": "africa-h11",
+        "text": "南非"
+      },
+      {
+        "level": 3,
+        "id": "africa-h12",
+        "text": "埃及"
+      },
+      {
+        "level": 2,
+        "id": "africa-h13",
+        "text": "4. 六候选评估与 Google Play 核查"
+      },
+      {
+        "level": 3,
+        "id": "africa-h14",
+        "text": "A. Mahjong Solitaire / Tile 配对：跨四国第一梯队"
+      },
+      {
+        "level": 3,
+        "id": "africa-h15",
+        "text": "B. Water/Color Sort：NG/KE 优先"
+      },
+      {
+        "level": 3,
+        "id": "africa-h16",
+        "text": "C. 本地规则 Ludo：区域路线最稳"
+      },
+      {
+        "level": 3,
+        "id": "africa-h17",
+        "text": "D. Domino：埃及先行"
+      },
+      {
+        "level": 3,
+        "id": "africa-h18",
+        "text": "E. 轻足球：滑动传射/定位球"
+      },
+      {
+        "level": 3,
+        "id": "africa-h19",
+        "text": "F. Mancala/Ayo：尼日利亚差异化小试，不作大盘首选"
+      },
+      {
+        "level": 2,
+        "id": "africa-h20",
+        "text": "5. 共同变现及技术限制"
+      }
+    ]
+  },
+  {
+    "id": "south-asia",
+    "title": "南亚三国：证据核查",
+    "status": "证据附录",
+    "topic": "Games / Sports / Cards",
+    "sourcePath": "research/south-asia-evidence.md",
+    "words": 9766,
+    "headings": [
+      {
+        "level": 1,
+        "id": "south-asia-h1",
+        "text": "南亚 Android IAA 休闲玩法公开证据核查"
+      },
+      {
+        "level": 2,
+        "id": "south-asia-h2",
+        "text": "1. 结论及证据边界"
+      },
+      {
+        "level": 2,
+        "id": "south-asia-h3",
+        "text": "2. 数据获取及最关键的口径陷阱"
+      },
+      {
+        "level": 2,
+        "id": "south-asia-h4",
+        "text": "3. 国家及榜单证据"
+      },
+      {
+        "level": 3,
+        "id": "south-asia-h5",
+        "text": "3.1 Games：总游戏类 Top Free Apps"
+      },
+      {
+        "level": 3,
+        "id": "south-asia-h6",
+        "text": "3.2 Board：棋盘类 Top Free Apps"
+      },
+      {
+        "level": 3,
+        "id": "south-asia-h7",
+        "text": "3.3 Sports：体育类 Top Free Apps"
+      },
+      {
+        "level": 3,
+        "id": "south-asia-h8",
+        "text": "3.4 Cards：纸牌类 Top Free Apps"
+      },
+      {
+        "level": 2,
+        "id": "south-asia-h9",
+        "text": "4. Google Play产品核查"
+      },
+      {
+        "level": 2,
+        "id": "south-asia-h10",
+        "text": "5. 六个候选的取舍（下述成本和IAA设计均为分析判断）"
+      },
+      {
+        "level": 2,
+        "id": "south-asia-h11",
+        "text": "6. 文化判断：只说来源支持的范围"
+      },
+      {
+        "level": 2,
+        "id": "south-asia-h12",
+        "text": "7. IAA与上线验证底线"
+      }
+    ]
+  },
+  {
+    "id": "music-evidence",
+    "title": "七国音游：产品与榜单",
+    "status": "证据附录",
+    "topic": "音游专项原始研究",
+    "sourcePath": "research/music-expansion/music-opportunities-2026-09-21.md",
+    "words": 7726,
+    "headings": [
+      {
+        "level": 1,
+        "id": "music-evidence-h1",
+        "text": "非洲与南亚 Android IAA 音游扩品研究"
+      },
+      {
+        "level": 2,
+        "id": "music-evidence-h2",
+        "text": "1. 证据口径"
+      },
+      {
+        "level": 2,
+        "id": "music-evidence-h3",
+        "text": "2. 七国 Music 可核查对比"
+      },
+      {
+        "level": 3,
+        "id": "music-evidence-h4",
+        "text": "不能只看老产品：榜单浮现品"
+      },
+      {
+        "level": 2,
+        "id": "music-evidence-h5",
+        "text": "3. Games 总榜交叉核查"
+      },
+      {
+        "level": 2,
+        "id": "music-evidence-h6",
+        "text": "4. 四条细分机会与取舍"
+      },
+      {
+        "level": 3,
+        "id": "music-evidence-h7",
+        "text": "国家测试重点（假设，不是市场收益排序）"
+      },
+      {
+        "level": 2,
+        "id": "music-evidence-h8",
+        "text": "5. 与箭头 / 消除的差异"
+      },
+      {
+        "level": 2,
+        "id": "music-evidence-h9",
+        "text": "6. 六个参考产品：中文名、准确 Play 链接、玩法和声明"
+      },
+      {
+        "level": 2,
+        "id": "music-evidence-h10",
+        "text": "7. 保存的内部证据"
+      }
+    ]
+  },
+  {
+    "id": "cards-evidence",
+    "title": "七国纸牌：产品与榜单",
+    "status": "证据附录",
+    "topic": "纸牌专项原始研究",
+    "sourcePath": "research/cards-expansion/conclusions.md",
+    "words": 9343,
+    "headings": [
+      {
+        "level": 1,
+        "id": "cards-evidence-h1",
+        "text": "纸牌扩展核查：七国 Android IAA 机会"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h2",
+        "text": "结论先行"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h3",
+        "text": "1. 数据口径和七国来源"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h4",
+        "text": "2. 六个有价值的产品参考"
+      },
+      {
+        "level": 3,
+        "id": "cards-evidence-h5",
+        "text": "六产品国家 S/U 矩阵：全部为Cards分类，2026-09-18"
+      },
+      {
+        "level": 3,
+        "id": "cards-evidence-h6",
+        "text": "Games总榜：重新抓取七国，而非把上表当总榜"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h7",
+        "text": "3. 规则、离线/AI、广告与本地化判断"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h8",
+        "text": "4. 覆盖Spider / FreeCell / UNO / Hearts，为什么未都放进六主参考"
+      },
+      {
+        "level": 3,
+        "id": "cards-evidence-h9",
+        "text": "单人接龙内部不能只看Klondike"
+      },
+      {
+        "level": 3,
+        "id": "cards-evidence-h10",
+        "text": "UNO类：强参考，但非直接低成本纯IAA模板"
+      },
+      {
+        "level": 3,
+        "id": "cards-evidence-h11",
+        "text": "Hearts：有样本，不作为本轮首选"
+      },
+      {
+        "level": 3,
+        "id": "cards-evidence-h12",
+        "text": "不限预设名单带来的反例"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h13",
+        "text": "5. 纯IAA机会与现金产品严格分开"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h14",
+        "text": "6. 下一步如何判断“应提升多少”"
+      },
+      {
+        "level": 2,
+        "id": "cards-evidence-h15",
+        "text": "7. 保存的可复核材料"
+      }
+    ]
+  },
+  {
+    "id": "puzzle-ranks",
+    "title": "Puzzle七国：排名摘录",
+    "status": "原始摘录",
+    "topic": "双口径核心竞品",
+    "sourcePath": "research/public/rank-summary.md",
+    "words": 4020,
+    "headings": [
+      {
+        "level": 1,
+        "id": "puzzle-ranks-h1",
+        "text": "Puzzle 七国双口径摘录"
+      },
+      {
+        "level": 2,
+        "id": "puzzle-ranks-h2",
+        "text": "Top Puzzle Apps Ranking - Most Popular Puzzle Apps in Bangladesh [September 18] | Similarweb"
+      },
+      {
+        "level": 2,
+        "id": "puzzle-ranks-h3",
+        "text": "Top Puzzle Apps Ranking - Most Popular Puzzle Apps in Egypt [September 18] | Similarweb"
+      },
+      {
+        "level": 2,
+        "id": "puzzle-ranks-h4",
+        "text": "Top Puzzle Apps Ranking - Most Popular Puzzle Apps in India [September 18] | Similarweb"
+      },
+      {
+        "level": 2,
+        "id": "puzzle-ranks-h5",
+        "text": "Top Puzzle Apps Ranking - Most Popular Puzzle Apps in Kenya [September 18] | Similarweb"
+      },
+      {
+        "level": 2,
+        "id": "puzzle-ranks-h6",
+        "text": "Top Puzzle Apps Ranking - Most Popular Puzzle Apps in Nigeria [September 18] | Similarweb"
+      },
+      {
+        "level": 2,
+        "id": "puzzle-ranks-h7",
+        "text": "Top Puzzle Apps Ranking - Most Popular Puzzle Apps in Pakistan [September 18] | Similarweb"
+      },
+      {
+        "level": 2,
+        "id": "puzzle-ranks-h8",
+        "text": "Top Puzzle Apps Ranking - Most Popular Puzzle Apps in South Africa [September 18] | Similarweb"
+      }
+    ]
+  },
+  {
+    "id": "games-ranks",
+    "title": "跨品类Games：排名摘录",
+    "status": "原始摘录",
+    "topic": "总榜扩展证据",
+    "sourcePath": "research/broad-expansion/games-summary.md",
+    "words": 6972,
+    "headings": [
+      {
+        "level": 1,
+        "id": "games-ranks-h1",
+        "text": "跨品类Games总榜摘录"
+      },
+      {
+        "level": 2,
+        "id": "games-ranks-h2",
+        "text": "india"
+      },
+      {
+        "level": 2,
+        "id": "games-ranks-h3",
+        "text": "pakistan"
+      },
+      {
+        "level": 2,
+        "id": "games-ranks-h4",
+        "text": "bangladesh"
+      },
+      {
+        "level": 2,
+        "id": "games-ranks-h5",
+        "text": "nigeria"
+      },
+      {
+        "level": 2,
+        "id": "games-ranks-h6",
+        "text": "kenya"
+      },
+      {
+        "level": 2,
+        "id": "games-ranks-h7",
+        "text": "south-africa"
+      },
+      {
+        "level": 2,
+        "id": "games-ranks-h8",
+        "text": "egypt"
+      }
+    ]
+  },
+  {
+    "id": "industry-evidence",
+    "title": "外部行业数据补充",
+    "status": "行业背景",
+    "topic": "统计期、定义与限制",
+    "sourcePath": "research/html-data/行业数据补充.md",
+    "words": 5359,
+    "headings": [
+      {
+        "level": 1,
+        "id": "industry-evidence-h1",
+        "text": "非洲／南亚 Android IAA 选品：行业证据补充"
+      },
+      {
+        "level": 2,
+        "id": "industry-evidence-h2",
+        "text": "快速索引"
+      },
+      {
+        "level": 2,
+        "id": "industry-evidence-h3",
+        "text": "1. GSMA：撒哈拉以南非洲移动互联网使用率27%"
+      },
+      {
+        "level": 2,
+        "id": "industry-evidence-h4",
+        "text": "2. GSMA：SSA最贫20%人口的设备接入负担为月收入99%"
+      },
+      {
+        "level": 2,
+        "id": "industry-evidence-h5",
+        "text": "3. Sensor Tower：印度FY2024–25手游下载84.5亿次"
+      },
+      {
+        "level": 2,
+        "id": "industry-evidence-h6",
+        "text": "4. Newzoo／Mobilegamer：2025年全球移动游戏收入预测1030亿美元"
+      },
+      {
+        "level": 2,
+        "id": "industry-evidence-h7",
+        "text": "HTML汇总建议：将边界与数字同屏展示"
+      },
+      {
+        "level": 2,
+        "id": "industry-evidence-h8",
+        "text": "未纳入项目与证据边界"
+      }
+    ]
+  },
+  {
+    "id": "store-qa",
+    "title": "商店数据覆盖与核查",
+    "status": "数据校验",
+    "topic": "32核心与补充参考QA",
+    "sourcePath": "research/html-data/store-qa.md",
+    "words": 8626,
+    "headings": [
+      {
+        "level": 1,
+        "id": "store-qa-h1",
+        "text": "Google Play store collection QA"
+      },
+      {
+        "level": 2,
+        "id": "store-qa-h2",
+        "text": "Metric boundaries"
+      },
+      {
+        "level": 2,
+        "id": "store-qa-h3",
+        "text": "32-core coverage and field-missing checklist"
+      },
+      {
+        "level": 2,
+        "id": "store-qa-h4",
+        "text": "Partial / unavailable records"
+      },
+      {
+        "level": 2,
+        "id": "store-qa-h5",
+        "text": "Excluded risk or topic-only examples"
+      },
+      {
+        "level": 2,
+        "id": "store-qa-h6",
+        "text": "Evidence / reproducibility"
+      }
+    ]
+  }
+]

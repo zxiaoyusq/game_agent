@@ -1,0 +1,349 @@
+# Google Play public snapshot: com.zariba.ludo.offline
+URL: https://play.google.com/store/apps/details?id=com.zariba.ludo.offline&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:09.228Z
+HTTP status: 200
+Raw HTML SHA-256: d93aa905e3b6c5922276620eba4d35aa1750512ba1f11642e3e8483cc47ca625
+Raw HTML: research/html-data/store-snapshots/com.zariba.ludo.offline.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo Offline - Board Game
+Prometheus Interactive LLC
+Contains ads
+In-app purchases
+3.9
+star
+9.46K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-App Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Ludo Offline Board Game - Play the Classic Ludo Offline and be a King!
+Are you missing the days of playing dice and board games with your loved ones? Relive all the fun from those memorable board game moments, a virtual form of this board game that once made you crazy! Learn how to play at your own pace—then break out the dice and pretend you're a kid again, reliving the joy of sending others' board game pieces back to their base!
+🎲
+Play Ludo Game Features:
+🖋Authentic Ludo Classic Experience;
+📊Play Ludo Offline Anytime, Anywhere;
+🧩Simple and Fun Rules;
+👑Create Your Ludo kingdom today and become a Ludo Star Offline!
+Play Ludo Offline: Your Ludo Kingdom Awaits!
+Begin your kingdom with a nostalgic feeling right on mobile anytime you want. Are you still looking for the perfect offline multiplayer & online or Wi-Fi dice-rolling strategy game?
+👑BECOME AN OFFLINE MASTER:
+Launch yourself as an Offline legend by earning achievement stars and advancing into higher tiers in this epic 4-player competitive king super game. Well-designed intelligent opponents always put in fewer chips than one, so famed desktop classic challengers can capitalize more easily.
+Become a Master Of This Board Game Now:
+Anytime, Anywhere, enjoy a seamless experience without an internet connection at home or on the go. It makes you run through levels at different difficulty settings to keep you busy, and the challenge is coming. It's an excellent way to introduce new players or remember how fun it was as a kid. Download and become a Ludo Star Offline today!
+The Original Ludo Classic: 🎲
+Our Ludo game has stunning 3D graphics that ensure immersive, realistic gameplay. Enjoy the royal game of kings with Ludo Classic. It is one of the best Ludo games because it offers excellent graphics and smooth gameplay.
+🎲 Play Ludo Offline, Anytime, Anywhere:
+Ludo Classic Game allows you to play against AI players and enjoy the best 1vs. Select 2 or 4 opponents and prove your worth. Become an Offline Ludo Master now. Learn the tactics and form a plan to beat your enemies.
+🎲 Easy and Entertaining Rules:
+Our Ludo Game is designed for any age group, with simple rules that help everyone enjoy every moment of them running towards the finish line—Gamble and then spam play that will let the light shine on you. When you win, you will be a Ludo star offline and feel like you can challenge anyone.
+🎲 Play This Board Game Now:
+You will be experiencing this excellent board game, a 21st-century makeover of an age-old strategy-based title. You can play the game without worrying about other online players getting mad that you're holding them back. Become an Offline Ludo master at your own pace!
+Get Rolling With This Great Dice Game Today:
+Would you be ready to take a trip down memory lane? Ludo Offline is undoubtedly the game that will keep your whole family entertained and challenged for hours. Come and join our family, Ludo Kingdom ruler! Free! Offline Ludo master & Offline ludo star. From now on, play Ludo Offline and make some winning moments!
+Play Ludo Offline dice game! Single player Ludo Puzzle Game!
+Updated on
+Oct 28, 2025
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo Offline - Board Game",
+  "url": "https://play.google.com/store/apps/details/Ludo_Offline_Board_Game?id=com.zariba.ludo.offline&hl=en",
+  "description": "Play Ludo Offline dice game! Single player Ludo Puzzle Game!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/VH1z1TDaNCCpm4YNVWxD_nUKTJAdmKvi4yiUlTyAJyvvxVaOJPz1Aspown_KjPsd1-Va9H6njBPBxGk1Gktp",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Prometheus Interactive LLC",
+    "url": "https://useprometheus.app/ludooffline"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.869999885559082",
+    "ratingCount": "9460"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo Offline - Board Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Ludo Offline - Board Game
+Prometheus Interactive LLC
+Contains ads
+In-app purchases
+3.9
+star
+9.46K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-App Purchases
+Learn more
+About this game
+arrow_forward
+Ludo Offline Board Game - Play the Classic Ludo Offline and be a King!
+Are you missing the days of playing dice and board games with your loved ones? Relive all the fun from those memorable board game moments, a virtual form of this board game that once made you crazy! Learn how to play at your own pace—then break out the dice and pretend you're a kid again, reliving the joy of sending others' board game pieces back to their base!
+🎲
+Play Ludo Game Features:
+🖋Authentic Ludo Classic Experience;
+📊Play Ludo Offline Anytime, Anywhere;
+🧩Simple and Fun Rules;
+👑Create Your Ludo kingdom today and become a Ludo Star Offline!
+Play Ludo Offline: Your Ludo Kingdom Awaits!
+Begin your kingdom with a nostalgic feeling right on mobile anytime you want. Are you still looking for the perfect offline multiplayer & online or Wi-Fi dice-rolling strategy game?
+👑BECOME AN OFFLINE MASTER:
+Launch yourself as an Offline legend by earning achievement stars and advancing into higher tiers in this epic 4-player competitive king super game. Well-designed intelligent opponents always put in fewer chips than one, so famed desktop classic challengers can capitalize more easily.
+Become a Master Of This Board Game Now:
+Anytime, Anywhere, enjoy a seamless experience without an internet connection at home or on the go. It makes you run through levels at different difficulty settings to keep you busy, and the challenge is coming. It's an excellent way to introduce new players or remember how fun it was as a kid. Download and become a Ludo Star Offline today!
+The Original Ludo Classic: 🎲
+Our Ludo game has stunning 3D graphics that ensure immersive, realistic gameplay. Enjoy the royal game of kings with Ludo Classic. It is one of the best Ludo games because it offers excellent graphics and smooth gameplay.
+🎲 Play Ludo Offline, Anytime, Anywhere:
+Ludo Classic Game allows you to play against AI players and enjoy the best 1vs. Select 2 or 4 opponents and prove your worth. Become an Offline Ludo Master now. Learn the tactics and form a plan to beat your enemies.
+🎲 Easy and Entertaining Rules:
+Our Ludo Game is designed for any age group, with simple rules that help everyone enjoy every moment of them running towards the finish line—Gamble and then spam play that will let the light shine on you. When you win, you will be a Ludo star offline and feel like you can challenge anyone.
+🎲 Play This Board Game Now:
+You will be experiencing this excellent board game, a 21st-century makeover of an age-old strategy-based title. You can play the game without worrying about other online players getting mad that you're holding them back. Become an Offline Ludo master at your own pace!
+Get Rolling With This Great Dice Game Today:
+Would you be ready to take a trip down memory lane? Ludo Offline is undoubtedly the game that will keep your whole family entertained and challenged for hours. Come and join our family, Ludo Kingdom ruler! Free! Offline Ludo master & Offline ludo star. From now on, play Ludo Offline and make some winning moments!
+Play Ludo Offline dice game! Single player Ludo Puzzle Game!
+Updated on
+Oct 28, 2025
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+No data collected
+Learn more
+about how developers declare collection
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+3.9
+8.96K reviews
+5
+4
+3
+2
+1
+Marie James
+more_vert
+Flag inappropriate
+October 15, 2020
+I agree with the other player, I got 7 ones in a row and only 1 six out of 35 rolls. The computer on the other hand got about 8 sixes and sent my lone counter back to base several times. I agree it's probably random but nevertheless incredibly frustrating. This was my FIRST go. It was also my last. Uninstalled. Sorry!
+2,894 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Prometheus Interactive LLC
+November 27, 2020
+We are sorry that you don't like our ludo app. Please contact us at support.singleplayer@zariba.com if you have any questions or improvement suggestions about the game and a member of our team will get back to you as soon as possible.
+Angelina Amaira Amaira
+more_vert
+Flag inappropriate
+November 14, 2025
+This game is so slow when the dice is rolling. But it's a good game to play with your friends and family. It's very hard to roll a 6 l have been rolling 4 and 2 since I started playing this game and the robot keep on rolling 6 which is unfair... 😭
+394 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Prometheus Interactive LLC
+November 14, 2025
+Hello! Thank you for your review. We appreciate your feedback and hope you keep enjoying the App for your purposes! For any questions or issues, please contact our support team by email so we can advise you accordingly.
+Boitumelo Zitha
+more_vert
+Flag inappropriate
+Show review history
+July 25, 2026
+This game is quite nice...but the only problem is that the robot is cheating how come every move it gets 6 but I only get 1😭😭 this is unfair , if only you can make this right also make 3 computer's and 1 human in this Ludo Game
+19 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Prometheus Interactive LLC
+July 25, 2026
+Hello! Thank you for your review and for the suggestion. We appreciate your suggestion very much and have shared it with our Developers so that they can have a look and proceed accordingly. Keep an eye on the updates! We appreciate your feedback and hope you keep enjoying the App for your purposes!
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+In-App Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support.ludooffline@useprometheus.app
+shield
+Privacy Policy
+About the developer
+Alvva Inc.
+support@useprometheus.app
+8 The Grn Ste 4184
+Dover, DE 19901-3618
+United States
++1 270-515-6031
+More by Prometheus Interactive LLC
+arrow_forward
+Voice Search: Search Assistant
+Prometheus Interactive LLC
+4.2
+star
+Fingerprint Live Animation
+Prometheus Interactive LLC
+4.3
+star
+All Video Player Media Player
+Prometheus Interactive LLC
+3.5
+star
+Shake Flashlight - Fast Torch
+Prometheus Interactive LLC
+4.5
+star
+Calculator
+Prometheus Interactive LLC
+4.5
+star
+Share Apps: APK Share & Backup
+Prometheus Interactive LLC
+4.4
+star
+Similar games
+arrow_forward
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+Ludo STAR
+Gameberry Labs
+4.4
+star
+Ludo Super: Fun Board Game
+Comfun
+3.1
+star
+Ludo Offline Dice Board Game
+Touchzing Media Private Limited
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

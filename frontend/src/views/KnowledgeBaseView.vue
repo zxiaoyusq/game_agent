@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import {
   KB_MODULES,
   ensureKbLoaded,
@@ -16,6 +16,7 @@ import {
   kbRawUrl,
   uploadKbItem as apiUpload,
 } from '../api/knowledge.js'
+import { renderMarkdown } from '../utils/markdown.js'
 
 defineEmits(['navigate'])
 
@@ -24,6 +25,9 @@ const activeModule = ref('planning')
 const activeCategory = ref('docs')
 // "" 表示分类根目录，与后端 KbItem.folder 语义一致
 const activeFolder = ref('')
+const fileQuery = ref('')
+const isSkillModule = computed(() => activeModule.value === 'skill')
+const maxFolderDepth = computed(() => isSkillModule.value ? 8 : 4)
 
 // 上传表单字段（单文件模式）
 const uploadFile = ref(null)
@@ -67,6 +71,7 @@ function selectModule(modId) {
   const cats = kbStore.modulesMap[modId] || []
   activeCategory.value = cats[0] || 'docs'
   activeFolder.value = ''
+  fileQuery.value = ''
   resetUploadForm()
 }
 
@@ -78,6 +83,7 @@ function selectCategory(cat) {
 
 function selectFolder(path) {
   activeFolder.value = path || ''
+  fileQuery.value = ''
   resetUploadForm()
 }
 
@@ -87,13 +93,43 @@ const allFoldersOfCategory = computed(() =>
 )
 
 // 当前列表：从全量 store 中过滤，匹配 module + category + 当前 folder
-const currentItems = computed(() =>
+const categoryItems = computed(() =>
   kbStore.items.filter(
     (it) =>
       it.moduleId === activeModule.value &&
-      it.category === activeCategory.value &&
-      it.folder === activeFolder.value
+      it.category === activeCategory.value
   )
+)
+
+// 各知识模块搜索当前目录及其后代；未搜索时仍沿用原有的逐层文件浏览。
+const itemsInScope = computed(() => categoryItems.value.filter((item) =>
+  !activeFolder.value || item.folder === activeFolder.value
+    || item.folder.startsWith(activeFolder.value + '/')
+))
+const searchTerm = computed(() => fileQuery.value.trim().toLowerCase())
+const currentItems = computed(() => searchTerm.value
+  ? itemsInScope.value.filter((item) =>
+    [item.title, item.summary, item.filename, item.folder, ...item.tags]
+      .join(' ').toLowerCase().includes(searchTerm.value))
+  : categoryItems.value.filter((item) => item.folder === activeFolder.value)
+)
+
+// 主入口与子模块直接来自已导入文件，后续新增 Skill 时无需维护前端清单。
+const skillEntries = computed(() => itemsInScope.value
+  .filter((item) => /^SKILL\.md$/i.test(item.filename || ''))
+  .filter((item) => !searchTerm.value
+    || [item.title, item.summary, item.folder, ...item.tags].join(' ').toLowerCase().includes(searchTerm.value))
+  .sort((left, right) => left.folder.localeCompare(right.folder))
+)
+const skillPackages = computed(() => allFoldersOfCategory.value
+  .filter((folder) => !folder.path.includes('/'))
+  .map((folder) => ({
+    ...folder,
+    entry: categoryItems.value.find((item) => item.folder === folder.path && /^SKILL\.md$/i.test(item.filename || '')),
+    skillCount: categoryItems.value.filter((item) => /^SKILL\.md$/i.test(item.filename || '')
+      && (item.folder === folder.path || item.folder.startsWith(folder.path + '/'))).length,
+  }))
+  .filter((pack) => pack.entry)
 )
 
 // 当前 folder 直接子文件夹（即父路径恰好等于 activeFolder）
@@ -109,6 +145,13 @@ const childFolders = computed(() => {
     // 直接子级：去掉前缀后不再含 /
     return !f.path.slice(prefix.length).includes('/')
   })
+})
+
+// 总览已展示的技能包不再重复出现在文件夹区，其余公司资料仍可正常进入。
+const visibleChildFolders = computed(() => {
+  if (!isSkillModule.value || activeFolder.value) return childFolders.value
+  const packagePaths = new Set(skillPackages.value.map((pack) => pack.path))
+  return childFolders.value.filter((folder) => !packagePaths.has(folder.path))
 })
 
 // 面包屑：根目录 + 各父级
@@ -177,6 +220,10 @@ async function submitNewFolder() {
   }
   // 在 activeFolder 下创建子文件夹（activeFolder 为根时直接用 seg）
   const fullPath = activeFolder.value ? `${activeFolder.value}/${seg}` : seg
+  if (fullPath.split('/').length > maxFolderDepth.value) {
+    folderError.value = `当前模块最多支持 ${maxFolderDepth.value} 级文件夹`
+    return
+  }
   creatingFolder.value = true
   folderError.value = ''
   try {
@@ -437,6 +484,33 @@ function isImage(item) {
   return IMAGE_EXT_RE.test(item.filename || '')
 }
 
+// HTML 报告使用隔离的 iframe 阅读，保留排版、内嵌图片和章节目录。
+function isHtml(item) {
+  return item.contentType?.split(';')[0] === 'text/html'
+    || /\.html?$/i.test(item.filename || '')
+}
+
+// 兼容标准 Markdown MIME 类型和常见 .md / .markdown 文件名。
+function isMarkdown(item) {
+  return item.contentType?.split(';')[0] === 'text/markdown'
+    || /\.(md|markdown)$/i.test(item.filename || '')
+}
+
+// 只将可识别的文本与源码作为纯文本展示，避免二进制文件被浏览器误读。
+const TEXT_EXT_RE = /\.(txt|json|jsonl|ya?ml|py|pyi|js|mjs|cjs|jsx|ts|tsx|vue|css|scss|sass|less|xml|toml|ini|cfg|conf|env|example|properties|csv|tsv|sh|bash|zsh|ps1|bat|cmd|java|kt|kts|c|h|cpp|hpp|cs|gd|sql|glsl|vert|frag|atlas|log)$/i
+function isText(item) {
+  return !isHtml(item) && !isImage(item) && (
+    isMarkdown(item) || TEXT_EXT_RE.test(item.filename || '')
+    || /^(Dockerfile|Makefile|LICENSE|NOTICE|\.gitignore|\.env(?:\..+)?)$/i.test(item.filename || '')
+    || item.contentType?.startsWith('text/')
+    || /^(application\/(?:json|yaml|x-yaml|javascript|xml))(?:;|$)/i.test(item.contentType || '')
+  )
+}
+
+function canPreview(item) {
+  return isImage(item) || isHtml(item) || isText(item)
+}
+
 // 拼 inline URL（缩略图 / lightbox 共用）
 function inlineUrl(item) {
   return kbRawUrl(item.moduleId, item.category, item.id)
@@ -444,14 +518,109 @@ function inlineUrl(item) {
 
 // Lightbox 浮层状态：null = 未打开
 const previewItem = ref(null)
+const previewContent = ref('')
+const previewLoading = ref(false)
+const previewError = ref('')
+const previewMode = ref('read')
+const previewHistory = ref([])
+// 阅读态隐藏 Skill 的 YAML 头信息；源码态保留完整原文，便于查看实际配置。
+const markdownHtml = computed(() => {
+  const content = previewItem.value?.moduleId === 'skill'
+    ? previewContent.value.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/, '')
+    : previewContent.value
+  return renderMarkdown(content, { resolveRelativeUrl: resolvePreviewAttachment })
+})
+let previewRequestId = 0
+let previewController = null
 
-function openPreview(item) {
+// 以当前文档所在目录解析相对附件，禁止路径越过知识库分类根目录。
+function resolvePreviewAttachment(url, image = false) {
+  const item = previewItem.value
+  if (!item || item.moduleId !== 'skill') return ''
+  let path
+  try {
+    path = decodeURIComponent(url.split(/[?#]/)[0])
+  } catch {
+    return ''
+  }
+  if (!path || /[:\\\u0000-\u001f]/.test(path) || path.startsWith('/')) return ''
+  const segments = item.folder ? item.folder.split('/') : []
+  for (const segment of path.split('/')) {
+    if (!segment || segment === '.') continue
+    if (segment === '..') {
+      if (!segments.length) return ''
+      segments.pop()
+    } else {
+      segments.push(segment)
+    }
+  }
+  const targetPath = segments.join('/')
+  const target = kbStore.items.find((candidate) => candidate.moduleId === item.moduleId
+    && candidate.category === item.category
+    && [candidate.folder, candidate.filename].filter(Boolean).join('/') === targetPath)
+  return target && (!image || isImage(target)) ? inlineUrl(target) : ''
+}
+
+// 同模块的附件在阅读窗内打开；不支持预览的文件使用已有下载入口。
+function onMarkdownClick(event) {
+  const anchor = event.target.closest('a')
+  const href = anchor?.getAttribute('href')
+  if (!href?.startsWith('/api/knowledge/')) return
+  const current = previewItem.value
+  const target = kbStore.items.find((item) => item.moduleId === current?.moduleId
+    && item.category === current.category && inlineUrl(item) === href)
+  if (!target) return
+  event.preventDefault()
+  if (canPreview(target)) {
+    previewHistory.value.push(current)
+    openPreview(target)
+  } else downloadItem(target)
+}
+
+function backPreview() {
+  const previous = previewHistory.value.pop()
+  if (previous) openPreview(previous)
+}
+
+async function openPreview(item) {
+  previewController?.abort()
+  const requestId = ++previewRequestId
   previewItem.value = item
+  previewContent.value = ''
+  previewError.value = ''
+  previewMode.value = 'read'
+  previewLoading.value = isText(item)
+  if (!isText(item)) return
+  previewController = new AbortController()
+
+  try {
+    // 大文件保留下载能力，避免一次渲染过多源码影响整个页面操作。
+    if (item.size > 2 * 1024 * 1024) throw new Error('文件较大，请下载后查看完整内容。')
+    const response = await fetch(inlineUrl(item), { signal: previewController.signal })
+    if (!response.ok) throw new Error(`读取失败（${response.status}）`)
+    const content = await response.text()
+    if (requestId === previewRequestId) previewContent.value = content
+  } catch (error) {
+    if (requestId === previewRequestId && error.name !== 'AbortError') {
+      previewError.value = error?.message || '文件读取失败，请下载后查看。'
+    }
+  } finally {
+    if (requestId === previewRequestId) previewLoading.value = false
+  }
 }
 
 function closePreview() {
+  previewRequestId += 1
+  previewController?.abort()
   previewItem.value = null
+  previewContent.value = ''
+  previewHistory.value = []
 }
+
+onBeforeUnmount(() => {
+  previewController?.abort()
+  if (opTimer) clearTimeout(opTimer)
+})
 </script>
 
 <template>
@@ -534,13 +703,55 @@ function closePreview() {
           </div>
         </div>
 
+        <!-- 技能包入口使用导入的中文标题，资料仍保留原有目录结构供逐层查看。 -->
+        <div v-if="isSkillModule" class="card skill-overview">
+          <div class="skill-overview-head">
+            <div class="card-head">
+              <strong>{{ activeFolder ? 'Skill 文档入口' : 'Skill 总览' }}</strong>
+              <span class="card-sub">
+                {{ skillPackages.length }} 个技能包 ·
+                {{ categoryItems.filter((item) => /^SKILL\.md$/i.test(item.filename || '')).length }} 份 Skill 文档
+                · 查看工作流程、参考资料和配套工具
+              </span>
+            </div>
+            <label class="skill-search">
+              <span class="card-sub">{{ activeFolder ? '搜索当前目录及子目录' : '搜索全部 Skill 资料' }}</span>
+              <input v-model="fileQuery" class="text-input" type="search" placeholder="技能名称、用途、文件名或路径" />
+            </label>
+          </div>
+          <div v-if="!activeFolder && !searchTerm" class="skill-package-grid">
+            <article v-for="pack in skillPackages" :key="pack.path" class="skill-package">
+              <strong>{{ pack.entry?.title || pack.name }}</strong>
+              <span class="skill-package-name">{{ pack.name }}</span>
+              <p>{{ pack.desc || pack.entry?.summary || '查看技能说明与配套资料' }}</p>
+              <span class="card-sub">{{ pack.skillCount }} 份 Skill 文档 · {{ folderItemCount(pack) }} 份文件</span>
+              <div class="skill-package-actions">
+                <button v-if="pack.entry" class="ghost sm" type="button" @click="openPreview(pack.entry)">查看 Skill</button>
+                <button class="ghost sm" type="button" @click="selectFolder(pack.path)">浏览资料 →</button>
+              </div>
+            </article>
+          </div>
+          <details v-if="skillEntries.length" class="skill-entry-list" :open="Boolean(activeFolder || searchTerm)">
+            <summary>主入口与子模块（{{ skillEntries.length }}）</summary>
+            <div class="skill-entry" v-for="entry in skillEntries" :key="entry.id">
+              <button class="skill-entry-title" type="button" @click="openPreview(entry)">{{ entry.title }}</button>
+              <span class="row-tag">{{ entry.folder.includes('/') ? '子模块' : '主入口' }}</span>
+              <button class="skill-entry-path" type="button" @click="selectFolder(entry.folder)" :title="entry.folder">{{ entry.folder }}</button>
+            </div>
+          </details>
+          <div v-if="!skillPackages.length && !kbStore.loading" class="card-sub">暂无技能包，可上传整个 Skill 文件夹。</div>
+        </div>
+        <div v-else class="card">
+          <label class="skill-search"><span class="card-sub">{{ activeFolder ? '搜索当前目录及子目录' : '搜索本分类资料' }}</span><input v-model="fileQuery" class="text-input" type="search" placeholder="资料名称、用途、文件名或路径" /></label>
+        </div>
+
         <!-- 新建文件夹表单（行内展开） -->
         <div v-if="showNewFolder" class="card folder-form">
           <div class="card-head">
             <strong>
               在「{{ activeFolder || '(根目录)' }}」下新建文件夹
             </strong>
-            <span class="card-sub">最多 4 级深度，名字仅允许字母 / 数字 / 下划线 / 中文 / 短横</span>
+            <span class="card-sub">最多 {{ maxFolderDepth }} 级深度，名字仅允许字母 / 数字 / 下划线 / 中文 / 短横</span>
           </div>
           <div class="form-grid">
             <label class="field">
@@ -576,14 +787,14 @@ function closePreview() {
         </div>
 
         <!-- 子文件夹卡片列表 -->
-        <div v-if="childFolders.length" class="card folders-card">
+        <div v-if="visibleChildFolders.length" class="card folders-card">
           <div class="card-head">
             <strong>文件夹</strong>
             <span class="card-sub">点击进入；引用 Agent 时也可整目录选中</span>
           </div>
           <div class="folder-grid">
             <div
-              v-for="f in childFolders"
+              v-for="f in visibleChildFolders"
               :key="f.path"
               class="folder-tile"
             >
@@ -770,7 +981,7 @@ function closePreview() {
           <div class="card-head">
             <strong>已沉淀条目</strong>
             <span class="card-sub">
-              当前位置共 {{ currentItems.length }} 条（不含子文件夹）
+              {{ searchTerm ? `搜索结果共 ${currentItems.length} 条（含子文件夹）` : `当前位置共 ${currentItems.length} 条（不含子文件夹）` }}
             </span>
           </div>
 
@@ -779,7 +990,7 @@ function closePreview() {
             正在加载…
           </div>
           <div v-else-if="!currentItems.length" class="list-empty">
-            该分类下暂无条目，使用上方表单上传第一份资料吧。
+            {{ searchTerm ? '没有匹配的资料，请更换关键词。' : (isSkillModule && !activeFolder && skillPackages.length ? '请从上方技能包进入，查看 Skill 文档及配套资料。' : '当前目录暂无文件，可进入子文件夹或上传资料。') }}
           </div>
 
           <div v-else class="list">
@@ -808,11 +1019,13 @@ function closePreview() {
                     {{ getKbModuleMeta(item.moduleId).name }} ·
                     {{ getCategoryLabel(item.category) }}
                   </span>
-                  <strong>{{ item.title }}</strong>
+                  <button v-if="canPreview(item)" class="row-title-button" type="button" @click="openPreview(item)">{{ item.title }}</button>
+                  <strong v-else>{{ item.title }}</strong>
                 </div>
                 <div v-if="item.summary" class="row-summary">{{ item.summary }}</div>
                 <div class="row-foot">
                   <span class="row-file">📎 {{ item.filename }}</span>
+                  <button v-if="searchTerm" class="skill-entry-path" type="button" @click="selectFolder(item.folder)">{{ item.folder || '(根目录)' }}</button>
                   <span class="row-size">{{ formatSize(item.size) }}</span>
                   <span v-for="tag in item.tags" :key="tag" class="row-tag">
                     #{{ tag }}
@@ -822,7 +1035,7 @@ function closePreview() {
               </div>
               <div class="row-actions">
                 <button
-                  v-if="isImage(item)"
+                  v-if="canPreview(item)"
                   class="ghost sm"
                   type="button"
                   @click="openPreview(item)"
@@ -842,7 +1055,7 @@ function closePreview() {
       </section>
     </main>
 
-    <!-- Lightbox：图片全屏预览。背景点击 / Esc 不在此处理（保持简单），按按钮关闭 -->
+    <!-- HTML 使用隔离沙箱；Markdown 经过转义后以安全的阅读 HTML 展示。 -->
     <Teleport to="body">
       <div v-if="previewItem" class="lb-overlay" @click.self="closePreview">
         <div class="lb-frame">
@@ -851,14 +1064,34 @@ function closePreview() {
             <span class="lb-sub">
               {{ previewItem.filename }} · {{ formatSize(previewItem.size) }}
             </span>
+            <button v-if="previewHistory.length" class="ghost sm" type="button" @click="backPreview">← 返回文档</button>
+            <div v-if="isMarkdown(previewItem)" class="preview-mode">
+              <button class="ghost sm" :class="{ selected: previewMode === 'read' }" type="button" @click="previewMode = 'read'">阅读</button>
+              <button class="ghost sm" :class="{ selected: previewMode === 'source' }" type="button" @click="previewMode = 'source'">源码</button>
+            </div>
             <button class="lb-close" type="button" @click="closePreview">×</button>
           </header>
           <div class="lb-body">
-            <img :src="inlineUrl(previewItem)" :alt="previewItem.title" />
+            <iframe
+              v-if="isHtml(previewItem)"
+              class="report-preview"
+              :src="inlineUrl(previewItem)"
+              :title="previewItem.title"
+              sandbox="allow-scripts allow-modals allow-popups"
+            />
+            <div v-else-if="isText(previewItem)" :key="previewItem.id" class="markdown-preview-scroll" :class="{ 'source-preview-scroll': !isMarkdown(previewItem) || previewMode === 'source' }">
+              <div v-if="previewLoading" class="markdown-preview-state">正在加载文件…</div>
+              <div v-else-if="previewError" class="markdown-preview-state markdown-preview-error">
+                {{ previewError }}
+              </div>
+              <article v-else-if="isMarkdown(previewItem) && previewMode === 'read'" class="markdown-preview" v-html="markdownHtml" @click="onMarkdownClick" />
+              <pre v-else class="source-preview"><code>{{ previewContent }}</code></pre>
+            </div>
+            <img v-else :src="inlineUrl(previewItem)" :alt="previewItem.title" />
           </div>
           <footer class="lb-foot">
             <button class="ghost sm" type="button" @click="downloadItem(previewItem)">
-              下载原图
+              {{ isImage(previewItem) ? '下载原图' : '下载文件' }}
             </button>
             <button class="ghost sm" type="button" @click="closePreview">关闭</button>
           </footer>
@@ -947,7 +1180,7 @@ function closePreview() {
 .main {
   flex: 1;
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: 0;
   min-height: 0;
 }
@@ -1051,6 +1284,7 @@ function closePreview() {
 
 /* 右侧内容 */
 .content {
+  min-width: 0;
   padding: 20px 28px;
   display: flex;
   flex-direction: column;
@@ -1311,6 +1545,115 @@ function closePreview() {
   color: var(--text-tertiary);
 }
 
+/* Skill 总览沿用知识库卡片，只补充技能用途与文档快捷入口。 */
+.skill-overview-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skill-search {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: min(100%, 320px);
+}
+
+.skill-package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 12px;
+}
+
+.skill-package {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 16px;
+  min-width: 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.skill-package > strong {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.skill-package-name {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  overflow-wrap: anywhere;
+}
+
+.skill-package p {
+  margin: 0;
+  flex: 1;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.skill-package-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.skill-entry-list summary {
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.skill-entry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border-color);
+}
+
+.skill-entry-title,
+.row-title-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.skill-entry-title:hover,
+.row-title-button:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
+.skill-entry-path {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-tertiary);
+  font-size: 11px;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+
+.skill-entry-path:hover {
+  color: var(--accent-blue);
+}
+
 /* 上传表单 */
 .upload-row {
   display: flex;
@@ -1358,13 +1701,15 @@ function closePreview() {
 
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* 长目录选项不能成为列的最小宽度，表单始终在当前卡片内布局。 */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
 .field {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   gap: 4px;
   font-size: 12px;
   color: var(--text-secondary);
@@ -1375,6 +1720,10 @@ function closePreview() {
 }
 
 .text-input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   padding: 7px 10px;
   background: var(--bg-card);
   border: 1.5px solid var(--border-color);
@@ -1638,6 +1987,16 @@ function closePreview() {
   flex: 1;
 }
 
+.preview-mode {
+  display: flex;
+  gap: 4px;
+}
+
+.preview-mode .selected {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
 .lb-close {
   width: 28px;
   height: 28px;
@@ -1662,6 +2021,166 @@ function closePreview() {
   background: #0a0d12;
   overflow: auto;
   padding: 16px;
+}
+
+.report-preview {
+  width: 100%;
+  height: 72vh;
+  border: 0;
+  background: #fff;
+}
+
+.markdown-preview-scroll {
+  width: 100%;
+  height: 72vh;
+  overflow: auto;
+  padding: 24px;
+  background: #fff;
+}
+
+.markdown-preview-state {
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+  color: #586b77;
+}
+
+.markdown-preview-error {
+  color: #b42318;
+}
+
+/* 源码通过 Vue 文本插值输出，始终作为文本展示，不执行其中的脚本或标记。 */
+.source-preview-scroll {
+  background: #17232d;
+}
+
+.source-preview {
+  margin: 0;
+  color: #e4edf2;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  tab-size: 4;
+  white-space: pre;
+}
+
+.source-preview-scroll .markdown-preview-state {
+  color: #c8d5de;
+}
+
+.markdown-preview {
+  max-width: 980px;
+  margin: 0 auto;
+  color: #243746;
+  font-size: 15px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.markdown-preview :deep(h1),
+.markdown-preview :deep(h2),
+.markdown-preview :deep(h3),
+.markdown-preview :deep(h4),
+.markdown-preview :deep(h5),
+.markdown-preview :deep(h6) {
+  margin: 1.5em 0 0.65em;
+  color: #173b4b;
+  line-height: 1.4;
+}
+
+.markdown-preview :deep(h1) {
+  margin-top: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #dbe4e8;
+  font-size: 30px;
+}
+
+.markdown-preview :deep(h2) {
+  padding-top: 0.6em;
+  border-top: 1px solid #e3e9ec;
+  font-size: 23px;
+}
+
+.markdown-preview :deep(p) {
+  margin: 0.9em 0;
+}
+
+.markdown-preview :deep(a) {
+  color: #087f82;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+.markdown-preview :deep(.md-table-wrap) {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.25em 0;
+  border: 1px solid #dbe4e8;
+  border-radius: 6px;
+}
+
+.markdown-preview :deep(table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.markdown-preview :deep(th),
+.markdown-preview :deep(td) {
+  min-width: 90px;
+  padding: 9px 11px;
+  border-bottom: 1px solid #dbe4e8;
+  vertical-align: top;
+}
+
+.markdown-preview :deep(th) {
+  background: #eaf3f4;
+  color: #205661;
+}
+
+.markdown-preview :deep(blockquote) {
+  margin: 1em 0;
+  padding: 0.15em 1em;
+  border-left: 3px solid #80b9b8;
+  color: #526571;
+  background: #f4f8f8;
+}
+
+.markdown-preview :deep(pre) {
+  max-width: 100%;
+  overflow: auto;
+  padding: 14px;
+  border-radius: 6px;
+  background: #17232d;
+  color: #e4edf2;
+  line-height: 1.6;
+}
+
+.markdown-preview :deep(code) {
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+  background: #edf2f5;
+  color: #214b5c;
+  font-size: 0.9em;
+}
+
+.markdown-preview :deep(pre code) {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.markdown-preview :deep(img) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1em auto;
+}
+
+.markdown-preview :deep(hr) {
+  border: 0;
+  border-top: 1px solid #dbe4e8;
 }
 
 .lb-body img {

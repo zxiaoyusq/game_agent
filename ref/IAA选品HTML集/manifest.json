@@ -1,0 +1,123 @@
+{
+  "builtAt": "2026-09-21T13:15:21.949Z",
+  "documents": [
+    {
+      "id": "summary",
+      "title": "选品汇总：内部讨论稿",
+      "status": "当前汇总",
+      "source": "research/html-data/选品汇总_内部讨论稿.md",
+      "html": "docs/summary.html",
+      "markdown": "sources/summary.md",
+      "sha256": "d99221b59ba30dba0b1d458ca38aecf6bc6b6a247604cc236183396e3dfc44ac"
+    },
+    {
+      "id": "wide-pool",
+      "title": "宽口径候选池：14组方向",
+      "status": "最新范围",
+      "source": "IAA宽口径候选池_2026-09-21.md",
+      "html": "docs/wide-pool.html",
+      "markdown": "sources/wide-pool.md",
+      "sha256": "17ed79447428b73ba7d60f24e45b4ccf59c6716d24dcb637732d20acfe7e086f"
+    },
+    {
+      "id": "music-cards",
+      "title": "音游与纸牌：扩展讨论",
+      "status": "专题研究",
+      "source": "IAA扩展讨论_音游与纸牌_2026-09-21.md",
+      "html": "docs/music-cards.html",
+      "markdown": "sources/music-cards.md",
+      "sha256": "993b3ed6da8326230a542efbd519ec7a0731cbb77870e56acd28df39d47bccde"
+    },
+    {
+      "id": "first-round",
+      "title": "第一轮选品研究",
+      "status": "阶段版",
+      "source": "IAA选品报告_非洲南亚_2026-09-21.md",
+      "html": "docs/first-round.html",
+      "markdown": "sources/first-round.md",
+      "sha256": "c61fe204265c9b8e343eb866ad17e0d24c97316984abe4e27f9ac24bd041917b"
+    },
+    {
+      "id": "africa",
+      "title": "非洲四国：证据核查",
+      "status": "证据附录",
+      "source": "research/africa-evidence.md",
+      "html": "docs/africa.html",
+      "markdown": "sources/africa.md",
+      "sha256": "2dbb0d0af7d1d250ee63518d6985ed4270f93869067b364e08d8609c662c1e3d"
+    },
+    {
+      "id": "south-asia",
+      "title": "南亚三国：证据核查",
+      "status": "证据附录",
+      "source": "research/south-asia-evidence.md",
+      "html": "docs/south-asia.html",
+      "markdown": "sources/south-asia.md",
+      "sha256": "d078ba055b7a56404d1b83915f80787614178e5a67ac9eb054bebbe009a09ef7"
+    },
+    {
+      "id": "music-evidence",
+      "title": "七国音游：产品与榜单",
+      "status": "证据附录",
+      "source": "research/music-expansion/music-opportunities-2026-09-21.md",
+      "html": "docs/music-evidence.html",
+      "markdown": "sources/music-evidence.md",
+      "sha256": "95f8892c29001b014c03ea63695db3606c458005dd73a83cd302587e28c4bd16"
+    },
+    {
+      "id": "cards-evidence",
+      "title": "七国纸牌：产品与榜单",
+      "status": "证据附录",
+      "source": "research/cards-expansion/conclusions.md",
+      "html": "docs/cards-evidence.html",
+      "markdown": "sources/cards-evidence.md",
+      "sha256": "22f4a4edd58f2206eea43878ae2793ea9f4857c99659b989ac2fe0f06b61e1b3"
+    },
+    {
+      "id": "puzzle-ranks",
+      "title": "Puzzle七国：排名摘录",
+      "status": "原始摘录",
+      "source": "research/public/rank-summary.md",
+      "html": "docs/puzzle-ranks.html",
+      "markdown": "sources/puzzle-ranks.md",
+      "sha256": "1e38145977917f8f864712ce096206055262a59c6b805a93d1cb5a8c40db0b8f"
+    },
+    {
+      "id": "games-ranks",
+      "title": "跨品类Games：排名摘录",
+      "status": "原始摘录",
+      "source": "research/broad-expansion/games-summary.md",
+      "html": "docs/games-ranks.html",
+      "markdown": "sources/games-ranks.md",
+      "sha256": "cc56f98bd14790c8b648a7a16cbaa0a6dbcf109c3c50329766e6bf005e7978d5"
+    },
+    {
+      "id": "industry-evidence",
+      "title": "外部行业数据补充",
+      "status": "行业背景",
+      "source": "research/html-data/行业数据补充.md",
+      "html": "docs/industry-evidence.html",
+      "markdown": "sources/industry-evidence.md",
+      "sha256": "7afad2fb5456fceb16b25bfdb58a29b6a36710b7dd0187d8b3e859b3fc4d043f"
+    },
+    {
+      "id": "store-qa",
+      "title": "商店数据覆盖与核查",
+      "status": "数据校验",
+      "source": "research/html-data/store-qa.md",
+      "html": "docs/store-qa.html",
+      "markdown": "sources/store-qa.md",
+      "sha256": "4ed8bda16d26024a8fdbddcebf4fdee2f7fbb6c1fdff0247fe0e908d4dd7c2b5"
+    }
+  ],
+  "coreProducts": 32,
+  "totalProducts": 70,
+  "rankings": 1404,
+  "industryItems": 4,
+  "rankGroups": {
+    "Games": 357,
+    "Puzzle": 357,
+    "Music": 340,
+    "Cards": 350
+  }
+}

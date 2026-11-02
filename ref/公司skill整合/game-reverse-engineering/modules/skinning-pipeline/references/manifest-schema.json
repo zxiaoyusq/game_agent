@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "asset_manifest.json",
+  "type": "object",
+  "required": ["schema_version", "game", "engine", "source_root", "generated_at", "assets", "atlases", "warnings"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "game": {"type": ["string", "null"]},
+    "engine": {"type": "string", "enum": ["unity-il2cpp", "unity", "cocos-2.4", "cocos-3.x"]},
+    "engine_version": {"type": ["string", "null"]},
+    "source_root": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "path", "hash", "format"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string"},
+          "path": {"type": "string"},
+          "original_name": {"type": ["string", "null"]},
+          "width": {"type": ["integer", "null"]},
+          "height": {"type": ["integer", "null"]},
+          "atlas": {"type": ["string", "null"]},
+          "atlas_rect": {
+            "type": ["object", "null"],
+            "properties": {"x": {"type": "integer"}, "y": {"type": "integer"},
+                           "w": {"type": "integer"}, "h": {"type": "integer"}}
+          },
+          "sprite_meta": {
+            "type": ["object", "null"],
+            "properties": {
+              "rotated": {"type": "boolean"},
+              "trimmed": {"type": "boolean"},
+              "source_size": {"type": "array", "items": {"type": "integer"}},
+              "offset": {"type": "array", "items": {"type": "number"}},
+              "pivot": {"type": "array", "items": {"type": "number"}},
+              "border": {"type": "array", "items": {"type": "integer"}},
+              "pixels_per_unit": {"type": ["number", "null"]},
+              "packable": {"type": ["boolean", "null"]},
+              "trim_type": {"type": ["string", "null"]},
+              "trim_threshold": {"type": ["integer", "null"]}
+            }
+          },
+          "hash": {"type": ["string", "null"]},
+          "hash_algorithm": {"const": "blake2b-128"},
+          "byte_size": {"type": ["integer", "null"]},
+          "referenced_by": {"type": "array", "items": {"type": "string"}},
+          "format": {"type": "string"},
+          "meta_path": {"type": ["string", "null"]},
+          "uuid": {"type": ["string", "null"]},
+          "sub_uuid": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "atlases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "file": {"type": "string"},
+          "sprite_count": {"type": "integer"},
+          "sprites": {"type": "array", "items": {"type": "string"}},
+          "rects_known": {"type": "boolean"},
+          "note": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {"type": "string"},
+          "path": {"type": ["string", "null"]},
+          "message": {"type": "string"}
+        }
+      }
+    }
+  }
+}

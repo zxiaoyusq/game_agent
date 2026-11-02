@@ -35,7 +35,7 @@ const searchQuery = ref('')
 const ragHits = ref(null)
 
 // ---- 分级导航状态 ----
-// nav 是当前所在路径：null = 主页（4 个模块卡片）
+// nav 是当前所在路径：null = 主页（展示所有知识库模块卡片）
 // 单层结构：{ moduleId, category?, folder? }
 //   只填 moduleId            → 第 1 级，列分类
 //   moduleId + category      → 第 2 级，分类根目录
@@ -409,7 +409,7 @@ function closePreview() {
       ⚠ {{ kbStore.error }}
     </div>
     <div v-else class="kb-empty">
-      未引用任何知识。可手动从 4 个模块的知识库选择，或输入关键词触发 RAG 自动检索。
+      未引用任何知识。可手动从 {{ KB_MODULES.length }} 个模块的知识库选择，或输入关键词触发 RAG 自动检索。
     </div>
 
     <!-- 浮层选择器：脱离当前列宽限制 -->
@@ -437,7 +437,7 @@ function closePreview() {
               class="kb-rag-btn"
               type="button"
               :disabled="!searchQuery.trim()"
-              title="基于关键词在 4 个模块的知识库中智能检索 Top 3 并自动加入引用"
+              title="基于关键词在各模块知识库中智能检索 Top 3 并自动加入引用"
               @click="runRag"
             >
               🔮 RAG 检索

@@ -1,0 +1,4 @@
+interface:
+  display_name: "玩法算法与 Trait 系统逆向"
+  short_description: "破解 Cocos JS 游戏的主算法体系（OFFER_TYPE/策略管线）与 Trait 机制开关，产出策划/程序双视角文档"
+  default_prompt: "逆向这个游戏的主算法体系与 Trait 特性系统：先静态提取枚举/代码窗口/装饰器注册表，再 Frida 动态捕获运行时明文 JS，最后按 262 目录验收并输出策划/程序双视角文档"

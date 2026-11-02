@@ -1,0 +1,419 @@
+# Google Play public snapshot: com.kooapps.pianotiles2gp
+URL: https://play.google.com/store/apps/details?id=com.kooapps.pianotiles2gp&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:39.960Z
+HTTP status: 200
+Raw HTML SHA-256: c81e606cf6f73259554ac9195e844088a1a7483554fdb9f0dd9fd0ad35314dec
+Raw HTML: research/html-data/store-snapshots/com.kooapps.pianotiles2gp.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Piano Tiles 2™ - Piano Game
+Kooapps Games | Fun Arcade and Casual Action Games
+Contains ads
+In-app purchases
+4.1
+star
+74.8K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Classic piano games just got fine-tuned! Play the original piano game Piano Tiles 2™ and tap to play your favorite tunes!
+Test your rhythmic reaction skills in addicting, challenging levels, get cool bonuses and try limited-time events.
+Tap musical tiles to play piano songs in this modern upgrade to the classic piano game. Make piano music like magic when you tap the black tiles, progressing through levels. But be careful, DON'T TOUCH THE WHITE TILES!
+Tap to the beat with 1.1 BILLION players around the world! Download Piano Tiles 2™ today!
+=== Piano Tiles 2™ features ===
+🎹
+PIANO MUSIC GAME
+🎹
+- Tap along to over 700+ songs!
+- Popular classical piano tunes you know and love
+- Folk music favorites from around the world
+- Original tracks from other players (send us yours!)
+- Fire new hits with music added often!
+🎵
+EVENTS & CHALLENGES
+🎵
+- Tap through bonus challenges & become a star!
+- Earn rewards for completing daily missions & events!
+- Leaderboard challenges: see how you stack up worldwide & climb to the top!
+- Key in your coordination with accompaniments, double tiles, sliders & more!
+🎼
+MUSICAL GAME MODES
+🎶
+- Play piano with progressively challenging levels: are you Chopsticks or Chopin?
+- Classic Piano Tiles gameplay for retro game lovers
+- New modes like slider, combo tile & double tile
+- Speed modes for beginners, skilled players, and masters
+- Level up to unlock new tracks & gameplay
+- Casual game with challenging modes- keep up with the keys!
+⚡
+PIANO POWER-UPS & MORE
+⚡
+- Power-up your game with boosters!
+- Protect white tile taps, freeze time & more!
+- Jazz out too hard and tap the wrong tile? Use a revive!
+- Lucky Spins for more props, new tracks & more rewards!
+🌐
+PLAY ONLINE OR OFFLINE
+🚫
+- Play online & compete on the leaderboards
+- Play offline, no WIFI
+- Tap the black tiles anytime, anywhere. No internet or grand piano required!
+Addicting game to test your reaction and musical mettle, tap to the beat & become a pop piano sensation! A Reddot game design award winner, Piano Tiles 2™ has sleek graphics & tons of tracks to try. Casual yet engaging, relaxing yet challenging, Piano Tiles 2™ has tons of music and gameplay modes for anyone to enjoy. Tap to download now!
+We are not able to support Facebook Login save files because save files from the previous developer are no longer accessible. Please contact customer support with any questions, and we will work to accommodate you as best as we can.
+The original Piano Tiles game is back. Play fun music rhythm games at a party.
+Updated on
+Sep 9, 2026
+Available on
+Android,
+Windows*
+Music
+Performance
+Arcade
+Single player
+Abstract
+Intense
+Offline
+Play Pass
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 10/01
+Celebrate the fiery year of the horse with a festive song and blazing dance!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Piano Tiles 2™ - Piano Game",
+  "url": "https://play.google.com/store/apps/details/Piano_Tiles_2_Piano_Game?id=com.kooapps.pianotiles2gp&hl=en",
+  "description": "The original Piano Tiles game is back. Play fun music rhythm games at a party.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_MUSIC",
+  "image": "https://play-lh.googleusercontent.com/f7YcB5_a-gTjR3joD0qijksY2WYP7gcesj5vK3S2Wj5zGrF0H4xR7s_KHalQl9fS-dMJd1tF7dxd_Z1ZsDdh8pY",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Kooapps Games | Fun Arcade and Casual Action Games",
+    "url": "https://kooapps.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.067901134490967",
+    "ratingCount": "74754"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Piano Tiles 2™ - Piano Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Piano Tiles 2™ - Piano Game
+Kooapps Games | Fun Arcade and Casual Action Games
+Contains ads
+In-app purchases
+4.1
+star
+74.8K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Classic piano games just got fine-tuned! Play the original piano game Piano Tiles 2™ and tap to play your favorite tunes!
+Test your rhythmic reaction skills in addicting, challenging levels, get cool bonuses and try limited-time events.
+Tap musical tiles to play piano songs in this modern upgrade to the classic piano game. Make piano music like magic when you tap the black tiles, progressing through levels. But be careful, DON'T TOUCH THE WHITE TILES!
+Tap to the beat with 1.1 BILLION players around the world! Download Piano Tiles 2™ today!
+=== Piano Tiles 2™ features ===
+🎹
+PIANO MUSIC GAME
+🎹
+- Tap along to over 700+ songs!
+- Popular classical piano tunes you know and love
+- Folk music favorites from around the world
+- Original tracks from other players (send us yours!)
+- Fire new hits with music added often!
+🎵
+EVENTS & CHALLENGES
+🎵
+- Tap through bonus challenges & become a star!
+- Earn rewards for completing daily missions & events!
+- Leaderboard challenges: see how you stack up worldwide & climb to the top!
+- Key in your coordination with accompaniments, double tiles, sliders & more!
+🎼
+MUSICAL GAME MODES
+🎶
+- Play piano with progressively challenging levels: are you Chopsticks or Chopin?
+- Classic Piano Tiles gameplay for retro game lovers
+- New modes like slider, combo tile & double tile
+- Speed modes for beginners, skilled players, and masters
+- Level up to unlock new tracks & gameplay
+- Casual game with challenging modes- keep up with the keys!
+⚡
+PIANO POWER-UPS & MORE
+⚡
+- Power-up your game with boosters!
+- Protect white tile taps, freeze time & more!
+- Jazz out too hard and tap the wrong tile? Use a revive!
+- Lucky Spins for more props, new tracks & more rewards!
+🌐
+PLAY ONLINE OR OFFLINE
+🚫
+- Play online & compete on the leaderboards
+- Play offline, no WIFI
+- Tap the black tiles anytime, anywhere. No internet or grand piano required!
+Addicting game to test your reaction and musical mettle, tap to the beat & become a pop piano sensation! A Reddot game design award winner, Piano Tiles 2™ has sleek graphics & tons of tracks to try. Casual yet engaging, relaxing yet challenging, Piano Tiles 2™ has tons of music and gameplay modes for anyone to enjoy. Tap to download now!
+We are not able to support Facebook Login save files because save files from the previous developer are no longer accessible. Please contact customer support with any questions, and we will work to accommodate you as best as we can.
+The original Piano Tiles game is back. Play fun music rhythm games at a party.
+Updated on
+Sep 9, 2026
+Available on
+Android,
+Windows*
+Music
+Performance
+Arcade
+Single player
+Abstract
+Intense
+Offline
+Play Pass
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 10/01
+Celebrate the fiery year of the horse with a festive song and blazing dance!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, App info and performance, and Device or other IDs
+This app may collect these data types
+Location, App info and performance, and Device or other IDs
+Data is encrypted in transit
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.1
+70.8K reviews
+5
+4
+3
+2
+1
+Ben Tennyson
+more_vert
+Flag inappropriate
+April 14, 2026
+The only reason i give it 2 stars, its because i love this game. I really enjoy playing it OFFLINE. If you have conection, you are going to see ads at the end of EVERY level, everytime. The worst part? Those ads that you cant skip, you are forced to lose 10 to 30 seconds of your time for each individual level. Thats insane in my opinion, otherwise, 5 stars. A lot of diferent classic and modern songs and they updated it with new mechanics.
+19 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Kooapps Games | Fun Arcade and Casual Action Games
+April 15, 2026
+Thank you for your feedback. Advertising keeps our game free and accessible for all players. You can purchase the 'No Ads' option to remove ads from the game. If you have other questions, please feel free to email us at support@kooapps.com. Thank you for playing Piano Tiles 2.
+Stanzin Skalzang
+more_vert
+Flag inappropriate
+Show review history
+March 23, 2026
+Too much ads. I can't even enjoy the game! This game used to be soo good like 10 years ago. Thought I would feel nostalgia from this game so I installed it but, I'm disappointed. I wanted to buy (no ads) but it's only through subscription! I wanted to permanently remove ads! Bruh. Don't be this greedy. I get it like you want money but make the " no ads " permanently when buy once!
+14 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Kooapps Games | Fun Arcade and Casual Action Games
+March 27, 2026
+Thank you for your feedback. We have taken note of your comments and will share them with our team. If you have any other suggestions, please feel free to send us an email support@kooapps.com. Thank you for playing Piano Tiles 2.
+Her Amuii
+more_vert
+Flag inappropriate
+April 15, 2024
+I'm so happy the original game is back, I've always wanted Piano tiles 2 to be back to Google Play store. And today, tho I'm late, I searched for it, and to my surprise, it was there. I quickly downloaded it and tried to connect it to my old account. But I couldn't, by the way, it feels nostalgic to play that old classical Twinkle twinkle. Feels good. The game is great, but I feel the fact that you have to watch an ad to play a new song, that is annoying. And I like the old interface better.
+239 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Kooapps Games | Fun Arcade and Casual Action Games
+April 16, 2024
+Hello! Thank you so much for your high star review! We're thrilled to know that you're enjoying our game. Your support means the world to us! If you have any suggestions or concerns, we would love to hear you out at support@kooapps.com. Thanks!
+See all reviews
+What’s new
+What’s New:
+- New Live Event: Year of the Fire Horse; Gallop under a latern-lit sunset as 8 new songs join our collection. Challenge each level of increasing difficulty, obtaining more rewards as you reach the top!
+- Bug fixes and Optimizations
+Thank you for all the amazing feedback. Your support is what keeps us going and working hard for over a decade of indie game development!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+phone
+Phone number
++15407378371
+email
+Support email
+support@kooapps.com
+shield
+Privacy Policy
+About the developer
+Kooapps Inc.
+support@kooapps.com
+15015 Main St Ste 200
+Bellevue, WA 98007-5229
+United States
++1 510-974-3391
+More by Kooapps Games | Fun Arcade and Casual Action Games
+arrow_forward
+Helix Stack Jump: Smash Ball
+Kooapps Games | Fun Arcade and Casual Action Games
+3.5
+star
+Snake.io - Fun Snake .io Games
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+Supermarket.io: Store Tycoon
+Kooapps Games | Fun Arcade and Casual Action Games
+3.5
+star
+Pocket Family Dreams: My Home
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+MicroTown.io - My Little Town
+Kooapps Games | Fun Arcade and Casual Action Games
+4.0
+star
+Stacky Bird: Fun Offline Game
+Kooapps Games | Fun Arcade and Casual Action Games
+4.3
+star
+Similar games
+arrow_forward
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+Guitar Band: Rock Battle
+Supercharge Mobile
+3.8
+star
+Rhythm Rush - Piano Music Game
+Boom Studio Limited
+3.6
+star
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

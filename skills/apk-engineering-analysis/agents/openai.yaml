@@ -1,0 +1,4 @@
+interface:
+  display_name: "APK 工程拆解与资源分析"
+  short_description: "分析 APK 工程架构与核心代码，提取美术和配置，生成可追溯报告及资源包"
+  default_prompt: "使用 $apk-engineering-analysis 分析指定 APK 或 XAPK，拆解工程架构和核心模块，提取资源与配置，并生成报告、资源浏览器和校验后的交付包。"

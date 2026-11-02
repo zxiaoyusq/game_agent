@@ -1,0 +1,353 @@
+# Google Play public snapshot: com.spades.solitaire.online.plus.offline.free.card.games
+URL: https://play.google.com/store/apps/details?id=com.spades.solitaire.online.plus.offline.free.card.games&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:04.843Z
+HTTP status: 200
+Raw HTML SHA-256: 133b2ab9369ab8ad1ac1c837b060a473008c9c05d4753e97b125c5c130960e4d
+Raw HTML: research/html-data/store-snapshots/com.spades.solitaire.online.plus.offline.free.card.games.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Spades Solitaire - Card Games
+Topy Games
+Contains ads
+4.7
+star
+145K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Bid, play, and outsmart your opponents in this spades free card game!
+Welcome to Spades, the ultimate card game! This favorite among classic card games combines the trick-taking gameplay with strategic depth. If you enjoy popular classic games like Pinochle, Cartas, or the Hearts card game, then you’ll love Spades. It is widely considered a perfect free card game for adults and players of all skill levels! Whether you usually play spades online or prefer offline play, Spades always offers an experience that’s both familiar and exciting.
+Game Features of Spades:
+🎯 Free & Fun – Enjoy the full experience in the spades free card game.
+🧠 Strategic Gameplay – Bid carefully, play smart, and use spades kards as trump to win each card game round.
+🤖 Offline AI Opponents – Don't want to play spades online? Enjoy anytime, anywhere with no internet required.
+🎮 Flexible Rules & Modes – Customize your Spades experience with different rules, difficulty settings, and play styles.
+📈 Competitive Tier System – Win competitive Spades matches, earn points, and advance to higher tiers!
+🏆 More to Enjoy – Unlock achievements, choose themes and avatars, and keep improving in this replayable card game.
+Quick to Learn, Deep to Master:
+Bid on the tricks you can win in this card game, play your cards wisely, and use spades strategically to dominate the table. With step-by-step tutorials, both beginners and seasoned Spades players can jump right into this Spades free card game. Fans of Pinochle, Cartas, and the Hearts card game will find the mechanics of this card game intuitive.
+Why You'll Love this Spades Card Game:
+✔ 2 Spades Rule sets: Standard & NYC
+✔ 2 Difficulty Levels: Beginner & Advanced
+✔ 3 Card Game Modes: Single-player, Cooperative, Competitive
+✔ 6 Custom Rules for your Spades matches
+✔ 38 Achievements to conquer
+✔ Multiple Themes & Avatars to customize your card game experience
+✔ Offline Mode – Play Spades anytime, anywhere!
+Download Spades Free Card Game Now!
+Join millions of classic card game fans worldwide and enjoy the perfect mix of strategy and fun in this spades free card game. If you want a top-tier card game, download now and become a Spades master! Your seat at the table is ready—conquer the game and rule the leaderboards!
+Spades Solitaire: Classic card game fun to relax anytime, anywhere!
+Updated on
+Aug 26, 2026
+Available on
+Android,
+Windows*
+#4 top free card
+Card
+Classic cards
+Spades
+Casual
+Single player
+Realistic
+Miscellaneous
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Spades Solitaire - Card Games",
+  "url": "https://play.google.com/store/apps/details/Spades_Solitaire_Card_Games?id=com.spades.solitaire.online.plus.offline.free.card.games&hl=en",
+  "description": "Spades Solitaire: Classic card game fun to relax anytime, anywhere!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/4ywWq5NjkHcTqWRqRY5Zwyu9GqIMWIZzaik6uXsy8Ji_L0nS8HgPF_Ay682xEP8DHbO63g0jSNrXTAghnAgAfQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Topy Games",
+    "url": "http://joygame.site"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.721424579620361",
+    "ratingCount": "145137"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Spades Solitaire - Card Games - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Spades Solitaire - Card Games
+Topy Games
+Contains ads
+4.7
+star
+145K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Bid, play, and outsmart your opponents in this spades free card game!
+Welcome to Spades, the ultimate card game! This favorite among classic card games combines the trick-taking gameplay with strategic depth. If you enjoy popular classic games like Pinochle, Cartas, or the Hearts card game, then you’ll love Spades. It is widely considered a perfect free card game for adults and players of all skill levels! Whether you usually play spades online or prefer offline play, Spades always offers an experience that’s both familiar and exciting.
+Game Features of Spades:
+🎯 Free & Fun – Enjoy the full experience in the spades free card game.
+🧠 Strategic Gameplay – Bid carefully, play smart, and use spades kards as trump to win each card game round.
+🤖 Offline AI Opponents – Don't want to play spades online? Enjoy anytime, anywhere with no internet required.
+🎮 Flexible Rules & Modes – Customize your Spades experience with different rules, difficulty settings, and play styles.
+📈 Competitive Tier System – Win competitive Spades matches, earn points, and advance to higher tiers!
+🏆 More to Enjoy – Unlock achievements, choose themes and avatars, and keep improving in this replayable card game.
+Quick to Learn, Deep to Master:
+Bid on the tricks you can win in this card game, play your cards wisely, and use spades strategically to dominate the table. With step-by-step tutorials, both beginners and seasoned Spades players can jump right into this Spades free card game. Fans of Pinochle, Cartas, and the Hearts card game will find the mechanics of this card game intuitive.
+Why You'll Love this Spades Card Game:
+✔ 2 Spades Rule sets: Standard & NYC
+✔ 2 Difficulty Levels: Beginner & Advanced
+✔ 3 Card Game Modes: Single-player, Cooperative, Competitive
+✔ 6 Custom Rules for your Spades matches
+✔ 38 Achievements to conquer
+✔ Multiple Themes & Avatars to customize your card game experience
+✔ Offline Mode – Play Spades anytime, anywhere!
+Download Spades Free Card Game Now!
+Join millions of classic card game fans worldwide and enjoy the perfect mix of strategy and fun in this spades free card game. If you want a top-tier card game, download now and become a Spades master! Your seat at the table is ready—conquer the game and rule the leaderboards!
+Spades Solitaire: Classic card game fun to relax anytime, anywhere!
+Updated on
+Aug 26, 2026
+Available on
+Android,
+Windows*
+#4 top free card
+Card
+Classic cards
+Spades
+Casual
+Single player
+Realistic
+Miscellaneous
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Device or other IDs
+Data isn’t encrypted
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.7
+137K reviews
+5
+4
+3
+2
+1
+J. G.
+more_vert
+Flag inappropriate
+September 11, 2026
+A few things that need to be addressed... I cannot get off a successful nil bet because my cards are apparently known by all 3 of the other players. Even my partner won't save a play when they can. complete garbage. I have seen my opponents bid a 4, just to take 2 of the tricks with a 9 or an 8 in order to get their 4 tricks. MOST REDICULOUS SPADES GAME I HAVE PLAYED.
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Robert N
+more_vert
+Flag inappropriate
+Show review history
+September 13, 2026
+can be played offline so the very intrusive ads can be managed turning off internet connection when playing, but has issues. Bot opponents seem to almost always bid exactly what they win, bot teammate often significantly under or over bids. Also, bag penalties are turned off by default but can be turned on. Nil bidding also doesn't really work since the teammate bot won't play strategically to make sure you aren't forced to win.
+16 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Michelle Moore
+more_vert
+Flag inappropriate
+Show review history
+July 25, 2026
+I play this game a lot. I always liked that it could be played offline. They made changes, I think I fussed , uninstalled it, and then reinstalled. They've made changes AGAIN. SO, if you accidentally play the wrong card, you need to play an ad to get it changed. if you bid a bit too low, they will lock you out of the game, if you're like me and won't play online, you just have to give up the game. The algorithms really want you to watch ads!🤦
+56 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+joygamellc@gmail.com
+shield
+Privacy Policy
+About the developer
+LEYAN TECHNOLOGY (HONGKONG) CO. LIMITED
+chillminds14@gmail.com
+Rm 6 11/F PROSPERITY PLACE
+6 SHING YIP ST
+觀塘
+九龍
+Hong Kong
++852 5372 8662
+More by Topy Games
+arrow_forward
+Callbreak - Card Game Offline
+Topy Games
+4.7
+star
+Trivia Master - Word Quiz Game
+Topy Games
+4.3
+star
+Gin Rummy - Classic Card Game
+Topy Games
+4.7
+star
+Spelling Quiz - Word Trivia
+Topy Games
+4.5
+star
+Bridge - Card Game
+Topy Games
+4.6
+star
+Bricks Block - Ball Crusher
+Topy Games
+4.2
+star
+Similar games
+arrow_forward
+Spades - Expert AI
+NeuralPlay, LLC
+3.5
+star
+Spades: Classic Card Game
+People Lovin Games
+4.4
+star
+Gin Rummy Classic
+MobilityWare
+3.9
+star
+Callbreak: Classic Card Games
+People Lovin Games
+4.2
+star
+Spades Stars - Card Game
+Bluetile
+4.5
+star
+Aces® Spades
+Concrete Software, Inc.
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

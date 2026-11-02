@@ -1,0 +1,360 @@
+# Google Play public snapshot: com.alignit.sixteenbead
+URL: https://play.google.com/store/apps/details?id=com.alignit.sixteenbead&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:16.859Z
+HTTP status: 200
+Raw HTML SHA-256: 33756c143e9b99596d04d6948089a4dd1acc61507debf5175df301a9a7ff95f2
+Raw HTML: research/html-data/store-snapshots/com.alignit.sixteenbead.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Bead 16 - 16 Guti Board Game
+AlignIt Games
+Contains ads
+In-app purchases
+4.2
+star
+87.1K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Enjoy
+Bead 16 - 16 Guti Game
+, a classic Indian two-player abstract strategy board game also known as 16 Goti, Sholo Guti, and Sixteen Soldiers. Jump over your opponent's pieces, capture all 16 pieces, and win the game.
+16 Guti is a famous and popular traditional game in South-East Asia. It is also enjoyed in other parts of the world because it is similar to classic board games like Chess and Checkers or Draughts. In
+Sixteen Soldiers
+, the player who captures all 16 of the opponent's pieces wins.In India, this game is known as 16 Goti, 16 Kaati Game, and Indian Checkers.
+Bead 12 (Baro Guti) is a traditional and popular variant of the Bead 16 game. It is known by different names in different countries. In Bangladesh, it is known as Baro Guti, while in India, it is known as Bara Tehni.
+Our free Align It - Sixteen Soldiers game offers:
+-
+Single-player game
+(play against the CPU)
+- Play two games: Bead 16 and Bead 12 (12 Tehni)
+- Three difficulty levels in single-player mode
+-
+Online game
+(play and chat with friends and other players from around the world)
+- Two-player game (
+Multiplayer Game
+)
+- Multiple themes and game boards
+- Unlock and collect achievement badges
+- Compete in weekly and monthly leagues
+- Detailed game statistics
+Enjoy 16 Goti, Sholo Guti, and Baro Guti with precise controls, smooth gameplay, and attractive graphics. The first move and the color of your pieces are decided by a toss. In multiplayer mode, you can challenge and play with friends and family members.
+Damru Game is a great way to enjoy your free time. Indian Checkers is a popular multiplayer strategy game. If you are already a pro, switch to online mode and challenge players in 16 Goti Game, or play against the computer to train your brain and improve your strategy.
+We are constantly working hard to improve this game. Please share your feedback with us at regleware@gmail.com and keep playing Align It Games.
+Become a fan of Align It Games on Facebook:
+https://www.facebook.com/alignitgames/
+Play 16 Goti, a classic strategy game with family & friends online or offline.
+Updated on
+Aug 25, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Bead 16 - 16 Guti Board Game",
+  "url": "https://play.google.com/store/apps/details/Bead_16_16_Guti_Board_Game?id=com.alignit.sixteenbead&hl=en",
+  "description": "Play 16 Goti, a classic strategy game with family & friends online or offline.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/-Xrl4bUkAp8dUKv9Ikc-j5Y1pRAAV3wd_epyJ8K27Ge8MMTaX-rvj10-61WCLu6hoY-Oay_7mENY3YmpVvmbyw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "AlignIt Games",
+    "url": "https://www.alignitgames.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.247718334197998",
+    "ratingCount": "87148"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Bead 16 - 16 Guti Board Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Bead 16 - 16 Guti Board Game
+AlignIt Games
+Contains ads
+In-app purchases
+4.2
+star
+87.1K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact
+Learn more
+About this game
+arrow_forward
+Enjoy
+Bead 16 - 16 Guti Game
+, a classic Indian two-player abstract strategy board game also known as 16 Goti, Sholo Guti, and Sixteen Soldiers. Jump over your opponent's pieces, capture all 16 pieces, and win the game.
+16 Guti is a famous and popular traditional game in South-East Asia. It is also enjoyed in other parts of the world because it is similar to classic board games like Chess and Checkers or Draughts. In
+Sixteen Soldiers
+, the player who captures all 16 of the opponent's pieces wins.In India, this game is known as 16 Goti, 16 Kaati Game, and Indian Checkers.
+Bead 12 (Baro Guti) is a traditional and popular variant of the Bead 16 game. It is known by different names in different countries. In Bangladesh, it is known as Baro Guti, while in India, it is known as Bara Tehni.
+Our free Align It - Sixteen Soldiers game offers:
+-
+Single-player game
+(play against the CPU)
+- Play two games: Bead 16 and Bead 12 (12 Tehni)
+- Three difficulty levels in single-player mode
+-
+Online game
+(play and chat with friends and other players from around the world)
+- Two-player game (
+Multiplayer Game
+)
+- Multiple themes and game boards
+- Unlock and collect achievement badges
+- Compete in weekly and monthly leagues
+- Detailed game statistics
+Enjoy 16 Goti, Sholo Guti, and Baro Guti with precise controls, smooth gameplay, and attractive graphics. The first move and the color of your pieces are decided by a toss. In multiplayer mode, you can challenge and play with friends and family members.
+Damru Game is a great way to enjoy your free time. Indian Checkers is a popular multiplayer strategy game. If you are already a pro, switch to online mode and challenge players in 16 Goti Game, or play against the computer to train your brain and improve your strategy.
+We are constantly working hard to improve this game. Please share your feedback with us at regleware@gmail.com and keep playing Align It Games.
+Become a fan of Align It Games on Facebook:
+https://www.facebook.com/alignitgames/
+Play 16 Goti, a classic strategy game with family & friends online or offline.
+Updated on
+Aug 25, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 3 others
+This app may collect these data types
+Location, Personal info and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.2
+86.7K reviews
+5
+4
+3
+2
+1
+MD MAMUNUR RASHID
+more_vert
+Flag inappropriate
+September 11, 2026
+I really enjoy playing on this app. I have a request: there should be an option to send messages to friends even when they are offline, and a green indicator should be added to show when someone is online. These features should be considered.
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+Ms Nasrin
+more_vert
+Flag inappropriate
+August 21, 2026
+Everything is fine.Not only is this game a feature that is, If my friend wants to play with me then there is no option to add his id. I mean I can play with him by adding his id. There is only one shortcoming, please change it in the next update. please Thank you!
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+mohd talha
+more_vert
+Flag inappropriate
+August 12, 2026
+This game is a good game but you guys have ruined the entire experience with sign up pop again and again . I don't want to sign in with my email as I don't trust you guys .
+10 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AlignIt Games
+August 14, 2026
+Hi, We're glad you enjoy Bead 16. You don't need to sign in with an email to play, you can choose Guest Login and continue without providing your email. Google account login lets you use Google Play Games and sync your game progress, badges and game data across devices. We appreciate your feedback and hope this helps. Thank you!
+See all reviews
+What’s new
+• Quick Chat redesigned, now with animated emoji reactions
+• Unlock several badges at once with the new badge reveal
+• Full support for Android 16
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+regleware@gmail.com
+shield
+Privacy Policy
+About the developer
+Sunita Devanda
+regleware@gmail.com
+DEVANDA KI DHANI MOHANPURA SANGANER JAIPUR
+Jaipur, Rajasthan 302020
+India
+More by AlignIt Games
+arrow_forward
+Ludo Offline
+AlignIt Games
+4.2
+star
+Tic Tac Toe Online - XO Game
+AlignIt Games
+4.0
+star
+Chess - Online & Offline
+AlignIt Games
+4.3
+star
+Align It | Char Bhar Online
+AlignIt Games
+4.2
+star
+Bead 12 - 12 Guti Board Game
+AlignIt Games
+3.9
+star
+Water Sort - Water Color Sort
+AlignIt Games
+3.8
+star
+Similar games
+arrow_forward
+Carrom King™
+Gametion
+3.9
+star
+Carrom - A Disc Board Game
+Brainit Games
+3.7
+star
+Callbreak: Classic Card Games
+People Lovin Games
+4.2
+star
+World Of Carrom :3D Board Game
+AppOn Innovate
+3.9
+star
+Bubble Shooter: Bubble Pop
+HDuo Fun Games
+4.2
+star
+Carrom Meta-Board Disc Game
+Comfun
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

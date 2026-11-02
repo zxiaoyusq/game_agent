@@ -1,0 +1,348 @@
+# Google Play public snapshot: com.alignit.ludo
+URL: https://play.google.com/store/apps/details?id=com.alignit.ludo&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:12.654Z
+HTTP status: 200
+Raw HTML SHA-256: 1c9f6ebda1fc9a6340a89021637d55a79a84360c9f77693e2b6f68151ae29f0a
+Raw HTML: research/html-data/store-snapshots/com.alignit.ludo.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo Offline
+AlignIt Games
+Contains ads
+In-app purchases
+4.2
+star
+25.2K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Enjoy the classic Ludo board game offline. The dice-rolling game has entertained everyone for generations, and our Ludo game brings an unmatched gameplay experience with an easy-to-use UI and simple yet exciting game features for every type of player who enjoys playing Ludo. Roll the dice, plan your moves, and become the king of the board. Plus, enjoy Snake & Ladder as a bonus offline board game.
+Whether you’re looking to challenge your friends and yourself, or simply enjoy a relaxing game, our Ludo offline game has it all.
+Key Features
+Play With Computer
+Challenge yourself and show your skills by playing and practicing against the computer. With multiple color piece options and player options this Ludo With Computer option is a perfect match for new and beginners and also for seasoned players. The computer is designed to provide you with fair gameplay and a challenging experience to ensure you come back for more.
+Local Multiplayer
+Enjoy classic ludo and enjoy playing with 4 Player, 2 Player, and 3 Player options in both the play with computer and friends options. Choose the player options that suit you and enjoy your Ludo game.
+Play With Friends
+Play with your friends sitting beside you no need for a physical ludo board, whether you have 1 Friend, 2 Friends, Or 3 Friends you can enjoy the game with multiple player options in local multiplayer on the same device.
+Team Up with Friends Option
+In our Ludo Offline Game, you can team up with friends and take on the other team pairs together. Create and execute extra strategies and show great cooperation with your teammates.
+Snake & Ladder
+Enjoy the classic Snake & Ladder board game along with Ludo. Roll the dice, climb ladders, avoid snakes, and enjoy another fun offline board game experience with friends.
+Leaderboards, Badges & Themes
+Climb the leaderboards, unlock badges as you play, and personalize your Ludo game with different themes. Keep playing, improve your skills, collect achievements, and make every match more rewarding.
+Play Ludo Offline
+If you have no internet connection and want to kill some time Ludo Offline is your saviour. Play Ludo entirely offline without worrying about data. Make your long traveling hours exciting with our Ludo Game.
+Ludo Offline With Computer
+For those times when you want to practice or simply enjoy a quick game, the Play With Computer feature is ideal. Choose from different levels of AI difficulty and challenge yourself to improve your game. This mode ensures that you can enjoy Ludo even when you’re playing solo.
+Don’t miss out on the ultimate Ludo Offline game. Enjoy Playing Happy Gaming!
+We are working to optimise and improve this game, If you have any suggestions share them with us at regleware@gmail.com
+Classic Ludo game offline. Play with computer or friends in 2–4 player matches.
+Updated on
+Sep 9, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo Offline",
+  "url": "https://play.google.com/store/apps/details/Ludo_Offline?id=com.alignit.ludo&hl=en",
+  "description": "Classic Ludo game offline. Play with computer or friends in 2–4 player matches.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/sK7HY1tCR1tCc0YXIA2fEcU_g8B-bXi2vQ7Rh4i_21BGboHqVq6pqvMPnEmFThEGpy6CaKffi7kLRioBx0DMGg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "AlignIt Games",
+    "url": "https://www.alignitgames.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.185978412628174",
+    "ratingCount": "25171"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo Offline - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Ludo Offline
+AlignIt Games
+Contains ads
+In-app purchases
+4.2
+star
+25.2K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Enjoy the classic Ludo board game offline. The dice-rolling game has entertained everyone for generations, and our Ludo game brings an unmatched gameplay experience with an easy-to-use UI and simple yet exciting game features for every type of player who enjoys playing Ludo. Roll the dice, plan your moves, and become the king of the board. Plus, enjoy Snake & Ladder as a bonus offline board game.
+Whether you’re looking to challenge your friends and yourself, or simply enjoy a relaxing game, our Ludo offline game has it all.
+Key Features
+Play With Computer
+Challenge yourself and show your skills by playing and practicing against the computer. With multiple color piece options and player options this Ludo With Computer option is a perfect match for new and beginners and also for seasoned players. The computer is designed to provide you with fair gameplay and a challenging experience to ensure you come back for more.
+Local Multiplayer
+Enjoy classic ludo and enjoy playing with 4 Player, 2 Player, and 3 Player options in both the play with computer and friends options. Choose the player options that suit you and enjoy your Ludo game.
+Play With Friends
+Play with your friends sitting beside you no need for a physical ludo board, whether you have 1 Friend, 2 Friends, Or 3 Friends you can enjoy the game with multiple player options in local multiplayer on the same device.
+Team Up with Friends Option
+In our Ludo Offline Game, you can team up with friends and take on the other team pairs together. Create and execute extra strategies and show great cooperation with your teammates.
+Snake & Ladder
+Enjoy the classic Snake & Ladder board game along with Ludo. Roll the dice, climb ladders, avoid snakes, and enjoy another fun offline board game experience with friends.
+Leaderboards, Badges & Themes
+Climb the leaderboards, unlock badges as you play, and personalize your Ludo game with different themes. Keep playing, improve your skills, collect achievements, and make every match more rewarding.
+Play Ludo Offline
+If you have no internet connection and want to kill some time Ludo Offline is your saviour. Play Ludo entirely offline without worrying about data. Make your long traveling hours exciting with our Ludo Game.
+Ludo Offline With Computer
+For those times when you want to practice or simply enjoy a quick game, the Play With Computer feature is ideal. Choose from different levels of AI difficulty and challenge yourself to improve your game. This mode ensures that you can enjoy Ludo even when you’re playing solo.
+Don’t miss out on the ultimate Ludo Offline game. Enjoy Playing Happy Gaming!
+We are working to optimise and improve this game, If you have any suggestions share them with us at regleware@gmail.com
+Classic Ludo game offline. Play with computer or friends in 2–4 player matches.
+Updated on
+Sep 9, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, App activity and 2 others
+This app may collect these data types
+Location, App activity, and App info and performance
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.2
+24.4K reviews
+5
+4
+3
+2
+1
+Alok Aditya
+more_vert
+Flag inappropriate
+April 12, 2025
+Finally, I'm going to uninstall this app. When you play with the computer (4P game), it doesn't matter how tactically you play, you will lose. I play blue so yellow (mostly) or green always wins. They will get the exact number as needed. Even if your 3 tokens are home and theirs 1, they will get a lot of sixes and will always cut your token and finally win. It doesn't matter how much you try, you will mostly not get the right number or can't escape. I love tough games, but this is too biased.
+1,701 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AlignIt Games
+January 28, 2026
+Hi Alok, we’re really sorry you felt the game was biased. Since your review we’ve spent the last 8 - 9 months improving dice logic and balance using player feedbacks. We assure you the game is designed to be fair and random—no moves are pre-set or biased. Please try the latest version and update your rating if it feels better. Thanks
+monika tiwari
+more_vert
+Flag inappropriate
+July 3, 2026
+the game is excellent , BUT HAVE A BIG TECHNICAL AND LOGICAL ERROR....... When two opponent tokens are on a same 'safety spot' and a person rolls his dice, his tokens get bigger (to indicate that it is yours and available for moving) , and this enlarging effect HIDES THE TOKEN OF OPPONENT ON THAT SPOT, WHICH LEADS TO MISJUDGEMENT AS THE PLAYER THINKS THAT THERE'S NO OTHER TOKEN THERE AT THAT SPOT......kindly fix this huge issue as we constantly make mistakes in the game due to this.
+25 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AlignIt Games
+September 5, 2026
+Hi Monika, We’re happy to let you know that this issue has now been fixed. Please update the game to the latest version and give it another try. We appreciate your help in improving the game! thanks
+Ajay Kumar Kumawat
+more_vert
+Flag inappropriate
+Show review history
+June 25, 2026
+This update is on another level! The new UI looks amazing, and the improved gameplay sounds make every match more enjoyable. I've been hooked on 3P, 4P, and Rush Mode—they're fast and exciting. Local Multiplayer and Team Up (2v2) with my siblings aren't just games—they're war 😂. Easily one of the best Ludo updates I've played!
+96 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+• You can now check your achievements in Google Play Games too!
+• Stability and performance improvements.
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+regleware@gmail.com
+shield
+Privacy Policy
+About the developer
+Sunita Devanda
+regleware@gmail.com
+DEVANDA KI DHANI MOHANPURA SANGANER JAIPUR
+Jaipur, Rajasthan 302020
+India
+More by AlignIt Games
+arrow_forward
+Bead 16 - 16 Guti Board Game
+AlignIt Games
+4.2
+star
+Tic Tac Toe Online - XO Game
+AlignIt Games
+4.0
+star
+Chess - Online & Offline
+AlignIt Games
+4.3
+star
+Align It | Char Bhar Online
+AlignIt Games
+4.2
+star
+Bead 12 - 12 Guti Board Game
+AlignIt Games
+3.9
+star
+Water Sort - Water Color Sort
+AlignIt Games
+3.8
+star
+Similar games
+arrow_forward
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo King®
+Gametion
+4.0
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Snakes and Ladders King
+Gametion
+3.5
+star
+Ludo STAR
+Gameberry Labs
+4.4
+star
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,25 @@
+{
+  "samples": [
+    {
+      "clicks": 0,
+      "heap": 9730080,
+      "nodes": 65,
+      "tubes": 4,
+      "orphans": 3
+    },
+    {
+      "clicks": 200,
+      "heap": 11004092,
+      "nodes": 70,
+      "tubes": 4,
+      "orphans": 8
+    },
+    {
+      "clicks": 400,
+      "heap": 10929304,
+      "nodes": 70,
+      "tubes": 4,
+      "orphans": 8
+    }
+  ]
+}

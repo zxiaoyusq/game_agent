@@ -1,0 +1,396 @@
+# Google Play public snapshot: com.amelosinteractive.snake
+URL: https://play.google.com/store/apps/details?id=com.amelosinteractive.snake&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:47.809Z
+HTTP status: 200
+Raw HTML SHA-256: 347e8668c168a6d03d9528301969f28ddc9beb3939fff7760d46dd148da928db
+Raw HTML: research/html-data/store-snapshots/com.amelosinteractive.snake.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Snake.io - Fun Snake .io Games
+Kooapps Games | Fun Arcade and Casual Action Games
+Contains ads
+In-app purchases
+4.1
+star
+1.27M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Slither through a new competitive version of Snake 🐍 and survive as long as you can! Challenge your friends and try to be the biggest snake in Snake.io!
+Classic arcade Snake.io gets an upgrade for unique online live events play. Slither to the top of the leaderboard in this popular mobile version of the beloved arcade game! Snake.io combines new trendy art with the oldest classic snake game mechanics.
+Start Snake.io as a small snake or worm and try to get bigger by eating your way through each level. Rush your way through fields of food and try to beat other players’ scores - how long can you survive?
+🎮 Classic arcade games meet online leaderboard competition in this new, addicting free game! Join millions of players and play Snake.io now!
+Snake.io is designed for a smooth, fast performance, with controls designed for every mobile device. Snake has never been this fun or competitive before! Play without wifi for free or newest online mode with live events.
+Best Snake.io Features
+Snake Classic Games
+- Slither through a field of food and eat to make your snake grow
+- A fun io game version of Snake
+- Play old school Snakeio and try to beat your high score
+Multiplayer Games for Free
+- Online leaderboard – see if your snake can beat the rest!
+- Challenge your friends to beat your high score
+- Double player mode – sit next to your friend and compete
+- Watch Snake Games from our fans and join the online community
+Free Addictive Game
+- Play games with fast performance on any device
+- .io game with smooth gameplay and mobile joystick controls 🕹️
+- Snake.io is free, or you can remove ads!
+- Watch online games on YouTube and learn moves from top streamers
+Live Ops Events
+- Battle against other snakes, worms and the boss snake ayo
+- Compete high scores with friends on the leaderboard
+- Fun new events every month with unique skins
+No Wifi Games
+- Offline io games require no internet connection. Play Snake.io whether you’re offline or online! Offline is no wifi needed.
+Play Snake games with a new io twist! Download Snake today!
+Your reviews are important for the Snake io team!
+Read/write storage permissions is used for Snake.io screenshots and cache user save files. Record audio permission is used for recording YouTube video for sharing.
+Privacy: https://kooapps.com/privacypolicy.php
+Slither Eat Battle. Play this addicting online & offline arcade snake blast game
+Updated on
+Sep 19, 2026
+Available on
+Android,
+Windows
+Action
+IO game
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Stylized
+Animals
+Snake
+Battling
+Offline
+Play Pass
+Events & offers
+Ends on 09/30
+Back to school means trouble at Wildhaven High!
+Ends on 10/03
+Discover all the perks the Paw Palace Snake Pass has to offer!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Snake.io - Fun Snake .io Games",
+  "url": "https://play.google.com/store/apps/details/Snake_io_Fun_Snake_io_Games?id=com.amelosinteractive.snake&hl=en",
+  "description": "Slither Eat Battle. Play this addicting online & offline arcade snake blast game",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ACTION",
+  "image": "https://play-lh.googleusercontent.com/udfb96O1w1v4xgPwW0yjuwNXRYt1S557Yj2Sk-S0qx2lrosGwETm4DYokCi1zXcdzxIZ5EzHk0OECHmE04O_aQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Kooapps Games | Fun Arcade and Casual Action Games",
+    "url": "https://kooapps.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.10591459274292",
+    "ratingCount": "1268968"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Snake.io - Fun Snake .io Games - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Snake.io - Fun Snake .io Games
+Kooapps Games | Fun Arcade and Casual Action Games
+Contains ads
+In-app purchases
+4.1
+star
+1.27M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Slither through a new competitive version of Snake 🐍 and survive as long as you can! Challenge your friends and try to be the biggest snake in Snake.io!
+Classic arcade Snake.io gets an upgrade for unique online live events play. Slither to the top of the leaderboard in this popular mobile version of the beloved arcade game! Snake.io combines new trendy art with the oldest classic snake game mechanics.
+Start Snake.io as a small snake or worm and try to get bigger by eating your way through each level. Rush your way through fields of food and try to beat other players’ scores - how long can you survive?
+🎮 Classic arcade games meet online leaderboard competition in this new, addicting free game! Join millions of players and play Snake.io now!
+Snake.io is designed for a smooth, fast performance, with controls designed for every mobile device. Snake has never been this fun or competitive before! Play without wifi for free or newest online mode with live events.
+Best Snake.io Features
+Snake Classic Games
+- Slither through a field of food and eat to make your snake grow
+- A fun io game version of Snake
+- Play old school Snakeio and try to beat your high score
+Multiplayer Games for Free
+- Online leaderboard – see if your snake can beat the rest!
+- Challenge your friends to beat your high score
+- Double player mode – sit next to your friend and compete
+- Watch Snake Games from our fans and join the online community
+Free Addictive Game
+- Play games with fast performance on any device
+- .io game with smooth gameplay and mobile joystick controls 🕹️
+- Snake.io is free, or you can remove ads!
+- Watch online games on YouTube and learn moves from top streamers
+Live Ops Events
+- Battle against other snakes, worms and the boss snake ayo
+- Compete high scores with friends on the leaderboard
+- Fun new events every month with unique skins
+No Wifi Games
+- Offline io games require no internet connection. Play Snake.io whether you’re offline or online! Offline is no wifi needed.
+Play Snake games with a new io twist! Download Snake today!
+Your reviews are important for the Snake io team!
+Read/write storage permissions is used for Snake.io screenshots and cache user save files. Record audio permission is used for recording YouTube video for sharing.
+Privacy: https://kooapps.com/privacypolicy.php
+Slither Eat Battle. Play this addicting online & offline arcade snake blast game
+Updated on
+Sep 19, 2026
+Available on
+Android,
+Windows
+Action
+IO game
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Stylized
+Animals
+Snake
+Battling
+Offline
+Play Pass
+Events & offers
+Ends on 09/30
+Back to school means trouble at Wildhaven High!
+Ends on 10/03
+Discover all the perks the Paw Palace Snake Pass has to offer!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, App info and performance, and Device or other IDs
+This app may collect these data types
+Location, App info and performance, and Device or other IDs
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Desktop
+tablet_android
+Tablet
+4.1
+1.09M reviews
+5
+4
+3
+2
+1
+Jimmy Davis III
+more_vert
+Flag inappropriate
+Show review history
+March 6, 2025
+Have you ever wanted to watch ads so bad but had to play a game to do it? well, i can tell you this game has longer than normal ads!!! how exciting! I was so happy when the game ended in 10 seconds, and I was able to watch a 2 minute ad about a broke family being covered in snow!!! Then, to make things even better, my intelligence was baited into solving puzzles to feed them! The best part is that after that ad ended there was another one!! woooo. I love ads! if you do too download it!
+1,494 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Kooapps Games | Fun Arcade and Casual Action Games
+August 27, 2025
+We're sorry to hear about your experience. We've heard your feedback and updated the functionality of the No Ads feature. Please update your snake.io to the latest version. Once you've had a chance to play the updated version, we'd love to hear your thoughts on the new system! We're grateful for your continued support as we improve the game.
+Shinigami Realm
+more_vert
+Flag inappropriate
+October 8, 2021
+Good game but slow down on the ads geez, everytime you get a score above 100 (which is not even that big of a deal) it will ask if you wanna revive by watching ad or not, doesn't matter what you choose it will show ad anyway. I mean it's fine having a popup ad have once in a while but my god, the amount is so much. It's the only reason why I'm giving 3/5, otherwise would give a solid 5/5
+4,888 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Dan Tanfield
+more_vert
+Flag inappropriate
+September 13, 2026
+Great game that I have played for many years across various devices/platforms. I was happy with the old format, but the newer modern style of the game with the snake pass and item shop etc brings some nice new elements to it. Main suggestions; - put a revive count on the kill screen so you know how mny of the 5 revives you have left. - make it easier to see yourself on the leaderboards. so much scrolling, button or auto placement would be better. great game overall, thanks to the Devs!
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Kooapps Games | Fun Arcade and Casual Action Games
+September 14, 2026
+Thank you for your feedback. We have taken note of your comments and will share them with our team. If you have any other suggestions, please feel free to send us an email support@kooapps.com. Thank you for playing Snake.io.
+See all reviews
+What’s new
+Eat and battle snakes of all kinds in this exciting game!
+Release Features:
+-Unique Skins: Unlock a variety of skins through different missions!
+-Monthly Live Events: Experience a new game mode during our monthly, themed live events.
+-Bug fixes and optimizations
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+phone
+Phone number
++15407378371
+email
+Support email
+support@kooapps.com
+shield
+Privacy Policy
+About the developer
+Kooapps Inc.
+support@kooapps.com
+15015 Main St Ste 200
+Bellevue, WA 98007-5229
+United States
++1 510-974-3391
+More by Kooapps Games | Fun Arcade and Casual Action Games
+arrow_forward
+Helix Stack Jump: Smash Ball
+Kooapps Games | Fun Arcade and Casual Action Games
+3.5
+star
+Supermarket.io: Store Tycoon
+Kooapps Games | Fun Arcade and Casual Action Games
+3.5
+star
+Pocket Family Dreams: My Home
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+MicroTown.io - My Little Town
+Kooapps Games | Fun Arcade and Casual Action Games
+4.0
+star
+Piano Tiles 2™ - Piano Game
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+Stacky Bird: Fun Offline Game
+Kooapps Games | Fun Arcade and Casual Action Games
+4.3
+star
+Similar games
+arrow_forward
+Worms Zone .io - Hungry Snake
+CASUAL AZUR GAMES
+4.3
+star
+Snake Clash!
+Supercent, Inc.
+4.2
+star
+Snake Lite® - Worm Snake Game
+Hippo Lab
+3.9
+star
+Hole.io
+VOODOO
+4.0
+star
+Hungry Shark Evolution
+Ubisoft Entertainment
+4.0
+star
+Worms Merge-io&idle snake game
+Hippo Lab
+3.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,364 @@
+# Google Play public snapshot: io.yarsa.games.ludo
+URL: https://play.google.com/store/apps/details?id=io.yarsa.games.ludo&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:06.305Z
+HTTP status: 200
+Raw HTML SHA-256: 23e6797f360279a95dc1190b3dad5c1023eb7842720fe68b427a238a0a890720
+Raw HTML: research/html-data/store-snapshots/io.yarsa.games.ludo.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo
+Yarsa Games
+Contains ads
+In-app purchases
+4.1
+star
+516K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Ludo is fun to play a multiplayer board game that can be played between 2, 3 or 4 players. It is the most popular and fun game to play with family and friends. Ludo is a mind refreshing game with its lucky dice rolls and strategical gameplay. This interesting 2D Ludo game has been around us for a long time as the best game to play in our spare time.
+How the Ludo game works:
+Ludo game starts with four tokens placed in each player's starting box. A dice is rolled in turns by each player during the game. The player's token will be placed on the starting point when a 6 is rolled on the dice. The main goal of the game is to take all 4 tokens inside the HOME area before the other opponents.
+Basic rules of Ludo game:
+- A token can start to move only if the dice rolled is a 6.
+- Each player gets a turn wise chance to roll the dice. And if the player rolls a 6, they will get another chance to roll the dice again.
+- All the tokens must reach the center of the board to win the game.
+- The token move clock-wise according to the number of rolled dice.
+- Knocking out other's token will give you an extra chance to roll the dice again.
+Game features:
+Single Player - Play against the computer.
+Local Multiplayer - Play with friends and family offline.
+Play 2 to 4 players.
+You can continue your game anytime.
+Multi-colored dice for each player.
+Real Ludo dice roll animation.
+View the progress of each player in percentage.
+Throw dice or roll instantly.
+Shake your phone to roll the dice option.
+Customize game speed yourself.
+Easy single menu player selection.
+Play the Ludo game in your native languages.
+English, Hindi, Nepali, Spanish, Portuguese, French, Arabic & Indonesian languages are supported in this Ludo game.
+Enjoy playing the best offline version of the Ludo game anytime anywhere with your friends and family. The multiplayer version of this game is coming soon, so stay tuned.
+We hope you enjoy playing this Ludo.
+Please send us your feedback, and we'll try to improve the game performance as per your requirements.
+Thank you for playing Ludo and do check out our other games.
+Ludo game is fun to play with your friends and family.
+Updated on
+Sep 1, 2026
+Available on
+Android,
+Windows*
+#9 top free board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo",
+  "url": "https://play.google.com/store/apps/details/Ludo?id=io.yarsa.games.ludo&hl=en",
+  "description": "Ludo game is fun to play with your friends and family.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/q4wf7_02s7dV-E4MN2hoB6GQLnr9g5WnPms-V_DPxinbilbrbLKz_QTguIguBKgdtGNyGTu9Bnk7EkGNyEsSXw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Yarsa Games",
+    "url": "https://www.yarsagames.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.0886430740356445",
+    "ratingCount": "515924"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Ludo
+Yarsa Games
+Contains ads
+In-app purchases
+4.1
+star
+516K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Ludo is fun to play a multiplayer board game that can be played between 2, 3 or 4 players. It is the most popular and fun game to play with family and friends. Ludo is a mind refreshing game with its lucky dice rolls and strategical gameplay. This interesting 2D Ludo game has been around us for a long time as the best game to play in our spare time.
+How the Ludo game works:
+Ludo game starts with four tokens placed in each player's starting box. A dice is rolled in turns by each player during the game. The player's token will be placed on the starting point when a 6 is rolled on the dice. The main goal of the game is to take all 4 tokens inside the HOME area before the other opponents.
+Basic rules of Ludo game:
+- A token can start to move only if the dice rolled is a 6.
+- Each player gets a turn wise chance to roll the dice. And if the player rolls a 6, they will get another chance to roll the dice again.
+- All the tokens must reach the center of the board to win the game.
+- The token move clock-wise according to the number of rolled dice.
+- Knocking out other's token will give you an extra chance to roll the dice again.
+Game features:
+Single Player - Play against the computer.
+Local Multiplayer - Play with friends and family offline.
+Play 2 to 4 players.
+You can continue your game anytime.
+Multi-colored dice for each player.
+Real Ludo dice roll animation.
+View the progress of each player in percentage.
+Throw dice or roll instantly.
+Shake your phone to roll the dice option.
+Customize game speed yourself.
+Easy single menu player selection.
+Play the Ludo game in your native languages.
+English, Hindi, Nepali, Spanish, Portuguese, French, Arabic & Indonesian languages are supported in this Ludo game.
+Enjoy playing the best offline version of the Ludo game anytime anywhere with your friends and family. The multiplayer version of this game is coming soon, so stay tuned.
+We hope you enjoy playing this Ludo.
+Please send us your feedback, and we'll try to improve the game performance as per your requirements.
+Thank you for playing Ludo and do check out our other games.
+Ludo game is fun to play with your friends and family.
+Updated on
+Sep 1, 2026
+Available on
+Android,
+Windows*
+#9 top free board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+No data collected
+Learn more
+about how developers declare collection
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.1
+494K reviews
+5
+4
+3
+2
+1
+Sir Ali Bash
+more_vert
+Flag inappropriate
+August 22, 2026
+the game looks good, but it's one of the worst entertainment games I have played. it's pure ragebait. the algorithm isn't random, they make sure the computer takes you back and gets everything. I am not sure I am even playing with real people during the online game. same thing, you always loose. it's not entertaining, it's annoying. if you don't want to smash your phone, don't download it since I have already lost 1 phone due to anger.
+10 people found this review helpful
+Did you find this helpful?
+Yes
+No
+asma ali
+more_vert
+Flag inappropriate
+August 22, 2026
+This app 'creat room' option seems to have an issue... after copying the code when you try to send it to your friends game becomes disconnected. It show due to not connection. I don't understand how I can play with my partner if I can't share the damn code :'l . pls help . Otherwise I like this game very much.
+11 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Yarsa Games
+August 24, 2026
+Hey Asma! we have figured out the cause of the issue and this will be fixed in the next update. At the mean time, you can go to your device's Settings>Apps>Ludo>Battery and select "Unrestricted" which will solve your issue of internet disconnection for now. We hope you will enjoy playing our game with your partner.
+Binoysonowal
+more_vert
+Flag inappropriate
+July 1, 2026
+very fun and makes me more smart and confident to play and does not make me bored, really good and you can also play with someone here rather than being alone. I really enjoy and please try to make it way better, so you can also get five more stars to go and we really appreciate you for making these kind of games with interesting thoughts for our brain. And, I can also play with a robot and with my friends. It was really fun, interesting activities, etc. so thank you soooooooooooooo much .
+25 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Yarsa Games
+July 8, 2026
+Thank you so much for your wonderful review! We're delighted to hear you're having so much fun and enjoying playing with friends and the computer. Your kind words and encouragement mean a lot to us.
+See all reviews
+What’s new
+- Online multiplayer added
+- Create private rooms and play with friends
+- Bug fixes and performance improvements
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+games@yarsa.io
+shield
+Privacy Policy
+About the developer
+YARSA GAMES
+hello@yarsagames.com
+Dhungepatan Street, Ward 29 Talchowk
+Pokhara
+Nepal
++977 976-3246776
+More by Yarsa Games
+arrow_forward
+Ludo Match
+Yarsa Games
+3.8
+star
+Callbreak, Ludo & 29 Card Game
+Yarsa Games
+4.1
+star
+Indian Rummy
+Yarsa Games
+4.3
+star
+Call break - भारतीय कॉलब्रेक
+Yarsa Games
+3.9
+star
+Driving School and Parking
+Yarsa Games
+4.3
+star
+Indian Driving School 3D
+Yarsa Games
+4.3
+star
+Similar games
+arrow_forward
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+4.0
+star
+Ludo King®
+Gametion
+4.0
+star
+Ludo STAR
+Gameberry Labs
+4.4
+star
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -11,7 +11,7 @@
     $env:BACKEND_PORT = 8001; .\dev.ps1      # 自定义后端端口
     $env:CONDA_ENV    = 'myenv'; .\dev.ps1   # 自定义 conda 环境
 
-  默认端口：后端 8000，前端 由 vite 自行选择 (5173+)
+  默认端口：后端 8003，前端 24681
   日志文件：.\logs\backend.log、.\logs\frontend.log
 
   注意：
@@ -40,7 +40,7 @@ $BackendLog  = Join-Path $LogDir 'backend.log'
 $FrontendLog = Join-Path $LogDir 'frontend.log'
 
 # 端口、conda 环境支持环境变量覆盖（与 dev.sh 行为保持一致）
-$BackendPort = if ($env:BACKEND_PORT) { [int]$env:BACKEND_PORT } else { 8000 }
+$BackendPort = if ($env:BACKEND_PORT) { [int]$env:BACKEND_PORT } else { 8003 }
 $CondaEnv    = if ($env:CONDA_ENV)    { $env:CONDA_ENV }         else { '313' }
 
 # ---- 工具函数 -------------------------------------------------------------
@@ -175,7 +175,7 @@ try {
     Write-Info "全部启动完成。"
     Write-Host ""
     Write-Host "   后端: http://127.0.0.1:$BackendPort/docs"
-    Write-Host "   前端: 见下方 vite 输出的 Local 地址（默认 http://localhost:5173/）"
+    Write-Host "   前端: http://localhost:24681/"
     Write-Host ""
     Write-Info "实时日志（Ctrl+C 退出）："
     Write-Host ""

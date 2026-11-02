@@ -1,0 +1,32 @@
+{
+  "_comment": "transfer.py 结构锁定换皮规格示例：图1=source 锁结构（alpha 逐字节回写，必填），图2=reference 只管外观（可选，去掉此字段则纯文字描述外观，像素管线不变）。appearance/preserve_objects/forbid_from_reference 拼进三层英文约束 prompt（forbid 仅在有 reference 时有意义）；preserve_rects 是后端像素保护（色键=只回贴矩形内匹配颜色的原图像素）。命令：python transfer.py run --spec 本文件 [--install]",
+  "source": "dog.png",
+  "reference": "coat_ref.png",
+  "appearance": [
+    "cool medium-gray and white coat with soft furry texture",
+    "white fluffy eyebrow patches above both eyes",
+    "white muzzle and lower face, fluffy",
+    "white chest patch with the approximate contour impression of Image 2, adapted onto Image 1's exact body shape",
+    "white paws and white tail tip; keep the rest of the coat medium gray",
+    "match the gray-white pattern distribution and edge contours from Image 2; soft plush fur feel but keep the original toy-like cute rendering"
+  ],
+  "preserve_objects": [
+    "small floating paw icon on the right",
+    "simple brown collar"
+  ],
+  "forbid_from_reference": [
+    "bell",
+    "collar",
+    "pose",
+    "proportions"
+  ],
+  "preserve_rects": [
+    { "rect": [88, 124, 84, 26], "key": [200, 44, 44], "tol": 90 },
+    { "rect": [206, 6, 50, 50] }
+  ],
+  "candidates": 2,
+  "tier": "standard",
+  "bleed": 12,
+  "background": "transparent",
+  "gates": {}
+}

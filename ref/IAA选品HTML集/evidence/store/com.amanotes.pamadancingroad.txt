@@ -1,0 +1,360 @@
+# Google Play public snapshot: com.amanotes.pamadancingroad
+URL: https://play.google.com/store/apps/details?id=com.amanotes.pamadancingroad&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:02.196Z
+HTTP status: 200
+Raw HTML SHA-256: 6f8a19f9db32a20896a32e5f7161c9c37a1c7d539bc72a0372502abf8032ff23
+Raw HTML: research/html-data/store-snapshots/com.amanotes.pamadancingroad.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Dancing Road: Color Ball Run!
+AMANOTES PTE. LTD.
+Contains ads
+In-app purchases
+4.4
+star
+775K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Get ready to hop, tile, and music your way into an electrifying world of rhythm with Dancing Road! This isn't just any song game; it's a rush of colors, beats, and excitement. As a hopper in the world of ball games, you'll find yourself lost in the tunes of piano tiles and the challenge of a rhythm game that keeps you on your toes. Think you've got what it takes to master the rhythm? Let's find out!
+🎵Why Dancing Road is the Ultimate Music Game for You
+- Epic Music Variety: Dive into a sea of songs ranging from the hottest EDM tracks to classic pop hits. The music game revolution is here, and it's waiting for you to take the lead!
+- Ball Game Like No Other: Forget about going balls or simple piano tiles. This is a ball game that's all about timing, reflexes, and of course, the beat!
+- Rhythm and Rush Combined: It's not just a rhythm game; it's an attractive rush. Keep up with the pace, match the colors, and stay on track!
+🌟Features That Make You Keep Coming Back
+- Dance to Your Own Beat: With over 100 songs from various genres, there's always a new challenge waiting. Whether you're into hip hop, rap, or EDM, we've got your playlist sorted.
+- Rewards Galore: Who doesn't love rewards? Collect coins and gift boxes to unlock new musical experiences and customization options.
+- Challenge Yourself: From easy to hard, there's a range of difficulty levels to keep both beginners and rhythm game veterans engaged.
+- Free to Play, Fun to Master: Jump into the fun for free! While there are in-app purchases, the magic of the game is accessible to everyone.
+🔥Dancing Road is Not Just a Game, It's an Experience
+- Visually Stunning: With vibrant visuals and dynamic effects, each session is a feast for your eyes.
+- Always Fresh: Regular updates mean new songs, features, and challenges. The music never stops!
+- Community and Competition: Join a global community of players. Compare scores, share tips, and see who truly has the best rhythm.
+💃Dancing Road is Perfect for You If...
+- You love music games, ball games, song games, or just looking for a new way to experience your favorite tunes.
+- You crave a game that combines skill, timing, and the joy of music.
+- You want a game that's easy to pick up but offers endless hours of entertainment.
+🎉Join the Dancing Road Family Today!
+Are you ready to embark on a musical journey like no other? To feel the rush of matching tiles to the beat, to experience the joy of hopping along to your favorite songs? Download Dancing Road now and let the music take control!
+Remember, the road is waiting. Your ball, your music, your rhythm. Let's play, let's dance, let's experience the magic of Dancing Road together! 🎶🕺
+(Note: Dancing Road is a free-to-play game, but it includes optional in-app purchases for those who want to enhance their experience even further.)
+Music games with the rhythm on music tiles and a color ball on a dancing road!
+Updated on
+Sep 15, 2026
+Available on
+Android,
+Windows*
+Music
+Rhythm-action
+Arcade
+Single player
+Abstract
+Sports
+Track & field
+Connect
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 4 days
+MONTAGEM HIKARI, Maximum Energy
+Ends in 4 days
+I Just Might, Dancing on the road
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dancing Road: Color Ball Run!",
+  "url": "https://play.google.com/store/apps/details/Dancing_Road_Color_Ball_Run?id=com.amanotes.pamadancingroad&hl=en",
+  "description": "Music games with the rhythm on music tiles and a color ball on a dancing road!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ARCADE",
+  "image": "https://play-lh.googleusercontent.com/nc1nQj3yWmysqHTHZGeFym2Vwmv8VjMs96nGN-8cUxrYCDOe2CxINTHTX1CPac_FM5HgcZf2aSPMVnuDJbYg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "AMANOTES PTE. LTD.",
+    "url": "http://amanotes.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3649492263793945",
+    "ratingCount": "775339"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Dancing Road: Color Ball Run! - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Dancing Road: Color Ball Run!
+AMANOTES PTE. LTD.
+Contains ads
+In-app purchases
+4.4
+star
+775K reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Get ready to hop, tile, and music your way into an electrifying world of rhythm with Dancing Road! This isn't just any song game; it's a rush of colors, beats, and excitement. As a hopper in the world of ball games, you'll find yourself lost in the tunes of piano tiles and the challenge of a rhythm game that keeps you on your toes. Think you've got what it takes to master the rhythm? Let's find out!
+🎵Why Dancing Road is the Ultimate Music Game for You
+- Epic Music Variety: Dive into a sea of songs ranging from the hottest EDM tracks to classic pop hits. The music game revolution is here, and it's waiting for you to take the lead!
+- Ball Game Like No Other: Forget about going balls or simple piano tiles. This is a ball game that's all about timing, reflexes, and of course, the beat!
+- Rhythm and Rush Combined: It's not just a rhythm game; it's an attractive rush. Keep up with the pace, match the colors, and stay on track!
+🌟Features That Make You Keep Coming Back
+- Dance to Your Own Beat: With over 100 songs from various genres, there's always a new challenge waiting. Whether you're into hip hop, rap, or EDM, we've got your playlist sorted.
+- Rewards Galore: Who doesn't love rewards? Collect coins and gift boxes to unlock new musical experiences and customization options.
+- Challenge Yourself: From easy to hard, there's a range of difficulty levels to keep both beginners and rhythm game veterans engaged.
+- Free to Play, Fun to Master: Jump into the fun for free! While there are in-app purchases, the magic of the game is accessible to everyone.
+🔥Dancing Road is Not Just a Game, It's an Experience
+- Visually Stunning: With vibrant visuals and dynamic effects, each session is a feast for your eyes.
+- Always Fresh: Regular updates mean new songs, features, and challenges. The music never stops!
+- Community and Competition: Join a global community of players. Compare scores, share tips, and see who truly has the best rhythm.
+💃Dancing Road is Perfect for You If...
+- You love music games, ball games, song games, or just looking for a new way to experience your favorite tunes.
+- You crave a game that combines skill, timing, and the joy of music.
+- You want a game that's easy to pick up but offers endless hours of entertainment.
+🎉Join the Dancing Road Family Today!
+Are you ready to embark on a musical journey like no other? To feel the rush of matching tiles to the beat, to experience the joy of hopping along to your favorite songs? Download Dancing Road now and let the music take control!
+Remember, the road is waiting. Your ball, your music, your rhythm. Let's play, let's dance, let's experience the magic of Dancing Road together! 🎶🕺
+(Note: Dancing Road is a free-to-play game, but it includes optional in-app purchases for those who want to enhance their experience even further.)
+Music games with the rhythm on music tiles and a color ball on a dancing road!
+Updated on
+Sep 15, 2026
+Available on
+Android,
+Windows*
+Music
+Rhythm-action
+Arcade
+Single player
+Abstract
+Sports
+Track & field
+Connect
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends in 4 days
+MONTAGEM HIKARI, Maximum Energy
+Ends in 4 days
+I Just Might, Dancing on the road
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 4 others
+This app may collect these data types
+Personal info, Financial info and 3 others
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Desktop
+tablet_android
+Tablet
+4.4
+651K reviews
+5
+4
+3
+2
+1
+Sulekha Debnath
+more_vert
+Flag inappropriate
+October 16, 2025
+I've been playing this game for over a year now. It's good, there are amazing challenges etc. But there's a problem. Whenever I play this game, it sometimes freezes for a second or two and when it unfreezes I mostly lose. And sometimes there is hardly any gap between two points when playing the game and I either lose my streak or just lose the game because I can't catch the point or catch another color of the ball. Please fix some bugs and keep a gap between two points. Overall, it's a good game
+637 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Unmesha Kore
+more_vert
+Flag inappropriate
+June 24, 2026
+⭐⭐⭐⭐⭐ I really enjoy playing Dancing Road: Color Ball Run! The gameplay is fun, relaxing, and the music makes it even more enjoyable. The graphics are colorful and the controls are smooth. I have one request: please consider adding BTS songs to the game. BTS has a huge global fanbase, and many players would love to enjoy tracks. BTS songs would make the game even more exciting and attract more users. and especially we as army would appreciate.
+24 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Eric Peña
+more_vert
+Flag inappropriate
+August 31, 2020
+Wuttt!!! My favorite of the Amanotes music app games. Beyond fun! And unlike the other also fun music games, you only fail the level if you actually made a mistake. Because in the other games like "Magic Tiles 3" for example, it will freeze the screen all of a sudden, then you end up pressing the wrong button. This game on the other hand, is number 1.
+3,785 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+- Improve game performance
+- Fix bugs
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+pama.support@amanotes.com
+shield
+Privacy Policy
+About the developer
+AMANOTES PTE. LTD.
+publishing@amanotes.com
+168 Robinson Road
+#20-01 Capital Tower
+Singapore 068912
++84 817 869 005
+More by AMANOTES PTE. LTD.
+arrow_forward
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+4.3
+star
+Duet Tiles - Rhythm Music Game
+AMANOTES PTE. LTD.
+3.6
+star
+Duet Cats: Music & Meow Game
+AMANOTES PTE. LTD.
+4.4
+star
+Duet Friends: Cute Music Games
+AMANOTES PTE. LTD.
+4.2
+star
+Music Night Battle - Full Mods
+AMANOTES PTE. LTD.
+4.4
+star
+Similar games
+arrow_forward
+Cyber Surfer : Rhythm Odyssey
+BADSNOWBALL HONGKONG LIMITED
+4.2
+star
+Dancing Cats - Cute Music Game
+Cobby Labs
+4.3
+star
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Rollance : Adventure Balls
+CASUAL AZUR GAMES
+3.4
+star
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

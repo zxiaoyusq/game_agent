@@ -1,0 +1,4 @@
+interface:
+  display_name: "游戏竞品拆解与融合设计"
+  short_description: "输入游戏名，研究代表竞品并拆解玩法、爽感和美术，输出详细报告与融合设计建议"
+  default_prompt: "使用 $game-competitor-analysis 研究游戏「游戏名」，确认产品身份并选择合适的同类竞品，输出包含玩法、爽感、美术、核心设计、玩家反馈和融合方案的详细报告。"

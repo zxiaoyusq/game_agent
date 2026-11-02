@@ -1,0 +1,346 @@
+# Google Play public snapshot: com.easybrain.arrow.puzzle.game
+URL: https://play.google.com/store/apps/details?id=com.easybrain.arrow.puzzle.game&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:53.177Z
+HTTP status: 200
+Raw HTML SHA-256: 0c0f37992f809f48f1429bbe5a3f06b6951e07f5448bb2ca5ad20ac09ce7971e
+Raw HTML: research/html-data/store-snapshots/com.easybrain.arrow.puzzle.game.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Arrow Puzzle: Tap Puzzle Games
+Easybrain
+Contains ads
+In-app purchases
+4.5
+star
+1.4M reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Arrow Puzzle is a single-player logic game that turns simple taps into a rewarding challenge. Your goal is straightforward: find a free path, tap arrows in the right order, and enjoy as the maze slowly turns into a clear, empty board on every level. Follow the arrows to escape the puzzle and find a soothing flow that keeps your mind engaged and relaxed.
+Looking for a gentle workout for your brain without any pressure attached? This comforting single-player arrow game lets you tap away the stress, gives you a focused break from the noise, and helps you train your logic and spatial thinking as you build a calming daily ritual. Inspired by abstract graphic games, each cleared board in the arrow game is a small mental reset—a satisfying win for your mind.
+How to Play Arrow Puzzle:
+• In this tap away puzzle game, your goal is to clear the grid—a maze of arrows all pointing in different directions.
+• Escape the arrow puzzle grid by finding a free path. An arrow moves only when its way ahead is clear and no other arrows are blocking its path. Take a moment to think first.
+• Tap arrows away one by one to help them leave the grid and open up more space for the others. Clean visuals inspired by abstract graphic games help you focus on every move.
+• Avoid blocked arrows. If you tap an arrow whose path is blocked, you lose a life. Lives are limited on each level, but you can always rethink your plan and try again at your own pace.
+• If you get stuck, use helpful hints to highlight an arrow that can safely escape the maze.
+• Plan the order of your taps, help every arrow escape, and master this abstract graphic puzzle game one level at a time.
+Why You'll Love Arrow Puzzle:
+✔ A minimalist arrow game with simple rules and deep strategy—easy to start, satisfying to master.
+✔ Hundreds of handcrafted tap away style puzzles that grow in challenge as you play.
+✔ Daily Challenges—play every day, complete monthly challenges, and collect unique trophies.
+✔ Helpful hints when you need a small nudge to release an arrow and keep the flow going.
+✔ No timer, no pressure—a relaxing escape and a true delight for your mind.
+✔ Clean, calming visuals and smooth animations that keep the focus on puzzle-solving in this single-player tap game.
+Play Arrow Puzzle, clear the grid of arrows, and enjoy a rare balance of sharp focus and deep relaxation.
+Terms of Use:
+https://easybrain.com/terms
+Privacy Policy:
+https://easybrain.com/privacy
+Tap away arrows to escape the maze. Train your brain with smart puzzle games!
+Updated on
+Sep 4, 2026
+#1 top free puzzle
+Puzzle
+Logic
+Single player
+Abstract
+Offline
+Events & offers
+Ends in 6 days
+Climb the leaderboard in the tournament
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Arrow Puzzle: Tap Puzzle Games",
+  "url": "https://play.google.com/store/apps/details/Arrow_Puzzle_Tap_Puzzle_Games?id=com.easybrain.arrow.puzzle.game&hl=en",
+  "description": "Tap away arrows to escape the maze. Train your brain with smart puzzle games!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/9SPwV1m2m248lpDQd9xtd-s70BwEyZJhXd1LDAK3KzIsEPaSlO9mikhsFrzo7ObagZWiJgk57I5-b12AWkF9_Q",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Easybrain",
+    "url": "https://easybrain.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.542718887329102",
+    "ratingCount": "1395640"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Arrow Puzzle: Tap Puzzle Games - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Arrow Puzzle: Tap Puzzle Games
+Easybrain
+Contains ads
+In-app purchases
+4.5
+star
+1.4M reviews
+Rated for 3+
+info
+50M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Arrow Puzzle is a single-player logic game that turns simple taps into a rewarding challenge. Your goal is straightforward: find a free path, tap arrows in the right order, and enjoy as the maze slowly turns into a clear, empty board on every level. Follow the arrows to escape the puzzle and find a soothing flow that keeps your mind engaged and relaxed.
+Looking for a gentle workout for your brain without any pressure attached? This comforting single-player arrow game lets you tap away the stress, gives you a focused break from the noise, and helps you train your logic and spatial thinking as you build a calming daily ritual. Inspired by abstract graphic games, each cleared board in the arrow game is a small mental reset—a satisfying win for your mind.
+How to Play Arrow Puzzle:
+• In this tap away puzzle game, your goal is to clear the grid—a maze of arrows all pointing in different directions.
+• Escape the arrow puzzle grid by finding a free path. An arrow moves only when its way ahead is clear and no other arrows are blocking its path. Take a moment to think first.
+• Tap arrows away one by one to help them leave the grid and open up more space for the others. Clean visuals inspired by abstract graphic games help you focus on every move.
+• Avoid blocked arrows. If you tap an arrow whose path is blocked, you lose a life. Lives are limited on each level, but you can always rethink your plan and try again at your own pace.
+• If you get stuck, use helpful hints to highlight an arrow that can safely escape the maze.
+• Plan the order of your taps, help every arrow escape, and master this abstract graphic puzzle game one level at a time.
+Why You'll Love Arrow Puzzle:
+✔ A minimalist arrow game with simple rules and deep strategy—easy to start, satisfying to master.
+✔ Hundreds of handcrafted tap away style puzzles that grow in challenge as you play.
+✔ Daily Challenges—play every day, complete monthly challenges, and collect unique trophies.
+✔ Helpful hints when you need a small nudge to release an arrow and keep the flow going.
+✔ No timer, no pressure—a relaxing escape and a true delight for your mind.
+✔ Clean, calming visuals and smooth animations that keep the focus on puzzle-solving in this single-player tap game.
+Play Arrow Puzzle, clear the grid of arrows, and enjoy a rare balance of sharp focus and deep relaxation.
+Terms of Use:
+https://easybrain.com/terms
+Privacy Policy:
+https://easybrain.com/privacy
+Tap away arrows to escape the maze. Train your brain with smart puzzle games!
+Updated on
+Sep 4, 2026
+#1 top free puzzle
+Puzzle
+Logic
+Single player
+Abstract
+Offline
+Events & offers
+Ends in 6 days
+Climb the leaderboard in the tournament
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Financial info and 3 others
+This app may collect these data types
+Location, Financial info and 3 others
+Data is encrypted in transit
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+tablet_android
+Tablet
+4.5
+1.36M reviews
+5
+4
+3
+2
+1
+Avinash Bibate
+more_vert
+Flag inappropriate
+July 26, 2026
+Great game! The gameplay is fun and addictive, and I've reached a high level. However, there's one feature that is really missing: account login/cloud save. If I change my phone or reinstall the game, all my progress is lost and I have to start from the beginning. Please add a login feature (Google, Facebook, or email) so players can save and restore their progress across devices. It would make the game much better.
+21 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+September 9, 2026
+مرحبًا! شكرًا جزيلًا على تقييمك بـ5 نجوم. يسعدنا أن اللعبة نالت إعجابك، ونتمنى أن تستمر الألغاز في منحك تجربة ممتعة ومسلية.
+Thangaraj arumugam
+more_vert
+Flag inappropriate
+Show review history
+April 26, 2026
+first thing I like in this game is , it is a offline featured game . The proverb " slow and steady wins the race" suits this game . if we think slowly and solve we can complete any level that's harder. it has daily challenge , tournament, It also has hint option so that we can use when we are stuck , and there is also another option which feels like map it helps in guiding us to find the correct route for the arrow to get out. So it is a wonderful game .
+49 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+June 16, 2026
+Hello! Thank you for your wonderful review. We're so glad you're enjoying the game and its different features. It's especially nice to know that the gameplay feels rewarding and engaging for you. Thanks for playing and for sharing your experience with us! 😊
+Rohan Kolambe
+more_vert
+Flag inappropriate
+September 4, 2026
+​"first thing I like in this game is , it is a offline featured game . The proverb " slow and steady wins the race" suits this game . if we think slowly and solve we can complete any level that's harder. it has daily challenge , tournament, It also has hint option so that we can use when we are stuck , and there is also another option which feels like map it helps in guiding us to find the correct route for the arrow to get out. So it is a wonderful game . ​43 people found this helpful"
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Easybrain
+September 14, 2026
+Hi! Thanks for such a thoughtful review. We love how you described the game as a “slow and steady” kind of challenge — sometimes a little patience is all it takes to find the way out. Glad you’re enjoying the Daily Challenge, tournaments, and helpful tools along the way.
+See all reviews
+What’s new
+- Performance and stability improvements
+We read all your reviews and always try to make the game better. Please leave us some feedback if you love what we do and feel free to suggest any improvements. Play Arrow Puzzle, clear the grid, and enjoy a rare balance of sharp focus and deep relaxation!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@easybrain.com
+shield
+Privacy Policy
+About the developer
+EASYBRAIN LTD
+d@easybrain.com
+Trilogy Limassol Seafront,, Floor 14, West Tower, 335 28 Oktovriou
+Limassol 3106
+Cyprus
++357 99 098190
+More by Easybrain
+arrow_forward
+Art Puzzle - Puzzle Games
+Easybrain
+4.4
+star
+Sudoku.com - Sudoku Puzzle
+Easybrain
+4.7
+star
+Jigsaw Puzzles - Puzzle Games
+Easybrain
+4.5
+star
+Number Match - Number Games
+Easybrain
+4.6
+star
+Crossword Master - Word Puzzle
+Easybrain
+4.7
+star
+Bird Find - Logic Puzzle Game
+Easybrain
+4.6
+star
+Similar games
+arrow_forward
+Arrows – Puzzle Escape
+Lessmore GmbH
+4.5
+star
+Tile Explorer - Triple Match
+Oakever Games
+4.5
+star
+Block Blast!
+HungryStudio
+4.6
+star
+Candy Crush Saga
+King
+4.4
+star
+Tile Club - Match Puzzle Games
+GamoVation
+4.4
+star
+Car Jam Solver: Traffic Jam
+Ladaneta Games
+4.6
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

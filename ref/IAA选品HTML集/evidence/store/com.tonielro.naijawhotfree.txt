@@ -1,0 +1,388 @@
+# Google Play public snapshot: com.tonielro.naijawhotfree
+URL: https://play.google.com/store/apps/details?id=com.tonielro.naijawhotfree&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:43.296Z
+HTTP status: 200
+Raw HTML SHA-256: 8a10a7b7b59a30a5ff761ddb1f643d43f3574fdc0fcc5ee8d24cbad93884f5be
+Raw HTML: research/html-data/store-snapshots/com.tonielro.naijawhotfree.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Naija Whot
+Tonielrosoft
+Contains ads
+In-app purchases
+4.5
+star
+23.4K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Naija Whot is an exciting, classic and healthy card game for everyone. It is simple to play. Become a winner by finishing your cards before the beast in your palm. It keeps you comfort when it's needed and your mind focused when you are idle. The artificial intelligence keeps it challenging all the time.
+--------------------------------------------------------------------
+HOW TO PLAY
+To play Naija Whot is not difficult.
+We have two decks: Market and Played decks.
+When it is your turn, you must drop a card that is of same type(Image) or same number with the card played by your opponent. For instance, if your opponent drop Triangle11, you can either play a Triangle irrespective of the card number or you play any other card with same number(11). If you don't have any matching card to play, you must pick a card from the MARKET DECK.
+A player who first finish his cards is declared winner.
+Apart from the above scenario, we have some ACTION CARDS. The action cards are:
+1. Hold On = any card with number(1). It puts every player on hold thereby giving you opportunity to play again.
+2. Pick Two = any card with number(2). The next player can either defend the card or pick two cards from market deck.
+3. Pick Three = any card with number(5). The next player can either defend the card or pick three cards from market deck.
+4. General Market = any card with number(14). All the player except the player who dropped the card must pick one card from market deck.
+5. Suspension = any card with number(8). Suspends the next player.
+6. Crown = any card with number(20). Request any card of your choice.
+The above configuration is by default. They can be changed to any number of your choice.
+In TOURNAMENT, when game ends, cards are counted and a player with the highest number is eliminated.
+CRITICAL RULE
+Star card face value is always doubled during card counting. For examples:
+* Star1 = 2
+* Star2 = 4
+* Star3 = 6
+* Star4 = 8
+* Star5 = 10
+* Star7 = 14
+* Star8 = 16
+TIP: Avoid keeping STAR cards during tournament.
+------------------------------------------------------------------------------------------
+GAME FEATURES
+**QuickPlay mode --- our old style. You and one artificial person
+**Tournament mode ---- compete with three artificial persons (Wazobia)
+**Multiplayer mode ---- play with one of your friends ONLINE or OFFLINE. This mode supports two players only.
+***Defence ---- you can now defend special cards (turn it on from settings).
+****Continuous play ---- this feature is only available in Tournament mode. You can decide whether game continues even when you lose (Enable it from settings).
+And many more.
+****You can now configure your game the way you want
+You can turn on/off all or any of the special cards(pick two, pick three, general market, hold on, suspension, Whot). Just enter game settings and you are good to go.
+****Anthem can also be enabled/disabled to your choice.
+****Reset scores and coins when needed.
+****Turn on/off avatars(images) at your will
+****French language is added. It can automatically detect your device default language and switch between English/French language respectively.
+******Many more
+Naija Whot is a classic card game for all ages.
+Updated on
+Jul 30, 2026
+Available on
+Android,
+Windows
+Card
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Naija Whot",
+  "url": "https://play.google.com/store/apps/details/Naija_Whot?id=com.tonielro.naijawhotfree&hl=en",
+  "description": "Naija Whot is a classic card game for all ages.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/eXuIrvhE_vjvIsPMU7nzVhzp5SsVLpZzQ05s8xX-P8mw3985WSNGgKmyef0jQTMlumKaTO4FIYcuQXLO2q85Yqc",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Tonielrosoft",
+    "url": "https://tonielrosoft.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.538461685180664",
+    "ratingCount": "23421"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Naija Whot - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Naija Whot
+Tonielrosoft
+Contains ads
+In-app purchases
+4.5
+star
+23.4K reviews
+Rated for 3+
+info
+5M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Naija Whot is an exciting, classic and healthy card game for everyone. It is simple to play. Become a winner by finishing your cards before the beast in your palm. It keeps you comfort when it's needed and your mind focused when you are idle. The artificial intelligence keeps it challenging all the time.
+--------------------------------------------------------------------
+HOW TO PLAY
+To play Naija Whot is not difficult.
+We have two decks: Market and Played decks.
+When it is your turn, you must drop a card that is of same type(Image) or same number with the card played by your opponent. For instance, if your opponent drop Triangle11, you can either play a Triangle irrespective of the card number or you play any other card with same number(11). If you don't have any matching card to play, you must pick a card from the MARKET DECK.
+A player who first finish his cards is declared winner.
+Apart from the above scenario, we have some ACTION CARDS. The action cards are:
+1. Hold On = any card with number(1). It puts every player on hold thereby giving you opportunity to play again.
+2. Pick Two = any card with number(2). The next player can either defend the card or pick two cards from market deck.
+3. Pick Three = any card with number(5). The next player can either defend the card or pick three cards from market deck.
+4. General Market = any card with number(14). All the player except the player who dropped the card must pick one card from market deck.
+5. Suspension = any card with number(8). Suspends the next player.
+6. Crown = any card with number(20). Request any card of your choice.
+The above configuration is by default. They can be changed to any number of your choice.
+In TOURNAMENT, when game ends, cards are counted and a player with the highest number is eliminated.
+CRITICAL RULE
+Star card face value is always doubled during card counting. For examples:
+* Star1 = 2
+* Star2 = 4
+* Star3 = 6
+* Star4 = 8
+* Star5 = 10
+* Star7 = 14
+* Star8 = 16
+TIP: Avoid keeping STAR cards during tournament.
+------------------------------------------------------------------------------------------
+GAME FEATURES
+**QuickPlay mode --- our old style. You and one artificial person
+**Tournament mode ---- compete with three artificial persons (Wazobia)
+**Multiplayer mode ---- play with one of your friends ONLINE or OFFLINE. This mode supports two players only.
+***Defence ---- you can now defend special cards (turn it on from settings).
+****Continuous play ---- this feature is only available in Tournament mode. You can decide whether game continues even when you lose (Enable it from settings).
+And many more.
+****You can now configure your game the way you want
+You can turn on/off all or any of the special cards(pick two, pick three, general market, hold on, suspension, Whot). Just enter game settings and you are good to go.
+****Anthem can also be enabled/disabled to your choice.
+****Reset scores and coins when needed.
+****Turn on/off avatars(images) at your will
+****French language is added. It can automatically detect your device default language and switch between English/French language respectively.
+******Many more
+Naija Whot is a classic card game for all ages.
+Updated on
+Jul 30, 2026
+Available on
+Android,
+Windows
+Card
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+App info and performance and Device or other IDs
+No data collected
+Learn more
+about how developers declare collection
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+22.8K reviews
+5
+4
+3
+2
+1
+Mondilo Akhagbemhe
+more_vert
+Flag inappropriate
+Show review history
+September 8, 2026
+this game is nice, I would have rate it above 5 star if possible, but that multiple players need to be upgraded it's bad we can't reconnect to people we enjoy playing together for the first time please make it like a live chat where you can chose who to play with and be able to connect with past friends.
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Tonielrosoft
+September 12, 2026
+Thank you for your suggestions. We will recommend them to the related department.
+Musa Muhammad Faisal
+more_vert
+Flag inappropriate
+August 27, 2026
+I suggest the you should find a way of rewarding your top monthly players, or a kind of monthly league amongs the leaderboard toppers. That will surely attract millions of players and potential retention. You guys are benefiting from pop ads oo I am No. 10, heading to No. 1 on leaderboard
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Tonielrosoft
+August 30, 2026
+Thank you for your suggestions. We will recommend them to the related department.
+Divine Ekejiuba
+more_vert
+Flag inappropriate
+Show review history
+August 13, 2026
+This app is horrible, I opened the app today to play the game, I checked my wins that was in 300, it was in zero, All my hard work is gone 😭
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Multiplayer optimised: This version is not compatible with the previous versions. To be able to play Challenge, both players most be on same app version.
+Quick error fixes.
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+phone
+Phone number
++2348131249979
+email
+Support email
+support@tonielrosoft.com
+shield
+Privacy Policy
+About the developer
+TONIELROSOFT STUDIOS LTD
+support@tonielrosoft.com
+1st Avenue, Shinko Road
+Behind Jos City Park, Rayfield
+Jos
+Plateau
+Nigeria
++234 813 124 9979
+More by Tonielrosoft
+arrow_forward
+Naija Ludo
+Tonielrosoft
+3.5
+star
+Sliding Saga
+Tonielrosoft
+Naija Ludo Pro
+Tonielrosoft
+₹310.00
+Naija Snakes & Ladders
+Tonielrosoft
+3.4
+star
+HotSeat Quiz
+Tonielrosoft
+2.9
+star
+Naija Whot Pro
+Tonielrosoft
+3.9
+star
+Similar games
+arrow_forward
+Ludo Royale: Dice & Board Game
+DYNAMICNEXT
+3.8
+star
+Jungle Marble Blast
+KuYou Game
+3.0
+star
+Word Cross
+Neworld Games
+4.4
+star
+Dice Roll Casino
+Rørvassli
+₹210.00
+Jungle Marble Blast 3
+coolstudios
+3.9
+star
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,17 @@
+{
+  "name": "ball-sort-fusion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:engine": "node scripts/build-engine.cjs",
+    "build": "node scripts/build-web.mjs",
+    "test": "node --test tests/rules.test.mjs",
+    "serve": "python -m http.server 8123 --bind 127.0.0.1 --directory dist",
+    "test:browser": "node tests/browser-check.mjs",
+    "check": "npm test && npm run test:browser"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

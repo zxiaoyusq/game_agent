@@ -1,0 +1,345 @@
+# Google Play public snapshot: com.vitastudio.mahjong
+URL: https://play.google.com/store/apps/details?id=com.vitastudio.mahjong&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:59.260Z
+HTTP status: 200
+Raw HTML SHA-256: a2ab264a1a6e67edf83dedf52f71005f89879f288f5ed478a85154e410ba49e1
+Raw HTML: research/html-data/store-snapshots/com.vitastudio.mahjong.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Vita Mahjong
+Vita Studio.
+Contains ads
+In-app purchases
+4.6
+star
+6.22M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Vita Mahjong is an Exclusive Puzzle Game of Tile Matching. We are thrilled to present the mahjong game that combines innovation with classic gameplay. It offers large tiles and a user-friendly interface compatible with pads and phones. Our goal is to provide a relaxing yet mentally engaging gaming experience, particularly focused on older adults.
+At Vita Studio, we have always been dedicated to crafting mobile games designed for seniors that bring back relaxation, fun, and joy. Our repertoire includes popular titles like Vita Color, Vita Jigsaw, Vita Word Search, Vita Block, Vita Sudoku, and more.
+How to Play Vita Mahjong:
+Playing free Vita Mahjong game is simple. Just aim to clear all the tiles on the board by matching tiles with identical images. Tap or slide two matching tiles, and they will vanish from the board. Your objective is to match tiles that are not concealed or blocked. Once all tiles are eliminated, it signifies successful completion of a majong game!
+Exclusive Vita Mahjong Game Features:
+• Classic Mahjong : Staying true to the original gameplay, it presents traditional card tile sets and hundreds of boards.
+• Special Innovations: Besides the classic, our game introduces special tiles that add a fresh twist to the classic mahjong.
+• Large-Scale Design: Our mahjong games feature large, easily readable text sizes to alleviate the strain caused by small fonts.
+• Active Mind Levels: A special mode designed to sharpen your mind and improve memory abilities in the mahjong games.
+• Customizable Scoring: You can enjoy free classic mahjong games without a timer and any score pressure.
+• Super Combo: When you consecutively match mahjong tiles during the game, you will unlock special experiences.
+• Helpful Hints: Our game provides free useful props, such as hints, undo, and shuffle, to help players overcome challenging puzzles.
+• Daily Challenge: Take on daily practice to collect trophies and improve your classic mahjong solitaire game skills.
+• Offline Mode: Full offline support lets you enjoy Vita Mahjong anytime, anywhere, without needing internet.
+• Multi-device: Optimized for pad and phone, ensuring everyone can enjoy the classic mahjong game.
+Vita Mahjong is a versatile game made for those who love tile matching games. Download Vita Mahjong and start your mahjong dynasty now!
+Note: This is a puzzle game in the style of Mahjong Solitaire. It does not contain the rules of traditional Mahjong or other types of solitaire or card games. The term “Mahjong” here refers solely to the visual style of the tiles.
+Contact us : support@vitastudio.ai
+For more information, you can:
+Join our Facebook group: https://www.facebook.com/groups/vitastudio
+Visit our official website: www.vitamahjong.com
+Relaxing Vita Mahjong: Classic Tile Matching and Offline Puzzle Games!
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+#7 top free board
+Puzzle
+Pair matching
+Mahjong solitaire
+Casual
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Vita Mahjong",
+  "url": "https://play.google.com/store/apps/details/Vita_Mahjong?id=com.vitastudio.mahjong&hl=en",
+  "description": "Relaxing Vita Mahjong: Classic Tile Matching and Offline Puzzle Games!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/ioTu_sdNBDPnNsW2I-fHJgxsfOVmQr7wbtJOELatIcpPdToqSnmxsYTa3U7RdXrE1QSp1RBBscN6aNYSnkc",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Vita Studio.",
+    "url": "https://www.vitastudio.ai"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.593709945678711",
+    "ratingCount": "6221577"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Vita Mahjong - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Vita Mahjong
+Vita Studio.
+Contains ads
+In-app purchases
+4.6
+star
+6.22M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Vita Mahjong is an Exclusive Puzzle Game of Tile Matching. We are thrilled to present the mahjong game that combines innovation with classic gameplay. It offers large tiles and a user-friendly interface compatible with pads and phones. Our goal is to provide a relaxing yet mentally engaging gaming experience, particularly focused on older adults.
+At Vita Studio, we have always been dedicated to crafting mobile games designed for seniors that bring back relaxation, fun, and joy. Our repertoire includes popular titles like Vita Color, Vita Jigsaw, Vita Word Search, Vita Block, Vita Sudoku, and more.
+How to Play Vita Mahjong:
+Playing free Vita Mahjong game is simple. Just aim to clear all the tiles on the board by matching tiles with identical images. Tap or slide two matching tiles, and they will vanish from the board. Your objective is to match tiles that are not concealed or blocked. Once all tiles are eliminated, it signifies successful completion of a majong game!
+Exclusive Vita Mahjong Game Features:
+• Classic Mahjong : Staying true to the original gameplay, it presents traditional card tile sets and hundreds of boards.
+• Special Innovations: Besides the classic, our game introduces special tiles that add a fresh twist to the classic mahjong.
+• Large-Scale Design: Our mahjong games feature large, easily readable text sizes to alleviate the strain caused by small fonts.
+• Active Mind Levels: A special mode designed to sharpen your mind and improve memory abilities in the mahjong games.
+• Customizable Scoring: You can enjoy free classic mahjong games without a timer and any score pressure.
+• Super Combo: When you consecutively match mahjong tiles during the game, you will unlock special experiences.
+• Helpful Hints: Our game provides free useful props, such as hints, undo, and shuffle, to help players overcome challenging puzzles.
+• Daily Challenge: Take on daily practice to collect trophies and improve your classic mahjong solitaire game skills.
+• Offline Mode: Full offline support lets you enjoy Vita Mahjong anytime, anywhere, without needing internet.
+• Multi-device: Optimized for pad and phone, ensuring everyone can enjoy the classic mahjong game.
+Vita Mahjong is a versatile game made for those who love tile matching games. Download Vita Mahjong and start your mahjong dynasty now!
+Note: This is a puzzle game in the style of Mahjong Solitaire. It does not contain the rules of traditional Mahjong or other types of solitaire or card games. The term “Mahjong” here refers solely to the visual style of the tiles.
+Contact us : support@vitastudio.ai
+For more information, you can:
+Join our Facebook group: https://www.facebook.com/groups/vitastudio
+Visit our official website: www.vitamahjong.com
+Relaxing Vita Mahjong: Classic Tile Matching and Offline Puzzle Games!
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+#7 top free board
+Puzzle
+Pair matching
+Mahjong solitaire
+Casual
+Single player
+Stylized
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 4 others
+This app may collect these data types
+Location, Personal info and 4 others
+Data is encrypted in transit
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Desktop
+tablet_android
+Tablet
+4.6
+5.93M reviews
+5
+4
+3
+2
+1
+Kelly W.
+more_vert
+Flag inappropriate
+April 20, 2026
+I love this game, but hate, hate, HATE (!!!!!) the repetitive, annoying ads. I see that an ad-free version is available, but it doesn't give enough info about it... Is that a one-time purchase for $5.99 USD? Or, is it a recurring charge? More transparency and upfront info is needed to make a decision to pay for it or not. I've been burned by deceptive advertising on apps before, and found out that it was non-refundable. Tell us the truth upfront, please.
+57 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Chris Fratello
+more_vert
+Flag inappropriate
+Show review history
+May 4, 2026
+I have completed over 380 levels in this mahjong tile game. I like the pleasant water sounds with birds but the ads in this game are over the top obnoxious, repetitive and LONG. I have to watch a long ad after completing each level, for some other stupid game I have no interest in, then I also have to play its dumb sample for ANOTHER 5-10 minutes to advance to the next level. then to get the next level to play, I have frequently had to repeat the same ads for each 5-8 levels. I'm uninstalling.
+48 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Charlie R
+more_vert
+Flag inappropriate
+May 4, 2026
+A real one! I think I had to download this for a play-for-cash apps, since deleted, but I find myself returning to this one time and time again. There are ads but they're not terrible, one every few levels and if you want shuffles, hints, or undos. I like the basic options to customize the board and tiles but wish there were just a few more gameplay options like removing the 4 tile hand, zooming in, or preventing hints altogether. Just small stuff, it's perfect otherwise.
+44 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+phone
+Phone number
++6593590734
+email
+Support email
+support@vitastudio.ai
+shield
+Privacy Policy
+About the developer
+VITA GAMES STUDIO PTE. LTD.
+support@vitastudio.ai
+400 ORCHARD ROAD
+#11-08 ORCHARD TOWERS
+Singapore 238875
++65 9359 0734
+More by Vita Studio.
+arrow_forward
+Vita Mahjong Wood
+Vita Studio.
+4.4
+star
+Vita Solitaire for Seniors
+Vita Studio.
+4.8
+star
+Vita Tile
+Vita Studio.
+4.5
+star
+Vita Jigsaw for Seniors
+Vita Studio.
+4.2
+star
+Vita Sort
+Vita Studio.
+4.8
+star
+Wood Block Puzzle Games
+Vita Studio.
+3.9
+star
+Similar games
+arrow_forward
+Mahjong Blast: Puzzle Match
+Nebula Studio
+4.6
+star
+Mahjong Scapes®
+PARTYPOP PTE. LTD.
+4.5
+star
+Tile Explorer - Triple Match
+Oakever Games
+4.5
+star
+Mahjong Club - Solitaire Game
+GamoVation
+4.4
+star
+Mahjong Triple - Match 3 Tile
+GamoVation
+4.4
+star
+Block Blast!
+HungryStudio
+4.6
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,344 @@
+# Google Play public snapshot: com.amanotes.beathopper
+URL: https://play.google.com/store/apps/details?id=com.amanotes.beathopper&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:41.733Z
+HTTP status: 200
+Raw HTML SHA-256: 1abbc35b8ed1ccbc89fdfc90e76a2672042ec99631bbe3f305c6bd385ff9910f
+Raw HTML: research/html-data/store-snapshots/com.amanotes.beathopper.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+Contains ads
+In-app purchases
+4.3
+star
+3.36M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Tiles Hop EDM Rush Music Game is here to revolutionize your experience with music games like Ball Blast and Ball Sort. Combining the thrill of ball games with the rhythm of song games such as bally sports and beatstar, this game will have you hopping to the beat in no time. Dive into a world of vibrant music tiles, magic tiles, and captivating piano songs. Just like ball blast, ball sort, and other games, Tiles Hop will keep you entertained for hours.
+An Unmatched Musical Adventure
+Tiles Hop EDM Rush Music Game isn’t just another entry in the realm of music games; it's a rhythmic adventure that will keep you on your toes. As you guide the ball across the music tiles, you'll be treated to an array of popular piano songs and high-energy EDM tracks. Each level is meticulously crafted to match the beat, ensuring a seamless blend of ball games like ball blast and song games like beatstar, making it as engaging as ball sort and bally sports.
+Key Features
+Rhythmic Gameplay: Experience the perfect harmony of music tiles and ball games, similar to ball blast and ball sort. Every hop is synchronized with the beat of the piano song or EDM track, creating a uniquely engaging experience reminiscent of beatstar and bally sports.
+Magic Tiles Effects: Watch as the magic tiles change colors and patterns with every beat, adding an extra layer of excitement to the game. The color switch cube graphics are a feast for the eyes, similar to the vibrant visuals in Ball Blast and Ball Sort.
+Varied Song Library: From classical piano songs to the latest EDM hits, our extensive song library has something for everyone. Each song game offers a new challenge and a fresh experience, just like the evolving levels in Ball Blast and Beatstar.
+Endless Hopping: Test your skills in endless mode. The longer you hop on the music tiles, the faster and more challenging the game becomes, just like how Ball Sort and Bally Sports up the stakes as you progress.
+Simple yet Addictive: Easy to learn, hard to master. Just tap and hold to drag the ball across the tiles. Perfect for fans of ball games like Ball Blast and song games like Beatstar looking for a new challenge.
+Tiles Hop EDM Rush Music Games stands out among music games due to its innovative integration of music tiles and ball games mechanics. The seamless transition between piano songs and EDM tracks keeps the gameplay fresh and exciting, just like the dynamic challenges in Ball Blast and Bally Sports. The magic tiles effects enhance the visual experience, making each level a delight for the senses, much like the colorful and thrilling world of Ball Sort and Beatstar.
+Compete and Share
+Take the excitement to the next level by competing with friends and players worldwide. Share your high scores and challenge others to beat your record, just as you would in competitive games like Ball Blast, Ball Sort, Bally Sports, and Beatstar. With regular updates bringing new songs, music tiles, and magic tiles effects, Tiles Hop EDM Rush Music Games ensures you’ll never run out of fun.
+Ready to embark on an unparalleled musical adventure? Download Tiles Hop EDM Rush Music Games now and immerse yourself in the fusion of ball games like Ball Blast and Ball Sort with song games like Beatstar and Bally Sports. Let the rhythm guide you across the music tiles, experience the magic tiles effects, and be mesmerized by the color switch cube graphics. Whether you’re a casual player or a die-hard fan of music games, Tiles Hop EDM Rush Music Games promises endless entertainment, just like the best moments in Ball Blast and Bally Sports.
+Don’t miss out on the most addictive music game. Download Tiles Hop EDM Rush Music Games, conquer the music tiles, and enjoy the ultimate fusion of ball games like Ball Blast and song games like Beatstar. Get ready to be captivated by the piano songs, magic tiles, and color switch cube effects in this thrilling musical adventure, rivaling the excitement of Ball Sort and Bally Sports.
+Jump on magic tiles and piano song & experience the hottest of music games!
+Updated on
+Sep 21, 2026
+Available on
+Android,
+Windows*
+#7 top free music
+Music
+Rhythm-action
+Arcade
+Single player
+Abstract
+Miscellaneous
+Ball
+Intense
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Tiles Hop EDM Rush Music Game",
+  "url": "https://play.google.com/store/apps/details/Tiles_Hop_EDM_Rush_Music_Game?id=com.amanotes.beathopper&hl=en",
+  "description": "Jump on magic tiles and piano song & experience the hottest of music games!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_MUSIC",
+  "image": "https://play-lh.googleusercontent.com/a2X5po-_EeM13XaXmMTsoZJwMYzt3nSe-2pxRhG3SXmLzNep-gzBvWyF0jvrm4RZPFcFP34H3OBjL17_tR6DBNw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "AMANOTES PTE. LTD.",
+    "url": "http://amanotes.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.284588813781738",
+    "ratingCount": "3364099"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Tiles Hop EDM Rush Music Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+Contains ads
+In-app purchases
+4.3
+star
+3.36M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Tiles Hop EDM Rush Music Game is here to revolutionize your experience with music games like Ball Blast and Ball Sort. Combining the thrill of ball games with the rhythm of song games such as bally sports and beatstar, this game will have you hopping to the beat in no time. Dive into a world of vibrant music tiles, magic tiles, and captivating piano songs. Just like ball blast, ball sort, and other games, Tiles Hop will keep you entertained for hours.
+An Unmatched Musical Adventure
+Tiles Hop EDM Rush Music Game isn’t just another entry in the realm of music games; it's a rhythmic adventure that will keep you on your toes. As you guide the ball across the music tiles, you'll be treated to an array of popular piano songs and high-energy EDM tracks. Each level is meticulously crafted to match the beat, ensuring a seamless blend of ball games like ball blast and song games like beatstar, making it as engaging as ball sort and bally sports.
+Key Features
+Rhythmic Gameplay: Experience the perfect harmony of music tiles and ball games, similar to ball blast and ball sort. Every hop is synchronized with the beat of the piano song or EDM track, creating a uniquely engaging experience reminiscent of beatstar and bally sports.
+Magic Tiles Effects: Watch as the magic tiles change colors and patterns with every beat, adding an extra layer of excitement to the game. The color switch cube graphics are a feast for the eyes, similar to the vibrant visuals in Ball Blast and Ball Sort.
+Varied Song Library: From classical piano songs to the latest EDM hits, our extensive song library has something for everyone. Each song game offers a new challenge and a fresh experience, just like the evolving levels in Ball Blast and Beatstar.
+Endless Hopping: Test your skills in endless mode. The longer you hop on the music tiles, the faster and more challenging the game becomes, just like how Ball Sort and Bally Sports up the stakes as you progress.
+Simple yet Addictive: Easy to learn, hard to master. Just tap and hold to drag the ball across the tiles. Perfect for fans of ball games like Ball Blast and song games like Beatstar looking for a new challenge.
+Tiles Hop EDM Rush Music Games stands out among music games due to its innovative integration of music tiles and ball games mechanics. The seamless transition between piano songs and EDM tracks keeps the gameplay fresh and exciting, just like the dynamic challenges in Ball Blast and Bally Sports. The magic tiles effects enhance the visual experience, making each level a delight for the senses, much like the colorful and thrilling world of Ball Sort and Beatstar.
+Compete and Share
+Take the excitement to the next level by competing with friends and players worldwide. Share your high scores and challenge others to beat your record, just as you would in competitive games like Ball Blast, Ball Sort, Bally Sports, and Beatstar. With regular updates bringing new songs, music tiles, and magic tiles effects, Tiles Hop EDM Rush Music Games ensures you’ll never run out of fun.
+Ready to embark on an unparalleled musical adventure? Download Tiles Hop EDM Rush Music Games now and immerse yourself in the fusion of ball games like Ball Blast and Ball Sort with song games like Beatstar and Bally Sports. Let the rhythm guide you across the music tiles, experience the magic tiles effects, and be mesmerized by the color switch cube graphics. Whether you’re a casual player or a die-hard fan of music games, Tiles Hop EDM Rush Music Games promises endless entertainment, just like the best moments in Ball Blast and Bally Sports.
+Don’t miss out on the most addictive music game. Download Tiles Hop EDM Rush Music Games, conquer the music tiles, and enjoy the ultimate fusion of ball games like Ball Blast and song games like Beatstar. Get ready to be captivated by the piano songs, magic tiles, and color switch cube effects in this thrilling musical adventure, rivaling the excitement of Ball Sort and Bally Sports.
+Jump on magic tiles and piano song & experience the hottest of music games!
+Updated on
+Sep 21, 2026
+Available on
+Android,
+Windows*
+#7 top free music
+Music
+Rhythm-action
+Arcade
+Single player
+Abstract
+Miscellaneous
+Ball
+Intense
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 4 others
+This app may collect these data types
+Personal info, Financial info and 3 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Desktop
+tablet_android
+Tablet
+4.3
+2.92M reviews
+5
+4
+3
+2
+1
+Cyber Pixel
+more_vert
+Flag inappropriate
+December 25, 2020
+Overall nice game. Love the option where you can use your own song as the music. I am giving 3 stars only because of one reason: in endless mode, the pitch of the song gets higher as the level progresses and it speeds up. I would like it if the outch remained same but the speed would continue to change. That is the most logical feature. Other than that 5 stars.
+25,600 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Lalremmawii
+more_vert
+Flag inappropriate
+Show review history
+October 27, 2020
+I like this app and the songs are really many, but i have a few suggestions. First of all it would be better if they put their real singing voice for the artists in the songs.The second one, there are some missing songs i like it would be an horner to add a little more songs. So that's my suggestions. Now the thing i like (not the ONLY thing) is that the one that says we can play our own songs. I really like that we can play different song. But other than those suggestion, the game is great!
+23,685 people found this review helpful
+Did you find this helpful?
+Yes
+No
+A Google user
+more_vert
+Flag inappropriate
+Show review history
+October 25, 2019
+I like this game very much, but the thing is, once you have played this game for long, you start wanting more fast songs, which are not many in the game. Also, the option to play your own songs, creates very slow levels which is boring, please include an option to select the speed of the song, so that we can have faster levels for our favourite songs.
+17,524 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+We update regularly to improve the game quality
+🌟 Improve visual and effect for some elements in-game
+🌟 Searching for songs is easier
+🌟 Some random players will receive new features
+❤️ Enjoy the game and rate for us 👍
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+pama.support@amanotes.com
+shield
+Privacy Policy
+About the developer
+AMANOTES PTE. LTD.
+publishing@amanotes.com
+168 Robinson Road
+#20-01 Capital Tower
+Singapore 068912
++84 817 869 005
+More by AMANOTES PTE. LTD.
+arrow_forward
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+Dancing Road: Color Ball Run!
+AMANOTES PTE. LTD.
+4.4
+star
+Duet Tiles - Rhythm Music Game
+AMANOTES PTE. LTD.
+3.6
+star
+Duet Cats: Music & Meow Game
+AMANOTES PTE. LTD.
+4.4
+star
+Duet Friends: Cute Music Games
+AMANOTES PTE. LTD.
+4.2
+star
+Music Night Battle - Full Mods
+AMANOTES PTE. LTD.
+4.4
+star
+Similar games
+arrow_forward
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Dancing Cats - Cute Music Game
+Cobby Labs
+4.3
+star
+Rollance : Adventure Balls
+CASUAL AZUR GAMES
+3.4
+star
+Cat Tiles: Cute Piano Game
+WingsMob
+4.2
+star
+Duet Cats: Music & Meow Game
+AMANOTES PTE. LTD.
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

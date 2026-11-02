@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vision Device Testing"
+  short_description: "Run evidence-based Android visual device tests"
+  default_prompt: "Use $game-reverse-engineering to run and accept a screenshot-driven Android device test."

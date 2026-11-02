@@ -1,0 +1,334 @@
+# Google Play public snapshot: com.yalla.yallagames
+URL: https://play.google.com/store/apps/details?id=com.yalla.yallagames&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:07.495Z
+HTTP status: 200
+Raw HTML SHA-256: 5c1e8d53f433a1200c5edbefc7989a916e45df95fb915d74883883fb842e21d6
+Raw HTML: research/html-data/store-snapshots/com.yalla.yallagames.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Yalla Ludo - Ludo&Jackaroo
+Aviva Sun
+Contains ads
+In-app purchases
+3.7
+star
+1.28M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Yalla Ludo is a vibrant app that fuses classic board games—Ludo, Jackaroo, and Domino—with real-time voice chat! Whether you're in the mood for gameplay or hoping to connect with new friends in a lively voice chat room, Yalla Ludo delivers a truly immersive experience.
+😃 [Voice Chat with Friends]
+Enjoy real-time voice chat that lets you share tips and tricks with fellow gamers anytime, anywhere. Make new friends while having fun! Add personality to your gameplay with expressive voice chat.
+🎲 [Various Game Modes]
+Ludo: Choose between 2&4 Players mode and Team mode. Each mode has 4 gameplays: Classic, Master, Quick, and Arrow. You can also use Magic tools to make the game more fun!
+Domino: Play in 2&4 Players mode, each featuring two gameplays: Draw Game and All Five.
+Others: More new games are waiting for you.
+🎮 [Brand New Jackaroo]
+Get ready for fast-paced Jackaroo gameplay! Pick from a variety of game modes (Basic, Complex, and Quick), and team up with friends to claim victory. Make your moves even more fun by expressing yourself with lively game stickers!
+🎙️ [Voice Chat Room]
+Join the global public chat room, where you can connect with people from all over the world. Chat freely, share ideas, and send cute gifts! Broaden your network of friends and enjoy a relaxed time.
+🎁 [Generous Rewards Await You]
+Yalla Ludo offers multiple daily activities. Complete game or chat room tasks to earn various rewards (such as golds, diamonds, skin fragments, and gifts, etc). With daily tasks and arrival chests, you'll always find something exciting!
+Yalla Ludo connects you with others, so let's enjoy the joyful moments in Yalla Ludo!
+Subscribe to Yalla Ludo VIP to enjoy the extra advanced features:
+Collect free daily golds, diamonds, and VIP daily benefits.
+Privileged game room: create your room in the VIP room, invite others to play together.
+-----------------------------------
+Ludo VIP includes two types: Knight and Baron. The price for Knight is USD 11.99/month and the price for Baron is USD 39.99/month. Prices are in U.S. dollars, may vary in countries other than the U.S. and are subject to change without notice.
+No cancellation of the current subscription is allowed during the active subscription period. You could still have great fun in Yalla Ludo without becoming a Yalla Ludo VIP.
+We will continue to give our best shot to provide you with more fun games which will enrich your daily life.
+Privacy Policy: https://www.yallaludo.com/term/EN/TermOfService.html
+Terms of Service: https://www.yallaludo.com/term/EN/TermOfService.html#TermsOfService
+Game On, Chat On!
+Updated on
+Aug 25, 2026
+#2 top grossing board
+Board
+Abstract strategy
+Dominos
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Dice
+Miscellaneous
+Board games
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Yalla Ludo - Ludo&Jackaroo",
+  "url": "https://play.google.com/store/apps/details/Yalla_Ludo_Ludo_Jackaroo?id=com.yalla.yallagames&hl=en",
+  "description": "Game On, Chat On!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/_B8WTUQVNhy4frnK0ekTvxNUpYDL-HYfeJvM8jo7Zw58N-RoAWD2gC4ksVp5KDNdtiYDGBMo3DVBo8bcBkxBLw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Aviva Sun",
+    "url": "https://www.yallaludo.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.680177927017212",
+    "ratingCount": "1283450"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Yalla Ludo - Ludo&Jackaroo - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Yalla Ludo - Ludo&Jackaroo
+Aviva Sun
+Contains ads
+In-app purchases
+3.7
+star
+1.28M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact
+Learn more
+About this game
+arrow_forward
+Yalla Ludo is a vibrant app that fuses classic board games—Ludo, Jackaroo, and Domino—with real-time voice chat! Whether you're in the mood for gameplay or hoping to connect with new friends in a lively voice chat room, Yalla Ludo delivers a truly immersive experience.
+😃 [Voice Chat with Friends]
+Enjoy real-time voice chat that lets you share tips and tricks with fellow gamers anytime, anywhere. Make new friends while having fun! Add personality to your gameplay with expressive voice chat.
+🎲 [Various Game Modes]
+Ludo: Choose between 2&4 Players mode and Team mode. Each mode has 4 gameplays: Classic, Master, Quick, and Arrow. You can also use Magic tools to make the game more fun!
+Domino: Play in 2&4 Players mode, each featuring two gameplays: Draw Game and All Five.
+Others: More new games are waiting for you.
+🎮 [Brand New Jackaroo]
+Get ready for fast-paced Jackaroo gameplay! Pick from a variety of game modes (Basic, Complex, and Quick), and team up with friends to claim victory. Make your moves even more fun by expressing yourself with lively game stickers!
+🎙️ [Voice Chat Room]
+Join the global public chat room, where you can connect with people from all over the world. Chat freely, share ideas, and send cute gifts! Broaden your network of friends and enjoy a relaxed time.
+🎁 [Generous Rewards Await You]
+Yalla Ludo offers multiple daily activities. Complete game or chat room tasks to earn various rewards (such as golds, diamonds, skin fragments, and gifts, etc). With daily tasks and arrival chests, you'll always find something exciting!
+Yalla Ludo connects you with others, so let's enjoy the joyful moments in Yalla Ludo!
+Subscribe to Yalla Ludo VIP to enjoy the extra advanced features:
+Collect free daily golds, diamonds, and VIP daily benefits.
+Privileged game room: create your room in the VIP room, invite others to play together.
+-----------------------------------
+Ludo VIP includes two types: Knight and Baron. The price for Knight is USD 11.99/month and the price for Baron is USD 39.99/month. Prices are in U.S. dollars, may vary in countries other than the U.S. and are subject to change without notice.
+No cancellation of the current subscription is allowed during the active subscription period. You could still have great fun in Yalla Ludo without becoming a Yalla Ludo VIP.
+We will continue to give our best shot to provide you with more fun games which will enrich your daily life.
+Privacy Policy: https://www.yallaludo.com/term/EN/TermOfService.html
+Terms of Service: https://www.yallaludo.com/term/EN/TermOfService.html#TermsOfService
+Game On, Chat On!
+Updated on
+Aug 25, 2026
+#2 top grossing board
+Board
+Abstract strategy
+Dominos
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Dice
+Miscellaneous
+Board games
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Personal info, Photos and videos and 4 others
+This app may collect these data types
+Personal info, Financial info and 4 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+3.7
+1.26M reviews
+5
+4
+3
+2
+1
+Mohammed Nadeem
+more_vert
+Flag inappropriate
+July 17, 2026
+I've noticed a major bug in Local Friends Mode that needs to be fixed. After a player wins, the bonus winning turn that used to appear is no longer showing. In addition, once a player has already won, they continue getting turns, which is incorrect. Even after all players have finished, the match doesn't end and the game gets stuck. This issue is happening consistently when my friends and I play locally. Please investigate and fix this bug as soon as possible.
+19 people found this review helpful
+Did you find this helpful?
+Yes
+No
+A Google user
+more_vert
+Flag inappropriate
+Show review history
+April 2, 2020
+I have been playing Yalla ludo for some time now, I really enjoy the game. But my audio feature isn't working. I can't hear my friends and also they too can't hear me. I tried every possible way to fix this but nothing is happening. I checked apps setting for audio permission, I have allowed all the permission but still it's not working. I can hear my sound but can't hear friends. I uninstalled it twice stil it's not working. Please help. Looking forward to hearing from you soon
+7,010 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Aviva Sun
+April 3, 2020
+Dear user, We are very sorry for the issue caused by server instability, and there will be compensation for your loss .Hope you have nice day in Yalla Ludo, thanks!
+Bhavya Chugh
+more_vert
+Flag inappropriate
+June 11, 2020
+The game is quite amazing but i don't like the changes which were made after the recent update. The way a player can double their tokens and can only move when an even no. comes... It creates a lot of mess and frustration among the other players as they can't move their tokens and are stuck behind that doubled token unless they get a rocket. This should be removed and the previous settings must be restored where after doubling the tokens, they can't be captured and move freely.
+27,102 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Aviva Sun
+June 12, 2020
+Hi Bhavya, this is the established rules in Yalla ludo, which is not updated in the latest version. Yet we'll deliver your feedback to the relevant department.
+See all reviews
+What’s new
+Updates:
+1.The brand-new Collection Album is here! Explore this season's theme, actively collect cards, and complete the full set to get generous rewards!
+2.The Birthday Party feature is coming soon! Celebrate in an exclusive birthday-themed room, invite your friends, and create unforgettable moments together!
+There's more content for you to explore and enjoy!
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+yallaludo@yalla.com
+shield
+Privacy Policy
+About the developer
+YALLA TECHNOLOGY FZ-LLC
+yallaludo@yalla.com
+Premise No: 226 & 229, Building 16, Dubai Internet City
+إمارة دبيّ
+United Arab Emirates
++971 52 518 6416
+Similar games
+arrow_forward
+Ludo STAR
+Gameberry Labs
+4.4
+star
+Ludo King®
+Gametion
+4.0
+star
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+4.0
+star
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Ludo Super: Fun Board Game
+Comfun
+3.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

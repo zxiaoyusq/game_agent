@@ -1,0 +1,34 @@
+{
+  "source": "编排与独立审查Agent，非测试阶段模型自己执行",
+  "reports": [
+    {
+      "path": "docs/agent-production/game-review-evidence.json",
+      "sha256": "d0f551b7466f89a52f106616c895a73317d8253a61b0dad9cab0b816bbcd07a1"
+    },
+    {
+      "path": "docs/agent-production/game-review-final-boundaries.json",
+      "sha256": "95d31edec2d3a75138f9a435a3870d5aa7bc5db470fe6e5a66b19740d68876df"
+    },
+    {
+      "path": "docs/agent-production/game-boundary-review.json",
+      "sha256": "425d60a9f2037e1937c1df96260a7afab2e39c05583446a1ac0b7b6e672dd884"
+    },
+    {
+      "path": "docs/agent-production/content-review.json",
+      "sha256": "d67727ec6a7e0d867fd72693aef5fdf6d8e4b9090a47853a0977a894f9e3a4e9"
+    }
+  ],
+  "verified": [
+    "原五项问题与点击区/截断历史回归已独立验证",
+    "动画期间10入口锁定；真实通关前6经典，2/3/5/6主题阈值与重复奖励验证；三模式末关实际通关后回首关",
+    "完成局主题重绘与过期结算覆盖问题已在最终main代码独立复验",
+    "真实Worker结果延迟后移动/撤销/加管/重开/切模式丢弃旧结果，6例通过",
+    "运行期存储写失败持续反馈、设置与主界面可见、成功写入才清除，4例通过",
+    "132个ID唯一、结构与颜色总量正常；前20经典不因仅换色或调管而等价；20迷雾复用经典棋盘并改变可见性"
+  ],
+  "not_covered": [
+    "两个后台冻结恢复用例因无头Chromium无法证明真正冻结，未标通过",
+    "真人迷雾体验、教学效果、主观音频质量、实体设备和其它浏览器未用自动化替代"
+  ],
+  "main_sha256": "2e0e0df11a131d124c624d56d210765afacbb4bd3de20e52cb025186d78ccc8f"
+}

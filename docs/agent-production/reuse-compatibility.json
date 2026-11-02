@@ -1,0 +1,350 @@
+{
+  "checked_at": "2026-10-18T00:10:36.435567+00:00",
+  "passed": true,
+  "project_id": "0a850241a9fc4bee925af55617fead85",
+  "workspace": "games/ball-sort-fusion",
+  "stages": [
+    {
+      "stage": "prototype",
+      "status": "completed",
+      "run_id": "9816ef2fbc0742b9977df94b0e31dad6",
+      "model": "gpt-6.1-sol",
+      "attempt": 1,
+      "event_count": 84,
+      "model_calls": 10,
+      "artifacts": 23,
+      "artifact_provenance": {
+        "workspace_observation": 23
+      },
+      "skills": [
+        {
+          "path": "cocos-game-production/SKILL.md",
+          "sha256": "408fe7c51e071a5397c82a03c75aa2e3b2134d442adb623bb41e8e0ac92e7fff"
+        }
+      ],
+      "report_write_evidence": {
+        "successful_tool_result": true,
+        "written_sha256": null,
+        "matches_archived_content": false
+      },
+      "validations": []
+    },
+    {
+      "stage": "art",
+      "status": "completed",
+      "run_id": "84b18017296a472db5b0a04472598359",
+      "model": "gpt-6.1-sol",
+      "attempt": 1,
+      "event_count": 60,
+      "model_calls": 6,
+      "artifacts": 30,
+      "artifact_provenance": {
+        "agent_edit": 2,
+        "reference_asset": 28
+      },
+      "skills": [
+        {
+          "path": "cocos-game-production/SKILL.md",
+          "sha256": "a7e9d7f7e4c21e2bf7a53f2190f8cd29ce04b2887b83c2c3bd59e2b4276c690f"
+        },
+        {
+          "path": "ai-art-automation/SKILL.md",
+          "sha256": "2fa113e9cf9f9c09856a4df5f79c7fb0122bc95e3239a45a8c32b43db40dd2b8"
+        }
+      ],
+      "report_write_evidence": {
+        "successful_tool_result": true,
+        "written_sha256": "7774ddb6d7eda71a3092fabed4cd912b0e1c7baeae7eae788c3f39614840fa65",
+        "matches_archived_content": true
+      },
+      "validations": []
+    },
+    {
+      "stage": "code",
+      "status": "completed",
+      "run_id": "5be7ad3a11084952a3af39028c2d1f13",
+      "model": "gpt-6.1-sol",
+      "attempt": 2,
+      "event_count": 253,
+      "model_calls": 41,
+      "artifacts": 9,
+      "artifact_provenance": {
+        "agent_edit": 3,
+        "validation_output": 5,
+        "workspace_observation": 1
+      },
+      "skills": [
+        {
+          "path": "cocos-game-production/SKILL.md",
+          "sha256": "96138c429a69ea0a3b8e8d820d79b3664fa4241fc63754092a1ac3acc64a16eb"
+        },
+        {
+          "path": "cocos-game-production/SKILL.md",
+          "sha256": "96138c429a69ea0a3b8e8d820d79b3664fa4241fc63754092a1ac3acc64a16eb"
+        },
+        {
+          "path": "cocos-game-production/SKILL.md",
+          "sha256": "f96e60695fd43331a71d80ad4f71cfd6abe74ca32f8b8f8f9073c2f5ae90772c"
+        }
+      ],
+      "report_write_evidence": {
+        "successful_tool_result": true,
+        "written_sha256": "1f1a4ea33b5ac5c5fe7db981d9208804ccc77f222161088d24a3c2d4f4a6fe2e",
+        "matches_archived_content": true
+      },
+      "validations": [
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "b72350ba11feede1dc858c82139829a48338bbbc2afc9a1c081ce8e345ea1b9a",
+          "source_after": "b72350ba11feede1dc858c82139829a48338bbbc2afc9a1c081ce8e345ea1b9a",
+          "changed_paths": []
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "b72350ba11feede1dc858c82139829a48338bbbc2afc9a1c081ce8e345ea1b9a",
+          "source_after": "b72350ba11feede1dc858c82139829a48338bbbc2afc9a1c081ce8e345ea1b9a",
+          "changed_paths": []
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 1,
+          "attempt": 1,
+          "source_before": "b72350ba11feede1dc858c82139829a48338bbbc2afc9a1c081ce8e345ea1b9a",
+          "source_after": "b72350ba11feede1dc858c82139829a48338bbbc2afc9a1c081ce8e345ea1b9a",
+          "changed_paths": [
+            "evidence/code-settings-targets-390.png",
+            "evidence/code-memory-regression.json"
+          ]
+        },
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "251c7cbefb93909894b85388a037cc515cb07e3bb2b985795d0fe0d548e36501",
+          "source_after": "251c7cbefb93909894b85388a037cc515cb07e3bb2b985795d0fe0d548e36501",
+          "changed_paths": []
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "251c7cbefb93909894b85388a037cc515cb07e3bb2b985795d0fe0d548e36501",
+          "source_after": "251c7cbefb93909894b85388a037cc515cb07e3bb2b985795d0fe0d548e36501",
+          "changed_paths": []
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 1,
+          "attempt": 1,
+          "source_before": "251c7cbefb93909894b85388a037cc515cb07e3bb2b985795d0fe0d548e36501",
+          "source_after": "251c7cbefb93909894b85388a037cc515cb07e3bb2b985795d0fe0d548e36501",
+          "changed_paths": [
+            "evidence/code-settings-targets-390.png",
+            "evidence/mobile-eight.png",
+            "evidence/code-targets-360.png",
+            "evidence/code-memory-regression.json",
+            "evidence/mobile.png",
+            "evidence/code-targets-390.png"
+          ]
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 1,
+          "attempt": 1,
+          "source_before": "e8cbe453e701f91bfe1977be95d432133584312a6b2067cba4c8e7ee2c1d55b4",
+          "source_after": "e8cbe453e701f91bfe1977be95d432133584312a6b2067cba4c8e7ee2c1d55b4",
+          "changed_paths": [
+            "evidence/mobile-eight.png",
+            "evidence/code-targets-360.png",
+            "evidence/code-memory-regression.json",
+            "evidence/mobile.png",
+            "evidence/code-targets-390.png"
+          ]
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 1,
+          "attempt": 1,
+          "source_before": "9f5647ed89cc8a9ea727387b35d3ccc5074047bb595c67946b097f11dc02c8fd",
+          "source_after": "9f5647ed89cc8a9ea727387b35d3ccc5074047bb595c67946b097f11dc02c8fd",
+          "changed_paths": [
+            "evidence/mobile-eight.png",
+            "evidence/code-targets-360.png",
+            "evidence/code-memory-regression.json",
+            "evidence/mobile.png",
+            "evidence/code-targets-390.png"
+          ]
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": [
+            "evidence/mobile-eight.png",
+            "evidence/code-targets-360.png",
+            "evidence/code-memory-regression.json",
+            "evidence/mobile.png",
+            "evidence/code-targets-390.png",
+            "evidence/browser-validation.json",
+            "evidence/code-boundary-regression.json"
+          ]
+        },
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": []
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": []
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": [
+            "releases/ball-sort-fusion-web.zip",
+            "evidence/code-memory-regression.json",
+            "evidence/web-package.json"
+          ]
+        },
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 2,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": []
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 2,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": []
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0,
+          "attempt": 2,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": [
+            "evidence/code-memory-regression.json"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "test",
+      "status": "completed",
+      "run_id": "55e9686f786549dca69744c10526547a",
+      "model": "gpt-6.1-sol",
+      "attempt": 1,
+      "event_count": 101,
+      "model_calls": 11,
+      "artifacts": 2,
+      "artifact_provenance": {
+        "validation_output": 1,
+        "agent_edit": 1
+      },
+      "skills": [
+        {
+          "path": "cocos-game-production/SKILL.md",
+          "sha256": "f96e60695fd43331a71d80ad4f71cfd6abe74ca32f8b8f8f9073c2f5ae90772c"
+        },
+        {
+          "path": "game-reverse-engineering/modules/cocos-qa/SKILL.md",
+          "sha256": "5ce884305deafb3472d669945708e747c8b0b16a8f50c930360644b54ed0e794"
+        }
+      ],
+      "report_write_evidence": {
+        "successful_tool_result": true,
+        "written_sha256": "59436d1336a14ee7ce764d123c82b631cf6b56eb61ed19586e0a4cefff8aa637",
+        "matches_archived_content": true
+      },
+      "validations": [
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": []
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": []
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "source_after": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+          "changed_paths": [
+            "evidence/code-memory-regression.json"
+          ]
+        }
+      ]
+    }
+  ],
+  "source_fingerprint": "cd2345379dbd13b880db0eaa8d5ea78492659b9f1af3bba216fc5a54be0a5f45",
+  "assets": 28,
+  "engine": {
+    "version": "3.8.8",
+    "runtime_sha256": "c5dbfbd9008357af024539cb96071774d8d9809a5a1d3850b88389f7ac8fa1a0",
+    "source_files_checked": 6340
+  },
+  "browser_checks": [
+    "官方cc.VERSION、Director活动场景、正在绘制的WebGL2设备与Cocos画布一致",
+    "模式切换、重选当前关与切换关卡均确认，取消保留棋盘步数，确认切换生效",
+    "迷雾真实两步后同色未满管的底球仍为问号",
+    "未知版本丢弃会话并可见恢复，保留有效声音设置",
+    "守恒但跨事务篡改历史被拒绝，无法撤销执行",
+    "400次真实点击并等待销毁帧及强制GC，节点与堆增长受限",
+    "动画开始前原子提交完整局面，动画中刷新不丢球",
+    "真实点击移动与撤销",
+    "辅助管添加与撤销",
+    "偏离预置路径后Worker返回当前局面的合法提示",
+    "局面与步数刷新持久化",
+    "经典模式完整通关与进度记录",
+    "真实点击重开与重复通关奖励幂等",
+    "六层长管完整通关",
+    "八层长管完整通关",
+    "隐藏球完整通关与揭示",
+    "真实点击解锁主题、切换Infinite材质与数字辅助",
+    "390×844移动端实际点击移动与撤销",
+    "八层长管移动端布局",
+    "360×640及390×844实际UITransform映射CSS尺寸至少44像素，菜单和关闭及底部模式边缘点击有效，模式命中区无重叠",
+    "合法500条历史连续撤销与刷新保留边界，主题重绘及继续移动再撤销仍可恢复",
+    "设置全部目标及模式、关卡弹窗两两无重叠，开关四边真实点击仅改变目标设置",
+    "隔离context运行期写失败覆盖移动、撤销、加管、设置及主题重绘，警告持续且操作继续，真实写入成功后清除并可刷新恢复",
+    "真实解法通关后默认主题重绘保留设置，完成局刷新正常结算且奖励幂等，解锁主题与快速导航不受过期结算覆盖",
+    "1440×900宽屏无变形",
+    "损坏合法JSON的存档可见恢复"
+  ],
+  "package_sha256": "ac66eef94fe7714291dcbcf6e726e9ef20066fb3c344a765aa37cd7d1b46f2c9",
+  "model_skill_revisions": 3,
+  "errors": []
+}

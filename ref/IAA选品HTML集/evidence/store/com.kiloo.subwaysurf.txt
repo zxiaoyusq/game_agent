@@ -1,0 +1,334 @@
+# Google Play public snapshot: com.kiloo.subwaysurf
+URL: https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:47.813Z
+HTTP status: 200
+Raw HTML SHA-256: e941e0645e88611a53b9919c6f891366b1713bad01a78079c9c9ec34cfa8bd69
+Raw HTML: research/html-data/store-snapshots/com.kiloo.subwaysurf.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Subway Surfers
+SYBO Games
+Contains ads
+In-app purchases
+4.4
+star
+41.5M reviews
+Rated for 7+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 7+
+Mild Violence
+In-Game Purchases (Includes Random Items)
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+DASH as fast as you can!
+DODGE the oncoming trains!
+Help Jake, Tricky & Fresh escape from the grumpy Guard and his dog.
+★ Grind trains with your cool crew!
+★ Colorful and vivid HD graphics!
+★ Hoverboard Surfing!
+★ Paint powered jetpack!
+★ Lightning fast swipe acrobatics!
+★ Challenge and help your friends!
+Join the most daring chase!
+A Universal App with HD optimized graphics.
+Originally co-developed by SYBO and Kiloo.
+Help Jake, Tricky & Fresh escape from the grumpy Inspector and his dog!
+Updated on
+Sep 17, 2026
+#2 top free arcade
+Action
+Platformer
+Runner
+Arcade
+Single player
+Stylized
+Experiences
+Funny
+Offline
+Events & offers
+Expires in 6 days
+Celebrate the Full Moon with a free reward!
+Ends on 10/03
+bbno$ is here! Unlock him in Showdown and get your flex on.
+Expires on 10/04
+Heroes Assemble! Unlock this ultimate bundle for 75% off.
+Ends on 10/04
+Matilda’s Comic Adventure!
+Update available
+The Crew is heading to Buenos Aires!
+Expires on 10/04
+Unlock Santi Grafito and get free Score Boosters, Headstarts and Keys!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Subway Surfers",
+  "url": "https://play.google.com/store/apps/details/Subway_Surfers?id=com.kiloo.subwaysurf&hl=en",
+  "description": "Help Jake, Tricky & Fresh escape from the grumpy Inspector and his dog!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_ARCADE",
+  "image": "https://play-lh.googleusercontent.com/-b6afYVP9kkzaFgDT3bZpGy2ugh1AjzCiXS0o9aZw7bIZ5rCb3Bp8YAwIxyMjUGLjl1pD6ZFGxeKKGlXBw950g",
+  "contentRating": "Rated for 7+",
+  "author": {
+    "@type": "Person",
+    "name": "SYBO Games",
+    "url": "https://sybogames.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.414312839508057",
+    "ratingCount": "41548874"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Subway Surfers - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Subway Surfers
+SYBO Games
+Contains ads
+In-app purchases
+4.4
+star
+41.5M reviews
+Rated for 7+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 7+
+Mild Violence
+In-Game Purchases (Includes Random Items)
+Learn more
+About this game
+arrow_forward
+DASH as fast as you can!
+DODGE the oncoming trains!
+Help Jake, Tricky & Fresh escape from the grumpy Guard and his dog.
+★ Grind trains with your cool crew!
+★ Colorful and vivid HD graphics!
+★ Hoverboard Surfing!
+★ Paint powered jetpack!
+★ Lightning fast swipe acrobatics!
+★ Challenge and help your friends!
+Join the most daring chase!
+A Universal App with HD optimized graphics.
+Originally co-developed by SYBO and Kiloo.
+Help Jake, Tricky & Fresh escape from the grumpy Inspector and his dog!
+Updated on
+Sep 17, 2026
+#2 top free arcade
+Action
+Platformer
+Runner
+Arcade
+Single player
+Stylized
+Experiences
+Funny
+Offline
+Events & offers
+Expires in 6 days
+Celebrate the Full Moon with a free reward!
+Ends on 10/03
+bbno$ is here! Unlock him in Showdown and get your flex on.
+Expires on 10/04
+Heroes Assemble! Unlock this ultimate bundle for 75% off.
+Ends on 10/04
+Matilda’s Comic Adventure!
+Update available
+The Crew is heading to Buenos Aires!
+Expires on 10/04
+Unlock Santi Grafito and get free Score Boosters, Headstarts and Keys!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 4 others
+This app may collect these data types
+Location, Personal info and 4 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.4
+37.2M reviews
+5
+4
+3
+2
+1
+Tanisha Karmakar
+more_vert
+Flag inappropriate
+August 15, 2026
+This game is awesome, overall, but I would like to have different maps which we can choose from to play, except for the events. And the maps should be fun and different from others!! and I would also like to request some free different characters, because except the default, you basically have to buy everyone and they're also really costly (from your game coins). ✌🏻
+16 people found this review helpful
+Did you find this helpful?
+Yes
+No
+SYBO Games
+August 15, 2026
+Thank you for your enthusiasm and feedback! We're glad you're enjoying the game and appreciate your suggestions for new maps and characters. Your ideas are valuable. If you have more details, please contact our support team via the in-game Help section (Settings → Support).
+Farhana
+more_vert
+Flag inappropriate
+August 30, 2026
+reach a score of 1,809,375, you have mastered the mechanical loop of the game. At this stage of the simulation, the game throws dense clusters of moving trains, oncoming barricades, and rapid lane-switches at you simultaneously. Surviving this requires not just reactive playing, but predictive pathing—knowing exactly when to take the high ridges of the train roofs versus staying on the tracks.Room for ImprovementWhile the graphics and core simulation are flawless, the game loop can feel repetit
+9 people found this review helpful
+Did you find this helpful?
+Yes
+No
+SuNG jiN Woo
+more_vert
+Flag inappropriate
+July 13, 2026
+Best game for time pass, would like to request a feature where we can select any map to play with. There are so many maps that changes according to the season and that's just doesn't cut it for me so I would like if I can change maps to Osaka, London, Washington and many more, this is just a wishful feature I'm requesting and I really look forward to it.
+27 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+- Buenos Aires is calling and the Crew is ready to take over! Explore a season filled with bright colors, fun music and fresh new content.
+- The spotlights are on as bbno$ hits the tracks! Jump into the Showdown Challenge to unlock the chart-topping artist and bring his iconic style to every run. This is one collab you don’t want to miss!
+- Meet the Mega Character, Santi Grafito, take on the Season Hunt to unlock Matilda, then join the Season Challenge to earn Matilda’s Comic Core Outfit.
+flag
+Flag as inappropriate
+Rated for 7+
+Mild Violence
+In-Game Purchases (Includes Random Items)
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+help_subwaysurf@sybogames.com
+shield
+Privacy Policy
+About the developer
+Sybo ApS
+help_subwaysurf@sybogames.com
+Holmens Kanal 7, sal 3
+1060 København K
+Denmark
++45 50 20 74 75
+More by SYBO Games
+arrow_forward
+Subway Surfers City
+SYBO Games
+4.4
+star
+Blades of Brim
+SYBO Games
+4.4
+star
+Similar games
+arrow_forward
+Temple Run 2
+Imangi Studios
+4.0
+star
+Talking Tom Gold Run
+Outfit7 Limited
+4.3
+star
+Temple Run
+Imangi Studios
+3.9
+star
+Subway Princess Runner
+Ivy
+4.0
+star
+Kooply Run™: Play and Create!
+KOOPLY
+3.9
+star
+Talking Tom Hero Dash
+Outfit7 Limited
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

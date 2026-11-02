@@ -1,0 +1,996 @@
+{
+  "checked_at": "2026-10-17T20:15:47.309Z",
+  "preview_url": "http://127.0.0.1:8003/api/workflow/projects/0a850241a9fc4bee925af55617fead85/preview/index.html",
+  "prior_findings": [
+    {
+      "id": "S03-original-write-failure",
+      "status": "修复后存储边界用例通过",
+      "actions": [
+        "在实际 API 预览启动后，仅让本游戏存档 key 的 setItem 抛 QuotaExceededError",
+        "真实点击首关 0→3，等待动画结束"
+      ],
+      "observed": {
+        "moves": 1,
+        "board_changed": true,
+        "saved_data_unchanged": true,
+        "visible_message": "很好，继续给每种颜色找到自己的位置"
+      },
+      "build_main_sha256_observed_after_reproduction": "1d1da7e5c4a859d072a262083d889e17353ad024740bd6ad4d0f2bb52da8b36f",
+      "conclusion": "未保存反馈被操作完成文案覆盖；该记录只证明修复前的已复现缺陷，不代指当前源码。"
+    }
+  ],
+  "prototype_sha256": "d5102c145266b9d59e2abd8b6537683493bbc798d561b34a6cc2c2782b527dc7",
+  "source_before": {
+    "src/main.mjs": "2e0e0df11a131d124c624d56d210765afacbb4bd3de20e52cb025186d78ccc8f",
+    "src/rules.mjs": "3cdfe899f6b2a7d28ac16735196179f8b185d262ef21a0a5e12699573eab0b4e",
+    "src/storage.mjs": "e5bb446313a9ba7301943ca0b33c6deed4f61e64a23ec3efb8351f45450bc3bd",
+    "src/solver-worker.mjs": "e319304924e60d84a71a63241bbd61dd46a40a44938c1db18e06799c7fb5ba02",
+    "src/engine-bootstrap.mjs": "ff3bb4a12c2064fec76e7077174bcb2901292a525bfa5347bef2305b35c3082f",
+    "public/assets/levels.json": "905b102f516bc9c73612988dec8a68bd7b86de3f566b771f5510a77b6a3e9adb",
+    "public/engine/cc.js": "c5dbfbd9008357af024539cb96071774d8d9809a5a1d3850b88389f7ac8fa1a0"
+  },
+  "served_inputs": {
+    "src/main.mjs": "2e0e0df11a131d124c624d56d210765afacbb4bd3de20e52cb025186d78ccc8f",
+    "src/rules.mjs": "3cdfe899f6b2a7d28ac16735196179f8b185d262ef21a0a5e12699573eab0b4e",
+    "src/storage.mjs": "e5bb446313a9ba7301943ca0b33c6deed4f61e64a23ec3efb8351f45450bc3bd",
+    "src/solver-worker.mjs": "e319304924e60d84a71a63241bbd61dd46a40a44938c1db18e06799c7fb5ba02",
+    "src/engine-bootstrap.mjs": "ff3bb4a12c2064fec76e7077174bcb2901292a525bfa5347bef2305b35c3082f",
+    "public/assets/levels.json": "905b102f516bc9c73612988dec8a68bd7b86de3f566b771f5510a77b6a3e9adb",
+    "public/engine/cc.js": "c5dbfbd9008357af024539cb96071774d8d9809a5a1d3850b88389f7ac8fa1a0"
+  },
+  "cases": [
+    {
+      "id": "R09-control",
+      "description": "真实 Worker 延迟返回：control",
+      "passed": true,
+      "actions": [
+        "真实点击 1→3，偏离首关预置解法",
+        "点击提示并暂扣原生 Worker 的真实返回"
+      ],
+      "assertions": [
+        "未改变棋盘时真实提示合法，只高亮、不自动移动"
+      ],
+      "before_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "moves": 1,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "worker": {
+        "posted": [
+          {
+            "id": 3,
+            "board": [
+              [
+                2,
+                2,
+                3,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "capacity": 4
+          }
+        ],
+        "received": [
+          {
+            "id": 3,
+            "solutionLength": 3
+          }
+        ]
+      },
+      "released_ids": [
+        3
+      ],
+      "after_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "moves": 1,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": [
+          0,
+          1
+        ]
+      },
+      "status": "passed"
+    },
+    {
+      "id": "R09-move",
+      "description": "真实 Worker 延迟返回：move",
+      "passed": true,
+      "actions": [
+        "真实点击 1→3，偏离首关预置解法",
+        "点击提示并暂扣原生 Worker 的真实返回",
+        "正常界面完成 move 后再释放旧结果"
+      ],
+      "assertions": [
+        "过期 Worker 结果未改变当前局面、步数、高亮或反馈文案"
+      ],
+      "before_release": {
+        "board": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "moves": 2,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "worker": {
+        "posted": [
+          {
+            "id": 3,
+            "board": [
+              [
+                2,
+                2,
+                3,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "capacity": 4
+          }
+        ],
+        "received": [
+          {
+            "id": 3,
+            "solutionLength": 3
+          }
+        ]
+      },
+      "released_ids": [
+        3
+      ],
+      "after_release": {
+        "board": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "moves": 2,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "status": "passed"
+    },
+    {
+      "id": "R09-undo",
+      "description": "真实 Worker 延迟返回：undo",
+      "passed": true,
+      "actions": [
+        "真实点击 1→3，偏离首关预置解法",
+        "点击提示并暂扣原生 Worker 的真实返回",
+        "正常界面完成 undo 后再释放旧结果"
+      ],
+      "assertions": [
+        "过期 Worker 结果未改变当前局面、步数、高亮或反馈文案"
+      ],
+      "before_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          []
+        ],
+        "moves": 0,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "worker": {
+        "posted": [
+          {
+            "id": 3,
+            "board": [
+              [
+                2,
+                2,
+                3,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "capacity": 4
+          }
+        ],
+        "received": [
+          {
+            "id": 3,
+            "solutionLength": 3
+          }
+        ]
+      },
+      "released_ids": [
+        3
+      ],
+      "after_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          []
+        ],
+        "moves": 0,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "status": "passed"
+    },
+    {
+      "id": "R09-add",
+      "description": "真实 Worker 延迟返回：add",
+      "passed": true,
+      "actions": [
+        "真实点击 1→3，偏离首关预置解法",
+        "点击提示并暂扣原生 Worker 的真实返回",
+        "正常界面完成 add 后再释放旧结果"
+      ],
+      "assertions": [
+        "过期 Worker 结果未改变当前局面、步数、高亮或反馈文案"
+      ],
+      "before_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          []
+        ],
+        "moves": 1,
+        "mode": "classic",
+        "index": 0,
+        "extra": true,
+        "won": false,
+        "hintPair": null
+      },
+      "worker": {
+        "posted": [
+          {
+            "id": 3,
+            "board": [
+              [
+                2,
+                2,
+                3,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "capacity": 4
+          }
+        ],
+        "received": [
+          {
+            "id": 3,
+            "solutionLength": 3
+          }
+        ]
+      },
+      "released_ids": [
+        3
+      ],
+      "after_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          []
+        ],
+        "moves": 1,
+        "mode": "classic",
+        "index": 0,
+        "extra": true,
+        "won": false,
+        "hintPair": null
+      },
+      "status": "passed"
+    },
+    {
+      "id": "R09-restart",
+      "description": "真实 Worker 延迟返回：restart",
+      "passed": true,
+      "actions": [
+        "真实点击 1→3，偏离首关预置解法",
+        "点击提示并暂扣原生 Worker 的真实返回",
+        "正常界面完成 restart 后再释放旧结果"
+      ],
+      "assertions": [
+        "过期 Worker 结果未改变当前局面、步数、高亮或反馈文案"
+      ],
+      "before_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          []
+        ],
+        "moves": 0,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "worker": {
+        "posted": [
+          {
+            "id": 3,
+            "board": [
+              [
+                2,
+                2,
+                3,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "capacity": 4
+          }
+        ],
+        "received": [
+          {
+            "id": 3,
+            "solutionLength": 3
+          }
+        ]
+      },
+      "released_ids": [
+        3
+      ],
+      "after_release": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          []
+        ],
+        "moves": 0,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "status": "passed"
+    },
+    {
+      "id": "R09-mode",
+      "description": "真实 Worker 延迟返回：mode",
+      "passed": true,
+      "actions": [
+        "真实点击 1→3，偏离首关预置解法",
+        "点击提示并暂扣原生 Worker 的真实返回",
+        "正常界面完成 mode 后再释放旧结果"
+      ],
+      "assertions": [
+        "过期 Worker 结果未改变当前局面、步数、高亮或反馈文案"
+      ],
+      "before_release": {
+        "board": [
+          [
+            2,
+            5,
+            2,
+            4,
+            4,
+            5
+          ],
+          [
+            4,
+            3,
+            2,
+            2,
+            2,
+            5
+          ],
+          [
+            1,
+            1,
+            1,
+            3,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            4,
+            5,
+            5,
+            1
+          ],
+          [
+            3,
+            3,
+            1,
+            4,
+            3,
+            3
+          ],
+          [],
+          []
+        ],
+        "moves": 0,
+        "mode": "challenge",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "worker": {
+        "posted": [
+          {
+            "id": 3,
+            "board": [
+              [
+                2,
+                2,
+                3,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "capacity": 4
+          }
+        ],
+        "received": [
+          {
+            "id": 3,
+            "solutionLength": 3
+          }
+        ]
+      },
+      "released_ids": [
+        3
+      ],
+      "after_release": {
+        "board": [
+          [
+            2,
+            5,
+            2,
+            4,
+            4,
+            5
+          ],
+          [
+            4,
+            3,
+            2,
+            2,
+            2,
+            5
+          ],
+          [
+            1,
+            1,
+            1,
+            3,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            4,
+            5,
+            5,
+            1
+          ],
+          [
+            3,
+            3,
+            1,
+            4,
+            3,
+            3
+          ],
+          [],
+          []
+        ],
+        "moves": 0,
+        "mode": "challenge",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "status": "passed"
+    },
+    {
+      "id": "I02-freeze-resume",
+      "description": "动画中冻结页面后恢复",
+      "passed": null,
+      "actions": [],
+      "assertions": [],
+      "status": "not_covered",
+      "original_environment_assertion": "The expression evaluated to a falsy value:\n\n  assert.ok(lifecycle.some(item => item.event === 'freeze'))\n",
+      "environment_reason": "无头Chromium接受Page.setWebLifecycleState但未产生freeze/resume事件；独立空页面对照仍为visible，600ms内定时器从1增至31，未证明真实冻结。不能据此判定游戏失败或通过。"
+    },
+    {
+      "id": "I02-freeze-refresh",
+      "description": "动画中冻结页面后恢复并刷新",
+      "passed": null,
+      "actions": [],
+      "assertions": [],
+      "status": "not_covered",
+      "original_environment_assertion": "The expression evaluated to a falsy value:\n\n  assert.ok(lifecycle.some(item => item.event === 'freeze'))\n",
+      "environment_reason": "无头Chromium接受Page.setWebLifecycleState但未产生freeze/resume事件；独立空页面对照仍为visible，600ms内定时器从1增至31，未证明真实冻结。不能据此判定游戏失败或通过。"
+    },
+    {
+      "id": "S03-write-failure-move",
+      "description": "启动后存储写失败：move",
+      "passed": true,
+      "actions": [
+        "启动后仅让游戏存档 setItem 抛 QuotaExceededError",
+        "正常点击完成 move，等待操作结束"
+      ],
+      "assertions": [
+        "操作可继续，未保存反馈在操作结束后仍可见"
+      ],
+      "visible_message": "本次进度暂未保存，当前局面仍可继续",
+      "saved_data_unchanged": true,
+      "after": {
+        "board": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "moves": 1,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "screenshot": "logs/game-boundary-storage-failure.png",
+      "status": "passed"
+    },
+    {
+      "id": "S03-write-failure-undo",
+      "description": "启动后存储写失败：undo",
+      "passed": true,
+      "actions": [
+        "启动后仅让游戏存档 setItem 抛 QuotaExceededError",
+        "正常点击完成 undo，等待操作结束"
+      ],
+      "assertions": [
+        "操作可继续，未保存反馈在操作结束后仍可见"
+      ],
+      "visible_message": "本次进度暂未保存，当前局面仍可继续",
+      "saved_data_unchanged": true,
+      "after": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          []
+        ],
+        "moves": 0,
+        "mode": "classic",
+        "index": 0,
+        "extra": false,
+        "won": false,
+        "hintPair": null
+      },
+      "status": "passed"
+    },
+    {
+      "id": "S03-write-failure-add",
+      "description": "启动后存储写失败：add",
+      "passed": true,
+      "actions": [
+        "启动后仅让游戏存档 setItem 抛 QuotaExceededError",
+        "正常点击完成 add，等待操作结束"
+      ],
+      "assertions": [
+        "操作可继续，未保存反馈在操作结束后仍可见"
+      ],
+      "visible_message": "本次进度暂未保存，当前局面仍可继续",
+      "saved_data_unchanged": true,
+      "after": {
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [],
+          []
+        ],
+        "moves": 0,
+        "mode": "classic",
+        "index": 0,
+        "extra": true,
+        "won": false,
+        "hintPair": null
+      },
+      "status": "passed"
+    },
+    {
+      "id": "S03-write-recovery",
+      "description": "存储恢复可写后保存完整当前局面",
+      "passed": true,
+      "actions": [
+        "写失败时正常添加辅助管；打开设置并点击声音开关，再关闭弹窗核对警告；恢复真实 setItem 后移动；刷新；连续撤销移动及加管"
+      ],
+      "assertions": [
+        "关闭设置后警告保持，真实写成功后才清除；完整局面和辅助状态保存，刷新后历史仍可逆"
+      ],
+      "message_after_closing_settings": "本次进度暂未保存，当前局面仍可继续",
+      "settings_warning_screenshot": "logs/game-boundary-settings-storage-failure.png",
+      "message_after_successful_save": "很好，继续给每种颜色找到自己的位置",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "使用独立 Chromium WebGL2 浏览器上下文；不是 Android/iOS 真机后台测试。",
+    "当前无头Chromium无法证明页面冻结/后台切换，两个I02后台用例未覆盖；既有浏览器套件的动画中刷新结果不在本次重复冒充后台验收。",
+    "Worker 注入仅暂扣原生 Worker 的真实消息，释放时不改动 id、解法或棋盘。",
+    "存储异常仅对本游戏存档 key 的 setItem 抛出 QuotaExceededError；没有注入局面或通关结果。",
+    "状态接口仅作只读断言，玩法操作全部通过真实指针点击。"
+  ],
+  "engine": {
+    "version": "3.8.8",
+    "scene": "彩球工坊",
+    "canvas": true,
+    "graphicsApi": "WEBGL2",
+    "drawCalls": 42
+  },
+  "source_after": {
+    "src/main.mjs": "2e0e0df11a131d124c624d56d210765afacbb4bd3de20e52cb025186d78ccc8f",
+    "src/rules.mjs": "3cdfe899f6b2a7d28ac16735196179f8b185d262ef21a0a5e12699573eab0b4e",
+    "src/storage.mjs": "e5bb446313a9ba7301943ca0b33c6deed4f61e64a23ec3efb8351f45450bc3bd",
+    "src/solver-worker.mjs": "e319304924e60d84a71a63241bbd61dd46a40a44938c1db18e06799c7fb5ba02",
+    "src/engine-bootstrap.mjs": "ff3bb4a12c2064fec76e7077174bcb2901292a525bfa5347bef2305b35c3082f",
+    "public/assets/levels.json": "905b102f516bc9c73612988dec8a68bd7b86de3f566b771f5510a77b6a3e9adb",
+    "public/engine/cc.js": "c5dbfbd9008357af024539cb96071774d8d9809a5a1d3850b88389f7ac8fa1a0"
+  },
+  "source_unchanged": true,
+  "passed": false,
+  "summary": {
+    "total": 12,
+    "passed": 10,
+    "failed": 0,
+    "not_covered": 2
+  },
+  "outcome": "partial",
+  "source_after_final_visual_check": {
+    "src/main.mjs": "2e0e0df11a131d124c624d56d210765afacbb4bd3de20e52cb025186d78ccc8f",
+    "src/rules.mjs": "3cdfe899f6b2a7d28ac16735196179f8b185d262ef21a0a5e12699573eab0b4e",
+    "src/storage.mjs": "e5bb446313a9ba7301943ca0b33c6deed4f61e64a23ec3efb8351f45450bc3bd",
+    "src/solver-worker.mjs": "e319304924e60d84a71a63241bbd61dd46a40a44938c1db18e06799c7fb5ba02",
+    "src/engine-bootstrap.mjs": "ff3bb4a12c2064fec76e7077174bcb2901292a525bfa5347bef2305b35c3082f",
+    "public/assets/levels.json": "905b102f516bc9c73612988dec8a68bd7b86de3f566b771f5510a77b6a3e9adb",
+    "public/engine/cc.js": "c5dbfbd9008357af024539cb96071774d8d9809a5a1d3850b88389f7ac8fa1a0"
+  },
+  "source_unchanged_through_final_visual_check": true,
+  "visual_review": {
+    "viewport": {
+      "width": 540,
+      "height": 960
+    },
+    "screenshots": [
+      "logs/game-boundary-storage-failure.png",
+      "logs/game-boundary-settings-open-warning.png",
+      "logs/game-boundary-settings-closed-warning.png",
+      "logs/game-boundary-storage-recovered.png"
+    ],
+    "observations": [
+      "正常移动写失败后，主界面底部清晰显示“本次进度暂未保存，当前局面仍可继续”。",
+      "设置弹窗打开时，其底部清晰显示未保存提示；关闭后主界面继续显示该提示。",
+      "恢复真实setItem成功后，主界面显示正常完成反馈，未保存提示清除；存档moves与当前moves均为1。"
+    ],
+    "method": "实际查看原始浏览器截图，没有只用状态getter宣称可见。"
+  }
+}

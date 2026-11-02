@@ -1,0 +1,344 @@
+# Google Play public snapshot: beatmaker.edm.musicgames.PianoGames
+URL: https://play.google.com/store/apps/details?id=beatmaker.edm.musicgames.PianoGames&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:19.616Z
+HTTP status: 200
+Raw HTML SHA-256: 71f2167d5bc3c94969575b06252aa260941ba7f948d54451814b9a2edefe5592
+Raw HTML: research/html-data/store-snapshots/beatmaker.edm.musicgames.PianoGames.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Piano Fire: Edm Music & Piano
+Adaric Music
+Contains ads
+In-app purchases
+4.5
+star
+727K reviews
+Rated for 12+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 12+
+Mild Swearing
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+🎹Piano Fire is a classic piano tile game featuring various music genres, offering you a fantastic gameplay experience.
+😉Whether you are a hardcore player or just want to relax while listening to your favorite songs, online or offline, this game will satisfy you all the same.
+🎵Attention🎵
+We add new songs to the game every month! If you have any suggestions, please leave a comment or email us at adaricmusic@gmail.com.
+How to Play:
+Tiles will fall from above. When they reach the line at the bottom, tap them to earn "Melody Points".🎼
+Some tiles may fall fast, but don't worry—every single tile's timing is carefully designed by our professional music team. Tap to the beat of music, and you'll make it!😎
+Game Features:
+🌐Global Ranking – Compete with players worldwide.
+📲Local Music – Import songs from your phone.
+📅Monthly Events – Play songs to collect tokens and exchange them for game items.
+🔥Easy to Play, Hard to Master – Try our expert-level songs; collecting all three stars will take some time!
+Once you've played a song, you won't need an internet connection🚫🛜to play that song again—it will be downloaded automatically📲. Then you will be able to play it anytime you want, whether to relieve stress or sharpen your reaction—this game will be a good choice!
+If any music producers or labels have concerns about the music or images used in the game, or if players have suggestions for improvement, please feel free to contact us at adaricmusic@gmail.com.
+Offline Rhythm Game 2025 - Tap piano tiles to the beat, unleash the Avatar
+Updated on
+Sep 21, 2026
+#5 top free music
+Music
+Performance
+Arcade
+Single player
+Abstract
+Miscellaneous
+Musical instruments
+Intense
+Offline
+Events & offers
+Update available
+The World’s Hits, All in One Place!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Piano Fire: Edm Music & Piano",
+  "url": "https://play.google.com/store/apps/details/Piano_Fire_Edm_Music_Piano?id=beatmaker.edm.musicgames.PianoGames&hl=en",
+  "description": "Offline Rhythm Game 2025 - Tap piano tiles to the beat, unleash the Avatar",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_MUSIC",
+  "image": "https://play-lh.googleusercontent.com/-uhLfXif3la5rFGl9Q6Kve8SuXL0VdvRkpD_9zNSIR7U-jAruqZVvxhbR8-G_Iz1B-4EoEvpKYaq_71_hkxJ",
+  "contentRating": "Rated for 12+",
+  "author": {
+    "@type": "Person",
+    "name": "Adaric Music",
+    "url": "http://musicgamestudio.top"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4740071296691895",
+    "ratingCount": "727318"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Piano Fire: Edm Music & Piano - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Piano Fire: Edm Music & Piano
+Adaric Music
+Contains ads
+In-app purchases
+4.5
+star
+727K reviews
+Rated for 12+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 12+
+Mild Swearing
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+🎹Piano Fire is a classic piano tile game featuring various music genres, offering you a fantastic gameplay experience.
+😉Whether you are a hardcore player or just want to relax while listening to your favorite songs, online or offline, this game will satisfy you all the same.
+🎵Attention🎵
+We add new songs to the game every month! If you have any suggestions, please leave a comment or email us at adaricmusic@gmail.com.
+How to Play:
+Tiles will fall from above. When they reach the line at the bottom, tap them to earn "Melody Points".🎼
+Some tiles may fall fast, but don't worry—every single tile's timing is carefully designed by our professional music team. Tap to the beat of music, and you'll make it!😎
+Game Features:
+🌐Global Ranking – Compete with players worldwide.
+📲Local Music – Import songs from your phone.
+📅Monthly Events – Play songs to collect tokens and exchange them for game items.
+🔥Easy to Play, Hard to Master – Try our expert-level songs; collecting all three stars will take some time!
+Once you've played a song, you won't need an internet connection🚫🛜to play that song again—it will be downloaded automatically📲. Then you will be able to play it anytime you want, whether to relieve stress or sharpen your reaction—this game will be a good choice!
+If any music producers or labels have concerns about the music or images used in the game, or if players have suggestions for improvement, please feel free to contact us at adaricmusic@gmail.com.
+Offline Rhythm Game 2025 - Tap piano tiles to the beat, unleash the Avatar
+Updated on
+Sep 21, 2026
+#5 top free music
+Music
+Performance
+Arcade
+Single player
+Abstract
+Miscellaneous
+Musical instruments
+Intense
+Offline
+Events & offers
+Update available
+The World’s Hits, All in One Place!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Location, App activity and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+640K reviews
+5
+4
+3
+2
+1
+Sridharan Jagannathankanmanl
+more_vert
+Flag inappropriate
+May 15, 2024
+This game had so much potential, but the developers just threw it down the drain my forcing us to watch an unskippable 30 second ad each time we wanna play a different song. Yeah, it can be bought with coins, but per level you get around 30+ coins but the songs cost over 500 and you need to unlock them in order. And, youre forced to watch an ad after you finish a song or run out of lives. In general, dont play this game if you're not ready to watch dozens and dozens of ads. Dont waste your time.
+6,690 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Adaric Music
+May 16, 2024
+Hi, except for the ads that you click to watch for additional rewards, others can be skipped. You can try to tap the upper left corner of the screen to see if the skip button appears. Hope our answer is helpful. Thank you for your understanding!
+The Crazy Painter
+more_vert
+Flag inappropriate
+Show review history
+May 15, 2025
+OMG! This game is so cool and addictive!!! You just don't wanna go until you've earned three stars in a song! There are Hard and Extreme songs too which challenge you ! And yeah the game can be played offline once you've downloaded the songs. Its so fun to listen to your fav songs!But just one more thing, just try to add a few more songs like Cupid, Runaway etc. That would make the game truly awesome!⭐⭐⭐⭐⭐
+5,591 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Adaric Music
+May 15, 2025
+Hi! Our music team will do some checks to see if the song fits the game or not. Thanks for your recommendation!🎶😽🎶
+CD
+more_vert
+Flag inappropriate
+September 10, 2026
+I like how the actual gameplay feels and the song variety but it's ruined by the fact the player is CONSTANTLY berated by ads. everything is ad locked or needs coins. at this point the app is more ads than game. and no I wouldn't spend $8 a week to change that.
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+Adaric Music
+September 11, 2026
+Hi, except for the ads that you click to watch for additional rewards, others can be skipped. You can try to tap the upper left corner of the screen to see if the skip button appears. Hope our answer is helpful. Thank you for your understanding!
+See all reviews
+What’s new
+Nature Calls: Play for the Planet! 🌿
+🌍 New featured songs online! Experience a brand-new musical journey!
+🍃 Play the songs during the event to unlock exclusive eco-themed avatars and banners.
+Every note brings the world to life—join the Green Melody celebration in Piano Fire!
+flag
+Flag as inappropriate
+Rated for 12+
+Mild Swearing
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+adaricmusic@gmail.com
+shield
+Privacy Policy
+About the developer
+上海旭笛信息科技有限公司
+adaricmusic@gmail.com
+中国
+上海市闵行区
+闵行区联航路1588号2幢科创楼203室
+邮政编码: 201112
++86 185 1632 6073
+More by Adaric Music
+arrow_forward
+Beat Fire - Edm Gun Music Game
+Adaric Music
+3.7
+star
+Piano Fire 2: Slide Challenge
+Adaric Music
+4.2
+star
+Rhythm Fire-EDM Shooting Game
+Adaric Music
+4.1
+star
+Music Racing : Beat Racing GT
+Adaric Music
+3.1
+star
+Cyber Beat: Neon Rhythm Rush
+Adaric Music
+3.1
+star
+2248 Blast: Merge Puzzle
+Adaric Music
+4.1
+star
+Similar games
+arrow_forward
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+4.3
+star
+Cat Tiles: Cute Piano Game
+WingsMob
+4.2
+star
+Piano Tiles 2™ - Piano Game
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,15 @@
+{
+  "project_name": "请填写项目名称",
+  "project_root": "../..",
+  "level_file": "assets/app-builtin/app-model/store.level.ts",
+  "locale_file": "assets/app-builtin/app-model/i18n/strings/zh-CN.ts",
+  "image_dir": "assets/app-bundle/app-view/page/main/resources/lvPic",
+  "image_prefix": "lvPic/",
+  "image_extensions": [".png", ".jpg", ".jpeg", ".webp"],
+  "expected_levels": 0,
+  "allow_duplicate_images": false,
+  "validate_images": true,
+  "draft_file": "data/story_levels.draft.json",
+  "backup_dir": "backups",
+  "port": 8765
+}

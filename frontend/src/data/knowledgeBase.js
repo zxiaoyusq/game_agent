@@ -10,12 +10,16 @@
 import { reactive } from 'vue'
 import { fetchKbFolders, fetchKbItems, fetchKbModules } from '../api/knowledge.js'
 
-// 四个角色模块的展示元数据（颜色/图标/排序），与后端 KB_MODULE_CATEGORIES 对应
+// 知识库模块的展示元数据（颜色/图标/排序），与后端 KB_MODULE_CATEGORIES 对应
 export const KB_MODULES = [
+  { id: 'selection', name: '选品分析', color: '#a78bfa', icon: '🔍' },
   { id: 'planning', name: '策划', color: '#58a6ff', icon: '📐' },
   { id: 'art',      name: '美术', color: '#f778ba', icon: '🎨' },
   { id: 'dev',      name: '程序', color: '#3fb950', icon: '⚙️' },
   { id: 'ops',      name: '运营', color: '#f0883e', icon: '📊' },
+  { id: 'skill',    name: 'Skill', color: '#e3b341', icon: '🧩' },
+  { id: 'genre',    name: '游戏品类', color: '#56c7bc', icon: '🎮' },
+  { id: 'framework', name: '技术框架', color: '#8aabf0', icon: '🛠️' },
 ]
 
 // 模块下分类的中文展示名

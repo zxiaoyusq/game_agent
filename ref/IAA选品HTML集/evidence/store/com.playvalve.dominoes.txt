@@ -1,0 +1,357 @@
+# Google Play public snapshot: com.playvalve.dominoes
+URL: https://play.google.com/store/apps/details?id=com.playvalve.dominoes&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:14.037Z
+HTTP status: 200
+Raw HTML SHA-256: e41692db7e00286d076ac93b0619a0c2b0128375e7050fe73c83baeca75ebb96
+Raw HTML: research/html-data/store-snapshots/com.playvalve.dominoes.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Domino Legends: Classic Game
+Bluetile
+Contains ads
+In-app purchases
+4.5
+star
+864K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Welcome to
+Domino Legends
+🎲, the ultimate online world for dominoes enthusiasts! Immerse yourself in the classic game of dominoes 🃏, where every tap brings you closer to mastering this timeless experience. Play, compete, and connect with players across the globe 🌍 in our thrilling online multiplayer modes.
+In Domino Legends, the game goes beyond just playing; it's about mastering skills 👑, strategy 🧠, and fun 🎉. Engage in various classic domino modes like Draw, Block, and All Fives. Each game is a new challenge, a new opportunity to sharpen your skills and rise in the world of Domino Legends.
+Challenge your friends or rivals in PvP battles ⚔️, climb the leaderboards 📈, and showcase your mastery in the world of dominoes. Chat and strategize with opponents in real-time 💬, adding a social dimension to every game. Experience the rush of a competitive match or the serenity of a solo play against our advanced AI, tailored to your skill level.
+We've designed Domino Legends with stunning visuals 🌟 and a user-friendly interface, ensuring a seamless and engaging experience. Play in beautifully crafted game environments that enhance the classic domino experience. Each session is a blend of fun, strategy, and visual delight 🎨.
+Earn rewards 🏆, unlock achievements 🎖️, and participate in weekly events to collect rare bonuses. Whether you're a beginner or a seasoned player, Domino Legends offers a diverse range of challenges and levels, ensuring fun and excitement at every skill level.
+Join the world of Domino Legends, where the classic game meets modern play. Download now for a fun, immersive, and masterful online domino experience! 🌐🎮
+**Our Features**
+**Online Multiplayer** 🌐: Engage in exciting PvP battles with players worldwide.
+**Diverse Game Modes** 🕹️: Play classic modes like Draw, Block, and All Fives.
+**Leaderboards and Achievements** 🏅: Track your progress and climb the ranks to become the Domino Legend.
+**Stunning Visuals** 🎨: Enjoy a visually rich environment with beautifully designed game boards and themes.
+**Customization Options** 👗: Personalize your experience with various skins and avatars.
+**Free to Play** 💰: Download and start playing for free, with optional in-app purchases.
+Challenge players Worldwide in Classic Domino! 3 fun Modes await your Reign
+Updated on
+Sep 21, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Begins in 23h
+Golden September: match your way through the autumn glow
+Begins in 5 days
+Starlight Festival: match your way through a sky of stars
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Domino Legends: Classic Game",
+  "url": "https://play.google.com/store/apps/details/Domino_Legends_Classic_Game?id=com.playvalve.dominoes&hl=en",
+  "description": "Challenge players Worldwide in Classic Domino! 3 fun Modes await your Reign",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/pRsbdNfOVoBzzdD1dH9E--oTJ30ftsgZRkKWosUnWmTTFXLagCc5-ECGdvvleHojG9nQ_Em5Z2G5_eoOvHeY",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Bluetile",
+    "url": "https://www.bluetile.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.465256690979004",
+    "ratingCount": "864420"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Domino Legends: Classic Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Domino Legends: Classic Game
+Bluetile
+Contains ads
+In-app purchases
+4.5
+star
+864K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Welcome to
+Domino Legends
+🎲, the ultimate online world for dominoes enthusiasts! Immerse yourself in the classic game of dominoes 🃏, where every tap brings you closer to mastering this timeless experience. Play, compete, and connect with players across the globe 🌍 in our thrilling online multiplayer modes.
+In Domino Legends, the game goes beyond just playing; it's about mastering skills 👑, strategy 🧠, and fun 🎉. Engage in various classic domino modes like Draw, Block, and All Fives. Each game is a new challenge, a new opportunity to sharpen your skills and rise in the world of Domino Legends.
+Challenge your friends or rivals in PvP battles ⚔️, climb the leaderboards 📈, and showcase your mastery in the world of dominoes. Chat and strategize with opponents in real-time 💬, adding a social dimension to every game. Experience the rush of a competitive match or the serenity of a solo play against our advanced AI, tailored to your skill level.
+We've designed Domino Legends with stunning visuals 🌟 and a user-friendly interface, ensuring a seamless and engaging experience. Play in beautifully crafted game environments that enhance the classic domino experience. Each session is a blend of fun, strategy, and visual delight 🎨.
+Earn rewards 🏆, unlock achievements 🎖️, and participate in weekly events to collect rare bonuses. Whether you're a beginner or a seasoned player, Domino Legends offers a diverse range of challenges and levels, ensuring fun and excitement at every skill level.
+Join the world of Domino Legends, where the classic game meets modern play. Download now for a fun, immersive, and masterful online domino experience! 🌐🎮
+**Our Features**
+**Online Multiplayer** 🌐: Engage in exciting PvP battles with players worldwide.
+**Diverse Game Modes** 🕹️: Play classic modes like Draw, Block, and All Fives.
+**Leaderboards and Achievements** 🏅: Track your progress and climb the ranks to become the Domino Legend.
+**Stunning Visuals** 🎨: Enjoy a visually rich environment with beautifully designed game boards and themes.
+**Customization Options** 👗: Personalize your experience with various skins and avatars.
+**Free to Play** 💰: Download and start playing for free, with optional in-app purchases.
+Challenge players Worldwide in Classic Domino! 3 fun Modes await your Reign
+Updated on
+Sep 21, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Begins in 23h
+Golden September: match your way through the autumn glow
+Begins in 5 days
+Starlight Festival: match your way through a sky of stars
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+App activity, App info and performance, and Device or other IDs
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+843K reviews
+5
+4
+3
+2
+1
+Anton Vucinaj
+more_vert
+Flag inappropriate
+Show review history
+September 18, 2026
+this is a good game. it would be great if real people played it. would you please put real people to play the game! lately there's something wrong with the game because every time I play it, towards the middle of the game it kicks me out. it does that every game I play now. p.s. fix the problem and would you please have real people play against each other as well! that's when then that it will get five stars that it deserves. thanks
+Did you find this helpful?
+Yes
+No
+Danielle Raphael
+more_vert
+Flag inappropriate
+September 6, 2026
+idk what the games become,you can't play in peace. there's 150 commercials. could be in the middle of the game and the commercial just popped up, they were so long it feels like a mini movie. I can't stand the fact the app store is not regulating these fake games. with a movie.
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Bluetile
+September 7, 2026
+Hello, we understand that ads can get annoying. Unfortunately, we need them so you can continue playing our games for free! If you have any questions or feedback, you can reach us at contact@bluetile.com
+Ashlee Hill
+more_vert
+Flag inappropriate
+July 15, 2026
+Too many ads. The matches are too long with these ads. Then I'll be forced to watch an ad before I can continue the match, it crashes the app and I lose the match I was playing so I get no experience.
+6 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Bluetile
+July 17, 2026
+Hello, we understand that ads can get annoying. Unfortunately, we need them so you can continue playing our games for free! If you have any questions or feedback, you can reach us at contact@bluetile.com
+See all reviews
+What’s new
+> New challenges!
+> Amazing new gifts
+> Added +1000 new levels
+> New games modes
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+contact@bluetile.com
+shield
+Privacy Policy
+About the developer
+BLUETILE GAMES, S.L.
+contact@bluetile.com
+CALLE ARAGO, 383 - P. 10
+08013 BARCELONA
+Spain
++1 573-207-4277
+More by Bluetile
+arrow_forward
+Word Search - Word Puzzle Game
+Bluetile
+4.5
+star
+Wildoku: Animal Sudoku
+Bluetile
+Spades Stars - Card Game
+Bluetile
+4.5
+star
+Hole Rush: Eat All Puzzle
+Bluetile
+4.8
+star
+Solitaire - Classic Card Game
+Bluetile
+4.7
+star
+Block Blitz: Puzzle Adventure
+Bluetile
+4.4
+star
+Similar games
+arrow_forward
+Dominoes: Classic Dominos Game
+NewPubCo
+4.5
+star
+Domino - Dominos online game
+ZiMAD
+4.9
+star
+Dominoes Online - Classic Game
+MegaJogos
+4.1
+star
+Arcadia Dominoes for Seniors
+Metajoy
+4.5
+star
+Domino Duel - Online Dominoes
+ZARIBA GAMES - Card & Board Games Online
+4.3
+star
+Checkers
+Gamma Play
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

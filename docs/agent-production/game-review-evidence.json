@@ -1,0 +1,2062 @@
+{
+  "status": "本审查原5项、后续2项及追加主题重结算问题均已独立复验关闭；完整流程验收由工作流测试阶段负责",
+  "normalAndVersion": {
+    "browser": "153.0.8010.12",
+    "errors": [],
+    "modeLoss": {
+      "before": {
+        "moves": 1,
+        "board": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "switched": {
+        "mode": "challenge",
+        "overlay": false
+      },
+      "returned": {
+        "moves": 0,
+        "board": [
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          []
+        ]
+      },
+      "initial": [
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        []
+      ]
+    },
+    "mystery": {
+      "state": {
+        "mode": "mystery",
+        "index": 0,
+        "board": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            3,
+            2
+          ],
+          [
+            3,
+            2,
+            1,
+            3
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "moves": 2,
+        "selected": -1,
+        "busy": false,
+        "won": false,
+        "extra": false,
+        "theme": 0,
+        "symbols": false,
+        "storageRecovered": false,
+        "message": "很好，继续给每种颜色找到自己的位置",
+        "hintPair": null,
+        "lastHint": null,
+        "lastHintSource": null,
+        "overlay": false,
+        "capacity": 4,
+        "solution": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "tubePositions": [
+          {
+            "x": -184,
+            "y": 7,
+            "width": 50,
+            "height": 199,
+            "size": 43,
+            "bottom": -61
+          },
+          {
+            "x": -92,
+            "y": 7,
+            "width": 50,
+            "height": 199,
+            "size": 43,
+            "bottom": -61
+          },
+          {
+            "x": 0,
+            "y": 7,
+            "width": 50,
+            "height": 199,
+            "size": 43,
+            "bottom": -61
+          },
+          {
+            "x": 92,
+            "y": 7,
+            "width": 50,
+            "height": 199,
+            "size": 43,
+            "bottom": -61
+          },
+          {
+            "x": 184,
+            "y": 7,
+            "width": 50,
+            "height": 199,
+            "size": 43,
+            "bottom": -61
+          }
+        ],
+        "completed": 0
+      },
+      "nodes": [
+        {
+          "name": "试管1",
+          "balls": [
+            {
+              "sprite": true,
+              "labels": []
+            },
+            {
+              "sprite": true,
+              "labels": []
+            }
+          ]
+        },
+        {
+          "name": "试管2",
+          "balls": [
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": true,
+              "labels": []
+            }
+          ]
+        },
+        {
+          "name": "试管3",
+          "balls": [
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": true,
+              "labels": []
+            }
+          ]
+        },
+        {
+          "name": "试管4",
+          "balls": [
+            {
+              "sprite": true,
+              "labels": []
+            }
+          ]
+        },
+        {
+          "name": "试管5",
+          "balls": [
+            {
+              "sprite": true,
+              "labels": []
+            }
+          ]
+        }
+      ]
+    },
+    "unknownVersion": {
+      "mode": "mystery",
+      "index": 0,
+      "board": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          3,
+          2,
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "moves": 2,
+      "selected": -1,
+      "busy": false,
+      "won": false,
+      "extra": false,
+      "theme": 0,
+      "symbols": false,
+      "storageRecovered": true,
+      "message": "已修复异常存档，保留有效进度并恢复可玩的关卡",
+      "hintPair": null,
+      "lastHint": null,
+      "lastHintSource": null,
+      "overlay": false,
+      "capacity": 4,
+      "solution": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "tubePositions": [
+        {
+          "x": -184,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": -92,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": 92,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": 184,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        }
+      ],
+      "completed": 0
+    }
+  },
+  "history": {
+    "originalSaved": {
+      "mode": "classic",
+      "index": 0,
+      "board": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "history": [
+        {
+          "board": [
+            [
+              2,
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ],
+            []
+          ],
+          "moves": 0,
+          "extra": false
+        },
+        {
+          "board": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "moves": 1,
+          "extra": false
+        }
+      ],
+      "moves": 2,
+      "extra": false,
+      "won": false
+    },
+    "modified": {
+      "mode": "classic",
+      "index": 0,
+      "board": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "history": [
+        {
+          "board": [
+            [
+              2,
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ],
+            []
+          ],
+          "moves": 0,
+          "extra": false
+        },
+        {
+          "board": [
+            [
+              2,
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ],
+            []
+          ],
+          "moves": 1,
+          "extra": false
+        }
+      ],
+      "moves": 2,
+      "extra": false,
+      "won": false
+    },
+    "accepted": {
+      "mode": "classic",
+      "index": 0,
+      "board": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "moves": 2,
+      "selected": -1,
+      "busy": false,
+      "won": false,
+      "extra": false,
+      "theme": 0,
+      "symbols": false,
+      "storageRecovered": false,
+      "message": "先点选试管，再点同色管口或空管",
+      "hintPair": null,
+      "lastHint": null,
+      "lastHintSource": null,
+      "overlay": false,
+      "capacity": 4,
+      "solution": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "tubePositions": [
+        {
+          "x": -147,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": -49,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": 49,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": 147,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        }
+      ],
+      "completed": 0
+    },
+    "undone": {
+      "mode": "classic",
+      "index": 0,
+      "board": [
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        []
+      ],
+      "moves": 1,
+      "selected": -1,
+      "busy": false,
+      "won": false,
+      "extra": false,
+      "theme": 0,
+      "symbols": false,
+      "storageRecovered": false,
+      "message": "已撤销一步，试试另一种整理方式",
+      "hintPair": null,
+      "lastHint": null,
+      "lastHintSource": null,
+      "overlay": false,
+      "capacity": 4,
+      "solution": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "tubePositions": [
+        {
+          "x": -147,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": -49,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": 49,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        },
+        {
+          "x": 147,
+          "y": 7,
+          "width": 50,
+          "height": 199,
+          "size": 43,
+          "bottom": -61
+        }
+      ],
+      "completed": 0
+    }
+  },
+  "retainedNodes": [
+    {
+      "clicks": 0,
+      "heapBytes": 8554216,
+      "count": 65,
+      "detached": 3,
+      "tubeNodes": 4
+    },
+    {
+      "clicks": 200,
+      "heapBytes": 43752188,
+      "count": 5466,
+      "detached": 1004,
+      "tubeNodes": 804
+    },
+    {
+      "clicks": 400,
+      "heapBytes": 77296488,
+      "count": 10866,
+      "detached": 2004,
+      "tubeNodes": 1604
+    }
+  ],
+  "codeRegressionReview": {
+    "run": "e891d38f969e4a1eb706e938beb516e3",
+    "status": "部分通过，2项回归待修",
+    "mainSha256": "2353189c00916db9c6a9741e9a1f9836f269d575338adac5f90139273bea3510",
+    "storageSha256": "a01ecdd0ed4653a16dd9b4bf2c14e7454a287a3ce364acd703664c520a0cef22",
+    "independentChecks": {
+      "browser": "153.0.8010.12",
+      "checks": [
+        {
+          "name": "切模式和重选/切关确认",
+          "passed": true,
+          "cancelPreservesSession": true,
+          "confirmMode": "challenge"
+        },
+        {
+          "name": "迷雾同色下层及数字辅助",
+          "passed": true,
+          "beforeSymbols": [
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": true,
+              "labels": []
+            }
+          ],
+          "afterSymbols": [
+            {
+              "sprite": false,
+              "labels": [
+                "?"
+              ]
+            },
+            {
+              "sprite": true,
+              "labels": []
+            }
+          ]
+        },
+        {
+          "name": "未知版本丢弃session并保留真实进度/声音偏好",
+          "passed": true,
+          "beforeMoves": 1,
+          "afterMoves": 0,
+          "completed": 1,
+          "sound": false
+        },
+        {
+          "name": "跨事务损坏历史拒绝并无法撤销",
+          "passed": true,
+          "moves": 0,
+          "recovered": true
+        },
+        {
+          "name": "360px主界面44px目标及菜单/关闭/模式边缘点击",
+          "passed": true
+        }
+      ],
+      "errors": [],
+      "targets360": [
+        {
+          "name": "按钮:☰",
+          "width": 44,
+          "height": 44,
+          "x": 29.333333333333332,
+          "y": 60
+        },
+        {
+          "name": "按钮:⚙",
+          "width": 44,
+          "height": 44,
+          "x": 330.66666666666663,
+          "y": 60
+        },
+        {
+          "name": "按钮:经典整理  ·  第 1 关  ⌄",
+          "width": 200,
+          "height": 44,
+          "x": 180,
+          "y": 106.66666666666666
+        },
+        {
+          "name": "按钮:↶\n撤销",
+          "width": 54.666666666666664,
+          "height": 52,
+          "x": 56,
+          "y": 534.6666666666666
+        },
+        {
+          "name": "按钮:↻\n重开",
+          "width": 54.666666666666664,
+          "height": 52,
+          "x": 138.66666666666666,
+          "y": 534.6666666666666
+        },
+        {
+          "name": "按钮:✦\n提示",
+          "width": 54.666666666666664,
+          "height": 52,
+          "x": 221.33333333333331,
+          "y": 534.6666666666666
+        },
+        {
+          "name": "按钮:＋\n加管",
+          "width": 54.666666666666664,
+          "height": 52,
+          "x": 304,
+          "y": 534.6666666666666
+        },
+        {
+          "name": "按钮:经典旅程",
+          "width": 100,
+          "height": 44,
+          "x": 70,
+          "y": 590
+        },
+        {
+          "name": "按钮:长管挑战",
+          "width": 100,
+          "height": 44,
+          "x": 180,
+          "y": 590
+        },
+        {
+          "name": "按钮:迷雾实验",
+          "width": 100,
+          "height": 44,
+          "x": 290,
+          "y": 590
+        }
+      ]
+    },
+    "memory": [
+      {
+        "clicks": 0,
+        "heapBytes": 8306068,
+        "count": 65,
+        "detached": 3,
+        "tubeNodes": 4
+      },
+      {
+        "clicks": 200,
+        "heapBytes": 10115588,
+        "count": 70,
+        "detached": 8,
+        "tubeNodes": 4
+      },
+      {
+        "clicks": 400,
+        "heapBytes": 10068672,
+        "count": 70,
+        "detached": 8,
+        "tubeNodes": 4
+      }
+    ],
+    "newRegressions": {
+      "settingsOverlap": {
+        "sound": {
+          "name": "按钮:声音反馈  开",
+          "w": 266.66666666666663,
+          "h": 44,
+          "x": 180,
+          "y": 380
+        },
+        "symbols": {
+          "name": "按钮:颜色数字辅助  关",
+          "w": 266.66666666666663,
+          "h": 44,
+          "x": 180,
+          "y": 418.66666666666663
+        },
+        "click": {
+          "x": 180,
+          "y": 401
+        },
+        "before": {
+          "sound": true,
+          "symbols": false
+        },
+        "after": {
+          "sound": true,
+          "symbols": true
+        }
+      },
+      "historyTruncation": {
+        "loaded": {
+          "moves": 501,
+          "extra": true,
+          "recovered": false
+        },
+        "undone": {
+          "moves": 500,
+          "historyLength": 499
+        },
+        "reloaded": {
+          "moves": 0,
+          "extra": false,
+          "recovered": true,
+          "message": "已修复异常存档，保留有效进度并恢复可玩的关卡"
+        }
+      }
+    }
+  },
+  "finalTargetedReview": {
+    "run": "c74e9ad1e0c44a03adb01823ba566c68",
+    "status": "两项专项独立复验通过",
+    "observations": {
+      "browser": "153.0.8010.12",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "errors": [],
+      "settings": {
+        "targets": [
+          {
+            "name": "按钮:×",
+            "modal": true,
+            "parent": "Node.206",
+            "width": 44,
+            "height": 44,
+            "x": 313.3333333333333,
+            "y": 127.33333333333333
+          },
+          {
+            "name": "按钮:● 暮色海湾 ",
+            "modal": true,
+            "parent": "Node.206",
+            "width": 266.66666666666663,
+            "height": 44,
+            "x": 180,
+            "y": 233.33333333333331
+          },
+          {
+            "name": "按钮:○ 清晨雾岛 · 3 星解锁",
+            "modal": true,
+            "parent": "Node.206",
+            "width": 266.66666666666663,
+            "height": 44,
+            "x": 180,
+            "y": 281.3333333333333
+          },
+          {
+            "name": "按钮:○ 极光花园 · 6 星解锁",
+            "modal": true,
+            "parent": "Node.206",
+            "width": 266.66666666666663,
+            "height": 44,
+            "x": 180,
+            "y": 329.3333333333333
+          },
+          {
+            "name": "按钮:声音反馈  开",
+            "modal": true,
+            "parent": "Node.206",
+            "width": 266.66666666666663,
+            "height": 44,
+            "x": 180,
+            "y": 380
+          },
+          {
+            "name": "按钮:颜色数字辅助  关",
+            "modal": true,
+            "parent": "Node.206",
+            "width": 266.66666666666663,
+            "height": 44,
+            "x": 180,
+            "y": 428
+          },
+          {
+            "name": "按钮:快速动画  关",
+            "modal": true,
+            "parent": "Node.206",
+            "width": 266.66666666666663,
+            "height": 44,
+            "x": 180,
+            "y": 476
+          }
+        ],
+        "sameColumnGaps": [
+          {
+            "a": "按钮:● 暮色海湾 ",
+            "b": "按钮:○ 清晨雾岛 · 3 星解锁",
+            "verticalGap": 4
+          },
+          {
+            "a": "按钮:● 暮色海湾 ",
+            "b": "按钮:○ 极光花园 · 6 星解锁",
+            "verticalGap": 52
+          },
+          {
+            "a": "按钮:● 暮色海湾 ",
+            "b": "按钮:声音反馈  开",
+            "verticalGap": 102.66666666666669
+          },
+          {
+            "a": "按钮:● 暮色海湾 ",
+            "b": "按钮:颜色数字辅助  关",
+            "verticalGap": 150.66666666666669
+          },
+          {
+            "a": "按钮:● 暮色海湾 ",
+            "b": "按钮:快速动画  关",
+            "verticalGap": 198.66666666666669
+          },
+          {
+            "a": "按钮:○ 清晨雾岛 · 3 星解锁",
+            "b": "按钮:○ 极光花园 · 6 星解锁",
+            "verticalGap": 4
+          },
+          {
+            "a": "按钮:○ 清晨雾岛 · 3 星解锁",
+            "b": "按钮:声音反馈  开",
+            "verticalGap": 54.666666666666686
+          },
+          {
+            "a": "按钮:○ 清晨雾岛 · 3 星解锁",
+            "b": "按钮:颜色数字辅助  关",
+            "verticalGap": 102.66666666666669
+          },
+          {
+            "a": "按钮:○ 清晨雾岛 · 3 星解锁",
+            "b": "按钮:快速动画  关",
+            "verticalGap": 150.66666666666669
+          },
+          {
+            "a": "按钮:○ 极光花园 · 6 星解锁",
+            "b": "按钮:声音反馈  开",
+            "verticalGap": 6.666666666666686
+          },
+          {
+            "a": "按钮:○ 极光花园 · 6 星解锁",
+            "b": "按钮:颜色数字辅助  关",
+            "verticalGap": 54.666666666666686
+          },
+          {
+            "a": "按钮:○ 极光花园 · 6 星解锁",
+            "b": "按钮:快速动画  关",
+            "verticalGap": 102.66666666666669
+          },
+          {
+            "a": "按钮:声音反馈  开",
+            "b": "按钮:颜色数字辅助  关",
+            "verticalGap": 4
+          },
+          {
+            "a": "按钮:声音反馈  开",
+            "b": "按钮:快速动画  关",
+            "verticalGap": 52
+          },
+          {
+            "a": "按钮:颜色数字辅助  关",
+            "b": "按钮:快速动画  关",
+            "verticalGap": 4
+          }
+        ],
+        "actions": [
+          {
+            "key": "sound",
+            "edge": "bottom",
+            "x": 180,
+            "y": 401,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": false,
+              "symbols": false,
+              "fast": false
+            }
+          },
+          {
+            "key": "sound",
+            "edge": "top",
+            "x": 180,
+            "y": 359,
+            "before": {
+              "sound": false,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            }
+          },
+          {
+            "key": "sound",
+            "edge": "left",
+            "x": 47.666666666666686,
+            "y": 380,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": false,
+              "symbols": false,
+              "fast": false
+            }
+          },
+          {
+            "key": "sound",
+            "edge": "right",
+            "x": 312.3333333333333,
+            "y": 380,
+            "before": {
+              "sound": false,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            }
+          },
+          {
+            "key": "symbols",
+            "edge": "bottom",
+            "x": 180,
+            "y": 449,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": true,
+              "fast": false
+            }
+          },
+          {
+            "key": "symbols",
+            "edge": "top",
+            "x": 180,
+            "y": 407,
+            "before": {
+              "sound": true,
+              "symbols": true,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            }
+          },
+          {
+            "key": "symbols",
+            "edge": "left",
+            "x": 47.666666666666686,
+            "y": 428,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": true,
+              "fast": false
+            }
+          },
+          {
+            "key": "symbols",
+            "edge": "right",
+            "x": 312.3333333333333,
+            "y": 428,
+            "before": {
+              "sound": true,
+              "symbols": true,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            }
+          },
+          {
+            "key": "fast",
+            "edge": "bottom",
+            "x": 180,
+            "y": 497,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": true
+            }
+          },
+          {
+            "key": "fast",
+            "edge": "top",
+            "x": 180,
+            "y": 455,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": true
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            }
+          },
+          {
+            "key": "fast",
+            "edge": "left",
+            "x": 47.666666666666686,
+            "y": 476,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": true
+            }
+          },
+          {
+            "key": "fast",
+            "edge": "right",
+            "x": 312.3333333333333,
+            "y": 476,
+            "before": {
+              "sound": true,
+              "symbols": false,
+              "fast": true
+            },
+            "after": {
+              "sound": true,
+              "symbols": false,
+              "fast": false
+            }
+          }
+        ],
+        "passed": true
+      },
+      "history": {
+        "samples": [
+          {
+            "label": "500条旧存档迁移",
+            "moves": 501,
+            "length": 500,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              []
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "撤销并刷新1",
+            "moves": 500,
+            "length": 499,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [],
+              [
+                3,
+                3
+              ]
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "撤销并刷新2",
+            "moves": 499,
+            "length": 498,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              []
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "撤销并刷新3",
+            "moves": 498,
+            "length": 497,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [],
+              [
+                3,
+                3
+              ]
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "默认主题重绘并刷新",
+            "moves": 498,
+            "length": 497,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [],
+              [
+                3,
+                3
+              ]
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "继续移动并刷新1",
+            "moves": 499,
+            "length": 498,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              []
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "继续移动并刷新2",
+            "moves": 500,
+            "length": 499,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [],
+              [
+                3,
+                3
+              ]
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "继续移动并刷新3",
+            "moves": 501,
+            "length": 500,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              []
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                []
+              ],
+              "moves": 1,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "继续移动并刷新4",
+            "moves": 502,
+            "length": 500,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [],
+              [
+                3,
+                3
+              ]
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [],
+                [
+                  3,
+                  3
+                ]
+              ],
+              "moves": 2,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "再次截断后撤销并刷新",
+            "moves": 501,
+            "length": 499,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              []
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [],
+                [
+                  3,
+                  3
+                ]
+              ],
+              "moves": 2,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "撤销至截断基点后刷新",
+            "moves": 2,
+            "length": 0,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [],
+              [
+                3,
+                3
+              ]
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [],
+                [
+                  3,
+                  3
+                ]
+              ],
+              "moves": 2,
+              "extra": true
+            },
+            "recovered": false
+          },
+          {
+            "label": "基点继续移动并刷新",
+            "moves": 3,
+            "length": 1,
+            "extra": true,
+            "board": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              []
+            ],
+            "boundary": {
+              "board": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ],
+                [],
+                [
+                  3,
+                  3
+                ]
+              ],
+              "moves": 2,
+              "extra": true
+            },
+            "recovered": false
+          }
+        ],
+        "mismatchedBoundaryRejected": true,
+        "passed": true,
+        "initial500Generated": true,
+        "realUndoClicks": 503
+      },
+      "src/main.mjsSha256": "1d1da7e5c4a859d072a262083d889e17353ad024740bd6ad4d0f2bb52da8b36f",
+      "src/storage.mjsSha256": "e5bb446313a9ba7301943ca0b33c6deed4f61e64a23ec3efb8351f45450bc3bd"
+    },
+    "limits": [
+      "仅Chromium 153.0.8010.12及360x640视口",
+      "初始500条合法历史由规则构造后注入，后续503次撤销、移动和刷新是真实UI操作",
+      "未重跑原5项、全量关卡或整个工作流验收",
+      "未验证Safari、实体触摸或长期GPU/native内存"
+    ]
+  },
+  "themeSettlementFinalReview": {
+    "passed": true,
+    "run": "5be7ad3a11084952a3af39028c2d1f13",
+    "evidence": "game-review-final-boundaries.json#themeFixReview",
+    "mainSha256": "2e0e0df11a131d124c624d56d210765afacbb4bd3de20e52cb025186d78ccc8f"
+  }
+}

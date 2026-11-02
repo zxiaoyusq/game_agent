@@ -1,0 +1,328 @@
+# Google Play public snapshot: com.gma.water.sort.puzzle
+URL: https://play.google.com/store/apps/details?id=com.gma.water.sort.puzzle&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:00.641Z
+HTTP status: 200
+Raw HTML SHA-256: 508b2dcc5e4251a09a9d5a9c8c65cdff5792bc29d5981517fc79eb75be73a36f
+Raw HTML: research/html-data/store-snapshots/com.gma.water.sort.puzzle.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Water Sort: Color Puzzle Game
+IEC Global Pty Ltd
+Contains ads
+In-app purchases
+4.3
+star
+1.34M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Water Sort Puzzle is a fun and interesting puzzle game! Try to sort the colored water in the glasses until all colors are in the same glass. A challenging yet relaxing game to exercise your brain!
+★ HOW TO PLAY:
+• Tap any glass to pour water to another glass.
+• The rule is that you can only pour the water if it is linked to the same color and there’s enough space on the glass.
+• Try not to get stuck - but don’t worry, you can always restart the level at any time.
+★ FEATURES:
+• One finger control.
+• Multiple unique levels
+• FREE & EASY TO PLAY.
+• NO penalties & time limits; you can enjoy Water Sort Puzzle at your own pace!
+How smart are you?
+Updated on
+Aug 23, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Sort
+Casual
+Single player
+Abstract
+Miscellaneous
+Puzzles
+Fantasy
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Expires on 10/05
+A little Mid-Autumn gift: save up to 80% off on our big bundle!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Water Sort: Color Puzzle Game",
+  "url": "https://play.google.com/store/apps/details/Water_Sort_Color_Puzzle_Game?id=com.gma.water.sort.puzzle&hl=en",
+  "description": "How smart are you?",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/q29gZGx6wG1doEv3GAD4jxZWrPM9ZsN8yWgjAAiL3r02UjKF7zUL2hCsSiCn70WYEvBdJHyXpoiXgXzSiLEM",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "IEC Global Pty Ltd",
+    "url": "http://www.iecglobal.com.au/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.252481460571289",
+    "ratingCount": "1341771"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Water Sort: Color Puzzle Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Water Sort: Color Puzzle Game
+IEC Global Pty Ltd
+Contains ads
+In-app purchases
+4.3
+star
+1.34M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Water Sort Puzzle is a fun and interesting puzzle game! Try to sort the colored water in the glasses until all colors are in the same glass. A challenging yet relaxing game to exercise your brain!
+★ HOW TO PLAY:
+• Tap any glass to pour water to another glass.
+• The rule is that you can only pour the water if it is linked to the same color and there’s enough space on the glass.
+• Try not to get stuck - but don’t worry, you can always restart the level at any time.
+★ FEATURES:
+• One finger control.
+• Multiple unique levels
+• FREE & EASY TO PLAY.
+• NO penalties & time limits; you can enjoy Water Sort Puzzle at your own pace!
+How smart are you?
+Updated on
+Aug 23, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Sort
+Casual
+Single player
+Abstract
+Miscellaneous
+Puzzles
+Fantasy
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Expires on 10/05
+A little Mid-Autumn gift: save up to 80% off on our big bundle!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+No data collected
+Learn more
+about how developers declare collection
+Data isn’t encrypted
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.2
+1.28M reviews
+5
+4
+3
+2
+1
+Carter J L Ward
+more_vert
+Flag inappropriate
+Show review history
+April 9, 2026
+seriously, can you do something about the ads? I'm getting very frustrated being taken out of the game, to the play store, just because an ad plays. certain ones do not do it. unfortunately they are the rare ones. I beat a level, I'm trying to get an extra bottle piece by watching an ad and at the end of it, it pulls me out of the game and into the store. which the game thinks I did, so it resets the level and/or I lose any extra bottles that I may have used. I've dropped this game two stars.
+17 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Jithu Mitta
+more_vert
+Flag inappropriate
+May 9, 2021
+A super fun game to play! Especially when you are in the later levels when it gets quite difficult and forces you to think in new ways. One thing I'd love to see added as an update is allowing the user to replay an already finished level. I'd rate this game 5/5 if this simple feature could be added! That apart, long ads are definitely an issue. But not quite sure if much can be done about that since that's probably how the company makes money.
+3,956 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Elizabeth Mitchell
+more_vert
+Flag inappropriate
+September 14, 2025
+It's a good, therapeutic game, with some levels that are *really* challenging. But recently it's been bringing me back to levels I've completed, so I've just unistalled and reinstalled ... but that brought me back to Level 1!!! 😖😭 I think I'll try a different one instead because I'm pretty sure I was approaching 200!!
+147 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Fix bugs
+Add more levels
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@iecglobal.com.au
+shield
+Privacy Policy
+About the developer
+IEC GLOBAL PTY LTD
+iecglobal.au@gmail.com
+85 Carwar Avenue
+Carss Park NSW 2221
+Australia
++61 411 155 121
+More by IEC Global Pty Ltd
+arrow_forward
+Dress Up Fashion Challenge
+IEC Global Pty Ltd
+4.2
+star
+Soda Sort: Water Color Puzzle
+IEC Global Pty Ltd
+4.2
+star
+Bubble Sort Color Puzzle
+IEC Global Pty Ltd
+4.2
+star
+Cube Color Escape
+IEC Global Pty Ltd
+4.5
+star
+Match Color Rotate
+IEC Global Pty Ltd
+3.3
+star
+Fit It Piece Puzzle
+IEC Global Pty Ltd
+4.4
+star
+Similar games
+arrow_forward
+Water Sort Puzzle
+Xumeng puzzle games
+3.4
+star
+Water Sort : Puzzle game
+Yooga & Co
+3.9
+star
+Water Sort : Puzzle Offline
+CristalEvo
+3.1
+star
+Waterscapes - Color Sort Game
+Playflux
+3.3
+star
+Water Sort: Color Tube Puzzle
+Flyfox Games
+4.7
+star
+Color Sort Water Purrfect Puzz
+Tatem Games Inc.
+3.8
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

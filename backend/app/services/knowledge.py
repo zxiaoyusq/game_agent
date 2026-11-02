@@ -41,6 +41,8 @@ logger = logging.getLogger(__name__)
 
 # 文件夹相对路径深度上限，超出会拒绝创建（磁盘扫描时同样按此截断）
 MAX_FOLDER_DEPTH = 4
+# Skill 包含模块、资源和示例等多级目录，单独放宽限制以完整展示原始包。
+SKILL_MAX_FOLDER_DEPTH = 8
 
 # 文件夹每段名字允许的字符：中英文 / 数字 / 下划线 / 连字符 / 点 / 空格
 _FOLDER_SEG_RE = re.compile(r"^[0-9A-Za-z_.\-一-龥 ]{1,64}$")
@@ -84,14 +86,19 @@ def _index_path(module: str, category: str) -> Path:
     return _category_dir(module, category) / "index.json"
 
 
-def _safe_folder_path(path: str) -> str:
+def _folder_depth_limit(module: Optional[str]) -> int:
+    """返回模块的目录层级限制，普通知识库保持原有上限。"""
+    return SKILL_MAX_FOLDER_DEPTH if module == "skill" else MAX_FOLDER_DEPTH
+
+
+def _safe_folder_path(path: str, module: Optional[str] = None) -> str:
     """把外部传入的 folder 路径标准化为安全的相对路径。
 
     规则：
     - 允许空串 ""，表示根目录
     - 用 / 分隔，禁止 \\、绝对路径前缀、.. 段
     - 每段必须匹配 _FOLDER_SEG_RE
-    - 总深度不得超过 MAX_FOLDER_DEPTH
+    - 普通模块最多 4 层，Skill 模块最多 8 层
     返回值是规整后的字符串（无前后斜杠），不会包含连续斜杠。
     """
     if path is None:
@@ -103,9 +110,10 @@ def _safe_folder_path(path: str) -> str:
     segs = [s for s in raw.split("/") if s]
     if not segs:
         return ""
-    if len(segs) > MAX_FOLDER_DEPTH:
+    depth_limit = _folder_depth_limit(module)
+    if len(segs) > depth_limit:
         raise ValueError(
-            f"文件夹层级过深（最多 {MAX_FOLDER_DEPTH} 级，收到 {len(segs)} 级）"
+            f"文件夹层级过深（最多 {depth_limit} 级，收到 {len(segs)} 级）"
         )
     for s in segs:
         if s in {".", ".."}:
@@ -175,7 +183,7 @@ def _disk_signature(category_dir: Path) -> int:
 def _scan_disk(module: str, category: str) -> Tuple[List[KbFolder], List[KbItem]]:
     """递归扫描分类目录，得到 (folders, items)。
 
-    - folders：按 path 排序；超过 MAX_FOLDER_DEPTH 的子目录跳过并 log 警告
+    - folders：按 path 排序；超过模块层级限制的子目录跳过并记录中文警告
     - items  ：每份非忽略文件一条；id 提取规则：
         * <32 hex>__<rest> → 取 hex 作为 id（service 自己上传的文件）
         * 否则 → md5(folder + '/' + filename) 作为稳定 id（用户手动拖入）
@@ -184,6 +192,7 @@ def _scan_disk(module: str, category: str) -> Tuple[List[KbFolder], List[KbItem]
     base = _category_dir(module, category)
     folders: List[KbFolder] = []
     items: List[KbItem] = []
+    depth_limit = _folder_depth_limit(module)
 
     for root, dirs, files in os.walk(base):
         # 修剪掉隐藏 / 缓存子目录
@@ -198,11 +207,11 @@ def _scan_disk(module: str, category: str) -> Tuple[List[KbFolder], List[KbItem]
         # 1) folder 元信息：rel_str 非空时即为一个 folder
         if rel_str:
             depth = rel_str.count("/") + 1
-            if depth > MAX_FOLDER_DEPTH:
+            if depth > depth_limit:
                 # 超深目录：从 walk 里跳过，避免继续往下递归
                 logger.warning(
-                    "kb sync: skip deep folder (>%d levels): %s/%s/%s",
-                    MAX_FOLDER_DEPTH, module, category, rel_str,
+                    "知识库同步：跳过超过 %d 层的文件夹：%s/%s/%s",
+                    depth_limit, module, category, rel_str,
                 )
                 dirs[:] = []
                 continue
@@ -211,7 +220,7 @@ def _scan_disk(module: str, category: str) -> Tuple[List[KbFolder], List[KbItem]
             for seg in rel_str.split("/"):
                 if not _FOLDER_SEG_RE.match(seg):
                     logger.warning(
-                        "kb sync: folder segment with non-allowed chars: %s/%s/%s",
+                        "知识库同步：文件夹名称含特殊字符：%s/%s/%s",
                         module, category, rel_str,
                     )
                     break
@@ -454,7 +463,7 @@ def list_items(
     if folder is None:
         folder_filter = None
     else:
-        folder_filter = _safe_folder_path(folder)
+        folder_filter = _safe_folder_path(folder, module)
 
     for m in modules_to_scan:
         cats = KB_MODULE_CATEGORIES[m]
@@ -509,7 +518,7 @@ def create_item(
     """
     _validate_module_category(module, category)
 
-    folder_path = _safe_folder_path(folder)
+    folder_path = _safe_folder_path(folder, module)
     if folder_path:
         # folder 不强制要求预登记：缺哪级就建哪级，并把元信息补进 index。
         # 这样上传表单选择 folder 的流程不会因为索引上没有它而失败。
@@ -633,10 +642,10 @@ def create_folder(
     """登记一个文件夹。父级必须已存在（除非本次创建的是顶层目录）。
 
     路径规则见 _safe_folder_path：仅允许 [A-Za-z0-9_.\\- 中文]，每段 ≤64 字符，
-    最多 4 级深度。重名直接 400。
+    普通模块最多 4 层、Skill 最多 8 层。重名直接 400。
     """
     _validate_module_category(module, category)
-    folder_path = _safe_folder_path(path)
+    folder_path = _safe_folder_path(path, module)
     if not folder_path:
         raise ValueError("文件夹路径不能为空")
 
@@ -670,7 +679,7 @@ def delete_folder(module: str, category: str, *, path: str) -> bool:
     这里不再因为"非空"而拒绝，避免用户为了删一个嵌套目录要先一层层手动清空。
     """
     _validate_module_category(module, category)
-    folder_path = _safe_folder_path(path)
+    folder_path = _safe_folder_path(path, module)
     if not folder_path:
         raise ValueError("文件夹路径不能为空")
 
@@ -713,7 +722,7 @@ def list_items_under_folder(
     返回按 (folder, updated_at) 排序，便于提示词阅读。
     """
     _validate_module_category(module, category)
-    folder_path = _safe_folder_path(folder)
+    folder_path = _safe_folder_path(folder, module)
     items = _read_index(module, category)
     out: List[KbItem] = []
     prefix = folder_path + "/" if folder_path else ""
@@ -728,7 +737,7 @@ def list_items_under_folder(
 
 def get_folder(module: str, category: str, path: str) -> Optional[KbFolder]:
     """按 path 取单个 folder 元信息，找不到返回 None。"""
-    folder_path = _safe_folder_path(path)
+    folder_path = _safe_folder_path(path, module)
     if not folder_path:
         return None
     for f in _read_folders(module, category):

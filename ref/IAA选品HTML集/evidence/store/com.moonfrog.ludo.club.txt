@@ -1,0 +1,400 @@
+# Google Play public snapshot: com.moonfrog.ludo.club
+URL: https://play.google.com/store/apps/details?id=com.moonfrog.ludo.club&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:07.768Z
+HTTP status: 200
+Raw HTML SHA-256: 386a9863679c5f0766da65a2dc118a6d1838e94c1dc508059130aa9195b61310
+Raw HTML: research/html-data/store-snapshots/com.moonfrog.ludo.club.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+In-app purchases
+4.0
+star
+1.99M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+*This is the official and popular Ludo Club game
+100+ million downloads!
+Voice chat is available, play with friends now
+This is the most popular Ludo game. The game has the best mechanics and smoothest gameplay.
+Ludo Club is a classic board game played with friends and family. Play this classic dice game! Remember your childhood! Your search for a multiplayer ludo app to play ludo with friends ends here! Time will fly like never before as you play this SUPER ludo online game, chatting and enjoying with friends and learning all the skills needed to become a ludo star! Dive into the world of this amazing online ludo game - participate in weekly quests, beat ludo masters from around the world, unlock colourful dice and show them off to your friends!
+This is the same game that is very popular on Facebook and now you can play it here. Connect your friends and family by inviting them from Facebook, Whatsapp, Instagram and Tiktok.
+New game modes available:
+🎲Classic mode; as you remember from your childhood
+🏃‍♂️💨Rush mode; a new mode focusing on capturing the token of your opponent as many times as possible
+⚡️Bolt mode; a hide and seek imagination of Ludo game. Capture your opponent and rush to the home before your opponent can capture you
+What more:
+🌳Garden board is fun to play on
+🌊Ocean board will give you a sense of calm
+💬Voice chat in Friends game
+⌨️Text chat and make friends worldwide
+🔮New fun emojis are now available
+🏵️Themed events every 11 days
+🎲Starter packs with fun dices
+🏷️Extra offers on payments
+💶Mini-events to help earn instant Cash
+🆓Get free daily bonus and never run out of coins
+😍Visit LudoClub.com to earn additional rewards
+🤝Make new friends and exchange keys to unlock lucky chest
+🏦Additionally Ludo Club supports its players by doubling their coins in the piggy bank
+Ludo is a modern version of the game played by Indian kings and queens in ancient times; popularly during the Mahabharat it was called Chaupar. All you need to play this game is roll the dice and move your tokens to reach the centre of board. Defeat other players, become the King of Ludo.
+Features:
+* Play against the computer and practice when there is no internet connection
+* Play with your family and friends through local and online multiplayer.
+* Play 2 to 4 players in local multiplayer mode.
+* Invite and challenge your Facebook friends.
+* Play with global players and make new friends.
+* Private chat with your Facebook friends and game friends.
+* You don’t need to sacrifice your data to become a ludo star. This super ludo online game uses very little data and runs very smoothly on 2G, 3G, 4G!
+Ludo Club is a very addictive game that you can play with your family and friends and enjoy it. You will play this Ludo for hours and it will be fun for the whole family. This is as easy as playing tic tac toe.
+Ludo has many names in different parts of the world like Fia, Fia-spel (Fia the game), Le Jeu de Dada (The Game of Dada), Non t'arrabbiare, Fia med knuff (fia with push), Cờ cá nwày, Uckers , Griniaris, Petits Chevaux (little horses), Ki nevet a în în, برسي (Berzis/Berzis). People also misspell Ludo as Lodu, Chakka, Lido, Lado, Ledo, Leto, Lido, Lado, Lodo, Loodo and Lodo Game.
+Install Ludo Club and play everyone's favourite childhood board game of lodo from the developers of India's favourite card games. Ludo Club is available in loud, striking colours and beautiful board and dice designs for your phone's HD display. Play this exciting game of lodo, make friends, relieve your stress and dive into the colourful world of Ludo Club!
+Fastest Ludo game of 2024. Shareit and Voice chat with family and friends
+Updated on
+Sep 18, 2026
+#10 top grossing board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+Events & offers
+Update available
+Let every roll glow with the colors of autumn in Ludo Club
+Ends in 6 days
+Share good vibes and celebrate International Day of Peace in Ludo Club
+Update available
+Unleash mythical fire with the powerful new Oni ViP Dice
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo Club - Fun Dice Game Rush",
+  "url": "https://play.google.com/store/apps/details/Ludo_Club_Fun_Dice_Game_Rush?id=com.moonfrog.ludo.club&hl=en",
+  "description": "Fastest Ludo game of 2024. Shareit and Voice chat with family and friends",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/-22SR-ykccTKiM35bpvUr3pi2FcPzeBM-Mdxaqdz68Re8IM_tV_Pil0XBlW5EkBXO2WlMN5JIgmWCAzeWJ0i",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Moonfrog",
+    "url": "http://moonfroglabs.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.039936542510986",
+    "ratingCount": "1992355"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo Club - Fun Dice Game Rush - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+In-app purchases
+4.0
+star
+1.99M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+About this game
+arrow_forward
+*This is the official and popular Ludo Club game
+100+ million downloads!
+Voice chat is available, play with friends now
+This is the most popular Ludo game. The game has the best mechanics and smoothest gameplay.
+Ludo Club is a classic board game played with friends and family. Play this classic dice game! Remember your childhood! Your search for a multiplayer ludo app to play ludo with friends ends here! Time will fly like never before as you play this SUPER ludo online game, chatting and enjoying with friends and learning all the skills needed to become a ludo star! Dive into the world of this amazing online ludo game - participate in weekly quests, beat ludo masters from around the world, unlock colourful dice and show them off to your friends!
+This is the same game that is very popular on Facebook and now you can play it here. Connect your friends and family by inviting them from Facebook, Whatsapp, Instagram and Tiktok.
+New game modes available:
+🎲Classic mode; as you remember from your childhood
+🏃‍♂️💨Rush mode; a new mode focusing on capturing the token of your opponent as many times as possible
+⚡️Bolt mode; a hide and seek imagination of Ludo game. Capture your opponent and rush to the home before your opponent can capture you
+What more:
+🌳Garden board is fun to play on
+🌊Ocean board will give you a sense of calm
+💬Voice chat in Friends game
+⌨️Text chat and make friends worldwide
+🔮New fun emojis are now available
+🏵️Themed events every 11 days
+🎲Starter packs with fun dices
+🏷️Extra offers on payments
+💶Mini-events to help earn instant Cash
+🆓Get free daily bonus and never run out of coins
+😍Visit LudoClub.com to earn additional rewards
+🤝Make new friends and exchange keys to unlock lucky chest
+🏦Additionally Ludo Club supports its players by doubling their coins in the piggy bank
+Ludo is a modern version of the game played by Indian kings and queens in ancient times; popularly during the Mahabharat it was called Chaupar. All you need to play this game is roll the dice and move your tokens to reach the centre of board. Defeat other players, become the King of Ludo.
+Features:
+* Play against the computer and practice when there is no internet connection
+* Play with your family and friends through local and online multiplayer.
+* Play 2 to 4 players in local multiplayer mode.
+* Invite and challenge your Facebook friends.
+* Play with global players and make new friends.
+* Private chat with your Facebook friends and game friends.
+* You don’t need to sacrifice your data to become a ludo star. This super ludo online game uses very little data and runs very smoothly on 2G, 3G, 4G!
+Ludo Club is a very addictive game that you can play with your family and friends and enjoy it. You will play this Ludo for hours and it will be fun for the whole family. This is as easy as playing tic tac toe.
+Ludo has many names in different parts of the world like Fia, Fia-spel (Fia the game), Le Jeu de Dada (The Game of Dada), Non t'arrabbiare, Fia med knuff (fia with push), Cờ cá nwày, Uckers , Griniaris, Petits Chevaux (little horses), Ki nevet a în în, برسي (Berzis/Berzis). People also misspell Ludo as Lodu, Chakka, Lido, Lado, Ledo, Leto, Lido, Lado, Lodo, Loodo and Lodo Game.
+Install Ludo Club and play everyone's favourite childhood board game of lodo from the developers of India's favourite card games. Ludo Club is available in loud, striking colours and beautiful board and dice designs for your phone's HD display. Play this exciting game of lodo, make friends, relieve your stress and dive into the colourful world of Ludo Club!
+Fastest Ludo game of 2024. Shareit and Voice chat with family and friends
+Updated on
+Sep 18, 2026
+#10 top grossing board
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+Events & offers
+Update available
+Let every roll glow with the colors of autumn in Ludo Club
+Ends in 6 days
+Share good vibes and celebrate International Day of Peace in Ludo Club
+Update available
+Unleash mythical fire with the powerful new Oni ViP Dice
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Location, Personal info and 4 others
+Data isn’t encrypted
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.0
+1.92M reviews
+5
+4
+3
+2
+1
+Suraj Kaushik
+more_vert
+Flag inappropriate
+May 23, 2026
+Ludo Club feels very unfair. The dice often doesn’t seem random, and it feels like the game already decides who will win or lose. Some players keep getting 6s and perfect numbers while others barely get any chance. There are also too many bots and ads, which makes the experience frustrating. Even after so long, the game still doesn’t have voice chat. Overall, the game is becoming less fun and more annoying to play.
+31 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Moonfrog
+May 25, 2026
+Hi Suraj! We completely understand that the game did not live up to your expectations. Thank you for sharing your experience with us! We are open to player feedback and will do our best to help you if you'd be able to provide more information about the review. Please write to us at ludoclub@moonfroglabs.com elaborating on your issue.
+Nitish Paroha
+more_vert
+Flag inappropriate
+April 27, 2026
+This game is really terrible. The opponent keeps getting chances to kill your pieces, while you get very few opportunities. Even the special dice option feels like cheating. Overall, the game seems to run on unfair advantages. Once someone captures your piece even once, they keep targeting you throughout the entire game, and you hardly get any chances to play.
+34 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Moonfrog
+May 6, 2026
+Hi Nitish! It can feel frustrating when the opponent always win. Rest assured, the game's algorithms are designed to provide a fair and balanced challenge for players of all skill levels. You might consider practising specific strategies to improve your chances of success. Reach out to ludoclub@moonfroglabs.com if you need any assistance!
+ashish somani
+more_vert
+Flag inappropriate
+August 20, 2020
+The UI is the best amongst the peers. The game speed is excellent. However, after a while you realise that the game is biased towards certain opponents. Also, if you play 2 player games, you will find that the games are fixed. It might sound strange but one can easily predict the next dice number. Pls improve your game algorithms. Its becoming boring and frustrating and at times you would regret subscribing to the game.
+16,668 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+COLLECT. COMPLETE. WIN BIG!
+The Album is now LIVE in Ludo Club!
+Play Ludo, collect unique Cards, complete Sets, and fill your Album to unlock exciting rewards! Hunt for missing Cards, grow your collection, and see if you can complete them all.
+More Games. More Cards. More Rewards.
+Your Album is waiting. Start collecting now!
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+ludoclubsupport@moonfroglabs.com
+shield
+Privacy Policy
+About the developer
+Moonfrog Labs Private Limited
+gplay@moonfroglabs.com
+1st Floor, Unit No. 101, Tower D, RMZ Infinity, Municipal No. 3
+Old Madras Road, Benniganahalli, Krishnarajapuram R S
+Bengaluru, Karnataka 560016
+India
++91 77950 53808
+More by Moonfrog
+arrow_forward
+Teen Patti GOLD: 3 Patti Rummy
+Moonfrog
+4.3
+star
+Rummy GOLD: With Fast Rummy
+Moonfrog
+4.3
+star
+Jalebi - A Desi Adda With Ludo
+Moonfrog
+4.3
+star
+Cards Game 29 Offline Indian
+Moonfrog
+3.6
+star
+Parchis CLUB Online (Pro Ludo)
+Moonfrog
+4.1
+star
+Smash Cricket
+Moonfrog
+4.0
+star
+Similar games
+arrow_forward
+Ludo STAR
+Gameberry Labs
+4.4
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Yalla Ludo - Ludo&Jackaroo
+Aviva Sun
+3.7
+star
+Ludo King®
+Gametion
+4.0
+star
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo Super: Fun Board Game
+Comfun
+3.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

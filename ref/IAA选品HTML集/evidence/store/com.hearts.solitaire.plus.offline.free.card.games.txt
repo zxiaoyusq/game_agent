@@ -1,0 +1,392 @@
+# Google Play public snapshot: com.hearts.solitaire.plus.offline.free.card.games
+URL: https://play.google.com/store/apps/details?id=com.hearts.solitaire.plus.offline.free.card.games&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:17.948Z
+HTTP status: 200
+Raw HTML SHA-256: a4ff2c0cccd7f0c7346aaba0b9962e8ba277f85fdf20cb160d0a0b5c6e0a7885
+Raw HTML: research/html-data/store-snapshots/com.hearts.solitaire.plus.offline.free.card.games.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Hearts: Classic Card Game
+Topy Games
+Contains ads
+In-app purchases
+4.7
+star
+51.2K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+❤️ Hearts: Classic Card Game – Free & Offline!
+🃏 Step into the world of Hearts, the classic four-player trick-taking card game where strategy, timing, and clever decisions shape every round. Whether you’ve enjoyed the hearts card game with family, learned the rules from a friend, or are discovering this classic card game for the first time, this is the perfect way to experience a polished, easy-to-play, and completely free hearts game that you can enjoy offline anytime.
+If you love popular card games like Rummy, Cribbage, Euchre, Pinochle, Callbreak, Gin Rummy, or Bridge, you’ll appreciate the thoughtful strategy and exciting twists that make Hearts a timeless favorite. With simple rules, deep tactics, and adaptive opponents, this hearts card game offers a balanced blend of challenge and relaxation.
+🎯 A Fresh Take on the Classic Hearts Game
+In this beautifully crafted classic hearts game, your objective is simple: avoid taking Hearts and dodge the Queen of Spades—unless you’re daring enough to shoot the moon. Each round begins with passing cards, then competing in a series of trick-taking plays where following suit is essential. With the lowest score winning, every decision matters.
+✔ Easy to learn
+✔ Full of strategy
+✔ Fun from the very first hand
+Perfect for fans of fun card games, family card games, and players seeking a smarter, polished offline card game experience.
+🌟 Why You’ll Love Hearts
+● Free, Offline & Accessible
+● Enjoy a complete hearts offline experience with no Wi-Fi needed
+● Play at your own pace with smooth turns and smart animations
+● Auto-save ensures you never lose progress mid-round
+🤖 Smart & Adaptive AI
+● Challenge dynamic opponents in this refined AI hearts game
+● Perfect for both beginners and seasoned players
+● Improve your hearts strategy with clear, intuitive feedback
+🧠 Learn & Improve with Every Match
+● Helpful hints support newcomers learning the hearts rules
+● Undo options make this an easy card game to explore
+● Track your stats and growth across sessions
+● Relax with a casual card game, or refine tactics like a pro
+👨‍👩‍👧 Fun for All Ages
+Hearts is a naturally kids friendly card game thanks to its simple mechanics, yet it remains a deeply engaging strategy experience for adults. Whether you want a quick session or a long, thoughtful challenge, it fits any style of play.
+Great for:
+● Family card game nights
+● Relaxed solo play
+● Strategy lovers
+● Fans of trick-taking hearts gameplay
+🎨 Customizable & Beautiful
+Personalize your experience with customizable themes, card backs, and table styles—free for all players. Enjoy clean visuals and smooth gameplay that make every hand a pleasure to play.
+🏆 Challenge Yourself & Grow
+● Track your performance and refine your decisions
+● Strengthen logic, planning, and memory with every match
+● Perfect for casual play or focused strategy training
+● A polished hearts game designed for replayability
+❤️ Why Hearts Stands Out
+This classic card game brings together everything players love: strategy, luck, surprising twists, and smart decision-making. Whether you're playing for fun, practicing your skills, or exploring a relaxing free card game, Hearts offers endless enjoyment without pressure.
+✔ 100% free hearts card game
+✔ Smooth and balanced trick-taking hearts mechanics
+✔ Great for solo sessions
+✔ Ideal for relaxing or challenging gameplay
+✔ Perfect for players who enjoy Rummy, Pinochle, Cribbage, Euchre, Bridge & more
+🎉 Dive Into the Timeless Fun of Hearts
+Avoid points, plan your moves, and master the art of the hearts card game. With free offline play, helpful tools, and a beautiful presentation, it’s the perfect way to enjoy this classic anytime.
+Download Hearts now and start your journey through the world’s most beloved trick-taking card game—free, offline, and endlessly replayable!
+Hearts: Classic trick-taking card game with smart AI. Install and play now!
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Card
+Classic cards
+Hearts
+Casual
+Single player
+Realistic
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hearts: Classic Card Game",
+  "url": "https://play.google.com/store/apps/details/Hearts_Classic_Card_Game?id=com.hearts.solitaire.plus.offline.free.card.games&hl=en",
+  "description": "Hearts: Classic trick-taking card game with smart AI. Install and play now!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/m1NMGXpIB0mbeUoncgutjhEVv-nSvdTuDp86eh44yU4-exucHQjDBvjVg7awoZwppUPc9oaEpkaWxm8BzD9F",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Topy Games",
+    "url": "https://joygame.site"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.73191499710083",
+    "ratingCount": "51241"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Hearts: Classic Card Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Hearts: Classic Card Game
+Topy Games
+Contains ads
+In-app purchases
+4.7
+star
+51.2K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+❤️ Hearts: Classic Card Game – Free & Offline!
+🃏 Step into the world of Hearts, the classic four-player trick-taking card game where strategy, timing, and clever decisions shape every round. Whether you’ve enjoyed the hearts card game with family, learned the rules from a friend, or are discovering this classic card game for the first time, this is the perfect way to experience a polished, easy-to-play, and completely free hearts game that you can enjoy offline anytime.
+If you love popular card games like Rummy, Cribbage, Euchre, Pinochle, Callbreak, Gin Rummy, or Bridge, you’ll appreciate the thoughtful strategy and exciting twists that make Hearts a timeless favorite. With simple rules, deep tactics, and adaptive opponents, this hearts card game offers a balanced blend of challenge and relaxation.
+🎯 A Fresh Take on the Classic Hearts Game
+In this beautifully crafted classic hearts game, your objective is simple: avoid taking Hearts and dodge the Queen of Spades—unless you’re daring enough to shoot the moon. Each round begins with passing cards, then competing in a series of trick-taking plays where following suit is essential. With the lowest score winning, every decision matters.
+✔ Easy to learn
+✔ Full of strategy
+✔ Fun from the very first hand
+Perfect for fans of fun card games, family card games, and players seeking a smarter, polished offline card game experience.
+🌟 Why You’ll Love Hearts
+● Free, Offline & Accessible
+● Enjoy a complete hearts offline experience with no Wi-Fi needed
+● Play at your own pace with smooth turns and smart animations
+● Auto-save ensures you never lose progress mid-round
+🤖 Smart & Adaptive AI
+● Challenge dynamic opponents in this refined AI hearts game
+● Perfect for both beginners and seasoned players
+● Improve your hearts strategy with clear, intuitive feedback
+🧠 Learn & Improve with Every Match
+● Helpful hints support newcomers learning the hearts rules
+● Undo options make this an easy card game to explore
+● Track your stats and growth across sessions
+● Relax with a casual card game, or refine tactics like a pro
+👨‍👩‍👧 Fun for All Ages
+Hearts is a naturally kids friendly card game thanks to its simple mechanics, yet it remains a deeply engaging strategy experience for adults. Whether you want a quick session or a long, thoughtful challenge, it fits any style of play.
+Great for:
+● Family card game nights
+● Relaxed solo play
+● Strategy lovers
+● Fans of trick-taking hearts gameplay
+🎨 Customizable & Beautiful
+Personalize your experience with customizable themes, card backs, and table styles—free for all players. Enjoy clean visuals and smooth gameplay that make every hand a pleasure to play.
+🏆 Challenge Yourself & Grow
+● Track your performance and refine your decisions
+● Strengthen logic, planning, and memory with every match
+● Perfect for casual play or focused strategy training
+● A polished hearts game designed for replayability
+❤️ Why Hearts Stands Out
+This classic card game brings together everything players love: strategy, luck, surprising twists, and smart decision-making. Whether you're playing for fun, practicing your skills, or exploring a relaxing free card game, Hearts offers endless enjoyment without pressure.
+✔ 100% free hearts card game
+✔ Smooth and balanced trick-taking hearts mechanics
+✔ Great for solo sessions
+✔ Ideal for relaxing or challenging gameplay
+✔ Perfect for players who enjoy Rummy, Pinochle, Cribbage, Euchre, Bridge & more
+🎉 Dive Into the Timeless Fun of Hearts
+Avoid points, plan your moves, and master the art of the hearts card game. With free offline play, helpful tools, and a beautiful presentation, it’s the perfect way to enjoy this classic anytime.
+Download Hearts now and start your journey through the world’s most beloved trick-taking card game—free, offline, and endlessly replayable!
+Hearts: Classic trick-taking card game with smart AI. Install and play now!
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Card
+Classic cards
+Hearts
+Casual
+Single player
+Realistic
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+Device or other IDs
+Data isn’t encrypted
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.7
+45.3K reviews
+5
+4
+3
+2
+1
+Michael B
+more_vert
+Flag inappropriate
+December 23, 2024
+This game hits the spot. On hard mode, the AI used to regularly beat me when I first installed. Now that I've improved, I can usually win if I'm on my game - but if I'm not, the AI is quick to take advantage of my mistakes. The nice thing is, if you don't want that kind of challenge, there's an easier casual mode as well. Highly recommended if you like playing Hearts.
+206 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Kyle
+more_vert
+Flag inappropriate
+August 12, 2025
+I'm pretty sure this game is rigged for you to lose some of the time. I found an undo turn button. So, one game I messed around with it. No matter what pattern the game took, I always ended up with the queen of spades when somebody threw a club card. I get it, you can only randomize the program so much. But it takes the fun out of the game, knowing the ai knows your hand and will set you up to fail.
+27 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Claire M
+more_vert
+Flag inappropriate
+October 8, 2025
+New phone and having to start again! Not impressed! Had originally paid to remove the adverts because they were so annoying and i love this game, I'm quite competitive! But I got a new phone, and there is zero place to log in and retrieve previous account? Or am I missing something? Not only have I wasted paying for the adverts to be removed, but I'm back at square one. Support me regarding this and I'll put back to 5 stars!
+10 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+joygamellc@gmail.com
+shield
+Privacy Policy
+About the developer
+LEYAN TECHNOLOGY (HONGKONG) CO. LIMITED
+chillminds14@gmail.com
+Rm 6 11/F PROSPERITY PLACE
+6 SHING YIP ST
+觀塘
+九龍
+Hong Kong
++852 5372 8662
+More by Topy Games
+arrow_forward
+Spades Solitaire - Card Games
+Topy Games
+4.7
+star
+Callbreak - Card Game Offline
+Topy Games
+4.7
+star
+Trivia Master - Word Quiz Game
+Topy Games
+4.3
+star
+Gin Rummy - Classic Card Game
+Topy Games
+4.7
+star
+Spelling Quiz - Word Trivia
+Topy Games
+4.5
+star
+Bridge - Card Game
+Topy Games
+4.6
+star
+Similar games
+arrow_forward
+Hearts: Card Game
+MobilityWare
+4.3
+star
+Solitaire for Seniors Game
+Guru Puzzle Game
+4.8
+star
+FreeCell Solitaire: Card Games
+MobilityWare
+4.6
+star
+Gin Rummy Classic
+MobilityWare
+3.9
+star
+Spades Solitaire - Card Games
+Topy Games
+4.7
+star
+Vita Solitaire for Seniors
+Vita Studio.
+4.8
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

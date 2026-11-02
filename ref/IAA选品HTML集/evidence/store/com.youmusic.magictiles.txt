@@ -1,0 +1,357 @@
+# Google Play public snapshot: com.youmusic.magictiles
+URL: https://play.google.com/store/apps/details?id=com.youmusic.magictiles&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:39.993Z
+HTTP status: 200
+Raw HTML SHA-256: b51935b8ea87b7a088dca637685ee746489078ebb6d419353116a11dc3c39654
+Raw HTML: research/html-data/store-snapshots/com.youmusic.magictiles.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+Contains ads
+In-app purchases
+4.6
+star
+3.53M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Do you love music games and playing along to your favorite songs on piano tiles?
+Magic Tiles 3 is the perfect choice for you! This game is the ultimate experience in music games, combining the best elements of magic piano games, rhythm game, and song games to create a truly immersive and enjoyable gameplay experience. With its engaging gameplay and wide selection of songs, it is sure to become one of your all-time favorite music games. In Magic Tiles 3, you’ll find a wide variety of music styles to choose from, including classic piano songs, pop, edm, hip-hop, and more. With this music game, you can experience the thrill of playing along to your favorite tunes on the magic piano tiles, all while challenging your reflexes and hand-eye coordination.
+How to play:
+Welcome to Magic Tiles 3, the music game isn’t just about the music - it’s also about the challenge. As you play this music piano game, you’ll need to tap tiles in time with the music, all while avoiding the white tiles. It’s a test of skill and reflexes that will keep you coming back for more. If you’re looking for a fun and challenging way to test your coordination skills while indulging in your love for music, then Magic Tiles 3 is the perfect music piano game for you!
+Feature:
+1. Magic Tiles 3 features 45,000+ songs, as well as colorful graphics that will keep you entertained for hours on end. This addictive piano game offers a unique and satisfying experience for music lovers. Music games enthusiasts alike will love it. It’s no wonder that Magic Tiles 3 is one of the most popular music games around.
+2. With Magic Tiles 3, you’ll never run out of new challenges to explore! This music piano game features a wide variety of levels, each with its own catchy hit songs and unique gameplay mechanics. Whether you tap piano tiles along or explore new levels, there’s always something new and exciting waiting for you. And with gifts waiting for you at the end of each level, the fun never stops!
+3. Magic Tiles 3 is a music game that offers not only a wide selection of songs and engaging gameplay, but also a well-designed online mode. This allows you to connect with numerous players from all over the world and even invite your friends to join you in a beat battle. With its challenging levels and addictive gameplay, this game provides an excellent opportunity to compete with other players in beat battle and see who excels.
+So why wait? Download Magic Tiles 3 today and start playing one of the popular music piano games around! With its addictive gameplay, catchy songs, and challenging levels, it’s the perfect way to pass the time and have some fun. So come on - let’s play Magic Tiles 3 and experience the combination of song game and rhythm game in one addictive package!
+Support:
+Are you having any problems? Send an email to: magictiles3.support@amanotes.com or contact us in the game by going to Settings > FAQ and Support.
+Terms of use: https://www.amanotes.com/terms-and-conditions/
+Privacy Policy: https://www.amanotes.com/privacy-policy/
+You love music games. Let’s tap magic tiles to the beat in the fun song game
+Updated on
+Sep 1, 2026
+Available on
+Android,
+Windows*
+#4 top grossing music
+Music
+Performance
+Arcade
+Single player
+Abstract
+Miscellaneous
+Musical instruments
+Intense
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Update available
+Bruno Mars' "Risk It All" — now on Magic Tiles 3
+Update available
+Play Billie Eilish's Chihiro in Magic Tiles 3
+Update available
+"Where Is My Husband?" Just Landed in Magic Tiles 3
+Ends on 09/30
+A New Miracle Pass Season Is Here!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Magic Tiles 3™ - Piano Game",
+  "url": "https://play.google.com/store/apps/details/Magic_Tiles_3_Piano_Game?id=com.youmusic.magictiles&hl=en",
+  "description": "You love music games. Let’s tap magic tiles to the beat in the fun song game",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_MUSIC",
+  "image": "https://play-lh.googleusercontent.com/MN-AsowqLMEkznK8mhfCu2PGN2Czyx9xq9HHnitFVJPnRRyOwNHPvxV_NoSJounFmcotRzsnx9GcEwRUbOmjwQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "AMANOTES PTE. LTD.",
+    "url": "https://amanotes.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.576050281524658",
+    "ratingCount": "3531580"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Magic Tiles 3™ - Piano Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+Contains ads
+In-app purchases
+4.6
+star
+3.53M reviews
+Rated for 3+
+info
+500M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Do you love music games and playing along to your favorite songs on piano tiles?
+Magic Tiles 3 is the perfect choice for you! This game is the ultimate experience in music games, combining the best elements of magic piano games, rhythm game, and song games to create a truly immersive and enjoyable gameplay experience. With its engaging gameplay and wide selection of songs, it is sure to become one of your all-time favorite music games. In Magic Tiles 3, you’ll find a wide variety of music styles to choose from, including classic piano songs, pop, edm, hip-hop, and more. With this music game, you can experience the thrill of playing along to your favorite tunes on the magic piano tiles, all while challenging your reflexes and hand-eye coordination.
+How to play:
+Welcome to Magic Tiles 3, the music game isn’t just about the music - it’s also about the challenge. As you play this music piano game, you’ll need to tap tiles in time with the music, all while avoiding the white tiles. It’s a test of skill and reflexes that will keep you coming back for more. If you’re looking for a fun and challenging way to test your coordination skills while indulging in your love for music, then Magic Tiles 3 is the perfect music piano game for you!
+Feature:
+1. Magic Tiles 3 features 45,000+ songs, as well as colorful graphics that will keep you entertained for hours on end. This addictive piano game offers a unique and satisfying experience for music lovers. Music games enthusiasts alike will love it. It’s no wonder that Magic Tiles 3 is one of the most popular music games around.
+2. With Magic Tiles 3, you’ll never run out of new challenges to explore! This music piano game features a wide variety of levels, each with its own catchy hit songs and unique gameplay mechanics. Whether you tap piano tiles along or explore new levels, there’s always something new and exciting waiting for you. And with gifts waiting for you at the end of each level, the fun never stops!
+3. Magic Tiles 3 is a music game that offers not only a wide selection of songs and engaging gameplay, but also a well-designed online mode. This allows you to connect with numerous players from all over the world and even invite your friends to join you in a beat battle. With its challenging levels and addictive gameplay, this game provides an excellent opportunity to compete with other players in beat battle and see who excels.
+So why wait? Download Magic Tiles 3 today and start playing one of the popular music piano games around! With its addictive gameplay, catchy songs, and challenging levels, it’s the perfect way to pass the time and have some fun. So come on - let’s play Magic Tiles 3 and experience the combination of song game and rhythm game in one addictive package!
+Support:
+Are you having any problems? Send an email to: magictiles3.support@amanotes.com or contact us in the game by going to Settings > FAQ and Support.
+Terms of use: https://www.amanotes.com/terms-and-conditions/
+Privacy Policy: https://www.amanotes.com/privacy-policy/
+You love music games. Let’s tap magic tiles to the beat in the fun song game
+Updated on
+Sep 1, 2026
+Available on
+Android,
+Windows*
+#4 top grossing music
+Music
+Performance
+Arcade
+Single player
+Abstract
+Miscellaneous
+Musical instruments
+Intense
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Update available
+Bruno Mars' "Risk It All" — now on Magic Tiles 3
+Update available
+Play Billie Eilish's Chihiro in Magic Tiles 3
+Update available
+"Where Is My Husband?" Just Landed in Magic Tiles 3
+Ends on 09/30
+A New Miracle Pass Season Is Here!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 3 others
+This app may collect these data types
+Location, Personal info and 3 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.6
+3.09M reviews
+5
+4
+3
+2
+1
+Arshiya Shaikh
+more_vert
+Flag inappropriate
+July 8, 2026
+I would like to let you know that I love this game! it's super addictive.. super fun.. but the ads are literally unbearable like when I complete the song, a ad pops up when I lose one tile, another ad pops up! it's so irritating sometimes I leave the app just because how annoying the ads are! And when I want to unlock a song I'll have to watch atleast 1 ad repeated 7 times!
+25 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Praful Marbade
+more_vert
+Flag inappropriate
+March 13, 2023
+This is a pretty good game, but it has some issues. 1. Sometimes when i click on the tiles it does not register it, and it gets pretty annoying sometimes. 2. If I want to unlock a new song, it asks me to watch an ad. They should add some ingame currency to buy songs instead. Id reccomend playing this on a tablet as it has a bigger screen and it makes it nore comfortable. Overall, good game.
+6,507 people found this review helpful
+Did you find this helpful?
+Yes
+No
+BHARAT BABBAR
+more_vert
+Flag inappropriate
+Show review history
+March 16, 2021
+Do not install!!!! Horrible app. First of all too many ads and so many bugs. You literally get 2 songs for free. You have to watch an adult for every other. So many ads. If ads were not enough this game starts to pause. And I have to pay money to do stuff. This game looks fun for a while but after a while it would be awfull bad. Sorry but it not worth it.
+4,733 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+🎶 New in Magic Tiles 3! 🎶
+✨ Exciting Updates: We regularly update the game to enhance your experience! Don’t forget to update and enjoy the latest improvements. 🎵💖
+Stay connected with us on TikTok, YouTube, Facebook, and Instagram @magictiles3! 📱🎶
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@amanotes.com
+shield
+Privacy Policy
+About the developer
+AMANOTES PTE. LTD.
+publishing@amanotes.com
+168 Robinson Road
+#20-01 Capital Tower
+Singapore 068912
++84 817 869 005
+More by AMANOTES PTE. LTD.
+arrow_forward
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+4.3
+star
+Dancing Road: Color Ball Run!
+AMANOTES PTE. LTD.
+4.4
+star
+Duet Tiles - Rhythm Music Game
+AMANOTES PTE. LTD.
+3.6
+star
+Duet Cats: Music & Meow Game
+AMANOTES PTE. LTD.
+4.4
+star
+Duet Friends: Cute Music Games
+AMANOTES PTE. LTD.
+4.2
+star
+Music Night Battle - Full Mods
+AMANOTES PTE. LTD.
+4.4
+star
+Similar games
+arrow_forward
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Piano Tiles 2™ - Piano Game
+Kooapps Games | Fun Arcade and Casual Action Games
+4.1
+star
+Guitar Band: Rock Battle
+Supercharge Mobile
+3.8
+star
+Dancing Road: Color Ball Run!
+AMANOTES PTE. LTD.
+4.4
+star
+Cat Tiles: Cute Piano Game
+WingsMob
+4.2
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

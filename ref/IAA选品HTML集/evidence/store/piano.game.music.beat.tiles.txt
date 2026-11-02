@@ -1,0 +1,354 @@
+# Google Play public snapshot: piano.game.music.beat.tiles
+URL: https://play.google.com/store/apps/details?id=piano.game.music.beat.tiles&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:39.994Z
+HTTP status: 200
+Raw HTML SHA-256: a91f6ccf97a5cafff6519c51d69547680a48ae7962c7549c348a0251264221a0
+Raw HTML: research/html-data/store-snapshots/piano.game.music.beat.tiles.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Piano Beat: Music Game
+Dream Tiles Piano Game Studio
+Contains ads
+In-app purchases
+4.3
+star
+43.9K reviews
+Rated for 12+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 12+
+Mild Swearing
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+🎵
+Step into the World of Piano Beat: Your Ultimate Music Playground!
+🎵
+Do you love the thrill of playing along with your favorite songs? In Piano Beat, you’ll experience the joy of playing piano tiles to an exciting selection of music. From classical masterpieces to the hottest pop tunes, get ready to tap your way to musical glory! 🎼
+【How to Play】
+🎹Tap the tiles to the beat of the music to create the melody.
+🎹Avoid missing tiles to keep your combo streak alive.
+🎹Earn high scores, collect gold, and unlock new songs.
+【Play. Compete. Never Stop】
+🎮Tap tiles in time and follow the beat!
+⚡️Try the thrilling Endless Mode,how far can you go before the music stops?
+🌏Compete with players around the world in real-time matches and prove who’s the true rhythm master!
+✨Unlock new songs, collect gold, and customize your piano style.
+【Why You’ll Love Piano Beat】
+🌍
+Massive Song Library
+— From classical hits to trending pop and viral K-pop songs, with new tracks added regularly.
+⚡️
+Exciting Challenges
+– Levels get faster, tougher, and more rewarding.
+🎨
+Visual Delight
+– Beautiful, reactive backgrounds and animations.
+🚀
+Offline Mode
+– Play anywhere, anytime!
+Download Piano Beat now and start playing your favorite songs on the piano tiles.
+Tap, enjoy, and let the music take you to new heights!
+🎶💖
+Slay the beats, feel the vibes.Immerse yourself in the magic of Piano Beat!
+Updated on
+Sep 10, 2026
+Available on
+Android,
+Windows*
+#1 top free music
+Music
+Performance
+Arcade
+Multiplayer
+Competitive multiplayer
+Single player
+Abstract
+Intense
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Piano Beat: Music Game",
+  "url": "https://play.google.com/store/apps/details/Piano_Beat_Music_Game?id=piano.game.music.beat.tiles&hl=en",
+  "description": "Slay the beats, feel the vibes.Immerse yourself in the magic of Piano Beat!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_MUSIC",
+  "image": "https://play-lh.googleusercontent.com/CuqtH7cyd7J4K_60djzExzWPUTQAlptqvMwF8XtH-5w-KO6QdraAjvxfNtv_Jl4vz2v0i6Up2Ob2KC6KDdRO",
+  "contentRating": "Rated for 12+",
+  "author": {
+    "@type": "Person",
+    "name": "Dream Tiles Piano Game Studio",
+    "url": "http://lynn-mobile.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.301804542541504",
+    "ratingCount": "43903"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Piano Beat: Music Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Piano Beat: Music Game
+Dream Tiles Piano Game Studio
+Contains ads
+In-app purchases
+4.3
+star
+43.9K reviews
+Rated for 12+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 12+
+Mild Swearing
+Learn more
+About this game
+arrow_forward
+🎵
+Step into the World of Piano Beat: Your Ultimate Music Playground!
+🎵
+Do you love the thrill of playing along with your favorite songs? In Piano Beat, you’ll experience the joy of playing piano tiles to an exciting selection of music. From classical masterpieces to the hottest pop tunes, get ready to tap your way to musical glory! 🎼
+【How to Play】
+🎹Tap the tiles to the beat of the music to create the melody.
+🎹Avoid missing tiles to keep your combo streak alive.
+🎹Earn high scores, collect gold, and unlock new songs.
+【Play. Compete. Never Stop】
+🎮Tap tiles in time and follow the beat!
+⚡️Try the thrilling Endless Mode,how far can you go before the music stops?
+🌏Compete with players around the world in real-time matches and prove who’s the true rhythm master!
+✨Unlock new songs, collect gold, and customize your piano style.
+【Why You’ll Love Piano Beat】
+🌍
+Massive Song Library
+— From classical hits to trending pop and viral K-pop songs, with new tracks added regularly.
+⚡️
+Exciting Challenges
+– Levels get faster, tougher, and more rewarding.
+🎨
+Visual Delight
+– Beautiful, reactive backgrounds and animations.
+🚀
+Offline Mode
+– Play anywhere, anytime!
+Download Piano Beat now and start playing your favorite songs on the piano tiles.
+Tap, enjoy, and let the music take you to new heights!
+🎶💖
+Slay the beats, feel the vibes.Immerse yourself in the magic of Piano Beat!
+Updated on
+Sep 10, 2026
+Available on
+Android,
+Windows*
+#1 top free music
+Music
+Performance
+Arcade
+Multiplayer
+Competitive multiplayer
+Single player
+Abstract
+Intense
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+No data collected
+Learn more
+about how developers declare collection
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.3
+39.5K reviews
+5
+4
+3
+2
+1
+asim1945 Mukhopadhyay
+more_vert
+Flag inappropriate
+Show review history
+December 29, 2025
+It is actually a good and fun game and it also improves concentration but the only problem is that there are thousands of add coming and there are not many songs but it's also a good time pass and I enjoy playing it. If there would be less adds then it would be one of my most favorite games I have loved ever. Must try. But be aware of adds. I recommend the person whoever has uploaded this game to just reduce add and increase song
+71 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Dream Tiles Piano Game Studio
+December 30, 2025
+Dear asim1945 Mukhopadhyay Thank you for your positive feedback. Your input is invaluable to us. Our app is free because of the ads, which help us enhance and maintain it. We are also exploring more user-friendly ad formats and striving to provide the best experience for our users. If you like our app, please support us with a 5★ rating! 💝
+Shah Mohd
+more_vert
+Flag inappropriate
+September 5, 2026
+this game is totally relaxing and the melodious music , totally heavenly it's a good app to cheer yourself up
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Sarala Thoi ta
+more_vert
+Flag inappropriate
+August 30, 2026
+it's very nice and it improves pir hand movement
+8 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Unleash your rhythm in Piano Beat!
+- Optimized user experience
+- Fixed known bugs
+Thanks for downloading! We value your feedback and will keep improving!
+flag
+Flag as inappropriate
+Rated for 12+
+Mild Swearing
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+puzzlegame.studio@outlook.com
+shield
+Privacy Policy
+About the developer
+LINN PTE. LTD.
+btspianomusic@gmail.com
+C/O:EXCELLENT ACCOUNTING & MANAGEMENT SERVICES P/L 60 Paya Lebar Road #08-10 Paya Lebar Square
+Singapore 409051
++65 8111 5337
+More by Dream Tiles Piano Game Studio
+arrow_forward
+Piano Game: Classic Music Song
+Dream Tiles Piano Game Studio
+3.6
+star
+Piano Rush: Magic Rhythm
+Dream Tiles Piano Game Studio
+3.9
+star
+Similar games
+arrow_forward
+Piano Music Go-EDM Piano Games
+Joy Journey Music Games
+4.2
+star
+Magic Tiles 3™ - Piano Game
+AMANOTES PTE. LTD.
+4.6
+star
+Tiles Hop EDM Rush Music Game
+AMANOTES PTE. LTD.
+4.3
+star
+Guitar Band: Rock Battle
+Supercharge Mobile
+3.8
+star
+Subway Princess Runner
+Ivy
+4.0
+star
+Piano Star
+TINYMAX HONGKONG LIMITED
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,361 @@
+# Google Play public snapshot: com.water.sort.puzzle.game.color.magic.free
+URL: https://play.google.com/store/apps/details?id=com.water.sort.puzzle.game.color.magic.free&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:02.077Z
+HTTP status: 200
+Raw HTML SHA-256: f8330cf7346e0a88a233617621ca152be6164360ec003a25af4eefaf156ae71f
+Raw HTML: research/html-data/store-snapshots/com.water.sort.puzzle.game.color.magic.free.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Water Sort: Color Match
+FunForge Studios
+Contains ads
+In-app purchases
+4.7
+star
+59.5K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Did you know? Playing a simple puzzle game can relax your mind and clear your head! 💙
+After a busy day, take a moment to focus on color sorting and relax. Water Sort: Color Match brings you soft water sounds, bright colors, and smooth pouring animations. It keeps your brain active while helping you feel calm.
+Whether you want to rest after work, clear your mind, or just enjoy a fun puzzle game, this colorful water sorting game is perfect for you!
+💧 Gameplay Introduction 💧
+Water Sort: Color Match is super easy to learn and lots of fun!
+Tap a bottle to pour colored water into another bottle.
+Match the same colors until every bottle has only one color.
+Think carefully, solve fun puzzles, and enjoy winning each level.
+No time limits, no pressure—play and relax at your own pace.
+🌿 Healthy Features 🌿
+🧴 Thousands of fun puzzles to challenge your mind.
+🌊 Smooth water animations and nice pouring effects.
+🎵 Calm background music and gentle sound effects.
+🧠 Easy to learn, but fun to master.
+💡 Helpful tools, including "Undo" and extra bottles.
+🎨 Beautiful colors and clean graphics that are easy on your eyes.
+📱 Play anytime, anywhere—even without internet (offline)!
+🆓 100% Free to download and play.
+🧠 Good for Your Mind and Body 🧠
+Water Sort: Color Match is more than just a game—it’s a great daily workout for your brain.
+▪️ Improve your focus with fun and easy sorting challenges.
+▪️ Train your brain to think and plan ahead.
+▪️ Reduce daily stress with pretty colors and relaxing gameplay.
+▪️ Enjoy a quiet moment to slow down and recharge your energy.
+▪️ Take a healthy break with a game made for your comfort.
+🌈 Why You'll Love It 🌈
+Every level gives you a new chance to sort, think, and relax. Watch the colorful water flow, feel happy when you finish a puzzle, and enjoy the perfect mix of fun and calm.
+Play for 5 minutes during a break or unwind before bed. Water Sort: Color Match is the best way to exercise your brain and relax your mind.
+Download Water Sort: Color Match now to relax, think, and have fun today! 💙💧
+Fun and relaxing color sort puzzle! Pour water, match colors, and unwind.
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Sort
+Single player
+Abstract
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 09/29
+Kitchen Chaos: Pour, Sort & Serve!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Water Sort: Color Match",
+  "url": "https://play.google.com/store/apps/details/Water_Sort_Color_Match?id=com.water.sort.puzzle.game.color.magic.free&hl=en",
+  "description": "Fun and relaxing color sort puzzle! Pour water, match colors, and unwind.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CASUAL",
+  "image": "https://play-lh.googleusercontent.com/VHwzrc545VhgoHyEllu_MmGISJSRpN4uCEHwYDm35DJgTYmIUJfnX7sHXhjpenj_AqxaFDAWLfYJSYvIbm_IAhY",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "FunForge Studios",
+    "url": "https://funforgestudios.mindgoinc.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.674351692199707",
+    "ratingCount": "59473"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Water Sort: Color Match - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Water Sort: Color Match
+FunForge Studios
+Contains ads
+In-app purchases
+4.7
+star
+59.5K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Did you know? Playing a simple puzzle game can relax your mind and clear your head! 💙
+After a busy day, take a moment to focus on color sorting and relax. Water Sort: Color Match brings you soft water sounds, bright colors, and smooth pouring animations. It keeps your brain active while helping you feel calm.
+Whether you want to rest after work, clear your mind, or just enjoy a fun puzzle game, this colorful water sorting game is perfect for you!
+💧 Gameplay Introduction 💧
+Water Sort: Color Match is super easy to learn and lots of fun!
+Tap a bottle to pour colored water into another bottle.
+Match the same colors until every bottle has only one color.
+Think carefully, solve fun puzzles, and enjoy winning each level.
+No time limits, no pressure—play and relax at your own pace.
+🌿 Healthy Features 🌿
+🧴 Thousands of fun puzzles to challenge your mind.
+🌊 Smooth water animations and nice pouring effects.
+🎵 Calm background music and gentle sound effects.
+🧠 Easy to learn, but fun to master.
+💡 Helpful tools, including "Undo" and extra bottles.
+🎨 Beautiful colors and clean graphics that are easy on your eyes.
+📱 Play anytime, anywhere—even without internet (offline)!
+🆓 100% Free to download and play.
+🧠 Good for Your Mind and Body 🧠
+Water Sort: Color Match is more than just a game—it’s a great daily workout for your brain.
+▪️ Improve your focus with fun and easy sorting challenges.
+▪️ Train your brain to think and plan ahead.
+▪️ Reduce daily stress with pretty colors and relaxing gameplay.
+▪️ Enjoy a quiet moment to slow down and recharge your energy.
+▪️ Take a healthy break with a game made for your comfort.
+🌈 Why You'll Love It 🌈
+Every level gives you a new chance to sort, think, and relax. Watch the colorful water flow, feel happy when you finish a puzzle, and enjoy the perfect mix of fun and calm.
+Play for 5 minutes during a break or unwind before bed. Water Sort: Color Match is the best way to exercise your brain and relax your mind.
+Download Water Sort: Color Match now to relax, think, and have fun today! 💙💧
+Fun and relaxing color sort puzzle! Pour water, match colors, and unwind.
+Updated on
+Sep 16, 2026
+Available on
+Android,
+Windows*
+Puzzle
+Sort
+Single player
+Abstract
+Light-hearted
+Offline
+*Powered by Intel
+®
+technology
+Events & offers
+Ends on 09/29
+Kitchen Chaos: Pour, Sort & Serve!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+No data collected
+Learn more
+about how developers declare collection
+Data isn’t encrypted
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.7
+56.4K reviews
+5
+4
+3
+2
+1
+zet ef
+more_vert
+Flag inappropriate
+August 23, 2026
+Ads! Everywhere. You can play a few levels undisturbed, but after lvl 15 or so, they appear, after the game, sometimes before the game and even if you earn something, you click on it but guess what? yeah, more ads. also, the game is way too easy. I dont understand, played to lvl 21, and you do not have to think once about the move you make.. other than that, it would be fast and chill.
+10 people found this review helpful
+Did you find this helpful?
+Yes
+No
+FunForge Studios
+August 24, 2026
+Thank you for the detailed feedback! We're sorry the ads appear so often, especially after level 15 — we're reviewing our ad frequency. We've also shared your note about difficulty with the design team. Thanks for playing!
+Teresa Clark
+more_vert
+Flag inappropriate
+August 21, 2026
+Very exciting game. Helps past time. I am way up in the game. You did get several long boring ads. So to put a stop I paid to be paid dee. Waste of money. Cause even though I paid for add free It still has ads, when it should not. I want this fix and then I want be so unhappy for the money I paid for ads free. If u pay for something to stop ads then they need too honor what u paid for. mon
+13 people found this review helpful
+Did you find this helpful?
+Yes
+No
+FunForge Studios
+August 21, 2026
+Hi Teresa, thank you for sharing this, and we're truly sorry for the frustration. You're right — paying to remove ads should mean no ads. We've flagged this to our team to investigate why the ad-free purchase isn't being honored. Please contact us with your order details so we can look into your specific case.…
+Amy Perraglio
+more_vert
+Flag inappropriate
+August 26, 2026
+Easy game with a simple interface and intuitive gameplay. It's very easy to get lost in it and play for hours. The ads don't bother me much once I figured out the routine to get out of them. The only things I would add would be a back button to go back to the home screen during levels, and the ability to tap on the magic cards to view them up close so I can see the artwork better, because the cat wizard is cute! Overall, enjoying this game very much!
+8 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+What's New🚀
+-Performance & Bug fixed!
+🧠Thank you for playing Water Sort! Update now and start your new journey!
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+ais@mindgoinc.com
+shield
+Privacy Policy
+About the developer
+MindGo Limited
+ais@mindgoinc.com
+Rm H28 10/F GOLDEN BEAR INDL CTR BLK EH
+66-82 CHAI WAN KOK ST
+荃灣
+新界
+Hong Kong
++86 181 5699 5093
+More by FunForge Studios
+arrow_forward
+Arrows World
+FunForge Studios
+4.5
+star
+Jigsaw Card
+FunForge Studios
+4.5
+star
+Smash All！
+FunForge Studios
+Drag Out! Block Amaze
+FunForge Studios
+Tile Space! Triple Match
+FunForge Studios
+Sort Verse
+FunForge Studios
+Similar games
+arrow_forward
+Magic Sort!
+Grand Games A.Ş.
+4.4
+star
+Ball Sort: Sorting-Bubble Sort
+HDuo Fun Games
+4.3
+star
+SortPuz™: Water Sort Puzzle
+Dark Halo
+4.4
+star
+Water Sort : Puzzle game
+Yooga & Co
+3.9
+star
+Coffee Mania - Sorting Jam
+CrazyLabs LTD
+4.2
+star
+Ball Sort Master - Puzzle Game
+Kasur Games
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

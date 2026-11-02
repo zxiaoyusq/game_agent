@@ -1,0 +1,351 @@
+{
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 540,
+    "height": 960
+  },
+  "errors": [],
+  "animation": {
+    "passed": true,
+    "attempts": [
+      {
+        "name": "棋盘源管",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "棋盘目标管",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "撤销",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "重开",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "提示",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "加管",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "菜单",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "设置",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "选关入口",
+        "busyBefore": true,
+        "busyAfter": true
+      },
+      {
+        "name": "切换模式",
+        "busyBefore": true,
+        "busyAfter": true
+      }
+    ],
+    "movesCommitted": 1,
+    "historyLength": 1,
+    "undoRestoresInitial": true
+  },
+  "themes": {
+    "checkpoints": [
+      {
+        "completed": 2,
+        "themeLabels": [
+          "按钮:● 暮色海湾 ",
+          "按钮:○ 清晨雾岛 · 3 星解锁",
+          "按钮:○ 极光花园 · 6 星解锁"
+        ],
+        "highestUnlocked": 0,
+        "selected": 0,
+        "starsAfter": 2
+      },
+      {
+        "completed": 3,
+        "themeLabels": [
+          "按钮:● 暮色海湾 ",
+          "按钮:○ 清晨雾岛 ",
+          "按钮:○ 极光花园 · 6 星解锁"
+        ],
+        "highestUnlocked": 1,
+        "selected": 1,
+        "starsAfter": 3
+      },
+      {
+        "completed": 5,
+        "themeLabels": [
+          "按钮:○ 暮色海湾 ",
+          "按钮:● 清晨雾岛 ",
+          "按钮:○ 极光花园 · 6 星解锁"
+        ],
+        "highestUnlocked": 1,
+        "selected": 1,
+        "starsAfter": 5
+      },
+      {
+        "completed": 6,
+        "themeLabels": [
+          "按钮:○ 暮色海湾 ",
+          "按钮:● 清晨雾岛 ",
+          "按钮:○ 极光花园 "
+        ],
+        "highestUnlocked": 2,
+        "selected": 2,
+        "starsAfter": 6
+      }
+    ],
+    "issues": [
+      {
+        "completed": 2,
+        "action": "完成局设置点击已解锁主题后等待800ms",
+        "actualLabels": [
+          "每一种颜色，都有归处",
+          "第 2 关完成 · 14 步\n再一次找到了秩序 ✧",
+          "×",
+          "下一关",
+          "看看我的旅程"
+        ],
+        "theme": 0,
+        "completedAfter": 2
+      },
+      {
+        "completed": 3,
+        "action": "完成局设置点击已解锁主题后等待800ms",
+        "actualLabels": [
+          "每一种颜色，都有归处",
+          "第 3 关完成 · 14 步\n再一次找到了秩序 ✧",
+          "×",
+          "下一关",
+          "看看我的旅程"
+        ],
+        "theme": 1,
+        "completedAfter": 3
+      },
+      {
+        "completed": 5,
+        "action": "完成局设置点击已解锁主题后等待800ms",
+        "actualLabels": [
+          "每一种颜色，都有归处",
+          "第 5 关完成 · 10 步\n再一次找到了秩序 ✧",
+          "×",
+          "下一关",
+          "看看我的旅程"
+        ],
+        "theme": 1,
+        "completedAfter": 5
+      },
+      {
+        "completed": 6,
+        "action": "完成局设置点击已解锁主题后等待800ms",
+        "actualLabels": [
+          "每一种颜色，都有归处",
+          "第 6 关完成 · 10 步\n再一次找到了秩序 ✧",
+          "×",
+          "下一关",
+          "看看我的旅程"
+        ],
+        "theme": 2,
+        "completedAfter": 6
+      }
+    ],
+    "repeat": {
+      "level": 1,
+      "moves": 4,
+      "completed": 6
+    },
+    "persistence": {
+      "completed": 6,
+      "theme": 2
+    },
+    "unlockPassed": true
+  },
+  "lastLevels": [
+    {
+      "mode": "classic",
+      "lastLevel": 100,
+      "moves": 27,
+      "completedLast": true,
+      "afterMode": "classic",
+      "afterIndex": 0,
+      "afterMoves": 0
+    },
+    {
+      "mode": "challenge",
+      "lastLevel": 12,
+      "moves": 29,
+      "completedLast": true,
+      "afterMode": "challenge",
+      "afterIndex": 0,
+      "afterMoves": 0
+    },
+    {
+      "mode": "mystery",
+      "lastLevel": 20,
+      "moves": 22,
+      "completedLast": true,
+      "afterMode": "mystery",
+      "afterIndex": 0,
+      "afterMoves": 0
+    }
+  ],
+  "hashes": {
+    "src/main.mjs": "1d1da7e5c4a859d072a262083d889e17353ad024740bd6ad4d0f2bb52da8b36f",
+    "src/storage.mjs": "e5bb446313a9ba7301943ca0b33c6deed4f61e64a23ec3efb8351f45450bc3bd",
+    "src/rules.mjs": "3cdfe899f6b2a7d28ac16735196179f8b185d262ef21a0a5e12699573eab0b4e",
+    "assets/levels.json": "905b102f516bc9c73612988dec8a68bd7b86de3f566b771f5510a77b6a3e9adb"
+  },
+  "requiredBoundaryAssertionsPassed": true,
+  "passed": true,
+  "status": "I01、S02、U01已通过；追加主题重绘/过期结算专项在新版独立复验通过",
+  "testMethod": "无胜利或完成记录注入；前6经典关、重复首关、三模式末关均按实际解法逐管点击通关。观察接口只读。",
+  "limits": [
+    "仅Chromium桌面指针与540x960视口",
+    "未覆盖多指触控、原生移动设备、Safari",
+    "本轮动画锁测试针对移动动画，结算弹窗在动画后出现",
+    "仅核对主题阈值2/3/5/6及重复，不评估数值平衡"
+  ],
+  "themeFixReview": {
+    "run": "5be7ad3a11084952a3af39028c2d1f13",
+    "status": "通过",
+    "observations": {
+      "browser": "153.0.8010.12",
+      "viewport": {
+        "width": 540,
+        "height": 960
+      },
+      "errors": [],
+      "cases": [
+        {
+          "name": "真实首关完成后点击当前默认主题",
+          "steps": 4,
+          "waitMs": 900,
+          "labels": [
+            "让工坊更适合你",
+            "主题会随整理之星逐步点亮",
+            "×",
+            "● 暮色海湾 ",
+            "○ 清晨雾岛 · 3 星解锁",
+            "○ 极光花园 · 6 星解锁",
+            "声音反馈  开",
+            "颜色数字辅助  关",
+            "快速动画  开",
+            "进度自动保存在当前浏览器"
+          ],
+          "completed": 1,
+          "sessionUnchanged": true
+        },
+        {
+          "name": "主题重绘后设置开关、关闭、刷新结算与下一关",
+          "sound": false,
+          "index": 1,
+          "completed": 1
+        },
+        {
+          "name": "胜利后650ms内主动打开模式菜单",
+          "steps": 14,
+          "waitMs": 900,
+          "labels": [
+            "给今天一点新鲜感",
+            "三个房间，三种整理心情",
+            "×",
+            "经典旅程",
+            "100 关 · 从三色到缤纷世界",
+            "长管挑战",
+            "12 关 · 6 / 8 层玻璃管的策略空间",
+            "迷雾实验",
+            "20 关 · 移开表层，揭开未知颜色"
+          ],
+          "closedStaysClosed": true,
+          "completed": 2
+        },
+        {
+          "name": "胜利后650ms内主动打开关卡列表",
+          "steps": 14,
+          "waitMs": 900,
+          "labels": [
+            "我的整理旅程",
+            "经典整理 · 已完成 3 / 100",
+            "×",
+            "✧ 1",
+            "✧ 2",
+            "✧ 3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "←",
+            "1 / 5",
+            "→"
+          ],
+          "completed": 3
+        },
+        {
+          "name": "真实3关解锁第二主题后切换",
+          "waitMs": 900,
+          "labels": [
+            "让工坊更适合你",
+            "主题会随整理之星逐步点亮",
+            "×",
+            "○ 暮色海湾 ",
+            "● 清晨雾岛 ",
+            "○ 极光花园 · 6 星解锁",
+            "声音反馈  关",
+            "颜色数字辅助  关",
+            "快速动画  开",
+            "进度自动保存在当前浏览器"
+          ],
+          "theme": 1,
+          "completed": 3,
+          "sessionUnchanged": true
+        },
+        {
+          "name": "已解锁主题重复选择、切数字辅助、关闭及下一关",
+          "theme": 1,
+          "symbols": true,
+          "completed": 3,
+          "index": 3,
+          "oldSettlementAbsent": true
+        }
+      ],
+      "hashes": {
+        "src/main.mjs": "2e0e0df11a131d124c624d56d210765afacbb4bd3de20e52cb025186d78ccc8f",
+        "src/storage.mjs": "e5bb446313a9ba7301943ca0b33c6deed4f61e64a23ec3efb8351f45450bc3bd"
+      },
+      "passed": true
+    },
+    "limits": [
+      "只重验主题重绘与过期结算，不重复既有6关阈值和三模式末关",
+      "为获得第二主题真实通关前3关，未注入完成记录或胜利",
+      "原themes.issues为旧hash版本的历史失败证据"
+    ]
+  }
+}

@@ -1,0 +1,268 @@
+[
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/analysis/normalized_levels.json",
+    "sha256": "8a0823b9113f3bcad18c6be5f65fc26b5752cbe62867442ea2741bda5c3d2cd9",
+    "target": "assets/levels.json",
+    "use": "可解关卡与特殊玩法",
+    "processing": "去除零占位、统一管底到管口顺序，逐条回放验证"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/hm/analysis/normalized_levels.json",
+    "sha256": "565465e1350d41596ae8033feac584e0e531196724e59944fedcea3fab4b941f",
+    "target": "assets/levels.json",
+    "use": "可解关卡与特殊玩法",
+    "processing": "去除零占位、统一管底到管口顺序，逐条回放验证"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/analysis/normalized_levels.json",
+    "sha256": "7db8abbc6a05d25bf4f6983c4874fee7ce6d84dac9ed589ee3613776459fce93",
+    "target": "assets/levels.json",
+    "use": "可解关卡与特殊玩法",
+    "processing": "去除零占位、统一管底到管口顺序，逐条回放验证"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/2e89b4dec6__1__ball01.png",
+    "sha256": "3a26f0762c641005860f8fc4daf97c8a04a2197025783d3456d5873f39e286c8",
+    "target": "assets/guru-0.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/08dbb44859__1__ball02.png",
+    "sha256": "f77fdc16b6df1e21810e79a47d1d3ced6589efdd5fc95bf2a9198e198aeb5670",
+    "target": "assets/guru-1.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/44728ee059__1__ball03.png",
+    "sha256": "cf84a45e380dfa3991818eec2748e2afef2af2cdbbb14c7779c4898a6a31856d",
+    "target": "assets/guru-2.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/26db571075__1__ball04.png",
+    "sha256": "b1b136981e4119317a9a679e241202598b090fe3100f71f7c8bc7afd1be079ae",
+    "target": "assets/guru-3.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/296d8db220__1__ball05.png",
+    "sha256": "8a405839b8b772f80892bf6a57046c2223f4851a5fdbbadac0e9709710f66419",
+    "target": "assets/guru-4.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/4a16256331__1__ball06.png",
+    "sha256": "1904245919cc86430d528eb69bb49b3c3714c74dddef3a03f73fe21e9a7d69ea",
+    "target": "assets/guru-5.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/8168b0e1fc__1__ball07.png",
+    "sha256": "18eadd5b86772494614ddef3fa30a720837fcf51009af5f1dcb7871a0ef49853",
+    "target": "assets/guru-6.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/64c348e3a2__1__ball08.png",
+    "sha256": "97628354b8634ac4a69b9bc1a1601b10c2bfc5d83fc4ca2b1b3165f93830b7e3",
+    "target": "assets/guru-7.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/25dd4af549__1__ball09.png",
+    "sha256": "41e7c5a0a200af544051099a1ff71aa5a9a1e3fbaeab83cfd19e630de8b2175a",
+    "target": "assets/guru-8.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/284f59bc0e__1__ball10.png",
+    "sha256": "4cca4671b5c37648babbb5b41ee30251b9369f7fec1fd85d0b9500022b1a848b",
+    "target": "assets/guru-9.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/6989ed33ff__1__ball11.png",
+    "sha256": "17726e7101227445fa4218868b518337d345a19e384153aa188eeb39a0473963",
+    "target": "assets/guru-10.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/exports/Sprite/473c69b380__1__ball12.png",
+    "sha256": "4c4f490d76b575fc04d653769d934efd45a390831f40a97930e9c8d2d2f70955",
+    "target": "assets/guru-11.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/hm/exports/Sprite/512d0ecccd__746__tube_2.png",
+    "sha256": "fdb5b2858fc0ccc629e3bcfe53784502d49d94203a65a40a75cc060e585e898b",
+    "target": "assets/hm-0.png",
+    "use": "高管玻璃描边",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__584532789361688510__Ui_Game_1Ball_01.png",
+    "sha256": "8022c8d88eed234905dae25aae03aa11a48d43593fa032f3b3b505912161933c",
+    "target": "assets/infinite-0.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__-1666004760629414757__Ui_Game_1Ball_02.png",
+    "sha256": "717f2ae377c83c4379795f8d5c7b501a75771cbc20a1c4b75164a87c7d1c0518",
+    "target": "assets/infinite-1.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__2792264314502848773__Ui_Game_1Ball_03.png",
+    "sha256": "a0754aff5eedc540603b33c60636e2a59e4785aa4f16f325064ecb549f34bb23",
+    "target": "assets/infinite-2.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__-4205618521869397758__Ui_Game_1Ball_04.png",
+    "sha256": "3030a7edfda02b1e8573d60a8c7acf36eec96b3b8a39124d1c98b6a3c8ebec21",
+    "target": "assets/infinite-3.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__-1778418861837306108__Ui_Game_1Ball_05.png",
+    "sha256": "8e6f3468bf54359c7507ead3a83864b2f915a95ef508bc82ebabf23d41904780",
+    "target": "assets/infinite-4.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__-7477266829112359993__Ui_Game_1Ball_06.png",
+    "sha256": "c10a80c5893acdbd7536b1694d8134858af312b2007417add5cd1d478c184875",
+    "target": "assets/infinite-5.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__6845626279100122935__Ui_Game_1Ball_07.png",
+    "sha256": "f4c9a6a9c40f0ceddde19c1b5643cb249aa176a0d8bf6108ff87d4896cfbc42c",
+    "target": "assets/infinite-6.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__1961341215768708481__Ui_Game_1Ball_08.png",
+    "sha256": "b30c230cd9352dff93c498977961264956b691b994a31975db506eac148314f0",
+    "target": "assets/infinite-7.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__-44163335808045898__Ui_Game_1Ball_09.png",
+    "sha256": "aeb3e75052f8e30895dc05fc9adf2ea6fd240030fd0476f43dde61983507e09f",
+    "target": "assets/infinite-8.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__3028304389834573464__Ui_Game_1Ball_10.png",
+    "sha256": "546fc7ae77e18258276343bb6f924a4e87af6e5b11f8e58082102e8b0f1948ee",
+    "target": "assets/infinite-9.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__-9108480902278225734__Ui_Game_1Ball_11.png",
+    "sha256": "857c8645d16cf9f9cf9d41c9f82baaf6cc7363e5add9980e319447c105cd5c8c",
+    "target": "assets/infinite-10.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/exports/Sprite/ecc907b7b4__828451467037524302__Ui_Game_1Ball_12.png",
+    "sha256": "98bb5f76313686475c108bc8bc2fa57fc0fc309c59145678619c17be43d049c7",
+    "target": "assets/infinite-11.png",
+    "use": "可切换球体材质",
+    "processing": "仅等比缩放，由 Cocos Sprite 渲染；不修改原始像素"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/hm/exports/AudioClip/512d0ecccd__682__BSP_touch-sound__BSP_touch-sound.wav",
+    "sha256": "8dd6ae3da73280bb5bbc33eb6edd75a7c26bb5dd01c73269dc57fb989ade6eaf",
+    "target": "assets/tap.wav",
+    "use": "真实游戏反馈音效",
+    "processing": "保留 WAV 内容，播放音量通过 Cocos AudioSource 控制"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/hm/exports/AudioClip/512d0ecccd__680__BSP_Full-tube__BSP_Full-tube.wav",
+    "sha256": "de56a700d0ecf0595d817ce99a81a8097adb1f3acbc359db6b14a1c36ba09911",
+    "target": "assets/complete.wav",
+    "use": "真实游戏反馈音效",
+    "processing": "保留 WAV 内容，播放音量通过 Cocos AudioSource 控制"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/hm/exports/AudioClip/512d0ecccd__681__tick1__tick1.wav",
+    "sha256": "e0db51ebb06afc9d7960c67391f2321695579949d7019e2b1f6587f3f44cb50e",
+    "target": "assets/move.wav",
+    "use": "真实游戏反馈音效",
+    "processing": "保留 WAV 内容，播放音量通过 Cocos AudioSource 控制"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/code/native_core/01d448e8__BallSort.TubeData__CanImport.asm",
+    "sha256": "f5953983b0b2f026be585a61190db037457af3f4642a04e2e48e4dc4ee7d12a2",
+    "target": "src/rules.mjs",
+    "use": "确认规则层包含管间导入合法性检查",
+    "processing": "只分析静态方法边界与已知调用；不声称恢复完整原始源码"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/code/native_core/01d411a0__BallSort.TubeData__get_TopBallSameCount.asm",
+    "sha256": "409bf7b08a09151c56e8b409ff3dfba02bbfec9b7bc80e95149231abf9667ea8",
+    "target": "src/rules.mjs",
+    "use": "确认连续同色球计数职责，并用原始解法回放校验",
+    "processing": "只分析静态方法边界与已知调用；不声称恢复完整原始源码"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/hm/code/native_core/0191a780__LevelSprite__UndoMove.asm",
+    "sha256": "ff92f42228b5230e905d1174029fd691fa82ebfcdc4bb5f1920faba9ec6f3917",
+    "target": "src/main.mjs",
+    "use": "确认操作历史与撤销职责，使用不可变局面快照重写",
+    "processing": "只分析静态方法边界与已知调用；不声称恢复完整原始源码"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/code/native_core/00cadda0__BallSort.Scripts.Core.Logic.Gaming.GameController.GameController__Hint.asm",
+    "sha256": "a7ec7be70bc0daf7a4b05ecc7040436c768bdd424cc4aba04602cdbb55844e7c",
+    "target": "src/solver-worker.mjs",
+    "use": "确认提示为异步任务，本项目使用Worker离线求解",
+    "processing": "只分析静态方法边界与已知调用；不声称恢复完整原始源码"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/guru/unity_summary.json",
+    "sha256": "b9d226612a2736273ce8227e61aef93bb519ebd7bcf9abc4efce145672923cb9",
+    "target": "evidence/fusion-design.md",
+    "use": "确认原始Unity资源/脚本框架组成",
+    "processing": "作为迁移分析证据，运行时重建为真实Cocos"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/hm/unity_summary.json",
+    "sha256": "50dfd5cb85966f2b696ed4d06f141c5c5d1db2836da0ba422379596ebc511eab",
+    "target": "evidence/fusion-design.md",
+    "use": "确认原始Unity资源/脚本框架组成",
+    "processing": "作为迁移分析证据，运行时重建为真实Cocos"
+  },
+  {
+    "source": "ref/BallSort工程拆解_2026-10-01/infinite/unity_summary.json",
+    "sha256": "d9f0c9908ec3fbc82a6bbd0efbe1e39b9291c7cd34e7684326444d72e440d237",
+    "target": "evidence/fusion-design.md",
+    "use": "确认原始Unity资源/脚本框架组成",
+    "processing": "作为迁移分析证据，运行时重建为真实Cocos"
+  }
+]

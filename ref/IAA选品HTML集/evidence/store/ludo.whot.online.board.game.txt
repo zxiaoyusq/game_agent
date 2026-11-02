@@ -1,0 +1,331 @@
+# Google Play public snapshot: ludo.whot.online.board.game
+URL: https://play.google.com/store/apps/details?id=ludo.whot.online.board.game&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:08.908Z
+HTTP status: 200
+Raw HTML SHA-256: c4f7a47d6de165677fa26c7c184d8af67328dd530cc8730949b84bb93805e85a
+Raw HTML: research/html-data/store-snapshots/ludo.whot.online.board.game.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Whot! Ludo Party
+Comfun
+Contains ads
+In-app purchases
+3.2
+star
+1.41K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Users Interact
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Get ready for the super fun with Whot! Ludo Party, the all-in-one board game extravaganza! This amazing game brings together three fantastic games you know and love: Ludo, Bead, and the exciting classic card game of Whot! Perfect for playing with friends and family, both online and offline!
+🎲 Ludo Fun for Everyone! 🎲
+Relive the classic board game of Ludo with multiple exciting ways to play!
+Quick Mode: For fast-paced, thrilling matches when you're short on time.
+Classic Mode: Enjoy the traditional Ludo experience you remember.
+2-Players & 4-Players: Challenge your friends and family in exciting head-to-head or four-way battles.
+Play with Computer: Test your skills against smart AI opponents.
+Local Multiplayer: Gather your loved ones for fun-filled Ludo sessions with friends and family on a single device.
+🃏 Whot! The King of Cards! 🃏
+Experience the thrill of Whot!, the beloved classic card game! Outsmart your opponents and be the first to empty your hand.
+Play with Computer: Sharpen your Whot! skills against challenging AI.
+Online Multiplayer: Connect with online friends and players from around the world for exciting Whot! matches.
+Local Multiplayer: Enjoy exciting Whot! games with your friends and family in local mode.
+⚪⚫ Bead Game Challenge! ⚫⚪
+Dive into the strategic world of the Bead game! Choose between two exciting variations:
+Bead 12: A fast-paced and engaging version.
+Bead 16: A more complex and strategic challenge.
+Play with Computer: Test your Bead game prowess against intelligent AI.
+Local Multiplayer: Enjoy the Bead game with your friends and family on one device.
+Whot! Ludo Party is the perfect game for multiplayers of all ages! Whether you're looking for a nostalgic board game experience, the excitement of a classic card game, or a strategic bead challenge, this game has it all. Connect online with friends, gather your family for local multiplayer fun, or challenge the computer – the possibilities are endless! Download Whot! Ludo Party now and let the games begin!
+CONTACT US:
+Please share your feedback if you have trouble in Whot! Ludo Party and tell us how to improve your game experience. Please send messages to the following:
+Email: market@comfun.com
+Privacy Policy: https://static.tirchn.com/policy/index.html
+IGRS Rating:13+
+Play Whot, classic card game for online multiplayers and offline friends
+Updated on
+Sep 9, 2026
+Board
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Whot! Ludo Party",
+  "url": "https://play.google.com/store/apps/details/Whot_Ludo_Party?id=ludo.whot.online.board.game&hl=en",
+  "description": "Play Whot, classic card game for online multiplayers and offline friends",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/6DdVaeyipY1oaxPEDn3rp6vZalIS2B4qhQpljeZZnAu4LjqxVL8AgRWqkLlm95KGgkP3MxzpHjCc8hzE-74h",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Comfun",
+    "url": "https://www.comfun.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.200000047683716",
+    "ratingCount": "1407"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Whot! Ludo Party - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Whot! Ludo Party
+Comfun
+Contains ads
+In-app purchases
+3.2
+star
+1.41K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Users Interact
+Learn more
+About this game
+arrow_forward
+Get ready for the super fun with Whot! Ludo Party, the all-in-one board game extravaganza! This amazing game brings together three fantastic games you know and love: Ludo, Bead, and the exciting classic card game of Whot! Perfect for playing with friends and family, both online and offline!
+🎲 Ludo Fun for Everyone! 🎲
+Relive the classic board game of Ludo with multiple exciting ways to play!
+Quick Mode: For fast-paced, thrilling matches when you're short on time.
+Classic Mode: Enjoy the traditional Ludo experience you remember.
+2-Players & 4-Players: Challenge your friends and family in exciting head-to-head or four-way battles.
+Play with Computer: Test your skills against smart AI opponents.
+Local Multiplayer: Gather your loved ones for fun-filled Ludo sessions with friends and family on a single device.
+🃏 Whot! The King of Cards! 🃏
+Experience the thrill of Whot!, the beloved classic card game! Outsmart your opponents and be the first to empty your hand.
+Play with Computer: Sharpen your Whot! skills against challenging AI.
+Online Multiplayer: Connect with online friends and players from around the world for exciting Whot! matches.
+Local Multiplayer: Enjoy exciting Whot! games with your friends and family in local mode.
+⚪⚫ Bead Game Challenge! ⚫⚪
+Dive into the strategic world of the Bead game! Choose between two exciting variations:
+Bead 12: A fast-paced and engaging version.
+Bead 16: A more complex and strategic challenge.
+Play with Computer: Test your Bead game prowess against intelligent AI.
+Local Multiplayer: Enjoy the Bead game with your friends and family on one device.
+Whot! Ludo Party is the perfect game for multiplayers of all ages! Whether you're looking for a nostalgic board game experience, the excitement of a classic card game, or a strategic bead challenge, this game has it all. Connect online with friends, gather your family for local multiplayer fun, or challenge the computer – the possibilities are endless! Download Whot! Ludo Party now and let the games begin!
+CONTACT US:
+Please share your feedback if you have trouble in Whot! Ludo Party and tell us how to improve your game experience. Please send messages to the following:
+Email: market@comfun.com
+Privacy Policy: https://static.tirchn.com/policy/index.html
+IGRS Rating:13+
+Play Whot, classic card game for online multiplayers and offline friends
+Updated on
+Sep 9, 2026
+Board
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+App activity and App info and performance
+No data collected
+Learn more
+about how developers declare collection
+Data is encrypted in transit
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+tablet_android
+Tablet
+3.2
+1.39K reviews
+5
+4
+3
+2
+1
+Daniek Peter
+more_vert
+Flag inappropriate
+March 31, 2026
+Good game, but at least add search button to find friends, please, and update the Facebook interface it is outdated
+48 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Comfun
+April 2, 2026
+Hi, Daniek Peter,
+Sorry for giving you a bad experience. We will improve game experience in the future. Thanks for playing our game, wish you the best luck in the future games!
+Ogwu Onyinyechi
+more_vert
+Flag inappropriate
+April 25, 2026
+App keeps on stoping How annoying that is in the middle of an online game it will just cut short need to work on your system
+38 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Comfun
+April 30, 2026
+Hi, Ogwu Onyinyechi,
+Sorry for giving you a bad experience. We will improve game experience in the future. Thanks for playing our game, wish you the best luck in the future games!
+Precious Opc
+more_vert
+Flag inappropriate
+April 6, 2026
+the game is nice it keeps me busy any time am bored you can download the game it's pretty good if the game is like ludo what it be the Best
+48 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+1.Launched new monthly events.2.Unlocked new Diamond Gifts!
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+market@comfun.com
+shield
+Privacy Policy
+About the developer
+浙江远夏网络有限公司
+market@comfun.com
+中国
+浙江省杭州市
+滨江区长河街道塘子堰路199号5楼518室
+邮政编码: 310051
++86 180 9470 9616
+More by Comfun
+arrow_forward
+Carrom Meta-Board Disc Game
+Comfun
+4.0
+star
+Teen Patti Comfun Card Online
+Comfun
+3.5
+star
+Carrom Lite-Board Offline Game
+Comfun
+3.9
+star
+Ludo Go: Online Board Game
+Comfun
+3.0
+star
+Ludo Super: Fun Board Game
+Comfun
+3.1
+star
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+Similar games
+arrow_forward
+Ludo Now: Online Board Game
+Comfun
+3.3
+star
+Jungle Marble Blast 2
+coolstudios
+4.2
+star
+Jungle Marble Blast 3
+coolstudios
+3.9
+star
+Ludo Buzz - Multiplayer Game
+Popup Games
+3.5
+star
+Ludo SuperStar- Play Ludo Game
+BlackLight Studio Games
+4.0
+star
+Fruit Splash
+Tap Run
+3.6
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

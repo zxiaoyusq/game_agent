@@ -1,0 +1,248 @@
+{
+  "checked_at": "2026-10-17T20:09:59.752124+00:00",
+  "structure_passed": true,
+  "errors": [],
+  "counts": {
+    "classic": 100,
+    "challenge": 12,
+    "mystery": 20
+  },
+  "unique_ids": 132,
+  "challenge_capacities": {
+    "6": 6,
+    "8": 6
+  },
+  "levels_sha256": "905b102f516bc9c73612988dec8a68bd7b86de3f566b771f5510a77b6a3e9adb",
+  "rules_sha256": "3cdfe899f6b2a7d28ac16735196179f8b185d262ef21a0a5e12699573eab0b4e",
+  "classic_first20": [
+    {
+      "level": 1,
+      "colors": 3,
+      "reference_solution_moves": 4,
+      "empty_tubes": 1,
+      "source": "infinite"
+    },
+    {
+      "level": 2,
+      "colors": 3,
+      "reference_solution_moves": 14,
+      "empty_tubes": 2,
+      "source": "infinite"
+    },
+    {
+      "level": 3,
+      "colors": 5,
+      "reference_solution_moves": 14,
+      "empty_tubes": 2,
+      "source": "infinite"
+    },
+    {
+      "level": 4,
+      "colors": 5,
+      "reference_solution_moves": 13,
+      "empty_tubes": 2,
+      "source": "infinite"
+    },
+    {
+      "level": 5,
+      "colors": 3,
+      "reference_solution_moves": 10,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 6,
+      "colors": 3,
+      "reference_solution_moves": 10,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 7,
+      "colors": 5,
+      "reference_solution_moves": 16,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 8,
+      "colors": 5,
+      "reference_solution_moves": 12,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 9,
+      "colors": 5,
+      "reference_solution_moves": 15,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 10,
+      "colors": 5,
+      "reference_solution_moves": 16,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 11,
+      "colors": 5,
+      "reference_solution_moves": 14,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 12,
+      "colors": 7,
+      "reference_solution_moves": 19,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 13,
+      "colors": 7,
+      "reference_solution_moves": 16,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 14,
+      "colors": 5,
+      "reference_solution_moves": 16,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 15,
+      "colors": 7,
+      "reference_solution_moves": 22,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 16,
+      "colors": 7,
+      "reference_solution_moves": 21,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 17,
+      "colors": 5,
+      "reference_solution_moves": 15,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 18,
+      "colors": 7,
+      "reference_solution_moves": 21,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 19,
+      "colors": 7,
+      "reference_solution_moves": 22,
+      "empty_tubes": 2,
+      "source": "guru"
+    },
+    {
+      "level": 20,
+      "colors": 5,
+      "reference_solution_moves": 16,
+      "empty_tubes": 2,
+      "source": "guru"
+    }
+  ],
+  "first20_color_and_tube_equivalent_groups": [],
+  "classic_mystery_identical_boards": [
+    {
+      "classic_id": "guru:lv_1_100:400000000231123123123",
+      "mystery_id": "mystery:guru:lv_1_100:400000000231123123123"
+    },
+    {
+      "classic_id": "guru:lv_1_100:400000000113213213232",
+      "mystery_id": "mystery:guru:lv_1_100:400000000113213213232"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000023412355313442154251",
+      "mystery_id": "mystery:guru:lv_1_100:60000000023412355313442154251"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000013143222414254315553",
+      "mystery_id": "mystery:guru:lv_1_100:60000000013143222414254315553"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000012441315132223454535",
+      "mystery_id": "mystery:guru:lv_1_100:60000000012441315132223454535"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000013521441251532344532",
+      "mystery_id": "mystery:guru:lv_1_100:60000000013521441251532344532"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000015532215253441134234",
+      "mystery_id": "mystery:guru:lv_1_100:60000000015532215253441134234"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000002524347135775114566266327143",
+      "mystery_id": "mystery:guru:lv_1_100:8000000002524347135775114566266327143"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000001116334742574326555166247723",
+      "mystery_id": "mystery:guru:lv_1_100:8000000001116334742574326555166247723"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000024214313435153125542",
+      "mystery_id": "mystery:guru:lv_1_100:60000000024214313435153125542"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000001237317435426235655167467214",
+      "mystery_id": "mystery:guru:lv_1_100:8000000001237317435426235655167467214"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000001472222734633654451357176561",
+      "mystery_id": "mystery:guru:lv_1_100:8000000001472222734633654451357176561"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000014241552213343245351",
+      "mystery_id": "mystery:guru:lv_1_100:60000000014241552213343245351"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000001151176532363443522464767527",
+      "mystery_id": "mystery:guru:lv_1_100:8000000001151176532363443522464767527"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000001736254231435324561562767741",
+      "mystery_id": "mystery:guru:lv_1_100:8000000001736254231435324561562767741"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000013443215522453215341",
+      "mystery_id": "mystery:guru:lv_1_100:60000000013443215522453215341"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000003311365244356465754176227712",
+      "mystery_id": "mystery:guru:lv_1_100:8000000003311365244356465754176227712"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000004122413546415622573763177653",
+      "mystery_id": "mystery:guru:lv_1_100:8000000004122413546415622573763177653"
+    },
+    {
+      "classic_id": "guru:lv_1_100:60000000013542331241535224541",
+      "mystery_id": "mystery:guru:lv_1_100:60000000013542331241535224541"
+    },
+    {
+      "classic_id": "guru:lv_1_100:8000000001375215341374327441752666265",
+      "mystery_id": "mystery:guru:lv_1_100:8000000001375215341374327441752666265"
+    }
+  ],
+  "interpretation": [
+    "前20关未发现仅换色或调换试管的等价重复；解法步数是参考方案长度，不是最优难度。",
+    "首关3色/4步适合基础操作；第2关3色/14步，第3关5色/14步，随后3/5/7色交替。数据支持基础到多色规划的内容，但不能证明真实玩家教学效果。",
+    "经典与迷雾有意复用棋盘并改变信息可见性，不能称为全新或原创棋盘。",
+    "真人迷雾体验、前20关教学理解与音频主观质量未由AI自动化替代；不伪造真人验收。"
+  ]
+}

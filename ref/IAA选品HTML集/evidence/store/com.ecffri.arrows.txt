@@ -1,0 +1,301 @@
+# Google Play public snapshot: com.ecffri.arrows
+URL: https://play.google.com/store/apps/details?id=com.ecffri.arrows&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:07.786Z
+HTTP status: 200
+Raw HTML SHA-256: 5916acb86d1665b342d31b52fa7eafadc0a4ffa9e4524ce600d2070a37ef6868
+Raw HTML: research/html-data/store-snapshots/com.ecffri.arrows.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Arrows – Puzzle Escape
+Lessmore GmbH
+Contains ads
+In-app purchases
+4.5
+star
+2.1M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Welcome to Arrows – Puzzle Escape, a minimalist puzzle game that challenges your logic, planning, and spatial thinking. Your goal is simple: extract each arrow without causing a collision.
+🧠 Features:
+- Challenging logic puzzles that test your planning skills
+- Thousands of handcrafted levels with increasing complexity
+- Clean, minimalist design that lets you focus on the puzzle
+- Relaxing, no-pressure gameplay – no timers, just your brain
+- Hint system to help when you're stuck
+Whether you have a few minutes or want a longer challenge, Arrows – Puzzle Escape is the perfect blend of strategy and calm.
+Can you clear the grid without losing a single heart?
+Clear all the arrows! Solve logic puzzles and test your brain in this fun game!
+Updated on
+Sep 18, 2026
+Puzzle
+Logic
+Single player
+Abstract
+Offline
+Events & offers
+Ends on 09/30
+Let the arrows out, one tap at a time
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Arrows – Puzzle Escape",
+  "url": "https://play.google.com/store/apps/details/Arrows_Puzzle_Escape?id=com.ecffri.arrows&hl=en",
+  "description": "Clear all the arrows! Solve logic puzzles and test your brain in this fun game!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_PUZZLE",
+  "image": "https://play-lh.googleusercontent.com/lMmSA4L1MNUvZ3w4c_T10tJvrptwAdObx8WxAzn5SuboyQtrwMPy1Grqqlgg6qBpgf4PQWvk7QPsiPy6R5ZIQQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Lessmore GmbH",
+    "url": "https://lessmore.games/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.486246585845947",
+    "ratingCount": "2097060"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Arrows – Puzzle Escape - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Arrows – Puzzle Escape
+Lessmore GmbH
+Contains ads
+In-app purchases
+4.5
+star
+2.1M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Welcome to Arrows – Puzzle Escape, a minimalist puzzle game that challenges your logic, planning, and spatial thinking. Your goal is simple: extract each arrow without causing a collision.
+🧠 Features:
+- Challenging logic puzzles that test your planning skills
+- Thousands of handcrafted levels with increasing complexity
+- Clean, minimalist design that lets you focus on the puzzle
+- Relaxing, no-pressure gameplay – no timers, just your brain
+- Hint system to help when you're stuck
+Whether you have a few minutes or want a longer challenge, Arrows – Puzzle Escape is the perfect blend of strategy and calm.
+Can you clear the grid without losing a single heart?
+Clear all the arrows! Solve logic puzzles and test your brain in this fun game!
+Updated on
+Sep 18, 2026
+Puzzle
+Logic
+Single player
+Abstract
+Offline
+Events & offers
+Ends on 09/30
+Let the arrows out, one tap at a time
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+Device or other IDs
+Data is encrypted in transit
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+2.02M reviews
+5
+4
+3
+2
+1
+Sona
+more_vert
+Flag inappropriate
+Show review history
+September 7, 2026
+This game is by far the best in terms of no forced ads in between the levels (I've been playing the "challenges" sections from 2025, haven't started playing in the "Leagues" either). Puzzles are super easy, User Interface is simple and I haven't had to watch a single ad to complete a game so far. It also has Dark Mode for us folks that can't tolerate bright lights. The only suggestion I have is to allow left handed mode for the "#" button at the bottom right.
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Sk Basheer
+more_vert
+Flag inappropriate
+Show review history
+August 25, 2026
+this deserves a great rating except for the fact that the issue is am experiencing is that using your finger to move the arrow and quite often i unintentionally touch another one next to it. I have yet been able to finish the game. I am automatically put in super hard. is there any way that I can choose my own setting. I would be most grateful if you could add a skip function.
+5 people found this review helpful
+Did you find this helpful?
+Yes
+No
+aneeq siddique
+more_vert
+Flag inappropriate
+July 8, 2026
+Overall, this game is amazing, and I really enjoy playing it. However, I'm facing a serious issue. Whenever I earn more arrows in League mode, the correct number is shown at first. But after I leave the game and log back in, my arrow count drops significantly. For example, if I reach 600 arrows, it later shows only around 550. My progress and hard work are being lost. Please investigate and fix this bug as soon as possible.
+19 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+- Bug fixes
+Thanks for playing!
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+arrows@lessmore.games
+shield
+Privacy Policy
+About the developer
+Lessmore GmbH
+support@lessmore.games
+Haideweg 12
+74927 Eschelbronn
+Germany
++49 1522 6005651
+Similar games
+arrow_forward
+Mahjong Blast: Puzzle Match
+Nebula Studio
+4.6
+star
+Block Blast!
+HungryStudio
+4.6
+star
+Vita Mahjong
+Vita Studio.
+4.6
+star
+Tile Explorer - Triple Match
+Oakever Games
+4.5
+star
+Block Crush: Block Blast Fun
+Wonderful Studio
+4.5
+star
+Car Jam Solver: Traffic Jam
+Ladaneta Games
+4.6
+star
+More by Lessmore GmbH
+arrow_forward
+Eatventure
+Lessmore GmbH
+4.7
+star
+We Are Warriors!
+Lessmore GmbH
+4.1
+star
+Pocket Chess – Chess Puzzles
+Lessmore GmbH
+4.6
+star
+Forge Master
+Lessmore GmbH
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

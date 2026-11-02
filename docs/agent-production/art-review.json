@@ -1,0 +1,302 @@
+{
+  "method": "实际读取目标与原始文件SHA256、PNG尺寸/alpha及WAV格式；未改动资源。",
+  "assets": [
+    {
+      "path": "public/assets/guru-0.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-1.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-2.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-3.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-4.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-5.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-6.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-7.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-8.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-9.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-10.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/guru-11.png",
+      "hash_matches_source": true,
+      "width": 100,
+      "height": 100,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/hm-0.png",
+      "hash_matches_source": true,
+      "width": 130,
+      "height": 219,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-0.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-1.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-2.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-3.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-4.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-5.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-6.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-7.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-8.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-9.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-10.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/infinite-11.png",
+      "hash_matches_source": true,
+      "width": 117,
+      "height": 123,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/tap.wav",
+      "hash_matches_source": true,
+      "channels": 2,
+      "sample_rate": 44100,
+      "seconds": 0.156734693877551
+    },
+    {
+      "path": "public/assets/move.wav",
+      "hash_matches_source": true,
+      "channels": 2,
+      "sample_rate": 48000,
+      "seconds": 0.014895833333333334
+    },
+    {
+      "path": "public/assets/complete.wav",
+      "hash_matches_source": true,
+      "channels": 2,
+      "sample_rate": 44100,
+      "seconds": 1.7763265306122449
+    }
+  ],
+  "source_hashes_all_match": true
+}

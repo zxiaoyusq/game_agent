@@ -1,0 +1,329 @@
+# Google Play public snapshot: uk.co.aifactory.heartsfree
+URL: https://play.google.com/store/apps/details?id=uk.co.aifactory.heartsfree&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:19.222Z
+HTTP status: 200
+Raw HTML SHA-256: 5189fd313b05207904f230c95aaddde695a1de5be4c036b890b2d912aaa5d1d3
+Raw HTML: research/html-data/store-snapshots/uk.co.aifactory.heartsfree.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Hearts
+AI Factory Limited
+Contains ads
+4.3
+star
+80.4K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Hearts - play the classic card game by AI Factory for free, even offline without internet.
+If you're familiar with other trick-taking card games like Spades, Euchre or Cribbage you'll learn Hearts in no time. It's like Spades turned upside down.
+What you can expect from our Hearts card game:
+Easily learn how to play Hearts:
+Check the card games' rules and use of undos and hints for free.
+Find your difficulty:
+15+ different CPU players with their own behaviour, ranging from beginner to expert level to match your Hearts skill.
+Play with your own rules:
+Customize the rules with a lot of options and play as you know Hearts.
+Choose your background:
+Pick from a variety of different backgrounds or even use your own photos.
+Created with heart:
+We have high standards that you can experience through classy graphics and super smooth card game gameplay.
+Lots of fun:
+Play cards wherever you go, no matter if you're travelling or simply relaxing at home.
+Just like other card games like Spades, Hearts can be as simple or complex as you make it. Our card game allows for a lot of flexibility so that you can truly enjoy your experience.
+This free version of the Hearts card game is supported by 3rd party ads. These may use internet connectivity, and therefore subsequent data charges may apply.
+Play Hearts offline. The classic trick-taking card game similar to Spades.
+Updated on
+Aug 24, 2026
+Available on
+Android,
+Windows
+Card
+Classic cards
+Casual
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hearts",
+  "url": "https://play.google.com/store/apps/details/Hearts?id=uk.co.aifactory.heartsfree&hl=en",
+  "description": "Play Hearts offline. The classic trick-taking card game similar to Spades.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/ckAEzlb7lJ1GdFPWRtNXZMx-XKt_OT-WWai4bbAwO75AbeZ1rBkl0uJw05t25IioihATgzjfFhfRm4rcPWEeMQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "AI Factory Limited",
+    "url": "http://www.aifactory.co.uk"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.349999904632568",
+    "ratingCount": "80380"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Hearts - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Hearts
+AI Factory Limited
+Contains ads
+4.3
+star
+80.4K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Hearts - play the classic card game by AI Factory for free, even offline without internet.
+If you're familiar with other trick-taking card games like Spades, Euchre or Cribbage you'll learn Hearts in no time. It's like Spades turned upside down.
+What you can expect from our Hearts card game:
+Easily learn how to play Hearts:
+Check the card games' rules and use of undos and hints for free.
+Find your difficulty:
+15+ different CPU players with their own behaviour, ranging from beginner to expert level to match your Hearts skill.
+Play with your own rules:
+Customize the rules with a lot of options and play as you know Hearts.
+Choose your background:
+Pick from a variety of different backgrounds or even use your own photos.
+Created with heart:
+We have high standards that you can experience through classy graphics and super smooth card game gameplay.
+Lots of fun:
+Play cards wherever you go, no matter if you're travelling or simply relaxing at home.
+Just like other card games like Spades, Hearts can be as simple or complex as you make it. Our card game allows for a lot of flexibility so that you can truly enjoy your experience.
+This free version of the Hearts card game is supported by 3rd party ads. These may use internet connectivity, and therefore subsequent data charges may apply.
+Play Hearts offline. The classic trick-taking card game similar to Spades.
+Updated on
+Aug 24, 2026
+Available on
+Android,
+Windows
+Card
+Classic cards
+Casual
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, App activity and 2 others
+This app may collect these data types
+Location, App activity and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.3
+71.5K reviews
+5
+4
+3
+2
+1
+Doris McMullan
+more_vert
+Flag inappropriate
+May 21, 2026
+Best free hearts game that I've been able to find. Recent updates with superfluous graphics spoil the game. I liked it the way it was. Looking for another version....Following the developer's instructions I was able to remove most of the new graphics. Please don't make changes without allowing users to opt out.
+6 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AI Factory Limited
+May 1, 2026
+You can very easily turn off the new graphic additions in Menu > Options, so you can revert to the original interface. If you uninstall, all stats will be lost but you can back them up (Menu > Stats > Menu > Export Stats) before uninstall to import on reinstall.
+Bruce P
+more_vert
+Flag inappropriate
+Show review history
+September 1, 2026
+Updates did resolve color issues, fantastic games.
+19 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AI Factory Limited
+September 2, 2026
+Thanks for letting us know. We're glad you're enjoying the app!
+A Google user
+more_vert
+Flag inappropriate
+March 4, 2020
+Plays well, but there are several things that make me uncomfortable. It doesn't play in horizontal mode, only vertical. Hearts are stacked on the left, every game I've played stacks them in the right. It doesn't pause after passing cards to highlight what your new cards are, so I often can't tell. The game played well and looks good, these are small preferences.
+101 people found this review helpful
+Did you find this helpful?
+Yes
+No
+AI Factory Limited
+March 16, 2020
+Thank you for your suggestions. We have added these for consideration on our to-do list however we are a very small team with lots of apps to look after so can't give a timeline for assessing any work.
+See all reviews
+What’s new
+Targets Android SDK 36
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@aifactory.co.uk
+shield
+Privacy Policy
+About the developer
+AI FACTORY LIMITED
+support@aifactory.co.uk
+23 The Avenue Hatch End
+PINNER
+HA5 4EN
+United Kingdom
++44 20 8866 7202
+Similar games
+arrow_forward
+Hearts: Card Game
+MobilityWare
+4.3
+star
+Pyramid Solitaire - Card Games
+MobilityWare
+4.4
+star
+Solitaire Match 3 Puzzle Game
+MobilityWare
+4.3
+star
+FreeCell Solitaire: Card Games
+MobilityWare
+4.6
+star
+Solitaire Pro
+AI Factory Limited
+4.6
+star
+₹420.00
+Solitaire Arthur Tale TriPeaks
+Qublix Games
+4.0
+star
+More by AI Factory Limited
+arrow_forward
+Chess
+AI Factory Limited
+4.5
+star
+Reversi
+AI Factory Limited
+4.4
+star
+Gomoku Pro
+AI Factory Limited
+₹420.00
+Gomoku
+AI Factory Limited
+4.1
+star
+Tic Tac Toe Pro
+AI Factory Limited
+₹420.00
+Tic Tac Toe
+AI Factory Limited
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>关卡图片与配文编辑器</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #e9e7e1;
+      --surface: #f8f7f3;
+      --surface-strong: #ffffff;
+      --ink: #242722;
+      --muted: #696e66;
+      --line: #d4d3cc;
+      --line-strong: #b7bbb1;
+      --accent: #34634b;
+      --accent-hover: #294f3c;
+      --accent-soft: #e3eee7;
+      --danger: #9d3d35;
+      --warning: #8a641f;
+      --radius: 8px;
+      --shadow: 0 12px 34px rgba(35, 42, 36, 0.12);
+      font-family: "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 14px;
+      overflow: hidden;
+    }
+    button, input, select, textarea { font: inherit; }
+    button, input, select, textarea { border-radius: var(--radius); }
+    button { cursor: pointer; }
+    button:disabled { cursor: not-allowed; opacity: 0.5; }
+    :focus-visible { outline: 3px solid rgba(52, 99, 75, 0.32); outline-offset: 2px; }
+
+    .app { display: grid; grid-template-rows: 58px minmax(0, 1fr) 34px; height: 100dvh; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 0 18px;
+      background: var(--surface-strong);
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
+    .brand h1 { margin: 0; font-size: 17px; line-height: 1; letter-spacing: 0.02em; }
+    .brand span { color: var(--muted); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .top-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+    .sync-button { border-color: #b78d45; color: #735318; background: #fff8e9; }
+
+    .workspace { display: grid; grid-template-columns: 290px minmax(360px, 1fr) 356px; min-height: 0; }
+    .sidebar, .inspector { background: var(--surface); min-height: 0; }
+    .sidebar { border-right: 1px solid var(--line); display: grid; grid-template-rows: auto minmax(0, 1fr); }
+    .inspector { border-left: 1px solid var(--line); overflow: auto; }
+    .filter-panel { padding: 12px; border-bottom: 1px solid var(--line); }
+    .filter-row { display: grid; grid-template-columns: minmax(0, 1fr) 112px; gap: 8px; }
+    .field-control {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line-strong);
+      background: var(--surface-strong);
+      color: var(--ink);
+      padding: 7px 9px;
+    }
+    .field-control:focus { border-color: var(--accent); }
+    .result-count { color: var(--muted); margin-top: 8px; font-size: 12px; }
+    .level-list { overflow: auto; padding: 6px; }
+    .level-item {
+      width: 100%;
+      min-height: 84px;
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      padding: 7px;
+      margin: 0 0 4px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: inherit;
+      text-align: left;
+    }
+    .level-item:hover { background: #efeee9; }
+    .level-item[aria-current="true"] { background: var(--accent-soft); border-color: #aec6b7; }
+    .thumb-wrap { width: 54px; height: 68px; background: #dcded8; overflow: hidden; border-radius: 5px; }
+    .thumb-wrap img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .item-main { min-width: 0; }
+    .item-head { display: flex; align-items: center; gap: 6px; }
+    .item-id { font-family: Consolas, monospace; font-weight: 700; font-size: 13px; }
+    .status-text { margin-left: auto; color: var(--muted); font-size: 11px; }
+    .item-caption { margin-top: 5px; color: #424740; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .item-source { margin-top: 3px; color: var(--muted); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .preview-pane { min-width: 0; min-height: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); background: #d7d6d0; }
+    .preview-toolbar {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      background: #efeee9;
+      border-bottom: 1px solid var(--line);
+    }
+    .pager { display: flex; gap: 6px; }
+    .jump { display: flex; justify-content: center; align-items: center; gap: 7px; color: var(--muted); }
+    .jump input { width: 74px; text-align: center; font-family: Consolas, monospace; }
+    .image-meta { text-align: right; color: var(--muted); font: 12px Consolas, monospace; white-space: nowrap; }
+    .image-stage { min-height: 0; display: grid; place-items: center; padding: 18px; overflow: hidden; position: relative; }
+    .image-stage img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; border-radius: 4px; box-shadow: var(--shadow); background: #efeee9; }
+    .image-error { display: none; max-width: 420px; padding: 16px; background: #fff4f2; border: 1px solid #d8aaa5; color: var(--danger); border-radius: var(--radius); }
+
+    .inspector-inner { padding: 16px; }
+    .section-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+    .section-title h2 { margin: 0; font-size: 16px; }
+    .level-lock { color: var(--muted); font: 12px Consolas, monospace; }
+    .field { margin: 0 0 14px; }
+    .field label, .field legend { display: block; margin-bottom: 6px; font-weight: 650; color: #3b4039; }
+    textarea.field-control { resize: vertical; line-height: 1.6; }
+    #captionInput { min-height: 110px; }
+    #noteInput { min-height: 94px; }
+    .helper { margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+    .read-only { background: #ecece7; color: #555b53; }
+    .advanced-toggle { display: flex; align-items: center; gap: 8px; margin: 4px 0 12px; color: var(--muted); }
+    .advanced-toggle input { width: 17px; height: 17px; accent-color: var(--accent); }
+    .source-title { padding: 10px; background: #ecebe5; border-radius: var(--radius); color: #50554e; line-height: 1.45; }
+    .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 18px; }
+    .stat { padding: 9px 10px; background: #ecebe5; border-radius: var(--radius); }
+    .stat strong { display: block; font: 700 16px Consolas, monospace; }
+    .stat span { color: var(--muted); font-size: 11px; }
+
+    .button {
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line-strong);
+      background: var(--surface-strong);
+      color: var(--ink);
+      font-weight: 650;
+      white-space: nowrap;
+    }
+    .button:hover:not(:disabled) { background: #efeee9; }
+    .button.primary { background: var(--accent); border-color: var(--accent); color: #f8fff9; }
+    .button.primary:hover:not(:disabled) { background: var(--accent-hover); }
+    .button.danger { border-color: #c9958f; color: var(--danger); background: #fff8f7; }
+    .button.small { min-height: 32px; padding: 5px 9px; font-size: 12px; }
+
+    .statusbar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 12px;
+      border-top: 1px solid var(--line);
+      background: #f2f1ec;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .statusbar .message { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+    .statusbar .save-state { margin-left: auto; font-weight: 650; }
+    .is-dirty { color: var(--warning); }
+    .is-error { color: var(--danger); }
+    .is-success { color: var(--accent); }
+
+    .screen-state { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; background: rgba(233, 231, 225, 0.94); }
+    .state-box { width: min(460px, calc(100vw - 32px)); padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-strong); box-shadow: var(--shadow); }
+    .state-box h2 { margin: 0 0 8px; font-size: 18px; }
+    .state-box p { margin: 0; color: var(--muted); line-height: 1.6; }
+    .state-box .button { margin-top: 16px; }
+    .spinner { width: 24px; height: 24px; border: 3px solid #ced3cc; border-top-color: var(--accent); border-radius: 50%; margin-bottom: 14px; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    dialog { width: min(760px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); border: 1px solid var(--line-strong); border-radius: 10px; padding: 0; color: var(--ink); box-shadow: var(--shadow); }
+    dialog::backdrop { background: rgba(28, 31, 27, 0.44); }
+    .dialog-head { padding: 16px 18px 12px; border-bottom: 1px solid var(--line); }
+    .dialog-head h2 { margin: 0; font-size: 18px; }
+    .dialog-head p { margin: 7px 0 0; color: var(--muted); }
+    .dialog-body { padding: 14px 18px; overflow: auto; max-height: 56dvh; }
+    .change { padding: 11px 0; border-bottom: 1px solid var(--line); }
+    .change:last-child { border-bottom: 0; }
+    .change h3 { margin: 0 0 8px; font-size: 14px; }
+    .change-grid { display: grid; grid-template-columns: 76px 1fr; gap: 5px 10px; }
+    .change-grid dt { color: var(--muted); }
+    .change-grid dd { margin: 0; overflow-wrap: anywhere; }
+    .before { color: var(--danger); text-decoration: line-through; }
+    .after { color: var(--accent); }
+    .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; padding: 12px 18px 16px; border-top: 1px solid var(--line); }
+    .guide { margin: 0; padding-left: 22px; line-height: 1.7; }
+    .guide li { margin-bottom: 8px; }
+    .guide-note { margin: 14px 0 0; padding: 10px 12px; background: var(--accent-soft); border-radius: var(--radius); line-height: 1.6; }
+    .list-empty { padding: 22px 12px; color: var(--muted); text-align: center; line-height: 1.6; }
+
+    @media (max-width: 1120px) {
+      .workspace { grid-template-columns: 244px minmax(320px, 1fr) 320px; }
+      .brand span { display: none; }
+    }
+    @media (max-width: 820px) {
+      body { overflow: auto; }
+      .app { height: auto; min-height: 100dvh; grid-template-rows: auto auto auto; }
+      .topbar { min-height: 58px; flex-wrap: wrap; padding: 10px 12px; }
+      .top-actions { width: 100%; margin: 0; overflow-x: auto; }
+      .workspace { display: grid; grid-template-columns: 1fr; }
+      .sidebar { height: 310px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .preview-pane { height: 70dvh; min-height: 480px; }
+      .inspector { border-left: 0; border-top: 1px solid var(--line); }
+      .statusbar { position: sticky; bottom: 0; min-height: 38px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app" aria-busy="true" id="app">
+    <header class="topbar">
+      <div class="brand">
+        <h1>关卡图片与配文编辑器</h1>
+        <span id="projectPath">正在读取工程</span>
+      </div>
+      <div class="top-actions" aria-label="文件操作">
+        <button class="button small" type="button" id="helpButton">使用说明</button>
+        <button class="button small sync-button" type="button" id="reloadSource" hidden>重新读取工程</button>
+        <button class="button small" type="button" id="exportJson">导出 JSON</button>
+        <button class="button small" type="button" id="exportCsv">导出 CSV</button>
+        <button class="button small" type="button" id="saveDraft">保存草稿</button>
+        <button class="button primary small" type="button" id="previewChanges">预览并写入</button>
+      </div>
+    </header>
+
+    <section class="workspace" aria-label="关卡编辑工作区">
+      <aside class="sidebar" aria-label="关卡列表">
+        <div class="filter-panel">
+          <div class="filter-row">
+            <input class="field-control" id="searchInput" type="search" placeholder="搜索关卡或配文" aria-label="搜索关卡">
+            <select class="field-control" id="statusFilter" aria-label="按审核状态筛选">
+              <option value="ALL">全部状态</option>
+              <option value="UNREVIEWED">未审核</option>
+              <option value="MATCH">匹配</option>
+              <option value="NEEDS_EDIT">需修改</option>
+              <option value="CONFIRMED">已确认</option>
+            </select>
+          </div>
+          <div class="result-count" id="resultCount">0 个关卡</div>
+        </div>
+        <div class="level-list" id="levelList" role="listbox" aria-label="关卡"></div>
+      </aside>
+
+      <section class="preview-pane" aria-label="图片预览">
+        <div class="preview-toolbar">
+          <div class="pager">
+            <button class="button small" type="button" id="prevLevel">上一关</button>
+            <button class="button small" type="button" id="nextLevel">下一关</button>
+          </div>
+          <div class="jump">
+            <label for="jumpInput">跳到</label>
+            <input class="field-control" id="jumpInput" type="number" min="1" step="1" inputmode="numeric">
+            <span id="totalCount">/ 0</span>
+          </div>
+          <div class="image-meta" id="imageMeta">等待加载</div>
+        </div>
+        <div class="image-stage">
+          <img id="mainImage" alt="当前关卡原图">
+          <div class="image-error" id="imageError" role="alert">图片无法加载，请检查映射路径。</div>
+        </div>
+      </section>
+
+      <aside class="inspector" aria-label="关卡内容编辑">
+        <div class="inspector-inner">
+          <div class="section-title">
+            <h2>内容审核</h2>
+            <span class="level-lock" id="stableId">stable_id 0</span>
+          </div>
+
+          <div class="field">
+            <label for="reviewStatus">审核状态</label>
+            <select class="field-control" id="reviewStatus">
+              <option value="UNREVIEWED">未审核</option>
+              <option value="MATCH">图片与配文匹配</option>
+              <option value="NEEDS_EDIT">需要修改</option>
+              <option value="CONFIRMED">修改后已确认</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="captionInput">通关配文</label>
+            <textarea class="field-control" id="captionInput" spellcheck="true"></textarea>
+            <div class="helper" id="captionCount">0 字</div>
+          </div>
+
+          <div class="field">
+            <label for="sourceInput">出处</label>
+            <input class="field-control" id="sourceInput" type="text" spellcheck="false">
+          </div>
+
+          <div class="field">
+            <label>配置注释</label>
+            <div class="source-title" id="configTitle">无注释</div>
+          </div>
+
+          <div class="field">
+            <label for="noteInput">审核备注</label>
+            <textarea class="field-control" id="noteInput" placeholder="记录画面主题、争议点或核对依据"></textarea>
+          </div>
+
+          <label class="advanced-toggle" for="advancedMode">
+            <input id="advancedMode" type="checkbox">
+            开启高级图片映射编辑
+          </label>
+          <div class="field">
+            <label for="imagePathInput">图片路径</label>
+            <input class="field-control read-only" id="imagePathInput" type="text" readonly spellcheck="false">
+            <div class="helper">默认锁定。修改后会校验图片存在且不重复。</div>
+          </div>
+
+          <div class="stats" aria-label="审核统计">
+            <div class="stat"><strong id="reviewedStat">0</strong><span>已审核</span></div>
+            <div class="stat"><strong id="needsEditStat">0</strong><span>需修改</span></div>
+            <div class="stat"><strong id="confirmedStat">0</strong><span>已确认</span></div>
+            <div class="stat"><strong id="changedStat">0</strong><span>本次改动</span></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="statusbar" aria-live="polite">
+      <span class="message" id="statusMessage">准备加载</span>
+      <span class="save-state" id="saveState">未修改</span>
+    </footer>
+  </main>
+
+  <div class="screen-state" id="screenState">
+    <div class="state-box">
+      <div class="spinner" id="spinner" aria-hidden="true"></div>
+      <h2 id="stateTitle">正在加载关卡数据</h2>
+      <p id="stateText">读取图片映射、配文和出处。首次打开需要几秒。</p>
+      <button class="button" type="button" id="retryButton" hidden>重新加载</button>
+    </div>
+  </div>
+
+  <dialog id="previewDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-head">
+      <h2 id="dialogTitle">写入前预览</h2>
+      <p id="dialogSummary">正在校验改动</p>
+    </div>
+    <div class="dialog-body" id="dialogBody"></div>
+    <div class="dialog-actions">
+      <button class="button" type="button" id="closeDialog">返回编辑</button>
+      <button class="button danger" type="button" id="applyChanges">确认写入工程</button>
+    </div>
+  </dialog>
+
+  <dialog id="helpDialog" aria-labelledby="helpTitle">
+    <div class="dialog-head">
+      <h2 id="helpTitle">怎么使用</h2>
+      <p>一次只看一关，图片、配文和出处放在同一屏。</p>
+    </div>
+    <div class="dialog-body">
+      <ol class="guide">
+        <li>在左边选择关卡，中间看原图，右边修改配文和出处。</li>
+        <li>确认图片与文字一致后，把审核状态改成“图片与配文匹配”或“修改后已确认”。</li>
+        <li>随时点“保存草稿”。这一步只保存你的工作进度，不会改游戏工程。</li>
+        <li>全部核对后点“预览并写入”。先看新旧差异，再确认写入工程。</li>
+      </ol>
+      <p class="guide-note">以后新增关卡时，编辑器会自动读取新关卡。缺配文或出处的关卡会显示“待补全”。正式写入前会自动备份原文件。</p>
+    </div>
+    <div class="dialog-actions">
+      <button class="button primary" type="button" id="closeHelp">知道了</button>
+    </div>
+  </dialog>
+
+  <script>
+    "use strict";
+
+    const state = {
+      levels: [],
+      initial: [],
+      sourceHashes: {},
+      selectedId: 1,
+      dirty: false,
+      busy: false,
+      preview: null,
+      projectName: "",
+      externalChanged: false,
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const els = {
+      app: $("app"), projectPath: $("projectPath"), levelList: $("levelList"),
+      searchInput: $("searchInput"), statusFilter: $("statusFilter"), resultCount: $("resultCount"),
+      prevLevel: $("prevLevel"), nextLevel: $("nextLevel"), jumpInput: $("jumpInput"), totalCount: $("totalCount"),
+      imageMeta: $("imageMeta"), mainImage: $("mainImage"), imageError: $("imageError"),
+      stableId: $("stableId"), reviewStatus: $("reviewStatus"), captionInput: $("captionInput"),
+      captionCount: $("captionCount"), sourceInput: $("sourceInput"), configTitle: $("configTitle"),
+      noteInput: $("noteInput"), advancedMode: $("advancedMode"), imagePathInput: $("imagePathInput"),
+      reviewedStat: $("reviewedStat"), needsEditStat: $("needsEditStat"), confirmedStat: $("confirmedStat"),
+      changedStat: $("changedStat"), statusMessage: $("statusMessage"), saveState: $("saveState"),
+      saveDraft: $("saveDraft"), previewChanges: $("previewChanges"), exportJson: $("exportJson"), exportCsv: $("exportCsv"),
+      helpButton: $("helpButton"), reloadSource: $("reloadSource"), helpDialog: $("helpDialog"), closeHelp: $("closeHelp"),
+      screenState: $("screenState"), spinner: $("spinner"), stateTitle: $("stateTitle"), stateText: $("stateText"),
+      retryButton: $("retryButton"), previewDialog: $("previewDialog"), dialogSummary: $("dialogSummary"),
+      dialogBody: $("dialogBody"), closeDialog: $("closeDialog"), applyChanges: $("applyChanges"),
+    };
+
+    const statusLabels = {
+      UNREVIEWED: "未审核",
+      MATCH: "匹配",
+      NEEDS_EDIT: "需修改",
+      CONFIRMED: "已确认",
+    };
+
+    const thumbObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const image = entry.target;
+        image.src = image.dataset.src;
+        image.removeAttribute("data-src");
+        thumbObserver.unobserve(image);
+      }
+    }, { root: els.levelList, rootMargin: "180px 0px" });
+
+    function clone(value) { return JSON.parse(JSON.stringify(value)); }
+
+    async function api(path, options = {}) {
+      const response = await fetch(path, {
+        cache: "no-store",
+        headers: options.body ? { "Content-Type": "application/json; charset=utf-8" } : {},
+        ...options,
+      });
+      const data = await response.json().catch(() => ({ error: "服务器返回了无法解析的内容" }));
+      if (!response.ok) throw new Error(data.error || `请求失败 ${response.status}`);
+      return data;
+    }
+
+    function payload(confirm = false) {
+      return { levels: state.levels, source_hashes: state.sourceHashes, confirm };
+    }
+
+    function setMessage(message, kind = "") {
+      els.statusMessage.textContent = message;
+      els.statusMessage.className = `message ${kind}`.trim();
+    }
+
+    function setBusy(busy) {
+      state.busy = busy;
+      for (const button of [els.saveDraft, els.previewChanges, els.exportJson, els.exportCsv, els.applyChanges]) {
+        button.disabled = busy;
+      }
+    }
+
+    function showFatal(title, text) {
+      els.spinner.hidden = true;
+      els.stateTitle.textContent = title;
+      els.stateText.textContent = text;
+      els.retryButton.hidden = false;
+      els.screenState.hidden = false;
+      els.app.setAttribute("aria-busy", "false");
+    }
+
+    function selected() { return state.levels[state.selectedId - 1]; }
+
+    function markDirty() {
+      state.dirty = true;
+      els.saveState.textContent = "草稿未保存";
+      els.saveState.className = "save-state is-dirty";
+      updateStats();
+    }
+
+    function changedCount() {
+      let count = 0;
+      for (let index = 0; index < state.levels.length; index += 1) {
+        const a = state.levels[index];
+        const b = state.initial[index];
+        if (!b || ["image_path", "caption", "source", "review_status", "reviewer_note"].some((key) => a[key] !== b[key])) count += 1;
+      }
+      return count;
+    }
+
+    function updateStats() {
+      const reviewed = state.levels.filter((row) => row.review_status !== "UNREVIEWED").length;
+      els.reviewedStat.textContent = String(reviewed);
+      els.needsEditStat.textContent = String(state.levels.filter((row) => row.review_status === "NEEDS_EDIT").length);
+      els.confirmedStat.textContent = String(state.levels.filter((row) => row.review_status === "CONFIRMED").length);
+      els.changedStat.textContent = String(changedCount());
+    }
+
+    function imageUrl(path) { return `/api/image?path=${encodeURIComponent(path)}`; }
+
+    function buildLevelItem(level) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "level-item";
+      button.dataset.id = String(level.stable_id);
+      button.setAttribute("role", "option");
+      button.setAttribute("aria-current", level.stable_id === state.selectedId ? "true" : "false");
+
+      const thumbWrap = document.createElement("span");
+      thumbWrap.className = "thumb-wrap";
+      const image = document.createElement("img");
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.alt = "";
+      image.dataset.src = imageUrl(level.image_path);
+      thumbWrap.append(image);
+
+      const main = document.createElement("span");
+      main.className = "item-main";
+      const head = document.createElement("span");
+      head.className = "item-head";
+      const id = document.createElement("span");
+      id.className = "item-id";
+      id.textContent = `第 ${level.stable_id} 关`;
+      const status = document.createElement("span");
+      status.className = "status-text";
+      status.textContent = (!level.caption || !level.source || !level.image_path)
+        ? "待补全"
+        : (statusLabels[level.review_status] || level.review_status);
+      head.append(id, status);
+      const caption = document.createElement("span");
+      caption.className = "item-caption";
+      caption.textContent = level.caption;
+      const source = document.createElement("span");
+      source.className = "item-source";
+      source.textContent = level.source;
+      main.append(head, caption, source);
+      button.append(thumbWrap, main);
+      button.addEventListener("click", () => selectLevel(level.stable_id));
+      return button;
+    }
+
+    function filteredLevels() {
+      const query = els.searchInput.value.trim().toLocaleLowerCase("zh-CN");
+      const status = els.statusFilter.value;
+      return state.levels.filter((level) => {
+        if (status !== "ALL" && level.review_status !== status) return false;
+        if (!query) return true;
+        return [level.stable_id, level.caption, level.source, level.config_title, level.reviewer_note, level.image_path]
+          .some((value) => String(value || "").toLocaleLowerCase("zh-CN").includes(query));
+      });
+    }
+
+    function renderList() {
+      thumbObserver.disconnect();
+      const fragment = document.createDocumentFragment();
+      const levels = filteredLevels();
+      for (const level of levels) fragment.append(buildLevelItem(level));
+      if (!levels.length) {
+        const empty = document.createElement("p");
+        empty.className = "list-empty";
+        empty.textContent = "没有符合当前搜索条件的关卡。";
+        fragment.append(empty);
+      }
+      els.levelList.replaceChildren(fragment);
+      els.levelList.querySelectorAll("img[data-src]").forEach((image) => thumbObserver.observe(image));
+      els.resultCount.textContent = `${levels.length} 个关卡`;
+    }
+
+    function renderSelected(scrollList = false) {
+      const level = selected();
+      if (!level) return;
+      els.stableId.textContent = `固定编号 ${level.stable_id}（不可修改）`;
+      els.reviewStatus.value = level.review_status;
+      els.captionInput.value = level.caption;
+      els.captionCount.textContent = `${Array.from(level.caption).length} 字`;
+      els.sourceInput.value = level.source;
+      els.configTitle.textContent = level.config_title || "无注释";
+      els.noteInput.value = level.reviewer_note;
+      els.imagePathInput.value = level.image_path;
+      els.jumpInput.value = String(level.stable_id);
+      els.prevLevel.disabled = level.stable_id <= 1;
+      els.nextLevel.disabled = level.stable_id >= state.levels.length;
+      const dimensions = level.image_dimensions ? `${level.image_dimensions[0]} × ${level.image_dimensions[1]}` : "尺寸待读取";
+      els.imageMeta.textContent = `${level.image_file || level.image_path}  ${dimensions}`;
+      els.imageError.style.display = "none";
+      els.mainImage.style.display = "block";
+      els.mainImage.alt = `第 ${level.stable_id} 关原图`;
+      els.mainImage.src = imageUrl(level.image_path);
+      document.querySelectorAll(".level-item").forEach((item) => {
+        item.setAttribute("aria-current", Number(item.dataset.id) === level.stable_id ? "true" : "false");
+      });
+      if (scrollList) {
+        document.querySelector(`.level-item[data-id="${level.stable_id}"]`)?.scrollIntoView({ block: "nearest" });
+      }
+    }
+
+    function selectLevel(id, scrollList = false) {
+      const next = Math.max(1, Math.min(state.levels.length, Number(id) || 1));
+      state.selectedId = next;
+      renderSelected(scrollList);
+    }
+
+    function updateField(key, value, rerenderList = false) {
+      const level = selected();
+      if (!level || level[key] === value) return;
+      level[key] = value;
+      markDirty();
+      if (rerenderList) renderList();
+    }
+
+    async function load() {
+      els.screenState.hidden = false;
+      els.spinner.hidden = false;
+      els.retryButton.hidden = true;
+      els.stateTitle.textContent = "正在加载关卡数据";
+      els.stateText.textContent = "读取图片映射、配文和出处。首次打开需要几秒。";
+      try {
+        const data = await api("/api/levels");
+        state.levels = data.levels;
+        state.initial = clone(data.levels);
+        state.sourceHashes = data.source_hashes;
+        state.projectName = data.project_name;
+        state.selectedId = 1;
+        state.dirty = false;
+        state.externalChanged = false;
+        els.reloadSource.hidden = true;
+        els.projectPath.textContent = `${data.project_name}  ${data.project_root}`;
+        els.totalCount.textContent = `/ ${data.level_count}`;
+        els.jumpInput.max = String(data.level_count);
+        els.saveState.textContent = "草稿已同步";
+        els.saveState.className = "save-state";
+        renderList();
+        renderSelected();
+        updateStats();
+        const issueCount = data.levels.filter((level) => level.mapping_issues?.length).length;
+        if (data.draft_stale) {
+          setMessage("工程增加或修改过关卡，旧草稿已按固定编号带入。请先检查提示为“待补全”的关卡。", "is-error");
+        } else if (issueCount) {
+          setMessage(`已自动发现 ${data.level_count} 关，其中 ${issueCount} 关需要补配文、出处或图片。`, "is-error");
+        } else {
+          setMessage(`已载入 ${data.level_count} 关。Ctrl+S 保存草稿，Alt+左右方向键切换关卡。`, "is-success");
+        }
+        els.screenState.hidden = true;
+        els.app.setAttribute("aria-busy", "false");
+      } catch (error) {
+        showFatal("无法加载编辑器", error.message);
+      }
+    }
+
+    async function saveDraft() {
+      if (state.busy) return;
+      setBusy(true);
+      setMessage("正在校验并保存草稿");
+      try {
+        const result = await api("/api/draft", { method: "POST", body: JSON.stringify(payload()) });
+        state.initial = clone(state.levels);
+        state.dirty = false;
+        els.saveState.textContent = "草稿已保存";
+        els.saveState.className = "save-state is-success";
+        updateStats();
+        setMessage(`草稿已保存：${result.path}`, "is-success");
+      } catch (error) {
+        setMessage(error.message, "is-error");
+      } finally {
+        setBusy(false);
+      }
+    }
+
+    function appendChange(container, change) {
+      const section = document.createElement("section");
+      section.className = "change";
+      const title = document.createElement("h3");
+      title.textContent = `第 ${change.stable_id} 关`;
+      const list = document.createElement("dl");
+      list.className = "change-grid";
+      const labels = { image_path: "图片", caption: "配文", source: "出处" };
+      for (const [key, values] of Object.entries(change.fields)) {
+        const termBefore = document.createElement("dt");
+        termBefore.textContent = `${labels[key]} 原值`;
+        const before = document.createElement("dd");
+        before.className = "before";
+        before.textContent = values.before;
+        const termAfter = document.createElement("dt");
+        termAfter.textContent = `${labels[key]} 新值`;
+        const after = document.createElement("dd");
+        after.className = "after";
+        after.textContent = values.after;
+        list.append(termBefore, before, termAfter, after);
+      }
+      section.append(title, list);
+      container.append(section);
+    }
+
+    async function previewChanges() {
+      if (state.busy) return;
+      setBusy(true);
+      setMessage("正在执行写入前校验");
+      try {
+        const result = await api("/api/preview", { method: "POST", body: JSON.stringify(payload()) });
+        state.preview = result;
+        els.dialogBody.replaceChildren();
+        els.dialogSummary.textContent = result.change_count
+          ? `校验通过，共 ${result.change_count} 个关卡会修改工程源码。写入前会自动备份。`
+          : "源码字段没有变化。审核状态和备注只需保存草稿。";
+        if (result.change_count) {
+          for (const change of result.changes) appendChange(els.dialogBody, change);
+        } else {
+          const empty = document.createElement("p");
+          empty.textContent = "没有需要写入 TypeScript 的图片、配文或出处改动。";
+          els.dialogBody.append(empty);
+        }
+        els.applyChanges.disabled = result.change_count === 0;
+        els.previewDialog.showModal();
+        setMessage("写入前校验通过", "is-success");
+      } catch (error) {
+        setMessage(error.message, "is-error");
+      } finally {
+        setBusy(false);
+      }
+    }
+
+    async function applyChanges() {
+      if (state.busy || !state.preview?.change_count) return;
+      setBusy(true);
+      setMessage("正在备份并写入工程，请勿关闭窗口");
+      try {
+        const result = await api("/api/apply", { method: "POST", body: JSON.stringify(payload(true)) });
+        state.sourceHashes = result.source_hashes;
+        state.initial = clone(state.levels);
+        state.dirty = false;
+        els.previewDialog.close();
+        els.saveState.textContent = "工程已写入";
+        els.saveState.className = "save-state is-success";
+        updateStats();
+        setMessage(`已写入 ${result.change_count} 关。备份目录：${result.backup_dir}`, "is-success");
+      } catch (error) {
+        setMessage(error.message, "is-error");
+      } finally {
+        setBusy(false);
+      }
+    }
+
+    function download(name, content, type) {
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(new Blob([content], { type }));
+      link.download = name;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+    }
+
+    function exportJson() {
+      const data = { schema_version: 1, project_name: state.projectName, source_hashes: state.sourceHashes, levels: state.levels };
+      download("story-levels.json", `${JSON.stringify(data, null, 2)}\n`, "application/json;charset=utf-8");
+      setMessage("已导出 JSON", "is-success");
+    }
+
+    function csvCell(value) { return `"${String(value ?? "").replaceAll('"', '""')}"`; }
+    function exportCsv() {
+      const columns = ["stable_id", "display_order", "image_path", "config_title", "caption", "source", "review_status", "reviewer_note"];
+      const rows = [columns.join(","), ...state.levels.map((level) => columns.map((key) => csvCell(level[key])).join(","))];
+      download("story-levels.csv", `\ufeff${rows.join("\r\n")}\r\n`, "text/csv;charset=utf-8");
+      setMessage("已导出 UTF-8 CSV", "is-success");
+    }
+
+    function sameHashes(a, b) {
+      return a?.level_file === b?.level_file && a?.locale_file === b?.locale_file;
+    }
+
+    async function checkForProjectChanges() {
+      if (state.busy || !state.levels.length) return;
+      try {
+        const health = await api("/api/health");
+        if (sameHashes(health.source_hashes, state.sourceHashes)) return;
+        state.externalChanged = true;
+        if (!state.dirty && !els.previewDialog.open) {
+          setMessage(`发现工程关卡变化，正在自动同步 ${health.level_count} 关。`);
+          await load();
+          return;
+        }
+        els.reloadSource.hidden = false;
+        setMessage("工程里有新关卡或新改动。请先保存当前草稿，再点“重新读取工程”。", "is-error");
+      } catch (error) {
+        setMessage(`自动同步检查失败：${error.message}`, "is-error");
+      }
+    }
+
+    function reloadSource() {
+      if (state.dirty && !window.confirm("当前页面还有未保存内容。确定重新读取工程吗？")) return;
+      load();
+    }
+
+    els.searchInput.addEventListener("input", renderList);
+    els.statusFilter.addEventListener("change", renderList);
+    els.prevLevel.addEventListener("click", () => selectLevel(state.selectedId - 1, true));
+    els.nextLevel.addEventListener("click", () => selectLevel(state.selectedId + 1, true));
+    els.jumpInput.addEventListener("change", () => selectLevel(els.jumpInput.value, true));
+    els.reviewStatus.addEventListener("change", () => updateField("review_status", els.reviewStatus.value, true));
+    els.captionInput.addEventListener("input", () => {
+      updateField("caption", els.captionInput.value, true);
+      els.captionCount.textContent = `${Array.from(els.captionInput.value).length} 字`;
+    });
+    els.sourceInput.addEventListener("input", () => updateField("source", els.sourceInput.value, true));
+    els.noteInput.addEventListener("input", () => updateField("reviewer_note", els.noteInput.value));
+    els.advancedMode.addEventListener("change", () => {
+      els.imagePathInput.readOnly = !els.advancedMode.checked;
+      els.imagePathInput.classList.toggle("read-only", !els.advancedMode.checked);
+      if (els.advancedMode.checked) els.imagePathInput.focus();
+    });
+    els.imagePathInput.addEventListener("change", () => {
+      updateField("image_path", els.imagePathInput.value.trim(), true);
+      renderSelected();
+    });
+    els.mainImage.addEventListener("load", () => { els.imageError.style.display = "none"; els.mainImage.style.display = "block"; });
+    els.mainImage.addEventListener("error", () => { els.mainImage.style.display = "none"; els.imageError.style.display = "block"; });
+    els.saveDraft.addEventListener("click", saveDraft);
+    els.previewChanges.addEventListener("click", previewChanges);
+    els.exportJson.addEventListener("click", exportJson);
+    els.exportCsv.addEventListener("click", exportCsv);
+    els.helpButton.addEventListener("click", () => els.helpDialog.showModal());
+    els.closeHelp.addEventListener("click", () => els.helpDialog.close());
+    els.reloadSource.addEventListener("click", reloadSource);
+    els.closeDialog.addEventListener("click", () => els.previewDialog.close());
+    els.applyChanges.addEventListener("click", applyChanges);
+    els.retryButton.addEventListener("click", load);
+
+    document.addEventListener("keydown", (event) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLocaleLowerCase() === "s") {
+        event.preventDefault();
+        saveDraft();
+      }
+      if (event.altKey && event.key === "ArrowLeft") { event.preventDefault(); selectLevel(state.selectedId - 1, true); }
+      if (event.altKey && event.key === "ArrowRight") { event.preventDefault(); selectLevel(state.selectedId + 1, true); }
+    });
+    window.addEventListener("beforeunload", (event) => {
+      if (!state.dirty) return;
+      event.preventDefault();
+      event.returnValue = "";
+    });
+
+    load();
+    window.setInterval(checkForProjectChanges, 10000);
+  </script>
+</body>
+</html>

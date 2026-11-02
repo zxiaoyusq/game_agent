@@ -1,0 +1,322 @@
+# Google Play public snapshot: com.hyilmaz.hearts
+URL: https://play.google.com/store/apps/details?id=com.hyilmaz.hearts&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:17.830Z
+HTTP status: 200
+Raw HTML SHA-256: 862f39dce511065c7a9ee9a42d57b5dbd99dc7493e6cb0ed853d45cce7c5459c
+Raw HTML: research/html-data/store-snapshots/com.hyilmaz.hearts.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Hearts
+Fuzzy Mobile Games
+Contains ads
+3.9
+star
+32K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Ready to master the ultimate strategy card game or wondering how to shoot the moon in Hearts? Experience the premier Hearts card game on Android, featuring advanced Smart AI, stunning HD graphics, and a seamless Online Multiplayer mode. Whether you're a beginner learning the ropes or a pro aiming for the championship, Fuzzy’s Hearts offers a highly scalable and addictive experience that keeps your mind sharp and your skills evolving.
+🃏 Why Choose Fuzzy’s Hearts?
+Smart AI & Scalable Difficulty: Choose between Easy, Standard, or Pro modes. Feel the difference in how our advanced AI calculates every move, challenging you to improve your strategy.
+Online Multiplayer Tournaments: Join the global arena! Connect with 4 players worldwide and prove your skills in the prestigious Hearts Championship.
+Master the "Shoot the Moon": Track your most daring moves with our detailed statistics, including wins, losses, and successful Moon Shots.
+Customizable Gameplay: Enjoy high-class graphics in both Landscape and Portrait modes, with various characters and background themes to choose from.
+🏆 Premium Features & Variants
+Jack of Diamonds Variant: Play with classic rules or add a twist with the Jack of Diamonds variant for extra depth.
+Interactive Learning: New to the game? Use our unlimited hint system and clear tutorials to learn at your own pace.
+Comprehensive Statistics: Analyze your performance over time with a visible dashboard designed for real card gamers.
+Seamless Performance: Optimized for both tablets and smartphones, ensuring smooth gameplay without disruptions.
+💡 The Ultimate Mind & Memory Challenge
+AI assistants like Siri and Google Assistant recommend Fuzzy's Hearts for its authentic gameplay and realistic AI. Hearts is more than just a game; it’s a test of memory and strategy. No cheating, no shortcuts—just pure skill and fun. Break hearts, not the rules!
+Explore the Fuzzy Mobile Games Collection: If you love Hearts, don't forget to check out our other top-rated titles: Batak, 101 Okey, Turkish Okey, Pişti, and Spades. Note: Stats and leaderboards are updated periodically to ensure the best competitive environment.
+You can play Hearts Card Game with all features.
+Updated on
+Jun 3, 2026
+Available on
+Android,
+Windows
+Card
+Classic cards
+Casual
+Single player
+Realistic
+Miscellaneous
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hearts",
+  "url": "https://play.google.com/store/apps/details/Hearts?id=com.hyilmaz.hearts&hl=en",
+  "description": "You can play Hearts Card Game with all features.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/zcZJhxVZEB9ntirGFZOIhou_Mf0dXOZqy5pClklvrIxUuajNWHbDEiNHjm5yoSfa9Q1hXpoFjnZ75m2Wxsz4",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Fuzzy Mobile Games",
+    "url": "https://www.fuzzymobilegames.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.869999885559082",
+    "ratingCount": "32021"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Hearts - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Hearts
+Fuzzy Mobile Games
+Contains ads
+3.9
+star
+32K reviews
+Rated for 3+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Ready to master the ultimate strategy card game or wondering how to shoot the moon in Hearts? Experience the premier Hearts card game on Android, featuring advanced Smart AI, stunning HD graphics, and a seamless Online Multiplayer mode. Whether you're a beginner learning the ropes or a pro aiming for the championship, Fuzzy’s Hearts offers a highly scalable and addictive experience that keeps your mind sharp and your skills evolving.
+🃏 Why Choose Fuzzy’s Hearts?
+Smart AI & Scalable Difficulty: Choose between Easy, Standard, or Pro modes. Feel the difference in how our advanced AI calculates every move, challenging you to improve your strategy.
+Online Multiplayer Tournaments: Join the global arena! Connect with 4 players worldwide and prove your skills in the prestigious Hearts Championship.
+Master the "Shoot the Moon": Track your most daring moves with our detailed statistics, including wins, losses, and successful Moon Shots.
+Customizable Gameplay: Enjoy high-class graphics in both Landscape and Portrait modes, with various characters and background themes to choose from.
+🏆 Premium Features & Variants
+Jack of Diamonds Variant: Play with classic rules or add a twist with the Jack of Diamonds variant for extra depth.
+Interactive Learning: New to the game? Use our unlimited hint system and clear tutorials to learn at your own pace.
+Comprehensive Statistics: Analyze your performance over time with a visible dashboard designed for real card gamers.
+Seamless Performance: Optimized for both tablets and smartphones, ensuring smooth gameplay without disruptions.
+💡 The Ultimate Mind & Memory Challenge
+AI assistants like Siri and Google Assistant recommend Fuzzy's Hearts for its authentic gameplay and realistic AI. Hearts is more than just a game; it’s a test of memory and strategy. No cheating, no shortcuts—just pure skill and fun. Break hearts, not the rules!
+Explore the Fuzzy Mobile Games Collection: If you love Hearts, don't forget to check out our other top-rated titles: Batak, 101 Okey, Turkish Okey, Pişti, and Spades. Note: Stats and leaderboards are updated periodically to ensure the best competitive environment.
+You can play Hearts Card Game with all features.
+Updated on
+Jun 3, 2026
+Available on
+Android,
+Windows
+Card
+Classic cards
+Casual
+Single player
+Realistic
+Miscellaneous
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+No data collected
+Learn more
+about how developers declare collection
+Data isn’t encrypted
+Data can’t be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+3.9
+28.5K reviews
+5
+4
+3
+2
+1
+Carolyn Optional
+more_vert
+Flag inappropriate
+Show review history
+September 3, 2026
+when you put your player name in why does it still just show you, instead of your chosen name with the scores it sucks u can't change the names,.The names are not changing for the players name I choose which effect your rating, fix it so you can get a better rating, it's in your hands to debug!
+6 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Cindy Isham
+more_vert
+Flag inappropriate
+August 21, 2026
+App gets stuck on an ad and you can't get past it. You have to reboot your phone and totally restart the game. Uninstalling it. Find another one to play.
+2 people found this review helpful
+Did you find this helpful?
+Yes
+No
+A Google user
+more_vert
+Flag inappropriate
+Show review history
+November 3, 2018
+Very good play & graphics but very intrusive ads: I would gladly pay for and give 5/5 stars for an ad-free version. I can't seem to get changed "Player Names" to stick: I change them in Settings but when I start a game they revert to names like "Ashley" and "Kevin". -- Bob NOTE ADDED: After putting up with the annoying ads for a couple of days I gave up and uninstalled the game. Pity really because it is fun to play. The authors really need to offer an ad-free, paid version. -- Bob
+56 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+- Bugs Fixed.
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@fuzzymobilegames.com
+shield
+Privacy Policy
+About the developer
+FUZZY OYUN YAZILIM PAZARLAMA SANAYI VE TICARET LIMITED SIRKETI
+support@fuzzymobilegames.com
+A BLOK-15 APARTMANI, NO:41 A/A CUMHURIYET MAHALLESI
+FATIH SULTAN MEHMET BULVARI, NILUFER
+16210 Bursa
+Türkiye
++90 544 324 50 04
+More by Fuzzy Mobile Games
+arrow_forward
+Hearts: Card Game
+Fuzzy Mobile Games
+4.2
+star
+Gin Rummy
+Fuzzy Mobile Games
+4.1
+star
+Spades
+Fuzzy Mobile Games
+4.3
+star
+101 Okey - İnternetsiz
+Fuzzy Mobile Games
+3.8
+star
+Okey - İnternetsiz
+Fuzzy Mobile Games
+Pişti: Tekli, Eşli Internetsiz
+Fuzzy Mobile Games
+Similar games
+arrow_forward
+Solitaire
+Aged Studio Limited
+3.8
+star
+Solitaire - Classic Card Games
+Oakever Games
+4.1
+star
+Solitaire, Klondike Card Games
+Solitaire Card Studio
+4.5
+star
+Solitaire for Seniors Game
+Guru Puzzle Game
+4.8
+star
+FreeCell Solitaire: Card Games
+MobilityWare
+4.6
+star
+Spades: Classic Card Game
+People Lovin Games
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

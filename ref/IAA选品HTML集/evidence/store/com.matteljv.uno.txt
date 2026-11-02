@@ -1,0 +1,348 @@
+# Google Play public snapshot: com.matteljv.uno
+URL: https://play.google.com/store/apps/details?id=com.matteljv.uno&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:04.965Z
+HTTP status: 200
+Raw HTML SHA-256: 334a0cf8d17792f918fc8751343d02ff8e0b2920048f8cd9aa886fdcaa27ce94
+Raw HTML: research/html-data/store-snapshots/com.matteljv.uno.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+UNO!™
+Mattel Game Studios HK Limited
+Contains ads
+In-app purchases
+4.4
+star
+2.58M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+UNO!™ is now mobile! Take the classic card game from the kitchen table anywhere! Now with new rules, world series tournaments, modes of play, and much more. Whether you’re at home, on the go, an UNO!™ veteran or completely new, UNO!™ has something for everyone in the family. UNO!™ is a fun and memorable family-friendly card game wherever and whenever.
+Ready. Set. UNO!™
+- Play the classic card game, UNO!™, or select from a variety of house rules to play in real-time matches
+- Compete in tournaments and events to win free rewards and top the leaderboards
+- Partner up with friends or family, play in 2v2 mode, and collaborate to win
+- Connect anytime, anywhere with family and friends from around the world.
+FEATURES
+The Classic Game at your Fingertips
+New to UNO!™ or wanting to play your favorite card game? Tap Quick Play and start up a new game with classic UNO!™ rules. Get ready for new monthly rewards and events!
+Play with Friends
+Play with friends or family! Set up your own house rules and play your way. UNO!™ is a family-friendly party that makes it free and easy for anyone to join!
+Buddy Up
+Find a friend or family and partner up to battle in 2 player teams. Help each other reduce your hand (or your partner’s) to zero as quickly as possible to beat the other team!
+Connect, Chat, Shout UNO!™
+Connect with your buddies in UNO!™ with clubs and send each other gifts. Make a strategy and remember to shout UNO before anyone else.
+New Challenges at Every Level
+Compete in World Series tournaments and special events to win free rewards. Top the leaderboards and show off to your friends and family! Then spin the wheel and try your fortune to get free rewards every day!
+Go Wild – No, Really
+This no-holds-barred mode is as wacky as UNO!™ gets. Forget the classic mode - house rules on, two-deck play, and free winnings up to 600 times what you put in to make you the coin master! But beware, in this wild game mode, you win big or go home empty-handed! Are you up for the challenge?
+Visit our official site at www.letsplayuno.com
+Follow us on Facebook for more updates: www.facebook.com/UNOnow
+The Classic Game at your Fingertips
+Updated on
+Sep 9, 2026
+#2 top free card
+Card
+Last card
+Casual
+Multiplayer
+Competitive multiplayer
+Stylized
+Miscellaneous
+Cards
+Competitive
+Events & offers
+Update available
+Spooky Storybook—Play & discover the ancient grimoire's tales
+Update available
+The Most Ruthless UNO Yet – Show 'Em No Mercy!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "UNO!™",
+  "url": "https://play.google.com/store/apps/details/UNO?id=com.matteljv.uno&hl=en",
+  "description": "The Classic Game at your Fingertips",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/yAn20u0xsnzgIKZTaFGgkPnEOV1LPKh00_rEccAnQeljyXDESWneIl9C28c7JT-petqf7AD_ZlIIDMrYah7p",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Mattel Game Studios HK Limited",
+    "url": "http://www.letsplayuno.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.377770900726318",
+    "ratingCount": "2584716"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+UNO!™ - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+UNO!™
+Mattel Game Studios HK Limited
+Contains ads
+In-app purchases
+4.4
+star
+2.58M reviews
+Rated for 3+
+info
+100M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+About this game
+arrow_forward
+UNO!™ is now mobile! Take the classic card game from the kitchen table anywhere! Now with new rules, world series tournaments, modes of play, and much more. Whether you’re at home, on the go, an UNO!™ veteran or completely new, UNO!™ has something for everyone in the family. UNO!™ is a fun and memorable family-friendly card game wherever and whenever.
+Ready. Set. UNO!™
+- Play the classic card game, UNO!™, or select from a variety of house rules to play in real-time matches
+- Compete in tournaments and events to win free rewards and top the leaderboards
+- Partner up with friends or family, play in 2v2 mode, and collaborate to win
+- Connect anytime, anywhere with family and friends from around the world.
+FEATURES
+The Classic Game at your Fingertips
+New to UNO!™ or wanting to play your favorite card game? Tap Quick Play and start up a new game with classic UNO!™ rules. Get ready for new monthly rewards and events!
+Play with Friends
+Play with friends or family! Set up your own house rules and play your way. UNO!™ is a family-friendly party that makes it free and easy for anyone to join!
+Buddy Up
+Find a friend or family and partner up to battle in 2 player teams. Help each other reduce your hand (or your partner’s) to zero as quickly as possible to beat the other team!
+Connect, Chat, Shout UNO!™
+Connect with your buddies in UNO!™ with clubs and send each other gifts. Make a strategy and remember to shout UNO before anyone else.
+New Challenges at Every Level
+Compete in World Series tournaments and special events to win free rewards. Top the leaderboards and show off to your friends and family! Then spin the wheel and try your fortune to get free rewards every day!
+Go Wild – No, Really
+This no-holds-barred mode is as wacky as UNO!™ gets. Forget the classic mode - house rules on, two-deck play, and free winnings up to 600 times what you put in to make you the coin master! But beware, in this wild game mode, you win big or go home empty-handed! Are you up for the challenge?
+Visit our official site at www.letsplayuno.com
+Follow us on Facebook for more updates: www.facebook.com/UNOnow
+The Classic Game at your Fingertips
+Updated on
+Sep 9, 2026
+#2 top free card
+Card
+Last card
+Casual
+Multiplayer
+Competitive multiplayer
+Stylized
+Miscellaneous
+Cards
+Competitive
+Events & offers
+Update available
+Spooky Storybook—Play & discover the ancient grimoire's tales
+Update available
+The Most Ruthless UNO Yet – Show 'Em No Mercy!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Personal info and Financial info
+This app may collect these data types
+Personal info, Financial info and 3 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.4
+2.4M reviews
+5
+4
+3
+2
+1
+Akhil
+more_vert
+Flag inappropriate
+August 11, 2026
+One of the worst gaming experiences because of the excessive ads. You can’t even play one game peacefully—there are multiple ads throughout the gameplay, sometimes around 2 ads for a single game. On top of that, almost every step is filled with banners and pop-ups promoting premium memberships, coin purchases, and other in-app payments. It feels like the game is designed more to show ads and push purchases than to let players actually enjoy UNO.
+13 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Mattel Game Studios HK Limited
+August 15, 2026
+We're sorry to hear about your frustration regarding ads. Although advertisements help with the costs of keeping the game running for free, we always strive our best to make sure that your player experience comes first and your feedback is important to helping us manage this better! Thank you
+Som Tiwari
+more_vert
+Flag inappropriate
+September 9, 2026
+I absolutely love UNO 😭 It’s genuinely so fun and addictive, and I love playing it with friends. The gameplay is really smooth and there’s always something going on, so it never gets boring. The only thing I don’t like is the constant pop-ups 😭 They can get pretty annoying and kinda ruin the experience sometimes. That’s the main reason I’m giving it 4 stars instead of 5. Other than that, I love the game and would definitely recommend it! 😝
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+Mattel Game Studios HK Limited
+September 11, 2026
+Thank you for sharing your feedback. We apologize if the ads and pop-up offers affect your enjoyment of the game. We always strive our best to make sure that your player experience comes first and your feedback is important to helping us manage this better! We thank you sincerely for your support and patience!
+Sumeet superbiker
+more_vert
+Flag inappropriate
+Show review history
+August 26, 2026
+"DONT INSTALL THIS GAMING APP". earlier it was good but now they have started showing the same ads again and again, and you can't even exit them by your will, you are forced to watch the ads if you wish to play more. and plus you will keep getting pop ups of reference games by this app maker which is very irritating and will lose your excitement to play more.
+9 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Mattel Game Studios HK Limited
+August 29, 2026
+Thank you for sharing your feedback. We apologize if the ads and pop-up offers affect your enjoyment of the game. We always strive our best to make sure that your player experience comes first and your feedback is important to helping us manage this better! We thank you sincerely for your support and patience!
+See all reviews
+What’s new
+No Mercy Game Mode
+The card table is about to heat up—No Mercy officially launches September 16th as a permanent addition to Fun Pack!
+Tricksy UNO Clash Puzzle
+10.12-11.15: Join the Count at his Spooky Estate for a frightful game night of UNO! This puzzle event is a sure-scare, with all the mischieveious tricks up these players' sleeves! Collect Puzzle Pieces and complete the story to redeem hilarious new Emojis and an exclusive Scene!
+Lily Emoji Pack and Gojj Voice Pack coming soon!
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+uno-mgs@mattel.com
+shield
+Privacy Policy
+About the developer
+Mattel Game Studios HK Limited
+mattel163gl@gmail.com
+6/F ALEXANDRA HSE
+18 CHATER RD
+中環
+香港島
+Hong Kong
++86 187 6848 4477
+More by Mattel Game Studios HK Limited
+arrow_forward
+UNO Wonder
+Mattel Game Studios HK Limited
+4.0
+star
+Phase 10: Casual Card Game
+Mattel Game Studios HK Limited
+4.6
+star
+Skip-Bo™: Solitaire Card Game
+Mattel Game Studios HK Limited
+4.5
+star
+Similar games
+arrow_forward
+Offline Games: No WiFi - FunOn
+Fun Offline Games
+4.4
+star
+Tic Tac Toe - 2 Player XO
+CDT Puzzle Studio
+3.5
+star
+Tic Tac Toe 2 Player: XO Game
+Onetap Global
+4.0
+star
+Block Blast!
+HungryStudio
+4.6
+star
+Ludo King®
+Gametion
+4.0
+star
+Checkers - Online & Offline
+GamoVation
+4.3
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

@@ -1,0 +1,360 @@
+# Google Play public snapshot: com.fingersoft.hillclimb
+URL: https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:49.273Z
+HTTP status: 200
+Raw HTML SHA-256: 485fc77433c9ab3a996ef2ed6e7c15cec90d6d65bc21f110c585dbc6494f90fa
+Raw HTML: research/html-data/store-snapshots/com.fingersoft.hillclimb.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Hill Climb Racing
+Fingersoft
+Contains ads
+In-app purchases
+4.0
+star
+10.6M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases (Includes Random Items)
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Hill Climb Racing is free to download and play and includes optional in-app purchases, including random-item purchases. You can disable in-app purchases in your device settings.
+_______________________
+Play the original classic Hill Climb Racing! Race your way uphill in this physics based driving game, playable offline!
+Meet Bill, the young aspiring uphill racer. He is about to embark on a journey through Climb Canyon that takes him to where no ride has ever been before. With little respect to the laws of physics, Bill will not rest until he has conquered the highest hills up on the moon!
+Face challenges in unique hill climbing environments with a wide variety of cars to choose from. Earn points from daring tricks and collect coins to upgrade your car and travel further distances. Watch out though - Bill's neck is not what it used to be when he was a kid! And his good old gasoline crematorium will easily run out of fuel.
+Features::
+Fresh Content
+We are still actively developing Hill Climb Racing and adding new vehicles, new stages and new content!
+Unique Vehicles
+Get behind the wheel of a wide variety of different vehicles. From the iconic Hill Climber to bikes, race cars, trucks and even some outlandish vehicles such as the creepy Carantula! Half car, half tarantula, do you dare drive it?
+Play Offline
+Race offline whenever and wherever you want! Hill Climb Racing is playable completely offline. Play it on a bus, plane or train! Play it anywhere!
+Wacky Stages
+Climb Canyon is full of unique challenges and stages for you to overcome with vastly different terrains and hazards. How far can you drive without running out of gas or crashing your vehicle?
+Unlock and Upgrade
+Tune up and fix your dream vehicle with custom parts, skins and upgrades!
+Simulated Physics
+We worked hard on creating a one of a kind in-game physics system where your vehicles will react to the terrain in a unique manner, can you use this to your advantage and conquer the hills?
+Daily challenges and events
+Tackle the daily challenges and events to earn epic rewards!
+Remember that we're always reading your feedback and are hard at work creating new content and fixing any issues you may find. Please feel free to report what you like or dislike or any other issues you may have with the game to support@fingersoft.com.
+Follow Us:
+* Facebook: https://www.facebook.com/Fingersoft
+* X: https://twitter.com/HCR_Official_
+* Website: https://www.fingersoft.com
+* Instagram: https://www.instagram.com/hillclimbracing_official
+* Discord: https://discord.com/invite/fingersoft
+* TikTok: https://www.tiktok.com/@hillclimbracing_game
+* Youtube: https://www.youtube.com/@FingersoftLtd
+Terms of Use: https://fingersoft.com/eula-web/
+Privacy Policy: https://fingersoft.com/privacy-policy/
+Race uphill, perform stunts and upgrade cars. (Includes random-item purchases)
+Updated on
+Aug 6, 2026
+Available on
+Android,
+Windows*
+#3 top free racing
+Racing
+Stunt driving
+Casual
+Single player
+Stylized
+Cartoon
+Vehicles
+Car
+Driving
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hill Climb Racing",
+  "url": "https://play.google.com/store/apps/details/Hill_Climb_Racing?id=com.fingersoft.hillclimb&hl=en",
+  "description": "Race uphill, perform stunts and upgrade cars. (Includes random-item purchases)",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_RACING",
+  "image": "https://play-lh.googleusercontent.com/7YJtBKClRTrPRIO-vm-_GoqAEwob4kQ-wJd0qmUMLdbor5Jxj-IKpsXOj6MQejf2XYN9YE0q6IUgYnu-fcAGIg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Fingersoft",
+    "url": "https://www.fingersoft.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.032766819000244",
+    "ratingCount": "10587568"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Hill Climb Racing - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Hill Climb Racing
+Fingersoft
+Contains ads
+In-app purchases
+4.0
+star
+10.6M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases (Includes Random Items)
+Learn more
+About this game
+arrow_forward
+Hill Climb Racing is free to download and play and includes optional in-app purchases, including random-item purchases. You can disable in-app purchases in your device settings.
+_______________________
+Play the original classic Hill Climb Racing! Race your way uphill in this physics based driving game, playable offline!
+Meet Bill, the young aspiring uphill racer. He is about to embark on a journey through Climb Canyon that takes him to where no ride has ever been before. With little respect to the laws of physics, Bill will not rest until he has conquered the highest hills up on the moon!
+Face challenges in unique hill climbing environments with a wide variety of cars to choose from. Earn points from daring tricks and collect coins to upgrade your car and travel further distances. Watch out though - Bill's neck is not what it used to be when he was a kid! And his good old gasoline crematorium will easily run out of fuel.
+Features::
+Fresh Content
+We are still actively developing Hill Climb Racing and adding new vehicles, new stages and new content!
+Unique Vehicles
+Get behind the wheel of a wide variety of different vehicles. From the iconic Hill Climber to bikes, race cars, trucks and even some outlandish vehicles such as the creepy Carantula! Half car, half tarantula, do you dare drive it?
+Play Offline
+Race offline whenever and wherever you want! Hill Climb Racing is playable completely offline. Play it on a bus, plane or train! Play it anywhere!
+Wacky Stages
+Climb Canyon is full of unique challenges and stages for you to overcome with vastly different terrains and hazards. How far can you drive without running out of gas or crashing your vehicle?
+Unlock and Upgrade
+Tune up and fix your dream vehicle with custom parts, skins and upgrades!
+Simulated Physics
+We worked hard on creating a one of a kind in-game physics system where your vehicles will react to the terrain in a unique manner, can you use this to your advantage and conquer the hills?
+Daily challenges and events
+Tackle the daily challenges and events to earn epic rewards!
+Remember that we're always reading your feedback and are hard at work creating new content and fixing any issues you may find. Please feel free to report what you like or dislike or any other issues you may have with the game to support@fingersoft.com.
+Follow Us:
+* Facebook: https://www.facebook.com/Fingersoft
+* X: https://twitter.com/HCR_Official_
+* Website: https://www.fingersoft.com
+* Instagram: https://www.instagram.com/hillclimbracing_official
+* Discord: https://discord.com/invite/fingersoft
+* TikTok: https://www.tiktok.com/@hillclimbracing_game
+* Youtube: https://www.youtube.com/@FingersoftLtd
+Terms of Use: https://fingersoft.com/eula-web/
+Privacy Policy: https://fingersoft.com/privacy-policy/
+Race uphill, perform stunts and upgrade cars. (Includes random-item purchases)
+Updated on
+Aug 6, 2026
+Available on
+Android,
+Windows*
+#3 top free racing
+Racing
+Stunt driving
+Casual
+Single player
+Stylized
+Cartoon
+Vehicles
+Car
+Driving
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+Financial info, App activity and 2 others
+Data is encrypted in transit
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.0
+9.63M reviews
+5
+4
+3
+2
+1
+Ash
+more_vert
+Flag inappropriate
+June 7, 2026
+Been playing this game for YEARS and I still love it. Everything is nice and simple. Issues- 1)Ads, as others are also saying. 2)we used to get 1000 for flips and backflips but now 230 only. 3)Air time, which used to start with giving 25 coins, then 50. now it starts at 5 coins, then 10. 4)Insane Air time used to be 1000 but now it's around 200 5)Now that we get less coins, buying and upgrading vehicles takes much more time. These are the problems. Overall, the game is fantastic.
+28 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Michael White
+more_vert
+Flag inappropriate
+July 24, 2026
+I've been playing this game for a long time. It is a scroll type game I'm fond of. I had to start over two or three times when I lost info changing phones. I have never purchased from the maker. They probably hate that, but I own all cars and stages and have over 1 billion coins and nothing left to buy. The achievements and personal bests on stage distance keep me playing. I wonder who has the most coins earned, stage distance, etc.
+20 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Trevor Wilson
+more_vert
+Flag inappropriate
+Show review history
+August 2, 2026
+Whenever I die there's a 1/4 chance I will get an ad. I understand that the company needs to make money but its to the point where it's not very fun. Another thing I have an issue with is that now you can revive by watching an ad. I understand why this might be useful but it makes the stakes much lower. Lastly, I think the coin payouts should go back to normal or at least decrease the price of the cars and levels. Would still play, just too much ads and much harder.
+15 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+- Pinball
+- Does it feel like life is tossing you meaninglessly from side to side? Well, now you can at least score some points from that feeling.
+- Various bug fixes
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases (Includes Random Items)
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@fingersoft.com
+shield
+Privacy Policy
+About the developer
+Fingersoft Oy
+support@fingersoft.com
+Aleksanterinkatu 4
+90100 OULU
+Finland
++358 40 5237090
+More by Fingersoft
+arrow_forward
+Hill Climb Racing 2
+Fingersoft
+4.0
+star
+LEGO® Hill Climb Adventures
+Fingersoft
+3.9
+star
+Similar games
+arrow_forward
+Traffic Rider
+skgames
+4.3
+star
+Asphalt 8 - Car Racing Game
+Gameloft SE
+4.4
+star
+रेस मास्टर (Race Master 3D)
+Beresnev Games
+4.2
+star
+Beach Buggy Racing
+Vector Unit
+4.2
+star
+Bike Race：Motorcycle Games
+Wildlife Studios
+4.0
+star
+Moto X3M Bike Race Game
+Ace Viral
+4.1
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

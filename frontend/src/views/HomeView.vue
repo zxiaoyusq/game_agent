@@ -1,4 +1,6 @@
 <script setup>
+import { KB_MODULES } from '../data/knowledgeBase.js'
+
 const emit = defineEmits(['navigate'])
 
 const agentModules = [
@@ -48,7 +50,7 @@ const knowledgeModule = {
   id: 'knowledge',
   name: '知识库管理',
   subtitle: 'Knowledge Base',
-  desc: '统一管理项目知识、历史经验和各模块产出沉淀',
+  desc: '统一管理项目知识、Skill 技能包、历史经验和各模块产出沉淀',
   icon: '📚',
 }
 
@@ -89,7 +91,7 @@ function openKnowledge() {
         </div>
         <div class="divider"></div>
         <div class="stat">
-          <div class="stat-num">5</div>
+          <div class="stat-num">{{ KB_MODULES.length }}</div>
           <div class="stat-label">知识库</div>
         </div>
         <div class="divider"></div>
@@ -98,6 +100,20 @@ function openKnowledge() {
           <div class="stat-label">产出沉淀</div>
         </div>
       </div>
+    </section>
+
+    <!-- 全流程入口承接新项目，岗位工作台继续承担独立任务。 -->
+    <section class="section production-section">
+      <button class="production-entry" @click="emit('navigate', 'workflow')">
+        <div class="production-copy">
+          <span class="production-label">GAME STUDIO / 全流程工作台</span>
+          <h1>从一个想法，到一款游戏。</h1>
+          <p>选择品类与技术方案，让 Agent 执行原型定义、美术、工程与真实测试。</p>
+          <div class="production-stages"><span>原型定义</span><b>→</b><span>美术资源</span><b>→</b><span>代码与集成</span><b>→</b><span>测试验收</span></div>
+          <span class="production-cta">进入游戏研发工作台 <span>↗</span></span>
+        </div>
+        <div class="production-visual" aria-hidden="true"><span class="visual-caption">YOUR NEXT GAME</span><div class="pixel-controller">✣ <i>● ●</i></div><span class="visual-caption">4 个阶段 · 真实执行与产物</span></div>
+      </button>
     </section>
 
     <!-- Agent 模块卡片 -->
@@ -232,6 +248,21 @@ function openKnowledge() {
 </template>
 
 <style scoped>
+.production-section { padding-bottom: 0 !important; }
+.production-entry { display: flex; align-items: center; justify-content: space-between; gap: 28px; width: 100%; padding: 36px; text-align: left; background: #e8edff; border: 2px solid #1a1816; border-radius: 12px; box-shadow: 5px 5px 0 #1a1816; }
+.production-entry:hover { transform: translateY(-3px); background: #e0e7ff; }
+.production-entry:focus-visible { outline: 3px solid var(--accent-blue); outline-offset: 6px; }
+.production-label { color: #395aca; font-size: 11px; letter-spacing: 2px; font-weight: 800; }
+.production-copy h1 { font-size: clamp(25px, 3vw, 36px); margin: 12px 0; font-weight: 900; }
+.production-copy p { font-size: 14px; color: #565b70; }
+.production-stages { display: flex; flex-wrap: wrap; gap: 10px; margin: 23px 0; font-size: 12px; }
+.production-stages b { color: #7284ba; }
+.production-cta { display: inline-flex; gap: 28px; background: #1a1816; color: white; padding: 11px 18px; border-radius: 5px; font-size: 14px; }
+.production-visual { width: 240px; flex-shrink: 0; text-align: center; transform: rotate(-5deg); }
+.visual-caption { font-size: 10px; letter-spacing: 2px; color: #586daa; }
+.pixel-controller { margin: 18px auto; padding: 10px 18px; width: 180px; display: flex; align-items: center; justify-content: space-between; font-size: 54px; color: white; background: #5279ed; border: 3px solid #1a1816; border-radius: 22px 22px 40px 40px; box-shadow: 5px 7px 0 #233875; }
+.pixel-controller i { font-size: 22px; color: #cbe58b; font-style: normal; }
+@media (max-width: 700px) { .production-entry { padding: 24px; } .production-visual { display: none; } }
 .home {
   min-height: 100vh;
   display: flex;

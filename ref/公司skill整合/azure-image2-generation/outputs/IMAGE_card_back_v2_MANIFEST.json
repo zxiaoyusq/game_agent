@@ -1,0 +1,17 @@
+{
+  "mode": "generation",
+  "prompt": "休闲益智拼图手游的卡牌背面图案，扁平简约卡通插画风格，绝对不要写实油画质感，浅奶油米色底（#F6ECDD），正中央一个简约优雅的十字架，十字架两侧对称环绕橄榄枝，十字架下方一只简约白鸽，四周一圈柔和的浅金色细边框（#EAD49E），背景极淡的十字与菱形暗纹，少量淡蓝灰（#CDD9E1）与柔和橄榄绿点缀，整体明亮、干净、简约、温馨，与休闲游戏 UI 风格统一，无文字，无数字，正方形构图",
+  "size": "1024x1024",
+  "quality": "low",
+  "reference_images": [],
+  "endpoint": "https://aha-inhouse-eastus2.cognitiveservices.azure.com",
+  "deployment": "gpt-image-2",
+  "gen_api_version": "2024-02-01",
+  "edit_api_version": "2025-04-01-preview",
+  "output_path": "outputs/card_back_v2.png",
+  "sha256": "a2aa58c026012366564ec1f335f9690bc28774f2d3cf15f8e890f77cfbfc164a",
+  "width": 1024,
+  "height": 1024,
+  "img_mode": "RGB",
+  "status": "ok"
+}

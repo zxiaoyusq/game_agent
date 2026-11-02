@@ -1,0 +1,361 @@
+# Google Play public snapshot: com.whiture.apps.ludoorg
+URL: https://play.google.com/store/apps/details?id=com.whiture.apps.ludoorg&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:06.275Z
+HTTP status: 200
+Raw HTML SHA-256: f36faf199dd2d227dc93212dfb2a83e42549cee674dc9a2a9d35f5ad45856e68
+Raw HTML: research/html-data/store-snapshots/com.whiture.apps.ludoorg.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Ludo Classic
+Sudhakar Kanakaraj
+Contains ads
+4.1
+star
+226K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+NEW: Multiplayer Online with Facebook Friends & Bluetooth Option available now.
+Calling all the kings of Ludo game, here is your most popular & most loved Ludo game in its classical form. How often you all wondered if we have a Ludo game in the wooden board? The board that we used to play when we were kids. The very smell of the wood, the sketching of colors, the die (dice) and tokens that will take us back to our childhood days.
+I kept this very experience as my goal when I designed the game for you all to cherish those childhood moments. So, get ready and travel back to old days and rule the Ludo kingdom.
+ABOUT
+Ludo is a strategy board game for 2 to 4 players and is being widely played in India, Nepal, Algeria and many Asian, Latin, European countries. It is also called as Parchisi, Parcheesi, and Laadhuu. The goal is simple, each player has to race their four tokens from start to finish (home) according to rolls of a single die or dice.
+DESIGN
+You got classic wood and neo-Ludo boards (paper & white). The wood board, die & tokens are a timeless design. It gives you a better visual experience and nostalgic feelings. The sketch marks and crystal clear tokens will make us feel the same old classic ludo board.
+The board is the square shape with 3 columns of squares and supports up to 4 players (2, 3 & 4 players in combination with Computer). Each player will take one color from bright yellow, green, red and blue. You can also assign all players as Computer and quietly watch each, it is quite a lot fun. :)
+DIE ROLLING
+I built an entirely new physics engine for die-rolling mechanics that will simulate the real-time rolling of a die or dice. The physics behind die-rolling was very challenging and I am proud to be the first one to implement. This will make it look like a 3D Ludo game.
+SETTINGS
+It has an extensive set of game settings. You can play a match in 100s of variations to favor your own country rules. Some of them include,
+Star Squares (safer)
+Barrier Squares (Squares that will stop opponents to pass by)
+Home Squares (Entering without returning opponent tokens)
+Magic No (Die result that makes a staged token to enter its starting square)
+Token Moving & Die Rolling Speed
+OFFLINE
+Options to play with one or more Computer or Players or combination. You can also choose the intelligence of Computer (Trained, Expert and Strategic) to increase the complexity level. Bluetooth Game Play option also available, you can pair up your device with your opponent's devices and start a match with them offline.
+ONLINE
+Play with your friends, family or a random player across the world by logging into Google Play Games / Google Plus / Facebook or as anonymous. You have options to invite your friends or join a match hosted by your facebook and google plus friends. You can see your total wins & your rank in Global Leaderboards. There are several achievements to unlock in the kingdom of Ludo.
+You can also emote your tokens, and message with your opponents while playing the match.
+GAME AI
+The AI behind the game is built, by keeping-in-mind that the outcome of dice is always random and unpredictable whether it is thrown by player or Computer. Computer's intelligence is only to decide which tokens to choose from and to return the opponent's tokens from its squares or not. It doesn't have any control over the outcome/result of the die or dice.
+OTHERS
+Player Names & Colors - Can be manually decided
+Last Played Match - You can quit the game and play from where you left last time
+Game Instructions & Help - Helps you to follow the match easily
+Multi-color dies - One can easily understand who's turn is current
+Decide - Before returning your opponent's tokens in your square
+Real-time die feature - You can have a die or dice on your hand, and toss it. The outcome can be fed back to the game.
+and much more.
+Please leave us your valuable feedbacks & rating, will definitely update the game with the improvements & fix the issues you report.
+Ludo Game in classic wooden board with sketched colors to feel our child days
+Updated on
+May 19, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ludo Classic",
+  "url": "https://play.google.com/store/apps/details/Ludo_Classic?id=com.whiture.apps.ludoorg&hl=en",
+  "description": "Ludo Game in classic wooden board with sketched colors to feel our child days",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/oFjwysw5p6qlzF_st-upXvzZzF3Jr4R313HD9OHyU6jbcmvfxlsATvF2UORchN069TxaXWpMlMrPHgp_2Ofscw",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Sudhakar Kanakaraj",
+    "url": "http://www.whiture.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.066991329193115",
+    "ratingCount": "226264"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Ludo Classic - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Ludo Classic
+Sudhakar Kanakaraj
+Contains ads
+4.1
+star
+226K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+NEW: Multiplayer Online with Facebook Friends & Bluetooth Option available now.
+Calling all the kings of Ludo game, here is your most popular & most loved Ludo game in its classical form. How often you all wondered if we have a Ludo game in the wooden board? The board that we used to play when we were kids. The very smell of the wood, the sketching of colors, the die (dice) and tokens that will take us back to our childhood days.
+I kept this very experience as my goal when I designed the game for you all to cherish those childhood moments. So, get ready and travel back to old days and rule the Ludo kingdom.
+ABOUT
+Ludo is a strategy board game for 2 to 4 players and is being widely played in India, Nepal, Algeria and many Asian, Latin, European countries. It is also called as Parchisi, Parcheesi, and Laadhuu. The goal is simple, each player has to race their four tokens from start to finish (home) according to rolls of a single die or dice.
+DESIGN
+You got classic wood and neo-Ludo boards (paper & white). The wood board, die & tokens are a timeless design. It gives you a better visual experience and nostalgic feelings. The sketch marks and crystal clear tokens will make us feel the same old classic ludo board.
+The board is the square shape with 3 columns of squares and supports up to 4 players (2, 3 & 4 players in combination with Computer). Each player will take one color from bright yellow, green, red and blue. You can also assign all players as Computer and quietly watch each, it is quite a lot fun. :)
+DIE ROLLING
+I built an entirely new physics engine for die-rolling mechanics that will simulate the real-time rolling of a die or dice. The physics behind die-rolling was very challenging and I am proud to be the first one to implement. This will make it look like a 3D Ludo game.
+SETTINGS
+It has an extensive set of game settings. You can play a match in 100s of variations to favor your own country rules. Some of them include,
+Star Squares (safer)
+Barrier Squares (Squares that will stop opponents to pass by)
+Home Squares (Entering without returning opponent tokens)
+Magic No (Die result that makes a staged token to enter its starting square)
+Token Moving & Die Rolling Speed
+OFFLINE
+Options to play with one or more Computer or Players or combination. You can also choose the intelligence of Computer (Trained, Expert and Strategic) to increase the complexity level. Bluetooth Game Play option also available, you can pair up your device with your opponent's devices and start a match with them offline.
+ONLINE
+Play with your friends, family or a random player across the world by logging into Google Play Games / Google Plus / Facebook or as anonymous. You have options to invite your friends or join a match hosted by your facebook and google plus friends. You can see your total wins & your rank in Global Leaderboards. There are several achievements to unlock in the kingdom of Ludo.
+You can also emote your tokens, and message with your opponents while playing the match.
+GAME AI
+The AI behind the game is built, by keeping-in-mind that the outcome of dice is always random and unpredictable whether it is thrown by player or Computer. Computer's intelligence is only to decide which tokens to choose from and to return the opponent's tokens from its squares or not. It doesn't have any control over the outcome/result of the die or dice.
+OTHERS
+Player Names & Colors - Can be manually decided
+Last Played Match - You can quit the game and play from where you left last time
+Game Instructions & Help - Helps you to follow the match easily
+Multi-color dies - One can easily understand who's turn is current
+Decide - Before returning your opponent's tokens in your square
+Real-time die feature - You can have a die or dice on your hand, and toss it. The outcome can be fed back to the game.
+and much more.
+Please leave us your valuable feedbacks & rating, will definitely update the game with the improvements & fix the issues you report.
+Ludo Game in classic wooden board with sketched colors to feel our child days
+Updated on
+May 19, 2026
+Available on
+Android,
+Windows
+Board
+Abstract strategy
+Ludo
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+App activity, App info and performance, and Device or other IDs
+This app may collect these data types
+Personal info, App activity and 2 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.1
+211K reviews
+5
+4
+3
+2
+1
+Julie Kennedy
+more_vert
+Flag inappropriate
+August 26, 2026
+Used to love this game but within the last few months the game has become rigged against me. Game will freeze and when it unfreezes it removes a life from me, when my opponent takes too long to make a move somehow I end up losing a life. Has happened every single time I've played and I've lost every game because of this, just completely fed up with it now.
+5 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Jay Son
+more_vert
+Flag inappropriate
+June 23, 2026
+The game is good but lately it has been acting up when online. One could be going on nicely with the game and then suddenly "The server connection is lost." Actually, it is very disappointing and annoying🤦‍♂️, after all that progress made in the duel. It has been happening over and over again.
+17 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Francis
+more_vert
+Flag inappropriate
+July 4, 2026
+I had the older version (2020) with no ads and mistakenly updated it, now I cannot load the game without Ads😂. if you have older versions don't make the same mistake I did. Enjoy your Ad-free experience. It really sucks that you can't avoid ads these days
+5 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+**2026 Latest Themes - Added Now**
+Also, we packed the update with,
+1. Game Buttons relocated every time we open 'Chat Window' - Fixed Now
+2. Share Room No - Crashes on Latest Android Version - Fixed Now
+3. Many of the minor bugs reported since the last update
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+sudhakar.kanakaraj@outlook.com
+shield
+Privacy Policy
+About the developer
+SUDHAKAR KANAKARAJ
+sudhakar.kanakaraj@whiture.com
+15166 Prestige Tranquility
+Budigere Cross Old Madras Road Bommenahalli
+Bangalore, Karnataka 560049
+India
+More by Sudhakar Kanakaraj
+arrow_forward
+Moto Racing 3D
+Sudhakar Kanakaraj
+4.1
+star
+Chennai Auto Game
+Sudhakar Kanakaraj
+4.2
+star
+Space Defence
+Sudhakar Kanakaraj
+2.5
+star
+Classic Snake - Nokia 97 Old
+Sudhakar Kanakaraj
+3.9
+star
+Match It Picture Puzzle
+Sudhakar Kanakaraj
+5.0
+star
+Snakes and Ladders
+Sudhakar Kanakaraj
+4.0
+star
+Similar games
+arrow_forward
+Parchis CLUB Online (Pro Ludo)
+Moonfrog
+4.1
+star
+Yalla Ludo HD
+Zhang Dejian
+3.2
+star
+Ludo Match
+Yarsa Games
+3.8
+star
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+4.0
+star
+Dice Merge! Puzzle Master
+MobilityWare
+3.7
+star
+Ludo Offline Dice Board Game
+Touchzing Media Private Limited
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

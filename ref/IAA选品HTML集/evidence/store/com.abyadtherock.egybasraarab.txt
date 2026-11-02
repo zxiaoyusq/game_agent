@@ -1,0 +1,311 @@
+# Google Play public snapshot: com.abyadtherock.egybasraarab
+URL: https://play.google.com/store/apps/details?id=com.abyadtherock.egybasraarab&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:44.860Z
+HTTP status: 200
+Raw HTML SHA-256: 55fab29fcd2dba739d46f2ddf2d2461cf2018c32ed1f20d9f0073ab103cda123
+Raw HTML: research/html-data/store-snapshots/com.abyadtherock.egybasraarab.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Egyptian Basra Arabic
+TheDarkSeraph
+Contains ads
+4.0
+star
+8.93K reviews
+Rated for 16+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 16+
+Strong Language
+Users Interact
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Egyptian Basra also called in Egypt "Al Kommy", "Ashara Koutshinah", and "Ash Al Walad", suitable for all ages, light on memory and for all kinds of mobiles oldies and new. With Multiplayer feature using the internet connection through our servers, which will enable you and your friend to match in a room. Also you can make public rooms to play with others or private and pass the room name to your friend to join.
+The Game is very simple:
+1- One of the two players will deal four cards for each, and in the beginning of the game he will include the table with four cards two.
+2- Each player will throw one card on the table until he is out of cards, then the dealer will deal again four cards each but not for the table.
+3- Player goal is to take from the ground as many cards as he can. After the Dealer is out of cards. Each pile the players took through the game will be counted and the player who got the most cards will get 30 points. The other will be zero.
+4- What the player can take from the table is either there is on the table a similar card to what he has, or group of cards representing the sum in numbers to a card of his hand, the J, Q, and K are not included in the sum:
+- e.g. there are four cards on the table A (have a value of 1), 7, K, and 8; if you have card 8 in your hand you will take 3 cards, the 8 and the 1+7 which equal the 8. or if has 9 he can take 8+1. If you have card K in your hand you will only take the K from the table.
+5- If there is (card J or Diamond 7) in your hand you will take all the cards from the table.
+6- when the table is empty and next player throw one card of his hand (of course he will be careful not to throw J or diamond 7, these are special as demonstrated), If the other player have similar card in his hand he will take the card from the table as additional bonus as called by Egyptians "Basra".
+7- the other situation to take "Basra" is when all the cards on the table sum to one card in his hand in addition to any similar card have the same sum value:-e.g. the table cards are (10, 5, 4, 1) and the player has 10, or (8, 7, 1) and the player has 8 ... etc.
+8- Also in the previous situation happens and the player has diamond 7 he will take the cards on the table as "Basra". Diamond 7 is special card that has 2 roles called by Egyptians "Al Komi"; the other name of the same game; it will take basra of any value or as the J take all the table.
+9- Be careful not to hold the J or Diamond 7 as last card in your hand as the other player may take the whole table and burn your J or Diamond 7, as he will take either of them as "Basra" next time he play.
+10- If the dealer is out of cards, its time to count the cards which only the player with most of the cards will take 30 points. Also the number of Basra taken by the two players will be counted and both will take the Basra bonus which is 10 points and Jack basra is 30 as will as koomi basra (the koomy was burned and took basra by any card).
+11- Several rounds will continue in which the two players will exchange the dealing role and the other player will start first until the target score is reached, and the winner announced.
+Egyptian Basra English/Arabic interface, playing with friend via Our Servers.
+Updated on
+Aug 26, 2025
+Available on
+Android,
+Windows
+Card
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Egyptian Basra Arabic",
+  "url": "https://play.google.com/store/apps/details/Egyptian_Basra_Arabic?id=com.abyadtherock.egybasraarab&hl=en",
+  "description": "Egyptian Basra English/Arabic interface, playing with friend via Our Servers.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/MIBFKFDMF88C0w4aCxc-RTAPtvWiyjexbuq_HNlnetGYW37c6POqCdpIBOI3JTl7RHgXw6_pO0nE8Ew2V2dPW1A",
+  "contentRating": "Rated for 16+",
+  "author": {
+    "@type": "Person",
+    "name": "TheDarkSeraph",
+    "url": "http://egybasra.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.972222328186035",
+    "ratingCount": "8928"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Egyptian Basra Arabic - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Egyptian Basra Arabic
+TheDarkSeraph
+Contains ads
+4.0
+star
+8.93K reviews
+Rated for 16+
+info
+1M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 16+
+Strong Language
+Users Interact
+Learn more
+About this game
+arrow_forward
+Egyptian Basra also called in Egypt "Al Kommy", "Ashara Koutshinah", and "Ash Al Walad", suitable for all ages, light on memory and for all kinds of mobiles oldies and new. With Multiplayer feature using the internet connection through our servers, which will enable you and your friend to match in a room. Also you can make public rooms to play with others or private and pass the room name to your friend to join.
+The Game is very simple:
+1- One of the two players will deal four cards for each, and in the beginning of the game he will include the table with four cards two.
+2- Each player will throw one card on the table until he is out of cards, then the dealer will deal again four cards each but not for the table.
+3- Player goal is to take from the ground as many cards as he can. After the Dealer is out of cards. Each pile the players took through the game will be counted and the player who got the most cards will get 30 points. The other will be zero.
+4- What the player can take from the table is either there is on the table a similar card to what he has, or group of cards representing the sum in numbers to a card of his hand, the J, Q, and K are not included in the sum:
+- e.g. there are four cards on the table A (have a value of 1), 7, K, and 8; if you have card 8 in your hand you will take 3 cards, the 8 and the 1+7 which equal the 8. or if has 9 he can take 8+1. If you have card K in your hand you will only take the K from the table.
+5- If there is (card J or Diamond 7) in your hand you will take all the cards from the table.
+6- when the table is empty and next player throw one card of his hand (of course he will be careful not to throw J or diamond 7, these are special as demonstrated), If the other player have similar card in his hand he will take the card from the table as additional bonus as called by Egyptians "Basra".
+7- the other situation to take "Basra" is when all the cards on the table sum to one card in his hand in addition to any similar card have the same sum value:-e.g. the table cards are (10, 5, 4, 1) and the player has 10, or (8, 7, 1) and the player has 8 ... etc.
+8- Also in the previous situation happens and the player has diamond 7 he will take the cards on the table as "Basra". Diamond 7 is special card that has 2 roles called by Egyptians "Al Komi"; the other name of the same game; it will take basra of any value or as the J take all the table.
+9- Be careful not to hold the J or Diamond 7 as last card in your hand as the other player may take the whole table and burn your J or Diamond 7, as he will take either of them as "Basra" next time he play.
+10- If the dealer is out of cards, its time to count the cards which only the player with most of the cards will take 30 points. Also the number of Basra taken by the two players will be counted and both will take the Basra bonus which is 10 points and Jack basra is 30 as will as koomi basra (the koomy was burned and took basra by any card).
+11- Several rounds will continue in which the two players will exchange the dealing role and the other player will start first until the target score is reached, and the winner announced.
+Egyptian Basra English/Arabic interface, playing with friend via Our Servers.
+Updated on
+Aug 26, 2025
+Available on
+Android,
+Windows
+Card
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Photos and videos and 3 others
+This app may collect these data types
+Location, Personal info and 4 others
+Data is encrypted in transit
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+tablet_android
+Tablet
+4.0
+8.58K reviews
+5
+4
+3
+2
+1
+A Google user
+more_vert
+Flag inappropriate
+Show review history
+October 2, 2018
+Poor app. - no sound - no timing - too fast in regards to cards collection - no player picture - no foursome may be due to limited users ..... hoping for advancing the lovely game. Thnx a bunch ... waleed.🙍
+99 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Ahmed Salah
+more_vert
+Flag inappropriate
+March 18, 2024
+It's Very fast, make the movement a little slower
+3 people found this review helpful
+Did you find this helpful?
+Yes
+No
+A Google user
+more_vert
+Flag inappropriate
+Show review history
+October 1, 2018
+It's very hard for a beginner but I'll learn.
+64 people found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Game improvements
+Upgrade AGP for more compatibility with android 15
+flag
+Flag as inappropriate
+Rated for 16+
+Strong Language
+Users Interact
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+abyadtherock@gmail.com
+shield
+Privacy Policy
+About the developer
+Salah Mostafa Salah Ahmed Elabyad
+theedarkseraph@gmail.com
+6th district, elsokarya district, 20
+6 October
+الجيزة 12566
+Egypt
+More by TheDarkSeraph
+arrow_forward
+Scrap Inc
+TheDarkSeraph
+₹450.00
+Merge Building
+TheDarkSeraph
+Naval Road
+TheDarkSeraph
+Egyptian Basra v2
+TheDarkSeraph
+Fruit Match Game
+TheDarkSeraph
+Egyptian Basra - Morabaá
+TheDarkSeraph
+Similar games
+arrow_forward
+Solitaire Classic Game
+Mentha Games
+4.8
+star
+Tic-Tac-Logic: X or O?
+Conceptis Ltd.
+3.9
+star
+Arcadia Dominoes for Seniors
+Metajoy
+4.5
+star
+Solitaire Collection Card Game
+Beru Games
+₹20.00
+Solitaire
+Aged Studio Limited
+3.8
+star
+Briscola - La Brisca Spanish
+Quarzo Apps
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

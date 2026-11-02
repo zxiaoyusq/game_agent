@@ -1,0 +1,188 @@
+# Google Play public snapshot: com.ayoolopon.app
+URL: https://play.google.com/store/apps/details?id=com.ayoolopon.app&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:10.635Z
+HTTP status: 200
+Raw HTML SHA-256: a10cf401e9c9ce46d290d8dbbe6021a392fb29fb019157811e0f3b0ef5d825c0
+Raw HTML: research/html-data/store-snapshots/com.ayoolopon.app.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Opon Ayo
+Makensin
+Rated for 3+
+info
+5K+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Users Interact
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Opon Ayo is a captivating seed-based strategy game designed for players of all skill levels. This game introduces multiple game modes and difficulty levels, and offers a more dynamic and adventurous gameplay experience. Play online against others, or join a private room to watch friends compete in real time.
+A classic seed-based strategy board game
+Updated on
+Sep 13, 2026
+Board
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Opon Ayo",
+  "url": "https://play.google.com/store/apps/details/Opon_Ayo?id=com.ayoolopon.app&hl=en",
+  "description": "A classic seed-based strategy board game",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/DLI4N1oeqejEIWhHaO2wC1z7RR_5ilqYsDnsrv1TvPPdB-683-kGuPjFJ9R2-mOJIkE_5-dyKZ8N0rzK9HGJm0Q",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Makensin",
+    "url": "https://oponayo.mcnoid.com"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Opon Ayo - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+Opon Ayo
+Makensin
+Rated for 3+
+info
+5K+
+Downloads
+Install
+Share
+Add to wishlist
+Rated for 3+
+Users Interact
+Learn more
+About this game
+arrow_forward
+Opon Ayo is a captivating seed-based strategy game designed for players of all skill levels. This game introduces multiple game modes and difficulty levels, and offers a more dynamic and adventurous gameplay experience. Play online against others, or join a private room to watch friends compete in real time.
+A classic seed-based strategy board game
+Updated on
+Sep 13, 2026
+Board
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+No data shared with third parties
+Learn more
+about how developers declare sharing
+This app may collect these data types
+Personal info
+Data is encrypted in transit
+You can request that data be deleted
+See details
+What’s new
+Opon Ayo and Draughts – Release 25 (3.0.0)
+Experience the timeless excitement of Opon Ayo, a captivating seed-based strategy game designed for players of all skill levels. This release introduces new game - Draughts (Checkers) and multiple modes and difficulty levels, offering a more dynamic and adventurous gameplay experience. Play online against others, or join a private room to watch friends compete in real time. And this is just the beginning—more features and enhancements are on the way.
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact
+Learn more
+App support
+expand_more
+public
+Website
+phone
+Phone number
++14036816327
+email
+Support email
+molojede@mcnoid.com
+shield
+Privacy Policy
+About the developer
+Olojede Olumakinde Augustine
+olojedeolumakinde@gmail.com
+Canada
+Similar games
+arrow_forward
+Word Cross
+Neworld Games
+4.4
+star
+Bonanza Party - Slot Machines
+Joyvoo LTD
+3.5
+star
+Bingo Drive: Fun Bingo Games
+Gliding Deer
+4.1
+star
+Jungle Marble Blast
+KuYou Game
+3.0
+star
+Dice Words - Fun Word Game
+FunCraft Games
+4.7
+star
+Farkle Cards
+FunCraft Games
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

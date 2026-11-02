@@ -1,0 +1,356 @@
+# Google Play public snapshot: com.miniclip.eightballpool
+URL: https://play.google.com/store/apps/details?id=com.miniclip.eightballpool&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:49.400Z
+HTTP status: 200
+Raw HTML SHA-256: f5aee4ea30e59db0a9b3194c88b8d95f4b3abbfd48d61e4223c43e5df4551844
+Raw HTML: research/html-data/store-snapshots/com.miniclip.eightballpool.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+8 Ball Pool
+Miniclip.com
+Contains ads
+In-app purchases
+4.7
+star
+31.8M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Play with friends! Play with Legends. Play the hit Miniclip 8 Ball Pool game on your mobile and become the best player!
+COMPETE 1-ON-1 OR IN 8 PLAYER TOURNAMENTS
+Refine your skills in the practice arena, take on the world in 1-vs-1 matches, or enter tournaments to win trophies and exclusive cues!
+PLAY FOR POOL COINS AND EXCLUSIVE ITEMS
+Customise your cue and table! In every competitive 1-vs-1 match you play, there’ll be Pool Coins at stake – win the match and the Coins are yours. You can use these to enter higher ranked matches with bigger stakes, or to buy new items in the Pool Shop.
+CHALLENGE YOUR FRIENDS
+Playing with friends is easy: sign in with your Miniclip or Facebook account and you’ll be able to challenge your friends straight from the game. Challenge friends anytime, anywhere and show off your skills.
+LEVEL UP
+8 Ball Pool’s level system means you’re always facing a challenge. Play matches to increase your ranking and get access to more exclusive match locations, where you play against only the best Pool players.
+*This game requires internet connection.
+This game includes optional in-game purchases (includes random items).
+Play on the Web at miniclip.com/pool
+Don’t miss out on the latest news:
+Like 8 Ball Pool: http://on.fb.me/Wx4f23
+Like Miniclip: http://facebook.com/miniclip
+Follow us on Twitter: http://twitter.com/miniclip
+------------------------------------
+Find out more about Miniclip: http://www.miniclip.com
+TERMS AND CONDITIONS: http://www.miniclip.com/terms-and-conditions
+PRIVACY POLICY: http://www.miniclip.com/privacy
+The most downloaded Pool game in the World
+Updated on
+Sep 18, 2026
+#3 top grossing sports
+Sports
+Billiards
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Sports
+Billiards
+Sports
+Pool
+Offline
+Events & offers
+Update available
+Plot your shots, capture big chess prizes!
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "8 Ball Pool",
+  "url": "https://play.google.com/store/apps/details/8_Ball_Pool?id=com.miniclip.eightballpool&hl=en",
+  "description": "The most downloaded Pool game in the World",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_SPORTS",
+  "image": "https://play-lh.googleusercontent.com/5hG8agj5a8tQpyc4ZqXWlZgu_1v-q7gTa-mLumbnvZKss1CzeRXojIe6demFv9YoCq5jYUhYN8UPNpT_elMeMA",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Miniclip.com",
+    "url": "https://www.miniclip.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6932268142700195",
+    "ratingCount": "31770986"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+8 Ball Pool - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+8 Ball Pool
+Miniclip.com
+Contains ads
+In-app purchases
+4.7
+star
+31.8M reviews
+Rated for 3+
+info
+1B+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+About this game
+arrow_forward
+Play with friends! Play with Legends. Play the hit Miniclip 8 Ball Pool game on your mobile and become the best player!
+COMPETE 1-ON-1 OR IN 8 PLAYER TOURNAMENTS
+Refine your skills in the practice arena, take on the world in 1-vs-1 matches, or enter tournaments to win trophies and exclusive cues!
+PLAY FOR POOL COINS AND EXCLUSIVE ITEMS
+Customise your cue and table! In every competitive 1-vs-1 match you play, there’ll be Pool Coins at stake – win the match and the Coins are yours. You can use these to enter higher ranked matches with bigger stakes, or to buy new items in the Pool Shop.
+CHALLENGE YOUR FRIENDS
+Playing with friends is easy: sign in with your Miniclip or Facebook account and you’ll be able to challenge your friends straight from the game. Challenge friends anytime, anywhere and show off your skills.
+LEVEL UP
+8 Ball Pool’s level system means you’re always facing a challenge. Play matches to increase your ranking and get access to more exclusive match locations, where you play against only the best Pool players.
+*This game requires internet connection.
+This game includes optional in-game purchases (includes random items).
+Play on the Web at miniclip.com/pool
+Don’t miss out on the latest news:
+Like 8 Ball Pool: http://on.fb.me/Wx4f23
+Like Miniclip: http://facebook.com/miniclip
+Follow us on Twitter: http://twitter.com/miniclip
+------------------------------------
+Find out more about Miniclip: http://www.miniclip.com
+TERMS AND CONDITIONS: http://www.miniclip.com/terms-and-conditions
+PRIVACY POLICY: http://www.miniclip.com/privacy
+The most downloaded Pool game in the World
+Updated on
+Sep 18, 2026
+#3 top grossing sports
+Sports
+Billiards
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Sports
+Billiards
+Sports
+Pool
+Offline
+Events & offers
+Update available
+Plot your shots, capture big chess prizes!
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Location, Personal info and 5 others
+This app may collect these data types
+Location, Personal info and 5 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.7
+30.2M reviews
+5
+4
+3
+2
+1
+Kaif Sid
+more_vert
+Flag inappropriate
+August 31, 2026
+I have been playing this game for a long time, but recently the number of hackers has become unacceptable. In the last 1 hour, I faced 5 to 6 hackers. Some players make impossible shots instantly, play without aiming properly, and clear the table in ways that are clearly not legitimate. I lost 32 millions of coins because of this. The game is fun, but the anti-cheat system needs major improvement. Please take stronger action against hackers and return lost coins to affected players
+9 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Ayan Khan
+more_vert
+Flag inappropriate
+August 13, 2026
+I've been playing 8 Ball Pool for years, but this game has become completely unplayable. Almost every single match I face hackers using impossible line shots and auto-aim hacks. They never miss, even from impossible angles, and honest players have no chance. I've lost millions of coins because of cheaters, not because of skill. It's incredibly frustrating to spend time building up coins only to lose them to hackers over and over again. Reporting them seems to make no difference, and it feels
+13 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Giripogu Pavan
+more_vert
+Flag inappropriate
+September 9, 2026
+I recently logged back into my 8 Ball Pool account after being away for a few years, and I was shocked to see that my account had been reset to Level 1. I had spent years playing this game, building up levels, collecting cues, and progressing my account, and now everything seems to be gone.
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+CHEER your friends on
+SPECTATE games
+INCREASE your Daily Streak
+Upcoming Events:
+August 26 - Wild Outback Season
+September 9 - Grandmaster's Gambit Season
+September 30 - Flashback Crimson Moon
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, In-Game Purchases (Includes Random Items)
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@miniclip.com
+shield
+Privacy Policy
+About the developer
+Miniclip SA
+support@miniclip.com
+rue des Beaux-Arts 8
+2000 Neuchâtel
+Switzerland
++41 32 560 38 68
+More by Miniclip.com
+arrow_forward
+Carrom Pool: Disc Game
+Miniclip.com
+4.6
+star
+Cricket League
+Miniclip.com
+4.5
+star
+Pure Sniper: Gun Shooter Games
+Miniclip.com
+4.5
+star
+Chess Clash: Online & Offline
+Miniclip.com
+4.4
+star
+Mini Militia - War.io
+Miniclip.com
+4.1
+star
+Football Strike: Online Soccer
+Miniclip.com
+4.6
+star
+Similar games
+arrow_forward
+UNO!™
+Mattel Game Studios HK Limited
+4.4
+star
+Pooking - Billiards City
+AIM TOP GAME TECHNOLOGY LIMITED - pool
+4.2
+star
+EA SPORTS FC Soccer Mobile 26
+ELECTRONIC ARTS
+4.5
+star
+Head Ball 2 - Soccer Game
+Masomo Gaming
+4.4
+star
+Golf Battle
+Miniclip.com
+4.6
+star
+Football League 2026
+MOBILE SOCCER
+4.4
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

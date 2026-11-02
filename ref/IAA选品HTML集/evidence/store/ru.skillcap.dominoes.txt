@@ -1,0 +1,381 @@
+# Google Play public snapshot: ru.skillcap.dominoes
+URL: https://play.google.com/store/apps/details?id=ru.skillcap.dominoes&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:14.959Z
+HTTP status: 200
+Raw HTML SHA-256: 100e807fbb4f3846b6df13eca7ea96313a2c1cfa08aa8e27df2c87289cf80105
+Raw HTML: research/html-data/store-snapshots/ru.skillcap.dominoes.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Domino - Dominos online game
+ZiMAD
+Contains ads
+In-app purchases
+4.9
+star
+147K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Domino – Dominoes Online is a classic dominoes board game for mobile devices! It features real-time online multiplayer matches for 2, 3, or 4 players. Play with friends or random opponents!
+Simple controls and a clear interface make the game easy to learn. Strategic gameplay, leagues, detailed statistics, and leaderboards give experienced players more ways to compete.
+Six Classic Domino Variants
+Choose the mode that matches your playing style:
+• All Fives
+• Draw Game
+• Block Game
+• All Threes
+• Cross
+• Kozel
+Real-Time Online Multiplayer
+Join live matches for 2, 3, or 4 players. Invite friends or compete against random opponents.
+Play Dominoes with Friends
+Build your in-game friends list. Share invitation links on social media, add players by ID, or connect with players you meet in online matches.
+Leagues, Statistics, and Leaderboards
+Win matches to earn cups and advance through the leagues. Track your results with detailed statistics and climb the leaderboard.
+In-Game Chat
+Use the in-game chat to communicate with other players during matches.
+Whether you prefer a casual board game with friends or competitive online multiplayer, choose your favorite mode and start playing.
+Download Domino – Dominoes Online and work your way from beginner to Domino master.
+Stay connected for the latest game news and updates.
+Follow us on Facebook: https://www.facebook.com/DominoOnlineGame
+Questions or suggestions? Contact us at support_dominoes@zimad.com.
+Dominoes online! Classic board games - Fives, Threes, Block and Draw Dominos!
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+Play Pass
+*Powered by Intel
+®
+technology
+Events & offers
+Expires on 09/30
+Get your festive Bavarian tile skin
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Domino - Dominos online game",
+  "url": "https://play.google.com/store/apps/details/Domino_Dominos_online_game?id=ru.skillcap.dominoes&hl=en",
+  "description": "Dominoes online! Classic board games - Fives, Threes, Block and Draw Dominos!",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/MUUm-5YzgA-VxIwhzT0D2hJrGpYenkeUUKZFgKE9a4p75T73h7tTy6jofAMHEHMVbR4nlnViT2ebxOVi2ZW0Ro4",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "ZiMAD",
+    "url": "https://zimad.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.85960578918457",
+    "ratingCount": "146871"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Domino - Dominos online game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Domino - Dominos online game
+ZiMAD
+Contains ads
+In-app purchases
+4.9
+star
+147K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Enjoy this game, plus hundreds more free of ads and in-app purchases, with a Google Play Pass subscription. Terms apply.
+Learn more
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+About this game
+arrow_forward
+Domino – Dominoes Online is a classic dominoes board game for mobile devices! It features real-time online multiplayer matches for 2, 3, or 4 players. Play with friends or random opponents!
+Simple controls and a clear interface make the game easy to learn. Strategic gameplay, leagues, detailed statistics, and leaderboards give experienced players more ways to compete.
+Six Classic Domino Variants
+Choose the mode that matches your playing style:
+• All Fives
+• Draw Game
+• Block Game
+• All Threes
+• Cross
+• Kozel
+Real-Time Online Multiplayer
+Join live matches for 2, 3, or 4 players. Invite friends or compete against random opponents.
+Play Dominoes with Friends
+Build your in-game friends list. Share invitation links on social media, add players by ID, or connect with players you meet in online matches.
+Leagues, Statistics, and Leaderboards
+Win matches to earn cups and advance through the leagues. Track your results with detailed statistics and climb the leaderboard.
+In-Game Chat
+Use the in-game chat to communicate with other players during matches.
+Whether you prefer a casual board game with friends or competitive online multiplayer, choose your favorite mode and start playing.
+Download Domino – Dominoes Online and work your way from beginner to Domino master.
+Stay connected for the latest game news and updates.
+Follow us on Facebook: https://www.facebook.com/DominoOnlineGame
+Questions or suggestions? Contact us at support_dominoes@zimad.com.
+Dominoes online! Classic board games - Fives, Threes, Block and Draw Dominos!
+Updated on
+Sep 18, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+Play Pass
+*Powered by Intel
+®
+technology
+Events & offers
+Expires on 09/30
+Get your festive Bavarian tile skin
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Personal info, Financial info and 3 others
+This app may collect these data types
+Location, Personal info and 4 others
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.8
+139K reviews
+5
+4
+3
+2
+1
+Peter Greig
+more_vert
+Flag inappropriate
+Show review history
+August 21, 2026
+Not a bad game to play assuming you don't mind the algorithm defining the non random tile distribution and pre arranged winner and loser. Im not sure if support understand the concept of random but the app is a million miles from it... but they'll deny it as always. I guess they have to be sure that you will spend money and so they ensure the odds of that happening are in their favour. A bit of a shame your skills don't matter in this game but the graphics are good. Overall, predictable trash.
+18 people found this review helpful
+Did you find this helpful?
+Yes
+No
+ZiMAD
+August 24, 2026
+Hello! We appreciate your feedback on the tile distribution. It's meant to balance luck and skill for a fair experience. If you have any issues or suggestions, please use the in-game support. We hope you continue to enjoy the graphics and gameplay!
+Amien Mostert
+more_vert
+Flag inappropriate
+Show review history
+July 7, 2026
+This game had the same issue from the time ive started playing it many years ago, till today. Its predictable. In the 4 man online domino game, both sets of players are given similar cards to control the outcome. Thats how the algorithm has been designed. Cards are not as random as we think... Its a shame because I actually like the concept of this game. Based on previous plays, you will notice that you can predict who has which cards even before the game starts. Cards aint random
+6 people found this review helpful
+Did you find this helpful?
+Yes
+No
+ZiMAD
+June 22, 2026
+Hello! There are only real players in our online modes. Random can be tough for everyone (and it doesn't matter if the player buys anything or has a higher rate, the geo also doesn't count). Sometimes winning depends not only on your skill but also on chance and luck. We wish you more luck in games! 🙏🍀
+ABDIGHANI ALINOR
+more_vert
+Flag inappropriate
+August 4, 2026
+A lot of ads which doesn't have cancel button when they finish their time, you can't exit until you exit the game, then open the game back again, this is exhausting, now i am looking another application which less ads or which have exit button when they finish their 30 seconds. Thank you Domino Team.
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+ZiMAD
+August 9, 2026
+Hello! We appreciate your feedback on the ads. They support free gameplay and can be removed with VIP status. If you see inappropriate ads, please report them via in-game support. Thank you, and we hope you continue enjoying the game!
+See all reviews
+What’s new
+🌴 Summer Sale! Join the sale and get unique tiles. Catch the wave of summer savings!
+flag
+Flag as inappropriate
+Rated for 3+
+Users Interact, In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support_dominoes@zimad.com
+shield
+Privacy Policy
+About the developer
+BANDA GAMES INC
+support@zimad.com
+2252 Hayes St
+Hollywood, FL 33020
+United States
++1 202-897-3589
+More by ZiMAD
+arrow_forward
+Magic Jigsaw Puzzles－Games HD
+ZiMAD
+4.6
+star
+Art of Puzzles－Jigsaw Pictures
+ZiMAD
+4.4
+star
+Magic Cross Stitch: Pixel Art
+ZiMAD
+4.1
+star
+Magic Diamond Painting－Gem Art
+ZiMAD
+3.8
+star
+Spades Online - Card Game
+ZiMAD
+3.9
+star
+Mini Games Collection: Puzzles
+ZiMAD
+Similar games
+arrow_forward
+Dominoes: Classic Dominos Game
+NewPubCo
+4.5
+star
+Domino Legends: Classic Game
+Bluetile
+4.5
+star
+Dominoes Online - Classic Game
+MegaJogos
+4.1
+star
+Domino Duel - Online Dominoes
+ZARIBA GAMES - Card & Board Games Online
+4.3
+star
+Arcadia Dominoes for Seniors
+Metajoy
+4.5
+star
+Ludo Club - Fun Dice Game Rush
+Moonfrog
+4.0
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

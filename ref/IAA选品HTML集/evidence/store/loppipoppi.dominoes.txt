@@ -1,0 +1,379 @@
+# Google Play public snapshot: loppipoppi.dominoes
+URL: https://play.google.com/store/apps/details?id=loppipoppi.dominoes&hl=en&gl=IN
+Fetched at: 2026-09-21T13:02:15.479Z
+HTTP status: 200
+Raw HTML SHA-256: 5da426a975a1c46c52e50c35ba2624818610dfd5c4a5d50f78d470bab7a8ae81
+Raw HTML: research/html-data/store-snapshots/loppipoppi.dominoes.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Dominoes: Classic Dominos Game
+NewPubCo
+Contains ads
+In-app purchases
+4.5
+star
+265K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+Get ready to master one of the best classic Dominos games on your mobile device! With Dominoes at your fingertips, take a refreshing break anytime, anywhere! Our Dominoes app is the ultimate choice of fun board games for players like you from all over the world!
+Time to place the spinner and master the iconic, classic Dominos
+All Fives, Block, or Draw Domino
+!
+Download this free Dominoes app for your mobile or tablet and explore 3 modes to play the free dominos board game.
+Playing classic online games with friends or AI opponents can be so exciting, especially when you can also chat or send emojis to them as you strategically position your tiles. Don't hesitate, domino your way to mastery of the tile-based classic board game!
+Join millions of domino enthusiasts across the globe, as this popular classic 2-player board game continues to captivate hearts and minds. More than just a free classic board game, Dominos is also mind workout game, a true tests of your strategic skills and memory.
+Install the best Dominoes app today and immerse yourself in hours of relaxation with these delightful board games for free.
+Challenge our enhanced AI opponents, compete with domino aficionados worldwide, or play online with your friends. With Dominoes, you'll enjoy:
+🂂 Free access to the classic domino game
+🂂
+3 variations of Dominoes: All Fives, Block, or Classic Draw Domino
+🂂 A Lobby where to invite and connect with your friends for an invigorating dominoes game
+🂂 Offline play - no internet, no wifi needed - against AI opponents
+🂂 Engaging matches with random, real players that love dominoes
+🂂 An array of boards themes and domino tiles designs to choose from
+Whether you prefer Straight Domino, Mexican Train Dominos, Chicken Foot, or All Fives Domino, you’re invited to savour the authentic domino gameplay experience with our free, classic dominoes game variations: All Fives, Draw or Block Dominoes:
+Dominoes All Fives
+: Relax and unwind with the free All Fives variant. Count the number of pips on the tiles or bones at each end of your dominos board, scoring points for multiples of 5. Our Dominoes app provides helpful hints to enhance gameplay and make learning enjoyable and efficient for beginner dominos players.
+Draw Dominoes
+: Effortlessly play your tiles and doubles - simply match your domino tile with one of the 2 end bones already on the board. The round winner scores the total number of pips on the other player's dominoes!
+Block Dominoes
+: "The block domino game" puts your mind at work – beware – if you can’t strategize your next move, you will have to skip your turn. The more challenging this addictive online domino game, the more enjoyment you’ll find!
+<<
+DOMINOES WITH FRIENDS!
+>> Nothing compares to the thrill of playing dominoes games with friends! Our Dominoes app makes it a breeze: just enter the Lobby and invite your friends for a challenging domino showdown.
+Tactics, strategy, simplicity, interaction - this online board game has it all. NewPub's Dominoes delivers a top-notch gameplay experience through a sleek, intuitive interface, online and offline game options and customisable options.
+Dominoes is all about high-quality entertainment, online, offline, anytime, from the comfort of your own home, or anywhere in the world you may be, during holidays or just any ordinary day!
+Install Dominoes, play and don’t forget to rate us!
+We're committed to providing a one-of-a-kind gaming experience - your feedback is invaluable!
+Domino Frenzy - Tile board game.
+Updated on
+Sep 11, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dominoes: Classic Dominos Game",
+  "url": "https://play.google.com/store/apps/details/Dominoes_Classic_Dominos_Game?id=loppipoppi.dominoes&hl=en",
+  "description": "Domino Frenzy - Tile board game.",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_BOARD",
+  "image": "https://play-lh.googleusercontent.com/ihkeoVtBv0MNcerOYHEu-hTzyFc7X4GQ9-ASWE1WpXMjZiVZuOJvxrWP8Ry3Hhg0MPX4s-dhYOkXRa1jwmzBFg",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "NewPubCo",
+    "url": "https://newpub.co/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.524752616882324",
+    "ratingCount": "264658"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Dominoes: Classic Dominos Game - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Dominoes: Classic Dominos Game
+NewPubCo
+Contains ads
+In-app purchases
+4.5
+star
+265K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+Learn more
+About this game
+arrow_forward
+Get ready to master one of the best classic Dominos games on your mobile device! With Dominoes at your fingertips, take a refreshing break anytime, anywhere! Our Dominoes app is the ultimate choice of fun board games for players like you from all over the world!
+Time to place the spinner and master the iconic, classic Dominos
+All Fives, Block, or Draw Domino
+!
+Download this free Dominoes app for your mobile or tablet and explore 3 modes to play the free dominos board game.
+Playing classic online games with friends or AI opponents can be so exciting, especially when you can also chat or send emojis to them as you strategically position your tiles. Don't hesitate, domino your way to mastery of the tile-based classic board game!
+Join millions of domino enthusiasts across the globe, as this popular classic 2-player board game continues to captivate hearts and minds. More than just a free classic board game, Dominos is also mind workout game, a true tests of your strategic skills and memory.
+Install the best Dominoes app today and immerse yourself in hours of relaxation with these delightful board games for free.
+Challenge our enhanced AI opponents, compete with domino aficionados worldwide, or play online with your friends. With Dominoes, you'll enjoy:
+🂂 Free access to the classic domino game
+🂂
+3 variations of Dominoes: All Fives, Block, or Classic Draw Domino
+🂂 A Lobby where to invite and connect with your friends for an invigorating dominoes game
+🂂 Offline play - no internet, no wifi needed - against AI opponents
+🂂 Engaging matches with random, real players that love dominoes
+🂂 An array of boards themes and domino tiles designs to choose from
+Whether you prefer Straight Domino, Mexican Train Dominos, Chicken Foot, or All Fives Domino, you’re invited to savour the authentic domino gameplay experience with our free, classic dominoes game variations: All Fives, Draw or Block Dominoes:
+Dominoes All Fives
+: Relax and unwind with the free All Fives variant. Count the number of pips on the tiles or bones at each end of your dominos board, scoring points for multiples of 5. Our Dominoes app provides helpful hints to enhance gameplay and make learning enjoyable and efficient for beginner dominos players.
+Draw Dominoes
+: Effortlessly play your tiles and doubles - simply match your domino tile with one of the 2 end bones already on the board. The round winner scores the total number of pips on the other player's dominoes!
+Block Dominoes
+: "The block domino game" puts your mind at work – beware – if you can’t strategize your next move, you will have to skip your turn. The more challenging this addictive online domino game, the more enjoyment you’ll find!
+<<
+DOMINOES WITH FRIENDS!
+>> Nothing compares to the thrill of playing dominoes games with friends! Our Dominoes app makes it a breeze: just enter the Lobby and invite your friends for a challenging domino showdown.
+Tactics, strategy, simplicity, interaction - this online board game has it all. NewPub's Dominoes delivers a top-notch gameplay experience through a sleek, intuitive interface, online and offline game options and customisable options.
+Dominoes is all about high-quality entertainment, online, offline, anytime, from the comfort of your own home, or anywhere in the world you may be, during holidays or just any ordinary day!
+Install Dominoes, play and don’t forget to rate us!
+We're committed to providing a one-of-a-kind gaming experience - your feedback is invaluable!
+Domino Frenzy - Tile board game.
+Updated on
+Sep 11, 2026
+Available on
+Android,
+Windows*
+Board
+Abstract strategy
+Dominos
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Miscellaneous
+Board games
+Competitive
+Offline
+*Powered by Intel
+®
+technology
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+Device or other IDs
+This app may collect these data types
+App activity, App info and performance, and Device or other IDs
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+laptop
+Chromebook
+tablet_android
+Tablet
+4.5
+254K reviews
+5
+4
+3
+2
+1
+A R
+more_vert
+Flag inappropriate
+Show review history
+August 21, 2026
+**Update** Just had another 4 games in a row freeze. Waste of time since you refuse to fix the bugs. This used to be an awesome game, but it's completely ruined and a waste of time now. Fix the bugs! I just had 5 games in a row freeze because of the ads, which counts as 5 losses. For those of us who don't want to pay for no ads (because the bugs are still there so there's no point in paying) at least make the game playable. It's unacceptable!!
+24 people found this review helpful
+Did you find this helpful?
+Yes
+No
+NewPubCo
+August 24, 2026
+We're really sorry about the freezing issues — that's genuinely frustrating and we want to fix it! Please reach out to our support team in-app so we can investigate your specific device and get this sorted for you.
+Harold Morris
+more_vert
+Flag inappropriate
+September 19, 2026
+I wish they had translation so when you type a message , it should come back in ur language an not there's, so u can understand what they are saying to you. you shouldn't be able to play beginners at your level. you should have a friend list, to add too players because you want to play the same people that are masters in other countries. also you should be able to block the low ranting player that take forever to play because there beginners. messages LET'S PLAY AGAIN PLEASE
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+NewPubCo
+September 20, 2026
+Thanks so much for the 5 stars and for sharing all these ideas — translation, friend lists, and skill matching are great suggestions we'll pass along to the team!
+David Zhvania
+more_vert
+Flag inappropriate
+September 6, 2026
+the game is complete trash, what kinda idiot create this I don't understand, algorithm working worst I ever seen, you can play 100 games and you can hame same rocks all the time no change, and where is Days you can play 1000 games and you can loose 1000 of them, so I'm deleting it immediately, it's just a garbage, you have to ashamed to create this awful game, which doesn't working properly at all,
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Hi, Dominoes friends! We’ve got a fresh update for you:
+- Fixed minor bugs and improved overall stability
+Thanks for playing!
+flag
+Flag as inappropriate
+Rated for 3+
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+hello+dominoes@newpub.co
+shield
+Privacy Policy
+About the developer
+Vladimir Gurgov
+hello@newpub.co
+8920 W Parkland Bay Trl
+Coral Springs, FL 33076-4872
+United States
+Similar games
+arrow_forward
+Domino - Dominos online game
+ZiMAD
+4.9
+star
+Dominoes Online - Classic Game
+MegaJogos
+4.1
+star
+Domino Legends: Classic Game
+Bluetile
+4.5
+star
+Arcadia Dominoes for Seniors
+Metajoy
+4.5
+star
+Domino Duel - Online Dominoes
+ZARIBA GAMES - Card & Board Games Online
+4.3
+star
+Yatzy GO! Classic Dice Game
+Game In Life
+4.1
+star
+More by NewPubCo
+arrow_forward
+Number Clash - Math Game
+NewPubCo
+4.8
+star
+Spades: Classic Card Game
+NewPubCo
+4.7
+star
+Arrow Master
+NewPubCo
+4.7
+star
+Solitaire: Classic Card Game
+NewPubCo
+4.9
+star
+Color Ball Escape: Puzzle
+NewPubCo
+3.5
+star
+Bubble Associations: Word Game
+NewPubCo
+4.2
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)

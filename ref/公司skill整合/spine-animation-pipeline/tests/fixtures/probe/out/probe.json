@@ -1,0 +1,65 @@
+{
+  "skeleton": {
+    "spine": "3.8.75",
+    "x": 0,
+    "y": 0,
+    "width": 64,
+    "height": 64
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "length": 32
+    }
+  ],
+  "slots": [
+    {
+      "name": "body",
+      "bone": "body",
+      "attachment": "body"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "body": {
+          "body": {
+            "width": 32,
+            "height": 32
+          }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "idle": {
+      "bones": {
+        "body": {
+          "rotate": [
+            {
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 0.6,
+              "angle": 4.0,
+              "curve": 0.25,
+              "c2": 0.0,
+              "c3": 0.75,
+              "c4": 1.0
+            },
+            {
+              "time": 1.2,
+              "angle": 0.0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ import AgentView from './views/AgentView.vue'
 import ArtAgentView from './views/ArtAgentView.vue'
 import DevAgentView from './views/DevAgentView.vue'
 import KnowledgeBaseView from './views/KnowledgeBaseView.vue'
+import GameWorkflowView from './views/GameWorkflowView.vue'
 
 const currentView = ref('home')
 const currentModule = ref(null)
@@ -18,6 +19,7 @@ function navigate(view, module = null) {
 <template>
   <div class="app-container">
     <HomeView v-if="currentView === 'home'" @navigate="navigate" />
+    <GameWorkflowView v-else-if="currentView === 'workflow'" @navigate="navigate" />
     <ArtAgentView
       v-else-if="currentView === 'agent' && currentModule === 'art'"
       @navigate="navigate"

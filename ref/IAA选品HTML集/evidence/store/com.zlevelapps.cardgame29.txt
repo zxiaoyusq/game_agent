@@ -1,0 +1,370 @@
+# Google Play public snapshot: com.zlevelapps.cardgame29
+URL: https://play.google.com/store/apps/details?id=com.zlevelapps.cardgame29&hl=en&gl=IN
+Fetched at: 2026-09-21T13:01:43.414Z
+HTTP status: 200
+Raw HTML SHA-256: e446f329fe9ebbd4fc859b1bb2e9436aa5e3b60e43f3cc8117e95abfa921a724
+Raw HTML: research/html-data/store-snapshots/com.zlevelapps.cardgame29.html
+Locale: hl=en&gl=IN
+Extraction: readable text nodes, no scripts/styles; JSON-LD preserved separately.
+
+## App header (original readable text)
+Card Game 29
+Z Level Labs
+Contains ads
+In-app purchases
+4.2
+star
+107K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+
+## App description / updated date / store tags (not user reviews)
+About this game
+arrow_forward
+About 29 Card Game
+Card Game 29 is a famous round-winning (or trick-taking) card game played with a deck of 32 cards. It is a descendant of the Jass family of games from the Netherlands and brought to the subcontinent in the 18th Century by Dutch traders.
+Similar games: 28 card game, Fifty Six, 304, Thunee, Thuni
+Key Features of 29 Card Game
+It is played with J, 9, A, 10, K, Q, 8, 7 from each suit. Hence there are 32 cards in the game.
+The points of each card are: J (3 points), 9 (2), A (1), 10 (1) and K, Q, 8, 7 have 0 points each.
+There are 3+2+1+1 = 7 points in each suit, hence a total of 7 x 4 = 28 points. There is an optional additional point for winning the last hand, taking the total to 29.
+👥 The game is played by four players in two teams (alternate players form a team), with each player receiving a hand of 8 cards.
+🏆 The aim of the game is to win rounds (or tricks) and score points, with the highest card in each round winning all four cards of that round. The objective is to win a set by reaching 6 red points (or pushing the opponents to 6 black points).
+Experience the excitement of the top card game 29, on your mobile device! Play with friends or challenge the AI in this fast-paced trick-taking game. Bid for the trump suit, strategise your moves and win tricks to score points. With intuitive controls and smooth gameplay, 29 is easy to learn but hard to master.
+Discover the thrill of the 29 card game free online!
+How to play?
+Engage in exciting gameplay as you challenge your skills against the AI in offline mode or connect with friends and relatives from anywhere in the world in the 29 card game online mode. It is the best card game for excellent brain exercise, a puzzle for short, fast-paced games that require a mix of strategy, skill, and partner chemistry to win
+Offline game
+Click on the ‘Play Offline’ button to jump into the offline game mode against AI.
+Bid the points between 16 and 29.
+If you win the bid, set the trump card to bias the game towards your team.
+In each round, the highest card of the first player’s suit wins all the cards, unless another player has trumped it.
+Play all the eight rounds and try to win the points you bid for.
+Play on multiple games to get +6 in the set score card to win the set.
+Online game
+Click on the ‘Play Online’ button to create or join a multiplayer game with friends.
+If you are creating the game, share the joining link with other friends using other Apps like WhatsApp or Messenger.
+If you are joining the game, join using the link received from a friend and then select a seat. The host can add bots if atleast one other player has joined.
+When all four players have joined, the game will start for all players.
+Play on with your friends to bid, win games and win sets!
+Why choose 29 Card Game?
+🔢 In our game, you will find Double, Re-Double, Pair, Single Hand, 7th Card Trump, Joker Trump and all the common rules implemented.
+🎛️ We have Rules Popup where you can configure rules to your choice.
+🎖️ We have an achievements section that tracks your progress as well. Play now and test your skills!
+👯 Play with friends using multiplayer or challenge the AI in the offline mode.
+Language Support
+We support English, Hindi and Bengali.
+Additional Information
+🌐 Website: Explore more about the 29 Card Game on our official website https://zlevellabs.com/
+📜 Privacy Policy: Review our Privacy Policy to understand how we handle your data https://zlevellabs.com/card-game-29-privacy-policy/
+🆘 Customer Support: Encountered an issue or have a question? Reach out to our dedicated support team at support@zlevellabs.com
+🔄 Latest Updates: Stay informed about the latest features and improvements. Check our update log regularly!
+🤝 Community Engagement: Join our community on social media for tips, tricks, and discussions. Follow us on Facebook and Instagram
+https://www.facebook.com/zlevellabs
+https://www.instagram.com/z_level_labs/
+29 card game is a fun strategy card game that can be enjoyed online and offline
+Updated on
+Sep 16, 2026
+#9 top free card
+Card
+Classic cards
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+
+## Original SoftwareApplication JSON-LD
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Card Game 29",
+  "url": "https://play.google.com/store/apps/details/Card_Game_29?id=com.zlevelapps.cardgame29&hl=en",
+  "description": "29 card game is a fun strategy card game that can be enjoyed online and offline",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GAME_CARD",
+  "image": "https://play-lh.googleusercontent.com/1VisYL8AnDoHZQlDFTq2ZnWlLbu-mwbyDV2xNCoKvuAs2KvsqbfzKA1UlGQvYV0jMxBF3zTkXAikqHZWkksaiQ",
+  "contentRating": "Rated for 3+",
+  "author": {
+    "@type": "Person",
+    "name": "Z Level Labs",
+    "url": "https://zlevellabs.com/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.23618745803833",
+    "ratingCount": "106723"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+
+## Complete visible-text extraction (may include reviews/recommendations; NOT all app facts)
+Card Game 29 - Apps on Google Play
+Games
+Apps
+Books
+Kids
+google_logo Play
+Games
+Apps
+Books
+Kids
+none
+search
+help_outline
+Sign in with Google
+play_apps
+Library & devices
+payment
+Payments & subscriptions
+reviews
+My Play activity
+redeem
+Offers
+Play Pass
+Personalization in Play
+settings
+Settings
+Privacy Policy
+•
+Terms of Service
+Games
+Apps
+Books
+Kids
+play_arrow
+Trailer
+Card Game 29
+Z Level Labs
+Contains ads
+In-app purchases
+4.2
+star
+107K reviews
+Rated for 3+
+info
+10M+
+Downloads
+Install
+Share
+Add to wishlist
+play_arrow
+Trailer
+Rated for 3+
+In-Game Purchases
+Learn more
+About this game
+arrow_forward
+About 29 Card Game
+Card Game 29 is a famous round-winning (or trick-taking) card game played with a deck of 32 cards. It is a descendant of the Jass family of games from the Netherlands and brought to the subcontinent in the 18th Century by Dutch traders.
+Similar games: 28 card game, Fifty Six, 304, Thunee, Thuni
+Key Features of 29 Card Game
+It is played with J, 9, A, 10, K, Q, 8, 7 from each suit. Hence there are 32 cards in the game.
+The points of each card are: J (3 points), 9 (2), A (1), 10 (1) and K, Q, 8, 7 have 0 points each.
+There are 3+2+1+1 = 7 points in each suit, hence a total of 7 x 4 = 28 points. There is an optional additional point for winning the last hand, taking the total to 29.
+👥 The game is played by four players in two teams (alternate players form a team), with each player receiving a hand of 8 cards.
+🏆 The aim of the game is to win rounds (or tricks) and score points, with the highest card in each round winning all four cards of that round. The objective is to win a set by reaching 6 red points (or pushing the opponents to 6 black points).
+Experience the excitement of the top card game 29, on your mobile device! Play with friends or challenge the AI in this fast-paced trick-taking game. Bid for the trump suit, strategise your moves and win tricks to score points. With intuitive controls and smooth gameplay, 29 is easy to learn but hard to master.
+Discover the thrill of the 29 card game free online!
+How to play?
+Engage in exciting gameplay as you challenge your skills against the AI in offline mode or connect with friends and relatives from anywhere in the world in the 29 card game online mode. It is the best card game for excellent brain exercise, a puzzle for short, fast-paced games that require a mix of strategy, skill, and partner chemistry to win
+Offline game
+Click on the ‘Play Offline’ button to jump into the offline game mode against AI.
+Bid the points between 16 and 29.
+If you win the bid, set the trump card to bias the game towards your team.
+In each round, the highest card of the first player’s suit wins all the cards, unless another player has trumped it.
+Play all the eight rounds and try to win the points you bid for.
+Play on multiple games to get +6 in the set score card to win the set.
+Online game
+Click on the ‘Play Online’ button to create or join a multiplayer game with friends.
+If you are creating the game, share the joining link with other friends using other Apps like WhatsApp or Messenger.
+If you are joining the game, join using the link received from a friend and then select a seat. The host can add bots if atleast one other player has joined.
+When all four players have joined, the game will start for all players.
+Play on with your friends to bid, win games and win sets!
+Why choose 29 Card Game?
+🔢 In our game, you will find Double, Re-Double, Pair, Single Hand, 7th Card Trump, Joker Trump and all the common rules implemented.
+🎛️ We have Rules Popup where you can configure rules to your choice.
+🎖️ We have an achievements section that tracks your progress as well. Play now and test your skills!
+👯 Play with friends using multiplayer or challenge the AI in the offline mode.
+Language Support
+We support English, Hindi and Bengali.
+Additional Information
+🌐 Website: Explore more about the 29 Card Game on our official website https://zlevellabs.com/
+📜 Privacy Policy: Review our Privacy Policy to understand how we handle your data https://zlevellabs.com/card-game-29-privacy-policy/
+🆘 Customer Support: Encountered an issue or have a question? Reach out to our dedicated support team at support@zlevellabs.com
+🔄 Latest Updates: Stay informed about the latest features and improvements. Check our update log regularly!
+🤝 Community Engagement: Join our community on social media for tips, tricks, and discussions. Follow us on Facebook and Instagram
+https://www.facebook.com/zlevellabs
+https://www.instagram.com/z_level_labs/
+29 card game is a fun strategy card game that can be enjoyed online and offline
+Updated on
+Sep 16, 2026
+#9 top free card
+Card
+Classic cards
+Casual
+Multiplayer
+Competitive multiplayer
+Single player
+Realistic
+Offline
+Data safety
+arrow_forward
+Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+This app may share these data types with third parties
+App info and performance and Device or other IDs
+This app may collect these data types
+Personal info
+Data is encrypted in transit
+You can request that data be deleted
+See details
+Ratings and reviews
+Ratings and reviews are verified
+info_outline
+arrow_forward
+Ratings and reviews are verified
+info_outline
+phone_android
+Phone
+tablet_android
+Tablet
+4.2
+106K reviews
+5
+4
+3
+2
+1
+Akash Singh
+more_vert
+Flag inappropriate
+Show review history
+September 3, 2026
+The 29 Card game does not feel fair. The opponent, which appears to be a bot, repeatedly receives much stronger cards, including multiple high-value cards and cards of the same suit. This happens too often to feel like normal randomness. Please review the card-distribution algorithm, to ensure fair and transparent gameplay. Players should have an equal chance to win. fix this issue so both sides have a fair chance of winning. I request a proper resolution in a future update.
+4 people found this review helpful
+Did you find this helpful?
+Yes
+No
+The YouTuber
+more_vert
+Flag inappropriate
+Show review history
+August 10, 2026
+Why did you slowed the wait timer, that yellow bar thing at the bottom, now we have to push extra buttons to skip.. at least give an option to turn it off or on. *Update*: Thanks Developer for the prompt solution. Five stars again!
+12 people found this review helpful
+Did you find this helpful?
+Yes
+No
+Z Level Labs
+August 10, 2026
+Hi,
+Thanks a lot for your feedback. Apologies for the inconvenience. We have solved this issue in version 7.42. Please update to this version.
+SHANKAR KUMAR
+more_vert
+Flag inappropriate
+September 3, 2026
+There are too many ads. I feel fed up after every round because the ads are too long, and there isn’t even an option to close or skip them.
+1 person found this review helpful
+Did you find this helpful?
+Yes
+No
+See all reviews
+What’s new
+Reduce app startup time
+Reduce wait time in the Double/Single Hand stage in the offline game
+New emoji reactions let you connect with players during multiplayer matches.
+Turn timers now appear for moves, bids, and popups to keep games flowing.
+Refreshed Menu screen with a cleaner, modern button design.
+flag
+Flag as inappropriate
+Rated for 3+
+In-Game Purchases
+Learn more
+App support
+expand_more
+public
+Website
+email
+Support email
+support@zlevellabs.com
+shield
+Privacy Policy
+About the developer
+ZLEVEL LABS LLP
+support@zlevellabs.com
+Villa 44 Daiwik Spandana, A/2 Heelalige Road Bang, Chandapura
+Bengaluru, Karnataka 560099
+India
++91 89510 95904
+More by Z Level Labs
+arrow_forward
+Connect 4
+Z Level Labs
+4.2
+star
+Simple Snowfall Live Wallpaper
+Z Level Labs
+3.8
+star
+Similar games
+arrow_forward
+Callbreak: Classic Card Games
+People Lovin Games
+4.2
+star
+Spades: Classic Card Game
+People Lovin Games
+4.4
+star
+Spades Solitaire - Card Games
+Topy Games
+4.7
+star
+Spades - Expert AI
+NeuralPlay, LLC
+3.5
+star
+Aces® Spades
+Concrete Software, Inc.
+4.1
+star
+Gin Rummy Classic
+MobilityWare
+3.9
+star
+flag
+Flag as inappropriate
+Google Play
+Play Pass
+Play Points
+Gift cards
+Redeem
+Refund policy
+Kids & family
+Parent Guide
+Family sharing
+Terms of Service
+Privacy
+About Google Play
+Developers
+Google Store
+All prices include GST.
+India (English)
