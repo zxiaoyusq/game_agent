@@ -1,0 +1,199 @@
+<!doctype html><html lang="en"><head><base href=12/ target=_blank/><meta charset="utf-8"/><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; connect-src 'self'; img-src 'self' data: blob:; media-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:; frame-src 'none'; object-src 'none'"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Solitaire - Classic Klondike</title><link rel="manifest" href="manifest.json"/><style>:root {
+                --sat: env(safe-area-inset-top);
+                --sar: env(safe-area-inset-right);
+                --sab: env(safe-area-inset-bottom);
+                --sal: env(safe-area-inset-left);
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+            }
+
+            html {
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                scroll-behavior: smooth;
+                font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+                background-color: #191919;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                color: white;
+                background: transparent;
+                overflow: hidden;
+            }
+
+            #app {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            #app-bg {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #181818;
+                /* background-image: url(./assets/images/2x/bg-desktop-0.svg); */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            @media (min-aspect-ratio: 16/9) {
+                #app-bg {
+                    background-size: contain;
+                }
+            }
+
+            #app-mask-left {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                user-select: none;
+                background: rgb(29 29 29 / 0);
+            }
+
+            #app-mask-right {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                user-select: none;
+                background: rgb(29 29 29 / 0);
+                right: 0px;
+            }
+
+            canvas {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                position: relative;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                touch-action: none;
+            }
+
+            #capture {
+                display: none;
+            }
+
+            #lds-dual-ring,
+            #wait-ads-dual-ring {
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 0px auto;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                border-color: #fff transparent #fff transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+                -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            #loading-game-icon-blur,
+            #loading-game-icon {
+                display: block;
+                background-image: url('icon-512x512.svg');
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+            }
+
+            #loading-game-icon-blur {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: blur(30px);
+                -webkit-filter: blur(30px);
+            }
+
+            #loading-game-icon {
+                width: 75px;
+                height: 75px;
+                margin: 0 auto;
+                animation: icon-fade-in 0.4s ease-in, icon-bubble 1.5s ease-in-out infinite;
+            }
+
+            #lds-text,
+            #wait-ads-text {
+                text-align: center;
+                -webkit-text-align: center;
+                margin-top: 30px;
+                font-size: 1.2rem;
+            }
+
+            #lds-content,
+            #wait-ads-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            #wait-ads-mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: #191919;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes icon-fade-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes icon-bubble {
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.05);
+                }
+            }
+
+            div[hidden] {
+                display: none !important;
+            }</style>
+<link href="vendors.d724d2ab5b4134540d2a.bundle.js" rel="preload" as="script"/>
+<link href="engine.38914080a6bbbe6661e0.bundle.js" rel="preload" as="script"/>
+<link href="game.dfcfeaf7df8c4792956e.bundle.js?v=289e7de67387" rel="preload" as="script"/>
+<script src="platform-bridge.js?v=289e7de67387"></script><script src="offline-runtime.js?v=289e7de67387"></script>
+</head>
+<body oncontextmenu="event.preventDefault()">
+<div id="app"><div id="app-bg"></div><div id="app-mask-left"></div><div id="app-mask-right"></div></div>
+<div id="lds-content" hidden><div id="lds-dual-ring"></div><div id="lds-text"><span id="lds-percent">0</span>%</div></div>
+<script defer="defer" src="vendors.d724d2ab5b4134540d2a.bundle.js"></script>
+<script defer="defer" src="engine.38914080a6bbbe6661e0.bundle.js"></script>
+<script defer="defer" src="game.dfcfeaf7df8c4792956e.bundle.js?v=289e7de67387"></script>
+</body></html>

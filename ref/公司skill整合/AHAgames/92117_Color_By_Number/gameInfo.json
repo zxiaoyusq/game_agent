@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "92117",
+    "apiName":  "Color By Number",
+    "targetName":  "Color By Number",
+    "match":  "BY_ID",
+    "bundleName":  "re_1787544669553_www.ooppgame.com.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260824/ac10c9cf6c5ad674201553c25e761ee5.zip",
+    "bundleMd5":  "ac10c9cf6c5ad674201553c25e761ee5",
+    "bundleSize":  5208028,
+    "updatedAt":  1787561279,
+    "gameLink":  "https://www.ooppgame.com/Color_By_Number/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_92117",
+    "category":  "Female",
+    "rate":  8.8,
+    "gameType":  1,
+    "localFile":  "Color_By_Number.zip",
+    "localBytes":  5208028,
+    "verifiedAt":  "2026-10-20T11:14:07",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

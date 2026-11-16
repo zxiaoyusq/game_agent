@@ -1,7 +1,7 @@
 """LLM Provider：统一走 langchain 的 init_chat_model 入口。
 
 设计要点：
-- 模型必须由前端显式指定 model_id，且要在 LLM_MODEL_INDEX 白名单内；
+- 模型必须由调用方显式指定 model_id，且要在 LLM_MODEL_INDEX 白名单内；
 - 同一个 (model_id, 关键参数) 的 chat model 会被缓存，避免每次请求都重新构造 client；
 - base_url / api_key 来自 .env 中的统一网关配置，所有 provider 共用。
 
@@ -9,7 +9,7 @@
     from app.providers import get_chat_model
     from langchain_core.messages import HumanMessage
 
-    model = get_chat_model("claude-opus-4-7", temperature=0)
+    model = get_chat_model("claude-opus-5-5", temperature=0)
     resp = model.invoke([HumanMessage(content="hi")])
 """
 
@@ -22,7 +22,6 @@ from langchain.chat_models import init_chat_model
 
 from app.config import (
     LLM_API_KEY,
-    LLM_GATEWAY_URL,
     LLM_MODEL_INDEX,
     get_llm_base_url,
 )
@@ -40,13 +39,13 @@ def _resolve_spec(model_id: str) -> dict:
     return spec
 
 
-def _check_credentials() -> None:
+def _check_credentials(provider: str) -> None:
     """启动时不强制 key 必填（方便先跑骨架），真正调用前再校验。"""
     if not LLM_API_KEY:
         raise LLMConfigError(
             "未配置 LLM_API_KEY；请在 backend/.env 中填写后再调用 LLM 接口"
         )
-    if not LLM_GATEWAY_URL:
+    if not get_llm_base_url(provider):
         raise LLMConfigError(
             "未配置 LLM_GATEWAY_URL；请在 backend/.env 中填写后再调用 LLM 接口"
         )
@@ -60,18 +59,21 @@ def _build_cached(model_id: str, override_items: frozenset) -> Any:
     overrides 通过 frozenset 形式传入，避免 dict 不可哈希的问题。
     """
     spec = _resolve_spec(model_id)
-    _check_credentials()
+    _check_credentials(spec["provider"])
 
     # 这里把网关 URL 与 key 显式传入，覆盖 langchain 默认从官方 base_url 走的行为
     # 不同 provider 的 base_url 可能不一样（例如 OpenAI 协议要求 /v1 前缀），
     # 通过 get_llm_base_url 按 provider 单独解析。
     provider = spec["provider"]
     kwargs: dict[str, Any] = {
-        "model": model_id,
+        "model": spec.get("upstream_model", model_id),
         "model_provider": provider,
         "api_key": LLM_API_KEY,
         "base_url": get_llm_base_url(provider),
     }
+    if spec.get("openai_api"):
+        # 网关的 Gemini 入口使用 Chat Completions，不能继承 GPT 的 Responses 默认协议。
+        kwargs["use_responses_api"] = spec["openai_api"] == "responses"
     # 用户层 overrides 优先级最高，可覆盖默认 temperature 之类
     kwargs.update(dict(override_items))
     return init_chat_model(**kwargs)
@@ -81,7 +83,7 @@ def get_chat_model(model_id: str, **overrides: Any) -> Any:
     """获取一个 langchain BaseChatModel 实例。
 
     Args:
-        model_id: 必填。前端选择的模型 id，必须在 LLM_MODEL_INDEX 白名单内。
+        model_id: 必填。工作流选择的模型 id，必须在 LLM_MODEL_INDEX 白名单内。
         **overrides: 透传给 init_chat_model 的额外参数（temperature、max_tokens 等）。
 
     Raises:
@@ -90,11 +92,3 @@ def get_chat_model(model_id: str, **overrides: Any) -> Any:
     """
     # frozenset(items()) 保证缓存命中：相同参数命中同一个客户端实例
     return _build_cached(model_id, frozenset(overrides.items()))
-
-
-def list_models() -> list[dict]:
-    """列出前端可选模型清单（不含 key 等敏感字段）。"""
-    return [
-        {"id": m["id"], "provider": m["provider"], "label": m["label"], "tags": m.get("tags", [])}
-        for m in LLM_MODEL_INDEX.values()
-    ]

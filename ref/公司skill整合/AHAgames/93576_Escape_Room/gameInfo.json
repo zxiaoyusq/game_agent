@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "93576",
+    "apiName":  "Escape Room",
+    "targetName":  "Escape Room",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Escape_Room.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260605/89cee630b0e2924d2cd8d5a34a973251.zip",
+    "bundleMd5":  "89cee630b0e2924d2cd8d5a34a973251",
+    "bundleSize":  14885213,
+    "updatedAt":  1780651870,
+    "gameLink":  "https://www.shyangyugame.com/Escape_Room/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_93576",
+    "category":  "Puzzle",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Escape_Room.zip",
+    "localBytes":  14885213,
+    "verifiedAt":  "2026-10-20T11:11:37",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

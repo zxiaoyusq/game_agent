@@ -1,0 +1,482 @@
+[
+  {
+    "theme": 0,
+    "frame": 1,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 2,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 3,
+    "original_hue_bin": 240,
+    "candidate_hue_bin": 270,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 4,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 5,
+    "original_hue_bin": null,
+    "candidate_hue_bin": 330,
+    "difference_degrees": null,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 6,
+    "original_hue_bin": 270,
+    "candidate_hue_bin": 270,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 7,
+    "original_hue_bin": 180,
+    "candidate_hue_bin": 180,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 8,
+    "original_hue_bin": 300,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 9,
+    "original_hue_bin": 210,
+    "candidate_hue_bin": 210,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 10,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 11,
+    "original_hue_bin": null,
+    "candidate_hue_bin": 60,
+    "difference_degrees": null,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 12,
+    "original_hue_bin": 90,
+    "candidate_hue_bin": 60,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 13,
+    "original_hue_bin": 120,
+    "candidate_hue_bin": 90,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 14,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 15,
+    "original_hue_bin": 300,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 16,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 17,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 18,
+    "original_hue_bin": 240,
+    "candidate_hue_bin": 270,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 19,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 0,
+    "frame": 20,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 1,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 2,
+    "original_hue_bin": 180,
+    "candidate_hue_bin": 180,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 3,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 4,
+    "original_hue_bin": 300,
+    "candidate_hue_bin": 270,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 5,
+    "original_hue_bin": 120,
+    "candidate_hue_bin": 90,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 6,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 7,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 8,
+    "original_hue_bin": 60,
+    "candidate_hue_bin": 60,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 9,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 10,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 11,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 12,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 13,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 14,
+    "original_hue_bin": 240,
+    "candidate_hue_bin": 270,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 15,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 16,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 17,
+    "original_hue_bin": 180,
+    "candidate_hue_bin": 180,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 18,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 19,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 1,
+    "frame": 20,
+    "original_hue_bin": 180,
+    "candidate_hue_bin": 180,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 1,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 2,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 3,
+    "original_hue_bin": 120,
+    "candidate_hue_bin": 90,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 4,
+    "original_hue_bin": 240,
+    "candidate_hue_bin": 240,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 5,
+    "original_hue_bin": 210,
+    "candidate_hue_bin": 210,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 6,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 7,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 8,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 9,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 10,
+    "original_hue_bin": 90,
+    "candidate_hue_bin": 60,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 11,
+    "original_hue_bin": 330,
+    "candidate_hue_bin": 330,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 12,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 30,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 13,
+    "original_hue_bin": 30,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 14,
+    "original_hue_bin": 60,
+    "candidate_hue_bin": 60,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 15,
+    "original_hue_bin": 300,
+    "candidate_hue_bin": 300,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 16,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 17,
+    "original_hue_bin": 90,
+    "candidate_hue_bin": 90,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 18,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 19,
+    "original_hue_bin": 90,
+    "candidate_hue_bin": 60,
+    "difference_degrees": 30,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  },
+  {
+    "theme": 2,
+    "frame": 20,
+    "original_hue_bin": 0,
+    "candidate_hue_bin": 0,
+    "difference_degrees": 0,
+    "note": "heuristic only; neutrals and backgrounds may be misclassified"
+  }
+]

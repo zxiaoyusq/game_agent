@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-11-04T03:27:11.162410+00:00",
+  "scope": "独立适配代码、来源快照、Skill 元数据与打包；未修改目标游戏或请求真实广告。",
+  "node_test": {
+    "command": "node --test skills/aha-game-integration/tests/*.test.mjs",
+    "exit_code": 0,
+    "tests": 15,
+    "passed": 15,
+    "failed": 0,
+    "evidence": "adapter-tests.tap"
+  },
+  "skill_validation": {
+    "status": "passed",
+    "evidence": "skill-validation.txt"
+  },
+  "links_checked": true,
+  "installed_at": "/root/.codex/skills/aha-game-integration",
+  "installation_matches_source": true,
+  "package": {
+    "path": "aha-game-integration.zip",
+    "size_bytes": 206429,
+    "sha256": "c2f4bb51617450bc800dd0a7df700f956eb0eee92f2c7e6d4c036e57ccb40d21"
+  },
+  "skill_file_sha256": {
+    "SKILL.md": "67fbae2917384762a71a3588c594a6afb7855d1fe1d501ecc0e0eb623eaec2c5",
+    "agents/openai.yaml": "61d8bb39494d9ec704f8d970b6122862d30ffec14cecad4f68a443e18600088f",
+    "assets/aha/ads.mjs": "67ca0d5b2869b0abdd35705d551149a9390ed22342a2b8877358a46e650ee0fd",
+    "assets/aha/client.mjs": "760b4bba33e4a1cb636c43968bd9eca7e8ec327a7201d736a623a31bfe076948",
+    "assets/aha/pause.mjs": "e2c682ffe21ee75e211205f57dc47e340a708159dbefe50036b252b9153869a7",
+    "references/adapter-usage.md": "9fa660931312ee5ce705f4998571a58de46ab08ca479288f4bdc517c099eb78d",
+    "references/api-contract.md": "5826035cc4477ccbbe62d408e85f637c1dcc3cf2f60e739dbc045193a61b2f7b",
+    "references/source-manifest.json": "bdc0d547ed605abfc61815e8080b572b8cf8cba844ba34ff816bb7a7dddd963e",
+    "references/sources/aha-bridge-api.md": "aaa59456a11394fd89d80db264a66ef1e723bb41d0442554d541a615103584f0",
+    "references/sources/solitaire-game.html.txt": "13fbe3c52cfdf8075db1898739ef493345473b65f74e770c4fcb1dc90e59a8e1",
+    "references/sources/solitaire-game.js.txt": "3d00b2a2dedf637c8005d977e722176e5e4edf2b98d6de9b2ccf1f52c55914c8",
+    "references/sources/solitaire-readme.md.txt": "97fbd5240cb3677d14c7b1ce8ec8cee549ebec2d323da9c4776d31dfe0b0bdcd",
+    "references/sources/solitaire-shell.html.txt": "c2024bae8e8402fe6ab242472fb9f19a3c2ef500adc6189f291b8a7e72733e0f",
+    "references/sources/template-game.js.txt": "3d00b2a2dedf637c8005d977e722176e5e4edf2b98d6de9b2ccf1f52c55914c8",
+    "references/sources/template-readme.md.txt": "97fbd5240cb3677d14c7b1ce8ec8cee549ebec2d323da9c4776d31dfe0b0bdcd",
+    "references/sources/template-shell-2.html.txt": "360aac2f74b96888d098d3a861607eaedbdebf7a7cbcd929f36c9c875212082e",
+    "references/sources/template-shell.html.txt": "345fb79f5e94043fcb473b678cf22a61b047e834da45c23aced80f2424392722",
+    "references/sources/图片和附件/image.png": "22f4c7dd3e0c596e3ad5c63147a714a19616e0f0e50b481bfd02ea613cc16361",
+    "references/workflow.md": "016957de499e3cbe0b60943706cf84cefe865b746c966914e0ba9a3343ca3b61",
+    "tests/adapter.test.mjs": "edaf627c4618a06deeb3dc5992314b16298f3010ef771ebc81cb042a97608912"
+  },
+  "not_validated": [
+    "目标游戏业务接入",
+    "iframe 转发实现",
+    "真实 SDK 初始化",
+    "AHA 真机广告和生命周期",
+    "埋点后台到账",
+    "奖励持久化"
+  ]
+}

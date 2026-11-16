@@ -1,0 +1,23 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const file=process.argv[2]?path.join(process.argv[2],'reward-lifecycle.js'):'tools/reward_lifecycle_candidate.js';
+const window={};vm.runInNewContext(fs.readFileSync(file,'utf8'),{window,Promise,Set,Number,Error,setTimeout,clearTimeout});
+(async()=>{
+ assert.throws(()=>window.oneConnectRewardLifecycle.create({loadTimeoutMs:100,gate:{pause(){}}}),/pause and resume/);
+ assert.throws(()=>window.oneConnectRewardLifecycle.create({loadTimeoutMs:100,gate:{resume(){}}}),/pause and resume/);
+ let resolveGrant,cb,grants=0,resumes=0;
+ const life=window.oneConnectRewardLifecycle.create({loadTimeoutMs:100,gate:{pause(){},resume(){resumes++}},grant(){grants++;return new Promise(r=>{resolveGrant=r})}});
+ life.setProvider({show(c){cb=c;c.earned({verified:true});c.earned({verified:true});c.closed()}});
+ let finished=false;const pending=life.request('a').then(x=>{finished=true;return x});await Promise.resolve();
+ assert.equal(finished,false);assert.equal(resumes,0);assert.equal(grants,1);assert.equal((await life.request('b')).status,'busy');
+ resolveGrant(true);assert.equal((await pending).status,'rewarded');assert.equal(resumes,1);assert.equal((await life.request('a')).status,'already_claimed');
+ let rejectGrant;const failed=window.oneConnectRewardLifecycle.create({loadTimeoutMs:100,grant(){return new Promise((_,r)=>{rejectGrant=r})}});
+ failed.setProvider({show(c){c.earned({verified:true});c.closed()}});const next=failed.request('c');rejectGrant(Error('storage failed'));
+ assert.equal((await next).status,'closed');assert.equal(failed.state().busy,false);cb.earned({verified:true});assert.equal(grants,1);
+ let late,release=0,calls=0;const stalled=window.oneConnectRewardLifecycle.create({loadTimeoutMs:100,grantTimeoutMs:10,gate:{pause(){},resume(){release++}},grant(){calls++;return new Promise(r=>{late=r})}});
+ stalled.setProvider({show(c){c.earned({verified:true});c.closed()}});
+ assert.equal((await stalled.request('pending-id')).status,'grant_pending');assert.equal(release,1);assert.equal(stalled.state().busy,false);
+ assert.equal((await stalled.request('pending-id')).status,'grant_pending');assert.equal(calls,1,'unsettled transaction is not retried');
+ assert.equal((await stalled.request('new-id')).status,'grant_pending');assert.equal(calls,1,'a new claim must not bypass an unsettled transaction');
+ late(true);await Promise.resolve();assert.equal((await stalled.request('pending-id')).status,'already_claimed');assert.equal(calls,1);
+ console.log('async reward commit waits for settlement, prevents duplicate grant and releases gate PASS');
+})().catch(e=>{console.error(e);process.exitCode=1});

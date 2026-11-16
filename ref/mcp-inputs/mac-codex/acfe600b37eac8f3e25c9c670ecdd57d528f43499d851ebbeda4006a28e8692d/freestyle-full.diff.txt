@@ -1,0 +1,17 @@
+--- before-98cdce5f.js
++++ after-49f30646.js
+@@ -3325,10 +3325,12 @@
+       var matches = _carromFreestyleHistory.filter(function (entry) {
+         return entry.actor === actor && entry.round === _carromRoundId;
+       });
+-      if ((actor !== 'player' && actor !== 'opponent') || matches.length !== 1) return false;
++      if ((actor !== 'player' && actor !== 'opponent') || !matches.length) return false;
+       var entry = matches[0];
+       var score = actor === 'player' ? _0x4d3bf1 : _0x41f634;
+-      if ((entry.type !== 1 && entry.type !== 2) || !Number.isFinite(entry.points) || entry.points <= 0 || score !== entry.points) return false;
++      if ((entry.type !== 1 && entry.type !== 2) || !Number.isFinite(entry.points) || entry.points <= 0 ||
++          !matches.every(function (item) { return item.type === entry.type && item.points === entry.points; }) ||
++          score !== entry.points * matches.length) return false;
+       var round = _carromRoundId, returned = false;
+       var disc = new _0x54e9a5(entry.type, _0x3e9ee1);
+       disc.removeFromWorld();

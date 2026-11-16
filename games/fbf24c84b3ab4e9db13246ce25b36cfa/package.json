@@ -1,0 +1,15 @@
+{
+  "name": "star-collection",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/rules.test.mjs",
+    "check": "node scripts/check.mjs",
+    "release": "node scripts/release.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

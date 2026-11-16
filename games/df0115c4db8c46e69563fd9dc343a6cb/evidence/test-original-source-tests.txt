@@ -1,0 +1,88 @@
+TAP version 13
+# Subtest: R01：两袋各七类，预览与生成一致
+ok 1 - R01：两袋各七类，预览与生成一致
+  ---
+  duration_ms: 4.853592
+  type: 'test'
+  ...
+# Subtest: R02/R03：自然重力、长帧钳制、墙与固化碰撞
+ok 2 - R02/R03：自然重力、长帧钳制、墙与固化碰撞
+  ---
+  duration_ms: 0.615874
+  type: 'test'
+  ...
+# Subtest: R04：T左墙踢墙与全部候选失败事务
+ok 3 - R04：T左墙踢墙与全部候选失败事务
+  ---
+  duration_ms: 0.639164
+  type: 'test'
+  ...
+# Subtest: R05：I专用踢墙与地板，O无变化
+ok 4 - R05：I专用踢墙与地板，O无变化
+  ---
+  duration_ms: 0.296193
+  type: 'test'
+  ...
+# Subtest: R06：硬降与虚影一致，仅固化4格；零距离也锁定
+ok 5 - R06：硬降与虚影一致，仅固化4格；零距离也锁定
+  ---
+  duration_ms: 0.318052
+  type: 'test'
+  ...
+# Subtest: R07：软降三格独立计分，接地500ms锁定
+ok 6 - R07：软降三格独立计分，接地500ms锁定
+  ---
+  duration_ms: 0.200228
+  type: 'test'
+  ...
+# Subtest: R08：锁定重置最多15次，失败与暂停不续命
+ok 7 - R08：锁定重置最多15次，失败与暂停不续命
+  ---
+  duration_ms: 0.33823
+  type: 'test'
+  ...
+# Subtest: R09：O单消压缩与奖励一次
+ok 8 - R09：O单消压缩与奖励一次
+  ---
+  duration_ms: 0.23241
+  type: 'test'
+  ...
+# Subtest: R10/R11：双/三/四消，旧等级计分后升级
+ok 9 - R10/R11：双/三/四消，旧等级计分后升级
+  ---
+  duration_ms: 0.868767
+  type: 'test'
+  ...
+# Subtest: R12：隐藏残留结束，清行救回隐藏格，出生重叠
+ok 10 - R12：隐藏残留结束，清行救回隐藏格，出生重叠
+  ---
+  duration_ms: 0.530571
+  type: 'test'
+  ...
+# Subtest: R13：清行暂停冻结，重开无旧动画结算
+ok 11 - R13：清行暂停冻结，重开无旧动画结算
+  ---
+  duration_ms: 0.235392
+  type: 'test'
+  ...
+# Subtest: R14：损坏/负数/未知版本、写失败持续、成功清除
+ok 12 - R14：损坏/负数/未知版本、写失败持续、成功清除
+  ---
+  duration_ms: 0.267436
+  type: 'test'
+  ...
+# Subtest: 不变量：随机合法动作，非负分数、4格活动块、无重叠与等级一致
+ok 13 - 不变量：随机合法动作，非负分数、4格活动块、无重叠与等级一致
+  ---
+  duration_ms: 25.489627
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 97.567839

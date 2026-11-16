@@ -1,5 +1,12 @@
-# Vue 3 + Vite
+# 游戏研发工作台前端
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+使用 Vue 3 与 Vite，通过 `/api` 访问当前 FastAPI 后端。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+登录后从首页进入全流程工作台、知识库或产出游戏。全流程覆盖原型定义、美术资源、代码与集成、
+测试验收，支持阶段确认、补充问题、自主决策及停止和继续任务。
+
+旧版独立 Agent 页面、专用 API 客户端和八阶段本地演示已移除。模型选择、知识引用和产物展示
+统一使用当前工作流接口。创建请求携带 `start_immediately: true`，由后端负责保存并启动。
+
+在本目录运行 `npm run dev` 启动开发服务，运行 `npm run build` 检查并构建生产包。
+完整启动配置见项目根目录 README。

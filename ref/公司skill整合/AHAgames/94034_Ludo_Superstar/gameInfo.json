@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "94034",
+    "apiName":  "Ludo Superstar",
+    "targetName":  "Ludo Superstar",
+    "match":  "BY_ID",
+    "bundleName":  "re_hippoo_hnyige-ludo_superstar-1.0.3.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260112/d30d7cb8efb83d3bd657eddab462cf9f.zip",
+    "bundleMd5":  "d30d7cb8efb83d3bd657eddab462cf9f",
+    "bundleSize":  5213177,
+    "updatedAt":  1768464998,
+    "gameLink":  "https://www.hnyigegame.com/Ludo_Superstar/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94034",
+    "category":  "Tabletop",
+    "rate":  8.8,
+    "gameType":  1,
+    "localFile":  "Ludo_Superstar.zip",
+    "localBytes":  5213177,
+    "verifiedAt":  "2026-10-20T11:16:07",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

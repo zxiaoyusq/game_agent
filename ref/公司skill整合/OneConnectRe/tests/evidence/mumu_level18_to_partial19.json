@@ -1,0 +1,17 @@
+{
+  "scope": "isolated test storage starts at level 18; solver-guided ADB taps; level 19 partial",
+  "runs": [
+    {
+      "level": 18,
+      "tiles": 42,
+      "seed": 4264942676,
+      "movement": "static"
+    }
+  ],
+  "end": {
+    "level": 19,
+    "progress": 19,
+    "tiles": 42,
+    "errors": []
+  }
+}

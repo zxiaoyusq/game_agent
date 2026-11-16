@@ -1,0 +1,659 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>One Connect 迭代接口手册</title><style>body{margin:0;background:#10182b;color:#eaf0ff;font:16px/1.75 system-ui}header,main{max-width:1250px;margin:auto;padding:24px}header p{color:#c1cde2}nav{position:sticky;top:0;z-index:1;background:#1d2a44;padding:12px;display:flex;gap:18px;flex-wrap:wrap}a{color:#9cd6ff}section{scroll-margin-top:70px;background:#1b2740;border-radius:12px;padding:25px;margin:18px 0;overflow:auto}h1{font-size:26px}h2{font-size:21px;border-bottom:1px solid #53627c;padding-bottom:8px}table{width:100%;border-collapse:collapse}th,td{border:1px solid #50617e;text-align:left;vertical-align:top;padding:8px}th{background:#293b59}code{background:#101b30;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}pre{background:#101b30;padding:15px;overflow:auto}pre code{padding:0}blockquote{border-left:4px solid #79bdf3;padding-left:16px}strong{color:#fff}li{margin:5px 0}</style></head><body><header><h1>One Connect 迭代接口手册</h1><p>广告、美术、关卡、埋点及构建回归的实际入口和操作说明。手册由项目内 Markdown 文档生成。</p></header><nav><a href="#section0">总览</a><a href="#section1">广告与宿主</a><a href="#section2">美术与 UI</a><a href="#section3">关卡</a><a href="#section4">埋点</a><a href="#section5">构建与回归</a><a href="#section6">SDK 模板</a><a href="#section7">激励广告</a><a href="#section8">竞品关卡参考</a></nav><main><section id="section0"><h1>One Connect 迭代接口总览</h1>
+<p>工作目录：<code>E:\codex_apk_work\AHA游戏开发\One_Connect_re</code>。当前开发版沿用 Construct 2 导出运行时；本手册由项目 Markdown 生成，具体进度和证据以 <code>分析报告/One_Connect_DSH结果驱动开发计划.md</code> 为准。</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>说明</th>
+<th>实际入口与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>广告与宿主</td>
+<td><a href="#section1">01 广告与宿主接口</a></td>
+<td><code>game/host-adapter.js</code>、<code>game/ad-policy.js</code>；可显式注入插屏提供者，本地模拟不证明真实广告展示</td>
+</tr>
+<tr>
+<td>激励广告</td>
+<td><a href="#section7">07 激励广告生命周期</a></td>
+<td><code>game/reward-lifecycle.js</code>；已验证本地模拟，真实 SDK、业务入口和持久奖励未接通</td>
+</tr>
+<tr>
+<td>CombiMons 模板</td>
+<td><a href="#section6">06 SDK 模板接入说明</a></td>
+<td>有模板拆解与本地模拟方案；平台参数、真实协议和验收尚待确认</td>
+</tr>
+<tr>
+<td>美术与 UI</td>
+<td><a href="#section2">02 美术资源替换</a></td>
+<td><code>game/images/</code>、<code>game/media/</code>；保留原版连线及消除特效图集，替换前对照图集及运行效果</td>
+</tr>
+<tr>
+<td>关卡</td>
+<td><a href="#section3">03 关卡配置与编辑</a></td>
+<td><code>关卡编辑.html</code>、<code>config/levels.json</code>、<code>应用关卡配置.cmd</code>；当前配置 1–12 关，后续未配置部分使用原版回退</td>
+</tr>
+<tr>
+<td>埋点</td>
+<td><a href="#section4">04 本地埋点与事件</a></td>
+<td><code>game/host-adapter.js</code>、<code>game/event-hooks.js</code>、开发预览事件面板；没有真实上报服务</td>
+</tr>
+<tr>
+<td>构建与回归</td>
+<td><a href="#section5">05 构建运行与回归</a></td>
+<td><code>启动开发预览.cmd</code>、<code>tools/build_game_package.py</code>、<code>tests/</code>；MuMu 验证不等于 AHA 容器或真机验收</td>
+</tr>
+<tr>
+<td>竞品关卡参考</td>
+<td><a href="#section8">06 Tile Connect 关卡拆解参考</a></td>
+<td>区分静态配置、实际操作与未确认规则，不将竞品 Unity 数据当成本项目可执行代码</td>
+</tr>
+</tbody>
+</table>
+<h2>快速操作</h2>
+<ol>
+<li>双击 <code>启动开发预览.cmd</code>，运行开发版并查看本地事件；关闭服务窗口会停止预览。</li>
+<li>打开 <code>关卡编辑.html</code>，导入 <code>config/levels.json</code>，修改并检查；下载后备份旧配置，保存为该路径，运行 <code>应用关卡配置.cmd</code>，重启预览并实玩验证。</li>
+<li>美术修改在开发副本进行，先备份并核对图集尺寸、透明通道、帧映射和特效保留要求；原始 ZIP、原解包及 <code>baseline/</code> 保持只读。</li>
+<li>平台 SDK、广告位、回调及事件上报由目标平台确定后接入；不要把本地模拟或 <code>ad.returned</code> 当作真实展示或奖励。</li>
+</ol>
+<p><code>game/data.js</code>、<code>game/level-config.js</code> 是编译输出；重新应用配置会基于 <code>baseline/data.js</code> 生成，不应手工维护。当前稳定对局快照和最高进度分别存储；异常终止可能回退到最近的稳定快照。第十关多方向与第十三关炸弹尚未按竞品规则完成，AHA 容器及真实广告也未验收。</p></section><section id="section1"><h1>01 广告与宿主接口</h1>
+<h2>实际文件和调用路径</h2>
+<p>开发版启动 <code>game\game.html</code>，载入 <code>game\host-adapter.js</code>，再通过原有加载链运行 <code>game\custom.js</code>。<code>custom.js</code> 当前在 <code>EVENT_LEVELSUCCESS</code> 和 <code>EVENT_LEVELFAIL</code> 中分别调用 <code>window.oneConnectHost.showInterstitialFor("win")</code> 与 <code>showInterstitialFor("fail")</code>，策略允许时再调用 <code>showAd("Interstitial")</code>；加载完成时调用 <code>window.oneConnectHost.loadingCompleted()</code>。胜负及分数仍交给原有 <code>GAMESNACKS</code> 调用链，接新平台时应一并核查。</p>
+<p><code>host-adapter.js</code> 默认尝试读取 <code>window.top.h5_sdk</code>，要求可以访问父页面对象；也可以通过 <code>oneConnectHost.setAdProvider(provider)</code> 显式注入仅用于广告的提供者，传 <code>null</code> 恢复默认查找。加载完成通知仍走原宿主查找。可用的方法是：</p>
+<table>
+<thead>
+<tr>
+<th>宿主对象方法</th>
+<th>参数</th>
+<th>当前调用时机</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>showGameLoadingCompleted()</code></td>
+<td>无</td>
+<td>原有加载完成通知</td>
+<td>方法缺失或抛错时记录事件，游戏继续</td>
+</tr>
+<tr>
+<td><code>showAd(kind)</code></td>
+<td>目前原游戏调用 <code>"Interstitial"</code></td>
+<td>原有成功或失败事件</td>
+<td>返回值可为普通值或 Promise；适配层捕获同步抛错及 Promise 拒绝</td>
+</tr>
+</tbody>
+</table>
+<p><code>oneConnectHost.showAd</code> 返回 Promise，结果 <code>status</code> 当前为 <code>unavailable</code>、<code>returned</code> 或 <code>error</code>。<code>returned</code> 只说明宿主方法正常返回或 Promise 成功完成，<strong>不证明广告被填充、展示或关闭</strong>。适配层内部记录 <code>ad.request</code>、<code>ad.unavailable</code>、<code>ad.returned</code>、<code>ad.error</code>。<code>custom.js</code> 调用时没有等待这个 Promise，因此当前广告不会通过此 Promise 阻塞游戏流程。</p>
+<h2>如何接入替换</h2>
+<ol>
+<li>由目标宿主提供可访问的 <code>top.h5_sdk</code>，或在具备访问权限的游戏上下文中显式调用 <code>oneConnectHost.setAdProvider({showAd(kind){ /* 平台适配 */ }})</code>；传 <code>null</code> 恢复默认。跨域父页面可能无法直接读取；须按目标平台实现通信，不要假设已支持。</li>
+<li>把目标平台 SDK 初始化、广告位和参数放在宿主/provider 内，游戏只经适配层调用；检查 <code>game\custom.js</code> 中的 <code>GAMESNACKS</code> 调用是否也要按目标平台迁移。</li>
+<li>在 <code>开发预览.html</code> 选择不可用、接口返回、接口报错或异步失败进行本地流程检查。这个模拟不展示真实广告，也不发放奖励。</li>
+<li>获得真实 SDK、广告位、回调契约及平台测试环境后，另行实现广告关闭、暂停恢复、失败处理及需要的变现策略，并在目标宿主验证。</li>
+</ol>
+<p>当前有本地模拟的激励生命周期组件（见 <code>07_激励广告生命周期.md</code>），但没有接好的真实激励广告、持久奖励发放或跨会话去重；可通过 <code>game\ad-policy.js</code> 控制会话内插屏请求频率。不要把 <code>ad.returned</code> 当成展示成功或奖励凭据。</p>
+<h2>调整触发点</h2>
+<p>当前两处触发点在 <code>game\custom.js</code> 的 <code>EVENT_LEVELSUCCESS</code>、<code>EVENT_LEVELFAIL</code> 分支。更改前应先确认实际事件顺序以及目标宿主要求；改动后分别验证胜利、失败、未填充、异常及关闭后的流程。此文件为压缩形式，修改时应保留备份，避免整段误替换。</p>
+<h2>验证与回滚</h2>
+<p>本地运行 <code>tests\host-adapter.test.cjs</code>、<code>tests\ad-outcomes.test.cjs</code> 可检查接口不可用、抛错、Promise 拒绝及返回；<code>tests\panel-ad-failure.cjs</code> 是浏览器中超时结算后返回菜单的模拟验证。依赖和服务器启动方法见第 05 篇。真实展示、关闭、暂停、失败、回调时序及平台后台结果仍需目标 SDK 环境实测。回滚时恢复修改前的 <code>game\host-adapter.js</code> 与 <code>game\custom.js</code> 备份，并重跑流程；<code>baseline\custom.js</code> 可用于核对原始行为，但直接覆盖会恢复裸页面缺少宿主时报错的状态。</p>
+<h2>插屏请求策略</h2>
+<p>编辑 <code>game\ad-policy.js</code>：<code>winEvery</code> 为每 N 次胜利允许一次请求（默认 1），<code>showOnFailure</code> 控制失败是否请求（默认 true），<code>minIntervalSeconds</code> 是发送给可用宿主的两次请求之间的最短秒数（默认 0）。默认保持现有胜败触发方式。示例：<code>winEvery: 3, showOnFailure: false, minIntervalSeconds: 45</code> 表示每第三次胜利且距离上次请求至少 45 秒时请求，失败不请求。</p>
+<p>该策略仅在当前页面会话内计数，刷新重置；记录的是请求时间，不是广告实际展示时间，SDK 返回不证明播放。跳过时记录 <code>ad.policy_skip</code> 及原因，游戏继续。平台可能有自身频控；正式参数和跨会话策略需要另行确认。无宿主时不记录请求间隔；SDK 调用抛错也计作已发送请求。该策略不控制父页面前贴片或 Banner，未实现激励和真实广告回调。</p>
+<h2>包装页 Service Worker 现象（2026-10-29）</h2>
+<p>浏览器从 <code>game/index.html</code> 启动时，外部 <code>adsdk_1.8.0.0.js</code> 注册相对路径 <code>./sw_transsion.js</code>，本地不存在该文件，出现 404。拦截该外部 SDK 的对照中主菜单加载且未出现此错误。未添加空 Service Worker；是否需要原脚本、缓存行为和真实宿主广告，须按平台提供的接入资料验证。该对照不证明广告或离线功能可用。</p>
+<h2>显式提供者的受控流程验证</h2>
+<p>浏览器和 MuMu 独立副本使用仅测试用的 2 秒关卡，实际等待失败结算后，由游戏胜败事件触发显式注入的本地 <code>showAd("Interstitial")</code> 模拟。<code>ad.returned</code> 仅代表模拟方法返回；未播放真实广告。默认不注入提供者，原宿主查找保持不变；切换提供者也不修改加载完成通知。真实 SDK、跨域通信、播放/关闭及平台参数仍需平台提供并验证。测试 <code>tests/ad-provider-injection.test.cjs</code> 和 <code>tests/ad-provider-failure-browser.cjs</code>。</p>
+<ul>
+<li>浏览器与 MuMu 独立副本进一步验证：两张牌测试关卡自然清盘、点击结算后触发插屏请求；提供者分别正常返回、拒绝或永不回调时，三种情况均进入下一关。2 秒测试关卡自然超时失败时，同样三种模拟均可返回首页。测试脚本及结果位于 <code>tests/ad-provider-win-browser.cjs</code>、<code>tests/ad-provider-failure-browser.cjs</code>、<code>tests/android_preview/ad_provider_*_mock_20261031.cjs</code>、<code>tests/evidence/mumu_ad_provider_*_mock_20261031.json</code>；MuMu 脚本需独立 <code>analysis/ad_provider_win_candidate/game</code> 与 <code>analysis/ad_provider_candidate/game</code> 候选及对应测试配置。这里的永不回调证明当前游戏不等待 Promise 才继续，不证明真实广告遮罩、暂停归属或 SDK 资源释放正常。</li>
+</ul></section><section id="section2"><h1>02 美术资源替换</h1>
+<h2>文件位置与查看</h2>
+<ul>
+<li>开发版图片：<code>E:\codex_apk_work\AHA游戏开发\One_Connect_re\game\images\</code></li>
+<li>开发版音频：<code>E:\codex_apk_work\AHA游戏开发\One_Connect_re\game\media\</code></li>
+<li>原始对照：同目录 <code>baseline\images\</code>、<code>baseline\media\</code>，只读。</li>
+<li>视觉参考：项目根目录 <code>原版截图与资源.html</code> 展示原版；本轮换皮结果及运行证据见 <code>美术换皮准备\20261029_四主题换皮\换皮总览.html</code>，逐文件原版与当前图见同目录 <code>资源逐项对照.html</code>。</li>
+<li>逐帧拆解与模型：<code>E:\codex_apk_work\Ahagames\77413_One_Connect\extract\asset_manifest.csv</code>、<code>extract\assets_out\</code>、<code>extract\c2_project_model.json</code>。以上是已有拆解，只读。</li>
+</ul>
+<h2>常用资源映射</h2>
+<p>开发版已把 45 张图集改为 WebP；运行时引用以 <code>game/asset-formats.json</code> 为准。压缩前 PNG 母版在 <code>backups/webp_integration_20261030/images/</code>；重新换皮应先编辑母版，再重新生成、验收 WebP 并更新映射，不能把 PNG 字节直接写到 WebP 文件名中。<code>popfx</code>、<code>dots</code>、<code>line</code> 特效继续使用原版 PNG。</p>
+<table>
+<thead>
+<tr>
+<th>用途</th>
+<th>开发版相对路径</th>
+<th>已确认信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>玩法牌：动物、甜点、水果三主题</td>
+<td><code>images\tiles-sheet0.webp</code>、<code>tiles-sheet1.webp</code>、<code>tiles-sheet2.webp</code></td>
+<td>每张 512×512；对象 <code>t5</code> 三组各 30 帧、单帧 96×96。前 20 帧保持原主题。三主题跨图集页：t0 20 帧在 sheet0；t1 前 5 帧在 sheet0、后 15 帧在 sheet1；t2 前 10 帧在 sheet1、后 10 帧在 sheet2。关卡牌型 1–20 对应各动画的帧序号 0–19；前 20 帧坐标见 <code>美术换皮准备/20261029_四主题换皮/原版牌帧坐标.csv</code>；编号 21–30 使用 <code>images/tiles-reserve-test.png</code>，三主题共用已通过的斋月备用前 10 张，5 列 × 2 行、间隔 2 像素，起点 (1,1)。当前正式关卡尚未使用新增编号。</td>
+</tr>
+<tr>
+<td>菜单标题</td>
+<td><code>images\title-sheet0.webp</code></td>
+<td>1024×1024 RGBA，原数据定义标题帧及图片挂点；已在独立实验中验证替换后画面变化</td>
+</tr>
+<tr>
+<td>开始按钮</td>
+<td><code>images\startbutton-sheet0.webp</code></td>
+<td>248×247 RGBA；位置调整曾在实验副本验证显示与点击</td>
+</tr>
+<tr>
+<td>主题选择</td>
+<td><code>images\themebutton-sheet0.webp</code> 至 <code>sheet2.png</code></td>
+<td>三张状态/主题资源，具体帧与触控需随修改回归</td>
+</tr>
+<tr>
+<td>暂停、暂停按钮</td>
+<td><code>images\pause-sheet0.webp</code>、<code>pausebuttons-sheet0.webp</code> 至 <code>sheet2.png</code></td>
+<td>分别为暂停入口及菜单按钮资源</td>
+</tr>
+<tr>
+<td>局内图标</td>
+<td><code>images\gamebuttons-sheet0.webp</code>、<code>gamebuttons-sheet1.webp</code>、<code>uisymbols-sheet0.webp</code></td>
+<td>包含局内按钮和 UI 符号，按运行画面及帧数据核对具体用途</td>
+</tr>
+<tr>
+<td>结算弹窗</td>
+<td><code>images\popup-sheet0.webp</code>、<code>homebutton-sheet0.webp</code></td>
+<td>弹窗数据含 <code>best</code>、<code>score</code>、<code>level</code>、<code>home</code> 挂点，改动须核对文字与按钮</td>
+</tr>
+<tr>
+<td>位图字体</td>
+<td><code>images\gamefont.webp</code>、<code>menufont.webp</code></td>
+<td>分别为 256×32、64×256 RGBA；字符表与间距须结合运行配置核对</td>
+</tr>
+<tr>
+<td>棋盘及背景候选</td>
+<td><code>images\gametilebg.png</code>、<code>tileempty.webp</code>、<code>gradient-sheet0.webp</code>、<code>sunray-sheet0.webp</code> 等</td>
+<td>用途依据文件和静态数据归类，修改前须对照运行画面确认</td>
+</tr>
+<tr>
+<td>失败/洗牌/奖励及特效</td>
+<td><code>images\timesup-sheet0.webp</code>、<code>autoshuffle-sheet0.webp</code>、<code>bonus*.png</code>、<code>popfx*.png</code> 等</td>
+<td>图集页可能包含多个状态；需检查对应触发流程</td>
+</tr>
+</tbody>
+</table>
+<h2>对齐 H5 换皮流程：当前接口还缺什么</h2>
+<p>本节依据本机共享维护源 <code>D:\skills\game-reverse-engineering\modules\h5-canvas-reskin\SKILL.md</code> 及其 <code>references\component-restoration.md</code>、<code>pipeline.md</code> 整理。该模块的纯美术约束适用于“只换美术”的任务；本项目已获授权修改代码、UI 和配置，应将这些变化及影响单列，不能误判为禁止修改。</p>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>当前已有</th>
+<th>仍需补充 / 接口要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全量轻索引</td>
+<td>原始 <code>extract\asset_manifest.csv</code>、资源预览、<code>c2_project_model.json</code></td>
+<td>现有清单不等于换皮映射；需要记录资源到图集页/帧、界面/状态、共享母版、保留或待替换，并标注已证实、推断和未知。只对当前替换且装配不明或高风险的资源深查，不强制全库逐像素定位</td>
+</tr>
+<tr>
+<td>参考与风格</td>
+<td>原版截图资源页</td>
+<td>确定用户选择的目标图、对应页面局部、结构约束和内容不变项；缺参考或被遮挡项标注“缺参考/母版推导”。本轮牌面和 UI 风格已有用户确认参考；最终逐项视觉及设备验收仍在进行</td>
+</tr>
+<tr>
+<td>资源契约</td>
+<td>原图、<code>data.js</code> 帧信息和部分静态映射</td>
+<td>每个目标记录真实容器/magic bytes、文件名、图集页及帧、尺寸、透明语义、锚点/挂点、旋转、裁切、拉伸/九宫格和状态。仅有实证遮罩、轮廓或用户要求时锁旧 alpha；不能把 alpha 完全一致当作视觉通过</td>
+</tr>
+<tr>
+<td>批量回填</td>
+<td>可手动将图片替换进 <code>game\images\</code></td>
+<td>尚无本项目验证过的统一 skin-map 回填器；本轮已有备份清单与针对该清单的回滚工具。后续需使用有备份的有效候选清单，避免历史/拒绝候选混入。拼图集整块复制 RGBA，不用图片自身 alpha 再做 mask；核对未修改区域与透明边缘</td>
+</tr>
+<tr>
+<td>生产与验收</td>
+<td>本轮三主题图集及主要 UI 已接入，并有浏览器和模拟器预览证据</td>
+<td>先做少量代表屏和样本供确认，再按用户授权同族批量、集中回填与同状态全屏对照；分别记录技术契约、素材视觉、整屏装配、自然交互四项结论，不能互相替代</td>
+</tr>
+<tr>
+<td>特殊资源</td>
+<td>文件名和资源预览提供线索</td>
+<td>背景若为分段/平铺，先查真实拼接顺序、滚动与裁切，保留用户要求的道路/地形等结构，检查接缝和大区域重复或幽灵；玩法对象保持功能辨识度；特效按实际混合和透明契约处理。当前项目这些用途仍需逐项确认，不按文件名断言</td>
+</tr>
+<tr>
+<td>停摆诊断</td>
+<td>开发预览含运行时 FPS、对象数、逻辑耗时及本地事件</td>
+<td>用户报告无响应时区分画面停摆、状态停摆和输入锁定；复现原路径并查输入闸门，不以 FPS 正常或像素差单独判通过</td>
+</tr>
+</tbody>
+</table>
+<h3>最小替换清单接口（模板，非自动化工具）</h3>
+<p>项目新增 <code>config\art-replacement-template.csv</code>，可复制为本批工作清单。每行建议记录 <code>asset_path</code>、<code>atlas_frame</code>、<code>screen_state</code>、<code>source_evidence</code>、<code>category</code>、<code>technical_contract</code>、<code>target_reference</code>、<code>candidate_path</code>、<code>disposition</code>、<code>technical_qa</code>、<code>visual_qa</code>、<code>runtime_qa</code>、<code>evidence</code>。模板中的示例只表示已定位标题资源，<strong>未表示换皮通过</strong>；字段不驱动现有游戏或自动回填。</p>
+<p>分类按实证选填：拼接/平铺、引用缺失、结构约束、可重绘、保留、待确认。空引用、字体、程序绘制及状态变体应独立登记；文件存在不代表被使用，引用存在也不代表资源完整。目标/原版/候选的参考角色分别注明，不把用户禁止用于生图的原版图送入生成工具。</p>
+<h3>对照与验收的证据入口</h3>
+<ul>
+<li>原版：<code>baseline\</code> 和 <code>原版截图与资源.html</code>；目标图由用户决定；新运行图及最终资源保存在项目内另建的批次目录并写明真实路径。现有 <code>screenshots\</code> 只含已有实验和运行证据，不是整套换皮通过证据。</li>
+<li>每批按<strong>同一界面、同一状态和实际显示尺寸</strong>对照原版/目标/开发版。记录来源（桌面 H5、模拟器、真机或宿主）、关卡、触发步骤；调试调起只作诊断，不冒充自然解锁。</li>
+<li>先比较整屏层级、玩法对象辨识、布局和状态，再检查高风险帧、透明边缘、帧完整性及必要的真实拼接接缝。按共同原因集中返修；已认可候选和用户明确保留的内容不擅自替换。</li>
+<li>涉及截图/图片被内嵌到 HTML 时，在替换资源后同步重新生成对应 HTML 并检查最终引用；<code>原版截图与资源.html</code> 是原版基线，不应自动覆盖为新皮肤。本轮新旧对照见 <code>美术换皮准备\20261029_四主题换皮\资源逐项对照.html</code>。</li>
+</ul>
+<h2>如何替换</h2>
+<ol>
+<li>选定目标文件，先复制 <code>game\images\目标文件</code> 到另一个备份目录；对照 <code>baseline\images\目标文件</code>、资源预览和 <code>game\data.js</code> 中的帧信息确认用途。</li>
+<li>新图放回 <code>game\images\</code>，保持目标文件名和当前图集页尺寸；保留运行时引用的帧矩形、透明语义、帧顺序与挂点。对于被直接使用的独立图，同样核对尺寸和透明边缘。布局和图集坐标可以按项目要求修改，但需同步调整数据并复测，不是当前已提供的可视化 UI 编辑能力。</li>
+<li>重启 <code>启动开发预览.cmd</code> 并刷新，检查菜单、三主题、对局、暂停、失败、奖励和过关中受影响的状态，以及按钮实际点击区域。更换字体时核对所有使用字符、数字、冒号、间距与裁切。</li>
+<li>比较显示尺寸、清晰度、透明边缘与帧排列。需要改 <code>game\data.js</code> 时注意关卡编译器会覆盖它：先将数据修改纳入可重现的构建流程，再重新应用关卡配置，不能只手改生成文件。</li>
+</ol>
+<p><code>game\media\</code> 中保留原音频；替换时保留实际引用的文件名与格式，检查浏览器解码和播放时机。不同格式变体是否需要由目标环境决定，当前只确认包内存在原 OGG 文件。</p>
+<h2>UI 布局改动的程序入口</h2>
+<p>当前没有可视化 UI 布局编辑器。实际布局及实例在 <code>game\data.js</code> 的 Construct 2 导出数据中，布局入口是 <code>project[5]</code>；已验证示例为菜单层的 <code>t18</code> 开始按钮实例（实例编号 23），横坐标从 640 调至 720 后显示和点击均生效。原始结构参见 <code>E:\codex_apk_work\Ahagames\77413_One_Connect\docs\02_C2工程结构.md</code>，该示例脚本在 <code>setup_experiment.py</code>，其输出仅属于 <code>experiment\</code>。</p>
+<p>正式开发时不要直接长期维护 <code>game\data.js</code>：关卡编译会从基线重新生成它。由程序先确认对象、坐标、锚点与点击区域，再把布局调整加入可重现的构建步骤，并在应用关卡配置后逐屏回归。此构建步骤目前尚未提供，不能假称 UI 已可配置化。</p>
+<h2>回滚与状态</h2>
+<p>恢复备份文件，或以只读 <code>baseline</code> 的对应资源复制回 <code>game</code> 后重启预览；运行时逐屏确认。本轮三套游戏牌面及主要 UI 已接入，第四主题作为备用未接入；浏览器和 Android 模拟器 WebView 已做部分验证，AHA 与真实手机尚未验收。资源分类是工作入口，不代表每个图集帧的业务语义均已验证。</p>
+<h2>本轮资源与证据索引</h2>
+<ul>
+<li>当前工程：<code>game\images\</code>；本轮接入、备份文件及哈希以 <code>backups\art_integration_20261029_211523\integration_manifest.json</code> 为准。</li>
+<li>项目内汇报：<code>美术换皮准备\20261029_四主题换皮\换皮总览.html</code>；原版与当前文件对照：同目录 <code>资源逐项对照.html</code>。</li>
+<li>牌面图集的原始帧坐标：同目录 <code>原版牌帧坐标.csv</code>；三主题逐帧新旧对照也在总览页中。</li>
+<li>第四主题 20 张用户已确认通过，后续新增内容需要图标时优先使用；当前仍作为备用：<code>美术换皮准备\20261029_四主题换皮\斋月_三处修正版_96px\</code>，清单为同目录 <code>斋月_备用切片清单.json</code>。不能只复制图片就假定新主题已具备加载与关卡支持。</li>
+<li><code>素材清单_当前对照.json</code> 记录的是独立验证副本与基线的历史对照，不是开发工程当前状态的权威清单；当前文件状态以 <code>全范围视觉资源清单.json</code> 和实际文件为准。</li>
+<li>回滚工具仅覆盖本轮接入清单，并非通用图集回填器；后续单张返修需更新当前哈希及回滚方案，不能盲目覆盖历史备份。</li>
+</ul>
+<h2>本次换皮的安全回滚</h2>
+<p><code>tools\rollback_art.py</code> 读取 <code>backups\art_integration_20261029_211523\integration_manifest.json</code>。默认仅检查当前文件和备份哈希，不修改项目：</p>
+<pre><code class="language-powershell">&amp; 'C:\Program Files\Python312\python.exe' -X utf8 tools\rollback_art.py --game-dir game --backup-dir backups\art_integration_20261029_211523
+</code></pre>
+<p>需要实际恢复时，指定一个全新且位于游戏目录和备份目录之外的快照目录，再加 <code>--execute</code>：</p>
+<pre><code class="language-powershell">&amp; 'C:\Program Files\Python312\python.exe' -X utf8 tools\rollback_art.py --game-dir game --backup-dir backups\art_integration_20261029_211523 --snapshot-dir backups\art_before_restore_example --execute
+</code></pre>
+<p>执行前会核对全部条目；若当前文件已在接入后修改，或备份缺失/不匹配，拒绝操作。通过后先完整保存当前文件快照，再逐项恢复原文件、移除本次新增文件。该工具只覆盖清单中的游戏文件，不回滚 <code>开发预览.html</code>、配置、文档或第四主题素材；预览页旧版在同一备份目录的 <code>开发预览.html</code>。若恢复过程中发生 I/O 错误，应停止并使用快照核对，不保证整个操作的跨文件原子性。实游戏仅执行过检查；执行和冲突拒绝已在独立夹具验证。</p>
+<h2>后续新增界面与动效方法（用户确认）</h2>
+<p>后续重心为新关卡设计、新手引导及新增系统 UI；新增界面沿用当前已基本通过的柔和圆润立体 UI 风格。新增内容需要图标时，优先使用已通过的斋月备用图标。</p>
+<p>新增 UI 动画先对照竞品拆出的实际动画写法，复现可确认的位移、缩放、缓动、时长、延迟和层级；缺失参数标记待确认。新增粒子优先复用竞品拆出的粒子贴图，按目标效果重新配置发射、生命周期、混合与尺寸；新增 Spine 优先复用竞品骨骼、图集、贴图及对应动画，在目标运行时确认版本兼容后接入。逐项记录素材来源、引用、参数和运行验证。</p>
+<p>程序生成算法、关卡编辑和外围系统的新增，先进行整体评审，再决定实现。当前已存在的原版连线和消除动效按用户要求保留原版资源。</p></section><section id="section3"><h1>03 关卡配置与编辑</h1>
+<h2>工作入口</h2>
+<ul>
+<li><code>config/levels.json</code>：实际配置源，目前包含第 1–12 关。第 10 关的多方向落位仍是静态候选；第 11–12 关的竞品规则存在未确认项。更详细的证据见 <code>分析报告/One_Connect_DSH结果驱动开发计划.md</code>。</li>
+<li><code>关卡编辑.html</code>：导入、编辑棋盘和参数、检查样本、下载 JSON。编辑器用动物牌面显示编号，实际主题由配置决定。</li>
+<li><code>应用关卡配置.cmd</code> 或 <code>python tools/compile_levels.py</code>：从只读 <code>baseline/data.js</code> 和配置生成 <code>game/data.js</code>、<code>game/level-config.js</code>，并在存在离线缓存脚本时刷新其清单。不要直接修改生成文件。</li>
+<li><code>game/board-hooks.js</code>、<code>game/board-generator.js</code>、<code>game/gravity-generator.js</code>、<code>game/gravity-runtime.js</code>：当前 Construct 2 包的运行钩子和本项目生成/落位实现，依赖本包事件 SID，不可直接用于其他导出版本。</li>
+</ul>
+<h2>修改和验证</h2>
+<ol>
+<li>备份 <code>config/levels.json</code>，打开编辑器并导入。选择关卡或新增编号；根据需要编辑计时、主题、棋盘尺寸、固定盘或随机形状、落位和洗牌选项。</li>
+<li>固定盘用 0 表示空格、1–30 表示牌型；每种非零牌数必须为偶数。随机盘用 0/1 表示空/可用格，牌种数不超过 30 且不超过可用格数的一半；种子可选，范围 0–4294967295。固定盘和生成盘不能同时设置。</li>
+<li>使用“检查当前棋盘”。<code>solved</code> 只表示模型找到一条完整候选路径，<code>unknown</code> 是搜索预算耗尽，不能当作无解或已通过；检查不替代游戏内操作、洗牌及设备回归。</li>
+<li>下载并替换 <code>config/levels.json</code>，运行编译命令并确认成功。若编译失败，修正配置；已发布的输出有原子写入保护。重启预览，在设备上确认画面、实际点击、落位、暂停、失败、通关和进入下一关。</li>
+</ol>
+<h2>尺寸与落位</h2>
+<p><code>board</code> 和 <code>generator.mask</code> 使用内部行列；竖屏画面第 <code>r</code> 行、第 <code>c</code> 列（从 1 开始）对应内部数组 <code>[c-1][cols-r]</code>。编辑器自动转换。</p>
+<table>
+<thead>
+<tr>
+<th>配置</th>
+<th style="text-align: right;">内部行 × 列</th>
+<th style="text-align: right;">竖屏容器</th>
+<th>支持的落位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>省略 <code>boardSize</code></td>
+<td style="text-align: right;">6×12</td>
+<td style="text-align: right;">12 行 × 6 列</td>
+<td>原版、静态、向上、向下、向左、向右</td>
+</tr>
+<tr>
+<td><code>boardSize</code> 8×8</td>
+<td style="text-align: right;">8×8</td>
+<td style="text-align: right;">8 行 × 8 列</td>
+<td>静态</td>
+</tr>
+<tr>
+<td><code>boardSize</code> 8×10</td>
+<td style="text-align: right;">8×10</td>
+<td style="text-align: right;">10 行 × 8 列</td>
+<td>静态及四个单方向落位；向上、向右已用隔离样例验证</td>
+</tr>
+<tr>
+<td><code>boardSize</code> 8×12</td>
+<td style="text-align: right;">8×12</td>
+<td style="text-align: right;">12 行 × 8 列</td>
+<td>静态及四个单方向落位；独立副本验证</td>
+</tr>
+</tbody>
+</table>
+<p>8×8 预设为 <code>{"rows":8,"cols":8,"itemSize":75,"spacing":5,"offsetX":320,"offsetY":35}</code>；8×10 预设为 <code>{"rows":8,"cols":10,"itemSize":75,"spacing":5,"offsetX":240,"offsetY":35}</code>。8×12 预设为 <code>{"rows":8,"cols":12,"itemSize":65,"spacing":5,"offsetX":220,"offsetY":100}</code>。其他尺寸及 8×8 重力尚未开放。8×10 向上和向右分别用 MuMu 隔离样例完成 44 张清盘、落位对照与中途存档恢复；8×12 向上样例完成 96 张清盘与中途恢复，其余三个方向各验证一对及恢复；这些是本项目单方向规则，不代表竞品复合方向机制已还原。编辑器在已有棋盘时锁定尺寸，需先移除当前盘再切换，避免静默裁切。现有 8×8/8×10 配置继续使用原预设数值以保持存档兼容；运行时将其显示为 65 像素牌面、5 像素间距和顶部偏移 100，水平居中，避免牌与 HUD 重叠。</p>
+<p><code>movement</code> 可省略以沿用原版，或设置 <code>static</code>、<code>gravity_down</code>、<code>gravity_up</code>、<code>gravity_left</code>、<code>gravity_right</code>；使用重力时还须提供竖屏范围 <code>gravity:{top,left,rows,cols}</code>，起点从 0 开始，全部非空格需在该范围内。当前重力是本项目全列/全行压紧实现，不等于竞品未解码的多方向算法。<code>autoShuffle:"free"</code> 让无可连对时免费自动洗牌，手动洗牌仍扣次数；重试耗尽进入可恢复失败，不保证任意走法始终可解。</p>
+<p>编辑器的“回退盘死局策略”写入根字段 <code>fallbackAutoShuffle:"free"</code>，仅作用于未配置棋盘的关卡，包括仅设置时间的关卡；省略该字段则保留原版策略。当前项目显式启用此策略，覆盖第 34 关等暂时使用原版棋盘的关卡。逐关可选 <code>autoShuffle:"original"</code> 覆盖此默认值，或选 <code>"free"</code> 启用免费洗牌；自定义固定盘和生成盘不继承回退盘默认值，须逐关选择。该策略是本项目设计，不代表竞品洗牌收费规则已确认。</p>
+<p>8×10 向上、向右与免费自动洗牌的组合，已分别用 MuMu 受控死局验证落位、洗牌、牌种数量、手动库存、重新打开及下一对消除；测试入口为 <code>tests/setup-expanded-deadlock-candidates.py</code> 和 <code>tests/android_preview/expanded-8x10-deadlock-auto.cjs</code>。这是每个方向各一组构造棋盘，不能保证任意布局或随机种子都能顺利生成与清盘。</p>
+<p>8×12 向上落位与免费自动洗牌组合另以一组受控死局在 MuMu 验证相同流程；其余方向的死局组合尚未单独验证。随机生成满盘在四方向各抽查 10 个种子并重放路径，MuMu 对向上单个种子验证了加载、配对和续局，不保证所有种子生成成功。</p>
+<p><code>theme</code> 可选 0 动物、1 甜点、2 水果；<code>seconds</code> 必填 1–3600，<code>level</code> 必填且不重复。<code>timed:false</code> 用于不计时关卡，<code>boardBackground:"hidden"</code> 隐藏原版棋盘底板。省略配置的关卡沿用原版生成和 300 秒；仅配置时间而无棋盘时也沿用原版棋盘。编号 21–30 为三主题共用的斋月备用牌；第 24 关候选使用了编号 21–22。下落生成遇到随机求解耗尽时，仅对 20 种以上、沿落位方向长度为偶数的全填矩形采用相邻牌兜底，其他形状仍可能返回生成失败；应先通过棋盘检查和实际对局验证。</p>
+<h2>生成、存档和回滚</h2>
+<p>随机生成器优先搜索成对随机布局，并在预算内采用其他构造策略；生成失败会记录 <code>config.board_error</code>，阻断对局并提供返回首页，不会静默改成原版随机盘。它是本项目实现，不能称为竞品算法。新开生成盘时 <code>game.board_generated</code> 记录种子和策略；恢复存档时直接使用保存盘，不产生新的生成事件。</p>
+<p><code>game.board_configured</code> 表示配置盘已写入；未配置棋盘使用 <code>game.round_ready</code>。两者均不单独证明玩法通过。稳定对局快照分别保存牌位、时间、得分、提示和洗牌数，并检查关卡配置；失败、结算或同页面重新开局会清除旧快照。仅修改逐关自动洗牌策略时保留兼容快照；其他配置变化或快照损坏时回退新盘。首关固定教学可从最近一次稳定快照推导并恢复教学步骤，牌面不匹配教学顺序时回退新盘；第 3、5、7、10 关的单步教学在重新打开后保留稳定棋盘并重新显示未完成的引导。主动返回首页重开仍从头开始；异常终止可能回退到最近一次稳定快照。</p>
+<p>第 2 关连接引导在实际完成一次普通配对后写入本地 <code>oneconnect.tutorial2.v1=done</code>，之后重开不再显示；误触、洗牌和失败不会标记完成。存储不可用时不会阻断游戏，但不能保证下次不再显示。</p>
+<p>第 2 关引导不会因点击空白或暂停而消失；暂停期间隐藏，继续后重新显示。成功配对、洗牌或失败后结束本次提示，玩家仍可选择其他合法牌对。</p>
+<p>编辑器检查随机生成盘时，会先用独立规则模型逐步核验生成器提供的路径，包括牌面相同、连接、移动和最终清盘；通过时显示“生成路径逐步核验通过”。路径不通过则回退到有节点预算的独立搜索；预算耗尽仍显示“未知”。检查只针对显示的样本种子，不保证所有种子，也不能替代游戏实测。</p>
+<p>续局校验拒绝超出配置初始牌数的快照，以及牌落在重力范围之外的快照；这些快照回退到新盘。重力落位可以使牌离开初始图形，但只要仍在重力范围内便允许恢复，不要求恢复盘与初始图形完全相同。</p>
+<p>回退具体迭代使用 Git 或修改前备份。若要取消全部关卡覆盖，先备份配置，再将其设为 <code>{"levels":[]}</code> 并重新编译；这会改变当前开发体验，不能当作验证或发布完成。原始 ZIP 与 <code>baseline/</code> 始终保持只读。</p>
+<p>棋盘配置、生成或落位失败时，游戏会暂停并显示返回首页按钮，不会让玩家继续操作原版随机棋盘；生成失败详情通过本地 <code>config.board_error</code> 事件输出，落位失败通过 <code>config.gravity_error</code> 输出。返回后进度保留，可以调整配置后重新进入；固定种子重复失败时需修改种子或布局，而非反复重试。</p>
+<p>对超过 20 种牌的非矩形重力盘，生成器在原有四次尝试失败后，最多继续尝试至 12 次；前四次已成功的棋盘与原行为一致。多次尝试会增加少数开局的耗时，仍可能失败，失败时显示返回首页的保护界面；不能把有限样本视为所有种子可解。</p>
+<p>8×12 旧预设（75 像素、偏移 160/35）存在顶部遮挡，编译器不再接受。已有配置请先备份，再将该 <code>boardSize</code> 的 <code>itemSize</code> 改为 65、<code>offsetX</code> 改为 220、<code>offsetY</code> 改为 100，重新检查棋盘和编译；配置变更可能使进行中的旧棋盘存档失效。</p></section><section id="section4"><h1>04 本地埋点与事件</h1>
+<h2>已有入口</h2>
+<ul>
+<li>事件总线和本地缓存：<code>game\host-adapter.js</code> 的 <code>window.oneConnectHost.emit(type, detail)</code>、<code>events()</code>、<code>analytics(name, detail)</code>。</li>
+<li>玩法动作钩子：<code>game\event-hooks.js</code>，基于当前 Construct 2 导出事件 SID；固定棋盘相关事件由 <code>game\board-hooks.js</code> 发出。</li>
+<li>原版渠道事件桥接：<code>game\custom.js</code> 中 <code>famobi_analytics.trackEvent</code> 与 <code>trackScreen</code>。</li>
+<li>查看和导出：运行 <code>启动开发预览.cmd</code>，在 <code>开发预览.html</code> 右侧查看，使用“下载本次事件”导出 JSON。</li>
+</ul>
+<p>事件结构为 <code>{id, type, detail, time}</code>。<code>id</code> 是当前页面会话中的递增编号，<code>time</code> 是 ISO 时间；内存缓存最多 1000 条，刷新后清空。面板按会话从游戏读取事件并可导出，<strong>没有持久化投递、重试或后台上报</strong>。</p>
+<p>事件内容按发出时的 JSON 值保存，<code>events()</code> 返回独立副本，调用者或原始业务对象的后续修改不会改写历史。请只传可 JSON 序列化的数据；循环引用或无法序列化的值会被记录为 <code>{serializationError:true}</code>，以避免异常阻断游戏。普通 JSON 转换规则仍适用，例如对象中的 <code>undefined</code> 会被省略。实时监听的同一次 DOM 事件对象由监听者共享，监听代码也应当只读。</p>
+<h2>已有事件</h2>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>触发与 detail</th>
+<th>验证或限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>game.level_start</code></td>
+<td>初始关来自原版 <code>EVENT_LEVELSTART</code>；后续关由关卡递增动作钩子发出，包含 <code>level</code>，后续关可带 <code>score</code></td>
+<td>前两关自然推进已观察；原始渠道事件保留为 <code>analytics.EVENT_LEVELSTART</code></td>
+</tr>
+<tr>
+<td><code>game.match</code></td>
+<td>原版配对计分动作之后，包含 <code>level</code>、<code>score</code>、<code>tip</code>、<code>shuffle</code>、<code>source</code></td>
+<td><code>source=hammer</code> 表示锤子消除，<code>source=normal</code> 表示其他标准配对路径；后者也可能由自动化触发，不能单独证明是真人操作。当前 SID 不提供牌坐标或无效点击</td>
+</tr>
+<tr>
+<td><code>game.hint</code></td>
+<td>成功消耗提示后，包含当前 <code>level</code>、<code>tip</code> 等</td>
+<td>浏览器实际点击验证</td>
+</tr>
+<tr>
+<td><code>game.shuffle</code></td>
+<td>手动洗牌调用后，包含 <code>level</code>、<code>shuffle</code></td>
+<td>浏览器实际点击验证；不等同于自动无解洗牌</td>
+</tr>
+<tr>
+<td><code>game.level_win</code></td>
+<td>胜利时发出，包含 <code>level</code>；能可靠取得累计得分时含 <code>score</code></td>
+<td>首关自然通关已验证</td>
+</tr>
+<tr>
+<td><code>game.level_fail</code></td>
+<td>原版失败事件，包含 <code>level</code>，有时含 <code>reason</code> 和累计得分 <code>score</code></td>
+<td>配对后受控超时已验证；其他原因尚需验证</td>
+</tr>
+<tr>
+<td><code>game.board_configured</code> / <code>game.round_ready</code> / <code>config.board_error</code></td>
+<td>配置棋盘写入、原版回退棋盘就绪或配置错误；detail 含 <code>level</code>，错误可含 <code>message</code></td>
+<td>仅代表运行时阶段，不单独证明玩法通过</td>
+</tr>
+<tr>
+<td><code>game.round_source</code></td>
+<td>棋盘来源已选定，包含 <code>level</code>、<code>resumed</code>、<code>configured</code>。<code>resumed</code> 表示使用已验证的对局快照；<code>configured</code> 表示此关配置了固定或生成棋盘，纯计时配置仍为 <code>false</code></td>
+<td>本地新盘、恢复和首页重开已验证；配置棋盘生成失败不发送。发生在棋盘组装阶段，不能单独证明所有牌已绘出、玩家可操作或一场完整对局开始</td>
+</tr>
+<tr>
+<td><code>game.board_generated</code></td>
+<td>新开生成盘时记录关卡、随机种子、生成策略；重力盘带 <code>searchAttempts</code>（随机搜索次数，从 1 开始计数）</td>
+<td><code>adjacent_lane_fallback</code> 表示随机搜索耗尽后使用规则矩形兜底；其次数仅统计此前随机搜索，不计兜底构造。静态盘不提供该字段；恢复存档时不重新生成，也不发该事件</td>
+</tr>
+<tr>
+<td><code>game.auto_shuffle_start</code> / <code>game.auto_shuffle_complete</code> / <code>game.auto_shuffle_exhausted</code></td>
+<td>免费自动洗牌开始、成功或重试耗尽</td>
+<td>不代表竞品算法；完整解与下一对是不同判断</td>
+</tr>
+<tr>
+<td><code>game.hammer</code> / <code>tutorial.start</code> / <code>tutorial.complete</code></td>
+<td>锤子使用、教学开始或完成</td>
+<td>字段与次数以当前本地事件为准</td>
+</tr>
+<tr>
+<td><code>ad.request</code>、<code>ad.unavailable</code>、<code>ad.returned</code>、<code>ad.error</code></td>
+<td>广告接口调用、缺失、返回或异常</td>
+<td>表示接口状态，不表示真实广告曝光或奖励</td>
+</tr>
+<tr>
+<td><code>analytics.EVENT_*</code>、<code>screen.SCREEN_*</code></td>
+<td>原版渠道事件和屏幕事件的本地镜像</td>
+<td>类型和字段取决于原版调用，不应直接假设为最终平台规范</td>
+</tr>
+</tbody>
+</table>
+<p>原始事件的 <code>detail</code> 由原程序提供；示例以游戏实时输出为准。胜败事件优先使用原始事件的 <code>totalScore</code>（包括零）；缺失时，仅当游戏正在对局、运行时关卡与事件关卡一致且累计得分为有效非负数，才补充 <code>score</code>。首关自动推进时读取有效的运行时累计得分。该字段是累计得分，不是单关得分；条件不满足时会省略，<code>reason</code> 也不保证每次都有。</p>
+<p><code>game.level_start</code> 是原有开始信号，<code>game.round_source</code> 补充是否加载快照；二者不是两个独立开局，不应相加计数。页面刷新后本地事件编号会重置，当前没有持久对局 ID 或跨会话去重，后续平台事件名和上报规则待确定。</p>
+<h2>如何添加或对接</h2>
+<ul>
+<li>在确定的业务触发边界调用 <code>window.oneConnectHost.emit('自定义事件名', { ... })</code>。调用者必须位于游戏页面同一上下文，<code>detail</code> 使用可序列化数据。修改前先确认动作真正触发的时机及是否可能重复，记录当前导出数据的 SID 与证据；不要直接沿用其他版本的 SID。</li>
+<li>本地监听示例：</li>
+</ul>
+<pre><code class="language-js">window.addEventListener('oneconnect:event', function (event) {
+  const record = event.detail;
+  console.log(record.type, record.detail);
+});
+</code></pre>
+<p>监听需在游戏 iframe 的 <code>contentWindow</code> 内安装，或参考 <code>开发预览.html</code> 的同源读取方式；不要将监听示例误写成平台上报。目标平台确定后，再定义事件名、字段、授权、上报地址、失败队列及去重策略，并在独立适配层接入。</p>
+<h2>回归</h2>
+<p>启动本地 HTTP 服务后运行 <code>tests\panel.cjs</code>、<code>tests\browser-key-events.cjs</code> 和 <code>tests\browser-host.cjs</code>，分别检查开始/配对、手动洗牌/提示、超时失败。自然胜利和下一关记录可查 <code>progress-board-final.txt</code>。自动洗牌、暂停、其他失败原因、后台上报及全平台事件尚未完整验证。<code>tests/match-source-browser.cjs</code> 和 <code>tests/android_preview/match-source.cjs</code> 验证标准配对与锤子配对的来源区分；锤子可能先发出 <code>game.hammer</code>，再发 <code>game.match</code>，业务侧不可把两条都当作独立消除计数。</p></section><section id="section5"><h1>05 构建运行与回归</h1>
+<h2>目录与启动</h2>
+<ul>
+<li>工作根目录：<code>E:\codex_apk_work\AHA游戏开发\One_Connect_re</code>。</li>
+<li><code>game\game.html</code> 是开发版游戏入口；浏览器运行需要本地 HTTP 服务，直接以 <code>file://</code> 打开游戏不作为开发流程保证。</li>
+<li>双击 <code>启动开发预览.cmd</code>：调用 <code>tools\serve_preview.py</code> 在 <code>127.0.0.1</code> 选择空闲端口并打开 <code>开发预览.html</code>。预览加载同源 iframe 游戏；关闭命令窗口停止服务。 预览画面默认竖屏，可在顶部“画面方向”切换横屏；这是浏览器预览尺寸，不代表 AHA 容器或设备实测。</li>
+<li>单独打开 <code>关卡编辑.html</code> 可以编辑/下载配置；导出后使用 <code>应用关卡配置.cmd</code> 生成游戏关卡数据。</li>
+<li>两个 <code>.cmd</code> 当前写死本机 bundled Python 路径 <code>C:\Users\nenghong.zhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe</code>。换电脑需改为可用的 Python 路径；编译器使用 Python 标准库。</li>
+</ul>
+<p>开发预览的 FPS、对象数量、逻辑耗时来自 Construct 运行时，用于定位当前浏览器异常；不等于手机帧率或性能验收。</p>
+<p>打包正式 <code>game/</code> 时会对照 <code>config/levels.json</code>：先检查 <code>level-config.js</code>，再在临时副本中重新编译并核对 <code>data.js</code>。不一致会终止打包，请先应用关卡配置；校验失败不会覆盖缓存或创建 ZIP。指定其他 <code>--game-dir</code> 时，可同时传入 <code>--config</code> 启用同样的检查；未传时不推断该副本的配置来源。此检查不能替代设备玩法或广告验收。</p>
+<h2>测试运行</h2>
+<p>历史浏览器脚本中有的使用 <code>http://127.0.0.1:18741</code>，后续部分使用 <code>18750</code>；普通预览启动器使用随机空闲端口。运行前以目标脚本地址为准，在项目根目录启动对应端口的本地服务。例如 18741：</p>
+<pre><code class="language-powershell">&amp; 'C:\Users\nenghong.zhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m http.server 18741 --bind 127.0.0.1
+</code></pre>
+<p>在另一个项目根目录终端执行，例如：</p>
+<pre><code class="language-powershell">node tests\host-adapter.test.cjs
+node tests\ad-outcomes.test.cjs
+node tests\analytics.test.cjs
+node tests\key-events.test.cjs
+node tests\board-hooks.test.cjs
+&amp; 'C:\Users\nenghong.zhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' tests\test_levels.py
+node tests\board-editor.cjs
+node tests\panel.cjs
+node tests\browser-key-events.cjs
+node tests\browser-host.cjs
+node tests\panel-ad-failure.cjs
+</code></pre>
+<p>浏览器脚本使用本机 bundled Playwright/Sharp 和 <code>C:\Program Files\Google\Chrome\Application\chrome.exe</code>，换机需要调整路径。<code>browser-host.cjs</code> 与 <code>panel-ad-failure.cjs</code> 仅在测试请求中将第 1 关时间改为 10 秒，不修改正式配置。各脚本的覆盖范围见文件与 <code>开发说明.md</code>，不能以单项通过替代完整验收。</p>
+<p><code>tests\natural-board-progress.cjs</code> 是多关自然操作回归，使用实际点击完成配对；运行它之前需临时编译 <code>config\board-validation.json</code>，结束后重新应用原配置。它会覆盖部分 <code>screenshots\</code> 测试截图；如需保留旧证据，先备份。该配置是样例，不能直接当作正式关卡。</p>
+<pre><code class="language-powershell">&amp; 'C:\Users\nenghong.zhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' tools\compile_levels.py --config config\board-validation.json
+node tests\natural-board-progress.cjs
+# 测试结束后，重新按当前正式配置生成；即使测试失败也应执行。
+&amp; 'C:\Users\nenghong.zhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' tools\compile_levels.py --config config\levels.json
+</code></pre>
+<h2>修改、排错与回滚</h2>
+<ol>
+<li>明确修改模块并备份 <code>game</code> 中受影响的文件；保留 <code>baseline</code>、源 ZIP 和原解包不动。</li>
+<li>通过开发预览复现，检查事件面板、浏览器控制台、网络请求和相关截图。广告接口事件参考第 01 篇，玩法事件参考第 04 篇。</li>
+<li>只在确认的原版动作和数据边界修改，记录当前构建来源、预期差异和验证路径。注意 <code>game\data.js</code> 会被关卡编译覆盖。</li>
+<li>按改动回归：菜单→主题→对局→配对→暂停/恢复→失败与重开；涉及通关则继续奖励→下一关；涉及素材还需检查三主题、对应状态、字体和实际点击。</li>
+<li>失败时从工作备份恢复并重跑；不要将包含实验配置的截图当作原版基线。</li>
+</ol>
+<h2>当前验收边界</h2>
+<p>原始 ZIP、解包和 <code>baseline</code> 的证据已记录在 <code>阶段说明.md</code>、<code>开发说明.md</code>。当前桌面 Chrome 已验证自然完成第 1、2 关及加载第 3 关配置、无宿主失败返回和重开。未对所有关卡、随机种子、屏幕尺寸、移动设备、目标宿主和真实广告做完整验收。真机视觉验收当前为 BLOCKED：设备已连接，但要求的测试管线未找到。具体美术方向、广告 SDK 和上报服务仍待确定。</p>
+<blockquote>
+<p>以下带日期的小节是当时的历史试验记录，路径、版本和结论不自动代表当前交付；当前状态与最新对照见 <code>开发说明.md</code>、<code>性能与Bug回归_20261030.md</code>。</p>
+</blockquote>
+<h2>无损压缩试验（2026-10-29）</h2>
+<p><code>analysis\lossless_png_20261029</code> 为压缩候选；<code>analysis\无损压缩运行副本</code> 为独立测试副本；<code>analysis\OneConnect_无损压缩验证.zip</code> 为测试包。对 <code>game\images</code> 52 张 PNG 做无损重压，逐张验证尺寸和解码后完整 RGBA 字节一致，三张目录外的 PNG 保持原样；原游戏文件未被压缩覆盖。按相同 ZIP 压缩级别，原开发目录 2,420,044 字节、测试包 1,938,593 字节，减少 481,451 字节（约 19.9%）。ZIP 与副本文件逐项一致且完整性检查通过。</p>
+<p>浏览器竖屏已运行测试副本，进入主题、对局并自然点击消除一对牌；尚未测试所有页面、主题、完整关卡及 AHA 宿主，不是正式上线包。压缩包直接以游戏目录内容为根，尚未按 CombiMons 父页面重新封装。远程 SDK、广告视频等流量不包含在体积中。</p>
+<p>重做：先以 image-compress 无损模式重新处理当前 <code>game\images</code>，将候选放入上述候选目录；运行 <code>tools\build_lossless_package.py</code>。脚本会逐张比对当前游戏图像的 RGBA 字节与尺寸；若已有测试包或副本，则停止以保护旧结果，需先另存或更改输出路径，不能覆盖基线。候选必须跟当前资源一致；改换美术后必须重新生成。</p>
+<h2>离线缓存及可重复打包（2026-10-30）</h2>
+<p>首次联网进入游戏后，支持 Service Worker 的浏览器会在菜单就绪后缓存本包；若匹配范围已有宿主 Service Worker，本游戏不会覆盖它。缓存完成后，本地浏览器与 MuMu WebView 已验证离线刷新及对局；首次未联网、缓存安装失败、非安全上下文或不支持 Service Worker 的情况不能保证离线。该机制不缓存外部广告与 SDK，也未证明 AHA 宿主离线行为。</p>
+<p>改动 <code>game</code> 中任何内容后，运行 <code>python tools\build_offline_worker.py --game-dir game</code> 更新内容版本；关卡编译器会自动更新。打包可运行 <code>python tools\build_game_package.py --output dist\&lt;新文件名&gt;.zip</code>；它校验图片引用、原版连线与消除图集，并将运行数据中的连线点、线段和消除动画对象定义与原版对照，再刷新缓存清单并核对 ZIP 全部文件。图集文件存在但对象改用其他图片或修改动画定义时会拒绝打包；这不替代实际特效触发验证。输出不覆盖已有文件。最新验证包及证据见 <code>性能与Bug回归_20261030.md</code>。</p>
+<p>离线更新采用会话隔离：新版本安装完成后等待所有仍受旧版本控制的游戏页面关闭，再启用新版本，避免正在进行的游戏混用资源。新版页面在首页发现更新等待时提示关闭并重新打开；对局中不显示提示或强制刷新。浏览器中有多个游戏页面时需要全部关闭。首次从没有该提示的旧版本升级，旧页面不会显示提示；真实 AHA 是否及时销毁页面、更新提示是否可见及平台更新时机尚未验证。</p>
+<p>修改 <code>tools/build_offline_worker.py</code> 中的 Service Worker 逻辑时，须同时递增缓存逻辑修订标识（当前 <code>cache-session-v3</code>），并验证从旧版本升级成功及升级失败时旧缓存保留；候选构建使用同一策略。</p>
+<h2>当前连续关卡设备回归</h2>
+<p><code>tests/android_preview/fresh_through_twelve_20261031.ps1</code> 为隔离副本的第 1–12 关顺序回归入口；需按脚本配置本地服务、MuMu ADB 设备和 WebView 调试端口。它会清除测试端口中的指定 One Connect 进度和教学记录，请勿指向正式玩家存档。各段脚本曾按相同顺序在 MuMu 连续通过；包装脚本本身仅做过语法检查，真实 AHA 容器及广告未验证。详细证据见 <code>分析报告/One_Connect_DSH结果驱动开发计划.md</code>。</p></section><section id="section6"><h1>CombiMons SDK 模板：One Connect 接入说明</h1>
+<blockquote>
+<p>2026-10-31：用户已明确预装启动不再以 3 秒为硬门槛；下文旧试验中的 3 秒描述仅保留当时测试背景。真实平台与 SDK 尚未验收。</p>
+</blockquote>
+<h2>当前状态</h2>
+<p>已查阅用户提供的 <code>C:\Users\nenghong.zhao\Downloads\CombiMons.zip</code>，并进行本地模拟测试。<strong>本说明是接入方案；One Connect 尚未接入此模板或验证真实广告。</strong> 模板评估副本：<code>E:\codex_apk_work\AHA游戏开发\SDK模板评估\CombiMons_20261029</code>；原 ZIP 保持不变。</p>
+<h2>文件与入口对应</h2>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>职责与处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模板根 <code>index.html</code></td>
+<td>父页面负责 SDK 初始化、iframe、广告和底部 banner；模板 README 要求保持不变，改动须确认平台允许</td>
+</tr>
+<tr>
+<td>模板 <code>game/index.html</code></td>
+<td>父页面实际加载的子游戏入口；示例注释另提 <code>game.html</code>，应以实际 iframe 引用为准</td>
+</tr>
+<tr>
+<td>模板 <code>game/index.js</code></td>
+<td>插屏 <code>showNext()</code>、激励 <code>showReward()</code> 的演示代码，回调仅记录日志</td>
+</tr>
+<tr>
+<td>本项目 <code>game/index.html</code> 与 <code>game/game.html</code></td>
+<td>现有开发入口和游戏页面；保留现有壳、脚本与相对资源路径，集成时先实测入口组合，不直接覆盖</td>
+</tr>
+<tr>
+<td>本项目 <code>game/host-adapter.js</code>、<code>game/custom.js</code></td>
+<td>现有宿主适配与调用入口；先梳理当前 <code>oneConnectHost</code> 和 <code>top.h5_sdk</code>，再设计桥接</td>
+</tr>
+</tbody>
+</table>
+<h2>SDK 和广告调用</h2>
+<p>模板父页加载远程 SDK <code>https://www.hippoobox.com/static/sdk/adsdk_1.8.0.0.js</code>，使用 <code>window.h5sdk</code> 初始化；实际版本、域名及参数以目标平台提供的信息为准。ZIP 没有 SDK 离线文件。模板中的游戏、发布商、分析和广告位标识均为样本值，不能直接用于本项目。</p>
+<p>父页在初始化回调中配置预加载并尝试前贴片；页面 <code>onload</code> 和子页消息均可能触发 <code>gameLoadingCompleted</code>，需要核实真正的游戏就绪时机和去重约定。模板底部预留 50px banner 区域，是否适用于目标宿主及是否遮挡内容需实测。</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>模板子页请求</th>
+<th>父页处理</th>
+<th>示例结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>插屏</td>
+<td><code>postMessage("next", "*")</code>，设置父页 <code>MIAD_NEXT</code> 回调</td>
+<td><code>h5sdk.adBreak</code> 类型 <code>next</code></td>
+<td><code>breakStatus</code> 为 <code>viewed</code> 调成功，其他调失败</td>
+</tr>
+<tr>
+<td>激励</td>
+<td><code>postMessage("reward", "*")</code>，设置父页 <code>MIAD</code> 回调</td>
+<td><code>h5sdk.adBreak</code> 类型 <code>reward</code>；<code>beforeReward</code> 调展示函数</td>
+<td><code>viewed</code> 调成功，其他调失败；示例只输出日志，不发奖</td>
+</tr>
+</tbody>
+</table>
+<p>这些名字与 One Connect 当前的 <code>h5_sdk</code> 不同，不能只复制模板并认为已经打通。<code>showAd</code> 的调用返回也不证明广告已展示或关闭；真实状态必须由平台确认的回调驱动。</p>
+<h2>建议实施步骤</h2>
+<ol>
+<li>核对平台最新模板、SDK 版本、合法域名、游戏及广告位参数；在独立副本保留原文件并记录回滚方式。</li>
+<li>确定保留现有游戏入口的包装方式，校验资源、脚本路径、视口与底部 banner。平台 README 要求父页不变，若必须改父页以桥接或加固，先向平台确认支持方式。</li>
+<li>找出 One Connect 的现有广告调用、暂停恢复和奖励消费位置，做适配器将这些动作映射到目标平台的真实协议。先设置回调再请求，控制并发，完成后清理；按平台约定处理超时、SDK 缺失和异常，确保流程可恢复。</li>
+<li>激励奖励只在经平台确认的有效完成回调发放，并对同一次奖励交易去重；取消、失败、无回调不发奖。插屏失败也应恢复游戏。</li>
+<li>模板消息目标使用 <code>*</code>，父页不核验来源，且直接访问父窗口回调依赖同源。需在平台允许范围内校验来源与目标域、处理请求关联、一次性回调及跨域方案；这些是改造建议，模板未内建。</li>
+<li>用本地模拟覆盖成功、取消、不可用、超时、重复与并发，验证暂停恢复及奖励；再用平台测试广告位在目标宿主和真机自然验证展示、关闭、奖励、网络、前后台、banner 及完整对局。保留证据、未通过项和回滚方式。</li>
+</ol>
+<h2>已验证与待确认</h2>
+<p>已对模板归档完整性、静态调用链及本地 mock 分支做检查：模拟 <code>viewed</code>、<code>dismissed</code> 和其他状态分别走模板对应回调；模拟未可信来源消息被接收、重叠激励请求可能覆盖回调。模拟不连接真实 SDK 或广告网络。尚待提供和验证：目标平台参数与正式接入文档、父页面修改许可、真实展示与奖励语义、实际宿主及真机行为。本次没有修改 One Connect 游戏代码或接入真实 SDK。</p>
+<h2>2026-10-30：直接嵌套模板的验证</h2>
+<p>在独立副本中保留模板根页面，把开发版整个 <code>game/</code> 目录放入，使用模拟 SDK、阻断真实广告。此组合形成两层 iframe 和两块底部预留：844px 视口下模板留 50px，内层壳再留约 71px，游戏高度约 723px。外层提供 <code>h5sdk</code>，内层提供 <code>h5_sdk</code>；游戏广告适配仍只读取最外层 <code>h5_sdk</code>，因此模拟中记录 <code>ad.unavailable</code>，不能视为广告打通。</p>
+<p>已修复加载完成通知找不到内层接口的问题：优先使用原有最外层接口；没有时尝试直接父页面的加载完成接口，不改变广告提供者选择。模板副本测试菜单、主题、对局和配对通过；使用 <code>localhost</code> 非测试计时配置时，菜单已绘制后内层遮罩由约 18 秒缩短至约 0.8 秒。模拟 3G 下可操作总时间约 14.3 秒，未达到 3 秒目标。证据与回滚见 <code>性能与Bug回归_20261030.md</code>。</p>
+<p>是否移除一层包装、如何使用 50px Banner、宿主接口和广告回调映射，仍需先做整体评审并按目标平台确认；不要把模板示例 ID 或模拟 SDK 用作正式配置。</p></section><section id="section7"><h1>本地激励广告生命周期接口</h1>
+<p>入口：<code>game/reward-lifecycle.js</code>，在 <code>game/game.html</code> 加载；当前没有连接真实广告、正式奖励入口或经济系统。测试示例见 <code>tests/reward-lifecycle-browser.cjs</code>，实际在游戏页面以本地模拟供应商和内存计数器完成一次请求与去重。</p>
+<p><code>oneConnectRewardLifecycle.create({loadTimeoutMs, gate, grant})</code> 创建实例：</p>
+<ul>
+<li><code>gate.pause(attempt)</code> / <code>gate.resume(attempt)</code> 由调用方负责暂停归属；本模块只释放自己成功取得的暂停，不直接控制游戏或覆盖用户暂停。暂停操作应当原子完成。</li>
+<li><code>grant(claim, proof, attempt)</code> 必须同步完成一次业务交付并返回 <code>true</code> 才标记本会话已领取。当前无持久化交易账本；真实接入必须将发奖与持久幂等一起设计，不能以这个内存标记代替经济落盘。</li>
+<li><code>setProvider({show(callbacks, attempt)})</code> 只接收已经适配、可信的供应商；它必须先按实际 SDK 契约归一化结果。<code>shown()</code> 表示开始展示，<code>earned({verified:true})</code> 只表示供应商适配层已确认奖励，<code>closed()</code>、<code>cancelled()</code>、<code>error()</code> 分别结束请求。组件不会因为关闭或普通 Promise 返回而发奖。当前合同中终态后的迟到回调被忽略；若平台允许关闭后再发送奖励，适配层需要先等待并归一化，不得直接照搬。</li>
+<li><code>request(claim)</code> 返回状态：<code>rewarded</code>、<code>closed</code>、<code>cancelled</code>、<code>error</code>、<code>timeout</code>、<code>show_timeout</code>、<code>unavailable</code>、<code>busy</code>、<code>already_claimed</code> 或 <code>invalid_claim</code>。请求身份在调用供应商前分配；并发请求返回 <code>busy</code>。<code>cancel()</code> 可解除等待；展示前超时适用 <code>loadTimeoutMs</code>，已展示后不以加载超时截断。可选 <code>maxShowingMs</code> 启用独立展示阶段看门狗，尚未成功发奖时超时返回 <code>show_timeout</code>；若先前已成功发奖则返回 <code>rewarded</code>，并释放本组件的暂停。默认不启用。该计时使用墙钟，包括后台时间，也不能关闭或证明关闭真实广告；只有在平台明确支持超时、关闭和前后台处理后才应配置，不能把本地模拟当真实广告验收。</li>
+</ul>
+<p>本地测试覆盖同步回调、重复回调、失败、关闭、无供应商、加载超时、展示后回调、展示后失联、并发、取消、迟到结果及不可信凭据。测试门控和计数器均是模拟，<strong>不证明真实广告、真实暂停、AHA SDK、持久发奖或经济链已接通</strong>。实际商业化接入前须由平台明确广告位、结果顺序、超时、证据及暂停/奖励所有权，并补真实业务入口、可恢复持久发奖和设备验收。</p>
+<p>供应商 <code>show()</code> 若返回 Promise，异步拒绝会结束当前请求并返回 <code>error</code>，释放本请求持有的暂停；Promise 正常完成不代表广告完成，也不触发奖励。若奖励此前已获确认，则保持 <code>rewarded</code>；终态后的迟到回调不发奖。适配层仍须根据实际 SDK 契约归一化，避免将与本次展示无关的后台任务失败作为展示失败。浏览器运行页和 MuMu 隔离副本已验证模拟异步拒绝，未验证真实 SDK。</p>
+<h2>本地锤子奖励示例</h2>
+<p><code>examples/reward-hammer-local.js</code> 是独立测试示例，不加载进正式游戏。开发者可在正在对局的本地页面加载该脚本，创建 <code>oneConnectLocalHammerExample.create({loadTimeoutMs: 2000})</code>，通过返回实例的 <code>setProvider</code> 注入模拟供应商并用 <code>request('本次唯一标识')</code> 发起。模拟供应商调用 <code>shown()</code>、<code>earned({verified:true})</code>、<code>closed()</code> 后，示例给现有锤子库存加一；<code>tests/reward-hammer-local-browser.cjs</code> 验证了发奖后实际使用锤子、同实例重复请求和取消后的迟到回调。此示例不处理真实广告、正式入口或持久化奖励事务；会话结束、多个实例和页面重载之间不保证去重。</p>
+<p>暂停尚需真实宿主联调：实际检查发现 <code>cr_setSuspended(true)</code> 会触发原游戏自己的暂停状态，随后恢复引擎并不等于恢复对局。本示例不操作暂停，也不模拟真实广告播放；接入真实 SDK 前需确认前后台、手动暂停和广告暂停的所有权并在设备上验证。</p>
+<p>暂停来源已进一步定位：Construct 的挂起回调触发 <code>Browser.OnPageHidden</code>，原游戏随后进入自己的暂停菜单；恢复引擎后菜单仍保留，需要玩家点击继续。浏览器测试 <code>tests/suspend-pause-recovery-browser.cjs</code> 验证暂停期间计时不变、继续后计时恢复，且已有手动暂停在挂起和恢复后仍保留；MuMu 隔离副本测试 <code>tests/android_preview/suspend-pause-recovery.cjs</code> 验证触控继续及计时恢复。这是受控引擎挂起测试，不能证明真实广告返回时的宿主行为，也不提供广告结束后自动继续。</p>
+<h2>持久领取实验（未接入正式游戏）</h2>
+<p><code>examples/hammer-ledger-candidate/</code> 为隔离候选，运行 <code>tests/setup-hammer-ledger-candidate.py</code> 后生成测试副本。候选在单条本地记录中保存锤子数量和领取标识，初次从现有库存读取；相同标识在重载及新实例后拒绝再次发放。浏览器验证写入失败时不消除牌，MuMu 验证模拟发奖、实际使用及重载后去重（<code>tests/evidence/mumu_hammer_ledger_candidate.json</code>）。</p>
+<p>这不是正式发奖方案：多页面并发写入没有互斥保证；旧版只读取 v1 库存，直接回滚可能读取过时数量；清除本地数据会丢失领取记录。固定最多 5000 个标识的容量、异常恢复、失败补偿、真实 SDK 奖励证明和服务器幂等等均需明确方案并验证。候选代码和示例都没有加载到正式游戏，不应以此宣称真实广告或跨设备持久发奖完成。</p>
+<p><code>examples/hammer-ledger-idb/hammer-stock-idb.js</code> 是进一步的异步存储实验：使用同一个 IndexedDB 读写事务修改库存与领取标识，优先迁移 v2 实验数据，否则读取 v1 库存。浏览器中两个页面并发相同领取、不同领取和扣次后重载，结果一致；写入失败不会留下半笔记录，损坏的旧实验记录会拒绝迁移。MuMu 验证单页面并发请求及重载，设备数据见 <code>tests/evidence/mumu_hammer_stock_idb_experiment.json</code>。这个异步接口还没有连接正式锤子按钮或奖励生命周期，不能保证库存扣减与引擎消除跨崩溃原子完成；旧版回滚、多设备、平台证明及服务器幂等仍未解决。该实验会创建独立的本地数据库，不应在正式存档上直接试运行。</p>
+<p>该实验支持按唯一操作号 <code>reserve(id)</code> 暂扣、<code>resolve(id, true)</code> 确认和 <code>resolve(id, false)</code> 退款；重复操作不会再次扣除或退款。待确认操作占用库存上限额度，避免后续发奖使退款溢出。浏览器双页面和 MuMu 单页面验证了重载后退款和确认（<code>tests/evidence/mumu_hammer_stock_journal.json</code>）。调用方仍须建立可靠的游戏棋盘证据，才能决定中断后的待确认操作应确认还是退款；记录本身不能推断牌是否已消除。操作记录最多 5000 条，尚无清理规则，也未接入正式对局。</p>
+<p>进一步的棋盘证据实验位于 <code>examples/hammer-ledger-idb/round-evidence.js</code>，使用 <code>tests/setup-hammer-round-candidate.py</code> 建立独立副本。操作可绑定有限长度的操作前稳定快照；规则仅对已验证且已实际恢复的相同棋盘建议退款，对带可信操作标记、并且恰好少一对同类牌的有效稳定快照建议确认，其余情况返回未知。浏览器与 MuMu 以第 7 关实际锤子消除及页面重载验证了样本（<code>tests/evidence/mumu_hammer_round_evidence.json</code>）。目前标记由测试代码在消除后手动添加，库存操作和游戏锤子各自独立；没有自动接管正式锤子，没有验证异常强杀、过关清除快照、并发游戏页面及标记来源可信性。不能将实验规则直接用于正式扣费或宣称实现崩溃原子性。</p></section><section id="section8"><h1>Tile Connect 拆解结果：One Connect 后续开发参考</h1>
+<p>更新时间：2026-10-29。来源为 DSH 会话 <code>session-f2e79f49-7150-4f0c-88ae-8d7f9a34b729</code> 的公开消息及 <code>E:\codex_apk_work\竞品拆解\tile connect\Tile_Connect_拆解</code> 当前文件。该会话仍在运行，文件可能继续修订；使用前应重新核对版本和证据。</p>
+<h2>可直接参考的方向</h2>
+<ol>
+<li><strong>入门引导</strong>：优先设计一块易理解的固定教学棋盘，通过高亮、遮罩、手指提示、限制可点击目标和错误反馈，引导玩家实际完成配对。原版 One Connect 的输入链路、暂停计时及重开/跳过状态须先验证，再做数据驱动步骤；引导素材和文案独立制作。</li>
+<li><strong>关卡编辑</strong>：现有 <code>关卡编辑.html</code> 与 <code>config/levels.json</code> 已支持逐关时间及可选固定棋盘，固定棋盘目前限定内部 6×12、牌型 1–20。可在现有能力上研究棋盘模板、空洞和牌型重复度，但必须先验证 Construct 2 原版对象创建、配对、空位和洗牌逻辑，不把竞品参数直接当作本游戏可用字段。</li>
+<li><strong>可解性</strong>：成对数量只保证数量可配，不保证路径可达或整局可解。先实测 One Connect 的转弯、外环、障碍与洗牌规则；建立符合其规则的求解/验证工具，再考虑固定关卡校验、生成策略与无解处理，并通过真实对局回归。不可将竞品“牌数为偶数”写成可解性保证。</li>
+<li><strong>体验节奏</strong>：以竞品前几关的少量固定牌、逐步引入规则为设计参考；以自身实际棋盘和操作体验为准，分别验证教学、过关、失败、重开及后续关加载。原版体验基线留存，新增能力可配置且可回滚。</li>
+<li><strong>商业化</strong>：竞品的继续/失败弹窗和激励视频入口仅作流程参考；真实广告展示、回调和发奖尚无对方实测证据。本项目保持宿主接口抽象，平台、时机与策略待用户确定。</li>
+</ol>
+<h2>证据边界与冲突</h2>
+<ul>
+<li>DSH 公开消息称自然观察了前几关教学、连接及失败流程；具体素材见竞品拆解 <code>玩法引导与流程分析.md</code>、<code>玩法引导记录.csv</code> 和截图。此前消息把第 4 关判为已通关，后续公开消息明确指出它把复活按钮误识为下一关，<strong>第 4 关通关状态待重新验证</strong>。当前 README/CSV 仍可能保留旧结论，不将它作为已确认事实。</li>
+<li>竞品第 2 关的一次解题能使用两次转弯和板外路径，并不足以证明严格的最大转弯数或精确外环范围；见竞品 <code>未确认事项.md</code> B1、B2。第 3、4 关已有两次开局截图对照，显示牌面位置变化；第 2 关重玩、<code>repeat</code> 的准确语义、生成/重洗和机关效果仍需验证。两次截图不足以推出所有后续关均随机。</li>
+<li>竞品文档部分概括范围超过实际重玩证据；第 3、4 关有各两次对照，其他关卡及随机生成规律仍待核实。静态 <code>Shape</code> 与实际对象创建、空位和移动行为的映射也需逐项验证，不应直接迁移配置。</li>
+<li>插屏、Banner、激励视频实际展示及奖励未验证；静态互推视频配置不能证明它就是激励视频内容。</li>
+<li>当前工程现有固定棋盘只验证牌数偶数，并不保证有解；具体入口、约束与运行证据见 <code>迭代接口文档/03_关卡配置与编辑.md</code>。该文档记录第 2、3 关固定棋盘及前两关自然推进的验证，不代表任意关卡或新机关均已支持。</li>
+</ul>
+<h2>后续验收基线</h2>
+<p>先保留现有原版运行副本及已验证关卡配置，逐项记录：原版规则实测 → 设计与配置 → 运行实现 → 自然操作截图/日志 → 失败与回退。竞品尚未确认的机制、参数和商业化行为不作为已还原规则；不复制竞品牌面、文案和关卡数据。</p>
+<h2>2026-10-29 会话进展补充：开发前核对清单</h2>
+<p>会话快照 <code>analysis/dsh_关卡会话快照.json</code>：DSH 仍在运行，第 1、2 关自然通过，第 3 关由自动玩家操作通关，第 4 关尚未通关；第 5 关及以后未自然到达。其记录可能随后改变，开发前应重查原文件。</p>
+<table>
+<thead>
+<tr>
+<th>参考内容</th>
+<th>当前证据与限制</th>
+<th>One Connect 后续动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分阶段教学</td>
+<td>竞品第 1 关 5×5、16 张固定棋盘；配置和截图记录了遮罩、指示、指定配对及错误示范。第 2 关给出连接示范。</td>
+<td>设计独立教学步骤配置；先确认原版输入、状态保存、暂停及重开，再做可关闭、可重放的教学。现有 6×12 固定棋盘不支持空格，因此不能直接导入竞品教学盘。</td>
+</tr>
+<tr>
+<td>棋盘结构</td>
+<td>竞品第 4 关记录为 10 行×5 列、50 张、243 秒；第 6/8/10 关形状等仅来自静态配置。</td>
+<td>先研究 One Connect 空位、棋盘坐标、生成及洗牌的所有调用，再扩展模板/空洞；不能把竞品尺寸或时间直接写入现有运行配置。</td>
+</tr>
+<tr>
+<td>同关随机性</td>
+<td>竞品第 3、4 关各有两次开局画面对照；并不能证明所有关卡或生成算法。</td>
+<td>可考虑将固定布局和随机牌面作为独立配置选项；在本游戏实测并完成重玩、洗牌、推进回归前不宣称支持。</td>
+</tr>
+<tr>
+<td>可连路径与外环</td>
+<td>对竞品第 4 关的同一份人工识别盘面，求解模型允许一格外环时算出 17 对、限制板内算出 3 对；这是模型对照，受识别与规则假设影响，并非 One Connect 的实测。</td>
+<td>优先建立本游戏真实点击对照，分别测试直线、一次/两次转弯、板边绕行、阻挡和无法连接；仅在规则证实后编写校验器，不能据此直接修改原版判定。</td>
+</tr>
+<tr>
+<td>后续机制与商业化</td>
+<td>第 5 关起相关引导、方向字段和其他规则多数仅有静态证据；广告展示及发奖未验证。</td>
+<td>保留为候选需求；等自然运行或代码证据确认后再确定规则和接入，真实广告 SDK 与策略仍由平台方提供。</td>
+</tr>
+</tbody>
+</table>
+<p>证据入口：竞品 <code>关卡记录.csv</code>、<code>玩法引导与流程分析.md</code>、<code>关卡机制与难度分析.md</code>、<code>未确认事项.md</code>，以及其引用的截图和配置。DSH 对竞品文件仍在写入时，本节只代表快照时间的参考，不代表最终拆解完成。</p></section></main></body></html>

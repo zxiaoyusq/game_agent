@@ -1,0 +1,4873 @@
+[
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 1,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 2,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": "3:1",
+      "from": 0,
+      "to": 4,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 3,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 4,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 5,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 6,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:1",
+      "from": 0,
+      "to": 6,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 7,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 8,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:1",
+      "from": 6,
+      "to": 10,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 9,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 10,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 3,
+      "pieceId": "1:1",
+      "from": 0,
+      "to": 3,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 11,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 12,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": "2:1",
+      "from": 0,
+      "to": 1,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 13,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 14,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 5,
+      "pieceId": "3:1",
+      "from": 4,
+      "to": 9,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 15,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 16,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 10,
+      "to": 15,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 17,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 18,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 6,
+      "pieceId": "1:2",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 19,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 20,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": "1:1",
+      "from": 3,
+      "to": 4,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 21,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 22,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 3,
+      "pieceId": "2:1",
+      "from": 1,
+      "to": 4,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 23,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 24,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 6,
+      "pieceId": "3:2",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 25,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 26,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 3,
+      "pieceId": "3:1",
+      "from": 9,
+      "to": 12,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 27,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 28,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 15,
+      "to": 20,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 29,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 30,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 5,
+      "pieceId": "1:1",
+      "from": 4,
+      "to": 9,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 31,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 32,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": "2:1",
+      "from": 4,
+      "to": 5,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 33,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 34,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 1,
+      "pieceId": "3:1",
+      "from": 12,
+      "to": 13,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 35,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 36,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:1",
+      "from": 20,
+      "to": 24,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 37,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 38,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": "1:1",
+      "from": 9,
+      "to": 10,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 39,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 40,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 4,
+      "pieceId": "2:1",
+      "from": 5,
+      "to": 9,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 41,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 42,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": "3:1",
+      "from": 13,
+      "to": 17,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 43,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 44,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:1",
+      "from": 24,
+      "to": 30,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 45,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 46,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:2",
+      "from": 0,
+      "to": 4,
+      "capturedIds": [
+        "3:1"
+      ],
+      "bonusReasons": [
+        "capture"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 47,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 48,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:1",
+      "from": 30,
+      "to": 32,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 49,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 50,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": "1:1",
+      "from": 10,
+      "to": 11,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 51,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 52,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 3,
+      "pieceId": "2:1",
+      "from": 9,
+      "to": 12,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 53,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 54,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 3,
+      "pieceId": "3:2",
+      "from": 0,
+      "to": 3,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 55,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 56,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 32,
+      "to": 33,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 57,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 58,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 5,
+      "pieceId": "1:1",
+      "from": 11,
+      "to": 16,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 59,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 60,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 5,
+      "pieceId": "2:1",
+      "from": 12,
+      "to": 17,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 61,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 62,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 5,
+      "pieceId": "3:2",
+      "from": 3,
+      "to": 8,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 63,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 64,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:1",
+      "from": 33,
+      "to": 36,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 65,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 66,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": "1:1",
+      "from": 16,
+      "to": 17,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 67,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 68,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": "2:2",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 69,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 70,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 4,
+      "pieceId": "2:2",
+      "from": 0,
+      "to": 4,
+      "capturedIds": [
+        "1:1"
+      ],
+      "bonusReasons": [
+        "capture"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 71,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 72,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": "2:1",
+      "from": 17,
+      "to": 18,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 73,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 74,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": "3:2",
+      "from": 8,
+      "to": 12,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 75,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 76,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:1",
+      "from": 36,
+      "to": 42,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 77,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 78,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 42,
+      "to": 47,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 79,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 80,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 6,
+      "pieceId": "1:1",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 81,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 82,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": "1:1",
+      "from": 0,
+      "to": 1,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 83,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 84,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 5,
+      "pieceId": "2:1",
+      "from": 18,
+      "to": 23,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 85,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 86,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 3,
+      "pieceId": "3:2",
+      "from": 12,
+      "to": 15,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 87,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 88,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 47,
+      "to": 48,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 89,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 90,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 2,
+      "pieceId": "1:1",
+      "from": 1,
+      "to": 3,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 91,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 92,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 2,
+      "pieceId": "2:1",
+      "from": 23,
+      "to": 25,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 93,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 94,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": "3:2",
+      "from": 15,
+      "to": 19,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 95,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 96,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:1",
+      "from": 48,
+      "to": 52,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 97,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 98,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 6,
+      "pieceId": "1:1",
+      "from": 3,
+      "to": 9,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 99,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 100,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 3,
+      "pieceId": "1:1",
+      "from": 9,
+      "to": 12,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 101,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 102,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 3,
+      "pieceId": "2:1",
+      "from": 25,
+      "to": 28,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 103,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 104,
+    "event": {
+      "type": "MOVE",
+      "actor": 3,
+      "dice": 4,
+      "pieceId": "3:2",
+      "from": 19,
+      "to": 23,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 105,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 106,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 52,
+      "to": 53,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 107,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 108,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 2,
+      "pieceId": "1:1",
+      "from": 12,
+      "to": 14,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 109,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 110,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": "2:1",
+      "from": 28,
+      "to": 34,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 111,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 112,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 2,
+      "pieceId": "2:1",
+      "from": 34,
+      "to": 36,
+      "capturedIds": [
+        "3:2"
+      ],
+      "bonusReasons": [
+        "capture"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 113,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 114,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 1,
+      "pieceId": "2:1",
+      "from": 36,
+      "to": 37,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 115,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": "noMove"
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 116,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 117,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": 4,
+      "to": 10,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 118,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 119,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:2",
+      "from": 10,
+      "to": 14,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 120,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 121,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 2,
+      "pieceId": "1:1",
+      "from": 14,
+      "to": 16,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 122,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 123,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": "2:1",
+      "from": 37,
+      "to": 43,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 124,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 125,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 5,
+      "pieceId": "2:1",
+      "from": 43,
+      "to": 48,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 126,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": "noMove"
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 127,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 128,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": 14,
+      "to": 20,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 129,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 130,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": 20,
+      "to": 26,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 131,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": "tripleSix"
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 132,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 133,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 1,
+      "pieceId": "1:1",
+      "from": 16,
+      "to": 17,
+      "capturedIds": [
+        "2:2"
+      ],
+      "bonusReasons": [
+        "capture"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 134,
+    "event": {
+      "type": "ROLL",
+      "actor": 1,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 135,
+    "event": {
+      "type": "MOVE",
+      "actor": 1,
+      "dice": 3,
+      "pieceId": "1:1",
+      "from": 17,
+      "to": 20,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 136,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 137,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 6,
+      "pieceId": "2:2",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 138,
+    "event": {
+      "type": "ROLL",
+      "actor": 2,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 139,
+    "event": {
+      "type": "MOVE",
+      "actor": 2,
+      "dice": 2,
+      "pieceId": "2:1",
+      "from": 48,
+      "to": 50,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 140,
+    "event": {
+      "type": "ROLL",
+      "actor": 3,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": "noMove"
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 141,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "revision": 142,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:1",
+      "from": 53,
+      "to": 56,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 2,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 3,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:1",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 4,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 5,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 6,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 7,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:1",
+      "from": 0,
+      "to": 4,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 9,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 10,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 4,
+      "to": 5,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 12,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 13,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 5,
+      "to": 10,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 18,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 19,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:1",
+      "from": 10,
+      "to": 13,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 24,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 25,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 13,
+      "to": 18,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 28,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 29,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 18,
+      "to": 19,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 32,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 33,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:1",
+      "from": 19,
+      "to": 23,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 36,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 37,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:1",
+      "from": 23,
+      "to": 27,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 40,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 41,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:3",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 42,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 43,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:1",
+      "from": 27,
+      "to": 31,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 46,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 47,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 31,
+      "to": 32,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 50,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 51,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:1",
+      "from": 32,
+      "to": 35,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 54,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 55,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 35,
+      "to": 40,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 58,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 59,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 40,
+      "to": 45,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 62,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 63,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 45,
+      "to": 46,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 68,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 69,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 46,
+      "to": 47,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 72,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 73,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:4",
+      "from": -1,
+      "to": 0,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 74,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 75,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:1",
+      "from": 47,
+      "to": 52,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 80,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 81,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:2",
+      "from": 0,
+      "to": 5,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 84,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 85,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 52,
+      "to": 53,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 88,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 89,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:1",
+      "from": 53,
+      "to": 55,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 92,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 93,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:2",
+      "from": 5,
+      "to": 9,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 100,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 101,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:2",
+      "from": 9,
+      "to": 13,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 104,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 105,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:2",
+      "from": 13,
+      "to": 15,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 110,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 111,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:1",
+      "from": 55,
+      "to": 56,
+      "capturedIds": [],
+      "bonusReasons": [
+        "home"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 112,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 113,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:2",
+      "from": 15,
+      "to": 18,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 118,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 119,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:2",
+      "from": 18,
+      "to": 20,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 124,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 125,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:2",
+      "from": 20,
+      "to": 22,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 131,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 132,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:2",
+      "from": 22,
+      "to": 23,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 135,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 136,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": 23,
+      "to": 29,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 137,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 138,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:2",
+      "from": 29,
+      "to": 31,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 141,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 142,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:2",
+      "from": 31,
+      "to": 34,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 145,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 146,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:2",
+      "from": 34,
+      "to": 38,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 149,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 150,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:2",
+      "from": 38,
+      "to": 41,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 153,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 154,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": 41,
+      "to": 47,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 155,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 156,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:2",
+      "from": 47,
+      "to": 53,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 157,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 158,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:3",
+      "from": 0,
+      "to": 4,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 163,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 164,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:2",
+      "from": 53,
+      "to": 54,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 167,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 168,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:3",
+      "from": 4,
+      "to": 9,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 171,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 172,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:3",
+      "from": 9,
+      "to": 13,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 177,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 178,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:3",
+      "from": 13,
+      "to": 16,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 181,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 182,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:2",
+      "from": 54,
+      "to": 56,
+      "capturedIds": [],
+      "bonusReasons": [
+        "home"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 183,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 184,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:3",
+      "from": 16,
+      "to": 21,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 187,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 188,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:3",
+      "from": 21,
+      "to": 22,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 191,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 192,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:3",
+      "from": 22,
+      "to": 24,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 195,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 196,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:3",
+      "from": 24,
+      "to": 30,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 197,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 198,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:3",
+      "from": 30,
+      "to": 36,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 199,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 200,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:3",
+      "from": 36,
+      "to": 41,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 203,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 204,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:3",
+      "from": 41,
+      "to": 43,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 207,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 208,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:3",
+      "from": 43,
+      "to": 49,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 209,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 210,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:3",
+      "from": 49,
+      "to": 50,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 213,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 214,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:3",
+      "from": 50,
+      "to": 56,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six",
+        "home"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 215,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 216,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:4",
+      "from": 0,
+      "to": 1,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 219,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 220,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:4",
+      "from": 1,
+      "to": 7,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 221,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 222,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:4",
+      "from": 7,
+      "to": 9,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 229,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 230,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:4",
+      "from": 9,
+      "to": 14,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 237,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 238,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 3,
+      "pieceId": "0:4",
+      "from": 14,
+      "to": 17,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 243,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 244,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 4,
+      "pieceId": "0:4",
+      "from": 17,
+      "to": 21,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 247,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 248,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:4",
+      "from": 21,
+      "to": 26,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 251,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 252,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": "0:4",
+      "from": 26,
+      "to": 32,
+      "capturedIds": [],
+      "bonusReasons": [
+        "six"
+      ],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 253,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 254,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:4",
+      "from": 32,
+      "to": 37,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 257,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 258,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:4",
+      "from": 37,
+      "to": 38,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 261,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 262,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:4",
+      "from": 38,
+      "to": 43,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 265,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 266,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 1,
+      "pieceId": "0:4",
+      "from": 43,
+      "to": 44,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 269,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 270,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 5,
+      "pieceId": "0:4",
+      "from": 44,
+      "to": 49,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 272,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 273,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:4",
+      "from": 49,
+      "to": 51,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 275,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 276,
+    "event": {
+      "type": "MOVE",
+      "actor": 0,
+      "dice": 2,
+      "pieceId": "0:4",
+      "from": 51,
+      "to": 53,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": null
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 278,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": "noMove"
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "revision": 280,
+    "event": {
+      "type": "ROLL",
+      "actor": 0,
+      "dice": 6,
+      "pieceId": null,
+      "from": null,
+      "to": null,
+      "capturedIds": [],
+      "bonusReasons": [],
+      "skipReason": "noMove"
+    }
+  }
+]

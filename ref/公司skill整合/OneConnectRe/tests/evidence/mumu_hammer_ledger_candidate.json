@@ -1,0 +1,15 @@
+{
+  "reward": {
+    "status": "rewarded",
+    "duplicate": "already_claimed",
+    "cancelled": "cancelled",
+    "count": 2
+  },
+  "afterReload": {
+    "status": "already_claimed",
+    "calls": 0,
+    "stock": 1
+  },
+  "actualHammerUsed": true,
+  "errors": []
+}

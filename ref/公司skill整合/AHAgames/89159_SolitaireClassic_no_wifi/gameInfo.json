@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  89159,
+    "apiName":  "SolitaireClassic no wifi",
+    "targetName":  "SolitaireClassic no wifi",
+    "match":  "EXACT",
+    "bundleName":  "re_re_SolitaireClassic.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260906/ec6ae91b8cf9e655d4c64c147eb2727e.zip",
+    "bundleMd5":  "ec6ae91b8cf9e655d4c64c147eb2727e",
+    "bundleSize":  1615706,
+    "updatedAt":  1788940939,
+    "gameLink":  "https://www.gongleih5game.com/SolitaireClassic/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_89159",
+    "category":  "Card",
+    "rate":  7.7,
+    "gameType":  1,
+    "localFile":  "SolitaireClassic_no_wifi.zip",
+    "localBytes":  1615706,
+    "verifiedAt":  "2026-10-20T10:35:36",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

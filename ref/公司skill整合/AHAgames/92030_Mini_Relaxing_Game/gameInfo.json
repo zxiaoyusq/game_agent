@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "92030",
+    "apiName":  "Mini Relaxing Game",
+    "targetName":  "Mini Relaxing Game",
+    "match":  "BY_ID",
+    "bundleName":  "re_hippoo_hnyige-mini_relaxing_game-1.0.0.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250118/11013239762.zip",
+    "bundleMd5":  "e71a6ee6ae8976e9e7ae58d7e7c07af2",
+    "bundleSize":  2611429,
+    "updatedAt":  1775111060,
+    "gameLink":  "https://www.hnyigegame.com/Mini_Relaxing_Game/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_92030",
+    "category":  "Casual",
+    "rate":  7.7,
+    "gameType":  1,
+    "localFile":  "Mini_Relaxing_Game.zip",
+    "localBytes":  2611429,
+    "verifiedAt":  "2026-10-20T11:15:47",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

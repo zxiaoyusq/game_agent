@@ -1,0 +1,68 @@
+[
+  {
+    "name": "preinstalled_original",
+    "tiles": 72,
+    "menu_ms": 345,
+    "sample": {
+      "fps": 59.92989700296962,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 9329024
+  },
+  {
+    "name": "preinstalled_iteration",
+    "tiles": 16,
+    "menu_ms": 376,
+    "sample": {
+      "fps": 60.00925785980329,
+      "p95": 16.66700000000037,
+      "frames": 241
+    },
+    "used_heap_bytes": 12540480
+  },
+  {
+    "name": "preinstalled_iteration_72",
+    "tiles": 72,
+    "menu_ms": 360,
+    "sample": {
+      "fps": 60.02936207969844,
+      "p95": 16.66700000000037,
+      "frames": 241
+    },
+    "used_heap_bytes": 11384296
+  },
+  {
+    "name": "preinstalled_iteration_72",
+    "tiles": 72,
+    "menu_ms": 242,
+    "sample": {
+      "fps": 59.834781210371716,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 11200772
+  },
+  {
+    "name": "preinstalled_iteration",
+    "tiles": 16,
+    "menu_ms": 390,
+    "sample": {
+      "fps": 59.7723272056514,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 12363056
+  },
+  {
+    "name": "preinstalled_original",
+    "tiles": 72,
+    "menu_ms": 343,
+    "sample": {
+      "fps": 59.818928104638395,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 9463372
+  }
+]

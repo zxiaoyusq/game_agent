@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style></style>
+    <title>Crazy Knifes</title>
+    <script src="storage-migration.js?v=release-v17-level3"></script>
+    <script src="aha-game-adapter.js?v=release-v17-level3"></script>
+    <script src="playcanvas-stable.min.js?v=release-v17-level3"></script>
+    <script src="__settings__.js?v=release-v17-level3"></script>
+    <script src="engagement-layer.js?v=release-v17-level3"></script>
+    <script src="localization-layer.js?v=release-v17-level3"></script>
+    <script src="level-runtime.js?v=release-v17-level3"></script>
+    <script src="model-buffers.js?v=release-v17-level3"></script>
+    <script src="quality-controller.js?v=release-v17-level3"></script>
+    <script src="render-recovery.js?v=release-v17-level3"></script>
+    <script src="performance-runtime.js?v=release-v17-level3"></script>
+    <script>
+        const createElementByHTML = html => {
+            const div = document.createElement("div");
+            div.innerHTML = html;
+            return div.firstChild;
+        };
+    
+        function showMessage(str){
+            const dom=document.getElementById("msg2");
+            if (dom){
+                dom.innerHTML = str;
+                dom.style.display = 'flex';
+                setTimeout(()=>{
+                    dom.style.display = 'none';
+                    dom.innerHTML = '';
+                },2000);
+            } else {
+                const msg = createElementByHTML('<div id="msg2" style="position: fixed;top: 46vh;left: 23vw;width: 50vw;height: 6vh;z-index: 9999999;display: none;border-radius: 2vw;align-items: center;justify-content: center;color: white;background: rgba(0,0,0,0.6);padding:2vh 2vw;text-align:center;"></div>');
+                document.body.appendChild(msg);
+                setTimeout(()=>{
+                    showMessage(str);
+                },100);
+            }
+        }
+    </script>
+    </head>
+    <body>
+    <script src="__modules__.js?v=release-v17-level3"></script>
+    <script src="__start__.js?v=release-v17-level3"></script>
+    <script src="__loading__.js?v=release-v17-level3"></script>
+    <!-- First level readiness is reported after resource preparation and rendering. -->
+    </body></html>

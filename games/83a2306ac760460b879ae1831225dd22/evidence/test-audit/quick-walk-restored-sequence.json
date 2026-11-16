@@ -1,0 +1,65 @@
+[
+  {
+    "at": 1794224843156,
+    "path": "evidence/test-audit/quick-walk-restored-0.png",
+    "phase": "moving",
+    "elapsed": 99.99999999999997,
+    "plan": {
+      "id": 2,
+      "p": 2,
+      "index": 0,
+      "path": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "from": 26,
+      "capture": null,
+      "home": false
+    }
+  },
+  {
+    "at": 1794224843305,
+    "path": "evidence/test-audit/quick-walk-restored-1.png",
+    "phase": "moving",
+    "elapsed": 249.99999999999997,
+    "plan": {
+      "id": 2,
+      "p": 2,
+      "index": 0,
+      "path": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "from": 26,
+      "capture": null,
+      "home": false
+    }
+  },
+  {
+    "at": 1794224843438,
+    "path": "evidence/test-audit/quick-walk-restored-2.png",
+    "phase": "moving",
+    "elapsed": 400,
+    "plan": {
+      "id": 2,
+      "p": 2,
+      "index": 0,
+      "path": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "from": 26,
+      "capture": null,
+      "home": false
+    }
+  }
+]

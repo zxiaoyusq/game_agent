@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
+const unhandled=[];process.on('unhandledRejection',e=>unhandled.push(String(e)));
+const w={setTimeout,clearTimeout,Promise};w.window=w;vm.runInNewContext(fs.readFileSync('game/reward-lifecycle.js','utf8'),w);
+(async()=>{let pauses=0,resumes=0,awards=0,callbacks;
+ const h=w.oneConnectRewardLifecycle.create({loadTimeoutMs:40,gate:{pause(){pauses++},resume(){resumes++}},grant(){awards++;return true}});
+ h.setProvider({show(c){callbacks=c;c.shown();return Promise.reject(Error('provider failed'))}});
+ const result=await Promise.race([h.request('async-failure'),new Promise(r=>setTimeout(()=>r({status:'hung'}),100))]);
+ assert.equal(result.status,'error');assert.equal(pauses,resumes);assert.equal(h.state().busy,false);callbacks.earned({verified:true});callbacks.closed();assert.equal(awards,0);assert.deepEqual(unhandled,[]);
+ h.setProvider({show(){return Promise.resolve()}});assert.equal((await h.request('resolved-only')).status,'timeout');assert.equal(awards,0);
+ h.setProvider({show(c){c.shown();c.earned({verified:true});return Promise.reject(Error('after reward'))}});assert.equal((await h.request('earned-then-failed')).status,'rewarded');assert.equal(awards,1);assert.equal(pauses,resumes);
+ console.log('asynchronous provider rejection after shown releases pause and ignores late reward PASS');
+})().catch(e=>{console.error(e);process.exitCode=1});

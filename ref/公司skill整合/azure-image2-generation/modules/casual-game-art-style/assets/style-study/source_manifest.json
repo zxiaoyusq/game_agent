@@ -1,0 +1,379 @@
+{
+  "review_date": "2026-10-23",
+  "templates": 8,
+  "gameplay_regions": [
+    {
+      "id": "S01",
+      "key": "meowdoku",
+      "title": "Meowdoku!",
+      "index": 1,
+      "store": "https://apps.apple.com/us/app/meowdoku/id6761760135?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/61/fb/9f61fba0-1abe-8afa-4fee-98d9d4844126/1.png/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\meowdoku\\01.img",
+      "source_sha256": "bee6feb41eda958f008b19d1b2101f85165921d0606da4e30f584da0bc166746",
+      "crop_bbox": [
+        0,
+        0,
+        222,
+        398
+      ],
+      "file": "evidence/S01.png",
+      "crop_sha256": "473c081ce91387ff66f114da17f05415ce93a50f67b904e2c213b4cb38b4ae5a",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S02",
+      "key": "arrows_escape",
+      "title": "Arrows – Puzzle Escape",
+      "index": 1,
+      "store": "https://apps.apple.com/us/app/arrows-puzzle-escape/id6748397500?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ad/d0/43/add043a3-b812-a31c-a6d2-59651185320d/1290x2796_Gameplay_Arrows_updated_5.png/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_escape\\01.img",
+      "source_sha256": "4464f6ecdc7a2b706807239f9be46c64a3540b2a9bb5f3eaa96a6a0653528632",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        480
+      ],
+      "file": "evidence/S02.png",
+      "crop_sha256": "d848cecdf3e0093657695085cb3fa975cca64306b645e4c238646544459e3651",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S03",
+      "key": "ludo_king",
+      "title": "Ludo King",
+      "index": 1,
+      "store": "https://apps.apple.com/us/app/ludo-king/id993090598?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/93/23/749323f5-e431-ef2c-4112-6aed64196017/91b3084c-b634-4371-9340-f878a6c812c0_5.jpg/392x696bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\ludo_king\\01.img",
+      "source_sha256": "ab96c53a49b7c44b5886293629b215db0700e7f12e1b29b5dc6fa6dd5370527a",
+      "crop_bbox": [
+        0,
+        118,
+        392,
+        543
+      ],
+      "file": "evidence/S03.png",
+      "crop_sha256": "2b10971d1f5b3daeef1e9832d3f94cd9cb908a4928b3d7cee4bb5a8f37073f31",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S04",
+      "key": "tile_explorer",
+      "title": "Tile Explorer: Tiles Clear!",
+      "index": 1,
+      "store": "https://apps.apple.com/us/app/tile-explorer-tiles-clear/id6498883328?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4e/7e/38/4e7e38f8-6ac6-434b-5163-6425ce503a9f/3d696d41-50f1-4f42-a117-1326236dc17e_1.jpg/392x696bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\tile_explorer\\01.img",
+      "source_sha256": "c5ead042abd73cb45052400b542c01c6db61f469ff6e20d4a5a14eea96317399",
+      "crop_bbox": [
+        0,
+        0,
+        392,
+        696
+      ],
+      "file": "evidence/S04.png",
+      "crop_sha256": "82ab7c5163d7fee2508686ac2da6aff78841c036b6fb97133a2a353289bb353c",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S05",
+      "key": "tile_explorer",
+      "title": "Tile Explorer: Tiles Clear!",
+      "index": 4,
+      "store": "https://apps.apple.com/us/app/tile-explorer-tiles-clear/id6498883328?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/5c/e3/555ce327-b6c2-fbf3-8059-0c70845461da/d47fb63c-d587-44fb-8db1-081dd594aa36_4.jpg/392x696bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\tile_explorer\\04.img",
+      "source_sha256": "c82a6313e871855d2ef615747efff11b2d2b1d01f7ec17ad384f2ec22da21c8c",
+      "crop_bbox": [
+        0,
+        0,
+        392,
+        696
+      ],
+      "file": "evidence/S05.png",
+      "crop_sha256": "0f44bcaa3981de1360e6c1c7ffd96f06d0404f53a73168d47803bd63bb34c548",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S06",
+      "key": "block_blast",
+      "title": "Block Blast！",
+      "index": 2,
+      "store": "https://apps.apple.com/us/app/block-blast/id1617391485?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e2/60/92/e260923c-09a4-371a-dd74-9cfee00d6e48/2.png/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_blast\\02.img",
+      "source_sha256": "fe92033e81613ceb1f34390d0a92d8892593cb1652c1242f7b77c44f684bc44b",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        403
+      ],
+      "file": "evidence/S06.png",
+      "crop_sha256": "e67ed95a4128563865ae5d853316edfcd914ff1d6279be8e95cfa04c218cb647",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S07",
+      "key": "block_out",
+      "title": "Block Out! - Color Sort Puzzle",
+      "index": 1,
+      "store": "https://apps.apple.com/us/app/block-out-color-sort-puzzle/id6752672568?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/38/e5/7038e5dc-5fcf-26ab-6b29-69547f7a46aa/CLEARTHEBOARD.jpg/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_out\\01.img",
+      "source_sha256": "1931362a5937678105e5b9245c87284ab42038c403acf97e351cf8ea3a140292",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        403
+      ],
+      "file": "evidence/S07.png",
+      "crop_sha256": "6d58601ba40fe1dea3d9a236fd2de6eb6d9e68c605b35b120ee60a86308a40cc",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S08",
+      "key": "candy_crush",
+      "title": "Candy Crush Saga",
+      "index": 4,
+      "store": "https://apps.apple.com/us/app/candy-crush-saga/id553834731?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/9c/60/909c60c4-5c51-c7c7-f8b9-404ef0458d93/113c4621-26f9-4a3f-b46c-1af889bc5dce_563552_CCS_Taglines_Banner_Route_4_Resize_Screenshots_June_24_sta_ios-6.7_1290x2796_4.jpg/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\candy_crush\\04.img",
+      "source_sha256": "17c072d3ad6952f0aaa09412d260e77c78646571daa5c906fda43d5d8facfb9f",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        336
+      ],
+      "file": "evidence/S08.png",
+      "crop_sha256": "ba5dab08694592134ed3f09aae21e4feb9020505544afd6134cc99383bb5c039",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S09",
+      "key": "candy_crush",
+      "title": "Candy Crush Saga",
+      "index": 5,
+      "store": "https://apps.apple.com/us/app/candy-crush-saga/id553834731?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/92/a4/a192a4cd-9619-8745-7b20-4d600dac32d7/09ced3e6-d696-417a-b598-99536cbccc6f_563552_CCS_Taglines_Banner_Route_4_Resize_Screenshots_June_24_sta_ios-6.7_1290x2796_3.jpg/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\candy_crush\\05.img",
+      "source_sha256": "fd798d4875844c8017bfe63bbc9d6be1df6d19e5fa635693cbe63cab7b4ecb27",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        336
+      ],
+      "file": "evidence/S09.png",
+      "crop_sha256": "60ebd1d3559b52168f902c4e54e899621107694105220aa808020377e1e1e864",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S10",
+      "key": "pizza_ready",
+      "title": "Pizza Ready!",
+      "index": 4,
+      "store": "https://apps.apple.com/us/app/pizza-ready/id6450917563?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/07/b3/8d07b3f8-d006-4243-0c40-f25152f3116c/4_Pizza_Ready_1242x2688_250926.png/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\pizza_ready\\04.img",
+      "source_sha256": "4839a5adf0a6520f74c4914325a21c863cd524ac9e62d8198d4e988b8f9c758d",
+      "crop_bbox": [
+        0,
+        0,
+        222,
+        480
+      ],
+      "file": "evidence/S10.png",
+      "crop_sha256": "e10aa73545480db42c56ded64592071c36dc41b6db944314c9abc96f36a1308d",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S11",
+      "key": "bus_fever",
+      "title": "Bus Fever Party!",
+      "index": 2,
+      "store": "https://apps.apple.com/us/app/bus-fever-party/id6746743297?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/b0/8e/7bb08e8a-6fa5-b455-d555-cf2187ea2410/_U753b_U677f_2.png/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\bus_fever\\02.img",
+      "source_sha256": "d75ff22a175220c03e70b7be3f3affe124b6fef28cd56057e8918bed96fb4464",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        480
+      ],
+      "file": "evidence/S11.png",
+      "crop_sha256": "7df2cf62736a4132cfbb0b8a85fe1fa12e5034ddc40e39089e1d21ac3008ca23",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S12",
+      "key": "mob_control",
+      "title": "Mob Control",
+      "index": 1,
+      "store": "https://apps.apple.com/us/app/mob-control/id1562817072?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/6f/7b/556f7b45-0f08-1969-382e-1c95b02ed3e3/Screen_1.jpg/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\mob_control\\01.img",
+      "source_sha256": "e48ed5a85bdcce86e88e24617a821b72912496ee3048451175f2dfcfb654d329",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        408
+      ],
+      "file": "evidence/S12.png",
+      "crop_sha256": "0c2dae6f0dadff06c7294227911f08846ef0c336250dd77e306257ef4230a18b",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S13",
+      "key": "subway_surfers",
+      "title": "Subway Surfers",
+      "index": 3,
+      "store": "https://apps.apple.com/us/app/subway-surfers/id512939461?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/7f/70/797f7095-d521-4ab2-a404-4cf91b4fd95e/_U002fdata_U002fapp-store-connect-assets_U002fscreenshots_U002fen-US_U002f3_IPHONE_69.jpg/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\subway_surfers\\03.img",
+      "source_sha256": "40651ff24fc0d4117cd9ee3eb08da31dfedeccd06f7e3137fbebf22924e0880d",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        480
+      ],
+      "file": "evidence/S13.png",
+      "crop_sha256": "adf7951d5d26330aafc95f8d09134d9a885d35626f89d44c381880387abb4562",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S14",
+      "key": "talking_tom_2",
+      "title": "My Talking Tom 2",
+      "index": 1,
+      "store": "https://apps.apple.com/us/app/my-talking-tom-2/id1337578317?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/51/a2/2851a259-942b-2c9e-1b35-509ee5623de5/1.PNG/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\talking_tom_2\\01.img",
+      "source_sha256": "a736dcc3805056795333000cc62c9dc1ef8c2827fead196da2ca1fc5f3339cea",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        480
+      ],
+      "file": "evidence/S14.png",
+      "crop_sha256": "d1d5010fa9ce9235863818c613459663b5b6aa25380e7d161e35131d75a148a0",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S15",
+      "key": "brain_puzzle_3",
+      "title": "Brain Puzzle 3: Crazy Mind",
+      "index": 3,
+      "store": "https://apps.apple.com/us/app/brain-puzzle-3-crazy-mind/id6756482832?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/23/b6/ac23b6e7-7e98-fbd5-3601-cb60ac9f7c2e/level_23.png/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\brain_puzzle_3\\03.img",
+      "source_sha256": "7bd7d141c7bba797dbbb941da15b84ef81a1e07a1678cece5570aae1bcc1fe85",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        480
+      ],
+      "file": "evidence/S15.png",
+      "crop_sha256": "4006202949ff6f419cf6bff9f2821e8054101d8a5d9b45527b587b15b9b996ee",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S16",
+      "key": "brain_puzzle_3",
+      "title": "Brain Puzzle 3: Crazy Mind",
+      "index": 4,
+      "store": "https://apps.apple.com/us/app/brain-puzzle-3-crazy-mind/id6756482832?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/de/15/c5de15bb-cf03-2499-0549-7c73cc4972c3/L169.png/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\brain_puzzle_3\\04.img",
+      "source_sha256": "6c748723e1d27384b592af80c3ea2139574ba22dfc90b7dd15bc2b8df1dc2742",
+      "crop_bbox": [
+        0,
+        0,
+        221,
+        480
+      ],
+      "file": "evidence/S16.png",
+      "crop_sha256": "7d42f8f464219f710b4c18a14caa023ad9dcdf901facf3052c90fa5975ef95e4",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S17",
+      "key": "perfect_makeover",
+      "title": "Perfect Makeover Cleaning ASMR",
+      "index": 3,
+      "store": "https://apps.apple.com/us/app/perfect-makeover-cleaning-asmr/id6754549880?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/0d/f8/c20df89e-25b7-6601-250f-3cc55fa84dc3/2.jpg/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\perfect_makeover\\03.img",
+      "source_sha256": "321fa77f2162e221fe86c5189165143ca87abff3b4d3672c35546b0fe6aa8fa7",
+      "crop_bbox": [
+        0,
+        0,
+        222,
+        480
+      ],
+      "file": "evidence/S17.png",
+      "crop_sha256": "48f51b96da6c1259be9cd426a78e37ce42755d01a5f6a9a919a4a8e0016b6b63",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    },
+    {
+      "id": "S18",
+      "key": "perfect_makeover",
+      "title": "Perfect Makeover Cleaning ASMR",
+      "index": 4,
+      "store": "https://apps.apple.com/us/app/perfect-makeover-cleaning-asmr/id6754549880?uo=4",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/74/13/bb7413ed-6287-8687-96ab-24e7ac07f034/3.jpg/320x480bb.jpg",
+      "source_path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\perfect_makeover\\04.img",
+      "source_sha256": "756c49ecb1b12ebd74effbfc42b1234f0e052ad7e4208c9dcf18a7be2aad9548",
+      "crop_bbox": [
+        0,
+        0,
+        222,
+        480
+      ],
+      "file": "evidence/S18.png",
+      "crop_sha256": "869f051800bb37a56504ce9df10f0bec1d18a79c720df69f0cf629ac1c9fe897",
+      "role": "可见局内形式分析；不提取配色规则或题材元素",
+      "capture": "2026-10-22 archived official-store screenshot; reviewed 2026-10-23; not device capture"
+    }
+  ],
+  "baseline": {
+    "id": "P-SA-M03-V8",
+    "file": "project_M03_V8.png",
+    "source": "E:\\codex_apk_work\\aha_games\\art\\南亚七母版_V8_整屏造型统一_20261023\\images\\SA_M03.png",
+    "sha256": "9b477afb0ee63d20033e7f86f83b6d0d0a3a64a8252fe9d82b1de7a9b39ed7b6",
+    "status": "user_preferred_visual_reference; not production acceptance"
+  },
+  "excluded": [
+    "competitor palette, saturation/contrast hierarchy and functional-color grouping",
+    "competitor subject matter, objects, characters and cultural symbols",
+    "store marketing copy, cover portraits and decorative enlarged marketing props",
+    "engine, shader and toolchain inference from static images"
+  ]
+}

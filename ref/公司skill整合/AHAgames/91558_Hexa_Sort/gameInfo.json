@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  91558,
+    "apiName":  "Hexa Sort",
+    "targetName":  "Hexa Sort",
+    "match":  "EXACT",
+    "bundleName":  "re_hippoo_shchiyan-hexa_sort-1.0.0.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20240919/10120155252.zip",
+    "bundleMd5":  "f8b4936fb780f429cfd9a9e47623b95d",
+    "bundleSize":  1615359,
+    "updatedAt":  1727080476,
+    "gameLink":  "https://www.shchiyangame.com/Hexa_Sort/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_91558",
+    "category":  "Puzzle",
+    "rate":  8.8,
+    "gameType":  1,
+    "localFile":  "Hexa_Sort.zip",
+    "localBytes":  1615359,
+    "verifiedAt":  "2026-10-20T10:34:30",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "93539",
+    "apiName":  "Asmr Organize2",
+    "targetName":  "Asmr Organize2",
+    "match":  "BY_ID",
+    "bundleName":  "re_asmr-organize-transsion-offline.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251222/e4146ca4eef2c25e3c24318a89385b5d.zip",
+    "bundleMd5":  "e4146ca4eef2c25e3c24318a89385b5d",
+    "bundleSize":  13115682,
+    "updatedAt":  1767004346,
+    "gameLink":  "https://www.hkminih5game.com/Asmr_Organize2/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_93539",
+    "category":  "Simulation",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Asmr_Organize2.zip",
+    "localBytes":  13115682,
+    "verifiedAt":  "2026-10-20T11:12:38",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

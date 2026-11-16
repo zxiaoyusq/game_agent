@@ -1,0 +1,322 @@
+{
+  "stage": "test",
+  "attempt": 1,
+  "date": "2026-11-11T10:04:50.819Z",
+  "node": "v22.23.3",
+  "upstream": [
+    {
+      "path": "README.md",
+      "sha256": "379112263dbf7dd873d3e7a0579e7048a349b5aa3ff974d55969143fc506fa98"
+    },
+    {
+      "path": "assets/art-preview.html",
+      "sha256": "0474e50e7e7a56419e04d66f61283dec3be0a8f6984a0083620cace70eed6530"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "08063591e7134da8fd4116b59557e88fcba73fe2ff8c2eb42aecf8e89b60f5dd"
+    },
+    {
+      "path": "package.json",
+      "sha256": "002bb2e0bad94c2693376da8554d93b389df445836b4c15872c36f6671a7eaf2"
+    },
+    {
+      "path": "public/assets/backgrounds/starfield.webp",
+      "sha256": "722931eec06ef80a69f582a86e589b21a254b17dc4ab49e3b02b128a603f85fc"
+    },
+    {
+      "path": "public/assets/masters/animal-six.png",
+      "sha256": "17a8a48c07b245d37fe4ea19aabea9b4f5ad940796dcdbc46d592d6521850597"
+    },
+    {
+      "path": "public/assets/masters/owl.png",
+      "sha256": "efade6bc0be94a84c8140e4700178613d5abdaba087a16578b681a93aed9288c"
+    },
+    {
+      "path": "public/assets/masters/starfield.png",
+      "sha256": "d4fd363180a19485e1435c577b3ee6bb8966089af88c57820bc0413969b82aa1"
+    },
+    {
+      "path": "public/assets/previews/desktop-board.png",
+      "sha256": "95f8f2fcbcd2487b6affbc68dbd0d0569791bedd3bcf470b3cd1ef2df082a614"
+    },
+    {
+      "path": "public/assets/previews/mobile-board.png",
+      "sha256": "e745918c3c4035c0009c940a6d01a02095fdeb971d46531401926a1dc597c016"
+    },
+    {
+      "path": "public/assets/previews/size-sheet.png",
+      "sha256": "57af8d53c8fc9d25f36fa71ad7e2861d8958e57c5859a267fb45d1fb586ffbef"
+    },
+    {
+      "path": "public/assets/qa/bear-24.png",
+      "sha256": "efb5c8214d50ed6dfb729a7d0ea5e27e162d991ddc6603eb33143fb72a7a1e66"
+    },
+    {
+      "path": "public/assets/qa/bear-30.png",
+      "sha256": "56774f3b5b78939cf2e8f88cc3f23f65f3f8ea978d33db3a13ae994ec62a535e"
+    },
+    {
+      "path": "public/assets/qa/chameleon-24.png",
+      "sha256": "ce8f1960b15cab972b127d7d02e087e20b4e6d309a7f7130b12a330fc64e2202"
+    },
+    {
+      "path": "public/assets/qa/chameleon-30.png",
+      "sha256": "a14d499df306aa483355c9e762fcfc5c4c973803ab3f8580e5e21d489a14727a"
+    },
+    {
+      "path": "public/assets/qa/fox-24.png",
+      "sha256": "7011b300585578676487b85711c618b96e934fb05ef8d5ec7e01b47cb57920b8"
+    },
+    {
+      "path": "public/assets/qa/fox-30.png",
+      "sha256": "33199f20e74827810b673c2215259a53ab5adde67ada3ff0458e687b849202e2"
+    },
+    {
+      "path": "public/assets/qa/kingfisher-24.png",
+      "sha256": "b0c9211db3c07efc6708c6eacca50872d89be655db3ab0807930d5f0d220938d"
+    },
+    {
+      "path": "public/assets/qa/kingfisher-30.png",
+      "sha256": "88f54036e01471fce9d254b1575fad611700892261a6de5bb456840a29ba052f"
+    },
+    {
+      "path": "public/assets/qa/leopard-24.png",
+      "sha256": "fe3674c139544a93e9b895212018f6dc23d7ceb989d87e1c1ef5de3ea2ab08ba"
+    },
+    {
+      "path": "public/assets/qa/leopard-30.png",
+      "sha256": "5e9e8f3231d1b676e19edab7daff96ae9d94fe85868cb09e06c8187692610eb3"
+    },
+    {
+      "path": "public/assets/qa/owl-24.png",
+      "sha256": "72b469b1baae6863c267fd20da9e53ca7c556773f462ced37d1d34863e6e87ae"
+    },
+    {
+      "path": "public/assets/qa/owl-30.png",
+      "sha256": "3b45dc8fcaf11ba4de75040117162ba36915960d2e3e161a9df4e947237efc0f"
+    },
+    {
+      "path": "public/assets/qa/rabbit-24.png",
+      "sha256": "b209340320d1fce4bc13f230a82ff9aa6649fffa71abd53bdac88c52fc2d55c4"
+    },
+    {
+      "path": "public/assets/qa/rabbit-30.png",
+      "sha256": "6d5578e6d2cda6ac123415f7f3f3202b10890661d9fa68e32ed6442870c896ff"
+    },
+    {
+      "path": "public/assets/tiles/I-kingfisher.webp",
+      "sha256": "fe0298288151789babb3bf8fa71869cd141f2caed33186c456cb26e7f67e6712"
+    },
+    {
+      "path": "public/assets/tiles/J-bear.webp",
+      "sha256": "ab3e27f9c960b9a802f9d0cf5e36546eedeb1fff6c1fe371585a8d923cf98abd"
+    },
+    {
+      "path": "public/assets/tiles/L-fox.webp",
+      "sha256": "e65cb261dfd0421810c0a898a7526069cfc4841f6dc9e659d8ccea6d49782c6f"
+    },
+    {
+      "path": "public/assets/tiles/O-leopard.webp",
+      "sha256": "fcdb1e614573123106e96ef505522f29d371885a8a301c18de9f3af555bde032"
+    },
+    {
+      "path": "public/assets/tiles/S-chameleon.webp",
+      "sha256": "660815083f17d890cfbc29409defbbbf3a496a1923dfe2abadbb792d3a0517b8"
+    },
+    {
+      "path": "public/assets/tiles/T-owl-card.webp",
+      "sha256": "e303a79bd5665a607feac037f23cfd64076cdcc39d6e09c334feddd26c3bcb9a"
+    },
+    {
+      "path": "public/assets/tiles/T-owl.webp",
+      "sha256": "823718bdf0bf5faf65ac05b7b7f7f9b769377520ff2be0c290a780176f0841c8"
+    },
+    {
+      "path": "public/assets/tiles/Z-rabbit.webp",
+      "sha256": "cfe43223f717f1119416217e84cd95ac797c53095fb18a9bc672aef690d879c5"
+    },
+    {
+      "path": "scripts/archive.cjs",
+      "sha256": "744faa7e769cc491844b6d19360e1228e78f0ad43ce561b1ec5be2d5560594ef"
+    },
+    {
+      "path": "scripts/art-manifest-check.cjs",
+      "sha256": "3e5c9578e662ccc4eff0d9dbf51fd6a659635a2ac0343c970ee5d55b4781daa4"
+    },
+    {
+      "path": "scripts/art-preview.cjs",
+      "sha256": "72e6c49bf09510b81c4d13e0eefe0353c823f3afa88b24a2884fca7a461a2ca3"
+    },
+    {
+      "path": "scripts/build.cjs",
+      "sha256": "81cabb9009498a3c25d679f52ff00cb31024376933fe407e97b9761c32101f75"
+    },
+    {
+      "path": "scripts/check.cjs",
+      "sha256": "cc688c97f9b2aa7cc6c890f2fbf501c36005ca76e36fe53645e2d21fe3c5790c"
+    },
+    {
+      "path": "scripts/diagnose.cjs",
+      "sha256": "99d74baf9ae1aedbbba2c94b76430ff0b58b0210bd35b8b857e42d5cefe1d363"
+    },
+    {
+      "path": "scripts/release.cjs",
+      "sha256": "c057a9d9ad31562ac1475494e366faea6d64594a2246b33933d82fb7417acffa"
+    },
+    {
+      "path": "scripts/test-audit.cjs",
+      "sha256": "63a4686510a4bb3d6a61ba9b6cd00397cb52755903cc709cb9e1e7cae67b5532"
+    },
+    {
+      "path": "src/app.js",
+      "sha256": "460c79e45eec7bb016ce4c31593694c2d148654f3822dd9f3aea9cf52ca4fcda"
+    },
+    {
+      "path": "src/index.html",
+      "sha256": "77471f506cdc4c31d41a955ede30bb75fb569fc7294a8499861e93a72d7d0ddd"
+    },
+    {
+      "path": "src/input.js",
+      "sha256": "c538cacd39c3655f4bed9e64c774f1a76bdd3e065b13d63d0ef5f198a1e61fab"
+    },
+    {
+      "path": "src/renderer.js",
+      "sha256": "1d69c54b0ebdf31c62b05378f316967acd14b86ba854dc11cd6e87dc6db31738"
+    },
+    {
+      "path": "src/rules.js",
+      "sha256": "382581c0c96c8c088f698f75c584ae6162b76de297b8b782c8ef7e24dc327c43"
+    },
+    {
+      "path": "src/storage.js",
+      "sha256": "f2f8a1d44919a28b7b7e59cc72ecbf6f0250c253900ec33ba5249e1981ed9af7"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "d3c3d3c6b31f89ba326f183ff29e2a6c12591ade2827f02d1b35c9bdcd2cf23c"
+    },
+    {
+      "path": "tests/rules.test.cjs",
+      "sha256": "cc3cc6c0eec6532a8a5757bfb28f8fbcc10cd2c51df1109bac077935814d0d8d"
+    },
+    {
+      "path": "workflow/art-manifest.json",
+      "sha256": "3f8dcf76ff720b2c07691fa545633d66f69b1a49db09d0c65604d47b85b3480f"
+    },
+    {
+      "path": "workflow/art.md",
+      "sha256": "60813f428a8007aaf51c233421fb7ff283d4ff125d13a7843848fe9c43c2a7de"
+    },
+    {
+      "path": "workflow/code.md",
+      "sha256": "7977abaccc55fc7d1ee434167ea756266b362752719960297f3d20dff058d803"
+    },
+    {
+      "path": "workflow/prototype.md",
+      "sha256": "fd406b4f5fba1468d8132f39f7b2e22cc6c48afcec5dd80f579414a6b2881ec4"
+    },
+    {
+      "path": "workflow/visual-spec.json",
+      "sha256": "4b297334706f465cfe16c48bf6fa19bb6abb0ec7e4a5e931c4868d4434d1207c"
+    }
+  ],
+  "dist": [
+    {
+      "path": "app.js",
+      "bytes": 7408,
+      "sha256": "18299c7641d993513852196ba3ee78db4823753f18ff27eef44bdd28fef44418"
+    },
+    {
+      "path": "assets/backgrounds/starfield.webp",
+      "bytes": 591718,
+      "sha256": "722931eec06ef80a69f582a86e589b21a254b17dc4ab49e3b02b128a603f85fc"
+    },
+    {
+      "path": "assets/tiles/I-kingfisher.webp",
+      "bytes": 50852,
+      "sha256": "fe0298288151789babb3bf8fa71869cd141f2caed33186c456cb26e7f67e6712"
+    },
+    {
+      "path": "assets/tiles/J-bear.webp",
+      "bytes": 48506,
+      "sha256": "ab3e27f9c960b9a802f9d0cf5e36546eedeb1fff6c1fe371585a8d923cf98abd"
+    },
+    {
+      "path": "assets/tiles/L-fox.webp",
+      "bytes": 50632,
+      "sha256": "e65cb261dfd0421810c0a898a7526069cfc4841f6dc9e659d8ccea6d49782c6f"
+    },
+    {
+      "path": "assets/tiles/O-leopard.webp",
+      "bytes": 56368,
+      "sha256": "fcdb1e614573123106e96ef505522f29d371885a8a301c18de9f3af555bde032"
+    },
+    {
+      "path": "assets/tiles/S-chameleon.webp",
+      "bytes": 54294,
+      "sha256": "660815083f17d890cfbc29409defbbbf3a496a1923dfe2abadbb792d3a0517b8"
+    },
+    {
+      "path": "assets/tiles/T-owl-card.webp",
+      "bytes": 43392,
+      "sha256": "e303a79bd5665a607feac037f23cfd64076cdcc39d6e09c334feddd26c3bcb9a"
+    },
+    {
+      "path": "assets/tiles/Z-rabbit.webp",
+      "bytes": 38360,
+      "sha256": "cfe43223f717f1119416217e84cd95ac797c53095fb18a9bc672aef690d879c5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3082,
+      "sha256": "77471f506cdc4c31d41a955ede30bb75fb569fc7294a8499861e93a72d7d0ddd"
+    },
+    {
+      "path": "input.js",
+      "bytes": 2650,
+      "sha256": "c538cacd39c3655f4bed9e64c774f1a76bdd3e065b13d63d0ef5f198a1e61fab"
+    },
+    {
+      "path": "renderer.js",
+      "bytes": 3559,
+      "sha256": "1d69c54b0ebdf31c62b05378f316967acd14b86ba854dc11cd6e87dc6db31738"
+    },
+    {
+      "path": "rules.js",
+      "bytes": 6559,
+      "sha256": "382581c0c96c8c088f698f75c584ae6162b76de297b8b782c8ef7e24dc327c43"
+    },
+    {
+      "path": "storage.js",
+      "bytes": 933,
+      "sha256": "f2f8a1d44919a28b7b7e59cc72ecbf6f0250c253900ec33ba5249e1981ed9af7"
+    },
+    {
+      "path": "style.css",
+      "bytes": 5262,
+      "sha256": "d3c3d3c6b31f89ba326f183ff29e2a6c12591ade2827f02d1b35c9bdcd2cf23c"
+    }
+  ],
+  "originalPackages": [
+    {
+      "path": "releases/animal-tetris-play.zip",
+      "bytes": 965301,
+      "sha256": "7e358beb6a821c6a2b2c126a9854f529d6b6ff2827eaeb4c59a32f4b3f5bc71c"
+    },
+    {
+      "path": "releases/animal-tetris-source.zip",
+      "bytes": 5350487,
+      "sha256": "4d1986015b3b4ab477c2a251946d13dd32b767e9414b3b870a7bfbd0b963c977"
+    }
+  ],
+  "originalPlayMatches": true,
+  "originalSourceRebuildMatches": true,
+  "originalSourceTestsPassed": true,
+  "previousVideos": [
+    "evidence/videos/page@4551e74289f19ad48634c11b87898895.webm",
+    "evidence/videos/page@4f00ce5b7bd6348f1127a79461316c92.webm",
+    "evidence/videos/page@646f32d2fca20995973ae7b208d1372c.webm",
+    "evidence/videos/page@9716043df415015368683ec97724105c.webm"
+  ]
+}

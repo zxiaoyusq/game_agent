@@ -10,10 +10,14 @@ from pathlib import Path
 from langchain.agents.middleware import wrap_tool_call
 from langchain_core.messages import ToolMessage
 from langchain_core.tools import BaseTool, tool
+from langgraph.errors import GraphBubbleUp
 
 from app.services.workflow.codex_model import stop_process
+from app.services.workflow.skill_inputs import read_frozen_skill
 from app.services.workflow.validation import ASSET_SUFFIXES, read_frozen_knowledge, successful_file_result
 from app.services.workflow.workspace import checked_child, normalize_reference, snapshot, source_fingerprint
+from app.services.workflow.production_tools import create_production_tools, validation_environment
+from app.services.workflow.model_runtime import safe_error
 
 
 def create_tool_guard(workspace: Path, emit: Callable[[str, str, dict], None]):
@@ -24,7 +28,8 @@ def create_tool_guard(workspace: Path, emit: Callable[[str, str, dict], None]):
     越过下一次写入。不同参考资料读取仍可并行。
     """
     file_io_lock = asyncio.Lock()
-    file_io_tools = {"read_file", "write_file", "edit_file", "ls", "glob", "grep", "inspect_assets", "run_validation"}
+    file_io_tools = {"read_file", "write_file", "edit_file", "ls", "glob", "grep", "inspect_assets", "run_validation",
+                     "prepare_web_runtime", "generate_art_image", "process_art_image", "extract_reference_asset"}
 
     async def call_and_record(request, handler):
         result = await handler(request)
@@ -44,9 +49,17 @@ def create_tool_guard(workspace: Path, emit: Callable[[str, str, dict], None]):
                 async with file_io_lock:
                     return await call_and_record(request, handler)
             return await call_and_record(request, handler)
+        except GraphBubbleUp:
+            # 人工中断属于图控制流，必须传回检查点，不能被包装成普通工具错误。
+            raise
         except Exception as error:
-            emit("tool_error", "工具调用失败，已返回模型修正参数", {"tool": request.tool_call["name"], "error": str(error)})
-            return ToolMessage(content=f"工具调用错误：{error}。请检查路径、参数或允许的命令后修正重试，不得声称本次操作成功。",
+            message = safe_error(error)
+            # 日志保留调用关联和定位参数；不复制文件正文、图片或任意凭据字段。
+            arguments = {key: safe_error(ValueError(str(value))) for key, value in request.tool_call.get("args", {}).items()
+                         if key in {"path", "member", "destination", "file_path", "command", "query"}}
+            emit("tool_error", "工具调用失败，已返回模型修正参数", {"tool": request.tool_call["name"], "error": message,
+                 "call_id": request.tool_call["id"], "arguments": arguments})
+            return ToolMessage(content=f"工具调用错误：{message}。请检查路径、参数或允许的命令后修正重试，不得声称本次操作成功。",
                                tool_call_id=request.tool_call["id"], status="error")
 
     return recover_tool_errors
@@ -60,6 +73,7 @@ def create_workflow_tools(
     run: dict,
     emit: Callable[[str, str, dict], None],
     load_run: Callable[[], dict],
+    skill_input_dir: Path | None = None,
 ) -> list[BaseTool]:
     """显式绑定当前运行依赖，保留知识快照并实时读取验证所属的尝试次数。"""
     run_id = run["id"]
@@ -72,11 +86,22 @@ def create_workflow_tools(
         emit("reference_read", "读取参考工程证据", {"path": path, "offset": offset})
         if target.is_dir():
             return "\n".join(child.relative_to(root / "ref").as_posix() + ("/" if child.is_dir() else "") for child in sorted(target.iterdir())[:200])
+        if target.suffix.lower() == ".zip":
+            raise ValueError("ZIP不是文本，请使用list_reference_archive和read_reference_archive研究包内文件")
         return target.read_text(encoding="utf-8", errors="replace")[max(0, offset):max(0, offset) + min(max(limit, 1), 60000)]
 
     @tool
     def read_skill(path: str) -> str:
         """读取归档 Skill 入口并记录内容哈希；兼容读取同包配套文本，入口 path 使用技能列表中的路径。"""
+        if "skill_snapshot" in run:
+            if Path(path).name != "SKILL.md":
+                return read_skill_resource.invoke({"path": path})
+            if skill_input_dir is None:
+                raise ValueError("运行技能输入目录缺失，不能回退到当前知识库")
+            content, evidence = read_frozen_skill(run, path, skill_input_dir, entry=True)
+            emit("skill_read", "读取本次运行冻结的技能规范", evidence)
+            return content
+        # 历史检查点不补加快照或重新选型，继续使用创建时的读取协议。
         target = checked_child(knowledge_dir / "skill" / "docs", path)
         if target.name != "SKILL.md":
             return read_skill_resource.invoke({"path": path})
@@ -89,6 +114,12 @@ def create_workflow_tools(
     @tool
     def read_skill_resource(path: str, offset: int = 0, limit: int = 24000) -> str:
         """读取已归档技能包的 references/scripts 等文本或列出目录；path 相对技能知识库，读取记录包含实际哈希。"""
+        if "skill_snapshot" in run:
+            if skill_input_dir is None:
+                raise ValueError("运行技能输入目录缺失，不能回退到当前知识库")
+            content, evidence = read_frozen_skill(run, path, skill_input_dir, offset=offset, limit=limit)
+            emit("skill_resource_read", "读取本次运行冻结的技能配套文本", evidence)
+            return content
         base = knowledge_dir / "skill" / "docs"
         parts = Path(path).parts
         if not parts or any(part.startswith(".") for part in parts) or not (base / parts[0] / "SKILL.md").is_file():
@@ -159,7 +190,7 @@ def create_workflow_tools(
         emit("validation_started", "开始执行真实项目验证", {"command": command})
         before_validation = snapshot(workspace)
         source_before = source_fingerprint(workspace)
-        process = await asyncio.create_subprocess_exec(*args, cwd=workspace, stdout=asyncio.subprocess.PIPE,
+        process = await asyncio.create_subprocess_exec(*args, cwd=workspace, env=validation_environment(), stdout=asyncio.subprocess.PIPE,
                                                       stderr=asyncio.subprocess.STDOUT, start_new_session=True)
         try:
             output, _ = await asyncio.wait_for(process.communicate(), min(max(timeout_seconds, 1), 300))
@@ -170,7 +201,16 @@ def create_workflow_tools(
                   "attempt": load_run().get("attempt", 1), "source_before": source_before,
                   "source_after": source_fingerprint(workspace),
                   "changed_paths": [name for name, digest in after_validation.items() if before_validation.get(name) != digest]}
+        if (workspace / "dist/index.html").is_file():
+            from app.services.workflow.publishing import build_manifest
+            try:
+                result["build_sha256"] = build_manifest(workspace)["sha256"]
+            except (ValueError, OSError) as error:
+                result["build_error"] = str(error)
         emit("validation_completed", "真实验证完成" if process.returncode == 0 else "真实验证失败", result)
         return json.dumps(result, ensure_ascii=False)
 
-    return [read_reference, read_skill, read_skill_resource, read_game_knowledge, inspect_assets, save_skill, run_validation]
+    from app.services.workflow.reference_tools import create_reference_tools
+    from app.services.workflow.human_input import create_user_input_tool
+    return [create_user_input_tool(run, emit), read_reference, read_skill, read_skill_resource, read_game_knowledge, inspect_assets, save_skill, run_validation,
+            *create_reference_tools(root, workspace, emit), *create_production_tools(workspace, run, emit)]

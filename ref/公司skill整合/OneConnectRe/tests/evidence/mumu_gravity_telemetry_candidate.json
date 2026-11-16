@@ -1,0 +1,21 @@
+{
+  "start": {
+    "level": 24,
+    "timer": 174,
+    "seed": 39,
+    "generation": {
+      "level": 24,
+      "seed": 39,
+      "strategy": "gravity_solved",
+      "searchAttempts": 6
+    },
+    "errors": []
+  },
+  "end": {
+    "level": 25,
+    "progress": 25,
+    "tiles": 72,
+    "errors": []
+  },
+  "scope": "isolated configured level 24; direct test progress; not competitor natural unlock"
+}

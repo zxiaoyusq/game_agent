@@ -1,0 +1,19 @@
+{
+  "stats": {
+    "scenes": 4000,
+    "oldNoCandidates": 4,
+    "newNoCandidates": 4,
+    "newlyEmpty": 0,
+    "recursionScenesOld": 3940,
+    "recursionScenesNew": 3940,
+    "reduced": 20,
+    "unchanged": 3980,
+    "increased": 0
+  },
+  "elapsedMs": {
+    "before": 2243.3644,
+    "after": 2181.5093
+  },
+  "examples": [],
+  "scope": "synthetic VM calls to four source candidate generators; assumed board rectangle; no engine physics, full turn or device"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "mode": "returned",
+    "calls": [
+      "Interstitial"
+    ],
+    "progress": 3,
+    "events": [
+      "ad.request",
+      "ad.returned"
+    ]
+  },
+  {
+    "mode": "rejected",
+    "calls": [
+      "Interstitial"
+    ],
+    "progress": 3,
+    "events": [
+      "ad.request",
+      "ad.error"
+    ]
+  },
+  {
+    "mode": "pending",
+    "calls": [
+      "Interstitial"
+    ],
+    "progress": 3,
+    "events": [
+      "ad.request"
+    ]
+  }
+]

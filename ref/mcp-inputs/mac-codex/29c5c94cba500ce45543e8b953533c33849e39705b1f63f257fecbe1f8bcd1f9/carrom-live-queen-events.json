@@ -1,0 +1,638 @@
+{
+  "pockets": [
+    {
+      "t": 54328.30000001192,
+      "piece": 2,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 0,
+      "opponent": 0
+    },
+    {
+      "t": 73395.30000001192,
+      "piece": 2,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 0,
+      "opponent": 1
+    },
+    {
+      "t": 120893.19999998808,
+      "piece": 2,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 0,
+      "opponent": 2
+    },
+    {
+      "t": 135592.5,
+      "piece": 1,
+      "actor": true,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 0,
+      "opponent": 3
+    },
+    {
+      "t": 145041.19999998808,
+      "piece": 1,
+      "actor": true,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 1,
+      "opponent": 3
+    },
+    {
+      "t": 164858.69999998808,
+      "piece": 1,
+      "actor": true,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 2,
+      "opponent": 3
+    },
+    {
+      "t": 178440.30000001192,
+      "piece": 2,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 3,
+      "opponent": 3
+    },
+    {
+      "t": 184857.19999998808,
+      "piece": 1,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 3,
+      "opponent": 4
+    },
+    {
+      "t": 185040.89999997616,
+      "piece": 1,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 3,
+      "opponent": 4
+    },
+    {
+      "t": 197423,
+      "piece": 2,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 5,
+      "opponent": 4
+    },
+    {
+      "t": 202989.30000001192,
+      "piece": 2,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 5,
+      "opponent": 5
+    },
+    {
+      "t": 203140.30000001192,
+      "piece": 1,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 5,
+      "opponent": 5
+    },
+    {
+      "t": 207955.19999998808,
+      "piece": 2,
+      "actor": false,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 6,
+      "opponent": 6
+    },
+    {
+      "t": 231255.19999998808,
+      "piece": 2,
+      "actor": true,
+      "pendingBefore": false,
+      "queen": 1,
+      "player": 6,
+      "opponent": 7
+    }
+  ],
+  "queen": [
+    {
+      "t": 32223.599999964237,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 0,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 36720.69999998808,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 0,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 42344.19999998808,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 0,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 46822.59999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 0,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 52425.19999998808,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 0,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 56623,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 1,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 61825.30000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 1,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 70927.59999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 1,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 75719,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 81322.19999998808,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 90022.80000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 94923.30000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 99626.59999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 104123.30000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 109229.09999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 114024.80000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 118817.80000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 2,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 123023.80000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 3,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 129423.59999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 0,
+      "opponent": 3,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 137922.89999997616,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 1,
+      "opponent": 3,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 145116,
+      "q": 0,
+      "pending": true,
+      "visible": false,
+      "filled": false,
+      "player": 1,
+      "opponent": 3,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 145720.5,
+      "q": 0,
+      "pending": true,
+      "visible": true,
+      "filled": false,
+      "player": 1,
+      "opponent": 3,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 147417.69999998808,
+      "q": 0,
+      "pending": true,
+      "visible": true,
+      "filled": false,
+      "player": 2,
+      "opponent": 3,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 157423,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 2,
+      "opponent": 3,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 162220.59999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 2,
+      "opponent": 3,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 166920.5,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 3,
+      "opponent": 3,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 176414.39999997616,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 3,
+      "opponent": 3,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 180713.59999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 3,
+      "opponent": 4,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 187116,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 5,
+      "opponent": 4,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 187618.69999998808,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 5,
+      "opponent": 4,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 195421.19999998808,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 5,
+      "opponent": 4,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 199714.59999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 5,
+      "opponent": 5,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 205213.89999997616,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 6,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 210218.5,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 7,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 215214.09999996424,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 7,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 224018.80000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 7,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 228518.89999997616,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 7,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 233413.5,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 234013.80000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 235913.80000001192,
+      "q": 0,
+      "pending": true,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 236519.39999997616,
+      "q": 0,
+      "pending": true,
+      "visible": true,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 238818.19999998808,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 243315,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 249017.5,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": true,
+      "result": false
+    },
+    {
+      "t": 252819.30000001192,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": false,
+      "result": false
+    },
+    {
+      "t": 257432.89999997616,
+      "q": 1,
+      "pending": false,
+      "visible": false,
+      "filled": false,
+      "player": 6,
+      "opponent": 8,
+      "turn": true,
+      "result": false
+    }
+  ]
+}

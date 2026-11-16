@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "80845",
+    "apiName":  "Drop Number",
+    "targetName":  "Drop Number",
+    "match":  "BY_ID",
+    "bundleName":  "re_Drop_Number.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20240708/07333515753.zip",
+    "bundleMd5":  "779ca55b90955ad54ffb1c5f6719e077",
+    "bundleSize":  1711964,
+    "updatedAt":  1724405429,
+    "gameLink":  "https://www.jmbilegame.com/Drop_Number/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_80845",
+    "category":  "Casual",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Drop_Number.zip",
+    "localBytes":  1711964,
+    "verifiedAt":  "2026-10-20T11:11:00",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

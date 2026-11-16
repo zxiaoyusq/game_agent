@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "89810",
+    "apiName":  "Drive Mad Master no wifi",
+    "targetName":  "Drive Mad Master no wifi",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Drive_Mad_Master.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260917/cae15a25dcc0f633689a357dc521eb69.zip",
+    "bundleMd5":  "cae15a25dcc0f633689a357dc521eb69",
+    "bundleSize":  6202121,
+    "updatedAt":  1789888511,
+    "gameLink":  "https://www.gongleih5game.com/Drive_Mad_Master/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_89810",
+    "category":  "Single challenge",
+    "rate":  7.5,
+    "gameType":  1,
+    "localFile":  "Drive_Mad_Master_no_wifi.zip",
+    "localBytes":  6202121,
+    "verifiedAt":  "2026-10-20T11:18:22",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

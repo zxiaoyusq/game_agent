@@ -5,6 +5,18 @@
 
 const API_BASE = '/api'
 
+export async function apiFetch(url, options = {}) {
+  const headers = new Headers(options.headers)
+  headers.set('X-Requested-With', 'GameAgent')
+  const response = await fetch(url, { ...options, headers, credentials: 'same-origin' })
+  const pathname = new URL(url, window.location.origin).pathname
+  // 普通业务请求发现会话失效时统一回到登录页，流式接口也走同一处理。
+  if (response.status === 401 && !['/api/auth/login', '/api/auth/session'].includes(pathname)) {
+    window.dispatchEvent(new Event('auth-expired'))
+  }
+  return response
+}
+
 // 解析后端响应壳，统一处理网络错误与业务错误
 async function parseResponse(resp) {
   // FileResponse 等场景：非 JSON 直接返回原始 Response
@@ -55,7 +67,7 @@ export async function request(path, { method = 'GET', body, headers, ...rest } =
   }
   let resp
   try {
-    resp = await fetch(API_BASE + path, init)
+    resp = await apiFetch(API_BASE + path, init)
   } catch (e) {
     // 网络层失败（断网、CORS、proxy 未启动等）
     throw new HttpError(`网络请求失败：${e.message || e}`, 0)

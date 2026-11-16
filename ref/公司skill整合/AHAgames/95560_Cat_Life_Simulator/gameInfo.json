@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "95560",
+    "apiName":  "Cat Life Simulator",
+    "targetName":  "Cat Life Simulator",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Cat_Life_Simulator.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260720/e8583785694cca79832e0915bc0641dd.zip",
+    "bundleMd5":  "e8583785694cca79832e0915bc0641dd",
+    "bundleSize":  32648683,
+    "updatedAt":  1784625625,
+    "gameLink":  "https://www.shanzhih5game.com/Cat_Life_Simulator/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_95560",
+    "category":  "Simulation",
+    "rate":  8.3,
+    "gameType":  1,
+    "localFile":  "Cat_Life_Simulator.zip",
+    "localBytes":  32648683,
+    "verifiedAt":  "2026-10-20T11:16:59",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

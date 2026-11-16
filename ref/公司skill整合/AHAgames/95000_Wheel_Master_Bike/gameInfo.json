@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "95000",
+    "apiName":  "Wheel Master Bike",
+    "targetName":  "Wheel Master Bike",
+    "match":  "BY_ID",
+    "bundleName":  "re_1779430820827_hippoo_boom-wheel_master_bike-1.0.1.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260522/4e6d780230d6754fc7c12a84f4907ca7.zip",
+    "bundleMd5":  "4e6d780230d6754fc7c12a84f4907ca7",
+    "bundleSize":  6338515,
+    "updatedAt":  1779443070,
+    "gameLink":  "https://www.hzxinpigame.com/Wheel_Master_Bike/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_95000",
+    "category":  "Action",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Wheel_Master_Bike.zip",
+    "localBytes":  6338515,
+    "verifiedAt":  "2026-10-20T11:13:56",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

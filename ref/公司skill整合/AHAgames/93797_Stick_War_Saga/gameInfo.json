@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "93797",
+    "apiName":  "Stick War Saga",
+    "targetName":  "Stick War Saga",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Stick_War_Saga.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251216/901e28fe04b1cb70661b4d1f5dc6abcc.zip",
+    "bundleMd5":  "901e28fe04b1cb70661b4d1f5dc6abcc",
+    "bundleSize":  10400062,
+    "updatedAt":  1766060168,
+    "gameLink":  "https://www.yygh5game.com/Stick_War_Saga/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_93797",
+    "category":  "Action",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Stick_War_Saga.zip",
+    "localBytes":  10400062,
+    "verifiedAt":  "2026-10-20T11:15:20",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

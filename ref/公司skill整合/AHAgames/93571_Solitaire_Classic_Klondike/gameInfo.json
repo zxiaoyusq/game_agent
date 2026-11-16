@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93571,
+    "apiName":  "Solitaire Classic Klondike",
+    "targetName":  "Solitaire Classic Klondike",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Solitaire_Classic_Klondike.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251119/094327749443fdcd0bd4a25cb64c26df.zip",
+    "bundleMd5":  "094327749443fdcd0bd4a25cb64c26df",
+    "bundleSize":  1837031,
+    "updatedAt":  1763546655,
+    "gameLink":  "https://www.excellenth5game.com/Solitaire_Classic_Klondike/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93571",
+    "category":  "Card",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Solitaire_Classic_Klondike.zip",
+    "localBytes":  1837031,
+    "verifiedAt":  "2026-10-20T10:39:21",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

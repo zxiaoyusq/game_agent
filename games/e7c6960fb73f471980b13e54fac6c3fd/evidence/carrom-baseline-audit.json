@@ -1,0 +1,1054 @@
+{
+  "baselineSha256": "2a036140fcf41e307b604373d307ff4014d061eef4bee5fb9504b90424b3460e",
+  "scope": "原函数片段隔离执行，动画、物理和界面使用替身，未启动完整游戏",
+  "cases": 41,
+  "results": [
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 0,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 0,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 0,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 0,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 1,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 1,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 1,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 1,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 2,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 2,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 2,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 2,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 3,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 3,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 3,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": true,
+      "playerPocket": 3,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 0,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 0,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 0,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 0,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 1,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 1,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 1,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 1,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 2,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 2,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 2,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 2,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 3,
+      "opponentPocket": 0,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 3,
+      "opponentPocket": 1,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 3,
+      "opponentPocket": 2,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "same-step",
+      "turn": false,
+      "playerPocket": 3,
+      "opponentPocket": 3,
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "different-steps",
+      "order": [
+        "player",
+        "oponent"
+      ],
+      "queue": [
+        "player"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "different-steps",
+      "order": [
+        "oponent",
+        "player"
+      ],
+      "queue": [
+        "oponent"
+      ],
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        8,
+        9
+      ],
+      "events": [
+        [
+          "result",
+          false
+        ]
+      ]
+    },
+    {
+      "case": "striker-foul",
+      "turn": true,
+      "ownPocketed": false,
+      "before": [
+        7,
+        8
+      ],
+      "scores": [
+        7,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          7
+        ],
+        [
+          "turn",
+          "opponent"
+        ]
+      ]
+    },
+    {
+      "case": "striker-foul",
+      "turn": true,
+      "ownPocketed": true,
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        8,
+        8
+      ],
+      "events": [
+        [
+          "turn",
+          "opponent"
+        ]
+      ]
+    },
+    {
+      "case": "striker-foul",
+      "turn": false,
+      "ownPocketed": false,
+      "before": [
+        8,
+        7
+      ],
+      "scores": [
+        8,
+        7
+      ],
+      "events": [
+        [
+          "turn",
+          "player"
+        ]
+      ]
+    },
+    {
+      "case": "striker-foul",
+      "turn": false,
+      "ownPocketed": true,
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        8,
+        8
+      ],
+      "events": [
+        [
+          "turn",
+          "player"
+        ]
+      ]
+    },
+    {
+      "case": "empty-target",
+      "error": {
+        "name": "TypeError",
+        "message": "Cannot read properties of undefined (reading 'y')"
+      }
+    },
+    {
+      "case": "callback-order",
+      "settlementBeforeScore": false,
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "score",
+          9
+        ],
+        [
+          "result",
+          true
+        ]
+      ]
+    },
+    {
+      "case": "callback-order",
+      "settlementBeforeScore": true,
+      "before": [
+        8,
+        8
+      ],
+      "scores": [
+        9,
+        8
+      ],
+      "events": [
+        [
+          "turn",
+          "opponent"
+        ],
+        [
+          "score",
+          9
+        ]
+      ]
+    }
+  ]
+}

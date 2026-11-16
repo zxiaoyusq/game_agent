@@ -1,0 +1,22 @@
+[
+  {
+    "seed": 152,
+    "strategy": "shuffled_retry",
+    "elapsedMs": 215.39999999850988
+  },
+  {
+    "seed": 314,
+    "strategy": "shuffled_retry",
+    "elapsedMs": 73.30000000447035
+  },
+  {
+    "seed": 446,
+    "strategy": "shuffled_retry",
+    "elapsedMs": 102.79999999701977
+  },
+  {
+    "seed": 539,
+    "strategy": "shuffled_retry",
+    "elapsedMs": 96.30000000447035
+  }
+]

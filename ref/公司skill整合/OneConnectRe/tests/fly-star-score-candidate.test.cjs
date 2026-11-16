@@ -1,0 +1,17 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+let listener,hammer=false;
+const window={addEventListener:(_,fn)=>listener=fn,oneConnectCompetitorStarReference:{baseVerified:true,countVerified:true,levels:{2:[4,6,8]}},oneConnectHammer:{state:()=>({busy:hammer})}};
+vm.runInNewContext(fs.readFileSync('tools/fly_star_score_candidate.js','utf8'),{window,Number,Array,Object});
+const score=window.oneConnectFlyStarScoreCandidate;
+const emit=(type,detail)=>listener({detail:{type,detail}});
+const path=n=>({level:2,starCountEstimate:n,pathScreenPoints:Array(n).fill({x:1,y:1})});
+score.install();score.begin(2);assert.equal(score.progress(2).fraction,0);
+emit('game.match',{level:2,source:'normal'});assert.equal(score.rating(2),null);
+emit('candidate.link_points',path(4));assert.equal(score.rating(2).stars,1);assert.equal(score.progress(2).fraction,1/3);
+emit('candidate.link_points',path(2));emit('game.match',{level:2,source:'normal'});assert.equal(score.rating(2).stars,2);assert.equal(score.progress(2).fraction,2/3);
+hammer=true;emit('candidate.link_points',path(4));emit('game.match',{level:2,source:'hammer'});hammer=false;assert.equal(score.rating(2).stars,3);assert.equal(score.progress(2).fraction,1);
+const saved={level:2,flyStars:score.snapshot(2)};score.begin(3);score.restore(saved);assert.equal(score.rating(2).count,8);
+emit('candidate.link_points',{level:2,starCountEstimate:5,pathScreenPoints:null});assert.equal(score.rating(2),null);assert.equal(score.progress(2),null);
+score.restore({level:2});assert.equal(score.rating(2),null,'old saves must not fabricate progress');
+score.begin(2);assert.equal(score.rating(2).stars,0);window.oneConnectCompetitorStarReference.countVerified=false;assert.equal(score.progress(2),null,'unverified score units cannot drive a display');window.oneConnectCompetitorStarReference.countVerified=true;window.oneConnectCompetitorStarReference.baseVerified=false;assert.equal(score.progress(2),null,'unverified thresholds cannot drive a display');
+console.log('fly-star counting, hammer, consistency and save restore PASS');

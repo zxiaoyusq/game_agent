@@ -148,3 +148,7 @@ description: Use when the user wants to develop UI for a NEW game feature or re-
 ## Cocos 编辑器实时通道
 
 Creator 3.8.x 的编辑器操作与中间自检可按 `modules/cocos-mcp-channel/SKILL.md` 执行；2.4.x 或无 MCP 时走本模块文件级/CLI 路径。预览、编辑器引用检查和正式构建/设备验收分别记录证据。
+
+## 工程规范（本模块的前置约定）
+
+本模块只管"界面怎么做得对"；界面背后的**工程侧约定**——目录骨架、控件与节点命名、`@property` 前缀按组件类型、预制体生成链路与派生物禁手改、图标方形与 `trimType`、多语言取词入口——见 `modules/cocos-project-standards/SKILL.md`。**先满足工程规范再谈视觉还原**：命名与绑定不一致会让阶段 5 的对比和阶段 6 的固化都失去可校验性。

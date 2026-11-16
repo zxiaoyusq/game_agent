@@ -1,13 +1,13 @@
 """美术 Agent - AI 图片生成业务核心。
 
-封装 Azure OpenAI gpt-image 的两个端点：
+封装 Azure 与 OpenAI 兼容网关的 gpt-image 两个端点：
 - generate(prompt, size, quality)            → 文生图
 - edit(prompt, size, quality, references=[]) → 参考图编辑（多参考图）
 
 数据流：上层只关心 (prompt, size, quality, references) → 拿到 PNG bytes。
 本文件不感知 HTTP 框架，路由层负责请求/响应包装。
 
-Azure 网关返回 b64_json 格式，本文件做一次解码后向上返回 raw bytes。
+图片网关返回 b64_json 格式，本文件做一次解码后向上返回 raw bytes。
 """
 
 from __future__ import annotations
@@ -27,6 +27,7 @@ from app.config import (
     AZURE_IMAGE_API_VERSION,
     AZURE_IMAGE_DEPLOYMENT,
     AZURE_IMAGE_ENDPOINT,
+    IMAGE_PROVIDER, IMAGE_API_BASE_URL, IMAGE_API_KEY, IMAGE_MODEL,
 )
 
 logger = logging.getLogger(__name__)
@@ -46,7 +47,7 @@ ALLOWED_SIZES = {
 # Azure gpt-image 接受的 quality 取值
 ALLOWED_QUALITIES = {"low", "medium", "high", "auto"}
 
-# 默认请求超时：生图较慢，给到 2 分钟
+# 默认请求超时：生图较慢，给到 3 分钟。
 DEFAULT_TIMEOUT = 180.0
 
 # 上游遇到 429 / 5xx 时的退避重试参数。
@@ -65,7 +66,7 @@ class ArtImageConfigError(RuntimeError):
 
 
 class ArtImageAPIError(RuntimeError):
-    """Azure 接口返回非 2xx 或缺少图片字段。"""
+    """图片接口返回非 2xx 或缺少图片字段。"""
 
     def __init__(self, message: str, status_code: Optional[int] = None) -> None:
         super().__init__(message)
@@ -87,10 +88,30 @@ class ReferenceImage:
 
 def _ensure_config() -> None:
     """启动期校验：缺失关键配置时立刻报错，避免 500。"""
+    if IMAGE_PROVIDER == "openai":
+        if not IMAGE_API_BASE_URL or not IMAGE_API_KEY:
+            raise ArtImageConfigError("OpenAI图片配置缺失：请检查 IMAGE_API_BASE_URL / IMAGE_API_KEY 或工程LLM配置")
+        return
+    if IMAGE_PROVIDER != "azure":
+        raise ArtImageConfigError("IMAGE_PROVIDER 必须为 azure 或 openai")
     if not AZURE_IMAGE_ENDPOINT or not AZURE_IMAGE_API_KEY:
         raise ArtImageConfigError(
             "Azure 图片生成配置缺失：请检查 .env 中 AZURE_IMAGE_ENDPOINT / AZURE_IMAGE_API_KEY"
         )
+
+
+def provider_info() -> dict:
+    """返回可记录的来源信息，不包含基址、密钥或请求头。"""
+    return {"provider": f"{IMAGE_PROVIDER}-image-api",
+            "model": IMAGE_MODEL if IMAGE_PROVIDER == "openai" else AZURE_IMAGE_DEPLOYMENT}
+
+
+def _connection(operation: str) -> tuple[str, dict]:
+    """按已选协议构造端点和认证，生成与编辑共用同一配置。"""
+    if IMAGE_PROVIDER == "openai":
+        return f"{IMAGE_API_BASE_URL}/images/{operation}", {"Authorization": f"Bearer {IMAGE_API_KEY}"}
+    return (f"{AZURE_IMAGE_ENDPOINT}/openai/deployments/{AZURE_IMAGE_DEPLOYMENT}/images/{operation}"
+            f"?api-version={AZURE_IMAGE_API_VERSION}", {"api-key": AZURE_IMAGE_API_KEY})
 
 
 def _validate_size(size: str) -> None:
@@ -123,11 +144,7 @@ async def generate(
     if not prompt or not prompt.strip():
         raise ValueError("prompt 不能为空")
 
-    url = (
-        f"{AZURE_IMAGE_ENDPOINT}/openai/deployments/"
-        f"{AZURE_IMAGE_DEPLOYMENT}/images/generations"
-        f"?api-version={AZURE_IMAGE_API_VERSION}"
-    )
+    url, headers = _connection("generations")
     payload = {
         "prompt": prompt,
         "size": size,
@@ -135,10 +152,9 @@ async def generate(
         "output_format": "png",
         "n": 1,
     }
-    headers = {
-        "Content-Type": "application/json",
-        "api-key": AZURE_IMAGE_API_KEY,
-    }
+    if IMAGE_PROVIDER == "openai":
+        payload["model"] = IMAGE_MODEL
+    headers["Content-Type"] = "application/json"
 
     resp = await _post_with_retry(
         url,
@@ -173,12 +189,7 @@ async def edit(
     if not references:
         raise ValueError("references 为空时请走 generate()")
 
-    url = (
-        f"{AZURE_IMAGE_ENDPOINT}/openai/deployments/"
-        f"{AZURE_IMAGE_DEPLOYMENT}/images/edits"
-        f"?api-version={AZURE_IMAGE_API_VERSION}"
-    )
-    headers = {"api-key": AZURE_IMAGE_API_KEY}
+    url, headers = _connection("edits")
 
     # multipart：与 ai_image_tool.html 的 callEditApi 完全等价
     # prompt 加上"按上传顺序编号为图1、图2..."的前缀，方便用户在描述里指代
@@ -198,6 +209,8 @@ async def edit(
         "quality": quality,
         "output_format": "png",
     }
+    if IMAGE_PROVIDER == "openai":
+        data["model"] = IMAGE_MODEL
     files: List[Tuple[str, Tuple[str, bytes, str]]] = []
     for ref in references:
         files.append(
@@ -259,7 +272,7 @@ async def _post_with_retry(
             last_exc = e
             last_resp = None
             logger.warning(
-                "art_image[%s] attempt %d/%d transport error: %r",
+                "图片服务[%s] 第%d/%d次请求网络失败：%r",
                 op, attempt, RETRY_MAX_ATTEMPTS, e,
             )
         else:
@@ -268,7 +281,7 @@ async def _post_with_retry(
                 return resp
             last_resp = resp
             logger.warning(
-                "art_image[%s] attempt %d/%d upstream %d: %s",
+                "图片服务[%s] 第%d/%d次请求上游返回%d：%s",
                 op, attempt, RETRY_MAX_ATTEMPTS, resp.status_code,
                 _short_error_text(resp),
             )
@@ -287,7 +300,7 @@ async def _post_with_retry(
         return last_resp
     # 全程网络层失败：把异常包成 ArtImageAPIError 让路由层走 502 分支
     raise ArtImageAPIError(
-        f"调用 Azure 失败（{op}）：{last_exc!r}",
+        f"调用图片服务失败（{op}）：{last_exc!r}",
         status_code=None,
     )
 
@@ -295,10 +308,18 @@ async def _post_with_retry(
 def _short_error_text(resp: httpx.Response) -> str:
     """截短上游响应正文用于日志，避免 500 错误页污染日志文件。"""
     try:
-        text = resp.text or ""
+        text = _redact(resp.text or "")
     except Exception:  # noqa: BLE001 —— 仅用于日志兜底
         return "<unreadable>"
     return (text[:160] + "…") if len(text) > 160 else text
+
+
+def _redact(text: str) -> str:
+    """上游错误可能回显认证信息，返回页面和记录日志前统一隐藏。"""
+    for secret in (IMAGE_API_KEY, AZURE_IMAGE_API_KEY):
+        if secret:
+            text = text.replace(secret, "[凭据已隐藏]")
+    return text
 
 
 # ---- 响应解析 -------------------------------------------------------------
@@ -320,7 +341,7 @@ def _parse_image_response(resp: httpx.Response) -> bytes:
         if not detail:
             detail = (text or resp.reason_phrase or "未知错误").strip()
         raise ArtImageAPIError(
-            f"Azure 接口返回 {resp.status_code}：{detail}",
+            f"图片服务返回 {resp.status_code}：{_redact(detail)}",
             status_code=resp.status_code,
         )
 
@@ -332,7 +353,7 @@ def _parse_image_response(resp: httpx.Response) -> bytes:
             if isinstance(first, dict):
                 b64 = first.get("b64_json")
     if not b64:
-        raise ArtImageAPIError("Azure 响应未包含 b64_json 字段")
+        raise ArtImageAPIError("图片服务响应未包含 b64_json 字段")
 
     try:
         return base64.b64decode(b64)

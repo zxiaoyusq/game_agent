@@ -1,0 +1,26 @@
+{
+    "mcSD": {
+        "baseScale": 1,
+        "basePointScale": 1,
+        "fallback": "",
+        "suffix": ""
+    },
+    "mcHD": {
+        "baseScale": 1.33333333333333,
+        "basePointScale": 1,
+        "fallback": "mcSD",
+        "suffix": "-mcHD"
+    },
+    "mcXHD": {
+        "baseScale": 2,
+        "basePointScale": 1,
+        "fallback": "mcHD",
+        "suffix": "-mcXHD"
+    },
+    "mcXXHD": {
+        "baseScale": 3,
+        "basePointScale": 1,
+        "fallback": "mcXHD",
+        "suffix": "-mcXXHD"
+    }
+}

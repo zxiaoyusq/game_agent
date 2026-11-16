@@ -1,0 +1,12 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const context={module:{exports:{}},Number,Math,Set};
+vm.runInNewContext(fs.readFileSync('tools/link_star_candidate.js','utf8'),context);
+const count=context.module.exports.count,p=(x,y)=>({x,y});
+assert.equal(count([p(0,0),p(0,4)],'normal'),5);
+assert.equal(count([p(0,0),p(0,2),p(3,2)],'normal'),6);
+assert.equal(count([p(0,0),p(-1,0),p(-1,3),p(2,3)],'normal'),8);
+assert.equal(count([p(0,0),p(10,10)],'hammer'),2);
+assert.equal(count([p(0,0),p(1,1)],'normal'),null);
+assert.equal(count([p(0,0),p(0,2),p(0,1)],'normal'),null);
+assert.equal(count([p(0,0),p(1,0),p(1,1),p(2,1),p(2,2)],'normal'),null);
+console.log('straight, bent, outer, hammer and invalid star paths PASS');

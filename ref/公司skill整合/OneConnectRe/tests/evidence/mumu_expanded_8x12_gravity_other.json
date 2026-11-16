@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "direction": "down",
+      "initial": 96,
+      "afterPair": 94,
+      "perTileMatched": true,
+      "resumed": true
+    },
+    {
+      "direction": "left",
+      "initial": 96,
+      "afterPair": 94,
+      "perTileMatched": true,
+      "resumed": true
+    },
+    {
+      "direction": "right",
+      "initial": 96,
+      "afterPair": 94,
+      "perTileMatched": true,
+      "resumed": true
+    }
+  ],
+  "errors": [],
+  "scope": "one controlled pair per direction, not a full clear"
+}

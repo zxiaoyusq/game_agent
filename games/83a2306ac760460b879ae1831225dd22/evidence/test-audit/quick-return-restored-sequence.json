@@ -1,0 +1,65 @@
+[
+  {
+    "at": 1794224870480,
+    "path": "evidence/test-audit/quick-return-restored-0.png",
+    "phase": "moving",
+    "elapsed": 499.9999999999993,
+    "plan": {
+      "id": 21,
+      "p": 2,
+      "index": 2,
+      "path": [
+        27,
+        28
+      ],
+      "from": 26,
+      "capture": {
+        "p": 0,
+        "i": 0
+      },
+      "home": false
+    }
+  },
+  {
+    "at": 1794224870605,
+    "path": "evidence/test-audit/quick-return-restored-1.png",
+    "phase": "moving",
+    "elapsed": 633.2999999999994,
+    "plan": {
+      "id": 21,
+      "p": 2,
+      "index": 2,
+      "path": [
+        27,
+        28
+      ],
+      "from": 26,
+      "capture": {
+        "p": 0,
+        "i": 0
+      },
+      "home": false
+    }
+  },
+  {
+    "at": 1794224870738,
+    "path": "evidence/test-audit/quick-return-restored-2.png",
+    "phase": "moving",
+    "elapsed": 749.8999999999993,
+    "plan": {
+      "id": 21,
+      "p": 2,
+      "index": 2,
+      "path": [
+        27,
+        28
+      ],
+      "from": 26,
+      "capture": {
+        "p": 0,
+        "i": 0
+      },
+      "home": false
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "scope": "本地清单覆盖率，不是全量ZIP哈希副本",
+  "archive_sha256": "2b404cd4b23702153c3279109bcd48bf79ee9e2141fc3334492a100c66036db2",
+  "resource_entries": 321,
+  "locally_verified_hashes": 15,
+  "unfilled_hashes": 306,
+  "known_archive_entries": 329,
+  "known_uncompressed_bytes": 5074490,
+  "limitation": "ZIP分页曾实际读取；其全量逐条哈希未迁入独立清单。会话路径在Node不可读，未将未测项伪造为已验证。"
+}

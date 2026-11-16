@@ -1,0 +1,13 @@
+{
+  "scenes": 50000,
+  "targetCount": 1,
+  "candidates": 121945,
+  "checks": 121945,
+  "intersections": 121846,
+  "earlyOver2": 0,
+  "earlyOver10": 0,
+  "selectedEarly": 0,
+  "selectedExample": null,
+  "example": null,
+  "scope": "synthetic VM execution of four actual candidate generators using assumed board and six generated discs; logs calls to start helper, not a selected shot or physical simulation; collision radius 37.76; excludes calls rejected by earlier path check"
+}

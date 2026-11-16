@@ -1,0 +1,324 @@
+{
+  "mode": "write",
+  "gameRoot": "build/legacy-optimized-baseline",
+  "reachableLevels": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9,
+    24,
+    25,
+    27,
+    28,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73
+  ],
+  "removedLevelRoots": [
+    "Level2",
+    "Level3",
+    "Level4",
+    "Level10",
+    "Level15",
+    "Level16",
+    "Level17",
+    "Level18",
+    "Level19",
+    "Level20",
+    "Level21",
+    "Level22",
+    "Level23",
+    "Level26",
+    "Level29",
+    "Level30",
+    "Level31",
+    "Level32",
+    "Level33",
+    "Level34",
+    "Level35",
+    "Level36",
+    "Level37",
+    "Level38",
+    "Level39",
+    "Level40",
+    "Level49",
+    "Level101"
+  ],
+  "entities": {
+    "before": 12799,
+    "after": 8308,
+    "removed": 4491
+  },
+  "assets": {
+    "before": 539,
+    "after": 425,
+    "removed": 114,
+    "removedByType": {
+      "material": 58,
+      "texture": 35,
+      "textureatlas": 2,
+      "sprite": 2,
+      "animation": 11,
+      "model": 5,
+      "audio": 1
+    }
+  },
+  "files": {
+    "removable": 54,
+    "removableBytes": 448997,
+    "entries": [
+      {
+        "url": "files/assets/174979897/1/Polygon%201.png",
+        "bytes": 1332
+      },
+      {
+        "url": "files/assets/174979903/1/Polygon%201.png",
+        "bytes": 1332
+      },
+      {
+        "url": "files/assets/174979908/1/Ellipse%202.png",
+        "bytes": 2480
+      },
+      {
+        "url": "files/assets/174979932/1/Arbuz.json",
+        "bytes": 217
+      },
+      {
+        "url": "files/assets/174979934/1/Arbuz-L.json",
+        "bytes": 217
+      },
+      {
+        "url": "files/assets/174979937/1/Arbuz-R.json",
+        "bytes": 217
+      },
+      {
+        "url": "files/assets/174979941/1/Sphere-R.json",
+        "bytes": 33439
+      },
+      {
+        "url": "files/assets/174979962/1/texwood.jpg",
+        "bytes": 15286
+      },
+      {
+        "url": "files/assets/174979975/1/mountsn2.json",
+        "bytes": 95971
+      },
+      {
+        "url": "files/assets/174979984/1/mountsn3.json",
+        "bytes": 187
+      },
+      {
+        "url": "files/assets/174980018/1/Apple-R.json",
+        "bytes": 205
+      },
+      {
+        "url": "files/assets/174980019/1/Apple.json",
+        "bytes": 201
+      },
+      {
+        "url": "files/assets/174980020/1/Apple-L.json",
+        "bytes": 201
+      },
+      {
+        "url": "files/assets/174980028/1/28.01.png",
+        "bytes": 1444
+      },
+      {
+        "url": "files/assets/174980037/1/Burger-R.json",
+        "bytes": 168
+      },
+      {
+        "url": "files/assets/174980061/1/Rectangle%20278.png",
+        "bytes": 372
+      },
+      {
+        "url": "files/assets/174980062/1/Rectangle%20307.png",
+        "bytes": 370
+      },
+      {
+        "url": "files/assets/174980086/1/Group%20221.png",
+        "bytes": 2316
+      },
+      {
+        "url": "files/assets/174980091/1/Group%20223.png",
+        "bytes": 17606
+      },
+      {
+        "url": "files/assets/174980093/1/Group%20229.png",
+        "bytes": 1280
+      },
+      {
+        "url": "files/assets/174980099/1/Group%20210.png",
+        "bytes": 1904
+      },
+      {
+        "url": "files/assets/174980159/1/knives_0007_Layer-2.png",
+        "bytes": 5496
+      },
+      {
+        "url": "files/assets/174980170/1/Group%20260.png",
+        "bytes": 905
+      },
+      {
+        "url": "files/assets/174980171/1/Group%20263.png",
+        "bytes": 2098
+      },
+      {
+        "url": "files/assets/174980172/1/Group%20262.png",
+        "bytes": 5002
+      },
+      {
+        "url": "files/assets/174980175/1/Group%20262.png",
+        "bytes": 5002
+      },
+      {
+        "url": "files/assets/174980220/1/Money-R.json",
+        "bytes": 186
+      },
+      {
+        "url": "files/assets/174980223/1/Money.json",
+        "bytes": 185
+      },
+      {
+        "url": "files/assets/174980234/1/Bread-L.json",
+        "bytes": 200
+      },
+      {
+        "url": "files/assets/174980268/1/beach%20atlas%2001.png",
+        "bytes": 770
+      },
+      {
+        "url": "files/assets/174980270/1/palmleaf_m.json",
+        "bytes": 7050
+      },
+      {
+        "url": "files/assets/174980287/1/dol.png",
+        "bytes": 628
+      },
+      {
+        "url": "files/assets/174980296/1/Macaron_BaseColor2.png",
+        "bytes": 9566
+      },
+      {
+        "url": "files/assets/174980311/1/cookies.jpg",
+        "bytes": 3972
+      },
+      {
+        "url": "files/assets/174980312/1/cookies-r.json",
+        "bytes": 50666
+      },
+      {
+        "url": "files/assets/174980313/1/cookies-full.json",
+        "bytes": 96277
+      },
+      {
+        "url": "files/assets/174980342/1/hitsound.wav",
+        "bytes": 2976
+      },
+      {
+        "url": "files/assets/174980348/1/Subtraction%208.png",
+        "bytes": 1928
+      },
+      {
+        "url": "files/assets/174980349/1/Group%20269.png",
+        "bytes": 1934
+      },
+      {
+        "url": "files/assets/174980355/1/Path%202547.png",
+        "bytes": 2244
+      },
+      {
+        "url": "files/assets/174980356/1/Group%20268.png",
+        "bytes": 1554
+      },
+      {
+        "url": "files/assets/174980362/1/icon2562.png",
+        "bytes": 23486
+      },
+      {
+        "url": "files/assets/174980366/1/empty-email-svgrepo-com.png",
+        "bytes": 942
+      },
+      {
+        "url": "files/assets/174980380/1/Line%202.png",
+        "bytes": 169
+      },
+      {
+        "url": "files/assets/174980383/1/Rectangle%20229.png",
+        "bytes": 1978
+      },
+      {
+        "url": "files/assets/174980387/1/Group%2054.png",
+        "bytes": 15966
+      },
+      {
+        "url": "files/assets/174980388/1/Group%2058.png",
+        "bytes": 2614
+      },
+      {
+        "url": "files/assets/174980389/1/Group%2064.png",
+        "bytes": 6092
+      },
+      {
+        "url": "files/assets/174980390/1/Group%2081.png",
+        "bytes": 3032
+      },
+      {
+        "url": "files/assets/174980398/1/Group%2010.png",
+        "bytes": 14908
+      },
+      {
+        "url": "files/assets/174980400/1/Path%2017.png",
+        "bytes": 952
+      },
+      {
+        "url": "files/assets/174980406/1/Group%20263.png",
+        "bytes": 1626
+      },
+      {
+        "url": "files/assets/174980417/1/pride_gradient_1%20copy.jpg",
+        "bytes": 1050
+      },
+      {
+        "url": "files/assets/174980419/1/rainbow-gradient-2391.png",
+        "bytes": 798
+      }
+    ]
+  },
+  "runtime": {
+    "externalScriptsRemoved": true,
+    "maxAssetRetries": 2,
+    "powerPreference": "high-performance"
+  }
+}

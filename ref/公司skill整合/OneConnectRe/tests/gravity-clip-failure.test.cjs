@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let listener,timer,nativeCalls=0,clipCalls=0;function Action(){}Action.prototype.run_object=function(){nativeCalls++};
+const arr=Array.from({length:4},()=>Array.from({length:4},()=>[0]));arr[1][1][0]=10;
+const runtime={running_layout:{name:'game'},all_global_vars:[{name:'level',data:6},{name:'ROWS_COUNT',data:2},{name:'COLUMNS_COUNT',data:2},{name:'ITEM_SIZE',data:10},{name:'ITEM_SPACING',data:0}],types:{t0:{instances:[{cx:4,cy:4,arr}]},t5:{instances:[{uid:10,instance_vars:[0,1,1]}]}}};
+const events=[],window={cr:{action:Action},oneConnectGravity:{},oneConnectLevels:{levels:[{level:6,movement:'gravity_down',gravity:{top:0,left:0,rows:2,cols:2}}]},oneConnectVisibleGravityBounds:{clip:()=>{clipCalls++;return null}},cr_getC2Runtime:()=>runtime,oneConnectHost:{emit:(type)=>events.push(type)},addEventListener:(_type,fn)=>listener=fn,setTimeout:fn=>timer=fn};
+vm.runInNewContext(fs.readFileSync('game/gravity-runtime.js','utf8'),{window,cr:window.cr,Number,Array,Map,Set,Error});window.oneConnectGravityRuntime.install();
+listener({detail:{type:'game.match'}});assert.equal(clipCalls,1,'visible bounds must be checked');assert(events.includes('config.gravity_error'),'failed visible bounds are reported');
+Action.prototype.run_object.call({runtime,sid:155796769104064});assert.equal(nativeCalls,0,'native movement cannot bypass a failed clip in the same event');
+timer();Action.prototype.run_object.call({runtime,sid:155796769104064});assert.equal(nativeCalls,1,'suppression is scoped to the current event');
+console.log('failed gravity clipping blocks same-event native fallback PASS');

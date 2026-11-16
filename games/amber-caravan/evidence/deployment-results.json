@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "url": "https://pagent.ahagamecenter.com/games/amber-caravan/index.html",
+  "publicReachability": "用户已在公网确认能打开游戏",
+  "serverProbe": "服务器访问公网域名超时；浏览器操作验证使用实际回源服务24681",
+  "files": [
+    {
+      "path": "assets/emblem.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "bytes": 346,
+      "sha256": "260aaa04106d929a4a1fa5e447d589166d6a099352fd20aa5b39c7186ac07024"
+    },
+    {
+      "path": "assets/oasis.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 307128,
+      "sha256": "f2cbd627b093a4417af4cd9885f81c02ff59045559e04fc0539234675da76d4e"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 775,
+      "sha256": "160ba1ddf0812800f440181b019286b1edbdba1c41d3eb3590cb8bc81601147a"
+    },
+    {
+      "path": "src/ai.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 2286,
+      "sha256": "f3d8066745b6e1d5d24ad184884248e86c38d07b00b9ffcf410b05067f6a16f1"
+    },
+    {
+      "path": "src/app.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 19910,
+      "sha256": "4851c99145452c6f14f50304d3d1f16001a8acfcd1631349878478142627eef1"
+    },
+    {
+      "path": "src/audio.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 1421,
+      "sha256": "f8b024f570643f288cf1391fefb55d7e257e7bff5781fd21ab69b6d5ed2982af"
+    },
+    {
+      "path": "src/board.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 20393,
+      "sha256": "49c76df2ec15f8a055e99ecef437357949ed752aaaa1f0fdd9f4ced7192f66c9"
+    },
+    {
+      "path": "src/rules.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 10149,
+      "sha256": "309e6cf5b678e03e8cdad3104a0544bbe1e0e7c48a1aa39709c3d359390c6517"
+    },
+    {
+      "path": "src/storage.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 1434,
+      "sha256": "6b500ba0e0aea061919493f5e25531eb8866f568ea0bce63b3bb0bd3a11a8f75"
+    },
+    {
+      "path": "src/style.css",
+      "status": 200,
+      "content_type": "text/css",
+      "bytes": 19498,
+      "sha256": "69f83e8281698f8babb9870cffb4809da91aa6471e11d8123fa90a4b9ce3686f"
+    }
+  ],
+  "devices": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "start": true,
+      "roll": true,
+      "move": true,
+      "resume": true,
+      "noHorizontalOverflow": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "start": true,
+      "roll": true,
+      "move": true,
+      "resume": true,
+      "noHorizontalOverflow": true,
+      "errors": [],
+      "failed": []
+    }
+  ]
+}

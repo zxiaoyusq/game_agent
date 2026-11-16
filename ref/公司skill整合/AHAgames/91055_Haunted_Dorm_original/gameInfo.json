@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  91055,
+    "apiName":  "Haunted Dorm original",
+    "targetName":  "Haunted Dorm original",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Haunted_Dorm_original.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250418/11122189169.zip",
+    "bundleMd5":  "1bccbea7307b07f698c3541b8bc3a15f",
+    "bundleSize":  20968279,
+    "updatedAt":  1745225453,
+    "gameLink":  "https://www.mihuanh5game.com/Haunted_Dorm_original/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_91055",
+    "category":  "Strategy",
+    "rate":  8.7,
+    "gameType":  1,
+    "localFile":  "Haunted_Dorm_original.zip",
+    "localBytes":  20968279,
+    "verifiedAt":  "2026-10-20T10:32:52",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

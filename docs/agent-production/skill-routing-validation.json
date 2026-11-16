@@ -1,0 +1,382 @@
+{
+  "checked_at": "2026-11-03T10:42:59.706033+00:00",
+  "passed": true,
+  "backend": {
+    "tests_passed": 102,
+    "matrix_cases": 56,
+    "log": "logs/skill-routing-backend-tests.log"
+  },
+  "frontend": {
+    "checks_passed": 12,
+    "reports": [
+      "logs/skill-routing-ui.json",
+      "logs/skill-routing-frozen-ui.json"
+    ],
+    "checks": [
+      {
+        "name": "Canvas 美术阶段默认自动选择并显示理由与能力边界",
+        "status": "passed",
+        "selected_paths": [
+          "casual-game-production/SKILL.md",
+          "ai-art-automation/SKILL.md",
+          "azure-image2-generation/modules/casual-game-art-style/SKILL.md"
+        ],
+        "warnings": [
+          "AI 美术自动化：美术流程可用于任务拆分与资源回填；四阶段未接图片生成工具，不能据此声称已生成 AI 图片。"
+        ]
+      },
+      {
+        "name": "当前阶段切换会重新计算，原型不沿用美术选择",
+        "status": "passed",
+        "selected_paths": [
+          "casual-game-production/SKILL.md"
+        ],
+        "historical_reads_visible": true
+      },
+      {
+        "name": "本阶段需求自动加入 H5 换皮，人工排除不会被重算加回",
+        "status": "passed",
+        "excluded": "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md",
+        "recommended": [
+          "casual-game-production/SKILL.md",
+          "ai-art-automation/SKILL.md",
+          "azure-image2-generation/modules/casual-game-art-style/SKILL.md",
+          "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md"
+        ]
+      },
+      {
+        "name": "人工补充与手动模式有明确选择语义",
+        "status": "passed",
+        "reset_selected_paths": [
+          "casual-game-production/SKILL.md",
+          "ai-art-automation/SKILL.md",
+          "azure-image2-generation/modules/casual-game-art-style/SKILL.md",
+          "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md"
+        ]
+      },
+      {
+        "name": "执行提交发送人工增减与自动模式，不把推荐全集当手选",
+        "status": "passed",
+        "payload": {
+          "stage": "art",
+          "prompt": "对现有 Canvas H5 游戏进行素材换皮，保留玩法和布局，使用清爽配色",
+          "skill_mode": "auto",
+          "skill_paths": [
+            "apk-engineering-analysis/SKILL.md"
+          ],
+          "excluded_skill_paths": [
+            "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md"
+          ]
+        },
+        "model_started": false
+      },
+      {
+        "name": "390px 自动选择和理由无页面及内容溢出",
+        "status": "passed",
+        "width": 390,
+        "viewport": 390,
+        "section": [
+          {
+            "client": 326,
+            "scroll": 326
+          },
+          {
+            "client": 326,
+            "scroll": 326
+          }
+        ]
+      },
+      {
+        "name": "切换 Cocos 项目按框架选择，不沿用 Canvas 人工设置",
+        "status": "passed",
+        "selected_paths": [
+          "casual-game-production/SKILL.md",
+          "cocos-game-production/SKILL.md"
+        ],
+        "warnings": []
+      },
+      {
+        "name": "预览与浏览未改变生产状态，页面无脚本错误",
+        "status": "passed",
+        "read_only_previews": 14,
+        "captured_not_executed": 1
+      },
+      "5个选择快照均存在真实skill_read记录，SHA-256逐项一致且frozen=true",
+      "界面完整展示本次5个选择理由、冻结版本和实际读取哈希",
+      "390px下长路径与64位SHA-256在选择和读取区域均无横向溢出",
+      "仅进行只读浏览，运行选择与快照未被界面重算改写，无脚本错误"
+    ],
+    "build": "npm run build：通过"
+  },
+  "real_model": {
+    "project_id": "0d5f9427d3ab4b81bbd3d8ef0fcf0fd9",
+    "run_id": "46cf82bf85a848e1920a59f2aa804ebf",
+    "model": "gpt-6.1-sol",
+    "framework": "deepagents",
+    "status": "awaiting_confirmation",
+    "attempt": 1,
+    "selection": {
+      "version": "1.0.0",
+      "mode": "auto",
+      "context": {
+        "stage": "prototype",
+        "stage_label": "原型定义",
+        "genre_id": "merge",
+        "genre_label": "合成与升级",
+        "framework_id": "canvas-web",
+        "framework_label": "Canvas 2D · Web / H5",
+        "knowledge_paths": [
+          "genre/docs/general.md",
+          "genre/docs/merge.md",
+          "framework/docs/web-common.md",
+          "framework/docs/canvas-web.md"
+        ],
+        "genre_guidance": "明确合成输入、产物、消耗、空间与等级边界，区分拖拽和自动合成。"
+      },
+      "recommended_paths": [
+        "casual-game-production/SKILL.md",
+        "game-reverse-engineering/modules/hosted-minigame-harvest/SKILL.md",
+        "game-reverse-engineering/modules/cocos-project-standards/SKILL.md"
+      ],
+      "selected_paths": [
+        "casual-game-production/SKILL.md",
+        "game-reverse-engineering/modules/hosted-minigame-harvest/SKILL.md",
+        "game-reverse-engineering/modules/cocos-project-standards/SKILL.md",
+        "azure-image2-generation/modules/casual-game-art-style/SKILL.md",
+        "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md"
+      ],
+      "items": [
+        {
+          "path": "casual-game-production/SKILL.md",
+          "name": "休闲游戏生产流程",
+          "reason": "合成与升级 · 原型定义：用当前品类的规则与技术配置定义原型和验收条件",
+          "source": "auto",
+          "usage": "workflow"
+        },
+        {
+          "path": "game-reverse-engineering/modules/hosted-minigame-harvest/SKILL.md",
+          "name": "托管小游戏资料采集",
+          "reason": "合成与升级 · 原型定义：原型阶段明确提出托管小游戏采集需求，先说明输入与校验契约",
+          "source": "auto",
+          "usage": "reference"
+        },
+        {
+          "path": "game-reverse-engineering/modules/cocos-project-standards/SKILL.md",
+          "name": "Cocos 项目工程规范",
+          "reason": "合成与升级 · 原型定义：任务明确要求 Creator 工程规范审查，先确认工程身份与适用边界",
+          "source": "auto",
+          "usage": "reference"
+        },
+        {
+          "path": "azure-image2-generation/modules/casual-game-art-style/SKILL.md",
+          "name": "休闲游戏美术风格与视觉规范",
+          "reason": "用户为当前阶段明确选择，按实际适用范围使用",
+          "source": "manual",
+          "usage": "workflow"
+        },
+        {
+          "path": "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md",
+          "name": "H5 Canvas 游戏换皮",
+          "reason": "用户为当前阶段明确选择，按实际适用范围使用",
+          "source": "manual",
+          "usage": "workflow"
+        }
+      ],
+      "recommended_items": [
+        {
+          "path": "casual-game-production/SKILL.md",
+          "name": "休闲游戏生产流程",
+          "reason": "合成与升级 · 原型定义：用当前品类的规则与技术配置定义原型和验收条件",
+          "source": "auto",
+          "usage": "workflow"
+        },
+        {
+          "path": "game-reverse-engineering/modules/hosted-minigame-harvest/SKILL.md",
+          "name": "托管小游戏资料采集",
+          "reason": "合成与升级 · 原型定义：原型阶段明确提出托管小游戏采集需求，先说明输入与校验契约",
+          "source": "auto",
+          "usage": "reference"
+        },
+        {
+          "path": "game-reverse-engineering/modules/cocos-project-standards/SKILL.md",
+          "name": "Cocos 项目工程规范",
+          "reason": "合成与升级 · 原型定义：任务明确要求 Creator 工程规范审查，先确认工程身份与适用边界",
+          "source": "auto",
+          "usage": "reference"
+        }
+      ],
+      "warnings": [
+        "托管小游戏资料采集：当前四阶段没有托管小游戏下载、联网采集或 ADB 工具；采集 Skill 仅用于制定输入与校验要求，不会执行采集。",
+        "Cocos 项目工程规范：Creator 工程规范仅作审查参考：先体检工程身份和版本；当前没有 Creator 执行器或编辑器 MCP，不能推断使用 CFW，也不能照搬 DADA 案例。",
+        "H5 Canvas 游戏换皮：H5 换皮按实际资源契约和浏览器结果执行；设备、外部生图与来源脚本不因读取 Skill 自动可用。"
+      ]
+    },
+    "snapshot": [
+      {
+        "path": "casual-game-production/SKILL.md",
+        "name": "休闲游戏生产流程",
+        "description": "在本项目四阶段工作流中，依据所选休闲游戏品类和技术配置完成原型、资源、实现及真实验收；用于制作新休闲游戏或改进跨品类生产链路。独立的 APK 取证或纯竞品报告使用对应专项技能。",
+        "version": "1.1.0",
+        "sha256": "3786ad5c4f44539c92ab0da4c06f8f8ff98df69deaed75e153fa127b200f4e27",
+        "size": 5825,
+        "total_chars": 2559
+      },
+      {
+        "path": "game-reverse-engineering/modules/hosted-minigame-harvest/SKILL.md",
+        "name": "托管小游戏资料采集",
+        "description": "Use when 用户要从宿主商店/分发 App（AHA Games 类）批量拉取内嵌\"即点即玩\"小游戏的原包体、美术素材（icon/hotgame/banner/theme/preview）与介绍文案，并整理成可检索的索引页；也适用于宿主 App 内嵌 H5 小游戏目录化、包体直链发现、商家开放接口契约还原、按 gameId 或名称批量出库时。",
+        "version": "1.0.0",
+        "sha256": "e4edcf26f6d370d28ef9cbe3decf26ac50068dd94459900b653bfc3bd6daef4d",
+        "size": 11742,
+        "total_chars": 6895
+      },
+      {
+        "path": "game-reverse-engineering/modules/cocos-project-standards/SKILL.md",
+        "name": "Cocos 项目工程规范",
+        "description": "Use when 用户要新建或规范一个 Cocos Creator 工程，或需要工程架构设计、代码规范、接口规范、引擎规范、资源规范、目录与命名、Luban 配置链路、用户数据模块、UI 预制体生成、多语言、构建发布等开发约定；也适用于评审既有 Cocos 工程是否符合规范、接手陌生工程的架构交接、把某个项目的工程约定沉淀为可复用规范。典型触发：怎么写新工程 / 工程规范 / 代码规范 / 接口规范 / 分层规范 / 目录规范 / 命名规范 / 配置表规范 / 数据规范 / 资源规范 / 预制体规范 / 工程评审。",
+        "version": "",
+        "sha256": "39938ca6f253a631c753e68459b23eadba6ae692a6e1509d3aa440fa00aa0fa9",
+        "size": 13726,
+        "total_chars": 8024
+      },
+      {
+        "path": "azure-image2-generation/modules/casual-game-art-style/SKILL.md",
+        "name": "休闲游戏美术风格与视觉规范",
+        "description": "Use when selecting reference-grounded casual-game art templates, separating shape/rendering/UI/scenes from localized palettes and cultural content, or compiling and reviewing game-art prompts.",
+        "version": "",
+        "sha256": "2f781109ce8236633e61c88c98ef383e50dbefb44c7c9ed6e9e432a13fa88ead",
+        "size": 3754,
+        "total_chars": 1692
+      },
+      {
+        "path": "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md",
+        "name": "H5 Canvas 游戏换皮",
+        "description": "Use when 用户要对 H5 / canvas 游戏（Phaser 2.x、纯 HTML5 + WebView 壳 APK）做美术换皮，需要保持原尺寸、原命名、原 alpha 语义与图集契约，需要按用户指定的 H5、模拟器或真机方式逐屏对照验收。覆盖四类资源分流、平铺背景整条重绘、底板保明度换色、玩法对象色相回锁、四级视觉层级量化、「能跑但拖不动」类卡死诊断。",
+        "version": "1.1.0",
+        "sha256": "0807f08ed9441c371adb208500158cc1e87c08f01e2e8e95edbcfb7c2f0a7f34",
+        "size": 8531,
+        "total_chars": 4327
+      }
+    ],
+    "reads": [
+      {
+        "path": "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md",
+        "sha256": "0807f08ed9441c371adb208500158cc1e87c08f01e2e8e95edbcfb7c2f0a7f34",
+        "frozen": true,
+        "offset": 0,
+        "end": 4327,
+        "total_chars": 4327,
+        "version": "1.1.0"
+      },
+      {
+        "path": "azure-image2-generation/modules/casual-game-art-style/SKILL.md",
+        "sha256": "2f781109ce8236633e61c88c98ef383e50dbefb44c7c9ed6e9e432a13fa88ead",
+        "frozen": true,
+        "offset": 0,
+        "end": 1692,
+        "total_chars": 1692,
+        "version": ""
+      },
+      {
+        "path": "casual-game-production/SKILL.md",
+        "sha256": "3786ad5c4f44539c92ab0da4c06f8f8ff98df69deaed75e153fa127b200f4e27",
+        "frozen": true,
+        "offset": 0,
+        "end": 2559,
+        "total_chars": 2559,
+        "version": "1.1.0"
+      },
+      {
+        "path": "game-reverse-engineering/modules/cocos-project-standards/SKILL.md",
+        "sha256": "39938ca6f253a631c753e68459b23eadba6ae692a6e1509d3aa440fa00aa0fa9",
+        "frozen": true,
+        "offset": 0,
+        "end": 8024,
+        "total_chars": 8024,
+        "version": ""
+      },
+      {
+        "path": "game-reverse-engineering/modules/hosted-minigame-harvest/SKILL.md",
+        "sha256": "e4edcf26f6d370d28ef9cbe3decf26ac50068dd94459900b653bfc3bd6daef4d",
+        "frozen": true,
+        "offset": 0,
+        "end": 6895,
+        "total_chars": 6895,
+        "version": "1.0.0"
+      }
+    ],
+    "resource_reads": [
+      {
+        "path": "azure-image2-generation/modules/casual-game-art-style/references/color-hierarchy.md",
+        "sha256": "0097844b03f510f5464e5d881363fd3e0c9d6e4e2c9c2c7d4cc04642c333f9c0",
+        "frozen": true,
+        "offset": 0,
+        "end": 91,
+        "total_chars": 91
+      },
+      {
+        "path": "casual-game-production/references/company-capabilities.md",
+        "sha256": "c1ad7304e75f7c5e4bafc5ad55051b16f0933a9822f872b77b4d90bd8f12e72d",
+        "frozen": true,
+        "offset": 0,
+        "end": 1505,
+        "total_chars": 1505
+      },
+      {
+        "path": "azure-image2-generation/modules/casual-game-art-style/references/design-system.md",
+        "sha256": "b92a8281437cc46063a5942f5b12744a96bcd97ae10bd02b1ad51410734eaaab",
+        "frozen": true,
+        "offset": 0,
+        "end": 2050,
+        "total_chars": 2050
+      }
+    ],
+    "knowledge_reads": 4,
+    "tool_names": [
+      "ls",
+      "read_file",
+      "read_game_knowledge",
+      "read_skill",
+      "read_skill_resource",
+      "write_file"
+    ],
+    "report_path": "games/skill-routing-check-20261103/workflow/prototype.md",
+    "artifact": {
+      "id": "4cbf6f4c08d947bc8423d2d062894b52",
+      "name": "prototype.md",
+      "path": "workflow/prototype.md",
+      "stored_path": "workflow/prototype.md",
+      "kind": "text",
+      "size": 11490,
+      "sha256": "a34f2fa5f82438e8a6c28f7b8302f58e7343158661bd5cd58349ed886afea18c",
+      "provenance": "agent_edit",
+      "url": "/api/workflow/artifacts/46cf82bf85a848e1920a59f2aa804ebf/4cbf6f4c08d947bc8423d2d062894b52"
+    },
+    "phase_states": [
+      "awaiting_confirmation",
+      "pending",
+      "pending",
+      "pending"
+    ]
+  },
+  "compatibility": {
+    "ball_sort_confirmed_stages_preserved": true,
+    "canvas_original_prototype_preserved": true,
+    "source_sync_counts": {
+      "added": 0,
+      "updated": 0,
+      "unchanged": 458,
+      "deleted_skipped": 0,
+      "conflicts": 0
+    }
+  },
+  "limits": [
+    "真实模型验证到原型报告待评审；未制作或验收完整游戏",
+    "四阶段尚未绑定联网采集、生图、图片视觉识别、Creator MCP、ADB；相关Skill只提供可适用的方法与边界",
+    "旧运行无输入快照时保留旧读取协议，不宣称已冻结"
+  ],
+  "references": [
+    "https://docs.langchain.com/oss/python/deepagents/skills",
+    "https://docs.langchain.com/oss/python/langchain/multi-agent/skills"
+  ]
+}

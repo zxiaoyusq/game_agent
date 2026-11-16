@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('tests/test_levels.py');s=p.read_text(encoding='utf-8-sig');s=s.replace(" def test_invalid_duplicate_rejected(self):", " def test_board_validated(self):\n  self.assertTrue(p.exists());spec=importlib.util.spec_from_file_location('levels',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)\n  source=json.loads(Path('baseline/data.js').read_text(encoding='utf8'));board=[[x//2+1 for x in range(12)] for y in range(6)]\n  m.compile_data(source,{'levels':[{'level':2,'seconds':120,'board':board}]})\n  board[0][0]=20\n  with self.assertRaises(ValueError):m.compile_data(source,{'levels':[{'level':2,'seconds':120,'board':board}]})\n def test_invalid_duplicate_rejected(self):")
+p.write_text(s,encoding='utf8')

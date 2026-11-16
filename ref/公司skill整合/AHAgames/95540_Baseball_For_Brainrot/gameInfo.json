@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "95540",
+    "apiName":  "Baseball For Brainrot",
+    "targetName":  "Baseball For Brainrot",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Baseball_For_Brainrot.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260717/2fbf2384ef01d903f7776da06c484997.zip",
+    "bundleMd5":  "2fbf2384ef01d903f7776da06c484997",
+    "bundleSize":  35349711,
+    "updatedAt":  1784617969,
+    "gameLink":  "https://www.shyangyugame.com/Baseball_For_Brainrot/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_95540",
+    "category":  "Arcade",
+    "rate":  8.1,
+    "gameType":  1,
+    "localFile":  "Baseball_For_Brainrot.zip",
+    "localBytes":  35349711,
+    "verifiedAt":  "2026-10-20T11:13:38",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

@@ -1,0 +1,41 @@
+{
+  "mode": "mixed",
+  "theme": "摩洛哥绿洲商旅（北非）",
+  "assets": [
+    {
+      "path": "public/assets/oasis.webp",
+      "bytes": 307128,
+      "sha256": "f2cbd627b093a4417af4cd9885f81c02ff59045559e04fc0539234675da76d4e",
+      "usage": "大厅与对局的摩洛哥绿洲背景",
+      "source": "内置 imagegen 新生成，提示词见workflow/art-prompt.txt；原稿WebP转换"
+    },
+    {
+      "path": "public/assets/emblem.svg",
+      "bytes": 346,
+      "sha256": "260aaa04106d929a4a1fa5e447d589166d6a099352fd20aa5b39c7186ac07024",
+      "usage": "品牌与网页图标",
+      "source": "原创SVG"
+    },
+    {
+      "path": "src/board.mjs",
+      "bytes": 20393,
+      "sha256": "49c76df2ec15f8a055e99ecef437357949ed752aaaa1f0fdd9f4ced7192f66c9",
+      "usage": "珐琅棋盘、黄铜中心、宝石棋子、路径预览与动画",
+      "source": "原创程序化SVG"
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 19498,
+      "sha256": "69f83e8281698f8babb9870cffb4809da91aa6471e11d8123fa90a4b9ce3686f",
+      "usage": "界面布局、骰子视觉与响应式主题",
+      "source": "原创CSS"
+    },
+    {
+      "path": "src/audio.mjs",
+      "bytes": 1421,
+      "sha256": "f8b024f570643f288cf1391fefb55d7e257e7bff5781fd21ab69b6d5ed2982af",
+      "usage": "骰子、移动、吃子、归家、胜利音效",
+      "source": "原创运行时合成"
+    }
+  ]
+}

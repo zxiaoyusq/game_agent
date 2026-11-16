@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95103,
+    "apiName":  "Flowers Match",
+    "targetName":  "Flowers Match",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Flowers_Match.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260604/c607ee51a665850ec459f848c6cc7638.zip",
+    "bundleMd5":  "c607ee51a665850ec459f848c6cc7638",
+    "bundleSize":  16199287,
+    "updatedAt":  1780651938,
+    "gameLink":  "https://www.shyangyugame.com/Flowers_Match/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95103",
+    "category":  "Match",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Flowers_Match.zip",
+    "localBytes":  16199287,
+    "verifiedAt":  "2026-10-20T10:35:02",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

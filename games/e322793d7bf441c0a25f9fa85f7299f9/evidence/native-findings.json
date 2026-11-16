@@ -1,0 +1,15 @@
+{
+  "attempt": 1,
+  "address_kind": "ELF link VA",
+  "basis": "已读取参考包反汇编及分析文本，未独立核对重组库",
+  "full_library_sha256_status": "未验证",
+  "expected_sha256": "4cf2ba474fc9aefda142fbdca46cf7b4d3ebf06a2114ecd8487a3e48448710b4",
+  "findings": [
+    {"id": "shot-output", "entry": "0x18b09d4", "confidence": "高，限所读文本", "evidence": ["0x18b09f8 mov x19,x8", "0x18b0a64 adrp x1,0x11cc000", "0x18b0a68 add x1,x1,0x3f0", "0x18b0f90 str d0,[x19,0x20]", "0x18b0fa4 str d0,[x19,0x28]"], "conclusion": "shotPowerLimits 查询结果前两个16字节元素经转换写入输出+0x20/+0x28", "unresolved": "转换函数、数值、单位、上下限顺序及消费者"},
+    {"id": "queen-value", "entry": "0x1aa3458", "confidence": "中高", "evidence": ["0x1aa3568 mov w23,1", "0x1aa36fc and x9,x23,1", "0x1aa3708 adrp x1,0x1232000", "0x1aa370c add x1,x1,0x240", "0x1aa3744 bl 0x2706868"], "conclusion": "计算布尔形态值并构造queenCovered键关联载荷", "unresolved": "字段业务身份、容器实现和最终消费方向"},
+    {"id": "solver-target-query", "entries": ["0x18bc618","0x18bc818","0x18bc8bc","0x18bca50","0x18bcccc"], "confidence": "高，限所读文本", "conclusion": "类型名指针比较后返回内部地址或零；未定位求解器算法", "unresolved": "RTTI/vtable结构、回调调用体及主函数"}
+  ],
+  "scripts_executed": false,
+  "competitor_executed": false,
+  "published": false
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "perf_original_20261031",
+    "tiles": 72,
+    "menu_ms": 264,
+    "sample": {
+      "fps": 59.987372658100156,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 12796236
+  },
+  {
+    "name": "perf_current_20261031",
+    "tiles": 16,
+    "menu_ms": 400,
+    "sample": {
+      "fps": 59.804588506986576,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 13684988
+  },
+  {
+    "name": "perf_control_20261031",
+    "tiles": 72,
+    "menu_ms": 395,
+    "sample": {
+      "fps": 59.829142925136125,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 12725032
+  },
+  {
+    "name": "perf_control_20261031",
+    "tiles": 72,
+    "menu_ms": 240,
+    "sample": {
+      "fps": 59.87365162667711,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 9909716
+  },
+  {
+    "name": "perf_current_20261031",
+    "tiles": 16,
+    "menu_ms": 400,
+    "sample": {
+      "fps": 59.77427738493606,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 12037408
+  },
+  {
+    "name": "perf_original_20261031",
+    "tiles": 72,
+    "menu_ms": 360,
+    "sample": {
+      "fps": 59.86294379017011,
+      "p95": 16.66700000000037,
+      "frames": 240
+    },
+    "used_heap_bytes": 12059464
+  }
+]

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95486,
+    "apiName":  "Fruit Pair Match",
+    "targetName":  "Fruit Pair Match",
+    "match":  "EXACT",
+    "bundleName":  "re_1783930270972_fruit-pair-match-transsion-offline.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260713/f6d46f3045145b59549ecff4b1d1c72e.zip",
+    "bundleMd5":  "f6d46f3045145b59549ecff4b1d1c72e",
+    "bundleSize":  4349615,
+    "updatedAt":  1784109578,
+    "gameLink":  "https://www.hkminih5game.com/Fruit_Pair_Match/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95486",
+    "category":  "Puzzle",
+    "rate":  8.3,
+    "gameType":  1,
+    "localFile":  "Fruit_Pair_Match.zip",
+    "localBytes":  4349615,
+    "verifiedAt":  "2026-10-20T10:35:57",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

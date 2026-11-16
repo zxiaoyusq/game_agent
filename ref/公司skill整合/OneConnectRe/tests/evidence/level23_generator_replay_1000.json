@@ -1,0 +1,6 @@
+{
+  "seeds": 1000,
+  "failures": [],
+  "maxMs": 154,
+  "scope": "desktop self-designed static board; complete paths independently replayed"
+}

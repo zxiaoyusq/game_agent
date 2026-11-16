@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "94187",
+    "apiName":  "KPop Demon Hunters Playground",
+    "targetName":  "KPop Demon Hunters Playground",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_KPop_Demon_Hunters_Playground.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260204/e4792fa4cc77a0614de62f21107ba779.zip",
+    "bundleMd5":  "e4792fa4cc77a0614de62f21107ba779",
+    "bundleSize":  2755033,
+    "updatedAt":  1770286341,
+    "gameLink":  "https://www.gztongmenggame.com/KPop_Demon_Hunters_Playground/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94187",
+    "category":  "Simulation",
+    "rate":  8.1,
+    "gameType":  1,
+    "localFile":  "KPop_Demon_Hunters_Playground.zip",
+    "localBytes":  2755033,
+    "verifiedAt":  "2026-10-20T11:14:27",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

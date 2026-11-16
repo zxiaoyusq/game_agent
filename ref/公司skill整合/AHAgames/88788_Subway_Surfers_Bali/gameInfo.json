@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  88788,
+    "apiName":  "Subway Surfers Bali",
+    "targetName":  "Subway Surfers Bali",
+    "match":  "EXACT",
+    "bundleName":  "re_www.volcanoh5game.com(2).zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251209/b33954542af328fcd66a9c2276a99488.zip",
+    "bundleMd5":  "b33954542af328fcd66a9c2276a99488",
+    "bundleSize":  25858646,
+    "updatedAt":  1765277273,
+    "gameLink":  "https://www.volcanoh5game.com/Subway_Surfers_Bali/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_88788",
+    "category":  "Parkour",
+    "rate":  7.8,
+    "gameType":  1,
+    "localFile":  "Subway_Surfers_Bali.zip",
+    "localBytes":  25858646,
+    "verifiedAt":  "2026-10-20T10:33:52",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

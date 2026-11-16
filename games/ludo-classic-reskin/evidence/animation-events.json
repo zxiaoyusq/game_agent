@@ -1,0 +1,4060 @@
+[
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "start",
+    "time": 467.4,
+    "duration": 833.3333333333334
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 467.4,
+    "frameId": 0,
+    "positions": [],
+    "fraction": 0.011520000915527316
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 484.1,
+    "frameId": 0,
+    "positions": [],
+    "fraction": 0.03156000091552737
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 500.8,
+    "frameId": 1,
+    "positions": [],
+    "fraction": 0.051600000915527355
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 517.4,
+    "frameId": 1,
+    "positions": [],
+    "fraction": 0.07152000091552731
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 534.1,
+    "frameId": 2,
+    "positions": [],
+    "fraction": 0.09156000091552736
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 550.7,
+    "frameId": 2,
+    "positions": [],
+    "fraction": 0.1114800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 567.4,
+    "frameId": 3,
+    "positions": [],
+    "fraction": 0.13152000091552732
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 584.1,
+    "frameId": 3,
+    "positions": [],
+    "fraction": 0.15156000091552738
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 600.7,
+    "frameId": 4,
+    "positions": [],
+    "fraction": 0.1714800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 617.4,
+    "frameId": 4,
+    "positions": [],
+    "fraction": 0.19152000091552732
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 634.1,
+    "frameId": 5,
+    "positions": [],
+    "fraction": 0.21156000091552737
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 650.7,
+    "frameId": 5,
+    "positions": [],
+    "fraction": 0.2314800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 667.4,
+    "frameId": 6,
+    "positions": [],
+    "fraction": 0.2515200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 684.1,
+    "frameId": 6,
+    "positions": [],
+    "fraction": 0.27156000091552734
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 700.7,
+    "frameId": 7,
+    "positions": [],
+    "fraction": 0.2914800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 717.4,
+    "frameId": 7,
+    "positions": [],
+    "fraction": 0.3115200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 734,
+    "frameId": 8,
+    "positions": [],
+    "fraction": 0.33144000091552733
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 750.7,
+    "frameId": 8,
+    "positions": [],
+    "fraction": 0.3514800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 767.4,
+    "frameId": 9,
+    "positions": [],
+    "fraction": 0.3715200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 784.1,
+    "frameId": 9,
+    "positions": [],
+    "fraction": 0.39156000091552734
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 800.7,
+    "frameId": 10,
+    "positions": [],
+    "fraction": 0.4114800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 817.4,
+    "frameId": 10,
+    "positions": [],
+    "fraction": 0.4315200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 834,
+    "frameId": 11,
+    "positions": [],
+    "fraction": 0.45144000091552733
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 850.7,
+    "frameId": 11,
+    "positions": [],
+    "fraction": 0.4714800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 867.4,
+    "frameId": 12,
+    "positions": [],
+    "fraction": 0.4915200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 884,
+    "frameId": 12,
+    "positions": [],
+    "fraction": 0.5114400009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 900.7,
+    "frameId": 13,
+    "positions": [],
+    "fraction": 0.5314800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 917.4,
+    "frameId": 13,
+    "positions": [],
+    "fraction": 0.5515200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 934,
+    "frameId": 14,
+    "positions": [],
+    "fraction": 0.5714400009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 950.7,
+    "frameId": 14,
+    "positions": [],
+    "fraction": 0.5914800009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 967.4,
+    "frameId": 15,
+    "positions": [],
+    "fraction": 0.6115200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 984.1,
+    "frameId": 15,
+    "positions": [],
+    "fraction": 0.6315600009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1000.7,
+    "frameId": 16,
+    "positions": [],
+    "fraction": 0.6514800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1017.4,
+    "frameId": 16,
+    "positions": [],
+    "fraction": 0.6715200009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1034.1,
+    "frameId": 17,
+    "positions": [],
+    "fraction": 0.6915600009155272
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1050.7,
+    "frameId": 17,
+    "positions": [],
+    "fraction": 0.7114800009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1067.4,
+    "frameId": 18,
+    "positions": [],
+    "fraction": 0.7315200009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1084.1,
+    "frameId": 18,
+    "positions": [],
+    "fraction": 0.7515600009155272
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1100.7,
+    "frameId": 19,
+    "positions": [],
+    "fraction": 0.7714800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1117.4,
+    "frameId": 19,
+    "positions": [],
+    "fraction": 0.7915200009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1134,
+    "frameId": 20,
+    "positions": [],
+    "fraction": 0.8114400009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1150.7,
+    "frameId": 20,
+    "positions": [],
+    "fraction": 0.8314800009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1167.4,
+    "frameId": 21,
+    "positions": [],
+    "fraction": 0.8515200009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1184.1,
+    "frameId": 21,
+    "positions": [],
+    "fraction": 0.8715600009155272
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1200.7,
+    "frameId": 22,
+    "positions": [],
+    "fraction": 0.8914800009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1217.4,
+    "frameId": 22,
+    "positions": [],
+    "fraction": 0.9115200009155274
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1234,
+    "frameId": 23,
+    "positions": [],
+    "fraction": 0.9314400009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1250.7,
+    "frameId": 23,
+    "positions": [],
+    "fraction": 0.9514800009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1267.3,
+    "frameId": 24,
+    "positions": [],
+    "fraction": 0.9714000009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1284,
+    "frameId": 24,
+    "positions": [],
+    "fraction": 0.9914400009155273
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "frame",
+    "time": 1300.7,
+    "frameId": 24,
+    "positions": [],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 1,
+    "epoch": 6,
+    "kind": "dice",
+    "stage": "end",
+    "time": 1300.7
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "start",
+    "time": 1700.7,
+    "duration": 440,
+    "pieceId": "3:1"
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1700.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 313.178181973544,
+        "y": 314.9291763340217,
+        "scale": 1.0255783256743387,
+        "stepIndex": 0,
+        "progress": 0.05454544760964175,
+        "u": 0.05454544760964175
+      }
+    ],
+    "fraction": 0.013636361902410438
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "step",
+    "time": 1700.7,
+    "stepIndex": 0,
+    "position": {
+      "pieceId": "3:1",
+      "x": 313.178181973544,
+      "y": 314.9291763340217,
+      "scale": 1.0255783256743387,
+      "stepIndex": 0,
+      "progress": 0.05454544760964175,
+      "u": 0.05454544760964175
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1717.3,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 309.7978183371804,
+        "y": 312.03259175948546,
+        "scale": 1.0902342313559512,
+        "stepIndex": 0,
+        "progress": 0.20545453851873183,
+        "u": 0.20545453851873183
+      }
+    ],
+    "fraction": 0.05136363462968296
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1734,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 306.3970910644531,
+        "y": 310.01938549706654,
+        "scale": 1.135171871142088,
+        "stepIndex": 0,
+        "progress": 0.35727272033691404,
+        "u": 0.35727272033691404
+      }
+    ],
+    "fraction": 0.08931818008422851
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1750.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 302.99636379172586,
+        "y": 309.35782578424534,
+        "scale": 1.1499388290175616,
+        "stepIndex": 0,
+        "progress": 0.5090909021550963,
+        "u": 0.5090909021550963
+      }
+    ],
+    "fraction": 0.12727272553877408
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1767.4,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 299.59563651899856,
+        "y": 310.1955743164011,
+        "scale": 1.1312390849962264,
+        "stepIndex": 0,
+        "progress": 0.6609090839732785,
+        "u": 0.6609090839732785
+      }
+    ],
+    "fraction": 0.16522727099331963
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1784,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 296.21527288263496,
+        "y": 312.3296934655094,
+        "scale": 1.0836024968464884,
+        "stepIndex": 0,
+        "progress": 0.8118181748823686,
+        "u": 0.8118181748823686
+      }
+    ],
+    "fraction": 0.20295454372059216
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1800.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 292.81454560990767,
+        "y": 315.30906290429664,
+        "scale": 1.0170987147307013,
+        "stepIndex": 0,
+        "progress": 0.9636363567005508,
+        "u": 0.9636363567005508
+      }
+    ],
+    "fraction": 0.2409090891751377
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1817.4,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 289.4138183371804,
+        "y": 313.69076028626256,
+        "scale": 1.0532215410261057,
+        "stepIndex": 1,
+        "progress": 1.115454538518733,
+        "u": 0.11545453851873307
+      }
+    ],
+    "fraction": 0.2788636346296833
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "step",
+    "time": 1817.4,
+    "stepIndex": 1,
+    "position": {
+      "pieceId": "3:1",
+      "x": 289.4138183371804,
+      "y": 313.69076028626256,
+      "scale": 1.0532215410261057,
+      "stepIndex": 1,
+      "progress": 1.115454538518733,
+      "u": 0.11545453851873307
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1834,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 286.0334547008168,
+        "y": 311.0854351703549,
+        "scale": 1.1113761195061864,
+        "stepIndex": 1,
+        "progress": 1.266363629427823,
+        "u": 0.26636362942782316
+      }
+    ],
+    "fraction": 0.3165909073569558
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1850.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 282.6327274280895,
+        "y": 309.575858497859,
+        "scale": 1.1450720273744,
+        "stepIndex": 1,
+        "progress": 1.4181818112460054,
+        "u": 0.4181818112460054
+      }
+    ],
+    "fraction": 0.35454545281150135
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1867.4,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 279.2320001553622,
+        "y": 309.51692465206196,
+        "scale": 1.1463875150037968,
+        "stepIndex": 1,
+        "progress": 1.5699999930641875,
+        "u": 0.5699999930641876
+      }
+    ],
+    "fraction": 0.3924999982660469
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1884,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 275.85163651899853,
+        "y": 310.9094909561308,
+        "scale": 1.1153034457165463,
+        "stepIndex": 1,
+        "progress": 1.7209090839732777,
+        "u": 0.7209090839732777
+      }
+    ],
+    "fraction": 0.4302272709933194
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1900.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 272.4509092462713,
+        "y": 313.4591900749033,
+        "scale": 1.058390518958232,
+        "stepIndex": 1,
+        "progress": 1.87272726579146,
+        "u": 0.87272726579146
+      }
+    ],
+    "fraction": 0.468181816447865
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1917.4,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 269.050181973544,
+        "y": 315.5574074371228,
+        "scale": 1.0115553099801189,
+        "stepIndex": 2,
+        "progress": 2.024545447609642,
+        "u": 0.02454544760964216
+      }
+    ],
+    "fraction": 0.5061363619024105
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "step",
+    "time": 1917.4,
+    "stepIndex": 2,
+    "position": {
+      "pieceId": "3:1",
+      "x": 269.050181973544,
+      "y": 315.5574074371228,
+      "scale": 1.0115553099801189,
+      "stepIndex": 2,
+      "progress": 2.024545447609642,
+      "u": 0.02454544760964216
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1934,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 265.66981833718035,
+        "y": 312.55571662451837,
+        "scale": 1.0785573370471808,
+        "stepIndex": 2,
+        "progress": 2.175454538518732,
+        "u": 0.17545453851873224
+      }
+    ],
+    "fraction": 0.543863634629683
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1950.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 262.2690910644531,
+        "y": 310.3204199165551,
+        "scale": 1.128452352849932,
+        "stepIndex": 2,
+        "progress": 2.3272727203369143,
+        "u": 0.32727272033691446
+      }
+    ],
+    "fraction": 0.5818181800842286
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1967.4,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 258.8683637917258,
+        "y": 309.3695781624987,
+        "scale": 1.1496764991458335,
+        "stepIndex": 2,
+        "progress": 2.4790909021550966,
+        "u": 0.4790909021550967
+      }
+    ],
+    "fraction": 0.6197727255387742
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 1984,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 255.4880001553622,
+        "y": 309.90777418148315,
+        "scale": 1.1376631951506453,
+        "stepIndex": 2,
+        "progress": 2.6299999930641866,
+        "u": 0.6299999930641867
+      }
+    ],
+    "fraction": 0.6574999982660467
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2000.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 252.08727288263492,
+        "y": 311.82124152128245,
+        "scale": 1.0949518706015542,
+        "stepIndex": 2,
+        "progress": 2.781818174882369,
+        "u": 0.781818174882369
+      }
+    ],
+    "fraction": 0.6954545437205922
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2017.4,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 248.68654560990763,
+        "y": 314.68417687681654,
+        "scale": 1.0310470635583828,
+        "stepIndex": 2,
+        "progress": 2.9336363567005512,
+        "u": 0.9336363567005512
+      }
+    ],
+    "fraction": 0.7334090891751378
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2034,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 245.30618197354403,
+        "y": 314.3111164002411,
+        "scale": 1.0393743063390852,
+        "stepIndex": 3,
+        "progress": 3.0845454476096412,
+        "u": 0.08454544760964133
+      }
+    ],
+    "fraction": 0.7711363619024103
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "step",
+    "time": 2034,
+    "stepIndex": 3,
+    "position": {
+      "pieceId": "3:1",
+      "x": 245.30618197354403,
+      "y": 314.3111164002411,
+      "scale": 1.0393743063390852,
+      "stepIndex": 3,
+      "progress": 3.0845454476096412,
+      "u": 0.08454544760964133
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2050.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 241.9054547008168,
+        "y": 311.53119010226834,
+        "scale": 1.1014262326331192,
+        "stepIndex": 3,
+        "progress": 3.2363636294278213,
+        "u": 0.2363636294278215
+      }
+    ],
+    "fraction": 0.8090909073569553
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2067.3,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 238.52509106445308,
+        "y": 309.7721018979501,
+        "scale": 1.1406915943366513,
+        "stepIndex": 3,
+        "progress": 3.3872727203369157,
+        "u": 0.38727272033691573
+      }
+    ],
+    "fraction": 0.8468181800842289
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2084,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 235.12436379172584,
+        "y": 309.4056962772094,
+        "scale": 1.1488702912281847,
+        "stepIndex": 3,
+        "progress": 3.539090902155096,
+        "u": 0.5390909021550959
+      }
+    ],
+    "fraction": 0.884772725538774
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2100.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 231.7236365189986,
+        "y": 310.5279140939934,
+        "scale": 1.1238207863892569,
+        "stepIndex": 3,
+        "progress": 3.690909083973276,
+        "u": 0.690909083973276
+      }
+    ],
+    "fraction": 0.922727270993319
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2117.3,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 228.3432728826349,
+        "y": 312.8713897730251,
+        "scale": 1.0715110614108703,
+        "stepIndex": 3,
+        "progress": 3.8418181748823703,
+        "u": 0.8418181748823702
+      }
+    ],
+    "fraction": 0.9604545437205926
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2134,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 224.94254560990765,
+        "y": 315.9407482010058,
+        "scale": 1.0029985965005868,
+        "stepIndex": 3,
+        "progress": 3.9936363567005504,
+        "u": 0.9936363567005504
+      }
+    ],
+    "fraction": 0.9984090891751376
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 2150.7,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 224.79999999999998,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 3,
+        "progress": 4,
+        "u": 1
+      }
+    ],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 2,
+    "epoch": 11,
+    "kind": "walk",
+    "stage": "end",
+    "time": 2150.7
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "start",
+    "time": 5333.9,
+    "duration": 440,
+    "pieceId": "0:2"
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5333.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 423.6483855781952,
+        "scale": 1.045536924761693,
+        "stepIndex": 0,
+        "progress": 0.09818179737437524,
+        "u": 0.09818179737437524
+      }
+    ],
+    "fraction": 0.02454544934359381
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "step",
+    "time": 5333.9,
+    "stepIndex": 0,
+    "position": {
+      "pieceId": "0:2",
+      "x": 157.6,
+      "y": 423.6483855781952,
+      "scale": 1.045536924761693,
+      "stepIndex": 0,
+      "progress": 0.09818179737437524,
+      "u": 0.09818179737437524
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5350.5,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 417.57567780045844,
+        "scale": 1.105762654226016,
+        "stepIndex": 0,
+        "progress": 0.24909088828346945,
+        "u": 0.24909088828346945
+      }
+    ],
+    "fraction": 0.06227272207086736
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5367.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 412.5219164049717,
+        "scale": 1.1427902750211234,
+        "stepIndex": 0,
+        "progress": 0.4009090701016496,
+        "u": 0.4009090701016496
+      }
+    ],
+    "fraction": 0.1002272675254124
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5383.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 408.8959815307701,
+        "scale": 1.1479467681089748,
+        "stepIndex": 0,
+        "progress": 0.5527272519198297,
+        "u": 0.5527272519198297
+      }
+    ],
+    "fraction": 0.13818181297995744
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5400.5,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 406.7582846968713,
+        "scale": 1.1203374318626262,
+        "stepIndex": 0,
+        "progress": 0.703636342828924,
+        "u": 0.703636342828924
+      }
+    ],
+    "fraction": 0.175909085707231
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5417.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 405.80670665178064,
+        "scale": 1.065798460014965,
+        "stepIndex": 0,
+        "progress": 0.8554545246471041,
+        "u": 0.8554545246471041
+      }
+    ],
+    "fraction": 0.21386363116177604
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5433.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 405.2060292729943,
+        "scale": 1.0034268840087253,
+        "stepIndex": 1,
+        "progress": 1.0072727064652844,
+        "u": 0.007272706465284335
+      }
+    ],
+    "fraction": 0.2518181766163211
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "step",
+    "time": 5433.9,
+    "stepIndex": 1,
+    "position": {
+      "pieceId": "0:2",
+      "x": 157.6,
+      "y": 405.2060292729943,
+      "scale": 1.0034268840087253,
+      "stepIndex": 1,
+      "progress": 1.0072727064652844,
+      "u": 0.007272706465284335
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5450.5,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 398.78126354250077,
+        "scale": 1.0715110499185116,
+        "stepIndex": 1,
+        "progress": 1.1581817973743784,
+        "u": 0.15818179737437854
+      }
+    ],
+    "fraction": 0.28954544934359466
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5467.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 393.03205338276905,
+        "scale": 1.1240620806298016,
+        "stepIndex": 1,
+        "progress": 1.3099999791925587,
+        "u": 0.30999997919255873
+      }
+    ],
+    "fraction": 0.3274999947981397
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5483.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 388.52339779850007,
+        "scale": 1.1489221609959408,
+        "stepIndex": 1,
+        "progress": 1.4618181610107388,
+        "u": 0.46181816101073886
+      }
+    ],
+    "fraction": 0.3654545402526847
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5500.6,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 385.5038843217424,
+        "scale": 1.1405424621765556,
+        "stepIndex": 1,
+        "progress": 1.6136363428289273,
+        "u": 0.6136363428289273
+      }
+    ],
+    "fraction": 0.40340908570723183
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5517.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 383.8958541261621,
+        "scale": 1.10111020989632,
+        "stepIndex": 1,
+        "progress": 1.7645454337380133,
+        "u": 0.7645454337380133
+      }
+    ],
+    "fraction": 0.44113635843450333
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5533.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 383.2852244893751,
+        "scale": 1.0389607825061657,
+        "stepIndex": 1,
+        "progress": 1.9163636155561934,
+        "u": 0.9163636155561934
+      }
+    ],
+    "fraction": 0.47909090388904835
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5550.6,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 380.20730524522656,
+        "scale": 1.0318847838517542,
+        "stepIndex": 2,
+        "progress": 2.0681817973743817,
+        "u": 0.06818179737438186
+      }
+    ],
+    "fraction": 0.5170454493435954
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "step",
+    "time": 5550.6,
+    "stepIndex": 2,
+    "position": {
+      "pieceId": "0:2",
+      "x": 157.6,
+      "y": 380.20730524522656,
+      "scale": 1.0318847838517542,
+      "stepIndex": 2,
+      "progress": 2.0681817973743817,
+      "u": 0.06818179737438186
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5567.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 373.992464943793,
+        "scale": 1.095283114291456,
+        "stepIndex": 2,
+        "progress": 2.2190908882834677,
+        "u": 0.21909088828346782
+      }
+    ],
+    "fraction": 0.5547727220708669
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5583.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 368.69131656010455,
+        "scale": 1.1378327660732095,
+        "stepIndex": 2,
+        "progress": 2.370909070101648,
+        "u": 0.370909070101648
+      }
+    ],
+    "fraction": 0.5927272675254119
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5600.5,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 364.7874093194702,
+        "scale": 1.1496477692629226,
+        "stepIndex": 2,
+        "progress": 2.521818161010742,
+        "u": 0.5218181610107422
+      }
+    ],
+    "fraction": 0.6304545402526855
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5617.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 362.3519739855776,
+        "scale": 1.128230611897447,
+        "stepIndex": 2,
+        "progress": 2.6736363428289223,
+        "u": 0.6736363428289224
+      }
+    ],
+    "fraction": 0.6684090857072306
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5633.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 361.19877631444393,
+        "scale": 1.0781920781311025,
+        "stepIndex": 2,
+        "progress": 2.8254545246471023,
+        "u": 0.8254545246471026
+      }
+    ],
+    "fraction": 0.7063636311617756
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5650.5,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 360.8286451735956,
+        "scale": 1.0111281505220224,
+        "stepIndex": 2,
+        "progress": 2.9763636155561968,
+        "u": 0.9763636155561968
+      }
+    ],
+    "fraction": 0.7440909038890492
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5667.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 355.29869985678977,
+        "scale": 1.0587848767037171,
+        "stepIndex": 3,
+        "progress": 3.128181797374377,
+        "u": 0.1281817973743769
+      }
+    ],
+    "fraction": 0.7820454493435942
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "step",
+    "time": 5667.2,
+    "stepIndex": 3,
+    "position": {
+      "pieceId": "0:2",
+      "x": 157.6,
+      "y": 355.29869985678977,
+      "scale": 1.0587848767037171,
+      "stepIndex": 3,
+      "progress": 3.128181797374377,
+      "u": 0.1281817973743769
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5683.9,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 349.35948963780237,
+        "scale": 1.1155769801662496,
+        "stepIndex": 3,
+        "progress": 3.279999979192557,
+        "u": 0.27999997919255704
+      }
+    ],
+    "fraction": 0.8199999947981392
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5700.5,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 344.6004227929236,
+        "scale": 1.1464803673792778,
+        "stepIndex": 3,
+        "progress": 3.4309090701016514,
+        "u": 0.4309090701016513
+      }
+    ],
+    "fraction": 0.8577272675254128
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5717.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 341.27349781884175,
+        "scale": 1.1449625323394559,
+        "stepIndex": 3,
+        "progress": 3.5827272519198314,
+        "u": 0.5827272519198314
+      }
+    ],
+    "fraction": 0.8956818129799579
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5733.8,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 339.403573623712,
+        "scale": 1.1113761282634438,
+        "stepIndex": 3,
+        "progress": 3.733636342828926,
+        "u": 0.7336363428289256
+      }
+    ],
+    "fraction": 0.9334090857072315
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5750.5,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 338.6319278931379,
+        "scale": 1.052820810109609,
+        "stepIndex": 3,
+        "progress": 3.885454524647106,
+        "u": 0.8854545246471058
+      }
+    ],
+    "fraction": 0.9713636311617765
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 5767.2,
+    "positions": [
+      {
+        "pieceId": "0:2",
+        "x": 157.6,
+        "y": 338.4368600682594,
+        "scale": 1,
+        "stepIndex": 3,
+        "progress": 4,
+        "u": 1
+      }
+    ],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "walk",
+    "stage": "end",
+    "time": 5767.2
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "start",
+    "time": 5783.8,
+    "duration": 100
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "frame",
+    "time": 5783.8,
+    "positions": [],
+    "fraction": 0.16600000000000364
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "frame",
+    "time": 5800.5,
+    "positions": [],
+    "fraction": 0.3330000000000018
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "frame",
+    "time": 5817.2,
+    "positions": [],
+    "fraction": 0.5
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "frame",
+    "time": 5833.9,
+    "positions": [],
+    "fraction": 0.6669999999999981
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "frame",
+    "time": 5850.5,
+    "positions": [],
+    "fraction": 0.8330000000000019
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "frame",
+    "time": 5867.2,
+    "positions": [],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "impact",
+    "stage": "end",
+    "time": 5867.2
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "start",
+    "time": 5883.8,
+    "duration": 610
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 5883.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 350.8103754266214,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": 16.446666666666655,
+        "u": 0.5533333333333454
+      }
+    ],
+    "fraction": 0.027213114754098957
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 5900.6,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 363.33296928327684,
+        "scale": 1,
+        "stepIndex": 1,
+        "progress": 15.886666666666649,
+        "u": 0.11333333333335152
+      }
+    ],
+    "fraction": 0.05475409836065663
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 5917.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 375.7064846416382,
+        "scale": 1,
+        "stepIndex": 1,
+        "progress": 15.333333333333334,
+        "u": 0.6666666666666666
+      }
+    ],
+    "fraction": 0.08196721311475409
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 5933.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 388.08000000000027,
+        "scale": 1,
+        "stepIndex": 2,
+        "progress": 14.779999999999989,
+        "u": 0.22000000000001213
+      }
+    ],
+    "fraction": 0.10918032786885305
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 5950.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 400.52805460750864,
+        "scale": 1,
+        "stepIndex": 2,
+        "progress": 14.223333333333327,
+        "u": 0.7766666666666727
+      }
+    ],
+    "fraction": 0.13655737704918064
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 5967.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 412.97610921501706,
+        "scale": 1,
+        "stepIndex": 3,
+        "progress": 13.666666666666666,
+        "u": 0.3333333333333333
+      }
+    ],
+    "fraction": 0.16393442622950818
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 5983.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 425.34962457337906,
+        "scale": 1,
+        "stepIndex": 3,
+        "progress": 13.11333333333332,
+        "u": 0.8866666666666788
+      }
+    ],
+    "fraction": 0.19114754098360714
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6000.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 437.7976791808875,
+        "scale": 1,
+        "stepIndex": 4,
+        "progress": 12.556666666666661,
+        "u": 0.4433333333333394
+      }
+    ],
+    "fraction": 0.21852459016393472
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6017.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 157.6,
+        "y": 450.2457337883959,
+        "scale": 1,
+        "stepIndex": 5,
+        "progress": 12,
+        "u": 0
+      }
+    ],
+    "fraction": 0.2459016393442623
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6033.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 169.99466666666694,
+        "y": 450.2457337883959,
+        "scale": 1,
+        "stepIndex": 5,
+        "progress": 11.446666666666655,
+        "u": 0.5533333333333454
+      }
+    ],
+    "fraction": 0.2731147540983613
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6050.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 182.46400000000014,
+        "y": 450.2457337883959,
+        "scale": 1,
+        "stepIndex": 6,
+        "progress": 10.889999999999993,
+        "u": 0.11000000000000607
+      }
+    ],
+    "fraction": 0.3004918032786888
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6067.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 194.93333333333334,
+        "y": 450.2457337883959,
+        "scale": 1,
+        "stepIndex": 6,
+        "progress": 10.333333333333334,
+        "u": 0.6666666666666666
+      }
+    ],
+    "fraction": 0.32786885245901637
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6083.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 445.32614334470964,
+        "scale": 1,
+        "stepIndex": 7,
+        "progress": 9.779999999999989,
+        "u": 0.22000000000001213
+      }
+    ],
+    "fraction": 0.35508196721311536
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6100.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 432.8780887372012,
+        "scale": 1,
+        "stepIndex": 7,
+        "progress": 9.223333333333327,
+        "u": 0.7766666666666727
+      }
+    ],
+    "fraction": 0.38245901639344293
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6117.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 420.4300341296928,
+        "scale": 1,
+        "stepIndex": 8,
+        "progress": 8.666666666666666,
+        "u": 0.3333333333333333
+      }
+    ],
+    "fraction": 0.4098360655737705
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6133.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 408.0565187713308,
+        "scale": 1,
+        "stepIndex": 8,
+        "progress": 8.11333333333332,
+        "u": 0.8866666666666788
+      }
+    ],
+    "fraction": 0.43704918032786944
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6150.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 395.60846416382236,
+        "scale": 1,
+        "stepIndex": 9,
+        "progress": 7.55666666666666,
+        "u": 0.4433333333333394
+      }
+    ],
+    "fraction": 0.464426229508197
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6167.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 383.160409556314,
+        "scale": 1,
+        "stepIndex": 10,
+        "progress": 7,
+        "u": 0
+      }
+    ],
+    "fraction": 0.4918032786885246
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6183.9,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 370.71235494880557,
+        "scale": 1,
+        "stepIndex": 10,
+        "progress": 6.44333333333334,
+        "u": 0.5566666666666606
+      }
+    ],
+    "fraction": 0.5191803278688522
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6200.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 358.3388395904435,
+        "scale": 1,
+        "stepIndex": 11,
+        "progress": 5.889999999999994,
+        "u": 0.11000000000000607
+      }
+    ],
+    "fraction": 0.5463934426229511
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6217.1,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 202.4,
+        "y": 345.9653242320815,
+        "scale": 1,
+        "stepIndex": 11,
+        "progress": 5.336666666666648,
+        "u": 0.6633333333333515
+      }
+    ],
+    "fraction": 0.5736065573770501
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6233.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 207.32800000000026,
+        "y": 333.51726962457315,
+        "scale": 1,
+        "stepIndex": 12,
+        "progress": 4.779999999999988,
+        "u": 0.22000000000001213
+      }
+    ],
+    "fraction": 0.6009836065573776
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6250.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 219.79733333333346,
+        "y": 321.0692150170647,
+        "scale": 1,
+        "stepIndex": 12,
+        "progress": 4.223333333333327,
+        "u": 0.7766666666666727
+      }
+    ],
+    "fraction": 0.6283606557377052
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6267.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 232.26666666666665,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 13,
+        "progress": 3.6666666666666665,
+        "u": 0.3333333333333333
+      }
+    ],
+    "fraction": 0.6557377049180327
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6283.9,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 244.73599999999985,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 13,
+        "progress": 3.110000000000006,
+        "u": 0.8899999999999939
+      }
+    ],
+    "fraction": 0.6831147540983603
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6300.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 257.1306666666668,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 14,
+        "progress": 2.5566666666666604,
+        "u": 0.4433333333333394
+      }
+    ],
+    "fraction": 0.7103278688524594
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6317.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 269.59999999999997,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 15,
+        "progress": 2,
+        "u": 0
+      }
+    ],
+    "fraction": 0.7377049180327869
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6333.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 281.99466666666694,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 15,
+        "progress": 1.4466666666666546,
+        "u": 0.5533333333333454
+      }
+    ],
+    "fraction": 0.7649180327868859
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6350.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 294.4640000000001,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 16,
+        "progress": 0.8899999999999939,
+        "u": 0.11000000000000607
+      }
+    ],
+    "fraction": 0.7922950819672134
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6367.1,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 306.85866666666703,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 16,
+        "progress": 0.33666666666664846,
+        "u": 0.6633333333333515
+      }
+    ],
+    "fraction": 0.8195081967213124
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6383.8,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 304.04540838061376,
+        "y": 326.6420788229903,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": -0.18521949600000942,
+        "u": 0.18521949600000942
+      }
+    ],
+    "fraction": 0.8468852459016399
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6400.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 283.7206324912626,
+        "y": 347.38377319212304,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": -0.5487823370000033,
+        "u": 0.5487823370000033
+      }
+    ],
+    "fraction": 0.8742622950819675
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6417.2,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 270.5709215017065,
+        "y": 360.8032218430034,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": -0.784,
+        "u": 0.784
+      }
+    ],
+    "fraction": 0.9016393442622951
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6433.9,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 263.0340383346758,
+        "y": 368.4947077416655,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": -0.918817262999999,
+        "u": 0.918817262999999
+      }
+    ],
+    "fraction": 0.9290163934426227
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6450.5,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 259.55965730354944,
+        "y": 372.0403581272765,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": -0.9809658370000004,
+        "u": 0.9809658370000004
+      }
+    ],
+    "fraction": 0.9562295081967216
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6467.1,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 258.55316153713306,
+        "y": 373.06749996069624,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": -0.9989696990000002,
+        "u": 0.9989696990000002
+      }
+    ],
+    "fraction": 0.9834426229508205
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "frame",
+    "time": 6483.9,
+    "positions": [
+      {
+        "pieceId": "3:1",
+        "x": 258.49556313993173,
+        "y": 373.1262798634812,
+        "scale": 1,
+        "stepIndex": 0,
+        "progress": -1,
+        "u": 1
+      }
+    ],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 46,
+    "epoch": 16,
+    "kind": "capture",
+    "stage": "end",
+    "time": 6483.9
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "start",
+    "time": 15650.1,
+    "duration": 330,
+    "pieceId": "0:1"
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15650.1,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 378.4242955104225,
+        "scale": 1.0508106880367951,
+        "stepIndex": 0,
+        "progress": 53.11000000000001,
+        "u": 0.1100000000000033
+      }
+    ],
+    "fraction": 0.03666666666666777
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "step",
+    "time": 15650.1,
+    "stepIndex": 0,
+    "position": {
+      "pieceId": "0:1",
+      "x": 180,
+      "y": 378.4242955104225,
+      "scale": 1.0508106880367951,
+      "stepIndex": 0,
+      "progress": 53.11000000000001,
+      "u": 0.1100000000000033
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15666.8,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 372.380825198149,
+        "scale": 1.1099300257244678,
+        "stepIndex": 0,
+        "progress": 53.26181818181818,
+        "u": 0.2618181818181752
+      }
+    ],
+    "fraction": 0.08727272727272507
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15683.4,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 367.46209532265993,
+        "scale": 1.1443973198707624,
+        "stepIndex": 0,
+        "progress": 53.41272727272727,
+        "u": 0.41272727272726945
+      }
+    ],
+    "fraction": 0.13757575757575646
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15700.2,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 363.9374177788825,
+        "scale": 1.1468398349105002,
+        "stepIndex": 0,
+        "progress": 53.56545454545455,
+        "u": 0.5654545454545521
+      }
+    ],
+    "fraction": 0.1884848484848507
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15716.8,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 361.9148027612667,
+        "scale": 1.1166617081221317,
+        "stepIndex": 0,
+        "progress": 53.71636363636363,
+        "u": 0.7163636363636298
+      }
+    ],
+    "fraction": 0.23878787878787658
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15733.4,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 361.04507557036607,
+        "scale": 1.0607494780588622,
+        "stepIndex": 0,
+        "progress": 53.86727272727273,
+        "u": 0.867272727272724
+      }
+    ],
+    "fraction": 0.289090909090908
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15750.1,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 359.96893201067724,
+        "scale": 1.0089909864477626,
+        "stepIndex": 1,
+        "progress": 54.01909090909091,
+        "u": 0.0190909090909124
+      }
+    ],
+    "fraction": 0.3396969696969708
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "step",
+    "time": 15750.1,
+    "stepIndex": 1,
+    "position": {
+      "pieceId": "0:1",
+      "x": 180,
+      "y": 359.96893201067724,
+      "scale": 1.0089909864477626,
+      "stepIndex": 1,
+      "progress": 54.01909090909091,
+      "u": 0.0190909090909124
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15766.8,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 353.5395402815332,
+        "scale": 1.076724641476295,
+        "stepIndex": 1,
+        "progress": 54.170909090909085,
+        "u": 0.1709090909090843
+      }
+    ],
+    "fraction": 0.3903030303030281
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15783.4,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 347.90785066392993,
+        "scale": 1.1271062155804956,
+        "stepIndex": 1,
+        "progress": 54.32181818181818,
+        "u": 0.3218181818181785
+      }
+    ],
+    "fraction": 0.4406060606060595
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15800.1,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 343.51032083575114,
+        "scale": 1.1494858103196184,
+        "stepIndex": 1,
+        "progress": 54.473636363636366,
+        "u": 0.47363636363636696
+      }
+    ],
+    "fraction": 0.4912121212121223
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15816.8,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 340.6075693074154,
+        "scale": 1.1384998180086812,
+        "stepIndex": 1,
+        "progress": 54.62545454545454,
+        "u": 0.6254545454545388
+      }
+    ],
+    "fraction": 0.5418181818181796
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15833.4,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 339.0954060333897,
+        "scale": 1.0969276790865974,
+        "stepIndex": 1,
+        "progress": 54.776363636363634,
+        "u": 0.776363636363633
+      }
+    ],
+    "fraction": 0.592121212121211
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15850.2,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 338.5378665453003,
+        "scale": 1.0331394339547275,
+        "stepIndex": 1,
+        "progress": 54.92909090909092,
+        "u": 0.9290909090909157
+      }
+    ],
+    "fraction": 0.6430303030303053
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15866.8,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 334.97672204698966,
+        "scale": 1.0373034830747252,
+        "stepIndex": 2,
+        "progress": 55.07999999999999,
+        "u": 0.07999999999999338
+      }
+    ],
+    "fraction": 0.6933333333333311
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "step",
+    "time": 15866.8,
+    "stepIndex": 2,
+    "position": {
+      "pieceId": "0:1",
+      "x": 180,
+      "y": 334.97672204698966,
+      "scale": 1.0373034830747252,
+      "stepIndex": 2,
+      "progress": 55.07999999999999,
+      "u": 0.07999999999999338
+    }
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15883.5,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 328.78025834721694,
+        "scale": 1.0998378517333551,
+        "stepIndex": 2,
+        "progress": 55.231818181818184,
+        "u": 0.2318181818181818
+      }
+    ],
+    "fraction": 0.7439393939393939
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15900.1,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 323.60933517412303,
+        "scale": 1.1399344605583297,
+        "stepIndex": 2,
+        "progress": 55.38272727272727,
+        "u": 0.382727272727276
+      }
+    ],
+    "fraction": 0.7942424242424253
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15916.8,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 319.80301118767295,
+        "scale": 1.1491174963303006,
+        "stepIndex": 2,
+        "progress": 55.534545454545444,
+        "u": 0.5345454545454479
+      }
+    ],
+    "fraction": 0.8448484848484826
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15933.4,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 317.4975286804737,
+        "scale": 1.1252533760058396,
+        "stepIndex": 2,
+        "progress": 55.68545454545454,
+        "u": 0.6854545454545421
+      }
+    ],
+    "fraction": 0.895151515151514
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15950.1,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 316.4262357402756,
+        "scale": 1.0733866116382484,
+        "stepIndex": 2,
+        "progress": 55.83727272727273,
+        "u": 0.8372727272727306
+      }
+    ],
+    "fraction": 0.9457575757575769
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15966.8,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 316.08876973884395,
+        "scale": 1.0051397816732026,
+        "stepIndex": 2,
+        "progress": 55.989090909090905,
+        "u": 0.9890909090909025
+      }
+    ],
+    "fraction": 0.9963636363636341
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "frame",
+    "time": 15983.4,
+    "positions": [
+      {
+        "pieceId": "0:1",
+        "x": 180,
+        "y": 316.0750853242321,
+        "scale": 1,
+        "stepIndex": 2,
+        "progress": 56,
+        "u": 1
+      }
+    ],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "walk",
+    "stage": "end",
+    "time": 15983.4
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "start",
+    "time": 16000.1,
+    "duration": 375
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16000.1,
+    "positions": [],
+    "fraction": 0.04453333333333527
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16016.7,
+    "positions": [],
+    "fraction": 0.0888000000000029
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16033.5,
+    "positions": [],
+    "fraction": 0.13360000000000097
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16050.2,
+    "positions": [],
+    "fraction": 0.17813333333333625
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16066.8,
+    "positions": [],
+    "fraction": 0.22239999999999904
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16083.5,
+    "positions": [],
+    "fraction": 0.2669333333333343
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16100.2,
+    "positions": [],
+    "fraction": 0.31146666666666956
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16116.7,
+    "positions": [],
+    "fraction": 0.3554666666666696
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16133.5,
+    "positions": [],
+    "fraction": 0.40026666666666766
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16150.1,
+    "positions": [],
+    "fraction": 0.4445333333333353
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16166.8,
+    "positions": [],
+    "fraction": 0.4890666666666657
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16183.4,
+    "positions": [],
+    "fraction": 0.5333333333333333
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16200.1,
+    "positions": [],
+    "fraction": 0.5778666666666686
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16216.8,
+    "positions": [],
+    "fraction": 0.6223999999999991
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16233.4,
+    "positions": [],
+    "fraction": 0.6666666666666666
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16250.1,
+    "positions": [],
+    "fraction": 0.7112000000000019
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16266.8,
+    "positions": [],
+    "fraction": 0.7557333333333324
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16283.5,
+    "positions": [],
+    "fraction": 0.8002666666666677
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16300.1,
+    "positions": [],
+    "fraction": 0.8445333333333352
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16316.8,
+    "positions": [],
+    "fraction": 0.8890666666666657
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16333.5,
+    "positions": [],
+    "fraction": 0.933600000000001
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16350.1,
+    "positions": [],
+    "fraction": 0.9778666666666687
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "frame",
+    "time": 16366.8,
+    "positions": [],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "home",
+    "stage": "end",
+    "time": 16366.8
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "start",
+    "time": 16383.4,
+    "duration": 1000
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16383.4,
+    "positions": [],
+    "fraction": 0.016600000000000364
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16400.1,
+    "positions": [],
+    "fraction": 0.033299999999999275
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16416.7,
+    "positions": [],
+    "fraction": 0.04990000000000146
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16433.4,
+    "positions": [],
+    "fraction": 0.06660000000000219
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16450.1,
+    "positions": [],
+    "fraction": 0.08329999999999928
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16466.8,
+    "positions": [],
+    "fraction": 0.1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16483.4,
+    "positions": [],
+    "fraction": 0.11660000000000219
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16500.1,
+    "positions": [],
+    "fraction": 0.13329999999999928
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16516.8,
+    "positions": [],
+    "fraction": 0.15
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16533.4,
+    "positions": [],
+    "fraction": 0.1666000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16550.1,
+    "positions": [],
+    "fraction": 0.18329999999999927
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16566.7,
+    "positions": [],
+    "fraction": 0.19990000000000147
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16583.5,
+    "positions": [],
+    "fraction": 0.21670000000000073
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16600.1,
+    "positions": [],
+    "fraction": 0.23329999999999929
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16616.8,
+    "positions": [],
+    "fraction": 0.25
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16633.5,
+    "positions": [],
+    "fraction": 0.2667000000000007
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16650.1,
+    "positions": [],
+    "fraction": 0.2832999999999993
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16666.8,
+    "positions": [],
+    "fraction": 0.3
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16683.4,
+    "positions": [],
+    "fraction": 0.31660000000000216
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16700.1,
+    "positions": [],
+    "fraction": 0.33329999999999926
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16716.8,
+    "positions": [],
+    "fraction": 0.35
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16733.5,
+    "positions": [],
+    "fraction": 0.36670000000000075
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16750.1,
+    "positions": [],
+    "fraction": 0.38329999999999925
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16766.8,
+    "positions": [],
+    "fraction": 0.4
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16783.4,
+    "positions": [],
+    "fraction": 0.4166000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16800.1,
+    "positions": [],
+    "fraction": 0.4332999999999993
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16816.8,
+    "positions": [],
+    "fraction": 0.45
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16833.5,
+    "positions": [],
+    "fraction": 0.4667000000000007
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16850,
+    "positions": [],
+    "fraction": 0.48320000000000074
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16866.7,
+    "positions": [],
+    "fraction": 0.49990000000000145
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16883.4,
+    "positions": [],
+    "fraction": 0.5166000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16900.1,
+    "positions": [],
+    "fraction": 0.5332999999999992
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16916.8,
+    "positions": [],
+    "fraction": 0.55
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16933.4,
+    "positions": [],
+    "fraction": 0.5666000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16950.1,
+    "positions": [],
+    "fraction": 0.5832999999999993
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16966.8,
+    "positions": [],
+    "fraction": 0.6
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 16983.4,
+    "positions": [],
+    "fraction": 0.6166000000000021
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17000.1,
+    "positions": [],
+    "fraction": 0.6332999999999993
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17016.7,
+    "positions": [],
+    "fraction": 0.6499000000000015
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17033.4,
+    "positions": [],
+    "fraction": 0.6666000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17050,
+    "positions": [],
+    "fraction": 0.6832000000000007
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17066.8,
+    "positions": [],
+    "fraction": 0.7
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17083.4,
+    "positions": [],
+    "fraction": 0.7166000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17100,
+    "positions": [],
+    "fraction": 0.7332000000000007
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17116.7,
+    "positions": [],
+    "fraction": 0.7499000000000015
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17133.5,
+    "positions": [],
+    "fraction": 0.7667000000000007
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17150.1,
+    "positions": [],
+    "fraction": 0.7832999999999992
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17166.7,
+    "positions": [],
+    "fraction": 0.7999000000000015
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17183.5,
+    "positions": [],
+    "fraction": 0.8167000000000008
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17200.1,
+    "positions": [],
+    "fraction": 0.8332999999999993
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17216.8,
+    "positions": [],
+    "fraction": 0.85
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17233.4,
+    "positions": [],
+    "fraction": 0.8666000000000021
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17250,
+    "positions": [],
+    "fraction": 0.8832000000000008
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17266.7,
+    "positions": [],
+    "fraction": 0.8999000000000015
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17283.4,
+    "positions": [],
+    "fraction": 0.9166000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17300.1,
+    "positions": [],
+    "fraction": 0.9332999999999992
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17316.7,
+    "positions": [],
+    "fraction": 0.9499000000000014
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17333.4,
+    "positions": [],
+    "fraction": 0.9666000000000022
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17350.1,
+    "positions": [],
+    "fraction": 0.9832999999999993
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17366.7,
+    "positions": [],
+    "fraction": 0.9999000000000015
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "frame",
+    "time": 17383.4,
+    "positions": [],
+    "fraction": 1
+  },
+  {
+    "matchId": "1bbb6292-46b5-406c-8e9b-140a05c6bf80",
+    "revision": 142,
+    "epoch": 21,
+    "kind": "victory",
+    "stage": "end",
+    "time": 17383.4
+  }
+]

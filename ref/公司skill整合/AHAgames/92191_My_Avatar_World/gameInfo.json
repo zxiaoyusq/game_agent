@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "92191",
+    "apiName":  "My Avatar World",
+    "targetName":  "My Avatar World",
+    "match":  "BY_ID",
+    "bundleName":  "re_hippoo_hnyige-my_avatar_world-1.0.2.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250509/10065055166.zip",
+    "bundleMd5":  "a52181e40db3672a9a93e8918d63facc",
+    "bundleSize":  18710497,
+    "updatedAt":  1747015943,
+    "gameLink":  "https://www.hnyigegame.com/My_Avatar_World/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_92191",
+    "category":  "Children",
+    "rate":  7.3,
+    "gameType":  1,
+    "localFile":  "My_Avatar_World.zip",
+    "localBytes":  18710497,
+    "verifiedAt":  "2026-10-20T11:19:33",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "level": 1,
+    "tiles": 16,
+    "guideRestarted": true,
+    "step": 0
+  },
+  {
+    "level": 5,
+    "tiles": 40,
+    "guideRestarted": true,
+    "step": null
+  },
+  {
+    "level": 10,
+    "tiles": 48,
+    "guideRestarted": true,
+    "step": null
+  }
+]

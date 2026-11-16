@@ -1,0 +1,12 @@
+{
+  "scenario": "level 14, five shuffle charges, controlled deadlock, restored board",
+  "fullRunTimeouts": 2,
+  "observedOnSecondTimeout": {
+    "tiles": 18,
+    "pause": 0,
+    "gravityMoving": false,
+    "expectedTilesAfterNextPair": 16
+  },
+  "subsequentResults": "single-case retry passed; later four-case run passed",
+  "cause": "undetermined; game behavior and automation timing remain possible"
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0a142b"><title>萌兽方块</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="game-shell">
+  <header><div><span class="eyebrow">星空里的方块伙伴</span><h1>萌兽方块<span class="spark">✦</span></h1></div><div class="menu"><button id="pause" disabled>暂停</button><button id="restart" disabled>重新开始</button></div></header>
+  <section class="score-strip" aria-label="游戏成绩"><div>分数<strong id="score">0</strong></div><div>最高分<strong id="best">0</strong></div><div>等级<strong id="level">1</strong></div><div>已消行<strong id="lines">0</strong></div></section>
+  <section class="play-area">
+    <aside class="guide panel"><span class="eyebrow">拼出整行 · 点亮星空</span><h2>让萌兽找到落脚点</h2><p>移动、旋转动物方块，填满一整行即可消除。堆到顶部时游戏结束。</p><ul><li><kbd>←</kbd> <kbd>→</kbd> 左右移动</li><li><kbd>↑</kbd> 旋转方块</li><li><kbd>↓</kbd> 按住软降</li><li><kbd>空格</kbd> 一键硬降</li><li><kbd>P</kbd> 暂停 / 继续</li></ul><p class="tip">浅色虚影就是落点。<br>每消除 10 行，速度提升一级。</p><div class="mini-stars">✧ &nbsp; ✦ &nbsp; ✧</div></aside>
+    <div class="board-wrap"><canvas id="board" width="300" height="600" aria-label="俄罗斯方块棋盘，10列20行"></canvas>
+      <div id="overlay" class="overlay"><div class="overlay-card"><span class="badge">✦ 萌兽集结</span><h2 id="overlay-title">准备好了吗？</h2><p id="overlay-text">移动、旋转动物方块，填满一整行即可消除。堆到顶部时游戏结束。</p><button id="primary" class="primary">正在准备动物方块…</button><button id="cancel" hidden>取消</button></div></div>
+    </div>
+    <aside class="next-panel panel"><h2>下一块</h2><canvas id="next" width="104" height="104" aria-label="下一块预览"></canvas><p id="animal">动物伙伴待命</p><p class="tip desktop-tip">同类方块，同一伙伴。<br>看准落点，轻松消行。</p></aside>
+  </section>
+  <section class="controls" aria-label="方块操作"><button data-action="left">← <span>左移</span></button><button data-action="rotate">↻ <span>旋转</span></button><button data-action="right">→ <span>右移</span></button><button data-action="soft">↓ <span>软降</span></button><button data-action="hard" class="drop">⇓ <span>硬降</span></button></section>
+  <p class="mobile-help">按住左右移动或软降，点击旋转与硬降。</p>
+  <p id="notice" role="status" aria-live="polite"></p><p id="storage-warning" role="status"></p>
+  <footer>填满一行，收获一点星光。</footer>
+</main>
+<script src="rules.js"></script><script src="storage.js"></script><script src="renderer.js"></script><script src="input.js"></script><script src="app.js"></script>
+</body></html>

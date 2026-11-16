@@ -1,0 +1,272 @@
+[
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 1,
+    "actions": 282,
+    "replayedActions": 282,
+    "replayIdentical": true,
+    "winner": 2,
+    "stats": {
+      "rollCount": 146,
+      "moveCount": 136,
+      "bonusCount": 33,
+      "captureCount": 0
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 2,
+    "actions": 372,
+    "replayedActions": 372,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 198,
+      "moveCount": 174,
+      "bonusCount": 44,
+      "captureCount": 7
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 2,
+    "seed": 42,
+    "actions": 287,
+    "replayedActions": 287,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 146,
+      "moveCount": 141,
+      "bonusCount": 31,
+      "captureCount": 0
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 3,
+    "seed": 1,
+    "actions": 369,
+    "replayedActions": 369,
+    "replayIdentical": true,
+    "winner": 2,
+    "stats": {
+      "rollCount": 197,
+      "moveCount": 172,
+      "bonusCount": 48,
+      "captureCount": 6
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 3,
+    "seed": 2,
+    "actions": 584,
+    "replayedActions": 584,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 309,
+      "moveCount": 275,
+      "bonusCount": 64,
+      "captureCount": 11
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 3,
+    "seed": 42,
+    "actions": 603,
+    "replayedActions": 603,
+    "replayIdentical": true,
+    "winner": 2,
+    "stats": {
+      "rollCount": 312,
+      "moveCount": 291,
+      "bonusCount": 66,
+      "captureCount": 14
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 4,
+    "seed": 1,
+    "actions": 881,
+    "replayedActions": 881,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 458,
+      "moveCount": 423,
+      "bonusCount": 116,
+      "captureCount": 34
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 4,
+    "seed": 2,
+    "actions": 826,
+    "replayedActions": 826,
+    "replayIdentical": true,
+    "winner": 2,
+    "stats": {
+      "rollCount": 434,
+      "moveCount": 392,
+      "bonusCount": 100,
+      "captureCount": 23
+    }
+  },
+  {
+    "mode": "classic",
+    "count": 4,
+    "seed": 42,
+    "actions": 1224,
+    "replayedActions": 1224,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 651,
+      "moveCount": 573,
+      "bonusCount": 142,
+      "captureCount": 39
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 2,
+    "seed": 1,
+    "actions": 135,
+    "replayedActions": 135,
+    "replayIdentical": true,
+    "winner": 2,
+    "stats": {
+      "rollCount": 68,
+      "moveCount": 67,
+      "bonusCount": 17,
+      "captureCount": 3
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 2,
+    "seed": 2,
+    "actions": 76,
+    "replayedActions": 76,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 38,
+      "moveCount": 38,
+      "bonusCount": 8,
+      "captureCount": 0
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 2,
+    "seed": 42,
+    "actions": 68,
+    "replayedActions": 68,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 34,
+      "moveCount": 34,
+      "bonusCount": 7,
+      "captureCount": 0
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 3,
+    "seed": 1,
+    "actions": 108,
+    "replayedActions": 108,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 54,
+      "moveCount": 54,
+      "bonusCount": 12,
+      "captureCount": 3
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 3,
+    "seed": 2,
+    "actions": 123,
+    "replayedActions": 123,
+    "replayIdentical": true,
+    "winner": 2,
+    "stats": {
+      "rollCount": 64,
+      "moveCount": 59,
+      "bonusCount": 15,
+      "captureCount": 3
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 3,
+    "seed": 42,
+    "actions": 106,
+    "replayedActions": 106,
+    "replayIdentical": true,
+    "winner": 2,
+    "stats": {
+      "rollCount": 53,
+      "moveCount": 53,
+      "bonusCount": 11,
+      "captureCount": 2
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 1,
+    "actions": 142,
+    "replayedActions": 142,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 73,
+      "moveCount": 69,
+      "bonusCount": 19,
+      "captureCount": 4
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 2,
+    "actions": 87,
+    "replayedActions": 87,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 45,
+      "moveCount": 42,
+      "bonusCount": 9,
+      "captureCount": 2
+    }
+  },
+  {
+    "mode": "quick",
+    "count": 4,
+    "seed": 42,
+    "actions": 132,
+    "replayedActions": 132,
+    "replayIdentical": true,
+    "winner": 0,
+    "stats": {
+      "rollCount": 66,
+      "moveCount": 66,
+      "bonusCount": 13,
+      "captureCount": 3
+    }
+  }
+]

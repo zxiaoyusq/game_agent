@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>One Connect 重置迭代分析报告</title>
+<style>
+:root{
+  --bg:#0f1117;--surface:#1a1d26;--surface2:#22263a;--border:#2e3347;
+  --accent:#f7931e;--accent2:#ffd700;--green:#4caf50;--red:#f44336;--blue:#4da6ff;--purple:#9c6ffa;
+  --text:#e8eaf0;--muted:#8890a8;--small:#6b7390;
+  --r:10px;--r2:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.6}
+a{color:var(--blue);text-decoration:none}
+
+/* layout */
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px 80px}
+header{background:linear-gradient(135deg,#1a1d26 0%,#12172a 100%);border-bottom:1px solid var(--border);padding:32px 0 28px;margin-bottom:40px}
+header .wrap{display:flex;align-items:center;gap:20px}
+.header-icon{width:54px;height:54px;background:var(--accent);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+header h1{font-size:22px;font-weight:700;color:#fff}
+header .meta{color:var(--muted);font-size:13px;margin-top:4px}
+.tag{display:inline-block;background:rgba(247,147,30,.15);color:var(--accent);border:1px solid rgba(247,147,30,.35);border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;letter-spacing:.4px;vertical-align:middle}
+.tag.red{background:rgba(244,67,54,.15);color:var(--red);border-color:rgba(244,67,54,.35)}
+.tag.blue{background:rgba(77,166,255,.12);color:var(--blue);border-color:rgba(77,166,255,.3)}
+.tag.green{background:rgba(76,175,80,.12);color:var(--green);border-color:rgba(76,175,80,.3)}
+.tag.purple{background:rgba(156,111,250,.12);color:var(--purple);border-color:rgba(156,111,250,.3)}
+
+/* sections */
+section{margin-bottom:48px}
+h2{font-size:18px;font-weight:700;color:#fff;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+h2 .num{width:28px;height:28px;background:var(--accent);color:#000;border-radius:50%;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+h3{font-size:14px;font-weight:700;color:#cfd4e8;margin:18px 0 10px}
+
+/* cards */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:20px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:24px}
+.summary-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px}
+.summary-card .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+.summary-card .val{font-size:22px;font-weight:800;color:var(--accent)}
+.summary-card .note{font-size:12px;color:var(--small);margin-top:3px}
+
+/* table */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--surface2);color:var(--muted);font-weight:600;padding:9px 12px;text-align:left;font-size:12px;border-bottom:1px solid var(--border)}
+td{padding:9px 12px;border-bottom:1px solid rgba(46,51,71,.6)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,255,255,.025)}
+.sev-high{color:var(--red);font-weight:700}
+.sev-med{color:var(--accent);font-weight:600}
+
+/* bar chart */
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:13px}
+.bar-country{width:175px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{flex:1;background:var(--surface2);border-radius:4px;height:18px;position:relative;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;color:#000;transition:width .6s ease}
+.bar-pct{width:48px;text-align:right;color:var(--muted);flex-shrink:0}
+.bar-dau{width:72px;text-align:right;color:var(--small);flex-shrink:0;font-size:12px}
+
+/* competitor cards */
+.comp-section{margin-bottom:32px}
+.comp-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.comp-icon{width:54px;height:54px;border-radius:12px;object-fit:cover;flex-shrink:0;background:var(--surface2)}
+.comp-title h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:2px}
+.comp-title .dev{font-size:12px;color:var(--muted)}
+.comp-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:5px}
+.screenshots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.screenshots img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;background:var(--surface2);display:block}
+.comp-insights{background:var(--surface2);border-radius:var(--r2);padding:10px 14px;font-size:12px;color:#b0b8cc;line-height:1.6;margin-top:8px}
+.comp-insights strong{color:var(--accent)}
+
+/* sdk diagram */
+.sdk-box{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:14px 18px;font-family:monospace;font-size:13px;line-height:1.8;color:#cfd4e8}
+.sdk-box .c-green{color:var(--green)}
+.sdk-box .c-orange{color:var(--accent)}
+.sdk-box .c-blue{color:var(--blue)}
+.sdk-box .c-purple{color:var(--purple)}
+.sdk-box .c-red{color:var(--red)}
+.sdk-box .c-muted{color:var(--muted)}
+
+/* ad flow */
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px}
+.flow-box{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:6px 12px;white-space:nowrap}
+.flow-box.accent{background:rgba(247,147,30,.15);border-color:rgba(247,147,30,.4);color:var(--accent)}
+.flow-box.green{background:rgba(76,175,80,.12);border-color:rgba(76,175,80,.3);color:var(--green)}
+.flow-box.red{background:rgba(244,67,54,.12);border-color:rgba(244,67,54,.3);color:var(--red)}
+.flow-box.blue{background:rgba(77,166,255,.1);border-color:rgba(77,166,255,.25);color:var(--blue)}
+.flow-arrow{color:var(--muted);font-size:16px}
+
+/* roadmap */
+.roadmap{display:grid;gap:12px}
+.road-row{display:flex;gap:14px;align-items:flex-start}
+.road-phase{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0;color:#000}
+.road-content{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:12px 14px}
+.road-content h4{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px}
+.road-content p{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* lang pills */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:13px;display:flex;align-items:center;gap:6px}
+.pill .flag{font-size:16px}
+.pill.p1{border-color:var(--accent);color:var(--accent)}
+.pill.p2{border-color:var(--blue);color:var(--blue)}
+.pill.p3{border-color:var(--muted);color:var(--muted)}
+
+/* risk */
+.risk-box{background:rgba(244,67,54,.08);border:1px solid rgba(244,67,54,.3);border-radius:var(--r);padding:16px 20px;display:flex;gap:12px;align-items:flex-start}
+.risk-icon{font-size:22px;flex-shrink:0}
+.risk-content h4{color:var(--red);font-weight:700;margin-bottom:4px}
+.risk-content p{font-size:13px;color:#c8b0b0;line-height:1.7}
+
+/* misc */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:700px){.two-col{grid-template-columns:1fr}.screenshots{grid-template-columns:repeat(3,1fr)}}
+.divider{height:1px;background:var(--border);margin:24px 0}
+code{background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:12px;font-family:monospace;color:#a8d4ff}
+pre{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:16px;overflow-x:auto;font-size:12.5px;line-height:1.65;font-family:monospace;color:#cfd4e8;margin-bottom:8px}
+pre .c-green{color:#81c784}pre .c-orange{color:#ffb74d}pre .c-blue{color:#90caf9}pre .c-muted{color:#607d8b}
+.note-box{background:rgba(77,166,255,.07);border:1px solid rgba(77,166,255,.2);border-radius:var(--r2);padding:12px 16px;font-size:12.5px;color:#9cc4e8;line-height:1.65;margin-top:10px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="header-icon">🔗</div>
+    <div>
+      <h1>One Connect — 重置迭代分析报告</h1>
+      <div class="meta">v1.0 &nbsp;·&nbsp; 2026-10-29 &nbsp;·&nbsp; 分析：AI（代码只读）&nbsp;·&nbsp; 数据来源：项目文档 + AHA SDK + Google Play + 后台 DAU</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ─── 0 执行摘要 ─── -->
+<section>
+  <h2><span class="num">0</span> 执行摘要</h2>
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="label">原包大小</div>
+      <div class="val">3.0 MB</div>
+      <div class="note">远低于20MB上限；可扩展空间充足</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">头号市场 DAU</div>
+      <div class="val">巴基斯坦</div>
+      <div class="note">301万 DAU · 13.88% 占比</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">广告体系</div>
+      <div class="val" style="color:var(--red)">残缺</div>
+      <div class="note">胜/败均插屏，无激励，结算 bug</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">竞品头部下载</div>
+      <div class="val">100M+</div>
+      <div class="note">Tile Explorer / Tile Club</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">SDK 接入方式</div>
+      <div class="val" style="color:var(--green)">可行</div>
+      <div class="note">postMessage 桥接 / 代价低</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">版权风险</div>
+      <div class="val" style="color:var(--red)">⚠ 存在</div>
+      <div class="note">Famobi 原版仍在 2026.6 更新</div>
+    </div>
+  </div>
+  <div class="card" style="background:linear-gradient(135deg,rgba(247,147,30,.08),rgba(30,40,80,.5));border-color:rgba(247,147,30,.3)">
+    <p style="font-size:14px;line-height:1.8;color:#d8dae8">
+      <strong style="color:var(--accent)">核心结论：</strong>现有 H5 包技术债可控，推荐在原包上直接改造——
+      <strong style="color:#fff">优先修广告体系（止血）→ 改竖屏布局 → 全量替换美术 → 完善关卡曲线 → 接本地化</strong>。
+      重建引擎得不偿失，因为原包 Construct 2 的玩法逻辑已经验证可用。
+      用户核心是南亚（巴基斯坦+印度）和非洲（尼日利亚）三大市场，共占 37%，设备均为中低端传音机型，
+      首屏速度 + 离线可用 + 激励广告流程是 DAU 和留存的决定性因素。
+    </p>
+  </div>
+</section>
+
+<!-- ─── 1 技术债 ─── -->
+<section>
+  <h2><span class="num">1</span> 技术债诊断</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>问题</th><th>文件定位</th><th>严重度</th></tr></thead>
+      <tbody>
+        <tr><td>无 <code>.capx</code> 源工程，<code>data.js</code> 是 Construct 2 生成物，无可视化编辑</td><td><code>baseline/data.js</code> (129KB)</td><td><span class="sev-high">🔴 高</span></td></tr>
+        <tr><td>横屏 1280×720，手机竖屏下画面极小，点击误触率高</td><td><code>game.html</code> viewport + data.js 末尾 <code>1280,720</code></td><td><span class="sev-high">🔴 高</span></td></tr>
+        <tr><td>Famobi 包 ID / analytics / <code>v1.js</code> 品牌残留，Famobi 原版 2026 年还在更新</td><td><code>game.html</code>, <code>custom.js</code>, <code>html5games/</code></td><td><span class="sev-high">🔴 高（版权）</span></td></tr>
+        <tr><td>宿主缺 <code>showGameLoadingCompleted</code> 时白屏报错，直接打开必崩</td><td><code>custom.js → top.h5_sdk</code></td><td><span class="sev-high">🔴 高</span></td></tr>
+        <tr><td>宿主缺 <code>showAd</code> 时结算页无主页按钮，用户无法重开</td><td>阶段说明.md 验证记录</td><td><span class="sev-high">🔴 高（留存伤害）</span></td></tr>
+        <tr><td>胜/败均触发插屏，无激励广告，广告调用不 await，无频控</td><td><code>custom.js</code> EVENT_LEVEL*</td><td><span class="sev-high">🔴 高（收益低）</span></td></tr>
+        <tr><td>随机棋盘无可解性验证，洗牌耗尽直接失败</td><td><code>board-hooks.js</code></td><td><span class="sev-med">🟡 中</span></td></tr>
+        <tr><td>埋点仅内存缓存，刷新清空，无上报</td><td><code>host-adapter.js</code></td><td><span class="sev-med">🟡 中</span></td></tr>
+        <tr><td>Famobi CSS <code>play.css</code> 107KB + Famobi JS 无用依赖共 ~140KB</td><td><code>html5games/gameapi/</code></td><td><span class="sev-med">🟡 中（包体浪费）</span></td></tr>
+        <tr><td>jQuery 88KB，c2runtime.js 512KB 含所有 Construct 2 插件</td><td><code>game/jquery-3.4.1.min.js</code></td><td><span class="sev-med">🟡 中</span></td></tr>
+        <tr><td>真机性能空白（仅桌面 Chrome 验证，Infinix 真机 BLOCKED）</td><td>开发说明.md §真机</td><td><span class="sev-med">🟡 中</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>包体分析（baseline 84 文件）</h3>
+  <div class="card">
+    <div style="display:flex;gap:30px;flex-wrap:wrap">
+      <div>
+        <div class="bar-row"><div class="bar-country">PNG 图集 (55张)</div><div class="bar-track"><div class="bar-fill" style="width:61%;background:linear-gradient(90deg,#f7931e,#ffd700)">1.83 MB</div></div><div class="bar-pct">61%</div></div>
+        <div class="bar-row"><div class="bar-country">JS 文件 (9个)</div><div class="bar-track"><div class="bar-fill" style="width:26%;background:linear-gradient(90deg,#4da6ff,#7e57c2)">0.79 MB</div></div><div class="bar-pct">26%</div></div>
+        <div class="bar-row"><div class="bar-country">OGG 音频 (12个)</div><div class="bar-track"><div class="bar-fill" style="width:10%;background:linear-gradient(90deg,#4caf50,#26a69a)">0.31 MB</div></div><div class="bar-pct">10%</div></div>
+        <div class="bar-row"><div class="bar-country">CSS + 其他</div><div class="bar-track"><div class="bar-fill" style="width:3%;background:var(--muted)">0.15 MB</div></div><div class="bar-pct">5%</div></div>
+      </div>
+      <div style="font-size:13px;color:var(--muted);line-height:2">
+        <div>总计 <strong style="color:#fff">3.0 MB</strong>（平台上限 20MB）</div>
+        <div>可删除：Famobi壳 ~140KB、jQuery 88KB</div>
+        <div>可压缩：PNG 量化约 -40% → 节省 ~730KB</div>
+        <div>音频可压缩：OGG 已优化，目标保持</div>
+        <div><strong style="color:var(--green)">重置后目标：≤ 4 MB（含新美术）</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 2 AHA SDK ─── -->
+<section>
+  <h2><span class="num">2</span> AHA SDK 接入分析（CombiMons 模板）</h2>
+
+  <h3>整体架构</h3>
+  <div class="sdk-box">
+    <div><span class="c-muted">宿主 AHA App</span></div>
+    <div>&nbsp;└── <span class="c-orange">外层 index.html</span>&nbsp;&nbsp;<span class="c-muted">← 只读，平台提供，不改</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="c-blue">adsdk_1.8.0.0.js</span>&nbsp;&nbsp;<span class="c-muted">→ window.h5sdk（插屏/激励/开屏）</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="c-green">Banner 广告</span>&nbsp;&nbsp;<span class="c-muted">底部 50px，常驻</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="c-purple">&lt;iframe&gt; game/index.html</span>&nbsp;&nbsp;<span class="c-muted">← 游戏放这里</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-purple">game/host-adapter.js</span>&nbsp;&nbsp;<span class="c-muted">← 改这里，换成 postMessage 桥</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-purple">game/c2runtime.js</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-muted">← 不动</span></div>
+  </div>
+
+  <h3>API 契约</h3>
+  <div class="card" style="padding:0;overflow:hidden">
+    <table>
+      <thead><tr><th>API</th><th>调用时机</th><th>回调</th><th>注意</th></tr></thead>
+      <tbody>
+        <tr><td><code>h5sdk.gameLoadingCompleted()</code></td><td>资源全部加载完</td><td>无</td><td>必须调，否则平台判超时</td></tr>
+        <tr><td><code>h5sdk.adBreak({type:"preroll"})</code></td><td>游戏启动（外层自动）</td><td><code>adBreakDone</code></td><td>外层已配，无需游戏内触发</td></tr>
+        <tr><td><code>postMessage("next") + MIAD_NEXT</code></td><td>关卡间插屏</td><td><code>_callback</code>=完整观看<br><code>_failback</code>=失败/跳过</td><td>45秒频控；<span style="color:var(--red)">失败也必须继续游戏</span></td></tr>
+        <tr><td><code>postMessage("reward") + MIAD</code></td><td>激励视频（复活/道具）</td><td><code>_callback</code>=发奖励<br><code>_failback</code>=不发奖励</td><td><span style="color:var(--red)">failback 不得卡住流程</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>改造代码示例</h3>
+  <pre><span class="c-muted">// 替换 host-adapter.js 中 showAd 的实现</span>
+
+<span class="c-muted">// 1. 插屏（关卡间，不阻塞）</span>
+<span class="c-green">function</span> <span class="c-blue">showInterstitial</span>(onDone) {
+  window.parent.MIAD_NEXT = {};
+  window.parent.MIAD_NEXT._callback  = onDone;  <span class="c-muted">// 看完</span>
+  window.parent.MIAD_NEXT._failback  = onDone;  <span class="c-muted">// 失败/跳过也继续</span>
+  window.parent.<span class="c-orange">postMessage</span>("next", "*");
+}
+
+<span class="c-muted">// 2. 激励视频（复活/加时/道具，阻塞等回调）</span>
+<span class="c-green">function</span> <span class="c-blue">showRewardedAd</span>(onReward, onFail) {
+  window.parent.MIAD = {};
+  window.parent.MIAD._callback = onReward;  <span class="c-muted">// 看完 → 发奖励</span>
+  window.parent.MIAD._failback = onFail;    <span class="c-muted">// 跳过 → 不发奖励</span>
+  window.parent.<span class="c-orange">postMessage</span>("reward", "*");
+}
+
+<span class="c-muted">// 3. 加载完成通知</span>
+<span class="c-green">function</span> <span class="c-blue">notifyLoaded</span>() {
+  window.parent.<span class="c-orange">postMessage</span>("gameLoadingCompleted", "*");
+}</pre>
+
+  <div class="note-box">⚠ <strong>Banner 安全区</strong>：外层页面底部固定 50px Banner。游戏有效高度 = <code>calc(100vh - 50px)</code>。竖屏布局时棋盘和 UI 必须向上偏移，不能把按钮放在最底部 50px 内。</div>
+</section>
+
+<!-- ─── 3 用户分布 ─── -->
+<section>
+  <h2><span class="num">3</span> 用户国家分布（后台数据 Top 10）</h2>
+
+  <div class="card">
+    <div style="margin-bottom:18px">
+      <div class="bar-row" style="font-size:11px;color:var(--muted);margin-bottom:12px">
+        <div class="bar-country">国家</div><div class="bar-track" style="background:transparent;padding-left:0">DAU 占比（H5play 转化率）</div><div class="bar-pct">占比</div><div class="bar-dau">DAU</div>
+      </div>
+      <div class="bar-row"><div class="bar-country">🇵🇰 Pakistan</div><div class="bar-track"><div class="bar-fill" style="width:88%;background:linear-gradient(90deg,#f7931e,#ffd700)">13.88% &nbsp;·&nbsp; H5转化 78%</div></div><div class="bar-pct">13.88%</div><div class="bar-dau">301万</div></div>
+      <div class="bar-row"><div class="bar-country">🇮🇳 India</div><div class="bar-track"><div class="bar-fill" style="width:84%;background:linear-gradient(90deg,#e67e22,#f39c12)">13.21% &nbsp;·&nbsp; H5转化 74%</div></div><div class="bar-pct">13.21%</div><div class="bar-dau">287万</div></div>
+      <div class="bar-row"><div class="bar-country">🇳🇬 Nigeria</div><div class="bar-track"><div class="bar-fill" style="width:63%;background:linear-gradient(90deg,#27ae60,#2ecc71)">9.86% &nbsp;·&nbsp; H5转化 65%</div></div><div class="bar-pct">9.86%</div><div class="bar-dau">214万</div></div>
+      <div class="bar-row"><div class="bar-country">❓ (null)</div><div class="bar-track"><div class="bar-fill" style="width:34%;background:linear-gradient(90deg,#607d8b,#78909c)">5.35%</div></div><div class="bar-pct">5.35%</div><div class="bar-dau">116万</div></div>
+      <div class="bar-row"><div class="bar-country">🇵🇭 Philippines</div><div class="bar-track"><div class="bar-fill" style="width:31%;background:linear-gradient(90deg,#4da6ff,#2980b9)">4.83%</div></div><div class="bar-pct">4.83%</div><div class="bar-dau">105万</div></div>
+      <div class="bar-row"><div class="bar-country">🇮🇩 Indonesia</div><div class="bar-track"><div class="bar-fill" style="width:28%;background:linear-gradient(90deg,#4da6ff,#2980b9)">4.37%</div></div><div class="bar-pct">4.37%</div><div class="bar-dau">94.9万</div></div>
+      <div class="bar-row"><div class="bar-country">🇧🇩 Bangladesh</div><div class="bar-track"><div class="bar-fill" style="width:26%;background:linear-gradient(90deg,#3498db,#2980b9)">4.07%</div></div><div class="bar-pct">4.07%</div><div class="bar-dau">88.4万</div></div>
+      <div class="bar-row"><div class="bar-country">🇨🇮 Côte d'Ivoire</div><div class="bar-track"><div class="bar-fill" style="width:15%;background:linear-gradient(90deg,#9b59b6,#8e44ad)">2.29%</div></div><div class="bar-pct">2.29%</div><div class="bar-dau">49.7万</div></div>
+      <div class="bar-row"><div class="bar-country">🇻🇪 Venezuela</div><div class="bar-track"><div class="bar-fill" style="width:13%;background:linear-gradient(90deg,#e74c3c,#c0392b)">2.09%</div></div><div class="bar-pct">2.09%</div><div class="bar-dau">45.3万</div></div>
+      <div class="bar-row"><div class="bar-country">🇰🇪 Kenya</div><div class="bar-track"><div class="bar-fill" style="width:13%;background:linear-gradient(90deg,#16a085,#1abc9c)">2.07%</div></div><div class="bar-pct">2.07%</div><div class="bar-dau">44.9万</div></div>
+    </div>
+    <div style="font-size:12px;color:var(--muted);line-height:1.8">
+      <strong style="color:#fff">关键洞察：</strong>
+      巴基斯坦+印度合计 <strong style="color:var(--accent)">27%</strong>，是第一优先级市场，均为传音中低端机+流量贵+弱网。
+      尼日利亚 H5play 转化率(65%) 低于南亚，说明尼日利亚网络条件更差，<strong style="color:#fff">首屏速度是尼日利亚留存的核心变量</strong>。
+      null 国家(5.35%) 来自廉价无 SIM 或未授权 location 的设备，英语+极简UI是唯一选择。
+    </div>
+  </div>
+
+  <h3>语言优先级</h3>
+  <div class="pills">
+    <div class="pill p1"><span class="flag">🇬🇧</span> English <span style="font-size:11px;color:var(--muted)">全市场兜底</span></div>
+    <div class="pill p1"><span class="flag">🇵🇰</span> اردو Urdu <span style="font-size:11px;color:var(--muted)">巴基斯坦</span></div>
+    <div class="pill p1"><span class="flag">🇮🇳</span> हिन्दी Hindi <span style="font-size:11px;color:var(--muted)">印度</span></div>
+    <div class="pill p1"><span class="flag">🇮🇩</span> Bahasa <span style="font-size:11px;color:var(--muted)">印尼</span></div>
+    <div class="pill p2"><span class="flag">🇧🇩</span> বাংলা Bengali <span style="font-size:11px;color:var(--muted)">孟加拉</span></div>
+    <div class="pill p2"><span class="flag">🇵🇭</span> Filipino <span style="font-size:11px;color:var(--muted)">菲律宾</span></div>
+    <div class="pill p2"><span class="flag">🇨🇮</span> Français <span style="font-size:11px;color:var(--muted)">科特迪瓦</span></div>
+    <div class="pill p3"><span class="flag">🇻🇪</span> Español <span style="font-size:11px;color:var(--muted)">委内瑞拉</span></div>
+    <div class="pill p3"><span class="flag">🇰🇪</span> Swahili <span style="font-size:11px;color:var(--muted)">肯尼亚</span></div>
+  </div>
+  <div class="note-box">H5 游戏文字量极少（&lt;50词/语言：开始、提示、洗牌、胜利、失败、分数、关卡）。阿拉伯语/乌尔都语需 RTL 翻转，优先图标化按钮降低文字依赖。</div>
+</section>
+
+<!-- ─── 4 竞品分析 ─── -->
+<section>
+  <h2><span class="num">4</span> 竞品分析</h2>
+
+  <p style="color:var(--muted);font-size:13px;margin-bottom:20px">数据抓取自 Google Play 尼日利亚、巴基斯坦、孟加拉、肯尼亚、埃及区，时间：2026-10-29。截图展示实际视觉风格。</p>
+
+  <h3>⚠ 直接同类竞品（连连看 / Onet）</h3>
+
+  <!-- Boombox -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/onext_boombox.png" alt="Boombox icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Onet — Connect &amp; Match Puzzle</h4>
+        <div class="dev">Boombox Games LTD &nbsp;·&nbsp; <code>onext.boombox</code></div>
+        <div class="comp-meta">
+          <span class="tag green">5M+ 下载</span>
+          <span class="tag">4.5 ⭐</span>
+          <span class="tag blue">直接头部竞品</span>
+          <span class="tag">更新 Apr 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/onext_boombox_s1.webp" alt="screenshot 1">
+      <img src="img/onext_boombox_s2.webp" alt="screenshot 2">
+      <img src="img/onext_boombox_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>视觉风格：</strong>竖屏 · 高饱和动物牌面 · 深色背景 · 图标化UI。<br>
+      <strong>优势：</strong>竖屏布局符合用户习惯；关卡地图+进度感；多主题选择；UI清晰。<br>
+      <strong>可借鉴：</strong>竖屏棋盘比例、关卡解锁动画、牌面描边厚度、主题选择入口。
+    </div>
+  </div>
+
+  <!-- TerranDroid -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/com_yc_onet.png" alt="TerranDroid icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Onet Connect — Tile Match Game</h4>
+        <div class="dev">TerranDroid &nbsp;·&nbsp; <code>com.yc.onet</code></div>
+        <div class="comp-meta">
+          <span class="tag green">1M+ 下载</span>
+          <span class="tag">4.0 ⭐</span>
+          <span class="tag blue">直接竞品</span>
+          <span class="tag">更新 Aug 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/com_yc_onet_s1.webp" alt="screenshot 1">
+      <img src="img/com_yc_onet_s2.webp" alt="screenshot 2">
+      <img src="img/com_yc_onet_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>视觉风格：</strong>竖屏 · 亮色系 · 功能完整但UI较陈旧。<br>
+      <strong>弱势：</strong>评分偏低(4.0)，说明用户体验存在问题——可能是广告体验或 bug。<br>
+      <strong>机会：</strong>我们做到 4.3+ 就能超越此竞品；关键在于广告流程不卡顿。
+    </div>
+  </div>
+
+  <!-- Famobi (原版！) -->
+  <div class="card comp-section" style="border-color:rgba(244,67,54,.4);background:rgba(244,67,54,.04)">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/com_famobi_onetconnectclassic.png" alt="Famobi icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>ONET Mahjong Connect Game</h4>
+        <div class="dev">Famobi &nbsp;·&nbsp; <code>com.famobi.onetconnectclassic</code></div>
+        <div class="comp-meta">
+          <span class="tag green">100K+ 下载</span>
+          <span class="tag">4.3 ⭐</span>
+          <span class="tag red">⚠ 版权风险！这是原游戏</span>
+          <span class="tag red">更新 Jun 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/com_famobi_onetconnectclassic_s1.webp" alt="screenshot 1">
+      <img src="img/com_famobi_onetconnectclassic_s2.webp" alt="screenshot 2">
+      <img src="img/com_famobi_onetconnectclassic_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights" style="background:rgba(244,67,54,.08);border:1px solid rgba(244,67,54,.2)">
+      <strong style="color:var(--red)">⚠ 版权风险：</strong>项目代码中含 <code>window.famobi_gameID = "onet-connect-classic"</code> 及 Famobi analytics 全套。Famobi 原版 2026.6 仍在更新。
+      重置时<strong style="color:var(--red)">美术、音频、名称必须全部原创</strong>。游戏规则本身不受版权保护，代码逻辑可沿用，但视觉资产必须零保留。请先确认授权状态。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <h3>🔥 同区域强势品类（三消/槽位，间接竞品 — 留存参考）</h3>
+
+  <!-- Higgs Tile Connect -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/link_merge_puzzle_onnect_number.png" alt="Higgs icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Tile Connect — Matching Games</h4>
+        <div class="dev">Higgs Studio &nbsp;·&nbsp; <code>link.merge.puzzle.onnect.number</code></div>
+        <div class="comp-meta">
+          <span class="tag green">50M+ 下载</span>
+          <span class="tag">4.3 ⭐</span>
+          <span class="tag purple">连连看变体头部</span>
+          <span class="tag">更新 Mar 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/link_merge_puzzle_onnect_number_s1.webp" alt="screenshot 1">
+      <img src="img/link_merge_puzzle_onnect_number_s2.webp" alt="screenshot 2">
+      <img src="img/link_merge_puzzle_onnect_number_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>为何 50M+：</strong>竖屏 · 多种关卡变体（数字/颜色/图案）· 关卡地图 · 激励复活流程成熟。<br>
+      <strong>借鉴：</strong>关卡间无缝切换动画、道具使用反馈、每日关卡设计。
+    </div>
+  </div>
+
+  <!-- Tile Explorer -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/com_oakever_tiletrip.png" alt="Oakever icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Tile Explorer — Triple Match</h4>
+        <div class="dev">Oakever Games &nbsp;·&nbsp; <code>com.oakever.tiletrip</code></div>
+        <div class="comp-meta">
+          <span class="tag green">100M+ 下载</span>
+          <span class="tag">4.7 ⭐</span>
+          <span class="tag purple">同区域绝对头部</span>
+          <span class="tag">更新 Oct 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/com_oakever_tiletrip_s1.webp" alt="screenshot 1">
+      <img src="img/com_oakever_tiletrip_s2.webp" alt="screenshot 2">
+      <img src="img/com_oakever_tiletrip_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>视觉风格：</strong>高品质竖屏 · 暖色系 · 地图进度 · 收集/装修元系统。<br>
+      <strong>留存钩子：</strong>关卡地图+星级+每日挑战+装修故事线 — 这套体系是100M级产品的标配。<br>
+      <strong>对我们的意义：</strong>不需要做这么重的元系统，但关卡地图+每日挑战是最低门槛。
+    </div>
+  </div>
+
+  <!-- Tile Club -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/com_gamovation_tileclub.png" alt="Tileclub icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Tile Club — Match Puzzle Games</h4>
+        <div class="dev">GamoVation &nbsp;·&nbsp; <code>com.gamovation.tileclub</code></div>
+        <div class="comp-meta">
+          <span class="tag green">100M+ 下载</span>
+          <span class="tag">4.7 ⭐</span>
+          <span class="tag purple">同区域绝对头部</span>
+          <span class="tag">更新 Sep 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/com_gamovation_tileclub_s1.webp" alt="screenshot 1">
+      <img src="img/com_gamovation_tileclub_s2.webp" alt="screenshot 2">
+      <img src="img/com_gamovation_tileclub_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>视觉风格：</strong>竖屏 · 鲜艳卡通 · 大牌面 · 强消除特效。<br>
+      <strong>核心数据：</strong>100M+ 且持续更新 — 该品类在目标市场已经被验证，空间很大。<br>
+      <strong>差异化机会：</strong>做原汁原味"连连看"而非三消，用规则区分度吸引连连看爱好者。
+    </div>
+  </div>
+
+  <!-- Tile Match Tiletopia -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/in_playsimple_triple_tile_matchgame_pair_three_puzzle_object_royale.png" alt="Tiletopia icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Tile Match puzzle — Tiletopia</h4>
+        <div class="dev">PlaySimple Games &nbsp;·&nbsp; <code>in.playsimple…</code></div>
+        <div class="comp-meta">
+          <span class="tag green">10M+ 下载</span>
+          <span class="tag">4.9 ⭐</span>
+          <span class="tag purple">评分最高</span>
+          <span class="tag">更新 Oct 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/in_playsimple_triple_tile_matchgame_pair_three_puzzle_object_royale_s1.webp" alt="screenshot 1">
+      <img src="img/in_playsimple_triple_tile_matchgame_pair_three_puzzle_object_royale_s2.webp" alt="screenshot 2">
+      <img src="img/in_playsimple_triple_tile_matchgame_pair_three_puzzle_object_royale_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>4.9⭐ 的原因：</strong>PlaySimple 以精良 UX 著称（印度本土出品，深度针对南亚用户）。广告体验克制，激励为主。<br>
+      <strong>启示：</strong>我们最大的用户群就是南亚，这款的风格/体验就是最直接的参考标杆。
+    </div>
+  </div>
+
+  <!-- Triple Tile -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/com_tripledot_triple_tile_match_pair_game_three_master_object.png" alt="Tripledot icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Triple Tile: Match Puzzle Game</h4>
+        <div class="dev">Tripledot Studios &nbsp;·&nbsp; <code>com.tripledot…</code></div>
+        <div class="comp-meta">
+          <span class="tag green">50M+ 下载</span>
+          <span class="tag">4.8 ⭐</span>
+          <span class="tag purple">品质标杆</span>
+          <span class="tag">更新 Sep 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/com_tripledot_triple_tile_match_pair_game_three_master_object_s1.webp" alt="screenshot 1">
+      <img src="img/com_tripledot_triple_tile_match_pair_game_three_master_object_s2.webp" alt="screenshot 2">
+      <img src="img/com_tripledot_triple_tile_match_pair_game_three_master_object_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>视觉风格：</strong>高品质竖屏卡通 · 暖色饱和 · 每帧细节精致。<br>
+      <strong>美术参考价值：</strong>牌面描边规范、阴影层次、弹窗圆角和字体大小 — 可作为美术生图的对标风格。
+    </div>
+  </div>
+
+  <!-- Azur Tile Connect -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/com_bibogames_tileconnect_puzzle.png" alt="Azur icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Tile Connect</h4>
+        <div class="dev">CASUAL AZUR GAMES &nbsp;·&nbsp; <code>com.bibogames.tileconnect.puzzle</code></div>
+        <div class="comp-meta">
+          <span class="tag green">1M+ 下载</span>
+          <span class="tag">4.5 ⭐</span>
+          <span class="tag blue">连线玩法变体</span>
+          <span class="tag">更新 Aug 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/com_bibogames_tileconnect_puzzle_s1.webp" alt="screenshot 1">
+      <img src="img/com_bibogames_tileconnect_puzzle_s2.webp" alt="screenshot 2">
+      <img src="img/com_bibogames_tileconnect_puzzle_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>玩法差异：</strong>牌面需用线连接而非只消除，增加了路径规划难度。<br>
+      <strong>参考点：</strong>简洁的连线动画特效和清晰的消除反馈，适合在我们现有规则基础上加消除特效时参考。
+    </div>
+  </div>
+
+  <!-- Tile Link -->
+  <div class="card comp-section">
+    <div class="comp-header">
+      <img class="comp-icon" src="img/com_ilyon_tiles.png" alt="Ilyon icon" onerror="this.style.background='#333'">
+      <div class="comp-title">
+        <h4>Tile Link — Match &amp; Connect</h4>
+        <div class="dev">Bubble Shooter Artworks &nbsp;·&nbsp; <code>com.ilyon.tiles</code></div>
+        <div class="comp-meta">
+          <span class="tag green">5M+ 下载</span>
+          <span class="tag">4.2 ⭐</span>
+          <span class="tag blue">轻量竞品</span>
+          <span class="tag">更新 Apr 2025</span>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots">
+      <img src="img/com_ilyon_tiles_s1.webp" alt="screenshot 1">
+      <img src="img/com_ilyon_tiles_s2.webp" alt="screenshot 2">
+      <img src="img/com_ilyon_tiles_s3.webp" alt="screenshot 3">
+    </div>
+    <div class="comp-insights">
+      <strong>特点：</strong>界面非常简洁，降低了新用户认知门槛。2025年后停止更新，市场开始掉量。<br>
+      <strong>教训：</strong>不更新 = 排名下滑，持续迭代是维持 H5 游戏 DAU 的必要条件。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <h3>竞品共性总结（头部产品做了什么）</h3>
+  <div class="two-col">
+    <div class="card">
+      <h4 style="color:var(--green);margin-bottom:10px">✅ 头部产品都在做</h4>
+      <ul style="font-size:13px;color:#b0b8cc;line-height:2;padding-left:18px">
+        <li>竖屏布局 + 单手操作</li>
+        <li>关卡地图 + 星级进度感</li>
+        <li>激励视频为主（复活/加时/道具）</li>
+        <li>插屏限频（每3关或45秒间隔）</li>
+        <li>高饱和暖色 + 粗描边牌面</li>
+        <li>消除粒子+音效强反馈</li>
+        <li>每日挑战/签到留存钩子</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 style="color:var(--red);margin-bottom:10px">❌ 我们现在缺少的</h4>
+      <ul style="font-size:13px;color:#b0b8cc;line-height:2;padding-left:18px">
+        <li>竖屏布局（现在横屏）</li>
+        <li>激励广告接口（完全缺失）</li>
+        <li>关卡地图进度</li>
+        <li>广告失败时的兜底流程</li>
+        <li>本地化语言</li>
+        <li>可解性棋盘保证</li>
+        <li>任何留存机制</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 5 优化方向 ─── -->
+<section>
+  <h2><span class="num">5</span> 优化重构方向</h2>
+
+  <h3>5.1 广告体系重构（最高优先级）</h3>
+  <div class="card">
+    <p style="font-size:13px;color:var(--muted);margin-bottom:16px">现状：胜/败都弹插屏，无激励，广告失败时结算卡死。目标：激励为主，插屏限频，失败必须能继续流程。</p>
+    <div style="display:grid;gap:12px">
+      <div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">失败流程：</div>
+        <div class="flow">
+          <div class="flow-box">关卡失败</div><div class="flow-arrow">→</div>
+          <div class="flow-box accent">弹出「看视频复活/加时？」</div><div class="flow-arrow">→</div>
+          <div class="flow-box green">_callback → 复活继续</div>
+          <div class="flow-arrow" style="color:var(--border)">|</div>
+          <div class="flow-box red">_failback → 直接结算</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">胜利流程：</div>
+        <div class="flow">
+          <div class="flow-box">关卡胜利</div><div class="flow-arrow">→</div>
+          <div class="flow-box">结算页</div><div class="flow-arrow">→</div>
+          <div class="flow-box accent">可选「看视频双倍金币」</div><div class="flow-arrow">→</div>
+          <div class="flow-box blue">每3关触发插屏</div><div class="flow-arrow">→</div>
+          <div class="flow-box">下一关</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">菜单/常驻：</div>
+        <div class="flow">
+          <div class="flow-box green">Banner 底部 50px</div>
+          <div class="flow-arrow">+</div>
+          <div class="flow-box blue">开屏 preroll（SDK已配）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>5.2 竖屏改造</h3>
+  <div class="two-col">
+    <div class="card">
+      <div style="color:var(--muted);font-size:12px;margin-bottom:8px">现状</div>
+      <div style="font-size:13px;line-height:1.8">横屏 1280×720<br>手机竖屏下画面过小<br>棋盘 12列×6行（横向）<br>底部无Banner安全区</div>
+    </div>
+    <div class="card" style="border-color:rgba(76,175,80,.3)">
+      <div style="color:var(--green);font-size:12px;margin-bottom:8px">目标</div>
+      <div style="font-size:13px;line-height:1.8">竖屏 720×1280~1560<br>全屏充满，单手操作<br>棋盘改 8列×10行（竖向）<br>底部预留 50px Banner区</div>
+    </div>
+  </div>
+
+  <h3>5.3 关卡设计</h3>
+  <div class="card">
+    <table>
+      <thead><tr><th>关卡区段</th><th>时间</th><th>盘面尺寸</th><th>牌种数</th><th>新增元素</th></tr></thead>
+      <tbody>
+        <tr><td>第1–3关（新手引导）</td><td>240秒</td><td>6×6</td><td>6种</td><td>箭头引导 + 高亮提示</td></tr>
+        <tr><td>第4–10关（入门）</td><td>210秒</td><td>8×8</td><td>10种</td><td>解锁甜点主题</td></tr>
+        <tr><td>第11–20关（进阶）</td><td>180秒</td><td>8×10</td><td>14种</td><td>解锁水果主题</td></tr>
+        <tr><td>第21–30关（挑战）</td><td>150秒</td><td>8×10</td><td>20种</td><td>障碍牌（可选）</td></tr>
+        <tr><td>第30关+（循环）</td><td>120–150秒</td><td>8×10</td><td>20种</td><td>随机章节主题轮换</td></tr>
+      </tbody>
+    </table>
+    <div class="note-box" style="margin-top:12px">棋盘生成改为<strong>成对回填+BFS验证</strong>算法（先随机放置成对牌 → 验证所有对可连通 → 不可解则重试，最多5次），消除"随机卡死"体验。</div>
+  </div>
+
+  <h3>5.4 美术重置规范</h3>
+  <div class="card">
+    <div class="two-col">
+      <div>
+        <h4 style="color:var(--accent);margin-bottom:10px">色彩规范</h4>
+        <div style="display:grid;gap:6px;font-size:13px">
+          <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:4px;background:#1A1A2E;border:1px solid #444"></div>背景主色 <code>#1A1A2E</code></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:4px;background:#22263a;border:1px solid #444"></div>面板色 <code>#22263a</code></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:4px;background:#F7931E"></div>主色调（橙）<code>#F7931E</code></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:4px;background:#FFD700"></div>金色（奖励）<code>#FFD700</code></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:4px;background:#4CAF50"></div>成功绿 <code>#4CAF50</code></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:4px;background:#F44336"></div>失败红 <code>#F44336</code></div>
+        </div>
+      </div>
+      <div>
+        <h4 style="color:var(--accent);margin-bottom:10px">牌面规范</h4>
+        <ul style="font-size:13px;color:#b0b8cc;line-height:2;padding-left:18px">
+          <li>有效内容区 60×60px，图集格 80×80px</li>
+          <li>描边 3–4px 黑色，圆角矩形底板</li>
+          <li>同主题20张，色相间隔 ≥30°</li>
+          <li>剪影差异优先（形状 &gt; 颜色）</li>
+          <li>色弱可辨测试（Coblis 验证）</li>
+          <li>图集打包：512×512 × 2 页</li>
+        </ul>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <h4 style="margin-bottom:10px">主题方向（对应用户国家）</h4>
+    <div class="card-grid">
+      <div class="card" style="padding:14px;background:var(--surface2)">
+        <div style="font-size:20px;margin-bottom:6px">🦁 主题一：非洲/亚洲动物</div>
+        <div style="font-size:12px;color:var(--muted)">狮子·大象·猴子·火烈鸟·老虎·孔雀·犀牛·鳄鱼·斑马·蝴蝶…<br><strong style="color:var(--text)">对标巴基斯坦+印度+尼日利亚+肯尼亚</strong></div>
+      </div>
+      <div class="card" style="padding:14px;background:var(--surface2)">
+        <div style="font-size:20px;margin-bottom:6px">🍰 主题二：甜点</div>
+        <div style="font-size:12px;color:var(--muted)">饼干·马卡龙·冰淇淋·棒糖…<br>更鲜艳颜色版本，比现版饱和度提高 20%<br><strong style="color:var(--text)">全市场通用</strong></div>
+      </div>
+      <div class="card" style="padding:14px;background:var(--surface2)">
+        <div style="font-size:20px;margin-bottom:6px">🥭 主题三：热带水果</div>
+        <div style="font-size:12px;color:var(--muted)">芒果·木瓜·榴莲·香蕉·椰子·荔枝…<br>增加南亚/非洲本地水果<br><strong style="color:var(--text)">对标菲律宾+印尼+孟加拉</strong></div>
+      </div>
+      <div class="card" style="padding:14px;background:var(--surface2)">
+        <div style="font-size:20px;margin-bottom:6px">🌙 限时主题：斋月</div>
+        <div style="font-size:12px;color:var(--muted)">星月·灯笼·月饼·清真寺…<br>巴基斯坦、孟加拉、印尼为穆斯林多数国家，尼日利亚约半数，合计覆盖约 30% DAU<br><strong style="color:var(--text)">斋月期间上线，强化活跃度</strong></div>
+      </div>
+    </div>
+    <div class="note-box" style="margin-top:12px">⚠ <strong>版权隔离</strong>：现有 autoshuffle、bonus、credits、popup 等 Famobi 图集全部替换为 AI 生图，不保留任何原版帧。音频全部使用免版权或 AI 生成素材。</div>
+  </div>
+
+  <h3>5.5 性能目标（低端机）</h3>
+  <div class="card">
+    <table>
+      <thead><tr><th>指标</th><th>目标值</th><th>做法</th></tr></thead>
+      <tbody>
+        <tr><td>首包大小</td><td><strong>≤ 4MB</strong></td><td>删 Famobi壳+jQuery，PNG量化-40%，OGG 保留</td></tr>
+        <tr><td>冷启动到可操作</td><td><strong>≤ 3秒</strong>（3G）</td><td>菜单+默认主题优先加载，其余异步</td></tr>
+        <tr><td>对局帧率</td><td><strong>≥ 50 FPS</strong></td><td>牌对象池化，消除粒子数上限 ≤ 30</td></tr>
+        <tr><td>JS 堆</td><td><strong>≤ 50 MB</strong></td><td>避免每帧分配，复用数组</td></tr>
+        <tr><td>离线可用</td><td>断网完整可玩</td><td>Service Worker 缓存（确认平台 WebView 支持）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>5.6 伪排行榜</h3>
+  <div class="card">
+    <p style="font-size:13px;color:var(--muted);line-height:1.8">完全离线，无需账号。本地存储玩家昵称（首次进入自动生成本地名字如 "Ahmed_PK_7823"）。榜单 Top 10 中 8 个预制玩家，分数每天按玩家当天最高分 ±15% 随机刷新。玩家自己永远排第 3–5 位（营造"差一点就超越"的竞争感）。名字库按国家分布生成：巴基斯坦/印度/尼日利亚/菲律宾各占比匹配 DAU。</p>
+  </div>
+</section>
+
+<!-- ─── 6 版权风险 ─── -->
+<section>
+  <h2><span class="num">6</span> 版权风险</h2>
+  <div class="risk-box">
+    <div class="risk-icon">⚠️</div>
+    <div class="risk-content">
+      <h4>Famobi 原版仍活跃（2026.6 更新），代码中有 Famobi 标识</h4>
+      <p>
+        项目代码中含 <code>window.famobi_gameID = "onet-connect-classic"</code>、Famobi analytics 全套、以及 Famobi 图集。
+        <code>com.famobi.onetconnectclassic</code> 在 Google Play 仍在更新。<br><br>
+        <strong>建议处理方式：</strong><br>
+        1. 先确认是否持有 Famobi 授权（重新分发许可）<br>
+        2. 无授权 → 游戏规则本身不受版权保护，但<strong>代码逻辑需重写、图集/音频必须全原创</strong><br>
+        3. 游戏名称更换为非 "ONET/Onet Connect" 开头的名称<br>
+        4. 移除所有 <code>famobi_gameID</code>、<code>famobi_analytics</code>、<code>html5games/</code> 引用
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 7 路线图 ─── -->
+<section>
+  <h2><span class="num">7</span> 路线图</h2>
+  <div class="roadmap">
+    <div class="road-row">
+      <div class="road-phase" style="background:#f44336">P0</div>
+      <div class="road-content">
+        <h4>确认阶段（1–2 天）</h4>
+        <p>确认版权状态；确认平台 localStorage/SW 支持；获取真实广告位 ID；确定游戏新名称。</p>
+      </div>
+    </div>
+    <div class="road-row">
+      <div class="road-phase" style="background:#f7931e">P1</div>
+      <div class="road-content">
+        <h4>止血版（1 周）→ 可上线</h4>
+        <p>替换 SDK 适配层（postMessage 桥接）；修复结算 bug（有主页按钮）；失败接激励视频复活入口；插屏限频每3关。真机冒烟测试。</p>
+      </div>
+    </div>
+    <div class="road-row">
+      <div class="road-phase" style="background:#ffd700">P2</div>
+      <div class="road-content">
+        <h4>竖屏改造（1–2 周）</h4>
+        <p>竖屏布局 720×1280；棋盘调整为 8×10；Banner 50px 安全区；顶部状态栏重排。</p>
+      </div>
+    </div>
+    <div class="road-row">
+      <div class="road-phase" style="background:#4caf50">P3</div>
+      <div class="road-content">
+        <h4>全量美术替换（2–3 周）</h4>
+        <p>AI 生产动物/甜点/水果三主题图集；UI 按钮组；背景；特效序列帧；音频替换；Famobi 元素清零。</p>
+      </div>
+    </div>
+    <div class="road-row">
+      <div class="road-phase" style="background:#4da6ff">P4</div>
+      <div class="road-content">
+        <h4>关卡系统（1 周）</h4>
+        <p>30 关设计；可解性生成算法（成对回填+BFS）；关卡地图 UI；每日挑战关。</p>
+      </div>
+    </div>
+    <div class="road-row">
+      <div class="road-phase" style="background:#9c6ffa">P5</div>
+      <div class="road-content">
+        <h4>本地化（1 周）</h4>
+        <p>4 语言 Phase1（英/乌尔都/印地/印尼）；RTL 处理；伪排行榜名字库。</p>
+      </div>
+    </div>
+    <div class="road-row">
+      <div class="road-phase" style="background:#607d8b">P6</div>
+      <div class="road-content">
+        <h4>持续迭代</h4>
+        <p>斋月限时主题；Phase2 语言（孟加拉/菲律宾/法语）；根据 DAU/留存数据调整难度曲线。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 8 确认清单 ─── -->
+<section>
+  <h2><span class="num">8</span> 仍需你确认</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>#</th><th>问题</th><th>影响</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Famobi 授权状态？</td><td>决定美术/代码是否可以保留任何原始内容</td></tr>
+        <tr><td>2</td><td>AHA 宿主 WebView 是否支持 localStorage？Service Worker？</td><td>决定离线缓存、每日挑战、伪排行榜方案</td></tr>
+        <tr><td>3</td><td>真实广告位 ID（替换 CombiMons 模板中的测试 ID）</td><td>决定上线前最后一步</td></tr>
+        <tr><td>4</td><td>游戏重置后的名称？</td><td>避免与 Famobi "ONET Mahjong Connect" 撞名</td></tr>
+        <tr><td>5</td><td>用户国家数据完整版（Top 10 之后）？</td><td>决定 Phase2/3 语言优先级</td></tr>
+        <tr><td>6</td><td>真机测试设备？（Infinix X688B 已发现但 BLOCKED）</td><td>性能结论当前空白，必须真机验收</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- footer -->
+<div style="border-top:1px solid var(--border);padding-top:20px;font-size:12px;color:var(--small);line-height:1.8">
+  <strong>证据来源：</strong>
+  <code>game/game.html</code>、<code>custom.js</code>、<code>baseline/data.js</code>、迭代接口文档 01–04、
+  CombiMons SDK 模板（4文件）、Google Play 搜索结果（NG/PK/BD/KE/EG 五国区）、
+  后台用户国家分布截图（2026-10-29）。
+  联网查询于 2026-10-29 执行。图标及截图来源 Google Play，仅用于竞品分析，版权归各开发商所有。
+</div>
+
+</div><!-- /wrap -->
+
+<script>
+// animate bars on load
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.bar-fill').forEach(el=>{
+    const w=el.style.width; el.style.width='0'; setTimeout(()=>el.style.width=w,100);
+  });
+});
+</script>
+</body>
+</html>

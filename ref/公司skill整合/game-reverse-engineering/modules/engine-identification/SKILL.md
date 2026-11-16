@@ -1,11 +1,11 @@
 ---
 name: game-build-engine-identification
-description: Use when 用户要逆向、解包或检查未知游戏构建，需要先识别 Cocos Creator、Unity IL2CPP 或其他引擎；也适用于 Cocos 检测返回 unknown，或发现 libil2cpp.so、global-metadata.dat、data.unity3d 等 Unity 指纹时。
-version: 1.0.0
+description: Use when 用户要逆向、解包或检查未知游戏构建，需要先识别 Cocos Creator、Unity IL2CPP 或其他引擎；也适用于 Cocos 检测返回 unknown，或发现 libil2cpp.so、global-metadata.dat、data.unity3d 等 Unity 指纹时；也适用于 HTML5 web 游戏识别 Phaser 3/4 指纹（phaser.min.js、dist VERSION 字符串、Capacitor/Cordova 打包壳）时。
+version: 1.1.0
 created: "2026-08-01"
 author: bai-lian
-tags: [reverse-engineering, engine-detection, cocos, unity, il2cpp, game-build]
-triggers: [识别引擎, 什么引擎, 游戏逆向, 逆向工具链, unity il2cpp, libil2cpp, global-metadata, 解包游戏, 不是 cocos, engine detection]
+tags: [reverse-engineering, engine-detection, cocos, unity, il2cpp, game-build, phaser, html5, web-game, capacitor, cordova]
+triggers: [识别引擎, 什么引擎, 游戏逆向, 逆向工具链, unity il2cpp, libil2cpp, global-metadata, 解包游戏, 不是 cocos, engine detection, phaser, phaser 3, phaser 4, html5 游戏, web 游戏]
 ---
 
 # 游戏构建引擎识别
@@ -14,13 +14,14 @@ triggers: [识别引擎, 什么引擎, 游戏逆向, 逆向工具链, unity il2c
 
 **我管什么**：判断一个游戏构建是哪个引擎做的（Cocos 2.3.x / 2.4.x / 3.x、Cocos 加密、Unity IL2CPP），并据此指定下一条工具链。不管解包、解密和资源提取本身。
 
-**第一步做什么**：宿主内嵌功能先按「宿主 App 内嵌功能」章节确认前台归属；独立构建则打开目标构建目录，对照本文件「指纹对照表」逐行实测——先查 Cocos 四类指纹（`src/settings.js` + `src/project.js` + `res/`、`main.js` + `settings.js` + `assets/`、`index.html` + `data/` + `assets/main/config.json` + `cocos-js/`、`.jsc` + XXTEA 标记），再查 Unity 指纹（`lib/arm64-v8a/libil2cpp.so` + `libunity.so`、`assets/bin/Data/global-metadata.dat`、`assets/bin/Data/data.unity3d`）。
+**第一步做什么**：宿主内嵌功能先按「宿主 App 内嵌功能」章节确认前台归属；独立构建则打开目标构建目录，对照本文件「指纹对照表」逐行实测——先查 Cocos 四类指纹（`src/settings.js` + `src/project.js` + `res/`、`main.js` + `settings.js` + `assets/`、`index.html` + `data/` + `assets/main/config.json` + `cocos-js/`、`.jsc` + XXTEA 标记），再查 Unity 指纹（`lib/arm64-v8a/libil2cpp.so` + `libunity.so`、`assets/bin/Data/global-metadata.dat`、`assets/bin/Data/data.unity3d`），web/混合包最后查 Phaser/HTML5 指纹（`phaser.min.js`、dist 内 `VERSION:"x.y.z"` 字符串、Capacitor/Cordova 打包壳）。
 
 **做完怎么算完成**：
 - [ ] 给出受证据支持的引擎/渲染层结论（Cocos / Unity / 宿主自研渲染层等）；宿主页面技术与渲染引擎分开记录，不能确定时明确 unknown 与缺失证据
 - [ ] 结论可追溯到目标构建决定性指纹，或宿主目标 Activity/组件与 loader 证据；后台其他应用的视图不算目标证据
 - [ ] Unity 命中时已记录 metadata 是否加密，以及 `data.unity3d` 的版本串（如 `6000.3.16f1`）
 - [ ] Cocos 三项指纹全空时如实记 `unknown`，不硬凑成 Cocos
+- [ ] 命中 Phaser 时已区分 3 与 4（依据 dist/运行时 `VERSION` 主版本号）与打包壳（裸 web / Capacitor / Cordova），并写明下游走哪条工具链
 - [ ] 已写明下一步交给哪个技能 / 哪条工具链
 
 **红线（不可违反）**
@@ -29,6 +30,7 @@ triggers: [识别引擎, 什么引擎, 游戏逆向, 逆向工具链, unity il2c
 - 未加密的 IL2CPP metadata ≠ 源码和业务语义全部恢复，不许承诺「能拿到源码」。
 - Java/Kotlin 外壳（广告 SDK / 内购）不决定本体引擎，别被外层壳误导。
 - 静态字符串不足时不许仅凭字符串判引擎，必须用原生 loader / 组件证据补证。
+- Phaser 版本结论必须来自 dist 或运行时的 `VERSION` 字符串；"Beam" 等渲染器名在压缩 dist 中不出现（2026-10-12 实测 4.2.1 dist 0 命中），不能当静态指纹。
 - 三项指纹全空是正确结果，不许为了「有个结论」而猜。
 
 **卡住时按顺序读**：
@@ -73,6 +75,9 @@ triggers: [识别引擎, 什么引擎, 游戏逆向, 逆向工具链, unity il2c
 | Cocos 3.x | `index.html` + `data/` + `assets/main/config.json` + `cocos-js/` + `application.js` |
 | Cocos 加密 | `.jsc` 文件 + XXTEA 标记 |
 | **Unity IL2CPP** | `lib/arm64-v8a/libil2cpp.so` + `libunity.so` + `lib_burst_generated.so`；`assets/bin/Data/global-metadata.dat`（magic `0xFAB11BAF`，**先查是否加密**）；`assets/bin/Data/data.unity3d`（UnityFS 头 + 版本串，如 `6000.3.16f1`） |
+| **Phaser 3（HTML5 web）** | 页面引 `phaser.min.js` / `phaser-arcade-physics.min.js`（npm `phaser@3`）；dist 内 `VERSION:"3.x.y"`（实测 3.90.0）；运行时 `window.Phaser.VERSION` |
+| **Phaser 4（HTML5 web）** | 页面引 `phaser.min.js`（npm `phaser@4`，2026-10 实测 dist 含 `VERSION:"4.2.1"`）；脚手架工程有 `npm create @phaserjs/create-game` 痕迹（package.json + Vite + `moduleResolution: "bundler"`）；运行时 `window.Phaser.VERSION` 4.x |
+| **Phaser 打包 APK 壳** | Capacitor：`assets/capacitor.config.json` + `assets/public/`（web 资产）；Cordova：`assets/www/` + `cordova.js`；内核仍是 WebView + Phaser dist 指纹 |
 
 ## 路由规则
 
@@ -87,6 +92,11 @@ triggers: [识别引擎, 什么引擎, 游戏逆向, 逆向工具链, unity il2c
 完整案例与产物：`E:\download\sudoku-re\REVERSE_ANALYSIS_REPORT.md`（Sudoku.com 7.8.0：58k 对象 / 51 类型 / 663 资产 / 12.5MB，导出在 `E:\download\sudoku-re\assets-export\`）。
 
 - 本机已落地的逆向资产目录（E:\\download\\sudoku-re\\）可作为同类手游逆向的素材源：319 Sprite PNG + 156 贴图 + 17 音效 + 7 字体 + 164 文本。
+
+- Phaser/HTML5 web 指纹命中 → JS bundle 直接可读（无 jsc/XXTEA 加密层，只有压缩混淆），资源多为公开目录（`assets/`、`static/`、`media/`）。下游分流：
+  - 解包/资产提取：按 web 静态资源直接抓取/解压，对照 sourcemap（有 `.map` 更佳）；APK 壳先解 APK 再按上表确认壳类型。
+  - 开发/重建/玩法移植/v3→v4 迁移：外部技能注册表（`references/external-game-skills.md` E 节）→ phaser4-gamedev（26 个 phaser-* 技能，本机克隆 `D:\skills\phaser4-gamedev`）+ phaserjs/phaser 官方 skills 与迁移指南，按名 skill() 加载，不在本 hub 复制正文。
+  - Agent 云端构建/试玩：Phaser Game Agent MCP（注册表 E-3，付费云沙箱，接入前先确认 token 与预算）。
 
 ## 关键判断
 

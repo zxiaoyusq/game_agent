@@ -1,0 +1,12 @@
+[
+  {
+    "path": "releases/initial-code/ludo-classic-reskin-dist.zip",
+    "bytes": 1291984,
+    "sha256": "cf8c9a0127a37188b66897aa8c412fdf62c7e5b0fc7ae7d0fa84466e5590dc58"
+  },
+  {
+    "path": "releases/initial-code/ludo-classic-reskin-source.zip",
+    "bytes": 1454802,
+    "sha256": "327724af26da0d497184715cbadb8ea0a55dfaac31d57452ab7fdf7427c58041"
+  }
+]

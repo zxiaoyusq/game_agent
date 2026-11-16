@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  89009,
+    "apiName":  "Pixel Shooter no wifi",
+    "targetName":  "Pixel Shooter no wifi",
+    "match":  "EXACT",
+    "bundleName":  "re_re_PixelShooter.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260130/0a923ab6b5e1adfdc0c9869bc8a53f25.zip",
+    "bundleMd5":  "0a923ab6b5e1adfdc0c9869bc8a53f25",
+    "bundleSize":  5087357,
+    "updatedAt":  1769767538,
+    "gameLink":  "https://www.gongleih5game.com/PixelShooter/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_89009",
+    "category":  "Action",
+    "rate":  8.8,
+    "gameType":  1,
+    "localFile":  "Pixel_Shooter_no_wifi.zip",
+    "localBytes":  5087357,
+    "verifiedAt":  "2026-10-20T10:35:26",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

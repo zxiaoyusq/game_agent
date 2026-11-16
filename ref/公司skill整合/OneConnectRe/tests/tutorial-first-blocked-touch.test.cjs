@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const entry=JSON.parse(fs.readFileSync('config/levels.json','utf8')).levels.find(x=>x.level===1);
+const el=()=>({style:{},appendChild(){},setAttribute(){}});let listener;
+const w={oneConnectLevels:{levels:[entry]},localStorage:{getItem:()=>null,setItem(){}},addEventListener:(_,fn)=>listener=fn,oneConnectHost:{emit(){}}};
+const cr={plugins_:{Touch:function(){}},action:function(){}};cr.plugins_.Touch.prototype.cnds={OnTouchObject:()=>true};cr.action.prototype.run_system=()=>{};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'game/tutorial-first.js','utf8'),{window:w,document:{createElement:el,body:{appendChild(){}}},cr,Date,Number,Array,Math,requestAnimationFrame(){}});
+w.oneConnectTutorial.install();const send=(type,detail={})=>listener({detail:{type,detail}});
+send('game.board_configured',{level:1});for(let i=0;i<3;i++)send('game.match',{level:1});
+assert(w.oneConnectTutorial.state().demonstrating,'blocked-pair demonstration is active');
+const pick=(x,y)=>cr.plugins_.Touch.prototype.cnds.OnTouchObject({name:'t5',getCurrentSol:()=>({getObjects:()=>[{x,y}]})});
+assert.equal(pick(493,234),true,'first blocked parrot is clickable');assert.equal(pick(392,335),true,'second blocked parrot is clickable');assert.equal(pick(89,133),false,'other tiles remain restricted');
+console.log('blocked-pair demonstration allows target touches PASS');

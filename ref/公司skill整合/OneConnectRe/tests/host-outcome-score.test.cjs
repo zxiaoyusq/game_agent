@@ -1,0 +1,8 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');let runtime={running_layout:{name:'game'},all_global_vars:[{name:'level',data:17},{name:'score',data:900}]},w={top:{},cr_getC2Runtime:()=>runtime};w.window=w;vm.runInNewContext(fs.readFileSync(process.env.OC_HOST_PATH||'game/host-adapter.js','utf8'),w);let host=w.oneConnectHost;
+host.analytics('EVENT_LEVELFAIL',{levelName:'17',reason:'timeout'});let fail=host.events().find(e=>e.type==='game.level_fail');assert.equal(fail.detail.level,17);assert.equal(fail.detail.score,900,'missing outcome score should use the live game score');assert.equal(fail.detail.reason,'timeout');
+host.analytics('EVENT_LEVELSUCCESS',{levelName:'17'});assert.equal(host.events().find(e=>e.type==='game.level_win').detail.score,900);
+host.analytics('EVENT_LEVELFAIL',{levelName:'17',totalScore:0});assert.equal(host.events().filter(e=>e.type==='game.level_fail').at(-1).detail.score,0,'explicit source score takes priority');
+host.analytics('EVENT_LEVELFAIL',{levelName:'16'});assert.equal(host.events().filter(e=>e.type==='game.level_fail').at(-1).detail.score,undefined,'different runtime level cannot supply a score');
+runtime.running_layout.name='menu';host.analytics('EVENT_LEVELFAIL',{levelName:'17'});assert.equal(host.events().filter(e=>e.type==='game.level_fail').at(-1).detail.score,undefined,'no score is inferred outside the game');
+runtime.running_layout.name='game';runtime.all_global_vars[1].data=NaN;host.analytics('EVENT_LEVELFAIL',{levelName:'17'});assert.equal(host.events().filter(e=>e.type==='game.level_fail').at(-1).detail.score,undefined,'invalid runtime score is omitted');
+console.log('local outcome score uses explicit data or valid current-game score PASS');

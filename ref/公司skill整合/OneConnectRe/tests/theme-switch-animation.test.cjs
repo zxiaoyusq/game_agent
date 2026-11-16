@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let frames=[],touchCalls=0,result;function Touch(){}Touch.prototype.cnds={OnTouchObject(){touchCalls++;return true}};
+const cr={plugins_:{Touch}}, root={cr,requestAnimationFrame:fn=>frames.push(fn),document:{hidden:false}};
+const context={globalThis:root,module:{exports:{}},Number,Array,Math};vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/theme_switch_candidate.js','utf8'),context);
+const api=context.module.exports;root.oneConnectThemeSwitchCandidate=api;api.install();
+function tile(w,h){return {width:w,height:h,cur_frame:1,cur_animation:{name:'t0'},instance_vars:[],getAnimationByName(name){return {name,frames:[0,1,2]}},set_bbox_changed(){}}}
+const a=tile(80,90),b=tile(100,110),theme={name:'theme',data:0},r={running_layout:{name:'game'},all_global_vars:[theme],types:{t5:{instances:[a,b]}}};
+const actions={SetAnim(name){this.cur_animation=this.getAnimationByName(name)}};
+assert.equal(api.animateSwitch(r,1,actions,x=>result=x).status,'started');assert.equal(api.isAnimating(),true);assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject({name:'t5'}),false);assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject({name:'t26'}),false);assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject({name:'t21'}),true);
+frames.shift()(100);frames.shift()(250);assert.equal(a.width,40);assert.equal(theme.data,0,'art stays unchanged while shrinking');frames.shift()(400);assert.equal(theme.data,1,'art switches at minimum size');assert(a.width<1);assert.equal(result,undefined,'completion waits until scale is restored');frames.shift()(700);assert.equal(a.width,80);assert.equal(b.height,110);assert.equal(result.status,'switched');assert.equal(api.isAnimating(),false);assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject({name:'t5'}),true);
+result=null;assert.equal(api.animateSwitch(r,0,actions,x=>result=x).status,'started');frames.shift()(800);root.document.hidden=true;frames.shift()(900);assert.equal(result.status,'cancelled');assert.equal(a.width,80);assert.equal(theme.data,1,'background cancellation before switching leaves the theme unchanged');
+root.document.hidden=false;result=null;const previousGet=b.getAnimationByName;b.getAnimationByName=name=>name==='t2'?null:previousGet(name);assert.equal(api.animateSwitch(r,2,actions,x=>result=x).status,'started');frames.shift()(1000);frames.shift()(1300);assert.equal(result.status,'unavailable','unsupported art must fail before committing');assert.equal(theme.data,1);assert.equal(a.cur_animation.name,'t1');assert.equal(a.width,80);assert.equal(b.height,110);assert.equal(api.isAnimating(),false);
+console.log('theme transition shrinks, swaps, restores and blocks input PASS');

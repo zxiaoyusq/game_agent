@@ -1,0 +1,132 @@
+{
+  "revision": "234579b",
+  "scope": "warm local HTTP WebView, idle 72 tile board; not AHA preinstalled or active gameplay",
+  "results": [
+    {
+      "target": "baseline",
+      "run": 0,
+      "menuMs": 360,
+      "sample": {
+        "frames": 301,
+        "fps": 60.01232944343602,
+        "p95Ms": 16.66700000000037,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": true
+    },
+    {
+      "target": "game",
+      "run": 0,
+      "menuMs": 376,
+      "sample": {
+        "frames": 301,
+        "fps": 60.00512734836978,
+        "p95Ms": 16.66700000000037,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": true
+    },
+    {
+      "target": "game",
+      "run": 1,
+      "menuMs": 356,
+      "sample": {
+        "frames": 300,
+        "fps": 59.964560944463955,
+        "p95Ms": 16.66700000000037,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": false
+    },
+    {
+      "target": "baseline",
+      "run": 1,
+      "menuMs": 344,
+      "sample": {
+        "frames": 300,
+        "fps": 59.972112967452254,
+        "p95Ms": 16.66700000000037,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": false
+    },
+    {
+      "target": "baseline",
+      "run": 2,
+      "menuMs": 248,
+      "sample": {
+        "frames": 300,
+        "fps": 59.94868392650532,
+        "p95Ms": 16.66700000000128,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": false
+    },
+    {
+      "target": "game",
+      "run": 2,
+      "menuMs": 359,
+      "sample": {
+        "frames": 300,
+        "fps": 59.93937731376699,
+        "p95Ms": 16.66700000000037,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": false
+    },
+    {
+      "target": "game",
+      "run": 3,
+      "menuMs": 349,
+      "sample": {
+        "frames": 300,
+        "fps": 59.99734811717745,
+        "p95Ms": 16.66700000000037,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": false
+    },
+    {
+      "target": "baseline",
+      "run": 3,
+      "menuMs": 334,
+      "sample": {
+        "frames": 300,
+        "fps": 59.952865057456094,
+        "p95Ms": 16.66700000000128,
+        "runtimeFps": 60,
+        "tiles": 72
+      },
+      "warmup": false
+    }
+  ],
+  "exceptions": [
+    {
+      "target": "baseline",
+      "text": "TypeError: Cannot read properties of undefined (reading 'showGameLoadingCompleted')\n    at window.famobi.hideSplashScreen (http://127.0.0.1:18749/baseline/custom.js:1:216)\n    at http://127.0.0.1:18749/baseline/custom.js:1:1580",
+      "url": "http://127.0.0.1:18749/baseline/custom.js"
+    },
+    {
+      "target": "baseline",
+      "text": "TypeError: Cannot read properties of undefined (reading 'showGameLoadingCompleted')\n    at window.famobi.hideSplashScreen (http://127.0.0.1:18749/baseline/custom.js:1:216)\n    at http://127.0.0.1:18749/baseline/custom.js:1:1580",
+      "url": "http://127.0.0.1:18749/baseline/custom.js"
+    },
+    {
+      "target": "baseline",
+      "text": "TypeError: Cannot read properties of undefined (reading 'showGameLoadingCompleted')\n    at window.famobi.hideSplashScreen (http://127.0.0.1:18749/baseline/custom.js:1:216)\n    at http://127.0.0.1:18749/baseline/custom.js:1:1580",
+      "url": "http://127.0.0.1:18749/baseline/custom.js"
+    },
+    {
+      "target": "baseline",
+      "text": "TypeError: Cannot read properties of undefined (reading 'showGameLoadingCompleted')\n    at window.famobi.hideSplashScreen (http://127.0.0.1:18749/baseline/custom.js:1:216)\n    at http://127.0.0.1:18749/baseline/custom.js:1:1580",
+      "url": "http://127.0.0.1:18749/baseline/custom.js"
+    }
+  ]
+}

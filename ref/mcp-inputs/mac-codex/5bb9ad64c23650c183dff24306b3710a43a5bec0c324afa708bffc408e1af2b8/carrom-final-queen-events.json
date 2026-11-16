@@ -1,0 +1,3101 @@
+{
+  "date": "2026-11-12T21:47:26.846Z",
+  "note": "One desktop headless Chrome run, direct game.html via local HTTP, cache disabled; screenshot must be reviewed. Not AHA, real-device, whole-match, true offline, nor proof of visual readiness; --disable-gpu is not production rendering.",
+  "browserVersion": "Chrome/157.0.8103.51",
+  "elapsedWallMs": 349252,
+  "data": {
+    "pocketEvents": [
+      {
+        "t": 54328.30000001192,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 0,
+        "opponent": 0
+      },
+      {
+        "t": 73395.30000001192,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 0,
+        "opponent": 1
+      },
+      {
+        "t": 120893.19999998808,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 0,
+        "opponent": 2
+      },
+      {
+        "t": 135592.5,
+        "piece": 1,
+        "actor": true,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 0,
+        "opponent": 3
+      },
+      {
+        "t": 145041.19999998808,
+        "piece": 1,
+        "actor": true,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 1,
+        "opponent": 3
+      },
+      {
+        "t": 164858.69999998808,
+        "piece": 1,
+        "actor": true,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 2,
+        "opponent": 3
+      },
+      {
+        "t": 178440.30000001192,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 3,
+        "opponent": 3
+      },
+      {
+        "t": 184857.19999998808,
+        "piece": 1,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 3,
+        "opponent": 4
+      },
+      {
+        "t": 185040.89999997616,
+        "piece": 1,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 3,
+        "opponent": 4
+      },
+      {
+        "t": 197423,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 5,
+        "opponent": 4
+      },
+      {
+        "t": 202989.30000001192,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 5,
+        "opponent": 5
+      },
+      {
+        "t": 203140.30000001192,
+        "piece": 1,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 5,
+        "opponent": 5
+      },
+      {
+        "t": 207955.19999998808,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 6,
+        "opponent": 6
+      },
+      {
+        "t": 231255.19999998808,
+        "piece": 2,
+        "actor": true,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 6,
+        "opponent": 7
+      },
+      {
+        "t": 304236,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 6,
+        "opponent": 6
+      },
+      {
+        "t": 331751.3000000119,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": false,
+        "queen": 1,
+        "player": 6,
+        "opponent": 7
+      },
+      {
+        "t": 341484,
+        "piece": 2,
+        "actor": false,
+        "pendingBefore": true,
+        "queen": 0,
+        "player": 6,
+        "opponent": 8
+      }
+    ],
+    "queenTrace": [
+      {
+        "t": 32223.599999964237,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 0,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 36720.69999998808,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 0,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 42344.19999998808,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 0,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 46822.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 0,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 52425.19999998808,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 0,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 56623,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 1,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 61825.30000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 1,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 70927.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 1,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 75719,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 81322.19999998808,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 90022.80000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 94923.30000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 99626.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 104123.30000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 109229.09999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 114024.80000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 118817.80000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 2,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 123023.80000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 3,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 129423.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 0,
+        "opponent": 3,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 137922.89999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 1,
+        "opponent": 3,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 145116,
+        "q": 0,
+        "pending": true,
+        "visible": false,
+        "filled": false,
+        "player": 1,
+        "opponent": 3,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 145720.5,
+        "q": 0,
+        "pending": true,
+        "visible": true,
+        "filled": false,
+        "player": 1,
+        "opponent": 3,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 147417.69999998808,
+        "q": 0,
+        "pending": true,
+        "visible": true,
+        "filled": false,
+        "player": 2,
+        "opponent": 3,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 157423,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 2,
+        "opponent": 3,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 162220.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 2,
+        "opponent": 3,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 166920.5,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 3,
+        "opponent": 3,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 176414.39999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 3,
+        "opponent": 3,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 180713.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 3,
+        "opponent": 4,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 187116,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 5,
+        "opponent": 4,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 187618.69999998808,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 5,
+        "opponent": 4,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 195421.19999998808,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 5,
+        "opponent": 4,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 199714.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 5,
+        "opponent": 5,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 205213.89999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 6,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 210218.5,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 215214.09999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 224018.80000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 228518.89999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 233413.5,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 234013.80000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 235913.80000001192,
+        "q": 0,
+        "pending": true,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 236519.39999997616,
+        "q": 0,
+        "pending": true,
+        "visible": true,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 238818.19999998808,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 243315,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 249017.5,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 252819.30000001192,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 257432.89999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 262417.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 267213.89999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 272013.6999999881,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 276914.3000000119,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 281713.8000000119,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 286416.8000000119,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 286916.1999999881,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 291313.6999999881,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 295520.89999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 6,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 296018.09999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 6,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 301118.09999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 6,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 306516.59999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 311614.6999999881,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 320115.09999996424,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 325616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": true,
+        "result": false
+      },
+      {
+        "t": 329714.5,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 7,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 333913.89999997616,
+        "q": 1,
+        "pending": false,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 336613.8000000119,
+        "q": 0,
+        "pending": true,
+        "visible": false,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 337215.09999996424,
+        "q": 0,
+        "pending": true,
+        "visible": true,
+        "filled": false,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 341513.89999997616,
+        "q": 0,
+        "pending": false,
+        "visible": true,
+        "filled": true,
+        "player": 6,
+        "opponent": 8,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 343714.6999999881,
+        "q": 0,
+        "pending": false,
+        "visible": true,
+        "filled": true,
+        "player": 6,
+        "opponent": 9,
+        "turn": false,
+        "result": false
+      },
+      {
+        "t": 344414,
+        "q": 0,
+        "pending": false,
+        "visible": true,
+        "filled": true,
+        "player": 6,
+        "opponent": 9,
+        "turn": false,
+        "result": true
+      }
+    ],
+    "clearance": [
+      {
+        "position": {
+          "x": 289.63231136521864,
+          "y": 421
+        },
+        "count": 19,
+        "min": 109.38961983777942,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 162,
+          "y": 421
+        },
+        "count": 19,
+        "min": 99.71115854949872,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 221.72292666686752,
+          "y": 421
+        },
+        "count": 19,
+        "min": 63.82596398539705,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 376,
+          "y": 421
+        },
+        "count": 18,
+        "min": 97.2393632637697,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 315.82368473038434,
+          "y": 421
+        },
+        "count": 18,
+        "min": 164.69559886782812,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 339.9423185405594,
+          "y": 421
+        },
+        "count": 17,
+        "min": 188.15069311812286,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 165.13375655699804,
+          "y": 421
+        },
+        "count": 17,
+        "min": 87.47295291784586,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 483,
+          "y": 421
+        },
+        "count": 17,
+        "min": 70.93257106170542,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 169.60307543077047,
+          "y": 421
+        },
+        "count": 17,
+        "min": 134.91803502733347,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 418.79999999999995,
+          "y": 421
+        },
+        "count": 17,
+        "min": 127.85115263954076,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 376,
+          "y": 421
+        },
+        "count": 16,
+        "min": 165.72469798963397,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 182.9601301299237,
+          "y": 421
+        },
+        "count": 14,
+        "min": 120.45059801324106,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 413.4725566540591,
+          "y": 421
+        },
+        "count": 13,
+        "min": 108.84599747715424,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 376,
+          "y": 421
+        },
+        "count": 12,
+        "min": 141.69500063287256,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 427.0482309812045,
+          "y": 421
+        },
+        "count": 10,
+        "min": 98.0694069834527,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 483,
+          "y": 421
+        },
+        "count": 9,
+        "min": 47.54406311716552,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 483,
+          "y": 421
+        },
+        "count": 7,
+        "min": 47.54406311716552,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 277.32946948763777,
+          "y": 421
+        },
+        "count": 6,
+        "min": 178.26315170066522,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 269,
+          "y": 421
+        },
+        "count": 6,
+        "min": 146.64181798823518,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 162,
+          "y": 421
+        },
+        "count": 5,
+        "min": 79.41897287239135,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 224.39923750558265,
+          "y": 421
+        },
+        "count": 5,
+        "min": 82.17024684438032,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 483,
+          "y": 421
+        },
+        "count": 5,
+        "min": 47.54406311716552,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 226.2,
+          "y": 421
+        },
+        "count": 5,
+        "min": 82.94810619743144,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 162,
+          "y": 421
+        },
+        "count": 5,
+        "min": 79.41897287239135,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 162,
+          "y": 421
+        },
+        "count": 5,
+        "min": 79.41897287239135,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 376,
+          "y": 421
+        },
+        "count": 6,
+        "min": 40.174162529373156,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 376,
+          "y": 421
+        },
+        "count": 7,
+        "min": 147.62170360617938,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 483,
+          "y": 421
+        },
+        "count": 6,
+        "min": 47.54406311716552,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 269,
+          "y": 421
+        },
+        "count": 6,
+        "min": 63.8249678019521,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 483,
+          "y": 421
+        },
+        "count": 6,
+        "min": 47.54406311716552,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 399.066368229815,
+          "y": 421
+        },
+        "count": 5,
+        "min": 125.08237030650534,
+        "threshold": 37.760000000000005
+      },
+      {
+        "position": {
+          "x": 252.77997806477143,
+          "y": 421
+        },
+        "count": 4,
+        "min": 255.38951661347352,
+        "threshold": 37.760000000000005
+      }
+    ],
+    "snapshotChecks": [
+      {
+        "changed": false,
+        "ms": 0.19999998807907104,
+        "count": 19
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 19
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 19
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 18
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 18
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 17
+      },
+      {
+        "changed": false,
+        "ms": 0.09999996423721313,
+        "count": 17
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 17
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 17
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 17
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 16
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 14
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 13
+      },
+      {
+        "changed": false,
+        "ms": 0.10000002384185791,
+        "count": 12
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 10
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 9
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 7
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 6
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 6
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 5
+      },
+      {
+        "changed": false,
+        "ms": 0.09999996423721313,
+        "count": 5
+      },
+      {
+        "changed": false,
+        "ms": 0.10000002384185791,
+        "count": 5
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 5
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 5
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 5
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 6
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 7
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 6
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 6
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 6
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 5
+      },
+      {
+        "changed": false,
+        "ms": 0,
+        "count": 4
+      }
+    ],
+    "botEvents": [
+      {
+        "event": "player_turn",
+        "t": 26534.30000001192
+      },
+      {
+        "event": "bot_turn",
+        "t": 32113.399999976158
+      },
+      {
+        "event": "bot_aim",
+        "t": 33096.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 33881.19999998808
+      },
+      {
+        "event": "player_turn",
+        "t": 36678.89999997616
+      },
+      {
+        "event": "bot_turn",
+        "t": 42231
+      },
+      {
+        "event": "bot_aim",
+        "t": 43079
+      },
+      {
+        "event": "bot_shot",
+        "t": 43779.19999998808
+      },
+      {
+        "event": "player_turn",
+        "t": 46745.39999997616
+      },
+      {
+        "event": "bot_turn",
+        "t": 52328.19999998808
+      },
+      {
+        "event": "bot_aim",
+        "t": 53245.30000001192
+      },
+      {
+        "event": "bot_shot",
+        "t": 53945.19999998808
+      },
+      {
+        "event": "bot_turn",
+        "t": 57263.09999996424
+      },
+      {
+        "event": "bot_aim",
+        "t": 58228.89999997616
+      },
+      {
+        "event": "bot_shot",
+        "t": 59029.09999996424
+      },
+      {
+        "event": "player_turn",
+        "t": 61811.09999996424
+      },
+      {
+        "event": "bot_turn",
+        "t": 70910.80000001192
+      },
+      {
+        "event": "bot_aim",
+        "t": 72295.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 72994.80000001192
+      },
+      {
+        "event": "bot_turn",
+        "t": 76311
+      },
+      {
+        "event": "bot_aim",
+        "t": 77677.59999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 78428.09999996424
+      },
+      {
+        "event": "player_turn",
+        "t": 81227.19999998808
+      },
+      {
+        "event": "bot_turn",
+        "t": 89927.80000001192
+      },
+      {
+        "event": "bot_aim",
+        "t": 91277.19999998808
+      },
+      {
+        "event": "bot_shot",
+        "t": 92026.5
+      },
+      {
+        "event": "player_turn",
+        "t": 94826.39999997616
+      },
+      {
+        "event": "bot_turn",
+        "t": 99544.19999998808
+      },
+      {
+        "event": "bot_aim",
+        "t": 100476
+      },
+      {
+        "event": "bot_shot",
+        "t": 101226.09999996424
+      },
+      {
+        "event": "player_turn",
+        "t": 104026.30000001192
+      },
+      {
+        "event": "bot_turn",
+        "t": 109126
+      },
+      {
+        "event": "bot_aim",
+        "t": 110409.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 111193.19999998808
+      },
+      {
+        "event": "player_turn",
+        "t": 113992.69999998808
+      },
+      {
+        "event": "bot_turn",
+        "t": 118726.80000001192
+      },
+      {
+        "event": "bot_aim",
+        "t": 119642.39999997616
+      },
+      {
+        "event": "bot_shot",
+        "t": 120359.19999998808
+      },
+      {
+        "event": "bot_turn",
+        "t": 123659
+      },
+      {
+        "event": "bot_aim",
+        "t": 125676.59999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 126360
+      },
+      {
+        "event": "player_turn",
+        "t": 129343
+      },
+      {
+        "event": "player_turn",
+        "t": 138441.19999998808
+      },
+      {
+        "event": "player_turn",
+        "t": 147959
+      },
+      {
+        "event": "bot_turn",
+        "t": 157324.59999996424
+      },
+      {
+        "event": "bot_aim",
+        "t": 158640.89999997616
+      },
+      {
+        "event": "bot_shot",
+        "t": 159358.19999998808
+      },
+      {
+        "event": "player_turn",
+        "t": 162174.89999997616
+      },
+      {
+        "event": "player_turn",
+        "t": 167375
+      },
+      {
+        "event": "bot_turn",
+        "t": 176339.80000001192
+      },
+      {
+        "event": "bot_aim",
+        "t": 177307.39999997616
+      },
+      {
+        "event": "bot_shot",
+        "t": 178057.09999996424
+      },
+      {
+        "event": "bot_turn",
+        "t": 181356.09999996424
+      },
+      {
+        "event": "bot_aim",
+        "t": 183590.30000001192
+      },
+      {
+        "event": "bot_shot",
+        "t": 184273.09999996424
+      },
+      {
+        "event": "player_turn",
+        "t": 187590.30000001192
+      },
+      {
+        "event": "bot_turn",
+        "t": 195372.89999997616
+      },
+      {
+        "event": "bot_aim",
+        "t": 196323
+      },
+      {
+        "event": "bot_shot",
+        "t": 197072.19999998808
+      },
+      {
+        "event": "bot_turn",
+        "t": 200372.09999996424
+      },
+      {
+        "event": "bot_aim",
+        "t": 201722.80000001192
+      },
+      {
+        "event": "bot_shot",
+        "t": 202505.59999996424
+      },
+      {
+        "event": "bot_turn",
+        "t": 205823
+      },
+      {
+        "event": "bot_aim",
+        "t": 206688.5
+      },
+      {
+        "event": "bot_shot",
+        "t": 207489.89999997616
+      },
+      {
+        "event": "bot_turn",
+        "t": 210789
+      },
+      {
+        "event": "bot_aim",
+        "t": 211639.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 212372.09999996424
+      },
+      {
+        "event": "player_turn",
+        "t": 215172.30000001192
+      },
+      {
+        "event": "bot_turn",
+        "t": 223988.5
+      },
+      {
+        "event": "bot_aim",
+        "t": 224956
+      },
+      {
+        "event": "bot_shot",
+        "t": 225673.59999996424
+      },
+      {
+        "event": "player_turn",
+        "t": 228455.09999996424
+      },
+      {
+        "event": "bot_turn",
+        "t": 234004.69999998808
+      },
+      {
+        "event": "bot_aim",
+        "t": 234988.19999998808
+      },
+      {
+        "event": "bot_shot",
+        "t": 235755
+      },
+      {
+        "event": "player_turn",
+        "t": 238805.19999998808
+      },
+      {
+        "event": "bot_turn",
+        "t": 243238
+      },
+      {
+        "event": "bot_aim",
+        "t": 245471.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 246171
+      },
+      {
+        "event": "player_turn",
+        "t": 248970.89999997616
+      },
+      {
+        "event": "bot_turn",
+        "t": 252753.59999996424
+      },
+      {
+        "event": "bot_aim",
+        "t": 253738.39999997616
+      },
+      {
+        "event": "bot_shot",
+        "t": 254521.19999998808
+      },
+      {
+        "event": "player_turn",
+        "t": 257320.80000001192
+      },
+      {
+        "event": "bot_turn",
+        "t": 262353.3000000119
+      },
+      {
+        "event": "bot_aim",
+        "t": 263670.3000000119
+      },
+      {
+        "event": "bot_shot",
+        "t": 264371.09999996424
+      },
+      {
+        "event": "player_turn",
+        "t": 267169.3000000119
+      },
+      {
+        "event": "bot_turn",
+        "t": 271986.3000000119
+      },
+      {
+        "event": "bot_aim",
+        "t": 273320.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 274069.39999997616
+      },
+      {
+        "event": "player_turn",
+        "t": 276869.39999997616
+      },
+      {
+        "event": "bot_turn",
+        "t": 281636.89999997616
+      },
+      {
+        "event": "bot_aim",
+        "t": 283403.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 284103.39999997616
+      },
+      {
+        "event": "player_turn",
+        "t": 286903.09999996424
+      },
+      {
+        "event": "bot_turn",
+        "t": 291268.89999997616
+      },
+      {
+        "event": "bot_aim",
+        "t": 292252.8000000119
+      },
+      {
+        "event": "bot_shot",
+        "t": 293069
+      },
+      {
+        "event": "player_turn",
+        "t": 295935.09999996424
+      },
+      {
+        "event": "bot_turn",
+        "t": 301036.09999996424
+      },
+      {
+        "event": "bot_aim",
+        "t": 303069.8000000119
+      },
+      {
+        "event": "bot_shot",
+        "t": 303834.8000000119
+      },
+      {
+        "event": "bot_turn",
+        "t": 307134.8000000119
+      },
+      {
+        "event": "bot_aim",
+        "t": 307968.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 308801.8000000119
+      },
+      {
+        "event": "player_turn",
+        "t": 311601.5
+      },
+      {
+        "event": "bot_turn",
+        "t": 320017.89999997616
+      },
+      {
+        "event": "bot_aim",
+        "t": 322051.09999996424
+      },
+      {
+        "event": "bot_shot",
+        "t": 322752.3000000119
+      },
+      {
+        "event": "player_turn",
+        "t": 325551.3000000119
+      },
+      {
+        "event": "bot_turn",
+        "t": 329617.09999996424
+      },
+      {
+        "event": "bot_aim",
+        "t": 330535.3000000119
+      },
+      {
+        "event": "bot_shot",
+        "t": 331234.59999996424
+      },
+      {
+        "event": "bot_turn",
+        "t": 334533.39999997616
+      },
+      {
+        "event": "bot_aim",
+        "t": 335434.8000000119
+      },
+      {
+        "event": "bot_shot",
+        "t": 336216.89999997616
+      },
+      {
+        "event": "bot_turn",
+        "t": 339033.39999997616
+      },
+      {
+        "event": "bot_aim",
+        "t": 340250
+      },
+      {
+        "event": "bot_shot",
+        "t": 341033.89999997616
+      }
+    ],
+    "botOuter": [
+      {
+        "name": "_0x52106f",
+        "ms": 1.199999988079071,
+        "inputCount": 9,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.9000000357627869,
+        "inputCount": 9,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.40000003576278687,
+        "inputCount": 9,
+        "outputCount": 2,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.5,
+        "inputCount": 9,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.6000000238418579,
+        "inputCount": 9,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 1.5,
+        "inputCount": 9,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 1,
+        "inputCount": 9,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.5999999642372131,
+        "inputCount": 9,
+        "outputCount": 2,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.3999999761581421,
+        "inputCount": 9,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.30000001192092896,
+        "inputCount": 9,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 1.5,
+        "inputCount": 9,
+        "outputCount": 4,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 2,
+        "inputCount": 9,
+        "outputCount": 11,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.30000001192092896,
+        "inputCount": 8,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.3999999761581421,
+        "inputCount": 8,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.5,
+        "inputCount": 8,
+        "outputCount": 3,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 1.199999988079071,
+        "inputCount": 8,
+        "outputCount": 10,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.19999998807907104,
+        "inputCount": 8,
+        "outputCount": 2,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.10000002384185791,
+        "inputCount": 8,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.30000001192092896,
+        "inputCount": 8,
+        "outputCount": 4,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.800000011920929,
+        "inputCount": 8,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.19999998807907104,
+        "inputCount": 7,
+        "outputCount": 2,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.10000002384185791,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.09999996423721313,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.30000001192092896,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.40000003576278687,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.19999998807907104,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.19999998807907104,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.3999999761581421,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.10000002384185791,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.09999996423721313,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.30000001192092896,
+        "inputCount": 7,
+        "outputCount": 5,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.3999999761581421,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.19999998807907104,
+        "inputCount": 7,
+        "outputCount": 2,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.10000002384185791,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.09999996423721313,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.30000001192092896,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.3999999761581421,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.19999998807907104,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.19999998807907104,
+        "inputCount": 7,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.40000003576278687,
+        "inputCount": 7,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.20000004768371582,
+        "inputCount": 6,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.09999996423721313,
+        "inputCount": 6,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.19999998807907104,
+        "inputCount": 6,
+        "outputCount": 3,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 6,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.09999996423721313,
+        "inputCount": 6,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.10000002384185791,
+        "inputCount": 6,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.5,
+        "inputCount": 6,
+        "outputCount": 11,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.09999996423721313,
+        "inputCount": 6,
+        "outputCount": 4,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.09999996423721313,
+        "inputCount": 6,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.10000002384185791,
+        "inputCount": 6,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.30000001192092896,
+        "inputCount": 6,
+        "outputCount": 9,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.5,
+        "inputCount": 6,
+        "outputCount": 5,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.10000002384185791,
+        "inputCount": 5,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0.10000002384185791,
+        "inputCount": 5,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.3999999761581421,
+        "inputCount": 5,
+        "outputCount": 8,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.19999998807907104,
+        "inputCount": 5,
+        "outputCount": 5,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.10000002384185791,
+        "inputCount": 5,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 5,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.5,
+        "inputCount": 5,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.30000001192092896,
+        "inputCount": 5,
+        "outputCount": 4,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 4,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 4,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.6000000238418579,
+        "inputCount": 4,
+        "outputCount": 2,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.5999999642372131,
+        "inputCount": 4,
+        "outputCount": 3,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 3,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 3,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.20000004768371582,
+        "inputCount": 3,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.19999998807907104,
+        "inputCount": 3,
+        "outputCount": 3,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.2999999523162842,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.10000002384185791,
+        "inputCount": 2,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.09999996423721313,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.10000002384185791,
+        "inputCount": 1,
+        "outputCount": 4,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 4,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.09999996423721313,
+        "inputCount": 1,
+        "outputCount": 3,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 2,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.10000002384185791,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.09999996423721313,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.19999998807907104,
+        "inputCount": 2,
+        "outputCount": 2,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.10000002384185791,
+        "inputCount": 2,
+        "outputCount": 3,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.09999996423721313,
+        "inputCount": 2,
+        "outputCount": 2,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.19999998807907104,
+        "inputCount": 3,
+        "outputCount": 2,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 3,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0.30000001192092896,
+        "inputCount": 3,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.19999998807907104,
+        "inputCount": 3,
+        "outputCount": 3,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.10000002384185791,
+        "inputCount": 2,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.09999996423721313,
+        "inputCount": 2,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.10000002384185791,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.10000002384185791,
+        "inputCount": 2,
+        "outputCount": 1,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0.10000002384185791,
+        "inputCount": 2,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0.10000002384185791,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 1,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x52106f",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 2
+      },
+      {
+        "name": "_0x25af2a",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x521eef",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      },
+      {
+        "name": "_0x30849b",
+        "ms": 0,
+        "inputCount": 1,
+        "outputCount": 0,
+        "maxDepth": 1
+      }
+    ],
+    "botOuterInstalled": true,
+    "url": "http://127.0.0.1:30702/game.html",
+    "title": "Carrom Clash",
+    "readyState": "complete",
+    "canvas": 1,
+    "viewport": [
+      720,
+      1600
+    ],
+    "navigation": {
+      "duration": 1140.3999999761581,
+      "domContentLoaded": 374.89999997615814,
+      "loadEventEnd": 1140.3999999761581
+    },
+    "resourceCount": 250,
+    "resourceTransferBytes": 4569608,
+    "frames": 182,
+    "frameIntervalsMs": [
+      -1.6000000119092874,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.599999999976717,
+      16.800000000046566,
+      16.599999999976717,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.70000000001164,
+      16.5,
+      16.79999999998836,
+      16.599999999976717,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.600000000034925,
+      16.70000000001164,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.79999999998836,
+      16.599999999976717,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.600000000034925,
+      16.70000000001164,
+      16.699999999953434,
+      16.600000000034925,
+      16.70000000001164,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.600000000034925,
+      16.79999999998836,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.600000000034925,
+      16.79999999998836,
+      16.599999999976717,
+      16.600000000034925,
+      16.70000000001164,
+      16.699999999953434,
+      16.600000000034925,
+      16.70000000001164,
+      16.699999999953434,
+      16.600000000034925,
+      16.79999999998836,
+      16.599999999976717,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.599999999976717,
+      16.600000000034925,
+      16.79999999998836,
+      16.599999999976717,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.600000000034925,
+      16.70000000001164,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.599999999976717,
+      16.70000000001164,
+      16.70000000001164,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.699999999953434,
+      16.600000000034925,
+      16.70000000001164,
+      16.699999999953434,
+      16.70000000001164,
+      16.600000000034925,
+      16.599999999976717,
+      16.70000000001164
+    ],
+    "heap": {
+      "usedJSHeapSize": 8179393,
+      "totalJSHeapSize": 18036693,
+      "jsHeapSizeLimit": 4395630592
+    }
+  },
+  "cdpMetrics": [
+    {
+      "name": "Timestamp",
+      "value": 327262.374704
+    },
+    {
+      "name": "AudioHandlers",
+      "value": 38
+    },
+    {
+      "name": "AudioWorkletProcessors",
+      "value": 0
+    },
+    {
+      "name": "Documents",
+      "value": 2
+    },
+    {
+      "name": "Frames",
+      "value": 1
+    },
+    {
+      "name": "JSEventListeners",
+      "value": 35
+    },
+    {
+      "name": "LayoutObjects",
+      "value": 9
+    },
+    {
+      "name": "MediaKeySessions",
+      "value": 0
+    },
+    {
+      "name": "MediaKeys",
+      "value": 0
+    },
+    {
+      "name": "Nodes",
+      "value": 555
+    },
+    {
+      "name": "Resources",
+      "value": 307
+    },
+    {
+      "name": "ContextLifecycleStateObservers",
+      "value": 9
+    },
+    {
+      "name": "V8PerContextDatas",
+      "value": 1
+    },
+    {
+      "name": "WorkerGlobalScopes",
+      "value": 0
+    },
+    {
+      "name": "UACSSResources",
+      "value": 0
+    },
+    {
+      "name": "RTCPeerConnections",
+      "value": 0
+    },
+    {
+      "name": "ResourceFetchers",
+      "value": 2
+    },
+    {
+      "name": "AdSubframes",
+      "value": 0
+    },
+    {
+      "name": "DetachedScriptStates",
+      "value": 0
+    },
+    {
+      "name": "ArrayBufferContents",
+      "value": 41
+    },
+    {
+      "name": "LayoutCount",
+      "value": 2
+    },
+    {
+      "name": "RecalcStyleCount",
+      "value": 25
+    },
+    {
+      "name": "LayoutDuration",
+      "value": 0.011657
+    },
+    {
+      "name": "RecalcStyleDuration",
+      "value": 0.002301
+    },
+    {
+      "name": "DevToolsCommandDuration",
+      "value": 0.009437
+    },
+    {
+      "name": "ScriptDuration",
+      "value": 8.326816
+    },
+    {
+      "name": "V8CompileDuration",
+      "value": 0.000811
+    },
+    {
+      "name": "TaskDuration",
+      "value": 237.993989
+    },
+    {
+      "name": "TaskOtherDuration",
+      "value": 229.642967
+    },
+    {
+      "name": "ThreadTime",
+      "value": 235.337589
+    },
+    {
+      "name": "ProcessTime",
+      "value": 248.080334
+    },
+    {
+      "name": "JSHeapUsedSize",
+      "value": 7015260
+    },
+    {
+      "name": "JSHeapTotalSize",
+      "value": 16777216
+    },
+    {
+      "name": "FirstMeaningfulPaint",
+      "value": 326913.865713
+    },
+    {
+      "name": "DomContentLoaded",
+      "value": 326913.834703
+    },
+    {
+      "name": "NavigationStart",
+      "value": 326913.45975
+    }
+  ]
+}

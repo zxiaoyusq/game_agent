@@ -1,0 +1,34 @@
+{
+  "scope": "files in integration_manifest; outside atlas boxes only; not runtime or visual acceptance",
+  "atlas": [
+    {
+      "atlas": "images/tiles-sheet0.png",
+      "size": [
+        512,
+        512
+      ],
+      "frame_count": 25,
+      "changed_outside_frames": 0
+    },
+    {
+      "atlas": "images/tiles-sheet1.png",
+      "size": [
+        512,
+        512
+      ],
+      "frame_count": 25,
+      "changed_outside_frames": 0
+    },
+    {
+      "atlas": "images/tiles-sheet2.png",
+      "size": [
+        512,
+        512
+      ],
+      "frame_count": 10,
+      "changed_outside_frames": 0
+    }
+  ],
+  "backup_entries": 55,
+  "errors": []
+}

@@ -1,0 +1,9 @@
+{
+  "attempt":1,
+  "command":"node scripts/audit-carrom.cjs",
+  "exit_code":1,
+  "status":"BLOCKED",
+  "error":"ENOENT：参考工具可读的JS未挂载到执行工作区ref路径",
+  "impact":"不能直接对完整源文件计算SHA256、生成独立原文件行号或抽取完整原生成器执行；未访问其他工程寻找文件",
+  "replacement":"已实际执行node scripts/check-carrom-audit.cjs；仅隔离执行手工逐行摘录函数和标注的数学断言，不能替代自然对局"
+}

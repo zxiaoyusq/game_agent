@@ -1,0 +1,173 @@
+{
+  "normalSpeed": true,
+  "clockOverrides": false,
+  "frames": [
+    {
+      "time": 3147.9,
+      "remaining": 163.4000000000001,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3164.7,
+      "remaining": 146.60000000000036,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3181.3,
+      "remaining": 130,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3198,
+      "remaining": 113.30000000000018,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3214.6,
+      "remaining": 96.70000000000027,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3231.3,
+      "remaining": 80,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3248,
+      "remaining": 63.30000000000018,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3264.6,
+      "remaining": 46.70000000000027,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3281.3,
+      "remaining": 30,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3298,
+      "remaining": 13.300000000000182,
+      "score": 326,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3314.6,
+      "remaining": 0,
+      "score": 326,
+      "rows": [],
+      "after": true
+    },
+    {
+      "time": 3831.3,
+      "remaining": 163.29999999999973,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3848,
+      "remaining": 146.5999999999999,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3864.6,
+      "remaining": 130,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3881.3,
+      "remaining": 113.29999999999973,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3897.9,
+      "remaining": 96.69999999999982,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3914.6,
+      "remaining": 80,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3931.3,
+      "remaining": 63.29999999999973,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3947.9,
+      "remaining": 46.69999999999982,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3964.5,
+      "remaining": 30.09999999999991,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    },
+    {
+      "time": 3981.2,
+      "remaining": 13.400000000000091,
+      "score": 538,
+      "rows": [
+        18
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  90189,
+    "apiName":  "Carrom Clash Master",
+    "targetName":  "Carrom Clash Master",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Carrom_Clash_Master.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260306/743a70109241a74f3bfc99272a96fdad.zip",
+    "bundleMd5":  "743a70109241a74f3bfc99272a96fdad",
+    "bundleSize":  4039748,
+    "updatedAt":  1773049979,
+    "gameLink":  "https://www.excellenth5game.com/Carrom_Clash_Master/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_90189",
+    "category":  "Tabletop",
+    "rate":  7.6,
+    "gameType":  1,
+    "localFile":  "Carrom_Clash_Master.zip",
+    "localBytes":  4039748,
+    "verifiedAt":  "2026-10-20T10:36:48",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

@@ -1,0 +1,95 @@
+{
+  "revision": "b7e1a1c",
+  "environment": "MuMu Android WebView; isolated copy; ADB automated taps",
+  "entry": "tests/android_preview/fresh_through_twelve_20261031.ps1",
+  "offlineCache": "48e72caa82a5e4b6",
+  "savedStorageRestored": true,
+  "evidence": {
+    "level8": {
+      "result": {
+        "progress": 8,
+        "level": 8,
+        "tiles": 32,
+        "timer": 196,
+        "errors": []
+      },
+      "firstSevenEvidence": "result-first7.json"
+    },
+    "level9": {
+      "result": {
+        "progress": 9,
+        "level": 9,
+        "tiles": 40,
+        "timer": 210,
+        "errors": []
+      },
+      "firstEightEvidence": "result-first8.json"
+    },
+    "level11": {
+      "result": {
+        "progress": 11,
+        "level": 11,
+        "tiles": 32,
+        "timer": 168,
+        "errors": []
+      },
+      "firstTenEvidence": "result-first10.json",
+      "tenthStaticCandidate": true
+    },
+    "level12": {
+      "result": {
+        "progress": 12,
+        "level": 12,
+        "tiles": 40,
+        "timer": 130,
+        "errors": []
+      },
+      "firstElevenEvidence": "result-first11.json"
+    },
+    "level13": {
+      "result": {
+        "progress": 13,
+        "level": 13,
+        "tiles": 72,
+        "timer": 300,
+        "errors": []
+      },
+      "firstTwelveEvidence": "result-first12.json"
+    },
+    "level10": {
+      "result": {
+        "progress": 10,
+        "level": 10,
+        "tiles": 48,
+        "shuffle": 5,
+        "errors": []
+      },
+      "firstNineEvidence": "result-first9.json",
+      "tenthTutorial": "completed"
+    },
+    "level7": {
+      "result": {
+        "progress": 7,
+        "level": 7,
+        "tiles": 40,
+        "hammer": 1,
+        "errors": []
+      },
+      "firstSixEvidence": "result-first6.json",
+      "seventhTutorial": "completed",
+      "timerPaused": true
+    },
+    "level6": {
+      "final": {
+        "progress": 6,
+        "level": 6,
+        "tiles": 24,
+        "errors": []
+      },
+      "firstTutorial": "completed",
+      "thirdTutorial": "completed",
+      "fifthTutorial": "completed"
+    }
+  },
+  "scope": "Sequential fresh save levels 1-12, arrival at unconfigured level 13 fallback. Does not prove AHA, full gameplay variants, competitor mechanics or real advertisements."
+}

@@ -1,0 +1,57 @@
+{
+  "scope": "deterministic comparison; recovered old failures independently replayed; not all seeds",
+  "summary": [
+    {
+      "level": 6,
+      "seeds": 20,
+      "recovered": [],
+      "elapsedMs": 58
+    },
+    {
+      "level": 7,
+      "seeds": 20,
+      "recovered": [],
+      "elapsedMs": 45
+    },
+    {
+      "level": 17,
+      "seeds": 20,
+      "recovered": [],
+      "elapsedMs": 596
+    },
+    {
+      "level": 22,
+      "seeds": 20,
+      "recovered": [],
+      "elapsedMs": 894
+    },
+    {
+      "level": 24,
+      "seeds": 20,
+      "recovered": [],
+      "elapsedMs": 968
+    },
+    {
+      "level": 25,
+      "seeds": 110,
+      "recovered": [],
+      "elapsedMs": 29624
+    },
+    {
+      "level": 31,
+      "seeds": 20,
+      "recovered": [],
+      "elapsedMs": 1155
+    },
+    {
+      "level": 33,
+      "seeds": 20,
+      "recovered": [
+        9,
+        12,
+        13
+      ],
+      "elapsedMs": 3702
+    }
+  ]
+}

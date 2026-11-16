@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "94778",
+    "apiName":  "Master Chess 2",
+    "targetName":  "Master Chess 2",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Master_Chess_2.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260417/2545bc79b67fda9e6d6e7ae3c3243f1a.zip",
+    "bundleMd5":  "2545bc79b67fda9e6d6e7ae3c3243f1a",
+    "bundleSize":  578885,
+    "updatedAt":  1776935795,
+    "gameLink":  "https://www.cdmoniyuansugame.com/Master_Chess_2/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94778",
+    "category":  "Puzzle",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Master_Chess_2.zip",
+    "localBytes":  578885,
+    "verifiedAt":  "2026-10-20T11:12:23",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

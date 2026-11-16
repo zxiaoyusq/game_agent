@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "mode": "raster",
+  "language": "zh-CN",
+  "board": {"columns":10,"rows":20,"aspectRatio":"1:2","background":"#0a142b","grid":"#172641","border":"#405b88"},
+  "tiles": {
+    "I":{"path":"assets/tiles/I-kingfisher.webp","animal":"蓝橙翠鸟","color":"#49adf1"},
+    "O":{"path":"assets/tiles/O-leopard.webp","animal":"金黄幼豹","color":"#eab643"},
+    "T":{"path":"assets/tiles/T-owl-card.webp","animal":"紫猫头鹰","color":"#ad79e2"},
+    "J":{"path":"assets/tiles/J-bear.webp","animal":"暖棕熊","color":"#c08756"},
+    "S":{"path":"assets/tiles/S-chameleon.webp","animal":"绿变色龙","color":"#6ac35b"},
+    "L":{"path":"assets/tiles/L-fox.webp","animal":"橙狐狸","color":"#f69941"},
+    "Z":{"path":"assets/tiles/Z-rabbit.webp","animal":"粉耳白兔","color":"#eea6c4"}
+  },
+  "tileContract":{"sourceSize":[256,256],"sourceRect":[16,16,224,224],"destination":"完整格尺寸，不再加内边距","clipRadiusRatio":0.16,"imageSmoothingEnabled":true,"alpha":"所有图片全不透明；用Canvas圆角clip隐藏深蓝角部，不进行颜色阈值抠图","activeOutlineCssPx":1,"activeShadow":"0 0 4px rgba(166,201,255,0.3)","settledBrightness":1,"ghostOpacity":0.18,"ghostOutline":"类型色虚线，1 CSS px","minimumReviewedCellCssPx":24},
+  "background":{"path":"assets/backgrounds/starfield.webp","size":[768,1152],"fit":"cover","position":"center","boardOverlay":"棋盘独立不透明底色，不把页面背景缩放成棋盘"},
+  "ui":{"fontFamily":"system-ui, PingFang SC, Microsoft YaHei, sans-serif","title":"萌兽方块","text":"#fff5df","secondary":"#a9bddb","panel":"#1c2c4a","panelBorder":"#405b88","primary":"#eab643","primaryText":"#17213b","buttonRadiusCssPx":12,"minimumTouchTargetCssPx":44,"minimumGapCssPx":8},
+  "animations":{"clearDurationMs":180,"clearFlashMs":60,"clearFadeMs":120,"maximumFlashAlpha":0.25,"maximumParticlesPerRow":6,"particleLifetimeMs":180,"reducedMotion":"不闪烁、不粒子；规则清行时序仍180ms，随后直接提交画面","pause":"冻结动画时间","restart":"废弃旧会话回调"},
+  "excludeFromRuntime":["assets/masters/","assets/qa/","assets/previews/","assets/tiles/T-owl.webp","workflow/","scripts/art-preview.cjs"],
+  "notes":["paths相对dist/index.html；构建仅复制明确列出的8张运行素材","本文件为美术交接数据，不应在file://通过fetch加载，应编译为常量或内嵌","固化牌不额外压暗，活动状态用外边线区分，保护小尺寸颜色","不包含音频、在线字体、八种方块或玩法实现"]
+}

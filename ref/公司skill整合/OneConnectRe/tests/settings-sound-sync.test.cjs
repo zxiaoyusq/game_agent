@@ -1,0 +1,21 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+class El{constructor(){this.children=[];this.listeners={};this.style={};this.dataset={};this.hidden=false;this.classList={toggle(){}};}setAttribute(k,v){this[k]=v}appendChild(x){this.children.push(x);return x}append(...items){this.children.push(...items)}querySelector(s){return this.children.find(x=>'.'+x.className===s)}addEventListener(k,fn){(this.listeners[k]??=[]).push(fn)}focus(){}}
+const body=new El(),document={body,head:new El(),createElement:()=>new El(),addEventListener(){}};
+const sound={name:'sound',data:1},runtime={running_layout:{name:'menu'},all_global_vars:[sound]};let requested=[],hostEnabled=true;
+let calls=[],audioNotice,frames=[];const window={cr_getC2Runtime:()=>runtime,c2_callFunction:name=>calls.push(name),GAMESNACKS:{isAudioEnabled:()=>hostEnabled,subscribeToAudioUpdates:fn=>{audioNotice=fn},handleAudioUpdates(v){requested.push(v.isAudioEnabled);hostEnabled=v.isAudioEnabled;sound.data=v.isAudioEnabled?0:1}}};
+let haptic=false,helpOpened=0,pulses=0;window.oneConnectHapticsCandidate={supported:()=>true,enabled:()=>haptic,setEnabled:v=>{haptic=v},pulse:()=>pulses++};window.oneConnectHowToPlayCandidate={open:()=>helpOpened++};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/home_settings_candidate.js','utf8'),{window,document,requestAnimationFrame:fn=>frames.push(fn)});
+window.oneConnectHomeSettingsCandidate.install();const [launcher,overlay]=body.children,panel=overlay.children[0],button=panel.children[1];
+launcher.listeners.click.at(-1)();assert.equal(button.querySelector('.state').textContent,'OFF','saved native mute takes precedence over stale SDK value');
+button.listeners.click[0]();assert.deepEqual(requested,[true]);assert.equal(button.querySelector('.state').textContent,'ON');
+button.listeners.click[0]();assert.deepEqual(requested,[true,false]);assert.equal(button.querySelector('.state').textContent,'OFF');
+window.GAMESNACKS.handleAudioUpdates=v=>{requested.push(v.isAudioEnabled);hostEnabled=v.isAudioEnabled};
+button.listeners.click[0]();assert.equal(sound.data,0,'native state follows adapter when callback does not update it');assert.equal(button.querySelector('.state').textContent,'ON');
+button.listeners.click[0]();assert.equal(sound.data,1,'toggle works repeatedly without host writeback');assert.equal(button.querySelector('.state').textContent,'OFF');assert.deepEqual(calls,['volumeChanged','volumeChanged'],'fallback invokes the native audio update for each real state change');
+window.GAMESNACKS.handleAudioUpdates=()=>{};button.listeners.click[0]();assert.equal(sound.data,1,'deferred host state must not be presented as already unmuted');assert.equal(button.querySelector('.state').textContent,'OFF');assert.equal(calls.length,2,'deferred changes must not trigger audio early');
+sound.data=0;hostEnabled=true;audioNotice(true);frames.pop()();assert.equal(button.querySelector('.state').textContent,'ON','visible settings refreshes after an external audio update');
+const help=panel.children[2],vibration=panel.children[3];help.listeners.click[0]();assert.equal(helpOpened,1);
+vibration.listeners.click[0]();assert.equal(haptic,true);assert.equal(pulses,1);assert.equal(vibration.querySelector('.state').textContent,'ON');
+vibration.listeners.click[0]();assert.equal(haptic,false);assert.equal(vibration.querySelector('.state').textContent,'OFF');
+window.oneConnectHapticsCandidate.supported=()=>false;launcher.listeners.click.at(-1)();assert.equal(vibration.disabled,true);assert.equal(vibration.querySelector('.state').textContent,'—');
+console.log('settings follows native sound state when host value differs PASS');

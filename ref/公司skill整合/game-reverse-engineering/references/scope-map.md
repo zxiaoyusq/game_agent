@@ -4,6 +4,8 @@
 
 **路径基准约定**：本总集所有正文中的反引号路径一律相对总集根目录（如 `modules/skinning-pipeline/SKILL.md`、`references/global-rules.md`）；markdown 链接 `[]()` 相对所在文件。引用新文件时遵守此约定，`scripts/validate_skill.ps1` 会校验。
 
+CombiMons 模板 SDK 接入参考 `modules/hosted-minigame-harvest/references/combimons-host-sdk-template.md`：方法为 `GENERALIZED_PATTERN`，具体 API、URL、布局与回调为匹配模板的案例事实，参数遵守 `DO_NOT_COPY_LITERAL_VALUES`，以当前平台契约为准。
+
 ## 标签定义
 
 ### GENERAL_DEFAULT
@@ -13,6 +15,17 @@
 ### GENERALIZED_PATTERN
 
 从真实项目提炼出的判断方法。可以迁移"如何找 owner、如何取证、如何设置门禁"，但必须在当前项目重新确认具体实现。
+
+### FRAMEWORK_BOUND_CFW
+
+**绑定本团队自研框架的工程契约**（当前只有一套：`driftsand-framework` / `framework_cfw_cocos`，门面 `CFW`）。语义介于 `GENERAL_DEFAULT` 与 `CASE_ONLY_*` 之间：
+
+- **可用条件**：体检确认目标工程使用**同一框架**（`extensions/` 下装配同一框架扩展、业务经同一导入别名访问）。
+- **可迁移的部分**：分层意图、角色划分（Stage / System / UI / Event / Data / Config 六件套）、依赖方向纪律、以及"框架层不依赖业务"这条唯一被实测守住的边界。
+- **不可迁移的部分**：门面名、基类名、生命周期钩子名与其语义、具体 API 签名——**换框架全部失效**，必须按目标框架重写。
+- **与 `CASE_ONLY_*` 的区别**：`CASE_ONLY_*` 记的是"某个游戏项目的**业务事实**"；本标签记的是"某个**框架**的通用契约"，对该框架的所有工程都成立。
+- **与 `DO_NOT_COPY_LITERAL_VALUES` 的关系**：本标签下的**框架**文件名 / 类名 / 钩子名**允许**在规范中引用（属框架公开面）；但**项目**的包名、路径、表名、业务类名仍受 `DO_NOT_COPY_LITERAL_VALUES` 约束。
+- **首次登记**：9.1.0 → 10.0.0 引入，随 `modules/cocos-project-standards/` 一并登记。
 
 ### CASE_ONLY_BLOCKMASTER / CASE_ONLY_BLOCKUDOKU / CASE_ONLY_SUDOKU / CASE_ONLY_JIGSAWCARD
 
@@ -59,6 +72,7 @@
 | `gameplay-logic-reverse` | `GENERALIZED_PATTERN` | 算法/Trait/运行时捕获方法可迁移；Block Blast 枚举数、类名、偏移和远程清单是专属值 | 定位真实执行路径与唯一 owner |
 | `sdk-replacement` | `GENERAL_DEFAULT` + `GENERALIZED_PATTERN` | 三档结果定义（A 供应商切换 / B 断网离线内置 / C 二进制级消失）、P0-P8 八阶段、证据分级与误判表、静态/网络/Seed 三层门禁、真机 DNS/TLS/HOST 验收与报告生成通用；具体域名、appId、证书、SDK 类名和数量是案例值（`DO_NOT_COPY_LITERAL_VALUES`） | 先钉死 A/B/C 档位，再读 P0–P2（基线 + 联网面 + 隔离配置） |
 | `skinning-pipeline` | `GENERAL_DEFAULT` | manifest/map/apply/rollback/diff/verify 通用，调用者传入当前工具和项目路径 | 先出 `skinpipe manifest`（默认 dry-run） |
+| `h5-canvas-reskin` | `GENERALIZED_PATTERN` | AHA/H5 的市场与产品预输入、HTML 选择回传、GPT 生图目录接入、设计到合入和 QA 编排；技术分类、平铺、功能辨识与停摆诊断可迁移。模板和地区方案读取实际来源；历史数值/包名/端口/路径不可照抄 | 有状态先续接；无方向先 HTML 引导，有目标直接代表屏、批量生产、合入与自然验收 |
 | `prefab-bake` | `GENERAL_DEFAULT` + `GENERALIZED_PATTERN` | Cocos 3.x prefab JSON 序列化字段表、七步烘焙流程、幂等/校验门禁通用；案例里的坐标、uuid、设计基准尺寸和 codex_* 命名是怀旧时光拼图专属值（`DO_NOT_COPY_LITERAL_VALUES`） | 先读运行时换肤函数，再备份 prefab |
 | `ui-feature-pipeline` | `GENERALIZED_PATTERN` | 六阶段 UI 开发链路（效果图分层/控件切分复用/等比 contain/动态文字安全框/多语言多分辨率安全区 QA/固化）与生图工具无关接入通用；项目路径、母版、processed 清单内容是怀旧时光拼图专属值（见其项目级 skill cocos-ui-reskin-qa） | 从功能需求表开始走六阶段链路 |
 | `cocos-mcp-channel` | `GENERAL_DEFAULT` + 历史环境记录 | 3.8.x MCP；2.4.x 用文件/CLI，预览和正式 QA 分开 | 确认版本并探测/启动，get_editor_state 核对服务和工程 |
@@ -68,6 +82,10 @@
 | `godot-migration-port` | `GENERAL_DEFAULT` + `GENERALIZED_PATTERN` | 十二类迁移映射、S0–S7 端到端生产流程、证据状态、阶段门禁、当前版本快照/provider、后期系统、分层 QA、最终 APK 与交接方法通用；jigsawcard 的资源数量、门槛、坐标、哈希和评估结论是 `CASE_ONLY_JIGSAWCARD`；整页截图路线仅在用户明确接受时读取 `art-remake-playbook.md` | 先做 S0 资产盘点清单与覆盖矩阵 |
 | `3d-asset-extraction` | `GENERAL_DEFAULT` | PC 3A 游戏 3D 资产提取的引擎→工具链路由（NeoX/Messiah、RE Engine、FromSoftware、REDengine 4、MT Framework）、加密容器解法与渲染/交付规范通用；本机工具绝对路径、具体游戏实测坐标与密钥是案例值，密钥只随该游戏项目使用 | 按引擎指纹查模块路由表选工具链；未知格式走四步法 |
 | `deliverable-book-template` | `GENERALIZED_PATTERN` | 逆向拆解交付的目录规范、md 文档分类法、证据标注体系与单文件 HTML 全书模板通用；案例的章节编号、数量与主题按目标游戏实际系统增删 | 用 `md2book_template.py` 生成骨架，再按目录规范填充 |
+
+| `hosted-minigame-harvest` | `GENERAL_DEFAULT` + `CASE_ONLY_AHA` | 宿主商店/分发 App 内嵌小游戏批量出库：形态 A/B/C 判定、商店匿名接口契约还原、S0–S5 流程与 G1–G6 门禁、素材字段分工通用；AHA 的域名、端点路径、字段名、gameId 与批量接口上限是案例值（`DO_NOT_COPY_LITERAL_VALUES`） | 先判形态 A/B/C（缓存里有没有每游戏元数据文件），再挖匿名接口拿 `bundles[]` 直链 |
+| `hosted-game-lifecycle` / `hosted-h5-restoration`（宿主模块参考） | `GENERALIZED_PATTERN` + 案例专属 | 宿主小游戏采集到拆解、原版自然运行、路线验证和持续迭代的串联与证据门禁；One Connect 的对象编号、SID、规则和数值仅限该包 | 已有包则核验基线后进入拆解；按真实引擎与用户授权路由 H5 换皮和其他模块 |
+| `cocos-project-standards` | `GENERAL_DEFAULT`（`[COCOS]`）+ `FRAMEWORK_BOUND_CFW`（`[CFW]`）+ `CASE_ONLY_DADAPET`（`[DADA]`） | Cocos Creator 工程**从零到可维护**的工程约定：分层架构与启动链路、六件套契约、代码与命名、框架接口边界、Luban 配置链路、用户数据模块、UI 预制体生成链路、资源目录契约、多语言、引擎与构建、交付自检。**每条规则带迁移等级标记**（`[COCOS]`/`[CFW]`/`[DADA]`），必须按体检结果筛选后使用；来源项目的 System/表/资源名等业务字面值为 `CASE_ONLY_DADAPET`，不可复制。**本模块只到"怎么定规范"**：构建与真机验收走 `cocos-qa` + `vision-device-testing`，界面开发走 `ui-feature-pipeline`，烘焙走 `prefab-bake` | 先做工程体检（Creator 版本 / 框架层身份与版本 / 现有逻辑层骨架），再按迁移等级筛选条目 |
 
 ## 外部技能与总集的关系
 
@@ -98,6 +116,8 @@
 
 - `scripts/validate_skill.ps1` 的结构与多端一致性验证。
 
+- `modules/cocos-project-standards/` 的六件套契约（Stage / System / UI / Event / Data / Config）、五类工程规范与迁移等级读法；其中带 `[CFW]` 标记的条目受 `FRAMEWORK_BOUND_CFW` 约束（换框架即失效），带 `[DADA]` 标记的条目为 `CASE_ONLY_DADAPET`（禁止采用）。工程的构建与真机验收不在本模块，见 `cocos-qa` + `vision-device-testing`。
+
 ## 可迁移的案例提炼模式
 
 | 参考文件 | 范围 | 可迁移内容 | 不可照搬内容 |
@@ -115,6 +135,7 @@
 | `modules/godot-migration-port/SKILL.md`（含 landing-log） | `GENERALIZED_PATTERN` | Unity→Godot 迁移分类、专项参考路由与主流程摘要 | jigsawcard 的资源数量、门槛、坐标、材质/Shader 清单与评估结论 |
 | `modules/godot-migration-port/references/godot-engine-pitfalls.md` | `GENERALIZED_PATTERN` | gl_compatibility 下粒子不渲染、GUI 命中树序、导航演出解耦、生成器排版守护、字体 fallback 行框、OptimizedTranslation 启动成本、内存台阶口径、导出与 ADB 互斥、接缝/位移看门狗 | 无案例字面值（全泛化）；实证出处 jigsawcard |
 | `modules/sdk-replacement/SKILL.md`（含 scripts） | `GENERAL_DEFAULT` + `GENERALIZED_PATTERN` | A/B/C 结果档位、八阶段流程、证据等级与误判表、隔离=切断实际连接非删类、inert-success 与交付层 no-op、URL 参数绕过、Seed 三层门禁、真机三层网络证据链与报告生成 | 具体原厂域名族、appId、证书 SHA、SDK/聚合供应商名、远程包数量和案例结论 |
+| `modules/cocos-project-standards/SKILL.md`（含 13 份 references 与 1 个门禁脚本） | `GENERAL_DEFAULT` + `FRAMEWORK_BOUND_CFW` + `CASE_ONLY_DADAPET` | 工程体检表、双层架构与唯一强制边界（框架层不依赖业务）、启动链路 11 步与四条顺序结论、六件套契约与生命周期时序、门面纪律、`@property` 前缀按组件类型、节点语义命名、事件成对与闭包引用纪律、空数据兜底、Luban 真源准则与两种表布局、嵌套对象不置脏、预制体生成器确定性与绑定声明、图标方形与 `trimType=none`、单一 bundle 判定看 meta、框架文档与代码不一致对照表（9 条）、**承 uuid 替换 prefab 内容与批量改字段的 diff 规模自证**、**跨工程移植的递归依赖挖掘与隐性依赖（工程级共享行为组件）**、**专项 `verify_*` 静态门禁形态与三类断言** | 来源项目的包名、System/Data/表/资源名、目录值、端口与设备信息；DADAPET 的 21 张表与 14 个系统清单；具体脚本名（`gen_excels.py` / `merge-json.js` 等为来源工程值，方法可迁移、命名需重取） |
 
 ## BlockMaster / Block Blast 专属内容
 
@@ -216,6 +237,12 @@
 | `modules/skinning-pipeline/references/obligation-ledger-template.md` | `GENERAL_DEFAULT`：换皮完成定义模板；同上 |
 | `modules/sdk-replacement/references/obligation-ledger-template.md` | `GENERAL_DEFAULT`：SDK 替换完成定义模板；义务行按档位实例化，档位降级走豁免 |
 | `modules/vision-device-testing/references/collection-boundaries.md` | `GENERAL_DEFAULT`：采集负面清单；适用于全部涉及采集的模块 |
+| `modules/hosted-minigame-harvest/references/store-api-contract.md` | `GENERAL_DEFAULT` + `CASE_ONLY_AHA`：端点静态挖掘、错误码驱动的参数爆破、四类端点骨架；AHA 实测契约在附录，字面值不得外借 |
+| `modules/hosted-minigame-harvest/references/harvest-pipeline-and-gates.md` | `GENERAL_DEFAULT`：S0–S5 阶段、素材字段分工、G1–G6 门禁与失败分类；案例数值留在各项目 landing-log |
+| `modules/hosted-minigame-harvest/references/powershell-harvest-pitfalls.md` | `GENERAL_DEFAULT`：PowerShell 5.1 实测六坑（UTF-8 BOM / 别名抢占 / Latin-1 解码 / 批量静默上限 / 混合图片格式 / 静默吞错） |
+| `modules/hosted-minigame-harvest/references/hosted-game-lifecycle.md` | `GENERALIZED_PATTERN`：按已有输入选择采集、拆解、运行、路线与迭代阶段，保留各引擎模块边界 |
+| `modules/hosted-minigame-harvest/references/h5-package-runtime-optimization.md` | `GENERALIZED_PATTERN`：当前磁盘版本保护、包/传输/加载/内存分口径、资源可达性、构建和缓存、输入与低 RAM 验证；跨 H5 引擎重新取证，案例字节、数量、设备和收益只留项目日志 |
+| `modules/hosted-minigame-harvest/references/hosted-h5-restoration.md` | `GENERALIZED_PATTERN` + One Connect 案例专属：资源/参数/UI 实验、关卡与宿主接口、自然交互和证据交接；案例 SID/尺寸/规则不得外借 |
 
 `references/binary-version-diff.md` 同版新增证据等级（显式证据/静态候选/仅推断），范围仍为 `GENERALIZED_PATTERN`。
 
@@ -239,3 +266,24 @@
 | `modules/sdk-replacement/references/seed-copier-generation.md` | `GENERAL_DEFAULT`：参数/布局/标记；桌面测试不代替 Android 验收 |
 
 `references/local-branch-history.md` 只用于旧分支 provenance；安装路径、版本和端口是历史记录，不能当作当前环境事实。
+
+## 8.6.0 Phaser（HTML5 web 引擎）外部资源接入
+
+| 资源 | 范围与边界 |
+|---|---|
+| `modules/engine-identification/SKILL.md` Phaser 指纹行与路由规则 | `GENERAL_DEFAULT`：Phaser 3/4 与 Capacitor/Cordova 打包壳的识别方法与下游分流；版本号以目标构建实测为准，不照搬 3.90.0/4.2.1 字面值 |
+| `references/external-game-skills.md` E-1 phaser4-gamedev | `GENERAL_DEFAULT`（路由）+ 外部技能自持内容：26 个 phaser-* 技能正文与版本以其仓库为准；本 hub 只持来源/克隆位置/更新命令 |
+| `references/external-game-skills.md` E-2 phaserjs/phaser 官方仓库 | `GENERAL_DEFAULT`（路由）：官方 skills/ 与迁移指南为版本源，按需读原文，不复制进本 hub |
+| `references/external-game-skills.md` E-3 Phaser Game Agent MCP | `GENERAL_DEFAULT`（路由与配置方法）：付费云沙箱，接入/调用前须用户确认 token 与预算；云端产出不当作本地构建验收证据 |
+
+Phaser 指纹结论（`VERSION` 字符串）属证据纪律范畴：实测过的 dist 版本记录在模块红线与 E-2，未实测的版本必须重新取证，不得沿用本表字面值。
+
+## 8.7.0 Cocos MCP 第二实现（harady/cocos-creator-mcp）
+
+| 资源 | 范围与边界 |
+|---|---|
+| `modules/cocos-mcp-channel/SKILL.md` §2.1 选型表、§8 接入卡 | `GENERAL_DEFAULT`：双 MCP 实现的选型判据、安装/配置/验证方法；本机路径、commit（a25ebd9）与 BUILD_HASH 是 2026-10-12 实测值，使用时按当前仓库重查 |
+| `D:\skills\cocos-creator-mcp`（git 克隆 + builtin-extensions junction） | 本机安装事实，非技能内容；上游以 harady/cocos-creator-mcp 仓库为版本源，更新走模块第 8 节命令 |
+| 编辑器内激活与端到端连通 | 2026-10-14 DADAPET已验证CDP start-server、/health、MCP握手与工程Resource；完整357+断言回归、重复恢复与长期稳定性仍未验证 |
+
+| `modules/cocos-mcp-channel/references/autonomous-startup.md` | `GENERALIZED_PATTERN`：分层启动与恢复；DADAPET路径、端口、seq与游戏命令为案例字面值。一次续跑不证明全批完成或游戏可玩 |

@@ -1,0 +1,38 @@
+[
+  {
+    "level": 3,
+    "paused": {
+      "pause": 1,
+      "timer": 163,
+      "shown": "none"
+    },
+    "guideContinued": true
+  },
+  {
+    "level": 5,
+    "paused": {
+      "pause": 1,
+      "timer": 130,
+      "shown": "none"
+    },
+    "guideContinued": true
+  },
+  {
+    "level": 7,
+    "paused": {
+      "pause": 1,
+      "timer": 223,
+      "shown": "none"
+    },
+    "guideContinued": true
+  },
+  {
+    "level": 10,
+    "paused": {
+      "pause": 1,
+      "timer": 236,
+      "shown": "none"
+    },
+    "guideContinued": true
+  }
+]

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93083,
+    "apiName":  "Bullet Bros",
+    "targetName":  "Bullet Bros",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Bullet_Bros.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250811/7ea5ac55b230dce5fe19094bcb400858.zip",
+    "bundleMd5":  "7ea5ac55b230dce5fe19094bcb400858",
+    "bundleSize":  5709099,
+    "updatedAt":  1765856543,
+    "gameLink":  "https://www.shyunduangame.com/Bullet_Bros/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93083",
+    "category":  "Shooting",
+    "rate":  9.1,
+    "gameType":  1,
+    "localFile":  "Bullet_Bros.zip",
+    "localBytes":  5709099,
+    "verifiedAt":  "2026-10-20T10:34:25",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

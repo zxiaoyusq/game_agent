@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95111,
+    "apiName":  "Real City Bikes",
+    "targetName":  "Real City Bikes",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Real_City_Bikes.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260605/d1750c3a5194e5ac93fbdab17a1a6eb5.zip",
+    "bundleMd5":  "d1750c3a5194e5ac93fbdab17a1a6eb5",
+    "bundleSize":  29703892,
+    "updatedAt":  1780652077,
+    "gameLink":  "https://www.shanzhih5game.com/Real_City_Bikes/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95111",
+    "category":  "Racing",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Real_City_Bikes.zip",
+    "localBytes":  29703892,
+    "verifiedAt":  "2026-10-20T10:38:16",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

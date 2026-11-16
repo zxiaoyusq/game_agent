@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  77856,
+    "apiName":  "Classic Spider Solitaire",
+    "targetName":  "Classic Spider Solitaire",
+    "match":  "EXACT",
+    "bundleName":  "re_Classic Spider Solitaire.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250417/02144074610.zip",
+    "bundleMd5":  "fecfcda7e7621b4aaad1ca6276f7294d",
+    "bundleSize":  1498445,
+    "updatedAt":  1766160716,
+    "gameLink":  "https://www.lxtgame.com/Classic_Spider_Solitaire/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_77856",
+    "category":  "Card",
+    "rate":  8.7,
+    "gameType":  1,
+    "localFile":  "Classic_Spider_Solitaire.zip",
+    "localBytes":  1498445,
+    "verifiedAt":  "2026-10-20T10:32:56",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

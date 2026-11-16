@@ -1,0 +1,22 @@
+{
+  "status": "静态文件核验通过，非浏览器验收",
+  "asset_count": 61,
+  "total_asset_bytes": 931475,
+  "grid_centers": 76,
+  "camp_slots": 16,
+  "dice_frames": 25,
+  "all_dice_native_dimensions": [
+    220,
+    220
+  ],
+  "attempt": 2,
+  "red_rotation": "静态拟定顺时针90度；尖端与门朝向未完成视觉/运行确认",
+  "visual": "已生成SVG预览；不声明实际浏览器观察通过",
+  "browser": "未执行；当前美术阶段prepare_web_runtime不可用",
+  "audio": "已核对非空及哈希，未解码试听",
+  "preview_paths": [
+    "evidence/board-assembly.svg",
+    "evidence/board-coordinate-overlay.svg",
+    "evidence/dice-timeline.svg"
+  ]
+}

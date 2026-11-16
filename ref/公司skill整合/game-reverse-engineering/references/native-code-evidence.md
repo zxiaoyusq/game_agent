@@ -26,6 +26,7 @@
 - 运行地址为 `runtime_va = load_bias + link_va`。先由进程 maps、匹配的段、页对齐和映射文件偏移求证 load bias；不能把第一个可执行 mapping 起点一概当 bias。自定义匿名加载器需要独立证明映射关系。
 - PE：`preferred_va = ImageBase + rva`；文件偏移由节的 `VirtualAddress` 与 `PointerToRawData` 映射。运行时用当前模块基址加 RVA。节尾零填充和 overlay 不强行转换。
 - ARM32 Thumb 指针位、ARM64 PAC/标签和间接 thunk 必须按当前 ABI 解读；禁止套用别的架构 patch 字节。
+- AArch64 指令固定为 4 字节：反汇编窗口起点必须落在有效的 4 字节指令边界，核对原始字节及邻接分支；未对齐产生的反汇编不能作为常量、地址或行为证据。
 
 离线检查器（不执行目标，也不猜 runtime 地址）：
 
@@ -39,6 +40,9 @@ python "<skill-root>/scripts/native_address_map.py" "<target.dll>" --static-va 0
 ## 从名字到行为
 
 从业务触发动作定位入口 → 字符串/导出/JNI 注册表/元数据 xref → 目标函数及上游调用 → 输入、输出、状态写入与资源依赖。把库函数和编译器生成代码从业务分析中剥离，记录间接调用和未覆盖路径。
+
+- 线性调用图出现调用边，只证明某条代码路径包含调用；须读取调用点的分支条件，不能推断每次触发都调用。线性调用者为零也不能排除虚表、委托或反射。
+- metadata 字段声明索引不是实例偏移；按匹配构建的 IL2CPP 字段偏移表及 ELF 重定位核对字段、对象身份和偏移。相同偏移或相似名称不证明属于同一对象或绑定同一配置。
 
 动态采样默认观察：参数/返回值、线程、模块相对地址、触发动作、调用序列。先确认 host/server/Gadget 版本与 ABI、spawn/attach 时机、Java VM/目标模块就绪；新 API 用当前版本官方文档，历史 `--no-pause` 或全局 `Module.*` 调用不是通用模板。不要在尚未确认签名的指针上随意调用函数。
 

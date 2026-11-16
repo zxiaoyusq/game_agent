@@ -1,0 +1,1173 @@
+{
+  "scope": "non-gameplay UI and environment seed palette, not a cap on rendered colors",
+  "roles": [
+    "commercial UI",
+    "main gameplay controls and icons",
+    "UI panels",
+    "background"
+  ],
+  "schemes": [
+    {
+      "id": "SA01",
+      "region": "SA",
+      "name": "暖陶玫彩绘",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#E4255E",
+          "colors": [
+            "#E4255E"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#BB7335",
+          "colors": [
+            "#BB7335",
+            "#C25173"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#EDDFD9",
+          "colors": [
+            "#EDDFD9",
+            "#B0816D"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#D3C2BB",
+          "colors": [
+            "#D3C2BB",
+            "#DDD2CF"
+          ]
+        }
+      ],
+      "note": "暖陶/玫粉/姜黄；本轮主方案",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#E4255E",
+          "hsl": [
+            342,
+            78,
+            52
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#BB7335",
+          "hsl": [
+            28,
+            56,
+            47
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#C25173",
+          "hsl": [
+            342,
+            48,
+            54
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#EDDFD9",
+          "hsl": [
+            18,
+            35,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#B0816D",
+          "hsl": [
+            18,
+            30,
+            56
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#D3C2BB",
+          "hsl": [
+            18,
+            22,
+            78
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#DDD2CF",
+          "hsl": [
+            10,
+            17,
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SA02",
+      "region": "SA",
+      "name": "玫瑰织物",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#E5432A",
+          "colors": [
+            "#E5432A"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#AE3773",
+          "colors": [
+            "#AE3773",
+            "#B37142"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#EDD9DE",
+          "colors": [
+            "#EDD9DE",
+            "#B06D7E"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#D3BBC1",
+          "colors": [
+            "#D3BBC1",
+            "#DDCFD5"
+          ]
+        }
+      ],
+      "note": "暖玫瑰底，珊瑚重点与莓色按钮",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#E5432A",
+          "hsl": [
+            8,
+            78,
+            53
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#AE3773",
+          "hsl": [
+            330,
+            52,
+            45
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#B37142",
+          "hsl": [
+            25,
+            46,
+            48
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#EDD9DE",
+          "hsl": [
+            345,
+            35,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#B06D7E",
+          "hsl": [
+            345,
+            30,
+            56
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#D3BBC1",
+          "hsl": [
+            345,
+            22,
+            78
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#DDCFD5",
+          "hsl": [
+            337,
+            17,
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SA03",
+      "region": "SA",
+      "name": "藏红花市集",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#DC1E3E",
+          "colors": [
+            "#DC1E3E"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#B17D35",
+          "colors": [
+            "#B17D35",
+            "#B95141"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#EDE6D9",
+          "colors": [
+            "#EDE6D9",
+            "#B0986D"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#D3CABB",
+          "colors": [
+            "#D3CABB",
+            "#DDD6CF"
+          ]
+        }
+      ],
+      "note": "暖沙杏底，藏红花与朱红重点",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#DC1E3E",
+          "hsl": [
+            350,
+            76,
+            49
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#B17D35",
+          "hsl": [
+            35,
+            54,
+            45
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#B95141",
+          "hsl": [
+            8,
+            48,
+            49
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#EDE6D9",
+          "hsl": [
+            38,
+            35,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#B0986D",
+          "hsl": [
+            38,
+            30,
+            56
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#D3CABB",
+          "hsl": [
+            38,
+            22,
+            78
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#DDD6CF",
+          "hsl": [
+            30,
+            17,
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NG01",
+      "region": "NG",
+      "name": "深绿暖白",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#12BA69",
+          "colors": [
+            "#12BA69"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#257E52",
+          "colors": [
+            "#257E52",
+            "#2B7D6A"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#DBEBE3",
+          "colors": [
+            "#DBEBE3",
+            "#4F9270"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#293D33",
+          "colors": [
+            "#293D33",
+            "#354B43"
+          ]
+        }
+      ],
+      "note": "深绿/暖白关联；本轮主方案",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#12BA69",
+          "hsl": [
+            151,
+            82,
+            40
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#257E52",
+          "hsl": [
+            150,
+            55,
+            32
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#2B7D6A",
+          "hsl": [
+            166,
+            49,
+            33
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#DBEBE3",
+          "hsl": [
+            150,
+            30,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#4F9270",
+          "hsl": [
+            150,
+            30,
+            44
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#293D33",
+          "hsl": [
+            150,
+            19,
+            20
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#354B43",
+          "hsl": [
+            160,
+            17,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NG02",
+      "region": "NG",
+      "name": "森林与黄铜",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#DCA218",
+          "colors": [
+            "#DCA218"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#267D53",
+          "colors": [
+            "#267D53",
+            "#6E8230"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#DBEBE2",
+          "colors": [
+            "#DBEBE2",
+            "#4F926B"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#293D31",
+          "colors": [
+            "#293D31",
+            "#354B42"
+          ]
+        }
+      ],
+      "note": "深森林绿底，黄铜重点与绿按钮",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#DCA218",
+          "hsl": [
+            42,
+            80,
+            48
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#267D53",
+          "hsl": [
+            151,
+            53,
+            32
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#6E8230",
+          "hsl": [
+            75,
+            46,
+            35
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#DBEBE2",
+          "hsl": [
+            145,
+            30,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#4F926B",
+          "hsl": [
+            145,
+            30,
+            44
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#293D31",
+          "hsl": [
+            145,
+            19,
+            20
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#354B42",
+          "hsl": [
+            155,
+            17,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NG03",
+      "region": "NG",
+      "name": "青柠夜绿",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#96CE1C",
+          "colors": [
+            "#96CE1C"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#277748",
+          "colors": [
+            "#277748",
+            "#2A6F63"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#DBEBE5",
+          "colors": [
+            "#DBEBE5",
+            "#4F9277"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#293D35",
+          "colors": [
+            "#293D35",
+            "#354B46"
+          ]
+        }
+      ],
+      "note": "夜绿底，少量青柠重点",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#96CE1C",
+          "hsl": [
+            79,
+            76,
+            46
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#277748",
+          "hsl": [
+            145,
+            51,
+            31
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#2A6F63",
+          "hsl": [
+            170,
+            45,
+            30
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#DBEBE5",
+          "hsl": [
+            156,
+            30,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#4F9277",
+          "hsl": [
+            156,
+            30,
+            44
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#293D35",
+          "hsl": [
+            156,
+            19,
+            20
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#354B46",
+          "hsl": [
+            166,
+            17,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PH01",
+      "region": "SEA_PH",
+      "name": "海蓝珊瑚",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#E85E30",
+          "colors": [
+            "#E85E30"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#318EAF",
+          "colors": [
+            "#318EAF",
+            "#4770C2"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#D9E7ED",
+          "colors": [
+            "#D9E7ED",
+            "#6D9BB0"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#C7D5DB",
+          "colors": [
+            "#C7D5DB",
+            "#D8E1E3"
+          ]
+        }
+      ],
+      "note": "海蓝/沙白/珊瑚；本轮主方案",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#E85E30",
+          "hsl": [
+            15,
+            80,
+            55
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#318EAF",
+          "hsl": [
+            196,
+            56,
+            44
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#4770C2",
+          "hsl": [
+            220,
+            50,
+            52
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#D9E7ED",
+          "hsl": [
+            199,
+            35,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#6D9BB0",
+          "hsl": [
+            199,
+            30,
+            56
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#C7D5DB",
+          "hsl": [
+            199,
+            22,
+            82
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#D8E1E3",
+          "hsl": [
+            191,
+            17,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PH02",
+      "region": "SEA_PH",
+      "name": "海风与番石榴",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#E43A78",
+          "colors": [
+            "#E43A78"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#3A82B6",
+          "colors": [
+            "#3A82B6",
+            "#3B98A0"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#D9E2ED",
+          "colors": [
+            "#D9E2ED",
+            "#6D8DB0"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#C7D0DB",
+          "colors": [
+            "#C7D0DB",
+            "#D8DFE3"
+          ]
+        }
+      ],
+      "note": "雾蓝底，番石榴粉重点与海蓝按钮",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#E43A78",
+          "hsl": [
+            338,
+            76,
+            56
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#3A82B6",
+          "hsl": [
+            205,
+            52,
+            47
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#3B98A0",
+          "hsl": [
+            185,
+            46,
+            43
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#D9E2ED",
+          "hsl": [
+            212,
+            35,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#6D8DB0",
+          "hsl": [
+            212,
+            30,
+            56
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#C7D0DB",
+          "hsl": [
+            212,
+            22,
+            82
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#D8DFE3",
+          "hsl": [
+            204,
+            17,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PH03",
+      "region": "SEA_PH",
+      "name": "浅海与日光",
+      "levels": [
+        {
+          "level": 1,
+          "hex": "#E19819",
+          "colors": [
+            "#E19819"
+          ]
+        },
+        {
+          "level": 2,
+          "hex": "#2F8B9D",
+          "colors": [
+            "#2F8B9D",
+            "#426FBD"
+          ]
+        },
+        {
+          "level": 3,
+          "hex": "#D9EAED",
+          "colors": [
+            "#D9EAED",
+            "#6DA9B0"
+          ]
+        },
+        {
+          "level": 4,
+          "hex": "#C7D9DB",
+          "colors": [
+            "#C7D9DB",
+            "#D8E3E3"
+          ]
+        }
+      ],
+      "note": "冷浅海底，日光黄重点与青蓝按钮",
+      "foreground": "#F9F5E9",
+      "neutral_board": "#F6F0E3",
+      "text_dark": "#26332E",
+      "control_family": {
+        "base": "L2_support",
+        "icon_primary": "neutral_light",
+        "icon_accent": "L2_primary",
+        "container": "L3_panel",
+        "frame": "L3_frame",
+        "scope": "UI controls, not board objects; tier1 only actual monetization"
+      },
+      "seed_colors": [
+        {
+          "id": "L1_commercial",
+          "level": 1,
+          "role": "商业化强调",
+          "hex": "#E19819",
+          "hsl": [
+            38,
+            80,
+            49
+          ]
+        },
+        {
+          "id": "L2_primary",
+          "level": 2,
+          "role": "主交互主色",
+          "hex": "#2F8B9D",
+          "hsl": [
+            190,
+            54,
+            40
+          ]
+        },
+        {
+          "id": "L2_support",
+          "level": 2,
+          "role": "主交互辅色",
+          "hex": "#426FBD",
+          "hsl": [
+            218,
+            48,
+            50
+          ]
+        },
+        {
+          "id": "L3_panel",
+          "level": 3,
+          "role": "UI底板",
+          "hex": "#D9EAED",
+          "hsl": [
+            187,
+            35,
+            89
+          ]
+        },
+        {
+          "id": "L3_frame",
+          "level": 3,
+          "role": "UI框架/色层",
+          "hex": "#6DA9B0",
+          "hsl": [
+            187,
+            30,
+            56
+          ]
+        },
+        {
+          "id": "L4_background",
+          "level": 4,
+          "role": "背景基调",
+          "hex": "#C7D9DB",
+          "hsl": [
+            187,
+            22,
+            82
+          ]
+        },
+        {
+          "id": "L4_related",
+          "level": 4,
+          "role": "背景近似色",
+          "hex": "#D8E3E3",
+          "hsl": [
+            179,
+            17,
+            87
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "seven-seeds-four-visual-tiers"
+}

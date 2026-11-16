@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const context={module:{exports:{}}};vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/star_progress_candidate.js','utf8'),context);const stars=context.module.exports;
+const data=new Map(),storage={getItem:k=>data.has(k)?data.get(k):null,setItem:(k,v)=>data.set(k,v)};
+assert.equal(Object.hasOwn(stars.load(storage).levels,'5'),false,'unplayed level is unknown');
+assert.equal(JSON.stringify(stars.record(storage,5,0)),JSON.stringify({previous:0,best:0,bestIncrease:0}));
+assert.equal(Object.hasOwn(stars.load(storage).levels,'5'),true,'a confirmed zero-star result is recorded');
+assert.equal(stars.load(storage).levels['5'],0);
+assert.equal(JSON.stringify(stars.record(storage,5,2)),JSON.stringify({previous:0,best:2,bestIncrease:2}));
+assert.equal(JSON.stringify(stars.record(storage,5,0)),JSON.stringify({previous:2,best:2,bestIncrease:0}));
+assert.equal(stars.total(storage),2);console.log('unknown and confirmed zero-star results remain distinct PASS');

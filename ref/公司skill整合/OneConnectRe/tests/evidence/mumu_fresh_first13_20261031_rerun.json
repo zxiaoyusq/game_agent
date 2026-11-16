@@ -1,0 +1,10 @@
+{
+  "result": {
+    "progress": 13,
+    "level": 13,
+    "tiles": 72,
+    "timer": 300,
+    "errors": []
+  },
+  "firstTwelveEvidence": "result-first12.json"
+}

@@ -1,0 +1,105 @@
+{
+  "scope": "MuMu isolated WebView; progress and tutorials reset; hammer inventory carried over; 1-12 natural clicks; 13 original fallback",
+  "device": "127.0.0.1:16448",
+  "base_revision": "e49361cfe65222832c2e4fda5c1e20190355eba3",
+  "board_hooks_sha256": "c08bd83c432b0db87fbd8ad992239366734afc7417e2b516488950391c404606",
+  "stages": {
+    "result.json": {
+      "result": {
+        "progress": 3,
+        "level": 3,
+        "tiles": 40,
+        "errors": []
+      },
+      "firstTutorial": "completed",
+      "thirdTutorial": "completed",
+      "timerPaused": true
+    },
+    "result-first6.json": {
+      "final": {
+        "progress": 6,
+        "level": 6,
+        "tiles": 24,
+        "errors": []
+      },
+      "firstTutorial": "completed",
+      "thirdTutorial": "completed",
+      "fifthTutorial": "completed"
+    },
+    "result-first7.json": {
+      "result": {
+        "progress": 7,
+        "level": 7,
+        "tiles": 40,
+        "hammer": 1,
+        "errors": []
+      },
+      "firstSixEvidence": "result-first6.json",
+      "seventhTutorial": "completed",
+      "timerPaused": true
+    },
+    "result-first8.json": {
+      "result": {
+        "progress": 8,
+        "level": 8,
+        "tiles": 32,
+        "timer": 196,
+        "errors": []
+      },
+      "firstSevenEvidence": "result-first7.json"
+    },
+    "result-first9.json": {
+      "result": {
+        "progress": 9,
+        "level": 9,
+        "tiles": 40,
+        "timer": 210,
+        "errors": []
+      },
+      "firstEightEvidence": "result-first8.json"
+    },
+    "result-first10.json": {
+      "result": {
+        "progress": 10,
+        "level": 10,
+        "tiles": 48,
+        "shuffle": 6,
+        "errors": []
+      },
+      "firstNineEvidence": "result-first9.json",
+      "tenthTutorial": "completed"
+    },
+    "result-first11.json": {
+      "result": {
+        "progress": 11,
+        "level": 11,
+        "tiles": 32,
+        "timer": 168,
+        "errors": []
+      },
+      "firstTenEvidence": "result-first10.json",
+      "tenthStaticCandidate": true
+    },
+    "result-first12.json": {
+      "result": {
+        "progress": 12,
+        "level": 12,
+        "tiles": 40,
+        "timer": 130,
+        "errors": []
+      },
+      "firstElevenEvidence": "result-first11.json"
+    },
+    "result-first13.json": {
+      "result": {
+        "progress": 13,
+        "level": 13,
+        "tiles": 72,
+        "timer": 300,
+        "errors": []
+      },
+      "firstTwelveEvidence": "result-first12.json"
+    }
+  },
+  "note": "Tested file differs from final source only by a subsequent comment edit."
+}

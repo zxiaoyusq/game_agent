@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import tempfile
 import unittest
+import json
+import hashlib
+import shutil
 from pathlib import Path
 from unittest.mock import patch
 
@@ -12,7 +15,9 @@ from fastapi.testclient import TestClient
 
 from app.api.routes.knowledge import router
 from app.services import knowledge
-from app.services.skill_library import import_skill_library, sync_skill_revision
+from app.services.skill_library import (import_skill_library, sync_skill_revision,
+    plan_company_skill_sync, apply_company_skill_sync, LEGACY_REVERSE_SUMMARY,
+    LEGACY_SKILL_DESCRIPTIONS, SKILL_DESCRIPTIONS)
 
 
 class SkillLibraryTests(unittest.TestCase):
@@ -55,9 +60,11 @@ class SkillLibraryTests(unittest.TestCase):
         expected = {}
         for source_root in (project_root / "skills", project_root / "ref" / "公司skill整合"):
             for source in source_root.iterdir():
+                if source.is_symlink() or source.name.startswith("."):
+                    continue
                 if source.is_dir() and (source / "SKILL.md").is_file():
                     for path in source.rglob("*"):
-                        if path.is_file():
+                        if path.is_file() and not path.is_symlink() and not any(part.startswith(".") or part in {"__pycache__", "node_modules"} for part in path.relative_to(source).parts):
                             expected[Path(source.name) / path.relative_to(source)] = path
                 elif source.is_file() and source_root.name == "公司skill整合":
                     expected[Path("公司资料") / source.name] = source
@@ -186,6 +193,232 @@ class SkillLibraryTests(unittest.TestCase):
         self.assertEqual(self.client.post("/api/knowledge/skill/docs/folders", json={"path": eight_levels + "/level8"}).status_code, 400)
         self.assertEqual(self.client.get("/api/knowledge/art/docs/items", params={"folder": "a/b/c/d/e"}).status_code, 400)
         self.assertEqual(self.client.delete("/api/knowledge/skill/docs/folders", params={"path": eight_levels}).status_code, 200)
+
+    def _company_fixture(self):
+        """两个普通文件即可验证真实复制、覆盖及二进制备份，不执行源脚本。"""
+        root = self.root / "project"
+        package = root / "ref" / "公司skill整合" / "sample-skill"
+        (package / "references").mkdir(parents=True)
+        (package / "SKILL.md").write_text("---\nname: sample-skill\ndescription: 示例能力\n---\n# 第一版\n", encoding="utf-8")
+        (package / "references" / "image.bin").write_bytes(b"\x00\xff\x01")
+        return root, package
+
+    def test_source_sync_plan_is_read_only_and_apply_is_idempotent(self):
+        root, package = self._company_fixture()
+        (package.parent / ".gitignore").write_text("机密配置文件名")
+        (package / ".cache").mkdir()
+        (package / ".cache" / "ignored.txt").write_text("缓存")
+        (package.parent / "AHAgames").mkdir()
+        (package.parent / "AHAgames" / "gameInfo.json").write_text("{}")
+        plan = plan_company_skill_sync(root)
+        self.assertFalse(self.knowledge_root.exists())
+        self.assertEqual(plan["counts"]["added"], 2)
+        self.assertFalse(any("AHAgames" in item["path"] or ".cache" in item["path"] or ".gitignore" in item["path"] for item in plan["files"]))
+        result = apply_company_skill_sync("明确同步示例来源", plan["digest"], root)
+        self.assertEqual(result["summary"]["files"], 2)
+        archive = self.knowledge_root / "skill/docs" / result["backup_path"]
+        self.assertEqual(json.loads((archive / "manifest.json").read_text())["status"], "completed")
+        repeated = plan_company_skill_sync(root)
+        self.assertEqual(repeated["counts"]["unchanged"], 2)
+        self.assertIsNone(apply_company_skill_sync("重复核对", repeated["digest"], root)["operation_id"])
+        self.assertEqual(len(list(archive.parent.iterdir())), 1)
+
+    def test_source_sync_updates_binary_and_preserves_user_metadata(self):
+        root, package = self._company_fixture()
+        import_skill_library(root)
+        items = knowledge.list_items("skill", "docs")
+        main = next(item for item in items if item.filename == "SKILL.md")
+        main.title, main.summary, main.tags = "我的名称", "我的摘要", ["自定义"]
+        folders = knowledge.list_folders("skill", "docs")
+        folder = next(item for item in folders if item.path == "sample-skill")
+        folder.desc = "用户目录描述"
+        knowledge._write_index("skill", "docs", items, folders)
+        target = knowledge.get_raw_path("skill", "docs", main.id)
+        previous = "用户编辑后的正文\r\n".encode()
+        target.write_bytes(previous)
+        (package / "SKILL.md").write_text("# 来源第二版\n", encoding="utf-8")
+        (package / "references/image.bin").write_bytes(b"\x00\xfe\x02")
+        (package / "references/new.md").write_text("新参考", encoding="utf-8")
+        plan = plan_company_skill_sync(root)
+        self.assertEqual((plan["counts"]["added"], plan["counts"]["updated"]), (1, 2))
+        result = apply_company_skill_sync("用户明确要求按新来源同步", plan["digest"], root)
+        archive = self.knowledge_root / "skill/docs" / result["backup_path"]
+        self.assertEqual((archive / "previous/sample-skill/SKILL.md").read_bytes(), previous)
+        self.assertEqual((archive / "previous/sample-skill/references/image.bin").read_bytes(), b"\x00\xff\x01")
+        self.assertEqual(target.read_bytes(), (package / "SKILL.md").read_bytes())
+        refreshed = knowledge.get_item("skill", "docs", main.id)
+        self.assertEqual((refreshed.id, refreshed.title, refreshed.summary, refreshed.tags), (main.id, main.title, main.summary, main.tags))
+        self.assertEqual(knowledge.get_folder("skill", "docs", "sample-skill").desc, "用户目录描述")
+        record = json.loads((archive / "manifest.json").read_text())
+        entry = next(item for item in record["files"] if item["path"] == "sample-skill/SKILL.md")
+        self.assertEqual(entry["target_sha256"], hashlib.sha256(previous).hexdigest())
+        self.assertFalse(any(item.folder.startswith(".skill-source-sync") for item in knowledge.list_items("skill", "docs")))
+
+    def test_new_capability_labels_replace_only_known_generated_metadata(self):
+        """旧采集标签升级为全生命周期说明，但手动编辑过的字段必须保留。"""
+        root, package = self._company_fixture()
+        for name in LEGACY_SKILL_DESCRIPTIONS:
+            path = package / "modules" / name / "SKILL.md"
+            path.parent.mkdir(parents=True)
+            path.write_text(f"---\nname: {name}\ndescription: 示例\n---\n初版")
+        import_skill_library(root)
+        items = knowledge.list_items("skill", "docs")
+        folders = knowledge.list_folders("skill", "docs")
+        for item in items:
+            name = Path(item.folder).name
+            if item.filename == "SKILL.md" and name in LEGACY_SKILL_DESCRIPTIONS:
+                item.title, item.summary = LEGACY_SKILL_DESCRIPTIONS[name]
+                if name == "h5-canvas-reskin":
+                    item.title = "用户自定换皮名称"
+                (package / "modules" / name / "SKILL.md").write_text("# 新版规范")
+        for folder in folders:
+            name = Path(folder.path).name
+            if name in LEGACY_SKILL_DESCRIPTIONS:
+                title, summary = LEGACY_SKILL_DESCRIPTIONS[name]
+                folder.desc = f"{title}：{summary}" if name == "hosted-minigame-harvest" else "用户的说明"
+        knowledge._write_index("skill", "docs", items, folders)
+        plan = plan_company_skill_sync(root)
+        apply_company_skill_sync("按公司新能力同步", plan["digest"], root)
+        items = knowledge.list_items("skill", "docs")
+        harvest = next(item for item in items if item.folder.endswith("hosted-minigame-harvest"))
+        reskin = next(item for item in items if item.folder.endswith("h5-canvas-reskin"))
+        self.assertEqual((harvest.title, harvest.summary), SKILL_DESCRIPTIONS["hosted-minigame-harvest"])
+        self.assertEqual(reskin.title, "用户自定换皮名称")
+        self.assertEqual(knowledge.get_folder("skill", "docs", reskin.folder).desc, "用户的说明")
+
+    def test_source_sync_rejects_stale_source_target_and_index(self):
+        root, package = self._company_fixture()
+        import_skill_library(root)
+        for changed in [package / "SKILL.md", self.knowledge_root / "skill/docs/sample-skill/SKILL.md", self.knowledge_root / "skill/docs/index.json"]:
+            plan = plan_company_skill_sync(root)
+            changed.write_bytes(changed.read_bytes() + b"\n")
+            with self.assertRaisesRegex(ValueError, "计划已过期"):
+                apply_company_skill_sync("过期计划不能覆盖", plan["digest"], root)
+        self.assertFalse((self.knowledge_root / "skill/docs/.skill-source-sync").exists())
+
+    def test_source_sync_preserves_deleted_files_and_folders(self):
+        root, package = self._company_fixture()
+        import_skill_library(root)
+        base = self.knowledge_root / "skill/docs/sample-skill"
+        (base / "SKILL.md").unlink()
+        shutil.rmtree(base / "references")
+        (package / "references/new.md").write_text("删除目录中的新增来源", encoding="utf-8")
+        plan = plan_company_skill_sync(root)
+        self.assertEqual(plan["counts"]["deleted_skipped"], 3)
+        apply_company_skill_sync("尊重删除", plan["digest"], root)
+        self.assertFalse((base / "SKILL.md").exists())
+        self.assertFalse((base / "references").exists())
+        import_skill_library(root)
+        self.assertFalse((base / "references").exists())
+
+    def test_source_sync_reports_links_and_source_collisions_without_writing(self):
+        root, package = self._company_fixture()
+        local = root / "skills/sample-skill"
+        local.mkdir(parents=True)
+        (local / "SKILL.md").write_text("# 工程维护版", encoding="utf-8")
+        plan = plan_company_skill_sync(root)
+        self.assertEqual(plan["counts"]["conflicts"], 2)
+        with self.assertRaisesRegex(ValueError, "来源或路径冲突"):
+            apply_company_skill_sync("同名来源禁止混写", plan["digest"], root)
+        self.assertFalse(self.knowledge_root.exists())
+        import_skill_library(root)
+        self.assertEqual((self.knowledge_root / "skill/docs/sample-skill/SKILL.md").read_text(), "# 工程维护版")
+        self.assertFalse((self.knowledge_root / "skill/docs/sample-skill/references").exists())
+        shutil.rmtree(local)
+        (package / "references/linked.md").symlink_to(package / "SKILL.md")
+        (package / "linked-dir").symlink_to(package / "references", target_is_directory=True)
+        plan = plan_company_skill_sync(root)
+        linked = [item for item in plan["files"] if "linked" in item["path"]]
+        self.assertEqual(len(linked), 2)
+        self.assertTrue(all(item["status"] == "conflicts" and item["source_sha256"] is None for item in linked))
+        target = self.knowledge_root / "skill/docs/sample-skill/SKILL.md"
+        target.unlink()
+        target.symlink_to(package / "SKILL.md")
+        self.assertTrue(any(item["path"] == "sample-skill/SKILL.md" and item["status"] == "conflicts" for item in plan_company_skill_sync(root)["files"]))
+
+    def test_explicit_source_sync_also_updates_project_skills(self):
+        root, _ = self._company_fixture()
+        package = root / "skills/local-production"
+        package.mkdir(parents=True)
+        (package / "SKILL.md").write_text("# 本地旧版", encoding="utf-8")
+        import_skill_library(root)
+        (package / "SKILL.md").write_text("# 本地新版", encoding="utf-8")
+        plan = plan_company_skill_sync(root)
+        entry = next(item for item in plan["files"] if item["path"] == "local-production/SKILL.md")
+        self.assertEqual((entry["origin"], entry["status"]), ("工程已有", "updated"))
+        result = apply_company_skill_sync("当前任务维护工程技能", plan["digest"], root)
+        self.assertEqual((self.knowledge_root / "skill/docs/local-production/SKILL.md").read_text(), "# 本地新版")
+        self.assertEqual((self.knowledge_root / "skill/docs" / result["backup_path"] / "previous/local-production/SKILL.md").read_text(), "# 本地旧版")
+
+    def test_sync_rejects_symlinks_above_source_and_knowledge_roots(self):
+        """根目录外层的链接不能通过 resolve 被静默当作可信来源或写入位置。"""
+        root, _ = self._company_fixture()
+        alias = self.root / "alias"
+        alias.symlink_to(self.root, target_is_directory=True)
+        with self.assertRaisesRegex(ValueError, "父级不能使用符号链接"):
+            plan_company_skill_sync(alias / "project")
+        with self.assertRaisesRegex(ValueError, "父级不能使用符号链接"):
+            import_skill_library(alias / "project")
+        with patch.object(knowledge, "KNOWLEDGE_DIR", alias / "knowledge"):
+            with self.assertRaisesRegex(ValueError, "父级不能使用符号链接"):
+                plan_company_skill_sync(root)
+            with self.assertRaisesRegex(ValueError, "父级不能使用符号链接"):
+                import_skill_library(root)
+        self.assertFalse((self.knowledge_root / "skill/docs/sample-skill").exists())
+
+    def test_source_sync_does_not_read_linked_display_configuration(self):
+        """用户副本中的可选展示配置链接不能把外部内容带入新增条目的标签。"""
+        root, package = self._company_fixture()
+        import_skill_library(root)
+        outside = self.root / "outside"
+        outside.mkdir()
+        (outside / "openai.yaml").write_text("interface:\n  display_name: 外部哨兵名称\n", encoding="utf-8")
+        (self.knowledge_root / "skill/docs/sample-skill/agents").symlink_to(outside, target_is_directory=True)
+        (package / "new.md").write_text("新增文档", encoding="utf-8")
+        plan = plan_company_skill_sync(root)
+        apply_company_skill_sync("同步新增文档", plan["digest"], root)
+        new_item = next(item for item in knowledge.list_items("skill", "docs") if item.filename == "new.md")
+        self.assertNotIn("外部哨兵名称", new_item.tags)
+        self.assertIn("sample-skill", new_item.tags)
+
+    def test_source_sync_refreshes_only_known_generated_descriptions(self):
+        root, package = self._company_fixture()
+        original = package.parent / "game-reverse-engineering"
+        package.rename(original)
+        import_skill_library(root)
+        items = knowledge.list_items("skill", "docs")
+        main = next(item for item in items if item.filename == "SKILL.md")
+        main.summary = LEGACY_REVERSE_SUMMARY
+        main.title = "用户保留的主入口名称"
+        folders = knowledge.list_folders("skill", "docs")
+        next(item for item in folders if item.path == "game-reverse-engineering").desc = "用户自定义目录描述"
+        knowledge._write_index("skill", "docs", items, folders)
+        (original / "SKILL.md").write_text("# 新公司规范", encoding="utf-8")
+        plan = plan_company_skill_sync(root)
+        apply_company_skill_sync("更新旧自动模块说明", plan["digest"], root)
+        self.assertNotIn("16 个", knowledge.get_item("skill", "docs", main.id).summary)
+        self.assertEqual(knowledge.get_item("skill", "docs", main.id).title, "用户保留的主入口名称")
+        self.assertEqual(knowledge.get_folder("skill", "docs", "game-reverse-engineering").desc, "用户自定义目录描述")
+
+    def test_source_sync_api_returns_preview_and_conflict_for_stale_digest(self):
+        from app.api.routes.workflow import router as workflow_router
+        root, package = self._company_fixture()
+        app = FastAPI()
+        app.include_router(workflow_router, prefix="/api")
+        with TestClient(app) as client, \
+             patch("app.services.skill_library.plan_company_skill_sync", side_effect=lambda project_root=None: plan_company_skill_sync(root)), \
+             patch("app.services.skill_library.apply_company_skill_sync", side_effect=lambda reason, expected_digest: apply_company_skill_sync(reason, expected_digest, root)):
+            preview = client.get("/api/workflow/skills/source-sync")
+            self.assertEqual(preview.status_code, 200)
+            self.assertFalse(self.knowledge_root.exists())
+            digest = preview.json()["digest"]
+            (package / "SKILL.md").write_text("# 查看后发生变化", encoding="utf-8")
+            response = client.post("/api/workflow/skills/source-sync", json={"reason": "同步变动", "expected_digest": digest})
+            self.assertEqual(response.status_code, 409)
+            digest = client.get("/api/workflow/skills/source-sync").json()["digest"]
+            response = client.post("/api/workflow/skills/source-sync", json={"reason": "同步当前变动", "expected_digest": digest})
+            self.assertEqual(response.status_code, 200)
+            self.assertTrue(response.json()["operation_id"])
 
 
 if __name__ == "__main__":

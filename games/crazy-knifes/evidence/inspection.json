@@ -1,0 +1,45 @@
+{
+  "id": "crazy-knifes",
+  "frames": [
+    {
+      "url": "http://127.0.0.1:24681/api/produced-games/crazy-knifes/play/index.html",
+      "state": {
+        "title": "疯狂飞刀 · Crazy Knifes",
+        "text": "",
+        "canvas": 0,
+        "playcanvas": false,
+        "game": false,
+        "gameKeys": [],
+        "globals": [
+          "CrazyKnifesAhaHost"
+        ]
+      }
+    },
+    {
+      "url": "http://127.0.0.1:24681/api/produced-games/crazy-knifes/play/game/index.html",
+      "state": {
+        "title": "Crazy Knifes",
+        "text": "TUTORIAL\nBONUS IN 3\nGOAL: FINISH THE TUTORIAL\nGO!",
+        "canvas": 1,
+        "pc": "1.69.2",
+        "playcanvas": true,
+        "game": false,
+        "gameKeys": [],
+        "globals": [
+          "CrazyKnifesAhaHandler",
+          "CrazyKnifesAhaClient",
+          "CrazyKnifesEngagementHUD",
+          "CrazyKnifesI18n",
+          "CrazyKnifesLevels",
+          "CrazyKnifesModelBuffers",
+          "CrazyKnifesQualityController",
+          "CrazyKnifesRenderRecovery",
+          "CrazyKnifesPerformance"
+        ]
+      }
+    }
+  ],
+  "remote": [],
+  "errors": [],
+  "missing": []
+}

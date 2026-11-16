@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const context={module:{exports:{}},Number,Math,RangeError};
+vm.runInNewContext(fs.readFileSync('tools/board_fit_candidate.js','utf8'),context);
+const fit=context.module.exports.cellSize;
+assert.equal(fit(700,1000,5,6,200),140);
+assert.equal(fit(700,1000,7,9,200),100);
+assert.equal(fit(700,1000,5,6,90),90);
+assert.equal(fit(351,615,7,12,200),50);
+assert.throws(()=>fit(700,1000,0,6,200));
+console.log('reference board-fit formula and explicit cap PASS');

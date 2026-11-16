@@ -1,0 +1,77 @@
+{
+  "review_date": "2026-11-04",
+  "note": "用户上传材料原文快照，仅作接口证据；未运行附件脚本或访问样例生产广告。",
+  "archives": [
+    {
+      "filename": "Solitaire Klondike Classic.zip",
+      "sha256": "d9bf632044eef736ef114e04af0e954ea0d2d638caa69c87486b973e7de3364f",
+      "files": [
+        {
+          "member": "index.html",
+          "snapshot": "sources/solitaire-shell.html.txt",
+          "sha256": "c2024bae8e8402fe6ab242472fb9f19a3c2ef500adc6189f291b8a7e72733e0f"
+        },
+        {
+          "member": "game/index.js",
+          "snapshot": "sources/solitaire-game.js.txt",
+          "sha256": "3d00b2a2dedf637c8005d977e722176e5e4edf2b98d6de9b2ccf1f52c55914c8"
+        },
+        {
+          "member": "game/index.html",
+          "snapshot": "sources/solitaire-game.html.txt",
+          "sha256": "13fbe3c52cfdf8075db1898739ef493345473b65f74e770c4fcb1dc90e59a8e1"
+        },
+        {
+          "member": "readme.md",
+          "snapshot": "sources/solitaire-readme.md.txt",
+          "sha256": "97fbd5240cb3677d14c7b1ce8ec8cee549ebec2d323da9c4776d31dfe0b0bdcd"
+        }
+      ],
+      "member_count": 5
+    },
+    {
+      "filename": "template.zip",
+      "sha256": "15741c25fa4526c513afd4cac31c0416da6e96284e0e6a172177117f995ff3d1",
+      "files": [
+        {
+          "member": "template/index.html",
+          "snapshot": "sources/template-shell.html.txt",
+          "sha256": "345fb79f5e94043fcb473b678cf22a61b047e834da45c23aced80f2424392722"
+        },
+        {
+          "member": "template/index(2).html",
+          "snapshot": "sources/template-shell-2.html.txt",
+          "sha256": "360aac2f74b96888d098d3a861607eaedbdebf7a7cbcd929f36c9c875212082e"
+        },
+        {
+          "member": "template/game/index.js",
+          "snapshot": "sources/template-game.js.txt",
+          "sha256": "3d00b2a2dedf637c8005d977e722176e5e4edf2b98d6de9b2ccf1f52c55914c8"
+        },
+        {
+          "member": "template/readme.md",
+          "snapshot": "sources/template-readme.md.txt",
+          "sha256": "97fbd5240cb3677d14c7b1ce8ec8cee549ebec2d323da9c4776d31dfe0b0bdcd"
+        }
+      ],
+      "member_count": 14
+    },
+    {
+      "filename": "AHA JS Bridge - API接口文档.zip",
+      "sha256": "0f3261509ea4e58a09f3e207f6054eff81d76b2e6a634c50b9806b4a99200688",
+      "files": [
+        {
+          "member": "AHA JS Bridge - API接口文档.md",
+          "snapshot": "sources/aha-bridge-api.md",
+          "sha256": "aaa59456a11394fd89d80db264a66ef1e723bb41d0442554d541a615103584f0"
+        },
+        {
+          "member": "图片和附件/image.png",
+          "snapshot": "sources/图片和附件/image.png",
+          "sha256": "22f4c7dd3e0c596e3ad5c63147a714a19616e0f0e50b481bfd02ea613cc16361"
+        }
+      ],
+      "member_count": 2
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "94799",
+    "apiName":  "You Monster",
+    "targetName":  "You Monster",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_You_Monster.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260424/a38ea4a2dc5c29dd93cd78ce9882d585.zip",
+    "bundleMd5":  "a38ea4a2dc5c29dd93cd78ce9882d585",
+    "bundleSize":  1961298,
+    "updatedAt":  1777026452,
+    "gameLink":  "https://www.excellenth5game.com/You_Monster/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94799",
+    "category":  "Action",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "You_Monster.zip",
+    "localBytes":  1961298,
+    "verifiedAt":  "2026-10-20T11:11:47",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

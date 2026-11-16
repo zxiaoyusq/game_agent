@@ -1,0 +1,62 @@
+{
+  "seeds": 1000,
+  "failures": [],
+  "attempts": {
+    "0": 985,
+    "1": 15
+  },
+  "slowest": [
+    {
+      "seed": 553,
+      "ms": 1860,
+      "attempt": 1
+    },
+    {
+      "seed": 162,
+      "ms": 1771,
+      "attempt": 1
+    },
+    {
+      "seed": 694,
+      "ms": 1760,
+      "attempt": 1
+    },
+    {
+      "seed": 603,
+      "ms": 1701,
+      "attempt": 1
+    },
+    {
+      "seed": 597,
+      "ms": 1579,
+      "attempt": 1
+    },
+    {
+      "seed": 228,
+      "ms": 1542,
+      "attempt": 0
+    },
+    {
+      "seed": 549,
+      "ms": 1476,
+      "attempt": 0
+    },
+    {
+      "seed": 542,
+      "ms": 1413,
+      "attempt": 1
+    },
+    {
+      "seed": 375,
+      "ms": 1412,
+      "attempt": 1
+    },
+    {
+      "seed": 576,
+      "ms": 1403,
+      "attempt": 1
+    }
+  ],
+  "scope": "desktop Node; generator and independent path replay; not device startup",
+  "elapsedMs": 83079
+}

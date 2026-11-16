@@ -1,0 +1,47 @@
+[
+  {
+    "id": "SA",
+    "source": "C:\\Users\\nenghong.zhao\\.codex\\generated_images\\01a15d1e-ddf8-7312-ba0d-9aabc310ae20\\exec-c097c50e-d86f-4064-b72c-03d0675c945a.png",
+    "original_size": [
+      841,
+      1870
+    ],
+    "file": "E:\\AIlab\\AHAgames\\art_direction\\界面效果图_20261022_圆润简约版\\南亚_圆润简约版_900x2000.png",
+    "size": [
+      900,
+      2000
+    ],
+    "sha256": "fbce2e2adca5882f934268411dab1c66dc543e8cad45b4120b486120b7d0d25e",
+    "status": "generated_reviewed_awaiting_user_selection"
+  },
+  {
+    "id": "NG",
+    "source": "C:\\Users\\nenghong.zhao\\.codex\\generated_images\\01a15d1e-ddf8-7312-ba0d-9aabc310ae20\\exec-1b345e96-5ba0-4863-aada-d168fbf50cdb.png",
+    "original_size": [
+      841,
+      1870
+    ],
+    "file": "E:\\AIlab\\AHAgames\\art_direction\\界面效果图_20261022_圆润简约版\\尼日利亚_圆润简约版_900x2000.png",
+    "size": [
+      900,
+      2000
+    ],
+    "sha256": "d0b0d12c203c09d5d9eb1d4b5f94d745ed77312a5d2e5eee260d54b9cb76fdaa",
+    "status": "generated_reviewed_awaiting_user_selection"
+  },
+  {
+    "id": "SEA_PH",
+    "source": "C:\\Users\\nenghong.zhao\\.codex\\generated_images\\01a15d1e-ddf8-7312-ba0d-9aabc310ae20\\exec-db6c3443-66d4-4f2f-ada7-9c070f5a8809.png",
+    "original_size": [
+      841,
+      1870
+    ],
+    "file": "E:\\AIlab\\AHAgames\\art_direction\\界面效果图_20261022_圆润简约版\\东南亚_圆润简约版_900x2000.png",
+    "size": [
+      900,
+      2000
+    ],
+    "sha256": "d8370f0b02377fcc4cecb6ee951a273df5fadb00bcb4763a81f95cb59294df9c",
+    "status": "generated_reviewed_awaiting_user_selection"
+  }
+]

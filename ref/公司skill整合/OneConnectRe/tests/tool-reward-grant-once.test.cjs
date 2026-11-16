@@ -1,0 +1,33 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+class El{constructor(){this.children=[];this.hidden=false;this.style={};}appendChild(x){this.children.push(x);return x}append(...x){this.children.push(...x)}setAttribute(){}addEventListener(){}}
+(async()=>{
+  const tip={name:'tip',data:0},level={name:'level',data:1};
+  const runtime={running_layout:{name:'game'},all_global_vars:[tip,level],types:{t25:{instances:[{uid:946,instance_vars:[4]}]}}};
+  const cr={plugins_:{Touch:function(){},Spritefont2:function(){}},action:function(){}};
+  cr.plugins_.Touch.prototype.cnds={OnTouchObject(){return false}};cr.action.prototype.run_system=function(){};
+  let displayAttempts=0;cr.plugins_.Spritefont2.prototype.acts={SetText(){displayAttempts++;throw Error('display failed')}};
+  let saveThrows=true,events=[];
+  const window={cr,cr_getC2Runtime:()=>runtime,addEventListener(){},oneConnectHost:{emit(type,detail){events.push({type,detail})}},oneConnectRoundSave:{capture(){if(saveThrows)throw Error('storage failed');return false}}};
+  const document={body:new El(),head:new El(),createElement:()=>new El(),createTextNode:text=>({textContent:text})};
+  const ctx={window,document,cr,console:{warn(){}},Date,Number,Promise,Error,Set,setTimeout,clearTimeout};
+  vm.runInNewContext(fs.readFileSync('tools/reward_lifecycle_candidate.js','utf8'),ctx);
+  vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/tool_reward_candidate.js','utf8'),ctx);
+  const reward=window.oneConnectToolRewardCandidate;reward.install();let callbacks;
+  reward.setProvider({show(cb){callbacks=cb}});reward.open('hint');
+  const root=document.body.children[0],watch=root.children[0].children[2];watch.onclick();
+  callbacks.earned({verified:true});callbacks.earned({verified:true});callbacks.closed();await Promise.resolve();
+  assert.equal(tip.data,2,'display or save failure must not credit twice');
+  assert.equal(displayAttempts,1,'rebuilt hint font is found by role even with a new UID');
+  assert.equal(root.hidden,true,'accepted credit finishes the claim');
+  assert.equal(events.at(-1).type,'candidate.reward_save_deferred','capture exception must report deferred save');
+  saveThrows=false;reward.open('hint');watch.onclick();callbacks.earned({verified:true});callbacks.closed();await Promise.resolve();
+  assert.equal(tip.data,4,'deferred saving must not retry a credited reward');assert.equal(events.at(-1).type,'candidate.reward_save_deferred');
+  let checkpoint;window.oneConnectRoundSave.checkpointRewardCounter=(kind,level,before)=>(checkpoint={kind,level,before},true);
+  const count=events.length;reward.open('hint');watch.onclick();callbacks.earned({verified:true});callbacks.closed();await Promise.resolve();
+  assert.deepEqual(checkpoint,{kind:'tip',level:1,before:4});assert.equal(tip.data,6);assert.equal(events.length,count,'successful checkpoint is not reported as deferred');
+  saveThrows=true;checkpoint=null;reward.open('hint');watch.onclick();callbacks.earned({verified:true});callbacks.closed();await Promise.resolve();
+  assert.deepEqual(checkpoint,{kind:'tip',level:1,before:6},'capture exception must not skip checkpoint');assert.equal(tip.data,8);assert.equal(events.length,count);
+  runtime.types.t25.instances=[{uid:46,instance_vars:[]}];const attempts=displayAttempts;reward.open('hint');watch.onclick();callbacks.earned({verified:true});callbacks.closed();await Promise.resolve();
+  assert.equal(displayAttempts,attempts+1,'legacy UID fallback accepts an empty variable array');
+  console.log('reward credits once even when display and save fail PASS');
+})().catch(e=>{console.error(e);process.exitCode=1});

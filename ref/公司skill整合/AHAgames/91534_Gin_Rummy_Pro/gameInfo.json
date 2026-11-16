@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "91534",
+    "apiName":  "Gin Rummy Pro",
+    "targetName":  "Gin Rummy Pro",
+    "match":  "BY_ID",
+    "bundleName":  "re_Gin_Rummy_Pro.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20240914/09063420925.zip",
+    "bundleMd5":  "29f9f7cda1725403d355ccee3d96cd40",
+    "bundleSize":  3054543,
+    "updatedAt":  1726305157,
+    "gameLink":  "https://www.excellenth5game.com/Gin_Rummy_Pro/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_91534",
+    "category":  "Card",
+    "rate":  7.8,
+    "gameType":  1,
+    "localFile":  "Gin_Rummy_Pro.zip",
+    "localBytes":  3054543,
+    "verifiedAt":  "2026-10-20T11:15:07",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

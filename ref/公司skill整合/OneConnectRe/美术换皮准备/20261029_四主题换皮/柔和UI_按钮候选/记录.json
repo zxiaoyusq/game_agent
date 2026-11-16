@@ -1,0 +1,62 @@
+[
+  {
+    "name": "homebutton-sheet0.png",
+    "dimensions": [
+      243,
+      99
+    ],
+    "original_alpha_bbox": [
+      1,
+      1,
+      242,
+      98
+    ],
+    "new_alpha_bbox": [
+      1,
+      7,
+      242,
+      92
+    ],
+    "source": "exec-0f8549a0-f29a-4124-92d1-1da45ed07696.png"
+  },
+  {
+    "name": "gamebuttons-sheet0.png",
+    "dimensions": [
+      120,
+      100
+    ],
+    "original_alpha_bbox": [
+      31,
+      16,
+      113,
+      84
+    ],
+    "new_alpha_bbox": [
+      31,
+      18,
+      113,
+      81
+    ],
+    "source": "exec-fd2333b4-3a83-4d77-acef-b31c70b2a329.png"
+  },
+  {
+    "name": "gamebuttons-sheet1.png",
+    "dimensions": [
+      100,
+      100
+    ],
+    "original_alpha_bbox": [
+      17,
+      15,
+      84,
+      85
+    ],
+    "new_alpha_bbox": [
+      17,
+      16,
+      84,
+      83
+    ],
+    "source": "exec-279c1b59-308e-47d0-8ed5-54f9a15873db.png"
+  }
+]

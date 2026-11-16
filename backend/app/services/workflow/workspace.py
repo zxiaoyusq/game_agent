@@ -52,27 +52,48 @@ def snapshot(workspace: Path) -> dict[str, str]:
     return result
 
 
-def source_fingerprint(workspace: Path) -> str:
-    """指纹覆盖真实运行输入及测试脚本；报告、证据、依赖、构建输出不影响指纹。
+SOURCE_EXCLUDED_DIRECTORIES = {
+    "workflow", "evidence", "node_modules", ".git", ".cache", "dist", "build", "releases", "temp", "library",
+    "coverage", "test-results", "playwright-report", "reports", "docs", "__pycache__",
+}
+
+
+def is_source_path(relative: str) -> bool:
+    """当前文件扫描与旧快照重建共用范围，避免升级改变历史指纹的含义。"""
+    path = Path(relative)
+    return not SOURCE_EXCLUDED_DIRECTORIES.intersection(path.parts[:-1]) and path.suffix.lower() not in {".md", ".log"}
+
+
+def source_snapshot(workspace: Path) -> dict[str, str]:
+    """逐文件记录真实运行输入及测试脚本；报告、证据、依赖、构建输出不计入。
 
     与产物快照不同，此处不设单文件大小限制，确保大型引擎与资源同样参与校验。
     """
-    excluded = {"workflow", "evidence", "node_modules", ".git", ".cache", "dist", "build", "releases", "temp", "library",
-                "coverage", "test-results", "playwright-report", "reports", "docs", "__pycache__"}
     entries = {}
     for directory, dirs, files in os.walk(workspace):
         for name in dirs:
-            if name not in excluded and (Path(directory) / name).is_symlink():
+            if name not in SOURCE_EXCLUDED_DIRECTORIES and (Path(directory) / name).is_symlink():
                 raise ValueError("运行输入目录不能使用未纳入指纹的符号链接")
-        dirs[:] = [name for name in dirs if name not in excluded and not (Path(directory) / name).is_symlink()]
+        dirs[:] = [name for name in dirs if name not in SOURCE_EXCLUDED_DIRECTORIES and not (Path(directory) / name).is_symlink()]
         for name in files:
             path = Path(directory) / name
-            if path.suffix.lower() in {".md", ".log"}:
+            relative = path.relative_to(workspace).as_posix()
+            if not is_source_path(relative):
                 continue
             # 内部符号链接内容也影响运行；指向工作区外的链接拒绝参与可信验证。
             resolved = path.resolve()
             if not resolved.is_relative_to(workspace.resolve()):
                 raise ValueError("运行输入包含指向工作区外的文件链接")
-            entries[path.relative_to(workspace).as_posix()] = hashlib.sha256(resolved.read_bytes()).hexdigest()
+            entries[relative] = hashlib.sha256(resolved.read_bytes()).hexdigest()
+    return entries
+
+
+def fingerprint_snapshot(entries: dict[str, str]) -> str:
+    """沿用既有序列化规则；完整快照与旧版源码指纹可以直接核对。"""
     return hashlib.sha256(json.dumps(entries, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+
+
+def source_fingerprint(workspace: Path) -> str:
+    """对当前完整输入生成指纹，测试阶段新增脚本也必须参与最终验收。"""
+    return fingerprint_snapshot(source_snapshot(workspace))
 

@@ -1,0 +1,28 @@
+{
+  "result": "通过",
+  "source": {
+    "path": "releases/star-collection-source.zip",
+    "bytes": 74243,
+    "sha256": "7436e7e0470b09e18e20343830de1a5249181383b7a00116173ae3e47e3475ba",
+    "entries": 19
+  },
+  "play": {
+    "path": "releases/star-collection-play.zip",
+    "bytes": 11059,
+    "sha256": "1b60f7c5cab8bb168da12a0d34d616069e7fc1f4dc652dcf5294f5cf1221f9b3",
+    "entries": 6
+  },
+  "distFingerprint": "e912426d50d31a560b3affd1149b00cb78dbaae6f7cf549c38004b0ab1a924cd",
+  "expandedBytes": 10435,
+  "checks": [
+    "源码ZIP实际提取",
+    "离线缓存npm ci清洁安装且禁用生命周期",
+    "源码ZIP重建与规则测试",
+    "重建逐文件字节一致",
+    "试玩ZIP CRC及逐文件字节一致",
+    "最终dist未修改"
+  ],
+  "installLog": "\nadded 2 packages, and audited 3 packages in 352ms\n\nfound 0 vulnerabilities\n",
+  "buildLog": "构建通过：dist/index.html，展开10435字节；资源哈希与上游一致。\n",
+  "ruleLog": "TAP version 13\n# Subtest: 五次采集唯一胜利，重开及旧状态独立\nok 1 - 五次采集唯一胜利，重开及旧状态独立\n  ---\n  duration_ms: 1.599166\n  type: 'test'\n  ...\n# Subtest: 全部有效进度恢复，非持久字段丢弃\nok 2 - 全部有效进度恢复，非持久字段丢弃\n  ---\n  duration_ms: 0.657415\n  type: 'test'\n  ...\n# Subtest: 损坏、未知版本、类型及规则越界存档拒绝\nok 3 - 损坏、未知版本、类型及规则越界存档拒绝\n  ---\n  duration_ms: 0.425358\n  type: 'test'\n  ...\n# Subtest: 三尺寸五位置不同且目标在安全区域，命中半径固定\nok 4 - 三尺寸五位置不同且目标在安全区域，命中半径固定\n  ---\n  duration_ms: 0.688517\n  type: 'test'\n  ...\n# Subtest: 缩放关键帧及边界\nok 5 - 缩放关键帧及边界\n  ---\n  duration_ms: 0.485021\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 74.066001\n"
+}

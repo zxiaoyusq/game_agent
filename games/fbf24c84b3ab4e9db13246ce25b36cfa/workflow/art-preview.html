@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>星点采集 · 静态美术预览</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:24px 16px;background:#F8FAFC;color:#0F172A;font-family:system-ui,sans-serif}main{max-width:480px;margin:auto}h1{font-size:28px;margin:0 0 8px}p{line-height:1.6}h2{font-size:16px;margin-top:24px}.counter{font-size:24px;font-weight:700;margin:12px 0}.board{position:relative;height:360px;background:#FFF;border-radius:12px}.star{position:absolute;width:56px;height:56px;left:50%;top:50%;transform:translate(-50%,-50%)}.status{min-height:28px;margin:12px 0;color:#0F766E;font-weight:700}button{min-height:44px;padding:10px 24px;border:0;border-radius:8px;background:#0F766E;color:white;font:inherit;cursor:default}.note{font-size:14px}.sample{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.checker{background:repeating-conic-gradient(#E2E8F0 0% 25%,white 0% 50%) 0 0/16px 16px;padding:16px}.checker img{display:block;width:64px;height:64px}figure{margin:0}figcaption{font-size:12px;text-align:center}footer{margin-top:24px;font-size:14px}@media(min-width:768px){.board{height:420px}}
+</style>
+</head>
+<body><main>
+<h1>星点采集</h1><p>点击星星，采集 5 次即可获胜</p>
+<p class="note">静态美术预览：不是可玩游戏，按钮不执行动作；不作为浏览器或动画验收证据。</p>
+<div class="counter">0 / 5</div><div class="board"><img class="star" src="../public/assets/star.svg" alt="青绿色五角星"></div>
+<div class="status" aria-label="胜利提示预留区域"></div><button type="button" aria-disabled="true">重开</button>
+<h2>胜利文案与配色样本</h2><div class="counter">5 / 5</div><p class="status">采集完成！</p>
+<h2>透明底与等比缩放样本</h2><div class="sample">
+<figure><div class="checker"><img src="../public/assets/star.svg" alt="64像素星星原图"></div><figcaption>64×64 原图，棋盘格仅供看透明底</figcaption></figure>
+<figure><img src="../public/assets/star.svg" alt="正常56像素星星" width="56" height="56"><figcaption>56×56 常态</figcaption></figure>
+<figure><img src="../public/assets/star.svg" alt="放大阶段星星" width="59.36" height="59.36"><figcaption>1.06 倍峰值示意</figcaption></figure>
+</div><footer>动画交接：160 ms，0.90 → 1.06 → 1.00。此处无动画，连续帧证据由代码与测试阶段真实运行后生成。只交接星星图像，文字和按钮使用系统字体及 DOM。</footer>
+</main></body></html>

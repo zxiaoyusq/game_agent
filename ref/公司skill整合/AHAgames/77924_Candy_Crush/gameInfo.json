@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  77924,
+    "apiName":  "Candy Crush",
+    "targetName":  "Candy Crush",
+    "match":  "EXACT",
+    "bundleName":  "re_Candy_Crush.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20240408/12234588821.zip",
+    "bundleMd5":  "98e857851684c18f2dead694115889e8",
+    "bundleSize":  2420485,
+    "updatedAt":  1766160747,
+    "gameLink":  "https://www.bhjgame.com/Candy_Crush/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_77924",
+    "category":  "Casual",
+    "rate":  7.6,
+    "gameType":  1,
+    "localFile":  "Candy_Crush.zip",
+    "localBytes":  2420485,
+    "verifiedAt":  "2026-10-20T10:33:13",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

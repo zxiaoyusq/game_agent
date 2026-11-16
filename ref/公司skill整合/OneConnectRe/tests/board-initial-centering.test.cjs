@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+function Action(){}Action.prototype.run_object=function(){};let observed=[];Action.prototype.run_system=function(){observed.push(this.runtime.all_global_vars.map(v=>v.data))};
+const mask=[[0,1,0,0,1,0,0,1],[0,0,1,1,1,1,1,0],[0,0,1,1,1,1,1,0],[0,1,1,1,0,1,1,1],[0,0,1,1,1,1,1,0],[0,0,1,1,1,1,1,0],[0,1,0,0,1,0,0,1],[0,0,0,0,0,0,0,0]],names=['level','ROWS_COUNT','COLUMNS_COUNT','ITEM_SIZE','ITEM_SPACING','BOARD_OFFSET_X','BOARD_OFFSET_Y'];
+const layer={parallaxX:1,parallaxY:1},rt={all_global_vars:names.map((name,i)=>({name,data:[8,6,12,96,5,36,80][i]})),running_layout:{scrollX:680,scrollY:385},getLayerByName:()=>layer};
+const window={cr:{action:Action},oneConnectLevels:{levels:[{level:8,boardSize:{rows:8,cols:8,itemSize:75,spacing:5,offsetX:320,offsetY:35},generator:{mask}}]},oneConnectHost:{emit(){}},addEventListener(){}};window.window=window;
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'game/board-hooks.js','utf8'),window);window.oneConnectBoard.install();
+const action={sid:532162384668575,runtime:rt};Action.prototype.run_system.call(action);const v=observed[0],pitch=v[3]+v[4];
+assert.equal(v[5]+pitch*(1+7+2)/2-v[3]/2,680,'occupied column bounds center on camera');assert.equal(v[6]+pitch*(0+6+2)/2-v[3]/2,385,'occupied row bounds center on camera');
+layer.parallaxX=.5;Action.prototype.run_system.call(action);assert.equal(observed[1][5],320,'unknown parallax retains configured offset');assert.equal(observed[1][6],35);
+rt.all_global_vars[0].data=9;Action.prototype.run_system.call(action);assert.deepEqual(observed[2],[9,6,12,96,5,36,80],'unconfigured levels restore original defaults');
+console.log('initial board occupancy centered in native world coordinates PASS');

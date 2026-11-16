@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "stage": "art",
+  "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+  "prefix": "www.hnyigegame.com/Ludo_Superstar/game/",
+  "atlas_keys": {"board":"路径与红黄营地/非旋转棋子图集","background":"紫色背景与蓝绿营地图集","tokens":"棋子与六点数图集"},
+  "atlas_inputs": {"board":"reference-assets/super-board-atlas.png","background":"reference-assets/super-background-atlas.png","tokens":"reference-assets/super-token-dice-atlas.png"},
+  "defaults": {"output_format":"PNG","rotated":false,"offset":[0,0],"capInsets":[0,0,0,0],"anchor":[0.5,0.5],"scale_mode":"uniform","classification":"processed"},
+  "crops": [
+    {"file":"board-cross.png","atlas":"board","frame":"original_img_center_blue","rect":[1445,1187,586,585],"usage":"透明十字棋盘与四色中心，独立叠加营地和标记"},
+    {"file":"camp-blue.png","atlas":"background","frame":"original_img_base_bg_lan","rect":[1,1603,233,233],"usage":"蓝色左下圆营地"},
+    {"file":"camp-red.png","atlas":"board","frame":"original_img_base_bg_hong","rect":[1405,1774,233,233],"usage":"红色左上圆营地"},
+    {"file":"camp-green.png","atlas":"background","frame":"original_img_base_bg_lv","rect":[236,1603,233,233],"usage":"绿色右上圆营地"},
+    {"file":"camp-yellow.png","atlas":"board","frame":"original_img_base_bg_huang","rect":[1640,1774,233,233],"usage":"黄色右下圆营地"},
+    {"file":"token-blue.png","atlas":"board","frame":"original_img_chess_lan","rect":[1287,1851,32,53],"usage":"蓝色亮面棋子，选非旋转原帧"},
+    {"file":"token-red.png","atlas":"board","frame":"original_img_chess_hong","rect":[154,1896,32,52],"metadata":"loading/assets/resources/import/12/1289e33a-9cbc-4f3b-9d95-b399c7ed7970.f99c5.json","usage":"红色亮面棋子，选非旋转原帧"},
+    {"file":"token-green.png","atlas":"tokens","frame":"original_img_chess_lv","rect":[932,117,33,53],"usage":"绿色亮面棋子"},
+    {"file":"token-yellow.png","atlas":"board","frame":"original_img_chess_huang","rect":[1875,1947,33,53],"usage":"黄色亮面棋子"},
+    {"file":"marker-star.png","atlas":"board","frame":"original_img_wujiaoxing","rect":[227,1896,27,26],"usage":"P8/21/34/47安全星，保留软alpha最大253"},
+    {"file":"arrow-blue.png","atlas":"board","frame":"original_img_sanjiao_lan","rect":[1321,1925,17,15],"usage":"原蓝箭头纹理，按确认原型放P0，不沿用原运行P50"},
+    {"file":"arrow-red.png","atlas":"board","frame":"original_img_sanjiao_hong","rect":[1405,1723,15,17],"usage":"原红箭头纹理，按确认原型放P13，不沿用原运行P11"},
+    {"file":"arrow-green.png","atlas":"board","frame":"original_img_sanjiao_lv","rect":[1354,1886,17,15],"usage":"原绿箭头纹理，按确认原型放P26，不沿用原运行P24"},
+    {"file":"arrow-yellow.png","atlas":"board","frame":"original_img_sanjiao_huang","rect":[1982,1947,15,17],"usage":"原黄箭头纹理，按确认原型放P39，不沿用原运行P37"},
+    {"file":"dice-face-1.png","atlas":"tokens","frame":"original_dice_points_1","rect":[1198,390,104,106],"originalSize":[220,220],"offset":[4,3],"usage":"最终一点骰面，只显示已提交骰子结果"},
+    {"file":"dice-face-2.png","atlas":"tokens","frame":"original_dice_points_2","rect":[1304,390,104,106],"originalSize":[220,220],"offset":[4,3],"usage":"最终二点骰面"},
+    {"file":"dice-face-3.png","atlas":"tokens","frame":"original_dice_points_3","rect":[1221,115,104,106],"originalSize":[220,220],"offset":[4,3],"usage":"最终三点骰面"},
+    {"file":"dice-face-4.png","atlas":"tokens","frame":"original_dice_points_4","rect":[1324,1,104,106],"originalSize":[220,220],"offset":[4,3],"usage":"最终四点骰面"},
+    {"file":"dice-face-5.png","atlas":"tokens","frame":"original_dice_points_5","rect":[1312,223,104,106],"originalSize":[220,220],"offset":[4,3],"usage":"最终五点骰面"},
+    {"file":"dice-face-6.png","atlas":"tokens","frame":"original_dice_points_6","rect":[1327,109,104,106],"originalSize":[220,220],"offset":[4,3],"usage":"最终六点骰面"}
+  ],
+  "hud": [
+    {"file":"hud-human.png","input":"avatar-human.png","frame":"img_player","usage":"人类玩家头像，可在不同席位复用，不冒称四个独立角色"},
+    {"file":"hud-bot.png","input":"avatar-bot.png","frame":"img_computer","usage":"AI玩家头像"},
+    {"file":"hud-seat-blue.png","input":"seat-blue.png","frame":"img_bg_lan","usage":"蓝队146方形座框，上下小HUD用"},
+    {"file":"hud-seat-red.png","input":"seat-red.png","frame":"img_bg_hong","usage":"红队146方形座框"},
+    {"file":"hud-seat-green.png","input":"seat-green.png","frame":"img_bg_lv","usage":"绿队146方形座框"},
+    {"file":"hud-seat-yellow.png","input":"seat-yellow.png","frame":"img_bg_huang","usage":"黄队146方形座框"},
+    {"file":"effect-landing.png","input":"ring-landing.png","frame":"img_green_circle","usage":"43全画布落点圈，整图绘制不二次trim"},
+    {"file":"effect-selected.png","input":"ring-selected.png","frame":"img_chess_circle","usage":"50全画布合法棋子/选择提示圈"},
+    {"file":"ui-start.png","input":"button-start.png","frame":"img_btn_play","usage":"原蓝色无字按钮底，Canvas绘制中文开始"},
+    {"file":"ui-confirm.png","input":"button-confirm.png","frame":"img_btn_ok","usage":"原绿色无字按钮底，Canvas绘制中文确认/再来一局"},
+    {"file":"ui-close.png","input":"button-close.png","frame":"img_close","usage":"关闭设置，语义按钮命中不得小于44CSSpx"}
+  ],
+  "standalone": [
+    {"file":"board-frame.png","input":"reference-assets/board-frame-native.png","native":"assets/main/native/47/47eadf9e-1cef-4c7c-88d2-7c09e86d3d9d.7ebe4.png","metadata":"assets/main/import/09/09d798ff2.89558.json","frame":"矩形 15","originalSize":[628,628],"rect":[0,0,628,628],"offset":[0,0],"capInsets":[57,28,57,43],"usage":"低透明外框，原alpha0…51，不填白不二次降alpha"},
+    {"file":"ui-settings.png","input":"reference-assets/button-settings-native.png","native":"assets/main/native/86/86c887a9-2f38-49b0-8ea5-3864c0a7f386.78749.png","metadata":"assets/main/import/09/09d798ff2.89558.json","frame":"settings","originalSize":[70,70],"rect":[1,1,68,68],"offset":[0,0],"capInsets":[0,0,0,0],"usage":"70全画布原设置按钮，不再裁68或加偏移"}
+  ],
+  "audio": [
+    {"file":"sound-roll.mp3","native":"assets/resources/native/f0/f08dedb0-3c9e-4f7b-b58b-9ebf05f7c389.ed0db.mp3","usage":"掷骰首交互解锁后播放，可关闭"},
+    {"file":"sound-step.mp3","native":"assets/resources/native/a8/a889c8f7-f51b-405e-9030-9328fba1b580.521b7.mp3","usage":"棋子逐格走动短音，不重叠无界播放"},
+    {"file":"sound-capture.mp3","native":"assets/resources/native/a2/a2ce3d23-f7c7-4ad7-a2be-f6253f365ffd.28ae1.mp3","usage":"吃子碰撞音，一次事件只播放一次"},
+    {"file":"sound-home.mp3","native":"assets/resources/native/f1/f1064f67-47ba-479e-997e-844354533849.5bd25.mp3","usage":"归家反馈音，胜利不另猜音源"}
+  ],
+  "roll": {"unique":[0,1,2,4,5,6,8,10,11,12,13,14,15,16,17,18,20,21,23,24],"sequence":[0,1,2,2,4,5,6,6,8,8,10,11,12,13,14,15,16,17,18,18,20,21,21,23,24],"fps":30,"duration_ms":833.3333333333334,"originalSize":[220,220],"usage":"真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim"},
+  "background": {"file":"background-edited.png","input":"public/assets/background-api-candidate.webp","reference":"public/assets/background-original.png","reference_sha256":"8d53617e1bb1f3c9a2d68195ff34713340a23e4d9d98558403ca00d62a17476f","candidate_sha256":"84acdfc666a579d2ccbebadd57e098868a0e00bf92949eb9582d6e78ce0d7664","final_sha256":"5c4efaae45391a01d7a701a0f96e5a6d0a2f04c53a7781fa2689bac80c00db3f","reference_crop":[1,1,719,1600],"crop":[167,0,690,1536],"target_size":[719,1600],"content_size":[719,1600],"content_offset":[0,0],"alpha_extrema":[255,255],"provider":"openai-image-api","model":"gpt-image-2","classification":"api-edited","usage":"唯一新背景，原紫色低对比菱格参考编辑并中心裁切等比装配，非整屏游戏图","prompt":"仅精修输入的原版紫色菱格背景纹理，不重新设计。保持原图竖向构图、菱格方向、大小和分布，以及上下渐变位置；仍为深紫低对比的手游底纹，只小幅改善色阶平滑和柔和丝缎质感，变化克制、接近原图。全画幅不透明，边缘连续，无黑边，无大明暗块。不要风景、建筑、人物、文字、标识、棋盘、骰子、卡片、边框、强光或新增装饰。背景是独立纹理，不包含任何游戏HUD。"}
+}

@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let ad,reward,banner,sent=[],timeouts=new Map(),next=0;const parent={document:{querySelector:()=>({}),getElementById:()=>({})},h5sdk:{adBreak(){}},postMessage:(...x)=>sent.push(x)};
+const window={parent,location:{origin:'https://game.example'},oneConnectLayoutCandidate:{configure:x=>banner=x.bannerHeight},oneConnectHost:{setAdProvider:x=>ad=x},oneConnectToolRewardCandidate:{setProvider:x=>reward=x}};
+vm.runInNewContext(fs.readFileSync('tools/combi_sdk_adapter.js','utf8'),{window,setTimeout:fn=>{timeouts.set(++next,fn);return next},clearTimeout:id=>timeouts.delete(id)});
+assert(window.oneConnectCombiSdkAdapter.install());assert.equal(banner,0,'host banner must not be reserved twice');let earned=0,shown=0,closed=0,errors=0;const cb={shown:()=>shown++,earned:p=>{assert.equal(p.verified,true);earned++},closed:()=>closed++,error:()=>errors++};
+reward.show(cb);assert.equal(shown,1);assert.deepEqual(sent[0],['reward','https://game.example']);const first=parent.MIAD;first._failback();first._callback();assert.equal(earned,0);assert.equal(errors,1);
+reward.show(cb);const second=parent.MIAD;second._callback();second._callback();assert.equal(earned,1);assert.equal(closed,1);assert.equal(timeouts.size,0);
+let ok=0,fail=0;ad.showAd('Interstitial',()=>ok++,()=>fail++);assert.equal(sent.at(-1)[0],'next');parent.MIAD_NEXT._failback();assert.equal(fail,1);assert.equal(ok,0);
+reward.show(cb);timeouts.get(next)();assert.equal(errors,2,'missing callback fails without granting');reward.show(cb);assert(parent.MIAD,'timeout releases ad lock');parent.MIAD._failback();
+const untrusted={parent:{},oneConnectHost:{setAdProvider(){throw Error('unexpected')}},oneConnectToolRewardCandidate:{}};vm.runInNewContext(fs.readFileSync('tools/combi_sdk_adapter.js','utf8'),{window:untrusted,setTimeout,clearTimeout});assert.equal(untrusted.oneConnectCombiSdkAdapter.install(),false);
+console.log('Combi host adapter grants only on viewed callback and releases ad lock PASS');

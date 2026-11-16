@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+if(!process.argv[2])throw Error('candidate game directory required');
+function Action(){};const seen=[];Action.prototype.run_object=function(){seen.push(this.runtime.all_global_vars.find(v=>v.name==='theme').data)};
+const vars=[{name:'level',data:24},{name:'theme',data:2}],runtime={all_global_vars:vars};let listener;
+const window={cr:{action:Action},cr_getC2Runtime:()=>runtime,oneConnectLevels:{levels:[{level:24,theme:1},{level:25,theme:1},{level:26,theme:0}]},oneConnectHost:{emit(){}},addEventListener:(_,fn)=>listener=fn};window.window=window;
+vm.runInNewContext(fs.readFileSync(path.join(process.argv[2],'board-hooks.js'),'utf8'),window);window.oneConnectBoard.install();
+const action=new Action();Object.assign(action,{sid:265515752420816,runtime});
+window.oneConnectBoard.markCandidateTheme();action.run_object();assert.equal(seen.pop(),2,'same-level selected theme remains');
+vars[0].data=25;action.run_object();assert.equal(seen.pop(),3,'new level uses Ramadan override');
+vars[1].data=1;window.oneConnectBoard.markCandidateTheme();action.run_object();assert.equal(seen.pop(),1,'restored or selected theme remains within the same level');
+listener({detail:{type:'game.level_fail'}});action.run_object();assert.equal(seen.pop(),3,'retry uses level default after previous round ends');
+vars[0].data=26;action.run_object();assert.equal(seen.pop(),0,'next level returns to its configured theme');
+// Exercise applyBoard's actual saved-theme branch using a stable mocked board.
+vars[0].data=25;vars.push({name:'ROWS_COUNT',data:2},{name:'COLUMNS_COUNT',data:2});
+runtime.types={t0:{instances:[{cx:4,cy:4,arr:Array.from({length:4},()=>Array.from({length:4},()=>[0]))}]}};
+window.oneConnectLevels.levels[1].board=[[1,1],[2,2]];
+window.oneConnectRoundSave={restore:()=>({theme:2,board:[[1,1],[2,2]]})};
+const apply=new Action();Object.assign(apply,{sid:673515574013169,runtime});apply.run_object();assert.equal(vars[1].data,2,'actual restore branch applies saved theme');
+action.run_object();assert.equal(seen.pop(),2,'saved theme remains authoritative during the same round');
+console.log('candidate themes reset between levels while same-level selections persist PASS');

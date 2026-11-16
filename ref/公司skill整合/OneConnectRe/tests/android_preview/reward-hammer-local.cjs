@@ -1,0 +1,16 @@
+const {execFileSync}=require('child_process'),fs=require('fs'),assert=require('node:assert/strict');
+const sleep=ms=>new Promise(r=>setTimeout(r,ms)),adb='C:/Program Files/ADB/adb.exe',dev='127.0.0.1:16448';
+(async()=>{
+ const pages=await(await fetch('http://127.0.0.1:19223/json')).json(),page=pages.find(x=>x.type==='page'),desc=JSON.parse(page.description),w=new WebSocket(page.webSocketDebuggerUrl);
+ await new Promise((ok,no)=>{w.onopen=ok;w.onerror=no});let n=0,pending=new Map(),errors=[];
+ w.onmessage=e=>{let m=JSON.parse(e.data);if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails.text);let p=pending.get(m.id);if(p){pending.delete(m.id);m.error?p.no(m.error):p.ok(m.result)}};
+ function call(method,params={}){return new Promise((ok,no)=>{let id=++n;pending.set(id,{ok,no});w.send(JSON.stringify({id,method,params}))})}
+ async function val(expression,awaitPromise=false){let x=await call('Runtime.evaluate',{expression,returnByValue:true,awaitPromise});if(x.exceptionDetails)throw Error(JSON.stringify(x.exceptionDetails));return x.result.value}
+ async function wait(expr){for(let i=0;i<600;i++){try{if(await val(expr))return}catch{}await sleep(100)}throw Error('timeout '+expr)}
+ async function tap(x,y){let size=await val('({width:innerWidth,height:innerHeight})');execFileSync(adb,['-s',dev,'shell','input','tap',String(Math.round(x*desc.width/size.width)),String(Math.round(desc.screenY+y*desc.height/size.height))]);await sleep(350)}
+ await call('Runtime.enable');let url='http://127.0.0.1:18749/analysis/reward_hammer_candidate/game/game.html';await call('Page.navigate',{url});await wait("window.cr_getC2Runtime?.()?.running_layout?.name==='menu'");
+ await val("localStorage.setItem('oneconnect.currentLevel.v1','7');localStorage.setItem('oneconnect.tutorial7.v1','done');localStorage.setItem('oneconnect.hammer.v1','1');localStorage.removeItem('oneconnect.round.v1')");await call('Page.navigate',{url});await wait("window.cr_getC2Runtime?.()?.running_layout?.name==='menu'");await sleep(1000);await tap(await val('innerWidth/2'),await val('innerHeight*.628'));await wait('cr_getC2Runtime().types.t5.instances.length===40');await sleep(1500);
+ await val(fs.readFileSync('examples/reward-hammer-local.js','utf8'));
+ let result=await val(`(async()=>{let h=oneConnectLocalHammerExample.create({loadTimeoutMs:2000}),c;h.setProvider({show(x){c=x;x.shown()}});let p=h.request('local-device-claim');c.earned({verified:true});c.earned({verified:true});c.closed();let a=await p,d=await h.request('local-device-claim');h.setProvider({show(x){x.shown();x.cancelled();x.earned({verified:true})}});let z=await h.request('local-device-cancel');return {status:a.status,duplicate:d.status,cancelled:z.status,count:oneConnectHammer.state().count}})()`,true);
+ assert.deepEqual(result,{status:'rewarded',duplicate:'already_claimed',cancelled:'cancelled',count:2});let pt=await val("(()=>{let b=document.querySelector('#oc-hammer').getBoundingClientRect();return{x:b.left+b.width/2,y:b.top+b.height/2}})()");await tap(pt.x,pt.y);await wait('cr_getC2Runtime().types.t5.instances.length===38');assert.equal(await val('oneConnectHammer.state().count'),1);assert.deepEqual(errors,[]);console.log('MuMu local mock reward -> real hammer use PASS',JSON.stringify(result));w.close();
+})().catch(e=>{console.error(e);process.exit(1)});

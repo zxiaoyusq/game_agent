@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('game/host-adapter.js');s=p.read_text(encoding='utf8');s=s.replace("    if (mapped) emit(mapped, detail);", "    if (mapped) {\n      var data = detail || {}, value = Number(data.levelName);\n      var normalized = { level: Number.isFinite(value) && value > 0 ? value : null };\n      if (data.totalScore !== undefined) normalized.score = data.totalScore;\n      if (data.reason !== undefined) normalized.reason = data.reason;\n      emit(mapped, normalized);\n    }");p.write_text(s,encoding='utf8')

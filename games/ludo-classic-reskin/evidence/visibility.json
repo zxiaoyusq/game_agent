@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "dice",
+    "interrupt": {
+      "busy": true,
+      "kind": "dice",
+      "elapsed": 9.000003051757858
+    },
+    "visibility": [
+      {
+        "time": 526.5999984741211,
+        "hidden": true,
+        "isTrusted": true
+      }
+    ],
+    "revision": 1
+  },
+  {
+    "kind": "walk",
+    "interrupt": {
+      "busy": true,
+      "kind": "walk",
+      "elapsed": 9.800002288818405
+    },
+    "visibility": [
+      {
+        "time": 652.5,
+        "hidden": true,
+        "isTrusted": true
+      }
+    ],
+    "revision": 2
+  },
+  {
+    "kind": "capture",
+    "interrupt": {
+      "busy": true,
+      "kind": "capture",
+      "elapsed": 16.59999999999991
+    },
+    "visibility": [
+      {
+        "time": 2729.599998474121,
+        "hidden": true,
+        "isTrusted": true
+      }
+    ],
+    "revision": 46
+  },
+  {
+    "kind": "ai",
+    "owner": 2,
+    "revision": 0,
+    "resumedRevision": 1,
+    "visibility": [
+      {
+        "time": 343.70000076293945,
+        "hidden": true,
+        "isTrusted": true
+      },
+      {
+        "time": 2588.2999992370605,
+        "hidden": false,
+        "isTrusted": true
+      }
+    ]
+  }
+]

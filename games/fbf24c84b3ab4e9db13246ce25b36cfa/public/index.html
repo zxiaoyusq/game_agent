@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#F8FAFC"><link rel="icon" href="data:,">
+<title>星点采集</title><link rel="stylesheet" href="./style.css">
+</head>
+<body><main>
+<h1>星点采集</h1><p>点击星星，采集 5 次即可获胜</p>
+<div id="counter" role="status" aria-live="polite">0 / 5</div>
+<canvas id="board" aria-label="点击青绿色星星进行采集">请使用支持 Canvas 的浏览器。</canvas>
+<div id="status" role="status" aria-live="polite"></div>
+<button id="restart" type="button">重开</button>
+<p id="warning" role="alert"></p><p id="asset-error" role="alert" hidden>星星资源加载失败，请重试。</p>
+<button id="retry" type="button" hidden>重试加载</button>
+</main><script type="module" src="./app.js"></script></body>
+</html>

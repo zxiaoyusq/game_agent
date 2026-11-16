@@ -1,0 +1,705 @@
+{
+  "stage": "art",
+  "command": "node scripts/audit-art.mjs",
+  "passed": true,
+  "scope": "PNG签名、RGBA编码、尺寸、源哈希、25帧去重时序、路径和非空清单对账；非浏览器/动画/音频播放验证",
+  "asset_count": 58,
+  "image_count": 54,
+  "audio_count": 4,
+  "asset_bytes": 1107204,
+  "config_bytes": 131682,
+  "files": [
+    {
+      "path": "public/assets/background-edited.png",
+      "sha256": "5c4efaae45391a01d7a701a0f96e5a6d0a2f04c53a7781fa2689bac80c00db3f",
+      "bytes": 92903,
+      "size": [
+        719,
+        1600
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/board-cross.png",
+      "sha256": "d78cc8bfb4479622b2670d58e986c873d049470b82df5758f23c8d176c222d49",
+      "bytes": 126222,
+      "size": [
+        586,
+        585
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-blue.png",
+      "sha256": "44036eb66f8698eeb9dcec3b72b55c6ee012f1e7dd6bf76c9f741ebac7282712",
+      "bytes": 41112,
+      "size": [
+        233,
+        233
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-red.png",
+      "sha256": "54369ab9ce71e400fe66c8123aeee673c7f387dc2e107f442d23d91206442607",
+      "bytes": 36400,
+      "size": [
+        233,
+        233
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-green.png",
+      "sha256": "2683469348f1a716f9e800341137acaaaeb32564d24a80e5dd8ccf35eeb66bfb",
+      "bytes": 38675,
+      "size": [
+        233,
+        233
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-yellow.png",
+      "sha256": "e456eba80e9973d406387710fef03884f56870f09522b8dc6a54ce090775685b",
+      "bytes": 40328,
+      "size": [
+        233,
+        233
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-blue.png",
+      "sha256": "6976cb326f61c12931f6caef84160c19074862ec5eea3bf3204780a6f163bffe",
+      "bytes": 4436,
+      "size": [
+        32,
+        53
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-red.png",
+      "sha256": "6ffb560ca4eefbec55e2cd02c56af02e07cdd8accc03fb548ff663c8b952fff9",
+      "bytes": 4795,
+      "size": [
+        32,
+        52
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-green.png",
+      "sha256": "5637d1d4f56fb14b0fb44e33200f6a5041751790593572e7c5331497ab80fa6e",
+      "bytes": 4774,
+      "size": [
+        33,
+        53
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-yellow.png",
+      "sha256": "e9056447ac86978c54f7c075c42e9b9b5d15cbf79b4e119e95630f85e8c98c93",
+      "bytes": 4851,
+      "size": [
+        33,
+        53
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/marker-star.png",
+      "sha256": "a74c5bb716c035e42fe1ef108c6d8851d39fa7682e2a8246380d717af069c205",
+      "bytes": 1741,
+      "size": [
+        27,
+        26
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-blue.png",
+      "sha256": "742794d71b72b026c25cfe5c6fdf48a7188af6db6fc774d94547364f5e72c620",
+      "bytes": 805,
+      "size": [
+        17,
+        15
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-red.png",
+      "sha256": "ffbff371162a4160a90ac3491f2c0b62066d74ecc25f499bc326d5f36e39668b",
+      "bytes": 848,
+      "size": [
+        15,
+        17
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-green.png",
+      "sha256": "60fb2108ff098b928cf00f8c18492f372b14fc4da98a2fa7389f19b9348c30a0",
+      "bytes": 820,
+      "size": [
+        17,
+        15
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-yellow.png",
+      "sha256": "d4845bac81aa0353f799a9d7cbc89dd82eda0c049984afafd5de9158cb369e0a",
+      "bytes": 812,
+      "size": [
+        15,
+        17
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-1.png",
+      "sha256": "8ad6369dd9347810a89fe3e51e45388cf4957695c726c44c39783d32f5efa7ca",
+      "bytes": 13086,
+      "size": [
+        104,
+        106
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-2.png",
+      "sha256": "0a972149694ff7e0bc40d862c3810645d92a44d888081913701fa41e42bc7917",
+      "bytes": 10587,
+      "size": [
+        104,
+        106
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-3.png",
+      "sha256": "aa6effe3e11020ce3552e5edbf399469d41caf9ad63541035e7268c6c785463e",
+      "bytes": 12613,
+      "size": [
+        104,
+        106
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-4.png",
+      "sha256": "bd8d2951142f5a4f5b2bdd1c9de41a9e28f7c0115271fc68ee711da322b6d5f7",
+      "bytes": 14392,
+      "size": [
+        104,
+        106
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-5.png",
+      "sha256": "40995d730b667d5ef0e3e11562291806286d1d744d0bf3a8b732a53e74985416",
+      "bytes": 14610,
+      "size": [
+        104,
+        106
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-6.png",
+      "sha256": "41c3f7534c6e1ce1e082df382cf4df947004d4ad2b5c9bcbc65a626030d1a516",
+      "bytes": 15049,
+      "size": [
+        104,
+        106
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-human.png",
+      "sha256": "6a6f723e77f858f597d48b10accf400205f112d9b62e86331bad5730f8c00af3",
+      "bytes": 17337,
+      "size": [
+        96,
+        121
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-bot.png",
+      "sha256": "d2502c9b10cc30934a36ef0761697cf89010dbcd9b9a5155b94e01294acd8c1d",
+      "bytes": 20778,
+      "size": [
+        121,
+        128
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-blue.png",
+      "sha256": "e209ec97a5d10e9a9a72c3c1727aa2d69aff1e5b8f98261c41880dc393a16a66",
+      "bytes": 8463,
+      "size": [
+        146,
+        146
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-red.png",
+      "sha256": "3788e0a4abfd73a8f5961d95eeabb3b49d80431b2a83c023e7f389d5e275e678",
+      "bytes": 10158,
+      "size": [
+        146,
+        146
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-green.png",
+      "sha256": "737fa10cd89f38e69ef436dd177eb2386dd6941e77ade035375cc18f225934c5",
+      "bytes": 8356,
+      "size": [
+        146,
+        146
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-yellow.png",
+      "sha256": "fc4119765e414b370c6a9405d2e7e41fc4005a0e0ea93847f75fddb15a62ef84",
+      "bytes": 8067,
+      "size": [
+        146,
+        146
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/effect-landing.png",
+      "sha256": "b9b05ace83746fed12b8da0eafb1620854db50ceecba08d32ab8badef4fdca9a",
+      "bytes": 3561,
+      "size": [
+        43,
+        43
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/effect-selected.png",
+      "sha256": "ee04f6784095c3eff72e42d7833276da16f5a4015dd9d7f29b740b7a0f641a51",
+      "bytes": 4922,
+      "size": [
+        50,
+        50
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-start.png",
+      "sha256": "4923b6853f678aeac87aa41112091fe355a86336d76186baa13f47ca3cf22254",
+      "bytes": 5212,
+      "size": [
+        194,
+        79
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-confirm.png",
+      "sha256": "c42c74fecc2374877d2fcb2faf8b1b4b57b53eb04d4b3c1b517753baefa396b4",
+      "bytes": 6603,
+      "size": [
+        195,
+        78
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-close.png",
+      "sha256": "590841fe0ee476dda72a7d77a839998b165cb674fc836b6fed5fd6f28fc1409a",
+      "bytes": 7717,
+      "size": [
+        59,
+        62
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/board-frame.png",
+      "sha256": "950bb24b92cf3703a48ba7fe11e2fde5c8154cd8aa6492e8afc1c7ce2da94766",
+      "bytes": 10509,
+      "size": [
+        628,
+        628
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-settings.png",
+      "sha256": "4aca2c80941e306d303d4c1331aa3cd26545be762fbb0b10da35197b6440af3d",
+      "bytes": 6876,
+      "size": [
+        70,
+        70
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-00.png",
+      "sha256": "9040e9b44c1823eacc45193bcceb003ebe45cb35deb65b09a8489f3db383b755",
+      "bytes": 18480,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-01.png",
+      "sha256": "cb9c3ad8df2a251502e28b9335659dcca7233e5016803cc0bdd5a348bf79a0c3",
+      "bytes": 23869,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-02.png",
+      "sha256": "cf03e2eb71b77348b8d9058f9c414f5539dee5e036bef1841c9561c6aaec547a",
+      "bytes": 25742,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-04.png",
+      "sha256": "bd3d4c8bb6b2602213e4e7a8c670cc3e349585b916752c19f4a02f72886eb284",
+      "bytes": 26597,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-05.png",
+      "sha256": "b96fd2765063bdafa523351897573187ea1a4fd29107b36e9659433a0cb159d0",
+      "bytes": 23620,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-06.png",
+      "sha256": "1e96ac932dd4bdf2f0942dd5172b42df4edb6698866fd6a07fdd210104d60e02",
+      "bytes": 23969,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-08.png",
+      "sha256": "4b602063e4448efaa3233f82b83b2560a68a3796a2e0ec0f9c748570f63553ec",
+      "bytes": 25229,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-10.png",
+      "sha256": "21666630075240bfa3dd9dcf10830aacf0a58daedb11b57ffab65206cf5c4154",
+      "bytes": 25896,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-11.png",
+      "sha256": "f91648e74b3a1bce39a3be79ff38d55e258dc988285ba7e6d1be7bf97ddf6775",
+      "bytes": 26068,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-12.png",
+      "sha256": "605b4670ad626b3b86f44ddec4f913fab9b7df373a27a2331b77d7ba4af39f59",
+      "bytes": 24117,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-13.png",
+      "sha256": "cc2dbb0b90e2c7d23f55fb5d66ac5819157f012e499d7066514d5005580c0272",
+      "bytes": 23266,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-14.png",
+      "sha256": "50e764b6e97e34fd5de63fb64d0b61d793e58aaddac39d97737e3ada48039480",
+      "bytes": 23674,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-15.png",
+      "sha256": "5dbc45b38fe2f83469e4f4eb38614fe5c95cb2d5adc4f9df30a3ac236bac7005",
+      "bytes": 23818,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-16.png",
+      "sha256": "2c28e8f5ef93244fe8fea149d36ca5e24d0cc6646f2000307534b934893f29b4",
+      "bytes": 25517,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-17.png",
+      "sha256": "9c2a6de922639228852aa55647337c63b831dba3fb10af16f1cc9795b0f10aa4",
+      "bytes": 23041,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-18.png",
+      "sha256": "1ffd20915c3fa2f6f3b45ef07bd4dd1bb2b09105cf6db5b626a924cc3e8715f9",
+      "bytes": 19575,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-20.png",
+      "sha256": "ef50e170b6fb808daa768320f22c97efe2bbc2559e1e48a6aa199f6a7273cb58",
+      "bytes": 24160,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-21.png",
+      "sha256": "2270cda1f1682728ce25bc65e1b4f3f79d30b2e8422d53353e6fa7bd2437a299",
+      "bytes": 24447,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-23.png",
+      "sha256": "ce1ac4f8f6b7c02f1f12b35a3f20e5b1af333c24f4c76d2f57bc86bdf1c5af84",
+      "bytes": 25969,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-24.png",
+      "sha256": "d2587cb9466a5e0da45e6bad0742c7e852fd7f32b14dec9df873fc0d8627e3ec",
+      "bytes": 25858,
+      "size": [
+        220,
+        220
+      ],
+      "output_format": "PNG",
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/sound-roll.mp3",
+      "sha256": "725e6bb14bf3c1ef1e7dead43e2422f9e9f8ede55684f29e117a54caef350ad4",
+      "bytes": 4845,
+      "output_format": "MP3"
+    },
+    {
+      "path": "public/assets/sound-step.mp3",
+      "sha256": "71c797f823b7f67a48ddec69db885e923ac90c4878efa5752cb8700c0d327448",
+      "bytes": 4641,
+      "output_format": "MP3"
+    },
+    {
+      "path": "public/assets/sound-capture.mp3",
+      "sha256": "42fd7feadc20e5cf0663c4c684e856141f2120f6c4b9d22aac269ac1eb8d2034",
+      "bytes": 8612,
+      "output_format": "MP3"
+    },
+    {
+      "path": "public/assets/sound-home.mp3",
+      "sha256": "a1da60876403044afd43a71561a009cff063cfe9f84e3bc60dc44b95b7d13b35",
+      "bytes": 7776,
+      "output_format": "MP3"
+    }
+  ],
+  "upstream_files": [
+    {
+      "path": "src/rules.js",
+      "sha256": "e140e1868705572ac1861a79eedc6f9e40f26173ea655c56c7315a44b4ee5a80"
+    },
+    {
+      "path": "src/rng.js",
+      "sha256": "cdeed4a89d98d2a8fcc51884454fa33ff705fd8c95faa00cc9e483f37cadd5ee"
+    },
+    {
+      "path": "src/ai.js",
+      "sha256": "d22dff0ca47b21b54c9acccf558e926251421606628192b97fbdb8791cb19157"
+    },
+    {
+      "path": "src/storage.js",
+      "sha256": "a6816f491237c769ba3ea8a2005b98e0fae82ed1acf3fe39e21d31d762fdf9c1"
+    },
+    {
+      "path": "src/lifecycle.js",
+      "sha256": "24c2e15c1f93a2d6f0e2ea63047d6d2f03f086e888fcf0fa4b7709943ec20742"
+    },
+    {
+      "path": "workflow/prototype.md",
+      "sha256": "298f9945dec89dbfcda24206a72497bfc69f437f050701b940e3f9f6ddde88be"
+    },
+    {
+      "path": "design/visual-baseline.md",
+      "sha256": "44c82f21a2cbcaf48824abcdd5465b2f3653f325b349b1ee8e418393512e05f8"
+    },
+    {
+      "path": "design/acceptance.md",
+      "sha256": "b3841054867a8189b5ced0a213e2dfe6d0f3f390e9031b356305d982c9ea9ba4"
+    },
+    {
+      "path": "design/reuse-baseline.json",
+      "sha256": "6aa3142b4b6f7866bae2d7231aade7bd686d021d931a9b46f9a66e3008e75b25"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "design/art-resource-spec.json",
+      "sha256": "673d2652214bda63d02091823fc7f015f61031ae2449be8fe030a29d4cce246b"
+    },
+    {
+      "path": "reference-assets/research-index.json",
+      "sha256": "8391e35e7125b025f7476f7198980f7066bd1e7988fe37de99b9eff01b01dd5b"
+    },
+    {
+      "path": "reference-assets/research-dice-frames.json",
+      "sha256": "2603eddc00c3ebe805b5f3092633172bf616d630f698b877623de9014279b357"
+    },
+    {
+      "path": "reference-assets/research-board-runtime.json",
+      "sha256": "c982f6466321806cd41e47098b9d464befef5ed5231c903b862b3a8cff911f41"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "workflow/art-manifest.json",
+      "sha256": "7955424cd32138f68ebbb4356b51ed808af1f52a194260f2ce8647f8a3f4c4fe"
+    },
+    {
+      "path": "public/assets/visual-manifest.json",
+      "sha256": "896bcf843a797a6dbcfa1f2edd46bf261d7e074d4369ae92235553e5b6b26c95"
+    }
+  ],
+  "not_executed": [
+    "npm run build",
+    "npm test",
+    "npm run check",
+    "真机验收",
+    "部署",
+    "商业授权核实"
+  ]
+}

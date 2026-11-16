@@ -1,0 +1,20 @@
+# Rebuildable archives and local experiment copies remain on disk.
+/backups/
+/dist/
+/experiment/
+/experiment_quick/
+/analysis/*
+!/analysis/后续迭代/
+/analysis/后续迭代/*
+!/analysis/后续迭代/整体评审.md
+__pycache__/
+*.py[cod]
+*.log
+
+/.oneconnect-git-history/
+!/analysis/ui_iteration_candidate_v230_rc4/
+/analysis/ui_iteration_candidate_v230_rc4/*
+!/analysis/ui_iteration_candidate_v230_rc4/game/
+!/analysis/ui_iteration_candidate_v230_rc4/game/**
+
+/tests/android_preview/out/

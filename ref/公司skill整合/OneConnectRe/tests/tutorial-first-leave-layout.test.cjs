@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');if(!process.argv[2])throw Error('Pass candidate tutorial-first.js');
+class El{constructor(){this.style={};this.children=[];}appendChild(e){this.children.push(e)}setAttribute(){}}
+let listener,frames=[],events=[],allow=true;const runtime={running_layout:{name:'game'},all_global_vars:[{name:'pause',data:0}]};
+const ref=[0,5,0,8,3,0,7,8,2,6,3,1,0,1,2,4,5,0,0,7,6,4,0,0,0],board=Array.from({length:6},()=>Array(12).fill(0));for(let y=4;y<9;y++)for(let x=1;x<6;x++)board[x][11-y]=ref[(y-4)*5+x-1];
+const document={body:new El(),createElement:()=>new El()},window={document,localStorage:{getItem:()=>null},oneConnectLevels:{levels:[{level:1,board}]},cr_getC2Runtime:()=>runtime,addEventListener:(_,f)=>listener=f,oneConnectHost:{emit:(type,detail)=>events.push({type,detail})}};window.window=window;
+const cr={plugins_:{Touch:function(){}},action:function(){}};cr.plugins_.Touch.prototype.cnds={OnTouchObject:()=>allow};cr.action.prototype.run_system=()=>true;
+vm.runInNewContext(fs.readFileSync(process.argv[2],'utf8'),{window,document,cr,requestAnimationFrame:f=>frames.push(f),Date,Number,Math});const guide=window.oneConnectTutorial;guide.install();listener({detail:{type:'game.board_configured',detail:{level:1}}});assert(guide.state().active);assert.equal(events[0].type,'tutorial.start');
+listener({detail:{type:'screen.SCREEN_BONUS'}});assert.equal(guide.state().active,false,'bonus cancels first guide');assert.equal(events.at(-1).type,'tutorial.cancelled');listener({detail:{type:'game.board_configured',detail:{level:1}}});assert(guide.state().active);
+runtime.running_layout={name:'menu'};const touch=cr.plugins_.Touch.prototype.cnds.OnTouchObject;assert.equal(touch({name:'t26'}),true,'old tutorial cannot block input in menu');allow=false;assert.equal(touch({name:'t26'}),false,'other input guards remain authoritative');
+frames.shift()();assert.equal(guide.state().active,false);assert.equal(events.at(-1).type,'tutorial.cancelled');assert.equal(events.at(-1).detail.level,1);assert.equal(document.body.children[0].style.display,'none');assert.equal(frames.length,0);
+runtime.running_layout={name:'game'};listener({detail:{type:'game.board_configured',detail:{level:1}}});assert(guide.state().active,'unfinished tutorial restarts on next round');assert.equal(frames.length,1);
+console.log('first tutorial releases state and input on exit PASS');

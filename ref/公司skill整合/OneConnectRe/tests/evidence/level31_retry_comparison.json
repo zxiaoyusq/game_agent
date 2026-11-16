@@ -1,0 +1,24 @@
+{
+  "sample": 1000,
+  "recovered": [
+    {
+      "seed": 486,
+      "attempts": 16
+    },
+    {
+      "seed": 652,
+      "attempts": 17
+    },
+    {
+      "seed": 677,
+      "attempts": 13
+    },
+    {
+      "seed": 907,
+      "attempts": 13
+    }
+  ],
+  "changed": [],
+  "failed": [],
+  "scope": "desktop deterministic comparison; replay uses independent editor rules"
+}

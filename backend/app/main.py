@@ -16,14 +16,16 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.config import BASE_DIR, CORS_ALLOW_ORIGINS
-from app.api.routes import art, chat, dev_demo, health, knowledge, models, planning, tasks, workflow
+from app.config import BASE_DIR, DATA_DIR, CORS_ALLOW_ORIGINS
+from app.api.routes import auth, health, knowledge, produced_games, reference_games, workflow
+from app.api.auth import LoginRequiredMiddleware
+from app.services.auth import AuthStore
 from app.services.skill_library import import_skill_library
 from app.services.production_library import import_production_library
 from app.services.workflow.engine import recover_interrupted_runs, shutdown_workers
 
 
-def create_app() -> FastAPI:
+def create_app(*, auth_store: AuthStore | None = None) -> FastAPI:
     """组装 REST 与可选 MCP，共用一个工作流执行器和应用生命周期。"""
     mcp_app = None
     config_path = os.getenv("GAME_MCP_CONFIG", "").strip()
@@ -51,16 +53,18 @@ def create_app() -> FastAPI:
 
     app = FastAPI(
         title="Game Agent Backend",
-        description="游戏 AI Agent 系统后端：策划 / 美术 / 知识库 / 任务",
+        description="游戏 AI Agent 系统后端：全流程工作台 / 知识库 / 产出游戏 / 登录",
         version="0.1.0", lifespan=lifespan,
     )
+    app.state.auth_store = auth_store or AuthStore(DATA_DIR / "auth" / "users.sqlite")
+    app.add_middleware(LoginRequiredMiddleware)
     # 跨域只服务现有工作台；MCP 使用显式 Bearer 认证，没有 OAuth 浏览器流程。
     app.add_middleware(
         CORSMiddleware, allow_origins=CORS_ALLOW_ORIGINS, allow_credentials=True,
         allow_methods=["*"], allow_headers=["*"],
     )
-    for router in (health.router, models.router, planning.router, art.router, knowledge.router,
-                   tasks.router, chat.router, dev_demo.router, workflow.router):
+    for router in (auth.router, health.router, knowledge.router, workflow.router,
+                   reference_games.router, produced_games.router):
         app.include_router(router, prefix="/api")
     if mcp_app is not None:
         app.mount("/mcp", mcp_app)

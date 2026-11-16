@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "browser": "153.0.8010.12",
+  "engine": "Chromium",
+  "viewports": [
+    "1280x800",
+    "390x844",
+    "390x700",
+    "320x700",
+    "844x390"
+  ],
+  "defaultLanguage": "zh-CN",
+  "locales": [
+    "en-US",
+    "zh-CN"
+  ],
+  "notes": [
+    "实际ZIP解压、CRC、源码包独立重建逐文件哈希一致",
+    "桌面纯键盘：9块，实际消2行，分数538",
+    "真实消行中P暂停400ms，剩余动画与奖励冻结，继续后不重复计分",
+    "手机模拟触点完成真实消行",
+    "实际离线试玩ZIP以file://、浏览器offline=true操作通过",
+    "减少动态偏好仍完成真实消行"
+  ],
+  "consoleErrors": [],
+  "expectedResourceFailureErrors": [
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "distUnchanged": true,
+  "dist": [
+    {
+      "path": "app.js",
+      "sha256": "18299c7641d993513852196ba3ee78db4823753f18ff27eef44bdd28fef44418"
+    },
+    {
+      "path": "assets/backgrounds/starfield.webp",
+      "sha256": "722931eec06ef80a69f582a86e589b21a254b17dc4ab49e3b02b128a603f85fc"
+    },
+    {
+      "path": "assets/tiles/I-kingfisher.webp",
+      "sha256": "fe0298288151789babb3bf8fa71869cd141f2caed33186c456cb26e7f67e6712"
+    },
+    {
+      "path": "assets/tiles/J-bear.webp",
+      "sha256": "ab3e27f9c960b9a802f9d0cf5e36546eedeb1fff6c1fe371585a8d923cf98abd"
+    },
+    {
+      "path": "assets/tiles/L-fox.webp",
+      "sha256": "e65cb261dfd0421810c0a898a7526069cfc4841f6dc9e659d8ccea6d49782c6f"
+    },
+    {
+      "path": "assets/tiles/O-leopard.webp",
+      "sha256": "fcdb1e614573123106e96ef505522f29d371885a8a301c18de9f3af555bde032"
+    },
+    {
+      "path": "assets/tiles/S-chameleon.webp",
+      "sha256": "660815083f17d890cfbc29409defbbbf3a496a1923dfe2abadbb792d3a0517b8"
+    },
+    {
+      "path": "assets/tiles/T-owl-card.webp",
+      "sha256": "e303a79bd5665a607feac037f23cfd64076cdcc39d6e09c334feddd26c3bcb9a"
+    },
+    {
+      "path": "assets/tiles/Z-rabbit.webp",
+      "sha256": "cfe43223f717f1119416217e84cd95ac797c53095fb18a9bc672aef690d879c5"
+    },
+    {
+      "path": "index.html",
+      "sha256": "77471f506cdc4c31d41a955ede30bb75fb569fc7294a8499861e93a72d7d0ddd"
+    },
+    {
+      "path": "input.js",
+      "sha256": "c538cacd39c3655f4bed9e64c774f1a76bdd3e065b13d63d0ef5f198a1e61fab"
+    },
+    {
+      "path": "renderer.js",
+      "sha256": "1d69c54b0ebdf31c62b05378f316967acd14b86ba854dc11cd6e87dc6db31738"
+    },
+    {
+      "path": "rules.js",
+      "sha256": "382581c0c96c8c088f698f75c584ae6162b76de297b8b782c8ef7e24dc327c43"
+    },
+    {
+      "path": "storage.js",
+      "sha256": "f2f8a1d44919a28b7b7e59cc72ecbf6f0250c253900ec33ba5249e1981ed9af7"
+    },
+    {
+      "path": "style.css",
+      "sha256": "d3c3d3c6b31f89ba326f183ff29e2a6c12591ade2827f02d1b35c9bdcd2cf23c"
+    }
+  ],
+  "sourceFingerprint": "df61b23ec2965858c58a7c90fbeec16d8e74fa8551b7d070944dba73af9a1946",
+  "limitations": [
+    "模拟触屏，未使用实体手机",
+    "原始参考PNG只能读取二进制文本，成品供调用方比对",
+    "源码包独立重建使用当前Node，未联网重新npm ci；锁文件已保留"
+  ]
+}

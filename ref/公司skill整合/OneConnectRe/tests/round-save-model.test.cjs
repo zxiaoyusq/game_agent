@@ -1,0 +1,5 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');const w={};w.window=w;vm.runInNewContext(fs.readFileSync('game/round-save-model.js','utf8'),w);const model=w.oneConnectRoundSaveModel;
+const entry={level:8,seconds:196,movement:'static',boardSize:{rows:2,cols:2},generator:{mask:[[1,1],[1,1]],typeCount:2}};
+const s={version:1,level:8,config:model.fingerprint(entry),rows:2,cols:2,board:[[1,2],[1,2]],timer:100,score:100,tip:2,shuffle:1};
+assert.equal(model.validate(s,entry),true);for(const mutate of [x=>x.board[0][0]=0,x=>x.board[0][0]=21,x=>x.board.pop(),x=>x.timer=-1,x=>x.level=7,x=>x.config='stale',x=>x.tip=-1,x=>x.rows=3,x=>x.version=2]){let bad=JSON.parse(JSON.stringify(s));mutate(bad);assert.equal(model.validate(bad,entry),false)}
+assert.equal(model.fingerprint({b:2,a:{y:1,x:3}}),model.fingerprint({a:{x:3,y:1},b:2}));assert.notEqual(model.fingerprint(entry),model.fingerprint({...entry,seconds:195}));console.log('round save schema, corruption, configuration compatibility PASS');

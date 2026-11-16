@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "web-game",
+  "name": "通用 H5 游戏全流程",
+  "description": "一次填写玩法与美术要求，DeepAgents 连续完成四阶段；需要补充时暂停提问。",
+  "brief": {
+    "name": "",
+    "genre": "",
+    "platform": "手机与电脑浏览器，触摸与鼠标",
+    "engine": "Canvas 2D · Web / H5",
+    "audience": "休闲游戏玩家",
+    "cycle": "完整可玩版本、真实测试与独立路径发布",
+    "idea": "",
+    "scope": "完整核心循环、必要动画、引导、存档、桌面与手机适配、真实构建和测试"
+  },
+  "genre_id": "general",
+  "framework_id": "canvas-web",
+  "model_provider": "api-key",
+  "model_id": "gpt-6.1-sol",
+  "references": [],
+  "knowledge_paths": [],
+  "production_plan": {
+    "template_id": "web-game",
+    "art_requirements": "明确主题、配色、参考风格、素材来源和动画要求；有原游戏参考时说明保留与修改范围。",
+    "auto_publish": true,
+    "publish_slug": "",
+    "stages": {
+      "prototype": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。分析需求与真实参考资料，明确核心循环、规则、状态、界面、首版范围及验收条件。输出 workflow/prototype.md，并为美术、代码阶段准备清晰交接。",
+        "skill_mode": "auto",
+        "skill_paths": []
+      },
+      "art": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。根据统一美术要求准备真实可集成资源，记录来源、尺寸、用途和动画规格；检查图集裁切、透明度和显示比例。输出预览与 workflow/art.md、workflow/art-manifest.json。清单 path、sha256、usage、source 必须是非空字符串，复杂来源使用 source_details。",
+        "skill_mode": "auto",
+        "skill_paths": []
+      },
+      "code": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。实现完整可玩游戏并集成已确认素材。规则、状态、渲染、输入和动画按职责组织，主要逻辑加中文注释。完成手机和桌面适配、触摸与鼠标输入、存档及恢复。使用相对资源路径支持独立子路径。实际跑通 npm run build、npm test、npm run check，使用浏览器真实输入验证并修复问题。dist/ 放构建，evidence/ 放证据，releases/ 放源码与试玩包，输出 workflow/code.md。",
+        "skill_mode": "auto",
+        "skill_paths": []
+      },
+      "test": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。独立重新运行 npm run build、npm test、npm run check，验证真实游戏核心循环、移动端与桌面布局、控制台异常和恢复行为。验证正常速度动画，保存连续截图或录像，不用静态截图冒充动画证据。检查源码包重建及构建一致性。测试阶段不改上游源码和美术，发现缺陷如实报告并明确修复阶段。输出 workflow/test.md，区分模拟与真机验收。",
+        "skill_mode": "auto",
+        "skill_paths": []
+      }
+    }
+  }
+}

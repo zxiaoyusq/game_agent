@@ -1,0 +1,12 @@
+{
+  "scope": "isolated local candidate; no SDK or gameplay transaction",
+  "concurrentSameClaim": [
+    "already_claimed",
+    "granted"
+  ],
+  "uniqueClaims": 20,
+  "concurrentUses": 3,
+  "countAfterReload": 20,
+  "duplicateAfterReload": true,
+  "errors": []
+}

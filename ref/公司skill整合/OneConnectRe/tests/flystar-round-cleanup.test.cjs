@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+let listener,frames=[],nodes=[],now=0;
+const layer={layerToCanvas:(x,y,h)=>h?x:y};
+const runtime={running_layout:{name:'game'},all_global_vars:[{name:'pause',data:0}],types:{t24:{instances:[{uid:31,x:100,y:30,layer}]}},canvas:{width:400,height:800,getBoundingClientRect:()=>({left:0,top:0,width:400,height:800})}};
+const w={cr_getC2Runtime:()=>runtime,addEventListener:(_,fn)=>listener=fn};
+const document={hidden:false,body:{appendChild(n){nodes.push(n)}},createElement:()=>({style:{},setAttribute(){},remove(){this.removed=true}})};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/flystar_candidate.js','utf8'),{window:w,document,Number,Array,Math,requestAnimationFrame:f=>frames.push(f)});w.oneConnectFlyStarCandidate.install();
+const send=(type,detail={})=>listener({detail:{type,detail}}),spawn=()=>send('candidate.link_points',{pathScreenPoints:[{x:1,y:2},{x:3,y:4}]}),tick=()=>{const f=frames.shift();assert(f);f(now+=50)};
+spawn();send('game.level_win');runtime.all_global_vars[0].data=1;for(let i=0;i<20&&frames.length;i++)tick();assert(nodes.slice(0,2).every(n=>n.removed),'last stars still finish after win even if paused');
+runtime.all_global_vars[0].data=0;send('game.board_configured');spawn();const previous=nodes.slice(-2);send('game.round_ready');assert(previous.every(n=>n.removed),'new round removes old stars');
+spawn();const fresh=nodes.slice(-2);assert(fresh.every(n=>!n.removed));for(let i=0;i<20&&frames.length;i++)tick();assert(fresh.every(n=>n.removed),'fresh round stars still animate');
+console.log('fly stars finish on win and clear on new round PASS');

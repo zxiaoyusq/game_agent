@@ -1,0 +1,21 @@
+{
+  "scope": "根据已读取的参考分页在会话记录中的换行数重建；不是原文件直接读取或独立哈希校验",
+  "history": "/conversation_history/fbb8d45128cf4ea1bb45dc41a58476cf.md",
+  "source": "mcp-inputs/mac-codex/98cdce5f52ad498f6aea9fabb86f9c9020ad7b5c594c9cd6c1ac9dd03a769262/Carrom_ai_force_98cdce5f.js",
+  "method": "按字符offset顺序拼接参考工具正文；去除Tool前缀与AI消息；分页末行和下一页首行合并。报告同时保留会话行号和函数锚点，避免将字符offset当行号。",
+  "pages": [
+    {"offset":0,"historyStart":319,"historyEnd":985,"sourceStart":1},
+    {"offset":24000,"historyStart":1536,"historyEnd":2267,"sourceStart":667},
+    {"offset":48000,"historyStart":2269,"historyEnd":2831,"sourceStart":1398},
+    {"offset":72000,"historyStart":2832,"historyEnd":3451,"sourceStart":1960},
+    {"offset":96000,"historyStart":3452,"historyEnd":4040,"sourceStart":2579},
+    {"offset":120000,"historyStart":4041,"historyEnd":4564,"sourceStart":3167},
+    {"offset":144000,"historyStart":4566,"historyEnd":5124,"sourceStart":3690},
+    {"offset":168000,"historyStart":5125,"historyEnd":5737,"sourceStart":4248},
+    {"offset":192000,"historyStart":5738,"historyEnd":6386,"sourceStart":4860},
+    {"offset":216000,"historyStart":6387,"historyEnd":6870,"sourceStart":5508},
+    {"offset":240000,"historyStart":6872,"historyEnd":7531,"sourceStart":5991},
+    {"offset":264000,"historyStart":7532,"historyEnd":8095,"sourceStart":6650},
+    {"offset":288000,"historyStart":8096,"historyEnd":8674,"sourceStart":7213}
+  ]
+}

@@ -26,6 +26,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.temporary = tempfile.TemporaryDirectory()
         self.root = Path(self.temporary.name)
         self.patches = [patch.object(engine, "ROOT", self.root), patch.object(engine, "STORE", self.root / "state"),
+                        patch.object(engine, "KNOWLEDGE_DIR", self.root / "knowledge"),
                         patch.object(knowledge, "KNOWLEDGE_DIR", self.root / "knowledge")]
         for item in self.patches:
             item.start()
@@ -259,6 +260,24 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(skills[0]["name"], "bad")
             await self.start()
 
+    async def test_skill_registry_excludes_sync_backups_and_linked_packages(self):
+        """来源更新归档可含同名入口，不能作为新技能再次提供给运行选择。"""
+        knowledge_root = self.root / "knowledge"
+        base = knowledge_root / "skill" / "docs"
+        entry = base / "casual-game-art-style" / "SKILL.md"
+        entry.parent.mkdir(parents=True)
+        entry.write_text("---\nname: casual-game-art-style\ndescription: 当前版本说明\nmetadata:\n  version: '2.0'\n---\n正文", encoding="utf-8")
+        archive = base / ".skill-source-sync" / "operation" / "previous" / "sample" / "SKILL.md"
+        archive.parent.mkdir(parents=True)
+        archive.write_text(entry.read_text(), encoding="utf-8")
+        (base / "linked").symlink_to(entry.parent, target_is_directory=True)
+        with patch.object(engine, "KNOWLEDGE_DIR", knowledge_root):
+            skills = engine.list_skills()
+        self.assertEqual(len(skills), 1)
+        self.assertEqual(skills[0]["name"], "休闲游戏美术风格与视觉规范")
+        self.assertEqual(skills[0]["description"], "当前版本说明")
+        self.assertEqual(skills[0]["version"], "2.0")
+
     async def test_non_sorting_project_uses_selected_profile_and_reads_frozen_knowledge(self):
         """替代推理图以检查真实建图输入和只读工具，不调用外部模型。"""
         self.project = self.create_profile_project()
@@ -449,6 +468,41 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(origins["workflow/prototype.md"], "agent_edit")
         self.assertEqual(origins["external.js"], "workspace_observation")
 
+    async def test_processed_image_provenance_matches_final_bytes_only(self):
+        """调用真实后处理工具，再修改其中一个候选，归档不能错误继承旧处理标签。"""
+        import io
+        from PIL import Image
+        from app.services.workflow.production_tools import create_production_tools
+
+        prototype = await self.start()
+        self.finish_with_artifact(prototype)
+        engine.confirm_stage(self.project["id"], "prototype")
+        run = await self.start("art")
+        workspace = engine.resolve_workspace(self.project["workspace"])
+        source = workspace / "reference-assets" / "source.png"
+        source.parent.mkdir()
+        image = Image.new("RGBA", (4, 2), (120, 70, 40, 128))
+        buffer = io.BytesIO()
+        image.save(buffer, "PNG")
+        source.write_bytes(buffer.getvalue())
+        baseline = engine.snapshot(workspace)
+        tools = {item.name: item for item in create_production_tools(workspace, run,
+                 lambda kind, message, data: engine.event(run["id"], kind, message, data))}
+        for name in ("kept", "changed"):
+            tools["process_art_image"].invoke({"source_path": "reference-assets/source.png",
+                "destination": f"public/assets/{name}.png", "crop": [0, 0, 2, 2]})
+        # 这里只模拟工具完成之后的真实外部改动，不篡改任何来源事件。
+        Image.new("RGBA", (2, 2), (10, 20, 30, 255)).save(workspace / "public/assets/changed.png")
+        artifacts = engine.collect_artifacts(run["id"], workspace, baseline)
+        origins = {item["path"]: item["provenance"] for item in artifacts}
+        self.assertEqual(origins["public/assets/kept.png"], "processed_asset")
+        self.assertEqual(origins["public/assets/changed.png"], "workspace_observation")
+        events = [item["data"] for item in engine.load("runs", run["id"])["events"]
+                  if item["type"] == "image_processed"]
+        self.assertEqual(len(events), 2)
+        self.assertTrue(all(item["source_sha256"] == hashlib.sha256(source.read_bytes()).hexdigest()
+                            for item in events))
+
     async def test_empty_initial_snapshot_survives_resume(self):
         """空工程首轮生成的文件，恢复成功后仍属于同一运行的产物。"""
         run = await self.start()
@@ -492,7 +546,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual({item["path"] for item in completed["artifacts"]}, {"game.js", "workflow/prototype.md"})
         # 挂起工具继续用None输入，当前恢复轮次通过system提供，不插入Human破坏顺序。
         self.assertIsNone(seen["inputs"])
-        self.assertEqual(seen["config"]["recursion_limit"], 150)
+        self.assertEqual(seen["config"]["recursion_limit"], 300)
         self.assertEqual(completed["attempt"], 2)
         system_prompt = graph_factory.call_args.kwargs["system_prompt"]
         self.assertIn("attempt=2", system_prompt)

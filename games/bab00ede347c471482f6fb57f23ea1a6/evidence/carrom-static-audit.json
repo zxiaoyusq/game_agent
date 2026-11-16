@@ -1,0 +1,527 @@
+{
+  "metadata": [
+    {
+      "path": "reference-inputs/after_d0af667f.js",
+      "bytes": 574548,
+      "sha256": "d0af667f4c37f50845e94588d3f705c169a3e680c9c247e7477bc2d98609b2ac"
+    },
+    {
+      "path": "reference-inputs/before_342e46b7.js",
+      "bytes": 572803,
+      "sha256": "342e46b75c9b2c5023756b13d1ec1939c2ac83880659ec45de17c126dec118ad"
+    }
+  ],
+  "calls": [
+    {
+      "line": 4543,
+      "args": "_0x2c664d, _0x1cd0f4, _0x3291e7, _0x5bf2f1"
+    },
+    {
+      "line": 4621,
+      "args": "_0x3442b5, _0x248c6b, _0xa1fc64, null"
+    },
+    {
+      "line": 4628,
+      "args": "_0x5b4aca, _0x63ef0a, _0x157794, _0x5bf2f1"
+    },
+    {
+      "line": 4755,
+      "args": "_0x259ced, _0x33ad63, _0x51ba9e, _0x5ccf72"
+    },
+    {
+      "line": 4831,
+      "args": "_0x38960c, _0x37f94f, _0x277390, null"
+    },
+    {
+      "line": 4838,
+      "args": "_0x8ead75, _0x15aa97, _0x244b79, _0x5ccf72"
+    },
+    {
+      "line": 4956,
+      "args": "_0x41e2cf, _0x395f57, _0x3013bf, _0x401fea"
+    },
+    {
+      "line": 5027,
+      "args": "_0x1590c9, _0x3e3b8f, _0x3542cc, null"
+    },
+    {
+      "line": 5034,
+      "args": "_0x2fcc90, _0x163ae8, _0x1a5851, _0x401fea"
+    },
+    {
+      "line": 5152,
+      "args": "_0x296671, _0x17d54f, _0xa2dec0, _0x42b5f4"
+    },
+    {
+      "line": 5216,
+      "args": "_0x226e70, _0x2851b3, _0x14830a, null"
+    },
+    {
+      "line": 5223,
+      "args": "_0x2cc74c, _0x2f02a9, _0x3f8514, _0x42b5f4"
+    }
+  ],
+  "helper": "    function _carromStartPathBlocked(origin, angle, length, intendedTarget) {\r\n      if (!origin || !Number.isFinite(origin.x) || !Number.isFinite(origin.y) ||\r\n          !Number.isFinite(angle) || !Number.isFinite(length) || length < 0) return true;\r\n      if (length === 0) return false;\r\n      var dx = Math.cos(angle), dy = Math.sin(angle), end = Math.min(length, _0x133600 * 2),\r\n        radius = _0x133600 + 16, discs = _0x3e4566.concat(_0x2a9c75, _0x3231b3);\r\n      for (var disc of discs) {\r\n        if (disc === intendedTarget) continue;\r\n        if (!disc || !Number.isFinite(disc.x) || !Number.isFinite(disc.y)) return true;\r\n        var x = disc.x - origin.x, y = disc.y - origin.y,\r\n          along = Math.max(0, Math.min(end, x * dx + y * dy)),\r\n          ex = x - along * dx, ey = y - along * dy;\r\n        if (ex * ex + ey * ey < radius * radius) return true;\r\n      }\r\n      return false;\r\n    }\r\n",
+  "helperSha256": "481bcbf615f573912aed964484a529b956ce7516656488ef94ce744a6ae8e7bc",
+  "onlyHelperAnd12Calls": true,
+  "fullDiffStatus": "PASS：删除一个公共函数与12个OR后，全文逐字符与基线一致（含换行）",
+  "composedResults": [
+    {
+      "name": "旧检测先执行：null起点抛错",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "旧检测先执行：null棋抛错",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "短段null棋被新保护跳过",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "正常第三棋新保护补起段",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "fallbackReplay": {
+    "fallback": {
+      "pos": {
+        "x": 320,
+        "y": 421
+      },
+      "dir": 1.5707963267948966
+    },
+    "guardWouldBlock": true,
+    "pass": true,
+    "scope": "实际fallback源码，几何宿主与随机源替身；非真实射击物理"
+  },
+  "results": [
+    {
+      "name": "起段盲区修复",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 10,
+          "y": 0
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "第三棋在起点后方但重叠",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "100",
+      "discs": [
+        {
+          "x": -10,
+          "y": 0
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "第三棋按实际半径精确相切",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "100",
+      "discs": [
+        {
+          "x": 20,
+          "y": 37.760000000000005
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "半径字面量浮点边界",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "100",
+      "discs": [
+        {
+          "x": 20,
+          "y": 37.76
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "预期目标初始接触排除",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 37.76,
+          "y": 0,
+          "id": 1
+        }
+      ],
+      "targetIdentity": 0,
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "反弹前段不得排除目标",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 37.76,
+          "y": 0,
+          "id": 1
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "同ID不同对象仍为障碍",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 10,
+          "y": 0,
+          "id": 1
+        }
+      ],
+      "targetIdentity": -1,
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "克隆目标不是同一引用",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 37.76,
+          "y": 0,
+          "id": 1
+        }
+      ],
+      "targetIdentity": -1,
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "零长绕过重叠棋",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "0",
+      "discs": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "负长拒绝",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "-1",
+      "discs": [],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "NaN角度拒绝",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "NaN",
+      "length": "20",
+      "discs": [],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "无限长度拒绝",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "Infinity",
+      "discs": [],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "缺字段起点拒绝",
+      "origin": {
+        "x": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "坏棋数据拒绝",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": null,
+          "y": 0
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "预期目标先排除后验证",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": null,
+          "y": 0
+        }
+      ],
+      "targetIdentity": 0,
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "零长跳过坏棋",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "0",
+      "discs": [
+        null
+      ],
+      "targetIdentity": "null",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "null棋与null目标相等先跳过",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        null
+      ],
+      "targetIdentity": "null",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "截短段外不在胶囊内",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "100",
+      "discs": [
+        {
+          "x": 100,
+          "y": 0
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "实际棋半径16下37.3为真实重叠",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 10,
+          "y": 37.3
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "回退坐标的起段第三棋",
+      "origin": {
+        "x": 320,
+        "y": 421
+      },
+      "angle": "1.5707963267948966",
+      "length": "179",
+      "discs": [
+        {
+          "x": 357,
+          "y": 441
+        },
+        {
+          "x": 320,
+          "y": 600
+        }
+      ],
+      "targetIdentity": 1,
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "容许1单位棋盘漂移可跨入胶囊",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 10,
+          "y": 37.7
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "漂移前不在胶囊内",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "20",
+      "discs": [
+        {
+          "x": 10,
+          "y": 38.2
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "反弹起点零长重叠",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "angle": "0",
+      "length": "0",
+      "discs": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "targetIdentity": "null",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    }
+  ],
+  "scope": "冻结源码完整哈希、逐字符差分、语法编译；从真实源码切取新旧检测函数隔离验证，不是物理、浏览器或设备验收"
+}

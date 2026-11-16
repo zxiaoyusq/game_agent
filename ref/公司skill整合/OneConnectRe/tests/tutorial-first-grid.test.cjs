@@ -1,0 +1,11 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=process.argv[2];assert(source,'pass generated tutorial-first.js path');
+let vars=[];const window={cr_getC2Runtime:()=>({all_global_vars:vars})};
+vm.runInNewContext(fs.readFileSync(source,'utf8'),{window});
+const slot=window.oneConnectTutorial.slot;
+assert.equal(slot({x:89+3*101,y:133+2*101}),21,'legacy default works when globals are unavailable');
+vars=[['ITEM_SIZE',96],['ITEM_SPACING',5],['BOARD_OFFSET_X',36],['BOARD_OFFSET_Y',80]].map(([name,data])=>({name,data}));
+assert.equal(slot({x:89+3*101,y:133+2*101}),21,'default board mapping remains unchanged');
+vars=[['ITEM_SIZE',65],['ITEM_SPACING',5],['BOARD_OFFSET_X',360],['BOARD_OFFSET_Y',100]].map(([name,data])=>({name,data}));
+assert.equal(slot({x:397.5+3*70,y:137.5+2*70}),21,'compact board uses its own offset and spacing');
+console.log('first tutorial uses runtime grid geometry PASS');

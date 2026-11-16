@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95433,
+    "apiName":  "Who Dies Last",
+    "targetName":  "Who Dies Last",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Who_Dies_Last.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260708/3d6509bc2bc47ad54c10cdbf64ceddc9.zip",
+    "bundleMd5":  "3d6509bc2bc47ad54c10cdbf64ceddc9",
+    "bundleSize":  26373845,
+    "updatedAt":  1783509669,
+    "gameLink":  "https://www.shyangyugame.com/Who_Dies_Last/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95433",
+    "category":  "Action",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Who_Dies_Last.zip",
+    "localBytes":  26373845,
+    "verifiedAt":  "2026-10-20T10:38:55",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

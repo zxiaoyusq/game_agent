@@ -1,0 +1,56 @@
+{
+  "stage": "art",
+  "checks": {
+    "sampleSizes": 14,
+    "previewRoundtrip": true,
+    "cropBounds": true
+  },
+  "runtimeBytes": 934122,
+  "assets": [
+    {
+      "path": "public/assets/tiles/I-kingfisher.webp",
+      "bytes": 50852,
+      "sha256": "fe0298288151789babb3bf8fa71869cd141f2caed33186c456cb26e7f67e6712"
+    },
+    {
+      "path": "public/assets/tiles/O-leopard.webp",
+      "bytes": 56368,
+      "sha256": "fcdb1e614573123106e96ef505522f29d371885a8a301c18de9f3af555bde032"
+    },
+    {
+      "path": "public/assets/tiles/T-owl-card.webp",
+      "bytes": 43392,
+      "sha256": "e303a79bd5665a607feac037f23cfd64076cdcc39d6e09c334feddd26c3bcb9a"
+    },
+    {
+      "path": "public/assets/tiles/J-bear.webp",
+      "bytes": 48506,
+      "sha256": "ab3e27f9c960b9a802f9d0cf5e36546eedeb1fff6c1fe371585a8d923cf98abd"
+    },
+    {
+      "path": "public/assets/tiles/S-chameleon.webp",
+      "bytes": 54294,
+      "sha256": "660815083f17d890cfbc29409defbbbf3a496a1923dfe2abadbb792d3a0517b8"
+    },
+    {
+      "path": "public/assets/tiles/L-fox.webp",
+      "bytes": 50632,
+      "sha256": "e65cb261dfd0421810c0a898a7526069cfc4841f6dc9e659d8ccea6d49782c6f"
+    },
+    {
+      "path": "public/assets/tiles/Z-rabbit.webp",
+      "bytes": 38360,
+      "sha256": "cfe43223f717f1119416217e84cd95ac797c53095fb18a9bc672aef690d879c5"
+    },
+    {
+      "path": "public/assets/backgrounds/starfield.webp",
+      "bytes": 591718,
+      "sha256": "722931eec06ef80a69f582a86e589b21a254b17dc4ab49e3b02b128a603f85fc"
+    }
+  ],
+  "limitations": [
+    "静态合成，不验证玩法或浏览器",
+    "PNG预览使用实际WebP派生样张，背景使用生成母版",
+    "素材alpha以process_art_image结果为准，全不透明"
+  ]
+}

@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const dir=process.argv[2];assert(dir,'candidate game directory required');
+const levels=JSON.parse(fs.readFileSync('config/levels.json','utf8')).levels;
+const el=()=>({style:{},appendChild(){},setAttribute(){}}),listeners=[],events=[];
+const layer={layerToCanvas:(x,y,isX)=>isX?x:y};
+const tiles=[{uid:1,x:493,y:234,layer,instance_vars:[3]},{uid:2,x:392,y:335,layer,instance_vars:[3]}];
+const local=(sid,value)=>({sid,data:value,getValue(){return this.data}});
+const runtime={running_layout:{name:'game'},all_global_vars:[{name:'level',data:1}],all_local_vars:[local(230773463274312,''),local(549914461589189,1),local(205709254634256,2)],types:{t5:{instances:tiles}},canvas:{width:1000,height:1000,getBoundingClientRect:()=>({left:0,top:0,width:1000,height:1000})}};
+const cr={plugins_:{Touch:function(){}},action:function(){}};cr.plugins_.Touch.prototype.cnds={OnTouchObject:()=>true};cr.action.prototype.run_system=function(){};
+const window={cr,oneConnectLevels:{levels},localStorage:{getItem:()=>null,setItem(){}},cr_getC2Runtime:()=>runtime,addEventListener:(name,fn)=>{if(name==='oneconnect:event')listeners.push(fn)},oneConnectHapticsCandidate:{pulse(){}}};
+window.oneConnectHost={emit(type,detail){events.push({type,detail});for(const fn of listeners)fn({detail:{type,detail}})}};
+const ctx={window,document:{createElement:el,body:{appendChild(){}}},cr,Date,Number,Array,Math,console,requestAnimationFrame(){}};
+vm.runInNewContext(fs.readFileSync(path.join(dir,'tutorial-first.js'),'utf8'),ctx);vm.runInNewContext(fs.readFileSync(path.join(dir,'invalid-link-capture-candidate.js'),'utf8'),ctx);
+window.oneConnectTutorial.install();window.oneConnectInvalidLinkCaptureCandidate.install();window.oneConnectHost.emit('game.board_configured',{level:1});for(let i=0;i<3;i++)window.oneConnectHost.emit('game.match',{level:1});
+assert(window.oneConnectTutorial.state().demonstrating);for(const tile of tiles)assert(cr.plugins_.Touch.prototype.cnds.OnTouchObject({name:'t5',getCurrentSol:()=>({getObjects:()=>[tile]})}));
+cr.action.prototype.run_system.call({sid:564412399746352,runtime});assert(events.some(e=>e.type==='candidate.invalid_link'),'blocked pair reaches the invalid-link feedback event');
+console.log('tutorial blocked pair reaches invalid-link feedback PASS');

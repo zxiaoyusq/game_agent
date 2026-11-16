@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93876,
+    "apiName":  "Tidy Master",
+    "targetName":  "Tidy Master",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Tidy_Master.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260909/9a36d2e2acb652d75061c759679e7d6d.zip",
+    "bundleMd5":  "9a36d2e2acb652d75061c759679e7d6d",
+    "bundleSize":  7096985,
+    "updatedAt":  1788940674,
+    "gameLink":  "https://www.excellenth5game.com/Tidy_Master/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93876",
+    "category":  "Puzzle",
+    "rate":  8.9,
+    "gameType":  1,
+    "localFile":  "Tidy_Master.zip",
+    "localBytes":  7096985,
+    "verifiedAt":  "2026-10-20T10:35:16",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

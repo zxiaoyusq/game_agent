@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap');
-
+/* 使用本机字体与系统回退，知识库阅读不依赖外部字体服务。 */
 :root {
   /* 背景色系：米白 / 浅灰，参考图2风格 */
   --bg-primary:   #f5f4f0;

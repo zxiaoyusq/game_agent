@@ -1,0 +1,9 @@
+{
+  "mode": "procedural",
+  "palette": {"background": "#F8FAFC", "surface": "#FFFFFF", "text": "#0F172A", "star": "#14B8A6", "outline": "#0F766E"},
+  "star": {"asset": "./assets/star.svg", "intrinsicWidth": 64, "intrinsicHeight": 64, "displayWidthCss": 56, "displayHeightCss": 56, "hitRadiusCss": 32, "safeInsetCss": 40},
+  "layout": {"pagePaddingCss": 16, "maxWidthCss": 480, "mobileCanvasHeightCss": 360, "desktopCanvasHeightCss": 420, "minViewportWidthCss": 320, "restartMinHeightCss": 44, "statusMinHeightCss": 28, "fontFamily": "system-ui, sans-serif"},
+  "animation": {"durationMs": 160, "keyframes": [{"progress": 0, "scale": 0.90}, {"progress": 0.60, "scale": 1.06}, {"progress": 1, "scale": 1.00}], "easingPerSegment": "ease-out-cubic", "lockCollectionDuringAnimation": true, "restartAlwaysEnabled": true, "reducedMotion": "立即使用比例1，无等待锁", "onHidden": "暂停表现并取消活动指针", "onVisible": "以已提交规则状态恢复比例1并清除过期锁"},
+  "positions": [[0.50, 0.50], [0.24, 0.28], [0.76, 0.70], [0.24, 0.72], [0.76, 0.28]],
+  "copy": {"title": "星点采集", "instruction": "点击星星，采集 5 次即可获胜", "restart": "重开", "victory": "采集完成！"}
+}

@@ -1,0 +1,10 @@
+{
+  "result": {
+    "progress": 8,
+    "level": 8,
+    "tiles": 32,
+    "timer": 196,
+    "errors": []
+  },
+  "firstSevenEvidence": "result-first7.json"
+}

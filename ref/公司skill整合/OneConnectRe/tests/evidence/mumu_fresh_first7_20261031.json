@@ -1,0 +1,12 @@
+{
+  "result": {
+    "progress": 7,
+    "level": 7,
+    "tiles": 40,
+    "hammer": 2,
+    "errors": []
+  },
+  "firstSixEvidence": "result-first6.json",
+  "seventhTutorial": "completed",
+  "timerPaused": true
+}

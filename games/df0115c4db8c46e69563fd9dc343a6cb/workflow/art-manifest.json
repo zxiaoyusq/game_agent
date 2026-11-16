@@ -1,0 +1,25 @@
+{
+  "mode": "raster",
+  "stage": "art",
+  "language": "zh-CN",
+  "runtimeBytes": 934122,
+  "assets": [
+    {"path":"public/assets/tiles/I-kingfisher.webp","sha256":"fe0298288151789babb3bf8fa71869cd141f2caed33186c456cb26e7f67e6712","usage":"I形四连方块四格及下一块复用；256×256，sourceRect为16,16,224,224","source":"工程图片API生成六动物母版，按0,0,512,512裁切并等比缩小为无损WebP"},
+    {"path":"public/assets/tiles/O-leopard.webp","sha256":"fcdb1e614573123106e96ef505522f29d371885a8a301c18de9f3af555bde032","usage":"O形金黄幼豹方块及下一块；256×256","source":"工程图片API生成六动物母版，按512,0,512,512裁切并等比缩小为无损WebP"},
+    {"path":"public/assets/tiles/T-owl-card.webp","sha256":"e303a79bd5665a607feac037f23cfd64076cdcc39d6e09c334feddd26c3bcb9a","usage":"T形紫猫头鹰方块、虚影与下一块；256×256；这是正式T牌路径","source":"工程图片API生成独立1024×1024猫头鹰母版，完整等比缩小为无损WebP"},
+    {"path":"public/assets/tiles/J-bear.webp","sha256":"ab3e27f9c960b9a802f9d0cf5e36546eedeb1fff6c1fe371585a8d923cf98abd","usage":"J形暖棕熊方块及下一块；256×256","source":"工程图片API生成六动物母版，按1024,0,512,512裁切并等比缩小为无损WebP"},
+    {"path":"public/assets/tiles/S-chameleon.webp","sha256":"660815083f17d890cfbc29409defbbbf3a496a1923dfe2abadbb792d3a0517b8","usage":"S形绿变色龙方块及下一块；256×256","source":"工程图片API生成六动物母版，按0,512,512,512裁切并等比缩小为无损WebP"},
+    {"path":"public/assets/tiles/L-fox.webp","sha256":"e65cb261dfd0421810c0a898a7526069cfc4841f6dc9e659d8ccea6d49782c6f","usage":"L形橙狐狸方块及下一块；256×256","source":"工程图片API生成六动物母版，按512,512,512,512裁切并等比缩小为无损WebP"},
+    {"path":"public/assets/tiles/Z-rabbit.webp","sha256":"cfe43223f717f1119416217e84cd95ac797c53095fb18a9bc672aef690d879c5","usage":"Z形粉耳白兔方块及下一块；256×256","source":"工程图片API生成六动物母版，按1024,512,512,512裁切并等比缩小为无损WebP"},
+    {"path":"public/assets/backgrounds/starfield.webp","sha256":"722931eec06ef80a69f582a86e589b21a254b17dc4ab49e3b02b128a603f85fc","usage":"页面星空背景，768×1152，以cover居中等比显示，棋盘另绘深蓝底","source":"工程图片API按深海军蓝稀疏星点描述生成1024×1536母版，等比缩小为无损WebP"},
+    {"path":"public/assets/masters/owl.png","sha256":"efade6bc0be94a84c8140e4700178613d5abdaba087a16578b681a93aed9288c","usage":"猫头鹰创作母版及六动物生成的实际风格参考，保留研究，不进入dist","source":"本轮工程图片API真实生成，模型返回gpt-image-2，无输入图片；依据用户核对描述创作"},
+    {"path":"public/assets/masters/animal-six.png","sha256":"17a8a48c07b245d37fe4ea19aabea9b4f5ad940796dcdbc46d592d6521850597","usage":"1536×1024六动物3×2母版，供512×512精确裁切与追溯，不进入dist","source":"本轮工程图片API真实生成，实际输入本轮owl.png作画风参考，未输入用户原PNG"},
+    {"path":"public/assets/masters/starfield.png","sha256":"d4fd363180a19485e1435c577b3ee6bb8966089af88c57820bc0413969b82aa1","usage":"1024×1536背景母版、静态预览背景来源，不进入dist","source":"本轮工程图片API真实生成，无参考图片，按用户确认的星空描述原创"},
+    {"path":"public/assets/previews/mobile-board.png","sha256":"e745918c3c4035c0009c940a6d01a02095fdeb971d46531401926a1dc597c016","usage":"390×700静态手机棋盘美术预览，24px格，含活动T块、虚影、O下一块，不是试玩截图","source":"本轮art-preview.cjs将正式WebP派生24/30px样张与背景母版确定性合成"},
+    {"path":"public/assets/previews/desktop-board.png","sha256":"95f8f2fcbcd2487b6affbc68dbd0d0569791bedd3bcf470b3cd1ef2df082a614","usage":"720×740静态桌面棋盘美术预览，30px格，含活动块及下一块，不进入dist","source":"本轮art-preview.cjs确定性合成，背景cover等比采样，不是AI整屏生成或浏览器截图"},
+    {"path":"public/assets/previews/size-sheet.png","sha256":"57af8d53c8fc9d25f36fa71ad7e2861d8958e57c5859a267fb45d1fb586ffbef","usage":"420×130七动物24及30px原尺寸辨识样张拼图，不进入dist","source":"process_art_image从正式WebP按sourceRect派生14个PNG，再由art-preview.cjs按原尺寸拼合"},
+    {"path":"assets/art-preview.html","sha256":"0474e50e7e7a56419e04d66f61283dec3be0a8f6984a0083620cace70eed6530","usage":"可本地打开的静态预览入口，中文DOM叠加HUD与按钮示意，不是玩法实现","source":"本轮编写HTML/CSS，通过相对路径引用实际合成PNG，无在线依赖；尚未浏览器执行"},
+    {"path":"workflow/visual-spec.json","sha256":"4b297334706f465cfe16c48bf6fa19bb6abb0ec7e4a5e931c4868d4434d1207c","usage":"下游Canvas集成契约：八张运行素材白名单、裁切、色板、中文UI和180ms动画规格","source":"本轮按已确认原型及真实图片后处理结果编写的美术设计配置"},
+    {"path":"scripts/art-preview.cjs","sha256":"72e6c49bf09510b81c4d13e0eefe0353c823f3afa88b24a2884fca7a461a2ca3","usage":"复现静态预览并做文件、尺寸、裁切界限、相对路径与PNG回读检查，不进入dist","source":"本轮原创Node.js美术合成与校验脚本，仅使用内置fs/zlib/crypto模块"}
+  ]
+}

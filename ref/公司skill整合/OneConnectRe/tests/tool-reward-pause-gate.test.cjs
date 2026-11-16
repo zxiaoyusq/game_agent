@@ -1,0 +1,24 @@
+const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),assert=require('node:assert/strict');
+if(!process.argv[2])throw Error('candidate game directory required');
+class El{constructor(){this.children=[];this.style={};this.hidden=false;}appendChild(x){this.children.push(x)}append(...x){this.children.push(...x)}setAttribute(){}addEventListener(){}}
+const pause={name:'pause',data:1},tip={name:'tip',data:0},shuffle={name:'shuffle',data:0},rt={running_layout:{name:'game'},all_global_vars:[pause,tip,shuffle]};
+const listeners={};const window={cr_getC2Runtime:()=>rt,oneConnectRewardLifecycle:{create:()=>({state:()=>({busy:false}),setProvider(){}})},addEventListener(n,fn){(listeners[n]??=[]).push(fn)}};
+const cr={plugins_:{Touch:function(){}},action:function(){}};cr.plugins_.Touch.prototype.cnds={OnTouchObject(){return true}};cr.action.prototype.run_system=function(){};
+const document={body:new El(),head:new El(),createElement:()=>new El(),createTextNode:text=>({textContent:text})};
+vm.runInNewContext(fs.readFileSync(path.join(process.argv[2],'tool-reward-candidate.js'),'utf8'),{window,document,cr,Date,Number,Promise,Error,console});
+window.oneConnectToolRewardCandidate.install();const root=document.body.children[0],type={name:'t26',getCurrentSol:()=>({getObjects:()=>[{cur_frame:1}]})};
+assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject(type),false,'paused input is blocked from the native tool');assert.equal(root.hidden,true,'paused input cannot open reward');
+pause.data=0;rt.running_layout.name='menu';cr.plugins_.Touch.prototype.cnds.OnTouchObject(type);assert.equal(root.hidden,true,'non-game input cannot open reward');
+rt.running_layout.name='game';assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject(type),false);assert.equal(root.hidden,false,'empty hint opens during active gameplay');
+root.children[0].children[4].onclick();
+const mixed={name:'t26',getCurrentSol:()=>({getObjects:()=>[{cur_frame:0},{cur_frame:1}]})};
+assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject(mixed),false);assert.equal(window.oneConnectToolRewardCandidate.state().kind,'hint','matching native hint priority handles multiple picked buttons');
+root.children[0].children[4].onclick();tip.data=1;
+assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject(mixed),true);assert.equal(root.hidden,true,'available priority tool retains native handling');
+const shuffles={name:'t26',getCurrentSol:()=>({getObjects:()=>[{cur_frame:0},{cur_frame:0}]})};
+assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject(shuffles),false);assert.equal(window.oneConnectToolRewardCandidate.state().kind,'shuffle');
+root.children[0].children[4].onclick();listeners['oneconnect:event'].forEach(fn=>fn({detail:{type:'game.level_win'}}));
+assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject(mixed),false,'native tool cannot activate after victory');
+assert.equal(window.oneConnectToolRewardCandidate.open('theme'),false,'other reward entry points remain closed after victory');
+listeners['oneconnect:event'].forEach(fn=>fn({detail:{type:'game.board_configured'}}));assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject(mixed),true,'new board restores native input');
+console.log('native reward interception respects pause and game scene PASS');

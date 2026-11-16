@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "ludo-classic",
+  "name": "LUDO · 原版贴图与动画",
+  "description": "复用 Ludo Superstar 的真实棋盘与部件，Just Ludo 辅助参考，仅微调贴图，保留手游质感和完整动画。",
+  "brief": {
+    "name": "LUDO · 原版美术复现",
+    "genre": "LUDO 骰子棋盘，经典与快速模式",
+    "platform": "手机与电脑浏览器，触摸与鼠标",
+    "engine": "Canvas 2D · Web / H5",
+    "audience": "休闲游戏玩家",
+    "cycle": "完整可玩版本、真实测试与独立路径发布",
+    "idea": "基于 Ludo Superstar 和 Just Ludo 制作接近原游戏美术的 LUDO。以 Ludo Superstar 真实运行棋盘、营地、棋子、骰子、头像和音效为主，Just Ludo 为补充参考。保留十字棋盘、四色功能色和布局比例，只小幅调整贴图。新工作区不假定存在旧项目代码或校准文件，先分析真实参考包。",
+    "scope": "经典与快速模式，2～4 席位，本地玩家与 AI；出营、轮转、安全格、吃子、终点与胜利。模式选择、设置、重开、存档恢复。适配 320/390px 手机及桌面，交付源码包、试玩包及真实验收证据。"
+  },
+  "genre_id": "board-games",
+  "framework_id": "canvas-web",
+  "model_provider": "api-key",
+  "model_id": "gpt-6.1-sol",
+  "references": [
+    "公司skill整合/AHAgames/82251_Just_Ludo/gameInfo.json",
+    "公司skill整合/AHAgames/82251_Just_Ludo/Just_Ludo.zip",
+    "公司skill整合/AHAgames/94034_Ludo_Superstar/gameInfo.json",
+    "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip"
+  ],
+  "knowledge_paths": [],
+  "production_plan": {
+    "template_id": "ludo-classic",
+    "art_requirements": "保留原版休闲手游质感：十字棋盘、四色营地、亮面棋子、原版骰子帧和头像。禁止仪表盘、卡片式网页或 AI 整屏重绘，不使用商店缩略图代替运行棋盘。只允许背景等少量纹理微调；图片生成必须携带真实原图 reference_paths。默认开启摇骰（600～900ms）、逐格弧线跳跃（90～130ms/格）、吃子回营、归家与胜利庆祝。正确处理输入锁定、重开、后台切换和动画恢复。",
+    "auto_publish": true,
+    "publish_slug": "",
+    "stages": {
+      "prototype": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。分析需求与真实参考资料，明确核心循环、规则、状态、界面、首版范围及验收条件。输出 workflow/prototype.md，并为美术、代码阶段准备清晰交接。分析两款真实参考包，区分真实运行资源与商店缩略图，明确棋盘坐标、四色营地、路径、安全格、精确终点、轮转奖励及模式差异。无法确认的规则记录来源与取舍。输出视觉基线、素材需求和五类动画验收标准。",
+        "skill_mode": "manual",
+        "skill_paths": [
+          "casual-game-production/SKILL.md",
+          "ai-art-automation/SKILL.md"
+        ]
+      },
+      "art": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。根据统一美术要求准备真实可集成资源，记录来源、尺寸、用途和动画规格；检查图集裁切、透明度和显示比例。输出预览与 workflow/art.md、workflow/art-manifest.json。清单 path、sha256、usage、source 必须是非空字符串，复杂来源使用 source_details。优先提取 Ludo Superstar 真实运行棋盘部件、营地、棋子、骰子帧、头像和必要音效；Just Ludo 只做表现参考。核对帧顺序、锚点和透明边缘。需要微调背景时使用 generate_art_image 携带真实参考图；裁切与透明画布装配使用 process_art_image，按真实编码处理扩展名为 PNG 的 WEBP。交付棋盘装配预览，禁止重新设计整屏 UI。",
+        "skill_mode": "manual",
+        "skill_paths": [
+          "casual-game-production/SKILL.md",
+          "ai-art-automation/SKILL.md",
+          "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md",
+          "azure-image2-generation/SKILL.md"
+        ]
+      },
+      "code": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。实现完整可玩游戏并集成已确认素材。规则、状态、渲染、输入和动画按职责组织，主要逻辑加中文注释。完成手机和桌面适配、触摸与鼠标输入、存档及恢复。使用相对资源路径支持独立子路径。实际跑通 npm run build、npm test、npm run check，使用浏览器真实输入验证并修复问题。dist/ 放构建，evidence/ 放证据，releases/ 放源码与试玩包，输出 workflow/code.md。只能复用本工作区实际存在且已验证的模块；否则实现规则、随机数、AI、存档和生命周期逻辑。实现经典与快速模式、2～4 席位、人机及同屏完整对局。真实接入摇骰、走子、吃子、归家、胜利动画，严禁瞬移假动画；验证重开、刷新、切后台及慢素材加载。",
+        "skill_mode": "manual",
+        "skill_paths": [
+          "casual-game-production/SKILL.md",
+          "ai-art-automation/SKILL.md",
+          "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md"
+        ]
+      },
+      "test": {
+        "prompt": "先实际读取全部所选 Skill、品类与技术知识，以及已有上游产物。只执行当前阶段，保留可追溯证据。关键信息缺失或需求冲突时调用 request_user_input，不猜测用户偏好；常规实现细节自行处理。独立重新运行 npm run build、npm test、npm run check，验证真实游戏核心循环、移动端与桌面布局、控制台异常和恢复行为。验证正常速度动画，保存连续截图或录像，不用静态截图冒充动画证据。检查源码包重建及构建一致性。测试阶段不改上游源码和美术，发现缺陷如实报告并明确修复阶段。输出 workflow/test.md，区分模拟与真机验收。验证规则边界、AI 合法性和完整对局到结算，通过真实页面输入验证五类正常速度动画及输入锁定，保留时间记录与连续图像证据。验证 320/390px 触摸、桌面鼠标、重开、刷新、后台暂停恢复及素材慢加载。",
+        "skill_mode": "manual",
+        "skill_paths": [
+          "casual-game-production/SKILL.md",
+          "ai-art-automation/SKILL.md",
+          "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md"
+        ]
+      }
+    }
+  }
+}

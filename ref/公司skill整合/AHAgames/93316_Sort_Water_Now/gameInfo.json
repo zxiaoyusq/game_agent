@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93316,
+    "apiName":  "Sort Water Now",
+    "targetName":  "Sort Water Now",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Sort_Water_Now.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250926/4b7dde7daa56822684a7633dd89b84cf.zip",
+    "bundleMd5":  "4b7dde7daa56822684a7633dd89b84cf",
+    "bundleSize":  1675488,
+    "updatedAt":  1759139986,
+    "gameLink":  "https://www.fortuneh5game.com/Sort_Water_Now/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93316",
+    "category":  "Puzzle",
+    "rate":  8.8,
+    "gameType":  1,
+    "localFile":  "Sort_Water_Now.zip",
+    "localBytes":  1675488,
+    "verifiedAt":  "2026-10-20T10:36:24",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    currentPlayer: 2,\n+   dice: 4,\n+   lastEvent: {\n+     actor: 2,\n+     bonusReasons: [],\n+     capturedIds: [],\n+     dice: 4,\n+     from: null,\n+     pieceId: null,\n+     skipReason: null,\n+     to: null,\n+     type: 'ROLL'\n+   },\n-   dice: null,\n-   lastEvent: null,\n    matchId: 'b217ce31-1fff-4480-9eaa-a92641a89d37',\n    mode: 'quick',\n+   phase: 'awaitMove',\n-   phase: 'awaitRoll',\n    pieces: [\n      {\n        id: '0:1',\n        owner: 0,\n        progress: 0\n...\n    ],\n+   revision: 1,\n-   revision: 0,\n    rng: {\n      algorithm: 'mulberry32-v1',\n      initialSeed: 1,\n+     rawDrawCount: 2,\n+     state: 3663131627\n-     rawDrawCount: 1,\n-     state: 1831565814\n    },\n    rulesVersion: 'ludo-classic-reskin-1',\n    seats: [\n      {\n        owner: 0,\n...\n      moveCount: 0,\n+     rollCount: 1\n-     rollCount: 0\n    },\n    version: 1,\n    winner: null\n  }\n\n    at inputRegression (file:///root/dev/game-agent/game_agent/games/ludo-classic-reskin/scripts/browser-regression.mjs:32:12)\n    at async file:///root/dev/game-agent/game_agent/games/ludo-classic-reskin/scripts/check.mjs:397:23",
+  "errors": [],
+  "animationResults": []
+}

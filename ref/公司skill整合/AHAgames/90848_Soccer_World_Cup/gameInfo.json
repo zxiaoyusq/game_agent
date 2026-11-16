@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "90848",
+    "apiName":  "Soccer World Cup",
+    "targetName":  "Soccer World Cup",
+    "match":  "BY_ID",
+    "bundleName":  "re_hippoo-soccer_world_cup-1.0.6.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250102/10501914110.zip",
+    "bundleMd5":  "cc02221268588e9e09e1998d03c90b28",
+    "bundleSize":  5582956,
+    "updatedAt":  1736319935,
+    "gameLink":  "https://www.hnyigegame.com/Soccer_World_Cup/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_90848",
+    "category":  "Ball games",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Soccer_World_Cup.zip",
+    "localBytes":  5582956,
+    "verifiedAt":  "2026-10-20T11:12:58",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

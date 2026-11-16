@@ -1,0 +1,66 @@
+from pathlib import Path
+import hashlib, json, math, struct
+from unicorn import Uc, UC_ARCH_ARM64, UC_MODE_ARM
+from unicorn.arm64_const import UC_ARM64_REG_X0, UC_ARM64_REG_X1, UC_ARM64_REG_X2
+
+root = Path(r'E:\codex_apk_work\竞品拆解\Carrom Disc Pool')
+so = next((root / '02_静态分析' / '原始资源' / 'split_config.arm64_v8a').rglob('libgame-*.so'))
+raw = so.read_bytes()
+sha = hashlib.sha256(raw).hexdigest()
+assert sha == '4cf2ba474fc9aefda142fbdca46cf7b4d3ebf06a2114ecd8487a3e48448710b4'
+evidence = json.loads((root / '02_静态分析' / '比较器_原始字节与名字重定位.json').read_text(encoding='utf-8'))
+assert evidence['source_sha256'] == sha
+CODE, A, B = 0x100000, 0x200000, 0x201000
+results = []
+for row in evidence['rows']:
+    ins = row['instructions']
+    start = int(ins[0]['file_offset'], 16)
+    code = raw[start:start + 4 * len(ins)]
+    assert code.hex() == ''.join(i['bytes'] for i in ins)
+    assert ins[-1]['instruction'].strip() == 'ret'
+    uc = Uc(UC_ARCH_ARM64, UC_MODE_ARM)
+    uc.mem_map(CODE, 0x1000); uc.mem_map(A, 0x2000)
+    uc.mem_write(CODE, code)
+    uc.reg_write(UC_ARM64_REG_X1, A); uc.reg_write(UC_ARM64_REG_X2, B)
+    def execute(offset, a, b):
+        uc.mem_write(A + offset, a); uc.mem_write(B + offset, b)
+        uc.emu_start(CODE, CODE + len(code) - 4, count=100)
+        v = uc.reg_read(UC_ARM64_REG_X0) & 0xffffffff
+        return v if v < 0x80000000 else v - 0x100000000
+    name = row['name']
+    if name.startswith('Unfouled'):
+        count = 0; asymmetric_failures = 0
+        for a in range(256):
+            for b in range(256):
+                actual = execute(0x48, bytes([a]), bytes([b]))
+                expected = 0 if a == b else (-1 if a == 0 and b != 0 else 1)
+                assert actual == expected, (name, a, b, actual, expected)
+                if a != b and a and b:
+                    asymmetric_failures += 1
+                count += 1
+        results.append({'name': name, 'cases': count, 'formula_failures': 0, 'ordered_distinct_nonzero_pairs': asymmetric_failures})
+    elif name.startswith(('HigherScored', 'LeastFouled')):
+        values = [0, 1, 2, 0x7fffffff, 0x80000000, 0xfffffffe, 0xffffffff]
+        offset = 0x4c if name.startswith('Higher') else 0x50
+        cases = []
+        for a in values:
+            for b in values:
+                actual = execute(offset, struct.pack('<I', a), struct.pack('<I', b))
+                expected = 0 if a == b else ((-1 if a > b else 1) if offset == 0x4c else (-1 if a < b else 1))
+                assert actual == expected, (name, a, b, actual, expected)
+                cases.append([a,b,actual])
+        results.append({'name':name,'cases':len(cases),'examples':cases})
+    else:
+        values = [-math.inf,-1.0,-0.0,0.0,1.0,math.inf,math.nan]
+        offset = 0x28 if name.startswith('Shortest') else 0x30
+        cases = []
+        for a in values:
+            for b in values:
+                actual = execute(offset, struct.pack('<d', a), struct.pack('<d', b))
+                expected = 0 if a == b else (-1 if a < b else 1)
+                assert actual == expected, (name,a,b,actual,expected)
+                cases.append([str(a),str(b),actual])
+        results.append({'name':name,'cases':len(cases),'examples':cases})
+out = root / '02_静态分析' / '比较器_ARM64原始机器码隔离执行.json'
+out.write_text(json.dumps({'source_sha256':sha,'scope':'Unicorn isolated original instruction bytes; artificial objects, no game process or call chain', 'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
+print('PASS:', [(r['name'],r['cases']) for r in results])

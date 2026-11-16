@@ -1,0 +1,277 @@
+{
+  "checked_at": "2026-11-03T10:14:07.611370+00:00",
+  "source_counts": {
+    "公司整合": {
+      "added": 81,
+      "updated": 19,
+      "unchanged": 330,
+      "deleted_skipped": 0,
+      "conflicts": 0
+    },
+    "工程已有": {
+      "added": 1,
+      "updated": 2,
+      "unchanged": 25,
+      "deleted_skipped": 0,
+      "conflicts": 0
+    }
+  },
+  "sync": {
+    "operation_id": "8f6f8320f14d4df1abe72d4a9c9b7b8b",
+    "plan_digest": "30ff27339fa5583a412c6bdf0945d2644b995ef92e1522643ea16f2a672f747f",
+    "counts": {
+      "added": 82,
+      "updated": 21,
+      "unchanged": 355,
+      "deleted_skipped": 0,
+      "conflicts": 0
+    },
+    "backup_path": ".skill-source-sync/8f6f8320f14d4df1abe72d4a9c9b7b8b",
+    "summary": {
+      "skill_entries": 30,
+      "files": 458
+    }
+  },
+  "after_sync": {
+    "added": 0,
+    "updated": 0,
+    "unchanged": 458,
+    "deleted_skipped": 0,
+    "conflicts": 0
+  },
+  "visible_skill_entries": 30,
+  "verification": {
+    "source_bytes_unchanged": true,
+    "updated_backups_match_previous_hashes": true,
+    "preserved_existing_item_metadata": 376,
+    "no_duplicate_backup_skills": true,
+    "no_op_does_not_create_archive": true
+  },
+  "skill_versions": {
+    "casual-game-production/SKILL.md": "1.1.0",
+    "cocos-game-production/SKILL.md": "1.6.0"
+  },
+  "reference_games": {
+    "total": 74,
+    "reference_path": "公司skill整合/AHAgames",
+    "local_package_games": 2,
+    "missing_package_games": 72,
+    "package_file_count": 2,
+    "package_bytes": 8540831,
+    "art_file_count": 370,
+    "categories": [
+      "Action",
+      "Adventure",
+      "Arcade",
+      "Ball games",
+      "Card",
+      "Casual",
+      "Children",
+      "Female",
+      "Match",
+      "Parkour",
+      "Puzzle",
+      "Racing",
+      "Shooting",
+      "Simulation",
+      "Single challenge",
+      "Sports",
+      "Strategy",
+      "Tabletop"
+    ],
+    "manifest_json_records": 37,
+    "manifest_csv_records": 74,
+    "art_manifest_records": 74,
+    "warnings": [
+      "历史清单数量不一致：manifest.json 为 37 条，manifest.csv 为 74 条；游戏列表按实际 gameInfo 生成"
+    ],
+    "research": [
+      {
+        "name": "reskin_review",
+        "reference_path": "公司skill整合/AHAgames/reskin_review",
+        "file_count": 18,
+        "bytes": 5576262
+      },
+      {
+        "name": "art_direction",
+        "reference_path": "公司skill整合/AHAgames/art_direction",
+        "file_count": 247,
+        "bytes": 51149774
+      }
+    ],
+    "note": "仅供竞品与美术研究；历史采集状态不代表本地包体存在，资料收录不等于商业授权或已完成逆向分析"
+  },
+  "live_api": {
+    "skills_hashes_verified": 30,
+    "game_references_exist": 74,
+    "images_match_local_bytes": 10,
+    "ball_sort_four_stages_preserved": true,
+    "ball_sort_preview_http": 200,
+    "canvas_prototype_state_preserved": true,
+    "source_sync_counts": {
+      "added": 0,
+      "updated": 0,
+      "unchanged": 458,
+      "deleted_skipped": 0,
+      "conflicts": 0
+    }
+  },
+  "validation": {
+    "backend": {
+      "command": "python -m unittest tests.test_workflow tests.test_workflow_tools tests.test_production_library tests.test_skill_library tests.test_reference_games tests.test_mcp -q",
+      "passed": 67,
+      "log": "logs/company-sync-backend-tests.log"
+    },
+    "skill_schema": {
+      "casual-game-production": "通过",
+      "cocos-game-production": "通过"
+    },
+    "frontend_build": {
+      "command": "npm run build",
+      "log": "logs/company-sync-frontend-build.log",
+      "status": "通过"
+    }
+  },
+  "finished_at": "2026-11-03T10:20:51.574001+00:00",
+  "browser": {
+    "status": "passed",
+    "checks": [
+      {
+        "name": "首页 Skill 入口计数来自真实知识库",
+        "status": "passed",
+        "stats": [
+          "597\n资料文件",
+          "30\nSKILL 入口",
+          "8\n知识模块"
+        ]
+      },
+      {
+        "name": "Skill 总览与 4 个新增中文入口可读",
+        "status": "passed",
+        "overview": "10 个技能包 · 30 份 Skill 文档 · 查看工作流程、参考资料和配套工具",
+        "entries": [
+          "休闲游戏美术风格与视觉规范",
+          "Cocos 项目工程规范",
+          "H5 Canvas 游戏换皮",
+          "托管小游戏资料采集"
+        ]
+      },
+      {
+        "name": "来源更新最终计划为零差异",
+        "status": "passed",
+        "counts": "新增 0 · 更新 0 · 一致 458 · 保持删除 0 · 冲突 0"
+      },
+      {
+        "name": "html-style-study 静态 HTML、相对或内嵌图片可读",
+        "status": "passed",
+        "images": {
+          "total": 21,
+          "broken": []
+        },
+        "scripts": 0,
+        "sandbox": ""
+      },
+      {
+        "name": "html-style-demo-v6 静态 HTML、相对或内嵌图片可读",
+        "status": "passed",
+        "images": {
+          "total": 21,
+          "broken": []
+        },
+        "scripts": 0,
+        "sandbox": ""
+      },
+      {
+        "name": "公司游戏参考真实统计与三类筛选",
+        "status": "passed",
+        "stats": "74 款游戏\n370 份美术素材\n2 款有本地原包\n72 款本地原包缺失",
+        "present": 2,
+        "missing": 72,
+        "puzzle": 16,
+        "images": {
+          "total": 74,
+          "broken": []
+        }
+      },
+      {
+        "name": "游戏详情商店图与 GIF、原包状态和路径",
+        "status": "passed",
+        "paths": "游戏信息路径\n公司skill整合/AHAgames/77413_One_Connect/gameInfo.json\n本地资料目录\n公司skill整合/AHAgames/77413_One_Connect",
+        "assets": 5,
+        "preview_gif": true
+      },
+      {
+        "name": "390px 公司游戏参考无页面横向溢出",
+        "status": "passed",
+        "viewport": 390,
+        "width": 390,
+        "content": [
+          {
+            "width": 390,
+            "scroll": 390
+          },
+          {
+            "width": 366,
+            "scroll": 366
+          }
+        ]
+      },
+      {
+        "name": "390px Skill 总览无页面横向溢出",
+        "status": "passed",
+        "viewport": 390,
+        "width": 390,
+        "content": [
+          {
+            "width": 390,
+            "scroll": 390
+          }
+        ]
+      },
+      {
+        "name": "工作台参考选择器去重追加且不提交项目",
+        "status": "passed",
+        "reference": "公司skill整合/AHAgames/77413_One_Connect/gameInfo.json",
+        "duplicate_prevented": true,
+        "submitted": false
+      },
+      {
+        "name": "390px 工作台参考选择器无页面横向溢出",
+        "status": "passed",
+        "viewport": 390,
+        "width": 390,
+        "content": [
+          {
+            "width": 294,
+            "scroll": 294
+          }
+        ]
+      },
+      {
+        "name": "无界面脚本异常、请求失败或写入操作",
+        "status": "passed",
+        "writes": 0
+      }
+    ],
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "failed_responses": [],
+    "blocked_mutations": [],
+    "report": "logs/company-sync-ui.json",
+    "initial_report": "logs/company-sync-ui-initial.json",
+    "screenshots": [
+      "logs/company-sync-ui/skill-overview-desktop.png",
+      "logs/company-sync-ui/skill-source-sync-zero.png",
+      "logs/company-sync-ui/html-style-study.png",
+      "logs/company-sync-ui/html-style-demo-v6.png",
+      "logs/company-sync-ui/reference-games-desktop.png",
+      "logs/company-sync-ui/reference-game-detail.png",
+      "logs/company-sync-ui/reference-games-mobile.png",
+      "logs/company-sync-ui/skill-mobile.png",
+      "logs/company-sync-ui/workflow-reference-picker-desktop.png",
+      "logs/company-sync-ui/workflow-reference-picker-mobile.png"
+    ]
+  },
+  "passed": true
+}

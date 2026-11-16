@@ -1,0 +1,12 @@
+[
+  {
+    "path": "releases/animal-tetris-play.zip",
+    "bytes": 965301,
+    "sha256": "7e358beb6a821c6a2b2c126a9854f529d6b6ff2827eaeb4c59a32f4b3f5bc71c"
+  },
+  {
+    "path": "releases/animal-tetris-source.zip",
+    "bytes": 5356134,
+    "sha256": "f62be82dbe2e81fda6189d8a2cf39ce66d7c87d58b91978909383a633d590792"
+  }
+]

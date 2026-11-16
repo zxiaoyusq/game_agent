@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+if(!process.argv[2])throw Error('candidate game directory required');
+class El{constructor(){this.style={};this.children=[];this.handlers={}}setAttribute(){}appendChild(x){this.children.push(x)}append(...x){this.children.push(...x)}addEventListener(n,f){this.handlers[n]=f}getBoundingClientRect(){return {top:0}}get lastElementChild(){return this.children.at(-1)}}
+let frames=[],listeners={},hidden=[],switches=0;
+const runtime={running_layout:{name:'game'},all_global_vars:[{name:'COLUMNS_COUNT',data:12},{name:'ROWS_COUNT',data:6},{name:'level',data:2},{name:'pause',data:0},{name:'theme',data:0}],types:{t5:{instances:[]},t25:{instances:[]}},canvas:{getBoundingClientRect:()=>({left:0,top:0,width:390,height:844})}};
+const area=()=>({left:0,top:0,width:40,height:30}),adapter={restore(){},moveHud(){},moveTools(){},movePause(){},setToolsHidden(r,v){hidden.push(v)}};
+const w={addEventListener(n,f){(listeners[n]??=[]).push(f)},cr_getC2Runtime:()=>runtime,oneConnectLayoutAdapter:adapter,oneConnectLayoutGeometry:{calculate(){return {header:area(),progress:area(),board:area(),banner:area(),tools:Array.from({length:4},area)}}},oneConnectThemeSwitchCandidate:{animateSwitch(_r,_t,_a,done){switches++;done({status:'switched',theme:1,tiles:0});return {status:'started'}}},cr:{plugins_:{Sprite:function(){}}}};w.cr.plugins_.Sprite.prototype.acts={};
+const document={body:new El(),createElement:()=>new El(),getElementById:()=>null};
+w.oneConnectGravityRuntime={state:()=>({moving:true})};
+vm.runInNewContext(fs.readFileSync(path.join(process.argv[2],'layout-candidate.js'),'utf8'),{window:w,cr:w.cr,document,localStorage:{getItem:()=>null,setItem(){}},Number,Array,Object,Date,Math,RangeError,setTimeout(){},clearTimeout(){},requestAnimationFrame:f=>frames.push(f)});
+w.oneConnectLayoutCandidate.install();const tick=()=>frames.shift()(),event=type=>listeners['oneconnect:event'].forEach(f=>f({detail:{type}}));tick();
+const theme=document.body.children.at(-1);assert.equal(theme.style.display,'flex');theme.handlers.click({preventDefault(){},stopPropagation(){}});assert.equal(switches,0,'active gravity blocks theme change even when the fixed wait has expired');w.oneConnectGravityRuntime.state=()=>({moving:false});theme.handlers.click({preventDefault(){},stopPropagation(){}});assert.equal(switches,1,'theme change resumes when gravity completes');event('game.level_win');theme.handlers.click({preventDefault(){},stopPropagation(){}});assert.equal(switches,1,'winning immediately prevents theme change');tick();assert.equal(theme.style.display,'none');assert.equal(hidden.at(-1),true,'native tools also hidden');
+event('game.board_configured');tick();assert.equal(theme.style.display,'flex');assert.equal(hidden.at(-1),false,'next board restores tools');
+console.log('round end hides and disables tool layout until new board PASS');

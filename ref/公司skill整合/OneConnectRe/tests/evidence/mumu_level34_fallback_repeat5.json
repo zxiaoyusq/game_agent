@@ -1,0 +1,10 @@
+{
+  "revision": "9b17e20",
+  "scenario": "MuMu isolated level 34 fallback, solver-assisted ADB taps",
+  "runs": 5,
+  "completedToLevel35": 5,
+  "initialTiles": 72,
+  "level35Tiles": 60,
+  "storageRestored": true,
+  "scope": "Five repeated runs did not reproduce the prior wait-for-pair timeout; its cause remains unknown."
+}

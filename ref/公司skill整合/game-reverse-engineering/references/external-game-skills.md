@@ -45,8 +45,44 @@
 
 assetripper-unity-extract → unity-extract；cocos-reverse-engineering；cocos-creator-project-repair；blockudoku-cocos-qa → cocos-qa；db2spine-spine38-qa → dragonbones-spine-convert；vision-device-testing；game-build-engine-identification → engine-identification；huaijiushiguang-pintu（项目专属）。
 
+## E. Phaser（HTML5 web 引擎：官方仓库 / 技能包 / Game Agent MCP）
+
+Phaser 是 HTML5 web 游戏引擎（npm `phaser`，2026-10 实测最新 4.2.1）。指纹识别与下游分流在 `modules/engine-identification/SKILL.md` 的 Phaser 指纹行/路由规则；本节只登记三个外部资源的来源与更新方法，命中即按需加载，不在本 hub 复制正文。
+
+### E-1 phaser4-gamedev（Claude Code 插件 + 可移植技能包）
+
+| 项 | 值 |
+|---|---|
+| 仓库 | https://github.com/Yakoub-ai/phaser4-gamedev（MIT；上游标 Phaser 4.2.1） |
+| 本机克隆 | `D:\skills\phaser4-gamedev`（git 浅克隆，2026-10-12 @ 1c1bf45，2026-08-27）。github 直连被重置时用镜像：`git clone --depth 1 https://ghfast.top/https://github.com/Yakoub-ai/phaser4-gamedev` |
+| 技能全集 | 26 个 `phaser-*`（各带 SKILL.md）：analyze / animation / architect / asset-advisor / audio / brainstorm / build / coder / debugger / feedback / fx / gameobj / gdd / init / input / matter / migrate / mobile / particles / physics / playtest / release / saveload / scene / tilemap / ui |
+| 附属资产 | 5 个 agent 定义（architect/coder/debugger/playtester/asset-advisor）+ 10 个斜杠命令 + 2 个 hooks（PreToolUse 拦截废弃 v3 API、SessionStart 检测 Phaser 工程）+ 无头 Playwright 测试 `skills/phaser-playtest/scripts/playtest.mjs`（黑屏 / 资源 404 / 未捕获异常 / FPS 崩溃） |
+| 加载规则 | 本 hub 模式 = 路由 + 本地克隆；按名 skill("phaser-xxx") 加载对应技能，读其 SKILL.md 执行。也可 `npx skills add Yakoub-ai/phaser4-gamedev` 装入当前 harness 技能目录 |
+| 更新命令 | `git -C D:\skills\phaser4-gamedev fetch`（origin 指向实际可用的克隆源）→ 看 ahead/behind；工作树干净才 pull |
+| 注意 | 技能按 Phaser 4 口径编写（hook 会拦 v3 废弃 API）；v3→v4 迁移用 `phaser-migrate`，官方迁移指南见 E-2，两者冲突以官方仓库为准 |
+
+### E-2 phaserjs/phaser 官方仓库（API 与迁移版本源）
+
+| 项 | 值 |
+|---|---|
+| 仓库 | https://github.com/phaserjs/phaser（v4.2.1；npm `phaser`；仓库自带 `skills/` 目录） |
+| 权威入口 | API 文档 docs.phaser.io；示例 phaser.io/examples（2000+）；教程 phaser.io/learn；v3→v4 迁移指南在仓库 `changelog/v4/4.0/MIGRATION-GUIDE.md` |
+| 官方 skills | 仓库 `skills/` 目录覆盖场景/物理/输入/动画等子系统 + v3→v4 迁移 skill；按需读原文，不复制进本 hub |
+| 用途 | 引擎 API 事实源与迁移依据；与 E-1 `phaser-migrate` 互相印证，冲突时以官方仓库/文档为准。指纹实测基准：3.90.0 与 4.2.1 dist 均含 `VERSION:"x.y.z"` |
+
+### E-3 Phaser Game Agent MCP（云端 Agent 构建通道，付费）
+
+| 项 | 值 |
+|---|---|
+| 文档 | https://phaser.io/agent/mcp/codex（其他 agent 同构，换 `--tool` 参数） |
+| 安装 | `npx @phaserjs/game-agent setup --tool codex`（Node 20+，建议 `npm i -g @phaserjs/game-agent` 保 bridge.mjs 路径有效）；`npx @phaserjs/game-agent manual` 打印填好真实路径的配置（2026-10-12 实测 @phaserjs/game-agent@1.0.0 可运行：未 login 时先提示 "Sign in first: phaser-game-agent login"，打印完整配置需先登录；**npmmirror 镜像尚未同步其 tarball，须加 `--registry=https://registry.npmjs.org`**） |
+| 手动配置 | 编辑 `%USERPROFILE%\.codex\config.toml`（**TOML 不是 JSON**）：`[mcp_servers.phaser-game-agent]` 设 command=node 绝对路径、args=bridge.mjs 绝对路径、startup_timeout_sec=120；`[mcp_servers.phaser-game-agent.env]` 设 `PHASER_AGENT_MCP_URL=https://mcp.phaser.io/agent/mcp`、`PHASER_GAME_AGENT_TOKEN=pga_...`（token 在 phaser.io/agent 页生成） |
+| 验证 | 配置后完全重启 agent（MCP 只在启动时读取），问 "Check my Phaser Game Agent account"，返回名字与余额即通 |
+| 能力/计费 | 云沙箱按分钟计费，图像/音频消耗 credits（官方口径一个完整游戏约 500 credits）；成品可出 Web/Windows/macOS/Linux 包、公开链接与 iframe 嵌入 |
+| 红线 | 付费外部服务：接入、生成或调用前必须向用户确认 token 与预算；本 hub 只登记路由与配置方法，不复制其工具面，也不把云端产出当作本地构建验收证据 |
+
 ## 每次游戏项目开始前的更新检查
 
-1. 对 A/B 中标注 git 仓库的目录执行 `git fetch` + 看 ahead/behind；**有更新且工作树干净 → pull → 同名字典文件同步到各 skill 副本端**。
+1. 对 A/B/E 中标注 git 仓库的目录执行 `git fetch` + 看 ahead/behind；**有更新且工作树干净 → pull → 同名字典文件同步到各 skill 副本端**。
 2. 本地有改动时：先 `git diff` 判断是否保留；保留则记入 landing-log，再决定是否合并上游。
 3. 只改路由/注册表时不 bump 外部技能版本；影响 skill 行为的内容变更须记入对应总集"版本说明"。

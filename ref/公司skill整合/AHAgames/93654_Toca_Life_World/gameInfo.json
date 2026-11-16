@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "93654",
+    "apiName":  "Toca Life World",
+    "targetName":  "Toca Life World",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Toca_Life_World.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251128/782849e1cf1fdaff82731343ba4d4ab3.zip",
+    "bundleMd5":  "782849e1cf1fdaff82731343ba4d4ab3",
+    "bundleSize":  11278455,
+    "updatedAt":  1764750646,
+    "gameLink":  "https://www.newbeetechh5game.com/Toca_Life_World/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_93654",
+    "category":  "Children",
+    "rate":  9.0,
+    "gameType":  1,
+    "localFile":  "Toca_Life_World.zip",
+    "localBytes":  11278455,
+    "verifiedAt":  "2026-10-20T11:13:12",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

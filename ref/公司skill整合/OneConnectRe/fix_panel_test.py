@@ -1,0 +1,2 @@
+from pathlib import Path
+s=Path('tests/panel.cjs').read_text(encoding='utf-8-sig'); src=Path('tests/natural-clear.cjs').read_text(encoding='utf-8-sig'); find=src[src.index('function find(tiles)'):src.index("\nawait p.screenshot")];start=s.index('let pair;for(let a of state)');end=s.index("assert(pair,'no adjacent pair');",start)+len("assert(pair,'no adjacent pair');");s=s[:start]+find+"let pair=find(state);assert(pair,'no reachable pair');"+s[end:];Path('tests/panel.cjs').write_text(s,encoding='utf8')

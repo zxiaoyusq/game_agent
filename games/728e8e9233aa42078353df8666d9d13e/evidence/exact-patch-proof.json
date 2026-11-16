@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "inputPaths": [
+    "reference-inputs/fallback-before.js",
+    "reference-inputs/fallback-fullpath.js"
+  ],
+  "byteDelta": 90,
+  "patches": [
+    [
+      "function _carromStartPathBlocked(origin, angle, length, intendedTarget)",
+      "function _carromStartPathBlocked(origin, angle, length, intendedTarget, fullFallbackPath)"
+    ],
+    [
+      "end = Math.min(length, _0x133600 * 2)",
+      "end = fullFallbackPath ? Math.max(0, length - (_0x133600 + 16)) : Math.min(length, _0x133600 * 2)"
+    ],
+    [
+      "_carromFallbackDistance, _0xe88441)",
+      "_carromFallbackDistance, _0xe88441, true)"
+    ],
+    [
+      "_carromDistance, _0xe88441)",
+      "_carromDistance, _0xe88441, true)"
+    ]
+  ],
+  "byteIdenticalAfterReconstruction": true,
+  "transcriptionMatchesIgnoringWhitespace": true,
+  "referenceCodeExecuted": false
+}

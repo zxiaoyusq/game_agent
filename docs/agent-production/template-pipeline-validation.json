@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-09",
+  "project_id": "fbf24c84b3ab4e9db13246ce25b36cfa",
+  "workspace": "games/fbf24c84b3ab4e9db13246ce25b36cfa",
+  "template": "web-game 的小型验收配置；主动询问颜色用于验证 HITL",
+  "pipeline": {
+    "id": "a5f9c6828a93405498eb3eb3de81b00e",
+    "status": "completed",
+    "run_id": "18a4075bd3564e7ab4d420c15d62a631",
+    "approved_at": "2026-11-09T06:59:02.271879+00:00",
+    "error": null,
+    "retries": {},
+    "updated_at": "2026-11-09T07:13:26.422208+00:00",
+    "current_stage": "test",
+    "completed_at": "2026-11-09T07:13:26.421966+00:00"
+  },
+  "publication": {
+    "project_id": "fbf24c84b3ab4e9db13246ce25b36cfa",
+    "run_id": "18a4075bd3564e7ab4d420c15d62a631",
+    "slug": "pipeline-star-check-20261109",
+    "url": "https://pagent.ahagamecenter.com/games/pipeline-star-check-20261109/index.html",
+    "bytes": 10435,
+    "file_count": 6,
+    "sha256": "75ff4a2d9803fe17264e4765b6694cfedd97f3ba8c593bda8da5b00c175741cd",
+    "source_fingerprint": "f5bee39e60c64acd15a1877f641c1e7f3ea9b3d61950e50b6351746ea593a618",
+    "published_at": "2026-11-09T07:13:26.412976+00:00",
+    "files": [
+      {
+        "path": "app.js",
+        "bytes": 5271,
+        "sha256": "f9f5e67351443364f64fc5f6a3c1bd880d85891abd04e02f87938269fdd95fa2"
+      },
+      {
+        "path": "assets/star.svg",
+        "bytes": 334,
+        "sha256": "7344a233421e96ed041f7a12fef32efc37e679707d6b32157e1e201d52035d53"
+      },
+      {
+        "path": "assets/visual-config.json",
+        "bytes": 1226,
+        "sha256": "84c9b8b3bcb69b9d7f09175e8cfc7e8cb1f44596d395a388ac546d7d39e54d0d"
+      },
+      {
+        "path": "index.html",
+        "bytes": 900,
+        "sha256": "9fa55075cbdd75df990eafb54a68adb2ee2a1dc37b59155730fbeb12cca29537"
+      },
+      {
+        "path": "rules.js",
+        "bytes": 1879,
+        "sha256": "0e892f2597f79cb7cde73bc98ecd6d64982bb0c51dc05608015b774b955e3c85"
+      },
+      {
+        "path": "style.css",
+        "bytes": 825,
+        "sha256": "a64bd6e3e2d784495756a2e94c0d2caf1d75701651cb62806981ded18fad62d9"
+      }
+    ]
+  },
+  "runs": [
+    {
+      "stage": "prototype",
+      "run_id": "a86bb4cb840c41b8a815c85582b93059",
+      "status": "completed",
+      "confirmed_by": "pipeline",
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 5,
+      "validations": []
+    },
+    {
+      "stage": "art",
+      "run_id": "8f9e6177d54d4faf97e3d860300308e0",
+      "status": "completed",
+      "confirmed_by": "pipeline",
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 11,
+      "validations": [
+        {
+          "command": "node scripts/verify-art.mjs",
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "stage": "code",
+      "run_id": "0889d9a2242c400fafb5d8ecb9d35ad0",
+      "status": "completed",
+      "confirmed_by": "pipeline",
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 23,
+      "validations": [
+        {
+          "command": "npm test",
+          "exit_code": 0
+        },
+        {
+          "command": "npm run build",
+          "exit_code": 0
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0
+        },
+        {
+          "command": "node scripts/release.mjs",
+          "exit_code": 0
+        },
+        {
+          "command": "node scripts/release.mjs",
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "stage": "test",
+      "run_id": "18a4075bd3564e7ab4d420c15d62a631",
+      "status": "completed",
+      "confirmed_by": "pipeline",
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 15,
+      "validations": [
+        {
+          "command": "npm run build",
+          "exit_code": 0
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0
+        },
+        {
+          "command": "node scripts/release.mjs",
+          "exit_code": 0
+        }
+      ]
+    }
+  ],
+  "backend_tests": 193,
+  "ui_contract_checks": {
+    "template_import_export": true,
+    "confirmation_reset": true,
+    "hitl_refresh_answer": true,
+    "cancel_resume": true,
+    "mobile_no_overflow": true
+  },
+  "live_ui": {
+    "project_id": "fbf24c84b3ab4e9db13246ce25b36cfa",
+    "real_api": true,
+    "provider": "api-key",
+    "model": "gpt-6.1-sol",
+    "hitl_ui": true,
+    "refresh_preserves_question": true,
+    "mobile_no_overflow": true,
+    "errors": []
+  },
+  "delivery": {
+    "passed": true,
+    "project_id": "fbf24c84b3ab4e9db13246ce25b36cfa",
+    "url": "https://pagent.ahagamecenter.com/games/pipeline-star-check-20261109/index.html",
+    "checks": [
+      {
+        "width": 1280,
+        "normal_inputs": 5,
+        "victory": true,
+        "reload": true,
+        "restart": true,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "normal_inputs": 5,
+        "victory": true,
+        "reload": true,
+        "restart": true,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "normal_inputs": 5,
+        "victory": true,
+        "reload": true,
+        "restart": true,
+        "errors": []
+      }
+    ],
+    "automatic_stages": 4
+  },
+  "published_file_hashes_verified": 6,
+  "limitations": [
+    "手机为 Chromium 触摸模拟，未验证实体手机或 Safari",
+    "本次完整新运行是小型验证游戏；LUDO 模板已导入验证，未重新生成另一份 LUDO"
+  ]
+}

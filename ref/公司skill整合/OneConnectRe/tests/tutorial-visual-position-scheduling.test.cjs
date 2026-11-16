@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let frameCalls=0,interval,resize,hand,style;const prompt={style:{}},skip={style:{}},rect={left:10,top:20,right:390,bottom:820};
+const label={style:{},textContent:''},frame={style:{},nextElementSibling:label,appendChild(el){hand=el}},guide={firstElementChild:frame,children:[frame,label]};
+const document={head:{appendChild(el){style=el}},createElement:()=>({style:{}}),getElementById:id=>id==='oc-tutorial-prompt'?prompt:id==='oc-tutorial-skip'?skip:id==='oc-fifth-guide'?guide:null};
+const runtime={canvas:{getBoundingClientRect:()=>rect}};
+const window={innerWidth:400,innerHeight:840,cr_getC2Runtime:()=>runtime,addEventListener(name,fn){if(name==='resize')resize=fn}};
+const ctx={window,document,requestAnimationFrame(){frameCalls++},setInterval(fn){interval=fn},Math};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/tutorial_visual_candidate.js','utf8'),ctx);
+window.oneConnectTutorialVisualCandidate.install();
+assert.equal(label.className,'oc-guide-label');assert.match(label.style.cssText,/--oc-guide-icon:url\("images\/gamebuttons-sheet1\.webp"\)/,'hint artwork is independent of label child nodes');
+assert.match(frame.style.animation,/oc-guide-frame-pulse.*infinite/,'the fifth-level target frame pulses continuously');assert.match(hand.style.cssText,/animation:oc-guide-frame-pulse.*infinite/,'the fifth-level hand pulses continuously');assert.match(style.textContent,/oc-guide-cursor-pulse/,'the first-level hand keeps its position while scaling');
+label.textContent='Getting hint ready...';label.textContent='Tap the hint to find a matching pair';
+assert.match(label.style.cssText,/gamebuttons-sheet1\.webp/,'guide status changes preserve the hint artwork');
+assert.equal(frameCalls,0,'canvas positioning should not schedule continuous animation frames');
+assert.equal(prompt.style.left,'200px');assert.equal(skip.style.left,'321.59999999999997px');
+rect.right=310;resize();assert.equal(prompt.style.left,'160px','resize immediately updates canvas alignment');
+rect.left=30;interval();assert.equal(prompt.style.left,'170px','periodic check detects other canvas movement');
+console.log('tutorial positioning responds to resize without a per-frame loop PASS');

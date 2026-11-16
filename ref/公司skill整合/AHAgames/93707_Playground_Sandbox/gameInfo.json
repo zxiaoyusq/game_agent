@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93707,
+    "apiName":  "Playground Sandbox",
+    "targetName":  "Playground Sandbox",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Playground_Sandbox.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251204/7739623ad4ec06eac701dfdc00742007.zip",
+    "bundleMd5":  "7739623ad4ec06eac701dfdc00742007",
+    "bundleSize":  1823528,
+    "updatedAt":  1765368458,
+    "gameLink":  "https://www.gztongmenggame.com/Playground_Sandbox/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93707",
+    "category":  "Simulation",
+    "rate":  8.4,
+    "gameType":  1,
+    "localFile":  "Playground_Sandbox.zip",
+    "localBytes":  1823528,
+    "verifiedAt":  "2026-10-20T10:35:31",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

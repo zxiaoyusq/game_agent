@@ -1,0 +1,14 @@
+{
+  "source_page": "E:\\codex_apk_work\\aha_games\\art\\三区七母版_V6_七色方案_20261023\\index.html",
+  "source_embedded_page_sha256": "a72b355468e7b5dbce4ea6f18776b004b166badd2b9b278402c021ec2c744161",
+  "saved_demo_sha256": "e062df38aa8be66431d409e9029529edc897c4362325cbb0acb46d8d15832ec6",
+  "images": 21,
+  "embedded_image_references": 63,
+  "palettes": 9,
+  "embedded_prompt_files": 21,
+  "self_contained": true,
+  "scope": "V6 concept demonstration; current skill rules take priority; see embedded visual review",
+  "browser_interaction": "not retested",
+  "shape_revision": "historical V6; does not demonstrate v1.8.0 differentiated silhouettes",
+  "current_scope": "historical process gallery; not normative for v2 T templates"
+}

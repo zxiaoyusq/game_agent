@@ -1,0 +1,898 @@
+{
+  "checked_at": "2026-11-04T04:10:36.882412+00:00",
+  "status": "completed_and_published",
+  "external_model_called": true,
+  "actual_api_end_to_end_completed": true,
+  "codex_login_inference_used": false,
+  "project": {
+    "id": "4a33b4b07d1f4fcc874ad80aa1b6a876",
+    "name": "琥珀商路 · API 全流程验证",
+    "workspace": "games/amber-caravan-api",
+    "model_provider": "api-key",
+    "model_id": "gpt-6.1-sol"
+  },
+  "stages": [
+    {
+      "id": "prototype",
+      "label": "原型定义",
+      "status": "completed",
+      "run_id": "a64ac4eb74664e678836b663a8059dec",
+      "confirmed_at": "2026-11-04T02:53:32.285398+00:00",
+      "attempt": 2,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 43,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 3722356,
+        "output_tokens": 31608,
+        "total_tokens": 3753964
+      },
+      "artifact_count": 6,
+      "validations": [],
+      "generated_images": [],
+      "reference_archive_reads": 34,
+      "skill_paths": [
+        "casual-game-production/SKILL.md"
+      ],
+      "reports": [
+        {
+          "path": "workflow/prototype.md",
+          "sha256": "31c4773bd17effeff0c5713039206b819519c95ff634fb59c4a1c0bf19919e24",
+          "provenance": "agent_edit"
+        }
+      ]
+    },
+    {
+      "id": "art",
+      "label": "美术资源",
+      "status": "completed",
+      "run_id": "aa260a4336e14d10b9c50a9f42ae096b",
+      "confirmed_at": "2026-11-04T03:04:28.957561+00:00",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 20,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 1276116,
+        "output_tokens": 19791,
+        "total_tokens": 1295907
+      },
+      "artifact_count": 10,
+      "validations": [],
+      "generated_images": [
+        {
+          "path": "public/assets/amber-route-atmosphere.webp",
+          "size": 271292,
+          "width": 1536,
+          "height": 1024,
+          "sha256": "72a42b7c63112fad0c12d1e1ee3bae5a5a8af7bef0079d161d5b2625625d462d",
+          "source": "工程图片API真实生成",
+          "provider": "openai-image-api",
+          "model": "gpt-image-2"
+        }
+      ],
+      "reference_archive_reads": 3,
+      "skill_paths": [
+        "casual-game-production/SKILL.md",
+        "ai-art-automation/SKILL.md",
+        "azure-image2-generation/modules/casual-game-art-style/SKILL.md",
+        "azure-image2-generation/SKILL.md"
+      ],
+      "reports": [
+        {
+          "path": "workflow/art.md",
+          "sha256": "29d45dc4b4efd8f486ec56802cef16dcb1007a9fb80b05ae8dae4092df5ffe42",
+          "provenance": "agent_edit"
+        },
+        {
+          "path": "workflow/art-manifest.json",
+          "sha256": "3e01fe2a968f6293aea3e5e2d9b906c116720c237613087556624fde0704e0bf",
+          "provenance": "agent_edit"
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "label": "代码与集成",
+      "status": "completed",
+      "run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+      "confirmed_at": "2026-11-04T03:51:42.778626+00:00",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 43,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 4152237,
+        "output_tokens": 23580,
+        "total_tokens": 4175817
+      },
+      "artifact_count": 54,
+      "validations": [
+        {
+          "command": "node scripts/format.mjs",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "e129a621898907b5edeb7f58309571384cc265762c709dd0afea9153178d4b8c",
+          "source_after": "ebca18f6ea74ba2f2b40801d045e189d36fab9cb546e01fb6c757f6527974932",
+          "build_sha256": "bef3866406ff792fb4ef22f379e48ecf96e3253af1a96a55ea34367a78ef56c5",
+          "completed_at": "2026-11-04T03:41:27.682499+00:00"
+        },
+        {
+          "command": "node scripts/format.mjs",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "fcd1d7ac9a57a6f419876357f6f5871bb67840b96a197da60c45eaedc5a75b5b",
+          "source_after": "fb74787917e601cfd21622eacc74b1479412427318ea43659dff37d570444f55",
+          "build_sha256": "bef3866406ff792fb4ef22f379e48ecf96e3253af1a96a55ea34367a78ef56c5",
+          "completed_at": "2026-11-04T03:45:02.365299+00:00"
+        },
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "fb74787917e601cfd21622eacc74b1479412427318ea43659dff37d570444f55",
+          "source_after": "fb74787917e601cfd21622eacc74b1479412427318ea43659dff37d570444f55",
+          "build_sha256": "f6965ef89bb7a0781c9ca760ece5124bd5a1da58df1e8d2f9042e4358acc4747",
+          "completed_at": "2026-11-04T03:45:10.233616+00:00"
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "fb74787917e601cfd21622eacc74b1479412427318ea43659dff37d570444f55",
+          "source_after": "fb74787917e601cfd21622eacc74b1479412427318ea43659dff37d570444f55",
+          "build_sha256": "f6965ef89bb7a0781c9ca760ece5124bd5a1da58df1e8d2f9042e4358acc4747",
+          "completed_at": "2026-11-04T03:45:19.522536+00:00"
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "fb74787917e601cfd21622eacc74b1479412427318ea43659dff37d570444f55",
+          "source_after": "fb74787917e601cfd21622eacc74b1479412427318ea43659dff37d570444f55",
+          "build_sha256": "f6965ef89bb7a0781c9ca760ece5124bd5a1da58df1e8d2f9042e4358acc4747",
+          "completed_at": "2026-11-04T03:46:02.181327+00:00"
+        },
+        {
+          "command": "node scripts/format.mjs",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "f0cc9fff4aa7494c59a65dacad7be1ec52c1ba3e1ebe2477563827e3a1cd5b2f",
+          "source_after": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "build_sha256": "f6965ef89bb7a0781c9ca760ece5124bd5a1da58df1e8d2f9042e4358acc4747",
+          "completed_at": "2026-11-04T03:47:06.242719+00:00"
+        },
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "source_after": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "build_sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+          "completed_at": "2026-11-04T03:47:21.995899+00:00"
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "source_after": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "build_sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+          "completed_at": "2026-11-04T03:47:29.720049+00:00"
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "source_after": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "build_sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+          "completed_at": "2026-11-04T03:48:15.041568+00:00"
+        }
+      ],
+      "generated_images": [],
+      "reference_archive_reads": 0,
+      "skill_paths": [
+        "casual-game-production/SKILL.md"
+      ],
+      "reports": [
+        {
+          "path": "workflow/code.md",
+          "sha256": "7f7bae926493b3bee167ad9f21d171e3a7fcee1ab6be8154a231cab7cddf9fdd",
+          "provenance": "agent_edit"
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "label": "测试验收",
+      "status": "completed",
+      "run_id": "4c9cc34de72b46bdb99a3a2543e87805",
+      "confirmed_at": "2026-11-04T04:08:11.778286+00:00",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "model_calls": 20,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 1566876,
+        "output_tokens": 11916,
+        "total_tokens": 1578792
+      },
+      "artifact_count": 17,
+      "validations": [
+        {
+          "command": "npm run build",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "source_after": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "build_sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+          "completed_at": "2026-11-04T03:53:05.376546+00:00"
+        },
+        {
+          "command": "npm test",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "source_after": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "build_sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+          "completed_at": "2026-11-04T03:53:13.524902+00:00"
+        },
+        {
+          "command": "npm run check",
+          "exit_code": 0,
+          "attempt": 1,
+          "source_before": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "source_after": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+          "build_sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+          "completed_at": "2026-11-04T03:54:09.299296+00:00"
+        }
+      ],
+      "generated_images": [],
+      "reference_archive_reads": 2,
+      "skill_paths": [
+        "casual-game-production/SKILL.md"
+      ],
+      "reports": [
+        {
+          "path": "workflow/test.md",
+          "sha256": "7cac834b7a77a06302f6da3e4c77beae9abd147e122009d1df479374610e1c50",
+          "provenance": "agent_edit"
+        }
+      ]
+    }
+  ],
+  "execution_history": [
+    {
+      "id": "a64ac4eb74664e678836b663a8059dec",
+      "stage": "prototype",
+      "status": "completed",
+      "attempt": 2,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "created_at": "2026-11-04T02:35:53.028714+00:00",
+      "successful_model_responses": 43,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 3722356,
+        "output_tokens": 31608,
+        "total_tokens": 3753964
+      }
+    },
+    {
+      "id": "aa260a4336e14d10b9c50a9f42ae096b",
+      "stage": "art",
+      "status": "completed",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "created_at": "2026-11-04T02:54:09.473367+00:00",
+      "successful_model_responses": 20,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 1276116,
+        "output_tokens": 19791,
+        "total_tokens": 1295907
+      }
+    },
+    {
+      "id": "bb80f5ecc96b4144af4d68208a2637c1",
+      "stage": "code",
+      "status": "failed",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "created_at": "2026-11-04T03:04:29.297575+00:00",
+      "successful_model_responses": 50,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 4954743,
+        "output_tokens": 41662,
+        "total_tokens": 4996405
+      }
+    },
+    {
+      "id": "6834840adb1042eea8a3f1237b3bc498",
+      "stage": "code",
+      "status": "cancelled",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "created_at": "2026-11-04T03:31:24.327191+00:00",
+      "successful_model_responses": 26,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 2159517,
+        "output_tokens": 11717,
+        "total_tokens": 2171234
+      }
+    },
+    {
+      "id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+      "stage": "code",
+      "status": "completed",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "created_at": "2026-11-04T03:38:43.866161+00:00",
+      "successful_model_responses": 43,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 4152237,
+        "output_tokens": 23580,
+        "total_tokens": 4175817
+      }
+    },
+    {
+      "id": "4c9cc34de72b46bdb99a3a2543e87805",
+      "stage": "test",
+      "status": "completed",
+      "attempt": 1,
+      "provider": "api-key",
+      "model": "gpt-6.1-sol",
+      "created_at": "2026-11-04T03:51:43.299820+00:00",
+      "successful_model_responses": 20,
+      "response_models": [
+        "gpt-6.1-sol"
+      ],
+      "usage": {
+        "input_tokens": 1566876,
+        "output_tokens": 11916,
+        "total_tokens": 1578792
+      }
+    }
+  ],
+  "publication": {
+    "project_id": "4a33b4b07d1f4fcc874ad80aa1b6a876",
+    "run_id": "4c9cc34de72b46bdb99a3a2543e87805",
+    "slug": "amber-caravan-api",
+    "url": "https://pagent.ahagamecenter.com/games/amber-caravan-api/index.html",
+    "bytes": 345738,
+    "file_count": 15,
+    "sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+    "source_fingerprint": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+    "published_at": "2026-11-04T04:08:13.596347+00:00",
+    "files": [
+      {
+        "path": "app.css",
+        "bytes": 4234,
+        "sha256": "dd4850a98516c332fddbdf4892fb853d8b447126c2c708ee9f96f397ce739e0c"
+      },
+      {
+        "path": "assets/amber-board.svg",
+        "bytes": 9274,
+        "sha256": "038afc8307830a92594b819ed6840a05d4e8ead3b886b41d39517f3b7643e31b"
+      },
+      {
+        "path": "assets/amber-icons.svg",
+        "bytes": 2308,
+        "sha256": "64d6faabef5914a07b6df038382baa8846c0a846858e857292856c62bdf78bd3"
+      },
+      {
+        "path": "assets/amber-route-atmosphere.webp",
+        "bytes": 271292,
+        "sha256": "72a42b7c63112fad0c12d1e1ee3bae5a5a8af7bef0079d161d5b2625625d462d"
+      },
+      {
+        "path": "assets/amber-theme.css",
+        "bytes": 5332,
+        "sha256": "8c88836749f2a1e6e110ea19f6c22f170cbf645edc31967f33e9b20bed61d11c"
+      },
+      {
+        "path": "assets/amber-visual-config.json",
+        "bytes": 1928,
+        "sha256": "a42d0301f6883eb80270102ad5559052163b0195f42eb7da4d91aeda4cdac34a"
+      },
+      {
+        "path": "index.html",
+        "bytes": 1481,
+        "sha256": "b2971a917af9424dbcc3f00c996982a73e6abef5443ea437757df9e05aaa908e"
+      },
+      {
+        "path": "src/ai.js",
+        "bytes": 568,
+        "sha256": "d22dff0ca47b21b54c9acccf558e926251421606628192b97fbdb8791cb19157"
+      },
+      {
+        "path": "src/board-map.js",
+        "bytes": 1230,
+        "sha256": "49e81a3af77ae9ecec79d0e978848bf7de37f05c4c70de0ace5f01caabbe1419"
+      },
+      {
+        "path": "src/lifecycle.js",
+        "bytes": 684,
+        "sha256": "24c2e15c1f93a2d6f0e2ea63047d6d2f03f086e888fcf0fa4b7709943ec20742"
+      },
+      {
+        "path": "src/main.js",
+        "bytes": 18321,
+        "sha256": "7218fc24fbfdfe59d51009d7858cb962178d3e09dcc9769745189b3e49b261ab"
+      },
+      {
+        "path": "src/rng.js",
+        "bytes": 1482,
+        "sha256": "cdeed4a89d98d2a8fcc51884454fa33ff705fd8c95faa00cc9e483f37cadd5ee"
+      },
+      {
+        "path": "src/rules.js",
+        "bytes": 6511,
+        "sha256": "e140e1868705572ac1861a79eedc6f9e40f26173ea655c56c7315a44b4ee5a80"
+      },
+      {
+        "path": "src/storage.js",
+        "bytes": 6006,
+        "sha256": "a6816f491237c769ba3ea8a2005b98e0fae82ed1acf3fe39e21d31d762fdf9c1"
+      },
+      {
+        "path": "src/view.js",
+        "bytes": 15087,
+        "sha256": "ed679f78831dc9c8a753e96bb267b4ed58678f653068460f6c003e38d13300f1"
+      }
+    ]
+  },
+  "checks": {
+    "backend_pytest": {
+      "passed": 158,
+      "subtests_passed": 291
+    },
+    "frontend_build": "passed",
+    "source_selection_ui": {
+      "api_models": [
+        "gpt-6.1-sol",
+        "claude-opus-4-7",
+        "deepseek-v4-pro"
+      ],
+      "other_api_model": {
+        "provider": "api-key",
+        "model": "claude-opus-4-7",
+        "framework": "deepagents",
+        "configured": true,
+        "available": true,
+        "connection_checked": false,
+        "transport": "langchain anthropic API",
+        "capabilities": {
+          "reference_archives": true,
+          "web_validation": true,
+          "publishing": true,
+          "image_generation": true
+        },
+        "models": [
+          {
+            "id": "gpt-6.1-sol",
+            "name": "GPT 6.1 Sol · API Key 网关"
+          },
+          {
+            "id": "claude-opus-4-7",
+            "name": "Claude Opus 4.7"
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek v4 Pro"
+          }
+        ]
+      },
+      "cli": {
+        "provider": "codex-login",
+        "available": true,
+        "models": [
+          {
+            "id": "gpt-6.1-sol",
+            "name": "GPT-6.1-Sol"
+          }
+        ]
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "passed": true,
+      "model_inference_started": false,
+      "errors": []
+    },
+    "project_ui": {
+      "phase": "已完成\n4c9cc34de72b46bdb99a3a2543e87805\n174 条事件",
+      "confirmed_stages": 4,
+      "published_url": "https://pagent.ahagamecenter.com/games/amber-caravan-api/index.html",
+      "provider_select_enabled": true,
+      "errors": [],
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "passed": true
+    },
+    "deployment": {
+      "checked_at": "2026-11-04T04:08:23.939Z",
+      "publication_url": "https://pagent.ahagamecenter.com/games/amber-caravan-api/index.html",
+      "local_base": "http://127.0.0.1:24681/games/amber-caravan-api/",
+      "files": [
+        {
+          "path": "app.css",
+          "bytes": 4234,
+          "sha256": "dd4850a98516c332fddbdf4892fb853d8b447126c2c708ee9f96f397ce739e0c",
+          "status": 200
+        },
+        {
+          "path": "assets/amber-board.svg",
+          "bytes": 9274,
+          "sha256": "038afc8307830a92594b819ed6840a05d4e8ead3b886b41d39517f3b7643e31b",
+          "status": 200
+        },
+        {
+          "path": "assets/amber-icons.svg",
+          "bytes": 2308,
+          "sha256": "64d6faabef5914a07b6df038382baa8846c0a846858e857292856c62bdf78bd3",
+          "status": 200
+        },
+        {
+          "path": "assets/amber-route-atmosphere.webp",
+          "bytes": 271292,
+          "sha256": "72a42b7c63112fad0c12d1e1ee3bae5a5a8af7bef0079d161d5b2625625d462d",
+          "status": 200
+        },
+        {
+          "path": "assets/amber-theme.css",
+          "bytes": 5332,
+          "sha256": "8c88836749f2a1e6e110ea19f6c22f170cbf645edc31967f33e9b20bed61d11c",
+          "status": 200
+        },
+        {
+          "path": "assets/amber-visual-config.json",
+          "bytes": 1928,
+          "sha256": "a42d0301f6883eb80270102ad5559052163b0195f42eb7da4d91aeda4cdac34a",
+          "status": 200
+        },
+        {
+          "path": "index.html",
+          "bytes": 1481,
+          "sha256": "b2971a917af9424dbcc3f00c996982a73e6abef5443ea437757df9e05aaa908e",
+          "status": 200
+        },
+        {
+          "path": "src/ai.js",
+          "bytes": 568,
+          "sha256": "d22dff0ca47b21b54c9acccf558e926251421606628192b97fbdb8791cb19157",
+          "status": 200
+        },
+        {
+          "path": "src/board-map.js",
+          "bytes": 1230,
+          "sha256": "49e81a3af77ae9ecec79d0e978848bf7de37f05c4c70de0ace5f01caabbe1419",
+          "status": 200
+        },
+        {
+          "path": "src/lifecycle.js",
+          "bytes": 684,
+          "sha256": "24c2e15c1f93a2d6f0e2ea63047d6d2f03f086e888fcf0fa4b7709943ec20742",
+          "status": 200
+        },
+        {
+          "path": "src/main.js",
+          "bytes": 18321,
+          "sha256": "7218fc24fbfdfe59d51009d7858cb962178d3e09dcc9769745189b3e49b261ab",
+          "status": 200
+        },
+        {
+          "path": "src/rng.js",
+          "bytes": 1482,
+          "sha256": "cdeed4a89d98d2a8fcc51884454fa33ff705fd8c95faa00cc9e483f37cadd5ee",
+          "status": 200
+        },
+        {
+          "path": "src/rules.js",
+          "bytes": 6511,
+          "sha256": "e140e1868705572ac1861a79eedc6f9e40f26173ea655c56c7315a44b4ee5a80",
+          "status": 200
+        },
+        {
+          "path": "src/storage.js",
+          "bytes": 6006,
+          "sha256": "a6816f491237c769ba3ea8a2005b98e0fae82ed1acf3fe39e21d31d762fdf9c1",
+          "status": 200
+        },
+        {
+          "path": "src/view.js",
+          "bytes": 15087,
+          "sha256": "ed679f78831dc9c8a753e96bb267b4ed58678f653068460f6c003e38d13300f1",
+          "status": 200
+        }
+      ],
+      "browsers": [
+        {
+          "name": "desktop",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "touch": false,
+          "input_actions": 8,
+          "refresh_preserved": true,
+          "size": {
+            "width": 1440,
+            "scrollWidth": 1440
+          },
+          "errors": [],
+          "badResponses": [],
+          "requested_resources": 15
+        },
+        {
+          "name": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": true,
+          "input_actions": 8,
+          "refresh_preserved": true,
+          "size": {
+            "width": 390,
+            "scrollWidth": 390
+          },
+          "errors": [],
+          "badResponses": [],
+          "requested_resources": 15
+        },
+        {
+          "name": "small-mobile",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": true,
+          "input_actions": 8,
+          "refresh_preserved": true,
+          "size": {
+            "width": 320,
+            "scrollWidth": 320
+          },
+          "errors": [],
+          "badResponses": [],
+          "requested_resources": 15
+        }
+      ],
+      "chromium": "153.0.8010.12",
+      "local_passed": true,
+      "public": {
+        "checked": true,
+        "reachable_from_server": false,
+        "error": "UND_ERR_CONNECT_TIMEOUT"
+      }
+    },
+    "publish_ui": {
+      "checked_at": "2026-11-04T04:08:13.686Z",
+      "confirmation_via_ui": true,
+      "publication_via_ui": true,
+      "published_url": "https://pagent.ahagamecenter.com/games/amber-caravan-api/index.html",
+      "publication": {
+        "project_id": "4a33b4b07d1f4fcc874ad80aa1b6a876",
+        "run_id": "4c9cc34de72b46bdb99a3a2543e87805",
+        "slug": "amber-caravan-api",
+        "url": "https://pagent.ahagamecenter.com/games/amber-caravan-api/index.html",
+        "bytes": 345738,
+        "file_count": 15,
+        "sha256": "c62159148ff53cc702d4df992ca1130e92d430c4bbdac0f59c53ae9619afd341",
+        "source_fingerprint": "8dfc00963e63d77a859eaa1e889dcffd9f6d116aa31a27a46215f945444f12a6",
+        "published_at": "2026-11-04T04:08:13.596347+00:00",
+        "files": [
+          {
+            "path": "app.css",
+            "bytes": 4234,
+            "sha256": "dd4850a98516c332fddbdf4892fb853d8b447126c2c708ee9f96f397ce739e0c"
+          },
+          {
+            "path": "assets/amber-board.svg",
+            "bytes": 9274,
+            "sha256": "038afc8307830a92594b819ed6840a05d4e8ead3b886b41d39517f3b7643e31b"
+          },
+          {
+            "path": "assets/amber-icons.svg",
+            "bytes": 2308,
+            "sha256": "64d6faabef5914a07b6df038382baa8846c0a846858e857292856c62bdf78bd3"
+          },
+          {
+            "path": "assets/amber-route-atmosphere.webp",
+            "bytes": 271292,
+            "sha256": "72a42b7c63112fad0c12d1e1ee3bae5a5a8af7bef0079d161d5b2625625d462d"
+          },
+          {
+            "path": "assets/amber-theme.css",
+            "bytes": 5332,
+            "sha256": "8c88836749f2a1e6e110ea19f6c22f170cbf645edc31967f33e9b20bed61d11c"
+          },
+          {
+            "path": "assets/amber-visual-config.json",
+            "bytes": 1928,
+            "sha256": "a42d0301f6883eb80270102ad5559052163b0195f42eb7da4d91aeda4cdac34a"
+          },
+          {
+            "path": "index.html",
+            "bytes": 1481,
+            "sha256": "b2971a917af9424dbcc3f00c996982a73e6abef5443ea437757df9e05aaa908e"
+          },
+          {
+            "path": "src/ai.js",
+            "bytes": 568,
+            "sha256": "d22dff0ca47b21b54c9acccf558e926251421606628192b97fbdb8791cb19157"
+          },
+          {
+            "path": "src/board-map.js",
+            "bytes": 1230,
+            "sha256": "49e81a3af77ae9ecec79d0e978848bf7de37f05c4c70de0ace5f01caabbe1419"
+          },
+          {
+            "path": "src/lifecycle.js",
+            "bytes": 684,
+            "sha256": "24c2e15c1f93a2d6f0e2ea63047d6d2f03f086e888fcf0fa4b7709943ec20742"
+          },
+          {
+            "path": "src/main.js",
+            "bytes": 18321,
+            "sha256": "7218fc24fbfdfe59d51009d7858cb962178d3e09dcc9769745189b3e49b261ab"
+          },
+          {
+            "path": "src/rng.js",
+            "bytes": 1482,
+            "sha256": "cdeed4a89d98d2a8fcc51884454fa33ff705fd8c95faa00cc9e483f37cadd5ee"
+          },
+          {
+            "path": "src/rules.js",
+            "bytes": 6511,
+            "sha256": "e140e1868705572ac1861a79eedc6f9e40f26173ea655c56c7315a44b4ee5a80"
+          },
+          {
+            "path": "src/storage.js",
+            "bytes": 6006,
+            "sha256": "a6816f491237c769ba3ea8a2005b98e0fae82ed1acf3fe39e21d31d762fdf9c1"
+          },
+          {
+            "path": "src/view.js",
+            "bytes": 15087,
+            "sha256": "ed679f78831dc9c8a753e96bb267b4ed58678f653068460f6c003e38d13300f1"
+          }
+        ]
+      },
+      "errors": [],
+      "passed": true
+    },
+    "game": {
+      "unit_tests_passed": 25,
+      "rule_matches": 30,
+      "replayed_matches": 30,
+      "browser_status": "passed",
+      "browser": "153.0.8010.12",
+      "browser_games": [
+        {
+          "id": "B02",
+          "mode": "quick",
+          "count": 2,
+          "input": "keyboard",
+          "seed": 42,
+          "status": "passed",
+          "actualHumanInputs": 68
+        },
+        {
+          "id": "B03",
+          "mode": "quick",
+          "count": 3,
+          "input": "touch",
+          "seed": 4294967295,
+          "status": "passed",
+          "actualHumanInputs": 68
+        },
+        {
+          "id": "B01",
+          "mode": "classic",
+          "count": 2,
+          "input": "mouse",
+          "seed": 7,
+          "status": "passed",
+          "actualHumanInputs": 144
+        },
+        {
+          "id": "B06",
+          "mode": "quick",
+          "count": 4,
+          "input": "touch",
+          "seed": 42,
+          "status": "passed",
+          "actualHumanInputs": 132
+        },
+        {
+          "id": "B04",
+          "mode": "classic",
+          "count": 4,
+          "input": "touch",
+          "seed": 7,
+          "status": "passed",
+          "actualHumanInputs": 124
+        },
+        {
+          "id": "B05",
+          "mode": "classic",
+          "count": 3,
+          "input": "mouse",
+          "seed": 1,
+          "status": "passed",
+          "actualHumanInputs": 369
+        }
+      ],
+      "visibility_status": "passed",
+      "trusted_visibility_events": true,
+      "packages": [
+        {
+          "path": "releases/amber-caravan-api-dist.zip",
+          "files": 15,
+          "uncompressedBytes": 345738,
+          "zipBytes": 299948,
+          "sha256": "b3dbb27d17ad44fb68c48495adff426eda246cd7828e9ab8c2e83528a875312f"
+        },
+        {
+          "path": "releases/amber-caravan-api-source.zip",
+          "files": 34,
+          "uncompressedBytes": 498140,
+          "zipBytes": 369405,
+          "sha256": "e51c245526bceb85f2b813657dc909f6a3664cad50e29c9a510742a58f3263c7"
+        }
+      ],
+      "isolated_source_rebuild": {
+        "status": "passed",
+        "fileCount": 15,
+        "distBytes": 345738,
+        "byteIdentical": true
+      },
+      "limits": [
+        "手机为Chromium触摸模拟，未做实体iOS/Android或Safari测试",
+        "未做真人音频试听或主观局时/美术评价"
+      ]
+    },
+    "original_game_unchanged": {
+      "files": 10,
+      "bytes": 383340,
+      "matches_previous_dist": true
+    }
+  },
+  "skill_sync_operation": "8cec20278d7842f98674a5ee3ec7740f",
+  "note": "记录依据服务端真实API响应和工具事件。返回模型标识来自用户网关；不据此推断网关内部映射。原公开游戏不计入本轮API产物。"
+}

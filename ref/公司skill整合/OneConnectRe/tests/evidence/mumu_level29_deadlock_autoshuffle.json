@@ -1,0 +1,9 @@
+{
+  "level": 29,
+  "fixture": "controlled 8x10 board with tiles 21-28",
+  "before": 16,
+  "afterAutomaticShuffle": 14,
+  "afterRestoredNextPair": 12,
+  "stock": 5,
+  "boardRestored": true
+}

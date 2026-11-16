@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  87138,
+    "apiName":  "Bubble Shooter With Friends",
+    "targetName":  "Bubble Shooter With Friends",
+    "match":  "EXACT",
+    "bundleName":  "re_www.bjjinwangame.com.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20241226/07291635145.zip",
+    "bundleMd5":  "09b39521b32be7338d0cf6e0310dcab2",
+    "bundleSize":  3838611,
+    "updatedAt":  1774511524,
+    "gameLink":  "https://www.bjjinwangame.com/Bubble_Shooter_With_Friends/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_87138",
+    "category":  "Puzzle",
+    "rate":  7.7,
+    "gameType":  1,
+    "localFile":  "Bubble_Shooter_With_Friends.zip",
+    "localBytes":  3838611,
+    "verifiedAt":  "2026-10-20T10:36:32",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "manually coordinated experiment; not integrated or crash-atomic gameplay",
+  "first": {
+    "decision": "refund",
+    "result": "refunded",
+    "reserve": "reserved"
+  },
+  "end": {
+    "tiles": 38,
+    "marker": "actual",
+    "decision": "commit",
+    "status": "committed",
+    "stock": 1,
+    "realStock": 1
+  },
+  "errors": []
+}

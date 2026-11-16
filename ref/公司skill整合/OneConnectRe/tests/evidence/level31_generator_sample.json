@@ -1,0 +1,6 @@
+{
+  "seeds": 100,
+  "failures": [],
+  "maxMs": 75,
+  "scope": "desktop generator sample only; solution length is not independent path verification"
+}

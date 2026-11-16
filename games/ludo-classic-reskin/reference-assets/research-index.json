@@ -1,0 +1,1215 @@
+{
+  "notice": "辅助研究定位索引，来自原始ZIP静态解析；本轮API Agent须实读对应条目/实际提取并核验，不把索引当作已经产出或测试。",
+  "superstar_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  "just_zip": "公司skill整合/AHAgames/82251_Just_Ludo/Just_Ludo.zip",
+  "atlases": [
+    {
+      "role": "棋盘与骰子展示图集",
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c3/c3a0e2ba-ed87-489d-a80f-d02962295399.c8c8d.png",
+      "size": [
+        1787,
+        850
+      ],
+      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/058d1eea5.18141.json",
+      "sha256": "221983bdbd05875ca1a22ecb1b0634bf416a2cf676ea4667e7d32e494025a2e6",
+      "bytes": 184292
+    },
+    {
+      "role": "棋子与六点数图集",
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+      "size": [
+        1432,
+        512
+      ],
+      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+      "bytes": 125874
+    },
+    {
+      "role": "紫色背景与蓝绿营地图集",
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/51/5115ecbc-d727-4655-84ac-e700038972d5.b2713.png",
+      "size": [
+        721,
+        1837
+      ],
+      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+      "sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c",
+      "bytes": 9904
+    },
+    {
+      "role": "路径与红黄营地/非旋转棋子图集",
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "size": [
+        2038,
+        2008
+      ],
+      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+      "bytes": 229924
+    }
+  ],
+  "frames": [
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_dice_points_5",
+        "rect": [
+          1312,
+          223,
+          104,
+          106
+        ],
+        "offset": [
+          4,
+          3
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_dice_points_3",
+        "rect": [
+          1221,
+          115,
+          104,
+          106
+        ],
+        "offset": [
+          4,
+          3
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_img_chess_lan",
+        "rect": [
+          894,
+          298,
+          32,
+          53
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          32,
+          53
+        ],
+        "rotated": 1,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_dice_points_1",
+        "rect": [
+          1198,
+          390,
+          104,
+          106
+        ],
+        "offset": [
+          4,
+          3
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_img_chess_hong",
+        "rect": [
+          949,
+          298,
+          32,
+          52
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          32,
+          52
+        ],
+        "rotated": 1,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_dice_points_4",
+        "rect": [
+          1324,
+          1,
+          104,
+          106
+        ],
+        "offset": [
+          4,
+          3
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_dice_points_2",
+        "rect": [
+          1304,
+          390,
+          104,
+          106
+        ],
+        "offset": [
+          4,
+          3
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_dice_points_6",
+        "rect": [
+          1327,
+          109,
+          104,
+          106
+        ],
+        "offset": [
+          4,
+          3
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_img_chess_lv",
+        "rect": [
+          932,
+          117,
+          33,
+          53
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          33,
+          53
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+      "frame": {
+        "name": "original_img_chess_huang",
+        "rect": [
+          897,
+          117,
+          33,
+          53
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          33,
+          53
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/058d1eea5.18141.json",
+      "frame": {
+        "name": "img_original_board",
+        "rect": [
+          1561,
+          493,
+          104,
+          104
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          104,
+          104
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/058d1eea5.18141.json",
+      "frame": {
+        "name": "dice_original",
+        "rect": [
+          781,
+          469,
+          388,
+          380
+        ],
+        "offset": [
+          -9,
+          -35
+        ],
+        "originalSize": [
+          500,
+          500
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_wujiaoxing",
+        "rect": [
+          227,
+          1896,
+          27,
+          26
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          27,
+          26
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_barrier",
+        "rect": [
+          188,
+          1929,
+          15,
+          33
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          15,
+          33
+        ],
+        "rotated": 1,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_sanjiao_lv",
+        "rect": [
+          1354,
+          1886,
+          17,
+          15
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          17,
+          15
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_base_bg_hong",
+        "rect": [
+          1405,
+          1774,
+          233,
+          233
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          233,
+          233
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_sanjiao_lan",
+        "rect": [
+          1321,
+          1925,
+          17,
+          15
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          17,
+          15
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_base_bg_huang",
+        "rect": [
+          1640,
+          1774,
+          233,
+          233
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          233,
+          233
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_chess_lan",
+        "rect": [
+          1287,
+          1851,
+          32,
+          53
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          32,
+          53
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_sanjiao_huang",
+        "rect": [
+          1982,
+          1947,
+          15,
+          17
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          15,
+          17
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "img_original_token",
+        "rect": [
+          1,
+          1896,
+          108,
+          151
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          108,
+          151
+        ],
+        "rotated": 1,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_center_blue",
+        "rect": [
+          1445,
+          1187,
+          586,
+          585
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          586,
+          585
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_chess_huang",
+        "rect": [
+          1875,
+          1947,
+          33,
+          53
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          33,
+          53
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+      "frame": {
+        "name": "original_img_sanjiao_hong",
+        "rect": [
+          1405,
+          1723,
+          15,
+          17
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          15,
+          17
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+      "frame": {
+        "name": "original_img_base_bg_lan",
+        "rect": [
+          1,
+          1603,
+          233,
+          233
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          233,
+          233
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+      "frame": {
+        "name": "original_img_base_bg_lv",
+        "rect": [
+          236,
+          1603,
+          233,
+          233
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          233,
+          233
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+      "frame": {
+        "name": "original_img_beijing",
+        "rect": [
+          1,
+          1,
+          719,
+          1600
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          719,
+          1600
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/12/1289e33a-9cbc-4f3b-9d95-b399c7ed7970.f99c5.json",
+      "frame": {
+        "name": "original_img_chess_hong",
+        "rect": [
+          154,
+          1896,
+          32,
+          52
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          32,
+          52
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/f5/f5de51aa-6a42-4aa7-a81b-d0f91fbd2200.df05c.json",
+      "frame": {
+        "name": "skin_original_board",
+        "rect": [
+          470,
+          1,
+          467,
+          466
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          467,
+          466
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "hud": {
+    "facts": "当前PlayerInfo只在img_player和img_computer两张头像间选择；4张卡通头像候选来自另一款Just Ludo的Main_Cmn图集，来源不可混称。",
+    "layout": {
+      "prefab": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/05a1c9723.58580.json",
+      "player_info_size": [
+        231,
+        174
+      ],
+      "seat_background_size": [
+        146,
+        146
+      ],
+      "seat_background_position": [
+        0,
+        11
+      ],
+      "avatar_position": [
+        0,
+        9
+      ],
+      "dice_button_size": [
+        75,
+        75
+      ],
+      "dice_button_position": [
+        0,
+        11
+      ],
+      "dice_node_position": [
+        -5,
+        9
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchor_basis": "相关Node没有显式_anchorPoint，沿用Cocos默认值；此值不是SpriteFrame元数据。"
+    },
+    "assets": [
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_player",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/55/55eba9c0-254f-4658-9c9a-45a3d0bd6bb0.2ccfe.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/b3/b33f57b3-f952-4bd8-bf77-e4c4ecf486f4.eb0dc.png",
+        "native_size": [
+          96,
+          121
+        ],
+        "native_sha256": "9380a5de1a4f81848e462108dce75a2811a11c25a4c9e8332f2223dfe238636d",
+        "rect": [
+          0,
+          0,
+          96,
+          121
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          96,
+          121
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_bg_hong",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/84/84ac6f9e-0540-416d-b5db-54e29b3de7ed.b6edb.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/00/00014f84-889c-4369-9528-f89aa5d3d07b.b84bd.png",
+        "native_size": [
+          146,
+          146
+        ],
+        "native_sha256": "ee3722314ffc1ab1156ed89c587a9db490938f0a870aece5e03ee2d05fbfab59",
+        "rect": [
+          0,
+          0,
+          146,
+          146
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          146,
+          146
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_computer",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/1a/1ad19104-fa04-4227-b955-73bb4dca4477.7d0f7.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/bf/bfa16342-e0ba-4813-893e-539a4b89b067.4700c.png",
+        "native_size": [
+          121,
+          128
+        ],
+        "native_sha256": "7e0cbecbbef4bc30c02897fd5a832073bc546ead14a17db587ea3482fb8d8803",
+        "rect": [
+          0,
+          0,
+          121,
+          128
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          121,
+          128
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_green_circle",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0d/0d4dc8f4b.c2128.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/54/543cb889-41ca-489b-86bd-d9f890b49f66.3f702.png",
+        "native_size": [
+          43,
+          43
+        ],
+        "native_sha256": "7633d7fec1f246ce7f4e3af555a3738ffa25d0f02820e8bde8ecd45c8ecebdcd",
+        "rect": [
+          1,
+          0,
+          42,
+          43
+        ],
+        "offset": [
+          0.5,
+          0
+        ],
+        "originalSize": [
+          43,
+          43
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_btn_play",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/05d8d8daf.f2af0.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/6f/6f2a6e4f-be11-41fe-a6a4-23749aa59dad.2f6a0.png",
+        "native_size": [
+          194,
+          79
+        ],
+        "native_sha256": "7fd11a918ddf705de967fc807c80d74aa1f50ce5f1eb7a0de69954b06e4570a7",
+        "rect": [
+          0,
+          0,
+          194,
+          79
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          194,
+          79
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_chess_circle",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/09/09dc22791.bcd67.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/5e/5e3e6465-c39e-42a7-95bc-49258ba0db4e.3ba34.png",
+        "native_size": [
+          50,
+          50
+        ],
+        "native_sha256": "5a4d6f726806329ee4eb057794ae85ac1e930bf51fb83a4b9eeee5969f592373",
+        "rect": [
+          0,
+          0,
+          50,
+          50
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          50,
+          50
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_close",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/f8/f8284f60-61f8-473e-a364-d8520748ee05.6de20.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/cd/cdb20014-a64f-4f2e-82be-b0eb1da662c9.04750.png",
+        "native_size": [
+          59,
+          62
+        ],
+        "native_sha256": "1c6f24782b9ba8b04aba4f161e220f8ba69865ff422471b6ac11e0851fdcf781",
+        "rect": [
+          0,
+          0,
+          59,
+          62
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          59,
+          62
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_btn_ok",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/47/479a1743-3069-4923-b574-03529c44dec0.96d14.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/92/92c2ce21-37a9-40b8-8bf3-3248eb229fa4.ee8cf.png",
+        "native_size": [
+          195,
+          78
+        ],
+        "native_sha256": "6b6e170e1f2bb85f848a7108eb6d847cf19c3155a5f4da62562ce848b171bb79",
+        "rect": [
+          0,
+          0,
+          195,
+          78
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          195,
+          78
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_bg_huang",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/1f/1f6ee478-9032-4fc3-ba67-f2d3628cb4db.befde.png",
+        "native_size": [
+          146,
+          146
+        ],
+        "native_sha256": "779a79e973f10284c90d0b58cf326f33d8663e181f16f319741a66d2d8ec9b26",
+        "rect": [
+          0,
+          0,
+          146,
+          146
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          146,
+          146
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_bg_lv",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/c0/c0e17be1-c9df-45e2-89b3-18f681954af2.5ad39.png",
+        "native_size": [
+          146,
+          146
+        ],
+        "native_sha256": "14a74cb4ac1d2fb728ed91d328c1648f46a465653cb044385b82f56399db8653",
+        "rect": [
+          0,
+          0,
+          146,
+          146
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          146,
+          146
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      },
+      {
+        "source_game": "Ludo Superstar",
+        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "name": "img_bg_lan",
+        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/72/726d79af-6182-424c-ae0d-091959a73db0.5bd03.png",
+        "native_size": [
+          146,
+          146
+        ],
+        "native_sha256": "80d4c6cbeb7a291238b1fca83f89cbc6a3b3decdd9a72974785a9ceacdf7ac28",
+        "rect": [
+          0,
+          0,
+          146,
+          146
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "originalSize": [
+          146,
+          146
+        ],
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+      }
+    ]
+  }
+}

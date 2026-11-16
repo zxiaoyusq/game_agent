@@ -1,0 +1,673 @@
+{
+  "sha256": "4cf2ba474fc9aefda142fbdca46cf7b4d3ebf06a2114ecd8487a3e48448710b4",
+  "address_kind": "ELF link VA",
+  "scope": "FDE spans and linear instruction windows; direct B/BL exact target in .text only. FDE is not semantic identity; indirect calls, conditional reachability and object roles remain unverified.",
+  "comparator_refs": [
+    {
+      "xref": "0x18c71c4",
+      "identity": [
+        {
+          "name": "UnfouledStrikerComparator",
+          "kind": "table_relative_-8"
+        }
+      ],
+      "fde_candidate": [
+        "0x18c6b20",
+        "0x18c76a8"
+      ],
+      "window": [
+        {
+          "va": "0x18c71b4",
+          "op": "eor x8, x20, x0, lsl #1"
+        },
+        {
+          "va": "0x18c71b8",
+          "op": "str x8, [sp, #0x10]"
+        },
+        {
+          "va": "0x18c71bc",
+          "op": "mov w0, #8"
+        },
+        {
+          "va": "0x18c71c0",
+          "op": "bl #0x2798774"
+        },
+        {
+          "va": "0x18c71c4",
+          "op": "adrp x8, #0x27a2000"
+        },
+        {
+          "va": "0x18c71c8",
+          "op": "add x8, x8, #0xce0"
+        },
+        {
+          "va": "0x18c71cc",
+          "op": "str x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c71d0",
+          "op": "add x8, x8, #0x10"
+        },
+        {
+          "va": "0x18c71d4",
+          "op": "str x8, [x0]"
+        },
+        {
+          "va": "0x18c71d8",
+          "op": "add x1, sp, #0x10"
+        },
+        {
+          "va": "0x18c71dc",
+          "op": "add x2, sp, #0x10"
+        },
+        {
+          "va": "0x18c71e0",
+          "op": "add x3, sp, #8"
+        },
+        {
+          "va": "0x18c71e4",
+          "op": "mov x0, x19"
+        },
+        {
+          "va": "0x18c71e8",
+          "op": "bl #0x18cb62c"
+        },
+        {
+          "va": "0x18c71ec",
+          "op": "ldr x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c71f0",
+          "op": "str xzr, [sp, #8]"
+        },
+        {
+          "va": "0x18c71f4",
+          "op": "cbz x0, #0x18c7204"
+        },
+        {
+          "va": "0x18c71f8",
+          "op": "ldr x8, [x0]"
+        },
+        {
+          "va": "0x18c71fc",
+          "op": "ldr x8, [x8, #8]"
+        },
+        {
+          "va": "0x18c7200",
+          "op": "blr x8"
+        }
+      ]
+    },
+    {
+      "xref": "0x18c7218",
+      "identity": [
+        {
+          "name": "HigherScoredPucksComparator",
+          "kind": "table_relative_-8"
+        }
+      ],
+      "fde_candidate": [
+        "0x18c6b20",
+        "0x18c76a8"
+      ],
+      "window": [
+        {
+          "va": "0x18c7208",
+          "op": "eor x8, x20, x0, lsl #1"
+        },
+        {
+          "va": "0x18c720c",
+          "op": "str x8, [sp, #0x10]"
+        },
+        {
+          "va": "0x18c7210",
+          "op": "mov w0, #8"
+        },
+        {
+          "va": "0x18c7214",
+          "op": "bl #0x2798774"
+        },
+        {
+          "va": "0x18c7218",
+          "op": "adrp x8, #0x27a2000"
+        },
+        {
+          "va": "0x18c721c",
+          "op": "add x8, x8, #0xd28"
+        },
+        {
+          "va": "0x18c7220",
+          "op": "str x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c7224",
+          "op": "add x8, x8, #0x10"
+        },
+        {
+          "va": "0x18c7228",
+          "op": "str x8, [x0]"
+        },
+        {
+          "va": "0x18c722c",
+          "op": "add x1, sp, #0x10"
+        },
+        {
+          "va": "0x18c7230",
+          "op": "add x2, sp, #0x10"
+        },
+        {
+          "va": "0x18c7234",
+          "op": "add x3, sp, #8"
+        },
+        {
+          "va": "0x18c7238",
+          "op": "mov x0, x19"
+        },
+        {
+          "va": "0x18c723c",
+          "op": "bl #0x18cb95c"
+        },
+        {
+          "va": "0x18c7240",
+          "op": "ldr x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c7244",
+          "op": "str xzr, [sp, #8]"
+        },
+        {
+          "va": "0x18c7248",
+          "op": "cbz x0, #0x18c7258"
+        },
+        {
+          "va": "0x18c724c",
+          "op": "ldr x8, [x0]"
+        },
+        {
+          "va": "0x18c7250",
+          "op": "ldr x8, [x8, #8]"
+        },
+        {
+          "va": "0x18c7254",
+          "op": "blr x8"
+        }
+      ]
+    },
+    {
+      "xref": "0x18c726c",
+      "identity": [
+        {
+          "name": "LeastFouledPucksComparator",
+          "kind": "table_relative_-8"
+        }
+      ],
+      "fde_candidate": [
+        "0x18c6b20",
+        "0x18c76a8"
+      ],
+      "window": [
+        {
+          "va": "0x18c725c",
+          "op": "eor x8, x20, x0, lsl #1"
+        },
+        {
+          "va": "0x18c7260",
+          "op": "str x8, [sp, #0x10]"
+        },
+        {
+          "va": "0x18c7264",
+          "op": "mov w0, #8"
+        },
+        {
+          "va": "0x18c7268",
+          "op": "bl #0x2798774"
+        },
+        {
+          "va": "0x18c726c",
+          "op": "adrp x8, #0x27a2000"
+        },
+        {
+          "va": "0x18c7270",
+          "op": "add x8, x8, #0xd70"
+        },
+        {
+          "va": "0x18c7274",
+          "op": "str x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c7278",
+          "op": "add x8, x8, #0x10"
+        },
+        {
+          "va": "0x18c727c",
+          "op": "str x8, [x0]"
+        },
+        {
+          "va": "0x18c7280",
+          "op": "add x1, sp, #0x10"
+        },
+        {
+          "va": "0x18c7284",
+          "op": "add x2, sp, #0x10"
+        },
+        {
+          "va": "0x18c7288",
+          "op": "add x3, sp, #8"
+        },
+        {
+          "va": "0x18c728c",
+          "op": "mov x0, x19"
+        },
+        {
+          "va": "0x18c7290",
+          "op": "bl #0x18cbc74"
+        },
+        {
+          "va": "0x18c7294",
+          "op": "ldr x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c7298",
+          "op": "str xzr, [sp, #8]"
+        },
+        {
+          "va": "0x18c729c",
+          "op": "cbz x0, #0x18c72ac"
+        },
+        {
+          "va": "0x18c72a0",
+          "op": "ldr x8, [x0]"
+        },
+        {
+          "va": "0x18c72a4",
+          "op": "ldr x8, [x8, #8]"
+        },
+        {
+          "va": "0x18c72a8",
+          "op": "blr x8"
+        }
+      ]
+    },
+    {
+      "xref": "0x18c73bc",
+      "identity": [
+        {
+          "name": "ShortestShotComparator",
+          "kind": "table_relative_-8"
+        }
+      ],
+      "fde_candidate": [
+        "0x18c6b20",
+        "0x18c76a8"
+      ],
+      "window": [
+        {
+          "va": "0x18c73ac",
+          "op": "eor x8, x20, x0, lsl #1"
+        },
+        {
+          "va": "0x18c73b0",
+          "op": "str x8, [sp, #0x10]"
+        },
+        {
+          "va": "0x18c73b4",
+          "op": "mov w0, #8"
+        },
+        {
+          "va": "0x18c73b8",
+          "op": "bl #0x2798774"
+        },
+        {
+          "va": "0x18c73bc",
+          "op": "adrp x8, #0x27a2000"
+        },
+        {
+          "va": "0x18c73c0",
+          "op": "add x8, x8, #0xe90"
+        },
+        {
+          "va": "0x18c73c4",
+          "op": "str x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c73c8",
+          "op": "add x8, x8, #0x10"
+        },
+        {
+          "va": "0x18c73cc",
+          "op": "str x8, [x0]"
+        },
+        {
+          "va": "0x18c73d0",
+          "op": "add x1, sp, #0x10"
+        },
+        {
+          "va": "0x18c73d4",
+          "op": "add x2, sp, #0x10"
+        },
+        {
+          "va": "0x18c73d8",
+          "op": "add x3, sp, #8"
+        },
+        {
+          "va": "0x18c73dc",
+          "op": "mov x0, x19"
+        },
+        {
+          "va": "0x18c73e0",
+          "op": "bl #0x18cc8d4"
+        },
+        {
+          "va": "0x18c73e4",
+          "op": "ldr x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c73e8",
+          "op": "str xzr, [sp, #8]"
+        },
+        {
+          "va": "0x18c73ec",
+          "op": "cbz x0, #0x18c73fc"
+        },
+        {
+          "va": "0x18c73f0",
+          "op": "ldr x8, [x0]"
+        },
+        {
+          "va": "0x18c73f4",
+          "op": "ldr x8, [x8, #8]"
+        },
+        {
+          "va": "0x18c73f8",
+          "op": "blr x8"
+        }
+      ]
+    },
+    {
+      "xref": "0x18c7410",
+      "identity": [
+        {
+          "name": "LeastPoweredShotComparator",
+          "kind": "table_relative_-8"
+        }
+      ],
+      "fde_candidate": [
+        "0x18c6b20",
+        "0x18c76a8"
+      ],
+      "window": [
+        {
+          "va": "0x18c7400",
+          "op": "eor x8, x20, x0, lsl #1"
+        },
+        {
+          "va": "0x18c7404",
+          "op": "str x8, [sp, #0x10]"
+        },
+        {
+          "va": "0x18c7408",
+          "op": "mov w0, #8"
+        },
+        {
+          "va": "0x18c740c",
+          "op": "bl #0x2798774"
+        },
+        {
+          "va": "0x18c7410",
+          "op": "adrp x8, #0x27a2000"
+        },
+        {
+          "va": "0x18c7414",
+          "op": "add x8, x8, #0xed8"
+        },
+        {
+          "va": "0x18c7418",
+          "op": "str x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c741c",
+          "op": "add x8, x8, #0x10"
+        },
+        {
+          "va": "0x18c7420",
+          "op": "str x8, [x0]"
+        },
+        {
+          "va": "0x18c7424",
+          "op": "add x1, sp, #0x10"
+        },
+        {
+          "va": "0x18c7428",
+          "op": "add x2, sp, #0x10"
+        },
+        {
+          "va": "0x18c742c",
+          "op": "add x3, sp, #8"
+        },
+        {
+          "va": "0x18c7430",
+          "op": "mov x0, x19"
+        },
+        {
+          "va": "0x18c7434",
+          "op": "bl #0x18ccbec"
+        },
+        {
+          "va": "0x18c7438",
+          "op": "ldr x0, [sp, #8]"
+        },
+        {
+          "va": "0x18c743c",
+          "op": "str xzr, [sp, #8]"
+        },
+        {
+          "va": "0x18c7440",
+          "op": "cbz x0, #0x18c7450"
+        },
+        {
+          "va": "0x18c7444",
+          "op": "ldr x8, [x0]"
+        },
+        {
+          "va": "0x18c7448",
+          "op": "ldr x8, [x8, #8]"
+        },
+        {
+          "va": "0x18c744c",
+          "op": "blr x8"
+        }
+      ]
+    }
+  ],
+  "candidate_function_entry": "0x18c6b20",
+  "candidate_function_window": [
+    {
+      "va": "0x18c6b20",
+      "op": "sub sp, sp, #0x50"
+    },
+    {
+      "va": "0x18c6b24",
+      "op": "stp x29, x30, [sp, #0x20]"
+    },
+    {
+      "va": "0x18c6b28",
+      "op": "stp x22, x21, [sp, #0x30]"
+    },
+    {
+      "va": "0x18c6b2c",
+      "op": "stp x20, x19, [sp, #0x40]"
+    },
+    {
+      "va": "0x18c6b30",
+      "op": "add x29, sp, #0x20"
+    },
+    {
+      "va": "0x18c6b34",
+      "op": "mrs x21, tpidr_el0"
+    },
+    {
+      "va": "0x18c6b38",
+      "op": "movi v0.2d, #0000000000000000"
+    },
+    {
+      "va": "0x18c6b3c",
+      "op": "mov x19, x0"
+    },
+    {
+      "va": "0x18c6b40",
+      "op": "ldr x8, [x21, #0x28]"
+    },
+    {
+      "va": "0x18c6b44",
+      "op": "stur x8, [x29, #-8]"
+    },
+    {
+      "va": "0x18c6b48",
+      "op": "mov w8, #0x3f800000"
+    },
+    {
+      "va": "0x18c6b4c",
+      "op": "stp q0, q0, [x0]"
+    },
+    {
+      "va": "0x18c6b50",
+      "op": "str w8, [x0, #0x20]"
+    },
+    {
+      "va": "0x18c6b54",
+      "op": "bl #0x18c798c"
+    },
+    {
+      "va": "0x18c6b58",
+      "op": "adrp x22, #0x12ea000"
+    },
+    {
+      "va": "0x18c6b5c",
+      "op": "add x22, x22, #0xf9c"
+    },
+    {
+      "va": "0x18c6b60",
+      "op": "eor x8, x22, x0, lsl #1"
+    },
+    {
+      "va": "0x18c6b64",
+      "op": "str x8, [sp, #0x10]"
+    },
+    {
+      "va": "0x18c6b68",
+      "op": "mov w0, #0x10"
+    },
+    {
+      "va": "0x18c6b6c",
+      "op": "bl #0x2798774"
+    },
+    {
+      "va": "0x18c6b70",
+      "op": "mov x20, x0"
+    },
+    {
+      "va": "0x18c6b74",
+      "op": "bl #0x18b9d00"
+    },
+    {
+      "va": "0x18c6b78",
+      "op": "str x20, [sp, #8]"
+    },
+    {
+      "va": "0x18c6b7c",
+      "op": "add x1, sp, #0x10"
+    }
+  ],
+  "direct_callers": [
+    {
+      "source": "0x18b3440",
+      "opcode": "BL",
+      "fde_candidate": [
+        "0x18b31fc",
+        "0x18b35e0"
+      ],
+      "window": [
+        {
+          "va": "0x18b3420",
+          "op": "bl #0x18b3ed0"
+        },
+        {
+          "va": "0x18b3424",
+          "op": "add x0, sp, #8"
+        },
+        {
+          "va": "0x18b3428",
+          "op": "str x24, [sp, #8]"
+        },
+        {
+          "va": "0x18b342c",
+          "op": "bl #0x18b16f4"
+        },
+        {
+          "va": "0x18b3430",
+          "op": "add x0, sp, #8"
+        },
+        {
+          "va": "0x18b3434",
+          "op": "str x22, [sp, #8]"
+        },
+        {
+          "va": "0x18b3438",
+          "op": "bl #0x18b16f4"
+        },
+        {
+          "va": "0x18b343c",
+          "op": "add x0, sp, #0x38"
+        },
+        {
+          "va": "0x18b3440",
+          "op": "bl #0x18c6b20"
+        },
+        {
+          "va": "0x18b3444",
+          "op": "mov w0, #0x28"
+        },
+        {
+          "va": "0x18b3448",
+          "op": "bl #0x2798774"
+        },
+        {
+          "va": "0x18b344c",
+          "op": "add x1, sp, #0x38"
+        },
+        {
+          "va": "0x18b3450",
+          "op": "mov x20, x0"
+        },
+        {
+          "va": "0x18b3454",
+          "op": "bl #0x18b4084"
+        },
+        {
+          "va": "0x18b3458",
+          "op": "add x0, x19, #0x28"
+        },
+        {
+          "va": "0x18b345c",
+          "op": "mov x1, x20"
+        },
+        {
+          "va": "0x18b3460",
+          "op": "bl #0x18b3f40"
+        },
+        {
+          "va": "0x18b3464",
+          "op": "add x0, sp, #0x38"
+        },
+        {
+          "va": "0x18b3468",
+          "op": "bl #0x18b3d94"
+        },
+        {
+          "va": "0x18b346c",
+          "op": "ldp x21, x22, [x19, #0x10]"
+        }
+      ]
+    }
+  ]
+}

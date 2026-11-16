@@ -1,0 +1,187 @@
+{
+  "status": "reserve_only_not_game",
+  "tiles": [
+    {
+      "file": "斋月_01.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "8b0be71f28c246ab48a035f5b1ca8e458fb7e939c86db507836aca637a0db522"
+    },
+    {
+      "file": "斋月_02.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "2d459de2b35ac8fa86759b741cab41a56cb0182a9ed94c0bb3fa2a2fa7e93e60"
+    },
+    {
+      "file": "斋月_03.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "a3a18c1e2b028d4aad0163420bac0b9b1d04627d519519a8f8959f39e5b96d53"
+    },
+    {
+      "file": "斋月_04.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "e1a470d74d7b9c4f01370b70805de04fe900476fa238271391a295f58562145e"
+    },
+    {
+      "file": "斋月_05.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "a984d089f2888f4e872ab758c325154abe0f450c94615cfde1ac34b97daba3c0"
+    },
+    {
+      "file": "斋月_06.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "8d3e124c0560b4c32ae1f194ec4d360cd62fef1babb0023dc51d0bb9ed6f65a2"
+    },
+    {
+      "file": "斋月_07.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "f3cbddb68515a48c8ac93d8dffb8e3273bc828d00eeb8d3ee876739d50ececa2"
+    },
+    {
+      "file": "斋月_08.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "7da3d6a74a20ae301892360a3b2912c644a5a6bd4746e8dd8e742165bc7d706c"
+    },
+    {
+      "file": "斋月_09.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "fd4a2c43ee3acec6283097217c66a56ec96be5b74a7d648eb6700ddaafaa69dd"
+    },
+    {
+      "file": "斋月_10.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "65149c58eb2d9dcee9fe80a32e1d34bdf6cd94bd9fe3ed75623826c338fb159f"
+    },
+    {
+      "file": "斋月_11.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "5988b9b09040fc91d87bc5ab100084c26089851d28137cdd6584b8a08bb4ba2e"
+    },
+    {
+      "file": "斋月_12.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "5bef01e893f356bfdc258493070825b6f504b667cd817e73a725edcbbe4f717f"
+    },
+    {
+      "file": "斋月_13.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "67785bf462b7b3aec48984b6a1ee87200c43a73447b9df32f61d0e80e7d9de02"
+    },
+    {
+      "file": "斋月_14.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "af10717a1ae3020fd336af658b0f223c184e8062c61ed7940d5f82ead53f9015"
+    },
+    {
+      "file": "斋月_15.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "2efa94e26ccfe45b7de25f0de962551fc145280bd739a2839732a29ccb7eabee"
+    },
+    {
+      "file": "斋月_16.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "6e6d45c6c2873dcaf98bbe18b891bf76237c23597beb70a99949ae5b1dada6bb"
+    },
+    {
+      "file": "斋月_17.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "a065ca33ed0dd8f07b12ca1e94c4607a1aed76e4c85c265543532787f57809b5"
+    },
+    {
+      "file": "斋月_18.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "e72430db0948afba04b2ec5d56723ef1a8e2bad833a963cfedd659b7e057e75e"
+    },
+    {
+      "file": "斋月_19.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "59009b54142ac772d4b260d1932155bc9531ee368e9529f5407f9ecf15e9ae6d"
+    },
+    {
+      "file": "斋月_20.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "ecbb0b795c5f182a567e4c51d560e89426d71504cabd993d3c554f49765876cd"
+    }
+  ],
+  "user_art_approval": "已通过，后续新增内容需要图标时优先使用",
+  "integration_status": "备用素材，当前未接入原有三个主题；新增使用时需按实际资源契约接入并验证"
+}

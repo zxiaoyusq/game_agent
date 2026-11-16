@@ -1,0 +1,1596 @@
+{
+  "conclusion": "原运行场景使用 original_img_center_blue + 四张营地 + img_bg 边框 + MapGrid 标记；skin_original_board 是商店皮肤预览。推荐按原运行场景拼装。",
+  "correction": "前一轮审计将 skin_original_board 推荐为完整运行棋盘不准确；它虽然是无棋子/文字的完整棋盘图，但属于商店展示图，尺寸和透明边缘处理不同，且缺少运行态安全星/方向标记。",
+  "source_script": "www.hnyigegame.com/Ludo_Superstar/game/scripts/assets/main/index.a298e.js",
+  "source_scene": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json",
+  "source_map_grid": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0d/0d4dc8f4b.c2128.json",
+  "runtime_evidence": {
+    "scene_load_offset": 63856,
+    "scene_load": "loadRes(n+\"_img_center_blue\",...); sprCenter.node.rotation=-90*t; setSpfsRes(sprChessBaseBgs[i], n+\"_img_base_bg_\"+color); 76 个 MapGrid 由场景位置创建。",
+    "shop_preview_offset": 188389,
+    "shop_preview": "setSelectSkinInfo: loadRes(\"skin_\"+e.name+\"_board\",... img_icon.spriteFrame=e)",
+    "safe_markers": "MapGrid.updateInfo 加载 original_img_wujiaoxing。setGridInfo 对有 colorGrids 的安全格隐藏星，其余安全格显示星。setGridColor 当前为空函数；sprGrid 默认无 spriteFrame。"
+  },
+  "visual_comparison": {
+    "preview": "467×466，完整四角营地/白格十字/四三角；白格和彩色归家格均有描边；不包含棋子或文字；不含安全星和方向箭头。",
+    "runtime_center": "586×585，四角透明，白格和彩色归家格边界由纹理描边与透明间隙共同形成；不含四角营地、外框、安全星或方向箭头；不能单独当完整棋盘。",
+    "same_structure": "15×15 逻辑布局，左上红/右上绿/左下蓝/右下黄，中心四色三角；运行时会按玩家选色旋转。",
+    "difference": "布局与格子拓扑一致，预览是完整缩略展示，运行图是透明分层材质。运行图保留alpha后，彩色归家道同样逐格分开，不能误判为连续无格色带；图像查看器显示透明像素RGB时会产生误导。"
+  },
+  "coordinate_note": "所有位置为原场景 mapNode 内局部坐标，x 向右，y 向上，Sprite 默认为中心锚点；如转 Canvas，应整体统一翻转 y。mapNode 初始 scale=(1.15,1.15) 仅是场景缩放，不要在单部件上重复应用。",
+  "nodes": [
+    {
+      "serialized_index": 5,
+      "name": "mapNode",
+      "parent_index": null,
+      "size": [
+        626.0869565217391,
+        1113.0434782608697
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "scale": [
+        1.15,
+        1.15
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 36,
+      "name": "img_bg",
+      "parent_index": 5,
+      "size": [
+        628,
+        628
+      ],
+      "position": [
+        0,
+        -29
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 52,
+      "name": "sprCenter",
+      "parent_index": 5,
+      "size": [
+        586,
+        585
+      ],
+      "position": [
+        0.639,
+        -20
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 56,
+      "name": "img_base_bg_0",
+      "parent_index": 8,
+      "size": [
+        233,
+        233
+      ],
+      "position": [
+        -175,
+        -197
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 58,
+      "name": "img_base_bg_1",
+      "parent_index": 8,
+      "size": [
+        233,
+        233
+      ],
+      "position": [
+        -175,
+        156
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 60,
+      "name": "img_base_bg_2",
+      "parent_index": 8,
+      "size": [
+        233,
+        233
+      ],
+      "position": [
+        176,
+        156
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 62,
+      "name": "img_base_bg_3",
+      "parent_index": 8,
+      "size": [
+        233,
+        233
+      ],
+      "position": [
+        176,
+        -197
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "opacity": 250,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 37,
+      "name": "playerInfo0",
+      "parent_index": 7,
+      "size": [
+        231,
+        174
+      ],
+      "position": [
+        -188,
+        -413
+      ],
+      "scale": [
+        0.9,
+        0.9
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 38,
+      "name": "playerInfo1",
+      "parent_index": 7,
+      "size": [
+        231,
+        174
+      ],
+      "position": [
+        -188,
+        394
+      ],
+      "scale": [
+        0.9,
+        0.9
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 39,
+      "name": "playerInfo2",
+      "parent_index": 7,
+      "size": [
+        231,
+        174
+      ],
+      "position": [
+        188,
+        394
+      ],
+      "scale": [
+        0.9,
+        0.9
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "serialized_index": 40,
+      "name": "playerInfo3",
+      "parent_index": 7,
+      "size": [
+        231,
+        174
+      ],
+      "position": [
+        188,
+        -413
+      ],
+      "scale": [
+        0.9,
+        0.9
+      ],
+      "opacity": 255,
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "grid_centers": [
+    {
+      "index": 0,
+      "position": [
+        -38,
+        -256
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 1,
+      "position": [
+        -38,
+        -217
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 2,
+      "position": [
+        -38,
+        -178
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 3,
+      "position": [
+        -38,
+        -139
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 4,
+      "position": [
+        -38,
+        -100
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 5,
+      "position": [
+        -79,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 6,
+      "position": [
+        -118,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 7,
+      "position": [
+        -157,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 8,
+      "position": [
+        -196,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 9,
+      "position": [
+        -235,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 10,
+      "position": [
+        -274,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 11,
+      "position": [
+        -274,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 12,
+      "position": [
+        -274,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 13,
+      "position": [
+        -235,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 14,
+      "position": [
+        -196,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 15,
+      "position": [
+        -157,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 16,
+      "position": [
+        -118,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 17,
+      "position": [
+        -79,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 18,
+      "position": [
+        -38,
+        59
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 19,
+      "position": [
+        -38,
+        98
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 20,
+      "position": [
+        -38,
+        137
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 21,
+      "position": [
+        -38,
+        176
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 22,
+      "position": [
+        -38,
+        215
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 23,
+      "position": [
+        -38,
+        254
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 24,
+      "position": [
+        1,
+        254
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 25,
+      "position": [
+        40,
+        254
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 26,
+      "position": [
+        40,
+        215
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 27,
+      "position": [
+        40,
+        176
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 28,
+      "position": [
+        40,
+        137
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 29,
+      "position": [
+        40,
+        98
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 30,
+      "position": [
+        40,
+        59
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 31,
+      "position": [
+        81,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 32,
+      "position": [
+        120,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 33,
+      "position": [
+        159,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 34,
+      "position": [
+        198,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 35,
+      "position": [
+        237,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 36,
+      "position": [
+        276,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 37,
+      "position": [
+        276,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 38,
+      "position": [
+        276,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 39,
+      "position": [
+        237,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 40,
+      "position": [
+        198,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 41,
+      "position": [
+        159,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 42,
+      "position": [
+        120,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 43,
+      "position": [
+        81,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 44,
+      "position": [
+        40,
+        -100
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 45,
+      "position": [
+        40,
+        -139
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 46,
+      "position": [
+        40,
+        -178
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 47,
+      "position": [
+        40,
+        -217
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 48,
+      "position": [
+        40,
+        -256
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 49,
+      "position": [
+        40,
+        -295
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 50,
+      "position": [
+        1,
+        -295
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 51,
+      "position": [
+        -38,
+        -295
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 52,
+      "position": [
+        1,
+        -256
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 53,
+      "position": [
+        1,
+        -217
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 54,
+      "position": [
+        1,
+        -177.5
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 55,
+      "position": [
+        1,
+        -139
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 56,
+      "position": [
+        1,
+        -100
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 57,
+      "position": [
+        1,
+        -60
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 58,
+      "position": [
+        -235,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 59,
+      "position": [
+        -196,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 60,
+      "position": [
+        -157,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 61,
+      "position": [
+        -117.5,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 62,
+      "position": [
+        -79,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 63,
+      "position": [
+        -38,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 64,
+      "position": [
+        1,
+        215
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 65,
+      "position": [
+        1,
+        176
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 66,
+      "position": [
+        1,
+        137.5
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 67,
+      "position": [
+        1,
+        98
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 68,
+      "position": [
+        1,
+        59
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 69,
+      "position": [
+        1,
+        18
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 70,
+      "position": [
+        237,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 71,
+      "position": [
+        197.5,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 72,
+      "position": [
+        159,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 73,
+      "position": [
+        120,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 74,
+      "position": [
+        81,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "index": 75,
+      "position": [
+        40,
+        -21
+      ],
+      "size": [
+        38,
+        38
+      ]
+    }
+  ],
+  "camp_pawn_centers": [
+    {
+      "name": "chess_0_0",
+      "position": [
+        -215,
+        -157
+      ]
+    },
+    {
+      "name": "chess_0_1",
+      "position": [
+        -137,
+        -157
+      ]
+    },
+    {
+      "name": "chess_0_2",
+      "position": [
+        -215,
+        -237
+      ]
+    },
+    {
+      "name": "chess_0_3",
+      "position": [
+        -137,
+        -237
+      ]
+    },
+    {
+      "name": "chess_1_0",
+      "position": [
+        -215,
+        196
+      ]
+    },
+    {
+      "name": "chess_1_1",
+      "position": [
+        -137,
+        196
+      ]
+    },
+    {
+      "name": "chess_1_2",
+      "position": [
+        -215,
+        119
+      ]
+    },
+    {
+      "name": "chess_1_3",
+      "position": [
+        -137,
+        119
+      ]
+    },
+    {
+      "name": "chess_2_0",
+      "position": [
+        138,
+        196
+      ]
+    },
+    {
+      "name": "chess_2_1",
+      "position": [
+        217,
+        196
+      ]
+    },
+    {
+      "name": "chess_2_2",
+      "position": [
+        138,
+        119
+      ]
+    },
+    {
+      "name": "chess_2_3",
+      "position": [
+        217,
+        119
+      ]
+    },
+    {
+      "name": "chess_3_0",
+      "position": [
+        138,
+        -157
+      ]
+    },
+    {
+      "name": "chess_3_1",
+      "position": [
+        217,
+        -157
+      ]
+    },
+    {
+      "name": "chess_3_2",
+      "position": [
+        138,
+        -237
+      ]
+    },
+    {
+      "name": "chess_3_3",
+      "position": [
+        217,
+        -237
+      ]
+    }
+  ],
+  "grid_markers": {
+    "all_safe_indices": [
+      0,
+      13,
+      26,
+      39,
+      8,
+      21,
+      34,
+      47
+    ],
+    "visible_star_indices": [
+      8,
+      21,
+      34,
+      47
+    ],
+    "colored_safe_start_indices": [
+      0,
+      13,
+      26,
+      39
+    ],
+    "arrow_indices": [
+      50,
+      11,
+      24,
+      37
+    ],
+    "arrow_colors": [
+      "lan",
+      "hong",
+      "lv",
+      "huang"
+    ],
+    "barrier_indices": [
+      52,
+      58,
+      64,
+      70
+    ],
+    "barrier_note": "原版 barrier 为可变化玩法对象，不是所有归家格永久边框；MapGrid.setBarrierRotation 在52/64横向、58/70纵向。"
+  },
+  "assets": [
+    {
+      "name": "original_img_wujiaoxing",
+      "rect": [
+        227,
+        1896,
+        27,
+        26
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        27,
+        26
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_barrier",
+      "rect": [
+        188,
+        1929,
+        15,
+        33
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        15,
+        33
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_sanjiao_lv",
+      "rect": [
+        1354,
+        1886,
+        17,
+        15
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        17,
+        15
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_base_bg_hong",
+      "rect": [
+        1405,
+        1774,
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_sanjiao_lan",
+      "rect": [
+        1321,
+        1925,
+        17,
+        15
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        17,
+        15
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_base_bg_huang",
+      "rect": [
+        1640,
+        1774,
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_sanjiao_huang",
+      "rect": [
+        1982,
+        1947,
+        15,
+        17
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        15,
+        17
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_center_blue",
+      "rect": [
+        1445,
+        1187,
+        586,
+        585
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        586,
+        585
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_sanjiao_hong",
+      "rect": [
+        1405,
+        1723,
+        15,
+        17
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        15,
+        17
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+    },
+    {
+      "name": "original_img_base_bg_lan",
+      "rect": [
+        1,
+        1603,
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/51/5115ecbc-d727-4655-84ac-e700038972d5.b2713.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json"
+    },
+    {
+      "name": "original_img_base_bg_lv",
+      "rect": [
+        236,
+        1603,
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/51/5115ecbc-d727-4655-84ac-e700038972d5.b2713.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json"
+    },
+    {
+      "name": "skin_original_board",
+      "rect": [
+        470,
+        1,
+        467,
+        466
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        467,
+        466
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c3/c3a0e2ba-ed87-489d-a80f-d02962295399.c8c8d.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/f5/f5de51aa-6a42-4aa7-a81b-d0f91fbd2200.df05c.json"
+    },
+    {
+      "name": "矩形 15",
+      "runtime_node": "img_bg",
+      "rect": [
+        0,
+        0,
+        628,
+        628
+      ],
+      "originalSize": [
+        628,
+        628
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/47/47eadf9e-1cef-4c7c-88d2-7c09e86d3d9d.7ebe4.png",
+      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json",
+      "alpha_range": [
+        0,
+        51
+      ]
+    }
+  ],
+  "analysis_images": [
+    "board-preview.png",
+    "board-runtime-center.png",
+    "board-runtime-rim.png",
+    "board-runtime-static-assembly.png",
+    "board-runtime-center-on-white.png",
+    "board-runtime-center-on-purple.png"
+  ],
+  "alpha_warning": "runtime center 的格子间隙像素 alpha=0，但 RGB 仍有颜色数据；务必使用完整 RGBA。运行外框 alpha 范围0..51，中心白色也仅alpha51，需叠在紫色原场景背景上，不是白色不透明板。"
+}

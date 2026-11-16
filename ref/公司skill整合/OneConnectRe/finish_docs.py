@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('开发说明.md');s=p.read_text(encoding='utf8');s=s.replace('可以下载 JSON。广告模拟选项', '可以下载 JSON，并查看原运行时报告的 FPS、对象数和逻辑耗时；这些是诊断指标，不代表真机性能验收。广告模拟选项');s=s.replace('提示/洗牌/无解等操作的完整事件覆盖','无解自动洗牌、暂停和特殊失败原因的完整事件覆盖');s += '\n`tests/browser-key-events.cjs` 在浏览器内自然点击手动洗牌和提示，分别记录 `game.shuffle` 和 `game.hint`。模拟异步广告失败后仍能返回菜单，见 `tests/panel-ad-failure.cjs`；该模拟不证明真实广告关闭或奖励。\n';p.write_text(s,encoding='utf8')

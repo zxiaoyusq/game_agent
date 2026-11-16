@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "82251",
+    "apiName":  "Just Ludo",
+    "targetName":  "Just Ludo",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Just_Ludo.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251210/3646536230e9e7cd758c9f8660cc7c36.zip",
+    "bundleMd5":  "3646536230e9e7cd758c9f8660cc7c36",
+    "bundleSize":  3327654,
+    "updatedAt":  1765352160,
+    "gameLink":  "https://www.volcanoh5game.com/Just_Ludo/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_82251",
+    "category":  "Strategy",
+    "rate":  7.7,
+    "gameType":  1,
+    "localFile":  "Just_Ludo.zip",
+    "localBytes":  3327654,
+    "verifiedAt":  "2026-10-20T11:12:47",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

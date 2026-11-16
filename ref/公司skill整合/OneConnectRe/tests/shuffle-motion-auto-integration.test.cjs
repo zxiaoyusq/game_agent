@@ -1,0 +1,15 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const moduleStub={exports:{}};vm.runInNewContext(fs.readFileSync('tools/shuffle_motion_map.js','utf8'),{module:moduleStub,Number,Array,Map,Set});
+const cr={action:function(){},condition:function(){},plugins_:{Touch:function(){}}};
+cr.action.prototype.run_object=function(){if(this.sid===987355312738297){for(let i=0;i<3;i++)cr.action.prototype.run_object.call({sid:143347589055852,runtime:this.runtime});}else if(this.sid===143347589055852){const a=this.runtime.types.t5.instances;[a[0].x,a[1].x]=[a[1].x,a[0].x]}return 'native'};
+cr.action.prototype.run_system=function(){};cr.condition.prototype.run_system=function(){return true};cr.plugins_.Touch.prototype.cnds={OnTouchObject(){return true}};
+const listeners=[],events=[];let frame,frameRequests=0;const window={cr,c2_callFunction(){},oneConnectShuffleMotionMap:moduleStub.exports,oneConnectLevels:{levels:[{level:2,autoShuffle:'free'}]},requestAnimationFrame(f){frame=f;frameRequests++},addEventListener(_,f){listeners.push(f)},setTimeout(){},oneConnectHost:{emit(type,detail){events.push(type);for(const fn of listeners)fn({detail:{type,detail}})}}};
+const document={hidden:false},context={window,document,cr,Number,Array,Map,Math,console};
+for(const file of ['tools/auto_shuffle_candidate.js','tools/shuffle_motion_candidate.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),context);
+const vars=[{name:'level',data:2},{name:'shuffle',data:3},{name:'pause',data:0}],tiles=[{uid:1,cur_frame:0,x:0,y:0,instance_vars:[],set_bbox_changed(){}},{uid:2,cur_frame:1,x:10,y:0,instance_vars:[],set_bbox_changed(){}}];
+const runtime={running_layout:{name:'game'},all_global_vars:vars,types:{t5:{instances:tiles}}};
+window.oneConnectAutoShuffle.install();window.oneConnectShuffleMotionCandidate.install();
+cr.action.prototype.run_object.call({sid:484278472184714,runtime});cr.action.prototype.run_object.call({sid:987355312738297,runtime});
+assert(events.includes('game.auto_shuffle_start')&&events.includes('game.auto_shuffle_complete'));assert.equal(vars[1].data,3);assert.equal(window.oneConnectShuffleMotionCandidate.state().moving,true);
+assert.equal(tiles[0].x,0);assert.equal(typeof frame,'function');assert.equal(frameRequests,1,'nested retries start only one animation');assert.equal(cr.plugins_.Touch.prototype.cnds.OnTouchObject({name:'t5'}),false);
+console.log('automatic shuffle wrapper integrates with motion and retains stock PASS');

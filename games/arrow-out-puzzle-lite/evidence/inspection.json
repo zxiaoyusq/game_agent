@@ -1,0 +1,38 @@
+{
+  "id": "arrow-out-puzzle-lite",
+  "frames": [
+    {
+      "url": "http://127.0.0.1:24681/api/produced-games/arrow-out-puzzle-lite/play/index.html",
+      "state": {
+        "title": "箭头解谜 · Arrow Out Puzzle Lite",
+        "text": "",
+        "canvas": 0,
+        "playcanvas": false,
+        "game": false,
+        "gameKeys": [],
+        "globals": [
+          "CrazyKnifesAhaHost"
+        ]
+      }
+    },
+    {
+      "url": "http://127.0.0.1:24681/api/produced-games/arrow-out-puzzle-lite/play/game/index.html",
+      "state": {
+        "title": "arrow-out-puzzle",
+        "text": "",
+        "canvas": 1,
+        "cc": "2.4.15",
+        "scene": "game",
+        "playcanvas": false,
+        "game": false,
+        "gameKeys": [],
+        "globals": [
+          "YYSDK"
+        ]
+      }
+    }
+  ],
+  "remote": [],
+  "errors": [],
+  "missing": []
+}

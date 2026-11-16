@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93706,
+    "apiName":  "Toca world",
+    "targetName":  "Toca world",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Toca_world.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251204/a7996ee3b8aadaa5b1ae858d0e09e445.zip",
+    "bundleMd5":  "a7996ee3b8aadaa5b1ae858d0e09e445",
+    "bundleSize":  7751620,
+    "updatedAt":  1765368448,
+    "gameLink":  "https://www.gztongmenggame.com/Toca_world/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93706",
+    "category":  "Simulation",
+    "rate":  9.0,
+    "gameType":  1,
+    "localFile":  "Toca_world.zip",
+    "localBytes":  7751620,
+    "verifiedAt":  "2026-10-20T10:37:08",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

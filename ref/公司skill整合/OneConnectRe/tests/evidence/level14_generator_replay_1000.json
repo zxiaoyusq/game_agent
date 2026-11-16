@@ -1,0 +1,6 @@
+{
+  "seeds": 1000,
+  "failures": [],
+  "maxMs": 443,
+  "scope": "desktop generator samples; each complete path replayed with independent editor connection and movement model"
+}

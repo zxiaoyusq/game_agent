@@ -1,0 +1,2 @@
+(async()=>{let j=await(await fetch('http://127.0.0.1:19222/json')).json();let w=new WebSocket(j[0].webSocketDebuggerUrl);w.addEventListener('open',()=>w.send(JSON.stringify({id:1,method:'Runtime.evaluate',params:{expression:'JSON.stringify({w:innerWidth,h:innerHeight,dpr:devicePixelRatio,canvas:document.querySelector("canvas").getBoundingClientRect().toJSON()})',returnByValue:true}})));w.addEventListener('message',s=>{let r=JSON.parse(s.data);if(r.id===1){console.log(JSON.stringify(r.result));w.close()}})})()
+

@@ -1,0 +1,25 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+if(!process.argv[2])throw Error('Pass candidate tutorial-fifth.js');
+const level=Number(process.argv[3]||5);assert([5,10].includes(level));const guideName=level===5?'oneConnectFifthGuide':'oneConnectTenthGuide';
+class El{constructor(){this.style={};this.children=[];}appendChild(e){this.children.push(e)}}
+let listeners={},queue=[],events=[],allow=true;const runtime={running_layout:{name:'game'},all_global_vars:[{name:'pause',data:0}]};
+const cr={plugins_:{Touch:function(){}},condition:function(){},action:function(){}};cr.plugins_.Touch.prototype.cnds={OnTouchObject:()=>allow};cr.condition.prototype.run_system=()=>false;cr.action.prototype.run_system=()=>true;
+const document={body:new El(),head:new El(),createElement:()=>new El()},window={cr,document,localStorage:{getItem:()=>null},cr_getC2Runtime:()=>runtime,addEventListener:(n,f)=>listeners[n]=f,oneConnectHost:{emit:(type,detail)=>events.push({type,detail})}};window.window=window;
+const ctx={window,cr,document,localStorage:window.localStorage,requestAnimationFrame:f=>queue.push(f),innerWidth:400,innerHeight:800};vm.runInNewContext(fs.readFileSync(process.argv[2],'utf8'),ctx);
+window[guideName].install();listeners['oneconnect:event']({detail:{type:'game.board_configured',detail:{level}}});assert.equal(window[guideName].state().active,true);
+assert.equal(events[0].type,'tutorial.start');assert.equal(events[0].detail.level,level);
+listeners['oneconnect:event']({detail:{type:'screen.SCREEN_BONUS'}});assert.equal(window[guideName].state().active,false,'bonus cancels active tutorial');assert.equal(events.at(-1).type,'tutorial.cancelled');
+listeners['oneconnect:event']({detail:{type:'game.board_configured',detail:{level}}});assert.equal(window[guideName].state().active,true,'new board can restart unfinished guide');
+const condition=cr.plugins_.Touch.prototype.cnds.OnTouchObject;
+assert.equal(condition({name:'t21'}),true,'pause button must remain available during the tutorial');assert.equal(condition({name:'t5'}),false,'board input stays gated during the tutorial');
+const guideCondition=level===5?556331271457011:200672945859662;
+assert.equal(cr.condition.prototype.run_system.call({sid:guideCondition,runtime}),true,'free tutorial condition applies during gameplay');
+assert.equal(cr.action.prototype.run_system.call({sid:367702696840255,runtime}),undefined,'timer stays blocked during gameplay');
+allow=false;assert.equal(condition({name:'t21'}),false,'pause must respect inner input guards');allow=true;
+runtime.running_layout={name:'menu'};
+assert.equal(cr.condition.prototype.run_system.call({sid:guideCondition,runtime}),false,'tutorial condition cannot affect the menu before next frame');
+assert.equal(cr.action.prototype.run_system.call({sid:367702696840255,runtime}),true,'tutorial action cannot affect the menu before next frame');
+assert.equal(condition({name:'home-button'}),true,'menu input must not be blocked while leaving tutorial');
+allow=false;assert.equal(condition({name:'home-button'}),false,'inner input guards must remain authoritative');
+queue.shift()();assert.equal(window[guideName].state().active,false,'leaving game cancels the old tutorial');assert.equal(events.at(-1).type,'tutorial.cancelled');assert.equal(events.at(-1).detail.level,level);assert.equal(document.body.children[0].style.display,'none');
+console.log('leaving level '+level+' tutorial releases menu input and cancels guide PASS');

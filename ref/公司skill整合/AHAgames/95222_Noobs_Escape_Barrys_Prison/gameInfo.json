@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95222,
+    "apiName":  "Noobs Escape Barrys Prison",
+    "targetName":  "Obby Escape from Barry Prison",
+    "match":  "FUZZY",
+    "bundleName":  "re_re_Noobs_Escape_Barrys_Prison.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260612/d1e5df9ab5028cf3356780af56950876.zip",
+    "bundleMd5":  "d1e5df9ab5028cf3356780af56950876",
+    "bundleSize":  17940302,
+    "updatedAt":  1781517610,
+    "gameLink":  "https://www.newbeetechh5game.com/Noobs_Escape_Barrys_Prison/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95222",
+    "category":  "Parkour",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Noobs_Escape_Barrys_Prison.zip",
+    "localBytes":  17940302,
+    "verifiedAt":  "2026-10-20T10:40:16",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

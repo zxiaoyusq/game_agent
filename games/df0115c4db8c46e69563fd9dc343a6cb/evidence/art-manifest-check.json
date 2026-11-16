@@ -1,0 +1,10 @@
+{
+  "stage": "art",
+  "manifestEntries": 17,
+  "allFilesNonEmpty": true,
+  "allHashesMatch": true,
+  "requiredFieldsValid": true,
+  "limitations": [
+    "仅文件清单校验，非浏览器或游戏验收"
+  ]
+}

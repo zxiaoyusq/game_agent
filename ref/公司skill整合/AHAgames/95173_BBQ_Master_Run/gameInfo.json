@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "95173",
+    "apiName":  "BBQ Master Run",
+    "targetName":  "BBQ Master Run",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_BBQ_Master_Run.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260609/9f8c03fe8978ff199b21ff8bb90abbf7.zip",
+    "bundleMd5":  "9f8c03fe8978ff199b21ff8bb90abbf7",
+    "bundleSize":  5050638,
+    "updatedAt":  1781083713,
+    "gameLink":  "https://www.shanzhih5game.com/BBQ_Master_Run/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_95173",
+    "category":  "Parkour",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "BBQ_Master_Run.zip",
+    "localBytes":  5050638,
+    "verifiedAt":  "2026-10-20T11:18:33",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

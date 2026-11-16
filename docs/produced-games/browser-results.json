@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "games": [
+    "amber-caravan",
+    "amber-caravan-api",
+    "arrow-out-puzzle-lite",
+    "ball-sort-fusion",
+    "checkers-pocket",
+    "crazy-knifes",
+    "fbf24c84b3ab4e9db13246ce25b36cfa",
+    "ludo-classic-reskin",
+    "one-connect",
+    "pipeline-star-check-20261109",
+    "solitaire-klondike-classic"
+  ],
+  "checks": [
+    "首页产出游戏入口显示真实数量，全部运行包出现在游戏库",
+    "左侧列表可独立滚动到最后一款，运行区域固定且整页不滚动",
+    "游戏名称搜索、无匹配反馈和清空搜索可用",
+    "列表获得完整高度，操作区位于右侧，游戏按固定 720×1600 手机视口等比预览",
+    "琥珀商路在内嵌窗口真实开局并完成掷骰",
+    "重新运行销毁旧实例并加载新实例",
+    "琥珀商路 API 版本可开局并操作骰子",
+    "彩球融境真实运行 Cocos WebGL，点击完成一次合法移动",
+    "新窗口可独立运行，同时关闭原内嵌实例",
+    "390px 手机布局无页面横向溢出，可选择、游玩和结束游戏",
+    "目录失败可恢复、空目录有引导，返回首页正常"
+  ],
+  "page_errors": [],
+  "missing_resources": []
+}

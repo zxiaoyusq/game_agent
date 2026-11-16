@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  94905,
+    "apiName":  "Cubes 2048",
+    "targetName":  "Cubes 2048",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Cubes_2048.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260511/d7ca8a784d55ef033ac5f754fe4f87b9.zip",
+    "bundleMd5":  "d7ca8a784d55ef033ac5f754fe4f87b9",
+    "bundleSize":  8127040,
+    "updatedAt":  1779417879,
+    "gameLink":  "https://www.fabboxh5game.com/Cubes_2048/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_94905",
+    "category":  "Puzzle",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Cubes_2048.zip",
+    "localBytes":  8127040,
+    "verifiedAt":  "2026-10-20T10:36:11",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

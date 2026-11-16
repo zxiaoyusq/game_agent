@@ -1,0 +1,14 @@
+{
+  "buildVersion": "289e7de67387",
+  "shellSHA256": "c2024bae8e8402fe6ab242472fb9f19a3c2ef500adc6189f291b8a7e72733e0f",
+  "minifier": "terser 5.51.2, compress + mangle, license comments retained by default",
+  "files": 96,
+  "staticBytesExcludingReport": 2502913,
+  "images": 35,
+  "audio": 23,
+  "delivery": "static files, no runtime decompression or Node server",
+  "qaIncluded": false,
+  "excludedUnused": [
+    "12/assets/music/bg_music.mp3: cached loadSounds never queues BACKGROUND.FILE"
+  ]
+}

@@ -1,50 +1,20 @@
 <script setup>
-import { KB_MODULES } from '../data/knowledgeBase.js'
+import { computed, onMounted } from 'vue'
+import { KB_MODULES, ensureKbLoaded, kbStore } from '../data/knowledgeBase.js'
+import { loadProducedGames, producedGames } from '../data/producedGames.js'
+import UserMenu from '../components/UserMenu.vue'
+import { workflowSteps } from '../data/gameWorkflow.js'
 
 const emit = defineEmits(['navigate'])
 
-const agentModules = [
-  {
-    id: 'planning',
-    name: '策划 Agent',
-    subtitle: 'Game Design Agent',
-    desc: '玩法构思、活动规则、数值思路、任务系统、版本需求文档',
-    color: 'blue',
-    icon: '📋',
-    outputs: ['玩法策划案', '活动规则', '数值设计', '需求文档', '验收标准'],
-    inputs: '玩法目标 · 版本方向 · 用户反馈 · 竞品参考',
-  },
-  {
-    id: 'art',
-    name: '美术 Agent',
-    subtitle: 'Art Production Agent',
-    desc: '美术需求拆解、风格参考整理、原画/建模/视频素材生成',
-    color: 'pink',
-    icon: '🎨',
-    outputs: ['素材清单', '原画初稿', '建模需求', '视频脚本', 'AIGC Prompt'],
-    inputs: '策划案 · 美术风格规范 · 历史素材参考',
-  },
-  {
-    id: 'dev',
-    name: '研发 Agent',
-    subtitle: 'Development Agent',
-    desc: '功能模块代码生成、Demo 搭建、资源接入和接口实现',
-    color: 'green',
-    icon: '⚙️',
-    outputs: ['客户端逻辑', '服务端接口', '配置文件', '测试样例', '玩法 Demo'],
-    inputs: '需求文档 · 素材规格 · 项目代码库 · 接口规范',
-  },
-  {
-    id: 'ops',
-    name: '运营 Agent',
-    subtitle: 'Operations Agent',
-    desc: '活动方案、公告文案、推送内容、用户反馈分析、版本复盘',
-    color: 'orange',
-    icon: '📢',
-    outputs: ['活动方案', '公告文案', '推送文案', '反馈分析', '复盘报告'],
-    inputs: '策划案 · 版本功能 · 美术素材 · 用户数据',
-  },
-]
+// 首页与知识库共用实际索引，来源同步后不再展示固定的示例统计。
+const knowledgeCounts = computed(() => ({
+  files: kbStore.items.length,
+  skills: kbStore.items.filter((item) => item.moduleId === 'skill' && item.filename === 'SKILL.md').length,
+  modules: Object.keys(kbStore.modulesMap).length,
+}))
+onMounted(ensureKbLoaded)
+onMounted(loadProducedGames)
 
 const knowledgeModule = {
   id: 'knowledge',
@@ -52,10 +22,6 @@ const knowledgeModule = {
   subtitle: 'Knowledge Base',
   desc: '统一管理项目知识、Skill 技能包、历史经验和各模块产出沉淀',
   icon: '📚',
-}
-
-function selectAgent(id) {
-  emit('navigate', 'agent', id)
 }
 
 function openKnowledge() {
@@ -75,9 +41,7 @@ function openKnowledge() {
         </div>
       </div>
       <div class="topbar-right">
-        <button class="ghost-btn">项目：欢乐麻将连连看</button>
-        <button class="ghost-btn">v0.1.0</button>
-        <div class="avatar">U</div>
+        <UserMenu />
       </div>
     </header>
 
@@ -86,8 +50,8 @@ function openKnowledge() {
       <div class="hero-pixel-dots"></div>
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num">4</div>
-          <div class="stat-label">岗位 Agent</div>
+          <div class="stat-num">{{ workflowSteps.length }}</div>
+          <div class="stat-label">研发阶段</div>
         </div>
         <div class="divider"></div>
         <div class="stat">
@@ -95,14 +59,14 @@ function openKnowledge() {
           <div class="stat-label">知识库</div>
         </div>
         <div class="divider"></div>
-        <div class="stat">
-          <div class="stat-num">∞</div>
-          <div class="stat-label">产出沉淀</div>
-        </div>
+        <button class="stat game-entry" aria-label="产出游戏，选择并运行游戏" @click="emit('navigate', 'produced-games')">
+          <div class="stat-num">{{ producedGames.loaded ? producedGames.items.length : '—' }}</div>
+          <div class="stat-label">产出游戏 <span aria-hidden="true">↗</span></div>
+        </button>
       </div>
     </section>
 
-    <!-- 全流程入口承接新项目，岗位工作台继续承担独立任务。 -->
+    <!-- 项目统一从全流程工作台创建并执行。 -->
     <section class="section production-section">
       <button class="production-entry" @click="emit('navigate', 'workflow')">
         <div class="production-copy">
@@ -114,49 +78,6 @@ function openKnowledge() {
         </div>
         <div class="production-visual" aria-hidden="true"><span class="visual-caption">YOUR NEXT GAME</span><div class="pixel-controller">✣ <i>● ●</i></div><span class="visual-caption">4 个阶段 · 真实执行与产物</span></div>
       </button>
-    </section>
-
-    <!-- Agent 模块卡片 -->
-    <section class="section">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title"><span class="title-mark">◆</span> 选择 Agent 模块</h2>
-          <p class="section-desc">每个 Agent 对应真实业务环节，读取对应知识库并产出可用成果物</p>
-        </div>
-      </div>
-
-      <div class="agent-grid">
-        <div
-          v-for="m in agentModules"
-          :key="m.id"
-          class="agent-card"
-          :class="`accent-${m.color}`"
-          @click="selectAgent(m.id)"
-        >
-          <div class="agent-card-head">
-            <div class="agent-icon">{{ m.icon }}</div>
-            <div class="agent-meta">
-              <div class="agent-name">{{ m.name }}</div>
-              <div class="agent-sub">{{ m.subtitle }}</div>
-            </div>
-            <div class="agent-arrow">→</div>
-          </div>
-          <div class="agent-desc">{{ m.desc }}</div>
-          <div class="agent-section">
-            <div class="agent-section-label">输入</div>
-            <div class="agent-section-text">{{ m.inputs }}</div>
-          </div>
-          <div class="agent-section">
-            <div class="agent-section-label">产出</div>
-            <div class="tag-list">
-              <span v-for="t in m.outputs" :key="t" class="tag">{{ t }}</span>
-            </div>
-          </div>
-          <div class="agent-card-foot">
-            <span class="enter-btn">进入工作台</span>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- 知识库管理入口 -->
@@ -177,16 +98,16 @@ function openKnowledge() {
         </div>
         <div class="kb-stats">
           <div class="kb-stat">
-            <div class="kb-stat-num">128</div>
-            <div class="kb-stat-label">文档</div>
+            <div class="kb-stat-num">{{ kbStore.loaded ? knowledgeCounts.files : '—' }}</div>
+            <div class="kb-stat-label">资料文件</div>
           </div>
           <div class="kb-stat">
-            <div class="kb-stat-num">56</div>
-            <div class="kb-stat-label">素材</div>
+            <div class="kb-stat-num">{{ kbStore.loaded ? knowledgeCounts.skills : '—' }}</div>
+            <div class="kb-stat-label">Skill 入口</div>
           </div>
           <div class="kb-stat">
-            <div class="kb-stat-num">23</div>
-            <div class="kb-stat-label">复盘</div>
+            <div class="kb-stat-num">{{ kbStore.loaded ? knowledgeCounts.modules : '—' }}</div>
+            <div class="kb-stat-label">知识模块</div>
           </div>
         </div>
         <div class="kb-arrow">→</div>
@@ -198,56 +119,33 @@ function openKnowledge() {
       <div class="section-head">
         <div>
           <h2 class="section-title"><span class="title-mark">◆</span> 典型协作流</h2>
-          <p class="section-desc">上游产出经确认后流转到下游，最终沉淀到知识库</p>
+          <p class="section-desc">原型、资源、工程和测试按阶段衔接，运行记录与产物统一归档</p>
         </div>
       </div>
 
       <div class="workflow">
-        <div class="flow-node accent-blue">
-          <div class="flow-icon">📋</div>
-          <div class="flow-name">策划</div>
-          <div class="flow-text">产出策划案</div>
-        </div>
-        <div class="flow-line"></div>
-        <div class="flow-node accent-pink">
-          <div class="flow-icon">🎨</div>
-          <div class="flow-name">美术</div>
-          <div class="flow-text">承接素材</div>
-        </div>
-        <div class="flow-line"></div>
-        <div class="flow-node accent-green">
-          <div class="flow-icon">⚙️</div>
-          <div class="flow-name">研发</div>
-          <div class="flow-text">实现 Demo</div>
-        </div>
-        <div class="flow-line"></div>
-        <div class="flow-node accent-orange">
-          <div class="flow-icon">📢</div>
-          <div class="flow-name">运营</div>
-          <div class="flow-text">活动包装</div>
-        </div>
-        <div class="flow-line"></div>
-        <div class="flow-node accent-purple">
-          <div class="flow-icon">✅</div>
-          <div class="flow-name">审核</div>
-          <div class="flow-text">一致性校验</div>
-        </div>
-        <div class="flow-line"></div>
-        <div class="flow-node accent-cyan">
-          <div class="flow-icon">📚</div>
-          <div class="flow-name">沉淀</div>
-          <div class="flow-text">知识库归档</div>
-        </div>
+        <template v-for="(step, index) in workflowSteps" :key="step.id">
+          <div v-if="index" class="flow-line"></div>
+          <div class="flow-node" :class="`accent-${['blue', 'pink', 'green', 'purple'][index]}`">
+            <div class="flow-icon">{{ ['📋', '🎨', '⚙️', '✅'][index] }}</div>
+            <div class="flow-name">{{ step.name }}</div>
+            <div class="flow-text">{{ step.outputs[0] }}</div>
+          </div>
+        </template>
       </div>
     </section>
 
     <footer class="footer">
-      <span>© 2026 游戏全链路 AI Agent 产研系统 · Demo</span>
+      <span>© 2026 游戏全链路 AI Agent 产研系统</span>
     </footer>
   </div>
 </template>
 
 <style scoped>
+.game-entry { background: transparent; border: 0; padding: 8px 12px; margin: -8px -12px; border-radius: var(--radius-sm); cursor: pointer; }
+.game-entry:hover { background: var(--accent-blue-dim); }
+.game-entry:focus-visible { outline: 3px solid var(--accent-blue); outline-offset: 4px; }
+.game-entry .stat-label { color: var(--accent-blue); }
 .production-section { padding-bottom: 0 !important; }
 .production-entry { display: flex; align-items: center; justify-content: space-between; gap: 28px; width: 100%; padding: 36px; text-align: left; background: #e8edff; border: 2px solid #1a1816; border-radius: 12px; box-shadow: 5px 5px 0 #1a1816; }
 .production-entry:hover { transform: translateY(-3px); background: #e0e7ff; }
@@ -262,7 +160,6 @@ function openKnowledge() {
 .visual-caption { font-size: 10px; letter-spacing: 2px; color: #586daa; }
 .pixel-controller { margin: 18px auto; padding: 10px 18px; width: 180px; display: flex; align-items: center; justify-content: space-between; font-size: 54px; color: white; background: #5279ed; border: 3px solid #1a1816; border-radius: 22px 22px 40px 40px; box-shadow: 5px 7px 0 #233875; }
 .pixel-controller i { font-size: 22px; color: #cbe58b; font-style: normal; }
-@media (max-width: 700px) { .production-entry { padding: 24px; } .production-visual { display: none; } }
 .home {
   min-height: 100vh;
   display: flex;
@@ -345,35 +242,6 @@ function openKnowledge() {
   gap: 12px;
 }
 
-.ghost-btn {
-  padding: 6px 12px;
-  font-size: 13px;
-  color: var(--text-secondary);
-  background: var(--bg-tertiary);
-  border: 1.5px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  transition: all 0.15s;
-}
-
-.ghost-btn:hover {
-  background: var(--bg-hover);
-  color: var(--accent-blue);
-  border-color: var(--accent-blue);
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-pink), var(--accent-orange));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 14px;
-  color: #fff;
-}
-
 /* Hero */
 .hero {
   padding: 48px 32px 40px;
@@ -410,50 +278,6 @@ function openKnowledge() {
   background-image: radial-gradient(circle, var(--border-hover) 1.5px, transparent 1.5px);
   background-size: 10px 10px;
   opacity: 0.6;
-}
-
-.hero-tag {
-  display: inline-block;
-  padding: 4px 14px;
-  font-size: 12px;
-  color: var(--accent-blue);
-  background: var(--accent-blue-dim);
-  border: 1.5px solid rgba(26, 111, 255, 0.3);
-  border-radius: 999px;
-  margin-bottom: 24px;
-  letter-spacing: 0.5px;
-  font-weight: 600;
-}
-
-.demo-notice {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: fit-content;
-  max-width: 760px;
-  margin: 0 auto 22px;
-  padding: 10px 18px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--accent-red);
-  background: rgba(220, 38, 38, 0.06);
-  border: 2px solid rgba(220, 38, 38, 0.5);
-  border-radius: var(--radius-md);
-  text-align: left;
-  box-shadow: 3px 3px 0 rgba(180, 20, 20, 0.25);
-}
-
-.demo-notice-tag {
-  flex-shrink: 0;
-  padding: 2px 10px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #fff;
-  background: var(--accent-red);
-  border-radius: 3px;
 }
 
 .hero-stats {
@@ -524,178 +348,6 @@ function openKnowledge() {
 .section-desc {
   font-size: 15px;
   color: var(--text-tertiary);
-}
-
-/* Agent 卡片 */
-.agent-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-
-.agent-card {
-  position: relative;
-  padding: 28px;
-  background: var(--bg-card);
-  border: 2px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  overflow: hidden;
-}
-
-/* 像素角标：右下角切角装饰 */
-.agent-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  border-top: 2px solid var(--border-color);
-  border-left: 2px solid var(--border-color);
-  border-radius: 0 0 0 2px;
-  pointer-events: none;
-  transition: border-color 0.2s;
-}
-
-/* 顶部 accent 色条 — 常驻不需 hover */
-.agent-card.accent-blue  { border-top: 4px solid var(--accent-blue); }
-.agent-card.accent-pink  { border-top: 4px solid var(--accent-pink); }
-.agent-card.accent-green { border-top: 4px solid var(--accent-green); }
-.agent-card.accent-orange { border-top: 4px solid var(--accent-orange); }
-
-.agent-card:hover {
-  transform: translate(-2px, -3px);
-}
-
-.agent-card.accent-blue:hover  { border-color: var(--accent-blue);  box-shadow: 5px 5px 0 var(--shadow-blue); }
-.agent-card.accent-pink:hover  { border-color: var(--accent-pink);  box-shadow: 5px 5px 0 var(--shadow-pink); }
-.agent-card.accent-green:hover { border-color: var(--accent-green); box-shadow: 5px 5px 0 var(--shadow-green); }
-.agent-card.accent-orange:hover { border-color: var(--accent-orange); box-shadow: 5px 5px 0 var(--shadow-orange); }
-
-.agent-card.accent-blue:hover::after  { border-color: var(--accent-blue); }
-.agent-card.accent-pink:hover::after  { border-color: var(--accent-pink); }
-.agent-card.accent-green:hover::after { border-color: var(--accent-green); }
-.agent-card.accent-orange:hover::after { border-color: var(--accent-orange); }
-
-.agent-card-head {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-/* icon 根据 accent 有色背景 */
-.agent-icon {
-  width: 58px;
-  height: 58px;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  flex-shrink: 0;
-}
-
-.agent-card.accent-blue  .agent-icon { background: var(--accent-blue-dim);   border: 2px solid rgba(26,111,255,0.35); }
-.agent-card.accent-pink  .agent-icon { background: var(--accent-pink-dim);   border: 2px solid rgba(219,39,119,0.35); }
-.agent-card.accent-green .agent-icon { background: var(--accent-green-dim);  border: 2px solid rgba(22,163,74,0.35); }
-.agent-card.accent-orange .agent-icon { background: var(--accent-orange-dim); border: 2px solid rgba(234,88,12,0.35); }
-
-.agent-meta {
-  flex: 1;
-}
-
-.agent-name {
-  font-size: 22px;
-  font-weight: 900;
-  color: var(--text-primary);
-  letter-spacing: -0.025em;
-}
-
-.agent-sub {
-  font-size: 12px;
-  color: var(--text-tertiary);
-  letter-spacing: 0.3px;
-  margin-top: 2px;
-}
-
-.agent-arrow {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--text-tertiary);
-  transition: transform 0.2s;
-}
-
-.agent-card:hover .agent-arrow {
-  transform: translateX(4px);
-  color: var(--text-primary);
-}
-
-.agent-desc {
-  font-size: 15px;
-  color: var(--text-secondary);
-  line-height: 1.65;
-  margin-bottom: 16px;
-  min-height: 48px;
-}
-
-.agent-section {
-  margin-top: 14px;
-}
-
-.agent-section-label {
-  font-size: 11px;
-  color: var(--text-tertiary);
-  margin-bottom: 6px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.agent-section-text {
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.tag {
-  font-size: 13px;
-  padding: 3px 12px;
-  border-radius: 3px;
-  background: var(--bg-tertiary);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-color);
-  letter-spacing: 0.03em;
-}
-
-.agent-card.accent-blue   .tag { color: var(--accent-blue);   border-color: rgba(26,111,255,0.4); background: var(--accent-blue-dim); }
-.agent-card.accent-pink   .tag { color: var(--accent-pink);   border-color: rgba(219,39,119,0.4); background: var(--accent-pink-dim); }
-.agent-card.accent-green  .tag { color: var(--accent-green);  border-color: rgba(22,163,74,0.4); background: var(--accent-green-dim); }
-.agent-card.accent-orange .tag { color: var(--accent-orange); border-color: rgba(234,88,12,0.4); background: var(--accent-orange-dim); }
-
-.agent-card-foot {
-  margin-top: 18px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border-color);
-}
-
-.enter-btn {
-  font-size: 12px;
-  color: var(--text-tertiary);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.agent-card:hover .enter-btn {
-  color: var(--text-primary);
 }
 
 /* Knowledge Base 卡片 */
@@ -822,9 +474,7 @@ function openKnowledge() {
 .flow-node.accent-blue   { border: 2px solid rgba(26,111,255,0.6); }
 .flow-node.accent-pink   { border: 2px solid rgba(219,39,119,0.6); }
 .flow-node.accent-green  { border: 2px solid rgba(22,163,74,0.6); }
-.flow-node.accent-orange { border: 2px solid rgba(234,88,12,0.6); }
 .flow-node.accent-purple { border: 2px solid rgba(124,58,237,0.6); }
-.flow-node.accent-cyan   { border: 2px solid rgba(8,145,178,0.6); }
 
 .flow-icon {
   font-size: 30px;
@@ -873,5 +523,35 @@ function openKnowledge() {
   font-size: 12px;
   color: var(--text-tertiary);
   border-top: 1px solid var(--border-color);
+}
+
+/* 窄屏将统计和阶段拆行，入口始终完整显示在视口内。 */
+@media (max-width: 760px) {
+  .topbar { height: auto; min-height: 76px; padding: 12px 16px; gap: 12px; }
+  .brand { min-width: 0; flex: 1; gap: 8px; }
+  .brand-logo { flex-shrink: 0; width: 32px; height: 36px; font-size: 20px; }
+  .brand-name { font-size: 14px; }
+  .brand-sub { font-size: 10px; }
+  .topbar-right { flex-shrink: 0; }
+  .hero { padding: 28px 20px; }
+  .hero-stats { display: grid; grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr) 1px minmax(0, 1fr); width: 100%; gap: 10px; padding: 16px 12px; }
+  .stat { min-width: 0; }
+  .game-entry { margin: 0; padding: 0; }
+  .stat-num { font-size: 38px; }
+  .stat-label { white-space: nowrap; letter-spacing: 0; }
+  .section { padding: 32px 20px; }
+  .section-title { font-size: 24px; }
+  .production-entry { padding: 22px; }
+  .production-visual { display: none; }
+  .kb-card { display: grid; grid-template-columns: 48px minmax(0, 1fr) 20px; gap: 16px; padding: 20px; }
+  .kb-icon { width: 48px; height: 48px; font-size: 28px; }
+  .kb-name { font-size: 20px; }
+  .kb-desc { font-size: 13px; }
+  .kb-stats { grid-column: 1 / -1; grid-row: 2; justify-content: space-around; gap: 12px; padding: 16px 0 0; border: 0; border-top: 1px solid var(--border-color); }
+  .kb-stat-num { font-size: 30px; }
+  .kb-arrow { grid-column: 3; grid-row: 1; }
+  .workflow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 16px; }
+  .flow-node { min-width: 0; padding: 18px 8px; }
+  .flow-line { display: none; }
 }
 </style>

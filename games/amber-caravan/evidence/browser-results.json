@@ -1,0 +1,326 @@
+{
+  "status": "PASS",
+  "checks": [
+    "设置切换可保存，弹窗Tab/Shift+Tab焦点闭环和Escape关闭通过",
+    "三人经典人机局：人类与两支电脑商队真实轮流掷骰；暂停期间局面稳定并可恢复",
+    "四人经典好友同屏配置及四个独立阵营通过",
+    "两人快局从新局真实点击到结算：84次掷骰、84次落子、3次吃子；未注入局面或胜利",
+    "已获胜局面刷新后可以再次查看结算，不会遗漏赢家或重复计数",
+    "胜利后再来一局重置完整局面；刷新经继续旅程精确恢复棋子、回合、历史、统计及设置",
+    "360×640移动视口真实掷骰与落子、开局回顶部、弹窗、44px按钮和无横向溢出通过",
+    "390×844移动视口真实掷骰与落子、开局回顶部、弹窗、44px按钮和无横向溢出通过",
+    "SVG棋子触摸、键盘路径预览与Enter落子通过；浏览器拒绝存储时仍能开局掷骰并持续显示保存失败",
+    "390×844大厅开始按钮在首屏完整可见；所有资源随包载入，无JS错误、失败资源或外部网络请求"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "externalRequests": [],
+  "targetMeasurements": [
+    {
+      "label": "360大厅",
+      "measures": [
+        {
+          "label": "返回商旅大厅",
+          "width": 146.21875,
+          "height": 51
+        },
+        {
+          "label": "玩法说明",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "设置",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "➶疾风商路吃子解锁 · 一子归家",
+          "width": 278,
+          "height": 66
+        },
+        {
+          "label": "✥经典远征四子归家 · 步步为营",
+          "width": 278,
+          "height": 66
+        },
+        {
+          "label": "2 人",
+          "width": 55,
+          "height": 44
+        },
+        {
+          "label": "3 人",
+          "width": 55,
+          "height": 44
+        },
+        {
+          "label": "4 人",
+          "width": 55,
+          "height": 44
+        },
+        {
+          "label": "人机旅程你与电脑商队",
+          "width": 135,
+          "height": 58
+        },
+        {
+          "label": "好友同屏传递设备，轮流落子",
+          "width": 135,
+          "height": 58
+        },
+        {
+          "label": "开启旅程 ↗",
+          "width": 278,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "label": "360局内",
+      "measures": [
+        {
+          "label": "返回商旅大厅",
+          "width": 146.21875,
+          "height": 51
+        },
+        {
+          "label": "玩法说明",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "设置",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "暂停旅程 Ⅱ",
+          "width": 64.921875,
+          "height": 44
+        },
+        {
+          "label": "掷骰子",
+          "width": 100,
+          "height": 108
+        },
+        {
+          "label": "移动1号棋子",
+          "width": 71.5,
+          "height": 46
+        },
+        {
+          "label": "移动2号棋子",
+          "width": 71.5,
+          "height": 46
+        },
+        {
+          "label": "移动3号棋子",
+          "width": 71.5,
+          "height": 46
+        },
+        {
+          "label": "移动4号棋子",
+          "width": 71.5,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "label": "360设置",
+      "measures": [
+        {
+          "label": "关闭",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "声音反馈骰子、落子与归家的轻柔音效",
+          "width": 266,
+          "height": 86
+        },
+        {
+          "label": "快速节奏缩短等待与电脑思考时间",
+          "width": 266,
+          "height": 86
+        },
+        {
+          "label": "保存并继续",
+          "width": 266,
+          "height": 52
+        }
+      ]
+    },
+    {
+      "label": "390大厅",
+      "measures": [
+        {
+          "label": "返回商旅大厅",
+          "width": 146.21875,
+          "height": 51
+        },
+        {
+          "label": "玩法说明",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "设置",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "➶疾风商路吃子解锁 · 一子归家",
+          "width": 294,
+          "height": 66
+        },
+        {
+          "label": "✥经典远征四子归家 · 步步为营",
+          "width": 294,
+          "height": 66
+        },
+        {
+          "label": "2 人",
+          "width": 55,
+          "height": 44
+        },
+        {
+          "label": "3 人",
+          "width": 55,
+          "height": 44
+        },
+        {
+          "label": "4 人",
+          "width": 55,
+          "height": 44
+        },
+        {
+          "label": "人机旅程你与电脑商队",
+          "width": 143,
+          "height": 58
+        },
+        {
+          "label": "好友同屏传递设备，轮流落子",
+          "width": 143,
+          "height": 58
+        },
+        {
+          "label": "开启旅程 ↗",
+          "width": 294,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "label": "390局内",
+      "measures": [
+        {
+          "label": "返回商旅大厅",
+          "width": 146.21875,
+          "height": 51
+        },
+        {
+          "label": "玩法说明",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "设置",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "暂停旅程 Ⅱ",
+          "width": 64.921875,
+          "height": 44
+        },
+        {
+          "label": "掷骰子",
+          "width": 100,
+          "height": 108
+        },
+        {
+          "label": "移动1号棋子",
+          "width": 76.5,
+          "height": 46
+        },
+        {
+          "label": "移动2号棋子",
+          "width": 76.5,
+          "height": 46
+        },
+        {
+          "label": "移动3号棋子",
+          "width": 76.5,
+          "height": 46
+        },
+        {
+          "label": "移动4号棋子",
+          "width": 76.5,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "label": "390设置",
+      "measures": [
+        {
+          "label": "关闭",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "label": "声音反馈骰子、落子与归家的轻柔音效",
+          "width": 296,
+          "height": 86
+        },
+        {
+          "label": "快速节奏缩短等待与电脑思考时间",
+          "width": 296,
+          "height": 86
+        },
+        {
+          "label": "保存并继续",
+          "width": 296,
+          "height": 52
+        }
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sourceSha256": {
+    "index.html": "160ba1ddf0812800f440181b019286b1edbdba1c41d3eb3590cb8bc81601147a",
+    "src/ai.mjs": "f3d8066745b6e1d5d24ad184884248e86c38d07b00b9ffcf410b05067f6a16f1",
+    "src/app.mjs": "4851c99145452c6f14f50304d3d1f16001a8acfcd1631349878478142627eef1",
+    "src/audio.mjs": "f8b024f570643f288cf1391fefb55d7e257e7bff5781fd21ab69b6d5ed2982af",
+    "src/board.mjs": "49c76df2ec15f8a055e99ecef437357949ed752aaaa1f0fdd9f4ced7192f66c9",
+    "src/rules.mjs": "309e6cf5b678e03e8cdad3104a0544bbe1e0e7c48a1aa39709c3d359390c6517",
+    "src/storage.mjs": "6b500ba0e0aea061919493f5e25531eb8866f568ea0bce63b3bb0bd3a11a8f75",
+    "src/style.css": "69f83e8281698f8babb9870cffb4809da91aa6471e11d8123fa90a4b9ce3686f"
+  },
+  "completedMatch": {
+    "seed": 1,
+    "rollsClicked": 84,
+    "movesClicked": 84,
+    "winner": 2,
+    "captures": 3,
+    "finished": [
+      0,
+      1
+    ]
+  },
+  "browser": "153.0.8010.12"
+}

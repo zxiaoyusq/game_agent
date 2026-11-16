@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "browser": "153.0.8010.12",
+  "quick": {
+    "mode": "quick",
+    "count": 4,
+    "players": "human",
+    "seed": 1,
+    "steps": 142,
+    "winner": 0,
+    "stats": {
+      "rollCount": 73,
+      "moveCount": 69,
+      "bonusCount": 19,
+      "captureCount": 4
+    },
+    "canvasUsed": true
+  },
+  "classic": {
+    "mode": "classic",
+    "count": 2,
+    "players": "ai",
+    "seed": 1,
+    "steps": 140,
+    "winner": 2,
+    "stats": {
+      "rollCount": 146,
+      "moveCount": 136,
+      "bonusCount": 33,
+      "captureCount": 0
+    },
+    "canvasUsed": true
+  },
+  "layouts": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll": 844,
+      "height": 844,
+      "rect": {
+        "x": 0,
+        "y": 97,
+        "width": 390,
+        "height": 650,
+        "top": 97,
+        "right": 390,
+        "bottom": 747,
+        "left": 0
+      },
+      "buttons": [
+        {
+          "width": 47.65625,
+          "height": 47.65625
+        },
+        {
+          "width": 47.65625,
+          "height": 47.65625
+        },
+        {
+          "width": 56.328125,
+          "height": 56.328125
+        },
+        {
+          "width": 56.328125,
+          "height": 56.328125
+        },
+        {
+          "width": 47.65625,
+          "height": 47.65625
+        },
+        {
+          "width": 47.65625,
+          "height": 47.65625
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scroll": 568,
+      "height": 568,
+      "rect": {
+        "x": 0,
+        "y": 17.328125,
+        "width": 320,
+        "height": 533.328125,
+        "top": 17.328125,
+        "right": 320,
+        "bottom": 550.65625,
+        "left": 0
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44
+        },
+        {
+          "width": 44,
+          "height": 44
+        },
+        {
+          "width": 46.21875,
+          "height": 46.21875
+        },
+        {
+          "width": 46.21875,
+          "height": 46.21875
+        },
+        {
+          "width": 44,
+          "height": 44
+        },
+        {
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "scroll": 640,
+      "height": 640,
+      "rect": {
+        "x": 0,
+        "y": 20,
+        "width": 360,
+        "height": 600,
+        "top": 20,
+        "right": 360,
+        "bottom": 620,
+        "left": 0
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44
+        },
+        {
+          "width": 44,
+          "height": 44
+        },
+        {
+          "width": 52,
+          "height": 52
+        },
+        {
+          "width": 52,
+          "height": 52
+        },
+        {
+          "width": 44,
+          "height": 44
+        },
+        {
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "visibilityTrusted": true,
+  "packagesRebuilt": true,
+  "durationMs": 77524.719654
+}

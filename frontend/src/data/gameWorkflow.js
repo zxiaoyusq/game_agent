@@ -15,6 +15,7 @@ export const statusLabels = {
   pending: '待执行', locked: '待上游确认', queued: '排队中', running: '执行中',
   awaiting_confirmation: '待评审确认', completed: '已完成', failed: '执行失败',
   cancelled: '已取消', interrupted: '已中断', stale: '上游已更新',
+  awaiting_input: '等待你的补充', draft: '待确认开始',
 }
 export const createBrief = () => ({
   name: '', genre: '', platform: 'Web / H5',

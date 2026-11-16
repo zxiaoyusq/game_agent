@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "91898",
+    "apiName":  "Fashion Battle",
+    "targetName":  "Fashion Battle",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Fashion_Battle.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260309/fe798ca451ac7d1b0e5a40b158c6f7c2.zip",
+    "bundleMd5":  "fe798ca451ac7d1b0e5a40b158c6f7c2",
+    "bundleSize":  53873031,
+    "updatedAt":  1773134547,
+    "gameLink":  "https://www.excellenth5game.com/Fashion_Battle/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_91898",
+    "category":  "Female",
+    "rate":  7.2,
+    "gameType":  1,
+    "localFile":  "Fashion_Battle.zip",
+    "localBytes":  53873031,
+    "verifiedAt":  "2026-10-20T11:17:35",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

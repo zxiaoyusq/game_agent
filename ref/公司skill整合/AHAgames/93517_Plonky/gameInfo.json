@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93517,
+    "apiName":  "Plonky",
+    "targetName":  "Plonky",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Plonky.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251112/5c018ea1a10f2ca5a815e74578345461.zip",
+    "bundleMd5":  "5c018ea1a10f2ca5a815e74578345461",
+    "bundleSize":  4122008,
+    "updatedAt":  1762935877,
+    "gameLink":  "https://www.excellenth5game.com/Plonky/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93517",
+    "category":  "Action",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Plonky.zip",
+    "localBytes":  4122008,
+    "verifiedAt":  "2026-10-20T10:36:40",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

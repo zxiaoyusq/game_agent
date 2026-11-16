@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const cr={action:function(){},condition:function(){},plugins_:{Touch:function(){}}};
+cr.action.prototype.run_object=function(){};cr.action.prototype.run_system=function(){};cr.condition.prototype.run_system=function(){return true};cr.plugins_.Touch.prototype.cnds={OnTouchObject(){return true}};
+let listener,timer;const window={cr,c2_callFunction(){},oneConnectLevels:{levels:[{level:1,autoShuffle:'free'}]},oneConnectHost:{emit(){}},setTimeout(fn){timer=fn;return 1},clearTimeout(){},addEventListener(_,fn){listener=fn}};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/auto_shuffle_candidate.js','utf8'),{window,cr,Number,Array});
+const runtime={running_layout:{name:'game'},all_global_vars:[{name:'level',data:1},{name:'shuffle',data:1}]};
+window.oneConnectAutoShuffle.install();const touch=name=>cr.plugins_.Touch.prototype.cnds.OnTouchObject.call({runtime},{name});
+assert.equal(touch('t26'),true);cr.action.prototype.run_object.call({runtime,sid:484278472184714});
+assert.equal(touch('t26'),false,'manual tools must not be usable during automatic shuffle');assert.equal(touch('t5'),false,'board tiles must not be usable during automatic shuffle');assert.equal(touch('t21'),true,'unrelated pause control remains available');
+timer();assert.equal(touch('t26'),true,'input resumes after auto shuffle expiry');
+cr.action.prototype.run_object.call({runtime,sid:484278472184714});listener({detail:{type:'game.board_configured'}});assert.equal(touch('t5'),true,'new round clears the input lock');
+console.log('auto shuffle blocks board and tool input only while pending PASS');

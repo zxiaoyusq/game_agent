@@ -1,0 +1,33 @@
+{
+  "stage": "code",
+  "attempt": 1,
+  "resume": false,
+  "confirmed": false,
+  "published": false,
+  "commands": [
+    {"command": "npm run build", "exit_code": 0, "source_before": "4828bf4a10aeb38458d75618a027c3b6490c9154e691553e8393390465dd56d2", "source_after": "4828bf4a10aeb38458d75618a027c3b6490c9154e691553e8393390465dd56d2"},
+    {"command": "npm test", "exit_code": 0, "source_before": "4828bf4a10aeb38458d75618a027c3b6490c9154e691553e8393390465dd56d2", "source_after": "4828bf4a10aeb38458d75618a027c3b6490c9154e691553e8393390465dd56d2"},
+    {"command": "npm run check", "exit_code": 0, "source_before": "4828bf4a10aeb38458d75618a027c3b6490c9154e691553e8393390465dd56d2", "source_after": "4828bf4a10aeb38458d75618a027c3b6490c9154e691553e8393390465dd56d2"}
+  ],
+  "build_sha256": "5128f172f4b90c6e7151712878e9bc95969bad5f2a2bc2388dcab11e1191fa79",
+  "dist_bytes": 1287748,
+  "dist_files": 71,
+  "assets_verified": 58,
+  "test_passed": 11,
+  "replay_matches": 18,
+  "replay_actions": 6405,
+  "browser": "153.0.8010.12",
+  "check_duration_ms": 77807.304074,
+  "lifecycle_cases": 9,
+  "lifecycle_natural_retries": 0,
+  "visibility_trusted": true,
+  "ai_hidden_owner": 2,
+  "ai_hidden_revision": 0,
+  "ai_resumed_revision": 1,
+  "package_crc_verified": true,
+  "package_rebuild_identical": true,
+  "source_zip": {"path": "releases/ludo-classic-reskin-source.zip", "bytes": 1476747, "sha256": "361b85036001d7f6c9ab3a63258abc426692fa702ba1506ca1f9e12cb78e8883"},
+  "dist_zip": {"path": "releases/ludo-classic-reskin-dist.zip", "bytes": 1295894, "sha256": "eb9df8117bbe1958135ec9b84e319e7eb699ff26e6ddee9d3b0c6ed1b1530caa"},
+  "post_check_changes": "仅workflow/code.md和evidence报告；没有重建或修改dist",
+  "limitations": ["未部署或发布，等待代码阶段确认", "未做Android/iOS真机或跨浏览器验收", "未主动制造图片解码失败以操作刷新重试；已实际验证延迟图片与ready恢复", "未独立验证参考资源商业授权"]
+}

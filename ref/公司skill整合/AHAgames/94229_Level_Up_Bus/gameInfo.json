@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "94229",
+    "apiName":  "Level Up Bus",
+    "targetName":  "Level Up Bus",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Level_Up_Bus.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260210/e3b731499bf3066c9db77b0c4fcdc3ba.zip",
+    "bundleMd5":  "e3b731499bf3066c9db77b0c4fcdc3ba",
+    "bundleSize":  62984993,
+    "updatedAt":  1772273095,
+    "gameLink":  "https://www.xmyunshanggame.com/Level_Up_Bus/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94229",
+    "category":  "Simulation",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Level_Up_Bus.zip",
+    "localBytes":  62984993,
+    "verifiedAt":  "2026-10-20T11:19:16",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

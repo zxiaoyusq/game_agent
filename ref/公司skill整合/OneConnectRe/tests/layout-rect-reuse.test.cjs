@@ -1,0 +1,21 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs'),vm=require('node:vm');
+const context={module:{exports:{}},Map,Set,Math,Object,Array,Error};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/in_game_layout_adapter.js','utf8'),context);
+const layout=context.module.exports;
+let reads=0;
+const layer={canvasToLayer:(x,y,h)=>h?x:y,layerToCanvas:(x,y,h)=>h?x:y};
+function instance(extra){return Object.assign({x:0,y:0,width:80,height:40,layer,set_bbox_changed(){}},extra);}
+const shuffle=instance({cur_frame:0}),hint=instance({cur_frame:1}),shuffleCount=instance({uid:2,instance_vars:[]}),hintCount=instance({uid:46,instance_vars:[]});
+const runtime={running_layout:{name:'game'},canvas:{width:800,height:1600,getBoundingClientRect(){reads++;return {left:10,top:20,width:400,height:800}}},isRetina:true,devicePixelRatio:2,types:{t26:{instances:[shuffle,hint]},t25:{instances:[shuffleCount,hintCount]}}};
+const slots={tools:[{id:'shuffle',left:30,top:600,width:100,height:50},{id:'hint',left:150,top:600,width:100,height:50}]};
+assert.equal(layout.moveTools(runtime,slots),true);
+assert.equal(reads,1,'all buttons use the same canvas rectangle for this layout pass');
+assert.equal(shuffle.x,58);assert.equal(shuffle.y,605);assert.equal(hint.x,178);assert.equal(hintCount.x,213);
+reads=0;assert.equal(layout.moveTools(runtime,slots),true);assert.equal(reads,1,'unchanged layout also reads once');
+const rebuiltShuffle=instance({uid:902,instance_vars:[3],visible:true}),rebuiltHint=instance({uid:946,instance_vars:[4],visible:true}),unrelated=instance({uid:2,instance_vars:[2],visible:true});
+runtime.types.t25.instances=[unrelated,rebuiltShuffle,rebuiltHint];layout.moveTools(runtime,slots);
+assert.equal(rebuiltShuffle.x,93,'rebuilt shuffle count is positioned by semantic role');assert.equal(rebuiltHint.x,213,'rebuilt hint count is positioned by semantic role');
+layout.setToolsHidden(runtime,true);assert.equal(rebuiltShuffle.visible,false);assert.equal(rebuiltHint.visible,false);assert.equal(unrelated.visible,true,'unrelated old UID is not hidden');
+layout.setToolsHidden(runtime,false);assert.equal(rebuiltShuffle.visible,true);assert.equal(rebuiltHint.visible,true);
+console.log('tool layout preserves coordinates with one canvas bounds read PASS');

@@ -1,0 +1,2 @@
+﻿asset_path,atlas_frame,screen_state,source_evidence,category,technical_contract,target_reference,candidate_path,disposition,technical_qa,visual_qa,runtime_qa,evidence
+game/images/title-sheet0.png,t9 Default（帧与挂点见 data.js）,主菜单标题,原版截图与资源.html；baseline/data.js,待确认,1024x1024 RGBA；帧坐标与挂点需核对,待用户确定,,原版保留（示例）,未验,未验,未验,

@@ -1,0 +1,169 @@
+{
+  "inventory": [
+    {
+      "path": "reference-inputs/fallback-before.js",
+      "originalReferencePath": "ref/mcp-inputs/mac-codex/68c66ea75685ded3fdac809a40fe16da0677249b23acb8867864a96b1a510cf9/fallback-before.js",
+      "bytes": 575473,
+      "sha256": "68c66ea75685ded3fdac809a40fe16da0677249b23acb8867864a96b1a510cf9",
+      "lines": 14270,
+      "functions": [
+        {
+          "name": "_carromStartPathBlocked",
+          "line": 5290,
+          "sha256": "018d308300e5d232bf85e191e53f37b5242fc9b7a7a052971e2d68ce9e91e5d7"
+        },
+        {
+          "name": "_0x3d12d7",
+          "line": 4402,
+          "sha256": "87d4075ebb4260574457ffa1605294fa5cf6b41934af4c96b61f763f211bacc5"
+        },
+        {
+          "name": "_carromFindOpenBaseline",
+          "line": 4375,
+          "sha256": "e22a6fbc5f7ac57d88ddc4771eab173a8be24ce6e0b99cc7e15acdbd1426bcf0"
+        },
+        {
+          "name": "_0x52106f",
+          "line": 4474,
+          "sha256": "f21300f76d6f95f145850c886ba215b026083ed6edc7135205ca3b28cd65dede"
+        },
+        {
+          "name": "_0x25af2a",
+          "line": 4687,
+          "sha256": "59695a9f2f121395027dedcb239da852c92b71fd173c69b6a4f275185de0ec07"
+        },
+        {
+          "name": "_0x521eef",
+          "line": 4897,
+          "sha256": "ea6043b6c8a1bad1fe2cbc75f3961928dc0e85bd9c1ca395a8f0e9f025a2343d"
+        },
+        {
+          "name": "_0x30849b",
+          "line": 5093,
+          "sha256": "190b6b86b6ecff8f61347b2663664a4709762e345d4251925797c26904a73428"
+        },
+        {
+          "name": "_0x3ea989",
+          "line": 5306,
+          "sha256": "17742c7c5fa310cff0b88fe61b8354ebbd690aa694403008d314b3b650ee67fd"
+        },
+        {
+          "name": "_0x50a0ff",
+          "line": 3964,
+          "sha256": "7a433406cac3950c01b37b84f62de56e2dcbfcbb14b4219987ba405cad3d27e7"
+        },
+        {
+          "name": "_0x4b3cc6",
+          "line": 4347,
+          "sha256": "d8227d3acacc253b4bec29dfb531debfa6996c219a15b0571b94d96744ede857"
+        },
+        {
+          "name": "_0x223471",
+          "line": 4310,
+          "sha256": "2626964c6790fd272941a00c6849c655ff27fe1bf2f5fe4babacedef3960f8dc"
+        },
+        {
+          "name": "_carromAiBoardChanged",
+          "line": 4229,
+          "sha256": "a73718f05a85d216bfec60cfb925e2b5d8dca3d219d4a6f1a10fce01462e3d0a"
+        },
+        {
+          "name": "_0x8b2762",
+          "line": 6369,
+          "sha256": "0f9b142172c7401b841dc4a112bc40ce9ab24ba778e33c3a01e458f3e158152c"
+        },
+        {
+          "name": "_0x2bd695",
+          "line": 6598,
+          "sha256": "24a27866794fbcaaa929f653cd8cd0b104457aef64f7db8edec592c8cd5b1b03"
+        }
+      ]
+    },
+    {
+      "path": "reference-inputs/fallback-fullpath.js",
+      "originalReferencePath": "ref/mcp-inputs/mac-codex/d1c897bdd07c0a4221d40dd9c2d1d222c83670e355ac6024193d87cbcb1aaa9c/fallback-fullpath.js",
+      "bytes": 575563,
+      "sha256": "d1c897bdd07c0a4221d40dd9c2d1d222c83670e355ac6024193d87cbcb1aaa9c",
+      "lines": 14270,
+      "functions": [
+        {
+          "name": "_carromStartPathBlocked",
+          "line": 5290,
+          "sha256": "bca75c0fee82953d0b30e2586c91aeff101252211aea59cd3a23430e3d1dcd97"
+        },
+        {
+          "name": "_0x3d12d7",
+          "line": 4402,
+          "sha256": "2a5863b2f4e4a35d2bf19349f5b59f6148727c590568a8c4a5d780f51aa19f38"
+        },
+        {
+          "name": "_carromFindOpenBaseline",
+          "line": 4375,
+          "sha256": "e22a6fbc5f7ac57d88ddc4771eab173a8be24ce6e0b99cc7e15acdbd1426bcf0"
+        },
+        {
+          "name": "_0x52106f",
+          "line": 4474,
+          "sha256": "f21300f76d6f95f145850c886ba215b026083ed6edc7135205ca3b28cd65dede"
+        },
+        {
+          "name": "_0x25af2a",
+          "line": 4687,
+          "sha256": "59695a9f2f121395027dedcb239da852c92b71fd173c69b6a4f275185de0ec07"
+        },
+        {
+          "name": "_0x521eef",
+          "line": 4897,
+          "sha256": "ea6043b6c8a1bad1fe2cbc75f3961928dc0e85bd9c1ca395a8f0e9f025a2343d"
+        },
+        {
+          "name": "_0x30849b",
+          "line": 5093,
+          "sha256": "190b6b86b6ecff8f61347b2663664a4709762e345d4251925797c26904a73428"
+        },
+        {
+          "name": "_0x3ea989",
+          "line": 5306,
+          "sha256": "17742c7c5fa310cff0b88fe61b8354ebbd690aa694403008d314b3b650ee67fd"
+        },
+        {
+          "name": "_0x50a0ff",
+          "line": 3964,
+          "sha256": "7a433406cac3950c01b37b84f62de56e2dcbfcbb14b4219987ba405cad3d27e7"
+        },
+        {
+          "name": "_0x4b3cc6",
+          "line": 4347,
+          "sha256": "d8227d3acacc253b4bec29dfb531debfa6996c219a15b0571b94d96744ede857"
+        },
+        {
+          "name": "_0x223471",
+          "line": 4310,
+          "sha256": "2626964c6790fd272941a00c6849c655ff27fe1bf2f5fe4babacedef3960f8dc"
+        },
+        {
+          "name": "_carromAiBoardChanged",
+          "line": 4229,
+          "sha256": "a73718f05a85d216bfec60cfb925e2b5d8dca3d219d4a6f1a10fce01462e3d0a"
+        },
+        {
+          "name": "_0x8b2762",
+          "line": 6369,
+          "sha256": "0f9b142172c7401b841dc4a112bc40ce9ab24ba778e33c3a01e458f3e158152c"
+        },
+        {
+          "name": "_0x2bd695",
+          "line": 6598,
+          "sha256": "24a27866794fbcaaa929f653cd8cd0b104457aef64f7db8edec592c8cd5b1b03"
+        }
+      ]
+    }
+  ],
+  "changed": [
+    "_carromStartPathBlocked",
+    "_0x3d12d7"
+  ],
+  "prefix": 182185,
+  "suffix": 361225,
+  "node": "v22.23.3"
+}

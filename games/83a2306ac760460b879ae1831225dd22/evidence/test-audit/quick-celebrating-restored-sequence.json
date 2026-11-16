@@ -1,0 +1,23 @@
+[
+  {
+    "at": 1794224886490,
+    "path": "evidence/test-audit/quick-celebrating-restored-0.png",
+    "phase": "celebrating",
+    "elapsed": 266.70000000000005,
+    "plan": null
+  },
+  {
+    "at": 1794224886623,
+    "path": "evidence/test-audit/quick-celebrating-restored-1.png",
+    "phase": "celebrating",
+    "elapsed": 400,
+    "plan": null
+  },
+  {
+    "at": 1794224886767,
+    "path": "evidence/test-audit/quick-celebrating-restored-2.png",
+    "phase": "celebrating",
+    "elapsed": 533.4000000000001,
+    "plan": null
+  }
+]

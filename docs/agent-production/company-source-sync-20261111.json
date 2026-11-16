@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-11",
+  "source": "ref/公司skill整合",
+  "company_source_unchanged": true,
+  "sync": {
+    "operation_id": "f7988a6385b44cbc895f414343f0e1ff",
+    "plan_digest": "804368190cf01d2dc767c5e8e5495cab88b67404aaf37ed86490a14048dfd186",
+    "counts": {
+      "added": 14,
+      "updated": 16,
+      "unchanged": 462,
+      "deleted_skipped": 0,
+      "conflicts": 0
+    },
+    "backup_path": ".skill-source-sync/f7988a6385b44cbc895f414343f0e1ff",
+    "summary": {
+      "skill_entries": 31,
+      "files": 492
+    }
+  },
+  "after_sync": {
+    "added": 0,
+    "updated": 0,
+    "unchanged": 492,
+    "deleted_skipped": 0,
+    "conflicts": 0
+  },
+  "versions": [
+    {
+      "path": "casual-game-production/SKILL.md",
+      "version": "1.3.0"
+    },
+    {
+      "path": "game-reverse-engineering/SKILL.md",
+      "version": "10.5.0"
+    },
+    {
+      "path": "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md",
+      "version": "2.0.0"
+    },
+    {
+      "path": "game-reverse-engineering/modules/hosted-minigame-harvest/SKILL.md",
+      "version": "1.4.0"
+    }
+  ],
+  "preserved_existing_item_ids": 478,
+  "research": [
+    {
+      "name": "reskin_review",
+      "files": 18,
+      "documents": 1
+    },
+    {
+      "name": "art_direction",
+      "files": 247,
+      "documents": 6
+    },
+    {
+      "name": "OneConnectRe",
+      "files": 2531,
+      "documents": 58
+    }
+  ],
+  "reference_tool": {
+    "path": "公司skill整合/OneConnectRe/开发说明.md",
+    "read": true,
+    "characters": 1230,
+    "events": [
+      {
+        "type": "reference_read",
+        "data": {
+          "path": "公司skill整合/OneConnectRe/开发说明.md",
+          "offset": 0
+        }
+      }
+    ],
+    "mcp_discovery_total": 59,
+    "pagination_verified": true
+  },
+  "verification": {
+    "backend_full_suite": {
+      "tests": 293,
+      "passed": true,
+      "log": "logs/company-sync-all-tests-final-20261111.log"
+    },
+    "final_reference_mcp_suite": {
+      "tests": 55,
+      "passed": true,
+      "log": "logs/company-sync-mcp-tests-20261111.log"
+    },
+    "new_company_graph": {
+      "four_stages": "completed",
+      "real_graph_and_tools": true,
+      "model": "deterministic_test_double",
+      "log": "logs/company-sync-graph-test-20261111.log"
+    },
+    "frontend_build": true,
+    "skill_validation": true,
+    "browser": {
+      "checks": [
+        {
+          "name": "Skill 数量与来源同步无差异",
+          "passed": true
+        },
+        {
+          "name": "案例阅读手机布局",
+          "passed": true
+        },
+        {
+          "name": "OneConnect 案例文档目录与实际正文",
+          "passed": true
+        },
+        {
+          "name": "项目详情展示按阶段选择和起读资料",
+          "passed": true
+        },
+        {
+          "name": "参考选择手机布局",
+          "passed": true
+        },
+        {
+          "name": "新建项目可以选择单篇案例参考",
+          "passed": true
+        }
+      ],
+      "errors": [],
+      "blockedWrites": [],
+      "isolated": true,
+      "httpErrors": [
+        {
+          "path": "/api/produced-games/ball-sort-fusion/cover",
+          "status": 404
+        }
+      ],
+      "passed": true
+    },
+    "browser_note": "验收使用隔离只读 API、临时项目与会话；未挂载的旧游戏封面接口返回 404，不影响本次 6 项检查。"
+  },
+  "deployment": {
+    "backend_restarted": false,
+    "reason": "现有后端仍有用户生成任务运行，本次未打断；代码更新需待空闲重启生效。"
+  }
+}

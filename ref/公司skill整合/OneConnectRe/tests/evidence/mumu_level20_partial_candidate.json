@@ -1,0 +1,15 @@
+{
+  "start": {
+    "level": 20,
+    "timer": 222,
+    "seed": 2539182219,
+    "errors": []
+  },
+  "end": {
+    "level": 21,
+    "progress": 21,
+    "tiles": 72,
+    "errors": []
+  },
+  "scope": "isolated configured level 20; direct test progress; not competitor natural unlock"
+}

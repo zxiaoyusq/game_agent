@@ -296,3 +296,55 @@ sprite_uuids[name] = sub_uuid  # name = png 文件名去扩展名
 ## Cocos 编辑器实时通道
 
 Creator 3.8.x 的编辑器操作与中间自检可按 `modules/cocos-mcp-channel/SKILL.md` 执行；2.4.x 或无 MCP 时走本模块文件级/CLI 路径。预览、编辑器引用检查和正式构建/设备验收分别记录证据。
+
+重建/重制工程卡在自动启动、开启MCP和异常退出后恢复时，读 [3.8.x启动与恢复](../cocos-mcp-channel/references/autonomous-startup.md)：清除子进程Electron环境污染、核对实际扩展消息与目标工程身份、重建MCP会话并恢复预览/桥接。DADAPET案例只证明一次恢复后续跑，不能照搬其路径、游戏命令或全局杀进程。
+
+## 3.8.x 预览黑屏 / 图标拉伸：两个"不是场景坏了"的新根因（2026-10-26 DADAPET 实测）
+
+### A. 数据与配置表不一致 → 点预览即黑屏（日志还没有堆栈）
+
+**症状**：编辑器不崩、进程正常，预览黑屏；`temp/logs/project.log` 里只有
+
+```
+[PreviewInEditor] PromiseRejectionEvent { isTrusted: [Getter] }
+[PreviewInEditor] Error:            ← 同样是空的，拿不到堆栈
+…
+[PreviewInEditor] 预览环境初始化完毕
+```
+
+**日志本身不足以定位**（引擎把 rejection 当事件对象打印，没打 `reason`）——别在场景/prefab 上找。
+
+**根因**：工程的 `assets/bundle/config/data.json` 与它自己的 xlsx 源表不同步 —— 典型场景是
+"别人改了 xlsx 但没提交重新导出的 data.json"。此后**任何一次全量导表**都会让运行时数据出现
+代码尚未对齐的字段 → 启动阶段 Promise 拒绝 → 黑屏。把 `data.json` 换回主干版即恢复，
+这也是最快的确认手段。
+
+**只读定位三步**：
+1. 逐表比哈希：`git show <主干分支>:assets/bundle/config/data.json` 与工作区版本比，列出差异表清单
+2. 差异中**字段集发生变化**的表（新增/删除字段）是嫌疑；只改数值的表通常安全
+3. 把 `data.json` 换成主干版 → 预览能起即为确认
+
+**安全改表流程（避免把工程搞黑）**：
+- 优先**就地同步**：改 xlsx 的同时用脚本改 `data.json` 的对应表，不跑全量导表
+- 必须全量导表时，导出后立刻后处理：**以主干 `data.json` 为底，只覆盖自己改过的表**，其余保持原样
+- 提交前打印"与主干的差异表清单"，应当**只有自己改的表**（既是自证，也是交接证据）
+
+### B. 图标 `trimType=auto` → spriteFrame 被裁 → 卡片里拉伸变形
+
+**症状**：图标在方形格子里被拉长/压扁（同一批图里有的正常、有的变形）。
+
+**根因**：Cocos 图片导入默认 `trimType = auto` → 自动裁掉透明边 → `spriteFrame` 变成
+**非方形矩形**（实测 176x232、123x233、232x126），而 UI 格子是方形 → 拉伸。
+
+**修法**：把 `*.png.meta` 的 `subMetas.f9941.userData.trimType` 改为 `"none"`。
+
+⚠️ **改完必须让编辑器重新导入**（MCP：`asset-db refresh-asset`）才会重算子资源；判据是
+`userData.width/height == rawWidth/rawHeight`。只改 meta 不重导入 = 画面里**仍然拉伸**，
+极易误判"改了没用"。批量体检/修复脚本见 skill `cocos-asset-config-pitfalls` 的
+`cocos-asset-config-pitfalls/scripts/check_icon_meta.py`。
+
+> 配置表链路（Luban 横向/竖排布局、多语言主键是 `Desc`、导表后要把 `schema.ts` 还原、
+> 严禁跑会重写 xlsx 的生成脚本）、二进制 xlsx 合并冲突与强推回滚处置、图片流水线坑，
+> 见 skill `cocos-asset-config-pitfalls`（本模块只保留"诊断 → 定位 → 修复"结论）。
+>
+> 要**预防**这两类问题（图标导入契约、配置与产物同步的规范做法），见 `modules/cocos-project-standards/SKILL.md` 的 `modules/cocos-project-standards/references/resource-contract.md` §4 与 `modules/cocos-project-standards/references/config-pipeline.md` §8。**规范条文只在该模块维护一份**，本模块不复制，只做诊断入口。

@@ -41,4 +41,4 @@
 
 ## 需要走全链路时
 
-首次做完整逆向工程（识别 → 提取 → 修复 → 换皮 → 烘焙 → 构建 QA → SDK → 真机），按 `references/end-to-end-pipeline.md` 的 0–6 阶段顺序走，每一阶段仍回到本文件的五步循环。
+首次做完整逆向工程时按实际引擎和用户目标选择适用阶段：Cocos/Unity 相关完整链路参考 `references/end-to-end-pipeline.md`；宿主小游戏从采集到拆解、还原和持续迭代参考 `modules/hosted-minigame-harvest/references/hosted-game-lifecycle.md`，已有包从现有输入进入。并非所有游戏都需要 prefab、Cocos QA、SDK 替换或真机；用户要求的验收不可跳过。每阶段仍回到本文件的五步循环。

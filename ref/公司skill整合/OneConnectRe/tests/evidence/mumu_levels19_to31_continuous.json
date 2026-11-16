@@ -1,0 +1,83 @@
+{
+  "scope": "isolated test storage starts at level 19; solver-guided ADB taps; levels 19,20,21,23,28,30 partial",
+  "runs": [
+    {
+      "level": 19,
+      "tiles": 42,
+      "seed": 1063530142,
+      "movement": "static"
+    },
+    {
+      "level": 20,
+      "tiles": 54,
+      "seed": 3788653175,
+      "movement": "static"
+    },
+    {
+      "level": 21,
+      "tiles": 42,
+      "seed": 1635379213,
+      "movement": "static"
+    },
+    {
+      "level": 22,
+      "tiles": 42,
+      "seed": 596896066,
+      "movement": "gravity_up"
+    },
+    {
+      "level": 23,
+      "tiles": 48,
+      "seed": 2011552528,
+      "movement": "static"
+    },
+    {
+      "level": 24,
+      "tiles": 44,
+      "seed": 223005450,
+      "movement": "gravity_right"
+    },
+    {
+      "level": 25,
+      "tiles": 60,
+      "seed": 3852078276,
+      "movement": "gravity_up"
+    },
+    {
+      "level": 26,
+      "tiles": 42,
+      "seed": 544494810,
+      "movement": "static"
+    },
+    {
+      "level": 27,
+      "tiles": 36,
+      "seed": 1039187399,
+      "movement": "static"
+    },
+    {
+      "level": 28,
+      "tiles": 44,
+      "seed": 2433505942,
+      "movement": "static"
+    },
+    {
+      "level": 29,
+      "tiles": 48,
+      "seed": 2346838103,
+      "movement": "static"
+    },
+    {
+      "level": 30,
+      "tiles": 50,
+      "seed": 637011399,
+      "movement": "static"
+    }
+  ],
+  "end": {
+    "level": 31,
+    "progress": 31,
+    "tiles": 44,
+    "errors": []
+  }
+}

@@ -1,0 +1,21 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const dir=process.argv[2],file=(source,built)=>dir?path.join(dir,built):source;let listeners=[],timers=[],frames=[],calls=[],now=0,nodes=[];
+const star={uid:31,x:80,y:20,layer:{layerToCanvas:(x,y,axis)=>axis?x:y}};
+const runtime={running_layout:{name:'game'},canvas:{width:100,height:200,getBoundingClientRect:()=>({left:0,top:0,width:100,height:200})},types:{t5:{instances:[]},t24:{instances:[star]},t32:{instances:[{instance_vars:[0,0,0,72]}]}},all_global_vars:[{name:'level',data:1},{name:'pause',data:0}],DestroyInstance(){}};
+const visibility=[];const document={hidden:false,addEventListener(name,fn){if(name==='visibilitychange')visibility.push(fn)},body:{appendChild(n){nodes.push(n)}},createElement:()=>({style:{},setAttribute(){},remove(){this.removed=true}})};
+const send=(type,detail={})=>listeners.forEach(fn=>fn({detail:{type,detail}}));
+const window={cr_getC2Runtime:()=>runtime,oneConnectProgress:{get:()=>2},oneConnectHost:{emit:(type,detail)=>{calls.push(type);send(type,detail)}},c2_callFunction:name=>calls.push(name),setTimeout(fn,ms){timers.push({fn,ms})},addEventListener(name,fn){if(name==='oneconnect:event')listeners.push(fn)}};
+const ctx={window,document,Date:{now:()=>now},Number,Array,Math,requestAnimationFrame:fn=>frames.push(fn)};
+vm.runInNewContext(fs.readFileSync(file('game/first-level-transition.js','first-level-transition.js'),'utf8'),ctx);
+vm.runInNewContext(fs.readFileSync(file('tools/flystar_candidate.js','flystar-candidate.js'),'utf8'),ctx);
+window.oneConnectFirstTransition.install();window.oneConnectFlyStarCandidate.install();
+send('candidate.link_points',{pathScreenPoints:[{x:5,y:5},{x:10,y:10}]});send('screen.SCREEN_BONUS');timers.shift().fn();
+assert.deepEqual(calls,['game.level_win']);assert.equal(window.oneConnectFlyStarCandidate.state().active,2);
+for(let i=0;i<25&&frames.length;i++){now+=50;frames.shift()(now)}
+assert(nodes.every(n=>n.removed),'the actual flying stars finish before the transition');assert.equal(window.oneConnectFlyStarCandidate.state().active,0);
+timers.shift().fn();assert.deepEqual(calls,['game.level_win','nextLevel']);
+send('game.board_configured');send('candidate.link_points',{pathScreenPoints:[{x:5,y:5},{x:10,y:10}]});send('screen.SCREEN_BONUS');timers.shift().fn();
+document.hidden=true;visibility.forEach(fn=>fn());now+=6000;timers.shift().fn();assert.equal(calls.filter(x=>x==='nextLevel').length,1,'background wait must not cut off the new stars');
+document.hidden=false;visibility.forEach(fn=>fn());timers.shift().fn();for(let i=0;i<25&&frames.length;i++){now+=50;frames.shift()(now)}timers.shift().fn();
+assert.equal(calls.filter(x=>x==='nextLevel').length,2,'transition resumes after foreground stars finish');
+console.log('first-level transition waits for actual fly-star lifecycle and background recovery PASS');

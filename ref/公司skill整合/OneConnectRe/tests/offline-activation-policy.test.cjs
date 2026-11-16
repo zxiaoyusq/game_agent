@@ -1,0 +1,1 @@
+const fs=require('fs'),assert=require('node:assert/strict');let src=fs.readFileSync('tools/build_offline_worker.py','utf8');assert(!src.includes('await self.skipWaiting()'),'an update must not take control of a live game');console.log('offline worker does not force activation over a live session PASS');

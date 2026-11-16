@@ -1,0 +1,4 @@
+{
+  "error": "page.waitForFunction: Timeout 30000ms exceeded.\n    at load (/root/dev/game-agent/game_agent/games/df0115c4db8c46e69563fd9dc343a6cb/scripts/check.cjs:24:58)\n    at async /root/dev/game-agent/game_agent/games/df0115c4db8c46e69563fd9dc343a6cb/scripts/check.cjs:27:175",
+  "consoleErrors": []
+}

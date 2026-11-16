@@ -1,0 +1,9 @@
+{
+  "seeds": 1000,
+  "recovered": [
+    240
+  ],
+  "changed": [],
+  "failed": [],
+  "scope": "desktop deterministic comparison and independent path replay"
+}

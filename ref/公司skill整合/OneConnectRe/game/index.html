@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="Adventure Games, Arcade Games, Girls Games, Shooting Games, Racing Games">
+        <meta name="description" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <style>
+            body,html{padding:0;border:0;margin:0;height:100%;width:100%}#div_iframe_game{height:100%;width:100%;position:absolute;left:0;top:0}#iframe_game{width:100%}#game_banner{width:100%;z-index:999;justify-content:center;display:flex;position:absolute}.loadingMc{margin:auto;width:100%;height:100%;z-index:99;position:absolute;background:#9a4cff}.gameIconPanret{width:140px;height:140px;border-radius:100%;overflow:hidden;position:absolute;top:50%;left:50%;margin-top:-70px;margin-left:-70px;z-index:99} .gameIcon{width:100%} .loadNumPanret{width:140px;height:140px;position:absolute;top:50%;left:50%;margin-top:100px;z-index:99}.loadMc{width:140px;height:140px;position:absolute;top:50%;left:50%;margin-top:-75px;margin-left:-75px;z-index:99;border-radius:50%;border:5px solid #FFFFF0;border-top:5px solid #08da4e;animation:load 2s linear infinite}@keyframes load{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+            </style>
+        <title></title>
+        <script type="text/javascript">
+                var gGame = {
+                    id:4816270,
+                    name: "One_Connect",
+                    description: "Onet Connect is a classic connecting game...",
+                    url:"./game.html",
+                    type: "Casual",
+                    icon:"./icon.jpg",
+                    show_banner:1,
+                    mycdn:1,
+                    isShowLoadNum:1,
+                    loadingInterval:180,
+                    gdBannerclient : "ca-pub-2270136017335510",               
+                }; 
+                window.isUploadCY = !1,
+   
+        
+        document.title = (gGame.name).replace(new RegExp("_","gi")," ")
+        var purl = window.location.href;
+        if(purl.indexOf("192.168") > -1 || purl.indexOf("127.0") > -1)
+        {
+            window["new_afg_isTest"] = true;
+        }else
+        {
+            window["new_afg_isTest"] = false;
+        }
+        </script>
+    </head>
+    <body>
+        <div id="loadingMc" class="loadingMc">
+            
+        </div>
+        <div id="div_iframe_game">
+            <iframe
+                id="iframe_game"
+                webkitallowfullscreen="true"
+                mozallowfullscreen="true"
+                allowfullscreen="true"
+                webkit-playsinline="true"
+                scrolling="no"
+                seamless
+                frameborder="0"
+                style="display:block;overflow:hidden;"
+            ></iframe>
+        </div>
+        <div id="game_banner" style ="bottom: 0; height: 9%;">
+            <ins class="adsbygoogle" style="display:inline-block;width:100%; margin-top: 5px"
+            data-ad-client="ca-pub-2270136017335510" data-ad-slot="8845579412"></ins>
+            <script type="text/javascript">
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <script>
+        window.isUploadCY = !1;
+       
+
+        window.game = {
+            init: function() {
+           
+                const div_gameIframeEl = document.getElementById('iframe_game');
+ 
+                div_gameIframeEl.style.height = "91%";
+
+                div_gameIframeEl.src = gGame.url;
+            }
+        };
+        window.game.init();
+    
+        window.loading = {  
+            loadingProgerss:0,
+            itervalId:0,
+            init: function() {
+    
+                document.getElementsByTagName("meta").description.setAttribute("content", gGame.description);
+
+                var a = document.getElementById("loadingMc");
+                a.innerHTML = '<div id="loadMc" class="loadMc"></div> <div id="gameIconPanret" class="gameIconPanret"><img id="gameIcon"  src=""></div> <div id="loadNumPanret" class="loadNumPanret"> <span id="span" style="color:  rgba(142, 204, 237, 1);font-weight: bolder;font-size: 18px;text-align: center;width: 140px;left: -70px;position:absolute;">0%</span>  </div>';
+                var loadingImgEl = document.getElementById("gameIcon");
+                loadingImgEl.setAttribute('src', gGame.icon);
+                loadingImgEl.style.width = "100%";
+
+                this.show();
+            },
+            show: function() {
+                const loadingProgerssTxt = document.querySelector('#span');
+                this.itervalId = setInterval(() => {
+                    this.loadingProgerss += 1;
+                    if(this.loadingProgerss >= 100){
+                        clearInterval(this.itervalId);
+                        this.hide();
+                    }
+                loadingProgerssTxt.innerHTML = ( Math.trunc(this.loadingProgerss)).toString() + '%'; 
+                }, window["new_afg_isTest"]?60:gGame.loadingInterval);
+            },
+            hide: function () {
+                const loadingContainerEl = document.querySelector('#loadingMc');
+                loadingContainerEl.style.display = 'none';
+                clearInterval(this.itervalId);
+            },
+        }
+        window.loading.init();
+    
+        window.insertScript = (url, attributes, callback) => {
+            const scriptElement = document.createElement('script'),
+                head = document.head || document.getElementsByTagName('head')[0];
+            scriptElement.async = true;
+    
+            if (attributes) {
+                for (let k in attributes) {
+                    scriptElement.setAttribute(k, attributes[k]);
+                }
+            }
+    
+            callback = callback || function() {};
+            if (scriptElement.readyState) {
+                scriptElement.onreadystatechange = () => {
+                    if (scriptElement.readyState === 'loaded' || scriptElement.readyState === 'complete') {
+                        scriptElement.onreadystatechange = null;
+                        callback();
+                    }
+                }
+            } else {
+                scriptElement.onload = () => {
+                    callback();
+                };
+            }
+    
+            scriptElement.src = url;
+            head?.appendChild(scriptElement);
+            console.log('load js: ', url);
+            return scriptElement;
+        }
+    
+    
+        window.h5_sdk = {
+            sdk_url: 'https://www.hippoobox.com/static/sdk/adsdk_1.8.0.0.js',
+            init: function (appkey, callback) {
+                window.insertScript(this.sdk_url, null, () => {
+                    if (window.h5sdk) {
+                        window["new_afg_isTest"]?
+                        window.h5sdk.init(appkey, "", "", '', '', {
+                            ga: {id: 'UA-120043346-101'},
+                            adsense: {
+                                'client': 'ca-pub-2270136017335510',
+                                'data-ad-frequency-hint': '45s',
+                                'data-ad-channel': 6206130407,
+                                 "data-adbreak-test": "on",
+                                'pauseCallback': () => {
+    
+                                },
+                                'resumeCallback': () => {
+    
+                                },
+                                'callback': () => {
+                                    
+                                    window.h5sdk.athenaSend("game_start", this.getGameName());
+                                    window.h5sdk.adConfig({
+                                    preloadAdBreaks: "on",
+                                    onReady: () => {
+                                        console.log('onReady');
+                                        window.h5sdk.adBreak({
+                                            type: "preroll",
+                                            name: "start",
+                                            adBreakDone: () => {
+                                                window.loading.hide();
+                                                callback && callback();
+                                            },
+                                        })
+                                    }
+                                });
+                            
+                                }
+                                
+                            },
+                        }): window.h5sdk.init(appkey, "", "", '', '', {
+                            ga: {id: 'UA-120043346-101'},
+                            adsense: {
+                                'client': 'ca-pub-2270136017335510',
+                                'data-ad-frequency-hint': '45s',
+                                'data-ad-channel': 6206130407,
+                                'pauseCallback': () => {
+    
+                                },
+                                'resumeCallback': () => {
+    
+                                },
+                                'callback': () => {
+                                    
+                                    window.h5sdk.athenaSend("game_start", this.getGameName());
+                                    window.h5sdk.adConfig({
+                                    preloadAdBreaks: "on",
+                                    onReady: () => {
+                                        console.log('onReady');
+                                        window.h5sdk.adBreak({
+                                            type: "preroll",
+                                            name: "start",
+                                            adBreakDone: () => {
+                                                window.loading.hide();
+                                                callback && callback();
+                                            },
+                                        })
+                                    }
+                                });
+                            
+                             
+                                }
+                                
+                            },
+                        });
+                    }
+                });
+            },
+            adIntervalTime: 45,
+            adShowTime: (new Date()).getTime(),
+            
+            getClientHeight: function() {
+                return document.body.clientHeight && document.documentElement.clientHeight ? document.body.clientHeight < document.documentElement.clientHeight ? document.body.clientHeight : document.documentElement.clientHeight : document.body.clientHeight > document.documentElement.clientHeight ? document.body.clientHeight : document.documentElement.clientHeight
+            },
+            /**
+             *
+             * @param {*} ad_type
+             * @param {*} success
+             * @param {*} failed
+             */
+            showAd: function (ad_type, success = null, failed = null) {
+                switch (ad_type) {
+                    case 'Interstitial':
+                        this.showInterstitialAd(success);
+                        break;
+    
+                    case 'Reward':
+                        this.showRewardAd(success, failed);
+                        break;
+    
+                    default:
+                        break;
+                }
+            },
+           
+            /**
+             *
+             * @param {*} success
+             */
+            showInterstitialAd: function (success) {
+                let  lastShowAdTime = ((new Date()).getTime() - this.adShowTime) / 1000;
+                console.log(lastShowAdTime);
+                if (window.h5sdk && (lastShowAdTime > this.adIntervalTime)) {
+                    console.log('==== h5_sdk showInterstitialAd ====');
+                    this.adShowTime = (new Date()).getTime();
+                    window.h5sdk.adBreak({
+                        type: "next",
+                        name: "next",
+                        adBreakDone: () => {
+                            success && success();
+                        },
+                    });
+                } else {
+                    success && success();
+                }
+            },
+            /**
+             *
+             * @param {*} success
+             * @param {*} failed
+             */
+            showRewardAd: function (success, failed) {
+                // Deduplicate each callback without assuming the provider's event order.
+                let successReported = false, failureReported = false;
+                const reportSuccess = () => { if (!successReported) { successReported = true; success && success(); } };
+                const reportFailure = () => { if (!failureReported) { failureReported = true; failed && failed(); } };
+                if (window.h5sdk) {
+                    console.log('==== h5_sdk showRewardAd ====');
+                    window.h5sdk.adBreak({
+                        type: "reward",
+                        name: "reward",
+                        beforeReward: (showAdFn) => { showAdFn(); },
+                        adViewed: reportSuccess,
+                        adDismissed: reportFailure,
+                        adBreakDone: (placementInfo) => {
+                            if (placementInfo.breakStatus !== "viewed") reportFailure();
+                        },
+                    });
+                } else {
+                    reportFailure();
+                }
+            },
+       
+            // This is a local presentation hook, not a platform-ready signal.
+            showGameLoadingError: function () {
+                if (window.loading && typeof window.loading.hide === 'function') window.loading.hide();
+            },
+            showGameLoadingCompleted: function () {
+                window.loading.hide();
+             if (!window.isUploadCY)
+                try {
+                    console.log("----uploadCYLoadComplete----");
+                    if(window.h5sdk){
+                        window.h5sdk.gameLoadingCompleted();
+                        window.isUploadCY = !0;
+                    }
+                   
+                } catch (e) {}
+               
+            },
+    
+            getGameName: function() {
+                let pathNameArr = window.location.pathname.split('/');
+                let gameNameIndex = pathNameArr.length > 3 ? 3 : 1;
+                return pathNameArr[gameNameIndex];
+            }
+        };
+    
+  
+    
+        // setTimeout(window.loading.hide, 8000);
+        window.h5_sdk.init(gGame.id);
+
+    
+
+
+        </script>
+    </body>
+</html>

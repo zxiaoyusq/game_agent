@@ -1,0 +1,32 @@
+{
+  "stage": "prototype",
+  "attempt": 1,
+  "scope": "完整JS静态差分与隔离几何合成测试，不是成品或原游戏动态验收",
+  "node": "v22.23.3",
+  "validationSourceFingerprint": "10addd0c917441c9e8011b0135ead057794ae42a19a4d9f7c1544d997a4bff1c",
+  "commands": [
+    {
+      "command": "node scripts/audit-fallback.cjs reference-inputs/fallback-before.js reference-inputs/fallback-fullpath.js --inventory",
+      "exitCode": 0,
+      "result": "四替换整份字节重构一致；两个差异函数块；转录忽略空白匹配上传函数",
+      "evidence": "evidence/exact-patch-proof.json"
+    },
+    {
+      "command": "node scripts/fallback-regression.cjs",
+      "exitCode": 0,
+      "passed": 31,
+      "failed": 0,
+      "evidence": "evidence/fallback-regression.json"
+    }
+  ],
+  "resolvedValidationFailure": {
+    "command": "node scripts/audit-fallback.cjs reference-inputs/fallback-before.js reference-inputs/fallback-fullpath.js --inventory",
+    "exitCode": 1,
+    "cause": "新增审查校验错误期待String.raw模板，但回归脚本实际是普通模板字面量，match返回null",
+    "resolution": "只修正审查脚本的转录提取方式与证据输入路径，再重新执行两个验证；游戏源码未修改"
+  },
+  "notExecuted": ["npm run build", "npm test", "npm run check", "完整游戏", "Chromium交互", "宿主或真机测试"],
+  "notExecutedReason": "当前仅prototype审查；未产出或验收成品工程，不伪造npm接口或浏览器日志",
+  "safetyGuarantee": "FAIL",
+  "limitations": ["测试通过包含成功复现风险", "模式与扫描为等价模型", "微基准不是设备性能", "报告和本证据文件在验证后补写，未再修改审查脚本或参考源码"]
+}

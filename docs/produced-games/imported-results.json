@@ -1,0 +1,43 @@
+{
+  "playable": 3,
+  "incomplete": 1,
+  "items": [
+    {
+      "id": "arrow-out-puzzle-lite",
+      "status": "passed",
+      "checks": [
+        "Cocos 场景可见，真实点击移出第一根箭头"
+      ],
+      "page_errors": [],
+      "missing_resources": [],
+      "external_requests": []
+    },
+    {
+      "id": "crazy-knifes",
+      "status": "passed",
+      "checks": [
+        "PlayCanvas 和物理资源正常，真实点击使飞刀跳跃并移动"
+      ],
+      "page_errors": [],
+      "missing_resources": [],
+      "external_requests": []
+    },
+    {
+      "id": "solitaire-klondike-classic",
+      "status": "passed",
+      "checks": [
+        "Phaser 纸牌界面正常，真实点击牌堆完成发牌；广告不可用时不发奖励且恢复游戏"
+      ],
+      "page_errors": [],
+      "missing_resources": [],
+      "external_requests": []
+    },
+    {
+      "id": "checkers-pocket",
+      "status": "missing_game_content",
+      "checks": [
+        "原包仅有广告示例，条目显示原因并禁用运行，不把测试按钮当成游戏"
+      ]
+    }
+  ]
+}

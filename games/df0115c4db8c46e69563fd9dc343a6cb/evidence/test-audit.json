@@ -1,0 +1,262 @@
+{
+  "passed": true,
+  "stage": "test",
+  "attempt": 1,
+  "date": "2026-11-11T10:09:41.995Z",
+  "node": "v22.23.3",
+  "browser": "153.0.8010.12",
+  "upstreamUnchanged": true,
+  "originalAndFinalDistMatch": true,
+  "distBytes": 963575,
+  "assetManifestEntries": 17,
+  "runtimeAssets": [
+    "assets/tiles/I-kingfisher.webp",
+    "assets/tiles/O-leopard.webp",
+    "assets/tiles/T-owl-card.webp",
+    "assets/tiles/J-bear.webp",
+    "assets/tiles/S-chameleon.webp",
+    "assets/tiles/L-fox.webp",
+    "assets/tiles/Z-rabbit.webp",
+    "assets/backgrounds/starfield.webp"
+  ],
+  "frames": [
+    {
+      "time": 3147.9,
+      "remaining": 163.4000000000001,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-00.png",
+      "sha256": "cc83b219dfe925b72e8d0a4a569193baa0ef2507dbe6d22e1e077590d9c8ec9b"
+    },
+    {
+      "time": 3164.7,
+      "remaining": 146.60000000000036,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-01.png",
+      "sha256": "0c21592d35c8b44fe01298b6bf046ef4b5fe0abd7717680c4533facbc35f2189"
+    },
+    {
+      "time": 3181.3,
+      "remaining": 130,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-02.png",
+      "sha256": "087484f51699e4d374ee7fa6d989e1e2c6b7ace53bacf4c426943db9e7a5d3dd"
+    },
+    {
+      "time": 3198,
+      "remaining": 113.30000000000018,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-03.png",
+      "sha256": "7405bf94d5a3dfee2a79ded000c9c8f27fd167a0323ff931eeeaa0e787c2db19"
+    },
+    {
+      "time": 3214.6,
+      "remaining": 96.70000000000027,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-04.png",
+      "sha256": "089dd39286766c2d360705ffa7034258a7134fe0c52e741026b552bc83e3f4e5"
+    },
+    {
+      "time": 3231.3,
+      "remaining": 80,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-05.png",
+      "sha256": "8cc1e599d28feb18688af2ab0eb8fd930712a3e5b24995986cb2318834026ba8"
+    },
+    {
+      "time": 3248,
+      "remaining": 63.30000000000018,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-06.png",
+      "sha256": "426753b39b3cbe86cd4eed7376bedf66c5f56d4b71f30f1774a928b00f10d30a"
+    },
+    {
+      "time": 3264.6,
+      "remaining": 46.70000000000027,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-07.png",
+      "sha256": "4f491f71ba07461de60b53a436f23e8732f1ca3886f4c26ff27212894390ae05"
+    },
+    {
+      "time": 3281.3,
+      "remaining": 30,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-08.png",
+      "sha256": "42dcfcdd274a0f62ec5b0376d66e3bdad913aee16e88ce5d626d9abb681a564a"
+    },
+    {
+      "time": 3298,
+      "remaining": 13.300000000000182,
+      "score": 326,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-09.png",
+      "sha256": "2bf3ba42a10833dfced15f283ed406c203d87cdedb00ed2f98b458b4b7949db5"
+    },
+    {
+      "time": 3314.6,
+      "remaining": 0,
+      "score": 326,
+      "rows": [],
+      "after": true,
+      "path": "evidence/clear-10.png",
+      "sha256": "53c3d835f954d2e03b95494e3c769a00c354f9163088fcf690df07899c44d7c2"
+    },
+    {
+      "time": 3831.3,
+      "remaining": 163.29999999999973,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-11.png",
+      "sha256": "5543deee08b4eca01020ae1e9f9a8d1466d287018f48d35390fe3a291d6d8849"
+    },
+    {
+      "time": 3848,
+      "remaining": 146.5999999999999,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-12.png",
+      "sha256": "a24b8cf65db6d6de3b94055f21f9ac6c9a210811e0d5cc53f6323905f1869862"
+    },
+    {
+      "time": 3864.6,
+      "remaining": 130,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-13.png",
+      "sha256": "72c73300e4f4017034ccb2d481e42c258739fac5b6e60849c1c3a4f96d59b8a7"
+    },
+    {
+      "time": 3881.3,
+      "remaining": 113.29999999999973,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-14.png",
+      "sha256": "d21cd98ae21b060d68acdcf3a1463f3df90872ae1b6971e3f88e27829a2db6a5"
+    },
+    {
+      "time": 3897.9,
+      "remaining": 96.69999999999982,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-15.png",
+      "sha256": "73f474aa305b8d9ca191b588e7415dbda6f9602ff383dc158ceda486c4ae5a1b"
+    },
+    {
+      "time": 3914.6,
+      "remaining": 80,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-16.png",
+      "sha256": "d8e8ca78f05dc9a1f675f8196bf61b6adfe9e787bd46ab5de14257a2eb499bbf"
+    },
+    {
+      "time": 3931.3,
+      "remaining": 63.29999999999973,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-17.png",
+      "sha256": "a1055ed12dbf79a913e43aa7d52774438c447b52f3c02dc3cfec76617d0b33fd"
+    },
+    {
+      "time": 3947.9,
+      "remaining": 46.69999999999982,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-18.png",
+      "sha256": "232a1a031b9e17f05fa6ff35d59f7625a32c8b2f18728de127612a095d400d30"
+    },
+    {
+      "time": 3964.5,
+      "remaining": 30.09999999999991,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-19.png",
+      "sha256": "f1699067548a0c93893f5349bab176a97ce8e95a5ade34e2a840d35deb4053cd"
+    },
+    {
+      "time": 3981.2,
+      "remaining": 13.400000000000091,
+      "score": 538,
+      "rows": [
+        18
+      ],
+      "path": "evidence/clear-20.png",
+      "sha256": "de49ebe63863e2973090ba1348c2843796c54e2333ddcc782663ccfcb89c643a"
+    }
+  ],
+  "newVideos": [
+    {
+      "path": "evidence/videos/page@0409f7ae484b520ea80bd4b973b2a4ee.webm",
+      "bytes": 1676348,
+      "sha256": "c8b47c95500d32066389fec42d7e018dc6e5ec0ade76167dff8dec9daaf5dbf3"
+    },
+    {
+      "path": "evidence/videos/page@d887ba4aa1c1e057d615a1432e014251.webm",
+      "bytes": 1876687,
+      "sha256": "dbd1da8ecad44ee42dd22b063b9538a7c069289ff3a40734d426f57dea7f34e0"
+    }
+  ],
+  "releases": [
+    {
+      "path": "releases/animal-tetris-play.zip",
+      "bytes": 965301,
+      "sha256": "7e358beb6a821c6a2b2c126a9854f529d6b6ff2827eaeb4c59a32f4b3f5bc71c"
+    },
+    {
+      "path": "releases/animal-tetris-source.zip",
+      "bytes": 5356134,
+      "sha256": "f62be82dbe2e81fda6189d8a2cf39ce66d7c87d58b91978909383a633d590792"
+    }
+  ],
+  "limitations": [
+    "仅Chromium自动化及模拟触屏，没有实体手机或Safari验收",
+    "原参考PNG读取为二进制文本，依据用户已核对描述与正式素材比对",
+    "源码包使用当前Node独立重建及测试；未执行清洁npm ci，也未验证全新机器浏览器安装"
+  ]
+}

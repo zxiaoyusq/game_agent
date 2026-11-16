@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95426,
+    "apiName":  "Robby Mini Games",
+    "targetName":  "Robby Mini Games",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Robby_Mini_Games.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260707/36f865753a40ef02f04004af68d8c196.zip",
+    "bundleMd5":  "36f865753a40ef02f04004af68d8c196",
+    "bundleSize":  17002788,
+    "updatedAt":  1783509597,
+    "gameLink":  "https://www.shyangyugame.com/Robby_Mini_Games/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95426",
+    "category":  "Arcade",
+    "rate":  8.1,
+    "gameType":  1,
+    "localFile":  "Robby_Mini_Games.zip",
+    "localBytes":  17002788,
+    "verifiedAt":  "2026-10-20T10:40:41",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

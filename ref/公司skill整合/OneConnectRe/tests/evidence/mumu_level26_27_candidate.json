@@ -1,0 +1,19 @@
+{
+  "start": {
+    "level": 26,
+    "timer": 177,
+    "seed": 4121366213,
+    "errors": []
+  },
+  "level27": {
+    "seed": 528325076,
+    "timer": 170
+  },
+  "final": {
+    "level": 28,
+    "progress": 28,
+    "tiles": 72,
+    "errors": []
+  },
+  "scope": "isolated level 26 test progress, natural 26 to 27 to fallback 28; not competitor unlock"
+}

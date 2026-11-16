@@ -1,0 +1,50 @@
+{
+  "id": "solitaire-klondike-classic",
+  "frames": [
+    {
+      "url": "http://127.0.0.1:24681/api/produced-games/solitaire-klondike-classic/play/index.html",
+      "state": {
+        "title": "经典接龙 · Solitaire Klondike Classic",
+        "text": "",
+        "canvas": 0,
+        "playcanvas": false,
+        "game": false,
+        "gameKeys": [],
+        "globals": [
+          "CrazyKnifesAhaHost"
+        ]
+      }
+    },
+    {
+      "url": "http://127.0.0.1:24681/api/produced-games/solitaire-klondike-classic/play/game/index.html",
+      "state": {
+        "title": "Solitaire - Classic Klondike",
+        "text": "PRACTICE · 1 / 3\n\nDraw a card\n\nTap the blue deck. In your game, it is at the bottom right.\n\nTry it here — your real game will not change.\n\nNextSkip for now\n\nReplay this practice in Settings → How To Play.",
+        "canvas": 1,
+        "playcanvas": false,
+        "game": true,
+        "gameKeys": [
+          "config",
+          "renderer",
+          "domContainer",
+          "canvas",
+          "context",
+          "isBooted",
+          "isRunning",
+          "events",
+          "anims",
+          "textures",
+          "cache",
+          "registry"
+        ],
+        "globals": [
+          "SolitairePlatform",
+          "SolitaireTutorial"
+        ]
+      }
+    }
+  ],
+  "remote": [],
+  "errors": [],
+  "missing": []
+}

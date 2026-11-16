@@ -1,0 +1,23 @@
+[
+  {
+    "at": 1794224840154,
+    "path": "evidence/test-audit/quick-rolling-restored-0.png",
+    "phase": "rolling",
+    "elapsed": 116.90000000000003,
+    "plan": null
+  },
+  {
+    "at": 1794224840296,
+    "path": "evidence/test-audit/quick-rolling-restored-1.png",
+    "phase": "rolling",
+    "elapsed": 233.50000000000006,
+    "plan": null
+  },
+  {
+    "at": 1794224840430,
+    "path": "evidence/test-audit/quick-rolling-restored-2.png",
+    "phase": "rolling",
+    "elapsed": 383.6000000000001,
+    "plan": null
+  }
+]

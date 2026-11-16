@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+if(!process.argv[2])throw Error('candidate game directory required');
+let frame,visibility,event;const arr=Array.from({length:4},()=>Array.from({length:4},()=>[0]));
+const tile={uid:7,x:0,y:0,instance_vars:[1,1,2,0],set_bbox_changed(){}};arr[2][1][0]=7;
+const rt={running_layout:{name:'game'},all_global_vars:[{name:'level',data:6},{name:'ROWS_COUNT',data:2},{name:'COLUMNS_COUNT',data:2},{name:'ITEM_SIZE',data:10},{name:'ITEM_SPACING',data:0}],types:{t0:{instances:[{cx:4,cy:4,arr}]},t5:{instances:[tile]}}};
+const document={hidden:false,addEventListener:(name,fn)=>{if(name==='visibilitychange')visibility=fn}};
+const window={document,cr:{plugins_:{Touch:function(){}}},requestAnimationFrame:fn=>frame=fn,cr_getC2Runtime:()=>rt,oneConnectLevels:{levels:[{level:6,movement:'gravity_down',gravity:{top:0,left:0,rows:2,cols:2}}]},oneConnectGravity:{compact:()=>[[0,0],[7,0]]},oneConnectHost:{emit(){}},addEventListener:(name,fn)=>{if(name==='oneconnect:event')event=fn}};window.window=window;window.cr.plugins_.Touch.prototype.cnds={OnTouchObject(){return true}};
+vm.runInNewContext(fs.readFileSync(path.join(process.argv[2],'gravity-runtime.js'),'utf8'),window);window.oneConnectGravityRuntime.install();event({detail:{type:'game.match'}});
+frame(0);frame(50);const before=tile.x;document.hidden=true;visibility();document.hidden=false;visibility();frame(10050);
+assert.equal(tile.x,before,'background time must not advance movement on resume');frame(10100);assert.notEqual(tile.x,before,'movement continues after resume');
+console.log('gravity animation excludes background time after RAF suspension PASS');

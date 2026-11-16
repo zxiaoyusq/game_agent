@@ -1,0 +1,407 @@
+[
+  {
+    "at": 1794223514292,
+    "phase": "moving",
+    "elapsed": 349.8999999999978,
+    "game": {
+      "version": 1,
+      "mode": "quick",
+      "seats": [
+        "human",
+        "off",
+        "human",
+        "off"
+      ],
+      "tokens": [
+        [
+          {
+            "pos": 28,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          }
+        ],
+        [],
+        [
+          {
+            "pos": 9,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          }
+        ],
+        []
+      ],
+      "unlocked": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "current": 2,
+      "dice": 2,
+      "winner": null,
+      "turn": 20,
+      "action": 20,
+      "rng": {
+        "dice": {
+          "value": 2108148170
+        },
+        "ai": {
+          "value": 2654435767
+        }
+      },
+      "last": {
+        "p": 0,
+        "index": 0,
+        "capture": null,
+        "home": false,
+        "extra": false
+      }
+    }
+  },
+  {
+    "at": 1794223514508,
+    "phase": "moving",
+    "elapsed": 549.8999999999978,
+    "game": {
+      "version": 1,
+      "mode": "quick",
+      "seats": [
+        "human",
+        "off",
+        "human",
+        "off"
+      ],
+      "tokens": [
+        [
+          {
+            "pos": 28,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          }
+        ],
+        [],
+        [
+          {
+            "pos": 9,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          }
+        ],
+        []
+      ],
+      "unlocked": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "current": 2,
+      "dice": 2,
+      "winner": null,
+      "turn": 20,
+      "action": 20,
+      "rng": {
+        "dice": {
+          "value": 2108148170
+        },
+        "ai": {
+          "value": 2654435767
+        }
+      },
+      "last": {
+        "p": 0,
+        "index": 0,
+        "capture": null,
+        "home": false,
+        "extra": false
+      }
+    }
+  },
+  {
+    "at": 1794223514696,
+    "phase": "moving",
+    "elapsed": 733.2999999999993,
+    "game": {
+      "version": 1,
+      "mode": "quick",
+      "seats": [
+        "human",
+        "off",
+        "human",
+        "off"
+      ],
+      "tokens": [
+        [
+          {
+            "pos": 28,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          }
+        ],
+        [],
+        [
+          {
+            "pos": 9,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          }
+        ],
+        []
+      ],
+      "unlocked": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "current": 2,
+      "dice": 2,
+      "winner": null,
+      "turn": 20,
+      "action": 20,
+      "rng": {
+        "dice": {
+          "value": 2108148170
+        },
+        "ai": {
+          "value": 2654435767
+        }
+      },
+      "last": {
+        "p": 0,
+        "index": 0,
+        "capture": null,
+        "home": false,
+        "extra": false
+      }
+    }
+  },
+  {
+    "at": 1794223514912,
+    "phase": "moving",
+    "elapsed": 949.8999999999978,
+    "game": {
+      "version": 1,
+      "mode": "quick",
+      "seats": [
+        "human",
+        "off",
+        "human",
+        "off"
+      ],
+      "tokens": [
+        [
+          {
+            "pos": 28,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          }
+        ],
+        [],
+        [
+          {
+            "pos": 9,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          }
+        ],
+        []
+      ],
+      "unlocked": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "current": 2,
+      "dice": 2,
+      "winner": null,
+      "turn": 20,
+      "action": 20,
+      "rng": {
+        "dice": {
+          "value": 2108148170
+        },
+        "ai": {
+          "value": 2654435767
+        }
+      },
+      "last": {
+        "p": 0,
+        "index": 0,
+        "capture": null,
+        "home": false,
+        "extra": false
+      }
+    }
+  },
+  {
+    "at": 1794223515125,
+    "phase": "moving",
+    "elapsed": 1149.8999999999978,
+    "game": {
+      "version": 1,
+      "mode": "quick",
+      "seats": [
+        "human",
+        "off",
+        "human",
+        "off"
+      ],
+      "tokens": [
+        [
+          {
+            "pos": 28,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          },
+          {
+            "pos": 0,
+            "finished": false
+          }
+        ],
+        [],
+        [
+          {
+            "pos": 9,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          },
+          {
+            "pos": 26,
+            "finished": false
+          }
+        ],
+        []
+      ],
+      "unlocked": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "current": 2,
+      "dice": 2,
+      "winner": null,
+      "turn": 20,
+      "action": 20,
+      "rng": {
+        "dice": {
+          "value": 2108148170
+        },
+        "ai": {
+          "value": 2654435767
+        }
+      },
+      "last": {
+        "p": 0,
+        "index": 0,
+        "capture": null,
+        "home": false,
+        "extra": false
+      }
+    }
+  }
+]

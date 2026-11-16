@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let event,frames=[],nodes=[];const star={uid:31,x:1,y:1,layer:{layerToCanvas:(x,y,axis)=>axis?x:y}};
+const runtime={running_layout:{name:'game'},canvas:{width:100,height:200,getBoundingClientRect:()=>({left:0,top:0,width:100,height:200})},types:{t24:{instances:[star]}},all_global_vars:[{name:'pause',data:0}]};
+const window={cr_getC2Runtime:()=>runtime,addEventListener(name,fn){if(name==='oneconnect:event')event=fn}};
+const document={hidden:false,body:{appendChild(n){nodes.push(n)}},createElement:()=>({style:{},setAttribute(){},remove(){this.removed=true}})};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/flystar_candidate.js','utf8'),{window,document,requestAnimationFrame:fn=>frames.push(fn),Number,Array,Math});
+window.oneConnectFlyStarCandidate.install();event({detail:{type:'candidate.link_points',detail:{pathScreenPoints:[{x:5,y:5},{x:10,y:10}]}}});
+assert.equal(nodes.length,2);runtime.all_global_vars[0].data=1;event({detail:{type:'game.level_fail'}});
+assert(nodes.every(n=>n.removed),'failed round removes its flying stars even when paused');
+event({detail:{type:'candidate.link_points',detail:{pathScreenPoints:[{x:5,y:5},{x:10,y:10}]}}});assert.equal(nodes.length,2,'late events cannot spawn stars in a failed round');
+console.log('failure removes flying stars instead of freezing them PASS');

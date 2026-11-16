@@ -1,0 +1,212 @@
+{
+  "result": "通过",
+  "browser": "153.0.8010.12",
+  "node": "v22.23.3",
+  "url": "http://127.0.0.1:36699/pipeline-star-check-20261109/",
+  "dist": {
+    "sha256": "e912426d50d31a560b3affd1149b00cb78dbaae6f7cf549c38004b0ab1a924cd",
+    "files": [
+      {
+        "path": "dist/app.js",
+        "bytes": 5271,
+        "sha256": "f9f5e67351443364f64fc5f6a3c1bd880d85891abd04e02f87938269fdd95fa2"
+      },
+      {
+        "path": "dist/assets/star.svg",
+        "bytes": 334,
+        "sha256": "7344a233421e96ed041f7a12fef32efc37e679707d6b32157e1e201d52035d53"
+      },
+      {
+        "path": "dist/assets/visual-config.json",
+        "bytes": 1226,
+        "sha256": "84c9b8b3bcb69b9d7f09175e8cfc7e8cb1f44596d395a388ac546d7d39e54d0d"
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 900,
+        "sha256": "9fa55075cbdd75df990eafb54a68adb2ee2a1dc37b59155730fbeb12cca29537"
+      },
+      {
+        "path": "dist/rules.js",
+        "bytes": 1879,
+        "sha256": "0e892f2597f79cb7cde73bc98ecd6d64982bb0c51dc05608015b774b955e3c85"
+      },
+      {
+        "path": "dist/style.css",
+        "bytes": 825,
+        "sha256": "a64bd6e3e2d784495756a2e94c0d2caf1d75701651cb62806981ded18fad62d9"
+      }
+    ]
+  },
+  "passed": [
+    "R7/A3：正常速度rAF缩放采样与桌面连续录像",
+    "R1–R6/R8：鼠标完整循环、空白/右键/拖出/动画锁、胜利重开、刷新与窗口调整、旧局释放",
+    "R2/R10：非主指针、取消及隐藏返回DOM边界模拟",
+    "R9：损坏/版本存档回退与模拟写入失败，真实写成功后清除提示",
+    "R7：减少动态效果立即可操作且再次完整获胜",
+    "R5/R6：390×844 Chromium触摸五次获胜、重开与第二局",
+    "R5/R6：320×568 Chromium触摸五次获胜、重开与第二局",
+    "资源失败显示诊断，解除故障后真实重试可玩（独立故障场景）",
+    "R11：独立子路径最终dist、真实资源请求、零外部请求/控制台错误、构建不变"
+  ],
+  "errors": [],
+  "animationFrames": [
+    {
+      "time": 402.3,
+      "scale": 1
+    },
+    {
+      "time": 418.9,
+      "scale": 1
+    },
+    {
+      "time": 435.6,
+      "scale": 1
+    },
+    {
+      "time": 452.2,
+      "scale": 0.9
+    },
+    {
+      "time": 468.9,
+      "scale": 0.9465700804607952
+    },
+    {
+      "time": 485.6,
+      "scale": 1.000848739065754
+    },
+    {
+      "time": 502.2,
+      "scale": 1.0342772220510241
+    },
+    {
+      "time": 518.9,
+      "scale": 1.0518406344757256
+    },
+    {
+      "time": 535.6,
+      "scale": 1.0587790667913852
+    },
+    {
+      "time": 552.3,
+      "scale": 1.0599980743554125
+    },
+    {
+      "time": 568.9,
+      "scale": 1.02776048220048
+    },
+    {
+      "time": 585.6,
+      "scale": 1.0081507794745852
+    },
+    {
+      "time": 602.2,
+      "scale": 1.0009730980841165
+    },
+    {
+      "time": 618.9,
+      "scale": 1
+    },
+    {
+      "time": 635.6,
+      "scale": 1
+    },
+    {
+      "time": 652.2,
+      "scale": 1
+    },
+    {
+      "time": 669,
+      "scale": 1
+    },
+    {
+      "time": 685.6,
+      "scale": 1
+    },
+    {
+      "time": 702.3,
+      "scale": 1
+    },
+    {
+      "time": 718.9,
+      "scale": 1
+    },
+    {
+      "time": 735.6,
+      "scale": 1
+    },
+    {
+      "time": 752.3,
+      "scale": 1
+    },
+    {
+      "time": 768.9,
+      "scale": 1
+    },
+    {
+      "time": 785.6,
+      "scale": 1
+    },
+    {
+      "time": 802.2,
+      "scale": 1
+    },
+    {
+      "time": 818.9,
+      "scale": 1
+    },
+    {
+      "time": 835.6,
+      "scale": 1
+    },
+    {
+      "time": 852.3,
+      "scale": 1
+    },
+    {
+      "time": 868.9,
+      "scale": 1
+    },
+    {
+      "time": 885.6,
+      "scale": 1
+    },
+    {
+      "time": 902.3,
+      "scale": 1
+    },
+    {
+      "time": 918.9,
+      "scale": 1
+    },
+    {
+      "time": 935.6,
+      "scale": 1
+    },
+    {
+      "time": 952.3,
+      "scale": 1
+    },
+    {
+      "time": 968.9,
+      "scale": 1
+    },
+    {
+      "time": 985.6,
+      "scale": 1
+    },
+    {
+      "time": 1002.2,
+      "scale": 1
+    },
+    {
+      "time": 1018.9,
+      "scale": 1
+    }
+  ],
+  "limitations": [
+    "手机为Chromium视口/触摸模拟，非真机",
+    "取消、多指主标志、隐藏返回及存储故障为明确的DOM/API边界模拟",
+    "录像为正常运行速度；未进行真人体验或外网发布验收"
+  ]
+}

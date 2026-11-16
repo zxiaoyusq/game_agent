@@ -1,0 +1,4377 @@
+{
+  "version": 1,
+  "framework": "Canvas 2D",
+  "stage": "美术交接，尚未运行集成",
+  "assets": [
+    {
+      "path": "public/assets/background-edited.png",
+      "runtime_path": "assets/background-edited.png",
+      "sha256": "5c4efaae45391a01d7a701a0f96e5a6d0a2f04c53a7781fa2689bac80c00db3f",
+      "bytes": 92903,
+      "usage": "唯一新背景，原紫色低对比菱格参考编辑并中心裁切等比装配，非整屏游戏图",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/51/5115ecbc-d727-4655-84ac-e700038972d5.b2713.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "original_frame": "original_img_beijing",
+        "original_crop": [
+          1,
+          1,
+          719,
+          1600
+        ],
+        "method": "真实参考编辑后确定性裁切等比装配",
+        "provider": "openai-image-api",
+        "model": "gpt-image-2",
+        "reference": "public/assets/background-original.png",
+        "reference_sha256": "8d53617e1bb1f3c9a2d68195ff34713340a23e4d9d98558403ca00d62a17476f",
+        "original_candidate": "public/assets/background-api-candidate.webp",
+        "original_candidate_sha256": "84acdfc666a579d2ccbebadd57e098868a0e00bf92949eb9582d6e78ce0d7664",
+        "crop": [
+          167,
+          0,
+          690,
+          1536
+        ],
+        "target_size": [
+          719,
+          1600
+        ],
+        "prompt": "仅精修输入的原版紫色菱格背景纹理，不重新设计。保持原图竖向构图、菱格方向、大小和分布，以及上下渐变位置；仍为深紫低对比的手游底纹，只小幅改善色阶平滑和柔和丝缎质感，变化克制、接近原图。全画幅不透明，边缘连续，无黑边，无大明暗块。不要风景、建筑、人物、文字、标识、棋盘、骰子、卡片、边框、强光或新增装饰。背景是独立纹理，不包含任何游戏HUD。"
+      },
+      "classification": "api-edited",
+      "input_format": "WEBP",
+      "originalSize": [
+        719,
+        1600
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "output_format": "PNG",
+      "size": [
+        719,
+        1600
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/board-cross.png",
+      "runtime_path": "assets/board-cross.png",
+      "sha256": "d78cc8bfb4479622b2670d58e986c873d049470b82df5758f23c8d176c222d49",
+      "bytes": 126222,
+      "usage": "透明十字棋盘与四色中心，独立叠加营地和标记",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_center_blue",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1445,
+        1187,
+        586,
+        585
+      ],
+      "originalSize": [
+        586,
+        585
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        586,
+        585
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-blue.png",
+      "runtime_path": "assets/camp-blue.png",
+      "sha256": "44036eb66f8698eeb9dcec3b72b55c6ee012f1e7dd6bf76c9f741ebac7282712",
+      "bytes": 41112,
+      "usage": "蓝色左下圆营地",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/51/5115ecbc-d727-4655-84ac-e700038972d5.b2713.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c",
+        "original_frame": "original_img_base_bg_lan",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1,
+        1603,
+        233,
+        233
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        233,
+        233
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-red.png",
+      "runtime_path": "assets/camp-red.png",
+      "sha256": "54369ab9ce71e400fe66c8123aeee673c7f387dc2e107f442d23d91206442607",
+      "bytes": 36400,
+      "usage": "红色左上圆营地",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_base_bg_hong",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1405,
+        1774,
+        233,
+        233
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        233,
+        233
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-green.png",
+      "runtime_path": "assets/camp-green.png",
+      "sha256": "2683469348f1a716f9e800341137acaaaeb32564d24a80e5dd8ccf35eeb66bfb",
+      "bytes": 38675,
+      "usage": "绿色右上圆营地",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/51/5115ecbc-d727-4655-84ac-e700038972d5.b2713.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c",
+        "original_frame": "original_img_base_bg_lv",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        236,
+        1603,
+        233,
+        233
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        233,
+        233
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/camp-yellow.png",
+      "runtime_path": "assets/camp-yellow.png",
+      "sha256": "e456eba80e9973d406387710fef03884f56870f09522b8dc6a54ce090775685b",
+      "bytes": 40328,
+      "usage": "黄色右下圆营地",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_base_bg_huang",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1640,
+        1774,
+        233,
+        233
+      ],
+      "originalSize": [
+        233,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        233,
+        233
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-blue.png",
+      "runtime_path": "assets/token-blue.png",
+      "sha256": "6976cb326f61c12931f6caef84160c19074862ec5eea3bf3204780a6f163bffe",
+      "bytes": 4436,
+      "usage": "蓝色亮面棋子，选非旋转原帧",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_chess_lan",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1287,
+        1851,
+        32,
+        53
+      ],
+      "originalSize": [
+        32,
+        53
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        32,
+        53
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-red.png",
+      "runtime_path": "assets/token-red.png",
+      "sha256": "6ffb560ca4eefbec55e2cd02c56af02e07cdd8accc03fb548ff663c8b952fff9",
+      "bytes": 4795,
+      "usage": "红色亮面棋子，选非旋转原帧",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/12/1289e33a-9cbc-4f3b-9d95-b399c7ed7970.f99c5.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_chess_hong",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        154,
+        1896,
+        32,
+        52
+      ],
+      "originalSize": [
+        32,
+        52
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        32,
+        52
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-green.png",
+      "runtime_path": "assets/token-green.png",
+      "sha256": "5637d1d4f56fb14b0fb44e33200f6a5041751790593572e7c5331497ab80fa6e",
+      "bytes": 4774,
+      "usage": "绿色亮面棋子",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+        "original_frame": "original_img_chess_lv",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        932,
+        117,
+        33,
+        53
+      ],
+      "originalSize": [
+        33,
+        53
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        33,
+        53
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/token-yellow.png",
+      "runtime_path": "assets/token-yellow.png",
+      "sha256": "e9056447ac86978c54f7c075c42e9b9b5d15cbf79b4e119e95630f85e8c98c93",
+      "bytes": 4851,
+      "usage": "黄色亮面棋子",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_chess_huang",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1875,
+        1947,
+        33,
+        53
+      ],
+      "originalSize": [
+        33,
+        53
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        33,
+        53
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/marker-star.png",
+      "runtime_path": "assets/marker-star.png",
+      "sha256": "a74c5bb716c035e42fe1ef108c6d8851d39fa7682e2a8246380d717af069c205",
+      "bytes": 1741,
+      "usage": "P8/21/34/47安全星，保留软alpha最大253",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_wujiaoxing",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        227,
+        1896,
+        27,
+        26
+      ],
+      "originalSize": [
+        27,
+        26
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        27,
+        26
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-blue.png",
+      "runtime_path": "assets/arrow-blue.png",
+      "sha256": "742794d71b72b026c25cfe5c6fdf48a7188af6db6fc774d94547364f5e72c620",
+      "bytes": 805,
+      "usage": "原蓝箭头纹理，按确认原型放P0，不沿用原运行P50",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_sanjiao_lan",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1321,
+        1925,
+        17,
+        15
+      ],
+      "originalSize": [
+        17,
+        15
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        17,
+        15
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-red.png",
+      "runtime_path": "assets/arrow-red.png",
+      "sha256": "ffbff371162a4160a90ac3491f2c0b62066d74ecc25f499bc326d5f36e39668b",
+      "bytes": 848,
+      "usage": "原红箭头纹理，按确认原型放P13，不沿用原运行P11",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_sanjiao_hong",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1405,
+        1723,
+        15,
+        17
+      ],
+      "originalSize": [
+        15,
+        17
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        15,
+        17
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-green.png",
+      "runtime_path": "assets/arrow-green.png",
+      "sha256": "60fb2108ff098b928cf00f8c18492f372b14fc4da98a2fa7389f19b9348c30a0",
+      "bytes": 820,
+      "usage": "原绿箭头纹理，按确认原型放P26，不沿用原运行P24",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_sanjiao_lv",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1354,
+        1886,
+        17,
+        15
+      ],
+      "originalSize": [
+        17,
+        15
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        17,
+        15
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/arrow-yellow.png",
+      "runtime_path": "assets/arrow-yellow.png",
+      "sha256": "d4845bac81aa0353f799a9d7cbc89dd82eda0c049984afafd5de9158cb369e0a",
+      "bytes": 812,
+      "usage": "原黄箭头纹理，按确认原型放P39，不沿用原运行P37",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+        "original_frame": "original_img_sanjiao_huang",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1982,
+        1947,
+        15,
+        17
+      ],
+      "originalSize": [
+        15,
+        17
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        15,
+        17
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-1.png",
+      "runtime_path": "assets/dice-face-1.png",
+      "sha256": "8ad6369dd9347810a89fe3e51e45388cf4957695c726c44c39783d32f5efa7ca",
+      "bytes": 13086,
+      "usage": "最终一点骰面，只显示已提交骰子结果",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+        "original_frame": "original_dice_points_1",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1198,
+        390,
+        104,
+        106
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "offset": [
+        4,
+        3
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "trimmed-sprite",
+      "output_format": "PNG",
+      "size": [
+        104,
+        106
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-2.png",
+      "runtime_path": "assets/dice-face-2.png",
+      "sha256": "0a972149694ff7e0bc40d862c3810645d92a44d888081913701fa41e42bc7917",
+      "bytes": 10587,
+      "usage": "最终二点骰面",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+        "original_frame": "original_dice_points_2",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1304,
+        390,
+        104,
+        106
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "offset": [
+        4,
+        3
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "trimmed-sprite",
+      "output_format": "PNG",
+      "size": [
+        104,
+        106
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-3.png",
+      "runtime_path": "assets/dice-face-3.png",
+      "sha256": "aa6effe3e11020ce3552e5edbf399469d41caf9ad63541035e7268c6c785463e",
+      "bytes": 12613,
+      "usage": "最终三点骰面",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+        "original_frame": "original_dice_points_3",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1221,
+        115,
+        104,
+        106
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "offset": [
+        4,
+        3
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "trimmed-sprite",
+      "output_format": "PNG",
+      "size": [
+        104,
+        106
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-4.png",
+      "runtime_path": "assets/dice-face-4.png",
+      "sha256": "bd8d2951142f5a4f5b2bdd1c9de41a9e28f7c0115271fc68ee711da322b6d5f7",
+      "bytes": 14392,
+      "usage": "最终四点骰面",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+        "original_frame": "original_dice_points_4",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1324,
+        1,
+        104,
+        106
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "offset": [
+        4,
+        3
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "trimmed-sprite",
+      "output_format": "PNG",
+      "size": [
+        104,
+        106
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-5.png",
+      "runtime_path": "assets/dice-face-5.png",
+      "sha256": "40995d730b667d5ef0e3e11562291806286d1d744d0bf3a8b732a53e74985416",
+      "bytes": 14610,
+      "usage": "最终五点骰面",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+        "original_frame": "original_dice_points_5",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1312,
+        223,
+        104,
+        106
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "offset": [
+        4,
+        3
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "trimmed-sprite",
+      "output_format": "PNG",
+      "size": [
+        104,
+        106
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/dice-face-6.png",
+      "runtime_path": "assets/dice-face-6.png",
+      "sha256": "41c3f7534c6e1ce1e082df382cf4df947004d4ad2b5c9bcbc65a626030d1a516",
+      "bytes": 15049,
+      "usage": "最终六点骰面",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "atlas_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+        "original_frame": "original_dice_points_6",
+        "method": "原版imported图集精确crop后processed PNG，无旋转无缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1327,
+        109,
+        104,
+        106
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "offset": [
+        4,
+        3
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "trimmed-sprite",
+      "output_format": "PNG",
+      "size": [
+        104,
+        106
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-human.png",
+      "runtime_path": "assets/hud-human.png",
+      "sha256": "6a6f723e77f858f597d48b10accf400205f112d9b62e86331bad5730f8c00af3",
+      "bytes": 17337,
+      "usage": "人类玩家头像，可在不同席位复用，不冒称四个独立角色",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/b3/b33f57b3-f952-4bd8-bf77-e4c4ecf486f4.eb0dc.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/55/55eba9c0-254f-4658-9c9a-45a3d0bd6bb0.2ccfe.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "9380a5de1a4f81848e462108dce75a2811a11c25a4c9e8332f2223dfe238636d",
+        "original_frame": "img_player",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        96,
+        121
+      ],
+      "originalSize": [
+        96,
+        121
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        96,
+        121
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-bot.png",
+      "runtime_path": "assets/hud-bot.png",
+      "sha256": "d2502c9b10cc30934a36ef0761697cf89010dbcd9b9a5155b94e01294acd8c1d",
+      "bytes": 20778,
+      "usage": "AI玩家头像",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/bf/bfa16342-e0ba-4813-893e-539a4b89b067.4700c.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/1a/1ad19104-fa04-4227-b955-73bb4dca4477.7d0f7.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "7e0cbecbbef4bc30c02897fd5a832073bc546ead14a17db587ea3482fb8d8803",
+        "original_frame": "img_computer",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        121,
+        128
+      ],
+      "originalSize": [
+        121,
+        128
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        121,
+        128
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-blue.png",
+      "runtime_path": "assets/hud-seat-blue.png",
+      "sha256": "e209ec97a5d10e9a9a72c3c1727aa2d69aff1e5b8f98261c41880dc393a16a66",
+      "bytes": 8463,
+      "usage": "蓝队146方形座框，上下小HUD用",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/72/726d79af-6182-424c-ae0d-091959a73db0.5bd03.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "80d4c6cbeb7a291238b1fca83f89cbc6a3b3decdd9a72974785a9ceacdf7ac28",
+        "original_frame": "img_bg_lan",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        146,
+        146
+      ],
+      "originalSize": [
+        146,
+        146
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        146,
+        146
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-red.png",
+      "runtime_path": "assets/hud-seat-red.png",
+      "sha256": "3788e0a4abfd73a8f5961d95eeabb3b49d80431b2a83c023e7f389d5e275e678",
+      "bytes": 10158,
+      "usage": "红队146方形座框",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/00/00014f84-889c-4369-9528-f89aa5d3d07b.b84bd.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/84/84ac6f9e-0540-416d-b5db-54e29b3de7ed.b6edb.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "ee3722314ffc1ab1156ed89c587a9db490938f0a870aece5e03ee2d05fbfab59",
+        "original_frame": "img_bg_hong",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        146,
+        146
+      ],
+      "originalSize": [
+        146,
+        146
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        146,
+        146
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-green.png",
+      "runtime_path": "assets/hud-seat-green.png",
+      "sha256": "737fa10cd89f38e69ef436dd177eb2386dd6941e77ade035375cc18f225934c5",
+      "bytes": 8356,
+      "usage": "绿队146方形座框",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/c0/c0e17be1-c9df-45e2-89b3-18f681954af2.5ad39.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "14a74cb4ac1d2fb728ed91d328c1648f46a465653cb044385b82f56399db8653",
+        "original_frame": "img_bg_lv",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        146,
+        146
+      ],
+      "originalSize": [
+        146,
+        146
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        146,
+        146
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/hud-seat-yellow.png",
+      "runtime_path": "assets/hud-seat-yellow.png",
+      "sha256": "fc4119765e414b370c6a9405d2e7e41fc4005a0e0ea93847f75fddb15a62ef84",
+      "bytes": 8067,
+      "usage": "黄队146方形座框",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/1f/1f6ee478-9032-4fc3-ba67-f2d3628cb4db.befde.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "779a79e973f10284c90d0b58cf326f33d8663e181f16f319741a66d2d8ec9b26",
+        "original_frame": "img_bg_huang",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        146,
+        146
+      ],
+      "originalSize": [
+        146,
+        146
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        146,
+        146
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/effect-landing.png",
+      "runtime_path": "assets/effect-landing.png",
+      "sha256": "b9b05ace83746fed12b8da0eafb1620854db50ceecba08d32ab8badef4fdca9a",
+      "bytes": 3561,
+      "usage": "43全画布落点圈，整图绘制不二次trim",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/54/543cb889-41ca-489b-86bd-d9f890b49f66.3f702.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0d/0d4dc8f4b.c2128.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "7633d7fec1f246ce7f4e3af555a3738ffa25d0f02820e8bde8ecd45c8ecebdcd",
+        "original_frame": "img_green_circle",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        1,
+        0,
+        42,
+        43
+      ],
+      "originalSize": [
+        43,
+        43
+      ],
+      "source_offset": [
+        0.5,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        43,
+        43
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/effect-selected.png",
+      "runtime_path": "assets/effect-selected.png",
+      "sha256": "ee04f6784095c3eff72e42d7833276da16f5a4015dd9d7f29b740b7a0f641a51",
+      "bytes": 4922,
+      "usage": "50全画布合法棋子/选择提示圈",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/5e/5e3e6465-c39e-42a7-95bc-49258ba0db4e.3ba34.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/09/09dc22791.bcd67.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "5a4d6f726806329ee4eb057794ae85ac1e930bf51fb83a4b9eeee5969f592373",
+        "original_frame": "img_chess_circle",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        50,
+        50
+      ],
+      "originalSize": [
+        50,
+        50
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        50,
+        50
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-start.png",
+      "runtime_path": "assets/ui-start.png",
+      "sha256": "4923b6853f678aeac87aa41112091fe355a86336d76186baa13f47ca3cf22254",
+      "bytes": 5212,
+      "usage": "原蓝色无字按钮底，Canvas绘制中文开始",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/6f/6f2a6e4f-be11-41fe-a6a4-23749aa59dad.2f6a0.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/05d8d8daf.f2af0.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "7fd11a918ddf705de967fc807c80d74aa1f50ce5f1eb7a0de69954b06e4570a7",
+        "original_frame": "img_btn_play",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        194,
+        79
+      ],
+      "originalSize": [
+        194,
+        79
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        194,
+        79
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-confirm.png",
+      "runtime_path": "assets/ui-confirm.png",
+      "sha256": "c42c74fecc2374877d2fcb2faf8b1b4b57b53eb04d4b3c1b517753baefa396b4",
+      "bytes": 6603,
+      "usage": "原绿色无字按钮底，Canvas绘制中文确认/再来一局",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/92/92c2ce21-37a9-40b8-8bf3-3248eb229fa4.ee8cf.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/47/479a1743-3069-4923-b574-03529c44dec0.96d14.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "6b6e170e1f2bb85f848a7108eb6d847cf19c3155a5f4da62562ce848b171bb79",
+        "original_frame": "img_btn_ok",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        195,
+        78
+      ],
+      "originalSize": [
+        195,
+        78
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        195,
+        78
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-close.png",
+      "runtime_path": "assets/ui-close.png",
+      "sha256": "590841fe0ee476dda72a7d77a839998b165cb674fc836b6fed5fd6f28fc1409a",
+      "bytes": 7717,
+      "usage": "关闭设置，语义按钮命中不得小于44CSSpx",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/cd/cdb20014-a64f-4f2e-82be-b0eb1da662c9.04750.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/f8/f8284f60-61f8-473e-a364-d8520748ee05.6de20.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "1c6f24782b9ba8b04aba4f161e220f8ba69865ff422471b6ac11e0851fdcf781",
+        "original_frame": "img_close",
+        "method": "原版imported native整画布规范为processed PNG，不trim不缩放"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "source_rect": [
+        0,
+        0,
+        59,
+        62
+      ],
+      "originalSize": [
+        59,
+        62
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        59,
+        62
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/board-frame.png",
+      "runtime_path": "assets/board-frame.png",
+      "sha256": "950bb24b92cf3703a48ba7fe11e2fde5c8154cd8aa6492e8afc1c7ce2da94766",
+      "bytes": 10509,
+      "usage": "低透明外框，原alpha0…51，不填白不二次降alpha",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/47/47eadf9e-1cef-4c7c-88d2-7c09e86d3d9d.7ebe4.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "e4b4f28f9681621024ff0ebb3cad9cce1c32ef59a07011465b7af68d07e804e9",
+        "original_frame": "矩形 15",
+        "method": "原版imported native整画布规范为processed PNG"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        628,
+        628
+      ],
+      "source_rect": [
+        0,
+        0,
+        628,
+        628
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "capInsets": [
+        57,
+        28,
+        57,
+        43
+      ],
+      "rotated": false,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        628,
+        628
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/ui-settings.png",
+      "runtime_path": "assets/ui-settings.png",
+      "sha256": "4aca2c80941e306d303d4c1331aa3cd26545be762fbb0b10da35197b6440af3d",
+      "bytes": 6876,
+      "usage": "70全画布原设置按钮，不再裁68或加偏移",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/86/86c887a9-2f38-49b0-8ea5-3864c0a7f386.78749.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "6593a35d6e63d37a35003539ff59b6ce20112377f89ba4e925fee9c3f1e0feca",
+        "original_frame": "settings",
+        "method": "原版imported native整画布规范为processed PNG"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        70,
+        70
+      ],
+      "source_rect": [
+        1,
+        1,
+        68,
+        68
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "rotated": false,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        70,
+        70
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-00.png",
+      "runtime_path": "assets/roll-00.png",
+      "sha256": "9040e9b44c1823eacc45193bcceb003ebe45cb35deb65b09a8489f3db383b755",
+      "bytes": 18480,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧00",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c7/c71fb354-27a0-43d9-be42-30df1cfe9bda.26f6a.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "ec14c8260494e0541778a316caa565cc8914d899996970cbdb752c8829b115f3",
+        "original_frame": "合成_00000",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        63,
+        56,
+        102,
+        103
+      ],
+      "source_offset": [
+        4,
+        2.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-01.png",
+      "runtime_path": "assets/roll-01.png",
+      "sha256": "cb9c3ad8df2a251502e28b9335659dcca7233e5016803cc0bdd5a348bf79a0c3",
+      "bytes": 23869,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧01",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/cd/cdc29db7-0466-4795-9a4c-99c8252e74a7.cc6df.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "4d22cfa7ca59c1a4e05cbf0f14318220d8c0458444662ceec8134f745585032f",
+        "original_frame": "合成_00001",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        59,
+        49,
+        114,
+        120
+      ],
+      "source_offset": [
+        6,
+        1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-02.png",
+      "runtime_path": "assets/roll-02.png",
+      "sha256": "cf03e2eb71b77348b8d9058f9c414f5539dee5e036bef1841c9561c6aaec547a",
+      "bytes": 25742,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧02",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6f/6f938e16-ea19-4db9-81db-db8733859724.3004b.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "cec5646f0d58a37c90e327c20eb51c6a0ef5c53fd69b351deaa35f46685cfd85",
+        "original_frame": "合成_00002",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        53,
+        51,
+        122,
+        113
+      ],
+      "source_offset": [
+        4,
+        2.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-04.png",
+      "runtime_path": "assets/roll-04.png",
+      "sha256": "bd3d4c8bb6b2602213e4e7a8c670cc3e349585b916752c19f4a02f72886eb284",
+      "bytes": 26597,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧04",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/d7/d76ed11e-c2b4-4343-9b8d-fbbb19773e91.d0dff.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "bff7b207c8c5bbd8a900a488ad31dcb19b6fa2ce80d7efd52212e107a826bbdf",
+        "original_frame": "合成_00004",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        57,
+        49,
+        117,
+        120
+      ],
+      "source_offset": [
+        5.5,
+        1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-05.png",
+      "runtime_path": "assets/roll-05.png",
+      "sha256": "b96fd2765063bdafa523351897573187ea1a4fd29107b36e9659433a0cb159d0",
+      "bytes": 23620,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧05",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ff/ff06843e-2ac1-4f3d-81ac-63f3c347c751.f1a64.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "c919f135a8675778a6c6992731187db52c2aa028ee4ce3ca685a6e6f35a3dec5",
+        "original_frame": "合成_00005",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        53,
+        51,
+        123,
+        116
+      ],
+      "source_offset": [
+        4.5,
+        1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-06.png",
+      "runtime_path": "assets/roll-06.png",
+      "sha256": "1e96ac932dd4bdf2f0942dd5172b42df4edb6698866fd6a07fdd210104d60e02",
+      "bytes": 23969,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧06",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/e9/e91ab32f-3fac-4498-a97d-42a459e34480.30715.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "621fe6df1ce39fd0bdc9fce49ea4a0bc774f60040e241b6576bb3374e171fcdc",
+        "original_frame": "合成_00006",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        58,
+        48,
+        117,
+        121
+      ],
+      "source_offset": [
+        6.5,
+        1.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-08.png",
+      "runtime_path": "assets/roll-08.png",
+      "sha256": "4b602063e4448efaa3233f82b83b2560a68a3796a2e0ec0f9c748570f63553ec",
+      "bytes": 25229,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧08",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/21/21ca532c-3f74-4f75-9793-cc887ccad0f1.f1297.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "0308e74c262c193b0d9750c118da0f116ba8150077bbfd85d0b4131713748b68",
+        "original_frame": "合成_00008",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        59,
+        52,
+        115,
+        114
+      ],
+      "source_offset": [
+        6.5,
+        1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-10.png",
+      "runtime_path": "assets/roll-10.png",
+      "sha256": "21666630075240bfa3dd9dcf10830aacf0a58daedb11b57ffab65206cf5c4154",
+      "bytes": 25896,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧10",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3f/3f16cddb-7296-4f31-98f2-c6e0a76d5ab4.147fe.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "c5d275b9eb4a13e081a57108077f95eb6bae7247d1034b8fe0ba3a3b7d2f1210",
+        "original_frame": "合成_00010",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        60,
+        52,
+        114,
+        113
+      ],
+      "source_offset": [
+        7,
+        1.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-11.png",
+      "runtime_path": "assets/roll-11.png",
+      "sha256": "f91648e74b3a1bce39a3be79ff38d55e258dc988285ba7e6d1be7bf97ddf6775",
+      "bytes": 26068,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧11",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe138668-1db3-4c47-90f7-1c34a45afc07.fd998.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "9f4e8207af38bdfbbc06c860c8c4ba9b79885926a552157568d69ac660040b7d",
+        "original_frame": "合成_00011",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        52,
+        49,
+        123,
+        115
+      ],
+      "source_offset": [
+        3.5,
+        3.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-12.png",
+      "runtime_path": "assets/roll-12.png",
+      "sha256": "605b4670ad626b3b86f44ddec4f913fab9b7df373a27a2331b77d7ba4af39f59",
+      "bytes": 24117,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧12",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/84/8438fbd0-f6f2-4a5a-bbab-086eb5560c2e.ec193.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "c9e655453c0082d0b997c41d49a3fec0cd55e2872f2f92dba9bf9e679db4c476",
+        "original_frame": "合成_00012",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        54,
+        54,
+        117,
+        114
+      ],
+      "source_offset": [
+        2.5,
+        -1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-13.png",
+      "runtime_path": "assets/roll-13.png",
+      "sha256": "cc2dbb0b90e2c7d23f55fb5d66ac5819157f012e499d7066514d5005580c0272",
+      "bytes": 23266,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧13",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe5c78f1-687f-4ba4-a6ec-f97612d74e28.ed7fa.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "a01462573679d6a40107715092b284a49b00974a5a94a0d5a933cf8efdfad535",
+        "original_frame": "合成_00013",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        54,
+        54,
+        117,
+        114
+      ],
+      "source_offset": [
+        2.5,
+        -1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-14.png",
+      "runtime_path": "assets/roll-14.png",
+      "sha256": "50e764b6e97e34fd5de63fb64d0b61d793e58aaddac39d97737e3ada48039480",
+      "bytes": 23674,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧14",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3c/3c1664a0-7332-4c57-8eb1-eadb86c9aa4f.256db.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "b5843990b2750a424d000c65ec55e8e9e38491a786ccebdd8384347d8ebffa56",
+        "original_frame": "合成_00014",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        62,
+        53,
+        110,
+        113
+      ],
+      "source_offset": [
+        7,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-15.png",
+      "runtime_path": "assets/roll-15.png",
+      "sha256": "5dbc45b38fe2f83469e4f4eb38614fe5c95cb2d5adc4f9df30a3ac236bac7005",
+      "bytes": 23818,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧15",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ab/abc88f6e-cc72-42b4-a301-85e688deaf78.3cf42.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "2c8c5665a2e6462721924a6c3845c1cd38a2728ae4a594ec8eb317b7553a6737",
+        "original_frame": "合成_00015",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        51,
+        46,
+        122,
+        121
+      ],
+      "source_offset": [
+        2,
+        3.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-16.png",
+      "runtime_path": "assets/roll-16.png",
+      "sha256": "2c28e8f5ef93244fe8fea149d36ca5e24d0cc6646f2000307534b934893f29b4",
+      "bytes": 25517,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧16",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/7c/7cfa4f42-9a27-477a-918e-22f769deafda.f44a9.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "93354af6ed83362d91292f6d962ef4433dada2ba768f970243c2461264bebfbf",
+        "original_frame": "合成_00016",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        56,
+        47,
+        119,
+        123
+      ],
+      "source_offset": [
+        5.5,
+        1.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-17.png",
+      "runtime_path": "assets/roll-17.png",
+      "sha256": "9c2a6de922639228852aa55647337c63b831dba3fb10af16f1cc9795b0f10aa4",
+      "bytes": 23041,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧17",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6a/6ac21c52-ccdc-405d-be8e-470fc69e79bb.7ccd4.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "15b9f6d3d9ee195211fb915e0b8ce666cddc1f06d3633171bf46d64556e6d542",
+        "original_frame": "合成_00017",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        58,
+        49,
+        117,
+        118
+      ],
+      "source_offset": [
+        6.5,
+        2
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-18.png",
+      "runtime_path": "assets/roll-18.png",
+      "sha256": "1ffd20915c3fa2f6f3b45ef07bd4dd1bb2b09105cf6db5b626a924cc3e8715f9",
+      "bytes": 19575,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧18",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/85/85841804-d6c7-47fc-b17b-cf6019f81f74.f7816.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "c36c45d1909c30b4ef5cd92c99ccf7d9e9d8e7c5965b6ab61d940222e05abc2a",
+        "original_frame": "合成_00018",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        64,
+        57,
+        105,
+        106
+      ],
+      "source_offset": [
+        6.5,
+        0
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-20.png",
+      "runtime_path": "assets/roll-20.png",
+      "sha256": "ef50e170b6fb808daa768320f22c97efe2bbc2559e1e48a6aa199f6a7273cb58",
+      "bytes": 24160,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧20",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/81/81abd64e-0d1b-4aed-9682-2a830440d1d0.61e65.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "03f6ecd9c6bdbee8ae0b2cc82ddc7ef6a7b24198c07d79706bb42b8741099288",
+        "original_frame": "合成_00020",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        57,
+        53,
+        114,
+        116
+      ],
+      "source_offset": [
+        4,
+        -1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-21.png",
+      "runtime_path": "assets/roll-21.png",
+      "sha256": "2270cda1f1682728ce25bc65e1b4f3f79d30b2e8422d53353e6fa7bd2437a299",
+      "bytes": 24447,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧21",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3d/3ddef7a7-c41d-42e4-9e1e-52c5718e9b2a.666ca.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "0b97ac886fb7a78a7563863ce692848fe314b067c32747f6910962d56b1366d8",
+        "original_frame": "合成_00021",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        54,
+        53,
+        120,
+        109
+      ],
+      "source_offset": [
+        4,
+        2.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-23.png",
+      "runtime_path": "assets/roll-23.png",
+      "sha256": "ce1ac4f8f6b7c02f1f12b35a3f20e5b1af333c24f4c76d2f57bc86bdf1c5af84",
+      "bytes": 25969,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧23",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/2d/2d47e3f0-9e11-4c84-a8aa-a623d5ff4a02.5365d.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "209b40c41bbf1f1ebad29b9eca9903511b682ec296aafd1ac7291573a8eaeb93",
+        "original_frame": "合成_00023",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        58,
+        48,
+        117,
+        120
+      ],
+      "source_offset": [
+        6.5,
+        2
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/roll-24.png",
+      "runtime_path": "assets/roll-24.png",
+      "sha256": "d2587cb9466a5e0da45e6bad0742c7e852fd7f32b14dec9df873fc0d8627e3ec",
+      "bytes": 25858,
+      "usage": "真实原摇骰非负25帧，20件整图，按i/30秒播放，不再trim；像素帧24",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/00/0032217e-0952-47df-a5f1-0fdf62aea52e.42419.png",
+        "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "native_sha256": "0c898cb1ac95fc096c5332fc750a9d33356e1387892475e7167f8b89c5c9ae17",
+        "original_frame": "合成_00024",
+        "method": "整幅220×220 native规范为PNG，未二次trim"
+      },
+      "classification": "processed",
+      "input_format": "WEBP",
+      "originalSize": [
+        220,
+        220
+      ],
+      "source_rect": [
+        58,
+        48,
+        117,
+        120
+      ],
+      "source_offset": [
+        6.5,
+        2
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "draw_mode": "full-canvas",
+      "output_format": "PNG",
+      "size": [
+        220,
+        220
+      ],
+      "png_color_type": 6
+    },
+    {
+      "path": "public/assets/sound-roll.mp3",
+      "runtime_path": "assets/sound-roll.mp3",
+      "sha256": "725e6bb14bf3c1ef1e7dead43e2422f9e9f8ede55684f29e117a54caef350ad4",
+      "bytes": 4845,
+      "usage": "掷骰首交互解锁后播放，可关闭",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/f0/f08dedb0-3c9e-4f7b-b58b-9ebf05f7c389.ed0db.mp3",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "method": "原版imported音频逐件提取，源字节未改"
+      },
+      "classification": "imported",
+      "input_format": "MP3",
+      "output_format": "MP3"
+    },
+    {
+      "path": "public/assets/sound-step.mp3",
+      "runtime_path": "assets/sound-step.mp3",
+      "sha256": "71c797f823b7f67a48ddec69db885e923ac90c4878efa5752cb8700c0d327448",
+      "bytes": 4641,
+      "usage": "棋子逐格走动短音，不重叠无界播放",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/a8/a889c8f7-f51b-405e-9030-9328fba1b580.521b7.mp3",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "method": "原版imported音频逐件提取，源字节未改"
+      },
+      "classification": "imported",
+      "input_format": "MP3",
+      "output_format": "MP3"
+    },
+    {
+      "path": "public/assets/sound-capture.mp3",
+      "runtime_path": "assets/sound-capture.mp3",
+      "sha256": "42fd7feadc20e5cf0663c4c684e856141f2120f6c4b9d22aac269ac1eb8d2034",
+      "bytes": 8612,
+      "usage": "吃子碰撞音，一次事件只播放一次",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/a2/a2ce3d23-f7c7-4ad7-a2be-f6253f365ffd.28ae1.mp3",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "method": "原版imported音频逐件提取，源字节未改"
+      },
+      "classification": "imported",
+      "input_format": "MP3",
+      "output_format": "MP3"
+    },
+    {
+      "path": "public/assets/sound-home.mp3",
+      "runtime_path": "assets/sound-home.mp3",
+      "sha256": "a1da60876403044afd43a71561a009cff063cfe9f84e3bc60dc44b95b7d13b35",
+      "bytes": 7776,
+      "usage": "归家反馈音，胜利不另猜音源",
+      "source": {
+        "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+        "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+        "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/f1/f1064f67-47ba-479e-997e-844354533849.5bd25.mp3",
+        "origin": "用户提供参考库，未独立核实商业授权",
+        "method": "原版imported音频逐件提取，源字节未改"
+      },
+      "classification": "imported",
+      "input_format": "MP3",
+      "output_format": "MP3"
+    }
+  ],
+  "board": {
+    "coordinate_source": "workflow/prototype.md 第3节为逻辑映射真源；原场景坐标仅作分层纹理装配",
+    "prototype_grid": {
+      "scene": [
+        360,
+        600
+      ],
+      "rect": [
+        12,
+        126,
+        336,
+        336
+      ],
+      "rows": 15,
+      "cols": 15,
+      "cellSize": 22.4,
+      "public_path": [
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          6
+        ]
+      ],
+      "safe": [
+        0,
+        8,
+        13,
+        21,
+        26,
+        34,
+        39,
+        47
+      ],
+      "stars": [
+        8,
+        21,
+        34,
+        47
+      ],
+      "arrows": [
+        0,
+        13,
+        26,
+        39
+      ],
+      "private_paths": [
+        [
+          [
+            13,
+            7
+          ],
+          [
+            12,
+            7
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            7,
+            13
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ]
+      ]
+    },
+    "source_assembly": {
+      "axes": "x右y上，Canvas统一翻y",
+      "center": {
+        "path": "assets/board-cross.png",
+        "position": [
+          0.639,
+          -20
+        ],
+        "size": [
+          586,
+          585
+        ]
+      },
+      "frame": {
+        "path": "assets/board-frame.png",
+        "position": [
+          0,
+          -29
+        ],
+        "size": [
+          628,
+          628
+        ],
+        "alpha_extrema": [
+          0,
+          51
+        ]
+      },
+      "camps": [
+        {
+          "owner": 0,
+          "color": "blue",
+          "position": [
+            -175,
+            -197
+          ],
+          "holes": [
+            [
+              -215,
+              -157
+            ],
+            [
+              -137,
+              -157
+            ],
+            [
+              -215,
+              -237
+            ],
+            [
+              -137,
+              -237
+            ]
+          ]
+        },
+        {
+          "owner": 1,
+          "color": "red",
+          "position": [
+            -175,
+            156
+          ],
+          "holes": [
+            [
+              -215,
+              196
+            ],
+            [
+              -137,
+              196
+            ],
+            [
+              -215,
+              119
+            ],
+            [
+              -137,
+              119
+            ]
+          ]
+        },
+        {
+          "owner": 2,
+          "color": "green",
+          "position": [
+            176,
+            156
+          ],
+          "holes": [
+            [
+              138,
+              196
+            ],
+            [
+              217,
+              196
+            ],
+            [
+              138,
+              119
+            ],
+            [
+              217,
+              119
+            ]
+          ]
+        },
+        {
+          "owner": 3,
+          "color": "yellow",
+          "position": [
+            176,
+            -197
+          ],
+          "opacity": 250,
+          "holes": [
+            [
+              138,
+              -157
+            ],
+            [
+              217,
+              -157
+            ],
+            [
+              138,
+              -237
+            ],
+            [
+              217,
+              -237
+            ]
+          ]
+        }
+      ],
+      "campSize": [
+        233,
+        233
+      ],
+      "original_map_scale": 1.15,
+      "apply_map_scale": false,
+      "layer_order": [
+        "background",
+        "frame",
+        "camps",
+        "cross",
+        "stars/arrows",
+        "landing/selection",
+        "pieces",
+        "HUD",
+        "local-effects"
+      ]
+    },
+    "arrow_decision": {
+      "original_runtime": [
+        50,
+        11,
+        24,
+        37
+      ],
+      "project": [
+        0,
+        13,
+        26,
+        39
+      ],
+      "policy": "服从已确认原型；原箭头纹理用于项目出营点，位置不是原版逐像素复刻"
+    },
+    "piece_anchor": {
+      "source_node": [
+        0.5,
+        0.5
+      ],
+      "render_basis": "以底座中心锚定逻辑格，不以全图中心锚格；营地原场景位置是源节点中心",
+      "proposed_base_uv": [
+        0.5,
+        0.82
+      ],
+      "status": "底座uv是美术设计建议，非源SpriteFrame元数据；集成时用截图核验，不修改图像字节"
+    },
+    "display_policy": "用同一棋盘变换定位所有部件；十字有效网格用586×585独立层标定，外框628不得作为15格宽；不重复应用原map scale1.15"
+  },
+  "hud": {
+    "source_player_info": [
+      231,
+      174
+    ],
+    "seatSize": [
+      146,
+      146
+    ],
+    "source_seat_position": [
+      0,
+      11
+    ],
+    "source_avatar_position": [
+      0,
+      9
+    ],
+    "source_dice_button_size": [
+      75,
+      75
+    ],
+    "source_dice_button_position": [
+      0,
+      11
+    ],
+    "source_dice_node_position": [
+      -5,
+      9
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "placement": "红绿上方44…118，蓝黄下方470…544；原局部HUD坐标统一翻y并整体等比缩小，不把146按CSS像素直接铺满",
+    "min_css_hit": 44
+  },
+  "dice": {
+    "fps": 30,
+    "duration_ms": 833.3333333333334,
+    "originalSize": [
+      220,
+      220
+    ],
+    "excluded_negative_frame": "dice0@-0.133333秒",
+    "sequence": [
+      {
+        "frameIndex": 0,
+        "time_seconds": 0,
+        "path": "assets/roll-00.png",
+        "original_frame": "合成_00000",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c7/c71fb354-27a0-43d9-be42-30df1cfe9bda.26f6a.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "ec14c8260494e0541778a316caa565cc8914d899996970cbdb752c8829b115f3"
+        },
+        "source_rect": [
+          63,
+          56,
+          102,
+          103
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 1,
+        "time_seconds": 0.03333333333333333,
+        "path": "assets/roll-01.png",
+        "original_frame": "合成_00001",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/cd/cdc29db7-0466-4795-9a4c-99c8252e74a7.cc6df.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "4d22cfa7ca59c1a4e05cbf0f14318220d8c0458444662ceec8134f745585032f"
+        },
+        "source_rect": [
+          59,
+          49,
+          114,
+          120
+        ],
+        "source_offset": [
+          6,
+          1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 2,
+        "time_seconds": 0.06666666666666667,
+        "path": "assets/roll-02.png",
+        "original_frame": "合成_00002",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6f/6f938e16-ea19-4db9-81db-db8733859724.3004b.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "cec5646f0d58a37c90e327c20eb51c6a0ef5c53fd69b351deaa35f46685cfd85"
+        },
+        "source_rect": [
+          53,
+          51,
+          122,
+          113
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 3,
+        "time_seconds": 0.1,
+        "path": "assets/roll-02.png",
+        "original_frame": "合成_00003",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ec/ec5eb3bf-83b9-4e11-9d46-13d99799dd98.3004b.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "cec5646f0d58a37c90e327c20eb51c6a0ef5c53fd69b351deaa35f46685cfd85"
+        },
+        "source_rect": [
+          53,
+          51,
+          122,
+          113
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 4,
+        "time_seconds": 0.13333333333333333,
+        "path": "assets/roll-04.png",
+        "original_frame": "合成_00004",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/d7/d76ed11e-c2b4-4343-9b8d-fbbb19773e91.d0dff.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "bff7b207c8c5bbd8a900a488ad31dcb19b6fa2ce80d7efd52212e107a826bbdf"
+        },
+        "source_rect": [
+          57,
+          49,
+          117,
+          120
+        ],
+        "source_offset": [
+          5.5,
+          1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 5,
+        "time_seconds": 0.16666666666666666,
+        "path": "assets/roll-05.png",
+        "original_frame": "合成_00005",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ff/ff06843e-2ac1-4f3d-81ac-63f3c347c751.f1a64.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "c919f135a8675778a6c6992731187db52c2aa028ee4ce3ca685a6e6f35a3dec5"
+        },
+        "source_rect": [
+          53,
+          51,
+          123,
+          116
+        ],
+        "source_offset": [
+          4.5,
+          1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 6,
+        "time_seconds": 0.2,
+        "path": "assets/roll-06.png",
+        "original_frame": "合成_00006",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/e9/e91ab32f-3fac-4498-a97d-42a459e34480.30715.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "621fe6df1ce39fd0bdc9fce49ea4a0bc774f60040e241b6576bb3374e171fcdc"
+        },
+        "source_rect": [
+          58,
+          48,
+          117,
+          121
+        ],
+        "source_offset": [
+          6.5,
+          1.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 7,
+        "time_seconds": 0.23333333333333334,
+        "path": "assets/roll-06.png",
+        "original_frame": "合成_00007",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/44/44d4961f-26a9-4ccf-a39d-6905fbd79100.30715.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "621fe6df1ce39fd0bdc9fce49ea4a0bc774f60040e241b6576bb3374e171fcdc"
+        },
+        "source_rect": [
+          58,
+          48,
+          117,
+          121
+        ],
+        "source_offset": [
+          6.5,
+          1.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 8,
+        "time_seconds": 0.26666666666666666,
+        "path": "assets/roll-08.png",
+        "original_frame": "合成_00008",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/21/21ca532c-3f74-4f75-9793-cc887ccad0f1.f1297.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "0308e74c262c193b0d9750c118da0f116ba8150077bbfd85d0b4131713748b68"
+        },
+        "source_rect": [
+          59,
+          52,
+          115,
+          114
+        ],
+        "source_offset": [
+          6.5,
+          1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 9,
+        "time_seconds": 0.3,
+        "path": "assets/roll-08.png",
+        "original_frame": "合成_00009",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/95/95cbc55d-14a4-4ae1-bc0e-92aba342b40d.f1297.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "0308e74c262c193b0d9750c118da0f116ba8150077bbfd85d0b4131713748b68"
+        },
+        "source_rect": [
+          59,
+          52,
+          115,
+          114
+        ],
+        "source_offset": [
+          6.5,
+          1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 10,
+        "time_seconds": 0.3333333333333333,
+        "path": "assets/roll-10.png",
+        "original_frame": "合成_00010",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3f/3f16cddb-7296-4f31-98f2-c6e0a76d5ab4.147fe.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "c5d275b9eb4a13e081a57108077f95eb6bae7247d1034b8fe0ba3a3b7d2f1210"
+        },
+        "source_rect": [
+          60,
+          52,
+          114,
+          113
+        ],
+        "source_offset": [
+          7,
+          1.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 11,
+        "time_seconds": 0.36666666666666664,
+        "path": "assets/roll-11.png",
+        "original_frame": "合成_00011",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe138668-1db3-4c47-90f7-1c34a45afc07.fd998.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "9f4e8207af38bdfbbc06c860c8c4ba9b79885926a552157568d69ac660040b7d"
+        },
+        "source_rect": [
+          52,
+          49,
+          123,
+          115
+        ],
+        "source_offset": [
+          3.5,
+          3.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 12,
+        "time_seconds": 0.4,
+        "path": "assets/roll-12.png",
+        "original_frame": "合成_00012",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/84/8438fbd0-f6f2-4a5a-bbab-086eb5560c2e.ec193.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "c9e655453c0082d0b997c41d49a3fec0cd55e2872f2f92dba9bf9e679db4c476"
+        },
+        "source_rect": [
+          54,
+          54,
+          117,
+          114
+        ],
+        "source_offset": [
+          2.5,
+          -1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 13,
+        "time_seconds": 0.43333333333333335,
+        "path": "assets/roll-13.png",
+        "original_frame": "合成_00013",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe5c78f1-687f-4ba4-a6ec-f97612d74e28.ed7fa.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "a01462573679d6a40107715092b284a49b00974a5a94a0d5a933cf8efdfad535"
+        },
+        "source_rect": [
+          54,
+          54,
+          117,
+          114
+        ],
+        "source_offset": [
+          2.5,
+          -1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 14,
+        "time_seconds": 0.4666666666666667,
+        "path": "assets/roll-14.png",
+        "original_frame": "合成_00014",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3c/3c1664a0-7332-4c57-8eb1-eadb86c9aa4f.256db.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "b5843990b2750a424d000c65ec55e8e9e38491a786ccebdd8384347d8ebffa56"
+        },
+        "source_rect": [
+          62,
+          53,
+          110,
+          113
+        ],
+        "source_offset": [
+          7,
+          0.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 15,
+        "time_seconds": 0.5,
+        "path": "assets/roll-15.png",
+        "original_frame": "合成_00015",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ab/abc88f6e-cc72-42b4-a301-85e688deaf78.3cf42.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "2c8c5665a2e6462721924a6c3845c1cd38a2728ae4a594ec8eb317b7553a6737"
+        },
+        "source_rect": [
+          51,
+          46,
+          122,
+          121
+        ],
+        "source_offset": [
+          2,
+          3.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 16,
+        "time_seconds": 0.5333333333333333,
+        "path": "assets/roll-16.png",
+        "original_frame": "合成_00016",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/7c/7cfa4f42-9a27-477a-918e-22f769deafda.f44a9.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "93354af6ed83362d91292f6d962ef4433dada2ba768f970243c2461264bebfbf"
+        },
+        "source_rect": [
+          56,
+          47,
+          119,
+          123
+        ],
+        "source_offset": [
+          5.5,
+          1.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 17,
+        "time_seconds": 0.5666666666666667,
+        "path": "assets/roll-17.png",
+        "original_frame": "合成_00017",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6a/6ac21c52-ccdc-405d-be8e-470fc69e79bb.7ccd4.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "15b9f6d3d9ee195211fb915e0b8ce666cddc1f06d3633171bf46d64556e6d542"
+        },
+        "source_rect": [
+          58,
+          49,
+          117,
+          118
+        ],
+        "source_offset": [
+          6.5,
+          2
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 18,
+        "time_seconds": 0.6,
+        "path": "assets/roll-18.png",
+        "original_frame": "合成_00018",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/85/85841804-d6c7-47fc-b17b-cf6019f81f74.f7816.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "c36c45d1909c30b4ef5cd92c99ccf7d9e9d8e7c5965b6ab61d940222e05abc2a"
+        },
+        "source_rect": [
+          64,
+          57,
+          105,
+          106
+        ],
+        "source_offset": [
+          6.5,
+          0
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 19,
+        "time_seconds": 0.6333333333333333,
+        "path": "assets/roll-18.png",
+        "original_frame": "合成_00019",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/af/afbc514d-dbbc-449e-8fdc-290028dd7452.f7816.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "c36c45d1909c30b4ef5cd92c99ccf7d9e9d8e7c5965b6ab61d940222e05abc2a"
+        },
+        "source_rect": [
+          64,
+          57,
+          105,
+          106
+        ],
+        "source_offset": [
+          6.5,
+          0
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 20,
+        "time_seconds": 0.6666666666666666,
+        "path": "assets/roll-20.png",
+        "original_frame": "合成_00020",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/81/81abd64e-0d1b-4aed-9682-2a830440d1d0.61e65.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "03f6ecd9c6bdbee8ae0b2cc82ddc7ef6a7b24198c07d79706bb42b8741099288"
+        },
+        "source_rect": [
+          57,
+          53,
+          114,
+          116
+        ],
+        "source_offset": [
+          4,
+          -1
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 21,
+        "time_seconds": 0.7,
+        "path": "assets/roll-21.png",
+        "original_frame": "合成_00021",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3d/3ddef7a7-c41d-42e4-9e1e-52c5718e9b2a.666ca.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "0b97ac886fb7a78a7563863ce692848fe314b067c32747f6910962d56b1366d8"
+        },
+        "source_rect": [
+          54,
+          53,
+          120,
+          109
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 22,
+        "time_seconds": 0.7333333333333333,
+        "path": "assets/roll-21.png",
+        "original_frame": "合成_00022",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/be/be50970b-1c18-4256-9f5f-33b63cba4a01.666ca.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "0b97ac886fb7a78a7563863ce692848fe314b067c32747f6910962d56b1366d8"
+        },
+        "source_rect": [
+          54,
+          53,
+          120,
+          109
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 23,
+        "time_seconds": 0.7666666666666667,
+        "path": "assets/roll-23.png",
+        "original_frame": "合成_00023",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/2d/2d47e3f0-9e11-4c84-a8aa-a623d5ff4a02.5365d.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "209b40c41bbf1f1ebad29b9eca9903511b682ec296aafd1ac7291573a8eaeb93"
+        },
+        "source_rect": [
+          58,
+          48,
+          117,
+          120
+        ],
+        "source_offset": [
+          6.5,
+          2
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      },
+      {
+        "frameIndex": 24,
+        "time_seconds": 0.8,
+        "path": "assets/roll-24.png",
+        "original_frame": "合成_00024",
+        "source": {
+          "archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+          "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7",
+          "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/00/0032217e-0952-47df-a5f1-0fdf62aea52e.42419.png",
+          "metadata_member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+          "origin": "用户提供参考库，未独立核实商业授权",
+          "native_sha256": "0c898cb1ac95fc096c5332fc750a9d33356e1387892475e7167f8b89c5c9ae17"
+        },
+        "source_rect": [
+          58,
+          48,
+          117,
+          120
+        ],
+        "source_offset": [
+          6.5,
+          2
+        ],
+        "originalSize": [
+          220,
+          220
+        ],
+        "draw_mode": "full-canvas"
+      }
+    ],
+    "face_draw_formula": "中心锚点x,y：左=x-110*s+62*s，顶=y-110*s+54*s，绘104*s×106*s；trim offset原[4,3]，Canvas y反号。摇骰整图左x-110*s、顶y-110*s，不套该偏移",
+    "result_source": "已提交ROLL，不由贴图决定随机"
+  },
+  "effects": {
+    "mode": "procedural",
+    "classification": "procedural",
+    "implementation_status": "本阶段只交接非空设计，不声称已实现动画",
+    "design": "design/art-integration.md",
+    "design_sha256": "b4c54d6a1baa0466c68747155f69c2d64222ff7f526a3f1add1458bf7ec75052",
+    "walk_ms_per_cell": 110,
+    "arc_height_cells": [
+      0.25,
+      0.4
+    ],
+    "walk_scale_peak": 1.15,
+    "capture_impact_ms": 100,
+    "capture_reverse_ms_per_cell": 30,
+    "capture_final_ms": 100,
+    "home_ms": 375,
+    "victory_ms": 1000,
+    "breathing_ms": 1400
+  },
+  "audio": {
+    "unlock": "首自然交互",
+    "mute": "设置可关闭",
+    "cancel": "隐藏/暂停/重开立即停止",
+    "win_sound": null
+  },
+  "package_policy": {
+    "only_assets_allowlist": [
+      "assets/background-edited.png",
+      "assets/board-cross.png",
+      "assets/camp-blue.png",
+      "assets/camp-red.png",
+      "assets/camp-green.png",
+      "assets/camp-yellow.png",
+      "assets/token-blue.png",
+      "assets/token-red.png",
+      "assets/token-green.png",
+      "assets/token-yellow.png",
+      "assets/marker-star.png",
+      "assets/arrow-blue.png",
+      "assets/arrow-red.png",
+      "assets/arrow-green.png",
+      "assets/arrow-yellow.png",
+      "assets/dice-face-1.png",
+      "assets/dice-face-2.png",
+      "assets/dice-face-3.png",
+      "assets/dice-face-4.png",
+      "assets/dice-face-5.png",
+      "assets/dice-face-6.png",
+      "assets/hud-human.png",
+      "assets/hud-bot.png",
+      "assets/hud-seat-blue.png",
+      "assets/hud-seat-red.png",
+      "assets/hud-seat-green.png",
+      "assets/hud-seat-yellow.png",
+      "assets/effect-landing.png",
+      "assets/effect-selected.png",
+      "assets/ui-start.png",
+      "assets/ui-confirm.png",
+      "assets/ui-close.png",
+      "assets/board-frame.png",
+      "assets/ui-settings.png",
+      "assets/roll-00.png",
+      "assets/roll-01.png",
+      "assets/roll-02.png",
+      "assets/roll-04.png",
+      "assets/roll-05.png",
+      "assets/roll-06.png",
+      "assets/roll-08.png",
+      "assets/roll-10.png",
+      "assets/roll-11.png",
+      "assets/roll-12.png",
+      "assets/roll-13.png",
+      "assets/roll-14.png",
+      "assets/roll-15.png",
+      "assets/roll-16.png",
+      "assets/roll-17.png",
+      "assets/roll-18.png",
+      "assets/roll-20.png",
+      "assets/roll-21.png",
+      "assets/roll-23.png",
+      "assets/roll-24.png",
+      "assets/sound-roll.mp3",
+      "assets/sound-step.mp3",
+      "assets/sound-capture.mp3",
+      "assets/sound-home.mp3"
+    ],
+    "additional_config": [
+      "assets/visual-manifest.json"
+    ],
+    "excluded": "旧格式原件、候选、背景母版、图集、reference-assets、reference-inputs、拒绝背景均不自动复制",
+    "total_dist_max_bytes_exclusive": 10000000
+  }
+}

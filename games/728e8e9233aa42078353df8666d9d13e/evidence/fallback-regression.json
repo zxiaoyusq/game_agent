@@ -1,0 +1,206 @@
+{
+  "kind": "转录几何函数合成回归；含等价控制流模型，非目标游戏运行验证",
+  "node": "v22.23.3",
+  "attempt": 1,
+  "constants": {
+    "strikerRadius": 21.760000000000005,
+    "assumedCoinRadius": 16,
+    "capsuleRadius": 37.760000000000005
+  },
+  "passed": 31,
+  "failed": 0,
+  "results": [
+    {
+      "name": "直线目标无阻挡且身份豁免",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "远处阻挡由旧漏检变为新命中",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "起点端帽检查负投影初始重叠",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "远离起点的后方棋不阻挡",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "终点端帽检查投影超过终点的提前碰撞",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "目标首次接触之后的棋不阻挡",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "严格切线及两侧微扰",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "三组任一棋都可阻挡，与颜色无关",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "多棋顺序不改变有限有效数据结果",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "仅对象身份豁免，坐标副本在短路径自阻挡",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "克隆目标的终点切线受浮点消减误差影响",
+      "status": "PASS",
+      "detail": {
+        "blocked": true,
+        "offset": 37.75999999999999,
+        "radius": 37.760000000000005,
+        "residual": -9.094947017729282e-13
+      }
+    },
+    {
+      "name": "未在棋盘上的目标不被合法性校验拒绝",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "被豁免目标含 NaN 仍放行",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "普通错误棋 fail-closed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "null身份先跳过可吞掉错误棋",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "零长度提前放行重叠与错误数据",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "短于半径和仍检测起点重叠",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "非法输入基本门禁",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "有限但极大坐标算术溢出会放行",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "真值字符串误启用全程",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "非共线目标使中心距减半径和终点提前，产生漏检",
+      "status": "PASS",
+      "detail": {
+        "targetContact": 277.0692869714001,
+        "blockerContact": 272.24,
+        "assumedEnd": 263.7362686336267
+      }
+    },
+    {
+      "name": "固定16宽度对物理半径15产生保守误报",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "异半径目标15阻挡16的理论提前截断反例",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "随机偏角0.1可把名义安全路径变成提前撞棋",
+      "status": "PASS",
+      "detail": {
+        "targetContact": 275.5053020522475,
+        "blockerContact": 124.7917326659455
+      }
+    },
+    {
+      "name": "四参数普通调用3000固定种子兼容比较",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "模式0/1/2目标池及空池回退等价模型",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "七点全挡仍返回原位置，不能宣称安全",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "七点按左到右取第一个通过位置",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "存在未采样窄通道仍会错过",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "初始路径已安全不执行七点扫描",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "位置禁止优先于路径检测",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "benchmark": {
+    "kind": "当前Node环境合成微基准，不是手机性能",
+    "samples": [
+      {
+        "discs": 19,
+        "calls": 5000,
+        "elapsedMs": 63.19479000000001
+      },
+      {
+        "discs": 100,
+        "calls": 5000,
+        "elapsedMs": 304.44804000000005
+      },
+      {
+        "discs": 1000,
+        "calls": 5000,
+        "elapsedMs": 4096.155676
+      }
+    ]
+  },
+  "scriptSha256": "e9ac2e12e22e0a5ad5e9f92a3aaac4e00b1357939cf0a884192ec92e62e300ef",
+  "transcriptionSha256": {
+    "before": "710c97dcccbab39c6f5e953247be349acae48cde866c8a5130838ef265620fd9",
+    "after": "cfb5ebc452e73bb9b3d6b6ea1ace0571c9e8281d2d99f88b3b6f6253a16b020f"
+  }
+}

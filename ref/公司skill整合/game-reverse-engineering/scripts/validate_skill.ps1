@@ -93,7 +93,10 @@ $modules = @(
     'sdk-replacement',
     'cocos-mcp-channel',
     '3d-asset-extraction',
-    'deliverable-book-template'
+    'deliverable-book-template',
+    'h5-canvas-reskin',
+    'hosted-minigame-harvest',
+    'cocos-project-standards'
 )
 
 foreach ($module in $modules) {
@@ -159,7 +162,7 @@ $scopeMap = Join-Path $SkillRoot 'references\scope-map.md'
 Assert-True (Test-Path -LiteralPath $scopeMap) 'missing references/scope-map.md'
 if (Test-Path -LiteralPath $scopeMap) {
     $scopeText = Get-Content -LiteralPath $scopeMap -Raw -Encoding UTF8
-    foreach ($marker in @('GENERAL_DEFAULT', 'GENERALIZED_PATTERN', 'CASE_ONLY_BLOCKMASTER', 'CASE_ONLY_BLOCKUDOKU', 'CASE_ONLY_JIGSAWCARD', 'DO_NOT_COPY_LITERAL_VALUES', 'sdk-replacement')) {
+    foreach ($marker in @('GENERAL_DEFAULT', 'GENERALIZED_PATTERN', 'CASE_ONLY_BLOCKMASTER', 'CASE_ONLY_BLOCKUDOKU', 'CASE_ONLY_JIGSAWCARD', 'DO_NOT_COPY_LITERAL_VALUES', 'sdk-replacement', 'FRAMEWORK_BOUND_CFW', 'cocos-project-standards')) {
         Assert-True ($scopeText.Contains($marker)) "scope map missing marker: $marker"
     }
     foreach ($caseReference in @(

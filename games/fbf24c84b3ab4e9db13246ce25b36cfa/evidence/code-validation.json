@@ -1,0 +1,17 @@
+{
+  "stage": "code",
+  "attempt": 1,
+  "resume": false,
+  "result": "通过本阶段实现验证，非后续测试确认",
+  "commands": [
+    {"command": "npm run build", "exit_code": 0, "details": "6文件，10435字节；美术哈希一致"},
+    {"command": "npm test", "exit_code": 0, "passed": 5, "failed": 0},
+    {"command": "npm run check", "exit_code": 0, "passed_groups": 9, "browser": "153.0.8010.12"},
+    {"command": "node scripts/release.mjs", "exit_code": 0, "details": "真实ZIP提取、清洁安装、重建/规则测试、逐文件一致性"}
+  ],
+  "source_tool_sha256": "f5bee39e60c64acd15a1877f641c1e7f3ea9b3d61950e50b6351746ea593a618",
+  "dist_tool_sha256": "75ff4a2d9803fe17264e4765b6694cfedd97f3ba8c593bda8da5b00c175741cd",
+  "dist_manifest_sha256": "e912426d50d31a560b3affd1149b00cb78dbaae6f7cf549c38004b0ab1a924cd",
+  "evidence": ["evidence/build.json", "evidence/check.json", "evidence/release.json", "evidence/browser/"],
+  "limitations": ["手机为Chromium触摸模拟非真机", "隐藏/取消/多指和存储故障为DOM或API边界模拟", "未执行公网发布及后续独立测试确认"]
+}

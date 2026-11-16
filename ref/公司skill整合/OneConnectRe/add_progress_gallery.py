@@ -1,0 +1,4 @@
+from pathlib import Path
+p=Path('build_preview.py');s=p.read_text(encoding='utf8');old="head+='</div><h2 id=\"assets\">原版美术资源</h2><p>点击图片可查看原文件。"
+new="head+='</div><h2>后续自然推进截图 · 开发副本</h2><p>采用原版玩法并增加本地宿主适配；通过实际点击完成配对和奖励，没有跳关。第 3 关示例还使用了独立固定棋盘配置，不代表原版随机结果。</p><div class=\"grid\">'\nfor f,title,desc in [('dev_win_result.png','第 1 关清盘奖励','完成 36 对配对后出现奖励箱。'),('dev_bonus_open.png','第 2 关','打开奖励箱后自然进入；本截图包含计时实验配置。'),('board_level3.png','第 3 关：固定棋盘实验','第 2 关自然完成后加载指定的固定棋盘与 180 秒时间。')]:\n if os.path.exists(os.path.join(root,'screenshots',f)):head+=f'<article class=\"card\"><h3>{title}</h3><img loading=\"lazy\" src=\"screenshots/{f}\"><p>{desc}</p></article>'\nhead+='</div><h2 id=\"assets\">原版美术资源</h2><p>点击图片可查看原文件。"
+assert old in s;s=s.replace(old,new);s=s.replace('目前未验证自然过关及后续关卡；原版超时结算可见','已在开发副本自然完成前两关并进入第 3 关；原版裸页面的完整过关流程仍需验证。原版超时结算可见');p.write_text(s,encoding='utf8')

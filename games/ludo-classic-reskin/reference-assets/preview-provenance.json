@@ -1,0 +1,18 @@
+[
+  {
+    "path": "reference-assets/original-super-preview.png",
+    "source": "ref/公司skill整合/AHAgames/94034_Ludo_Superstar/art/preview.gif",
+    "source_sha256": "b2ac370fb122104c3967ab3c54d023a81a8f2b4f92e5a22d550859d52a7fc903",
+    "frame_index": 13,
+    "sha256": "6d59c85086cafd2920fe0d70c45c8ffc8cfdec0876f8018ffa8baaef596542bb",
+    "purpose": "原版宣传预览帧，只供视觉对照，不打包为新游戏素材"
+  },
+  {
+    "path": "reference-assets/original-just-preview.png",
+    "source": "ref/公司skill整合/AHAgames/82251_Just_Ludo/art/preview.gif",
+    "source_sha256": "9801e7d2773c1d91370876c42b98ab611731232cd694ea4786f47835e963f49e",
+    "frame_index": 17,
+    "sha256": "8c60cd75cc5332c6d6df92d0e732f4ab87ece2b35082129da3265df11d29931f",
+    "purpose": "原版宣传预览帧，只供视觉对照，不打包为新游戏素材"
+  }
+]

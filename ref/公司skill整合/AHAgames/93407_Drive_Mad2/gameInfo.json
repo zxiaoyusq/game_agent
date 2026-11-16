@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "93407",
+    "apiName":  "Drive Mad2",
+    "targetName":  "Drive Mad2",
+    "match":  "BY_ID",
+    "bundleName":  "re_drive-mad-transsion-offline.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251023/1dc57b427f93202f6f476de1e709ffc9.zip",
+    "bundleMd5":  "1dc57b427f93202f6f476de1e709ffc9",
+    "bundleSize":  1543882,
+    "updatedAt":  1761214536,
+    "gameLink":  "https://www.hkminih5game.com/Drive_Mad2/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_93407",
+    "category":  "Racing",
+    "rate":  8.9,
+    "gameType":  1,
+    "localFile":  "Drive_Mad2.zip",
+    "localBytes":  1543882,
+    "verifiedAt":  "2026-10-20T11:16:33",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  94215,
+    "apiName":  "Bubble Shooter GO",
+    "targetName":  "Bubble Shooter GO",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Bubble_Shooter_GO.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260206/2b5bf5f3010207e0624b73d2c0308444.zip",
+    "bundleMd5":  "2b5bf5f3010207e0624b73d2c0308444",
+    "bundleSize":  4392397,
+    "updatedAt":  1772009627,
+    "gameLink":  "https://www.xmyunshanggame.com/Bubble_Shooter_GO/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_94215",
+    "category":  "Puzzle",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Bubble_Shooter_GO.zip",
+    "localBytes":  4392397,
+    "verifiedAt":  "2026-10-20T10:37:16",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

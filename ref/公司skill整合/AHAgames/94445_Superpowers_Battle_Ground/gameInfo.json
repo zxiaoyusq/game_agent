@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  94445,
+    "apiName":  "Superpowers Battle Ground",
+    "targetName":  "Superpowers Battle Ground",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Superpowers_Battle_Ground.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260321/c6bc181a31886f0c21d070346f8cc9e0.zip",
+    "bundleMd5":  "c6bc181a31886f0c21d070346f8cc9e0",
+    "bundleSize":  6847433,
+    "updatedAt":  1774338263,
+    "gameLink":  "https://www.gztongmenggame.com/Superpowers_Battle_Ground/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_94445",
+    "category":  "Action",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Superpowers_Battle_Ground.zip",
+    "localBytes":  6847433,
+    "verifiedAt":  "2026-10-20T10:35:48",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "pause-sheet0.png",
+    "size": [
+      100,
+      100
+    ],
+    "source": "exec-2394c697-3f15-4957-a9fa-936d36889f0f.png",
+    "original_bbox": [
+      37,
+      8,
+      89,
+      71
+    ],
+    "candidate_bbox": [
+      37,
+      11,
+      89,
+      68
+    ]
+  },
+  {
+    "file": "pausebuttons-sheet0.png",
+    "size": [
+      145,
+      145
+    ],
+    "source": "exec-a86a8fca-c0fa-4956-a2dd-a7575f0bdb50.png",
+    "original_bbox": [
+      13,
+      1,
+      132,
+      144
+    ],
+    "candidate_bbox": [
+      13,
+      5,
+      132,
+      139
+    ]
+  },
+  {
+    "file": "pausebuttons-sheet1.png",
+    "size": [
+      145,
+      145
+    ],
+    "source": "exec-86636841-5510-4693-9534-9403560bb96a.png",
+    "original_bbox": [
+      6,
+      3,
+      138,
+      141
+    ],
+    "candidate_bbox": [
+      6,
+      4,
+      138,
+      139
+    ]
+  }
+]

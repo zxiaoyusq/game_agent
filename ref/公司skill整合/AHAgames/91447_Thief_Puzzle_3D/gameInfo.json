@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "91447",
+    "apiName":  "Thief Puzzle 3D",
+    "targetName":  "Thief Puzzle 3D",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Thief_Puzzle_3D.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260307/7dd58f8f46b210af1551a9044ffed702.zip",
+    "bundleMd5":  "7dd58f8f46b210af1551a9044ffed702",
+    "bundleSize":  23440275,
+    "updatedAt":  1773050149,
+    "gameLink":  "https://www.excellenth5game.com/Thief_Puzzle_3D/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_91447",
+    "category":  "Puzzle",
+    "rate":  8.9,
+    "gameType":  1,
+    "localFile":  "Thief_Puzzle_3D.zip",
+    "localBytes":  23440275,
+    "verifiedAt":  "2026-10-20T11:14:56",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

@@ -1,0 +1,662 @@
+{
+  "frames": [
+    {
+      "name": "合成_00019",
+      "rect": [
+        64,
+        57,
+        105,
+        106
+      ],
+      "offset": [
+        6.5,
+        0
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/af/afbc514d-dbbc-449e-8fdc-290028dd7452.f7816.png"
+    },
+    {
+      "name": "合成_00015",
+      "rect": [
+        51,
+        46,
+        122,
+        121
+      ],
+      "offset": [
+        2,
+        3.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ab/abc88f6e-cc72-42b4-a301-85e688deaf78.3cf42.png"
+    },
+    {
+      "name": "合成_00011",
+      "rect": [
+        52,
+        49,
+        123,
+        115
+      ],
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe138668-1db3-4c47-90f7-1c34a45afc07.fd998.png"
+    },
+    {
+      "name": "合成_00008",
+      "rect": [
+        59,
+        52,
+        115,
+        114
+      ],
+      "offset": [
+        6.5,
+        1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/21/21ca532c-3f74-4f75-9793-cc887ccad0f1.f1297.png"
+    },
+    {
+      "name": "合成_00013",
+      "rect": [
+        54,
+        54,
+        117,
+        114
+      ],
+      "offset": [
+        2.5,
+        -1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe5c78f1-687f-4ba4-a6ec-f97612d74e28.ed7fa.png"
+    },
+    {
+      "name": "合成_00001",
+      "rect": [
+        59,
+        49,
+        114,
+        120
+      ],
+      "offset": [
+        6,
+        1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/cd/cdc29db7-0466-4795-9a4c-99c8252e74a7.cc6df.png"
+    },
+    {
+      "name": "合成_00012",
+      "rect": [
+        54,
+        54,
+        117,
+        114
+      ],
+      "offset": [
+        2.5,
+        -1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/84/8438fbd0-f6f2-4a5a-bbab-086eb5560c2e.ec193.png"
+    },
+    {
+      "name": "合成_00004",
+      "rect": [
+        57,
+        49,
+        117,
+        120
+      ],
+      "offset": [
+        5.5,
+        1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/d7/d76ed11e-c2b4-4343-9b8d-fbbb19773e91.d0dff.png"
+    },
+    {
+      "name": "合成_00006",
+      "rect": [
+        58,
+        48,
+        117,
+        121
+      ],
+      "offset": [
+        6.5,
+        1.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/e9/e91ab32f-3fac-4498-a97d-42a459e34480.30715.png"
+    },
+    {
+      "name": "合成_00010",
+      "rect": [
+        60,
+        52,
+        114,
+        113
+      ],
+      "offset": [
+        7,
+        1.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3f/3f16cddb-7296-4f31-98f2-c6e0a76d5ab4.147fe.png"
+    },
+    {
+      "name": "合成_00003",
+      "rect": [
+        53,
+        51,
+        122,
+        113
+      ],
+      "offset": [
+        4,
+        2.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ec/ec5eb3bf-83b9-4e11-9d46-13d99799dd98.3004b.png"
+    },
+    {
+      "name": "合成_00021",
+      "rect": [
+        54,
+        53,
+        120,
+        109
+      ],
+      "offset": [
+        4,
+        2.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3d/3ddef7a7-c41d-42e4-9e1e-52c5718e9b2a.666ca.png"
+    },
+    {
+      "name": "合成_00014",
+      "rect": [
+        62,
+        53,
+        110,
+        113
+      ],
+      "offset": [
+        7,
+        0.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3c/3c1664a0-7332-4c57-8eb1-eadb86c9aa4f.256db.png"
+    },
+    {
+      "name": "合成_00002",
+      "rect": [
+        53,
+        51,
+        122,
+        113
+      ],
+      "offset": [
+        4,
+        2.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6f/6f938e16-ea19-4db9-81db-db8733859724.3004b.png"
+    },
+    {
+      "name": "合成_00016",
+      "rect": [
+        56,
+        47,
+        119,
+        123
+      ],
+      "offset": [
+        5.5,
+        1.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/7c/7cfa4f42-9a27-477a-918e-22f769deafda.f44a9.png"
+    },
+    {
+      "name": "合成_00018",
+      "rect": [
+        64,
+        57,
+        105,
+        106
+      ],
+      "offset": [
+        6.5,
+        0
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/85/85841804-d6c7-47fc-b17b-cf6019f81f74.f7816.png"
+    },
+    {
+      "name": "合成_00005",
+      "rect": [
+        53,
+        51,
+        123,
+        116
+      ],
+      "offset": [
+        4.5,
+        1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ff/ff06843e-2ac1-4f3d-81ac-63f3c347c751.f1a64.png"
+    },
+    {
+      "name": "合成_00024",
+      "rect": [
+        58,
+        48,
+        117,
+        120
+      ],
+      "offset": [
+        6.5,
+        2
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/00/0032217e-0952-47df-a5f1-0fdf62aea52e.42419.png"
+    },
+    {
+      "name": "合成_00007",
+      "rect": [
+        58,
+        48,
+        117,
+        121
+      ],
+      "offset": [
+        6.5,
+        1.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/44/44d4961f-26a9-4ccf-a39d-6905fbd79100.30715.png"
+    },
+    {
+      "name": "dice0",
+      "rect": [
+        64,
+        60,
+        75,
+        75
+      ],
+      "offset": [
+        1.5,
+        2.5
+      ],
+      "originalSize": [
+        200,
+        200
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c8/c87d751a-f149-42ec-9b66-e0395a5bb7a8.8c81d.png"
+    },
+    {
+      "name": "合成_00017",
+      "rect": [
+        58,
+        49,
+        117,
+        118
+      ],
+      "offset": [
+        6.5,
+        2
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6a/6ac21c52-ccdc-405d-be8e-470fc69e79bb.7ccd4.png"
+    },
+    {
+      "name": "合成_00009",
+      "rect": [
+        59,
+        52,
+        115,
+        114
+      ],
+      "offset": [
+        6.5,
+        1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/95/95cbc55d-14a4-4ae1-bc0e-92aba342b40d.f1297.png"
+    },
+    {
+      "name": "合成_00022",
+      "rect": [
+        54,
+        53,
+        120,
+        109
+      ],
+      "offset": [
+        4,
+        2.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/be/be50970b-1c18-4256-9f5f-33b63cba4a01.666ca.png"
+    },
+    {
+      "name": "合成_00020",
+      "rect": [
+        57,
+        53,
+        114,
+        116
+      ],
+      "offset": [
+        4,
+        -1
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/81/81abd64e-0d1b-4aed-9682-2a830440d1d0.61e65.png"
+    },
+    {
+      "name": "合成_00023",
+      "rect": [
+        58,
+        48,
+        117,
+        120
+      ],
+      "offset": [
+        6.5,
+        2
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/2d/2d47e3f0-9e11-4c84-a8aa-a623d5ff4a02.5365d.png"
+    },
+    {
+      "name": "合成_00000",
+      "rect": [
+        63,
+        56,
+        102,
+        103
+      ],
+      "offset": [
+        4,
+        2.5
+      ],
+      "originalSize": [
+        220,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c7/c71fb354-27a0-43d9-be42-30df1cfe9bda.26f6a.png"
+    }
+  ],
+  "audios": [
+    {
+      "name": "Music/settlement_win",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/23/233b88e1-c535-4ab1-a147-3a1484c5bef4.c041d.mp3"
+    },
+    {
+      "name": "Music/button-click",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/2a/2a89a60a-df6f-4e90-9879-f7500dc89aa5.74041.ogg"
+    },
+    {
+      "name": "Music/bgm",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/2f/2fdfa723-0e23-4f89-8bb7-a4629100c3ba.1eb70.mp3"
+    },
+    {
+      "name": "Music/chess_be_eaten",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/a2/a2ce3d23-f7c7-4ad7-a2be-f6253f365ffd.28ae1.mp3"
+    },
+    {
+      "name": "Music/chess_walk",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/a8/a889c8f7-f51b-405e-9030-9328fba1b580.521b7.mp3"
+    },
+    {
+      "name": "Music/turn_player",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/d4/d49d1b24-152b-4d41-b0eb-d5352c4ec875.5d8d1.mp3"
+    },
+    {
+      "name": "Music/roll_dice",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/f0/f08dedb0-3c9e-4f7b-b58b-9ebf05f7c389.ed0db.mp3"
+    },
+    {
+      "name": "Music/chess_arrive_terminal",
+      "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/f1/f1064f67-47ba-479e-997e-844354533849.5bd25.mp3"
+    }
+  ]
+}

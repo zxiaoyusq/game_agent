@@ -1,0 +1,50 @@
+{
+  "files": [
+    {
+      "path": "src/rules.js",
+      "source": "games/amber-caravan-api/src/rules.js",
+      "sha256": "e140e1868705572ac1861a79eedc6f9e40f26173ea655c56c7315a44b4ee5a80",
+      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+      "source_provider": "api-key",
+      "source_model": "gpt-6.1-sol",
+      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    },
+    {
+      "path": "src/rng.js",
+      "source": "games/amber-caravan-api/src/rng.js",
+      "sha256": "cdeed4a89d98d2a8fcc51884454fa33ff705fd8c95faa00cc9e483f37cadd5ee",
+      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+      "source_provider": "api-key",
+      "source_model": "gpt-6.1-sol",
+      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    },
+    {
+      "path": "src/ai.js",
+      "source": "games/amber-caravan-api/src/ai.js",
+      "sha256": "d22dff0ca47b21b54c9acccf558e926251421606628192b97fbdb8791cb19157",
+      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+      "source_provider": "api-key",
+      "source_model": "gpt-6.1-sol",
+      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    },
+    {
+      "path": "src/storage.js",
+      "source": "games/amber-caravan-api/src/storage.js",
+      "sha256": "a6816f491237c769ba3ea8a2005b98e0fae82ed1acf3fe39e21d31d762fdf9c1",
+      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+      "source_provider": "api-key",
+      "source_model": "gpt-6.1-sol",
+      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    },
+    {
+      "path": "src/lifecycle.js",
+      "source": "games/amber-caravan-api/src/lifecycle.js",
+      "sha256": "24c2e15c1f93a2d6f0e2ea63047d6d2f03f086e888fcf0fa4b7709943ec20742",
+      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+      "source_provider": "api-key",
+      "source_model": "gpt-6.1-sol",
+      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    }
+  ],
+  "note": "初始化时复制已验证API产物，后续改动由当前API工作流执行；不冒充本轮新写文件。"
+}

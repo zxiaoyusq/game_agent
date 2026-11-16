@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const emitted=[],cr={action:function(){}};cr.action.prototype.run_system=function(){return 'native'};
+let pulses=0;const window={cr,oneConnectHost:{emit:(name,data)=>emitted.push({name,data})},oneConnectHapticsCandidate:{pulse(ms){assert.equal(ms,25);pulses++}}};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/invalid_link_capture_candidate.js','utf8'),{window,cr,Number,console});
+window.oneConnectInvalidLinkCaptureCandidate.install();window.oneConnectInvalidLinkCaptureCandidate.install();
+const layer={layerToCanvas:(x,y,h)=>h?x:y},vars=[{sid:230773463274312,data:''},{sid:549914461589189,data:1},{sid:205709254634256,data:2}];
+vars[0].getValue=function(){return this.data;};
+const tiles=[{uid:1,x:10,y:20,layer,instance_vars:[3]},{uid:2,x:30,y:40,layer,instance_vars:[3]}];
+const runtime={all_local_vars:vars,types:{t5:{instances:tiles}},canvas:{width:100,height:200,getBoundingClientRect:()=>({left:5,top:7,width:100,height:200})}};
+function call(sid=564412399746352){return cr.action.prototype.run_system.call({sid,runtime})}
+assert.equal(call(),'native');assert.equal(emitted.length,1);assert.equal(emitted[0].name,'candidate.invalid_link');assert.equal(emitted[0].data.points[0].x,15);assert.equal(emitted[0].data.points[1].y,47);
+vars[0].data='path';call();assert.equal(emitted.length,1,'successful path must not emit');
+vars[0].data='';tiles[1].instance_vars[0]=4;call();assert.equal(emitted.length,1,'different tile types must not emit');
+tiles[1].instance_vars[0]=3;vars[2].data=1;call();assert.equal(emitted.length,1,'a repeated selection must not emit');
+vars[2].data=2;call(123);assert.equal(emitted.length,1,'unrelated action must not emit');
+assert.equal(pulses,1,'only a confirmed failed same-type path triggers haptics');
+vars[0].data='';vars[0].getValue=()=> 'valid-path';vars[1].getValue=()=>1;vars[2].getValue=()=>2;call();assert.equal(emitted.length,1,'active local stack result overrides the stale initial data for a valid path');
+vars[0].getValue=()=>'';call();assert.equal(emitted.length,2,'empty active stack result still signals an invalid same-type path');
+delete vars[0].getValue;call();assert.equal(emitted.length,2,'missing active event-stack value must not produce a false invalid link');
+console.log('same-type failed path capture and exclusions PASS');

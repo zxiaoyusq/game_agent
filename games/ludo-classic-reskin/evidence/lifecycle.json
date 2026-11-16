@@ -1,0 +1,263 @@
+[
+  {
+    "kind": "dice",
+    "operation": "pause",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 709.3203125,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "dice",
+      "elapsed": 109.5999992370605
+    },
+    "before": 0,
+    "submitted": 1,
+    "stats": {
+      "rollCount": 1,
+      "moveCount": 0,
+      "bonusCount": 0,
+      "captureCount": 0
+    }
+  },
+  {
+    "kind": "dice",
+    "operation": "refresh",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 709.3203125,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "dice",
+      "elapsed": 94.10000305175777
+    },
+    "before": 0,
+    "submitted": 1,
+    "stats": {
+      "rollCount": 1,
+      "moveCount": 0,
+      "bonusCount": 0,
+      "captureCount": 0
+    }
+  },
+  {
+    "kind": "dice",
+    "operation": "restart",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 709.3203125,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "dice",
+      "elapsed": 94.5
+    },
+    "before": 0,
+    "submitted": 1,
+    "stats": {
+      "rollCount": 1,
+      "moveCount": 0,
+      "bonusCount": 0,
+      "captureCount": 0
+    }
+  },
+  {
+    "kind": "walk",
+    "operation": "pause",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 709.3203125,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "walk",
+      "elapsed": 95.79999923706055
+    },
+    "before": 1,
+    "submitted": 2,
+    "stats": {
+      "rollCount": 1,
+      "moveCount": 1,
+      "bonusCount": 0,
+      "captureCount": 0
+    }
+  },
+  {
+    "kind": "walk",
+    "operation": "refresh",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 709.3203125,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "walk",
+      "elapsed": 94.10000000000002
+    },
+    "before": 1,
+    "submitted": 2,
+    "stats": {
+      "rollCount": 1,
+      "moveCount": 1,
+      "bonusCount": 0,
+      "captureCount": 0
+    }
+  },
+  {
+    "kind": "walk",
+    "operation": "restart",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 709.3203125,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "walk",
+      "elapsed": 110.5999984741211
+    },
+    "before": 1,
+    "submitted": 2,
+    "stats": {
+      "rollCount": 1,
+      "moveCount": 1,
+      "bonusCount": 0,
+      "captureCount": 0
+    }
+  },
+  {
+    "kind": "capture",
+    "operation": "pause",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 570.6640625,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "capture",
+      "elapsed": 133.4000000000001
+    },
+    "before": 45,
+    "submitted": 46,
+    "stats": {
+      "rollCount": 23,
+      "moveCount": 23,
+      "bonusCount": 6,
+      "captureCount": 1
+    }
+  },
+  {
+    "kind": "capture",
+    "operation": "refresh",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 570.6640625,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "capture",
+      "elapsed": 133.29999999999973
+    },
+    "before": 45,
+    "submitted": 46,
+    "stats": {
+      "rollCount": 23,
+      "moveCount": 23,
+      "bonusCount": 6,
+      "captureCount": 1
+    }
+  },
+  {
+    "kind": "capture",
+    "operation": "restart",
+    "clicks": 10,
+    "targets": [
+      {
+        "x": 570.6640625,
+        "y": 669.3203125
+      },
+      {
+        "x": 531.984375,
+        "y": 766.65625
+      }
+    ],
+    "naturalRetries": 0,
+    "interrupt": {
+      "busy": true,
+      "kind": "capture",
+      "elapsed": 133.19999999999982
+    },
+    "before": 45,
+    "submitted": 46,
+    "stats": {
+      "rollCount": 23,
+      "moveCount": 23,
+      "bonusCount": 6,
+      "captureCount": 1
+    }
+  }
+]

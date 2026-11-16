@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "93464",
+    "apiName":  "Capitalist Bus Driver",
+    "targetName":  "Capitalist Bus Driver",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Capitalist_Bus_Driver.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251104/0e24f86993cec2fa81d657b8a8263671.zip",
+    "bundleMd5":  "0e24f86993cec2fa81d657b8a8263671",
+    "bundleSize":  20313272,
+    "updatedAt":  1762250136,
+    "gameLink":  "https://www.shyunduangame.com/Capitalist_Bus_Driver/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_93464",
+    "category":  "Simulation",
+    "rate":  7.1,
+    "gameType":  1,
+    "localFile":  "Capitalist_Bus_Driver.zip",
+    "localBytes":  20313272,
+    "verifiedAt":  "2026-10-20T11:15:39",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

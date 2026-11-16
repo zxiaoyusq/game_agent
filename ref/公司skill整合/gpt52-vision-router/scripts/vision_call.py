@@ -39,7 +39,7 @@ for _stream in (sys.stdout, sys.stderr):
 # ---- defaults (override via skill-local vision_config.json) -----------------
 DEFAULT_BASE_URL = "https://api.xiaomimimo.com/v1"
 DEFAULT_MODEL = "mimo-v2.5"
-DEFAULT_API_KEY = os.environ.get("MIMO_API_KEY", "YOUR_API_KEY_HERE")
+DEFAULT_API_KEY = "YOUR_API_KEY_HERE"
 GAMERT_USER_MODELS = os.path.join(
     os.path.expanduser("~"), ".gameartagent", "user_models.json"
 )

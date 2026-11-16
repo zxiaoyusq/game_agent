@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "94847",
+    "apiName":  "War The Knights Battle Arena Swords",
+    "targetName":  "War The Knights Battle Arena Swords",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_War_The_Knights_Battle_Arena_Swords.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260429/aa3d86c6c3506fad6603259aa8e3e59b.zip",
+    "bundleMd5":  "aa3d86c6c3506fad6603259aa8e3e59b",
+    "bundleSize":  24357778,
+    "updatedAt":  1777542262,
+    "gameLink":  "https://www.gztongmenggame.com/War_The_Knights_Battle_Arena_Swords/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94847",
+    "category":  "Action",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "War_The_Knights_Battle_Arena_Swords.zip",
+    "localBytes":  24357778,
+    "verifiedAt":  "2026-10-20T11:11:21",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

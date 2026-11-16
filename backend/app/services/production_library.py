@@ -14,7 +14,7 @@ from app.services import knowledge
 
 logger = logging.getLogger(__name__)
 SOURCE = Path(__file__).resolve().parents[3] / "resources" / "game-production"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 MODULES = ("genre", "framework")
 TEXT_SUFFIXES = {".md", ".txt", ".json", ".yaml", ".yml"}
 
@@ -22,6 +22,8 @@ TEXT_SUFFIXES = {".md", ".txt", ".json", ".yaml", ".yml"}
 GENRES = [
     {"id": "general", "label": "通用 / 自定义休闲玩法", "description": "先定义核心循环和规则，再选择适用的验收方法。",
      "stage_guidance": {"prototype": "定义核心循环、状态转移、成功失败条件与首版范围，不预设排序或消除。", "test": "按原型中的规则不变量、完整循环和平台要求验证，不强制套用关卡求解。"}},
+    {"id": "board-games", "label": "棋盘与回合制", "description": "Ludo 等棋盘移动、随机骰子、回合奖励与完整对局。",
+     "stage_guidance": {"prototype": "依据真实来源明确路径、合法走法、回合奖励、安全格、精确终点、模式差异和胜利条件。", "test": "验证路径与轮转、吃子/叠子边界、随机公平性、存档、AI合法性，并通过真实页面完成对局到结算。"}},
     {"id": "sorting", "label": "分类整理", "description": "球、水、货物等整理玩法；先明确容器、移动和完成规则。",
      "stage_guidance": {"prototype": "明确容器容量、单次移动、隐藏信息和完成规则，验证选定关卡。", "test": "核对数量守恒、合法移动、关卡可解性及本项目实际提供的辅助操作。"}},
     {"id": "block-placement", "label": "方块摆放与消行", "description": "离散网格、形状摆放、消行与无处可放的结算。",
@@ -47,6 +49,10 @@ FRAMEWORKS = [
     {"id": "canvas-web", "label": "Canvas 2D · Web / H5", "description": "轻量二维规则验证，使用浏览器 Canvas 和独立玩法逻辑。",
      "status": "执行协议已适配，待完整项目验收", "instructions": "使用浏览器原生 Canvas 2D 实现轻量游戏，不加载 Cocos 或伪造引擎版本。玩法状态与渲染、输入分离，提供真实浏览器输入验证；复杂物理或编辑器需求应重新选型。",
      "knowledge_paths": ["framework/docs/web-common.md", "framework/docs/canvas-web.md"],
+     "recommended_skills": ["casual-game-production/SKILL.md"]},
+    {"id": "native-web", "label": "原生 Web · DOM / SVG / Canvas", "description": "按画面与交互选择浏览器原生表现，适合轻量棋盘和小包体 H5。",
+     "status": "执行协议已适配，当前任务需独立验收", "instructions": "使用原生 HTML/CSS/ES模块，按需要选择 DOM、SVG 或 Canvas，不要求为棋盘引入引擎。规则、表现、输入与存档分离，构建使用相对资源路径；不得引用开发机绝对路径或把旧成品冒充本次生成。",
+     "knowledge_paths": ["framework/docs/web-common.md", "framework/docs/native-web.md"],
      "recommended_skills": ["casual-game-production/SKILL.md"]},
 ]
 for _framework in FRAMEWORKS:

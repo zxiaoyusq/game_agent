@@ -1,0 +1,116 @@
+{
+  "commit": "efc1351d5720d46ce10d84b2ea037c2318b6e7cd",
+  "recordedAt": "2026-10-30T20:58:53.092Z",
+  "environment": "MuMu local WebView preview; not AHA",
+  "scope": "reset level and tutorial progress; existing hammer inventory retained; natural taps using solver",
+  "matchingGameFiles": 115,
+  "excludedFile": "offline-worker.js rebuilt for isolated copy",
+  "hashes": {
+    "data.js": "bb9f9336059dc0d2a8cd2abd27d47ab028911e70095379b54b3acb00a13124c5",
+    "level-config.js": "cf9733d5cc4fa11a71edc5860020a746d1b5e4f10a739c974e2567f14d46186e",
+    "tutorial-first.js": "9ac8de343dcd62a2c74f3bd3a4861e6122eda793e0cc186b323b5ed8073ead54",
+    "tutorial-third.js": "7ce80f97c68ef3f072976e0cb3ac2970b37e10586e1e53a5b89651b9be961d9a",
+    "tutorial-fifth.js": "0ad23c81de9ee9ce3a035a390e9bd7ba6e300977af1bedc9880594c5aa733582",
+    "tutorial-seventh.js": "70293ec7da1e538c823935d4f4b5b406192a0225d89048197ca0b3c09cf286a8",
+    "tutorial-tenth.js": "219a3fbfe55054aa936ecd16c1fbd79f5fb7dbe4c357270f18ebd3d703049978",
+    "auto-shuffle.js": "32ad8eae847488c3dfdb2cc09e6fb44e1dfe97064f60530e989cf707df447a1f"
+  },
+  "results": {
+    "result.json": {
+      "result": {
+        "progress": 3,
+        "level": 3,
+        "tiles": 40,
+        "errors": []
+      },
+      "firstTutorial": "completed",
+      "thirdTutorial": "completed",
+      "timerPaused": true
+    },
+    "result-first6.json": {
+      "final": {
+        "progress": 6,
+        "level": 6,
+        "tiles": 24,
+        "errors": []
+      },
+      "firstTutorial": "completed",
+      "thirdTutorial": "completed",
+      "fifthTutorial": "completed"
+    },
+    "result-first7.json": {
+      "result": {
+        "progress": 7,
+        "level": 7,
+        "tiles": 40,
+        "hammer": 1,
+        "errors": []
+      },
+      "firstSixEvidence": "result-first6.json",
+      "seventhTutorial": "completed",
+      "timerPaused": true
+    },
+    "result-first8.json": {
+      "result": {
+        "progress": 8,
+        "level": 8,
+        "tiles": 32,
+        "timer": 196,
+        "errors": []
+      },
+      "firstSevenEvidence": "result-first7.json"
+    },
+    "result-first9.json": {
+      "result": {
+        "progress": 9,
+        "level": 9,
+        "tiles": 40,
+        "timer": 210,
+        "errors": []
+      },
+      "firstEightEvidence": "result-first8.json"
+    },
+    "result-first10.json": {
+      "result": {
+        "progress": 10,
+        "level": 10,
+        "tiles": 48,
+        "shuffle": 6,
+        "errors": []
+      },
+      "firstNineEvidence": "result-first9.json",
+      "tenthTutorial": "completed"
+    },
+    "result-first11.json": {
+      "result": {
+        "progress": 11,
+        "level": 11,
+        "tiles": 32,
+        "timer": 168,
+        "errors": []
+      },
+      "firstTenEvidence": "result-first10.json",
+      "tenthStaticCandidate": true
+    },
+    "result-first12.json": {
+      "result": {
+        "progress": 12,
+        "level": 12,
+        "tiles": 40,
+        "timer": 130,
+        "errors": []
+      },
+      "firstElevenEvidence": "result-first11.json"
+    },
+    "result-first13.json": {
+      "result": {
+        "progress": 13,
+        "level": 13,
+        "tiles": 72,
+        "timer": 300,
+        "errors": []
+      },
+      "firstTwelveEvidence": "result-first12.json"
+    }
+  }
+}

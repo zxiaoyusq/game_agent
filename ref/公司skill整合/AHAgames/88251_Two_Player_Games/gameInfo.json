@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  88251,
+    "apiName":  "Two Player Games",
+    "targetName":  "Two Player Games",
+    "match":  "EXACT",
+    "bundleName":  "re_1788861955731_two-player-games-transsion-offline.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260908/9367215492087370e7d1dafc83eeb407.zip",
+    "bundleMd5":  "9367215492087370e7d1dafc83eeb407",
+    "bundleSize":  14531064,
+    "updatedAt":  1788956954,
+    "gameLink":  "https://www.hkminih5game.com/Two_Player_Games/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_88251",
+    "category":  "Puzzle",
+    "rate":  7.7,
+    "gameType":  1,
+    "localFile":  "Two_Player_Games.zip",
+    "localBytes":  14531064,
+    "verifiedAt":  "2026-10-20T10:34:15",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "MuMu WebView; synchronous generator only; not full startup",
+  "samples": [
+    {
+      "seed": 1,
+      "attempt": 6,
+      "elapsedMs": 99.10000000149012,
+      "solutionPairs": 22
+    },
+    {
+      "seed": 13,
+      "attempt": 28,
+      "elapsedMs": 160.29999999701977,
+      "solutionPairs": 22
+    },
+    {
+      "seed": 97,
+      "attempt": 46,
+      "elapsedMs": 300.79999999701977,
+      "solutionPairs": 22
+    },
+    {
+      "seed": 576,
+      "attempt": 27,
+      "elapsedMs": 68.60000000149012,
+      "solutionPairs": 22
+    },
+    {
+      "seed": 651,
+      "attempt": 34,
+      "elapsedMs": 147,
+      "solutionPairs": 22
+    }
+  ]
+}

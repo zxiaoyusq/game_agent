@@ -1,0 +1,1083 @@
+{
+  "scope": "独立合成几何；参考正文通过read_reference阅读，未启动游戏",
+  "references": [
+    {
+      "path": "mcp-inputs/mac-codex/4d4eab92df392599c54730b6e087a0949d4875f602c010358e18095007e2275d/Carrom_retry_4d4eab92.js",
+      "status": "NEEDS_CONTEXT",
+      "reason": "脚本不读取或执行参考源码；未取得完整文件哈希及全文调用检索证据"
+    },
+    {
+      "path": "mcp-inputs/mac-codex/98cdce5f52ad498f6aea9fabb86f9c9020ad7b5c594c9cd6c1ac9dd03a769262/Carrom_ai_force_98cdce5f.js",
+      "status": "NEEDS_CONTEXT",
+      "reason": "脚本不读取或执行参考源码；未取得完整文件哈希及全文调用检索证据"
+    }
+  ],
+  "cases": [
+    {
+      "name": "普通子内部采样间掠碰",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 120,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "pieces": [
+          {
+            "id": "O",
+            "x": 45,
+            "y": 26,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 30,
+            "y": 0
+          },
+          {
+            "x": 60,
+            "y": 0
+          },
+          {
+            "x": 90,
+            "y": 0
+          },
+          {
+            "x": 120,
+            "y": 0
+          }
+        ],
+        "length": 120,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "击球器内部采样间掠碰",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 174.08,
+          "y": 0
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "pieces": [
+          {
+            "id": "O",
+            "x": 65.28,
+            "y": 35,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 43.52,
+            "y": 0
+          },
+          {
+            "x": 87.04,
+            "y": 0
+          },
+          {
+            "x": 130.56,
+            "y": 0
+          },
+          {
+            "x": 174.08,
+            "y": 0
+          }
+        ],
+        "length": 174.08,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "短于步长零采样",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 20,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "pieces": [
+          {
+            "id": "O",
+            "x": 19,
+            "y": 31,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [],
+        "length": 20,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "非整倍数末段遗漏",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 89,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "pieces": [
+          {
+            "id": "O",
+            "x": 89,
+            "y": 31,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 30,
+            "y": 0
+          },
+          {
+            "x": 60,
+            "y": 0
+          }
+        ],
+        "length": 89,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "零长段必须拒绝",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 0,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "pieces": [
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [],
+        "length": 0,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "invalid-segment"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "严格小于阈值边界",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 60,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "pieces": [
+          {
+            "id": "O",
+            "x": 30,
+            "y": 27,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 30,
+            "y": 0
+          },
+          {
+            "x": 60,
+            "y": 0
+          }
+        ],
+        "length": 60,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "旧ghost整倍数末采样误杀",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 87.04,
+          "y": 0
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 123.8,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": true,
+        "samples": [
+          {
+            "x": 43.52,
+            "y": 0
+          },
+          {
+            "x": 87.04,
+            "y": 0
+          }
+        ],
+        "length": 87.04,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "invalid-terminal"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "真实切点合法接触仍被旧阈值误杀",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 87.04,
+          "y": 0
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 124.8,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": true,
+        "contract": false
+      },
+      "legacy": {
+        "blocked": true,
+        "samples": [
+          {
+            "x": 43.52,
+            "y": 0
+          },
+          {
+            "x": 87.04,
+            "y": 0
+          }
+        ],
+        "length": 87.04,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": false
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "真实切点非整倍数合法接触",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 90,
+          "y": 0
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 127.76,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "contract": false
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 43.52,
+            "y": 0
+          },
+          {
+            "x": 87.04,
+            "y": 0
+          }
+        ],
+        "length": 90,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": false,
+      "contract": {
+        "blocked": false
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "普通子到袋口不得把移动子当障碍",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 120,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "moverId": "M",
+        "pieces": [
+          {
+            "id": "M",
+            "x": 0,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "contract": false
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 30,
+            "y": 0
+          },
+          {
+            "x": 60,
+            "y": 0
+          },
+          {
+            "x": 90,
+            "y": 0
+          },
+          {
+            "x": 120,
+            "y": 0
+          }
+        ],
+        "length": 120,
+        "radius": 27
+      },
+      "continuousBlocked": false,
+      "contract": {
+        "blocked": false
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "组合末端真实接触合法",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 120,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "moverId": "M",
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "M",
+            "x": 0,
+            "y": 0,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 152,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "contract": false
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 30,
+            "y": 0
+          },
+          {
+            "x": 60,
+            "y": 0
+          },
+          {
+            "x": 90,
+            "y": 0
+          },
+          {
+            "x": 120,
+            "y": 0
+          }
+        ],
+        "length": 120,
+        "radius": 27
+      },
+      "continuousBlocked": false,
+      "contract": {
+        "blocked": false
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "组合不能豁免第三子",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 120,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "moverId": "M",
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "M",
+            "x": 0,
+            "y": 0,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 152,
+            "y": 0,
+            "radius": 16
+          },
+          {
+            "id": "O",
+            "x": 60,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": true,
+        "samples": [
+          {
+            "x": 30,
+            "y": 0
+          },
+          {
+            "x": 60,
+            "y": 0
+          }
+        ],
+        "length": 120,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "全局排除目标会掩盖提前穿透",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 120,
+          "y": 0
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 60,
+            "y": 0,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": true,
+        "samples": [
+          {
+            "x": 30,
+            "y": 0
+          },
+          {
+            "x": 60,
+            "y": 0
+          }
+        ],
+        "length": 120,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "invalid-terminal"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "反弹连接点第三子不可忽略",
+      "level": "纯几何",
+      "input": {
+        "a": {
+          "x": 0,
+          "y": 0
+        },
+        "b": {
+          "x": 29,
+          "y": 0
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "pieces": [
+          {
+            "id": "O",
+            "x": 29,
+            "y": 37,
+            "radius": 16
+          }
+        ]
+      },
+      "expected": {
+        "legacy": false,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [],
+        "length": 29,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "BL精确直击候选-miss",
+      "level": "候选公式及区域约束可达；未执行原候选函数",
+      "input": {
+        "a": {
+          "x": 409.75,
+          "y": 421
+        },
+        "b": {
+          "x": 329.61400000000003,
+          "y": 527.848
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 307.558,
+            "y": 557.256,
+            "radius": 16
+          },
+          {
+            "id": "O",
+            "x": 342.582,
+            "y": 452.224,
+            "radius": 16
+          }
+        ],
+        "pocket": {
+          "x": 61,
+          "y": 886
+        },
+        "hDot": 1
+      },
+      "expected": {
+        "legacy": false,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "x": 383.63800000000003,
+            "y": 455.81600000000003
+          },
+          {
+            "x": 357.52600000000007,
+            "y": 490.63200000000006
+          },
+          {
+            "x": 331.4140000000001,
+            "y": 525.4480000000001
+          }
+        ],
+        "length": 133.55999999999995,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "invalid-terminal"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "BL固定袋口普通子漏检",
+      "level": "精确直击公式与两段旧检测通过；未执行原候选函数",
+      "input": {
+        "a": {
+          "id": "T",
+          "x": 307.558,
+          "y": 557.256,
+          "radius": 16
+        },
+        "b": {
+          "x": 61,
+          "y": 886
+        },
+        "h": 30,
+        "moverRadius": 16,
+        "moverId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 307.558,
+            "y": 557.256,
+            "radius": 16
+          },
+          {
+            "id": "O2",
+            "x": 259.758,
+            "y": 577.656,
+            "radius": 16
+          }
+        ],
+        "strikerStart": {
+          "x": 409.75,
+          "y": 421
+        },
+        "strikerGhost": {
+          "x": 329.61400000000003,
+          "y": 527.848
+        }
+      },
+      "expected": {
+        "legacy": false,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": false,
+        "samples": [
+          {
+            "id": "T",
+            "x": 289.558,
+            "y": 581.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 271.558,
+            "y": 605.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 253.558,
+            "y": 629.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 235.558,
+            "y": 653.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 217.558,
+            "y": 677.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 199.558,
+            "y": 701.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 181.558,
+            "y": 725.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 163.558,
+            "y": 749.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 145.558,
+            "y": 773.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 127.55799999999999,
+            "y": 797.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 109.55799999999999,
+            "y": 821.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 91.55799999999999,
+            "y": 845.256,
+            "radius": 16
+          },
+          {
+            "id": "T",
+            "x": 73.55799999999999,
+            "y": 869.256,
+            "radius": 16
+          }
+        ],
+        "length": 410.93000000000006,
+        "radius": 27
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "third-body"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "BL精确直击候选-terminal",
+      "level": "候选公式及区域约束可达；未执行原候选函数",
+      "input": {
+        "a": {
+          "x": 409.74999999999994,
+          "y": 421
+        },
+        "b": {
+          "x": 330.21399999999994,
+          "y": 527.048
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 308.15799999999996,
+            "y": 556.456,
+            "radius": 16
+          }
+        ],
+        "pocket": {
+          "x": 61,
+          "y": 886
+        },
+        "hDot": 1
+      },
+      "expected": {
+        "legacy": true,
+        "continuous": true,
+        "contract": true
+      },
+      "legacy": {
+        "blocked": true,
+        "samples": [
+          {
+            "x": 383.6379999999999,
+            "y": 455.81600000000003
+          },
+          {
+            "x": 357.52599999999995,
+            "y": 490.63200000000006
+          },
+          {
+            "x": 331.414,
+            "y": 525.4480000000001
+          }
+        ],
+        "length": 132.56,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": true,
+        "reason": "invalid-terminal"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "BL固定袋口真实切点保护",
+      "level": "真实切点设计保护；非当前ghost候选",
+      "input": {
+        "a": {
+          "x": 409.75000000000006,
+          "y": 421
+        },
+        "b": {
+          "x": 331.41400000000004,
+          "y": 525.448
+        },
+        "h": 43.52,
+        "moverRadius": 21.76,
+        "terminalId": "T",
+        "pieces": [
+          {
+            "id": "T",
+            "x": 308.75800000000004,
+            "y": 555.656,
+            "radius": 16
+          }
+        ],
+        "pocket": {
+          "x": 61,
+          "y": 886
+        }
+      },
+      "expected": {
+        "contract": false
+      },
+      "legacy": {
+        "blocked": true,
+        "samples": [
+          {
+            "x": 383.63800000000003,
+            "y": 455.816
+          },
+          {
+            "x": 357.526,
+            "y": 490.63199999999995
+          },
+          {
+            "x": 331.414,
+            "y": 525.448
+          }
+        ],
+        "length": 130.56,
+        "radius": 39.168000000000006
+      },
+      "continuousBlocked": true,
+      "contract": {
+        "blocked": false
+      },
+      "status": "PASS"
+    }
+  ],
+  "forceCases": [
+    {
+      "input": 60,
+      "capped": 60,
+      "retryA": 100,
+      "retryB": 60
+    },
+    {
+      "input": 100,
+      "capped": 100,
+      "retryA": 100,
+      "retryB": 100
+    },
+    {
+      "input": 120,
+      "capped": 120,
+      "retryA": 100,
+      "retryB": 120
+    },
+    {
+      "input": 200,
+      "capped": 125,
+      "retryA": 100,
+      "retryB": 125
+    }
+  ],
+  "count": 18,
+  "result": "PASS：合成断言通过；不代表原游戏验收"
+}

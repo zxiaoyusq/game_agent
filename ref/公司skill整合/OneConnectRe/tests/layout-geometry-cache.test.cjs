@@ -1,0 +1,20 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+let styleWrites=0;
+class El{constructor(){this.style=new Proxy({}, {set(o,k,v){if(k!=='cssText')styleWrites++;o[k]=v;return true}});this.children=[];}setAttribute(){}appendChild(x){this.children.push(x)}append(...x){this.children.push(...x)}addEventListener(){}get lastElementChild(){return this.children.at(-1)}}
+let frames=[],calculations=0,rect={left:10,top:20,width:390,height:844};
+const runtime={running_layout:{name:'game'},all_global_vars:[{name:'COLUMNS_COUNT',data:12},{name:'ROWS_COUNT',data:6},{name:'level',data:2},{name:'pause',data:0}],types:{t5:{instances:[]},t25:{instances:[]}},canvas:{getBoundingClientRect:()=>rect}};
+const area=()=>({left:0,top:0,width:40,height:30});
+const adapter={restore(){},moveHud(){},moveTools(){},movePause(){},setToolsHidden(){}};
+const w={addEventListener(){},cr_getC2Runtime:()=>runtime,oneConnectLayoutAdapter:adapter,oneConnectLayoutGeometry:{calculate(){calculations++;return {header:area(),progress:area(),board:area(),banner:area(),tools:Array.from({length:4},area)}}}};
+const document={body:new El(),createElement:()=>new El(),getElementById:()=>null};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/layout_candidate.js','utf8'),{window:w,document,localStorage:{getItem:()=>null},Number,Array,Object,Date,Math,RangeError,setTimeout(){},clearTimeout(){},requestAnimationFrame:f=>frames.push(f)});
+w.oneConnectLayoutCandidate.install();const tick=()=>{const f=frames.shift();assert(f);f()};
+tick();for(let i=0;i<10;i++)tick();assert.equal(calculations,1,'unchanged geometry is reused');
+rect={...rect,left:11};tick();assert.equal(calculations,2,'canvas movement invalidates geometry');
+rect={...rect,width:400};tick();assert.equal(calculations,3,'canvas resize invalidates geometry');
+w.oneConnectLayoutCandidate.configure({safeArea:{top:4}});tick();assert.equal(calculations,4,'safe-area update invalidates geometry');
+runtime.all_global_vars.find(v=>v.name==='ROWS_COUNT').data=8;tick();assert.equal(calculations,5,'board dimension change invalidates geometry');
+runtime.canvas.width=800;runtime.canvas.height=1688;runtime.isRetina=true;runtime.devicePixelRatio=2;tick();assert.equal(calculations,6,'canvas backing size and pixel ratio invalidate geometry');
+runtime.running_layout.name='menu';tick();let stableWrites=styleWrites;for(let i=0;i<5;i++)tick();assert.equal(styleWrites,stableWrites,'menu frames avoid redundant style writes');
+runtime.running_layout.name='game';rect={...rect,width:844,height:390};tick();stableWrites=styleWrites;for(let i=0;i<5;i++)tick();assert.equal(styleWrites,stableWrites,'landscape frames avoid redundant style writes');
+console.log('layout geometry reused and invalidated on changes PASS');

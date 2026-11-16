@@ -1,0 +1,594 @@
+{
+  "status": "静态美术装配，运行Widget/输入/动画待代码阶段复核",
+  "mode": "resource",
+  "design_size": [
+    720,
+    1280
+  ],
+  "board_contract": "workflow/board-contract.json",
+  "transform": "设计坐标 X=360+1.15*x，Y=640-1.15*y；须由美术装配验证父链、默认锚点、Widget和运行缩放，再冻结",
+  "token": {
+    "pivot": [
+      0.5,
+      0.5
+    ],
+    "status": "按默认Sprite中心装配，运行需复核",
+    "red_packed_rotation_canvas_degrees": 90,
+    "red_upright_size": [
+      32,
+      52
+    ],
+    "other_sizes": {
+      "blue": [
+        32,
+        53
+      ],
+      "green": [
+        33,
+        53
+      ],
+      "yellow": [
+        33,
+        53
+      ]
+    },
+    "touch_target_min_css_px": 44
+  },
+  "dice": {
+    "duration_ms": 833.3333333333334,
+    "sample": 30,
+    "timeline": [
+      {
+        "time_ms": 0,
+        "path": "public/assets/dice-roll-00.png",
+        "frame_uuid": "f6kjjXV1JHZYGKAZZnJ+2a",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          63,
+          56,
+          102,
+          103
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ]
+      },
+      {
+        "time_ms": 33.333333333333336,
+        "path": "public/assets/dice-roll-01.png",
+        "frame_uuid": "307oX3QY5KxZD42nW0Rj5O",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          59,
+          49,
+          114,
+          120
+        ],
+        "source_offset": [
+          6,
+          1
+        ]
+      },
+      {
+        "time_ms": 66.66666666666667,
+        "path": "public/assets/dice-roll-02.png",
+        "frame_uuid": "9fl5a6VvFHxLndguLIo2bN",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          53,
+          51,
+          122,
+          113
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ]
+      },
+      {
+        "time_ms": 100,
+        "path": "public/assets/dice-roll-03.png",
+        "frame_uuid": "768dpeSx1PIoaan7fKD3sO",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          53,
+          51,
+          122,
+          113
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ]
+      },
+      {
+        "time_ms": 133.33333333333334,
+        "path": "public/assets/dice-roll-04.png",
+        "frame_uuid": "40cNs2/UZBPYdemmj13gTD",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          57,
+          49,
+          117,
+          120
+        ],
+        "source_offset": [
+          5.5,
+          1
+        ]
+      },
+      {
+        "time_ms": 166.66666666666666,
+        "path": "public/assets/dice-roll-05.png",
+        "frame_uuid": "b6LLERZPtH1oeX3T/JAFJX",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          53,
+          51,
+          123,
+          116
+        ],
+        "source_offset": [
+          4.5,
+          1
+        ]
+      },
+      {
+        "time_ms": 200,
+        "path": "public/assets/dice-roll-06.png",
+        "frame_uuid": "48udqbvJBE3ZHHpRZO/8l1",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          58,
+          48,
+          117,
+          121
+        ],
+        "source_offset": [
+          6.5,
+          1.5
+        ]
+      },
+      {
+        "time_ms": 233.33333333333334,
+        "path": "public/assets/dice-roll-07.png",
+        "frame_uuid": "c3ENel+exMfoQckrlkE9Cp",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          58,
+          48,
+          117,
+          121
+        ],
+        "source_offset": [
+          6.5,
+          1.5
+        ]
+      },
+      {
+        "time_ms": 266.6666666666667,
+        "path": "public/assets/dice-roll-08.png",
+        "frame_uuid": "1ecS8lzLhG3YwKeMobd9sN",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          59,
+          52,
+          115,
+          114
+        ],
+        "source_offset": [
+          6.5,
+          1
+        ]
+      },
+      {
+        "time_ms": 300,
+        "path": "public/assets/dice-roll-09.png",
+        "frame_uuid": "d9EkEivKlGSYPM1qNiuypt",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          59,
+          52,
+          115,
+          114
+        ],
+        "source_offset": [
+          6.5,
+          1
+        ]
+      },
+      {
+        "time_ms": 333.3333333333333,
+        "path": "public/assets/dice-roll-10.png",
+        "frame_uuid": "67QUi36dlKpoikxmuzhk4b",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          60,
+          52,
+          114,
+          113
+        ],
+        "source_offset": [
+          7,
+          1.5
+        ]
+      },
+      {
+        "time_ms": 366.6666666666667,
+        "path": "public/assets/dice-roll-11.png",
+        "frame_uuid": "1a1xlOlyREp40w0T/xcjfl",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          52,
+          49,
+          123,
+          115
+        ],
+        "source_offset": [
+          3.5,
+          3.5
+        ]
+      },
+      {
+        "time_ms": 400,
+        "path": "public/assets/dice-roll-12.png",
+        "frame_uuid": "3cFtMHD1hFhYrGSjeBto+V",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          54,
+          54,
+          117,
+          114
+        ],
+        "source_offset": [
+          2.5,
+          -1
+        ]
+      },
+      {
+        "time_ms": 433.3333333333333,
+        "path": "public/assets/dice-roll-13.png",
+        "frame_uuid": "25OGl63GhPELZqPXqHl3pL",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          54,
+          54,
+          117,
+          114
+        ],
+        "source_offset": [
+          2.5,
+          -1
+        ]
+      },
+      {
+        "time_ms": 466.6666666666667,
+        "path": "public/assets/dice-roll-14.png",
+        "frame_uuid": "8clQTVvRtBzIgzo7MlPdF4",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          62,
+          53,
+          110,
+          113
+        ],
+        "source_offset": [
+          7,
+          0.5
+        ]
+      },
+      {
+        "time_ms": 500,
+        "path": "public/assets/dice-roll-15.png",
+        "frame_uuid": "17j7gVgVVF4qMa6aDJYQ0o",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          51,
+          46,
+          122,
+          121
+        ],
+        "source_offset": [
+          2,
+          3.5
+        ]
+      },
+      {
+        "time_ms": 533.3333333333334,
+        "path": "public/assets/dice-roll-16.png",
+        "frame_uuid": "a0wfQdzkZDb5froO1UXPwm",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          56,
+          47,
+          119,
+          123
+        ],
+        "source_offset": [
+          5.5,
+          1.5
+        ]
+      },
+      {
+        "time_ms": 566.6666666666666,
+        "path": "public/assets/dice-roll-17.png",
+        "frame_uuid": "d2aAlAPdpN5LFJbA6siz8K",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          58,
+          49,
+          117,
+          118
+        ],
+        "source_offset": [
+          6.5,
+          2
+        ]
+      },
+      {
+        "time_ms": 600,
+        "path": "public/assets/dice-roll-18.png",
+        "frame_uuid": "a6raEqh+FA1oPi1xR9kQAX",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          64,
+          57,
+          105,
+          106
+        ],
+        "source_offset": [
+          6.5,
+          0
+        ]
+      },
+      {
+        "time_ms": 633.3333333333334,
+        "path": "public/assets/dice-roll-19.png",
+        "frame_uuid": "11m1wL8EBGfJwyIrQpeMtt",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          64,
+          57,
+          105,
+          106
+        ],
+        "source_offset": [
+          6.5,
+          0
+        ]
+      },
+      {
+        "time_ms": 666.6666666666666,
+        "path": "public/assets/dice-roll-20.png",
+        "frame_uuid": "e5c38tj3xEy7B1VIOt26n/",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          57,
+          53,
+          114,
+          116
+        ],
+        "source_offset": [
+          4,
+          -1
+        ]
+      },
+      {
+        "time_ms": 700,
+        "path": "public/assets/dice-roll-21.png",
+        "frame_uuid": "79p0z3KDpGgKUGfRp7ejur",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          54,
+          53,
+          120,
+          109
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ]
+      },
+      {
+        "time_ms": 733.3333333333334,
+        "path": "public/assets/dice-roll-22.png",
+        "frame_uuid": "da5D8qbDJHYp7oaShALTl3",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          54,
+          53,
+          120,
+          109
+        ],
+        "source_offset": [
+          4,
+          2.5
+        ]
+      },
+      {
+        "time_ms": 766.6666666666666,
+        "path": "public/assets/dice-roll-23.png",
+        "frame_uuid": "f1i4VFNqJKu5GP86SRochF",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          58,
+          48,
+          117,
+          120
+        ],
+        "source_offset": [
+          6.5,
+          2
+        ]
+      },
+      {
+        "time_ms": 800,
+        "path": "public/assets/dice-roll-24.png",
+        "frame_uuid": "b9+EneM6FFjZPOXAovzULC",
+        "original_size": [
+          220,
+          220
+        ],
+        "draw_mode": "完整原画布，不再次trim",
+        "source_rect": [
+          58,
+          48,
+          117,
+          120
+        ],
+        "source_offset": [
+          6.5,
+          2
+        ]
+      }
+    ],
+    "result": {
+      "paths": [
+        "public/assets/dice-face-1.png",
+        "public/assets/dice-face-2.png",
+        "public/assets/dice-face-3.png",
+        "public/assets/dice-face-4.png",
+        "public/assets/dice-face-5.png",
+        "public/assets/dice-face-6.png"
+      ],
+      "original_size": [
+        220,
+        220
+      ],
+      "trim_draw_rect": [
+        62,
+        54,
+        104,
+        106
+      ],
+      "pivot": [
+        110,
+        110
+      ]
+    },
+    "negative_preroll": "-133.333ms不增加动画长度；正常播放25帧后切预存结果"
+  },
+  "animation": {
+    "walk_ms_per_grid": 110,
+    "walk_pose": "每格sin(pi*t)弧线，保持逐格落地；出营单段",
+    "capture": "强调120ms，逆外环30ms/格，最后180ms回原槽",
+    "home": "最后110ms弧线，再400ms光圈/缩放至分槽，不额外耗步",
+    "win": "1500ms赢家光圈和彩屑，后结算",
+    "lifecycle": "动画时锁棋盘；设置/后台冻结单调elapsed；刷新恢复；重开generation取消；掷骰结果开始即保存"
+  },
+  "audio": {
+    "roll": "roll.mp3",
+    "walk": "walk.mp3",
+    "capture": "capture.mp3",
+    "home": "home.mp3",
+    "win": "win.mp3",
+    "turn": "turn.mp3",
+    "button": "click.ogg",
+    "background": "bgm.mp3"
+  },
+  "avatars": {
+    "human": "public/assets/avatar-human.png",
+    "ai": "public/assets/avatar-ai.png",
+    "randomization": false,
+    "user_decision": "首版只使用已确认的两张原版形象，取消16头像随机化",
+    "limitation": "不宣称已定位完整16头像；按本轮用户真实答复交接两张原版形象"
+  },
+  "ui": "沿用原背景/返回/原按钮，中文程序文字；禁止仪表盘、侧栏和网页卡片"
+}

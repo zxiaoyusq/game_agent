@@ -1,0 +1,1242 @@
+[
+  {
+    "key": "block_blast",
+    "id": 1617391485,
+    "name": "Block Blast！",
+    "artist": "Hungry Studio",
+    "seller": "ARETIS LIMITED",
+    "store": "https://apps.apple.com/us/app/block-blast/id1617391485?uo=4",
+    "version": "7.5.5",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_blast\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/2f/57/6e2f5734-6f1b-e298-69c1-77ff96faa2a4/1.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "3d15bbebb105effc403321a95aba5031821b973341b6f71fdbf3d706de1bbd6e"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_blast\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e2/60/92/e260923c-09a4-371a-dd74-9cfee00d6e48/2.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "fe92033e81613ceb1f34390d0a92d8892593cb1652c1242f7b77c44f684bc44b"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_blast\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/53/7a/74537a3f-7a0c-8ce1-d8d3-25c39acfc827/3.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "52c502191738bc88d86e05a098d27b40788f6319d22f9fae216716216827cc31"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_blast\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cd/de/10/cdde101d-d2de-d1c4-0d28-fb8499b85640/4.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "1b2cc62f109302ac26a39ce226c457202c85993183e0bd8b25d8f3e286345ce1"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_blast\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/39/b5/11/39b51131-f5e3-defe-9333-df8632196db4/5.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "506e0e033982ced09a56b2c026440ba0893c26cb92746d737a14e2f40fec0682"
+      }
+    ]
+  },
+  {
+    "key": "pizza_ready",
+    "id": 6450917563,
+    "name": "Pizza Ready!",
+    "artist": "Supercent, Inc.",
+    "seller": "Supercent Inc.",
+    "store": "https://apps.apple.com/us/app/pizza-ready/id6450917563?uo=4",
+    "version": "60.4.0",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\pizza_ready\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/17/83/3f/17833f1d-c4a6-5f26-16d7-3d3d87013b33/305_019_Pizza_Ready_1242x2688_250926.jpeg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "6ba5cab3c84c9b88d3fbd2bd3ddf2b1fe3b353fe4c6a1b0a3e45ad6142deff5f"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\pizza_ready\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b9/32/8d/b9328df8-e8e7-bca4-92bb-e79331833e76/371_023_Pizza_Ready_1242x2688_250926.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "6bc5c61b1af4059dc61b0b3bfd2e2f8d7f68f73b54282e01e86db0ec4a7b7477"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\pizza_ready\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/e9/c3/ffe9c352-c81d-7418-e951-339f7754f77b/390_026_Pizza_Ready_1242x2688_250926.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "d4c2dacc032cc7e9fa637ac8ba6b7f57a1267a4ad991c6e6f7f27f5d0cd335be"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\pizza_ready\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/07/b3/8d07b3f8-d006-4243-0c40-f25152f3116c/4_Pizza_Ready_1242x2688_250926.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "4839a5adf0a6520f74c4914325a21c863cd524ac9e62d8198d4e988b8f9c758d"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\pizza_ready\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/19/16/6c/19166cda-c45a-9099-136b-925da47702ae/2_Pizza_Ready_1242x2688_250926.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "463c2c4bcd39602e2d2f61ef1242adaef8848b9d6b9826a63fe52d9030bcfa2c"
+      }
+    ]
+  },
+  {
+    "key": "ludo_king",
+    "id": 993090598,
+    "name": "Ludo King",
+    "artist": "GAMETION GLOBAL TECHNOLOGIES PTE LIMITED",
+    "seller": "GAMETION GLOBAL TECHNOLOGIES PTE LIMITED",
+    "store": "https://apps.apple.com/us/app/ludo-king/id993090598?uo=4",
+    "version": "10.6.416",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\ludo_king\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/93/23/749323f5-e431-ef2c-4112-6aed64196017/91b3084c-b634-4371-9340-f878a6c812c0_5.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "ab96c53a49b7c44b5886293629b215db0700e7f12e1b29b5dc6fa6dd5370527a"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\ludo_king\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/c4/0a/7bc40a3e-79b4-3f60-3d77-163406e5eb96/Adda-1242x2208.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "c7347cd157abdbc9842baeded19b8730131a269255b9c8dd1d55945417c5caa7"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\ludo_king\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/31/6c/26/316c26d3-3700-0361-592a-f6df2b5c1430/899e048a-77a8-43c1-95c1-59dd854efa78_2.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "2a1cc79c9bc04cbc5f8f7c8af223143a2a51d738f65c121647b9eda204f4cbe0"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\ludo_king\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/f2/05/bdf205db-c4db-2ac7-c28a-732fbd95dddb/346c864a-c883-4314-aaae-680d7780b09e_3.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "3a5848473d05f1c7beb12ee41f7c4f72fe4ed34f9c167b7da1ca9c2475e24602"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\ludo_king\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/d8/36/94d83609-b986-155b-8e13-aec3565efe19/f1ff3fa8-68d2-4fc9-aaa6-468789440619_1.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "3cb3e32ac19adedb40ef913a875a8b9e7467eac9f82f23d8c60eaceb7c31bc3b"
+      }
+    ]
+  },
+  {
+    "key": "subway_surfers",
+    "id": 512939461,
+    "name": "Subway Surfers",
+    "artist": "Sybo Games ApS",
+    "seller": "Sybo Games ApS",
+    "store": "https://apps.apple.com/us/app/subway-surfers/id512939461?uo=4",
+    "version": "3.70.1",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\subway_surfers\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/89/a7/dd/89a7dde7-7f24-b8cd-e91b-4f8e4794faa1/_U002fdata_U002fapp-store-connect-assets_U002fscreenshots_U002fen-US_U002f1_IPHONE_69.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "20ac1553bcfac707fe6dc9b7269dfff1bb8d866a9add1b6e2aba089d4ee5225f"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\subway_surfers\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/70/9a/e1709a21-81ba-279c-446e-4fd5f8d9ae24/_U002fdata_U002fapp-store-connect-assets_U002fscreenshots_U002fen-US_U002f2_IPHONE_69.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "33c30bf54abd0dc6d9c8779b0045a00a8ba6f708921bca07345f13cd5b0b0b2d"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\subway_surfers\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/7f/70/797f7095-d521-4ab2-a404-4cf91b4fd95e/_U002fdata_U002fapp-store-connect-assets_U002fscreenshots_U002fen-US_U002f3_IPHONE_69.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "40651ff24fc0d4117cd9ee3eb08da31dfedeccd06f7e3137fbebf22924e0880d"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\subway_surfers\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/6f/1c/166f1cd5-aa9b-b35c-80e7-0551df64081a/_U002fdata_U002fapp-store-connect-assets_U002fscreenshots_U002fen-US_U002f4_IPHONE_69.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "7fb63700f6dc8a507468920815ff55d57c9bff7465802fc573224d1fd5d69904"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\subway_surfers\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/51/9e/c6519e01-544b-f93b-9e99-de8dba9617e2/_U002fdata_U002fapp-store-connect-assets_U002fscreenshots_U002fen-US_U002f5_IPHONE_69.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "f663aac47c51503252109d11de1b555f188368ba55d28af9a01557bc580d22bb"
+      }
+    ]
+  },
+  {
+    "key": "tile_explorer",
+    "id": 6498883328,
+    "name": "Tile Explorer: Tiles Clear!",
+    "artist": "Oakever Games",
+    "seller": "OAKEVER GAMES PTE. LTD.",
+    "store": "https://apps.apple.com/us/app/tile-explorer-tiles-clear/id6498883328?uo=4",
+    "version": "2.5.0",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\tile_explorer\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4e/7e/38/4e7e38f8-6ac6-434b-5163-6425ce503a9f/3d696d41-50f1-4f42-a117-1326236dc17e_1.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "c5ead042abd73cb45052400b542c01c6db61f469ff6e20d4a5a14eea96317399"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\tile_explorer\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bf/0c/03/bf0c034a-602a-f787-65a0-b9801ddd9f7e/aa5511d4-4037-4131-a184-e8f71de2b42b_2.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "ae4f6b825ebfa1f23ad114ac16746ee8754a807f3616e716a2c7edaabf52ccdd"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\tile_explorer\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/41/a0/4f41a0fd-3c60-b991-0b53-8b9aa4645623/9dd73ea4-9aa7-4fea-9371-0ecdcbc7bc97_3.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "25a06ad15e9895bd3ec2308f7efee6e8bec182fc3de887fed89627f35d948ecf"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\tile_explorer\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/5c/e3/555ce327-b6c2-fbf3-8059-0c70845461da/d47fb63c-d587-44fb-8db1-081dd594aa36_4.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "c82a6313e871855d2ef615747efff11b2d2b1d01f7ec17ad384f2ec22da21c8c"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\tile_explorer\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/a2/37/7ba23783-c9e2-60d4-d12e-a1f796862c9a/4e4c7661-3243-414f-9efb-34b0b5d20dc7_5.jpg/392x696bb.jpg",
+        "size": [
+          392,
+          696
+        ],
+        "format": "JPEG",
+        "sha256": "f350d2c263f49854ff9c855842cd1d3369559b49067d228f01edfe991e131c98"
+      }
+    ]
+  },
+  {
+    "key": "mob_control",
+    "id": 1562817072,
+    "name": "Mob Control",
+    "artist": "Voodoo",
+    "seller": "Voodoo",
+    "store": "https://apps.apple.com/us/app/mob-control/id1562817072?uo=4",
+    "version": "3.24.2",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\mob_control\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/6f/7b/556f7b45-0f08-1969-382e-1c95b02ed3e3/Screen_1.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "e48ed5a85bdcce86e88e24617a821b72912496ee3048451175f2dfcfb654d329"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\mob_control\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/4d/34/c74d3443-68d7-55f6-24f1-ea2b2c1da1a4/Screen_2.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "8ae3107a6d1cb8776ee58fe89558a363457c5ae379064172f5ef90aa592b2d4d"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\mob_control\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/6f/13/9a6f13ea-f7f0-d40f-a0f0-3469c090aaa1/Screen_3.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "407908d8cbd0f59a739a7a67054bdcd51732359beb3474b75fb88325371b90e2"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\mob_control\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/1d/6f/551d6f13-60be-a18d-5683-c1d51e49a03b/Screen_4.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "05cb95ccdd8b2ceb5a253438ab06859e022062363294ae61ccd12199195e0ad4"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\mob_control\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/9d/40/eb9d4084-f901-fe35-a43e-e804ea519c7c/Screen_5.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "0dad1e7b34efe026af2dd12c1e9db692730b2ebd21fade38a7f746b8ac069bef"
+      }
+    ]
+  },
+  {
+    "key": "block_out",
+    "id": 6752672568,
+    "name": "Block Out! - Color Sort Puzzle",
+    "artist": "Grand Games A.Ş.",
+    "seller": "GRAND GAMES OYUN VE YAZILIM ANONIM SIRKETI",
+    "store": "https://apps.apple.com/us/app/block-out-color-sort-puzzle/id6752672568?uo=4",
+    "version": "1144",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_out\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/38/e5/7038e5dc-5fcf-26ab-6b29-69547f7a46aa/CLEARTHEBOARD.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "1931362a5937678105e5b9245c87284ab42038c403acf97e351cf8ea3a140292"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_out\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a1/cd/b4/a1cdb409-726b-09db-fb67-e9131c9e5c46/CHALLENGEYOURSELF.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "67e72ecf8ceb2181dd87bb6cb1a620a59fd431b519ff56e2af11b3ebb1564f0c"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_out\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ac/fc/e7/acfce70d-5909-4a58-5f92-76493de32eb5/ACTIVATEBOOSTERS.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "1748d8b5dff018bbf5ce8217872d8e9757265ea86b98c9e8124a6fa1b4e6ce64"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_out\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b1/0f/17/b10f173c-189c-6537-af3a-9c046b5e18d5/UNIQUEOBSTACLES.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "3723f1ab7c9046ee89ab5024b95994ca81ca8a988432760a0d5fc4955a6ee938"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\block_out\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/75/3f/ab753fb5-1f38-d272-47af-39ba16669e53/BEATTHECLOCK.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "3720232c32838f57081d508d75fc7476da53e4745d68cddf9207a2672d687447"
+      }
+    ]
+  },
+  {
+    "key": "magic_sort",
+    "id": 6499209744,
+    "name": "Magic Sort!",
+    "artist": "Grand Games A.Ş.",
+    "seller": "GRAND GAMES OYUN VE YAZILIM ANONIM SIRKETI",
+    "store": "https://apps.apple.com/us/app/magic-sort/id6499209744?uo=4",
+    "version": "33.69",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\magic_sort\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/af/c7/8cafc7f9-20d1-1ab3-fef2-bf5afd329a8f/MS_Store_1242x2208_StoreUI01_sort__U00281_U0029.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "db519d354a761c7b6d7498489314c40b2621a2349f0c8727a76e0063c38e5f82"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\magic_sort\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/af/28/3aaf28b0-6400-4583-96a4-ebc91d584a30/MS_Store_1242x2208_StoreUI02_challenge.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "8aa16b4f757f702d030e911dcc73fc425cb6643c7adedd38b239fbaa18f8a5d2"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\magic_sort\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/c7/a6/66c7a6f8-6942-a865-1fce-75ad21dd89ee/MS_Store_1242x2208_StoreUI03_win.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "6464b9295cc6b6d72d336b34b60a8a4d6b25a16c184bf0c50c7642e0cfd7b898"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\magic_sort\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/f2/3e/34f23e04-6f9f-1883-16ca-e4898cf19dba/MS_Store_1242x2208_StoreUI04_earn.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "ab61afd0e5659e5580411b35d20ea7813b57997da9f244b24af1b58e0119dd68"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\magic_sort\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e8/b9/6c/e8b96cdd-1907-5675-4de6-dba7d0b35aeb/MS_Store_1242x2208_StoreUI05_enjoy.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "ce6410c228be86edbcc90ab161af218628bcb89e41ed3b319b20f83298710ccc"
+      }
+    ]
+  },
+  {
+    "key": "meowdoku",
+    "id": 6761760135,
+    "name": "Meowdoku!",
+    "artist": "Oakever Games",
+    "seller": "OAKEVER GAMES PTE. LTD.",
+    "store": "https://apps.apple.com/us/app/meowdoku/id6761760135?uo=4",
+    "version": "1.21.0",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\meowdoku\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/61/fb/9f61fba0-1abe-8afa-4fee-98d9d4844126/1.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "bee6feb41eda958f008b19d1b2101f85165921d0606da4e30f584da0bc166746"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\meowdoku\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/14/b0/42/14b042eb-1a67-e3d4-c439-f5b3f884788a/2.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "0dd59577b63ad60a3acaf169e2c73132b1a48436e27c934838ea659da0a2ccf2"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\meowdoku\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/26/b9/8826b9df-9f17-e37e-7360-fb828b7c12d6/3.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "f4cf4be1d351805fc3b7e27b799b2164fb42db77087051af1b2133f0f0d3966e"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\meowdoku\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/de/0d/d2/de0dd242-5f25-55ff-dee1-199a4a3535ec/4.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "483b19b9e77166d27ef1c7f4e009cb0cb098872c2f203b8a773c93d99591a8b1"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\meowdoku\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/69/e8/c669e83e-2dc4-07d3-131e-ad0067d07e41/5.png/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "e30850d6e2602a8b6751b61a324e7e48ec7e8af3255ac7aecf88ccc69a2b9b3d"
+      }
+    ]
+  },
+  {
+    "key": "arrows_escape",
+    "id": 6748397500,
+    "name": "Arrows – Puzzle Escape",
+    "artist": "Lessmore GmbH",
+    "seller": "Lessmore GmbH",
+    "store": "https://apps.apple.com/us/app/arrows-puzzle-escape/id6748397500?uo=4",
+    "version": "0.23.1",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_escape\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ad/d0/43/add043a3-b812-a31c-a6d2-59651185320d/1290x2796_Gameplay_Arrows_updated_5.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "4464f6ecdc7a2b706807239f9be46c64a3540b2a9bb5f3eaa96a6a0653528632"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_escape\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/67/d9/f967d994-f98f-82f1-1a71-6a080d51a656/1290x2796_Gameplay_Arrows_updated_3.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "83f594b4a1466eb06033bf821daa9ec80d9db82a942c4c7b5c47e713a4f65a1b"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_escape\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/99/ad/bb99adb1-3e31-a3b5-b25b-4c5b52ed9063/1290x2796_Gameplay_Arrows_updated_1.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "8f8cd5dbfba9741c10379bd551579c9bd1967515f400708cbf5f26a5fc40c03d"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_escape\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/39/8b/33398b9f-6c1c-30c6-c7c5-9bced7755a88/1290x2796_Gameplay_Arrows_updated_4.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "da6f99eeb8853f564f868fb4c3b122d78bc7cd454a5ea26e256106132d7514fe"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_escape\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4b/1f/7a/4b1f7aee-226d-17c6-e91d-d0c829f37710/1290x2796_Gameplay_Arrows_updated_2.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "930a126f3b21fd826297a550a24ea440af6c742bc47cc84ba96f47a93e282976"
+      }
+    ]
+  },
+  {
+    "key": "arrows_go",
+    "id": 6758326278,
+    "name": "Amaze GO!™",
+    "artist": "Oakever Games",
+    "seller": "OAKEVER GAMES PTE. LTD.",
+    "store": "https://apps.apple.com/us/app/amaze-go/id6758326278?uo=4",
+    "version": "1.35.0",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_go\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/52/ff/d252ffba-3999-c60d-35c5-0acde523a1a5/_Uff081242_2688_Uff091.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "6c01a59ba685117952fb593ebc6acb30742f46af5442203afa37e0ff94acca3f"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_go\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/40/ef/4340efe0-10dc-cfcd-b264-f47eb88e5649/_Uff081242_2688_Uff092.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "a46601101922d5283712b877369056a3607894f5f33941a0b9729a9a8583c7d1"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_go\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/a1/31/71a131ec-a6d2-75f3-4c9e-284c4d5f9981/_Uff081242_2688_Uff093.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "cb53ba535dcc71b20d794d211d1fafc2abb6bfd5681ad9d0926d918e75878824"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_go\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c1/28/f2/c128f2f3-b689-9637-a518-bdaeb27042c7/_Uff081242_2688_Uff094.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "446a79d7d8f7b4ac7444664cfba384d49f4f00340a8a05a138880007578745d3"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\arrows_go\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/cb/94/a8cb940f-863f-d40c-8546-21881664f635/_Uff081242_2688_Uff09-5.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "3cb4bd1ad1df775c61b97d02d06cb6ef755bb5c0cd795f5d5d1820d25e2a3737"
+      }
+    ]
+  },
+  {
+    "key": "awesome_games",
+    "id": 6796405274,
+    "name": "Awesome Games: Offline Arcade",
+    "artist": "Stanley Utoh",
+    "seller": "Stanley Utoh",
+    "store": "https://apps.apple.com/us/app/awesome-games-offline-arcade/id6796405274?uo=4",
+    "version": "2.0.5",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\awesome_games\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/1c/30/ef1c304b-0bbc-e799-de25-4a0ffb5a41d6/Home.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "c477c73ba6fade9d5da025102a8b5a93e7bd55efc654f3b5aaafc531de0645f3"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\awesome_games\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/2e/80/5f2e8013-9180-d9fd-6c49-2c5fa294b4a3/Chess.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "4ae111bcc4d1633d7a54134ce8e503ae8d6c5eb19fecfefdec9df4ddfa4761a0"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\awesome_games\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4b/50/d7/4b50d7ef-a944-d8c8-fe8f-370134a7bb89/Snake.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "15db16c165b6815c86e4ab99712b9c108e6f73071527c32538767fcf517c6560"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\awesome_games\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4e/70/56/4e70568c-188a-5358-1fde-56fa7053e648/Breaker.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "ce331f37d2ad24fbdf8a82f3bcd20a1afcb896d7b188e4276db189b1083680db"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\awesome_games\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c4/2f/98/c42f985a-d922-4e29-9e15-53ad341a5685/Naija_Cards.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "8286efe2523c8c7d6619b15abfaa7ae042a2bbdb31332abc5524aaf6459c8b1d"
+      }
+    ]
+  },
+  {
+    "key": "brain_puzzle_3",
+    "id": 6756482832,
+    "name": "Brain Puzzle 3: Crazy Mind",
+    "artist": "SmallStep Dev Team",
+    "seller": "Guangzhou SmallStep Information Technology Co., Ltd",
+    "store": "https://apps.apple.com/us/app/brain-puzzle-3-crazy-mind/id6756482832?uo=4",
+    "version": "1.1.3",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\brain_puzzle_3\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/1e/a5/8d1ea5b3-e8b2-ebca-85cb-da6115253af6/L149.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "de3ff2596c5c35c1e925f75d1d5c01fa0e55c76f1dd95062ce0be2182c2e36fa"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\brain_puzzle_3\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/14/49/1d/14491d1d-b591-eae5-50d9-4d502299dcd7/level_114.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "db44ec1fda4dfd1c37c1454fdda7fcb52b31af5b2a6eff32499e07dc5ec2494e"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\brain_puzzle_3\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/23/b6/ac23b6e7-7e98-fbd5-3601-cb60ac9f7c2e/level_23.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "7bd7d141c7bba797dbbb941da15b84ef81a1e07a1678cece5570aae1bcc1fe85"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\brain_puzzle_3\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/de/15/c5de15bb-cf03-2499-0549-7c73cc4972c3/L169.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "6c748723e1d27384b592af80c3ea2139574ba22dfc90b7dd15bc2b8df1dc2742"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\brain_puzzle_3\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/d0/ac/34d0ac8b-6814-7d15-6bc6-56bb9f8857f2/L169__U62f7_U8d1d.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "b246277f6f5a44d5f0ed3b22b81bd78d24ba8cdd70a761405b48ee65a5f1b68d"
+      }
+    ]
+  },
+  {
+    "key": "offline_games",
+    "id": 6448104157,
+    "name": "Offline Games - No Wifi Games",
+    "artist": "Moreno Maio",
+    "seller": "Jindoblu Limited",
+    "store": "https://apps.apple.com/us/app/offline-games-no-wifi-games/id6448104157?uo=4",
+    "version": "3.15.4",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\offline_games\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/19/2e/13192e32-18f6-3a91-c1a6-469bde566f9d/MiniBanners_1242x2208.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "eaf64171bd3bce31588da131d3528889dbf2d34cf55f38dfad1d988b2c5b744a"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\offline_games\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/26/e0/f7/26e0f76d-9233-045f-033a-7163500965db/LargeBanners_1242x2208_A.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "b5b1e90491b311a4c3893e7d2af614fd084b54d6fd887f25ebe85d26752ce4cb"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\offline_games\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/52/12/a9/5212a9fb-1f22-2ccf-d379-884dbdd85919/Ringsort_1242x2208.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "e4da122c10a37e117e908aaf3ff5922a7afe61b9ed1990e99af8a3f12b0e132b"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\offline_games\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/83/39/e8/8339e8a7-136b-7cf5-8a0c-cb4843dd18de/Watersort_1242x2208_A.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "3bc46c169fd07f477187ae6c839d2984d9399c60224ebf750f3f1c62ee61a050"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\offline_games\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/59/cd/da59cdc5-e28d-baf3-7ea4-cfb5657d6b3a/Wordfinder_1242x2208.png/392x696bb.png",
+        "size": [
+          392,
+          696
+        ],
+        "format": "PNG",
+        "sha256": "4cbfad4140647406cb1cad2d7bc526c8533c670a298011b573635389e15e53d8"
+      }
+    ]
+  },
+  {
+    "key": "candy_crush",
+    "id": 553834731,
+    "name": "Candy Crush Saga",
+    "artist": "King",
+    "seller": "King.com Limited",
+    "store": "https://apps.apple.com/us/app/candy-crush-saga/id553834731?uo=4",
+    "version": "1.339.0.2",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\candy_crush\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/54/54/ed5454a8-609c-2299-3f70-71266afcd62c/e6a5aa2d-db24-4004-b409-d0ca33f961f0_v4-candies_478284_423160_CCS_Creative_Results_First_Screenshots_Nov_23_sta_ios-6.7_1290x2796_4.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "258a0ed62ccdf1c28887d9c856e1f676fcca50e108adf8cb3f04f8166432b265"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\candy_crush\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/42/bd/1b42bd4f-d144-246a-3a4b-91e3316c51c0/26184b20-fd91-4296-8a58-d32d7134e1b4_563552_CCS_Taglines_Banner_Route_4_Resize_Screenshots_June_24_sta_ios-6.7_1290x2796_1.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "c8453dee187f1967a9b0fbb5e07ff3952799acdfc8512d795be9016c890ccc0a"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\candy_crush\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/7d/fe/c27dfe08-476f-d179-b763-3e82e9c174ae/97738c29-af03-4b0e-8790-db5b9fbdc62b_563552_CCS_Taglines_Banner_Route_4_Resize_Screenshots_June_24_sta_ios-6.7_1290x2796_2.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "f42d5448512c814661ed66e86a9e72deb7fcdd63cb35d8e709d6b9bbb96eff8b"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\candy_crush\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/9c/60/909c60c4-5c51-c7c7-f8b9-404ef0458d93/113c4621-26f9-4a3f-b46c-1af889bc5dce_563552_CCS_Taglines_Banner_Route_4_Resize_Screenshots_June_24_sta_ios-6.7_1290x2796_4.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "17c072d3ad6952f0aaa09412d260e77c78646571daa5c906fda43d5d8facfb9f"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\candy_crush\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/92/a4/a192a4cd-9619-8745-7b20-4d600dac32d7/09ced3e6-d696-417a-b598-99536cbccc6f_563552_CCS_Taglines_Banner_Route_4_Resize_Screenshots_June_24_sta_ios-6.7_1290x2796_3.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "fd798d4875844c8017bfe63bbc9d6be1df6d19e5fa635693cbe63cab7b4ecb27"
+      }
+    ]
+  },
+  {
+    "key": "perfect_makeover",
+    "id": 6754549880,
+    "name": "Perfect Makeover Cleaning ASMR",
+    "artist": "HMBL APPS",
+    "seller": "HMBL APPS",
+    "store": "https://apps.apple.com/us/app/perfect-makeover-cleaning-asmr/id6754549880?uo=4",
+    "version": "1.0.20",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\perfect_makeover\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3f/fd/11/3ffd113a-fd95-9dbd-d686-e4798abdb845/5.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "16b9ec9cbc0c61aa73a482851620535644416e5b0a2788d45b87cfc92b18fc18"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\perfect_makeover\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/41/b3/fd/41b3fd16-ef26-1e55-77b0-face980d3bbe/1.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "55aad2ed1c80a19fef55055b51d4b5a2924d7183c795492e1fe1d7bbc8e4bd23"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\perfect_makeover\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/0d/f8/c20df89e-25b7-6601-250f-3cc55fa84dc3/2.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "321fa77f2162e221fe86c5189165143ca87abff3b4d3672c35546b0fe6aa8fa7"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\perfect_makeover\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/74/13/bb7413ed-6287-8687-96ab-24e7ac07f034/3.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "756c49ecb1b12ebd74effbfc42b1234f0e052ad7e4208c9dcf18a7be2aad9548"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\perfect_makeover\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e6/b3/5f/e6b35f6e-095d-55b7-0a7b-5af758faa487/4.jpg/320x480bb.jpg",
+        "size": [
+          222,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "a1f63417596deb14c75da8c0457bd36a442a11913b9ccde358d35c27254f12cf"
+      }
+    ]
+  },
+  {
+    "key": "bus_fever",
+    "id": 6746743297,
+    "name": "Bus Fever Party!",
+    "artist": "Lumi Games",
+    "seller": "Faith Mobile Limited",
+    "store": "https://apps.apple.com/us/app/bus-fever-party/id6746743297?uo=4",
+    "version": "1.3.3",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\bus_fever\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/9f/b7/a59fb780-7a2e-6aab-031a-f7233e69ab16/_U753b_U677f_1.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "2e91473d99c3cef2f9410861c0f820a1fb46316f2cf3d880d859bb95188ad1d9"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\bus_fever\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/b0/8e/7bb08e8a-6fa5-b455-d555-cf2187ea2410/_U753b_U677f_2.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "d75ff22a175220c03e70b7be3f3affe124b6fef28cd56057e8918bed96fb4464"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\bus_fever\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d1/74/e5/d174e5fe-e0b3-b4b4-77ab-9148dbb8a2ad/_U753b_U677f_3.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "c546ca0d5707ff7631d67691c35aaf0d56ed7de6b86c94bebea140b651d35b74"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\bus_fever\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/07/4b/ed/074bed5a-edbc-bf0d-f447-6537d9f807fd/_U753b_U677f_4.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "f59d83f3893f16eaeddd07b0c64abaf5c35fca8113bb6fc6ab9891e6b36d61de"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\bus_fever\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/8f/ff/8f8fff8e-9606-9eec-a868-6b1c6d8deb35/_U753b_U677f_5.png/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "ed08cd41121844230bd499ca2f7b3e1efda848f5ef79182de63f1188c4812253"
+      }
+    ]
+  },
+  {
+    "key": "talking_tom_2",
+    "id": 1337578317,
+    "name": "My Talking Tom 2",
+    "artist": "Outfit7 Limited",
+    "seller": "Outfit7 Limited",
+    "store": "https://apps.apple.com/us/app/my-talking-tom-2/id1337578317?uo=4",
+    "version": "26.5.1",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\talking_tom_2\\01.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/51/a2/2851a259-942b-2c9e-1b35-509ee5623de5/1.PNG/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "a736dcc3805056795333000cc62c9dc1ef8c2827fead196da2ca1fc5f3339cea"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\talking_tom_2\\02.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7c/20/91/7c2091a2-c716-3e57-bea6-08ee962fce4c/2.PNG/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "562b1f40bb42b56d62ee9dff71686b3c48df519dacfe752cbbcb15df9ac6dfef"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\talking_tom_2\\03.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a0/41/bc/a041bcc6-3a2d-4500-c6c5-c0fd2d268ce8/3.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "979d92ed465c850d29d7b5a4636c9dc4d121abee9be726b4dcb2ca6db058ab33"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\talking_tom_2\\04.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/f6/40/abf64095-3a19-6a71-745b-05cca977dba6/4.PNG/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "c88e5e3590602b2e3da51bb91feabff004110890286e52ab6c6b481604f8da2e"
+      },
+      {
+        "index": 5,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\talking_tom_2\\05.img",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/c6/af/0fc6afe5-77ee-63d8-fb4e-d48adf478149/5.jpg/320x480bb.jpg",
+        "size": [
+          221,
+          480
+        ],
+        "format": "JPEG",
+        "sha256": "6567ca5fe3e301ef295e4b8c02687ebf91d5400654b9ef059ab799e6cbd2d74f"
+      }
+    ]
+  },
+  {
+    "key": "muscle_morph",
+    "name": "Muscle Morph",
+    "artist": "AbbaYosua.Design",
+    "store": "https://play.google.com/store/apps/details?hl=en_US&id=com.muscle.morph.lean.run",
+    "screens": [
+      {
+        "index": 1,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\muscle_morph\\01.img",
+        "url": "https://play-lh.googleusercontent.com/FRyVs4ZdbQfyYzoEZJwc-7ex4SSArxc8pfVMmu8H3q29cjBBBGrf3KVHqoOd-nlVJ6K8TFowaAecFw51v3SQ=w1052-h592-rw",
+        "size": [
+          333,
+          592
+        ],
+        "format": "WEBP",
+        "sha256": "399ccd71eb0f1971cedc995261e7b2e90503a99472655142e87560598f5b4ba7"
+      },
+      {
+        "index": 2,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\muscle_morph\\02.img",
+        "url": "https://play-lh.googleusercontent.com/Rpuk-QZxnzR_x24Ffl8FdViwzidY0RfIbQMhaXY34NwFzTRsEpRugIcCQlPzwdVVJq3-sSMm6wfq72jPs6rw5Yc=w1052-h592-rw",
+        "size": [
+          333,
+          592
+        ],
+        "format": "WEBP",
+        "sha256": "a8baffda7a5bfdcb5f3f7b8151cc711b96a84a5c9b3460a6baeeef76e8a5984d"
+      },
+      {
+        "index": 3,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\muscle_morph\\03.img",
+        "url": "https://play-lh.googleusercontent.com/X6j5MjgeZ_PQwZJqOMJ2Z0-1yHPqcPsHo1AxZtiQQ8XS9noHLibrahIDiQK2WSBMSX2tvLMyWdYcJE8SwYdB=w1052-h592-rw",
+        "size": [
+          333,
+          592
+        ],
+        "format": "WEBP",
+        "sha256": "c5b68e512be214d4b3e937c92a68e4af1791c94967ea4d1b50b9fb36cbb269b0"
+      },
+      {
+        "index": 4,
+        "path": "E:\\AIlab\\AHAgames\\art_direction\\竞品美术分析_20261022\\screens\\muscle_morph\\04.img",
+        "url": "https://play-lh.googleusercontent.com/kgjr3J2pe6mFmd1Ix3btlSid6inh1GJ_OPUMGjkls_uS4D5ma-rCZDMT9N7z64VY3mF8t0CRzh6JvQAuAM_lTw=w1052-h592-rw",
+        "size": [
+          333,
+          592
+        ],
+        "format": "WEBP",
+        "sha256": "dd8b29e5498898496f16da27fec8bc6b297be3cb6e9e4e1b30ad674fdc9b6505"
+      }
+    ]
+  }
+]

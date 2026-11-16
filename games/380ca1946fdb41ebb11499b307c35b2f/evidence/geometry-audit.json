@@ -1,0 +1,293 @@
+{
+  "stage": "prototype",
+  "attempt": 4,
+  "scope": "独立转写几何模型，不是原游戏运行验收",
+  "node": "v22.23.3",
+  "platform": "linux",
+  "arch": "x64",
+  "sources": [
+    {
+      "path": "scripts/audit-model.mjs",
+      "sha256": "e360c7f5c457192eb82806c2a4d0a7bbe25eab129da3decfea2017a4c2d89b4d"
+    },
+    {
+      "path": "scripts/run-audit.mjs",
+      "sha256": "e6ffa23164edeba9f48c1a058306bfd335d6b73d0101f273177713144703ea24"
+    }
+  ],
+  "results": [
+    {
+      "id": "G01-补漏",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G02-真实偏差幅度回零",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G03-余量抵消",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G04-右",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G04-左",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G04-下",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G04-上",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G05-极小方向分量",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G06-边界向外零段",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G07-边界向内与沿墙",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G07b-边界数学平行浮点向外",
+      "status": "PASS",
+      "detail": "cos(PI/2)>0，在右边界使 tx=0；不是精确平行语义。"
+    },
+    {
+      "id": "G08-角点同距",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G09-无效棋盘回退",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G10-起点在矩形外回退",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G11-目标在射线后方",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G12-命中保留旧行为",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G13-擦边截断不连续",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G13b-消差改变精确切线分支",
+      "status": "PASS",
+      "detail": "当前 Node 中 distance²-projection² 的消差使数学切线走未命中分支；无容差。"
+    },
+    {
+      "id": "G14-障碍恰切不受阻",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G15-同接触严格边界",
+      "status": "PASS",
+      "detail": "重合圆用于隔离严格边界语义；不是声称合法棋盘可重合。"
+    },
+    {
+      "id": "G16-中心在后但首接触在前不是误判",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G17-真正在目标接触之后不受阻",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G18-墙可缩短而非一律延伸",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G19-首反弹未覆盖",
+      "status": "PASS",
+      "detail": "另行解析反弹段可碰同一棋子；原函数只检查第一直段（不推断实际反弹速度）。"
+    },
+    {
+      "id": "G20-原方向也受阻不回零",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G21-零偏差与异常偏差",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G22-目标失效三值结果",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G23-近目标与无效输入",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G24-派生距离溢出",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G25-非法棋子保守阻挡",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G26-物理半径与单位",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G27-平移不变性",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G28-角度符号",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "G29-袋口先于墙的几何反例",
+      "status": "PASS",
+      "detail": {
+        "pocketEntry": 245.63508804372964,
+        "wallDistance": 274.0861811923024,
+        "warning": "连续几何可先入袋；每帧离散袋口检测与棋盘配置真实性尚未验证。"
+      }
+    },
+    {
+      "id": "G30-墙距解析性质随机2000次",
+      "status": "PASS",
+      "detail": {
+        "seed": 1234567,
+        "compared": 2000
+      }
+    },
+    {
+      "id": "G31-非备用检测不改",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "S01-快照未变",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "S02-目标移除",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "S03-目标替换同坐标",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "S04-目标换组",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "S05-快照位移阈值每轴严格大于1",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    },
+    {
+      "id": "S06-快照非法与重复对象",
+      "status": "PASS",
+      "detail": "断言通过（独立模型）"
+    }
+  ],
+  "benchmarks": [
+    {
+      "count": 19,
+      "version": "before",
+      "iterationsPerRound": 5000,
+      "rounds": 5,
+      "ms": [
+        8.385551999999997,
+        5.194367,
+        5.105170999999999,
+        4.881748999999999,
+        3.9613569999999925
+      ]
+    },
+    {
+      "count": 19,
+      "version": "after",
+      "iterationsPerRound": 5000,
+      "rounds": 5,
+      "ms": [
+        5.297137000000006,
+        5.235146,
+        5.122657999999987,
+        4.102509999999995,
+        2.6119920000000008
+      ]
+    },
+    {
+      "count": 2000,
+      "version": "before",
+      "iterationsPerRound": 5000,
+      "rounds": 5,
+      "ms": [
+        102.39213699999999,
+        89.01987,
+        103.58830099999994,
+        103.76189499999992,
+        78.18278099999998
+      ]
+    },
+    {
+      "count": 2000,
+      "version": "after",
+      "iterationsPerRound": 5000,
+      "rounds": 5,
+      "ms": [
+        73.69699100000003,
+        108.44053299999996,
+        96.03933600000005,
+        102.80182100000002,
+        85.73813099999995
+      ]
+    }
+  ],
+  "passed": 42,
+  "failed": 0
+}

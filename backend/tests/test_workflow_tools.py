@@ -6,9 +6,12 @@ import shutil
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import AsyncMock, patch
 
-from app.services.workflow.tools import create_workflow_tools
+from app import config
+from app.services.workflow.publishing import build_manifest
+from app.services.workflow.tools import create_tool_guard, create_workflow_tools
 
 
 class WorkflowToolTests(unittest.IsolatedAsyncioTestCase):
@@ -66,6 +69,27 @@ class WorkflowToolTests(unittest.IsolatedAsyncioTestCase):
             spawn.assert_not_called()
         self.assertEqual(events, [])
 
+    async def test_tool_error_keeps_call_identity_and_safe_location_arguments(self):
+        """纠错结果继续交给模型，页面按相同调用 ID 展示一次失败。"""
+        events = []
+        guard = create_tool_guard(self.root, lambda *args: events.append(args))
+        call = {"id": "missing-member", "name": "read_reference_archive", "args": {
+            "path": "demo.zip", "member": "assets/config.json", "query": "测试令牌",
+            "content": "不应复制的正文", "api_key": "测试令牌"}}
+        handler = AsyncMock(side_effect=ValueError("包内不存在指定文件；测试令牌"))
+        with patch.object(config, "LLM_API_KEY", "测试令牌"):
+            result = await guard.awrap_tool_call(SimpleNamespace(tool_call=call), handler)
+        self.assertEqual(result.status, "error")
+        self.assertEqual(result.tool_call_id, call["id"])
+        data = events[0][2]
+        self.assertEqual(data["call_id"], call["id"])
+        self.assertEqual(data["tool"], call["name"])
+        self.assertEqual(data["arguments"]["member"], "assets/config.json")
+        self.assertNotIn("content", data["arguments"])
+        self.assertNotIn("api_key", data["arguments"])
+        self.assertNotIn("测试令牌", json.dumps(data, ensure_ascii=False) + str(result.content))
+        self.assertEqual(handler.await_count, 1)
+
     @unittest.skipUnless(shutil.which("node"), "当前环境未安装 Node，无法运行真实验证脚本")
     async def test_validation_records_current_attempt_and_workspace_evidence(self):
         tools, workspace, run, events = self.create_tools("validation")
@@ -87,3 +111,41 @@ class WorkflowToolTests(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(json.loads((workspace / "evidence" / "result.json").read_text())["passed"])
         self.assertEqual([item[0] for item in events], ["validation_started", "validation_completed"])
         self.assertEqual(events[-1][2], result)
+
+    @unittest.skipUnless(shutil.which("node"), "当前环境未安装 Node，无法运行真实验证脚本")
+    async def test_validation_binds_actual_dist_bytes_even_when_source_is_unchanged(self):
+        """真实 Node 生成构建；仅改 dist 时，发布所用构建指纹也必须随验证更新。"""
+        tools, workspace, _, events = self.create_tools("build-fingerprint")
+        scripts = workspace / "scripts"
+        scripts.mkdir()
+        (scripts / "build.cjs").write_text(
+            'const fs = require("node:fs");\n'
+            'fs.mkdirSync("dist", { recursive: true });\n'
+            'fs.writeFileSync("dist/index.html", \'<!doctype html><script src="./game.js"></script>\');\n'
+            'fs.writeFileSync("dist/game.js", \'console.log("初始构建");\');\n'
+            'console.log("已写入真实构建");\n', encoding="utf-8",
+        )
+        (scripts / "check.cjs").write_text(
+            'const fs = require("node:fs");\n'
+            'const assert = require("node:assert/strict");\n'
+            'assert.ok(fs.readFileSync("dist/index.html", "utf8").includes("./game.js"));\n'
+            'assert.ok(fs.readFileSync("dist/game.js", "utf8").length > 0);\n'
+            'console.log("构建文件读取验证通过");\n', encoding="utf-8",
+        )
+        built = json.loads(await tools["run_validation"].ainvoke({"command": "node scripts/build.cjs"}))
+        self.assertEqual(built["exit_code"], 0)
+        self.assertTrue((workspace / "dist/index.html").is_file())
+        self.assertEqual(built["build_sha256"], build_manifest(workspace)["sha256"])
+        first = json.loads(await tools["run_validation"].ainvoke({"command": "node scripts/check.cjs"}))
+        self.assertEqual(first["exit_code"], 0)
+        self.assertEqual(first["build_sha256"], built["build_sha256"])
+        # dist 不参与源码指纹，因此必须另存构建字节证据，不能只认可源码未变。
+        (workspace / "dist/game.js").write_text('console.log("修改后的构建");', encoding="utf-8")
+        second = json.loads(await tools["run_validation"].ainvoke({"command": "node scripts/check.cjs"}))
+        self.assertEqual(second["exit_code"], 0)
+        self.assertEqual(second["source_before"], first["source_after"])
+        self.assertNotEqual(second["build_sha256"], first["build_sha256"])
+        self.assertEqual(second["build_sha256"], build_manifest(workspace)["sha256"])
+        self.assertNotIn("build_error", second)
+        completed = [item[2] for item in events if item[0] == "validation_completed"]
+        self.assertEqual(completed, [built, first, second])

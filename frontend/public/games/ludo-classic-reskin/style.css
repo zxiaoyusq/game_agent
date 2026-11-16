@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #28103f;
+  color: #fff8db;
+  font-family: system-ui, sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+#scene {
+  position: relative;
+  flex-shrink: 0;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+}
+button,
+select {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  border: 0;
+  min-width: 44px;
+  min-height: 44px;
+  background: transparent;
+}
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+button[aria-disabled='true'] {
+  cursor: default;
+  opacity: 0.45;
+}
+#controls button {
+  position: absolute;
+  padding: 0;
+}
+#controls .piece {
+  border-radius: 50%;
+  background: #392059;
+  border: 2px solid #8c719f;
+  font-weight: 700;
+}
+#controls .piece[aria-disabled='false'] {
+  border-color: #fff6a8;
+  background: #654793;
+}
+.panel {
+  position: absolute;
+  left: 9%;
+  top: 24%;
+  width: 82%;
+  padding: 14px 20px;
+  background: #31144aeb;
+  border: 1px solid #9272b0;
+  border-radius: 12px;
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px #15082480;
+}
+[hidden] {
+  display: none !important;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 32px;
+  color: #ffed9b;
+  letter-spacing: 5px;
+}
+.panel p {
+  font-size: 12px;
+}
+.panel label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  gap: 8px;
+}
+select {
+  min-height: 44px;
+  background: #4b2a6a;
+  border: 1px solid #9676a5;
+  border-radius: 7px;
+  padding: 4px 8px;
+  max-width: 75%;
+}
+.texture {
+  background: url('./assets/ui-start.png') center / 100% 100% no-repeat;
+  text-shadow: 0 2px 2px #172b61;
+}
+#resume,
+#close {
+  background-image: url('./assets/ui-confirm.png');
+}
+#status {
+  position: absolute;
+  top: 90.6%;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  pointer-events: none;
+}
+#error {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffdd84;
+  font-size: 12px;
+  background: #31144a;
+}

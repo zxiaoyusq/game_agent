@@ -1,0 +1,11 @@
+{
+  "final": {
+    "progress": 6,
+    "level": 6,
+    "tiles": 24,
+    "errors": []
+  },
+  "firstTutorial": "completed",
+  "thirdTutorial": "completed",
+  "fifthTutorial": "completed"
+}

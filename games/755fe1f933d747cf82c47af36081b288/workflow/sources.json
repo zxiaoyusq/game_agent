@@ -1,0 +1,17 @@
+{
+  "topic": "Carrom Clash Master 原包分析与竞品研究",
+  "research_date": "2026-11-11",
+  "scope": "原包静态取证及用户提供的Google Play二手摘要；未联网、未实玩；采集地区、日期和版本未知",
+  "products": [
+    {"id":"carrom-pool","name":"Miniclip Carrom Pool","publisher":"Miniclip（用户提供，未独立核验）","platform":"Android","package_or_app_id":"com.miniclip.carrom","store_url":"https://play.google.com/store/apps/details?id=com.miniclip.carrom&hl=en"},
+    {"id":"carrom-go","name":"Carrom Go","publisher":null,"platform":"Android","package_or_app_id":"com.inhigame.carrom.level.offline.saga","store_url":"https://play.google.com/store/apps/details?id=com.inhigame.carrom.level.offline.saga&hl=en"},
+    {"id":"carrom-king","name":"Carrom King","publisher":null,"platform":"Android","package_or_app_id":"com.git.carromking","store_url":"https://play.google.com/store/apps/details?id=com.git.carromking&hl=en"}
+  ],
+  "sources": [
+    {"id":"S01","product_id":"carrom-pool","title":"用户提供的Carrom Pool商店采集摘要","url":"https://play.google.com/store/apps/details?id=com.miniclip.carrom&hl=en","accessed_at":null,"received_at":"2026-11-11","published_at":null,"kind":"用户提供的商店二手资料","access_status":"仅收到用户摘要，未访问页面","supports":["摘要称Carrom、Free Style、Disc Pool","摘要称500M+下载、含广告和内购"],"limitations":["统计会变化，采集日期和地区未知","无手感、画面、广告频率或联网实测"],"local_path":null},
+    {"id":"S02","product_id":"carrom-go","title":"用户提供的Carrom Go商店采集摘要","url":"https://play.google.com/store/apps/details?id=com.inhigame.carrom.level.offline.saga&hl=en","accessed_at":null,"received_at":"2026-11-11","published_at":null,"kind":"用户提供的商店二手资料","access_status":"仅收到用户摘要，未访问页面","supports":["摘要称离线、三种模式、关卡、1v1/2v2、10M+下载"],"limitations":["三模式名称未提供","统计会变化，无离线、组队、关卡或商业化实测"],"local_path":null},
+    {"id":"S03","product_id":"carrom-king","title":"用户提供的Carrom King商店采集摘要","url":"https://play.google.com/store/apps/details?id=com.git.carromking&hl=en","accessed_at":null,"received_at":"2026-11-11","published_at":null,"kind":"用户提供的商店二手资料","access_status":"仅收到用户摘要，未访问页面","supports":["摘要称Freestyle、Black & White、电脑对手、技巧球、50M+下载"],"limitations":["统计会变化，开发商和当前版本未核验","无技巧球、手感、画面或商业化实测"],"local_path":null}
+  ],
+  "original_archive": {"path":"mcp-inputs/mac-codex/2b404cd4b23702153c3279109bcd48bf79ee9e2141fc3334492a100c66036db2/Carrom_Clash_Master.zip","sha256":"2b404cd4b23702153c3279109bcd48bf79ee9e2141fc3334492a100c66036db2","evidence_type":"真实ZIP清单与静态文本读取","runtime_verified":false},
+  "inspected_image_count": 0
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95176,
+    "apiName":  "Arrow Out Puzzle",
+    "targetName":  "Arrow Out Puzzle",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Arrow_Out_Puzzle.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260610/0188778ac266247ac542bb0e48fa03c0.zip",
+    "bundleMd5":  "0188778ac266247ac542bb0e48fa03c0",
+    "bundleSize":  1667211,
+    "updatedAt":  1783928202,
+    "gameLink":  "https://www.excellenth5game.com/Arrow_Out_Puzzle/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95176",
+    "category":  "Puzzle",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Arrow_Out_Puzzle.zip",
+    "localBytes":  1667211,
+    "verifiedAt":  "2026-10-20T10:33:01",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

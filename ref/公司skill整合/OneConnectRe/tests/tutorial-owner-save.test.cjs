@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=process.argv[2];assert(source,'pass generated round-save.js path');let listener,now=10000;
+const vars=[['level',7],['ROWS_COUNT',2],['COLUMNS_COUNT',2],['timer',100],['score',100],['tip',2],['shuffle',1]].map(([name,data])=>({name,data}));
+const tiles=[{uid:1,instance_vars:[1,1,1,0]},{uid:2,instance_vars:[1,1,2,0]},{uid:3,instance_vars:[2,2,1,0]},{uid:4,instance_vars:[2,2,2,0]}];
+const arr=Array.from({length:4},()=>Array.from({length:4},()=>[0]));for(const t of tiles)arr[t.instance_vars[2]][t.instance_vars[1]][0]=t.uid;
+const rt={running_layout:{name:'game'},all_global_vars:vars,types:{t0:{instances:[{cx:4,cy:4,arr}]},t5:{instances:tiles},t32:{instances:[{instance_vars:[0,0,0,0]}]}}};
+const w={Date:{now:()=>now},localStorage:{getItem:()=>null,setItem(){},removeItem(){}},document:{addEventListener(){}},oneConnectLevels:{levels:[{level:7}]},oneConnectRoundSaveModel:{validate:()=>true,fingerprint:()=>''},oneConnectLevelScoreCandidate:{baseline:()=>null,matchScore:()=>null},oneConnectFlyStarScoreCandidate:{snapshot:()=>null},oneConnectSeventhGuide:{state:()=>({active:false})},cr_getC2Runtime:()=>rt,addEventListener:(name,fn)=>{if(name==='oneconnect:event')listener=fn},setInterval(){}};w.window=w;
+vm.runInNewContext(fs.readFileSync(source,'utf8'),w);w.oneConnectRoundSave.install();
+const event=(type,detail={})=>listener({detail:{type,detail}});event('game.board_configured',{level:7});now+=1000;
+event('tutorial.start',{level:7});event('tutorial.cancelled',{level:3});assert.equal(w.oneConnectRoundSave.capture(),false,'old tutorial cannot clear new guide save lock');
+event('tutorial.cancelled',{level:7});assert.equal(w.oneConnectRoundSave.capture(),true,'matching cancellation releases the save lock');
+console.log('tutorial cancellation is scoped to save owner PASS');

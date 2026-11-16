@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const dir=process.argv[2],file=(source,built)=>dir?path.join(dir,built):source;let listeners=[],timers=[],frames=[],nodes=[],shown=[],now=0;
+const actions=Object.create({callback(){}}),cr={plugins_:{Famobi:function(){}}};cr.plugins_.Famobi.prototype.acts=actions;
+const star={uid:31,x:80,y:20,layer:{layerToCanvas:(x,y,axis)=>axis?x:y}},runtime={running_layout:{name:'game'},canvas:{width:100,height:200,getBoundingClientRect:()=>({left:0,top:0,width:100,height:200})},types:{t5:{instances:[]},t24:{instances:[star]}},all_global_vars:[{name:'level',data:3},{name:'score',data:100},{name:'pause',data:1}]};
+const document={hidden:false,addEventListener(){},body:{appendChild(n){nodes.push(n)}},createElement:()=>({style:{},setAttribute(){},remove(){this.removed=true}})};
+let progress=3;
+const window={cr,cr_getC2Runtime:()=>runtime,oneConnectProgress:{get:()=>progress},oneConnectResultPanelCandidate:{create:()=>({show:s=>shown.push(s),hide(){}})},setTimeout(fn){timers.push(fn)},addEventListener(name,fn){if(name==='oneconnect:event')listeners.push(fn)}};
+const ctx={window,document,cr,Date:{now:()=>now},Number,Array,Object,Math,console,requestAnimationFrame:fn=>frames.push(fn)};
+for(const [source,built] of [['tools/flystar_candidate.js','flystar-candidate.js'],['tools/result_bridge_candidate.js','result-bridge-candidate.js']])vm.runInNewContext(fs.readFileSync(file(source,built),'utf8'),ctx);
+window.oneConnectFlyStarCandidate.install();window.oneConnectResultBridgeCandidate.install();const send=(type,detail={})=>listeners.forEach(fn=>fn({detail:{type,detail}}));
+send('candidate.link_points',{pathScreenPoints:[{x:5,y:5},{x:10,y:10}]});send('game.level_win');actions.callback('levelSuccess');assert.equal(shown.length,0,'panel does not cover flying stars');
+progress=4;timers.shift()();assert.equal(shown.length,0,'bonus completion must still wait for flying stars');
+for(let i=0;i<25&&frames.length;i++){now+=50;frames.shift()(now)}assert(nodes.every(n=>n.removed));timers.shift()();assert.equal(shown[0].kind,'win');
+console.log('victory panel waits for the actual flying-star lifecycle PASS');

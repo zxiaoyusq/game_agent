@@ -1,0 +1,74 @@
+77413 | One Connect | Construct | 2.31MB | img 56 | {} | Onet Connect is a classic connecting game
+77742 | Haunted Dorm 1 | Laya | 3.38MB | img 2 | {'.bin': 1} | Jointly resist the fierce ghosts!
+77856 | Classic Spider Solitaire | Cocos | 1.43MB | img 113 | {'.atlas': 1} | Classic games never go out of style!
+77924 | Candy Crush | Phaser | 2.31MB | img 18 | {} | Start playing Candy Crush Saga today
+78388 | Classic Billiard | 待识别 | 2.19MB | img 27 | {} | Billiard Classic is the super fun 8 ball pool
+80845 | Drop Number | Cocos | 1.63MB | img 16 | {'.ttf': 3} | Looking for an addictive number cube game?
+82251 | Just Ludo | Cocos | 3.17MB | img 36 | {'.ttf': 1} | Just Ludo is a tabletop dice board game.
+84696 | Survive | Cocos | 16.45MB | img 345 | {'.ttf': 4, '.atlas': 11} | Among us style and room defense game!
+87138 | Bubble Shooter With Friends | Cocos | 3.66MB | img 73 | {'.ttf': 1} | Play with your friends!
+88251 | Two Player Games | Cocos | 13.86MB | img 626 | {'.atlas': 89, '.ttf': 1} | Challenge your friends with this 2-player game
+88788 | Subway Surfers Bali | 待识别 | 24.66MB | img 74 | {} | The subway is about to leave!
+88881 | Making Popsicle | Laya | 3.7MB | img 127 | {'.atlas': 1} | Parkour while making popsicles!
+89009 | Pixel Shooter no wifi | Cocos | 4.85MB | img 83 | {} | Single player PK, 3v3, team RPG, multiple mode
+89159 | SolitaireClassic no wifi | 待识别 | 1.54MB | img 37 | {} | Classic game multiple features sleek design
+89810 | Drive Mad Master no wifi | 待识别 | 5.91MB | img 3 | {'.data': 1, '.wasm': 1} | Creative stunts and obstacles for you to enjoy
+90189 | Carrom Clash Master | 待识别 | 3.85MB | img 299 | {'.ttf': 1, '.fnt': 1} | Play the classic carrom board game
+90848 | Soccer World Cup | 待识别 | 5.32MB | img 107 | {'.ttf': 1} | World Football Champion
+91055 | Haunted Dorm original | Laya | 20.0MB | img 157 | {'.ttf': 1, '.atlas': 60} | Five dead, one  alive, who's that?
+91447 | Thief Puzzle 3D | 待识别 | 22.35MB | img 15 | {'.fnt': 1, '.atlas': 505} | Secretly take what you want.
+91534 | Gin Rummy Pro | 待识别 | 2.91MB | img 305 | {'.ttf': 1, '.fnt': 2} | The classic two-player card game!
+91558 | Hexa Sort | Cocos | 1.54MB | img 129 | {'.ttf': 1} | Put them together
+91898 | Fashion Battle | 待识别 | 51.38MB | img 1481 | {'.glb': 1069, '.wasm': 1} | Beat your opponent with your outfit.
+92030 | Mini Relaxing Game | Construct | 2.49MB | img 22 | {'.wasm': 1} | Stress-free gaming
+92117 | Color By Number | Cocos | 4.97MB | img 1524 | {'.bin': 1, '.atlas': 1} | Lighting up the town with colour
+92191 | My Avatar World | Cocos | 17.84MB | img 4106 | {'.ttf': 2, '.atlas': 1} | Design your character!Create your own joy!
+92300 | Princess Rescue Fruit Connect | Laya | 2.91MB | img 96 | {'.bin': 17, '.atlas': 20, '.wasm': 1} | Come and save the princess!
+92323 | Bubblepop Master | Cocos | 11.25MB | img 65 | {'.atlas': 31, '.ttf': 1} | Aim, shoot, and pop your way to victory!
+92988 | Urban Racer | 待识别 | 2.93MB | img 20 | {'.glb': 131, '.wasm': 1} | Are you ready to dominate the roads?
+93083 | Bullet Bros | Construct | 5.44MB | img 92 | {'.wasm': 2} | Jump, spin, shoot, hit every shot!
+93105 | Haunted Dorm2 | Laya | 2.68MB | img 98 | {'.atlas': 60} | Dodge the Hunter's attack!
+93316 | Sort Water Now | Cocos | 1.6MB | img 33 | {} | This is a casual puzzle water splashing game!
+93407 | Drive Mad2 | 待识别 | 1.47MB | img 5 | {'.wasm': 1, '.data': 1} | Control the vehicle and reach the end!
+93438 | Mahjong Clear | Cocos | 1.78MB | img 0 | {'.bin': 1, '.wasm': 3} | Start your mahjong fingertip healing journey!
+93464 | Capitalist Bus Driver | Unity WebGL | 19.37MB | img 1 | {} | Driving is just the beginning!
+93517 | Plonky | Construct | 3.93MB | img 73 | {'.wasm': 1} | You will control the character to explore!
+93539 | Asmr Organize2 | Cocos | 12.51MB | img 263 | {'.bin': 198, '.ttf': 4, '.wasm': 1} | Organize items with immersion!
+93571 | Solitaire Classic Klondike | 待识别 | 1.75MB | img 22 | {} | Move the cards to organize the sequences.
+93576 | Escape Room | Cocos | 14.2MB | img 646 | {'.atlas': 66, '.bin': 1} | Save Mita  Girlfriend
+93654 | Toca Life World | 待识别 | 10.76MB | img 2 | {'.wasm': 1} | Create and capture hilarious stories with Taco
+93706 | Toca world | Construct | 7.39MB | img 1482 | {} | Build, play, explore,your story starts in Toca
+93707 | Playground Sandbox | Construct | 1.74MB | img 43 | {'.wasm': 1, '.ttf': 1} | a Zombies-vs-Humans war simulation game
+93797 | Stick War Saga | Cocos | 9.92MB | img 5 | {'.ttf': 1, '.atlas': 5, '.bin': 41} | Prepare for an epic clash in Stick War: Saga
+93876 | Tidy Master | Cocos | 6.77MB | img 80 | {'.bin': 20, '.ttf': 1, '.wasm': 1} | Craving some super satisfying organizing fun?
+93880 | Mahjong Mania2 | Cocos | 4.22MB | img 36 | {'.bin': 54, '.ttf': 1, '.wasm': 1} | Eliminate all Mahjong!
+93888 | Princess Life | Cocos | 22.56MB | img 4308 | {'.ttf': 1} | Dress-up princess and find the secret.
+94034 | Ludo Superstar | Cocos | 4.97MB | img 504 | {'.ttf': 1} | Roll the dice, win!
+94098 | Arrow Puzzle2 | Cocos | 1.85MB | img 139 | {} | Challenging logic line puzzles!
+94158 | Sprunki Playground | Construct | 2.56MB | img 41 | {'.wasm': 2, '.ttf': 1} | create real wars between Sprunkys
+94165 | Stickman Battle 2 | Cocos | 1.69MB | img 16 | {'.ttf': 1} | Fight in fast-paced 1v1 stickman combat!
+94187 | KPop Demon Hunters Playground | Construct | 2.63MB | img 44 | {'.wasm': 1, '.ttf': 1} | Build your own armed squad, set up defenses
+94215 | Bubble Shooter GO | Cocos | 4.19MB | img 75 | {'.bin': 11} | What's your longest combo in Bubble Shooter?
+94229 | Level Up Bus | Unity WebGL | 60.07MB | img 8 | {} | Ride, Race, Feel the Real Drive.
+94281 | Carnado Stunt Car 3D | 待识别 | 37.35MB | img 189 | {'.glb': 52, '.wasm': 1} | Open-world stunt car racing
+94445 | Superpowers Battle Ground | Construct | 6.53MB | img 34 | {'.wasm': 1} | Fight against powerful enemies push your limit
+94778 | Master Chess 2 | 待识别 | 0.55MB | img 47 | {} | a board and thinking game that you can play
+94799 | You Monster | Construct | 1.87MB | img 35 | {} | An action game where you become the monster!
+94847 | War The Knights Battle Arena Swords | Unity WebGL | 23.23MB | img 3 | {} | War The Knights: Battle Arena Swords 3D
+94905 | Cubes 2048 | 待识别 | 7.75MB | img 0 | {} | Snake 2048: collect cubes, merge to grow
+95000 | Wheel Master Bike | Construct | 6.04MB | img 90 | {'.wasm': 1} | Master the ride, conquer every level!
+95022 | Hill of Steel | 待识别 | 22.42MB | img 7 | {'.wasm': 1, '.data': 1} | Dominate tank battles on hilly terrain!
+95060 | Militarily Playground | Construct | 5.45MB | img 63 | {'.ttf': 3, '.wasm': 1} | Ultimate military ragdoll sandbox!
+95092 | Card Solitaire 2026 | Cocos | 7.28MB | img 103 | {'.ttf': 1} | Relax with Card Solitaire 2026!
+95103 | Flowers Match | Cocos | 15.45MB | img 1439 | {'.bin': 43, '.atlas': 33, '.ttf': 9} | Create floral masterpieces by merging!
+95111 | Real City Bikes | Unity WebGL | 28.33MB | img 6 | {} | Real City Bikes is an epic 3D motorbike stunt
+95173 | BBQ Master Run | Laya | 4.82MB | img 106 | {'.atlas': 1} | Stack meats & multiply skewers for a mega BBQ!
+95176 | Arrow Out Puzzle | Cocos | 1.59MB | img 187 | {} | Slide arrows out of the maze!
+95183 | Arrow Escape Puzzle | 待识别 | 0.27MB | img 0 | {} | Shoot arrows, escape the maze!
+95222 | Noobs Escape Barrys Prison | Unity WebGL | 17.11MB | img 1 | {} | Run, jump, escape Barry's prison!
+95426 | Robby Mini Games | Unity WebGL | 16.22MB | img 8 | {} | Hang out in a lively lobby packed
+95433 | Who Dies Last | Unity WebGL | 25.15MB | img 8 | {} | A unpredictable ragdoll action
+95486 | Fruit Pair Match | Cocos | 4.15MB | img 522 | {'.atlas': 5} | Match juicy fruits!
+95489 | Coloring | 待识别 | 14.73MB | img 2 | {} | An easy number coloring game
+95540 | Baseball For Brainrot | Unity WebGL | 33.71MB | img 8 | {'.bin': 1} | Meme filled 3D baseball chaos.
+95560 | Cat Life Simulator | Unity WebGL | 31.14MB | img 6 | {} | Be a chaotic cat in Grandma's 3D house.

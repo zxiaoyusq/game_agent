@@ -1,0 +1,762 @@
+{
+  "scope": "当前 game 本地视觉资源；45 张图集已换为 WebP，保留原特效 PNG；不包含远端资源。",
+  "files": [
+    {
+      "path": "html5games/images/flags/flag_en.png",
+      "sha256": "36cfaab1049599827883e63166ea52619b3413e2f2ac70d8f3f8896feee6477c",
+      "bytes": 3200,
+      "size": [
+        100,
+        60
+      ],
+      "mode": "P",
+      "category": "语言标识",
+      "status": "原样保留",
+      "note": "通用 SDK 按语言代码加载；自然显示未验证"
+    },
+    {
+      "path": "html5games/images/flags/flag_fr.png",
+      "sha256": "314a50b454ad61f8e4499ac5e12485217406b7242708d49d23e0f0fade084f26",
+      "bytes": 587,
+      "size": [
+        100,
+        60
+      ],
+      "mode": "RGBA",
+      "category": "语言标识",
+      "status": "原样保留",
+      "note": "通用 SDK 按语言代码加载；自然显示未验证"
+    },
+    {
+      "path": "html5games/images/icon.svg",
+      "sha256": "bfab790a7855af8b77b67f1747688d142aa5cb2d0afbcbe2ad96df43b0bfc95c",
+      "bytes": 3499,
+      "category": "平台品牌标识",
+      "status": "原样保留",
+      "note": "通用 SDK 模板引用；当前自然入口未验证"
+    },
+    {
+      "path": "html5games/images/leaderboard2.svg",
+      "sha256": "5401f6125e3f5d7610e12de60ab0626753356c23bf3a751f88456dd7ef7593cf",
+      "bytes": 15120,
+      "category": "平台排行榜图标",
+      "status": "已替换",
+      "note": "模拟宿主启用菜单后已显示，点击只观察到菜单关闭；真实宿主与排行榜数据未验证"
+    },
+    {
+      "path": "html5games/images/logo.png",
+      "sha256": "e6df2670090a736aa0eb9dd8f49cfe36a7001290a38a2de59a42dd2a7b100cf7",
+      "bytes": 10066,
+      "size": [
+        600,
+        253
+      ],
+      "mode": "RGBA",
+      "category": "平台品牌标识",
+      "status": "原样保留",
+      "note": "通用 SDK 的品牌按钮默认图；当前自然入口未验证，保留来源标识"
+    },
+    {
+      "path": "icon.jpg",
+      "sha256": "b837d423408a2ca3072d158487580bdb6f56176f13b9d7c6a4e90fe12e23bac6",
+      "bytes": 21648,
+      "size": [
+        180,
+        180
+      ],
+      "mode": "RGB",
+      "category": "游戏入口图标",
+      "status": "已替换",
+      "note": "包装页引用；浏览器受控加载已显示，真实宿主未验证"
+    },
+    {
+      "path": "images/9patch.webp",
+      "sha256": "87ca9d43ef8945436db616c1d45439cd04600be3d56015a91991923193e410ac",
+      "bytes": 616,
+      "size": [
+        66,
+        44
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/autoshuffle-sheet0.webp",
+      "sha256": "ebed97cc2617736cb5bc6c78bb75ccdd18ea90f8d0dc12fa4e191d02254b9504",
+      "bytes": 100340,
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/bonus-sheet0.webp",
+      "sha256": "de8d918f7173d44a900869ec6060490f19ec08b03f3db606881548737c6e568c",
+      "bytes": 26632,
+      "size": [
+        268,
+        309
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/bonus-sheet1.webp",
+      "sha256": "e7979f60e64288670b98de886a4dd5d59254cd692f4a5936140d48d42a04924b",
+      "bytes": 13342,
+      "size": [
+        268,
+        309
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/bonusballs-sheet0.webp",
+      "sha256": "2863e0f5b3afedf20e0e7d6eb6223ca12b1a581e3bf3e129ce0a332bf7b65134",
+      "bytes": 48142,
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/bonusballs-sheet1.webp",
+      "sha256": "fa611230d9713e9085c4112354eebafa1b006cd3777de4abd47e2999634b2251",
+      "bytes": 14212,
+      "size": [
+        186,
+        186
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/bonuslid-sheet0.webp",
+      "sha256": "462cac3f282b598d0010d9dc29318121447a1a00b178169ed3bc26f9f7b31404",
+      "bytes": 18482,
+      "size": [
+        268,
+        309
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/brandingplaceholderbutton_transparent-sheet0.png",
+      "sha256": "f2c298bb37fdfc84a2ef88ecbcfefbaa595c475f86085bf0bd3852445e67bf3d",
+      "bytes": 719,
+      "size": [
+        600,
+        253
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "原样保留",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/credits-sheet0.png",
+      "sha256": "ed21377d18504dc2fcb6bf3e11f745d6d5073ac85e0df2e64a10773fdf2359d2",
+      "bytes": 1199,
+      "size": [
+        558,
+        517
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已关闭内容",
+      "note": "保留同尺寸透明占位，关闭署名入口。"
+    },
+    {
+      "path": "images/cupsymbol-sheet0.webp",
+      "sha256": "bbe1788994a92a74677b5eeebdba17a1155f045623f9e9ab875f273e0816838c",
+      "bytes": 4588,
+      "size": [
+        100,
+        95
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/dots-sheet0.png",
+      "sha256": "894eaf2070d0a4ba2fcb26def9db737da846954cf8f951d450ac1f6a709acd6d",
+      "bytes": 446,
+      "size": [
+        38,
+        38
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "原版保留",
+      "note": "已恢复原 ZIP 文件，原版与现用文件哈希一致。"
+    },
+    {
+      "path": "images/gamebuttons-sheet0.webp",
+      "sha256": "f92a03a5f0a4a47682abc880b7a1f0da5e5fe6e43e4a12aa787437e63a9f99f5",
+      "bytes": 3982,
+      "size": [
+        120,
+        100
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/gamebuttons-sheet1.webp",
+      "sha256": "52057e4ad50db65c603ad7b5fbbe42a6f51a797bb21972ee6c86b531bbb22c92",
+      "bytes": 2850,
+      "size": [
+        100,
+        100
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/gamefont.webp",
+      "sha256": "7758213440fc20d85780a9c6b1d306738184a1ca7800bd7c3f152483abb885ca",
+      "bytes": 4966,
+      "size": [
+        256,
+        32
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/gametilebg.png",
+      "sha256": "02da4681a2794e4f781c07d9769c6c95e809c02c038d69acb9319e6d8ca658cc",
+      "bytes": 9086,
+      "size": [
+        101,
+        101
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/gradient-sheet0.webp",
+      "sha256": "c56b8503945c032ebd284ac78cb355f87553fae2425c7cdf0c314eba18e1d00a",
+      "bytes": 214,
+      "size": [
+        17,
+        252
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/homebutton-sheet0.webp",
+      "sha256": "20a162da5a24459489c03bd532d9067f88147f494addd0b00925cdf70aa3b1be",
+      "bytes": 7466,
+      "size": [
+        243,
+        99
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/infobutton-sheet0.webp",
+      "sha256": "73347e25321704b81901c5853d7d59628b7d865990e889c5ef608e72503e07af",
+      "bytes": 5802,
+      "size": [
+        126,
+        126
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/infobutton-sheet1.webp",
+      "sha256": "2e433684d6f0eaa1bbf1018efdb6bcbed87fe7577d9e65b82858ff4dd5d4ab12",
+      "bytes": 5018,
+      "size": [
+        125,
+        126
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/line-sheet0.png",
+      "sha256": "768df6f07040ed26768054c4e138a3abf639befe3b08f3260b3cd769482274ed",
+      "bytes": 124,
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "原版保留",
+      "note": "已恢复原 ZIP 文件，原版与现用文件哈希一致。"
+    },
+    {
+      "path": "images/mark-sheet0.webp",
+      "sha256": "296fbec851f1b4e716fc542c0b9391574a1b511dba6e171fc2ff0ca9eec93494",
+      "bytes": 2496,
+      "size": [
+        104,
+        104
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/menu-score-plate.png",
+      "sha256": "ff8a6e31cf899431bb32ca4a48f51a2b67f74c421b09b6f4164815e07a3b33ce",
+      "bytes": 36194,
+      "size": [
+        317,
+        128
+      ],
+      "mode": "RGBA",
+      "category": "新增分数底板",
+      "status": "已替换",
+      "note": "开发工程菜单分数层使用；已浏览器测试"
+    },
+    {
+      "path": "images/menufont.webp",
+      "sha256": "8d2dd6838443a6e352384090f9fd91fab5345fbfb6c7594fe092f194efb143d7",
+      "bytes": 8528,
+      "size": [
+        64,
+        256
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/nomatch-sheet0.webp",
+      "sha256": "4d4242be170060c26a6575b8bd20701284d25ad8b2bdef079faf002c2c9ef926",
+      "bytes": 43172,
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/pause-sheet0.webp",
+      "sha256": "40cded2750ef5163d63b3b9561ed5c30bc097049fd71327fe9eb38b7d843e6d8",
+      "bytes": 1260,
+      "size": [
+        100,
+        100
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/pausebuttons-sheet0.webp",
+      "sha256": "43be820672fb6f5d840c75629fcabbb878fd8ff49c62bde52d6c10784279ecfa",
+      "bytes": 2750,
+      "size": [
+        145,
+        145
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/pausebuttons-sheet1.webp",
+      "sha256": "5c5aedd66125a7569783d50d817080d48b78a421c435413ab6a7400a8d1ac183",
+      "bytes": 3618,
+      "size": [
+        145,
+        145
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/pausebuttons-sheet2.webp",
+      "sha256": "75ac4f06f8af5ae6eb8028907d68e2f42ab44acba73ae1aedcef79c9527f7eac",
+      "bytes": 4910,
+      "size": [
+        145,
+        145
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/popfx-sheet0.png",
+      "sha256": "a52fa5999b19f9bd160433cc4957715ccd90d97b8e00d4467392ce96dc0078ff",
+      "bytes": 13620,
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "原版保留",
+      "note": "已恢复原 ZIP 文件，原版与现用文件哈希一致。"
+    },
+    {
+      "path": "images/popfx-sheet1.png",
+      "sha256": "a05fc178ded8cadb7a5520009d1db14103d0f3b776046e00f0aee50318dd2f4c",
+      "bytes": 6320,
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "原版保留",
+      "note": "已恢复原 ZIP 文件，原版与现用文件哈希一致。"
+    },
+    {
+      "path": "images/popup-sheet0.webp",
+      "sha256": "2afb319f9a1bc54a0430cde88044733081e5095eed4f43017e877b4c8896cc47",
+      "bytes": 55536,
+      "size": [
+        484,
+        548
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/shine-sheet0.webp",
+      "sha256": "d9e290dddd72493abc81e9a9ceb76caf6818b73dbb38fe5f952cd2c12a575db5",
+      "bytes": 23096,
+      "size": [
+        570,
+        576
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/shinetitle-sheet0.webp",
+      "sha256": "793c4e74838684c8a72e9a1f478c52f672fccdbf37980a3b315a4616719396fe",
+      "bytes": 2240,
+      "size": [
+        130,
+        130
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/soundbutton-sheet0.webp",
+      "sha256": "ee209e81c5071eea301d8ac0dffcfd663fc0df9e9fb5f847365d39b10b764f73",
+      "bytes": 6690,
+      "size": [
+        150,
+        150
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/soundbutton-sheet1.webp",
+      "sha256": "43fa8680ea88c02efab1734bb9a2bc5168b5484343eb88d12934ba27ca023485",
+      "bytes": 1850,
+      "size": [
+        150,
+        150
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/soundmenu-sheet0.webp",
+      "sha256": "81c267b7b269f529ffce5a989ad2ec55f319008b4a64bad51ab09656fddc6aeb",
+      "bytes": 7268,
+      "size": [
+        126,
+        126
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/soundmenu-sheet1.webp",
+      "sha256": "84b15ca457f0ee0020a032c0a3fcebc0790bc22a764097f791877c8351e84387",
+      "bytes": 6512,
+      "size": [
+        126,
+        126
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/sparkparticle.webp",
+      "sha256": "793c4e74838684c8a72e9a1f478c52f672fccdbf37980a3b315a4616719396fe",
+      "bytes": 2240,
+      "size": [
+        130,
+        130
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/startbutton-sheet0.webp",
+      "sha256": "b5e060be8379c6b0c99dbdf461cf3f1a50cdd940bf6daf270b3f6a54c4fa936e",
+      "bytes": 20780,
+      "size": [
+        248,
+        247
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/sunray-sheet0.webp",
+      "sha256": "c7b96f05340675850c6d468bb464338f9ed984062ad3d056ba30517d49802a6b",
+      "bytes": 51242,
+      "size": [
+        640,
+        640
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/themebutton-sheet0.webp",
+      "sha256": "6f47bfcc2d524c388a06037471814f0a9e013a7d77030e366044b47ee88c8256",
+      "bytes": 13042,
+      "size": [
+        203,
+        203
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/themebutton-sheet1.webp",
+      "sha256": "8276a6062a488e1226d4dea0c0248f5a5eeecc0d4ada7994f8d41e95aa7f9c4e",
+      "bytes": 11960,
+      "size": [
+        203,
+        203
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/themebutton-sheet2.webp",
+      "sha256": "aa6a988b514e0a08e21b2d76009f8b42f04795bf933f066d6dc377bad37f3012",
+      "bytes": 13410,
+      "size": [
+        203,
+        203
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/tileempty.webp",
+      "sha256": "b8b5f6ee6682339af478d0f6485a3399ef5a6cef348e758f6ac281e2cbad3c52",
+      "bytes": 600,
+      "size": [
+        300,
+        300
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/tilepurple.webp",
+      "sha256": "5b32df56aee06135d06ad396e3fe5549f9f711539d1428cbe555d5be5e27153b",
+      "bytes": 8308,
+      "size": [
+        452,
+        142
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/tiles-sheet0.webp",
+      "sha256": "c80336f59aadfa63ffad6247101f043502ab20218b9f3c0f6c35d8291085ffa8",
+      "bytes": 118326,
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/tiles-sheet1.webp",
+      "sha256": "29e40ebd6dfb938658c5007f1c6d6c715f45265521480723a74505888f7e58fa",
+      "bytes": 126458,
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/tiles-sheet2.webp",
+      "sha256": "69aba6899ec7a0f77a722a532c62af1c7a9e960a9e7cdf64b17ac968862d360d",
+      "bytes": 49828,
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/tilestar.webp",
+      "sha256": "eb8bd7fd68728a47479e360866569beb23f2a5ef0c378e28ba3b48f5076b9627",
+      "bytes": 1956,
+      "size": [
+        300,
+        300
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/timesup-sheet0.webp",
+      "sha256": "d36b994150518c3d83ff9961770c8330300f061ff681d634da07799d9df92208",
+      "bytes": 11980,
+      "size": [
+        212,
+        212
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/title-sheet0.webp",
+      "sha256": "6c78661259b6670764d7119af307c36f1e63dfe35b4212bac876c1e2c15a8287",
+      "bytes": 87286,
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/tutorial-sheet0.webp",
+      "sha256": "f077421cb19fbd1012bb2a57dbea1782610989d498e2e4ffbf7d9e8adb30a62c",
+      "bytes": 58156,
+      "size": [
+        455,
+        515
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    },
+    {
+      "path": "images/uisymbols-sheet0.webp",
+      "sha256": "9e0ac5d5255bec8315d3e8beeaf3bf1decabc17784f3ad4d1bd51d371bc279bb",
+      "bytes": 6894,
+      "size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "category": "游戏原始 images 资源",
+      "status": "已替换",
+      "note": "详情见素材清单；文件变更不等于运行验收"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "92988",
+    "apiName":  "Urban Racer",
+    "targetName":  "Urban Racer",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Urban_Racer.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250717/04314968274.zip",
+    "bundleMd5":  "aba04336fae36dc304c8e476860d7fa8",
+    "bundleSize":  3069633,
+    "updatedAt":  1752744983,
+    "gameLink":  "https://www.shyunduangame.com/Urban_Racer/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_92988",
+    "category":  "Racing",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Urban_Racer.zip",
+    "localBytes":  3069633,
+    "verifiedAt":  "2026-10-20T11:15:56",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

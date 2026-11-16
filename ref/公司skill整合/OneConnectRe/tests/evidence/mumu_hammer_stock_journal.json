@@ -1,0 +1,13 @@
+{
+  "scope": "isolated local reservation journal; not game recovery",
+  "first": [
+    "already_pending",
+    "reserved"
+  ],
+  "refund": [
+    "already_refunded",
+    "refunded"
+  ],
+  "countAfterCommit": 1,
+  "errors": []
+}

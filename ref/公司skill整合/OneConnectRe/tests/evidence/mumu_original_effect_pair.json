@@ -1,0 +1,32 @@
+{
+  "level": 1,
+  "scope": "natural pair on current game; runtime instances only",
+  "before": 16,
+  "after": 14,
+  "trace": {
+    "t7": {
+      "samples": 22,
+      "frames": [
+        0
+      ]
+    },
+    "t8": {
+      "samples": 22,
+      "frames": [
+        0
+      ]
+    },
+    "t48": {
+      "samples": 36,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  }
+}

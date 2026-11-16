@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "88881",
+    "apiName":  "Making Popsicle",
+    "targetName":  "Making Popsicle",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Making_Popsicle.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251106/e2890aefbeb56ee4c4c7cc42129067d0.zip",
+    "bundleMd5":  "e2890aefbeb56ee4c4c7cc42129067d0",
+    "bundleSize":  3883498,
+    "updatedAt":  1762855747,
+    "gameLink":  "https://www.shanzhih5game.com/Making_Popsicle/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_88881",
+    "category":  "Casual",
+    "rate":  8.9,
+    "gameType":  1,
+    "localFile":  "Making_Popsicle.zip",
+    "localBytes":  3883498,
+    "verifiedAt":  "2026-10-20T11:14:36",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

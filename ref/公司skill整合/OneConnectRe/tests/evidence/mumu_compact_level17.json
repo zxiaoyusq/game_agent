@@ -1,0 +1,15 @@
+{
+  "start": {
+    "level": 17,
+    "timer": 201,
+    "seed": 3834189204,
+    "errors": []
+  },
+  "end": {
+    "level": 18,
+    "progress": 18,
+    "tiles": 42,
+    "errors": []
+  },
+  "scope": "isolated level 17; reconstructed from successful MuMu test output; every gravity step checked"
+}

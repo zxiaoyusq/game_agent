@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  94158,
+    "apiName":  "Sprunki Playground",
+    "targetName":  "Sprunki Playground",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Sprunki_Playground.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260204/7ed46cee6c8be07a3c156241a9f38449.zip",
+    "bundleMd5":  "7ed46cee6c8be07a3c156241a9f38449",
+    "bundleSize":  2679716,
+    "updatedAt":  1773395014,
+    "gameLink":  "https://www.gztongmenggame.com/Sprunki_Playground/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_94158",
+    "category":  "Simulation",
+    "rate":  8.1,
+    "gameType":  1,
+    "localFile":  "Sprunki_Playground.zip",
+    "localBytes":  2679716,
+    "verifiedAt":  "2026-10-20T10:36:54",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

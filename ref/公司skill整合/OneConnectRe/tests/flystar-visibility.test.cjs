@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let event,visibility,frames=[],nodes=[];const star={uid:31,x:80,y:20,layer:{layerToCanvas:(x,y,axis)=>axis?x:y}};
+const runtime={running_layout:{name:'game'},canvas:{width:100,height:200,getBoundingClientRect:()=>({left:0,top:0,width:100,height:200})},types:{t24:{instances:[star]}},all_global_vars:[{name:'pause',data:0}]};
+const window={cr_getC2Runtime:()=>runtime,addEventListener(name,fn){if(name==='oneconnect:event')event=fn}};
+const document={hidden:false,addEventListener(name,fn){if(name==='visibilitychange')visibility=fn},body:{appendChild(n){nodes.push(n)}},createElement:()=>({style:{},setAttribute(){},remove(){this.removed=true}})};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/flystar_candidate.js','utf8'),{window,document,requestAnimationFrame:fn=>frames.push(fn),Number,Array,Math});
+window.oneConnectFlyStarCandidate.install();event({detail:{type:'candidate.link_points',detail:{pathScreenPoints:[{x:5,y:5},{x:10,y:10}]}}});
+assert.match(nodes[0].style.cssText,/width:56px;height:56px/,'flying star is twice the former 28px size');
+frames.shift()(100);const before=nodes[0].style.transform;document.hidden=true;if(visibility)visibility();document.hidden=false;if(visibility)visibility();frames.shift()(300100);
+assert.equal(nodes[0].style.transform,before,'background time must not advance animation on the first resumed frame');
+frames.shift()(300150);assert.notEqual(nodes[0].style.transform,before,'animation resumes on subsequent foreground frames');
+console.log('fly stars do not advance across a background gap PASS');

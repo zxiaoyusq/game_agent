@@ -1,0 +1,54 @@
+[
+  {
+    "name": "preinstalled_original",
+    "pairs": 10,
+    "sample": {
+      "frames": 509,
+      "p95": 16.66700000000128,
+      "p99": 16.66700000000128,
+      "max": 16.66700000000128,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 10160704
+  },
+  {
+    "name": "preinstalled_iteration_72",
+    "pairs": 10,
+    "sample": {
+      "frames": 510,
+      "p95": 16.66700000000128,
+      "p99": 16.66700000000128,
+      "max": 16.66700000000128,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 14211336
+  },
+  {
+    "name": "preinstalled_iteration_72",
+    "pairs": 10,
+    "sample": {
+      "frames": 508,
+      "p95": 16.66700000000037,
+      "p99": 16.66700000000037,
+      "max": 16.66700000000037,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 7624428
+  },
+  {
+    "name": "preinstalled_original",
+    "pairs": 10,
+    "sample": {
+      "frames": 510,
+      "p95": 16.66700000000128,
+      "p99": 16.66700000000128,
+      "max": 16.66700000000128,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 14467968
+  }
+]

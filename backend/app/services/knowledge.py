@@ -6,13 +6,11 @@
         <item_id>__<原文件名>            # 根目录下落盘的文件
         <folder_path>/<item_id>__<原>    # 子文件夹下落盘的文件，folder_path 用 / 分隔
 
-index.json 格式（自 v1.1 起）：
+index.json 格式：
     {
         "items":   [KbItem, ...],
         "folders": [KbFolder, ...]
     }
-v1.0 老格式（直接是 KbItem 数组）会被自动识别并兼容读出，
-首次写回时自动升级到 v1.1，folder 字段缺失时默认为根目录 ""。
 
 当前阶段仍只做本地文件 + JSON 管理，不涉及向量化与检索。
 """
@@ -124,10 +122,7 @@ def _safe_folder_path(path: str, module: Optional[str] = None) -> str:
 
 
 def _read_raw_index(module: str, category: str) -> dict:
-    """读取 index.json 原始 dict；不存在或损坏时返回空骨架。
-
-    兼容 v1.0 老格式（数组）：自动升级为 {"items": [...], "folders": []}。
-    """
+    """读取当前对象格式的 index.json，不存在或损坏时返回空骨架。"""
     path = _index_path(module, category)
     if not path.exists():
         return {"items": [], "folders": []}
@@ -136,9 +131,6 @@ def _read_raw_index(module: str, category: str) -> dict:
     except json.JSONDecodeError:
         # 索引损坏：回退为空骨架，避免阻塞整个模块查询
         return {"items": [], "folders": []}
-    if isinstance(raw, list):
-        # v1.0：纯 item 数组 → 升级骨架（不写盘，等下次写入再持久化）
-        return {"items": raw, "folders": []}
     if not isinstance(raw, dict):
         return {"items": [], "folders": []}
     raw.setdefault("items", [])
@@ -709,7 +701,7 @@ def delete_folder(module: str, category: str, *, path: str) -> bool:
     return True
 
 
-# ---- 对外接口：批量读取（供 kb_context.resolve_kb 用）---------------------
+# ---- 对外接口：按文件夹读取资料及元信息 ---------------------
 
 def list_items_under_folder(
     module: str,

@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const dir=process.argv[2]||'tools',candidate=process.argv[2]?'shuffle-motion-candidate.js':'shuffle_motion_candidate.js',mapfile=process.argv[2]?'shuffle-motion-map.js':'shuffle_motion_map.js';
+const stub={exports:{}};vm.runInNewContext(fs.readFileSync(path.join(dir,mapfile),'utf8'),{module:stub,Number,Array,Map,Set});
+let queue=[],visibility;const cr={action:function(){},plugins_:{Touch:function(){}}};
+cr.action.prototype.run_object=function(){let t=this.runtime.types.t5.instances;[t[0].x,t[1].x]=[t[1].x,t[0].x]};cr.plugins_.Touch.prototype.cnds={OnTouchObject(){return true}};
+const document={hidden:false,addEventListener(name,fn){if(name==='visibilitychange')visibility=fn}};
+const window={cr,oneConnectShuffleMotionMap:stub.exports,requestAnimationFrame(fn){queue.push(fn)},addEventListener(){}};
+vm.runInNewContext(fs.readFileSync(path.join(dir,candidate),'utf8'),{window,document,cr,Number,Array,Map,Math,console});
+const tiles=[{uid:1,cur_frame:0,x:0,y:0,instance_vars:[],set_bbox_changed(){}},{uid:2,cur_frame:1,x:20,y:0,instance_vars:[],set_bbox_changed(){}}];
+const runtime={running_layout:{name:'game'},all_global_vars:[{name:'level',data:1}],types:{t5:{instances:tiles}}},action={sid:342934048923318,runtime};
+window.oneConnectShuffleMotionCandidate.install();cr.action.prototype.run_object.call(action);cr.action.prototype.run_object.call(action);
+assert.equal(queue.length,2);let old=queue.shift(),current=queue.shift();old(0);assert.equal(queue.length,0,'stale frame cannot drive a replacement animation');current(0);assert.equal(queue.length,1);
+queue.shift()(50);let before=tiles[0].x;document.hidden=true;visibility();document.hidden=false;visibility();queue.shift()(10050);assert.equal(tiles[0].x,before,'resuming does not advance background time');queue.shift()(10100);assert.notEqual(tiles[0].x,before);
+console.log('shuffle animation isolates stale frames and excludes background time PASS');

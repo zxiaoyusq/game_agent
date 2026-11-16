@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "95489",
+    "apiName":  "Coloring",
+    "targetName":  "Coloring",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Coloring.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260711/28786ee42352719b76da46bad45f1457.zip",
+    "bundleMd5":  "28786ee42352719b76da46bad45f1457",
+    "bundleSize":  15442396,
+    "updatedAt":  1784109713,
+    "gameLink":  "https://www.ooppgame.com/Coloring/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_95489",
+    "category":  "Children",
+    "rate":  8.6,
+    "gameType":  1,
+    "localFile":  "Coloring.zip",
+    "localBytes":  15442396,
+    "verifiedAt":  "2026-10-20T11:17:51",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

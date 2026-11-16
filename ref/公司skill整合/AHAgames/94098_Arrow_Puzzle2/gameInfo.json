@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  94098,
+    "apiName":  "Arrow Puzzle2",
+    "targetName":  "Arrow Puzzle2",
+    "match":  "EXACT",
+    "bundleName":  "re_arrow-puzzle-transsion-offline.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260121/65585a6bf5ff7cc831bc1796562ca418.zip",
+    "bundleMd5":  "65585a6bf5ff7cc831bc1796562ca418",
+    "bundleSize":  1940473,
+    "updatedAt":  1769508304,
+    "gameLink":  "https://www.hkminih5game.com/Arrow_Puzzle2/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_94098",
+    "category":  "Puzzle",
+    "rate":  8.0,
+    "gameType":  1,
+    "localFile":  "Arrow_Puzzle2.zip",
+    "localBytes":  1940473,
+    "verifiedAt":  "2026-10-20T10:32:20",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "94281",
+    "apiName":  "Carnado Stunt Car 3D",
+    "targetName":  "Carnado Stunt Car 3D",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Carnado_Stunt_Car_3D.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260305/1f5650bc78abcfcb76ee32190eb6c7b8.zip",
+    "bundleMd5":  "1f5650bc78abcfcb76ee32190eb6c7b8",
+    "bundleSize":  39164461,
+    "updatedAt":  1772699656,
+    "gameLink":  "https://www.cdmoniyuansugame.com/Carnado_Stunt_Car_3D/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94281",
+    "category":  "Racing",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Carnado_Stunt_Car_3D.zip",
+    "localBytes":  39164461,
+    "verifiedAt":  "2026-10-20T11:20:03",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ludo-classic-reskin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0",
+    "prettier": "3.6.2"
+  }
+}

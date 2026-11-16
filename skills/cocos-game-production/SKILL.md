@@ -2,7 +2,7 @@
 name: cocos-game-production
 description: 在本项目四阶段工作流中，把参考游戏和策划需求制作成可构建、可玩、可验收的 Cocos 游戏，处理参考融合、资源接入、玩法实现及真实测试。用于新建或重建 Cocos 游戏及修复生产链路，不用于仅盘点 APK 或生成静态示意图。
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
   display_name: "Cocos 游戏生产与验收"
 ---
 
@@ -17,6 +17,8 @@ metadata:
 用户要求最新 Cocos 时，从官方正式 release 核实版本并固定源码提交或编辑器版本。开发分支的版本字段不能证明正式发布。记录实际构建所用的版本；手工实现 `cc` 接口、仅引用类型声明或改写版本文案都不能证明使用了 Cocos。
 
 源码身份应由实际 Git 提交或已核验的官方归档 SHA-256 证明，并记录生成的引擎文件哈希及运行时版本。提供从清洁目录下载、校验、构建的命令；写死在报告中的版本字段不能替代验证。
+
+先做工程体检：区分独立引擎 Web 工程、Creator 工程和企业框架，确认版本、逻辑骨架、资源与配置真源。只有实际使用 Creator 时才按需读取 `game-reverse-engineering/modules/cocos-project-standards/SKILL.md`；其中 COCOS 通用约定、CFW 专属约定与 DADA 案例分开应用。未确认使用对应框架时，不强加其目录六件套、Excel/Luban 或 Prefab 组织；修复配置优先改真源并重新生成，不照搬案例中的派生文件应急修改。
 
 ## 四阶段产物
 
@@ -55,4 +57,7 @@ metadata:
 - 当前 Ball Sort 融合项目：读 [三款参考的使用边界](references/ball-sort-fusion.md)。
 - 安装包结构取证：使用项目已有 `apk-engineering-analysis`；产品设计和来源判断使用 `game-competitor-analysis`。
 - 美术生产：从知识库加载 `ai-art-automation` 或 `azure-image2-generation` 的相关部分，先核实工具和模型是否可用。
+- 休闲美术方向：按需读取 `azure-image2-generation/modules/casual-game-art-style/SKILL.md`，将形式语言、项目配色题材、功能色和资源技术契约分开确定；代表样校准后再批量制作并回填。
+- 已有 H5 工程换皮：按实际运行时选用 `game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md`，保留已选视觉候选，将资源缺陷与运行问题分别验收。纯美术任务不扩大为改玩法或布局。
 - Cocos 构建及设备检查：按需要加载 `game-reverse-engineering/modules/cocos-qa`。它的历史 Windows 路径不是当前 Linux 环境配置。
+- Creator 编辑器与 MCP：仅在真实编辑器工程及可用通道中采用相应模块；独立 Web 的浏览器通过不代表编辑器、真机或原生平台已经验收。

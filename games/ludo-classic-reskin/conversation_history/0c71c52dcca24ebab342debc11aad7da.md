@@ -1,0 +1,5077 @@
+## Summarized at 2026-11-06T10:50:35.804113+00:00
+
+Human: {"project": {"id": "3663442e040f42b2b73291ef2094884b", "name": "LUDO · 原版贴图与动画版", "brief": {"idea": "用户最新指令：LUDO之前产物美术太像AI、太偏前端、没有动画。必须在公司两款原版的美术表现基础上做少量贴图替换，整体接近原游戏，明确使用美术Skill。这是原版结构优先的轻换皮，不再做北非题材、圆形棋盘、网页仪表盘或整套新概念设计。\n以Ludo Superstar的标准15×15十字棋盘、四角圆营地、红绿蓝黄功能色、亮面立体棋子、上下头像/骰子座及紧凑竖屏构图为主，Just Ludo仅作棋子/骰子质感和动画参考。真实提取并复用参考ZIP中的棋盘、棋子、骰子、头像和必要特效/音效；只局部替换低风险背景装饰/标题贴图，保持资源尺寸、透明、图集帧与锚点关系。禁止用AI整屏图替代棋盘或用HTML大卡片替代游戏HUD；不做整张大风景背景。UI文字中文，可保留LUDO通用标识，移除旧品牌/广告/商业按钮。\n主玩法以已验收纯规则核心为基础：经典4枚全归家，支持2/3/4席人机与同屏、快速模式可直接沿用已验收规则；规则不扩张。工作区src内预置上一轮API作者生成并已验证的rules/rng/ai/storage/lifecycle模块，来源清单为design/reuse-baseline.json；必须读取后复用，存档键/命名改为本项目独立，不沿用旧页面、旧美术或圆形坐标。表现层用Canvas2D纹理/图集，另有少量语义按钮处理键盘与可访问性；不要重写一套通用引擎。\n必须有真实时间动画：骰子600—900ms翻面与弹跳，棋子按每格90—130ms逐格弧线跳动和落点反馈，吃子碰撞后回营、到家闪光与胜利彩纸/结算。当前玩家/可动棋子有克制的呼吸提示。默认开启动画，减少动态是用户可选。动画不改骰子和规则，重复输入被锁住，隐藏/重开/刷新不能产生旧动作或重复落子。手机一屏主要棋盘和骰子均可见，核心触控区≥44CSSpx；桌面居中游戏场景而非改成后台界面。\n必须实际读取选定美术Skill及相关换皮参考，给出原路径→运行路径、保留/局部编辑、尺寸/alpha/帧序的资源清单；逐件标注imported与API编辑来源。需要编辑位图时只走本工程图片API并传真实参考图，不使用Codex登录或外部其他Key。不要套通用新风格模板。\n四阶段原型、美术、代码、测试都使用工程API Key的gpt-6.1-sol。当前仅执行被请求阶段，不自行确认。最终dist<10MB、相对路径且无CDN；真实npm run build/test/check，规则完整对局、桌面/手机自然输入、动画中间帧截图与像素变化、暂停/刷新/多次点击验收。测试阶段不能改上游代码。最终部署独立ludo-classic-reskin路径，保留原来游戏。代码模块化、可读、中文主要注释，避免一行压缩实现。", "genre": "棋盘与回合制", "engine": "Canvas 2D · Web / H5", "platform": "手机与电脑浏览器", "execution": "工程API Key / gpt-6.1-sol；保留原版视觉与动画，非Codex登录"}, "workspace": "games/ludo-classic-reskin", "model_provider": "api-key", "model_id": "gpt-6.1-sol", "references": ["公司skill整合/AHAgames/82251_Just_Ludo/gameInfo.json", "公司skill整合/AHAgames/82251_Just_Ludo/Just_Ludo.zip", "公司skill整合/AHAgames/94034_Ludo_Superstar/gameInfo.json", "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip"], "created_at": "2026-11-06T10:22:36.285751+00:00", "stages": [{"id": "prototype", "label": "原型定义", "status": "completed", "run_id": "90af2a79322d4bfcaf6a9399d1448984", "confirmed_at": "2026-11-06T10:33:44.980401+00:00"}, {"id": "art", "label": "美术资源", "status": "queued", "run_id": "0c71c52dcca24ebab342debc11aad7da", "confirmed_at": null}, {"id": "code", "label": "代码与集成", "status": "pending", "run_id": null, "confirmed_at": null}, {"id": "test", "label": "测试验收", "status": "pending", "run_id": null, "confirmed_at": null}], "submission": {"request_id": "ludo-original-art-20261106", "scope": "rest", "sha256": "4921dc836cb03b0a591f14292e153e6e3062d90bb5fe65916ed145dfd1a830dd"}, "genre_id": "board-games", "framework_id": "canvas-web", "knowledge_paths": ["genre/docs/general.md", "genre/docs/board-games.md", "framework/docs/web-common.md", "framework/docs/canvas-web.md"], "production_profile": {"version": "1.1.0", "genre": {"id": "board-games", "label": "棋盘与回合制", "description": "Ludo 等棋盘移动、随机骰子、回合奖励与完整对局。", "stage_guidance": {"prototype": "依据真实来源明确路径、合法走法、回合奖励、安全格、精确终点、模式差异和胜利条件。", "test": "验证路径与轮转、吃子/叠子边界、随机公平性、存档、AI合法性，并通过真实页面完成对局到结算。"}, "knowledge_paths": ["genre/docs/general.md", "genre/docs/board-games.md"]}, "framework": {"id": "canvas-web", "label": "Canvas 2D · Web / H5", "description": "轻量二维规则验证，使用浏览器 Canvas 和独立玩法逻辑。", "status": "执行协议已适配，待完整项目验收", "instructions": "使用浏览器原生 Canvas 2D 实现轻量游戏，不加载 Cocos 或伪造引擎版本。玩法状态与渲染、输入分离，提供真实浏览器输入验证；复杂物理或编辑器需求应重新选型。", "knowledge_paths": ["framework/docs/web-common.md", "framework/docs/canvas-web.md"], "recommended_skills": ["casual-game-production/SKILL.md"], "required_validations": ["npm run build", "npm test", "npm run check"], "preview_entry": "dist/index.html"}, "knowledge_paths": ["genre/docs/general.md", "genre/docs/board-games.md", "framework/docs/web-common.md", "framework/docs/canvas-web.md"], "sha256": "65c554d552871588de0ee45ddbdc8872c5ca1c555da93e90261401c7ab477fde"}}, "stage": "art", "request": "继续当前美术阶段，上一运行因真实Cocos资源.png扩展实际WEBP，被旧版工具拒绝而取消。当前工具已修复为按真实编码校验/上传MIME，请复用已有提取素材，先inspect与read_file，不重复生成所有素材。\n重要审阅意见：绝对不能把参考编辑失败改成reference_paths=None无参考重画。之前无参考候选已经被移到reference-assets/rejected-background-no-reference.webp并明确拒绝，请读取rejected-background.json，不能把它用作新参考或最终背景。只允许以原始紫色菱格背景作为结构参考，参考图编辑失败须报告原错误并保留原版底纹，不准无参考补一张。\n原路径.png实际WEBP是合法Cocos优化方式，现在process_art_image和generate_art_image按真实解码处理。对最终运行所用伪后缀图片可用process_art_image无crop无resize规范为真正PNG（新文件名），保持RGBA像素和原图集尺寸不变；正确记录input_format而非猜扩展。裁图/帧恢复按原契约。已有真正生成但拒绝的背景不能冒充API编辑。\n新增原运行布局证据：reference-assets/research-board-runtime.json、original-board-assembly.png。请实际读取，原始主板是586×585十字层+四张233营地+透明外框+标记；四角营地孔中心、76格和底座位置在索引内。真实外框为www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/47/47eadf9e-1cef-4c7c-88d2-7c09e86d3d9d.7ebe4.png，628×628、alpha最高51，按实读原始元数据提取规范化，不能当不透明面板。安全星和方向箭头独立。\n本轮聚焦修复资源格式、精确提取/装配与单张真实参考编辑，已经成功的文件按hash复用，勿重新全库研究。读取冻结Skill/知识与上游后按以下原任务完成并及时提交。\n\n执行LUDO美术资源阶段。遵循已确认原型与用户最新“保留两个原游戏美术表现，只少量换贴图，必须有动画”的要求。先实际读取本次四个冻结Skill和四份知识、workflow/prototype.md、design/visual-baseline.md、design/acceptance.md；先inspect_assets。\n明确读取ai-art-automation的references/ui-runtime-delivery.md，azure-image2-generation的references/reskin-pipeline.md与structure-locked-reskin.md，以及H5换皮模块references/component-restoration.md和pipeline.md中适用的结构/贴图契约。用户已经明确授权原版配色/贴图/布局优先与本工程API编辑，不套新风格模板，不走外部CLI，不把文档中Windows路径或GameArtAgent当必需。\n请read_file实际看原版两张preview，再读reference-assets/research-index.json和research-dice-frames.json（长文件分段读）。它们只是辅助定位线索，须用read_reference_archive/实际extract核验所选原始元数据与纹理。避免重新全库扫描。原型优先真正运行所用 original_img_center_blue + 四营地/标记；不要把商店皮肤预览当作已经确认的runtime主板。源frame与实际纹理由元数据决定。\n精简产物：保留原版四功能色、亮面棋子、六面骰子、25帧原始摇骰动画、玩家人类/机器人头像+四色座框、落点/选中环、开始/设置等必要按钮与小音效。Superstar实际只有人类和机器人2头像，不能伪称有4个独立头像；四色座框足以区分队伍。原型用蓝0/红1/绿2/黄3，与十字路径固定。优先非旋转红/蓝棋子帧或运行时明确解旋转，禁止错把rotated矩形直接裁成错误方向。\n现在有process_art_image(source_path,destination,crop=[x,y,w,h],target_size=[w,h])：只在美术阶段，把工作区PNG/JPEG/WebP确定性裁切或contain到public/assets，保留实际输入/输出SHA和alpha。crop即可保留原像素；不要把有trim的104×106骰面contain放大到220×220冒充恢复originalSize，trim/offset应原样记录到运行manifest供Canvas还原。无损输出不覆盖，修订用新文件名；无需Python命令。所有最终运行资源应在本阶段落盘，代码阶段不得改确认资产。\n局部新贴图只需1张低风险菱格背景：从Superstar原紫色菱格底纹提取实际719×1600参考，通过generate_art_image传reference_paths做同结构小幅质感/色阶精修，保持深紫低对比菱格、手游质感，无风景/建筑/文字/棋盘/卡片，不改红绿蓝黄功能资产。不必改营地/棋子轮廓，不批量生成人物。保留API原始候选、提示词和参考hash；最终背景须按原尺寸处理，背景可按重复纹理中心裁切再等比装配，检查无黑/透明边或大明暗块。只做一个候选；若技术失败可针对问题修复，不无意义连续生图。生成不了就如实保留原纹理并说明，不能假装新图。\n将实际资产规格写入public/assets/visual-manifest.json或类似运行配置：原ZIP+条目、图集/单图文件、rect/rotated/offset/originalSize、相对逻辑尺寸、底座/中心锚点、实际25帧顺序/时间。Dice clip -0.133s预置帧不纳入0…24帧播放。若保留整图集直接drawImage分帧，没必要重复导出全部散件。读实际图片检查透明/旋转/高光，原图复用记imported，新背景记api-edited，确定性裁切记processed；源图集研究文件不自动全部进入dist。\n写workflow/art.md、非空workflow/art-manifest.json、design/art-integration.md。对所有必需运行文件实际inspect_assets取得sha；映射原路径→输出→用途和渲染契约。记录少量生成与大部分原版复用，不声称已完成游戏运行/真机/所有动画。只完成当前阶段，禁止改src纯规则或原型，不创建网页大布局，不确认、不发布。无需重复抄长研究报告，给程序足够明确的资源契约后结束。\n", "selected_skills": ["casual-game-production/SKILL.md", "ai-art-automation/SKILL.md", "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md", "azure-image2-generation/SKILL.md"], "skill_selection": {"version": "1.0.0", "mode": "manual", "context": {"stage": "art", "stage_label": "美术资源", "genre_id": "board-games", "genre_label": "棋盘与回合制", "framework_id": "canvas-web", "framework_label": "Canvas 2D · Web / H5", "knowledge_paths": ["genre/docs/general.md", "genre/docs/board-games.md", "framework/docs/web-common.md", "framework/docs/canvas-web.md"], "genre_guidance": "品类规则从项目已选知识和原型读取；当前目录没有独立的逐品类 Skill，不复制其他游戏的专属机制。"}, "recommended_paths": ["casual-game-production/SKILL.md", "ai-art-automation/SKILL.md", "azure-image2-generation/modules/casual-game-art-style/SKILL.md", "azure-image2-generation/SKILL.md", "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md"], "selected_paths": ["casual-game-production/SKILL.md", "ai-art-automation/SKILL.md", "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md", "azure-image2-generation/SKILL.md"], "items": [{"path": "casual-game-production/SKILL.md", "name": "休闲游戏生产流程", "reason": "用户为当前阶段明确选择，按实际适用范围使用", "source": "manual", "usage": "workflow"}, {"path": "ai-art-automation/SKILL.md", "name": "AI 美术自动化", "reason": "用户为当前阶段明确选择，按实际适用范围使用", "source": "manual", "usage": "workflow"}, {"path": "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md", "name": "H5 Canvas 游戏换皮", "reason": "用户为当前阶段明确选择，按实际适用范围使用", "source": "manual", "usage": "workflow"}, {"path": "azure-image2-generation/SKILL.md", "name": "AI 生图与素材换皮", "reason": "用户为当前阶段明确选择，按实际适用范围使用", "source": "manual", "usage": "workflow"}], "recommended_items": [{"path": "casual-game-production/SKILL.md", "name": "休闲游戏生产流程", "reason": "棋盘与回合制 · 美术资源：沿用当前品类的资源交接和阶段边界", "source": "auto", "usage": "workflow"}, {"path": "ai-art-automation/SKILL.md", "name": "AI 美术自动化", "reason": "棋盘与回合制 · 美术资源：组织资源轻量索引、代表样、批量生产计划和累计回填", "source": "auto", "usage": "workflow"}, {"path": "azure-image2-generation/modules/casual-game-art-style/SKILL.md", "name": "休闲游戏美术风格与视觉规范", "reason": "棋盘与回合制 · 美术资源：确定当前休闲玩法的形式语言、功能色和视觉层级", "source": "auto", "usage": "workflow"}, {"path": "azure-image2-generation/SKILL.md", "name": "AI 生图与素材换皮", "reason": "棋盘与回合制 · 美术资源：美术阶段明确要求生成图片，先读取生图规范并核实当前工具能力", "source": "auto", "usage": "workflow"}, {"path": "game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md", "name": "H5 Canvas 游戏换皮", "reason": "棋盘与回合制 · 美术资源：当前为 Canvas Web 换皮任务，需保持资源契约并验证实际运行", "source": "auto", "usage": "workflow"}], "warnings": ["AI 美术自动化：美术流程用于任务拆分与资源回填；AI 图片须通过已配置的 generate_art_image 实际生产，并交接文件与哈希。", "H5 Canvas 游戏换皮：H5 换皮按实际资源契约和浏览器结果执行；设备、外部生图与来源脚本不因读取 Skill 自动可用。", "AI 生图与素材换皮：读取生图规范后核实服务器图片API配置；只能用 generate_art_image 返回的真实文件证明图片生产，未配置时说明缺口。"]}, "attempt": 1, "resume": false}
+AI: [{'name': 'inspect_assets', 'args': {'paths': None}, 'id': 'call_yocUiNnjYsQaHuALqNjqYDhL', 'type': 'tool_call'}]
+Tool: [{"path": "design/reuse-baseline.json", "size": 2137, "sha256": "6aa3142b4b6f7866bae2d7231aade7bd686d021d931a9b46f9a66e3008e75b25"}, {"path": "reference-assets/preview-provenance.json", "size": 871, "sha256": "c15136a8839c4c588b726729ab590ed277789489b04b532e3ab27d75de74e666"}, {"path": "reference-assets/rejected-background.json", "size": 408, "sha256": "2a7442458b811482fee11399828e8a1835c0493d1db3e04c36dea624b797841e"}, {"path": "reference-assets/original-board-assembly.png", "size": 262292, "sha256": "ea208ae9f0a4b4ff0b6f4359505ecf3d3a653b8b3fb9c65df3a660749e0b6fe9"}, {"path": "reference-assets/super-token-dice-atlas.png", "size": 125874, "sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1"}, {"path": "reference-assets/just-original1.png", "size": 31458, "sha256": "9c3bb097f455af3e614f7bff77d0c2b1dd8b8827de2f0c25d5c4786d4d840a5d"}, {"path": "reference-assets/super-background-atlas.png", "size": 9904, "sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c"}, {"path": "reference-assets/rejected-background-no-reference.webp", "size": 12608, "sha256": "9d6c4c5b541c96b7d785f0e22e2988961898d681a3fb119864d5bb76009493f6"}, {"path": "reference-assets/original-super-preview.png", "size": 124524, "sha256": "6d59c85086cafd2920fe0d70c45c8ffc8cfdec0876f8018ffa8baaef596542bb"}, {"path": "reference-assets/research-board-runtime.json", "size": 26384, "sha256": "c982f6466321806cd41e47098b9d464befef5ed5231c903b862b3a8cff911f41"}, {"path": "reference-assets/super-board-atlas.png", "size": 229924, "sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb"}, {"path": "reference-assets/original-just-preview.png", "size": 154810, "sha256": "8c60cd75cc5332c6d6df92d0e732f4ab87ece2b35082129da3265df11d29931f"}, {"path": "reference-assets/research-dice-frames.json", "size": 13883, "sha256": "2603eddc00c3ebe805b5f3092633172bf616d630f698b877623de9014279b357"}, {"path": "reference-assets/research-index.json", "size": 29570, "sha256": "8391e35e7125b025f7476f7198980f7066bd1e7988fe37de99b9eff01b01dd5b"}, {"path": "public/assets/dice-roll-10.png", "size": 1860, "sha256": "c5d275b9eb4a13e081a57108077f95eb6bae7247d1034b8fe0ba3a3b7d2f1210"}, {"path": "public/assets/dice-roll-16.png", "size": 1594, "sha256": "93354af6ed83362d91292f6d962ef4433dada2ba768f970243c2461264bebfbf"}, {"path": "public/assets/dice-roll-18.png", "size": 1374, "sha256": "c36c45d1909c30b4ef5cd92c99ccf7d9e9d8e7c5965b6ab61d940222e05abc2a"}, {"path": "public/assets/dice-roll-21.png", "size": 1820, "sha256": "0b97ac886fb7a78a7563863ce692848fe314b067c32747f6910962d56b1366d8"}, {"path": "public/assets/ring-landing.png", "size": 1236, "sha256": "7633d7fec1f246ce7f4e3af555a3738ffa25d0f02820e8bde8ecd45c8ecebdcd"}, {"path": "public/assets/dice-roll-24.png", "size": 1738, "sha256": "0c898cb1ac95fc096c5332fc750a9d33356e1387892475e7167f8b89c5c9ae17"}, {"path": "public/assets/dice-roll-01.png", "size": 1642, "sha256": "4d22cfa7ca59c1a4e05cbf0f14318220d8c0458444662ceec8134f745585032f"}, {"path": "public/assets/dice-roll-12.png", "size": 1744, "sha256": "c9e655453c0082d0b997c41d49a3fec0cd55e2872f2f92dba9bf9e679db4c476"}, {"path": "public/assets/seat-yellow.png", "size": 1254, "sha256": "779a79e973f10284c90d0b58cf326f33d8663e181f16f319741a66d2d8ec9b26"}, {"path": "public/assets/seat-green.png", "size": 1100, "sha256": "14a74cb4ac1d2fb728ed91d328c1648f46a465653cb044385b82f56399db8653"}, {"path": "public/assets/background-purple.webp", "size": 75436, "sha256": "13f3ed15533d5d1bd4eb79df6afd490772b6d98b991458f8c4b4c170839d521b"}, {"path": "public/assets/dice-roll-06.png", "size": 1672, "sha256": "621fe6df1ce39fd0bdc9fce49ea4a0bc774f60040e241b6576bb3374e171fcdc"}, {"path": "public/assets/button-confirm.png", "size": 778, "sha256": "6b6e170e1f2bb85f848a7108eb6d847cf19c3155a5f4da62562ce848b171bb79"}, {"path": "public/assets/dice-roll-20.png", "size": 1920, "sha256": "03f6ecd9c6bdbee8ae0b2cc82ddc7ef6a7b24198c07d79706bb42b8741099288"}, {"path": "public/assets/sound-capture.mp3", "size": 8612, "sha256": "42fd7feadc20e5cf0663c4c684e856141f2120f6c4b9d22aac269ac1eb8d2034"}, {"path": "public/assets/dice-roll-23.png", "size": 1692, "sha256": "209b40c41bbf1f1ebad29b9eca9903511b682ec296aafd1ac7291573a8eaeb93"}, {"path": "public/assets/avatar-human.png", "size": 2022, "sha256": "9380a5de1a4f81848e462108dce75a2811a11c25a4c9e8332f2223dfe238636d"}, {"path": "public/assets/super-token-dice-atlas.png", "size": 125874, "sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1"}, {"path": "public/assets/dice-roll-15.png", "size": 1548, "sha256": "2c8c5665a2e6462721924a6c3845c1cd38a2728ae4a594ec8eb317b7553a6737"}, {"path": "public/assets/dice-roll-00.png", "size": 1236, "sha256": "ec14c8260494e0541778a316caa565cc8914d899996970cbdb752c8829b115f3"}, {"path": "public/assets/dice-roll-02.png", "size": 1892, "sha256": "cec5646f0d58a37c90e327c20eb51c6a0ef5c53fd69b351deaa35f46685cfd85"}, {"path": "public/assets/super-background-atlas.png", "size": 9904, "sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c"}, {"path": "public/assets/button-close.png", "size": 1308, "sha256": "1c6f24782b9ba8b04aba4f161e220f8ba69865ff422471b6ac11e0851fdcf781"}, {"path": "public/assets/dice-roll-08.png", "size": 1656, "sha256": "0308e74c262c193b0d9750c118da0f116ba8150077bbfd85d0b4131713748b68"}, {"path": "public/assets/seat-blue.png", "size": 1042, "sha256": "80d4c6cbeb7a291238b1fca83f89cbc6a3b3decdd9a72974785a9ceacdf7ac28"}, {"path": "public/assets/sound-step.mp3", "size": 4641, "sha256": "71c797f823b7f67a48ddec69db885e923ac90c4878efa5752cb8700c0d327448"}, {"path": "public/assets/sound-home.mp3", "size": 7776, "sha256": "a1da60876403044afd43a71561a009cff063cfe9f84e3bc60dc44b95b7d13b35"}, {"path": "public/assets/super-board-atlas.png", "size": 229924, "sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb"}, {"path": "public/assets/button-start.png", "size": 824, "sha256": "7fd11a918ddf705de967fc807c80d74aa1f50ce5f1eb7a0de69954b06e4570a7"}, {"path": "public/assets/dice-roll-05.png", "size": 2106, "sha256": "c919f135a8675778a6c6992731187db52c2aa028ee4ce3ca685a6e6f35a3dec5"}, {"path": "public/assets/sound-roll.mp3", "size": 4845, "sha256": "725e6bb14bf3c1ef1e7dead43e2422f9e9f8ede55684f29e117a54caef350ad4"}, {"path": "public/assets/ring-selected.png", "size": 936, "sha256": "5a4d6f726806329ee4eb057794ae85ac1e930bf51fb83a4b9eeee5969f592373"}, {"path": "public/assets/dice-roll-11.png", "size": 1978, "sha256": "9f4e8207af38bdfbbc06c860c8c4ba9b79885926a552157568d69ac660040b7d"}, {"path": "public/assets/dice-roll-14.png", "size": 1622, "sha256": "b5843990b2750a424d000c65ec55e8e9e38491a786ccebdd8384347d8ebffa56"}, {"path": "public/assets/avatar-bot.png", "size": 2738, "sha256": "7e0cbecbbef4bc30c02897fd5a832073bc546ead14a17db587ea3482fb8d8803"}, {"path": "public/assets/dice-roll-13.png", "size": 1598, "sha256": "a01462573679d6a40107715092b284a49b00974a5a94a0d5a933cf8efdfad535"}, {"path": "public/assets/dice-roll-17.png", "size": 1554, "sha256": "15b9f6d3d9ee195211fb915e0b8ce666cddc1f06d3633171bf46d64556e6d542"}, {"path": "public/assets/seat-red.png", "size": 1046, "sha256": "ee3722314ffc1ab1156ed89c587a9db490938f0a870aece5e03ee2d05fbfab59"}, {"path": "public/assets/dice-roll-04.png", "size": 1902, "sha256": "bff7b207c8c5bbd8a900a488ad31dcb19b6fa2ce80d7efd52212e107a826bbdf"}]
+AI: [{'name': 'ls', 'args': {'path': '/'}, 'id': 'call_cW90E00qIOkokHNZCnj4NIjh', 'type': 'tool_call'}, {'name': 'read_skill', 'args': {'path': 'casual-game-production/SKILL.md'}, 'id': 'call_ZFpffGFIeGu39noTOLEL6q5L', 'type': 'tool_call'}, {'name': 'read_skill', 'args': {'path': 'ai-art-automation/SKILL.md'}, 'id': 'call_fbAK7Gvz8CvemdPQUMthBcav', 'type': 'tool_call'}, {'name': 'read_skill', 'args': {'path': 'game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md'}, 'id': 'call_CEoVV0DeNAqGvn4WcSNkkEsp', 'type': 'tool_call'}, {'name': 'read_skill', 'args': {'path': 'azure-image2-generation/SKILL.md'}, 'id': 'call_GgXWX7m5jsPhwoXvMd44aFsm', 'type': 'tool_call'}, {'name': 'read_game_knowledge', 'args': {'path': 'genre/docs/general.md', 'offset': 0, 'limit': 24000}, 'id': 'call_INnmqn7oua3G9WQ2JQNLSx8L', 'type': 'tool_call'}, {'name': 'read_game_knowledge', 'args': {'path': 'genre/docs/board-games.md', 'offset': 0, 'limit': 24000}, 'id': 'call_uiKKxCNS6IVs9qhvEn3YATQZ', 'type': 'tool_call'}, {'name': 'read_game_knowledge', 'args': {'path': 'framework/docs/web-common.md', 'offset': 0, 'limit': 24000}, 'id': 'call_n8PwKN55L0jO4sct8JVuOLRu', 'type': 'tool_call'}, {'name': 'read_game_knowledge', 'args': {'path': 'framework/docs/canvas-web.md', 'offset': 0, 'limit': 24000}, 'id': 'call_ptDDtXvamrHNkZ3HWSi9JodO', 'type': 'tool_call'}]
+Tool: ['/conversation_history/', '/design/', '/public/', '/reference-assets/', '/src/', '/workflow/']
+Tool: ---
+name: casual-game-production
+description: 在本项目四阶段工作流中，依据所选休闲游戏品类和技术配置完成原型、资源、实现及真实验收；用于制作新休闲游戏或改进跨品类生产链路。独立的 APK 取证或纯竞品报告使用对应专项技能。
+metadata:
+  version: "1.2.0"
+  display_name: "休闲游戏生产流程"
+---
+
+# 休闲游戏生产流程
+
+使用项目 profile 选择的品类、技术配置与用户需求组织生产，不把排序玩法、Cocos 引擎或某个既有工程当作所有游戏的默认实现。阶段状态和实际执行结果以工作流及磁盘证据为准。
+
+## 按需读取知识
+
+先读当前项目简报、`project.production_profile`、当前阶段和已确认上游报告。按 profile 的 `knowledge_paths` 调用 `read_game_knowledge(path, offset=0, limit=24000)`，实际读取通用品类、所选品类、Web 共同约定和所选技术指南；知识路径形如 `genre/docs/general.md`、`framework/docs/web-common.md`。长文按字符偏移继续读取，不能把标题和选中状态当作已读正文。
+
+知识种子由工程 `resources/game-production/genre/` 和 `resources/game-production/framework/` 维护，导入知识库后可独立编辑。每次运行冻结 profile 及知识正文/哈希，`read_game_knowledge` 读取本次 `run.knowledge_snapshot`，不把知识路径当作游戏工作区文件。恢复执行沿用本次快照；知识库后来更新的内容不能被说成本次已采用。
+
+没有专门指南的品类先用通用指南补齐规则；混合玩法可在启动运行前选择必要的附加品类知识。技术选型时可选择 `framework/docs/engine-selection.md`；未纳入本次快照的资料应在后续运行显式加入，不伪造读取结果，也不为加载额外知识越过当前工具边界。
+
+指南区分已验证案例、初始知识和待适配方案。案例提供方法与证据，初始指南提供决策问题，均不能替代当前项目的实现与测试。Cocos 项目按需使用 `cocos-game-production`；Canvas 项目不加载 Cocos 专项作为强制要求。
+
+公司包的新能力按 [公司能力适用范围](references/company-capabilities.md) 选用：休闲美术风格、H5 换皮、Creator 工程规范与托管小游戏研究分别对应不同任务。先确认品类、现有工程和工具，再读取所需入口及支持文档；收录 Skill 不代表本工作流已接入其外部工具、引擎或平台。
+
+## 本地参考包研究
+
+运行明确提供 ZIP 研究工具时，用 `list_reference_archive` 分页建立真实条目索引，再用 `read_reference_archive` 读取需要的代码/配置；路径相对工程 `ref/`，读取偏移按字符计算。报告记录包与条目的 SHA256、真实路径和规则依据，不把元数据或目录列表当成已读源码。
+
+只在需要使用或观察具体文件时调用 `extract_reference_asset`：图像等素材写入 `reference-assets/` 或 `public/assets/`，来源代码仅写 `reference-inputs/` 供研究，不执行、不整包导入、不进入发布构建。目标已修改时另取文件名，不能覆盖成品。已经引用的旧素材标为引用；新作换皮仍需真实的新资源与运行对照。
+
+棋盘回合制可选择 `board-games` 知识；原生 DOM/SVG/Canvas 项目选择 `native-web` 技术配置，不能把 SVG 成品称为 Canvas。具体工具是否可用仍以本轮工具列表为准，缺失时记录所缺能力，不借验证命令绕过。
+
+## 四阶段交付
+
+| 阶段 | 本轮必须明确的结果 |
+| --- | --- |
+| 原型定义 | 主循环、状态与动作、胜负/目标、内容与数值、界面输入、技术选择及按品类制定的验收条件，写入 `/workflow/prototype.md` |
+| 美术资源 | 真实资源或程序化视觉方案及其使用位置、规格和来源，写入 `/workflow/art.md` 及 `/workflow/art-manifest.json`；每项须为非空实际文件并记录哈希、用途和来源，不能交接空清单 |
+| 代码与集成 | 当前配置下可构建且核心循环可完成的游戏，输出 `dist/index.html`，在 `/workflow/code.md` 记录实现、命令与限制 |
+| 测试验收 | 按原型执行规则/内容与浏览器检查，在 `/workflow/test.md` 写明真实结果、证据路径、已修复问题及未覆盖范围 |
+
+资源型方案可使用图像、音频、字体、模型或动画。程序化视觉在清单设置 `mode: procedural`，允许交接 `.md` 设计、`.json` 配置或 `.js` 等生成代码；设计文件通过交接不代表画面已完成。下游集成后仍须真实呈现，并以截图和运行检查核验视觉结果。
+
+批量美术先建立轻量资源索引并分类去重，选代表样校准后批量生产、累计回填清单，最后在实际游戏中集中验收。形式语言、配色题材与技术契约分别明确，功能色优先；用户选定的候选保留为视觉基准，尺寸、透明度等技术问题单列处理。仅换皮任务不自动扩大为玩法、布局或框架重构。当前环境真实暴露的工具才可调用，不能因为公司文档优先原生生图就声称工作流已接入该能力。
+
+只执行当前阶段，阶段确认由工作流管理。需要修改已确认上游规则或资源时返回对应阶段；不能改掉上游产物后继续沿用旧确认。已有报告先读取再编辑，同一文件的依赖编辑串行执行。
+
+## 按品类验收
+
+把通用输入、资源、生命周期和交付检查，与品类特有规则分开：排序关的合法解法、消除连锁的结算、合成配方事务、放置收益时间和物理误差分别按相应指南验证。只有产品包含撤销、存档、提示、离线收益等能力时才实现并测试，不为复用而强加机制。
+
+当前受支持 Web 配置均提供 `npm run build`、`npm test`、`npm run check`。代码与测试阶段在最终源码/资源修改后通过 `run_validation` 真实执行；检查点恢复后使用当前尝试的验证结果，不借用先前成功。浏览器检查要操作真实页面完成核心循环，不能用静态图、假胜利注入或仅返回成功的脚本代替。
+
+报告绑定实际源码指纹和执行环境，区分本轮写入、引用资源、验证输出及已存在文件。记录失败和未覆盖平台；初始指南或一个品类的浏览器通过，不代表全部品类、设备与原生平台已验收。
+
+## 沉淀可复用经验
+
+只把实际任务揭示并经验证的经验沉淀到相应层：通用生产方法进入本技能，品类规则进入品类知识，构建/运行约定进入技术知识，具体关卡和数值留在案例中。更新 Skill 时使用工作流 `save_skill` 并记录触发问题、修正与验证依据；不把一次性参数升级成所有项目必须遵循的规则。
+
+Tool: ---
+name: ai-art-automation
+description: Use when 用户要求从口述方向、策划或 PRD、游戏源码、逆向工程、已有项目与美术资源中拆分美术需求，并需要生成或换皮游戏美术、批量生图、后处理质检、自动合入源码及程序联调验收；也适用于使用 GameArtAgent 完成端到端美术生产交付。
+---
+
+# AI美术自动化
+
+把口述、策划、参考图或现有项目转化为范围明确、逐项可追溯的游戏美术交付。本skill负责编排需求、风格、生产和验收；实际后端由任务和生图技能决定。
+
+## 先选择交付模式
+
+|用户要求|流程与完成标准|
+|---|---|
+|整套UI效果图、策划/蓝图批量生图、换色、局部修订或分期整理|先读取[UI概念图生产模块](references/ui-concept-production.md)。交付逐图位图、文档、索引及视觉/文件检查；不扩展为源码合入。|
+|可用单体素材包|涉及UI拆分、背景、透明修复、图集或引擎素材时，先读取[UI拆分与运行交付](references/ui-runtime-delivery.md)。按资源契约生产并校验素材、透明度及清单；不虚称已合入项目。|
+|换皮、资源接入与可运行项目|执行下文生产与合入流程；完成标准包括目标项目使用新资源并通过运行和视觉验收。|
+
+作为GPT生图（imagegen）的美术自动化模块使用时，保留imagegen的后端选择规则：默认内置image_gen，批量逐图调用；仅在用户明确选择CLI/API时走对应路径。GameArtAgent不是概念图生产的强制依赖。下文GameArtAgent CLI、ASSET_SPEC v2、后处理与合入步骤仅适用于实际选择该生产/工程路径的任务。
+
+## 工作原则
+
+- 先理解玩法、界面状态与资源契约，再列资产；不要只扫描图片文件名。
+- 需求文档决定目标体验，实际源码决定路径、尺寸、锚点、切片和加载方式。两者冲突时分别记录“设计目标”和“技术约束”。
+- 信息足以安全生产时自主推进；只有缺失项会改变资产集合、整体风格、成本或不可逆合入时才请求确认。
+- 先建立全量轻索引、分类与状态去重；已生产资源追溯用途、来源和合入位置。按需定位高风险资源，不把全库精确逐项定位当成生产前置。
+- 少量代表样校准后批量生产，同批一次累计回填、集中验收和按共同原因返修；批量验收而不是逐件审批。用户选定的背景或素材保留为视觉基准，接缝、裁切等技术问题单独处理；按用户选择保留的未通过项不自动再修。
+- 参考分角色：原版负责必要结构/契约，用户指定效果图局部在实际生图时负责风格；用户指定只用已选候选加目标参考时不传原版。界面缺参考可标母版推导，不能把局部推断说成目标确认。
+- 不修改 GameArtAgent 的全局 workflow/checkpoints 来绕过流程，不默认接受 QA 例外，不把程序内建能力说成已经自动合入源码。
+
+## 环境入口
+
+执行前用 `Test-Path` 确认实际位置；快捷方式可能变化，不要只依赖文档中的旧路径。
+
+| 项 | 当前默认位置 |
+|---|---|
+| GameArtAgent | `E:/Artspace_task1_stabilize/美术AI自动化生产` |
+| 启动快捷方式 | `C:/Users/nenghong.zhao/Desktop/启动 GameArtAgent.bat - 快捷方式.lnk` |
+| Web 控制台 | `http://127.0.0.1:7788` |
+| 任务根目录 | `%USERPROFILE%/GameArtAgent_output/<任务名>` |
+| 状态文件 | 任务目录 `.game_art_state.json` |
+| 交付包 | 任务目录 `delivery/` |
+
+双击启动器适合需要查看预览或做审美确认的任务；它会结束占用 7788 端口的旧进程。源码/文档驱动任务优先使用基础启动台或 CLI，不依赖对话向导自动补全需求。
+
+## 端到端检查表
+
+```text
+- [ ] 识别输入类型并读取全部证据
+- [ ] 产出需求简报、资产清单和替换/合入映射
+- [ ] 建立并校验 ASSET_SPEC.json v2
+- [ ] 预检模型、预算和代表性样张
+- [ ] 批量生成、后处理、自动 QA、修复和最终 QA
+- [ ] 按映射实际修改目标项目
+- [ ] 运行项目并完成资源、代码和视觉验收
+- [ ] 输出交付、适配与联调报告
+```
+
+## 1. 自动拆分美术需求
+
+先判断输入属于哪一类；多类同时存在时合并证据，不要强行只选一种。
+
+### A. 口述方向
+
+把用户在对话中的口述整理为文字需求，不要求用户先写文档。提取：
+
+- 核心玩法循环、玩家操作和胜负/结算条件
+- 页面、弹窗、状态、反馈、动画和特效
+- 题材、受众、风格、色彩、镜头、平台与目标分辨率
+- 必须生产、可复用和可延后资产
+
+缺少源码时，根据常见实现给出明确假设，并在 `PROJECT_BRIEF.md` 标注；不要伪造精确代码路径或尺寸。真实音频输入先转写再分析。
+
+### B. 工程源码
+
+工程输入包括：带 PRD 但没有美术的原型、需要逆向理解的工程、已有完整项目源码。
+
+1. 找到可运行入口、主玩法、页面/场景、状态变化和渲染链。
+2. 搜索图片、图集、字体、Canvas/CSS、Prefab/Scene、配置表和动态拼接路径。
+3. 记录现有资源的尺寸、透明度、锚点、九宫格、动画帧、图集和加载约束。
+4. 将需求分为：保留、直接替换、参考重制、新增、删除候选。
+5. Web 项目可用 GameArtAgent 扫描辅助；Unity、Godot、Cocos 或自定义引擎必须由 agent 继续阅读项目结构，不能把 HTML/CSS/JS 扫描结果当完整事实。
+
+### C. 策划文档 + 现有项目/资源
+
+先从策划或 PRD 提取目标体验，再与源码和现有资源逐项核对：
+
+- 文档回答“应该表现什么”；源码回答“在哪里、何时、以什么格式显示”。
+- 已有资源回答“哪些可保留、复用、作为参考或必须兼容”。
+- 文档与实现不一致时写入差异，不静默选择一方。
+
+### 统一生产契约
+
+仅在实际选择 GameArtAgent v2 工程路径时建立以下文件；其他换皮任务使用现有轻索引与简洁状态记录即可，不因文档模板延迟生产：
+
+1. `PROJECT_BRIEF.md`：输入来源、玩法、页面/状态、风格、平台、假设和冲突。
+2. `ASSET_PLAN.md`：资产 ID、名称、用途、页面/状态、类型、尺寸、透明、优先级、来源方式。
+3. `ASSET_SPEC.json`：GameArtAgent v2 生产规格。
+4. `ART_INTEGRATION_PLAN.md`：已有项目的逐项替换和联调计划；仅做独立素材包时可省略。
+
+`ART_INTEGRATION_PLAN.md` 每项必须包含：
+
+| 原资源名/路径 | 新资源名/目标路径 | 代码或配置引用位置 | 合入方法 | 注意事项 | 联调验证 |
+|---|---|---|---|---|---|
+
+合入方法要写清直接覆盖、改路径引用、改图集/Prefab/配置、调整布局或新增加载逻辑；注意事项覆盖尺寸、透明度、锚点、九宫格、帧序、命名和平台导入设置。
+
+## 2. 选择资源来源并建立规格
+
+同一任务可以混合三种来源：
+
+- `generated`：全新生成；使用目标规划尺寸，不携带来源图字段。
+- `concept_art`：来自已确认效果图及控件裁切；使用 `source_image/source_bbox/reference_crop` 保持构图与风格。效果图裁切默认作参考；仅在用户允许直接使用且符合资源契约时复用。用户禁止直接抠效果图或要求 UI 轮廓不变时，在原几何母版内重绘材质，不能先生成新造型再强套原 alpha。
+- `imported`：保留或复用已有资源；记录真实 `source_image`，不要假装是 AI 生成。
+
+必须使用项目当前 `models/asset_spec.py` 的 v2 校验器验证规格。不要凭旧示例手写不存在的字段，也不要把所有资产都归为 `generated`。
+
+Prompt 要求：
+
+- 全局风格只描述画风、材质、色彩、光照和视角；不要把完整场景词灌入所有单体资产。
+- 单体/UI/图标写明 `single isolated element, no scene, no text`；透明资产使用流水线支持的纯色底策略。
+- 背景、角色、道具、UI、文字层和特效分开生产；除非明确要求，不把可本地化文字烘焙进图片。
+- 每个 prompt 写清主体、视角、轮廓、材质、色板、光照、留白和禁止项。
+
+## 3. 启动生产
+
+在 GameArtAgent 根目录使用当前 CLI；先运行帮助确认参数未变化。
+
+```powershell
+python -m art_agent doctor
+# 首次或配置缺失时：python -m art_agent setup
+
+# 从口述/文档/预制清单新建
+python -m art_agent new --name <任务名> --dir <全新任务目录> --template <模板名>
+
+# 从已有工程拆需求并换皮
+python -m art_agent reskin --name <任务名> --dir <全新任务目录> --source <工程副本>
+
+# 有效果图时追加：--concept-arts <图1>,<图2>
+```
+
+使用内置模板（如图标、背景、道具、UI、换皮或已确认清单），不要临时编辑全局模板。默认保留 Web 的审美确认门禁。生产目录必须与目标源码目录分离；不要对已有任务目录随意使用 `--force`。
+
+当前生产主链：
+
+```text
+需求/源码扫描 → planning → concept（按任务需要）→ ASSET_SPEC v2
+→ image_gen → postprocess → qa_auto → repair → qa_final
+→ scene_compose → delivery
+```
+
+批量生产前先检查预算并生成少量代表资产，验证风格、构图和透明策略后再放大批量。费用与生成来源以任务账本和 manifest 为准，未知价格不得当作零成本。
+
+## 4. 后处理与质量门禁
+
+每张资产必须经过：
+
+1. 精确尺寸适配：透明单体 contain-fit，背景按目标画幅处理，禁止拉伸。
+2. 透明与边缘检查：洋红/假白底/棋盘残留、半透明脏边、占位比例。
+3. 语义与风格检查：内容是否符合资产用途、是否误生成完整场景或文字。
+4. 自动修复：失败项优先 edit 参考原图，必要时改 prompt 后重生。
+5. 最终 QA：可按资产修复、返回控件拆分或重做效果图；接受例外必须有理由和范围。
+
+当前复杂边缘抠图主要是确定性启发式，不得宣称已经使用 ML 真抠图。头发、发光、烟雾和半透明特效必须额外视觉复核。
+
+### 后处理落地工具（scripts/postprocess.py，本地 PIL 不耗 API）
+
+上述步骤统一用 `scripts/postprocess.py` 执行。依赖 Pillow（必需）、numpy（仅 `--remove-bg` 需要）：
+
+```bash
+python -m pip install pillow numpy   # 无管理员权限时加 --user；ENABLE_USER_SITE 禁用时改 --target 到 sys.path 目录
+
+# 抠纯色底 + contain 到目标范围 + 透明校验（抠底后 check-alpha 必跑）
+python scripts/postprocess.py --input raw.png --output final.png --remove-bg --tol 30 --resize 512x512
+python scripts/postprocess.py --input final.png --check-alpha
+# 压缩到目标体积 / 裁透明空白 / 居中贴背景图 / 底色拍平
+python scripts/postprocess.py --input final.png --output small.png --compress --close-size 8000
+python scripts/postprocess.py --input final.png --output trim.png --crop-trim
+python scripts/postprocess.py --input final.png --output card.png --paste-bg bg.png
+python scripts/postprocess.py --input final.png --output flat.png --flatten white
+```
+
+参数速查：`--remove-bg`（配 `--tol`：白底约 30、深色底约 60）、`--crop-trim`、`--fit-max N`、`--height/--width N`、`--resize WxH`（contain 等比、不变形）、`--compress`（配 `--close-size N` 选 256/128/64/32 色板）、`--paste-bg`、`--flatten`、`--check-alpha`。每张资产处理后必须用 `--check-alpha` 核对 mode/四角 alpha/透明像素计数，并实数像素尺寸，再进入 qa_auto；禁止只凭脚本退出码 0 判定通过。
+
+## 5. 自动交接并合入项目
+
+GameArtAgent 的 `delivery/` 是生产交付包，不等于已经合入目标源码。由本 skill 继续执行：
+
+1. 在项目副本或独立分支上操作，保留可回退点。
+2. 按 `ART_INTEGRATION_PLAN.md` 将每个资源放到准确目标路径。
+3. 修改真实代码/配置引用；不能只复制文件。
+4. 保留资源契约：尺寸、锚点、九宫格、图集帧序、动画关系、透明和颜色空间。
+5. Web 项目检查 `<img>`、CSS、Canvas、预加载和动态路径；引擎项目检查导入设置、Prefab/Scene、图集和资源表。
+6. 删除旧引用前搜索全项目，确认没有运行时、主题、关卡或语言分支仍使用它。
+7. 启动目标项目，走主玩法和关键状态，修复程序联调问题后再收口。
+
+可使用 GameArtAgent 的 engine pack/接入指南整理 Cocos、Unity、Godot 目录，但它不能替代对目标项目的实际代码修改和运行验证。
+
+## 6. 验收与交付
+
+至少完成以下验证：
+
+- `delivery/assets` 与 `ASSET_SPEC.json` 必需资产一一对应，`MANIFEST.json` 可校验。
+- 替换映射中的每个目标文件存在、可解码，旧引用没有遗漏，新引用没有破图或缺资源。
+- 项目可构建/启动，控制台无新增资源错误；关键页面、状态、动画和交互可运行。
+- 实际运行截图中的语义、布局、比例、透明边缘和整体风格通过视觉复核。
+- `ART_ADAPTATION_REPORT.md` 记录逐资产 OK/CONCERN/MISMATCH；MISMATCH 修复并复验。
+- `ART_DELIVERY_REPORT.md` 记录替换映射、修改过的源码/配置、运行命令、联调结果、例外与回退方式。
+
+只有上述检查完成，才能告诉用户“已完成自动美术生产和合入”。
+
+## 安全恢复
+
+```powershell
+python -m art_agent status --dir <任务目录>
+python -m art_agent resume --dir <任务目录>
+# 需要从后处理重新派生成品时：
+python -m art_agent resume --dir <任务目录> --from-phase postprocess
+```
+
+- 普通中断优先直接 `resume`，保留已完成阶段和原始产物。
+- 整体重跑不要从 `repair` 开始；无精确资产范围时它会清理整批 `processed`。优先从 `postprocess` 安全重建派生产物。
+- 不手工删除状态或产物目录，不通过清空 checkpoints/默认接受例外来“解卡”。
+- `doctor` 是配置自检，不等于 API 真实连通；还要执行连接测试或最小样张。
+
+## 常见失败
+
+- 只有泛化 brief，没有读取实际源码、状态和资源引用。
+- 只有资产清单，没有“原路径 → 新路径 → 引用位置 → 联调项”的替换映射。
+- 把已有资源全部重生，丢失文字、锚点、切片和动画关系。
+- 把完整场景描述写进每个单体 prompt，导致图标变场景。
+- 把 delivery 包当成完成，没有修改项目或运行验证。
+- 自动接受 QA 例外后直接交付，没有记录和复验。
+- 只看静态图片，不在真实运行画面里验证比例和交互。
+
+Tool: ---
+name: game-h5-canvas-reskin
+description: Use when 用户要对 H5 / canvas 游戏（Phaser 2.x、纯 HTML5 + WebView 壳 APK）做美术换皮，需要保持原尺寸、原命名、原 alpha 语义与图集契约，需要按用户指定的 H5、模拟器或真机方式逐屏对照验收。覆盖四类资源分流、平铺背景整条重绘、底板保明度换色、玩法对象色相回锁、四级视觉层级量化、「能跑但拖不动」类卡死诊断。
+version: 1.1.0
+created: "2026-10-23"
+author: bai-lian
+tags: [reskin, skinning, h5, html5, canvas, phaser, webview, apk, atlas, tiling, alpha, luminance, visual-hierarchy, runtime-diagnosis, cdp, freeze]
+triggers: [H5换皮, canvas游戏换皮, Phaser换皮, webview换皮, 平铺背景重绘, 拼图没拼上, 接缝, 底板发暗, 深色块, 背景太花, 四级配色, 特效看不清, 卡死无法拖动, 拖不动, 输入锁死, 色相回锁, 图集契约, h5 reskin]
+---
+
+# H5 / Canvas 游戏换皮流水线 (game-h5-canvas-reskin)
+
+## 执行卡（先用这张卡，再读正文）
+
+**我管什么**：把 **H5 / canvas 游戏**（Phaser 2.x、纯 HTML5 + WebView 壳 APK）的既有美术资源，在**尺寸 / 命名 / alpha 语义 / 图集契约一字不改**的前提下换成新皮肤，并做到**按用户指定的 H5、模拟器或真机逐屏对照可验收**。不管引擎逆向、不管容器解密、不管 Cocos/Unity 预制体。
+
+**第一步做什么**：冻结原版、用户选定效果图和已有明确选定的候选；一次建立全量轻索引，按保留、轮廓内换皮、低风险重绘、特殊技术资源、缺参考/冲突分流。对共享母版、页面继承和真实状态去重；只为当前可替换资源查明实际引用/结构，不默认逐像素定位全库。固定主链：**少量代表屏校准 → 批量生产 → 一次累计回填与整批运行对照 → 按共同原因集中返修**。背景实际生图、裁切与目标参考分工见 [背景参考快批](references/background-reference-workflow.md)。未确认项记录并行推进其他项；参见 [散件定位到运行还原](references/component-restoration.md)。
+
+**做完怎么算完成**：
+- [ ] 全量资源有轻索引和分类；已替换资源有足够用途/装配证据，未覆盖项写明原因，不强制全库精确定位
+- [ ] 实际替换件关联对应目标局部或标明母版推导/缺参考，记录生产版本与技术、视觉状态；失败按授权集中处理或明确未通过
+- [ ] 定位不明或高风险散件按需用原版复原验证；替换后按原版/目标/用户指定的 H5 或设备实际画面三列复验
+- [ ] 尺寸 / 文件名 / 图集页尺寸 / 帧完整性 / **非美术文件逐字节**全部一致（仅换美术时不允许游戏代码补丁；壳必要差异单列）
+- [ ] 按逐项技术契约检查；仅实际遮罩/轮廓约束或用户要求的条目锁原 alpha
+- [ ] 拼接类检查真实相接顺序和完整画面，不靠像素差单独判无缝；量化阈值按项目与用户要求确定
+- [ ] 玩法对象保持可辨识的功能色；色相变更按项目要求验证，不把旧值作为所有目标的强制阈值
+- [ ] 按目标和实际可读性检查前景、交互区与背景层级
+- [ ] 背景保留要求的空间结构和目标装饰；不要用单一边缘密度阈值删除用户指定主景
+- [ ] 按用户指定的 H5、模拟器或真机来源执行自然交互；记录真实来源与覆盖范围，不把调试调起冒充自然解锁
+- [ ] 稳定性：**确定性枚举入口**跑过一遍，画面/逻辑停摆检测无告警
+- [ ] 交付报告附**未解决项清单**；失败就写失败，不写"应该没问题"
+
+**红线（不可违反）**
+- **按真实契约分流**：用户要求 UI 轮廓不变时，以原资源作几何母版，只重绘轮廓内部；禁止先生成新造型，再缩放、裁切或强贴原 alpha 补救。独立图标能否缩放或重绘须按实际占位、状态和用户要求判断。
+- **技术约束与目标样式分列**；普通底板/按钮不因九宫格或家族名一律锁旧alpha/只换色。仅契约要求时回写原alpha，先配准RGB主体再查透明边缘；明暗以批准目标为准，不能强行回原亮度破坏新画法。柔光/加色特效保原配色与alpha，纯旋转资源按转轴和占位决定可重绘范围。
+- **玩法对象的功能色优先级最高**，**不被地区配色覆盖**；动了色相就必须回锁并量化验证
+- **原版证明定位与技术契约，批准效果图证明美术目标**；指标用于定位问题，不代替逐件视觉与运行验收。
+- **用户选定的候选是工作基准**：技术缺陷如接缝或裁切单独标记、局部修复，不因未通过技术检查擅自替换或丢弃已认可的视觉方案。正式采用仍须通过相关检查；必要时可明确标注原版临时占位，不能冒充选定方案。
+- **仅换美术时不改游戏JS/HTML/CSS/布局/图集坐标**。代码修复提交最小提案，获额外授权才实施；显式声明补丁不等于已获授权。
+- **修复必须用原始触发路径反证**；只跑一遍新路径不算数
+- 覆盖前必须备份；禁止只信复制动作或沿用旧清单
+
+**卡住时按顺序读**
+- AHA换皮/散件认不出/效果图还原不准 → [散件定位到运行还原](references/component-restoration.md)（必读）
+- 不知道怎么分类 → [四类分流与按类执行](references/pipeline.md)
+- 用户说了一句主观的话（太花 / 不明显 / 看不清 / 拖不动）→ [主观抱怨 → 可测指标](references/complaint-to-metric.md)
+- 游戏"能跑但操作无反应" → [运行时诊断](references/runtime-diagnosis.md)
+- 打了补丁却没用 → [上游缺陷模式](references/upstream-defect-patterns.md)
+- 想确认自己没在重复错误做法 → [错误流程汇总](references/wrong-approaches.md)
+- 要动手写/改工具 → [工具接口说明](references/tooling.md)
+
+全局五步循环与六条铁律见 `references/execution-protocol.md`。
+
+范围：`GENERALIZED_PATTERN`。本模块的**方法与判据**可迁移到其他 H5/canvas 游戏；文中所有实测数值、包名、端口、路径均来自来源案例，**必须按当前项目重新获取**，不得照抄。
+详见 [适用范围地图](../../references/scope-map.md)。
+
+## 与相邻模块的边界
+
+| 情形 | 去哪 |
+|---|---|
+| Cocos 2.x/3.x、Unity、JSC/HEK 解密、图集重建（Godot/Spine） | `modules/cocos-reverse-engineering`、`modules/unity-extract`、`modules/skinning-pipeline` |
+| 只做结构/动作/轮廓锁定的通用换皮 | `modules/skinning-pipeline`（本文档的中立原理与之相通，但工具与判据不同） |
+| 引擎未知、要先识别是不是 Phaser 2/3/4 | `modules/engine-identification` |
+| 真机截图/OCR/Logcat 验收的通用手段 | `modules/vision-device-testing` |
+
+**不要把 Godot/Spine 那边的命令照搬到 canvas 游戏**，反之亦然。
+
+## 与 Godot/Spine 那边的相通之处与不同之处
+
+**相通的方法**（可互相印证）：按契约配准主体 / 必要时锁alpha / 按批准目标重画 / 原版定位复原 / 先备份后覆盖 / 失败就是失败。
+
+**不同的手段**：那边靠 `.tres` 的 `Rect2` 与 `--headless --import` 重导；
+这边靠 **WebView 调试协议（CDP）** 取运行时证据，且要面对
+**实机证据截图须走对应设备通道；浏览器 H5 截图标明浏览器来源**、**图片后缀可能是伪装的 WebP**、**没有文件级"重新导入"这一步**。
+
+## 快速索引
+
+| 文件 | 内容 |
+|---|---|
+| [component-restoration.md](references/component-restoration.md) | 轻索引、按风险定位、目标样式提取与新资源装配回归 |
+| [pipeline.md](references/pipeline.md) | 四类分流判据、按类执行、按类门禁、容器契约、打包与真机 QA |
+| [complaint-to-metric.md](references/complaint-to-metric.md) | 把"太花 / 不明显 / 看不清 / 拖不动"翻译成可测量 |
+| [runtime-diagnosis.md](references/runtime-diagnosis.md) | 「能跑但拖不动」、逻辑停摆 vs 画面停摆、取证纪律 |
+| [upstream-defect-patterns.md](references/upstream-defect-patterns.md) | 上游缺陷模式 + 一行修法 + 补丁纪律 |
+| [wrong-approaches.md](references/wrong-approaches.md) | **错误流程汇总**：做过的错做法，逐条对照 |
+| [tooling.md](references/tooling.md) | 每个工具的职责/输入输出/关键算法（按需重实现或参数化） |
+
+Tool: ---
+name: azure-image2-generation
+description: Use when 用户要求GPT生图、参考图编辑、透明素材、结构锁定换皮，或使用休闲游戏美术风格与地区配色指导。支持仅规划和编写提示词；实际生图优先当前环境原生工具，外部后端按需使用。
+license: MIT
+metadata:
+  hermes:
+    tags:
+    - gpt-image-2.5-flare
+    - gpt-image-2.5-sunburst
+    - himodels
+    - gpt-image-gen
+    - azure-image2-generation
+    - GPT生图
+    - azure-openai
+    - transparent-background
+    - alpha
+    - image-edit
+    - reskin
+    - atlas
+    - structure-locked-reskin
+    - appearance-transfer
+    - 结构锁定换皮
+    - 外观迁移
+    - 换皮
+    - 提示词模板
+    - prompt-template
+    - 视觉模板
+    - 海报
+    - 信息图
+    - UI样机
+    - spine
+    related_skills:
+    - comfyui
+    - spine-animation-pipeline
+    category: creative
+  version: 2.0.0
+  author: Hermes Agent
+  platforms:
+  - linux
+  - macos
+  - windows
+  external_backend_prerequisites:
+    env_vars:
+    - HIMODELS_API_KEY
+    - AZURE_OPENAI_API_KEY
+    commands:
+    - python3
+---
+
+# GPT 生图
+
+把需求转成图像或简洁的视觉提示词。先判断交付类型与工具，再按需读取相关参考；不要把全部操作手册、历史失败或美术规则拼进一次提示词。
+
+## 选择任务
+
+|任务|读取什么|不额外扩展什么|
+|---|---|---|
+|仅选风格、配色或写提示词|休闲游戏使用 [美术指导模块](modules/casual-game-art-style/SKILL.md)；其他需求按需找 [模板](references/prompt-template-routing.md)|不检查密钥，不调用生图|
+|普通生图/参考图编辑|下方简要流程；需要场景模板时再查模板|不默认走换皮/图集流程|
+|休闲游戏效果图、单体素材或风格比较|[美术指导模块](modules/casual-game-art-style/SKILL.md)|概念图不等于切图/可运行UI|
+|素材/图集替换，需原尺寸、命名、alpha或atlas契约|[换皮管线](references/reskin-pipeline.md)（先按其顶部表格按引擎分流）|不靠整屏生成替代素材合入|
+|**Phaser 2 / 纯 H5 / WebView 壳 APK** 的换皮|不在本 skill → `game-reverse-engineering` skill 的 `modules/h5-canvas-reskin/`|不把 Godot/Spine 的命令照搬到 canvas 游戏|
+|结构、动作、轮廓和透明切边必须锁定|[结构锁定换皮](references/structure-locked-reskin.md)|不把模型参考一致性当像素锁定保证|
+|实际选择外部脚本/API后端|[后端操作](references/generation-backends.md)|原生工具任务无需读取整份API手册|
+
+## 工具与调用边界
+
+- 当前环境有原生生图/改图工具时，优先原生工具。Codex使用`image_gen`，批量逐图调用；不因“批量”或文件路径需求切换到外部付费脚本。
+- 只有实际选择外部后端的任务才使用其密钥、模型分档和命令。原生可用时，不擅自额外消耗HiModels等额度；无原生环境按本地可用管线和用户指定选择，明确指定其他模型/工具时尊重其选择。
+- 提示词指导与执行后端解耦；不因“GPT生图”调用而禁止读取指导模块，也不强迫仅写提示词的任务执行后端预检。
+- 不把原生工具的未公开模型名猜作image2.5；外部模型/档位以真实配置和返回记录为准。选择画风不等于升级模型档位。
+- API Key只用于请求认证，不写入提示词、报告、清单、聊天或命令输出。
+
+## 换皮执行要点
+
+- 原版约束必要的结构与资源契约；用户指定的效果图或对应完整局部必须实际输入生图工具，负责造型、颜色和材质。多种材质可分别给局部参考并说明职责；按用户要求选择同界面方案。
+- 用户选定的候选是后续编辑基准；若用户要求只用候选与目标局部，不能传原版。接缝、裁切等单独检查，不擅自替换已认可的画面。用户允许直接复用效果图裁切时才可将其作为成品。
+- 用户要求 UI 保原轮廓时，只在原几何内部重绘；不先生成新外形再强贴原 alpha。背景不烤入动态 UI；独立图标按真实占位、状态与契约处理。
+- 先校准代表屏，再同族批量生产、累计回填和集中验收；按共同原因返修，不逐件重复审批、构建或报告。遵守用户的候选上限，无有效变化不重复核验同一 hash。风格编号按项目上下文识别；M03 与 T03 不能混同。
+
+## 简要流程
+
+1. 确认输出是概念图、素材、编辑还是工程换皮；保留用户明确的交付范围、布局、文字、尺寸和透明度要求。
+2. 查看实际参考图，逐张指定职责：布局、内容身份、画风或编辑目标。参考职责冲突时择取必要信息，不盲目继承旧图画风与空白构图。
+3. 把需求压成一次可执行的画面简报。只选当前任务需要的模板/母版，删除重复和互相抵消的词；精确技术约束与视觉方向分开写。
+4. 使用选定工具生成/编辑。需要透明时请求真实透明背景并验证alpha；局部编辑明确保留项。原生图先生成再复制到用户指定项目目录。
+5. 检查实际输出中的布局、文字、身份、识别、风格和透明语义。失败时只改对应变量；先代表样图验证，再执行已授权批量，避免重复量产同一缺陷。
+6. 保存源图、实际提示词/参考职责和交付图；更新引用图像的HTML/内嵌预览。文件与尺寸检查不替代视觉或运行验收。
+
+## 不变的交付约束
+
+已有授权范围内持续完成，不重复索要相同确认。覆盖前保留可恢复原件；比例缩放、裁切、alpha回写分别记录，不能把拉伸/裁切当作所有图像的默认步骤。结构锁定素材使用对应管线验证。
+
+不改现有脚本接口与配置来解决提示词问题。旧入口`scripts/azure_image2.py`和既有`scripts/gpt_image.py`、`scripts/transfer.py`等保持兼容；需要它们时才读取相应操作参考。
+
+Tool: # 休闲游戏通用品类定义
+
+状态：初始知识指南。它用于补齐尚无专门指南的品类，也用于混合玩法的共同约定；不代表这些玩法已经在本项目完成成品验证。
+
+## 先把规则说清楚
+
+- 用一句话定义玩家反复执行的动作、反馈和下一次行动的动机；区分一局内循环与跨局成长。
+- 列出最小状态：局面、当前阶段、目标、计分或资源、随机状态，以及需要持久化的进度。表现节点和动画时间不充当唯一状态来源。
+- 列出合法输入、每种输入造成的完整状态变化、结束条件和异常输入的处理。明确是否有失败、限时、步数、撤销或重开；没有这些机制就不附加相应要求。
+- 混合玩法先确定主循环和各子系统的交接点，再按需要读取其他品类指南；避免同时照搬不同品类的胜负条件。
+
+## 原型必须决策
+
+目标平台与输入方式、单局时长目标、内容是固定关卡还是程序生成、随机公平性、暂停/离线规则、进度保存边界，以及本轮明确不做的功能。暂定值标为假设，并写明通过哪次试玩或测试决定是否保留。
+
+## 通用不变量与内容
+
+一次动作只提交一次结果；无效输入不破坏状态；结算和奖励不重复；切换局面后旧异步结果不生效。仅对实际存在的资源、道具或棋盘定义守恒、上下界和合法结构，不把排序的球数守恒用于所有游戏。
+
+内容表记录目标、可用动作或资源、难点、预计时长和引入的新机制。教程、普通局和边界局至少各有可执行样例。用具体指标描述难度，不能只用关卡编号或随机种子表示难度。
+
+## 最小验收证据
+
+规则层覆盖一个完整循环、非法输入和结束边界；真实界面完成开始、核心动作、反馈、结算及再来一局。记录内容样例、实际命令、源码指纹和目标视口。存档、随机性、后台恢复、撤销等只在产品包含时测试，并写明未覆盖设备与主观体验。一个案例通过不能证明整个品类可交付。
+
+Tool: # 棋盘与回合制游戏
+
+适用 Ludo 等棋子移动、随机输入与轮流操作的游戏。这里定义需要研究和验证的问题，不把某款游戏规则硬编码成整个品类的默认答案。
+
+## 从证据写出规则
+
+有参考包时先列包目录，再读取真实代码和配置；记录包哈希、条目路径、方法/字段和读取范围。商店描述和截图不能证明吃子算法或终点编号。多个版本的规则差异分开记，融合的新设计明确标为调整。
+
+Ludo 类至少明确：
+
+1. 每队棋子数、出营点数、环路长度、各阵营偏移、自家归家道、精确抵达和超点规则。
+2. 安全格、同色叠子、敌方叠子、经过与落入的区别、吃子回营及奖励。
+3. 连续六点、无合法动作、吃子和归家加掷是否叠加、当前玩家变更的唯一提交点。
+4. 经典/快局等模式的初始棋子位置、归家解锁条件与第一名/完整排名等不同终局。
+5. 人机与同屏人数，随机是否均匀，AI只能选择合法动作，不得暗中改变玩家或电脑骰子。
+
+特别核对相对进度与绝对棋盘格号。锁门时绕完整外环、解锁后进入私有路线的游戏，必须区分同一数字对应的两种位置；不能在另一枚棋子吃子时把当前棋子瞬移入家。
+
+## 原型与美术交接
+
+先完成可检验的状态和动作定义，再制作棋盘与棋子。功能色、编号、庭院/起点符号、合法走法高亮及预览不能互相冲突。北非或中东等风格通过建筑、纹样、材质与配色形成统一设计，但不能降低主要落点和当前回合的辨识。
+
+参考代码/配置放研究输入区，按需选择素材，不复制整套旧引擎和广告。新作必须说明哪些是来源规则、哪些是新设计、哪些实际资源被复用或重新生成。
+
+## 验收
+
+- 纯规则覆盖出营、非法动作、环路与归家边界、精确终点、吃子和安全格、叠子、奖励、跳过、连续随机事件、模式胜利差异。
+- 用可复现随机源运行两种模式与不同人数的完整规则对局，检查AI选择合法、动作不重复、无无限停滞；这不能代替真实UI对局。
+- 浏览器从初始菜单通过真实点击到结算，再重开与恢复。固定随机源便于复现，但不得注入棋子状态或强制胜利。
+- 存档保留当前阶段、骰子、棋子、奖励计数与模式；恢复时验证不变量，已掷骰不能刷新重掷，已吃子不能重复结算。
+- 规则与显示坐标共用清楚的映射；手机小棋子可另配大编号按钮，不把装饰性小图当唯一输入入口。
+- 局时与胜率只有实际统计后才写结论，不把设计预期标为已验证结果。
+
+Tool: # Web 交付共同约定
+
+这是当前工作流的工程契约，适用于已启用的 Cocos Web 和 Canvas Web 配置。它统一交付接口，具体品类规则与渲染实现由项目决定。
+
+## 工程边界
+
+- 规则：用可独立执行的简单数据与函数描述动作和状态；随机行为可通过种子或注入随机源复现。
+- 表现：根据已提交状态绘制；动画、音频和提示可以异步执行，但不能成为唯一事实来源。旧局回调和已销毁对象不能影响新局。
+- 输入：把实际指针坐标转换到游戏坐标，明确拖拽取消、重复触发和动画期间允许的动作；触控目标在实际 CSS 像素下测量，检查相邻命中区重叠。
+- 资源：路径相对于构建入口可解析，界面不依赖开发机绝对路径；记录来源、实际用途和文件哈希。使用引用素材不自动意味着拥有商业授权。
+- 存档：仅持久化产品需要的状态，验证版本、结构和业务不变量。写失败应有持续可见反馈，只有后续真实写成功才清除；无存档需求的游戏不必引入存档系统。
+
+## 固定的交付接口
+
+工程提供 `npm run build`、`npm test`、`npm run check`：依次承担构建、规则/数据测试以及浏览器集成验收。`check` 应真实启动产物、执行交互并以非零退出码报告失败，不能只返回成功文字或复述单测。输出入口为 `dist/index.html`，相关脚本和资源随构建一起交付。
+
+浏览器检查服务应在隔离端口启动并在结束后关闭，或者使用显式传入的预览地址；不依赖开发机上碰巧常驻的服务。锁定依赖并写出清洁安装/构建步骤；引擎源码、外部资源与构建缓存的获取方式必须可追溯。
+
+## 四阶段文件契约
+
+当前项目工作区的报告分别是 `workflow/prototype.md`、`workflow/art.md`、`workflow/code.md` 和 `workflow/test.md`。美术阶段生成 `workflow/art-manifest.json`，使用 `{"assets":[{"path":"…","sha256":"…","usage":"…","source":"…"}]}` 交接真实非空文件及其哈希、用途和来源。资源型方案至少包含一份图像、音频、字体、模型或动画资源。
+
+程序化视觉方案在清单顶层设置 `"mode":"procedural"`，可交接实际的设计文档、配置或生成代码，例如 `.md`、`.json`、`.js` 文件；清单和所列文件均不能为空，无需人为制造一份 SVG 来满足交接。设计文件本身不证明画面已完成：下游必须按方案集成并真实运行，以实际呈现、截图和交互检查验证视觉结果，不能将不存在的截图或未执行的生成代码标为已完成画面。
+
+下游读取已确认报告和清单，保持已确认资源内容一致；需要改变上游决策或资源时返回对应阶段重新确认。上游重跑后，原下游确认不能代替新的验证。
+
+## 验收归属与范围
+
+代码及测试阶段在最终源码/资源修改后真实执行三条命令；从检查点恢复后按当前尝试重新验证。记录命令、退出码、源码指纹、浏览器/视口和失败结果；只修改报告不等于重新执行。规则测试按品类决定，不能把 Ball Sort 的求解器、撤销和球数守恒强加给其他玩法。
+
+区分模型写入、引用资源、构建输出和已存在文件；以真实工具事件与产物为依据。截图证明特定画面，自动化交互证明特定行为，均不能代替未执行的真机测试或真人体验评价。
+
+Tool: # Canvas Web 技术配置
+
+状态：执行协议已适配，待完整项目验收。这是初始知识指南，本项目尚无该配置完整四阶段成品验证。选择配置本身不表示游戏已经实现或验收。
+
+## 适用与边界
+
+适合画面结构简单、规则可独立表达的轻量 2D 原型与休闲游戏；是否足够由当前产品的动画、资源、输入、性能和团队维护需求决定。Canvas 是浏览器绘图能力，不宣称使用 Cocos，也不自动带场景编辑器、物理系统或资源管理框架。
+
+复杂特效、物理、场景编辑或大量资源管线已成为主要需求时，先比较引擎成本，再选择配置；不为了沿用一个案例强行手写整套引擎。
+
+## 最小实现约定
+
+- 规则状态和动作处理保持独立；渲染从状态读取，在 `requestAnimationFrame` 中更新表现。回合制可按需重绘，持续运动才需要连续推进。
+- 明确 CSS 尺寸、画布内部尺寸与设备像素比之间的映射，指针先转游戏坐标再命中。布局变化不能造成命中漂移或无限放大画布内存。
+- 对 Pointer 事件定义捕获、取消和多指策略，注册/注销监听器成对；不要同时处理触摸和鼠标导致一次操作提交两次。
+- 明确资源加载完成、失败重试与音频首次交互解锁；字体或图像失败需可诊断，不能把加载空白当正常画面。
+- 页面可见性变化时按品类约定暂停或结算时间；长帧不直接造成失控加速。物理或放置玩法按对应品类决定时间行为。
+- 可交互文字和关键控制考虑 DOM 语义、键盘操作及状态提示；Canvas 绘制文字本身不自动具有表单/按钮语义。
+
+## 构建与证据
+
+遵循 `framework/web-common.md`：实现 `npm run build`、`npm test`、`npm run check`，输出 `dist/index.html`，交付已确认报告和资源清单。简单项目可使用短构建脚本复制模块与资源，不为满足目录形式添加非必需依赖。
+
+规则测试按品类执行；浏览器检查真实绘制、输入、完整核心循环、窗口缩放及实际使用的存档/恢复行为。记录浏览器与视口、源码指纹和资源请求结果。不能仅截图一张静态画面或引用 Cocos 案例的测试数量，宣称本配置已通过。
+
+AI: [{'name': 'write_todos', 'args': {'todos': [{'content': '读取冻结资料、上游与已有资源证据，核验所选原始契约', 'status': 'in_progress'}, {'content': '修复运行资源编码、补齐原板组件，完成单张原纹理参考编辑', 'status': 'pending'}, {'content': '核验最终资源哈希并写运行清单与美术交接报告', 'status': 'pending'}]}, 'id': 'call_B3E5Ztud2kIADImK9llho9ys', 'type': 'tool_call'}]
+Tool: Updated todo list to [{'content': '读取冻结资料、上游与已有资源证据，核验所选原始契约', 'status': 'in_progress'}, {'content': '修复运行资源编码、补齐原板组件，完成单张原纹理参考编辑', 'status': 'pending'}, {'content': '核验最终资源哈希并写运行清单与美术交接报告', 'status': 'pending'}]
+AI: [{'name': 'read_skill_resource', 'args': {'path': 'ai-art-automation/references/ui-runtime-delivery.md', 'offset': 0, 'limit': 24000}, 'id': 'call_QTFTNE21GJSMY1QYblb3CGdh', 'type': 'tool_call'}, {'name': 'read_skill_resource', 'args': {'path': 'azure-image2-generation/references/reskin-pipeline.md', 'offset': 0, 'limit': 24000}, 'id': 'call_5lwfkzZ4G3KRRmBrOf4bZOMx', 'type': 'tool_call'}, {'name': 'read_skill_resource', 'args': {'path': 'azure-image2-generation/references/structure-locked-reskin.md', 'offset': 0, 'limit': 24000}, 'id': 'call_FoJ1Z4jpuMptR07p07GDLj2P', 'type': 'tool_call'}, {'name': 'read_skill_resource', 'args': {'path': 'game-reverse-engineering/modules/h5-canvas-reskin/references/component-restoration.md', 'offset': 0, 'limit': 24000}, 'id': 'call_FYXuhFM8Tw1RnZvfUI0xTgad', 'type': 'tool_call'}, {'name': 'read_skill_resource', 'args': {'path': 'game-reverse-engineering/modules/h5-canvas-reskin/references/pipeline.md', 'offset': 0, 'limit': 24000}, 'id': 'call_HkvC6fQRLLgO6RJxf34clOCZ', 'type': 'tool_call'}, {'name': 'ls', 'args': {'path': '/workflow'}, 'id': 'call_uZgdhZ3yqU8hOc439fbLhCtb', 'type': 'tool_call'}, {'name': 'ls', 'args': {'path': '/design'}, 'id': 'call_XTyz5hCTwTj3BpDZOBVO6sFZ', 'type': 'tool_call'}, {'name': 'ls', 'args': {'path': '/reference-assets'}, 'id': 'call_zQMUv7nVrz5TIu1vEpP1Jhjn', 'type': 'tool_call'}, {'name': 'ls', 'args': {'path': '/public/assets'}, 'id': 'call_x8ZRdmnvUT5vCGgb2slquKBT', 'type': 'tool_call'}]
+Tool: # UI拆分与运行素材交付
+
+适用于从已批准效果图交付组件、背景、透明素材、图集与开发说明。imagegen内化模块和独立美术自动化入口共用本文件；不要求纯概念图任务执行引擎接入。
+
+## 先定义资源与复用
+
+- 分列背景、角色/动画、UI、程序字、程序图元；各层明确交付、复用或暂缺，不能漏掉背景后宣称整页齐全。用户只要UI时不擅自扩展动画制作。
+- 分别统计去重母版数、页面实例数、跨页共用数；程序字不算图片，同页重复不等于跨页共用。
+- 用户要求程序字时，不生成或交付文字切图。先选icon和底框母版，再做切图；颜色、尺寸、状态和九宫格可配置复用。记录统一母版相对旧变体的差异，不宣称所有旧图逐像素相同。
+
+## 生图、补绘与透明后处理
+
+- 编辑前看完整原图；列出必须保留/移除项，保留原始工具输出、参考图hash、实际提示词、后处理参数、正式路径、验收结果与独立备份。局部修改后检查整幅图。
+- 背景独立于动态 HUD、按钮、数字、手势和程序精灵；不烤入这些动态元素。用户指定的静态主景、植物、道具和场景装饰应保留。只有通过资源/调用关系才能认定某物由程序精灵提供。被遮挡区域属于补绘，不能称作原始像素恢复。
+- 景深提示词明确清晰焦平面、远景与近景模糊强度，饱和度另列。仅在用户要求时采用强景深，不把某项目风格设为通用默认。
+- 实测输出比例：要求a:b时检查width*b == height*a。允许的微小修边采用居中/构图指定裁切并记录坐标；不能非等比挤压。大偏差影响构图时重编辑，不强裁关键物体。
+- 在任务授权的本地后处理中保留软alpha、高光和白色主体；禁止一刀阈值造成锯齿。检查整张透明图及局部在白底、深底和实际显示尺度下的轮廓。RGB扩色保持alpha不变，不用整体模糊掩盖坏蒙版。
+- 分开验证：原图不透明核心像素、透明边缘视觉、共用母版差异、九宫格重建、生成补绘。像素相同仅用于确实通过解码比较的范围。
+
+## 格式与压缩
+
+- 依据实际引擎版本和目标平台选格式；浏览器支持不等于引擎支持。未取得专用格式支持证据时，Cocos常规素材采用透明PNG和不透明JPG；AVIF仅可作为明确分开的预览产物，不能直接冒充通用引擎资源。
+- 图片容量优化使用可用的image-compress技能，在本地处理；保留未压缩母版。透明UI优先无损压缩并比较解码RGBA；若改为感知有损，需检查软边、高光与颜色，且撤销不再成立的“像素完全一致”声明。
+- 感知压缩按项目门禁；无额外约定时可用SSIM>=0.992、最差1% SSIM>=0.95、残差<=6作为保守起点，另看对比图。不满足就提高质量或保留原图，不通过缩分辨率偷换容量目标。
+- 当前imagepress脚本的无损路径可能仅在--format keep触发；同格式无损优先使用keep，核实报告实际成功数。不能把成功退出或输出副本等同于压缩成功。
+- 区分文件大小与解码纹理内存；PNG压缩通常只减少文件字节，裁切图集空白才减少像素面积。
+
+## 图集与坐标
+
+仅替换图片且用户要求原图集契约不变时，禁止重排、裁图集或修改任何坐标/trim/rotate/九宫格；下列重排说明仅适用于用户明确授权变更图集布局的任务。
+
+- 裁切或重排图集时，以所有frame及采样扩边的占用范围为依据，保留padding/extrude，不能只按alpha非零包围框裁掉采样保护。不得未经需求变更旋转或trim单个sprite。
+- 同步meta.size与每个frame坐标；外围裁切偏移为dx,dy时，frame.x-=dx、frame.y-=dy。重排则重写全部帧坐标。保留源尺寸、trim偏移和九宫格边距语义。
+- 自动检查每帧在界内，解码并截取图集帧与独立素材比较；无损路径逐像素一致。引擎要求POT等约束时按实际要求保留，不盲目裁成NPOT。
+- 背景一般独立加载，避免塞入UI图集。自定义JSON要说明读取方式，不能称为已验证的Cocos原生图集；直接导入独立PNG/JPG与适配图集是不同交付路径。
+
+## 同步与交付闭环
+
+1. 备份待替换文件；更新正式资源、尺寸、hash、格式和使用关系。
+2. 修改维护脚本/模板，再更新图集与布局。历史数量、RGBA模式、尺寸或hash断言按本次产物核实，不能沿用旧快照。
+3. 重建预览，内嵌图片MIME和下载后缀必须匹配实际PNG/JPG格式。逐份核对内嵌字节与正式资源；检查外部依赖后才称“自包含”。
+4. 更新MD、HTML、QA报告和ZIP，ZIP仅包含当前运行资源，不把同名旧格式或废弃资源留给程序误用。部分压缩报告按源路径合并，不能覆盖完整清单。
+5. 验证重建不会恢复旧图、旧格式或旧图集尺寸。压缩缓存仅在解码内容和尺寸匹配当前母版时复用。
+6. 交付说明包含使用位置、坐标系、九宫格边距顺序、等比/cover策略、程序字、共用方式和目标格式。给程序运行包及自包含HTML即可；原始生成与备份单独保管。
+
+完成报告区分文件/像素检查、视觉检查、浏览器交互检查、引擎接入和真机验收；未执行的层级明确标注，不把文档路由已接入说成运行引擎已自动化。
+
+Tool: # 素材与图集换皮管线
+
+**优先分流**：用户要求面板、按钮等 UI 锁原轮廓时，只在原几何母版内部重绘材质，禁止先生成新形状再缩放/裁切/回贴 alpha；下文 bbox、inpaint、alpha 回贴仅在相关资产类型、真实契约和用户允许时使用。用户指定的效果图局部须实际作为生图输入；用户选定方案不得因技术缺陷而擅自替换。
+
+实际选择工程换皮时读取；概念效果图不需要执行本管线。命令以技能根目录为工作目录。结构、动作、轮廓与alpha需锁定时，优先 [结构锁定换皮](structure-locked-reskin.md)。后端选择以 [总入口](../SKILL.md) 为准。
+
+## 先按引擎分流
+
+本文主体讲 **Godot / Spine / `.atlas`** 链路。不同引擎的取证手段与工具链不可互换：
+
+| 引擎 / 载体 | 读哪份 | 关键差异 |
+|---|---|---|
+| Godot / Spine / `.atlas` | 本文（§1~§7） | `.tres` 切片、`Rect2`、`--headless --import` 重导 |
+| 结构、动作、轮廓与 alpha 必须锁定 | [结构锁定换皮](structure-locked-reskin.md) | 通用原理，两边都适用 |
+| **H5 / canvas（Phaser 2.x、纯 HTML5 + WebView 壳 APK）** | **不在本 skill** → `game-reverse-engineering` skill 的 **`modules/h5-canvas-reskin/`** | canvas 游戏、WebView 调试协议取证、图片可能是伪装的 WebP、没有文件级"重新导入" |
+
+> **H5/canvas 换皮的完整方法（四类分流、平铺整条重绘、保明度换色、色相回锁、
+> 四级层级量化、运行时卡死诊断、错误流程汇总）已并入
+> `game-reverse-engineering` skill 的专用模块，本文件不再重复维护。**
+> 本 skill 只保留**生图侧**要用的分流判断与提示词要点（§2、§3 的提示词部分）。
+
+### 跨引擎通用、且最容易翻车的几条（生图侧要点）
+
+1. **换色相会把亮度一起拉低** —— 症状像"alpha 丢了"，其实是亮度差。
+   底板的「亮胶囊 + 暗图标」分布还会骗过中位数/跨度判据，需要**无条件分位点重映射**。
+   （Godot 侧的对应门禁见本文 §6.2 的 `dark_blob_in_visible`。）
+2. **多段平铺资源：文件序号顺序 ≠ 视觉顺序**。接缝自检若量错配对，会一直"很干净"而实机拼不上。
+   **拼接类必须整条重绘再按原段高切回**，不要逐张独立重绘（§4.1）。
+3. **玩法对象的功能色不能被地区配色覆盖**，动了色相必须回锁并量化验证。
+4. **只写材质不写形状 = 模型保持原轮廓**；要换形状必须把**形状名词**写进提示词。
+5. **复合图标要按 alpha 连通域个数识别并点名保留每个元素。**
+
+> 以上 1、2 的完整流程与判据、以及"锁存标志导致输入永久锁死""补丁要显式可审计"
+> 等运行时问题，见 `game-reverse-engineering` skill 的 `modules/h5-canvas-reskin/`。
+
+
+## 换皮模块：图集/素材 reskin（2026-09-13 工业级 v3.0 升级）
+
+**触发**：用户要求"素材/图集/贴图/背景 换皮、换色、重设计皮肤"，且要求**保持原尺寸、原 alpha 透明通道、atlas 信息不变，或对原画背景进行同构重绘**。
+
+### 1. 资产双轨分流策略（Asset Taxonomy Routing）
+开工前必须先对待换皮资产进行分类，严禁一套逻辑套所有资产：
+- **A 轨：功能性 UI 控件、图标与 Spine 图集**（带透明通道、NinePatch、骨骼绑定点）：核心目标是**几何严密贴合、主体 100% 完整无截断、零死斑、高对比度防融底**；
+- **B 轨：原画与全屏风景大图**（100% 不透明、叙事地貌、作为底层背景）：核心目标是**构图透视同构、类别级语义元素深度置换、精细度克制防干扰 UI**。
+
+---
+
+### 2. A 轨：功能 UI 与图集换皮六步法（解决三大死穴）
+
+>  **2026-10-07 更正**：本节第  步的「质心对齐 + 回写原 alpha」**不能替代主体框对齐**
+> 实测多件资产的 alpha 逐字节相同、主体却在轮廓内偏移 5~77px，回写 alpha 反而切出黑块。
+> **修复已有错位资产请直接走 6.2**；本节仅适用于「新画一件放到空槽位」的场景。
+
+#### 过去的三大历史翻车死穴与工业级解法：
+1. **死穴 1：黑斑死斑（Black Fill）** ➔ PIL `convert("RGB")` 默认将透明底填纯黑 `(0, 0, 0)`，错位处直接 `putalpha` 强行拉满不透明度，产生数万像素刺眼黑死斑。**解法：在 `putalpha` 前执行 `cv2.inpaint` 边缘色彩漫延 15px（Edge Dilation），用边缘真实材质色填平空隙，黑斑彻底清零。**
+2. **死穴 2：假吻合真切割（Element Truncation）** ➔ 生图模型对单体物品往往产生 **30%~45% 的尺度膨胀或 20~45px 的坐标漂移**。盲目贴回原图 Alpha 犹如“切菜断头台”，直接将偏大的书封底壳腰斩、光效偏心切断！**解法：自适应 Bounding Box 几何注册（Bbox Adaptive Fitting）与多象限质心解耦回正（Quadrant Center Alignment），先提取 AI 主体等比保形缩放并锚定回原图目标坐标，再做封装，保证元素 100% 完整展现。**
+3. **死穴 3：循环论证伪自检（Fake QA Loophole）** ➔ 代码刚执行了 `putalpha` 紧接着只断言 `final.alpha == src.alpha`，永远判通过。**解法：建立黑斑检测（`black_fill_px == 0`）、内部未覆盖率（`missing_coverage <= 5%`）、轮廓交并比（`IoU >= 0.82`）三道真实硬防线，超标立即 FAIL 拦截重做。**
+
+```
+原图(如 96x96 图标 / 460x466 图集)
+ ① 尺寸适配与居中 Pad（等比安全画布留白，mask 同步 pad）
+ ② gpt_image.py --ref pad图 --background transparent --quality medium
+    → 新模型直出带 alpha 的 PNG（2026-09-22 实测），脚本自动做 alpha 质检（退出码 3 = 不达标）
+    prompt 必须含：材质关键词 + 严禁额外描边/外发光/霓虹
+ ③ 自适应几何注册与象限质心对齐（Bbox Adaptive Fitting & Quadrant Centering）
+    - 实体控件：自动抓取 AI 主体有效 Bbox，等比保形重采样至原图目标尺寸 (W, H)，原位贴入 (X, Y)
+    - 多控件图集：按象限/Atlas 切片拆解，计算加权质心偏移向量 (dx, dy)，平移回正至正中心
+ ④ cv2.inpaint 边缘色彩漫延防御（Edge Dilation 15px），填平边缘空洞
+ ⑤ final.putalpha(原图alpha) 像素级严密封装
+ ⑥ 严密 QA 闸门：尺寸匹配 + Alpha一致 + black_fill==0 + missing_coverage<=5% + IoU>=0.82
+    任一项不合格直接判定 FAIL 并拦截丢弃，严禁交付
+```
+
+---
+
+### 3. B 轨：原画大图与风景图【同类别同构语义重绘】
+
+针对带有具体叙事构图、自然地貌与人文构筑物的原画/风景大图（如山谷风景、城镇成就插画）：
+
+#### 三大同构重绘铁律：
+1. **构图透视与引导动线拓扑同构（Compositional & Leading Line Homology）**：
+   - 保留原画高机位/平视景深层次（前景 30% + 中景 40% + 远景 30%）；
+   - 原画中引导玩家视线的线性动势（如斜坡铁轨、山脊线、河道），必须原位同构映射（如换为蜿蜒石板朝圣古道、溪谷小径）。
+2. **类别级深度语义元素置换（Thematic Element-to-Element Replacement）**：
+   - 现代工业交通（火车/汽车/游艇）➔ 目标文化交通（古代圣地商旅/朝圣者与驮货毛驴/加利利渔船）；
+   - 现代电力通讯（木电线杆/铁塔/电缆）➔ 古代人文构筑（罗马引水石渠拱桥/界石/石堆 Cairns）；
+   - 地表生态植被 ➔ 目标风貌植被（地中海粗壮盘根橄榄树林/金黄野麦/野百合）；
+   - 天空远山 ➔ 目标神圣远峰与破晓黎明晨曦天光（Dawn Celestial Rays）。
+3. **【关键铁律】精细度克制与 UI 可读性优先法则（Readability-First & Complexity Restraint）**：
+   - **背景原画的第一要义是衬托 UI，绝不能喧宾夺主**！
+   - 严禁盲目追求过度写实厚涂、高频碎石刻线与细碎噪点（否则叠放在上面的 UI 弹窗和控件会被背景杂乱纹理吞噬，导致严重视觉疲劳和融底）；
+   - 必须采用**休闲插画大色块体块、简洁明朗的平涂/微渐变与大面积柔和空气透视（Clean Cel-shaded / Broad Flat Tones / Soft Ambient Gradients）**；
+   - 让背景在视觉深度上主动“退后”，确保前景 UI 文字与按钮对比度始终 ≥ 4.5:1（WCAG AA）。
+
+---
+
+### 4. Mask 对齐与 Alpha 继承的五大深水坑与工业级 SOP（2026-09-14 沉淀）
+
+>  **2026-10-07 补充**：本节的「双质心力矩对齐」仍有效，但**质心相等  内容框对齐**
+> （质心对上了，主体仍可能整体偏移/缩放）。判据请用**主体内容框 vs 原 alpha 内容框**，见 6.2。
+
+在实际移动端游戏换皮重制（如 JigsawCard 等项目）中，对齐 Mask 和处理 Alpha 通道曾踩过五大极其隐蔽的致命深水坑，必须严格执行以下工业级 SOP：
+
+#### 坑点 1：异形互锁切片（Interlocking Shapes）的边缘形变与黑缝死穴
+- **现象**：章节拼图盘的 25 块盖片（外三角、内三角、梯形、中心圆盘），具有严格数学解析曲率。若让 AI 直接生成带透明底的异形切片，AI 必然出现 5~20px 的轮廓扭曲、不对称边缘与毛刺，运行时拼接处出现无法消除的黑缝或锯齿重叠。
+- **工业级解法【全画幅无界漫延 + 原始数学 Alpha 逐字节回裁】（Full-Bleed Texture + Mathematical Alpha Clamp）**：
+  1. **严禁让生图模型负责异形外轮廓**！Prompt 必须指示生成无边界/大安全出血位（Bleed Margin ≥ 30px）的完整平铺材质纹理块；
+  2. 后处理脚本提取原版切片的 **原始数学 Alpha 通道（100% 逐字节比对一致）** 作为硬掩模（Hard Stencil Mask），对 AI 生成的纹理大图进行像素级冲压裁切；
+  3. 彻底杜绝 AI 轮廓形变，确保 25 块扇形与同心圆拼合时接缝达到 0 像素黑边、0 像素重叠。
+
+#### 坑点 2：去背半透明抗锯齿边缘导致的“脏光晕 / 杂色外轮廓”（Halo & Fringe Artifacts）
+- **现象**：模型直出的透明底（`--background transparent`）在半透明抗锯齿边缘（Anti-Aliased Edge）仍会混入底色杂色（刺眼白边圈或黑脏边）。直接回贴原图 Alpha 会把杂色压入边缘半透明像素中。
+- **工业级解法【双重出血颜色漫延 + 预乘去边（Color Bleed Inpainting & De-fringing）】**：
+  1. 在贴回原图 Alpha 之前，先提取 AI 主体的不透明核心区（Alpha > 200）生成核心掩模；
+  2. 使用 `cv2.inpaint` 或形态学膨胀（Dilation 15~20px），让主体本身的纯净材质色彩向外漫延出血（Color Bleed）；
+  3. 再贴回原图 Alpha。此时即使边缘存在半透明过渡，其采样的底层像素全部为主体真实材质色，杂色光晕彻底消除。
+
+#### 坑点 3：Spine 骨骼动画与 UI 控件的“旋转轴心/质心漂移脱臼”（Bone Pivot / Centroid Drift）
+- **现象**：Spine 动画切片（猫脸、手部指引、翻页书本）依赖固定几何中心或骨骼轴心（Pivot Point）进行旋转缩放。AI 生图常产生 15~40px 的重心漂移或主体尺寸缩放。若不做质心对齐，仅仅粗暴贴回 Alpha，会导致物理重心与旋转轴脱节，播放动画时出现“手臂脱臼、头部甩动偏摆”。
+- **工业级解法【双质心力矩对齐与几何保形注册（Centroid Registration & Scale Normalization）】**：
+  1. 计算原图与 AI 不透明像素的几何质心 $(C_x, C_y) = (\frac{\sum x \cdot A}{\sum A}, \frac{\sum y \cdot A}{\sum A})$；
+  2. 计算重心偏移向量 $(\Delta x, \Delta y)$，对 AI 主体进行刚体亚像素平移回正；
+  3. 依据有效包围盒计算缩放比 $s = \min(\frac{W_0}{W_{ai}}, \frac{H_0}{H_{ai}})$，等比缩放到原图安全区，严防“断头台式”截断。
+
+#### 坑点 4：NinePatch 九宫格与大图集（UI Atlas）拉伸畸变与溢出污染
+- **现象**：
+  - **NinePatch**：按钮和行卡依赖边缘切片。若 AI 在中心区域绘制了方向性纹理或不对称高光，引擎拉伸时长宽失衡被拉成难看的横向长杠；
+  - **UI/Spine 图集**：Atlas 内各切片间距只有几像素。整图生图，AI 锁不住区域坐标且会把 padding 一起改掉；拆成单图再回贴，AI 输出的主体又有 5%~45% 尺度漂移与 20~45px 位移，贴回原 Rect 就是"切头去尾"，运行时采样到错误像素 -> 图集失效。
+- **工业级解法【原位局部重绘 + 只收割目标矩形 + 原 alpha 逐字节回裁】**（`scripts/rebuild.py atlas` 子命令已实装）：
+  1. **NinePatch**：提示词强制"中心区域纯净均匀/单向水平微渐变，严禁中心绘制具体图案或强高光"，装饰只放角落；
+  2. **图集**：不要拆图重绘再 Repack。改为把**整页（或目标周围一个窗口）+ mask（透明=重绘区）**喂给模型，让它只重绘那一块；产出后**只按原 Rect(+bleed) 抠出来贴回原图**，其余像素一个字节都不写，alpha 一律沿用原图。
+     位置、轮廓、region 坐标、padding 全部由我们保证，模型只负责那一格内部的材质与风格 —— 它画歪了也只是那一格内部歪，**图集在结构上不可能失效**。
+  3. **切片来源必须像素级可信**：`--rect`（显式）> `--at X,Y` / `--auto-index`（从 alpha 连通域算真实 bbox）> `--atlas-file x.atlas`（**必须先过体检**）。
+     2026-09-29 体检本工程 45 个 spine 图集：**30 个元数据不可信**（声明页尺寸 ≠ PNG 实际尺寸，或 region 越出画布），
+     直接用 `.atlas` 坐标收割会大面积命中错误区域，因此工具默认 **fail-closed 拒绝**，只接受能对齐的元数据。
+  4. **越界检测**：安装门禁里 `regions_in_canvas` + `outside_untouched`（区域外逐字节一致）双保险。
+---
+
+### 5. 换皮自动化后处理与质心注册脚本（scripts/reskin_align.py）
+
+>  **2026-10-07 定位**：本脚本适合「一整块新画面放进原轮廓」的场景。
+> 若资产是**已存在且主体错位**，用 6.2 的流程（`fit=bbox` + `alpha=original` + 内容框残差门禁），
+> 不要只用本脚本  它没有「主体框对齐」与「可见区黑斑」两项检查。
+
+为确保上述 SOP 100% 落地、杜绝人为操作失误，换皮模块已内置自动化对齐工具 `scripts/reskin_align.py`：
+
+```shell
+python scripts/reskin_align.py \
+  --src path/to/original.png \
+  --ai  path/to/generated_ai.png \
+  --out path/to/final_reskin.png \
+  --bleed 15 \
+  --mode auto
+```
+
+- `--mode auto`：自动计算原图与 AI 不透明像素的几何质心 $(C_x, C_y)$ 与有效 Bbox，执行亚像素平移与等比保形缩放，严防截断；
+- `--bleed 15`：执行边缘色彩漫延防御（Inpainting 15px），消灭抗锯齿边缘白光晕与黑脏边；
+- **全自动硬 QA 门禁输出**：实时打印尺寸、Alpha 逐字节、纯黑死斑、内部覆盖率（$\le 5\%$）、IoU（$\ge 0.82$）五项硬指标，任一不达标退出码为 1。
+---
+
+> **2026-10-13 实战警示（同一素材多花色换皮，五色连做验收通过）**：`reskin_align.py` 的 **0.96 缩放 + 15px bleed 存在系统性黑环**——参考 alpha 超出 AI 主体（缩到 96% 后必然如此）15px 以上的区域，会露出 AI 透明区 RGB(0,0,0)，`putalpha(原alpha)` 后即成数万纯黑死斑（实测 4.4~5.6 万/张，门禁正确报 FAIL 但工具不自愈）。**正解（已验收）**：① 生成前把原图等比 pad 到目标画幅（+6% 留白）；② `gpt_image.py` 双参考（图1=结构基准原图、图2=花色参考），prompt 明确"图1=结构/图2=仅取花色"分工并严禁改变轮廓/姿势/头身比；③ 后处理**不用 reskin_align 的 0.96 缩放**：生成体内容框与原图内容框 **1:1 贴合**（同姿态素材 bbox 天然对齐）+ 全量邻域填色（源=不透明真实内容，排除真黑）+ `putalpha(原alpha)`；④ QA：黑边像素从 5.6 万降至约 1300（残余为轮廓 AA 过渡），IoU=1.0、尺寸/alpha 逐字节不变。详见 `references/rebuild-pipeline.md` 附四。
+
+### 6. 同尺寸 / 同命名 / 同透明语义的「重绘替换」流水线（2026-09-29 实装）
+
+前 5 节解决「怎么对齐、怎么防黑斑」，本节解决**「批量重绘一批素材并原地替换回工程」**的端到端编排：
+尺寸、文件名、alpha 透明语义一字不改 —— 生图 -> 适配 -> 硬门禁 -> 备份替换 -> 引擎重新导入校验。
+
+**默认风格**：`mediterranean-casual-3d`（地中海古典配色 · 3D 立体 · 简约圆润可爱 · 色彩明亮）。
+机读版 `scripts/styles.json`；人读版 `references/style-mediterranean-casual-3d.md`（含可直接复制的风格块、负面块、配色速查、按素材类型指引）。
+
+```text
+① 读原图      尺寸/模式/透明占比/四角/内容框(alpha bbox)/字节数/md5
+② 定画幅+生成  按原长宽比挑 gpt-image 画幅(误差<9%) -> --background transparent -> N 个候选
+③ 适配       候选内容框等比缩放到「原图内容框尺寸」+ 对齐原图内容框中心（预乘 alpha 缩放）
+④ 看对比图     compare.png：原图 + 各候选（棋盘底 5x）
+⑤ 安装        备份 -> 无损压缩(PIL vs ImageMagick 取小) -> 逐像素校验 -> 覆盖 -> 硬门禁 -> 引擎重导
+```
+
+**命令**（`scripts/rebuild.py`）：
+
+```powershell
+$P = 'E:\Migrated\Python\Python311\python.exe'
+$R = 'E:\Gameprogram\skill-pool\skills\gpt-image-gen\scripts\rebuild.py'
+
+# 单张：生成 + 适配 + 出对比图，先看不落地
+& $P $R single --project 'E:\Gameprogram\jigsawcard-godot' --target 'E:\...\a.png' --prompt '一本画着橄榄枝的古典书…' --candidates 2
+
+# 确认后复用同一份候选直接落地（--skip-existing 不重复调 API）
+& $P $R single --project '...' --target '...' --prompt '…' --skip-existing --pick 1 --install
+
+# 批量三步：gen -> prepare（离线）-> 看对比图 -> install
+& $P $R gen     --manifest batch.json
+& $P $R prepare --manifest batch.json
+& $P $R install --manifest batch.json --godot
+
+# 单张校验 / 引擎重新导入
+& $P $R verify --target 'E:\...\a.png'
+& $P $R godot  --project 'E:\Gameprogram\jigsawcard-godot' --target 'E:\...\a.png'
+```
+
+manifest 样例：`scripts/batch.example.json`；离线自测（13 项断言、不调 API）：`scripts/selftest_rebuild.py`。
+
+**安装硬门禁**（任一不过即拒绝写入）：尺寸不变 / 命名不变 / 四角 alpha<=16 / 透明>=3% 且实心>=1% /
+主体不出血 / 压缩后逐像素一致 / 体积不增 / 覆盖前已有备份 / md5 必须变化。
+
+**以下六条仅适用于用户允许调整主体形状及内容框的资产，不适用于锁原轮廓 UI**：
+① 绝不让模型负责外轮廓与尺寸 —— 候选先按 alpha 内容框裁切，再等比缩放到「原图内容框尺寸」并居中回原图内容框中心，
+   模型那 5%~45% 的尺度漂移与 20~45px 位移被强制抹平，这是「不切断主体」的唯一保证；
+② 缩放必须预乘 alpha，否则透明区黑像素渗进边缘 -> 脏光晕/白边；
+③ 透明底靠 `--background transparent` 参数而非 prompt（prompt 里写「透明背景」不产生 alpha 通道）；
+④ 工作目录放在项目内必须写 `.gdignore`，否则 Godot 会把候选图/对比图全导进资源库（脚本自动写）；
+⑤ 先备份后覆盖、可回滚（备份在 `<work_root>/<batch>/<id>/ORIGINAL_<原文件名>`）；
+⑥ 透明素材 fit=bbox，不透明原画/背景 fit=full。
+
+**引擎侧重新导入**：Godot 编辑器**在跑**时靠窗口焦点触发扫描 —— 轮询 `.godot/imported/*.md5` 等 `source_md5` 变新；
+编辑器**没跑**才用 `--headless --path <proj> --import`。不要两边同时导入同一个工程。
+
+细节与失败模式：`references/rebuild-pipeline.md`；已落地案例与项目约定：`references/projects/jigsawcard-godot.md`。
+
+> 修复「切图外轮廓被裁坏、形状被切平」的资产就是这条流水线：`use_ref=original`
+> + 「保持与原图完全一致的透视/构图/配色，补全被裁掉的轮廓」。
+
+#### 6.1 图集切片（Spine .atlas / UI Atlas）：原位局部重绘
+
+图集的几何（region 坐标 / padding / bleed）**绝不由模型决定**。流程：
+
+```text
+① 定目标    --rect x,y,w,h  或  --at X,Y（点选：像素级从 alpha 连通域取真实 bbox）
+② 取窗口    目标 rect + bleed(16) + context(96) 外扩 -> 调成 API 可用长宽比 -> 夹进画布
+③ 建 mask   窗口内除「rect+bleed」外全不透明（保留）；透明区 = 允许重绘区
+④ 生成      --ref 窗口图 --mask mask图 --background transparent + 「只重绘蒙版内这一件，位置/大小/朝向/透视与参考图完全一致」
+⑤ 收割      AI 输出缩回窗口尺寸后，只按原 Rect 抠出来贴回原图，其余像素一字不写；alpha 一律用原图的（逐字节）
+⑥ 门禁      outside_untouched(区域外逐字节一致) / alpha_identical / size_same / region_content_changed / region_not_emptied
+```
+
+```powershell
+$P = 'E:\Migrated\Python\Python311\python.exe'
+$R = 'E:\Gameprogram\skill-pool\skills\gpt-image-gen\scripts\rebuild.py'
+# 点选目标（推荐）：给该物品在页内的任意一点，自动取它的真实切片框
+& $P $R atlas --project 'E:\Gameprogram\jigsawcard-godot' --target 'assets\spine\combo\combo.png' --at 440,120 --prompt '把这块重新绘制成……'
+# 或显式矩形（最可靠）
+& $P $R atlas --target '该页.png' --rect 400,100,120,80 --prompt '...' --install
+# 需要换物品形状时才用 --alpha-from ai，且必须人工复核
+& $P $R atlas --target '该页.png' --at 440,120 --alpha-from ai --prompt '...'
+```
+
+- 元数据路径只在体检通过时才放行；不可信时工具直接拒绝并提示改用 `--at`。
+- 窗口通常远小于 API 画幅（如 469² 窗口 vs 1024² 输出）= **超采样后缩回**，成品比原分辨率更干净。
+- 自测：`scripts/selftest_atlas.py`（25 项断言，含"模型把东西画歪 23px 后图集依然逐字节完好"的漂移仿真与旧流程反证）。
+- 取舍：alpha 锁定原图 = 轮廓不变、只换材质/风格。要换物品形状必须 `--alpha-from ai` 并人工复核该格。
+
+#### 6.2 【2026-10-07 实证】「资产已存在、只是画错位」轮廓对齐修复法（替代旧的对齐脚本）
+
+**适用**：素材已经在工程里、尺寸/命名/alpha 都对，但**画上去的主体在轮廓内偏了**（用户口径：
+"没有按原版 alpha 通道轮廓生成、图案出现明显错位"）。
+
+##### 一、先分清两种"错位"（判错就白干）
+
+| 现象 | 判据 | 处置 |
+|---|---|---|
+| **真轮廓不同** | 我们的 alpha 与原版 alpha 相似度低（IoU < 1 或不逐字节相等） | 用 6 主流程：`alpha=original` 回写原 alpha |
+| **假轮廓同、主体错位** | **alpha 逐字节相同（IoU = 1.000）**，但主体内容框与原 alpha 内容框有平移/缩放差 | **本节 6.2：内容框重对齐**（只改写 RGB，alpha 原样不动） |
+
+实测（jigsawcard 5 件，2026-10-07）：5 件的 alpha 全部与原版**逐字节相同**，
+但主体框偏移 5~77px、尺寸偏差 6~11%。所以"回写 alpha"这步根本没做错，**错的是没人检查主体框**。
+
+##### 二、先量，再改（诊断三件套）
+
+```python
+#  alpha 是否真的不一致？ 决定走 6 还是 6.2
+same_alpha = (ours[...,3] == orig[...,3]).all()      # 实测这 5 件都是 True
+
+#  主体框 vs 原 alpha 内容框：偏移与缩放
+sub_box  = bbox( detect_subject(ours) )   # 「画上去的图案」的包围盒
+ref_box  = bbox( orig[...,3] > 16 )       # 原版内容框
+offset   = center(sub_box) - center(ref_box)
+scale    = size(ref_box) / size(sub_box)
+```
+
+`detect_subject`：在 alpha 内部，用**沿轮廓一圈的像素**当底色参考，
+算色距 `dist > 45` 再开闭运算、取最大连通域  这样"图案"与"轮廓内留白"能分开。
+实测偏移：Flower 下移 23px、effect_radar_search (-39, +77)px、banner 左移 16px、火苗上移 5px。
+
+##### 三、标准修法（两条路，都要过同一套门禁）
+
+1. **重生成路线（推荐）**：`use_ref=original` + `fit=bbox` + `alpha=original`（6 主流程）
+   - `use_ref=original` 锁构图与配色；`fit=bbox` 把候选主体缩放到原内容框并对齐中心；
+   - `alpha=original` 把原 alpha 逐字节写回。
+   - 本轮实测：5 件  2 候选，**IoU=1.000 / 覆盖 100% / 脏透明 0**，主体框残差降到 0~4px。
+2. **本地对齐路线（API 不可用时的兜底）**：`_art_rebuild/ui_refix5/align_fix.py` 思路
+   - 用上面的 `detect_subject` 算出 `sub_box`，求把 `sub_box` 仿射到 `ref_box` 的 `(sx, sy, tx, ty)`；
+   - **预乘 alpha** 后仿射 RGB（否则透明区颜色渗入边缘），再 `putalpha(原 alpha)`；
+   - 零 API 成本、秒级；对"只是偏了"的资产足够（实测量完残差 1~4px：火苗 1px、banner 0px）。
+   - 局限：**只治位置/尺度，不治题材**（对话框那件尺寸没错、是画面风格不对，路线 2 治不了）。
+
+##### 四、门禁（比 6 多两项，缺一不可）
+
+| 门禁 | 阈值 | 说明 |
+|---|---|---|
+| size_same | 必须 | 尺寸不变 |
+| alpha_identical | 必须 | 与原版 alpha 逐字节相等 |
+| **subject_box_residual** |  4px | **新增**：主体框 vs 原内容框四边最大残差 |
+| **dark_blob_in_visible** | 越小越好（报数） | **新增**：可见区（alpha>200）内亮度<40 的像素量；纯黑矩形块=缺陷 |
+| IoU / 覆盖 / 脏透明 | 0.82 / 100% / 0 | 沿用 6 |
+
+实测选稿：黑斑量是第一判别指标  对话框 cand1 有 **77,106px 纯黑矩形块**（5.3% 可见区）、
+cand2 只有 1,173px，选 cand2；困难横幅 cand2 26,371px vs cand1 4,433px，选 cand1。
+
+##### 五、旧流程的 5 个 BUG（已弃用，别再照做）
+
+| # | 旧做法 | 后果 | 新规矩 |
+|---|---|---|---|
+| 1 | 拿"回写原 alpha 后 `final.alpha == src.alpha`"当验证 | **循环论证**：alpha 是我们自己写回去的，必然通过 | 增加 `subject_box_residual` + `dark_blob_in_visible` 两项真实门禁 |
+| 2 | 只做 `use_ref=original` 不改 `fit` | 主体 5~45% 尺度漂移、20~77px 位移直接固化进资产 | 仅在资产允许内容框配准和 alpha 回写时使用 `fit=bbox` + `alpha=original` |
+| 3 | 拿**另一件**素材当参考图（如旁边那个图标） | 模型照抄参考图的位置/尺寸  主体偏到轮廓外 | 仅在用户允许原版作参考的修复场景使用 `原版真图`，并写明"同位置同大小同朝向" |
+| 4 | 让小尺寸资产走满幅/放大生成 | 内容越界、黑斑 | 先按 alpha 内容框裁切  缩到内容框尺寸  居中回填 |
+| 5 | 把"生图超时/0 产出"当成提示词或模型问题，反复改词重试 | 浪费 1~2 小时且必然失败 | 先做**网络出口诊断**（见下），链路问题就换节点 |
+
+##### 六、网络出口诊断（本轮最贵的教训）
+
+**同一批提示词，仅换网络出口，就从"必然超时"变成"1 分钟出图"**：
+
+| 出口 | `/v1/models` | `/v1/images/generations` |
+|---|---|---|
+| 旧链路（无代理） | 8.9s | **388~680s 或 900s 超时**、26 分钟 0 产出、两个并发作业各跑 2 轮全失败 |
+| 新加坡节点 | **1.6s** | **47s 返回 200**，单张 60~77s 稳定出图 |
+
+判别顺序（照这个顺序查，别跳步）：
+1. `GET /v1/models` 的**耗时**  秒级 = 链路通；>5s = 链路本身慢；
+2. 单张 generations：**< 90s = 正常**；90~300s = 网关排队（可等）；> 300s 或超时 = **换节点/换出口**；
+3. 并发上限：本环境实测**并发 2 作业就会被服务端压到超时**，宁可串行；
+4. 复现命令：`python -c` 直连 urllib（见 `references/rebuild-pipeline.md` 附三），别用 CLI 反复试。
+
+##### 七、速查
+
+```powershell
+$P = 'E:\Migrated\Python\Python311\python.exe'
+$RB = '<proj>\_art_rebuild\rebuild_batch.py'
+# 0) 判性质：alpha 是否逐字节相同（相同 -> 6.2，不同 -> 6）
+# 1) 重建 manifest：ref=原版真图 / fit=bbox / alpha=original / candidates=2
+& $P $RB gen     --manifest <mf>      # 生成候选
+& $P $RB prepare --manifest <mf>      # 适配 + IoU/覆盖/黑斑
+# 2) 用 verify_candidates.py 量 subject_box_residual 与 dark_blob，挑 pick
+& $P $RB install --manifest <mf>      # 备份 -> 替换 -> 门禁
+# 3) 该素材在对照页里的缩略图必须一起重生成，否则页面上看到的还是旧图
+```
+
+实测数据与脚本：`<proj>\_art_rebuild\ui_refix5\`（manifest / verify_candidates.py / align_fix.py / compare.png 5 / 报告）。
+
+---
+
+### 7. 新命名素材 / 游戏 Logo：文生图透明底与「参考图污染」铁律（2026-10-02 实证）
+
+案例：为 `jigsawcard-godot` 重设计游戏 logo（6 个新英文名，v1~v5 共 5 轮 17 张）。结果 **只有 1 张全项达标**——文生图 + 短提示词 + `-b transparent` 的那张。失败高度集中在「烤底」与「多出 slogan 小字」，值得固化成规则。
+
+**7.1 两条路径的分工**
+
+| 需求 | 路径 | 原因 |
+|---|---|---|
+| 换**新名称 / 新构图 / 新内容** | **文生图，禁用 `-r`** | 给参考图（主页截图 + 旧 logo 裁切）后，模型直接重画了整张主页和旧品牌名「Jigsawcard Solitaire」；alpha 质检就算 PASS 也不能用，因为**内容被复刻**了 |
+| **同名同布局**改字 / 改风格 / 改材质 | edits（`-r`） | 构图由参考图锁定，正是第 6、6.1 节的用法 |
+
+**参考图污染**是本技能最贵的坑：`-r` 的语义是「照这张改」，不是「参考风格画一张新的」。要新东西就别给图。
+
+**7.2 「参考图 + 透明底」的真相**（补充第 106 行实验 E）
+
+实验 E 只证明 edits 路径**会返回 alpha 通道**，**不保证画面里有透明区**：本次 6/6 带参考图的输出全部烤满底（全透明 0.0%），因为参考图本身是满幅构图，模型照抄了满幅构图。
+=> 成品需要四周留白/透明时走文生图；edits 只适合「主体本来就占满画布」的素材。
+
+**7.3 提示词要短**（唯一达标那张的全部提示词，约 150 字）
+
+```text
+<风格锚点一句：3D 立体休闲游戏 logo + 3 个 hex 配色 + 质感词（圆润饱满、柔和棚光、干净通透）>
+<元素一句：拼图块 + 基督教符号，拼图块要有 3D 软体积感>
+主标题文字必须拼写完全正确、字重粗壮、带描边与柔和投影；下方一条金边丝带写小字副标题「SOLITAIRE」。
+纯透明背景，无地面无背景板，除主标题与丝带副标题外不得出现任何其他文字、字母、数字。
+主标题写「HOLY SOLITAIRE」；意象：……
+```
+
+把同样的要求展开成 6 条「铁律」清单后（v3），5 张里 3 张烤底 —— **约束越像清单，模型越当装饰**。保持两段、150 字上下。
+
+**7.4 两大顽疾：slogan 与暗底**
+
+17 张里 11 张被塞了英文 slogan 小字（`PIECES OF HOPE` / `SMALL PIECES. A BIGGER STORY.` 等），即使提示词明写「不得出现任何其他文字」。有效（非 100%）的禁用句：
+
+```text
+禁止地面、云、烟雾、光弧、背景板、光晕、口号标语、任何其他文字字母数字；整体保持明亮，禁止深色压底。
+```
+
+意象用词同样会诱发烤底：「圣火」「光芒」「天堂」「神圣光辉」容易生成光晕/圣光背景；换成**纯实体名词**（拼图块、十字架、白鸽、橄榄枝、翻开的书、竖琴）显著降低烤底率。
+
+**7.5 重试纪律**
+
+同一 prompt 方差极大：同一句话两次可分别得到「全透明 27%」与「0% 透明」。因此——
+- 重试**先改词**（换掉可疑意象词、强化禁用句），不要原样复读；
+- 2~3 次仍不过就**换构图思路或换方案**（本次 trinity_tiles 连败 6 次才止损）；
+- 每次失败先确认是否已被失败版本覆盖原候选，覆盖前把上一版另存 `archive_*`。
+
+**7.6 alpha 质检 PASS ≠ 可交付**
+
+脚本门线只管四角与透明占比。**人工四查**：① 拼写（AI 标题常拼错/漏字）② 是否多出文字 ③ 是否多出背景/阴影 ④ 是否匹配目标美术风格。
+经验阈值：**全透明 <10% 基本等于有底**（脚本 3% 门线适合图集切片，对整图 logo 偏松）。验收务必 `read_image` 打开原图逐字核对，别看缩略图。
+
+**7.7 批量实操（Windows）**
+
+- 批量生成放 pwsh 后台作业，并显式打印关键行，否则作业输出为空、失败静默：
+  `... | Select-String -Pattern 'alpha 质检|已保存|生成失败' | Out-String -Width 180`
+- **不要**用 `python -c` 写带嵌套引号的脚本（静默不执行、无报错）：落成 `.py` 文件再跑。
+- 复核 HTML 对照页用 Playwright 时，本机未装 playwright 浏览器 -> `p.chromium.launch(channel="chrome")` 复用系统 Chrome；无头截图先确认 `document.images.every(i => i.complete && i.naturalWidth > 0)`。
+
+**7.8 构图比例与槽位不匹配时：改槽位几何，不要逼模型改构图**（2026-10-02 追加实证）
+
+案例：达标稿是 1380×1058（1.304，竖排堆叠：天使翼 + 四张 A + 金 3D 标题 + 丝带），而目标槽位是 957×398（实机显示 390×180，2.167 横幅）。等比装入只剩 199×169 —— 宽度只有旧素材的 56%。
+
+于是试图让模型改画横幅，**4/4 全部烤满底**（唯一达标稿的提示词只改了意象句）：
+
+| 做法 | 结果 |
+|---|---|
+| 文生图 +「横幅构图 / 宽约为高的 2.4 倍 / 丝带横贯底部」 | 透明 0.00%，四角 alpha 226–240 |
+| 文生图 +「横向单行标题 + 双翼左右展开」 | 透明 0.00%，四角 216–240 |
+| 最小改动版（删掉"横幅"字样，只把意象改横向） | 透明 0.00%，四角 236–245 |
+| **以已达标透明稿为参考图**重画构图（edits） | 透明 0.00%，四角 19–30 |
+
+=> 「横向铺开 / 横贯 / 宽高比」这类**构图指令是本技能最强的烤底触发器**（比"光亮/神圣"意象更猛）；参考图路线第 3 次被证不可用（见 7.1/7.2）。
+**正解 = 保留已达标构图，改槽位几何**：
+
+1. 先扫图集占用找空位（本次目标区域正下方 957×400 全空，可把区域从 398 拉到 700）；
+2. 改槽位 `Rect2` 高度，**节点缩放 / 动画关键帧 / 代码里的 scale 常量一律不动** —— 它们是绝对值，改区域不牵连，**零代码风险**（本次未动一行场景/动画代码）；
+3. 槽位在实机常是**非等比**显示（本次 x 0.4075235 / y 0.4522613）→ 图集内的贴入尺寸要**预补偿**：贴 937×647 → 实机 381.8×292.6（宽高比不变）；
+4. 落位必须按**动画最大放大倍率**验算（本次呼吸动画峰值 ×1.04）：静止 260.3..552.9、峰值 254.1..558.5，与相邻 UI（章节牌中心带最早内容 y=574）留 15.5 px。
+
+**7.9 「重绘替换」落地清单：六处接线点 + 三道验算 + 两项复验**（2026-10-02 实证）
+
+图集区域一变，**六处必须同步**，否则重跑生成器或校验就会互相打架：
+
+| # | 文件 | 内容 |
+|---|---|---|
+| 1 | `assets/ui_atlases/<x>.png` | 图集本体（区域内容重绘） |
+| 2 | `assets/ui_slices/<page>/<name>.tres` | `region = Rect2(...)` 新区域 + `filter_clip` 保持 |
+| 3 | `assets/ui_slices/<page>/<name>.png` | 单图切片（换皮管线的书账），同步重导出 |
+| 4 | `data/*_atlas_regions.json` | 区域表 |
+| 5 | `data/*_sprite_manifest.json` | `"size": [w, h]` |
+| 6 | `tools/*_art_builder.gd` | 生成器的 `_slice(..., Vector2(display_w, display_h))` —— 按 **display ÷ scale 反算**（本次 390×316.58），否则重跑生成器会改掉缩放 |
+
+三道验算（写入前跑，**全 PASS 才落盘**）：
+- **区域外逐像素不变**：`ImageChops.difference(before, after).getbbox()` 必须完全落在新区域内（本次新区域扩大后依然 PASS）；
+- **落位验算**：显示尺寸 = 区域尺寸 × 节点缩放，再乘动画峰值倍率，与**从截图量出来的相邻 UI 边界**比大小（不要凭肉眼估）；
+- **透明/实心门线 + 区域四角 alpha ≤16**（整图 logo 的透明经验阈值仍是 <10% 即视为有底，见 7.6）。
+
+两项复验（落地后跑）：
+- `--headless --import` 退出码 0，且 `.godot/imported/*.md5` 的 `source_md5` == 新图 MD5（证明真的重导了）；
+- 该页相关 QA 测试（本次 `test_home_motion` 18/18、`test_logo_loop` 6/6）。
+- 回滚三件套：图集备份进 `_art_rebuild/.../atlas_backup/`、六处尺寸改回、再 import 一次。
+
+---
+
+Tool: # 结构锁定换皮
+
+仅用于实际要求保持结构/动作/轮廓/透明切边的素材编辑。命令以技能根目录为工作目录；外部脚本/API调用仍遵守 [总入口](../SKILL.md) 的后端与授权边界，不因读取本参考就自动调用。
+
+### 8. 结构锁定换皮：外观迁移（Structure-Locked Reskin，2026-10-12 实装 v1.5.0）
+
+**触发**：用户要求「换皮/重绘材质/换配色/换花纹/换风格」，且明确要求**保持原图的结构、动作、轮廓、透明切边范围不变**——适用于一切带透明通道的 PNG（角色部件、spine 图集切片、UI 素材、图标、宠物/角色毛色迁移等）。毛色/花色迁移只是典型场景，本模块不是换毛色专用。
+
+**定位（对旧流程的替换关系）**：旧换皮主流程（第 6 节）是「整件素材重绘换风格」，实测对原图结构遵循不够——形状漂移、丢浮动元素、轮廓对不齐。凡是**要求结构锁定**的透明素材换皮，一律走本模块；只有「整件重画、不要求结构不变」才用第 6 节；图集切片（6.1）仍走 harvest 原位收割。8 专门解决旧管线两大顽疾：
+
+| 顽疾 | 根因 | 本模块解法 |
+|---|---|---|
+| 轮廓无法对齐 | 内容框对齐只解决整体偏移，形状漂移和「丢了浮动元素导致的错位」解决不了；reskin_align 的质心对齐同样不检查主体框 | **alpha 逐字节回写**（轮廓像素级由原图锁死）+ **两步内容框配准**（粗配准整体 → 精配准未保护区域） |
+| 无法在原图基础上局部编辑 | API 的 mask 字段上游会忽略（gpt_image.py 里「去掉 mask 重试」就是证据）；atlas 的 harvest 只覆盖图集 | 「局部」由两层保证：**prompt 三层约束**（哪些不许动）+ **后端 preserve 回贴**（不变区域原图像素原样恢复，支持色键） |
+
+> **分流优先级**：用户明确要求 UI 外轮廓、透明留白与拉伸结构不变时，不使用本参考中“先生成新主体、bbox 配准、强贴原 alpha”的后处理；应以原版几何母版直接重绘内部材质，检查完整 RGBA 与半透明边缘。下列 source/配准规则仅用于其适用的透明角色/部件工作流，且服从用户对参考输入和候选基准的明确要求。用户禁止原图作为背景参考或要求在选定候选上编辑时，不得强制输入原图或退回原图。
+
+#### 8.1 参考图职责（铁律）
+
+- **图1 = source（该角色/部件流程的原图；用户另有参考限制时按用户要求分流）**：结构基准，决定 WHAT AND WHERE —— 结构、姿态、比例、轮廓、五官、配饰、透明切边。alpha 最终**逐字节**来自它。
+- **图2 = reference（外观参考，可选）**：只决定 APPEARANCE —— 配色、花纹位置与边界、材质质感、颜色过渡。给了图2 就从它迁移；**没给就用纯文字描述外观，两条路径的后端像素管线完全相同**。
+- 有图2 时，**严禁**把它的形状、姿态、配饰（典型：参考图有铃铛而原图没有 → prompt 必须点名 `do not add a bell`）、表情、背景带进结果。
+- **多候选/多花色纪律**：通常保持同一结构基准以降低漂移；用户明确选择已有候选作为后续编辑基准时尊重其选择，记录结构和目标偏差，不擅自切回原图。
+
+#### 8.2 三层英文约束 prompt（脚本自动组装）
+
+用户（或上游 Agent）只需给「外观描述行 + 必须保留的对象 + 禁止带入项」（forbid 项仅在有图2时有意义），`transfer.py` 组装成：
+
+```
+[LAYER 1 - STRUCTURE INHERITANCE]  Image 1 is the direct edit target...（结构/姿态/轮廓/配饰/透明切边逐一列举）
+[LAYER 2 - FORBIDDEN CHANGES]      do not change... + Preserve the <对象> exactly as in Image 1... + do not add a bell
+[LAYER 3 - APPEARANCE ONLY]        有图2：Image 2 is the appearance reference ONLY... map onto the EXACT original shapes；
+                                   无图2：appearance is fully specified in words below（纯文字描述外观）
+TARGET APPEARANCE DESCRIPTION:     <外观描述逐行>
+```
+
+实测写法要点：① 外观描述**按部位拆行**（眉/口鼻/胸/爪/尾尖/毛质/边界过渡），比一句「把颜色改成图2」效果好得多；② preserve 对象逐个点名；③ 参考图里有而原图没有的东西必须显式 forbid。`transfer.py prompt` 子命令可只渲染 prompt 检查（不调 API）。
+
+#### 8.3 像素锁定后处理管线（每候选自动执行）
+
+```text
+① 粗配准   候选整体内容框 --fit=bbox--> 原图整体内容框（预乘 alpha 等比缩放）
+② 精配准   在粗配准结果上，取「未保护区域」的内容框再对齐一次
+           （模型丢了浮动图标时，整体内容框被缺角带偏；保护对象反正要回贴，锚定必须落在主体上）
+③ 出血修补 原图可见但候选透明处，用候选材质色 cv2.inpaint 漫延（防黑斑死穴，需 cv2）
+④ alpha 回写 原图 alpha 逐字节写回；透明区 RGB 清零（防脏透明）
+⑤ preserve 回贴 不变区域恢复原图像素；支持色键（见 8.4）
+⑥ QA 门禁  七项全过才算 PASS（见 8.5）
+```
+
+#### 8.4 preserve 色键（2026-10-12 冒烟实测出的坑）
+
+**整块回贴会把矩形里对象周围的旧底色一起贴回来**：项圈叠在身体上时，项圈矩形内的原图棕色身体像素被贴到新灰色身体上 → 矩形接缝；矩形上缘盖住口鼻 → 米色残留带。所以：
+
+- 对象**叠在会变色的区域上**（项圈/衣服/手持物贴身部位）→ **必须色键**：`x,y,w,h:R,G,B:tol`，只回贴矩形内颜色距离 ≤tol 的原图像素（tol 实测 90 可靠区分红项圈与棕身体）；
+- 对象在**透明背景上**（浮动图标、独立贴纸）→ 整块回贴即可：`x,y,w,h`；
+- spec JSON 写法：`{"rect":[x,y,w,h], "key":[R,G,B], "tol":90}`。
+
+#### 8.5 QA 门禁（七项，任一不过即 FAIL 拒绝落地）
+
+| 门禁 | 默认阈值 | 抓什么 |
+|---|---|---|
+| size_same / alpha_identical / preserve_identical | 必须 | 尺寸、alpha 逐字节、保护区像素级复原 |
+| clean_transparent | 脏像素=0 | 透明区 RGB 残留 |
+| no_missing_structure | missing ≤5% | 结构丢失（保护区域之外，原图实心处候选没画出来） |
+| shape_deviation_ok | ≤8% | 主体形变度（精配准前后的比例差；模型把主体画变形/丢部件时会被撑大填框，此门禁拦截） |
+| no_black_blobs | ≤0.5% 可见区 | 纯黑死斑（inpaint 失败兜底） |
+| transfer_applied | ≥2% | 迁移量（可见区颜色变化占比；太小=模型没干活） |
+
+阈值可调：`--gates gates.json`（键同上表）。**门禁只管像素层；毛色像不像、五官有没有走形仍需人工/视觉复核对比图**（compare.png，ORIGINAL 与各候选并排）。
+
+#### 8.6 命令速查
+
+```powershell
+$P = 'C:\Program Files\Python312\python.exe'
+$T = '<技能目录>\scripts\transfer.py'
+
+# 全流程：生成 N 候选 -> 配准合成 -> QA -> 对比图（不落地）。外观描述行可重复
+& $P $T run `
+  --source 'dog.png' --ref 'coat_ref.png' `
+  --appearance 'cool medium-gray and white coat with soft furry texture' `
+  --appearance 'white fluffy eyebrow patches above both eyes' `
+  --appearance 'white muzzle and chest patch; white paws and white tail tip' `
+  --preserve-object 'small floating paw icon on the right' `
+  --preserve-object 'simple brown collar' `
+  --forbid 'bell' `
+  --preserve-rect '88,124,84,26:200,44,44:90' `   # 项圈：色键限定
+  --preserve-rect '206,6,50,50' `                # 浮动图标：透明背景整块回贴
+  --candidates 2
+
+# 只渲染三层约束 prompt（不调 API，检查用）
+& $P $T prompt --source dog.png --ref coat_ref.png --appearance '...'
+
+# 无参考图（纯文字描述外观）：去掉 --ref 即可，像素锁定管线不变
+& $P $T run --source 'part.png' --appearance 'weathered dark iron material, matte finish, subtle scratches' `
+  --preserve-object 'bottom-left rivet' --preserve-rect '12,210,40,40' --candidates 2
+
+# 确认后落地（备份 -> 无损压缩 -> 门禁 -> 覆盖；--pick 缺省取第一个 PASS 的候选）
+& $P $T run --spec spec.json --install --pick 1
+& $P $T install --work '<work目录>' --pick 1 --target 'dog.png'
+
+# 离线自测（31 项断言，不调 API）
+& $P $T selftest
+```
+
+spec JSON 示例：`scripts/transfer.example.json`。work 目录默认在原图旁 `_appearance_transfer/<原名_时间戳>/`（prompt.txt / candN.png / candN_locked.png / compare.png / report.json / ORIGINAL_备份）。
+
+#### 8.7 已验证记录（2026-10-12）
+
+- `selftest_transfer.py` 31 项断言全过：三层 prompt 关键句（含无参考图分支不出现 Image 2）；换毛色+漂移候选全门禁 PASS 且 alpha 逐字节一致；丢浮动图标候选被 preserve 回贴救回（图标区域像素级复原、色键不贴回旧底色）；丢尾巴候选被 missing+形变双门禁拦截。
+- flare 真机冒烟 2 轮（合成狗 256²，1024² 画幅生成）：第 1 轮全门禁 PASS 但目检发现**项圈整块回贴接缝** → 加色键后第 2 轮干净（missing 3.4%、形变 4.2%、迁移量 70.6%、零黑斑零脏透明）。真机端到端验证的是「有图2」路径；「无图2（纯文字外观）」路径只差 prompt 文案，像素管线相同，由自测覆盖。
+- install 落地 + `rebuild.py verify`：尺寸/四角透明/内容框与原图一致，md5 变化，备份可回滚。
+
+---
+
+Tool: # 散件定位与运行验收
+
+适用：H5 换皮中资源引用、图集装配或目标样式需要核实。背景参考与视口处理见 [背景参考快批](background-reference-workflow.md)，分类与文件契约见 [pipeline](pipeline.md)。
+
+## 快速流程
+
+1. 冻结原版和用户指定目标，建立全量轻索引，区分共享母版、真实状态及保留资源。按用户授权决定可修改范围；纯美术任务保持代码、布局和图集参数。
+2. 只对当前要替换且装配不明、高风险或用户要求的资源，核对截图、图集帧、调用关系、锚点、trim、旋转和拉伸；必要时用原版散件重组验证。不为全库逐像素定位。字体和程序绘制另列；没有截图或引用证据不等于资源未使用。
+3. 对照指定界面和状态的目标图，按身份匹配组件；保留目标局部及参考角色。目标裁切默认用于参考，只有用户许可才作成品；被遮挡或没有对应目标的项标记缺参考或母版推导。
+4. 少量代表屏校准后，同族批量制作并保留独立状态。锁轮廓 UI 以原版为几何母版、只绘内部；透明边缘、主体与原轮廓一起检查，alpha 一致不等于视觉合格。效果图作为生图参考时必须实际输入。
+5. 按实际显示大小集中检查原版、目标和候选的形状、占位、色彩、材质、状态与透明边缘。失败按共同原因集中修复；遵守用户的候选上限，不能无限微调。已选候选和用户明确保留的资源不因其他问题擅自替换。
+6. 只用当前有效候选累计回填，核对最终资源、图集及所需交付的一致性；按用户指定的 H5、模拟器或真机进行同状态自然操作和整屏三列对照。调试调起和离线重组只证明其各自覆盖范围，不冒充自然解锁或完整玩法。
+
+## 执行检查：每批一次
+
+- **生图前**：写明「哪张约束结构、哪张决定风格、哪些内容不变」；实际传入用户指定的效果图局部。若用户禁止原图参考，只传其允许的候选和效果图局部。
+- **回填前**：确认当前采用清单不含拒绝候选；帧尺寸与原版一致。锁轮廓 UI 不先造新外形，保留原透明边缘；图集整块复制 RGBA，不用自身 alpha 作 mask。
+- **验收时**：同批检查受影响的整屏、实际显示大小和状态，标明 H5/模拟器/真机及自然操作或调试来源。问题按共同原因返修；达到用户次数上限就标未通过，继续其他项。
+
+## 最小记录
+
+记录资源路径与帧、必要技术约束、对应目标或缺参考、实际采用候选、技术/视觉状态和证据；高风险项再补实例位置、变换或引用。输出用户需要的对照与未通过项，不为未修改的全库资源逐件写报告。技术检查、素材视觉、整屏装配和自然交互是不同结论，不能互相替代。
+
+Tool: # 四类分流与按类执行
+
+> 范围：`GENERALIZED_PATTERN`。判据可迁移；本文出现的数值与资源名来自来源案例，**必须按当前项目重新测量**。
+
+## 0. 先完成散件闭环再按类执行
+
+批量主链见 [散件定位到运行还原](component-restoration.md)：全量轻索引和状态去重 → 代表屏与少量样本 → 批量生产 → 累计回填与集中验收。实际装配有风险的条目按需查引用和截图；不默认创建全库精确定位工程。用户要求 UI 锁原轮廓时优先内部重绘。
+
+## 0.1 为什么要先分类
+
+**严禁一套逻辑套所有资产。** 同一个包里，四类资源的"什么不能变"完全不同：
+
+| 类别 | 什么绝对不能变 | 变了的后果 |
+|---|---|---|
+| 拼接 | 段高、段顺序、循环周期 | 地图上出现横向断口 |
+| 缺失 | 引用它的尺寸 | 运行时 404 或空位 |
+| 结构锁定 | 实证需要的遮罩/锚点/帧/切片契约；仅确需时锁alpha | 契约破坏可能造成遮罩失效或动效错位 |
+| 可重绘 | 尺寸、锚点与实际使用契约 | 尺寸或占位错误会造成图集/装配问题 |
+
+## 1. 分类判据（必须是运行时可证，不是看文件名）
+
+| 类别 | 判据 | 怎么证 |
+|---|---|---|
+| **1_拼接** | 一条连续场景被纵向切成 N 段，引擎按原段高循环平铺 | **读引擎的平铺循环代码**，确认段数、段高、摆放顺序（§2） |
+| **2_缺失** | 原包内容为空（alpha 全 0），但代码确实引用该键 | 对账**代码键**与**包内文件**两张清单 |
+| **3_结构锁定** | 有证据说明必须保留的遮罩/帧关系/切片/进度语义 | 查真实运行用途，逐项写必须锁什么及允许重画什么；不凭家族名锁旧alpha |
+| **4_可重绘** | 普通按钮/底板/图标/棋子，含允许改变造型的九宫格素材 | 按批准目标重绘，保必要尺寸/切片/锚点，不用只换颜色替代 |
+
+**两条容易判错的**：
+
+- **「是否被代码引用」≠「包内有没有这个文件」**。要做两张清单对账；只查全局加载清单会漏掉**按状态加载**的清单。
+- **「复合图标」要单独识别**：alpha 有效**连通域 ≥ 2** 时，它不是"一个图标"，提示词写法完全不同（见 `wrong-approaches.md` C 组 #12）。
+
+## 2. 类别 1：拼接 / 平铺背景 —— 本管线最容易翻车的一类
+
+### 2.1 先读引擎代码，确认「真实相接配对」
+
+引擎常见写法是按段高**递减**摆放（形如 `c -= e`），
+所以 `tile_0` 在**最下面**、`tile_1` 在它**上面**。⇒ 视觉上真正相接的是：
+
+```
+tile_i 的首行  ↔  tile_{i+1} 的底行        ← 真实相接
+（不是 tile_i 的底行 ↔ tile_{i+1} 的首行）
+```
+
+**不要假设"文件序号顺序 = 视觉顺序"。**
+
+**用原版数据验证哪一组配对才对** —— 对的那组差值应显著更小：
+
+| 配对 | 原版 RGB 均差（来源案例） |
+|---|---|
+| `tile_0 底 ↔ tile_1 首`（错误口径） | 83.77 |
+| **`tile_0 首 ↔ tile_1 底`（真实相接）** | **11.55** ✅ |
+| `tile_1 底 ↔ tile_2 首` | 62.23 |
+| **`tile_1 首 ↔ tile_2 底`** | **6.08** ✅ |
+
+**确认后**：条带堆叠顺序**反过来**（从上看下去是 `N-1 → … → 0`），
+切回时条带第 i 段分配给 `TILES[STRIP_ORDER[i]]`。
+
+> ⚠️ **顺序反了之后条带内部仍是一张连续图**，
+> 所以按错误口径量的接缝会一直"很干净"（3~5），**而游戏里每条缝都是 30~40 的真实断口**。
+> **自检会通过、实机翻车。** 这是本管线最贵的一条教训。
+
+### 累计回填与审核基准
+
+- 生产清单只收当前有效采用的帧；诊断、拒绝、历史候选另行记录，不能因为历史目录存在就被强制带回或覆盖已认可版本。对同一帧只有一个当前有效版本；状态变体各自保留。
+- 基于干净原图集与有效清单一次性重建，或在已确认的累计结果上更新；整块复制 RGBA（包括透明 RGB），不得用图片自身 alpha 再作 mask。检查最终解码帧与有效成品一致、未列区域不变及透明边缘；如果资源经压缩/后处理，图集、H5、交付对照和要求的其他包均以最终实际采用资源为准。
+- 状态证据需记录操作入口、实际可见界面、关卡编号及来源；脚本停止或页面可渲染不自动证明所宣称的关卡、解锁或完整玩法成功。自然操作与调试注入明确区分。
+
+### 2.2 背景和接缝：先还原使用方式，再选择处理
+
+1. 查询真实地图渲染、滚动、裁切、循环及相邻段顺序；完整拼出原版并对照屏幕，确认路线、地形和关卡点空间。按目标美术重绘，同时保持用户要求的基础空间结构；不能自行把道路改成河流或反向改变路线。
+2. 用户指定的背景是视觉基准；不得因技术缺陷擅自丢弃或更换。若用户禁止把原版作为生成参考，则生图不得传入原版，仍可仅作离线结构检查；效果图局部应真实输入，动态 UI 和关卡文字不得烤入背景。
+3. 可用整条构图、局部编辑或其他适合当前问题的方法，但不得默认镜像补边造成重复主景，也不得通过几百行交叉淡化叠加不同物件。接缝修复必须检查全图及上下大局部，关注主体错位、断裂、重复和幽灵。线性差值摊平、边界压平或首尾像素相等不能证明视觉连续，不作为通用修法。
+4. 按实际相接顺序切回，保持原资源尺寸与坐标。正式采用须通过接缝及装配验收；选定候选可供明确标注的诊断预览，未通过部分如实保留。
+
+### 2.3 运行验收
+
+按用户指定的 H5、模拟器或真机来源查看真实滚动与裁切，并与原版及目标画面比较；接缝梯度仅为辅助线索，不能代替整屏及局部视觉检查。动态开关、关卡点、可交互对象要通过自然操作验证；调试调起只能证明渲染。
+
+## 3. 类别 2：缺失 —— 按引用它的尺寸补齐
+
+原包内容为空（alpha 全 0）但代码引用的键，按**引用处的目标尺寸**补齐，不要猜。
+**「换皮后某元素缺失」也可能是原图本来就是空的** —— 这类只有靠阶段零的**原版基线对照**才发现得了。
+
+## 4. 类别 3：按证据锁技术契约，按目标生产样式
+
+- 用户要求 UI 锁原轮廓时，直接在原版几何母版内部重绘材质；不能先生成新外形再配准或强贴原 alpha。完整 RGBA 写回，检查半透明边缘与透明 RGB，不得以自身 alpha 再作 mask。其他资产按实际契约判断。
+- 其他底板/按钮按目标造型与明暗重绘，保必要锚点/切片/帧关系，不锁旧轮廓。
+- 柔光/加色特效保原配色与alpha；简单纯旋转资源按转轴/占位判断可重绘范围。
+- 下列亮度处理是历史修复方法，只适用于目标确需保留原明暗的条目，不能覆盖批准目标的新材质/高光。
+
+> **来源案例**：底板用候选自身 alpha 时覆盖率只剩 **20~63%**，游戏底下暗色透出来，
+> 画面上就是"暗色方块"。改用原版 alpha 后覆盖 **100%**。
+
+### 4.1 换色相会把亮度一起拉低（**症状像 alpha 丢失，其实不是**）
+
+| 资源 | 原版亮度 | 换色后 | 差 |
+|---|---|---|---|
+| 金币条底板 | 115.5 | **65.7** | **−49.9** ⚠️ |
+| 星星条底板 | 109.6 | **70.1** | **−39.5** ⚠️ |
+
+### 4.2 为什么常规亮度对齐会漏掉它
+
+`match()` 只对齐**跨度**（P99−P1），`match_brightness()` 用**中位数**判 DC 偏移。
+而底板常见分布是「**大面积亮胶囊 + 一块暗图标**」——
+**中位可能已接近原版、均值却差 40~50**，于是两个判据都判定"不用修"。
+
+### 4.3 来源案例：仅在目标需要保原明暗时作分位点重映射
+
+```python
+# 对可见区做分段线性亮度重映射，把成品的
+# P1/P5/P25/P50/P75/P95/P99 直接映到原版的同一组分位点上
+# 只改明暗，不动色相/饱和度，alpha 一格不动
+qo = np.percentile(L_out[visible], QUANTILES)
+qs = np.percentile(L_src[visible], QUANTILES)
+L_new  = np.interp(L_out, [0]+list(qo)+[255], [ys0]+list(qs)+[ys1])
+rgb_new = rgb_out * (L_new / np.maximum(L_out, eps))
+```
+
+仅对技术契约明确要求保原明暗的条目使用；其他条目以目标裁切的层次/高光验收，禁止无条件亮度归一化或过曝。
+
+### 4.4 流水线开关的漏传
+
+亮度对齐通常有个"是否包含底板"的开关。**新增开关后要回查所有调用点是否都传了** ——
+来源案例里编排脚本漏传了该开关，导致**底板从未被校正**，而日志显示"对齐完成"，看不出异常。
+
+## 5. 类别 4：可重绘 —— 三条硬规矩
+
+### 5.1 玩法对象的功能色不能被地区色覆盖
+
+**玩法对象及其目标缩略图保持独立功能色，识别与状态区分优先级最高，不被地区配色限制。**
+套上地区色会让棋子互相接近，直接损害消除类玩法辨识度。
+
+玩法功能色应可辨识；是否回锁原色由用户目标与玩法契约决定。下表是来源案例，不是统一阈值：
+
+| 指标 | 原版 | 未回锁 | 回锁后 |
+|---|---|---|---|
+| 最小色相间距 | 19.7° | **5.7°** ⚠️ | **22.3°** ✅ |
+| 各棋子色相偏差 | — | 最大 16° | **≤0.4°** |
+
+回锁**只旋转 H 通道，形状一格不动**；顺带把 S/V 做温和线性对齐（缩放限幅，避免压平新画法）。
+
+### 5.2 复合图标必须点名保留每个元素
+
+**判据**：alpha 有效连通域 **≥ 2**。提示词要**逐个列出并强制保留**，
+并且**撤掉"重画这同一个物件 / 不要加装饰"这句** —— 那句会诱导模型把元素当装饰删掉。
+
+> **来源案例**：一个"场记板 + 箭头 + 金币堆"的复合图标，
+> 提示词写"重画这同一个物件 + 不要加装饰"后，前两个元素被删，**语义全失**。
+
+### 5.3 独立可变形素材可补充形状描述；锁轮廓 UI 保持原几何
+
+只描述材质时，模型会**保持参考图的通用轮廓**，画出来还是原来的东西。
+仅对经确认可自由改形的独立素材，可明确目标形状；UI 要求保持轮廓时不得删除该要求，例子不适用：
+
+```
+❌ a South Asian cashew barfi sweet - a rounded bean-shaped milk sweet ...
+✅ a DIAMOND-shaped (rhombus) cashew barfi milk-fudge tablet ... NOT as a bean
+```
+
+### 5.4 母版只能选一个
+
+**不要把「平面手绘」和「光泽倒角」同时写进正向词** —— 母版冲突，出来既不像 A 也不像 B，还特别花哨。
+正向词与排除词必须严格配套。**用实际图像检查，失败代表图先修再扩批。**
+
+## 6. 风格量化：辅助诊断，不替代用户效果图
+
+下列四级层级和阈值是来源案例，不是对所有项目的统一美术规范。用户选定画风、素材和指定背景元素优先；不得仅凭数字更改用户认可的构图、色彩或移除物件。
+
+### 6.1 四级视觉层级（判据是**相对关系**）
+
+| 级别 | 对象 | 视觉职责 |
+|---|---|---|
+| 一级 | 商业化 UI | 饱和度、对比度、完成度最高 |
+| 二级 | 主玩法按钮 / 操作 icon / 玩法道具 | 鲜明清楚，日常交互焦点 |
+| 三级 | UI 底板、承托面、信息面板 | 完成度和强度**明显高于背景** |
+| 四级 | 背景场景与环境装饰 | **有色彩、有场景，但饱和度/局部明暗/边缘对比明显低于交互区** |
+
+**四级背景的验收 = 三项「背景 < 交互区」**：
+
+| | 饱和 | 局部对比(std) | 边缘(梯度均值) |
+|---|---|---|---|
+| 合格示例 · 背景 | 0.527 | 36.1 | 6.58 |
+| 合格示例 · icon | 0.724 | 47.7 | 38.61 |
+| 判定 | ✅ 背景更低 | ✅ 背景更低 | ✅ 背景更低 |
+
+> 来源案例里**原版自身**在饱和度与局部对比上是"背景 ≥ icon"的反向关系 ——
+> **不要把原版当金标准**，规范才是判据。
+
+### 6.2 来源案例：背景细节与可读性
+
+背景可以色彩丰富、包含指定纹样和主景；边缘密度仅作辅助，不以“不超过原版”作为硬阈值。来源案例：
+
+| 资源 | 原版边缘 | 过于花哨 | 修好后 |
+|---|---|---|---|
+| 加载页底图 | 5.37 | **17.42（3.25×）** | **3.65** ✅ |
+| 平铺段 0~3 | 8.3~9.8 | 10.3~11.0 | **6.0~7.8** ✅ |
+
+> ⚠️ **反向坑**：不要为了"安静"把背景改成大面积空白天。
+> 规范明确禁止「退化成空白纯色底」。来源案例第一次改完天空占 60%、边缘降到 2.72 ——
+> **过安静，同样不合格**。正解是**压缩空白占比 + 少量大块填满下部**。
+
+仅当项目目标确实要求简化时，可考虑减少干扰细节；不得凭通用模板禁止目标画面明确要求的静态道具、植物、花纹或主体。
+
+## 7. 容器契约：先探真实格式，再回写
+
+H5 游戏里图片后缀常与实际格式不符（来源案例是「**WebP 伪装成 .png**」）。
+回写前必须探真实容器（读文件头 `RIFF....WEBP`），**沿用原容器**，否则包体暴涨或引擎不认。
+
+**硬契约**（每批改完都验）：
+尺寸不变 / 文件名不变 / 契约明确要求的条目 alpha 逐字节相同 / 图集页尺寸不变 / 帧不缺失 /
+**游戏非美术文件逐字节不变**；壳/签名必要差异单列。修代码需额外授权，不能靠声明豁免。
+
+**JSON 索引**（图集帧表等）也必须一致 —— 帧名、坐标、尺寸一个都不许动。
+
+## 8. 打包与运行 QA
+
+按用户明确指定的 H5、模拟器或真机方式验收；以下 ADB 内容只适用于所选设备场景。
+
+### 8.1 打包
+
+- 只改构建目录里的标签/图标，**不碰 JS/HTML**
+- 记录产物哈希与签名
+- 装机后确认能起、无资源错误
+
+### 8.2 真机取证通道
+
+```
+adb forward tcp:<port> localabstract:webview_devtools_remote_<PID>
+→ CDP: Runtime.evaluate / Input.dispatchTouchEvent / Log.entryAdded
+```
+
+- **真触摸**用 `Input.dispatchTouchEvent`（`touchStart` → 多次 `touchMove` → `touchEnd`）
+- **截图走设备通道**（如 `adb screencap`）—— canvas 游戏下 CDP `Page.captureScreenshot` 常返回纯色/陈旧帧
+- 设备截图有约一拍缓存滞后 → **连拍取最后一帧**
+- **用文件大小是否异常小来判定截图是不是空白**
+
+### 8.3 集中逐屏对照（收尾必经）
+
+静态资源对比**看不出跨资源的界面级缺陷**。必须：
+
+1. 阶段零先留**原版基线**（同一套界面清单、同一套触发路径）
+2. 换皮后用**完全相同**的触发路径重采一遍
+3. 逐屏并排对照 + 指标 + 可疑标记
+4. 对照页带**生成时间戳**与两侧来源路径
+
+> 验收沿原版自然玩家触发路径采集，并检查状态锚点和重复/陈旧帧；教学与遮暗分别标明。状态机应编排真实输入，强制改状态只能另作诊断截图，不能证明自然路径可玩。
+
+### 8.4 窗口类 UI 的采集注意事项
+
+- 打开弹窗要**等到窗口真的出现**再截图（弹窗构造有退场/入场动画）
+- 关闭弹窗要**等到没有真实窗口**再继续（有退场动画，立刻 push 下一个会被排队）
+- **只关真正的窗口对象，不要碰基础设施层**（淡出遮罩、输入拦截层）—— 碰了会让整个窗口系统失效
+
+## 9. 收尾清单
+
+- [ ] 尺寸 / 文件名 / 图集页尺寸 / 帧完整性 / **非美术文件逐字节**全过
+- [ ] 轻索引、分类、参考绑定和高风险装配证据齐全；按批次验收并列出未覆盖项
+- [ ] 仅契约指定条目锁alpha；视觉与文件契约分别验收
+- [ ] 真实相接顺序及整屏/上下大局部视觉无缝；不能仅依赖像素差
+- [ ] 玩法对象功能色可辨识；按项目要求量化
+- [ ] 实际游戏中交互区清晰，视觉层级符合目标
+- [ ] 背景保留基础结构和用户指定装饰，不套用未经验证的统一密度阈值
+- [ ] 按用户指定 H5/模拟器/真机来源，同路径对照并标明证据来源
+- [ ] 稳定性：确定性枚举入口 + 停摆检测，**修复后再跑一次原始复现路径**
+- [ ] 仅换美术时游戏代码/布局改动 = 0；壳必要差异单列，额外修复必须先获授权
+- [ ] 未解决项清单已附在交付报告里
+
+Tool: ['/workflow/prototype.md']
+Tool: ['/design/acceptance.md', '/design/reuse-baseline.json', '/design/visual-baseline.md']
+Tool: ['/reference-assets/just-original1.png', '/reference-assets/original-board-assembly.png', '/reference-assets/original-just-preview.png', '/reference-assets/original-super-preview.png', '/reference-assets/preview-provenance.json', '/reference-assets/rejected-background-no-reference.webp', '/reference-assets/rejected-background.json', '/reference-assets/research-board-runtime.json', '/reference-assets/research-dice-frames.json', '/reference-assets/research-index.json', '/reference-assets/super-background-atlas.png', '/reference-assets/super-board-atlas.png', '/reference-assets/super-token-dice-atlas.png']
+Tool: ['/public/assets/avatar-bot.png', '/public/assets/avatar-human.png', '/public/assets/background-purple.webp', '/public/assets/button-close.png', '/public/assets/button-confirm.png', '/public/assets/button-start.png', '/public/assets/dice-roll-00.png', '/public/assets/dice-roll-01.png', '/public/assets/dice-roll-02.png', '/public/assets/dice-roll-04.png', '/public/assets/dice-roll-05.png', '/public/assets/dice-roll-06.png', '/public/assets/dice-roll-08.png', '/public/assets/dice-roll-10.png', '/public/assets/dice-roll-11.png', '/public/assets/dice-roll-12.png', '/public/assets/dice-roll-13.png', '/public/assets/dice-roll-14.png', '/public/assets/dice-roll-15.png', '/public/assets/dice-roll-16.png', '/public/assets/dice-roll-17.png', '/public/assets/dice-roll-18.png', '/public/assets/dice-roll-20.png', '/public/assets/dice-roll-21.png', '/public/assets/dice-roll-23.png', '/public/assets/dice-roll-24.png', '/public/assets/ring-landing.png', '/public/assets/ring-selected.png', '/public/assets/seat-blue.png', '/public/assets/seat-green.png', '/public/assets/seat-red.png', '/public/assets/seat-yellow.png', '/public/assets/sound-capture.mp3', '/public/assets/sound-home.mp3', '/public/assets/sound-roll.mp3', '/public/assets/sound-step.mp3', '/public/assets/super-background-atlas.png', '/public/assets/super-board-atlas.png', '/public/assets/super-token-dice-atlas.png']
+AI: [{'name': 'read_file', 'args': {'file_path': '/workflow/prototype.md', 'offset': 0, 'limit': 220}, 'id': 'call_QK0QLX7Yv9N0jSkeX3cQsOYF', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/design/visual-baseline.md', 'offset': 0, 'limit': 220}, 'id': 'call_MAmIFnHJMzU6UVzyHIZLmXEV', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/design/acceptance.md', 'offset': 0, 'limit': 220}, 'id': 'call_ZBSIhAd56fjywR68aNRbvSxA', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/design/reuse-baseline.json', 'offset': 0, 'limit': 100}, 'id': 'call_08NtvGFnZHa710A7zQJfkkLl', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/rejected-background.json', 'offset': 0, 'limit': 100}, 'id': 'call_CPOxv82pK7WLAbcwX90x3AmX', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/original-super-preview.png', 'offset': 0, 'limit': 100}, 'id': 'call_ZVZxBsZdA5z4osIMJYHYWtwP', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/original-just-preview.png', 'offset': 0, 'limit': 100}, 'id': 'call_8K2Sz3ge2sZ1Ytikj1Ufu5Cb', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/original-board-assembly.png', 'offset': 0, 'limit': 100}, 'id': 'call_NFG5edx0OuVzk7K2w1qQ5E0d', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-index.json', 'offset': 0, 'limit': 180}, 'id': 'call_97JzckLhvm835XDDWueIGS3a', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-dice-frames.json', 'offset': 0, 'limit': 180}, 'id': 'call_ZcoaE944LOPn1DYJwjOxLJ2c', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-board-runtime.json', 'offset': 0, 'limit': 180}, 'id': 'call_3Y35YAeMVfLUFfhzFHlVYNMa', 'type': 'tool_call'}]
+Tool:      1	# LUDO · 原版贴图与动画版：原型定义
+     2	
+     3	阶段：prototype；attempt=1。仅定义规格，不确认、不发布、不写游戏实现。
+     4	
+     5	## 1. 范围与决策
+     6	
+     7	这是原版结构优先的轻换皮：Superstar 主视觉，Just 补充棋子/骰子材质与动作。保留标准 15×15 十字棋盘、红绿蓝黄功能色、四角圆营地、亮面立体棋子、上下头像/骰子座及紧凑竖屏。只编辑低风险背景小装饰或标题；中文程序字、通用 LUDO 标识，移除旧品牌、广告及商业入口。禁止圆形棋盘、北非题材、网页大卡片、整屏 AI 棋盘及大风景背景。
+     8	
+     9	本局循环：掷骰 → 展示骰子结果 → 从合法棋子中选择 → 逐格移动/吃子/归家演出 → 留席加掷或下一席 → 第一位达到目标者结算 → 再来一局。无金币成长、在线匹配、商业道具、限时失败或完整排名。局时未实测，不承诺分钟数。
+    10	
+    11	技术：原生 Canvas 2D 纹理/图集；规则、输入、渲染和时间演出分离，少量 DOM 语义按钮承担键盘与辅助触控。原 Cocos 包仅静态研究/提取，不运行商业 SDK，不加载 Cocos，也不编写通用引擎。最终独立路径 `ludo-classic-reskin/`，不覆盖原游戏。
+    12	
+    13	## 2. 既有核心是唯一规则真源
+    14	
+    15	已实际读取 `design/reuse-baseline.json` 和全部 `src/{rules,rng,ai,storage,lifecycle}.js`。清单记录上游 API Key / gpt-6.1-sol、run `f4dcc9b6e1de48c4a30af42ff1d2be24` 的来源与 SHA256；这些是引用基线，不是本轮新产物或本轮测试通过证据。
+    16	
+    17	| 决策 | 固定规格及已读接口 |
+    18	|---|---|
+    19	| 席位 | `ownersFor`：2席 `[0,2]`、3席 `[0,1,2]`、4席 `[0,1,2,3]`；至少一位真人。人机默认首席真人其余 AI，同屏全部真人；席位顺序轮转，首席由既有 RNG 选择。|
+    20	| 经典 | `classic`：每队4枚，初始全为 `progress=-1`；4枚全部到56者胜。|
+    21	| 快速 | `quick`：每队2枚，首枚进度0、另一枚-1；先有1枚到56者胜。没有吃子解锁归家或绕圈锁门。|
+    22	| 路径 | 公共环52格；单棋子公共进度0…50，51…55为5格私道，56为终点，共57个在盘进度。不要把“57进度”写成终点57。|
+    23	| 合法走法 | `targetProgress`：只有6能出营，出营仅到0，不再前进6格；在盘加骰子，必须≤56，超点不能选；已归家不能动。|
+    24	| 安全格 | `SAFE=[0,8,13,21,26,34,39,47]`，四起点与四星格；私道也安全。安全格可异色共存。|
+    25	| 叠子/吃子 | `legalMoves` 只检查最终普通公共格，敌方全部叠子回营；同色可叠、不组成路障，经过敌子不吃、不阻挡。私道不交叉吃子。表现偏移不得改变格号。|
+    26	| 回合奖励 | `bonusReasons`：6、吃子、归家任一理由留席加掷一次，多个理由不累计；胜利优先、无额外掷骰。无合法动作直接换席，即使掷到6。|
+    27	| 连六 | 第3个连续6保留在 `lastEvent.dice` 中并跳过，不撤销此前移动。非6或换席重置，动画不得重新抽点。|
+    28	| 状态/事务 | `awaitRoll → awaitMove → awaitRoll/finished`；ROLL可因无路或三连6直接换席。`dispatch` 同步一次提交移动、吃子、奖励、胜利和轮转，`revision`每成功动作+1。|
+    29	| RNG/AI | 原样复用 `mulberry32-v1` + `bounded` 拒绝采样、`freshSeed/seedFromSearch`；不重新设计公平随机。AI原样 `chooseMove`，只选合法动作，不消费或窥视未来 RNG。|
+    30	
+    31	保持 `createMatch/dispatch/makeAction/legalMoves/cellId` 及动作结构不变。代码阶段只做项目独立命名：`MATCH_KEY=ludo-classic-reskin:match:v1`、`SETTINGS_KEY=ludo-classic-reskin:settings:v1`；`rulesVersion` 在 rules创建与 storage校验两处同步换为 `ludo-classic-reskin-1`，拒绝旧项目档，不迁移旧页面/题材文字。中文旧“商队”错误提示改“玩家”，不改规则或接口。本轮不编辑上述源码。
+    32	
+    33	## 3. 十字坐标契约（设计映射，不是原包格号的直接拷贝）
+    34	
+    35	棋盘坐标 `(row,col)` 从左上0开始，向下/向右递增。公共 `P[0…51]` 按以下有序表；绝对格号来自 `cellId(owner,progress)`，不得再用圆形角度推导：
+    36	
+    37	```text
+    38	 0…12: (13,6),(12,6),(11,6),(10,6),(9,6),(8,5),(8,4),(8,3),(8,2),(8,1),(8,0),(7,0),(6,0)
+    39	13…25: (6,1),(6,2),(6,3),(6,4),(6,5),(5,6),(4,6),(3,6),(2,6),(1,6),(0,6),(0,7),(0,8)
+    40	26…38: (1,8),(2,8),(3,8),(4,8),(5,8),(6,9),(6,10),(6,11),(6,12),(6,13),(6,14),(7,14),(8,14)
+    41	39…51: (8,13),(8,12),(8,11),(8,10),(8,9),(9,8),(10,8),(11,8),(12,8),(13,8),(14,8),(14,7),(14,6)
+    42	```
+    43	
+    44	| owner/颜色/营地 | 出营点 | 私道51…55 | 56终点（三角内） |
+    45	|---|---|---|---|
+    46	| 0 蓝/左下 | P0=(13,6)，向上 | (13,7),(12,7),(11,7),(10,7),(9,7) | (8,7) |
+    47	| 1 红/左上 | P13=(6,1)，向右 | (7,1),(7,2),(7,3),(7,4),(7,5) | (7,6) |
+    48	| 2 绿/右上 | P26=(1,8)，向下 | (1,7),(2,7),(3,7),(4,7),(5,7) | (6,7) |
+    49	| 3 黄/右下 | P39=(8,13)，向左 | (7,13),(7,12),(7,11),(7,10),(7,9) | (7,8) |
+    50	
+    51	`progress<=50` 用 P[(13*owner+progress)%52]；51…56用所属私道/终点，内部格号52…75不作为P下标。公共P51真实存在，但蓝棋子由P50进入蓝私道，不能再绕P51；其他队同理。星标放P8/P21/P34/P47，起点箭头放P0/P13/P26/P39，不得把星号当唯一安全格。
+    52	
+    53	营地占四角6×6区；基准棋子中心/底座位置为左上 `(2,2),(2,4),(4,2),(4,4)`，其它角列或行+9。最终按原营地纹理四个圆孔作局部标定，保持处于同一角区、不改路径。格中心 `x=boardX+(col+.5)*cellSize`、`y=boardY+(row+.5)*cellSize`；棋子底座锚到格中心，图集 trim/offset 先还原再绘制。静态棋盘若有内边框，先确定有效网格内矩形再映射，不能把整张外边框当225格。
+    54	
+    55	## 4. 布局、资源和演出
+    56	
+    57	详细契约见 `design/visual-baseline.md`，运行门禁见 `design/acceptance.md`。主场景一屏包含棋盘、当前骰子、玩家头像与紧凑棋子选择条；桌面等比居中，不新增左右仪表盘。默认正常动画；“减少动态”为用户选项。演出只读已提交结果、先存后播，动画结束只解锁不再次派发动作。刷新不重掷、不重播已提交旧动作；隐藏/暂停/重开取消旧演出及AI，返回按已提交局面继续。
+    58	
+    59	## 5. 本轮真实证据与参考取舍
+    60	
+    61	参考根 `ref/公司skill整合/AHAgames/`，简称 S=`94034_Ludo_Superstar/Ludo_Superstar.zip`、J=`82251_Just_Ludo/Just_Ludo.zip`。两份 gameInfo已通过read_reference读取。ZIP只分页定位和局部读取，没有整包解压/运行。
+    62	
+    63	| 证据 | SHA256 / 实际读取范围（字符，左闭右开） | 采用与排除 |
+    64	|---|---|---|
+    65	| S ZIP | `9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7` | 主视觉与动作依据 |
+    66	| J ZIP | `190f2525f6b18b7104b5ee5fe28eb91d52996b2d73c9a4b2e8f73311be72de55` | 补充材质/动作依据 |
+    67	| S `www.hnyigegame.com/Ludo_Superstar/game/scripts/assets/main/index.a298e.js` | `5fce66c3a08c152c3b3a05957862b8d164c84e82136abea07145336bfde91762`；0…21000、125000…141000、236000…254000 | canChessWalk/getWalkPathArray证明6出营、精确终点；playChessWalkAnim移动与scale、playBeEatenAnim逆路回营。MapGrid原包只吃单枚，锁门/火箭/护罩/LuckManager改概率等全部不移植，项目仍用已有核心吃敌叠子。|
+    68	| J `www.volcanoh5game.com/Just_Ludo/assets/main/index.js` | `3334a9a60e060753ae65d2c89ab51376d5cfcd72f614efbe2c9ab9d3dd7d4c0f`；60500…86000 | canWalk、playWalkAnim、playBeEatenAnim与出营；保留动作质感，不带幸运调整与商业逻辑。|
+    69	| S `game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json`（以上S主机路径前缀） | `759c137bf862a76d6ae487daa0f7817dcd03cda7587d7e10ac7e45713eda9c08`；全文6193字符 | dice_anim=0.833333s、30fps，0…0.8s共25个非负时间关键帧；另有-0.133333预置关键帧，不误作首播放帧。|
+    70	| S resources目录 | `game/loading/assets/resources/config.0bf53.json` 哈希 `400b7586462e8b88a8066bc32aba935edc4b2ffbf82af5e5b24cb6a08801b66b`；0…11000、33000…46671 | paths/UUID/packs/version连接语义名与实际native资源；非全部配置审计。|
+    71	| J resources目录 | `assets/resources/config.json` 哈希 `54cda02a5b1d70075ae8790923397194569a0c431fe820ace735e31144e60be9`；全文 | original1图集、棋子/骰子Prefab与音效路径定位。|
+    72	
+    73	两张预览已通过read_file实际查看：`reference-assets/original-super-preview.png`（SHA256来源记录为 `6d59c85086cafd2920fe0d70c45c8ffc8cfdec0876f8018ffa8baaef596542bb`）与 `original-just-preview.png`（`8c60cd75cc5332c6d6df92d0e732f4ab87ece2b35082129da3265df11d29931f`）。源与帧序见已读 `reference-assets/preview-provenance.json`：分别原preview.gif第13/17帧，只作视觉对照，不是棋盘素材或本轮运行截图。
+    74	
+    75	已读冻结 Skill完整入口：casual-game-production、ai-art-automation；配套已读 company-capabilities 与 ui-runtime-delivery；已读四份冻结知识 general、board-games、web-common、canvas-web。美术明确走复用/局部API编辑，不套默认新题材风格。下轮美术应显式补选 `azure-image2-generation/SKILL.md`（AI生图与素材换皮）及 `game-reverse-engineering/modules/h5-canvas-reskin/SKILL.md`（H5Canvas换皮）；它们不在本轮冻结选择内，本轮未自行扩读或声称采用其全文。
+    76	
+    77	## 6. 产物、核验及限制
+    78	
+    79	本轮新产物仅 `workflow/prototype.md`、`design/visual-baseline.md`、`design/acceptance.md`；已有src与预览未改动。真实完成的是文件/图片读取、ZIP局部代码和资源配置核对及规格书面一致性检查。
+    80	
+    81	未执行npm run build/npm test/npm run check：当前是原型阶段且没有package.json、页面、脚本或dist；不存在本轮运行通过、动画截图或包体通过结果。下游必须在最终源码/资源修改后真实执行三条验证，check只访问最终dist且验证后不改dist。未生成图片、未提取运行资源、未商业授权核验、未运行参考引擎/SDK、未真机验收；原包素材为用户提供库来源，不凭“公司素材”推定外部商业授权。
+    82	
+    83	两次参考条目读取失败如实记录：骰子配置最初误用 `game/assets/resources/import/...`，纠正为 `game/loading/assets/resources/import/...` 后全文读取成功；`loading/.../0b931a73e.89ff3.json` 不存在，未据此声称读取成功，头像/提示特效精确native定位交给美术阶段。以上不是规则实现缺陷，也不把文档计划当实现完成。
+Tool:      1	# 原版视觉与资源复用基线
+     2	
+     3	本文件为原型规格，以下运行路径均为计划；本轮没有提取、生成或合入资源。
+     4	
+     5	## 1. 画面基准与布局
+     6	
+     7	实际看过 `reference-assets/original-super-preview.png`：暗紫菱形低对比底、近满宽棋盘、红左上/绿右上/蓝左下/黄右下、浅圆营地、立体亮面棋子，上方与下方骰子座及小头像。Just预览的蓝底、粗金边、大品牌标题和四周大头像不整体移入；仅作为棋子高光、骰子厚度与动作补充，不抢占棋盘面积。
+     8	
+     9	逻辑场景默认360×600，等比完整展示；棋盘有效15×15网格内矩形 `(12,126,336,336)`，格22.4单位（外框在其外侧少量留边，加载实图后标定）。顶部0…44放小LUDO/设置入口，44…118放红、绿玩家头像/骰子座；棋盘126…462；470…544放蓝、黄头像/骰子座；550…594放紧凑合法棋子编号条/一句状态。四席仅激活当前座骰子按钮，其余显示静态座；两席蓝下方、绿上方，缺席营地仍保持原版结构。
+    10	
+    11	手机按 `min(可用宽/360,可用高/600)` 等比缩放，扣除安全区；320×568、360×640、390×844一屏同时看完整棋盘和可掷骰子，不滚动寻找操作。桌面1280×800保持同一场景等比居中、两侧仅底色，不改成后台布局。矮屏优先压缩空隙/标题、保棋盘与骰子，不拉伸纹理。CSS画布、内部DPR（建议封顶2）与指针坐标用同一变换。
+    12	
+    13	主骰子、设置、重开及编号选择按钮最少44×44 CSSpx（缩放后仍需达标）。棋子贴图本身不能普遍达到44px：支持棋盘自然点子，同时在底部提供最多4个44px语义编号按钮，使用同一合法动作；相邻或叠子有歧义时不得扩大相互覆盖命中区后随机选。编号条是贴近HUD的小控件，不是网页大卡片。Tab/Enter/Space可操作，状态有中文aria-live，音效可关闭、首交互解锁。
+    14	
+    15	## 2. 已定位资源 → 计划运行引用
+    16	
+    17	前缀约定：SZIP=`ref/公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip`；SJ=`www.hnyigegame.com/Ludo_Superstar/game/`。JZIP=`ref/公司skill整合/AHAgames/82251_Just_Ludo/Just_Ludo.zip`；JJ=`www.volcanoh5game.com/Just_Ludo/`。表中的帧来源是已读普通ZIP条目，不是运行文件。由config的UUID、native版本和packs静态解析实际PNG；哈希/尺寸/alpha未实测时不填写假值。
+    18	
+    19	| 原路径 / 帧 | 计划运行路径 → 用途 | 处理与已知契约 |
+    20	|---|---|---|
+    21	| SZIP `SJ loading/assets/resources/import/0f/0f000441e.f6f55.json`，skin3-0.plist / `original_img_center_blue` | `public/assets/original/super-board-atlas.png` + `super-board-frames.json` → 棋盘底与中心 | imported，保留；rect[1445,1187,586,585]、originalSize586×585、offset0。需实看native确认底图是否已含营地/标记，避免双画。不是skin_original_board商店缩略图。|
+    22	| 同上 `original_img_base_bg_hong/huang` | 同一原图集 → 红/黄圆营地 | imported，保留；233×233、rect[1405,1774,233,233]/[1640,1774,233,233]。蓝/绿对应实际帧待美术局部定位，不能擅自用新图替代。|
+    23	| 同上 `original_img_wujiaoxing`、`original_img_sanjiao_*` | 同一图集 → 四星安全格和四色起点箭头 | imported，保留；星27×26；红/黄15×17、蓝/绿17×15。移除barrier显示，不用其15×33贴图暗示锁门。|
+    24	| SZIP `SJ loading/assets/resources/import/0b/0b0754561.b16fd.json`，skin1.plist / `original_img_chess_*` | `public/assets/original/super-token-dice-atlas.png` + frames.json → 四色棋子 | imported，保留高光和软alpha；蓝32×53（rotated）、红32×52（rotated）、绿/黄33×53。蓝rect[894,298,32,53]、红[949,298,32,52]、绿[932,117,33,53]、黄[897,117,33,53]，offset0。按原尺寸还原，底座锚到格中心，不把整图中心当底座。|
+    25	| 同上 `original_dice_points_1…6` | 同一原图集 → 最终骰子点数，不决定随机 | imported；采样104×106、originalSize220×220、offset[4,3]。六个rect按点数为[1198,390]、[1304,390]、[1221,115]、[1324,1]、[1312,223]、[1327,109]，宽高均104/106；不得抹掉trim空白再误用旧锚点。|
+    26	| SZIP `SJ loading/assets/resources/import/0c/0c67ce8ea.b217e.json` / dice_anim | `public/assets/original/super-dice-frames/` + `dice-animation.json` → 真实翻面序列 | imported；0…24号合成帧，originalSize220×220，逐帧rect与offset不同；dice0原Size200×200。由clip引用关系还原顺序，不按包条目/JSON存放顺序排序；不纳入负时间预置帧作为播放帧。|
+    27	| S config `ZiYuan/cmn/img_game_my_bg` / `img_game_other_bg` 与PlayerInfo相关头像 | `public/assets/original/super-hud/` → 上下座框和小头像 | imported；已定位语义路径，具体native/头像帧、尺寸/alpha/锚点美术阶段解析与视觉核验。只选实际离线库文件，不联网补头像；缺少可复用头像如实报告，不假装已提取。|
+    28	| S config `Music/roll_dice`、`chess_walk`、`chess_be_eaten`、`chess_arrive_terminal`、`settlement_win` | `public/assets/audio/{roll,step,capture,home,win}.mp3` → 对应动作音效 | imported，首选S；roll真实native为 `SJ assets/resources/native/f0/f08dedb0-3c9e-4f7b-b58b-9ebf05f7c389.ed0db.mp3`，step=`.../a8/a889c8f7-f51b-405e-9030-9328fba1b580.521b7.mp3`，capture=`.../a2/a2ce3d23-f7c7-4ad7-a2be-f6253f365ffd.28ae1.mp3`，home=`.../f1/f1064f67-47ba-479e-997e-844354533849.5bd25.mp3`，win的精确native成员尚未定位，需逐件确认不猜路径。|
+    29	| JZIP `JJ assets/resources/import/0e/0e9b645a7.json` / original1.plist；texture UUID=`68DmCYgNJIuLOlzCesMAFa`，已列native `JJ assets/resources/native/68/680e6098-80d2-48b8-b3a5-cc27ac30015a.png` | `reference-assets/just-original1.png`；必要补充时 `public/assets/original/just-original1.png` + frames.json | imported，主要材质校准/备用，不混用两套锚点。营地236×236，棋子originalSize34×56（红采样34×54且rotated），dice2…6采样96×96、originalSize150×150、offset[-5,-9]；dice1在其它pack，未核对不猜。|
+    30	| S原版低对比紫底装饰/标题母版（精确native待美术定位） | `public/assets/reskin/{background-detail,title}.png` → 小装饰/中性LUDO标题 | 仅局部API编辑，标api-edited；底色与格局不换题材。先读取真实母版、API传reference_paths、保持输出尺寸/alpha/锚点；标题不烤中文动态HUD。若原底仅程序底色，可直接保留程序底与实际纹理，仅编辑标题，不能生整屏图。|
+    31	| 原版落点圈/terminal或success必要特效（S config已定位Prefab/Animation/terminal/Terminal、settlement/success/Success） | `public/assets/original/effects/` + effect-frames.json → 落点/归家/胜利 | 优先imported少量真帧；禁止整套表情/商店动画包。所需闪光/彩纸运动可Canvas轻量程序化补充，标procedural；不能称API图片或伪造源帧。|
+    32	
+    33	已读图集配置SHA256：S skin1 `f29f427236703e9498d821db0e00322c2e09ad70ed5ca194efd3fc370ff60771`；skin3-0 `578a950e708b5ad497df00e052c340b6f340b73d8d3e6387b2efa1563f0b9d2b`（已读0…8500/9861字符）；J original1 `b7dc298a89ed2b550516133a6a4c4989ac6fe4f9a5b001e9a9b7062c0ea152a4`全文。S skin2 pack已读全文，仅商店板缩略/皮肤预览，不作为游戏主板替代。
+    34	
+    35	## 3. 美术阶段交接门禁
+    36	
+    37	实际采用已选AI美术自动化工作法，补选AI生图与素材换皮、H5Canvas换皮入口；排除默认新题材风格模块。只用工程图片API `generate_art_image` 和真实参考图编辑，不走Codex登录、其它Key或外部CLI；本轮未生成。
+    38	
+    39	美术开始先inspect_assets。只提取选定native和研究配置，不整包解压、不执行参考脚本；素材下public/assets，研究代码只能reference-inputs且不进dist。最终 `workflow/art-manifest.json` 必须非空真实资源清单，每件path、实际sha256、usage、source，并记录imported/api-edited/procedural分类。另补原ZIP成员→原帧→运行文件→渲染用途的逐件映射；本表不能冒充完成清单。
+    40	
+    41	对每件实测宽高、RGBA/alpha统计、透明边缘白/深/实景对照，保留rect、originalSize、offset、rotated、capInsets、锚点与帧序。不重排图集，不未经授权trim/旋转素材；Canvas采样旋转帧需明确解旋转。派生JSON仅是Canvas资源适配，不称Cocos原生图集。API原始输出、参考哈希、提示词、局部编辑范围、后处理与正式文件哈希均保留。高风险功能资源全部保留，无整屏生图校准步骤。原库授权状态未独立核实，来源如实写用户提供参考库。
+    42	
+    43	## 4. 真实时间动画（下游必须实现）
+    44	
+    45	| 演出 | 正常速度规格 |
+    46	|---|---|
+    47	| 骰子 | 默认833ms（允许600…900ms），30fps原帧序翻面，叠加小幅弹跳/落座；终帧显示dispatch的lastEvent.dice，包括三连6/无路时。动画纹理不能选择骰子结果。|
+    48	| 移动 | 每格110ms（允许90…130ms）；按from到to逐格走，营地→0只一跳。每段弧线h约0.25…0.4格，缩放建议1→1.15→1；底座阴影与落点圈120…180ms反馈。原S移动是0.2×速度并放大至1.8，另每段间隔0.1s；本项目采用更克制幅度与无额外100ms停顿，是明确的表现取舍，不声称逐帧原样移植。|
+    49	| 吃子 | 落点先80…120ms碰撞/闪圈，再按被吃棋子在提交前的进度逆向逐格回到0，再回原营地；逆路每段30ms，末段100ms easeOut。敌叠子全部演出、可同步退回，不改规则。|
+    50	| 归家 | 最后一跳到对应三角终点，300…450ms局部闪光/落点反馈，已归家棋子小范围整齐叠放或计数，不覆盖其它色终点。|
+    51	| 胜利 | 归家后800…1200ms克制彩纸，500ms内开始可见；结束显示Canvas结算与44px“再来一局”语义按钮，不显示金币/广告奖励。|
+    52	| 提示 | 当前头像边框及合法棋子1.2…1.6s呼吸，alpha/scale变化克制，不持续大圈旋转；减少动态时停止呼吸、瞬时对齐已提交状态，规则不变。|
+    53	
+    54	TaskGate继续管理AI；表现新增小型rAF时间轴与演出epoch（不是重写引擎）。成功动作先同步提交/保存一次，再用提交前后只读快照播；busy期间棋子/骰子/AI锁住，设置/暂停/重开仍可操作。隐藏或暂停取消时间轴和音效并立即对齐已提交结果，不后台补播；恢复后调度恰好一次下一步AI。重开换matchId/epoch、清理旧帧/计时器；刷新加载合法存档，不根据lastEvent重发或重播旧动作。长帧不无限补绘逐格，恢复按取消策略处理。只读动画事件见验收规格。
+Tool:      1	# 运行验收条件（待代码/测试阶段执行）
+     2	
+     3	本轮仅制定门禁，无运行成功或截图产物。测试阶段复核已确认代码/资源，不修改上游；发现缺陷应失败并返回代码阶段修复、重验与确认。
+     4	
+     5	## 1. 规则与坐标
+     6	
+     7	复用src已有纯核心及接口，添加必要测试，不重新审计全ZIP、不重写RNG。
+     8	
+     9	- 经典/快速 × 2/3/4席，种子可复现完整规则对局到finished；至少包含同屏与人机席位设置。检查每步validateState、合法AI、revision单增、骰子只由ROLL消耗RNG；达到规则目标后唯一winner，设置明确动作预算并把停滞报失败。
+    10	- 覆盖6出营只到0、1…5不能出营、56精确到家/超点/已归家不能动；跨50→51→56私道边界；快速一枚已在0、一枚在营，第一枚到家胜；经典第四枚到家胜。
+    11	- 四起点/四星安全，安全格异色共存、同色叠子、普通落点敌叠子全吃、经过不吃也不阻挡、私道互不吃；六/吃/归家多个原因仅留席一次、胜利无加掷、无路跳过、第三个6不动且不撤销前两次。
+    12	- 不改随机接口：测试bounded拒绝采样边界、种子/状态复现、MOVE和chooseMove不改变rng；现有统计若另做只写样本量/实测结果，不以短期骰面频次或AI胜率证明绝对公平。
+    13	- P数组52个唯一公共格、8个SAFE对应4箭头+4星；每owner进度0…56均映射到规定格。四队起点偏移13、进度50进入自己私道51而非继续公共末格；每段相邻行列差绝对值≤1（十字转角允许斜邻），私道与中心三角色一致。
+    14	- 营地-1独立4孔，56分属四色终点；叠子位置偏移仅表现不更改cellId。不能把图集外边框当网格或使用旧圆形坐标。
+    15	
+    16	## 2. 浏览器自然输入与视觉
+    17	
+    18	check须真实启动隔离端口静态服务器，只访问最终dist/index.html及相对包内资源，try/finally停止服务器；Chromium真实启动，桌面1280×800与手机390×844，补320×568/360×640布局与DPR1/2命中检查。工具prepare_web_runtime只能安装依赖，安装本身不是浏览器通过。
+    19	
+    20	- 由初始菜单真实点击模式、席位与开始；点当前骰子、棋盘上合法棋子，桌面鼠标/手机触控路径都验；小棋子/叠子另验证44CSSpx编号按钮，不只用内部dispatch。
+    21	- 正常动作流程显示原版棋盘、四色圆营地、实际贴图高光、上下头像/骰子座；主板和骰子一屏可见无滚动，桌面完整等比场景；无大卡片/北非/圆形主题、旧品牌/商业按钮。
+    22	- 模式/人数矩阵纯规则完整跑；真实UI至少经典与快速各到结算，覆盖2席人机和4席同屏完整局，3席进入并轮转。全局可使用减少动态加速，但另有正常动画专门门禁。
+    23	- 允许固定seed复现、只读状态/合法动作观测以指导自然点击，不注入棋子进度、不强制骰子或winner；预找能自然形成吃子/归家的种子与动作序列，按真实输入走到目标。单测可构造边界局，不能借单测夹具冒充UI对局。
+    24	- Tab/Enter/Space能掷骰/选子；aria-live报当前玩家和骰子；设置音效、减少动态可见且存档。加载失败有诊断及重试，音频未解锁不引发异常。
+    25	
+    26	## 3. 正常速度动画硬门禁
+    27	
+    28	必须显式关闭“减少动态”，不能修改动画速度、虚拟时钟或只等end再截图。用performance时间戳+rAF真实绘制证据；截图/像素变化必须发生在动作精灵区域，排除呼吸和背景噪声。
+    29	
+    30	建议只读观测 `animationEvents`：每项含matchId、revision、epoch、kind（dice/walk/capture/home/victory）、stage（start/frame/step/end/cancel）、performance时间、pieceId、stepIndex、frameId、progress及渲染位置。观测不可接受命令、不可改骰子/规则。事件由真实rAF绘制后记录，限制环形缓冲容量；日志不能自行证明画面。
+    31	
+    32	| 项目 | 截图与数据须同时满足 |
+    33	|---|---|
+    34	| 骰子 | start、约150/400/650ms中间帧、end；总600…900ms，至少3个实际不同spriteFrame与骰子ROI非零像素差、弹跳位移，最终点数等于已提交ROLL事件。|
+    35	| 多格棋子 | 自然走出至少3格动作，捕获至少3个不同中间时点（例如首段55ms、第二段55ms、第三段55ms）及终点；step事件顺序等于坐标路径，每格90…130ms，至少一帧位于格间/弧线顶端，不可全部落点瞬移。统计每段真实采样和ROI像素差。|
+    36	| 吃子 | 碰撞前、碰撞反馈、逆路中间、回营后；读提交前被吃进度和capturedIds，全被吃棋子逆路位置可见，30ms/段+末100ms，最终核心已在-1且不二次结算。|
+    37	| 归家 | 最后一跳中间、闪光峰值约150…250ms、闪光消退；home300…450ms，ROI有可见变化，56位置/归家计数正确。|
+    38	| 胜利 | 彩纸至少2个中间帧（如250/650ms）、结算；800…1200ms且真实像素/粒子位置变化，唯一winner与规则目标相符。|
+    39	| 提示/减少动态 | 等待时合法棋子/当前头像克制呼吸；开启减少动态后不持续呼吸、相同种子与相同合法动作得到相同状态/RNG/胜者。减少动态整局通过不能代替上五项。|
+    40	
+    41	截图采集调度延迟须记录实际时间；高抖动导致无法判断每格窗口时重采，不伪称精确帧率验收。保留完整Canvas截图、ROI差异数字和事件JSON互证；字节哈希变化但ROI仅HUD变不算棋子动画通过。
+    42	
+    43	## 4. 生命周期、存档与多次点击
+    44	
+    45	骰子动画、移动中间、吃子退回各执行快速连点（不少于10次，含骰子/棋子混点与Pointer cancel/多指）、暂停/隐藏、重开；分别比较revision、stats与rng：每合法意图仅一次动作，busy无重复落子/重抽点。暂停/隐藏期间取消演出与AI且停止音效，恢复对齐已提交状态，只调度一次有效下一动作。
+    46	
+    47	ROLL动画中刷新：恢复已掷骰/跳过后的提交状态，不重新抽点；MOVE/吃子中刷新：直接呈现已提交终局位置，不根据lastEvent重播/再次吃子。已finished刷新保留胜者但不重复奖励。重开后旧matchId/revision/epoch的rAF、AI计时器与结束回调不得修改新局，旧动画事件只能cancel不能出现跨局end提交。
+    48	
+    49	只保存合法规则状态与必要设置，不存rAF坐标或待执行MOVE。专用键 `ludo-classic-reskin:match:v1` / `settings:v1`，规则标识同步独立；错误/旧档拒绝并可见提示。测试存储禁用/损坏/写失败，持续“进度未保存”反馈直到真实写成功或成功清理；旧amber键既不读写也不清除，保留原游戏。
+    50	
+    51	## 5. 交付与证据目录
+    52	
+    53	代码阶段编写并跑通真实build/test/check脚本；测试阶段同样在本attempt重新运行：
+    54	
+    55	1. `run_validation("npm run build")`：生成最终dist，入口index.html；展开总量严格<10,000,000字节，记录实际值；不含reference-inputs、源商业SDK、CDN/远端字体/绝对路径。
+    56	2. `run_validation("npm test")`：规则、坐标、AI/RNG、存档与生命周期测试；真实退出码/数量/失败日志。
+    57	3. `run_validation("npm run check")`：真实浏览器访问该最终dist，自动服务器启停、上述点击/动画/暂停/刷新和结算、控制台error/pageerror、资源请求失败、截图与ROI比较；任一门禁不满足以非零退出。
+    58	
+    59	最后源码/资源变更后重跑三条；check完成后禁止重建或改dist，报告/evidence可补写。记录源码、资源与最终dist指纹、浏览器版本、视口、DPR、种子和动作轨迹；建议evidence/{rules-summary.json,browser-summary.json,animation-events.json,animation-pixels.json,screenshots/}，名字是计划不是现有产物。测试失败返回上游修复，不在测试阶段修改资源/源码。
+    60	
+    61	原型本轮的真实证据只在工具读取记录与prototype第5/6节；无npm、截图、UI完整局、动画、真机、授权或部署通过结果。最终只能依据真实结果报告对应覆盖，不把桌面/模拟手机Chromium通过称真机验收。
+Tool:      1	{
+     2	  "files": [
+     3	    {
+     4	      "path": "src/rules.js",
+     5	      "source": "games/amber-caravan-api/src/rules.js",
+     6	      "sha256": "e140e1868705572ac1861a79eedc6f9e40f26173ea655c56c7315a44b4ee5a80",
+     7	      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+     8	      "source_provider": "api-key",
+     9	      "source_model": "gpt-6.1-sol",
+    10	      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    11	    },
+    12	    {
+    13	      "path": "src/rng.js",
+    14	      "source": "games/amber-caravan-api/src/rng.js",
+    15	      "sha256": "cdeed4a89d98d2a8fcc51884454fa33ff705fd8c95faa00cc9e483f37cadd5ee",
+    16	      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+    17	      "source_provider": "api-key",
+    18	      "source_model": "gpt-6.1-sol",
+    19	      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    20	    },
+    21	    {
+    22	      "path": "src/ai.js",
+    23	      "source": "games/amber-caravan-api/src/ai.js",
+    24	      "sha256": "d22dff0ca47b21b54c9acccf558e926251421606628192b97fbdb8791cb19157",
+    25	      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+    26	      "source_provider": "api-key",
+    27	      "source_model": "gpt-6.1-sol",
+    28	      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    29	    },
+    30	    {
+    31	      "path": "src/storage.js",
+    32	      "source": "games/amber-caravan-api/src/storage.js",
+    33	      "sha256": "a6816f491237c769ba3ea8a2005b98e0fae82ed1acf3fe39e21d31d762fdf9c1",
+    34	      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+    35	      "source_provider": "api-key",
+    36	      "source_model": "gpt-6.1-sol",
+    37	      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    38	    },
+    39	    {
+    40	      "path": "src/lifecycle.js",
+    41	      "source": "games/amber-caravan-api/src/lifecycle.js",
+    42	      "sha256": "24c2e15c1f93a2d6f0e2ea63047d6d2f03f086e888fcf0fa4b7709943ec20742",
+    43	      "source_run_id": "f4dcc9b6e1de48c4a30af42ff1d2be24",
+    44	      "source_provider": "api-key",
+    45	      "source_model": "gpt-6.1-sol",
+    46	      "purpose": "复用已验收纯逻辑，不含页面、美术或圆形地图"
+    47	    }
+    48	  ],
+    49	  "note": "初始化时复制已验证API产物，后续改动由当前API工作流执行；不冒充本轮新写文件。"
+    50	}
+Tool:      1	{
+     2	  "path": "reference-assets/rejected-background-no-reference.webp",
+     3	  "sha256": "9d6c4c5b541c96b7d785f0e22e2988961898d681a3fb119864d5bb76009493f6",
+     4	  "reason": "原包PNG扩展实际WEBP导致参考验证失败后，运行退回无参考生成；该候选不符合局部参考图编辑要求，已从运行资源目录移出，不得用于最终游戏。",
+     5	  "run_id": "2c30a5ff7d2e41e59899b8ef099359cc"
+     6	}
+Tool: 
+Tool: 
+Tool: 
+Tool:      1	{
+     2	  "notice": "辅助研究定位索引，来自原始ZIP静态解析；本轮API Agent须实读对应条目/实际提取并核验，不把索引当作已经产出或测试。",
+     3	  "superstar_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+     4	  "just_zip": "公司skill整合/AHAgames/82251_Just_Ludo/Just_Ludo.zip",
+     5	  "atlases": [
+     6	    {
+     7	      "role": "棋盘与骰子展示图集",
+     8	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c3/c3a0e2ba-ed87-489d-a80f-d02962295399.c8c8d.png",
+     9	      "size": [
+    10	        1787,
+    11	        850
+    12	      ],
+    13	      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/058d1eea5.18141.json",
+    14	      "sha256": "221983bdbd05875ca1a22ecb1b0634bf416a2cf676ea4667e7d32e494025a2e6",
+    15	      "bytes": 184292
+    16	    },
+    17	    {
+    18	      "role": "棋子与六点数图集",
+    19	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/8d/8d3956e8-a178-443d-91c2-bf2d36409e71.116ce.png",
+    20	      "size": [
+    21	        1432,
+    22	        512
+    23	      ],
+    24	      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+    25	      "sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1",
+    26	      "bytes": 125874
+    27	    },
+    28	    {
+    29	      "role": "紫色背景与蓝绿营地图集",
+    30	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/51/5115ecbc-d727-4655-84ac-e700038972d5.b2713.png",
+    31	      "size": [
+    32	        721,
+    33	        1837
+    34	      ],
+    35	      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+    36	      "sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c",
+    37	      "bytes": 9904
+    38	    },
+    39	    {
+    40	      "role": "路径与红黄营地/非旋转棋子图集",
+    41	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+    42	      "size": [
+    43	        2038,
+    44	        2008
+    45	      ],
+    46	      "metadata": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+    47	      "sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb",
+    48	      "bytes": 229924
+    49	    }
+    50	  ],
+    51	  "frames": [
+    52	    {
+    53	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+    54	      "frame": {
+    55	        "name": "original_dice_points_5",
+    56	        "rect": [
+    57	          1312,
+    58	          223,
+    59	          104,
+    60	          106
+    61	        ],
+    62	        "offset": [
+    63	          4,
+    64	          3
+    65	        ],
+    66	        "originalSize": [
+    67	          220,
+    68	          220
+    69	        ],
+    70	        "capInsets": [
+    71	          0,
+    72	          0,
+    73	          0,
+    74	          0
+    75	        ]
+    76	      }
+    77	    },
+    78	    {
+    79	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+    80	      "frame": {
+    81	        "name": "original_dice_points_3",
+    82	        "rect": [
+    83	          1221,
+    84	          115,
+    85	          104,
+    86	          106
+    87	        ],
+    88	        "offset": [
+    89	          4,
+    90	          3
+    91	        ],
+    92	        "originalSize": [
+    93	          220,
+    94	          220
+    95	        ],
+    96	        "capInsets": [
+    97	          0,
+    98	          0,
+    99	          0,
+   100	          0
+   101	        ]
+   102	      }
+   103	    },
+   104	    {
+   105	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   106	      "frame": {
+   107	        "name": "original_img_chess_lan",
+   108	        "rect": [
+   109	          894,
+   110	          298,
+   111	          32,
+   112	          53
+   113	        ],
+   114	        "offset": [
+   115	          0,
+   116	          0
+   117	        ],
+   118	        "originalSize": [
+   119	          32,
+   120	          53
+   121	        ],
+   122	        "rotated": 1,
+   123	        "capInsets": [
+   124	          0,
+   125	          0,
+   126	          0,
+   127	          0
+   128	        ]
+   129	      }
+   130	    },
+   131	    {
+   132	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   133	      "frame": {
+   134	        "name": "original_dice_points_1",
+   135	        "rect": [
+   136	          1198,
+   137	          390,
+   138	          104,
+   139	          106
+   140	        ],
+   141	        "offset": [
+   142	          4,
+   143	          3
+   144	        ],
+   145	        "originalSize": [
+   146	          220,
+   147	          220
+   148	        ],
+   149	        "capInsets": [
+   150	          0,
+   151	          0,
+   152	          0,
+   153	          0
+   154	        ]
+   155	      }
+   156	    },
+   157	    {
+   158	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   159	      "frame": {
+   160	        "name": "original_img_chess_hong",
+   161	        "rect": [
+   162	          949,
+   163	          298,
+   164	          32,
+   165	          52
+   166	        ],
+   167	        "offset": [
+   168	          0,
+   169	          0
+   170	        ],
+   171	        "originalSize": [
+   172	          32,
+   173	          52
+   174	        ],
+   175	        "rotated": 1,
+   176	        "capInsets": [
+   177	          0,
+   178	          0,
+   179	          0,
+   180	          0
+Tool:      1	{
+     2	  "clip_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json",
+     3	  "duration": 0.8333333333333334,
+     4	  "fps": 30,
+     5	  "frames": [
+     6	    {
+     7	      "name": "dice0",
+     8	      "rect": [
+     9	        64,
+    10	        60,
+    11	        75,
+    12	        75
+    13	      ],
+    14	      "offset": [
+    15	        1.5,
+    16	        2.5
+    17	      ],
+    18	      "originalSize": [
+    19	        200,
+    20	        200
+    21	      ],
+    22	      "capInsets": [
+    23	        0,
+    24	        0,
+    25	        0,
+    26	        0
+    27	      ],
+    28	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c8/c87d751a-f149-42ec-9b66-e0395a5bb7a8.8c81d.png",
+    29	      "sha256": "c08f1c19d855d74cdb6b0f964725589aef6ceb958dbfc2cd70a1485fe5bd2684"
+    30	    },
+    31	    {
+    32	      "name": "合成_00000",
+    33	      "rect": [
+    34	        63,
+    35	        56,
+    36	        102,
+    37	        103
+    38	      ],
+    39	      "offset": [
+    40	        4,
+    41	        2.5
+    42	      ],
+    43	      "originalSize": [
+    44	        220,
+    45	        220
+    46	      ],
+    47	      "capInsets": [
+    48	        0,
+    49	        0,
+    50	        0,
+    51	        0
+    52	      ],
+    53	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/c7/c71fb354-27a0-43d9-be42-30df1cfe9bda.26f6a.png",
+    54	      "sha256": "ec14c8260494e0541778a316caa565cc8914d899996970cbdb752c8829b115f3"
+    55	    },
+    56	    {
+    57	      "name": "合成_00001",
+    58	      "rect": [
+    59	        59,
+    60	        49,
+    61	        114,
+    62	        120
+    63	      ],
+    64	      "offset": [
+    65	        6,
+    66	        1
+    67	      ],
+    68	      "originalSize": [
+    69	        220,
+    70	        220
+    71	      ],
+    72	      "capInsets": [
+    73	        0,
+    74	        0,
+    75	        0,
+    76	        0
+    77	      ],
+    78	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/cd/cdc29db7-0466-4795-9a4c-99c8252e74a7.cc6df.png",
+    79	      "sha256": "4d22cfa7ca59c1a4e05cbf0f14318220d8c0458444662ceec8134f745585032f"
+    80	    },
+    81	    {
+    82	      "name": "合成_00002",
+    83	      "rect": [
+    84	        53,
+    85	        51,
+    86	        122,
+    87	        113
+    88	      ],
+    89	      "offset": [
+    90	        4,
+    91	        2.5
+    92	      ],
+    93	      "originalSize": [
+    94	        220,
+    95	        220
+    96	      ],
+    97	      "capInsets": [
+    98	        0,
+    99	        0,
+   100	        0,
+   101	        0
+   102	      ],
+   103	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6f/6f938e16-ea19-4db9-81db-db8733859724.3004b.png",
+   104	      "sha256": "cec5646f0d58a37c90e327c20eb51c6a0ef5c53fd69b351deaa35f46685cfd85"
+   105	    },
+   106	    {
+   107	      "name": "合成_00003",
+   108	      "rect": [
+   109	        53,
+   110	        51,
+   111	        122,
+   112	        113
+   113	      ],
+   114	      "offset": [
+   115	        4,
+   116	        2.5
+   117	      ],
+   118	      "originalSize": [
+   119	        220,
+   120	        220
+   121	      ],
+   122	      "capInsets": [
+   123	        0,
+   124	        0,
+   125	        0,
+   126	        0
+   127	      ],
+   128	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ec/ec5eb3bf-83b9-4e11-9d46-13d99799dd98.3004b.png",
+   129	      "sha256": "cec5646f0d58a37c90e327c20eb51c6a0ef5c53fd69b351deaa35f46685cfd85"
+   130	    },
+   131	    {
+   132	      "name": "合成_00004",
+   133	      "rect": [
+   134	        57,
+   135	        49,
+   136	        117,
+   137	        120
+   138	      ],
+   139	      "offset": [
+   140	        5.5,
+   141	        1
+   142	      ],
+   143	      "originalSize": [
+   144	        220,
+   145	        220
+   146	      ],
+   147	      "capInsets": [
+   148	        0,
+   149	        0,
+   150	        0,
+   151	        0
+   152	      ],
+   153	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/d7/d76ed11e-c2b4-4343-9b8d-fbbb19773e91.d0dff.png",
+   154	      "sha256": "bff7b207c8c5bbd8a900a488ad31dcb19b6fa2ce80d7efd52212e107a826bbdf"
+   155	    },
+   156	    {
+   157	      "name": "合成_00005",
+   158	      "rect": [
+   159	        53,
+   160	        51,
+   161	        123,
+   162	        116
+   163	      ],
+   164	      "offset": [
+   165	        4.5,
+   166	        1
+   167	      ],
+   168	      "originalSize": [
+   169	        220,
+   170	        220
+   171	      ],
+   172	      "capInsets": [
+   173	        0,
+   174	        0,
+   175	        0,
+   176	        0
+   177	      ],
+   178	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ff/ff06843e-2ac1-4f3d-81ac-63f3c347c751.f1a64.png",
+   179	      "sha256": "c919f135a8675778a6c6992731187db52c2aa028ee4ce3ca685a6e6f35a3dec5"
+   180	    },
+Tool:      1	{
+     2	  "conclusion": "原运行场景使用 original_img_center_blue + 四张营地 + img_bg 边框 + MapGrid 标记；skin_original_board 是商店皮肤预览。推荐按原运行场景拼装。",
+     3	  "correction": "前一轮审计将 skin_original_board 推荐为完整运行棋盘不准确；它虽然是无棋子/文字的完整棋盘图，但属于商店展示图，尺寸和透明边缘处理不同，且缺少运行态安全星/方向标记。",
+     4	  "source_script": "www.hnyigegame.com/Ludo_Superstar/game/scripts/assets/main/index.a298e.js",
+     5	  "source_scene": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json",
+     6	  "source_map_grid": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0d/0d4dc8f4b.c2128.json",
+     7	  "runtime_evidence": {
+     8	    "scene_load_offset": 63856,
+     9	    "scene_load": "loadRes(n+\"_img_center_blue\",...); sprCenter.node.rotation=-90*t; setSpfsRes(sprChessBaseBgs[i], n+\"_img_base_bg_\"+color); 76 个 MapGrid 由场景位置创建。",
+    10	    "shop_preview_offset": 188389,
+    11	    "shop_preview": "setSelectSkinInfo: loadRes(\"skin_\"+e.name+\"_board\",... img_icon.spriteFrame=e)",
+    12	    "safe_markers": "MapGrid.updateInfo 加载 original_img_wujiaoxing。setGridInfo 对有 colorGrids 的安全格隐藏星，其余安全格显示星。setGridColor 当前为空函数；sprGrid 默认无 spriteFrame。"
+    13	  },
+    14	  "visual_comparison": {
+    15	    "preview": "467×466，完整四角营地/白格十字/四三角；白格和彩色归家格均有描边；不包含棋子或文字；不含安全星和方向箭头。",
+    16	    "runtime_center": "586×585，四角透明，白格和彩色归家格边界由纹理描边与透明间隙共同形成；不含四角营地、外框、安全星或方向箭头；不能单独当完整棋盘。",
+    17	    "same_structure": "15×15 逻辑布局，左上红/右上绿/左下蓝/右下黄，中心四色三角；运行时会按玩家选色旋转。",
+    18	    "difference": "布局与格子拓扑一致，预览是完整缩略展示，运行图是透明分层材质。运行图保留alpha后，彩色归家道同样逐格分开，不能误判为连续无格色带；图像查看器显示透明像素RGB时会产生误导。"
+    19	  },
+    20	  "coordinate_note": "所有位置为原场景 mapNode 内局部坐标，x 向右，y 向上，Sprite 默认为中心锚点；如转 Canvas，应整体统一翻转 y。mapNode 初始 scale=(1.15,1.15) 仅是场景缩放，不要在单部件上重复应用。",
+    21	  "nodes": [
+    22	    {
+    23	      "serialized_index": 5,
+    24	      "name": "mapNode",
+    25	      "parent_index": null,
+    26	      "size": [
+    27	        626.0869565217391,
+    28	        1113.0434782608697
+    29	      ],
+    30	      "position": [
+    31	        0,
+    32	        0
+    33	      ],
+    34	      "scale": [
+    35	        1.15,
+    36	        1.15
+    37	      ],
+    38	      "opacity": 255,
+    39	      "anchor": [
+    40	        0.5,
+    41	        0.5
+    42	      ]
+    43	    },
+    44	    {
+    45	      "serialized_index": 36,
+    46	      "name": "img_bg",
+    47	      "parent_index": 5,
+    48	      "size": [
+    49	        628,
+    50	        628
+    51	      ],
+    52	      "position": [
+    53	        0,
+    54	        -29
+    55	      ],
+    56	      "scale": [
+    57	        1,
+    58	        1
+    59	      ],
+    60	      "opacity": 255,
+    61	      "anchor": [
+    62	        0.5,
+    63	        0.5
+    64	      ]
+    65	    },
+    66	    {
+    67	      "serialized_index": 52,
+    68	      "name": "sprCenter",
+    69	      "parent_index": 5,
+    70	      "size": [
+    71	        586,
+    72	        585
+    73	      ],
+    74	      "position": [
+    75	        0.639,
+    76	        -20
+    77	      ],
+    78	      "scale": [
+    79	        1,
+    80	        1
+    81	      ],
+    82	      "opacity": 255,
+    83	      "anchor": [
+    84	        0.5,
+    85	        0.5
+    86	      ]
+    87	    },
+    88	    {
+    89	      "serialized_index": 56,
+    90	      "name": "img_base_bg_0",
+    91	      "parent_index": 8,
+    92	      "size": [
+    93	        233,
+    94	        233
+    95	      ],
+    96	      "position": [
+    97	        -175,
+    98	        -197
+    99	      ],
+   100	      "scale": [
+   101	        1,
+   102	        1
+   103	      ],
+   104	      "opacity": 255,
+   105	      "anchor": [
+   106	        0.5,
+   107	        0.5
+   108	      ]
+   109	    },
+   110	    {
+   111	      "serialized_index": 58,
+   112	      "name": "img_base_bg_1",
+   113	      "parent_index": 8,
+   114	      "size": [
+   115	        233,
+   116	        233
+   117	      ],
+   118	      "position": [
+   119	        -175,
+   120	        156
+   121	      ],
+   122	      "scale": [
+   123	        1,
+   124	        1
+   125	      ],
+   126	      "opacity": 255,
+   127	      "anchor": [
+   128	        0.5,
+   129	        0.5
+   130	      ]
+   131	    },
+   132	    {
+   133	      "serialized_index": 60,
+   134	      "name": "img_base_bg_2",
+   135	      "parent_index": 8,
+   136	      "size": [
+   137	        233,
+   138	        233
+   139	      ],
+   140	      "position": [
+   141	        176,
+   142	        156
+   143	      ],
+   144	      "scale": [
+   145	        1,
+   146	        1
+   147	      ],
+   148	      "opacity": 255,
+   149	      "anchor": [
+   150	        0.5,
+   151	        0.5
+   152	      ]
+   153	    },
+   154	    {
+   155	      "serialized_index": 62,
+   156	      "name": "img_base_bg_3",
+   157	      "parent_index": 8,
+   158	      "size": [
+   159	        233,
+   160	        233
+   161	      ],
+   162	      "position": [
+   163	        176,
+   164	        -197
+   165	      ],
+   166	      "scale": [
+   167	        1,
+   168	        1
+   169	      ],
+   170	      "opacity": 250,
+   171	      "anchor": [
+   172	        0.5,
+   173	        0.5
+   174	      ]
+   175	    },
+   176	    {
+   177	      "serialized_index": 37,
+   178	      "name": "playerInfo0",
+   179	      "parent_index": 7,
+   180	      "size": [
+AI: [{'name': 'read_file', 'args': {'file_path': '/reference-assets/research-index.json', 'offset': 180, 'limit': 440}, 'id': 'call_kRTJM4328QMcg6QNpZ4ajjJN', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-index.json', 'offset': 620, 'limit': 460}, 'id': 'call_hzRduHwHiEaknBDZ64VwrAbo', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-dice-frames.json', 'offset': 180, 'limit': 540}, 'id': 'call_BxHOVIIDNP8Yy8x6bDGlBiOK', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-board-runtime.json', 'offset': 180, 'limit': 520}, 'id': 'call_vAOVg7VYtAR2QIhCxZlCqqEc', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/super-background-atlas.png', 'offset': 0, 'limit': 100}, 'id': 'call_j8W5q2cBLmj7Xizw8ka5MyQ2', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/super-board-atlas.png', 'offset': 0, 'limit': 100}, 'id': 'call_W2Mcw6zpONLM05lHubZFwExM', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/public/assets/background-purple.webp', 'offset': 0, 'limit': 100}, 'id': 'call_UiyBnGCRMEsLRTIwXa959LHo', 'type': 'tool_call'}, {'name': 'read_reference', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/gameInfo.json', 'offset': 0, 'limit': 3000}, 'id': 'call_MgJhWWKeYitfUofCUphllKW3', 'type': 'tool_call'}, {'name': 'read_reference', 'args': {'path': '公司skill整合/AHAgames/82251_Just_Ludo/gameInfo.json', 'offset': 0, 'limit': 3000}, 'id': 'call_XoOTDFlHlBVP19NmYDqYi6Hm', 'type': 'tool_call'}, {'name': 'list_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'offset': 0, 'limit': 10}, 'id': 'call_kInKVeMyxywPOTSUQ1kRVF9P', 'type': 'tool_call'}]
+Tool:    181	        ]
+   182	      }
+   183	    },
+   184	    {
+   185	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   186	      "frame": {
+   187	        "name": "original_dice_points_4",
+   188	        "rect": [
+   189	          1324,
+   190	          1,
+   191	          104,
+   192	          106
+   193	        ],
+   194	        "offset": [
+   195	          4,
+   196	          3
+   197	        ],
+   198	        "originalSize": [
+   199	          220,
+   200	          220
+   201	        ],
+   202	        "capInsets": [
+   203	          0,
+   204	          0,
+   205	          0,
+   206	          0
+   207	        ]
+   208	      }
+   209	    },
+   210	    {
+   211	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   212	      "frame": {
+   213	        "name": "original_dice_points_2",
+   214	        "rect": [
+   215	          1304,
+   216	          390,
+   217	          104,
+   218	          106
+   219	        ],
+   220	        "offset": [
+   221	          4,
+   222	          3
+   223	        ],
+   224	        "originalSize": [
+   225	          220,
+   226	          220
+   227	        ],
+   228	        "capInsets": [
+   229	          0,
+   230	          0,
+   231	          0,
+   232	          0
+   233	        ]
+   234	      }
+   235	    },
+   236	    {
+   237	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   238	      "frame": {
+   239	        "name": "original_dice_points_6",
+   240	        "rect": [
+   241	          1327,
+   242	          109,
+   243	          104,
+   244	          106
+   245	        ],
+   246	        "offset": [
+   247	          4,
+   248	          3
+   249	        ],
+   250	        "originalSize": [
+   251	          220,
+   252	          220
+   253	        ],
+   254	        "capInsets": [
+   255	          0,
+   256	          0,
+   257	          0,
+   258	          0
+   259	        ]
+   260	      }
+   261	    },
+   262	    {
+   263	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   264	      "frame": {
+   265	        "name": "original_img_chess_lv",
+   266	        "rect": [
+   267	          932,
+   268	          117,
+   269	          33,
+   270	          53
+   271	        ],
+   272	        "offset": [
+   273	          0,
+   274	          0
+   275	        ],
+   276	        "originalSize": [
+   277	          33,
+   278	          53
+   279	        ],
+   280	        "capInsets": [
+   281	          0,
+   282	          0,
+   283	          0,
+   284	          0
+   285	        ]
+   286	      }
+   287	    },
+   288	    {
+   289	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json",
+   290	      "frame": {
+   291	        "name": "original_img_chess_huang",
+   292	        "rect": [
+   293	          897,
+   294	          117,
+   295	          33,
+   296	          53
+   297	        ],
+   298	        "offset": [
+   299	          0,
+   300	          0
+   301	        ],
+   302	        "originalSize": [
+   303	          33,
+   304	          53
+   305	        ],
+   306	        "capInsets": [
+   307	          0,
+   308	          0,
+   309	          0,
+   310	          0
+   311	        ]
+   312	      }
+   313	    },
+   314	    {
+   315	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/058d1eea5.18141.json",
+   316	      "frame": {
+   317	        "name": "img_original_board",
+   318	        "rect": [
+   319	          1561,
+   320	          493,
+   321	          104,
+   322	          104
+   323	        ],
+   324	        "offset": [
+   325	          0,
+   326	          0
+   327	        ],
+   328	        "originalSize": [
+   329	          104,
+   330	          104
+   331	        ],
+   332	        "capInsets": [
+   333	          0,
+   334	          0,
+   335	          0,
+   336	          0
+   337	        ]
+   338	      }
+   339	    },
+   340	    {
+   341	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/058d1eea5.18141.json",
+   342	      "frame": {
+   343	        "name": "dice_original",
+   344	        "rect": [
+   345	          781,
+   346	          469,
+   347	          388,
+   348	          380
+   349	        ],
+   350	        "offset": [
+   351	          -9,
+   352	          -35
+   353	        ],
+   354	        "originalSize": [
+   355	          500,
+   356	          500
+   357	        ],
+   358	        "capInsets": [
+   359	          0,
+   360	          0,
+   361	          0,
+   362	          0
+   363	        ]
+   364	      }
+   365	    },
+   366	    {
+   367	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   368	      "frame": {
+   369	        "name": "original_img_wujiaoxing",
+   370	        "rect": [
+   371	          227,
+   372	          1896,
+   373	          27,
+   374	          26
+   375	        ],
+   376	        "offset": [
+   377	          0,
+   378	          0
+   379	        ],
+   380	        "originalSize": [
+   381	          27,
+   382	          26
+   383	        ],
+   384	        "capInsets": [
+   385	          0,
+   386	          0,
+   387	          0,
+   388	          0
+   389	        ]
+   390	      }
+   391	    },
+   392	    {
+   393	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   394	      "frame": {
+   395	        "name": "original_img_barrier",
+   396	        "rect": [
+   397	          188,
+   398	          1929,
+   399	          15,
+   400	          33
+   401	        ],
+   402	        "offset": [
+   403	          0,
+   404	          0
+   405	        ],
+   406	        "originalSize": [
+   407	          15,
+   408	          33
+   409	        ],
+   410	        "rotated": 1,
+   411	        "capInsets": [
+   412	          0,
+   413	          0,
+   414	          0,
+   415	          0
+   416	        ]
+   417	      }
+   418	    },
+   419	    {
+   420	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   421	      "frame": {
+   422	        "name": "original_img_sanjiao_lv",
+   423	        "rect": [
+   424	          1354,
+   425	          1886,
+   426	          17,
+   427	          15
+   428	        ],
+   429	        "offset": [
+   430	          0,
+   431	          0
+   432	        ],
+   433	        "originalSize": [
+   434	          17,
+   435	          15
+   436	        ],
+   437	        "capInsets": [
+   438	          0,
+   439	          0,
+   440	          0,
+   441	          0
+   442	        ]
+   443	      }
+   444	    },
+   445	    {
+   446	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   447	      "frame": {
+   448	        "name": "original_img_base_bg_hong",
+   449	        "rect": [
+   450	          1405,
+   451	          1774,
+   452	          233,
+   453	          233
+   454	        ],
+   455	        "offset": [
+   456	          0,
+   457	          0
+   458	        ],
+   459	        "originalSize": [
+   460	          233,
+   461	          233
+   462	        ],
+   463	        "capInsets": [
+   464	          0,
+   465	          0,
+   466	          0,
+   467	          0
+   468	        ]
+   469	      }
+   470	    },
+   471	    {
+   472	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   473	      "frame": {
+   474	        "name": "original_img_sanjiao_lan",
+   475	        "rect": [
+   476	          1321,
+   477	          1925,
+   478	          17,
+   479	          15
+   480	        ],
+   481	        "offset": [
+   482	          0,
+   483	          0
+   484	        ],
+   485	        "originalSize": [
+   486	          17,
+   487	          15
+   488	        ],
+   489	        "capInsets": [
+   490	          0,
+   491	          0,
+   492	          0,
+   493	          0
+   494	        ]
+   495	      }
+   496	    },
+   497	    {
+   498	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   499	      "frame": {
+   500	        "name": "original_img_base_bg_huang",
+   501	        "rect": [
+   502	          1640,
+   503	          1774,
+   504	          233,
+   505	          233
+   506	        ],
+   507	        "offset": [
+   508	          0,
+   509	          0
+   510	        ],
+   511	        "originalSize": [
+   512	          233,
+   513	          233
+   514	        ],
+   515	        "capInsets": [
+   516	          0,
+   517	          0,
+   518	          0,
+   519	          0
+   520	        ]
+   521	      }
+   522	    },
+   523	    {
+   524	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   525	      "frame": {
+   526	        "name": "original_img_chess_lan",
+   527	        "rect": [
+   528	          1287,
+   529	          1851,
+   530	          32,
+   531	          53
+   532	        ],
+   533	        "offset": [
+   534	          0,
+   535	          0
+   536	        ],
+   537	        "originalSize": [
+   538	          32,
+   539	          53
+   540	        ],
+   541	        "capInsets": [
+   542	          0,
+   543	          0,
+   544	          0,
+   545	          0
+   546	        ]
+   547	      }
+   548	    },
+   549	    {
+   550	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   551	      "frame": {
+   552	        "name": "original_img_sanjiao_huang",
+   553	        "rect": [
+   554	          1982,
+   555	          1947,
+   556	          15,
+   557	          17
+   558	        ],
+   559	        "offset": [
+   560	          0,
+   561	          0
+   562	        ],
+   563	        "originalSize": [
+   564	          15,
+   565	          17
+   566	        ],
+   567	        "capInsets": [
+   568	          0,
+   569	          0,
+   570	          0,
+   571	          0
+   572	        ]
+   573	      }
+   574	    },
+   575	    {
+   576	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   577	      "frame": {
+   578	        "name": "img_original_token",
+   579	        "rect": [
+   580	          1,
+   581	          1896,
+   582	          108,
+   583	          151
+   584	        ],
+   585	        "offset": [
+   586	          0,
+   587	          0
+   588	        ],
+   589	        "originalSize": [
+   590	          108,
+   591	          151
+   592	        ],
+   593	        "rotated": 1,
+   594	        "capInsets": [
+   595	          0,
+   596	          0,
+   597	          0,
+   598	          0
+   599	        ]
+   600	      }
+   601	    },
+   602	    {
+   603	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   604	      "frame": {
+   605	        "name": "original_img_center_blue",
+   606	        "rect": [
+   607	          1445,
+   608	          1187,
+   609	          586,
+   610	          585
+   611	        ],
+   612	        "offset": [
+   613	          0,
+   614	          0
+   615	        ],
+   616	        "originalSize": [
+   617	          586,
+   618	          585
+   619	        ],
+   620	        "capInsets": [
+Tool:    621	          0,
+   622	          0,
+   623	          0,
+   624	          0
+   625	        ]
+   626	      }
+   627	    },
+   628	    {
+   629	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   630	      "frame": {
+   631	        "name": "original_img_chess_huang",
+   632	        "rect": [
+   633	          1875,
+   634	          1947,
+   635	          33,
+   636	          53
+   637	        ],
+   638	        "offset": [
+   639	          0,
+   640	          0
+   641	        ],
+   642	        "originalSize": [
+   643	          33,
+   644	          53
+   645	        ],
+   646	        "capInsets": [
+   647	          0,
+   648	          0,
+   649	          0,
+   650	          0
+   651	        ]
+   652	      }
+   653	    },
+   654	    {
+   655	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json",
+   656	      "frame": {
+   657	        "name": "original_img_sanjiao_hong",
+   658	        "rect": [
+   659	          1405,
+   660	          1723,
+   661	          15,
+   662	          17
+   663	        ],
+   664	        "offset": [
+   665	          0,
+   666	          0
+   667	        ],
+   668	        "originalSize": [
+   669	          15,
+   670	          17
+   671	        ],
+   672	        "capInsets": [
+   673	          0,
+   674	          0,
+   675	          0,
+   676	          0
+   677	        ]
+   678	      }
+   679	    },
+   680	    {
+   681	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+   682	      "frame": {
+   683	        "name": "original_img_base_bg_lan",
+   684	        "rect": [
+   685	          1,
+   686	          1603,
+   687	          233,
+   688	          233
+   689	        ],
+   690	        "offset": [
+   691	          0,
+   692	          0
+   693	        ],
+   694	        "originalSize": [
+   695	          233,
+   696	          233
+   697	        ],
+   698	        "capInsets": [
+   699	          0,
+   700	          0,
+   701	          0,
+   702	          0
+   703	        ]
+   704	      }
+   705	    },
+   706	    {
+   707	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+   708	      "frame": {
+   709	        "name": "original_img_base_bg_lv",
+   710	        "rect": [
+   711	          236,
+   712	          1603,
+   713	          233,
+   714	          233
+   715	        ],
+   716	        "offset": [
+   717	          0,
+   718	          0
+   719	        ],
+   720	        "originalSize": [
+   721	          233,
+   722	          233
+   723	        ],
+   724	        "capInsets": [
+   725	          0,
+   726	          0,
+   727	          0,
+   728	          0
+   729	        ]
+   730	      }
+   731	    },
+   732	    {
+   733	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json",
+   734	      "frame": {
+   735	        "name": "original_img_beijing",
+   736	        "rect": [
+   737	          1,
+   738	          1,
+   739	          719,
+   740	          1600
+   741	        ],
+   742	        "offset": [
+   743	          0,
+   744	          0
+   745	        ],
+   746	        "originalSize": [
+   747	          719,
+   748	          1600
+   749	        ],
+   750	        "capInsets": [
+   751	          0,
+   752	          0,
+   753	          0,
+   754	          0
+   755	        ]
+   756	      }
+   757	    },
+   758	    {
+   759	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/12/1289e33a-9cbc-4f3b-9d95-b399c7ed7970.f99c5.json",
+   760	      "frame": {
+   761	        "name": "original_img_chess_hong",
+   762	        "rect": [
+   763	          154,
+   764	          1896,
+   765	          32,
+   766	          52
+   767	        ],
+   768	        "offset": [
+   769	          0,
+   770	          0
+   771	        ],
+   772	        "originalSize": [
+   773	          32,
+   774	          52
+   775	        ],
+   776	        "capInsets": [
+   777	          0,
+   778	          0,
+   779	          0,
+   780	          0
+   781	        ]
+   782	      }
+   783	    },
+   784	    {
+   785	      "entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/f5/f5de51aa-6a42-4aa7-a81b-d0f91fbd2200.df05c.json",
+   786	      "frame": {
+   787	        "name": "skin_original_board",
+   788	        "rect": [
+   789	          470,
+   790	          1,
+   791	          467,
+   792	          466
+   793	        ],
+   794	        "offset": [
+   795	          0,
+   796	          0
+   797	        ],
+   798	        "originalSize": [
+   799	          467,
+   800	          466
+   801	        ],
+   802	        "capInsets": [
+   803	          0,
+   804	          0,
+   805	          0,
+   806	          0
+   807	        ]
+   808	      }
+   809	    }
+   810	  ],
+   811	  "hud": {
+   812	    "facts": "当前PlayerInfo只在img_player和img_computer两张头像间选择；4张卡通头像候选来自另一款Just Ludo的Main_Cmn图集，来源不可混称。",
+   813	    "layout": {
+   814	      "prefab": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/05a1c9723.58580.json",
+   815	      "player_info_size": [
+   816	        231,
+   817	        174
+   818	      ],
+   819	      "seat_background_size": [
+   820	        146,
+   821	        146
+   822	      ],
+   823	      "seat_background_position": [
+   824	        0,
+   825	        11
+   826	      ],
+   827	      "avatar_position": [
+   828	        0,
+   829	        9
+   830	      ],
+   831	      "dice_button_size": [
+   832	        75,
+   833	        75
+   834	      ],
+   835	      "dice_button_position": [
+   836	        0,
+   837	        11
+   838	      ],
+   839	      "dice_node_position": [
+   840	        -5,
+   841	        9
+   842	      ],
+   843	      "anchor": [
+   844	        0.5,
+   845	        0.5
+   846	      ],
+   847	      "anchor_basis": "相关Node没有显式_anchorPoint，沿用Cocos默认值；此值不是SpriteFrame元数据。"
+   848	    },
+   849	    "assets": [
+   850	      {
+   851	        "source_game": "Ludo Superstar",
+   852	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+   853	        "name": "img_player",
+   854	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/55/55eba9c0-254f-4658-9c9a-45a3d0bd6bb0.2ccfe.json",
+   855	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/b3/b33f57b3-f952-4bd8-bf77-e4c4ecf486f4.eb0dc.png",
+   856	        "native_size": [
+   857	          96,
+   858	          121
+   859	        ],
+   860	        "native_sha256": "9380a5de1a4f81848e462108dce75a2811a11c25a4c9e8332f2223dfe238636d",
+   861	        "rect": [
+   862	          0,
+   863	          0,
+   864	          96,
+   865	          121
+   866	        ],
+   867	        "offset": [
+   868	          0,
+   869	          0
+   870	        ],
+   871	        "originalSize": [
+   872	          96,
+   873	          121
+   874	        ],
+   875	        "capInsets": [
+   876	          0,
+   877	          0,
+   878	          0,
+   879	          0
+   880	        ],
+   881	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+   882	      },
+   883	      {
+   884	        "source_game": "Ludo Superstar",
+   885	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+   886	        "name": "img_bg_hong",
+   887	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/84/84ac6f9e-0540-416d-b5db-54e29b3de7ed.b6edb.json",
+   888	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/00/00014f84-889c-4369-9528-f89aa5d3d07b.b84bd.png",
+   889	        "native_size": [
+   890	          146,
+   891	          146
+   892	        ],
+   893	        "native_sha256": "ee3722314ffc1ab1156ed89c587a9db490938f0a870aece5e03ee2d05fbfab59",
+   894	        "rect": [
+   895	          0,
+   896	          0,
+   897	          146,
+   898	          146
+   899	        ],
+   900	        "offset": [
+   901	          0,
+   902	          0
+   903	        ],
+   904	        "originalSize": [
+   905	          146,
+   906	          146
+   907	        ],
+   908	        "capInsets": [
+   909	          0,
+   910	          0,
+   911	          0,
+   912	          0
+   913	        ],
+   914	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+   915	      },
+   916	      {
+   917	        "source_game": "Ludo Superstar",
+   918	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+   919	        "name": "img_computer",
+   920	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/1a/1ad19104-fa04-4227-b955-73bb4dca4477.7d0f7.json",
+   921	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/bf/bfa16342-e0ba-4813-893e-539a4b89b067.4700c.png",
+   922	        "native_size": [
+   923	          121,
+   924	          128
+   925	        ],
+   926	        "native_sha256": "7e0cbecbbef4bc30c02897fd5a832073bc546ead14a17db587ea3482fb8d8803",
+   927	        "rect": [
+   928	          0,
+   929	          0,
+   930	          121,
+   931	          128
+   932	        ],
+   933	        "offset": [
+   934	          0,
+   935	          0
+   936	        ],
+   937	        "originalSize": [
+   938	          121,
+   939	          128
+   940	        ],
+   941	        "capInsets": [
+   942	          0,
+   943	          0,
+   944	          0,
+   945	          0
+   946	        ],
+   947	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+   948	      },
+   949	      {
+   950	        "source_game": "Ludo Superstar",
+   951	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+   952	        "name": "img_green_circle",
+   953	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0d/0d4dc8f4b.c2128.json",
+   954	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/54/543cb889-41ca-489b-86bd-d9f890b49f66.3f702.png",
+   955	        "native_size": [
+   956	          43,
+   957	          43
+   958	        ],
+   959	        "native_sha256": "7633d7fec1f246ce7f4e3af555a3738ffa25d0f02820e8bde8ecd45c8ecebdcd",
+   960	        "rect": [
+   961	          1,
+   962	          0,
+   963	          42,
+   964	          43
+   965	        ],
+   966	        "offset": [
+   967	          0.5,
+   968	          0
+   969	        ],
+   970	        "originalSize": [
+   971	          43,
+   972	          43
+   973	        ],
+   974	        "capInsets": [
+   975	          0,
+   976	          0,
+   977	          0,
+   978	          0
+   979	        ],
+   980	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+   981	      },
+   982	      {
+   983	        "source_game": "Ludo Superstar",
+   984	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+   985	        "name": "img_btn_play",
+   986	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/05d8d8daf.f2af0.json",
+   987	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/6f/6f2a6e4f-be11-41fe-a6a4-23749aa59dad.2f6a0.png",
+   988	        "native_size": [
+   989	          194,
+   990	          79
+   991	        ],
+   992	        "native_sha256": "7fd11a918ddf705de967fc807c80d74aa1f50ce5f1eb7a0de69954b06e4570a7",
+   993	        "rect": [
+   994	          0,
+   995	          0,
+   996	          194,
+   997	          79
+   998	        ],
+   999	        "offset": [
+  1000	          0,
+  1001	          0
+  1002	        ],
+  1003	        "originalSize": [
+  1004	          194,
+  1005	          79
+  1006	        ],
+  1007	        "capInsets": [
+  1008	          0,
+  1009	          0,
+  1010	          0,
+  1011	          0
+  1012	        ],
+  1013	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+  1014	      },
+  1015	      {
+  1016	        "source_game": "Ludo Superstar",
+  1017	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  1018	        "name": "img_chess_circle",
+  1019	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/09/09dc22791.bcd67.json",
+  1020	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/5e/5e3e6465-c39e-42a7-95bc-49258ba0db4e.3ba34.png",
+  1021	        "native_size": [
+  1022	          50,
+  1023	          50
+  1024	        ],
+  1025	        "native_sha256": "5a4d6f726806329ee4eb057794ae85ac1e930bf51fb83a4b9eeee5969f592373",
+  1026	        "rect": [
+  1027	          0,
+  1028	          0,
+  1029	          50,
+  1030	          50
+  1031	        ],
+  1032	        "offset": [
+  1033	          0,
+  1034	          0
+  1035	        ],
+  1036	        "originalSize": [
+  1037	          50,
+  1038	          50
+  1039	        ],
+  1040	        "capInsets": [
+  1041	          0,
+  1042	          0,
+  1043	          0,
+  1044	          0
+  1045	        ],
+  1046	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+  1047	      },
+  1048	      {
+  1049	        "source_game": "Ludo Superstar",
+  1050	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  1051	        "name": "img_close",
+  1052	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/f8/f8284f60-61f8-473e-a364-d8520748ee05.6de20.json",
+  1053	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/cd/cdb20014-a64f-4f2e-82be-b0eb1da662c9.04750.png",
+  1054	        "native_size": [
+  1055	          59,
+  1056	          62
+  1057	        ],
+  1058	        "native_sha256": "1c6f24782b9ba8b04aba4f161e220f8ba69865ff422471b6ac11e0851fdcf781",
+  1059	        "rect": [
+  1060	          0,
+  1061	          0,
+  1062	          59,
+  1063	          62
+  1064	        ],
+  1065	        "offset": [
+  1066	          0,
+  1067	          0
+  1068	        ],
+  1069	        "originalSize": [
+  1070	          59,
+  1071	          62
+  1072	        ],
+  1073	        "capInsets": [
+  1074	          0,
+  1075	          0,
+  1076	          0,
+  1077	          0
+  1078	        ],
+  1079	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+  1080	      },
+Tool:    181	    {
+   182	      "name": "合成_00006",
+   183	      "rect": [
+   184	        58,
+   185	        48,
+   186	        117,
+   187	        121
+   188	      ],
+   189	      "offset": [
+   190	        6.5,
+   191	        1.5
+   192	      ],
+   193	      "originalSize": [
+   194	        220,
+   195	        220
+   196	      ],
+   197	      "capInsets": [
+   198	        0,
+   199	        0,
+   200	        0,
+   201	        0
+   202	      ],
+   203	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/e9/e91ab32f-3fac-4498-a97d-42a459e34480.30715.png",
+   204	      "sha256": "621fe6df1ce39fd0bdc9fce49ea4a0bc774f60040e241b6576bb3374e171fcdc"
+   205	    },
+   206	    {
+   207	      "name": "合成_00007",
+   208	      "rect": [
+   209	        58,
+   210	        48,
+   211	        117,
+   212	        121
+   213	      ],
+   214	      "offset": [
+   215	        6.5,
+   216	        1.5
+   217	      ],
+   218	      "originalSize": [
+   219	        220,
+   220	        220
+   221	      ],
+   222	      "capInsets": [
+   223	        0,
+   224	        0,
+   225	        0,
+   226	        0
+   227	      ],
+   228	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/44/44d4961f-26a9-4ccf-a39d-6905fbd79100.30715.png",
+   229	      "sha256": "621fe6df1ce39fd0bdc9fce49ea4a0bc774f60040e241b6576bb3374e171fcdc"
+   230	    },
+   231	    {
+   232	      "name": "合成_00008",
+   233	      "rect": [
+   234	        59,
+   235	        52,
+   236	        115,
+   237	        114
+   238	      ],
+   239	      "offset": [
+   240	        6.5,
+   241	        1
+   242	      ],
+   243	      "originalSize": [
+   244	        220,
+   245	        220
+   246	      ],
+   247	      "capInsets": [
+   248	        0,
+   249	        0,
+   250	        0,
+   251	        0
+   252	      ],
+   253	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/21/21ca532c-3f74-4f75-9793-cc887ccad0f1.f1297.png",
+   254	      "sha256": "0308e74c262c193b0d9750c118da0f116ba8150077bbfd85d0b4131713748b68"
+   255	    },
+   256	    {
+   257	      "name": "合成_00009",
+   258	      "rect": [
+   259	        59,
+   260	        52,
+   261	        115,
+   262	        114
+   263	      ],
+   264	      "offset": [
+   265	        6.5,
+   266	        1
+   267	      ],
+   268	      "originalSize": [
+   269	        220,
+   270	        220
+   271	      ],
+   272	      "capInsets": [
+   273	        0,
+   274	        0,
+   275	        0,
+   276	        0
+   277	      ],
+   278	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/95/95cbc55d-14a4-4ae1-bc0e-92aba342b40d.f1297.png",
+   279	      "sha256": "0308e74c262c193b0d9750c118da0f116ba8150077bbfd85d0b4131713748b68"
+   280	    },
+   281	    {
+   282	      "name": "合成_00010",
+   283	      "rect": [
+   284	        60,
+   285	        52,
+   286	        114,
+   287	        113
+   288	      ],
+   289	      "offset": [
+   290	        7,
+   291	        1.5
+   292	      ],
+   293	      "originalSize": [
+   294	        220,
+   295	        220
+   296	      ],
+   297	      "capInsets": [
+   298	        0,
+   299	        0,
+   300	        0,
+   301	        0
+   302	      ],
+   303	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3f/3f16cddb-7296-4f31-98f2-c6e0a76d5ab4.147fe.png",
+   304	      "sha256": "c5d275b9eb4a13e081a57108077f95eb6bae7247d1034b8fe0ba3a3b7d2f1210"
+   305	    },
+   306	    {
+   307	      "name": "合成_00011",
+   308	      "rect": [
+   309	        52,
+   310	        49,
+   311	        123,
+   312	        115
+   313	      ],
+   314	      "offset": [
+   315	        3.5,
+   316	        3.5
+   317	      ],
+   318	      "originalSize": [
+   319	        220,
+   320	        220
+   321	      ],
+   322	      "capInsets": [
+   323	        0,
+   324	        0,
+   325	        0,
+   326	        0
+   327	      ],
+   328	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe138668-1db3-4c47-90f7-1c34a45afc07.fd998.png",
+   329	      "sha256": "9f4e8207af38bdfbbc06c860c8c4ba9b79885926a552157568d69ac660040b7d"
+   330	    },
+   331	    {
+   332	      "name": "合成_00012",
+   333	      "rect": [
+   334	        54,
+   335	        54,
+   336	        117,
+   337	        114
+   338	      ],
+   339	      "offset": [
+   340	        2.5,
+   341	        -1
+   342	      ],
+   343	      "originalSize": [
+   344	        220,
+   345	        220
+   346	      ],
+   347	      "capInsets": [
+   348	        0,
+   349	        0,
+   350	        0,
+   351	        0
+   352	      ],
+   353	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/84/8438fbd0-f6f2-4a5a-bbab-086eb5560c2e.ec193.png",
+   354	      "sha256": "c9e655453c0082d0b997c41d49a3fec0cd55e2872f2f92dba9bf9e679db4c476"
+   355	    },
+   356	    {
+   357	      "name": "合成_00013",
+   358	      "rect": [
+   359	        54,
+   360	        54,
+   361	        117,
+   362	        114
+   363	      ],
+   364	      "offset": [
+   365	        2.5,
+   366	        -1
+   367	      ],
+   368	      "originalSize": [
+   369	        220,
+   370	        220
+   371	      ],
+   372	      "capInsets": [
+   373	        0,
+   374	        0,
+   375	        0,
+   376	        0
+   377	      ],
+   378	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/fe/fe5c78f1-687f-4ba4-a6ec-f97612d74e28.ed7fa.png",
+   379	      "sha256": "a01462573679d6a40107715092b284a49b00974a5a94a0d5a933cf8efdfad535"
+   380	    },
+   381	    {
+   382	      "name": "合成_00014",
+   383	      "rect": [
+   384	        62,
+   385	        53,
+   386	        110,
+   387	        113
+   388	      ],
+   389	      "offset": [
+   390	        7,
+   391	        0.5
+   392	      ],
+   393	      "originalSize": [
+   394	        220,
+   395	        220
+   396	      ],
+   397	      "capInsets": [
+   398	        0,
+   399	        0,
+   400	        0,
+   401	        0
+   402	      ],
+   403	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3c/3c1664a0-7332-4c57-8eb1-eadb86c9aa4f.256db.png",
+   404	      "sha256": "b5843990b2750a424d000c65ec55e8e9e38491a786ccebdd8384347d8ebffa56"
+   405	    },
+   406	    {
+   407	      "name": "合成_00015",
+   408	      "rect": [
+   409	        51,
+   410	        46,
+   411	        122,
+   412	        121
+   413	      ],
+   414	      "offset": [
+   415	        2,
+   416	        3.5
+   417	      ],
+   418	      "originalSize": [
+   419	        220,
+   420	        220
+   421	      ],
+   422	      "capInsets": [
+   423	        0,
+   424	        0,
+   425	        0,
+   426	        0
+   427	      ],
+   428	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/ab/abc88f6e-cc72-42b4-a301-85e688deaf78.3cf42.png",
+   429	      "sha256": "2c8c5665a2e6462721924a6c3845c1cd38a2728ae4a594ec8eb317b7553a6737"
+   430	    },
+   431	    {
+   432	      "name": "合成_00016",
+   433	      "rect": [
+   434	        56,
+   435	        47,
+   436	        119,
+   437	        123
+   438	      ],
+   439	      "offset": [
+   440	        5.5,
+   441	        1.5
+   442	      ],
+   443	      "originalSize": [
+   444	        220,
+   445	        220
+   446	      ],
+   447	      "capInsets": [
+   448	        0,
+   449	        0,
+   450	        0,
+   451	        0
+   452	      ],
+   453	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/7c/7cfa4f42-9a27-477a-918e-22f769deafda.f44a9.png",
+   454	      "sha256": "93354af6ed83362d91292f6d962ef4433dada2ba768f970243c2461264bebfbf"
+   455	    },
+   456	    {
+   457	      "name": "合成_00017",
+   458	      "rect": [
+   459	        58,
+   460	        49,
+   461	        117,
+   462	        118
+   463	      ],
+   464	      "offset": [
+   465	        6.5,
+   466	        2
+   467	      ],
+   468	      "originalSize": [
+   469	        220,
+   470	        220
+   471	      ],
+   472	      "capInsets": [
+   473	        0,
+   474	        0,
+   475	        0,
+   476	        0
+   477	      ],
+   478	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/6a/6ac21c52-ccdc-405d-be8e-470fc69e79bb.7ccd4.png",
+   479	      "sha256": "15b9f6d3d9ee195211fb915e0b8ce666cddc1f06d3633171bf46d64556e6d542"
+   480	    },
+   481	    {
+   482	      "name": "合成_00018",
+   483	      "rect": [
+   484	        64,
+   485	        57,
+   486	        105,
+   487	        106
+   488	      ],
+   489	      "offset": [
+   490	        6.5,
+   491	        0
+   492	      ],
+   493	      "originalSize": [
+   494	        220,
+   495	        220
+   496	      ],
+   497	      "capInsets": [
+   498	        0,
+   499	        0,
+   500	        0,
+   501	        0
+   502	      ],
+   503	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/85/85841804-d6c7-47fc-b17b-cf6019f81f74.f7816.png",
+   504	      "sha256": "c36c45d1909c30b4ef5cd92c99ccf7d9e9d8e7c5965b6ab61d940222e05abc2a"
+   505	    },
+   506	    {
+   507	      "name": "合成_00019",
+   508	      "rect": [
+   509	        64,
+   510	        57,
+   511	        105,
+   512	        106
+   513	      ],
+   514	      "offset": [
+   515	        6.5,
+   516	        0
+   517	      ],
+   518	      "originalSize": [
+   519	        220,
+   520	        220
+   521	      ],
+   522	      "capInsets": [
+   523	        0,
+   524	        0,
+   525	        0,
+   526	        0
+   527	      ],
+   528	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/af/afbc514d-dbbc-449e-8fdc-290028dd7452.f7816.png",
+   529	      "sha256": "c36c45d1909c30b4ef5cd92c99ccf7d9e9d8e7c5965b6ab61d940222e05abc2a"
+   530	    },
+   531	    {
+   532	      "name": "合成_00020",
+   533	      "rect": [
+   534	        57,
+   535	        53,
+   536	        114,
+   537	        116
+   538	      ],
+   539	      "offset": [
+   540	        4,
+   541	        -1
+   542	      ],
+   543	      "originalSize": [
+   544	        220,
+   545	        220
+   546	      ],
+   547	      "capInsets": [
+   548	        0,
+   549	        0,
+   550	        0,
+   551	        0
+   552	      ],
+   553	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/81/81abd64e-0d1b-4aed-9682-2a830440d1d0.61e65.png",
+   554	      "sha256": "03f6ecd9c6bdbee8ae0b2cc82ddc7ef6a7b24198c07d79706bb42b8741099288"
+   555	    },
+   556	    {
+   557	      "name": "合成_00021",
+   558	      "rect": [
+   559	        54,
+   560	        53,
+   561	        120,
+   562	        109
+   563	      ],
+   564	      "offset": [
+   565	        4,
+   566	        2.5
+   567	      ],
+   568	      "originalSize": [
+   569	        220,
+   570	        220
+   571	      ],
+   572	      "capInsets": [
+   573	        0,
+   574	        0,
+   575	        0,
+   576	        0
+   577	      ],
+   578	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/3d/3ddef7a7-c41d-42e4-9e1e-52c5718e9b2a.666ca.png",
+   579	      "sha256": "0b97ac886fb7a78a7563863ce692848fe314b067c32747f6910962d56b1366d8"
+   580	    },
+   581	    {
+   582	      "name": "合成_00022",
+   583	      "rect": [
+   584	        54,
+   585	        53,
+   586	        120,
+   587	        109
+   588	      ],
+   589	      "offset": [
+   590	        4,
+   591	        2.5
+   592	      ],
+   593	      "originalSize": [
+   594	        220,
+   595	        220
+   596	      ],
+   597	      "capInsets": [
+   598	        0,
+   599	        0,
+   600	        0,
+   601	        0
+   602	      ],
+   603	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/be/be50970b-1c18-4256-9f5f-33b63cba4a01.666ca.png",
+   604	      "sha256": "0b97ac886fb7a78a7563863ce692848fe314b067c32747f6910962d56b1366d8"
+   605	    },
+   606	    {
+   607	      "name": "合成_00023",
+   608	      "rect": [
+   609	        58,
+   610	        48,
+   611	        117,
+   612	        120
+   613	      ],
+   614	      "offset": [
+   615	        6.5,
+   616	        2
+   617	      ],
+   618	      "originalSize": [
+   619	        220,
+   620	        220
+   621	      ],
+   622	      "capInsets": [
+   623	        0,
+   624	        0,
+   625	        0,
+   626	        0
+   627	      ],
+   628	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/2d/2d47e3f0-9e11-4c84-a8aa-a623d5ff4a02.5365d.png",
+   629	      "sha256": "209b40c41bbf1f1ebad29b9eca9903511b682ec296aafd1ac7291573a8eaeb93"
+   630	    },
+   631	    {
+   632	      "name": "合成_00024",
+   633	      "rect": [
+   634	        58,
+   635	        48,
+   636	        117,
+   637	        120
+   638	      ],
+   639	      "offset": [
+   640	        6.5,
+   641	        2
+   642	      ],
+   643	      "originalSize": [
+   644	        220,
+   645	        220
+   646	      ],
+   647	      "capInsets": [
+   648	        0,
+   649	        0,
+   650	        0,
+   651	        0
+   652	      ],
+   653	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/00/0032217e-0952-47df-a5f1-0fdf62aea52e.42419.png",
+   654	      "sha256": "0c898cb1ac95fc096c5332fc750a9d33356e1387892475e7167f8b89c5c9ae17"
+   655	    }
+   656	  ]
+   657	}
+Tool:    181	        231,
+   182	        174
+   183	      ],
+   184	      "position": [
+   185	        -188,
+   186	        -413
+   187	      ],
+   188	      "scale": [
+   189	        0.9,
+   190	        0.9
+   191	      ],
+   192	      "opacity": 255,
+   193	      "anchor": [
+   194	        0.5,
+   195	        0.5
+   196	      ]
+   197	    },
+   198	    {
+   199	      "serialized_index": 38,
+   200	      "name": "playerInfo1",
+   201	      "parent_index": 7,
+   202	      "size": [
+   203	        231,
+   204	        174
+   205	      ],
+   206	      "position": [
+   207	        -188,
+   208	        394
+   209	      ],
+   210	      "scale": [
+   211	        0.9,
+   212	        0.9
+   213	      ],
+   214	      "opacity": 255,
+   215	      "anchor": [
+   216	        0.5,
+   217	        0.5
+   218	      ]
+   219	    },
+   220	    {
+   221	      "serialized_index": 39,
+   222	      "name": "playerInfo2",
+   223	      "parent_index": 7,
+   224	      "size": [
+   225	        231,
+   226	        174
+   227	      ],
+   228	      "position": [
+   229	        188,
+   230	        394
+   231	      ],
+   232	      "scale": [
+   233	        0.9,
+   234	        0.9
+   235	      ],
+   236	      "opacity": 255,
+   237	      "anchor": [
+   238	        0.5,
+   239	        0.5
+   240	      ]
+   241	    },
+   242	    {
+   243	      "serialized_index": 40,
+   244	      "name": "playerInfo3",
+   245	      "parent_index": 7,
+   246	      "size": [
+   247	        231,
+   248	        174
+   249	      ],
+   250	      "position": [
+   251	        188,
+   252	        -413
+   253	      ],
+   254	      "scale": [
+   255	        0.9,
+   256	        0.9
+   257	      ],
+   258	      "opacity": 255,
+   259	      "anchor": [
+   260	        0.5,
+   261	        0.5
+   262	      ]
+   263	    }
+   264	  ],
+   265	  "grid_centers": [
+   266	    {
+   267	      "index": 0,
+   268	      "position": [
+   269	        -38,
+   270	        -256
+   271	      ],
+   272	      "size": [
+   273	        38,
+   274	        38
+   275	      ]
+   276	    },
+   277	    {
+   278	      "index": 1,
+   279	      "position": [
+   280	        -38,
+   281	        -217
+   282	      ],
+   283	      "size": [
+   284	        38,
+   285	        38
+   286	      ]
+   287	    },
+   288	    {
+   289	      "index": 2,
+   290	      "position": [
+   291	        -38,
+   292	        -178
+   293	      ],
+   294	      "size": [
+   295	        38,
+   296	        38
+   297	      ]
+   298	    },
+   299	    {
+   300	      "index": 3,
+   301	      "position": [
+   302	        -38,
+   303	        -139
+   304	      ],
+   305	      "size": [
+   306	        38,
+   307	        38
+   308	      ]
+   309	    },
+   310	    {
+   311	      "index": 4,
+   312	      "position": [
+   313	        -38,
+   314	        -100
+   315	      ],
+   316	      "size": [
+   317	        38,
+   318	        38
+   319	      ]
+   320	    },
+   321	    {
+   322	      "index": 5,
+   323	      "position": [
+   324	        -79,
+   325	        -60
+   326	      ],
+   327	      "size": [
+   328	        38,
+   329	        38
+   330	      ]
+   331	    },
+   332	    {
+   333	      "index": 6,
+   334	      "position": [
+   335	        -118,
+   336	        -60
+   337	      ],
+   338	      "size": [
+   339	        38,
+   340	        38
+   341	      ]
+   342	    },
+   343	    {
+   344	      "index": 7,
+   345	      "position": [
+   346	        -157,
+   347	        -60
+   348	      ],
+   349	      "size": [
+   350	        38,
+   351	        38
+   352	      ]
+   353	    },
+   354	    {
+   355	      "index": 8,
+   356	      "position": [
+   357	        -196,
+   358	        -60
+   359	      ],
+   360	      "size": [
+   361	        38,
+   362	        38
+   363	      ]
+   364	    },
+   365	    {
+   366	      "index": 9,
+   367	      "position": [
+   368	        -235,
+   369	        -60
+   370	      ],
+   371	      "size": [
+   372	        38,
+   373	        38
+   374	      ]
+   375	    },
+   376	    {
+   377	      "index": 10,
+   378	      "position": [
+   379	        -274,
+   380	        -60
+   381	      ],
+   382	      "size": [
+   383	        38,
+   384	        38
+   385	      ]
+   386	    },
+   387	    {
+   388	      "index": 11,
+   389	      "position": [
+   390	        -274,
+   391	        -21
+   392	      ],
+   393	      "size": [
+   394	        38,
+   395	        38
+   396	      ]
+   397	    },
+   398	    {
+   399	      "index": 12,
+   400	      "position": [
+   401	        -274,
+   402	        18
+   403	      ],
+   404	      "size": [
+   405	        38,
+   406	        38
+   407	      ]
+   408	    },
+   409	    {
+   410	      "index": 13,
+   411	      "position": [
+   412	        -235,
+   413	        18
+   414	      ],
+   415	      "size": [
+   416	        38,
+   417	        38
+   418	      ]
+   419	    },
+   420	    {
+   421	      "index": 14,
+   422	      "position": [
+   423	        -196,
+   424	        18
+   425	      ],
+   426	      "size": [
+   427	        38,
+   428	        38
+   429	      ]
+   430	    },
+   431	    {
+   432	      "index": 15,
+   433	      "position": [
+   434	        -157,
+   435	        18
+   436	      ],
+   437	      "size": [
+   438	        38,
+   439	        38
+   440	      ]
+   441	    },
+   442	    {
+   443	      "index": 16,
+   444	      "position": [
+   445	        -118,
+   446	        18
+   447	      ],
+   448	      "size": [
+   449	        38,
+   450	        38
+   451	      ]
+   452	    },
+   453	    {
+   454	      "index": 17,
+   455	      "position": [
+   456	        -79,
+   457	        18
+   458	      ],
+   459	      "size": [
+   460	        38,
+   461	        38
+   462	      ]
+   463	    },
+   464	    {
+   465	      "index": 18,
+   466	      "position": [
+   467	        -38,
+   468	        59
+   469	      ],
+   470	      "size": [
+   471	        38,
+   472	        38
+   473	      ]
+   474	    },
+   475	    {
+   476	      "index": 19,
+   477	      "position": [
+   478	        -38,
+   479	        98
+   480	      ],
+   481	      "size": [
+   482	        38,
+   483	        38
+   484	      ]
+   485	    },
+   486	    {
+   487	      "index": 20,
+   488	      "position": [
+   489	        -38,
+   490	        137
+   491	      ],
+   492	      "size": [
+   493	        38,
+   494	        38
+   495	      ]
+   496	    },
+   497	    {
+   498	      "index": 21,
+   499	      "position": [
+   500	        -38,
+   501	        176
+   502	      ],
+   503	      "size": [
+   504	        38,
+   505	        38
+   506	      ]
+   507	    },
+   508	    {
+   509	      "index": 22,
+   510	      "position": [
+   511	        -38,
+   512	        215
+   513	      ],
+   514	      "size": [
+   515	        38,
+   516	        38
+   517	      ]
+   518	    },
+   519	    {
+   520	      "index": 23,
+   521	      "position": [
+   522	        -38,
+   523	        254
+   524	      ],
+   525	      "size": [
+   526	        38,
+   527	        38
+   528	      ]
+   529	    },
+   530	    {
+   531	      "index": 24,
+   532	      "position": [
+   533	        1,
+   534	        254
+   535	      ],
+   536	      "size": [
+   537	        38,
+   538	        38
+   539	      ]
+   540	    },
+   541	    {
+   542	      "index": 25,
+   543	      "position": [
+   544	        40,
+   545	        254
+   546	      ],
+   547	      "size": [
+   548	        38,
+   549	        38
+   550	      ]
+   551	    },
+   552	    {
+   553	      "index": 26,
+   554	      "position": [
+   555	        40,
+   556	        215
+   557	      ],
+   558	      "size": [
+   559	        38,
+   560	        38
+   561	      ]
+   562	    },
+   563	    {
+   564	      "index": 27,
+   565	      "position": [
+   566	        40,
+   567	        176
+   568	      ],
+   569	      "size": [
+   570	        38,
+   571	        38
+   572	      ]
+   573	    },
+   574	    {
+   575	      "index": 28,
+   576	      "position": [
+   577	        40,
+   578	        137
+   579	      ],
+   580	      "size": [
+   581	        38,
+   582	        38
+   583	      ]
+   584	    },
+   585	    {
+   586	      "index": 29,
+   587	      "position": [
+   588	        40,
+   589	        98
+   590	      ],
+   591	      "size": [
+   592	        38,
+   593	        38
+   594	      ]
+   595	    },
+   596	    {
+   597	      "index": 30,
+   598	      "position": [
+   599	        40,
+   600	        59
+   601	      ],
+   602	      "size": [
+   603	        38,
+   604	        38
+   605	      ]
+   606	    },
+   607	    {
+   608	      "index": 31,
+   609	      "position": [
+   610	        81,
+   611	        18
+   612	      ],
+   613	      "size": [
+   614	        38,
+   615	        38
+   616	      ]
+   617	    },
+   618	    {
+   619	      "index": 32,
+   620	      "position": [
+   621	        120,
+   622	        18
+   623	      ],
+   624	      "size": [
+   625	        38,
+   626	        38
+   627	      ]
+   628	    },
+   629	    {
+   630	      "index": 33,
+   631	      "position": [
+   632	        159,
+   633	        18
+   634	      ],
+   635	      "size": [
+   636	        38,
+   637	        38
+   638	      ]
+   639	    },
+   640	    {
+   641	      "index": 34,
+   642	      "position": [
+   643	        198,
+   644	        18
+   645	      ],
+   646	      "size": [
+   647	        38,
+   648	        38
+   649	      ]
+   650	    },
+   651	    {
+   652	      "index": 35,
+   653	      "position": [
+   654	        237,
+   655	        18
+   656	      ],
+   657	      "size": [
+   658	        38,
+   659	        38
+   660	      ]
+   661	    },
+   662	    {
+   663	      "index": 36,
+   664	      "position": [
+   665	        276,
+   666	        18
+   667	      ],
+   668	      "size": [
+   669	        38,
+   670	        38
+   671	      ]
+   672	    },
+   673	    {
+   674	      "index": 37,
+   675	      "position": [
+   676	        276,
+   677	        -21
+   678	      ],
+   679	      "size": [
+   680	        38,
+   681	        38
+   682	      ]
+   683	    },
+   684	    {
+   685	      "index": 38,
+   686	      "position": [
+   687	        276,
+   688	        -60
+   689	      ],
+   690	      "size": [
+   691	        38,
+   692	        38
+   693	      ]
+   694	    },
+   695	    {
+   696	      "index": 39,
+   697	      "position": [
+   698	        237,
+   699	        -60
+   700	      ],
+Tool: 
+Tool: 
+Tool: 
+Tool: ﻿{
+    "gameId":  "94034",
+    "apiName":  "Ludo Superstar",
+    "targetName":  "Ludo Superstar",
+    "match":  "BY_ID",
+    "bundleName":  "re_hippoo_hnyige-ludo_superstar-1.0.3.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260112/d30d7cb8efb83d3bd657eddab462cf9f.zip",
+    "bundleMd5":  "d30d7cb8efb83d3bd657eddab462cf9f",
+    "bundleSize":  5213177,
+    "updatedAt":  1768464998,
+    "gameLink":  "https://www.hnyigegame.com/Ludo_Superstar/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_94034",
+    "category":  "Tabletop",
+    "rate":  8.8,
+    "gameType":  1,
+    "localFile":  "Ludo_Superstar.zip",
+    "localBytes":  5213177,
+    "verifiedAt":  "2026-10-20T11:16:07",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}
+
+Tool: ﻿{
+    "gameId":  "82251",
+    "apiName":  "Just Ludo",
+    "targetName":  "Just Ludo",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Just_Ludo.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251210/3646536230e9e7cd758c9f8660cc7c36.zip",
+    "bundleMd5":  "3646536230e9e7cd758c9f8660cc7c36",
+    "bundleSize":  3327654,
+    "updatedAt":  1765352160,
+    "gameLink":  "https://www.volcanoh5game.com/Just_Ludo/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_82251",
+    "category":  "Strategy",
+    "rate":  7.7,
+    "gameType":  1,
+    "localFile":  "Just_Ludo.zip",
+    "localBytes":  3327654,
+    "verifiedAt":  "2026-10-20T11:12:47",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}
+
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "offset": 0, "end": 10, "has_more": true, "entries": [{"path": "www.hnyigegame.com/Ludo_Superstar/btn-bg.png", "size": 2782, "compressed_size": 2787, "is_directory": false, "sha256": "cba404e1001aa848643f3ef726e4f1405231db03fb600f7b4d9840d1f4e952a5"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json", "size": 48861, "compressed_size": 7758, "is_directory": false, "sha256": "443de521a57ca18e5982203bcb82e54535b79256f6af1e27ce35fe6ec5b554ad"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/20/20b38f7e-4f0e-4679-b38a-5db95d0eae63.914d1.png", "size": 2196, "compressed_size": 2201, "is_directory": false, "sha256": "8c70682adf10c50bd95faaeb9d89507feb2cf1d720e101a131b49160a392094c"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/2b/2b48f90e-a8e6-4260-b1af-f5af7c8c2497.8b48a.png", "size": 1856, "compressed_size": 1861, "is_directory": false, "sha256": "2cfa7254dd18823b3f80a201fd8e6894ebfa125efbe7108ccd24dc219d8c8dc6"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/41/41d363c4-8f82-4e87-b334-66dd7c84c1c0.33086.png", "size": 2054, "compressed_size": 2059, "is_directory": false, "sha256": "200a07a49e696862758f145a643b093d5fd39ba39348ad26c1898b1a0143f551"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/47/47eadf9e-1cef-4c7c-88d2-7c09e86d3d9d.7ebe4.png", "size": 2286, "compressed_size": 1618, "is_directory": false, "sha256": "e4b4f28f9681621024ff0ebb3cad9cce1c32ef59a07011465b7af68d07e804e9"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/50/50d64f8c-7a69-45b2-9b5b-a50013de9920.26061.png", "size": 1718, "compressed_size": 1723, "is_directory": false, "sha256": "f644e50e9f864830a2defa87c1e46479d6fe53339dca9aa7f3dc13594bfe7b40"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/86/86c887a9-2f38-49b0-8ea5-3864c0a7f386.78749.png", "size": 888, "compressed_size": 893, "is_directory": false, "sha256": "6593a35d6e63d37a35003539ff59b6ce20112377f89ba4e925fee9c3f1e0feca"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/b7/b768d7a2-681b-497b-9ce9-01adf5370ccf.2cf02.png", "size": 18812, "compressed_size": 18822, "is_directory": false, "sha256": "5f766ba2d32b8d686150587c6d67e7053e9b3257d17979ee2ff14c51ddda7b73"}, {"path": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/01/015c9cf94.858bf.json", "size": 5798, "compressed_size": 2066, "is_directory": false, "sha256": "4ea6c4348d63c2eaa3d1b4c278275ef7333f1d120fd3a00c1a82bad3f1b5e8ca"}]}
+AI: [{'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json', 'offset': 0, 'limit': 12000}, 'id': 'call_ExCnQar6VJuoOi9HdqIWxYUO', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json', 'offset': 0, 'limit': 7000}, 'id': 'call_c5U0gWUumekwFCFjPwNrcpUx', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json', 'offset': 0, 'limit': 11000}, 'id': 'call_N8rw7KBsTsLQ29pT7jl5IJQH', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/12/1289e33a-9cbc-4f3b-9d95-b399c7ed7970.f99c5.json', 'offset': 0, 'limit': 3000}, 'id': 'call_nB33FcZyByViQED8SB38mR2K', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json', 'offset': 0, 'limit': 7500}, 'id': 'call_izuQWUr7gWlTuArvPOf5IsgL', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json', 'offset': 0, 'limit': 60000}, 'id': 'call_VF0nXMMY90dkI5vAGQirrLqq', 'type': 'tool_call'}, {'name': 'extract_reference_asset', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/47/47eadf9e-1cef-4c7c-88d2-7c09e86d3d9d.7ebe4.png', 'destination': 'reference-assets/board-frame-native.png'}, 'id': 'call_msTh4ylV9h5qe3HKd7UvdjQ1', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-index.json', 'offset': 1080, 'limit': 330}, 'id': 'call_MYf6XCSF9LMIMdSrBbxEyYpg', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/research-board-runtime.json', 'offset': 700, 'limit': 620}, 'id': 'call_KTCdOxKvWbyUQmyyWPwNy4qL', 'type': 'tool_call'}]
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json", "sha256": "578a950e708b5ad497df00e052c340b6f340b73d8d3e6387b2efa1563f0b9d2b", "offset": 0, "end": 9861, "total_chars": 9861, "content": "[1,[\"94DYrkZ3ROgbtMjY/tVCJs\",\"61g5+GmwpJTpXp0VSaxY0j\",\"b4EKt5ib1Dk5KfhSPbAMPz\",\"a7HraSNpFML5oo4g2lSYJV\",\"bcbB51syNMXbSk5l5tXb6G\",\"cfGZKOaINHRLxxBoqD8KWa\",\"05LlDu0vJI8bV+mWKHWcy4\",\"a4koVBekNALKCRTmOgLbtl\",\"2b80Aa40JM874utlekOYs8\",\"e1FjO7L59OQ4GdrhLa5pVa\",\"7dijTj0NpDLaBoQPL1jZeL\",\"4a8oiz1thPc4Nej+gmtI0U\",\"6dHVT51PFBwqbTxyFmZ5dE\",\"c0Zie8E59I0LtVQlFKHqd7\",\"bdBAtn/fdCHK4cgiyyuodj\",\"09t11OY65D0aEtiuVHj/E4\",\"11508WwcFLh6oCrkKaVziB\",\"61dRBoRQ1L654tIjdKy3dP\",\"bd85SL/IpA9405UjFYFwob\",\"12ieM6nLxPO52Vs5nH7Xlw\",\"d9UppPpp5ITav1RqudtXEE\",\"aahrbjoURJvJLlngWMoGzO\",\"eaGVtWQ5dIaYgBQmxjT28w\",\"aeWmAdBgFJ66KJO2wHIdKj\",\"30BrrnCaVOppTH6pk75OT7\",\"11ir4e6gBOGqyVk2L4NC3k\",\"05LzdG88RNMYZJJ+/yb6s7\",\"fcKt4xCMNFsZmObBn3E3IM\",\"08ZWuogGdFMbgUxa1LQXxj\",\"d1SSGd2spHBIid/c2CVe/7\",\"70eyUne49ATaD9sVceJx8m\",\"bf9FLlHw9MibTTamkDU5YZ\",\"d1nVk0iSdNaKCJNo0oqaF2\",\"024o1EvO9CxpN+WRJPm5XT\",\"35yNiNluNBNZbGknlQNZxw\",\"38Xkn0dGFNwqCRz57OaTwS\",\"41n6SIBSZMc4TUqionbSHq\",\"bdgzLbf/BMbKGMlV1k3gy1\",\"66FKDG7zVADKYIO3uObv1R\",\"82D+AiOW9LIb5pY3xB4zh+\",\"0aqpfbUbVKQpcXqnjFR6zX\",\"14xZ+boExE0I6YnRO0DT04\"],[\"_textureSetter\",\"Indiastyle_img_barrier\",\"Indiastyle_img_base_bg_hong\",\"Indiastyle_img_base_bg_huang\",\"Indiastyle_img_base_bg_lan\",\"Indiastyle_img_base_bg_lv\",\"Indiastyle_img_beijing\",\"Indiastyle_img_center_blue\",\"Indiastyle_img_sanjiao_hong\",\"Indiastyle_img_sanjiao_huang\",\"Indiastyle_img_sanjiao_lan\",\"Indiastyle_img_sanjiao_lv\",\"Indiastyle_img_terminal_point\",\"Indiastyle_img_wujiaoxing\",\"img_original_token\",\"original_img_barrier\",\"original_img_base_bg_hong\",\"original_img_base_bg_huang\",\"original_img_center_blue\",\"original_img_chess_hong\",\"original_img_chess_huang\",\"original_img_chess_lan\",\"original_img_sanjiao_hong\",\"original_img_sanjiao_huang\",\"original_img_sanjiao_lan\",\"original_img_sanjiao_lv\",\"original_img_wujiaoxing\",\"sandbeach_img_barrier\",\"sandbeach_img_base_bg_hong\",\"sandbeach_img_base_bg_huang\",\"sandbeach_img_base_bg_lan\",\"sandbeach_img_base_bg_lv\",\"sandbeach_img_beijing\",\"sandbeach_img_center_blue\",\"sandbeach_img_outtime\",\"sandbeach_img_outtime_normal\",\"sandbeach_img_sanjiao_hong\",\"sandbeach_img_sanjiao_huang\",\"sandbeach_img_sanjiao_lan\",\"sandbeach_img_sanjiao_lv\",\"sandbeach_img_terminal_point\",\"sandbeach_img_wujiaoxing\"],[\"cc.SpriteFrame\",[\"cc.SpriteAtlas\",[\"_name\",\"_spriteFrames\"],2,11]],[[1,0,1,2]],[[[{\"name\":\"sandbeach_img_center_blue\",\"rect\":[1445,595,590,590],\"offset\":[0,0],\"originalSize\":[590,590],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_beijing\",\"rect\":[1,1,720,1600],\"offset\":[0,0],\"originalSize\":[720,1600],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_wujiaoxing\",\"rect\":[227,1896,27,26],\"offset\":[0,0],\"originalSize\":[27,26],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_base_bg_hong\",\"rect\":[287,1603,287,286],\"offset\":[0,0],\"originalSize\":[287,286],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_barrier\",\"rect\":[188,1929,15,33],\"offset\":[0,0],\"originalSize\":[15,33],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_terminal_point\",\"rect\":[1875,1774,171,158],\"offset\":[0,0],\"originalSize\":[171,158],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_sanjiao_lv\",\"rect\":[1354,1886,17,15],\"offset\":[0,0],\"originalSize\":[17,15],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_base_bg_hong\",\"rect\":[1405,1774,233,233],\"offset\":[0,0],\"originalSize\":[233,233],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_wujiaoxing\",\"rect\":[1287,1906,32,36],\"offset\":[0,0],\"originalSize\":[32,36],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_sanjiao_hong\",\"rect\":[1321,1851,31,37],\"offset\":[0,0],\"originalSize\":[31,37],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_sanjiao_lan\",\"rect\":[1321,1925,17,15],\"offset\":[0,0],\"originalSize\":[17,15],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_outtime\",\"rect\":[1910,1986,22,12],\"offset\":[0,0],\"originalSize\":[22,12],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_outtime_normal\",\"rect\":[154,1989,22,12],\"offset\":[0,0],\"originalSize\":[22,12],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_sanjiao_hong\",\"rect\":[1321,1890,33,31],\"offset\":[0,0],\"originalSize\":[33,31],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_sanjiao_lv\",\"rect\":[1405,1690,37,31],\"offset\":[0,0],\"originalSize\":[37,31],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_base_bg_huang\",\"rect\":[1640,1774,233,233],\"offset\":[0,0],\"originalSize\":[233,233],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_barrier\",\"rect\":[1405,1647,41,37],\"offset\":[0,2],\"originalSize\":[41,41],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_sanjiao_lan\",\"rect\":[1949,1947,31,33],\"offset\":[0,0],\"originalSize\":[31,33],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_terminal_point\",\"rect\":[1157,1851,128,128],\"offset\":[0,0],\"originalSize\":[128,128],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_base_bg_lan\",\"rect\":[1,1603,284,291],\"offset\":[0,0],\"originalSize\":[284,291],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_sanjiao_lan\",\"rect\":[188,1896,37,31],\"offset\":[0,0],\"originalSize\":[37,31],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_sanjiao_lv\",\"rect\":[1287,1944,31,33],\"offset\":[0,0],\"originalSize\":[31,33],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_center_blue\",\"rect\":[1445,1,592,592],\"offset\":[0,0],\"originalSize\":[592,592],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_base_bg_huang\",\"rect\":[1157,1603,246,246],\"offset\":[0,0],\"originalSize\":[246,246],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_chess_lan\",\"rect\":[1287,1851,32,53],\"offset\":[0,0],\"originalSize\":[32,53],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_sanjiao_huang\",\"rect\":[1982,1947,15,17],\"offset\":[0,0],\"originalSize\":[15,17],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_base_bg_hong\",\"rect\":[1157,1603,246,246],\"offset\":[0,0],\"originalSize\":[246,246],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_base_bg_lan\",\"rect\":[1157,1603,246,246],\"offset\":[0,0],\"originalSize\":[246,246],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"img_original_token\",\"rect\":[1,1896,108,151],\"offset\":[0,0],\"originalSize\":[108,151],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_sanjiao_huang\",\"rect\":[1354,1851,33,31],\"offset\":[0,0],\"originalSize\":[33,31],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_center_blue\",\"rect\":[1445,1187,586,585],\"offset\":[0,0],\"originalSize\":[586,585],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_base_bg_lv\",\"rect\":[866,1603,273,289],\"offset\":[0,0],\"originalSize\":[273,289],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_wujiaoxing\",\"rect\":[1405,1603,42,38],\"offset\":[0,1],\"originalSize\":[42,40],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_base_bg_lv\",\"rect\":[1157,1603,246,246],\"offset\":[0,0],\"originalSize\":[246,246],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_base_bg_huang\",\"rect\":[576,1603,288,281],\"offset\":[0,0],\"originalSize\":[288,281],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"sandbeach_img_beijing\",\"rect\":[723,1,720,1600],\"offset\":[0,0],\"originalSize\":[720,1600],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_chess_huang\",\"rect\":[1875,1947,33,53],\"offset\":[0,0],\"originalSize\":[33,53],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_sanjiao_huang\",\"rect\":[154,1950,31,37],\"offset\":[0,0],\"originalSize\":[31,37],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_sanjiao_hong\",\"rect\":[1405,1723,15,17],\"offset\":[0,0],\"originalSize\":[15,17],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,\"skin3-0.plist\",[{},\"Indiastyle_img_barrier\",6,0,\"Indiastyle_img_base_bg_hong\",6,1,\"Indiastyle_img_base_bg_huang\",6,2,\"Indiastyle_img_base_bg_lan\",6,3,\"Indiastyle_img_base_bg_lv\",6,4,\"Indiastyle_img_beijing\",6,5,\"Indiastyle_img_center_blue\",6,6,\"Indiastyle_img_sanjiao_hong\",6,7,\"Indiastyle_img_sanjiao_huang\",6,8,\"Indiastyle_img_sanjiao_lan\",6,9,\"Indiastyle_img_sanjiao_lv\",6,10,\"Indiastyle_img_terminal_point\",6,11,\"Indiastyle_img_wujiaoxing\",6,12,\"img_original_token\",6,13,\"original_img_barrier\",6,14,\"original_img_base_bg_hong\",6,15,\"original_img_base_bg_huang\",6,16,\"original_img_center_blue\",6,17,\"original_img_chess_hong\",6,18,\"original_img_chess_huang\",6,19,\"original_img_chess_lan\",6,20,\"original_img_sanjiao_hong\",6,21,\"original_img_sanjiao_huang\",6,22,\"original_img_sanjiao_lan\",6,23,\"original_img_sanjiao_lv\",6,24,\"original_img_wujiaoxing\",6,25,\"sandbeach_img_barrier\",6,26,\"sandbeach_img_base_bg_hong\",6,27,\"sandbeach_img_base_bg_huang\",6,28,\"sandbeach_img_base_bg_lan\",6,29,\"sandbeach_img_base_bg_lv\",6,30,\"sandbeach_img_beijing\",6,31,\"sandbeach_img_center_blue\",6,32,\"sandbeach_img_outtime\",6,33,\"sandbeach_img_outtime_normal\",6,34,\"sandbeach_img_sanjiao_hong\",6,35,\"sandbeach_img_sanjiao_huang\",6,36,\"sandbeach_img_sanjiao_lan\",6,37,\"sandbeach_img_sanjiao_lv\",6,38,\"sandbeach_img_terminal_point\",6,39,\"sandbeach_img_wujiaoxing\",6,40]]],0,0,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]],[[{\"name\":\"sandbeach_img_barrier\",\"rect\":[1910,1947,37,37],\"offset\":[0,0],\"originalSize\":[37,37],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]]]]"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/04/04afb2abe.9a5b4.json", "sha256": "9fb15d9f975f1a6547b8d729347596227e559d202ceead884f12ef410c0f22cb", "offset": 0, "end": 856, "total_chars": 856, "content": "[1,[\"51Fey81ydGVYSs5wADiXLV\",\"01V8B56cRCVZrp4nuIUC9L\",\"482S8J7RFAwqY2l3Fe1wsr\",\"56bZ/0ozpG2peJVnLq88BG\"],[\"_textureSetter\",\"original_img_base_bg_lan\",\"original_img_base_bg_lv\",\"original_img_beijing\"],[\"cc.SpriteFrame\",[\"cc.SpriteAtlas\",[\"_name\",\"_spriteFrames\"],2,11]],[[1,0,1,2]],[[[{\"name\":\"original_img_base_bg_lan\",\"rect\":[1,1603,233,233],\"offset\":[0,0],\"originalSize\":[233,233],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_base_bg_lv\",\"rect\":[236,1603,233,233],\"offset\":[0,0],\"originalSize\":[233,233],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_beijing\",\"rect\":[1,1,719,1600],\"offset\":[0,0],\"originalSize\":[719,1600],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,\"skin3-1.plist\",[{},\"original_img_base_bg_lan\",6,0,\"original_img_base_bg_lv\",6,1,\"original_img_beijing\",6,2]]],0,0,[0,0,0],[1,2,3],[1,2,3]]]]"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0b/0b0754561.b16fd.json", "sha256": "f29f427236703e9498d821db0e00322c2e09ad70ed5ca194efd3fc370ff60771", "offset": 0, "end": 11000, "total_chars": 12306, "content": "[1,[\"8dOVbooXhEPZHCvy02QJ5x\",\"ecMq5ZLRRHxYRPWyOeoApg\",\"a31lDO6v1Cnp9Wiy1fmdkZ\",\"8581LwyW9FYY2y62Tw/ze7\",\"eb3SyaDn9MJbzBmf76GgO2\",\"5fDYXJK11FB4KGMkPBl1ow\",\"beu62RheRMV4xv/+dJ++Cs\",\"544i15haBIcIGvoSomVILM\",\"1ay2bYFKZBAKZvU7kO7BWj\",\"b5dV3sptFF4ar/R/fheBtq\",\"8eBakk4IBOeYhNuDA27lnS\",\"16uuJ4/IdFFbTTnYYxwpXy\",\"4ccajUPfJPuIu94chqHji7\",\"c8ZBQXgRNBNJ2YnTW23hqK\",\"24Xz0CbVxL7YKxWesXfXVZ\",\"d90YUpK8xAUY6WHtwhXIjr\",\"93vwJot2ZLQpmJgQUFYcuP\",\"9cRlOHC5tAdoxlouWMuuhu\",\"a31pLPxVZKCp7Ir4twUEca\",\"5a60O2OkFDepTN+5T02nQz\",\"a1mc6MxWdKrZ8yl2QQLFVO\",\"b0DyzMSFJO6ao0fS1rIiXt\",\"19rBbD4gRPo46DyZuFOVxT\",\"1fwBwHnjxDZ4kG7UaYCSXR\",\"50g0VgPCNKsK1r/LW7z1Hl\",\"b2y3HGDZ5O/p8IdT+oTmi0\",\"57wnF8e5BNA5o8QVWe53E4\",\"fafczBRU1NvL6PBZ1eFtsI\",\"8bZ5r5bbxI57lypu2SWMHm\",\"2fBkJNWq1D/pDZL/gBtg4i\",\"a1Um9ouvhKHKY9loQtSPyp\",\"21pAthLOpHcIeKjWG2CvFe\",\"78kNTbmatNOJ3FU0hvSnXk\",\"1cyvitK01E/peyFaQ2dBWE\",\"abzDq0nzxHiYOMglkuMtoc\",\"4dE1Chnt5BkLHze5uPGhPN\",\"bcMjb68UlPgZLDCOpULjUP\",\"2138D7RINLmaCSLp2xgEkT\",\"acxPP2GRpBbZn/qeXjw0OR\",\"4bPUI/4ARDHpbMinQWAFLg\",\"61FXADdPZAZbP44inzHX9R\",\"33p/Z3g8pIxJX5XH+8MzU0\",\"6cCENEXzZJoZqg5xEOl86S\",\"0dxX3H3u5Lk7TgT+XgwzjF\",\"34BxSvH+tEUJIGFk3WDLYZ\",\"685/9XiotCa5Xgyuh3IwGk\",\"8aiQ+a4P5HK7TbFu1aSAL4\",\"74nCMeTEtBBLoyqnGvjVfF\",\"aeIijnRoZCYZJio0ksUGcw\",\"dfKZvNLjhChby5iv8f/4o+\",\"c9cw+7ZuRAYJZrZbBlgUmT\",\"46xj1rI3dIcr98tgl6PMA5\",\"75q80kt/5PSqnD879nbTUe\",\"f5kELM44VIYbLcFgH5CDvp\",\"bdS6cONv9JB6h2L3DY1L7O\"],[\"_textureSetter\",\"Asphalt_img_chess_hong\",\"Asphalt_img_chess_huang\",\"Asphalt_img_chess_lan\",\"Asphalt_img_chess_lv\",\"Indiastyle_img_chess_hong\",\"Indiastyle_img_chess_huang\",\"Indiastyle_img_chess_lan\",\"Indiastyle_img_chess_lv\",\"Roadblock_img_chess_hong\",\"Roadblock_img_chess_huang\",\"Roadblock_img_chess_lan\",\"Roadblock_img_chess_lv\",\"football_dice_points_1\",\"football_dice_points_2\",\"football_dice_points_3\",\"football_dice_points_4\",\"football_dice_points_5\",\"football_dice_points_6\",\"gemstone_dice_points_1\",\"gemstone_dice_points_2\",\"gemstone_dice_points_3\",\"gemstone_dice_points_4\",\"gemstone_dice_points_5\",\"gemstone_dice_points_6\",\"img_Asphalt_token\",\"img_Indiastyle_token\",\"img_Roadblock_token\",\"img_space_token\",\"original_dice_points_1\",\"original_dice_points_2\",\"original_dice_points_3\",\"original_dice_points_4\",\"original_dice_points_5\",\"original_dice_points_6\",\"original_img_chess_hong\",\"original_img_chess_huang\",\"original_img_chess_lan\",\"original_img_chess_lv\",\"rubikscube_dice_points_1\",\"rubikscube_dice_points_2\",\"rubikscube_dice_points_3\",\"rubikscube_dice_points_4\",\"rubikscube_dice_points_5\",\"rubikscube_dice_points_6\",\"snow_dice_points_1\",\"snow_dice_points_2\",\"snow_dice_points_3\",\"snow_dice_points_4\",\"snow_dice_points_5\",\"snow_dice_points_6\",\"space_img_chess_hong\",\"space_img_chess_huang\",\"space_img_chess_lan\",\"space_img_chess_lv\"],[\"cc.SpriteFrame\",[\"cc.SpriteAtlas\",[\"_name\",\"_spriteFrames\"],2,11]],[[1,0,1,2]],[[[{\"name\":\"rubikscube_dice_points_5\",\"rect\":[877,182,114,114],\"offset\":[4,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Roadblock_img_chess_lan\",\"rect\":[810,298,40,45],\"offset\":[0,0],\"originalSize\":[40,45],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"gemstone_dice_points_4\",\"rect\":[1084,391,112,112],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_chess_lv\",\"rect\":[761,298,47,63],\"offset\":[0,0],\"originalSize\":[47,63],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_dice_points_5\",\"rect\":[1312,223,104,106],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"gemstone_dice_points_5\",\"rect\":[1210,1,112,112],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_dice_points_3\",\"rect\":[1221,115,104,106],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_chess_lan\",\"rect\":[894,298,32,53],\"offset\":[0,0],\"originalSize\":[32,53],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"football_dice_points_2\",\"rect\":[1,387,114,114],\"offset\":[3,3],\"originalSize\":[160,160],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_dice_points_1\",\"rect\":[1198,390,104,106],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"rubikscube_dice_points_3\",\"rect\":[750,1,114,114],\"offset\":[4,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"rubikscube_dice_points_6\",\"rect\":[866,1,114,114],\"offset\":[4,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"space_img_chess_hong\",\"rect\":[810,345,27,49],\"offset\":[0,0],\"originalSize\":[27,49],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"rubikscube_dice_points_1\",\"rect\":[233,387,114,114],\"offset\":[4,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Roadblock_img_chess_lv\",\"rect\":[852,298,40,44],\"offset\":[0,0],\"originalSize\":[40,44],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_chess_hong\",\"rect\":[949,298,32,52],\"offset\":[0,0],\"originalSize\":[32,52],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"gemstone_dice_points_6\",\"rect\":[1198,276,112,112],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_chess_lan\",\"rect\":[848,117,47,63],\"offset\":[0,0],\"originalSize\":[47,63],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,\"skin1.plist\",[{},\"Asphalt_img_chess_hong\",6,0,\"Asphalt_img_chess_huang\",6,1,\"Asphalt_img_chess_lan\",6,2,\"Asphalt_img_chess_lv\",6,3,\"Indiastyle_img_chess_hong\",6,4,\"Indiastyle_img_chess_huang\",6,5,\"Indiastyle_img_chess_lan\",6,6,\"Indiastyle_img_chess_lv\",6,7,\"Roadblock_img_chess_hong\",6,8,\"Roadblock_img_chess_huang\",6,9,\"Roadblock_img_chess_lan\",6,10,\"Roadblock_img_chess_lv\",6,11,\"football_dice_points_1\",6,12,\"football_dice_points_2\",6,13,\"football_dice_points_3\",6,14,\"football_dice_points_4\",6,15,\"football_dice_points_5\",6,16,\"football_dice_points_6\",6,17,\"gemstone_dice_points_1\",6,18,\"gemstone_dice_points_2\",6,19,\"gemstone_dice_points_3\",6,20,\"gemstone_dice_points_4\",6,21,\"gemstone_dice_points_5\",6,22,\"gemstone_dice_points_6\",6,23,\"img_Asphalt_token\",6,24,\"img_Indiastyle_token\",6,25,\"img_Roadblock_token\",6,26,\"img_space_token\",6,27,\"original_dice_points_1\",6,28,\"original_dice_points_2\",6,29,\"original_dice_points_3\",6,30,\"original_dice_points_4\",6,31,\"original_dice_points_5\",6,32,\"original_dice_points_6\",6,33,\"original_img_chess_hong\",6,34,\"original_img_chess_huang\",6,35,\"original_img_chess_lan\",6,36,\"original_img_chess_lv\",6,37,\"rubikscube_dice_points_1\",6,38,\"rubikscube_dice_points_2\",6,39,\"rubikscube_dice_points_3\",6,40,\"rubikscube_dice_points_4\",6,41,\"rubikscube_dice_points_5\",6,42,\"rubikscube_dice_points_6\",6,43,\"snow_dice_points_1\",6,44,\"snow_dice_points_2\",6,45,\"snow_dice_points_3\",6,46,\"snow_dice_points_4\",6,47,\"snow_dice_points_5\",6,48,\"snow_dice_points_6\",6,49,\"space_img_chess_hong\",6,50,\"space_img_chess_huang\",6,51,\"space_img_chess_lan\",6,52,\"space_img_chess_lv\",6,53]]],0,0,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54]],[[{\"name\":\"img_Indiastyle_token\",\"rect\":[573,1,175,193],\"offset\":[0,0],\"originalSize\":[175,193],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"gemstone_dice_points_1\",\"rect\":[970,370,112,112],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Indiastyle_img_chess_hong\",\"rect\":[750,117,47,63],\"offset\":[0,0],\"originalSize\":[47,63],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"rubikscube_dice_points_2\",\"rect\":[349,387,114,114],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"snow_dice_points_1\",\"rect\":[1,195,190,190],\"offset\":[0,-3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"rubikscube_dice_points_4\",\"rect\":[761,182,114,114],\"offset\":[4,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"snow_dice_points_3\",\"rect\":[1,1,192,192],\"offset\":[-2,-2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"space_img_chess_huang\",\"rect\":[861,344,27,49],\"offset\":[0,0],\"originalSize\":[27,49],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_dice_points_4\",\"rect\":[1324,1,104,106],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Asphalt_img_chess_lan\",\"rect\":[1083,117,43,34],\"offset\":[0,0],\"originalSize\":[43,34],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"snow_dice_points_2\",\"rect\":[385,1,186,186],\"offset\":[0,0],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"img_space_token\",\"rect\":[465,377,133,212],\"offset\":[0,0],\"originalSize\":[133,212],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Roadblock_img_chess_huang\",\"rect\":[967,117,39,44],\"offset\":[0,0],\"originalSize\":[39,44],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"football_dice_points_4\",\"rect\":[856,374,112,114],\"offset\":[4,2],\"originalSize\":[160,160],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"football_dice_points_5\",\"rect\":[1096,1,112,112],\"offset\":[4,3],\"originalSize\":[160,160],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_dice_points_2\",\"rect\":[1304,390,104,106],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"gemstone_dice_points_2\",\"rect\":[1084,277,112,112],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Asphalt_img_chess_huang\",\"rect\":[1008,117,44,36],\"offset\":[0,0],\"originalSize\":[44,36],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"football_dice_points_6\",\"rect\":[117,387,114,114],\"offset\":[3,2],\"originalSize\":[160,160],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_dice_points_6\",\"rect\":[1327,109,104,106],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_chess_lv\",\"rect\":[932,117,33,53],\"offset\":[0,0],\"originalSize\":[33,53],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"snow_dice_points_4\",\"rect\":[193,195,190,190],\"offset\":[-1,-1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"gemstone_dice_points_3\",\"rect\":[1107,162,112,112],\"offset\":[4,3],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"Roadblock_img_chess_hong\",\"rect\":[912,332,39,43],\"offset\":[0,0],\"originalSize\":[39,43],\"rotated\":1,\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"original_img_chess_huang\",\"rect\":[897,117,33,53],\"offset\":[0,0],\"originalSize\":[33,53],\"capInsets\":[0,0,"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/12/1289e33a-9cbc-4f3b-9d95-b399c7ed7970.f99c5.json", "sha256": "bfb5ab62152bc764c7ddb256b0a6fed9b30185bcf760deb78a0d1f8342cea745", "offset": 0, "end": 209, "total_chars": 209, "content": "[1,[\"94DYrkZ3ROgbtMjY/tVCJs\"],[\"_textureSetter\"],[\"cc.SpriteFrame\"],0,[{\"name\":\"original_img_chess_hong\",\"rect\":[154,1896,32,52],\"offset\":[0,0],\"originalSize\":[32,52],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]]"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0c/0c67ce8ea.b217e.json", "sha256": "759c137bf862a76d6ae487daa0f7817dcd03cda7587d7e10ac7e45713eda9c08", "offset": 0, "end": 6193, "total_chars": 6193, "content": "[1,[\"afvFFN27xEno/cKQAo3XRS\",\"abyI9uzHJCtKMBheaI3q94\",\"feE4ZoHbNMR5D3HDSkWvwH\",\"21ylMsP3RPdZeTzIh8ytDx\",\"feXHjxaH9LpKbs+XYS104o\",\"d2ZKcOjKtKWIaGV8E8wlec\",\"f6kjjXV1JHZYGKAZZnJ+2a\",\"307oX3QY5KxZD42nW0Rj5O\",\"9fl5a6VvFHxLndguLIo2bN\",\"768dpeSx1PIoaan7fKD3sO\",\"40cNs2/UZBPYdemmj13gTD\",\"b6LLERZPtH1oeX3T/JAFJX\",\"48udqbvJBE3ZHHpRZO/8l1\",\"c3ENel+exMfoQckrlkE9Cp\",\"1ecS8lzLhG3YwKeMobd9sN\",\"d9EkEivKlGSYPM1qNiuypt\",\"67QUi36dlKpoikxmuzhk4b\",\"1a1xlOlyREp40w0T/xcjfl\",\"3cFtMHD1hFhYrGSjeBto+V\",\"25OGl63GhPELZqPXqHl3pL\",\"8clQTVvRtBzIgzo7MlPdF4\",\"17j7gVgVVF4qMa6aDJYQ0o\",\"a0wfQdzkZDb5froO1UXPwm\",\"d2aAlAPdpN5LFJbA6siz8K\",\"a6raEqh+FA1oPi1xR9kQAX\",\"11m1wL8EBGfJwyIrQpeMtt\",\"e5c38tj3xEy7B1VIOt26n/\",\"79p0z3KDpGgKUGfRp7ejur\",\"da5D8qbDJHYp7oaShALTl3\",\"f1i4VFNqJKu5GP86SRochF\",\"b9+EneM6FFjZPOXAovzULC\",\"cdwp23BGZHlZpMmcglLnSn\",\"84OPvQ9vJKWrurCG61Vgwu\",\"d7btEewrRDQ5uN+7sZdz6R\",\"e9GrMvP6xEmKl9QqRZ40SA\",\"3fFs3bcpZPMZjyxuCnbVq0\",\"ecXrO/g7lOEZ1GE9mXmd2Y\",\"3d3venxB1C5J4eUsVxjpsq\",\"3cFmSgczJMV46x6tuGyapP\",\"6fk44W6hlNuYHb24czhZck\",\"7c+k9CmidHepGOIvdp3q/a\",\"85hBgE1sdH/LF7z2AZ+B90\",\"ffBoQ+KsFPPYGsY/PDR8dR\",\"00MiF+CVJH36XxD99irqUu\",\"441JYfJqlMz6OdaQX715EA\",\"c8fXUa8UlC7Jtm4DlaW7eo\",\"6awhxSzNxAXb6ORw/Gnnm7\",\"95y8VdFKRK4bwOkqujQrQN\",\"beUJcLHBhCVp9fM7Y8ukoB\",\"81q9ZODRtK7ZaCKoMEQNHQ\",\"2dR+PwnhFMhKiqpiPV/0oC\",\"c7H7NUJ6BD2b5CMN8c/pva\"],[\"_textureSetter\",\"value\"],[\"cc.SpriteFrame\",[\"cc.AnimationClip\",[\"_name\",\"_duration\",\"sample\",\"curveData\"],0,11]],[[1,0,1,2,3,4]],[[[{\"name\":\"合成_00019\",\"rect\":[64,57,105,106],\"offset\":[6.5,0],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{\"name\":\"合成_00015\",\"rect\":[51,46,122,121],\"offset\":[2,3.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[1]],[[{\"name\":\"合成_00011\",\"rect\":[52,49,123,115],\"offset\":[3.5,3.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[2]],[[{\"name\":\"合成_00008\",\"rect\":[59,52,115,114],\"offset\":[6.5,1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[3]],[[{\"name\":\"合成_00013\",\"rect\":[54,54,117,114],\"offset\":[2.5,-1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[4]],[[[0,\"dice_anim\",0.8333333333333334,30,[{},\"comps\",11,[{},\"cc.Sprite\",11,[{},\"spriteFrame\",12,[[[{\"frame\":-0.13333333333333333},\"value\",6,0],[{\"frame\":0},\"value\",6,1],[{\"frame\":0.03333333333333333},\"value\",6,2],[{\"frame\":0.06666666666666667},\"value\",6,3],[{\"frame\":0.1},\"value\",6,4],[{\"frame\":0.13333333333333333},\"value\",6,5],[{\"frame\":0.16666666666666666},\"value\",6,6],[{\"frame\":0.2},\"value\",6,7],[{\"frame\":0.23333333333333334},\"value\",6,8],[{\"frame\":0.26666666666666666},\"value\",6,9],[{\"frame\":0.3},\"value\",6,10],[{\"frame\":0.3333333333333333},\"value\",6,11],[{\"frame\":0.36666666666666664},\"value\",6,12],[{\"frame\":0.4},\"value\",6,13],[{\"frame\":0.43333333333333335},\"value\",6,14],[{\"frame\":0.4666666666666667},\"value\",6,15],[{\"frame\":0.5},\"value\",6,16],[{\"frame\":0.5333333333333333},\"value\",6,17],[{\"frame\":0.5666666666666667},\"value\",6,18],[{\"frame\":0.6},\"value\",6,19],[{\"frame\":0.6333333333333333},\"value\",6,20],[{\"frame\":0.6666666666666666},\"value\",6,21],[{\"frame\":0.7},\"value\",6,22],[{\"frame\":0.7333333333333333},\"value\",6,23],[{\"frame\":0.7666666666666667},\"value\",6,24],[{\"frame\":0.8},\"value\",6,25]],11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11]]]]]],0,0,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]],[[{\"name\":\"合成_00001\",\"rect\":[59,49,114,120],\"offset\":[6,1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[31]],[[{\"name\":\"合成_00012\",\"rect\":[54,54,117,114],\"offset\":[2.5,-1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[32]],[[{\"name\":\"合成_00004\",\"rect\":[57,49,117,120],\"offset\":[5.5,1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[33]],[[{\"name\":\"合成_00006\",\"rect\":[58,48,117,121],\"offset\":[6.5,1.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[34]],[[{\"name\":\"合成_00010\",\"rect\":[60,52,114,113],\"offset\":[7,1.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[35]],[[{\"name\":\"合成_00003\",\"rect\":[53,51,122,113],\"offset\":[4,2.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[36]],[[{\"name\":\"合成_00021\",\"rect\":[54,53,120,109],\"offset\":[4,2.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[37]],[[{\"name\":\"合成_00014\",\"rect\":[62,53,110,113],\"offset\":[7,0.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[38]],[[{\"name\":\"合成_00002\",\"rect\":[53,51,122,113],\"offset\":[4,2.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[39]],[[{\"name\":\"合成_00016\",\"rect\":[56,47,119,123],\"offset\":[5.5,1.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[40]],[[{\"name\":\"合成_00018\",\"rect\":[64,57,105,106],\"offset\":[6.5,0],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[41]],[[{\"name\":\"合成_00005\",\"rect\":[53,51,123,116],\"offset\":[4.5,1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[42]],[[{\"name\":\"合成_00024\",\"rect\":[58,48,117,120],\"offset\":[6.5,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[43]],[[{\"name\":\"合成_00007\",\"rect\":[58,48,117,121],\"offset\":[6.5,1.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[44]],[[{\"name\":\"dice0\",\"rect\":[64,60,75,75],\"offset\":[1.5,2.5],\"originalSize\":[200,200],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[45]],[[{\"name\":\"合成_00017\",\"rect\":[58,49,117,118],\"offset\":[6.5,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[46]],[[{\"name\":\"合成_00009\",\"rect\":[59,52,115,114],\"offset\":[6.5,1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[47]],[[{\"name\":\"合成_00022\",\"rect\":[54,53,120,109],\"offset\":[4,2.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[48]],[[{\"name\":\"合成_00020\",\"rect\":[57,53,114,116],\"offset\":[4,-1],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[49]],[[{\"name\":\"合成_00023\",\"rect\":[58,48,117,120],\"offset\":[6.5,2],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[50]],[[{\"name\":\"合成_00000\",\"rect\":[63,56,102,103],\"offset\":[4,2.5],\"originalSize\":[220,220],\"capInsets\":[0,0,0,0]}],[0],0,[0],[0],[51]]]]"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/import/09/09d798ff2.89558.json", "sha256": "443de521a57ca18e5982203bcb82e54535b79256f6af1e27ce35fe6ec5b554ad", "offset": 0, "end": 48817, "total_chars": 48817, "content": "[\n  1,\n  [\n    \"ecpdLyjvZBwrvm+cedCcQy\",\n    \"f0BIwQ8D5Ml7nTNQbh1YlS\",\n    \"e97GVMl6JHh5Ml5qEDdSGa\",\n    \"29FYIk+N1GYaeWH/q1NxQO\",\n    \"804uHhuchEnaVTJn8ZJu3S\",\n    \"6b2JWUN8hJF40IS6W4bZBE\",\n    \"11508WwcFLh6oCrkKaVziB\",\n    \"d501Or75lITqJz6jBk3Xoh\",\n    \"86yIepLzhJsI6lOGTAp/OG\",\n    \"20s49+Tw5GebOKXbldDq5j\",\n    \"b7aNeiaBtJe5zpAa31NwzP\",\n    \"4102PEj4JOh7M0Zt18hMHA\",\n    \"476t+eHO9MfIjSfAnobT2d\",\n    \"2bSPkOqOZCYLGv9a98jCSX\",\n    \"501k+MemlFsptbpQAT3pkg\",\n    \"a2MjXRFdtLlYQ5ouAFv/+R\",\n    \"c9BmV2ZixARIlKCvuRTTDH\",\n    \"9bvaMerUlDyary99mJa6xp\",\n    \"ebGDojF/FE+akSZxMoUTMb\",\n    \"11SbHCmqZN5Iqjz1j5I81j\",\n    \"e4iObQuqVNFZUgyWOEjXZ5\",\n    \"c8RBmQhUFGdI248QKN/Lca\",\n    \"6cTgqcx4hChZB8qOGmlsPq\",\n    \"18i3vhZztPPpKpBYLIkDw4\",\n    \"4ckqWAWXRFMoPQd6MKLX9g\",\n    \"56bZ/0ozpG2peJVnLq88BG\",\n    \"bd85SL/IpA9405UjFYFwob\",\n    \"61dRBoRQ1L654tIjdKy3dP\"\n  ],\n  [\n    \"_parent\",\n    \"node\",\n    \"_spriteFrame\",\n    \"_N$normalSprite\",\n    \"_N$pressedSprite\",\n    \"_N$hoverSprite\",\n    \"_N$disabledSprite\",\n    \"_textureSetter\",\n    \"root\",\n    \"_N$target\",\n    \"node_bg\",\n    \"btn_expression\",\n    \"labGameDifficulty\",\n    \"node_terminal\",\n    \"node_center\",\n    \"node_base\",\n    \"node_add_player\",\n    \"img_center\",\n    \"mainNode\",\n    \"sprCenter\",\n    \"nodeUseProps\",\n    \"img_expression\",\n    \"labTurnPlayerIndex\",\n    \"img_beijing\",\n    \"topNode\",\n    \"chessNode\",\n    \"labDicePoints\",\n    \"playerInfoNode\",\n    \"mapNode\",\n    \"scene\",\n    \"mapGridPrefab\",\n    \"chessPrefab\",\n    \"usePropsViewPrefab\",\n    \"playerInfoPrefab\"\n  ],\n  [\n    [\n      \"cc.Node\",\n      [\n        \"_name\",\n        \"_objFlags\",\n        \"_opacity\",\n        \"_active\",\n        \"_parent\",\n        \"_contentSize\",\n        \"_trs\",\n        \"_components\",\n        \"_prefab\",\n        \"_color\",\n        \"_children\",\n        \"_anchorPoint\"\n      ],\n      -1,\n      1,\n      5,\n      7,\n      9,\n      4,\n      5,\n      9,\n      5\n    ],\n    [\n      \"cc.Node\",\n      [\n        \"_name\",\n        \"_active\",\n        \"_id\",\n        \"_objFlags\",\n        \"_children\",\n        \"_components\",\n        \"_contentSize\",\n        \"_trs\",\n        \"_parent\",\n        \"_prefab\"\n      ],\n      -1,\n      2,\n      9,\n      5,\n      7,\n      1,\n      4\n    ],\n    [\n      \"cc.Widget\",\n      [\n        \"_alignFlags\",\n        \"_bottom\",\n        \"_originalWidth\",\n        \"_originalHeight\",\n        \"_left\",\n        \"_top\",\n        \"alignMode\",\n        \"_right\",\n        \"node\"\n      ],\n      -5,\n      1\n    ],\n    [\n      \"cc.Sprite\",\n      [\n        \"_sizeMode\",\n        \"_type\",\n        \"_isTrimmedMode\",\n        \"node\",\n        \"_materials\",\n        \"_spriteFrame\"\n      ],\n      0,\n      1,\n      3,\n      6\n    ],\n    \"cc.SpriteFrame\",\n    [\n      \"cc.Node\",\n      [\n        \"_name\",\n        \"_active\",\n        \"_opacity\",\n        \"_parent\",\n        \"_components\",\n        \"_contentSize\",\n        \"_trs\",\n        \"_color\"\n      ],\n      0,\n      1,\n      2,\n      5,\n      7,\n      5\n    ],\n    [\n      \"cc.Button\",\n      [\n        \"_N$transition\",\n        \"node\",\n        \"clickEvents\",\n        \"_N$normalColor\",\n        \"_N$pressedColor\",\n        \"_N$disabledColor\",\n        \"_N$target\",\n        \"_N$normalSprite\",\n        \"_N$pressedSprite\",\n        \"_N$hoverSprite\",\n        \"_N$disabledSprite\"\n      ],\n      2,\n      1,\n      9,\n      5,\n      5,\n      5,\n      1,\n      6,\n      6,\n      6,\n      6\n    ],\n    [\n      \"cc.Label\",\n      [\n        \"_string\",\n        \"_N$horizontalAlign\",\n        \"_N$verticalAlign\",\n        \"_fontSize\",\n        \"_enableWrapText\",\n        \"_N$overflow\",\n        \"_N$cacheMode\",\n        \"node\",\n        \"_materials\"\n      ],\n      -4,\n      1,\n      3\n    ],\n    [\n      \"cc.Node\",\n      [\n        \"_name\",\n        \"_objFlags\",\n        \"_active\",\n        \"_parent\",\n        \"_components\",\n        \"_contentSize\",\n        \"_trs\",\n        \"_color\",\n        \"_anchorPoint\"\n      ],\n      0,\n      1,\n      12,\n      5,\n      7,\n      5,\n      5\n    ],\n    [\"cc.PrefabInfo\", [\"fileId\", \"root\"], 2, 1],\n    [\n      \"cc.ClickEvent\",\n      [\"_componentId\", \"handler\", \"customEventData\", \"target\"],\n      0,\n      1\n    ],\n    [\"cc.SceneAsset\", [\"_name\", \"asyncLoadAssets\"], 1],\n    [\"e9f49R6kZxBDrMYZkufU5YY\", [\"node\"], 3, 1],\n    [\n      \"cc.Canvas\",\n      [\"_fitWidth\", \"_fitHeight\", \"node\", \"_designResolution\"],\n      1,\n      1,\n      5\n    ],\n    [\n      \"68d18hulKlLK4cTScn8resv\",\n      [\n        \"mainNodeScale\",\n        \"node\",\n        \"mapNode\",\n        \"playerInfoNode\",\n        \"labDicePoints\",\n        \"mapGridNode\",\n        \"chessNode\",\n        \"topNode\",\n        \"img_beijing\",\n        \"labTurnPlayerIndex\",\n        \"sprChessBaseBgs\",\n        \"sprTerminalPoints\",\n        \"playerInfoNodes\",\n        \"terminalAnimNodes\",\n        \"img_expression\",\n        \"spfGameModes\",\n        \"nodeUseProps\",\n        \"sprCenter\",\n        \"mainNode\",\n        \"winFlags\",\n        \"img_center\",\n        \"node_add_player\",\n        \"node_base\",\n        \"node_center\",\n        \"node_terminal\",\n        \"labGameDifficulty\",\n        \"nodeDiceTestUI\",\n        \"btn_expression\",\n        \"node_bg\",\n        \"mapGridPrefab\",\n        \"chessPrefab\",\n        \"usePropsViewPrefab\",\n        \"playerInfoPrefab\"\n      ],\n      2,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      2,\n      2,\n      2,\n      2,\n      1,\n      3,\n      1,\n      1,\n      1,\n      2,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      6,\n      6,\n      6,\n      6\n    ],\n    [\"cc.SafeArea\", [\"node\"], 3, 1],\n    [\"cc.Layout\", [\"node\", \"_layoutSize\"], 3, 1, 5],\n    [\n      \"cc.Scene\",\n      [\n        \"_name\",\n        \"_active\",\n        \"autoReleaseAssets\",\n        \"_children\",\n        \"_anchorPoint\",\n        \"_trs\"\n      ],\n      0,\n      2,\n      5,\n      7\n    ],\n    [\"cc.Camera\", [\"_clearFlags\", \"_depth\", \"node\"], 1, 1]\n  ],\n  [\n    [0, 0, 4, 5, 6, 2],\n    [9, 0, 1, 2],\n    [3, 1, 0, 3, 4, 5, 3],\n    [5, 0, 3, 4, 5, 6, 2],\n    [0, 0, 1, 4, 7, 8, 9, 5, 3],\n    [1, 0, 3, 4, 5, 9, 6, 3],\n    [6, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1],\n    [2, 6, 0, 2, 3, 8, 5],\n    [2, 0, 4, 8, 3],\n    [10, 0, 1, 2, 3, 4],\n    [1, 0, 8, 4, 5, 9, 6, 7, 2],\n    [3, 3, 4, 1],\n    [7, 0, 4, 1, 2, 5, 6, 7, 8, 7],\n    [0, 0, 4, 6, 2],\n    [9, 1, 1],\n    [0, 0, 4, 8, 5, 6, 2],\n    [0, 0, 3, 4, 7, 5, 6, 3],\n    [1, 0, 8, 4, 2],\n    [3, 3, 4, 5, 1],\n    [3, 0, 3, 4, 2],\n    [1, 0, 8, 4, 5, 6, 7, 2],\n    [6, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2],\n    [2, 0, 2, 3, 8, 4],\n    [2, 0, 4, 1, 8, 4],\n    [2, 6, 0, 4, 7, 5, 1, 2, 3, 8, 9],\n    [10, 0, 1, 3, 3],\n    [7, 0, 3, 1, 2, 7, 8, 5],\n    [0, 0, 10, 2],\n    [0, 0, 1, 4, 7, 5, 6, 3],\n    [0, 0, 4, 7, 5, 6, 2],\n    [1, 0, 1, 8, 4, 5, 6, 7, 3],\n    [5, 0, 1, 3, 4, 7, 5, 6, 3],\n    [2, 0, 8, 2],\n    [3, 0, 2, 3, 4, 3],\n    [11, 0, 1, 3],\n    [0, 0, 2, 4, 7, 8, 9, 5, 3],\n    [0, 0, 4, 7, 5, 2],\n    [0, 0, 4, 7, 9, 5, 11, 6, 2],\n    [1, 0, 1, 4, 5, 9, 6, 7, 3],\n    [1, 0, 2, 4, 5, 6, 7, 3],\n    [1, 0, 4, 5, 6, 7, 2],\n    [1, 0, 1, 8, 4, 3],\n    [1, 0, 8, 4, 5, 6, 2],\n    [1, 0, 1, 8, 4, 5, 9, 6, 7, 3],\n    [8, 0, 1, 3, 4, 5, 6, 3],\n    [8, 0, 2, 3, 4, 7, 5, 8, 6, 3],\n    [5, 0, 3, 4, 5, 2],\n    [5, 0, 1, 3, 4, 5, 3],\n    [5, 0, 2, 3, 4, 5, 6, 3],\n    [5, 0, 1, 3, 4, 5, 6, 3],\n    [6, 1, 1],\n    [12, 0, 1],\n    [2, 0, 1, 8, 3],\n    [2, 0, 2, 8, 3],\n    [2, 0, 5, 1, 3, 8, 5],\n    [2, 0, 4, 5, 8, 4],\n    [13, 0, 1, 2, 3, 3],\n    [\n      14, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,\n      20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 2\n    ],\n    [3, 1, 0, 2, 3, 4, 5, 4],\n    [3, 0, 3, 4, 5, 2],\n    [3, 1, 0, 3, 4, 3],\n    [15, 0, 1],\n    [16, 0, 1, 1],\n    [17, 0, 1, 2, 3, 4, 5, 4],\n    [18, 0, 1, 2, 3],\n    [7, 0, 3, 4, 1, 2, 5, 6, 7, 8, 8]\n  ],\n  [\n    [\n      [\n        {\n          \"name\": \"img_setting\",\n          \"rect\": [1, 1, 68, 68],\n          \"offset\": [0, 0],\n          \"originalSize\": [70, 70],\n          \"capInsets\": [0, 0, 0, 0]\n        }\n      ],\n      [4],\n      0,\n      [0],\n      [7],\n      [8]\n    ],\n    [\n      [\n        {\n          \"name\": \"img_game_mode_classic\",\n          \"rect\": [0, 0, 116, 30],\n          \"offset\": [0, 0],\n          \"originalSize\": [116, 30],\n          \"capInsets\": [0, 0, 0, 0]\n        }\n      ],\n      [4],\n      0,\n      [0],\n      [7],\n      [9]\n    ],\n    [\n      [\n        {\n          \"name\": \"wangguan\",\n          \"rect\": [3, 0, 422, 363],\n          \"offset\": [1, 0],\n          \"originalSize\": [426, 363],\n          \"capInsets\": [0, 0, 0, 0]\n        }\n      ],\n      [4],\n      0,\n      [0],\n      [7],\n      [10]\n    ],\n    [\n      [\n        {\n          \"name\": \"img_game_mode_quick\",\n          \"rect\": [0, 0, 95, 30],\n          \"offset\": [0, 0],\n          \"originalSize\": [95, 30],\n          \"capInsets\": [0, 0, 0, 0]\n        }\n      ],\n      [4],\n      0,\n      [0],\n      [7],\n      [11]\n    ],\n    [\n      [\n        {\n          \"name\": \"矩形 15\",\n          \"rect\": [0, 0, 628, 628],\n          \"offset\": [0, 0],\n          \"originalSize\": [628, 628],\n          \"capInsets\": [57, 28, 57, 43]\n        }\n      ],\n      [4],\n      0,\n      [0],\n      [7],\n      [12]\n    ],\n    [\n      [\n        {\n          \"name\": \"退出 拷贝 2\",\n          \"rect\": [0, 0, 75, 75],\n          \"offset\": [0, 0],\n          \"originalSize\": [75, 75],\n          \"capInsets\": [0, 0, 0, 0]\n        }\n      ],\n      [4],\n      0,\n      [0],\n      [7],\n      [13]\n    ],\n    [\n      [\n        {\n          \"name\": \"退出 拷贝\",\n          \"rect\": [0, 0, 75, 75],\n          \"offset\": [0, 0],\n          \"originalSize\": [75, 75],\n          \"capInsets\": [0, 0, 0, 0]\n        }\n      ],\n      [4],\n      0,\n      [0],\n      [7],\n      [14]\n    ],\n    [\n      [\n        [34, \"Game_grass\", null],\n        [\n          27,\n          \"mapGridNode\",\n          [\n            [\n              0,\n              \"mapGrid_0\",\n              -1,\n              [5, 38, 38],\n              [-38, -256, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_1\",\n              -2,\n              [5, 38, 38],\n              [-38, -217, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_2\",\n              -3,\n              [5, 38, 38],\n              [-38, -178, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_3\",\n              -4,\n              [5, 38, 38],\n              [-38, -139, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_4\",\n              -5,\n              [5, 38, 38],\n              [-38, -100, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_5\",\n              -6,\n              [5, 38, 38],\n              [-79, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_6\",\n              -7,\n              [5, 38, 38],\n              [-118, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_7\",\n              -8,\n              [5, 38, 38],\n              [-157, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_8\",\n              -9,\n              [5, 38, 38],\n              [-196, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_9\",\n              -10,\n              [5, 38, 38],\n              [-235, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_10\",\n              -11,\n              [5, 38, 38],\n              [-274, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_11\",\n              -12,\n              [5, 38, 38],\n              [-274, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_12\",\n              -13,\n              [5, 38, 38],\n              [-274, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_13\",\n              -14,\n              [5, 38, 38],\n              [-235, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_14\",\n              -15,\n              [5, 38, 38],\n              [-196, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_15\",\n              -16,\n              [5, 38, 38],\n              [-157, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_16\",\n              -17,\n              [5, 38, 38],\n              [-118, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_17\",\n              -18,\n              [5, 38, 38],\n              [-79, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_18\",\n              -19,\n              [5, 38, 38],\n              [-38, 59, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_19\",\n              -20,\n              [5, 38, 38],\n              [-38, 98, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_20\",\n              -21,\n              [5, 38, 38],\n              [-38, 137, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_21\",\n              -22,\n              [5, 38, 38],\n              [-38, 176, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_22\",\n              -23,\n              [5, 38, 38],\n              [-38, 215, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_23\",\n              -24,\n              [5, 38, 38],\n              [-38, 254, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_24\",\n              -25,\n              [5, 38, 38],\n              [1, 254, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_25\",\n              -26,\n              [5, 38, 38],\n              [40, 254, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_26\",\n              -27,\n              [5, 38, 38],\n              [40, 215, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_27\",\n              -28,\n              [5, 38, 38],\n              [40, 176, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_28\",\n              -29,\n              [5, 38, 38],\n              [40, 137, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_29\",\n              -30,\n              [5, 38, 38],\n              [40, 98, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_30\",\n              -31,\n              [5, 38, 38],\n              [40, 59, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_31\",\n              -32,\n              [5, 38, 38],\n              [81, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_32\",\n              -33,\n              [5, 38, 38],\n              [120, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_33\",\n              -34,\n              [5, 38, 38],\n              [159, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_34\",\n              -35,\n              [5, 38, 38],\n              [198, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_35\",\n              -36,\n              [5, 38, 38],\n              [237, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_36\",\n              -37,\n              [5, 38, 38],\n              [276, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_37\",\n              -38,\n              [5, 38, 38],\n              [276, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_38\",\n              -39,\n              [5, 38, 38],\n              [276, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_39\",\n              -40,\n              [5, 38, 38],\n              [237, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_40\",\n              -41,\n              [5, 38, 38],\n              [198, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_41\",\n              -42,\n              [5, 38, 38],\n              [159, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_42\",\n              -43,\n              [5, 38, 38],\n              [120, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_43\",\n              -44,\n              [5, 38, 38],\n              [81, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_44\",\n              -45,\n              [5, 38, 38],\n              [40, -100, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_45\",\n              -46,\n              [5, 38, 38],\n              [40, -139, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_46\",\n              -47,\n              [5, 38, 38],\n              [40, -178, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_47\",\n              -48,\n              [5, 38, 38],\n              [40, -217, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_48\",\n              -49,\n              [5, 38, 38],\n              [40, -256, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_49\",\n              -50,\n              [5, 38, 38],\n              [40, -295, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_50\",\n              -51,\n              [5, 38, 38],\n              [1, -295, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_51\",\n              -52,\n              [5, 38, 38],\n              [-38, -295, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_52\",\n              -53,\n              [5, 38, 38],\n              [1, -256, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_53\",\n              -54,\n              [5, 38, 38],\n              [1, -217, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_54\",\n              -55,\n              [5, 38, 38],\n              [1, -177.5, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_55\",\n              -56,\n              [5, 38, 38],\n              [1, -139, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_56\",\n              -57,\n              [5, 38, 38],\n              [1, -100, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_57\",\n              -58,\n              [5, 38, 38],\n              [1, -60, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_58\",\n              -59,\n              [5, 38, 38],\n              [-235, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_59\",\n              -60,\n              [5, 38, 38],\n              [-196, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_60\",\n              -61,\n              [5, 38, 38],\n              [-157, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_61\",\n              -62,\n              [5, 38, 38],\n              [-117.5, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_62\",\n              -63,\n              [5, 38, 38],\n              [-79, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_63\",\n              -64,\n              [5, 38, 38],\n              [-38, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_64\",\n              -65,\n              [5, 38, 38],\n              [1, 215, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_65\",\n              -66,\n              [5, 38, 38],\n              [1, 176, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_66\",\n              -67,\n              [5, 38, 38],\n              [1, 137.5, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_67\",\n              -68,\n              [5, 38, 38],\n              [1, 98, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_68\",\n              -69,\n              [5, 38, 38],\n              [1, 59, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_69\",\n              -70,\n              [5, 38, 38],\n              [1, 18, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_70\",\n              -71,\n              [5, 38, 38],\n              [237, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_71\",\n              -72,\n              [5, 38, 38],\n              [197.5, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_72\",\n              -73,\n              [5, 38, 38],\n              [159, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_73\",\n              -74,\n              [5, 38, 38],\n              [120, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_74\",\n              -75,\n              [5, 38, 38],\n              [81, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"mapGrid_75\",\n              -76,\n              [5, 38, 38],\n              [40, -21, 0, 0, 0, 0, 1, 1, 1, 1]\n            ]\n          ]\n        ],\n        [\n          38,\n          \"DiceTestUI\",\n          false,\n          [-81, -82, -83, -84, -85, -86, -87, -88],\n          [\n            [50, -78],\n            [51, -79],\n            [52, 4, 100, -80]\n          ],\n          [14, -77],\n          [5, 270, 150],\n          [-221.266, -365, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          39,\n          \"Canvas\",\n          \"a5esZu+45LA5mBpvttspPD\",\n          [-131, -132, -133, -134, -135, 2, -136, -137, -138, -139, -140, -141],\n          [\n            [56, true, false, -89, [5, 720, 1280]],\n            [32, 45, -90],\n            [\n              57,\n              1.08,\n              -130,\n              -129,\n              -128,\n              -127,\n              1,\n              -126,\n              -125,\n              -124,\n              -123,\n              [-119, -120, -121, -122],\n              [-115, -116, -117, -118],\n              [-111, -112, -113, -114],\n              [-107, -108, -109, -110],\n              -106,\n              [97, 98],\n              -105,\n              -104,\n              -103,\n              [-99, -100, -101, -102],\n              -98,\n              -97,\n              -96,\n              -95,\n              -94,\n              -93,\n              2,\n              -92,\n              -91,\n              95,\n              96,\n              99,\n              100\n            ]\n          ],\n          [5, 720, 1280],\n          [360, 640, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          27,\n          \"chessNode\",\n          [\n            [\n              0,\n              \"chess_0_0\",\n              -142,\n              [5, 40, 45],\n              [-215, -157, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_0_1\",\n              -143,\n              [5, 40, 45],\n              [-137, -157, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_0_2\",\n              -144,\n              [5, 40, 45],\n              [-215, -237, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_0_3\",\n              -145,\n              [5, 40, 45],\n              [-137, -237, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_1_0\",\n              -146,\n              [5, 40, 45],\n              [-215, 196, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_1_1\",\n              -147,\n              [5, 40, 45],\n              [-137, 196, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_1_2\",\n              -148,\n              [5, 40, 45],\n              [-215, 119, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_1_3\",\n              -149,\n              [5, 40, 45],\n              [-137, 119, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_2_0\",\n              -150,\n              [5, 40, 45],\n              [138, 196, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_2_1\",\n              -151,\n              [5, 40, 45],\n              [217, 196, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_2_2\",\n              -152,\n              [5, 40, 45],\n              [138, 119, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_2_3\",\n              -153,\n              [5, 40, 45],\n              [217, 119, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_3_0\",\n              -154,\n              [5, 40, 45],\n              [138, -157, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_3_1\",\n              -155,\n              [5, 40, 45],\n              [217, -157, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_3_2\",\n              -156,\n              [5, 40, 45],\n              [138, -237, 0, 0, 0, 0, 1, 1, 1, 1]\n            ],\n            [\n              0,\n              \"chess_3_3\",\n              -157,\n              [5, 40, 45],\n              [217, -237, 0, 0, 0, 0, 1, 1, 1, 1]\n            ]\n          ]\n        ],\n        [\n          40,\n          \"mapNode\",\n          [-159, -160, -161, 1, -162, -163, -164, -165, -166, 4, -167, -168],\n          [[22, 45, 720, 1080, -158]],\n          [5, 626.0869565217391, 1113.0434782608697],\n          [0, 0, 0, 0, 0, 0, 1, 1.15, 1.15, 1]\n        ],\n        [41, \"nodeCenter\", false, 5, [-169, -170, -171, -172]],\n        [17, \"playerInfoNode\", 5, [-173, -174, -175, -176]],\n        [17, \"chessBaseNode\", 5, [-177, -178, -179, -180]],\n        [17, \"terminalPointNode\", 5, [-181, -182, -183, -184]],\n        [17, \"nodeWinFlags\", 5, [-185, -186, -187, -188]],\n        [\n          5,\n          \"Background\",\n          512,\n          [-191],\n          [\n            [2, 1, 0, -189, [28], 29],\n            [7, 0, 45, 100, 40, -190]\n          ],\n          [1, \"458nwAlcJHK4PzP4X+ZrgM\", 2],\n          [5, 60, 60]\n        ],\n        [\n          5,\n          \"Background\",\n          512,\n          [-194],\n          [\n            [2, 1, 0, -192, [35], 36],\n            [7, 0, 45, 100, 40, -193]\n          ],\n          [1, \"58H9xRIjhCNKCIsQHNFp6S\", 2],\n          [5, 60, 60]\n        ],\n        [\n          5,\n          \"Background\",\n          512,\n          [-197],\n          [\n            [2, 1, 0, -195, [42], 43],\n            [7, 0, 45, 100, 40, -196]\n          ],\n          [1, \"5fTcESJsRMHIvhE8aWHm/e\", 2],\n          [5, 60, 60]\n        ],\n        [\n          5,\n          \"Background\",\n          512,\n          [-200],\n          [\n            [2, 1, 0, -198, [49], 50],\n            [7, 0, 45, 100, 40, -199]\n          ],\n          [1, \"34wY0LMp5JcLcnY1ytFjJQ\", 2],\n          [5, 60, 60]\n        ],\n        [\n          5,\n          \"Background\",\n          512,\n          [-203],\n          [\n            [2, 1, 0, -201, [56], 57],\n            [7, 0, 45, 100, 40, -202]\n          ],\n          [1, \"25rXjoeg5AtqSyULH7/uSs\", 2],\n          [5, 60, 60]\n        ],\n        [\n          5,\n          \"Background\",\n          512,\n          [-206],\n          [\n            [2, 1, 0, -204, [63], 64],\n            [7, 0, 45, 100, 40, -205]\n          ],\n          [1, \"d9cVDWu9lBlpWlEcso3pum\", 2],\n          [5, 60, 60]\n        ],\n        [\n          5,\n          \"Background\",\n          512,\n          [-209],\n          [\n            [2, 1, 0, -207, [70], 71],\n            [7, 0, 45, 100, 40, -208]\n          ],\n          [1, \"c8POFjuehKLrJfr6GrJQAK\", 2],\n          [5, 40, 30]\n        ],\n        [\n          30,\n          \"btn_addPlayer\",\n          false,\n          3,\n          [-213],\n          [\n            [\n              21,\n              3,\n              -211,\n              [[25, \"68d18hulKlLK4cTScn8resv\", \"onBtnAddPlayerClick\", 3]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              -210,\n              86,\n              87,\n              88,\n              89\n            ],\n            [23, 12, 131, 0, -212]\n          ],\n          [5, 70, 70],\n          [-194, -513, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          30,\n          \"btn_expression\",\n          false,\n          3,\n          [-217],\n          [\n            [\n              21,\n              3,\n              -215,\n              [[25, \"68d18hulKlLK4cTScn8resv\", \"onBtnExpressionClick\", 3]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              -214,\n              91,\n              92,\n              93,\n              94\n            ],\n            [23, 12, 131, 92, -216]\n          ],\n          [5, 70, 70],\n          [-194, -513, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          42,\n          \"adjustNode\",\n          3,\n          [-220],\n          [\n            [32, 45, -218],\n            [61, -219]\n          ],\n          [5, 720, 1280]\n        ],\n        [\n          20,\n          \"topNode\",\n          20,\n          [-222],\n          [[53, 41, 100, -221]],\n          [5, 720, 50],\n          [0, 615, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          20,\n          \"mainNode\",\n          3,\n          [5],\n          [[54, 45, -50, 50, 1080, -223]],\n          [5, 720, 1280],\n          [0, 50, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          35,\n          \"New Layout\",\n          120,\n          2,\n          [\n            [2, 1, 0, -224, [25], 26],\n            [62, -225, [5, 270, 150]],\n            [22, 45, 200, 150, -226]\n          ],\n          [1, \"49a0ZDlxFD1I0M3WBj+UzN\", 2],\n          [4, 4278190080],\n          [5, 270, 150]\n        ],\n        [\n          10,\n          \"btn1Points\",\n          2,\n          [11],\n          [\n            [\n              6,\n              -227,\n              [[9, \"e9f49R6kZxBDrMYZkufU5YY\", \"onClickRollDice\", \"1\", 2]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              11,\n              30,\n              31,\n              32,\n              33\n            ],\n            [8, 8, 5.599999999999994, -228]\n          ],\n          [1, \"a8lMc6CxFF65lxayxMtB27\", 2],\n          [5, 60, 60],\n          [-99.4, 35.116, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          10,\n          \"btn2Points\",\n          2,\n          [12],\n          [\n            [\n              6,\n              -229,\n              [[9, \"e9f49R6kZxBDrMYZkufU5YY\", \"onClickRollDice\", \"2\", 2]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              12,\n              37,\n              38,\n              39,\n              40\n            ],\n            [8, 8, 67.916, -230]\n          ],\n          [1, \"29RFws8LdGe6V+f3vMhXyQ\", 2],\n          [5, 60, 60],\n          [-37.084, 35.116, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          10,\n          \"btn3Points\",\n          2,\n          [13],\n          [\n            [\n              6,\n              -231,\n              [[9, \"e9f49R6kZxBDrMYZkufU5YY\", \"onClickRollDice\", \"3\", 2]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              13,\n              44,\n              45,\n              46,\n              47\n            ],\n            [8, 8, 131.232, -232]\n          ],\n          [1, \"5cfqD7gYtH5aNI1iTuQ1Ik\", 2],\n          [5, 60, 60],\n          [26.232, 35.116, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          10,\n          \"btn4Points\",\n          2,\n          [14],\n          [\n            [\n              6,\n              -233,\n              [[9, \"e9f49R6kZxBDrMYZkufU5YY\", \"onClickRollDice\", \"4\", 2]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              14,\n              51,\n              52,\n              53,\n              54\n            ],\n            [8, 8, 196.548, -234]\n          ],\n          [1, \"cdsDIuqk1PL6YlA+SEJrj8\", 2],\n          [5, 60, 60],\n          [91.548, 35.116, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          10,\n          \"btn5Points\",\n          2,\n          [15],\n          [\n            [\n              6,\n              -235,\n              [[9, \"e9f49R6kZxBDrMYZkufU5YY\", \"onClickRollDice\", \"5\", 2]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              15,\n              58,\n              59,\n              60,\n              61\n            ],\n            [8, 8, 5.252999999999986, -236]\n          ],\n          [1, \"03iNCE+3NLH66pZ3gdi0Es\", 2],\n          [5, 60, 60],\n          [-99.74700000000001, -37.566, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          10,\n          \"btn6Points\",\n          2,\n          [16],\n          [\n            [\n              6,\n              -237,\n              [[9, \"e9f49R6kZxBDrMYZkufU5YY\", \"onClickRollDice\", \"6\", 2]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              16,\n              65,\n              66,\n              67,\n              68\n            ],\n            [8, 8, 73.102, -238]\n          ],\n          [1, \"2fxANVVN1GJJix8nIzoJkX\", 2],\n          [5, 60, 60],\n          [-31.897999999999996, -38.383, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          43,\n          \"btnRandomPoints\",\n          false,\n          2,\n          [17],\n          [\n            [\n              6,\n              -239,\n              [[9, \"e9f49R6kZxBDrMYZkufU5YY\", \"onClickRollDice\", \"random\", 2]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              17,\n              72,\n              73,\n              74,\n              75\n            ],\n            [8, 8, 228, -240]\n          ],\n          [1, \"6fG7J9SSpKFJ4uSwaIxjCy\", 2],\n          [5, 40, 30],\n          [113, 0, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          20,\n          \"btn_setting\",\n          3,\n          [-244],\n          [\n            [\n              21,\n              3,\n              -242,\n              [[25, \"68d18hulKlLK4cTScn8resv\", \"onClickGameQuit\", 3]],\n              [4, 4293322470],\n              [4, 4291348680],\n              [4, 3363338360],\n              -241,\n              80,\n              81,\n              82,\n              83\n            ],\n            [23, 12, 40, 0, -243]\n          ],\n          [5, 70, 70],\n          [-285, -513, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          28,\n          \"Background\",\n          512,\n          31,\n          [\n            [2, 1, 2, -245, [78], 79],\n            [24, 0, 45, -2.5, -2.5, -2.5, -2.5, 100, 40, -246]\n          ],\n          [5, 75, 75],\n          [0, 0, 0, 0, 0, 0, 1, 1, 1, 0]\n        ],\n        [\n          28,\n          \"Background\",\n          512,\n          18,\n          [\n            [2, 1, 2, -247, [84], 85],\n            [24, 0, 45, -2.5, -2.5, -2.5, -2.5, 100, 40, -248]\n          ],\n          [5, 75, 75],\n          [0, 0, 0, 0, 0, 0, 1, 1, 1, 0]\n        ],\n        [\n          44,\n          \"img_expression\",\n          512,\n          19,\n          [[-249, [24, 0, 45, -2.5, -2.5, -2.5, -2.5, 100, 40, -250]], 1, 4],\n          [5, 75, 75],\n          [0, 0, 0, 0, 0, 0, 1, 1, 1, 0]\n        ],\n        [\n          45,\n          \"New Label\",\n          false,\n          3,\n          [[-251, [55, 9, 3.6539999999999964, 66.35399999999998, -252]], 1, 4],\n          [4, 4282045455],\n          [5, 70, 50.4],\n          [0, 0, 0.5],\n          [-356.346, 448.446, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          29,\n          \"img_bg\",\n          5,\n          [[58, 1, 2, false, -253, [4], 5]],\n          [5, 628, 628],\n          [0, -29, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          15,\n          \"playerInfo0\",\n          7,\n          [14, -254],\n          [5, 231, 174],\n          [-188, -413, 0, 0, 0, 0, 1, 0.9, 0.9, 1]\n        ],\n        [\n          15,\n          \"playerInfo1\",\n          7,\n          [14, -255],\n          [5, 231, 174],\n          [-188, 394, 0, 0, 0, 0, 1, 0.9, 0.9, 1]\n        ],\n        [\n          15,\n          \"playerInfo2\",\n          7,\n          [14, -256],\n          [5, 231, 174],\n          [188, 394, 0, 0, 0, 0, 1, 0.9, 0.9, 1]\n        ],\n        [\n          15,\n          \"playerInfo3\",\n          7,\n          [14, -257],\n          [5, 231, 174],\n          [188, -413, 0, 0, 0, 0, 1, 0.9, 0.9, 1]\n        ],\n        [\n          16,\n          \"wangguan\",\n          false,\n          10,\n          [[18, -258, [17], 18]],\n          [5, 426, 363],\n          [-178, -173, 0, 0, 0, 0, 1, 0.5, 0.5, 0.5]\n        ],\n        [\n          16,\n          \"wangguan\",\n          false,\n          10,\n          [[18, -259, [19], 20]],\n          [5, 426, 363],\n          [-178, 187, 0, 0, 0, 0, 1, 0.5, 0.5, 0.5]\n        ],\n        [\n          16,\n          \"wangguan\",\n          false,\n          10,\n          [[18, -260, [21], 22]],\n          [5, 426, 363],\n          [179, 187, 0, 0, 0, 0, 1, 0.5, 0.5, 0.5]\n        ],\n        [\n          16,\n          \"wangguan\",\n          false,\n          10,\n          [[18, -261, [23], 24]],\n          [5, 426, 363],\n          [179, -173, 0, 0, 0, 0, 1, 0.5, 0.5, 0.5]\n        ],\n        [36, \"base_node\", 3, [[22, 45, 720, 1080, -262]], [5, 720, 1280]],\n        [\n          63,\n          \"New Node\",\n          false,\n          true,\n          [3],\n          [0, 0, 0],\n          [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          29,\n          \"Main Camera\",\n          3,\n          [[64, 7, -1, -263]],\n          [5, 960, 640],\n          [0, 0, 262.4056973466849, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [46, \"img_beijing\", 3, [-264], [5, 719, 1600]],\n        [33, 2, false, 48, [0]],\n        [26, \"简单\", 35, 1, 1, 35, [1]],\n        [\n          37,\n          \"New Sprite(Splash)\",\n          21,\n          [[59, 0, -265, [2], 3]],\n          [4, 4278190080],\n          [5, 720, 300],\n          [0, 0.5, 0],\n          [0, 23, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [\n          3,\n          \"sprCenter\",\n          5,\n          [-266],\n          [5, 586, 585],\n          [0.639, -20, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [11, 52, [6]],\n        [47, \"img_center_beach\", false, 5, [-267], [5, 720, 1080]],\n        [33, 2, false, 54, [7]],\n        [\n          3,\n          \"img_base_bg_0\",\n          8,\n          [-268],\n          [5, 233, 233],\n          [-175, -197, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [19, 2, 56, [8]],\n        [\n          3,\n          \"img_base_bg_1\",\n          8,\n          [-269],\n          [5, 233, 233],\n          [-175, 156, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [19, 2, 58, [9]],\n        [\n          3,\n          \"img_base_bg_2\",\n          8,\n          [-270],\n          [5, 233, 233],\n          [176, 156, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [19, 2, 60, [10]],\n        [\n          48,\n          \"img_base_bg_3\",\n          250,\n          8,\n          [-271],\n          [5, 233, 233],\n          [176, -197, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [19, 2, 62, [11]],\n        [13, \"terminalAnimNode0\", 9, [-7.389, -42.091, 0, 0, 0, 0, 1, 1, 1, 1]],\n        [13, \"terminalAnimNode1\", 9, [-44.922, -3.013, 0, 0, 0, 0, 1, 1, 1, 1]],\n        [\n          13,\n          \"terminalAnimNode2\",\n          9,\n          [-5.707, 31.279000000000003, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [13, \"terminalAnimNode3\", 9, [27.824, -3.733, 0, 0, 0, 0, 1, 1, 1, 1]],\n        [\n          49,\n          \"img_terminal_point\",\n          false,\n          5,\n          [-272],\n          [5, 171, 158],\n          [0, -20, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [11, 68, [12]],\n        [\n          3,\n          \"terminalPoint0\",\n          6,\n          [-273],\n          [5, 116, 58],\n          [2.129, -50.353, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [11, 70, [13]],\n        [\n          3,\n          \"terminalPoint1\",\n          6,\n          [-274],\n          [5, 60, 118],\n          [-29.172, -21.377, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [11, 72, [14]],\n        [\n          3,\n          \"terminalPoint2\",\n          6,\n          [-275],\n          [5, 116, 58],\n          [1.899, 8.269, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [11, 74, [15]],\n        [\n          3,\n          \"terminalPoint3\",\n          6,\n          [-276],\n          [5, 58, 116],\n          [33.488, -21.752, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [11, 76, [16]],\n        [13, \"nodeUseProps\", 5, [-174, -395.292, 0, 0, 0, 0, 1, 1, 1, 1]],\n        [\n          4,\n          \"Label\",\n          512,\n          11,\n          [[12, \"1\", false, 1, 1, 1, 1, -277, [27]]],\n          [1, \"dfWykuVcVFtYj3rqBhfZKY\", 2],\n          [4, 4278190080],\n          [5, 100, 40]\n        ],\n        [\n          4,\n          \"Label\",\n          512,\n          12,\n          [[12, \"2\", false, 1, 1, 1, 1, -278, [34]]],\n          [1, \"6c1m0JS3dJKIeZOc6HwET8\", 2],\n          [4, 4278190080],\n          [5, 100, 40]\n        ],\n        [\n          4,\n          \"Label\",\n          512,\n          13,\n          [[12, \"3\", false, 1, 1, 1, 1, -279, [41]]],\n          [1, \"ddgOEIReZJ1ZAqWqWKI6vR\", 2],\n          [4, 4278190080],\n          [5, 100, 40]\n        ],\n        [\n          4,\n          \"Label\",\n          512,\n          14,\n          [[12, \"4\", false, 1, 1, 1, 1, -280, [48]]],\n          [1, \"beqxdcb09EC4hg0wEsOuEl\", 2],\n          [4, 4278190080],\n          [5, 100, 40]\n        ],\n        [\n          4,\n          \"Label\",\n          512,\n          15,\n          [[12, \"5\", false, 1, 1, 1, 1, -281, [55]]],\n          [1, \"9alKvI3IBO07g/bRyYi6tH\", 2],\n          [4, 4278190080],\n          [5, 100, 40]\n        ],\n        [\n          4,\n          \"Label\",\n          512,\n          16,\n          [[12, \"6\", false, 1, 1, 1, 1, -282, [62]]],\n          [1, \"aa8Od/92dLHb4Upt968q2G\", 2],\n          [4, 4278190080],\n          [5, 100, 40]\n        ],\n        [\n          4,\n          \"Label\",\n          512,\n          17,\n          [[65, \"随机\", 20, false, 1, 1, 1, 1, -283, [69]]],\n          [1, \"6a4pl+bk9G9LtUsjTw4rLr\", 2],\n          [4, 4278190080],\n          [5, 100, 40]\n        ],\n        [\n          31,\n          \"New Label\",\n          false,\n          3,\n          [-284],\n          [4, 4279361615],\n          [5, 100, 50.4],\n          [-273.296, -502.922, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [26, \"玩家索引\", 25, 1, 1, 86, [76]],\n        [\n          31,\n          \"New Label\",\n          false,\n          3,\n          [-285],\n          [4, 4279361615],\n          [5, 100, 50.4],\n          [253.574, -502.922, 0, 0, 0, 0, 1, 1, 1, 1]\n        ],\n        [26, \"筛子点数\", 25, 1, 1, 88, [77]],\n        [60, 1, 2, 34, [90]]\n      ],\n      0,\n      [\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,\n        0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 8, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2,\n        0, -1, 23, 0, -2, 24, 0, -3, 25, 0, -4, 26, 0, -5, 27, 0, -6, 28, 0, -7,\n        29, 0, -8, 30, 0, 1, 3, 0, 1, 3, 0, 10, 36, 0, 11, 19, 0, 12, 50, 0, 13,\n        69, 0, 14, 6, 0, 15, 45, 0, 16, 18, 0, 17, 55, 0, -1, 41, 0, -2, 42, 0,\n        -3, 43, 0, -4, 44, 0, 18, 22, 0, 19, 53, 0, 20, 78, 0, 21, 90, 0, -1,\n        64, 0, -2, 65, 0, -3, 66, 0, -4, 67, 0, -1, 37, 0, -2, 38, 0, -3, 39, 0,\n        -4, 40, 0, -1, 71, 0, -2, 73, 0, -3, 75, 0, -4, 77, 0, -1, 57, 0, -2,\n        59, 0, -3, 61, 0, -4, 63, 0, 22, 87, 0, 23, 49, 0, 24, 21, 0, 25, 4, 0,\n        26, 89, 0, 27, 7, 0, 28, 5, 0, 1, 3, 0, -1, 47, 0, -2, 48, 0, -3, 35, 0,\n        -4, 20, 0, -5, 22, 0, -7, 86, 0, -8, 88, 0, -9, 31, 0, -10, 18, 0, -11,\n        45, 0, -12, 19, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0,\n        0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0,\n        0, 4, 0, 0, 4, 0, 1, 5, 0, -1, 36, 0, -2, 52, 0, -3, 54, 0, -5, 8, 0,\n        -6, 9, 0, -7, 68, 0, -8, 6, 0, -9, 7, 0, -11, 10, 0, -12, 78, 0, -1, 70,\n        0, -2, 72, 0, -3, 74, 0, -4, 76, 0, -1, 37, 0, -2, 38, 0, -3, 39, 0, -4,\n        40, 0, -1, 56, 0, -2, 58, 0, -3, 60, 0, -4, 62, 0, -1, 64, 0, -2, 65, 0,\n        -3, 66, 0, -4, 67, 0, -1, 41, 0, -2, 42, 0, -3, 43, 0, -4, 44, 0, 1, 11,\n        0, 1, 11, 0, -1, 79, 0, 1, 12, 0, 1, 12, 0, -1, 80, 0, 1, 13, 0, 1, 13,\n        0, -1, 81, 0, 1, 14, 0, 1, 14, 0, -1, 82, 0, 1, 15, 0, 1, 15, 0, -1, 83,\n        0, 1, 16, 0, 1, 16, 0, -1, 84, 0, 1, 17, 0, 1, 17, 0, -1, 85, 0, 9, 33,\n        0, 1, 18, 0, 1, 18, 0, -1, 33, 0, 9, 34, 0, 1, 19, 0, 1, 19, 0, -1, 34,\n        0, 1, 20, 0, 1, 20, 0, -1, 21, 0, 1, 21, 0, -1, 51, 0, 1, 22, 0, 1, 23,\n        0, 1, 23, 0, 1, 23, 0, 1, 24, 0, 1, 24, 0, 1, 25, 0, 1, 25, 0, 1, 26, 0,\n        1, 26, 0, 1, 27, 0, 1, 27, 0, 1, 28, 0, 1, 28, 0, 1, 29, 0, 1, 29, 0, 1,\n        30, 0, 1, 30, 0, 9, 32, 0, 1, 31, 0, 1, 31, 0, -1, 32, 0, 1, 32, 0, 1,\n        32, 0, 1, 33, 0, 1, 33, 0, -1, 90, 0, 1, 34, 0, -1, 50, 0, 1, 35, 0, 1,\n        36, 0, 8, 37, 0, 8, 38, 0, 8, 39, 0, 8, 40, 0, 1, 41, 0, 1, 42, 0, 1,\n        43, 0, 1, 44, 0, 1, 45, 0, 1, 47, 0, -1, 49, 0, 1, 51, 0, -1, 53, 0, -1,\n        55, 0, -1, 57, 0, -1, 59, 0, -1, 61, 0, -1, 63, 0, -1, 69, 0, -1, 71, 0,\n        -1, 73, 0, -1, 75, 0, -1, 77, 0, 1, 79, 0, 1, 80, 0, 1, 81, 0, 1, 82, 0,\n        1, 83, 0, 1, 84, 0, 1, 85, 0, -1, 87, 0, -1, 89, 0, 29, 46, 1, 0, 5, 2,\n        0, 3, 3, 0, 46, 4, 0, 5, 5, 0, 22, 11, 0, 24, 12, 0, 25, 13, 0, 26, 14,\n        0, 27, 15, 0, 28, 16, 0, 29, 17, 0, 30, 285\n      ],\n      [\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 49, 53, 57, 59, 61, 63, 90\n      ],\n      [\n        -1, -1, -1, 2, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2,\n        -1, 2, -1, 2, -1, 2, -1, 2, -1, -1, 2, 3, 4, 5, 6, -1, -1, 2, 3, 4, 5,\n        6, -1, -1, 2, 3, 4, 5, 6, -1, -1, 2, 3, 4, 5, 6, -1, -1, 2, 3, 4, 5, 6,\n        -1, -1, 2, 3, 4, 5, 6, -1, -1, 2, 3, 4, 5, 6, -1, -1, -1, 2, 3, 4, 5, 6,\n        -1, 2, 3, 4, 5, 6, -1, 3, 4, 5, 6, 30, 31, -1, -2, 32, 33, 2, 2, 2, 2,\n        2, 2, 2\n      ],\n      [\n        0, 0, 0, 15, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 4, 0, 4,\n        0, 4, 0, 17, 0, 0, 1, 1, 2, 1, 3, 0, 0, 1, 1, 2, 1, 3, 0, 0, 1, 1, 2, 1,\n        3, 0, 0, 1, 1, 2, 1, 3, 0, 0, 1, 1, 2, 1, 3, 0, 0, 1, 1, 2, 1, 3, 0, 0,\n        1, 1, 2, 1, 3, 0, 0, 0, 18, 5, 2, 1, 3, 0, 7, 5, 2, 1, 3, 0, 5, 2, 1, 3,\n        19, 20, 21, 22, 23, 24, 25, 26, 6, 6, 6, 27, 7\n      ]\n    ]\n  ]\n]\n"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/47/47eadf9e-1cef-4c7c-88d2-7c09e86d3d9d.7ebe4.png", "path": "reference-assets/board-frame-native.png", "sha256": "e4b4f28f9681621024ff0ebb3cad9cce1c32ef59a07011465b7af68d07e804e9", "bytes": 2286, "reused": false, "purpose": "reference_asset"}
+Tool:   1081	      {
+  1082	        "source_game": "Ludo Superstar",
+  1083	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  1084	        "name": "img_btn_ok",
+  1085	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/47/479a1743-3069-4923-b574-03529c44dec0.96d14.json",
+  1086	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/92/92c2ce21-37a9-40b8-8bf3-3248eb229fa4.ee8cf.png",
+  1087	        "native_size": [
+  1088	          195,
+  1089	          78
+  1090	        ],
+  1091	        "native_sha256": "6b6e170e1f2bb85f848a7108eb6d847cf19c3155a5f4da62562ce848b171bb79",
+  1092	        "rect": [
+  1093	          0,
+  1094	          0,
+  1095	          195,
+  1096	          78
+  1097	        ],
+  1098	        "offset": [
+  1099	          0,
+  1100	          0
+  1101	        ],
+  1102	        "originalSize": [
+  1103	          195,
+  1104	          78
+  1105	        ],
+  1106	        "capInsets": [
+  1107	          0,
+  1108	          0,
+  1109	          0,
+  1110	          0
+  1111	        ],
+  1112	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+  1113	      },
+  1114	      {
+  1115	        "source_game": "Ludo Superstar",
+  1116	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  1117	        "name": "img_bg_huang",
+  1118	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+  1119	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/1f/1f6ee478-9032-4fc3-ba67-f2d3628cb4db.befde.png",
+  1120	        "native_size": [
+  1121	          146,
+  1122	          146
+  1123	        ],
+  1124	        "native_sha256": "779a79e973f10284c90d0b58cf326f33d8663e181f16f319741a66d2d8ec9b26",
+  1125	        "rect": [
+  1126	          0,
+  1127	          0,
+  1128	          146,
+  1129	          146
+  1130	        ],
+  1131	        "offset": [
+  1132	          0,
+  1133	          0
+  1134	        ],
+  1135	        "originalSize": [
+  1136	          146,
+  1137	          146
+  1138	        ],
+  1139	        "capInsets": [
+  1140	          0,
+  1141	          0,
+  1142	          0,
+  1143	          0
+  1144	        ],
+  1145	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+  1146	      },
+  1147	      {
+  1148	        "source_game": "Ludo Superstar",
+  1149	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  1150	        "name": "img_bg_lv",
+  1151	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+  1152	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/c0/c0e17be1-c9df-45e2-89b3-18f681954af2.5ad39.png",
+  1153	        "native_size": [
+  1154	          146,
+  1155	          146
+  1156	        ],
+  1157	        "native_sha256": "14a74cb4ac1d2fb728ed91d328c1648f46a465653cb044385b82f56399db8653",
+  1158	        "rect": [
+  1159	          0,
+  1160	          0,
+  1161	          146,
+  1162	          146
+  1163	        ],
+  1164	        "offset": [
+  1165	          0,
+  1166	          0
+  1167	        ],
+  1168	        "originalSize": [
+  1169	          146,
+  1170	          146
+  1171	        ],
+  1172	        "capInsets": [
+  1173	          0,
+  1174	          0,
+  1175	          0,
+  1176	          0
+  1177	        ],
+  1178	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+  1179	      },
+  1180	      {
+  1181	        "source_game": "Ludo Superstar",
+  1182	        "source_zip": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip",
+  1183	        "name": "img_bg_lan",
+  1184	        "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json",
+  1185	        "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/native/72/726d79af-6182-424c-ae0d-091959a73db0.5bd03.png",
+  1186	        "native_size": [
+  1187	          146,
+  1188	          146
+  1189	        ],
+  1190	        "native_sha256": "80d4c6cbeb7a291238b1fca83f89cbc6a3b3decdd9a72974785a9ceacdf7ac28",
+  1191	        "rect": [
+  1192	          0,
+  1193	          0,
+  1194	          146,
+  1195	          146
+  1196	        ],
+  1197	        "offset": [
+  1198	          0,
+  1199	          0
+  1200	        ],
+  1201	        "originalSize": [
+  1202	          146,
+  1203	          146
+  1204	        ],
+  1205	        "capInsets": [
+  1206	          0,
+  1207	          0,
+  1208	          0,
+  1209	          0
+  1210	        ],
+  1211	        "anchor_note": "SpriteFrame不保存锚点；Superstar PlayerInfo和MapGrid相关Node无显式_anchorPoint，沿用Cocos默认中心(0.5,0.5)，须结合originalSize/offset恢复trim。"
+  1212	      }
+  1213	    ]
+  1214	  }
+  1215	}
+Tool:    701	      "size": [
+   702	        38,
+   703	        38
+   704	      ]
+   705	    },
+   706	    {
+   707	      "index": 40,
+   708	      "position": [
+   709	        198,
+   710	        -60
+   711	      ],
+   712	      "size": [
+   713	        38,
+   714	        38
+   715	      ]
+   716	    },
+   717	    {
+   718	      "index": 41,
+   719	      "position": [
+   720	        159,
+   721	        -60
+   722	      ],
+   723	      "size": [
+   724	        38,
+   725	        38
+   726	      ]
+   727	    },
+   728	    {
+   729	      "index": 42,
+   730	      "position": [
+   731	        120,
+   732	        -60
+   733	      ],
+   734	      "size": [
+   735	        38,
+   736	        38
+   737	      ]
+   738	    },
+   739	    {
+   740	      "index": 43,
+   741	      "position": [
+   742	        81,
+   743	        -60
+   744	      ],
+   745	      "size": [
+   746	        38,
+   747	        38
+   748	      ]
+   749	    },
+   750	    {
+   751	      "index": 44,
+   752	      "position": [
+   753	        40,
+   754	        -100
+   755	      ],
+   756	      "size": [
+   757	        38,
+   758	        38
+   759	      ]
+   760	    },
+   761	    {
+   762	      "index": 45,
+   763	      "position": [
+   764	        40,
+   765	        -139
+   766	      ],
+   767	      "size": [
+   768	        38,
+   769	        38
+   770	      ]
+   771	    },
+   772	    {
+   773	      "index": 46,
+   774	      "position": [
+   775	        40,
+   776	        -178
+   777	      ],
+   778	      "size": [
+   779	        38,
+   780	        38
+   781	      ]
+   782	    },
+   783	    {
+   784	      "index": 47,
+   785	      "position": [
+   786	        40,
+   787	        -217
+   788	      ],
+   789	      "size": [
+   790	        38,
+   791	        38
+   792	      ]
+   793	    },
+   794	    {
+   795	      "index": 48,
+   796	      "position": [
+   797	        40,
+   798	        -256
+   799	      ],
+   800	      "size": [
+   801	        38,
+   802	        38
+   803	      ]
+   804	    },
+   805	    {
+   806	      "index": 49,
+   807	      "position": [
+   808	        40,
+   809	        -295
+   810	      ],
+   811	      "size": [
+   812	        38,
+   813	        38
+   814	      ]
+   815	    },
+   816	    {
+   817	      "index": 50,
+   818	      "position": [
+   819	        1,
+   820	        -295
+   821	      ],
+   822	      "size": [
+   823	        38,
+   824	        38
+   825	      ]
+   826	    },
+   827	    {
+   828	      "index": 51,
+   829	      "position": [
+   830	        -38,
+   831	        -295
+   832	      ],
+   833	      "size": [
+   834	        38,
+   835	        38
+   836	      ]
+   837	    },
+   838	    {
+   839	      "index": 52,
+   840	      "position": [
+   841	        1,
+   842	        -256
+   843	      ],
+   844	      "size": [
+   845	        38,
+   846	        38
+   847	      ]
+   848	    },
+   849	    {
+   850	      "index": 53,
+   851	      "position": [
+   852	        1,
+   853	        -217
+   854	      ],
+   855	      "size": [
+   856	        38,
+   857	        38
+   858	      ]
+   859	    },
+   860	    {
+   861	      "index": 54,
+   862	      "position": [
+   863	        1,
+   864	        -177.5
+   865	      ],
+   866	      "size": [
+   867	        38,
+   868	        38
+   869	      ]
+   870	    },
+   871	    {
+   872	      "index": 55,
+   873	      "position": [
+   874	        1,
+   875	        -139
+   876	      ],
+   877	      "size": [
+   878	        38,
+   879	        38
+   880	      ]
+   881	    },
+   882	    {
+   883	      "index": 56,
+   884	      "position": [
+   885	        1,
+   886	        -100
+   887	      ],
+   888	      "size": [
+   889	        38,
+   890	        38
+   891	      ]
+   892	    },
+   893	    {
+   894	      "index": 57,
+   895	      "position": [
+   896	        1,
+   897	        -60
+   898	      ],
+   899	      "size": [
+   900	        38,
+   901	        38
+   902	      ]
+   903	    },
+   904	    {
+   905	      "index": 58,
+   906	      "position": [
+   907	        -235,
+   908	        -21
+   909	      ],
+   910	      "size": [
+   911	        38,
+   912	        38
+   913	      ]
+   914	    },
+   915	    {
+   916	      "index": 59,
+   917	      "position": [
+   918	        -196,
+   919	        -21
+   920	      ],
+   921	      "size": [
+   922	        38,
+   923	        38
+   924	      ]
+   925	    },
+   926	    {
+   927	      "index": 60,
+   928	      "position": [
+   929	        -157,
+   930	        -21
+   931	      ],
+   932	      "size": [
+   933	        38,
+   934	        38
+   935	      ]
+   936	    },
+   937	    {
+   938	      "index": 61,
+   939	      "position": [
+   940	        -117.5,
+   941	        -21
+   942	      ],
+   943	      "size": [
+   944	        38,
+   945	        38
+   946	      ]
+   947	    },
+   948	    {
+   949	      "index": 62,
+   950	      "position": [
+   951	        -79,
+   952	        -21
+   953	      ],
+   954	      "size": [
+   955	        38,
+   956	        38
+   957	      ]
+   958	    },
+   959	    {
+   960	      "index": 63,
+   961	      "position": [
+   962	        -38,
+   963	        -21
+   964	      ],
+   965	      "size": [
+   966	        38,
+   967	        38
+   968	      ]
+   969	    },
+   970	    {
+   971	      "index": 64,
+   972	      "position": [
+   973	        1,
+   974	        215
+   975	      ],
+   976	      "size": [
+   977	        38,
+   978	        38
+   979	      ]
+   980	    },
+   981	    {
+   982	      "index": 65,
+   983	      "position": [
+   984	        1,
+   985	        176
+   986	      ],
+   987	      "size": [
+   988	        38,
+   989	        38
+   990	      ]
+   991	    },
+   992	    {
+   993	      "index": 66,
+   994	      "position": [
+   995	        1,
+   996	        137.5
+   997	      ],
+   998	      "size": [
+   999	        38,
+  1000	        38
+  1001	      ]
+  1002	    },
+  1003	    {
+  1004	      "index": 67,
+  1005	      "position": [
+  1006	        1,
+  1007	        98
+  1008	      ],
+  1009	      "size": [
+  1010	        38,
+  1011	        38
+  1012	      ]
+  1013	    },
+  1014	    {
+  1015	      "index": 68,
+  1016	      "position": [
+  1017	        1,
+  1018	        59
+  1019	      ],
+  1020	      "size": [
+  1021	        38,
+  1022	        38
+  1023	      ]
+  1024	    },
+  1025	    {
+  1026	      "index": 69,
+  1027	      "position": [
+  1028	        1,
+  1029	        18
+  1030	      ],
+  1031	      "size": [
+  1032	        38,
+  1033	        38
+  1034	      ]
+  1035	    },
+  1036	    {
+  1037	      "index": 70,
+  1038	      "position": [
+  1039	        237,
+  1040	        -21
+  1041	      ],
+  1042	      "size": [
+  1043	        38,
+  1044	        38
+  1045	      ]
+  1046	    },
+  1047	    {
+  1048	      "index": 71,
+  1049	      "position": [
+  1050	        197.5,
+  1051	        -21
+  1052	      ],
+  1053	      "size": [
+  1054	        38,
+  1055	        38
+  1056	      ]
+  1057	    },
+  1058	    {
+  1059	      "index": 72,
+  1060	      "position": [
+  1061	        159,
+  1062	        -21
+  1063	      ],
+  1064	      "size": [
+  1065	        38,
+  1066	        38
+  1067	      ]
+  1068	    },
+  1069	    {
+  1070	      "index": 73,
+  1071	      "position": [
+  1072	        120,
+  1073	        -21
+  1074	      ],
+  1075	      "size": [
+  1076	        38,
+  1077	        38
+  1078	      ]
+  1079	    },
+  1080	    {
+  1081	      "index": 74,
+  1082	      "position": [
+  1083	        81,
+  1084	        -21
+  1085	      ],
+  1086	      "size": [
+  1087	        38,
+  1088	        38
+  1089	      ]
+  1090	    },
+  1091	    {
+  1092	      "index": 75,
+  1093	      "position": [
+  1094	        40,
+  1095	        -21
+  1096	      ],
+  1097	      "size": [
+  1098	        38,
+  1099	        38
+  1100	      ]
+  1101	    }
+  1102	  ],
+  1103	  "camp_pawn_centers": [
+  1104	    {
+  1105	      "name": "chess_0_0",
+  1106	      "position": [
+  1107	        -215,
+  1108	        -157
+  1109	      ]
+  1110	    },
+  1111	    {
+  1112	      "name": "chess_0_1",
+  1113	      "position": [
+  1114	        -137,
+  1115	        -157
+  1116	      ]
+  1117	    },
+  1118	    {
+  1119	      "name": "chess_0_2",
+  1120	      "position": [
+  1121	        -215,
+  1122	        -237
+  1123	      ]
+  1124	    },
+  1125	    {
+  1126	      "name": "chess_0_3",
+  1127	      "position": [
+  1128	        -137,
+  1129	        -237
+  1130	      ]
+  1131	    },
+  1132	    {
+  1133	      "name": "chess_1_0",
+  1134	      "position": [
+  1135	        -215,
+  1136	        196
+  1137	      ]
+  1138	    },
+  1139	    {
+  1140	      "name": "chess_1_1",
+  1141	      "position": [
+  1142	        -137,
+  1143	        196
+  1144	      ]
+  1145	    },
+  1146	    {
+  1147	      "name": "chess_1_2",
+  1148	      "position": [
+  1149	        -215,
+  1150	        119
+  1151	      ]
+  1152	    },
+  1153	    {
+  1154	      "name": "chess_1_3",
+  1155	      "position": [
+  1156	        -137,
+  1157	        119
+  1158	      ]
+  1159	    },
+  1160	    {
+  1161	      "name": "chess_2_0",
+  1162	      "position": [
+  1163	        138,
+  1164	        196
+  1165	      ]
+  1166	    },
+  1167	    {
+  1168	      "name": "chess_2_1",
+  1169	      "position": [
+  1170	        217,
+  1171	        196
+  1172	      ]
+  1173	    },
+  1174	    {
+  1175	      "name": "chess_2_2",
+  1176	      "position": [
+  1177	        138,
+  1178	        119
+  1179	      ]
+  1180	    },
+  1181	    {
+  1182	      "name": "chess_2_3",
+  1183	      "position": [
+  1184	        217,
+  1185	        119
+  1186	      ]
+  1187	    },
+  1188	    {
+  1189	      "name": "chess_3_0",
+  1190	      "position": [
+  1191	        138,
+  1192	        -157
+  1193	      ]
+  1194	    },
+  1195	    {
+  1196	      "name": "chess_3_1",
+  1197	      "position": [
+  1198	        217,
+  1199	        -157
+  1200	      ]
+  1201	    },
+  1202	    {
+  1203	      "name": "chess_3_2",
+  1204	      "position": [
+  1205	        138,
+  1206	        -237
+  1207	      ]
+  1208	    },
+  1209	    {
+  1210	      "name": "chess_3_3",
+  1211	      "position": [
+  1212	        217,
+  1213	        -237
+  1214	      ]
+  1215	    }
+  1216	  ],
+  1217	  "grid_markers": {
+  1218	    "all_safe_indices": [
+  1219	      0,
+  1220	      13,
+  1221	      26,
+  1222	      39,
+  1223	      8,
+  1224	      21,
+  1225	      34,
+  1226	      47
+  1227	    ],
+  1228	    "visible_star_indices": [
+  1229	      8,
+  1230	      21,
+  1231	      34,
+  1232	      47
+  1233	    ],
+  1234	    "colored_safe_start_indices": [
+  1235	      0,
+  1236	      13,
+  1237	      26,
+  1238	      39
+  1239	    ],
+  1240	    "arrow_indices": [
+  1241	      50,
+  1242	      11,
+  1243	      24,
+  1244	      37
+  1245	    ],
+  1246	    "arrow_colors": [
+  1247	      "lan",
+  1248	      "hong",
+  1249	      "lv",
+  1250	      "huang"
+  1251	    ],
+  1252	    "barrier_indices": [
+  1253	      52,
+  1254	      58,
+  1255	      64,
+  1256	      70
+  1257	    ],
+  1258	    "barrier_note": "原版 barrier 为可变化玩法对象，不是所有归家格永久边框；MapGrid.setBarrierRotation 在52/64横向、58/70纵向。"
+  1259	  },
+  1260	  "assets": [
+  1261	    {
+  1262	      "name": "original_img_wujiaoxing",
+  1263	      "rect": [
+  1264	        227,
+  1265	        1896,
+  1266	        27,
+  1267	        26
+  1268	      ],
+  1269	      "offset": [
+  1270	        0,
+  1271	        0
+  1272	      ],
+  1273	      "originalSize": [
+  1274	        27,
+  1275	        26
+  1276	      ],
+  1277	      "capInsets": [
+  1278	        0,
+  1279	        0,
+  1280	        0,
+  1281	        0
+  1282	      ],
+  1283	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+  1284	      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+  1285	    },
+  1286	    {
+  1287	      "name": "original_img_barrier",
+  1288	      "rect": [
+  1289	        188,
+  1290	        1929,
+  1291	        15,
+  1292	        33
+  1293	      ],
+  1294	      "offset": [
+  1295	        0,
+  1296	        0
+  1297	      ],
+  1298	      "originalSize": [
+  1299	        15,
+  1300	        33
+  1301	      ],
+  1302	      "rotated": 1,
+  1303	      "capInsets": [
+  1304	        0,
+  1305	        0,
+  1306	        0,
+  1307	        0
+  1308	      ],
+  1309	      "native_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/native/94/940d8ae4-6774-4e81-bb4c-8d8fed54226c.5d699.png",
+  1310	      "metadata_entry": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0f/0f000441e.f6f55.json"
+  1311	    },
+  1312	    {
+  1313	      "name": "original_img_sanjiao_lv",
+  1314	      "rect": [
+  1315	        1354,
+  1316	        1886,
+  1317	        17,
+  1318	        15
+  1319	      ],
+  1320	      "offset": [
+AI: 已核实主板是透明十字层、四营地和低透明外框的分层装配，不采用商店缩略板。无参考背景已明确排除；本轮只以原紫色菱格纹理编辑一次，其余资源按原契约复用和规范编码。
+[{'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-background-atlas.png', 'destination': 'public/assets/background-original.png', 'crop': [1, 1, 719, 1600], 'target_size': None}, 'id': 'call_Puw1AAtt36fnbm3uOXoxRLep', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/board-cross.png', 'crop': [1445, 1187, 586, 585], 'target_size': None}, 'id': 'call_7chDFyxH5qkvtRXYLty5elXt', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/camp-red.png', 'crop': [1405, 1774, 233, 233], 'target_size': None}, 'id': 'call_0qs4LRywHupoTajBdjQJdRA1', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/camp-yellow.png', 'crop': [1640, 1774, 233, 233], 'target_size': None}, 'id': 'call_WXYxXo8kRr2S3e7VV9wa3lWp', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-background-atlas.png', 'destination': 'public/assets/camp-blue.png', 'crop': [1, 1603, 233, 233], 'target_size': None}, 'id': 'call_qA0E6p03GncvWHoQfHqBCaAK', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-background-atlas.png', 'destination': 'public/assets/camp-green.png', 'crop': [236, 1603, 233, 233], 'target_size': None}, 'id': 'call_MfBZQB5tzS3RtP1COU97W8SH', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/token-blue.png', 'crop': [1287, 1851, 32, 53], 'target_size': None}, 'id': 'call_iU3e1yUeXv2C5VW1p0Hz8SNC', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/token-red.png', 'crop': [154, 1896, 32, 52], 'target_size': None}, 'id': 'call_G33SYXQXyGhznJWv4iAP9rSX', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-token-dice-atlas.png', 'destination': 'public/assets/token-green.png', 'crop': [932, 117, 33, 53], 'target_size': None}, 'id': 'call_tyrE2cMCtVIERsXjic5CzjB4', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/token-yellow.png', 'crop': [1875, 1947, 33, 53], 'target_size': None}, 'id': 'call_QQBXhR5Z0jiPqjOOf7y0JJNk', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/marker-star.png', 'crop': [227, 1896, 27, 26], 'target_size': None}, 'id': 'call_av0H2O9coUNKgoENodNeiJ3O', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/arrow-blue.png', 'crop': [1321, 1925, 17, 15], 'target_size': None}, 'id': 'call_QQ0q9BnDe6uU4z7Kw6f0Xf3V', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/arrow-red.png', 'crop': [1405, 1723, 15, 17], 'target_size': None}, 'id': 'call_Iiy6zWKmOZrxYjRZG3DmaR3b', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/arrow-green.png', 'crop': [1354, 1886, 17, 15], 'target_size': None}, 'id': 'call_KStEc1hQMjiguLm9jqdxtFiy', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-board-atlas.png', 'destination': 'public/assets/arrow-yellow.png', 'crop': [1982, 1947, 15, 17], 'target_size': None}, 'id': 'call_nPpIXRYyU9LVwFfomvytQ5w7', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/reference-assets/board-frame-native.png', 'offset': 0, 'limit': 100}, 'id': 'call_DVb7ugPV6kTo0QNNwbgr7vSQ', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/public/assets/dice-roll-00.png', 'offset': 0, 'limit': 100}, 'id': 'call_xn4w3FzVZUl13P5qdFNDMfHt', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/public/assets/avatar-human.png', 'offset': 0, 'limit': 100}, 'id': 'call_Xy9Qtho1VWGUmmcYncBhLB1l', 'type': 'tool_call'}]
+Tool: {"path": "public/assets/background-original.png", "size": 141756, "sha256": "8d53617e1bb1f3c9a2d68195ff34713340a23e4d9d98558403ca00d62a17476f", "source_path": "reference-assets/super-background-atlas.png", "source_sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c", "source_bytes": 9904, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 721, "input_height": 1837, "width": 719, "height": 1600, "crop": [1, 1, 719, 1600], "target_size": null, "resize_mode": "none", "content_size": [719, 1600], "offset": [0, 0], "alpha": {"transparent_pixels": 0, "opaque_pixels": 1150400, "semitransparent_pixels": 0, "extrema": [255, 255], "sha256": "753e5e8bd7bad836eaa909baa5b1725f6edd54777e45daabbfd3ccd9063d4575"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/board-cross.png", "size": 126222, "sha256": "d78cc8bfb4479622b2670d58e986c873d049470b82df5758f23c8d176c222d49", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 586, "height": 585, "crop": [1445, 1187, 586, 585], "target_size": null, "resize_mode": "none", "content_size": [586, 585], "offset": [0, 0], "alpha": {"transparent_pixels": 226480, "opaque_pixels": 113246, "semitransparent_pixels": 3084, "extrema": [0, 255], "sha256": "60dce8507f8d2f6100e13f3feebf58419c61aea3ddb732540b7471792d728aea"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/camp-red.png", "size": 36400, "sha256": "54369ab9ce71e400fe66c8123aeee673c7f387dc2e107f442d23d91206442607", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 233, "height": 233, "crop": [1405, 1774, 233, 233], "target_size": null, "resize_mode": "none", "content_size": [233, 233], "offset": [0, 0], "alpha": {"transparent_pixels": 20, "opaque_pixels": 53413, "semitransparent_pixels": 856, "extrema": [0, 255], "sha256": "f4022263533924fac1ac2437512957df55eba20fc632b45330690add3aa5f5a3"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/camp-yellow.png", "size": 40328, "sha256": "e456eba80e9973d406387710fef03884f56870f09522b8dc6a54ce090775685b", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 233, "height": 233, "crop": [1640, 1774, 233, 233], "target_size": null, "resize_mode": "none", "content_size": [233, 233], "offset": [0, 0], "alpha": {"transparent_pixels": 20, "opaque_pixels": 54114, "semitransparent_pixels": 155, "extrema": [0, 255], "sha256": "92e4478c071e40376dff51b98a78715145d8017fd397b812d834414cfc53a423"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/camp-blue.png", "size": 41112, "sha256": "44036eb66f8698eeb9dcec3b72b55c6ee012f1e7dd6bf76c9f741ebac7282712", "source_path": "reference-assets/super-background-atlas.png", "source_sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c", "source_bytes": 9904, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 721, "input_height": 1837, "width": 233, "height": 233, "crop": [1, 1603, 233, 233], "target_size": null, "resize_mode": "none", "content_size": [233, 233], "offset": [0, 0], "alpha": {"transparent_pixels": 12, "opaque_pixels": 54233, "semitransparent_pixels": 44, "extrema": [0, 255], "sha256": "c77ef52c28e64cf7fcf18082094ce80ed52bc610775aae179b165f2df6f9466c"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/camp-green.png", "size": 38675, "sha256": "2683469348f1a716f9e800341137acaaaeb32564d24a80e5dd8ccf35eeb66bfb", "source_path": "reference-assets/super-background-atlas.png", "source_sha256": "ded0443028225d1e3375d597850856a2abaa364fbca2249600eb95b6e1a5c72c", "source_bytes": 9904, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 721, "input_height": 1837, "width": 233, "height": 233, "crop": [236, 1603, 233, 233], "target_size": null, "resize_mode": "none", "content_size": [233, 233], "offset": [0, 0], "alpha": {"transparent_pixels": 12, "opaque_pixels": 54233, "semitransparent_pixels": 44, "extrema": [0, 255], "sha256": "0bf8c2c985e50104fe216068d2d443f5d997a9b270a700d9844f924966a4ff83"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/token-blue.png", "size": 4436, "sha256": "6976cb326f61c12931f6caef84160c19074862ec5eea3bf3204780a6f163bffe", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 32, "height": 53, "crop": [1287, 1851, 32, 53], "target_size": null, "resize_mode": "none", "content_size": [32, 53], "offset": [0, 0], "alpha": {"transparent_pixels": 343, "opaque_pixels": 1025, "semitransparent_pixels": 328, "extrema": [0, 255], "sha256": "a96741977e2aeeeda7b2c0f10ea968d5c3e6201035ef119f8829cd34d8761bf4"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/token-red.png", "size": 4795, "sha256": "6ffb560ca4eefbec55e2cd02c56af02e07cdd8accc03fb548ff663c8b952fff9", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 32, "height": 52, "crop": [154, 1896, 32, 52], "target_size": null, "resize_mode": "none", "content_size": [32, 52], "offset": [0, 0], "alpha": {"transparent_pixels": 318, "opaque_pixels": 916, "semitransparent_pixels": 430, "extrema": [0, 255], "sha256": "0875d3ed26e1aa91d621ded3875d2d7019bc62fc4baff3372f09160ee9837a59"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/token-green.png", "size": 4774, "sha256": "5637d1d4f56fb14b0fb44e33200f6a5041751790593572e7c5331497ab80fa6e", "source_path": "reference-assets/super-token-dice-atlas.png", "source_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1", "source_bytes": 125874, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 1432, "input_height": 512, "width": 33, "height": 53, "crop": [932, 117, 33, 53], "target_size": null, "resize_mode": "none", "content_size": [33, 53], "offset": [0, 0], "alpha": {"transparent_pixels": 387, "opaque_pixels": 870, "semitransparent_pixels": 492, "extrema": [0, 255], "sha256": "0616fd7011b7d850591544cc37f068063a84cfe0b6b67250c651802c82e33da5"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/token-yellow.png", "size": 4851, "sha256": "e9056447ac86978c54f7c075c42e9b9b5d15cbf79b4e119e95630f85e8c98c93", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 33, "height": 53, "crop": [1875, 1947, 33, 53], "target_size": null, "resize_mode": "none", "content_size": [33, 53], "offset": [0, 0], "alpha": {"transparent_pixels": 335, "opaque_pixels": 904, "semitransparent_pixels": 510, "extrema": [0, 255], "sha256": "4fcfc6e8b77216a4a88e99095bb4defa9ef062da6d84a89417d706b042dee54c"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/marker-star.png", "size": 1741, "sha256": "a74c5bb716c035e42fe1ef108c6d8851d39fa7682e2a8246380d717af069c205", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 27, "height": 26, "crop": [227, 1896, 27, 26], "target_size": null, "resize_mode": "none", "content_size": [27, 26], "offset": [0, 0], "alpha": {"transparent_pixels": 194, "opaque_pixels": 0, "semitransparent_pixels": 508, "extrema": [0, 253], "sha256": "d3a0fcefb2e5ee91637462415d27d5b84ca90ce82bbe172cee9d7feff4a440b7"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/arrow-blue.png", "size": 805, "sha256": "742794d71b72b026c25cfe5c6fdf48a7188af6db6fc774d94547364f5e72c620", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 17, "height": 15, "crop": [1321, 1925, 17, 15], "target_size": null, "resize_mode": "none", "content_size": [17, 15], "offset": [0, 0], "alpha": {"transparent_pixels": 94, "opaque_pixels": 139, "semitransparent_pixels": 22, "extrema": [0, 255], "sha256": "63785791c113ebc70c0680f70a5401ee3b3a367509d351e64fe246b1d15fe4f1"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/arrow-red.png", "size": 848, "sha256": "ffbff371162a4160a90ac3491f2c0b62066d74ecc25f499bc326d5f36e39668b", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 15, "height": 17, "crop": [1405, 1723, 15, 17], "target_size": null, "resize_mode": "none", "content_size": [15, 17], "offset": [0, 0], "alpha": {"transparent_pixels": 93, "opaque_pixels": 31, "semitransparent_pixels": 131, "extrema": [0, 255], "sha256": "4d4572f85ac78028d50225e175e7f472e13ba5c3f941a2d1387a20299ea1b778"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/arrow-green.png", "size": 820, "sha256": "60fb2108ff098b928cf00f8c18492f372b14fc4da98a2fa7389f19b9348c30a0", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 17, "height": 15, "crop": [1354, 1886, 17, 15], "target_size": null, "resize_mode": "none", "content_size": [17, 15], "offset": [0, 0], "alpha": {"transparent_pixels": 94, "opaque_pixels": 109, "semitransparent_pixels": 52, "extrema": [0, 255], "sha256": "ba06753d1177f535b06de19c09bbc8bf592a31daef664f7bdfff442976ee259f"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/arrow-yellow.png", "size": 812, "sha256": "d4845bac81aa0353f799a9d7cbc89dd82eda0c049984afafd5de9158cb369e0a", "source_path": "reference-assets/super-board-atlas.png", "source_sha256": "6f47a04372be65f5afdaa5bb991217c1ebe5a55a3d125c06efa0c547575d6dbb", "source_bytes": 229924, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 2038, "input_height": 2008, "width": 15, "height": 17, "crop": [1982, 1947, 15, 17], "target_size": null, "resize_mode": "none", "content_size": [15, 17], "offset": [0, 0], "alpha": {"transparent_pixels": 92, "opaque_pixels": 113, "semitransparent_pixels": 50, "extrema": [0, 255], "sha256": "dd0772931f725f3e7efcc53ca127e0d16927dcdaf9a7587146632c473c82ebf7"}, "output_format": "PNG"}
+Tool: 
+Tool: 
+Tool: 
+AI: [{'name': 'generate_art_image', 'args': {'prompt': '仅精修输入的原版紫色菱格背景纹理，不重新设计。保持原图竖向构图、菱格方向、大小和分布，以及上下渐变位置；仍为深紫低对比的手游底纹，只小幅改善色阶平滑和柔和丝缎质感，变化克制、接近原图。全画幅不透明，边缘连续，无黑边，无大明暗块。不要风景、建筑、人物、文字、标识、棋盘、骰子、卡片、边框、强光或新增装饰。背景是独立纹理，不包含任何游戏HUD。', 'destination': 'public/assets/background-api-candidate.webp', 'size': '1024x1536', 'quality': 'high', 'reference_paths': ['public/assets/background-original.png']}, 'id': 'call_u4n1o2veRf6em91TGK5tvvb6', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/board-frame-native.png', 'destination': 'public/assets/board-frame.png', 'crop': None, 'target_size': None}, 'id': 'call_kRk4ht1JyXUtWnOHPvgKdZDS', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-token-dice-atlas.png', 'destination': 'public/assets/dice-face-1.png', 'crop': [1198, 390, 104, 106], 'target_size': None}, 'id': 'call_eft9uOturJRbbWyNkaVpePsz', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-token-dice-atlas.png', 'destination': 'public/assets/dice-face-2.png', 'crop': [1304, 390, 104, 106], 'target_size': None}, 'id': 'call_GimzHKJ5N2Hei2F8czHcCJFr', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-token-dice-atlas.png', 'destination': 'public/assets/dice-face-3.png', 'crop': [1221, 115, 104, 106], 'target_size': None}, 'id': 'call_Z1A7MWhN0j4kY1hs1LiV19U5', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-token-dice-atlas.png', 'destination': 'public/assets/dice-face-4.png', 'crop': [1324, 1, 104, 106], 'target_size': None}, 'id': 'call_3p9GTNlXJ1kOIxcB2rb0DM8V', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-token-dice-atlas.png', 'destination': 'public/assets/dice-face-5.png', 'crop': [1312, 223, 104, 106], 'target_size': None}, 'id': 'call_e08LviLW3VjVPle4zcW3V9Bd', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'reference-assets/super-token-dice-atlas.png', 'destination': 'public/assets/dice-face-6.png', 'crop': [1327, 109, 104, 106], 'target_size': None}, 'id': 'call_tFFgm5svSat7EW0fSCjnT1R2', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/05a1c9723.58580.json', 'offset': 0, 'limit': 16000}, 'id': 'call_lBiZsMvg3Gr6PkPbq1PdCyjO', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0d/0d4dc8f4b.c2128.json', 'offset': 0, 'limit': 11000}, 'id': 'call_qGPLmtBnq588fTKhNgbEmoEy', 'type': 'tool_call'}, {'name': 'read_reference_archive', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json', 'offset': 0, 'limit': 5000}, 'id': 'call_R5HOV2NNNCwYdjgMu7STxitL', 'type': 'tool_call'}, {'name': 'extract_reference_asset', 'args': {'path': '公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip', 'member': 'www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/86/86c887a9-2f38-49b0-8ea5-3864c0a7f386.78749.png', 'destination': 'reference-assets/button-settings-native.png'}, 'id': 'call_XiLlr3m0VG3ATP6TvWsPsAaT', 'type': 'tool_call'}]
+Tool: {"path": "public/assets/background-api-candidate.webp", "size": 10098, "width": 1024, "height": 1536, "sha256": "84acdfc666a579d2ccbebadd57e098868a0e00bf92949eb9582d6e78ce0d7664", "source": "工程图片API真实生成", "reference_images": [{"path": "public/assets/background-original.png", "sha256": "8d53617e1bb1f3c9a2d68195ff34713340a23e4d9d98558403ca00d62a17476f", "size": 141756, "width": 719, "height": 1600, "format": "PNG", "content_type": "image/png", "upload_filename": "background-original.png"}], "provider": "openai-image-api", "model": "gpt-image-2"}
+Tool: {"path": "public/assets/board-frame.png", "size": 10509, "sha256": "950bb24b92cf3703a48ba7fe11e2fde5c8154cd8aa6492e8afc1c7ce2da94766", "source_path": "reference-assets/board-frame-native.png", "source_sha256": "e4b4f28f9681621024ff0ebb3cad9cce1c32ef59a07011465b7af68d07e804e9", "source_bytes": 2286, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 628, "input_height": 628, "width": 628, "height": 628, "crop": [0, 0, 628, 628], "target_size": null, "resize_mode": "none", "content_size": [628, 628], "offset": [0, 0], "alpha": {"transparent_pixels": 392, "opaque_pixels": 0, "semitransparent_pixels": 393992, "extrema": [0, 51], "sha256": "1885ecad61394b9a7e4c59b636776ee6b87cb02b5802ca4e63a31e03c4c43740"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/dice-face-1.png", "size": 13086, "sha256": "8ad6369dd9347810a89fe3e51e45388cf4957695c726c44c39783d32f5efa7ca", "source_path": "reference-assets/super-token-dice-atlas.png", "source_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1", "source_bytes": 125874, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 1432, "input_height": 512, "width": 104, "height": 106, "crop": [1198, 390, 104, 106], "target_size": null, "resize_mode": "none", "content_size": [104, 106], "offset": [0, 0], "alpha": {"transparent_pixels": 1496, "opaque_pixels": 9322, "semitransparent_pixels": 206, "extrema": [0, 255], "sha256": "173f81c91c136cc7288698e4d35968a44d7ecf3690c98ae8987ddd42ede44ac2"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/dice-face-2.png", "size": 10587, "sha256": "0a972149694ff7e0bc40d862c3810645d92a44d888081913701fa41e42bc7917", "source_path": "reference-assets/super-token-dice-atlas.png", "source_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1", "source_bytes": 125874, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 1432, "input_height": 512, "width": 104, "height": 106, "crop": [1304, 390, 104, 106], "target_size": null, "resize_mode": "none", "content_size": [104, 106], "offset": [0, 0], "alpha": {"transparent_pixels": 1495, "opaque_pixels": 9216, "semitransparent_pixels": 313, "extrema": [0, 255], "sha256": "a650e6bbfc802beed36c50a5b093b7e2224c8a7c4818a9682628b3ed848bb70c"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/dice-face-3.png", "size": 12613, "sha256": "aa6effe3e11020ce3552e5edbf399469d41caf9ad63541035e7268c6c785463e", "source_path": "reference-assets/super-token-dice-atlas.png", "source_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1", "source_bytes": 125874, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 1432, "input_height": 512, "width": 104, "height": 106, "crop": [1221, 115, 104, 106], "target_size": null, "resize_mode": "none", "content_size": [104, 106], "offset": [0, 0], "alpha": {"transparent_pixels": 1524, "opaque_pixels": 9140, "semitransparent_pixels": 360, "extrema": [0, 255], "sha256": "546b5e16686319d428f2877d47bc00e1c07f6d04058d7a4bff636dcfd6a64c42"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/dice-face-4.png", "size": 14392, "sha256": "bd8d2951142f5a4f5b2bdd1c9de41a9e28f7c0115271fc68ee711da322b6d5f7", "source_path": "reference-assets/super-token-dice-atlas.png", "source_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1", "source_bytes": 125874, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 1432, "input_height": 512, "width": 104, "height": 106, "crop": [1324, 1, 104, 106], "target_size": null, "resize_mode": "none", "content_size": [104, 106], "offset": [0, 0], "alpha": {"transparent_pixels": 1494, "opaque_pixels": 9330, "semitransparent_pixels": 200, "extrema": [0, 255], "sha256": "85e3dda3f2bf68b8633f3f449e694679761259f128b48c339cfec94bf0fc386f"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/dice-face-5.png", "size": 14610, "sha256": "40995d730b667d5ef0e3e11562291806286d1d744d0bf3a8b732a53e74985416", "source_path": "reference-assets/super-token-dice-atlas.png", "source_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1", "source_bytes": 125874, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 1432, "input_height": 512, "width": 104, "height": 106, "crop": [1312, 223, 104, 106], "target_size": null, "resize_mode": "none", "content_size": [104, 106], "offset": [0, 0], "alpha": {"transparent_pixels": 1500, "opaque_pixels": 9159, "semitransparent_pixels": 365, "extrema": [0, 255], "sha256": "44b70d3173efea6d591d363be9a2f728a3c52b0cb9a27dd37e347d6a1bce9143"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/dice-face-6.png", "size": 15049, "sha256": "41c3f7534c6e1ce1e082df382cf4df947004d4ad2b5c9bcbc65a626030d1a516", "source_path": "reference-assets/super-token-dice-atlas.png", "source_sha256": "ebecd53c16c8a929a4f884e7f35ec3945f50ebcf65037589912b5087da93dbc1", "source_bytes": 125874, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 1432, "input_height": 512, "width": 104, "height": 106, "crop": [1327, 109, 104, 106], "target_size": null, "resize_mode": "none", "content_size": [104, 106], "offset": [0, 0], "alpha": {"transparent_pixels": 1494, "opaque_pixels": 9191, "semitransparent_pixels": 339, "extrema": [0, 255], "sha256": "45d0fa0db827dc76c76784e92977238a2f3a7f6c232c55524913c9e2d1fd8470"}, "output_format": "PNG"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/05/05a1c9723.58580.json", "sha256": "93906d95e97f6aec9b2643a655ca0334e41705badf91c27e3d4df458f4337863", "offset": 0, "end": 16000, "total_chars": 16070, "content": "[1,[\"ecpdLyjvZBwrvm+cedCcQy\",\"62NOGtgfNJPb8KhCAB1FKF\",\"84rG+eBUBBbbXbVOKbPeft\",\"d3ux+b7UBJhLxpDP2JE0a+\",\"44X0U0UgNDzLjNfx6F21CQ\",\"e6eWRYKe1C8ZmNnu2/PZdX\",\"d6ZZ0p2FdJL5hRM5VxCBgF\",\"70BSV/9mBKNbwHbjH4BEP6\",\"e97GVMl6JHh5Ml5qEDdSGa\",\"f0BIwQ8D5Ml7nTNQbh1YlS\",\"29FYIk+N1GYaeWH/q1NxQO\",\"5c1igHXa5OG6YEuJeEOUY6\",\"883WpCrKxICYG2xEDAVeTw\",\"5566nAJU9GWJyaRaPQvWuw\",\"58byJ9s8NEtaVfhztjNoaV\",\"80yga3MUVClrrfxj58Zxvk\",\"1a0ZEE+gRCJ7lVc7tNykR3\",\"bdbmP7fm9J5KUPSSAEiY0a\",\"1c3hVYfXxFQIRLTGCY2Wgy\",\"d2HxlZ5rNH2p4zSdOWRdip\",\"8eLFOqOCFEJbT/I0REmpU6\",\"51vZojuRxLdaVzFeq9uK5L\",\"16tfMy02REErLZeX7qzCMG\",\"85gnc/YBNEhYH3fns3BEOr\",\"76vzzBtBdDwbdh24bq7ZDr\"],[\"node\",\"_spriteFrame\",\"_textureSetter\",\"_parent\",\"_N$normalSprite\",\"_N$pressedSprite\",\"_N$hoverSprite\",\"_N$disabledSprite\",\"_defaultClip\",\"root\",\"btn_audo\",\"node_local_child\",\"node_local\",\"node_computer\",\"data\",\"_N$file\"],[[\"cc.Node\",[\"_name\",\"_active\",\"_opacity\",\"_prefab\",\"_parent\",\"_components\",\"_contentSize\",\"_trs\",\"_children\",\"_eulerAngles\",\"_color\"],0,4,1,9,5,7,2,5,5],\"cc.SpriteFrame\",[\"cc.Sprite\",[\"_sizeMode\",\"_isTrimmedMode\",\"_type\",\"_fillType\",\"_fillRange\",\"node\",\"_materials\",\"_spriteFrame\",\"_fillCenter\"],-2,1,3,6,5],[\"cc.Label\",[\"_string\",\"_fontSize\",\"_N$horizontalAlign\",\"_N$verticalAlign\",\"_N$overflow\",\"_lineHeight\",\"_styleFlags\",\"_isSystemFontUsed\",\"node\",\"_materials\",\"_N$file\"],-5,1,3,6],[\"cc.Node\",[\"_name\",\"_active\",\"_children\",\"_prefab\",\"_trs\"],1,12,4,7],[\"cc.PrefabInfo\",[\"fileId\",\"root\"],2,1],[\"cc.Button\",[\"node\",\"clickEvents\",\"_N$normalColor\",\"_N$pressedColor\",\"_N$disabledColor\",\"_N$normalSprite\",\"_N$pressedSprite\",\"_N$hoverSprite\",\"_N$disabledSprite\"],3,1,9,5,5,5,6,6,6,6],[\"cc.Prefab\",[\"_name\"],2],[\"f1735lYABdF6ZWHfDSk61Ol\",[\"node\",\"node_computer\",\"node_computer_list\",\"node_local\",\"node_local_child\",\"btn_audo\"],3,1,1,2,1,1,1],[\"cc.ClickEvent\",[\"_componentId\",\"handler\",\"target\"],1,1],[\"cc.LabelShadow\",[\"node\",\"_color\",\"_offset\"],3,1,5,5],[\"cc.LabelOutline\",[\"node\",\"_color\"],3,1,5],[\"cc.Animation\",[\"playOnLoad\",\"node\",\"_clips\",\"_defaultClip\"],2,1,3,6],[\"cc.AnimationClip\",[\"_name\",\"_duration\",\"wrapMode\",\"curveData\"],-1]],[[5,0,1,2],[0,0,1,4,5,3,6,7,3],[0,0,4,5,3,6,7,2],[2,0,1,5,6,3],[2,0,1,5,6,7,3],[9,0,1,2,3],[0,0,1,4,5,3,6,7,9,3],[2,2,3,4,5,6,8,7,4],[3,0,1,6,2,3,4,8,9,7],[3,0,1,5,6,2,3,4,8,9,8],[10,0,1,2,1],[2,0,5,6,7,2],[6,0,1,1],[0,0,4,3,7,2],[0,0,1,4,8,3,7,3],[0,0,1,2,4,5,3,6,7,4],[0,0,1,4,5,3,10,6,3],[2,2,0,1,5,6,7,4],[2,0,5,6,2],[2,5,6,1],[6,0,1,2,3,4,5,6,7,8,1],[3,0,1,2,3,4,8,9,6],[11,0,1,1],[12,0,1,2,3,2],[4,0,2,3,4,2],[7,0,2],[0,0,8,5,3,6,2],[0,0,4,8,3,2],[0,0,1,4,8,3,3],[4,0,1,2,3,4,3],[8,0,1,2,3,4,5,1],[5,1,1],[3,0,1,5,7,2,3,8,9,10,7],[13,0,1,2,3,5]],[[[{\"name\":\"托管\",\"rect\":[1,1,160,48],\"offset\":[0.5,0],\"originalSize\":[161,50],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[14]],[[{\"name\":\"img_head_select\",\"rect\":[0,0,83,83],\"offset\":[0,0],\"originalSize\":[83,83],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[15]],[[[25,\"PlayerInfo\"],[26,\"PlayerInfo\",[-9,-10,-11],[[30,-8,-7,[-5,-6],-4,-3,-2]],[31,-1],[5,231,174]],[24,\"nodeLeft\",[[-12,-13,-14,-15,-16,-17,-18,-19,-20,-21,-22,-23,-24,-25,-26,-27,-28,[13,\"dice_node\",-29,[0,\"7dkJbijJRG84GxYFr+38/C\",1],[-5,9,0,0,0,0,1,1,1,1]],-30],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1],[0,\"72kajxUdVChItwjQgc6XnK\",1],[0,-11,0,0,0,0,1,1,1,1]],[24,\"nodeLeft\",[[-31,-32,-33,-34,-35,-36,-37,-38,-39,-40,-41,-42,-43,-44,-45,-46,[13,\"dice_node\",-47,[0,\"6b+zliVPZKuYXJ2Soaoze0\",1],[-5,9,0,0,0,0,1,1,1,1]],-48],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1],[0,\"8auch9IUJJz6YymlqJCn3i\",1],[0,-11,0,0,0,0,1,1,1,1]],[29,\"nodeRight\",false,[[-49,-50,-51,-52,-53,-54,-55,-56,-57,-58,-59,-60,-61,-62,-63,-64,[13,\"dice_node\",-65,[0,\"ee53LqMyhBXI9RT8xmZnXA\",1],[-5,9,0,0,0,0,1,1,1,1]],-66],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1],[0,\"fa5dHi7LxMspvzrXchcNKD\",1],[0,-31,0,0,0,0,1,1,1,1]],[14,\"nodeOuttime\",false,3,[-67,-68,-69,-70,-71],[0,\"80ffOlZRJF64fcqHPI/1rw\",1],[267,51.485,0,0,0,0,1,1,1,1]],[14,\"nodeOuttime\",false,4,[-72,-73,-74,-75,-76],[0,\"3f57tObndKNZTIbBvSB2Sv\",1],[267,51.485,0,0,0,0,1,1,1,1]],[14,\"nodeOuttime\",false,2,[-77,-78,-79,-80,-81],[0,\"fchnYrbBlDJZM/5klAW2uD\",1],[267,51.485,0,0,0,0,1,1,1,1]],[27,\"node_computer\",1,[3,4],[0,\"227N5BYJ9IcrAIOZ8cCXW+\",1]],[1,\"btn_auto\",false,1,[[4,2,false,-82,[105],106],[12,-83,[[5,\"f1735lYABdF6ZWHfDSk61Ol\",\"onBtnAutoClick\",1]]]],[0,\"13243OindByI6iR/P//ozQ\",1],[5,161,50],[0,85,0,0,0,0,1,1,1,1]],[1,\"labNickName\",false,3,[[9,\"Guest1234\",20,20,1,1,1,2,-84,[10]],[10,-85,[4,2130706432],[0,-2,-2]]],[0,\"749tfSilxC0LDrHR/N24yh\",1],[5,100,25.2],[-54.584,-58.207,0,0,0,0,1,1,1,1]],[1,\"labGold\",false,3,[[8,\"10000\",20,3,1,1,2,-86,[13]],[10,-87,[4,2130706432],[0,-2,-2]]],[0,\"e9z/eMai5HILOPS1fmzyBO\",1],[5,85,50.4],[-47,-105,0,0,0,0,1,1,1,1]],[1,\"labDimaond\",false,3,[[8,\"10000\",20,1,1,1,2,-88,[15]],[22,-89,[4,4278190080]]],[0,\"d5TygpcKRImL9HkLmhQtrk\",1],[5,85,50.4],[-27,-55,0,0,0,0,1,1,1,1]],[1,\"sprArrow\",false,3,[[4,2,false,-90,[28],29],[23,true,-91,[31],30]],[0,\"41u75DCihDw55uvqbL2zpw\",1],[5,59,50],[0,-85,0,0,0,0,1,1.2,1.2,1]],[2,\"node_skin\",3,[[4,2,false,-92,[32],33],[12,-93,[[5,\"f1735lYABdF6ZWHfDSk61Ol\",\"onBtnShowSkin\",1]]]],[0,\"18qXhEKBxD0Zj65yeGFJjg\",1],[5,44,44],[58,-44,0,0,0,0,1,1,1,1]],[1,\"labNickName\",false,4,[[9,\"Guest1234\",20,20,1,1,1,2,-94,[44]],[10,-95,[4,2130706432],[0,-2,-2]]],[0,\"d8rSx0VHlCvKFqk3BrTxSB\",1],[5,100,25.2],[-54.584,-58.207,0,0,0,0,1,1,1,1]],[1,\"labGold\",false,4,[[8,\"10000\",20,3,1,1,2,-96,[48]],[10,-97,[4,2130706432],[0,-2,-2]]],[0,\"d9jpIU3+lG6KoJA7EfNbpJ\",1],[5,85,50.4],[-47,-105,0,0,0,0,1,1,1,1]],[1,\"labDimaond\",false,4,[[8,\"10000\",20,1,1,1,2,-98,[49]],[22,-99,[4,4278190080]]],[0,\"ddTa4a3tRLZZqTFm1d2j8d\",1],[5,85,50.4],[-27,-55,0,0,0,0,1,1,1,1]],[1,\"sprArrow\",false,4,[[4,2,false,-100,[60],61],[23,true,-101,[63],62]],[0,\"7cwSmaKiNCM493yExi9wN2\",1],[5,59,50],[0,-85,0,0,0,0,1,1.2,1.2,1]],[2,\"node_skin\",4,[[4,2,false,-102,[66],67],[12,-103,[[5,\"f1735lYABdF6ZWHfDSk61Ol\",\"onBtnShowSkin\",1]]]],[0,\"f8WKcIptREJrNEFEBw2pq4\",1],[5,44,44],[58,-44,0,0,0,0,1,1,1,1]],[28,\"node_local\",false,1,[2],[0,\"b1JOLZhwtBWIvSBiLeClTx\",1]],[1,\"labGold\",false,2,[[8,\"10000\",20,3,1,1,2,-104,[78]],[10,-105,[4,2130706432],[0,-2,-2]]],[0,\"8d9mbzPpBJjqm48ccFONGG\",1],[5,85,50.4],[-47,-105,0,0,0,0,1,1,1,1]],[1,\"labDimaond\",false,2,[[8,\"10000\",20,1,1,1,2,-106,[86]],[22,-107,[4,4278190080]]],[0,\"1c9s8bt6ROCaccZzKuPx4N\",1],[5,85,50.4],[-27,-55,0,0,0,0,1,1,1,1]],[1,\"sprArrow\",false,2,[[4,2,false,-108,[97],98],[23,true,-109,[100],99]],[0,\"00Ft9s+JlGNKzFKNnZ+rJV\",1],[5,59,50],[0,-85,0,0,0,0,1,1.2,1.2,1]],[2,\"node_skin\",2,[[4,2,false,-110,[103],104],[12,-111,[[5,\"f1735lYABdF6ZWHfDSk61Ol\",\"onBtnShowSkin\",1]]]],[0,\"69qEAfeeJGs47PcfcHT//s\",1],[5,44,44],[58,-44,0,0,0,0,1,1,1,1]],[2,\"img_info_bg\",3,[[17,1,2,false,-112,[0],1]],[0,\"7cwOBIqtFPOqX3ECawmaui\",1],[5,146,146],[0,11,0,0,0,0,1,1,1,1.1]],[1,\"labCountry\",false,3,[[9,\"China\",18,16,1,1,1,1,-113,[2]]],[0,\"17qJo12bRCSbd12b5/gNRE\",1],[5,60,40],[62.33,51.902,0,0,0,0,1,1,1,1]],[1,\"img_head_bg\",false,3,[[18,0,-114,[3]]],[0,\"eaeJ/0699JnIIXEYqlCTKB\",1],[5,84,84],[-65.309,45.212,0,0,0,0,1,1,1,1]],[15,\"img_fk\",false,127,3,[[11,0,-115,[4],5]],[0,\"5aj24+SeRLVJG1eNY0z3m1\",1],[5,84,84],[-65.309,45.212,0,0,0,0,1,1,1,1]],[6,\"img_head_select\",false,3,[[7,3,2,0.8,-116,[6],[0,0.5,0.5],7]],[0,\"d6YSONaZpE87fdHsqhVOgJ\",1],[5,83,83],[-65.309,21,0,0,0,-0.7071067811865475,0.7071067811865476,-1,-1,1],[1,0,0,-90]],[6,\"img_head_select_red\",false,3,[[7,3,2,0.8,-117,[8],[0,0.5,0.5],9]],[0,\"6f3UWNEkxDv6EOA4TwHmlp\",1],[5,83,83],[-65.309,21,0,0,0,-0.7071067811865475,0.7071067811865476,-1,-1,-1],[1,0,0,-90]],[1,\"img_gold\",false,3,[[4,2,false,-118,[11],12]],[0,\"33uPer3hNKzKRF6vUsUPXt\",1],[5,39,39],[-105,-105,0,0,0,0,1,1,1,1]],[1,\"img_diamond_small\",false,3,[[19,-119,[14]]],[0,\"11s8/dr8FNBonFIvqFs2uP\",1],[5,31,25],[-89,-54,0,0,0,0,1,1,1,1]],[1,\"img_player\",false,3,[[4,2,false,-120,[16],17]],[0,\"a90IwMh1tIyI5n/L/Pquip\",1],[5,121,128],[0,9,0,0,0,0,1,1,1,1]],[2,\"btnDice\",3,[[20,-121,[[5,\"f1735lYABdF6ZWHfDSk61Ol\",\"onClickDice\",1]],[4,4293322470],[4,4291348680],[4,3363338360],18,19,20,21]],[0,\"093B089f9HaKEnncTY9rSd\",1],[5,75,75],[0,11,0,0,0,0,1,1,1,1]],[2,\"img_outtime_0\",5,[[3,2,false,-122,[22]]],[0,\"9799pl+CBA6oU5LUW2XHV/\",1],[5,10,10],[-132,-4,0,0,0,0,1,1,1,1]],[2,\"img_outtime_1\",5,[[3,2,false,-123,[23]]],[0,\"d6o+lf2ulIboQ2ofuumlwY\",1],[5,10,10],[-132,-22,0,0,0,0,1,1,1,1]],[2,\"img_outtime_2\",5,[[3,2,false,-124,[24]]],[0,\"1a5qMe8rhLspV0+y0BHeD+\",1],[5,10,10],[-132,-38,0,0,0,0,1,1,1,1]],[2,\"img_outtime_3\",5,[[3,2,false,-125,[25]]],[0,\"69tTNEz4lLJoLv50ILUTsX\",1],[5,10,10],[-132,-55,0,0,0,0,1,1,1,1]],[2,\"img_outtime_4\",5,[[3,2,false,-126,[26]]],[0,\"49OAdpKGhAW40uVwysdlAJ\",1],[5,10,10],[-132,-71,0,0,0,0,1,1,1,1]],[16,\"labLuck\",false,3,[[21,\"Luck:1.0\",36,1,1,3,-127,[27]]],[0,\"87W/8BegBN/ZFY2gNb4U52\",1],[4,4280401482],[5,300,50.4]],[2,\"img_info_bg\",4,[[17,1,2,false,-128,[34],35]],[0,\"45aijvAzlIY4eoeygpIkpN\",1],[5,146,146],[0,11,0,0,0,0,1,1,1,1.1]],[1,\"labCountry\",false,4,[[9,\"China\",18,16,1,1,1,1,-129,[36]]],[0,\"2cH3+0o9RHKqtngEnKpEF3\",1],[5,60,40],[62.33,51.902,0,0,0,0,1,1,1,1]],[1,\"img_head_bg\",false,4,[[18,0,-130,[37]]],[0,\"8f/iavknRMTKxt249quA6t\",1],[5,84,84],[-65.309,45.212,0,0,0,0,1,1,1,1]],[15,\"img_fk\",false,127,4,[[11,0,-131,[38],39]],[0,\"83QF5SQbFOA7q+5LZTdHMn\",1],[5,84,84],[-65.309,45.212,0,0,0,0,1,1,1,1]],[6,\"img_head_select\",false,4,[[7,3,2,0.8,-132,[40],[0,0.5,0.5],41]],[0,\"3f+Mw9rNlFgrhY6DIDgQmB\",1],[5,83,83],[-65.309,21,0,0,0,-0.7071067811865475,0.7071067811865476,-1,-1,1],[1,0,0,-90]],[6,\"img_head_select_red\",false,4,[[7,3,2,0.8,-133,[42],[0,0.5,0.5],43]],[0,\"70dd6T58ZLy6H+2nfx5Upi\",1],[5,83,83],[-65.309,21,0,0,0,-0.7071067811865475,0.7071067811865476,-1,-1,-1],[1,0,0,-90]],[1,\"img_diamond_small\",false,4,[[19,-134,[45]]],[0,\"56QJji1hJNVKL6G6Gvsfow\",1],[5,31,25],[-89,-54,0,0,0,0,1,1,1,1]],[1,\"img_gold\",false,4,[[4,2,false,-135,[46],47]],[0,\"d8zB2ojrpAuYHiTOeinilm\",1],[5,39,39],[-105,-105,0,0,0,0,1,1,1,1]],[2,\"btnDice\",4,[[20,-136,[[5,\"f1735lYABdF6ZWHfDSk61Ol\",\"onClickDice\",1]],[4,4293322470],[4,4291348680],[4,3363338360],50,51,52,53]],[0,\"6cKYnmFB9KMJM4vvouokZq\",1],[5,75,75],[0,11,0,0,0,0,1,1,1,1]],[2,\"img_outtime_0\",6,[[3,2,false,-137,[54]]],[0,\"cazn7+aqZDBJPWK8NskqbT\",1],[5,10,10],[-132,-4,0,0,0,0,1,1,1,1]],[2,\"img_outtime_1\",6,[[3,2,false,-138,[55]]],[0,\"daN8rcJJdAmptussYZVOcR\",1],[5,10,10],[-132,-22,0,0,0,0,1,1,1,1]],[2,\"img_outtime_2\",6,[[3,2,false,-139,[56]]],[0,\"60U9HaNC5IR6zfyyH3SMEp\",1],[5,10,10],[-132,-38,0,0,0,0,1,1,1,1]],[2,\"img_outtime_3\",6,[[3,2,false,-140,[57]]],[0,\"cdK2RDPJFL+oxL0XudDtQ8\",1],[5,10,10],[-132,-55,0,0,0,0,1,1,1,1]],[2,\"img_outtime_4\",6,[[3,2,false,-141,[58]]],[0,\"96aTIvABlAyLmR7/IPSSFL\",1],[5,10,10],[-132,-71,0,0,0,0,1,1,1,1]],[16,\"labLuck\",false,4,[[21,\"Luck:1.0\",36,1,1,3,-142,[59]]],[0,\"a8FVnyDmhJ4K8NRktWaCgM\",1],[4,4280401482],[5,300,50.4]],[2,\"img_player\",4,[[4,2,false,-143,[64],65]],[0,\"b20WzBTshMKYf91TLQmM+q\",1],[5,96,121],[0,9,0,0,0,0,1,1,1,1]],[2,\"img_info_bg\",2,[[17,1,2,false,-144,[68],69]],[0,\"99Yd7ANjdCOIBVKYDGLirx\",1],[5,146,146],[0,11,0,0,0,0,1,1,1,1.1]],[1,\"labCountry\",false,2,[[9,\"China\",18,16,1,1,1,1,-145,[70]]],[0,\"ebLm19wkhHH6u9ZYmM+7dZ\",1],[5,60,40],[62.33,51.902,0,0,0,0,1,1,1,1]],[1,\"img_head_bg\",false,2,[[18,0,-146,[71]]],[0,\"26vVJEqPRD7rp0oILIELmq\",1],[5,84,84],[-65.309,45.212,0,0,0,0,1,1,1,1]],[1,\"img_headphoto\",false,2,[[11,0,-147,[72],73]],[0,\"72+IMOoYRKlq+PSXbhZoAO\",1],[5,150,152],[0,21,0,0,0,0,1,1,1,1]],[15,\"img_fk\",false,127,2,[[11,0,-148,[74],75]],[0,\"97RKEgwCRBcJNkEaCWElvX\",1],[5,84,84],[-65.309,45.212,0,0,0,0,1,1,1,1]],[1,\"img_gold\",false,2,[[4,2,false,-149,[76],77]],[0,\"9aW/7EHWtGbrULkrrA27RC\",1],[5,39,39],[-105,-105,0,0,0,0,1,1,1,1]],[6,\"img_head_select\",false,2,[[7,3,2,0.8,-150,[79],[0,0.5,0.5],80]],[0,\"5f/nVFJtZFh6q8wDkzz5OB\",1],[5,83,83],[-65.309,21,0,0,0,-0.7071067811865475,0.7071067811865476,-1,-1,1],[1,0,0,-90]],[6,\"img_head_select_red\",false,2,[[7,3,2,0.8,-151,[81],[0,0.5,0.5],82]],[0,\"e7XWPGjJhMkJ0Rmah8oL/6\",1],[5,83,83],[-65.309,21,0,0,0,-0.7071067811865475,0.7071067811865476,-1,-1,-1],[1,0,0,-90]],[2,\"labNickName\",2,[[32,\"Guest1234\",30.9,30,false,1,1,-152,[83],84]],[0,\"ddZtIJrl9DqZYWpZJgEEN4\",1],[5,146.65,37.8],[0,-83,0,0,0,0,1,1,1,1]],[1,\"img_diamond_small\",false,2,[[19,-153,[85]]],[0,\"47zxVXOl1LYIXLfBO+EN6/\",1],[5,31,25],[-89,-54,0,0,0,0,1,1,1,1]],[1,\"btnDice\",false,2,[[20,-154,[[5,\"f1735lYABdF6ZWHfDSk61Ol\",\"onClickDice\",1]],[4,4293322470],[4,4291348680],[4,3363338360],87,88,89,90]],[0,\"940BX5Xr1G76MzJD15Hxcc\",1],[5,75,75],[0,11,0,0,0,0,1,1,1,1]],[2,\"img_outtime_0\",7,[[3,2,false,-155,[91]]],[0,\"9c1DA8irpGAYV6j7rHVcji\",1],[5,10,10],[-132,-4,0,0,0,0,1,1,1,1]],[2,\"img_outtime_1\",7,[[3,2,false,-156,[92]]],[0,\"5f89LuOBJMOZTalpm/qpSR\",1],[5,10,10],[-132,-22,0,0,0,0,1,1,1,1]],[2,\"img_outtime_2\",7,[[3,2,false,-157,[93]]],[0,\"accYlWQfhN3IUQ3KkCMhLB\",1],[5,10,10],[-132,-38,0,0,0,0,1,1,1,1]],[2,\"img_outtime_3\",7,[[3,2,false,-158,[94]]],[0,\"75JHgWJIVN+re6dsc3wrtH\",1],[5,10,10],[-132,-55,0,0,0,0,1,1,1,1]],[2,\"img_outtime_4\",7,[[3,2,false,-159,[95]]],[0,\"71KGixE2NPCqrpaAvBH41D\",1],[5,10,10],[-132,-71,0,0,0,0,1,1,1,1]],[16,\"labLuck\",false,2,[[21,\"Luck:1.0\",36,1,1,3,-160,[96]]],[0,\"5a+2b0njFOZbOQdIma81LD\",1],[4,4280401482],[5,300,50.4]],[2,\"img_player\",2,[[4,2,false,-161,[101],102]],[0,\"d2iWxMZ1pOS7h3QqrWxxDo\",1],[5,96,121],[0,9,0,0,0,0,1,1,1,1]]],0,[0,9,1,0,10,9,0,11,2,0,12,20,0,-1,3,0,-2,4,0,13,8,0,0,1,0,-1,8,0,-2,20,0,-3,9,0,-1,57,0,-2,58,0,-3,59,0,-4,60,0,-5,61,0,-6,62,0,-7,21,0,-8,63,0,-9,64,0,-10,65,0,-11,66,0,-12,22,0,-13,67,0,-14,7,0,-15,73,0,-16,23,0,-17,74,0,3,2,0,-19,24,0,-1,25,0,-2,26,0,-3,27,0,-4,28,0,-5,29,0,-6,30,0,-7,10,0,-8,31,0,-9,11,0,-10,32,0,-11,12,0,-12,33,0,-13,34,0,-14,5,0,-15,40,0,-16,13,0,3,3,0,-18,14,0,-1,41,0,-2,42,0,-3,43,0,-4,44,0,-5,45,0,-6,46,0,-7,15,0,-8,47,0,-9,48,0,-10,16,0,-11,17,0,-12,49,0,-13,6,0,-14,55,0,-15,18,0,-16,56,0,3,4,0,-18,19,0,-1,35,0,-2,36,0,-3,37,0,-4,38,0,-5,39,0,-1,50,0,-2,51,0,-3,52,0,-4,53,0,-5,54,0,-1,68,0,-2,69,0,-3,70,0,-4,71,0,-5,72,0,0,9,0,0,9,0,0,10,0,0,10,0,0,11,0,0,11,0,0,12,0,0,12,0,0,13,0,0,13,0,0,14,0,0,14,0,0,15,0,0,15,0,0,16,0,0,16,0,0,17,0,0,17,0,0,18,0,0,18,0,0,19,0,0,19,0,0,21,0,0,21,0,0,22,0,0,22,0,0,23,0,0,23,0,0,24,0,0,24,0,0,25,0,0,26,0,0,27,0,0,28,0,0,29,0,0,30,0,0,31,0,0,32,0,0,33,0,0,34,0,0,35,0,0,36,0,0,37,0,0,38,0,0,39,0,0,40,0,0,41,0,0,42,0,0,43,0,0,44,0,0,45,0,0,46,0,0,47,0,0,48,0,0,49,0,0,50,0,0,51,0,0,52,0,0,53,0,0,54,0,0,55,0,0,56,0,0,57,0,0,58,0,0,59,0,0,60,0,0,61,0,0,62,0,0,63,0,0,64,0,0,65,0,0,66,0,0,67,0,0,68,0,0,69,0,0,70,0,0,71,0,0,72,0,0,73,0,0,74,0,14,1,2,3,20,3,3,8,4,3,8,161],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[-1,1,-1,-1,-1,1,-1,1,-1,1,-1,-1,1,-1,-1,-1,-1,1,4,5,6,7,-1,-1,-1,-1,-1,-1,-1,1,8,-1,-1,1,-1,1,-1,-1,-1,1,-1,1,-1,1,-1,-1,-1,1,-1,-1,4,5,6,7,-1,-1,-1,-1,-1,-1,-1,1,8,-1,-1,1,-1,1,-1,1,-1,-1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,-1,15,-1,-1,4,5,6,7,-1,-1,-1,-1,-1,-1,-1,1,8,-1,-1,1,-1,1,-1,1],[0,2,0,0,0,3,0,4,0,5,0,0,6,0,0,0,0,16,7,8,9,10,0,0,0,0,0,0,0,11,1,1,0,12,0,2,0,0,0,3,0,4,0,5,0,0,0,6,0,0,7,8,9,10,0,0,0,0,0,0,0,11,1,1,0,13,0,12,0,2,0,0,0,13,0,3,0,6,0,0,4,0,5,0,17,0,0,7,8,9,10,0,0,0,0,0,0,0,11,1,1,0,13,0,12,0,18]],[[{\"name\":\"img_arrow\",\"rect\":[0,0,59,50],\"offset\":[0,0],\"originalSize\":[59,50],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[19]],[[[33,\"jiantou\",0.3333333333333333,22,{\"props\":{\"y\":[{\"frame\":0,\"value\":-110},{\"frame\":0.3333333333333333,\"value\":-85}]}}]],0,0,[],[],[]],[[{\"name\":\"img_dice\",\"rect\":[0,0,66,66],\"offset\":[0,0],\"originalSize\":[66,66],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[20]],[[{\"name\":\"图层 4 - 智能对象组\",\"rect\":[0,0,44,44],\"offset\":[0,0],\"originalSize\":[44,44],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[21]],[[{\"name\":\"img_fk\",\"rect\":[0,0,83,83],\"offset\":[0,0],\"originalSize\":[83,83],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[22]],[[{\"name\":\"img_gold\",\"rect\":[1,0,38,38],\"offset\":[0.5,0.5],\"originalSize\":[39,39],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[23]],[[{\"name\":\"img_head_select_red\",\"rect\":[0,0,83,83],\"offset\":[0,0"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/loading/assets/resources/import/0d/0d4dc8f4b.c2128.json", "sha256": "808c89428c0e721f9c0ea2947c2982696dc374bf2c700ef0a22cc491f0bbb217", "offset": 0, "end": 3214, "total_chars": 3214, "content": "[1,[\"ecpdLyjvZBwrvm+cedCcQy\",\"662I3tis9HrbPVfx5vmxcC\",\"15pvHGTPxOrIV0i3PukzHF\",\"172lv9fY9OKa3UB42FZZSP\",\"54PLiJQcpIm4a92fiQtJ9m\",\"51OqgEgrBJsakqsREqnEnb\"],[\"node\",\"_spriteFrame\",\"_textureSetter\",\"root\",\"labGridIndex\",\"sprGreenCircle\",\"buttonClickGrid\",\"sprBomb\",\"sprRocket\",\"sprIndication\",\"sprSafeFlag\",\"nodeBarrier\",\"sprBarrierH\",\"sprBarrierV\",\"sprGrid\",\"data\"],[[\"cc.Node\",[\"_name\",\"_active\",\"_parent\",\"_components\",\"_prefab\",\"_contentSize\",\"_trs\",\"_eulerAngles\"],1,1,9,4,5,7,5],\"cc.SpriteFrame\",[\"cc.Node\",[\"_name\",\"_children\",\"_prefab\",\"_components\",\"_contentSize\",\"_parent\"],2,2,4,12,5,1],[\"cc.Node\",[\"_name\",\"_parent\",\"_components\",\"_prefab\",\"_contentSize\",\"_color\"],2,1,2,4,5,5],[\"cc.PrefabInfo\",[\"fileId\",\"root\"],2,1],[\"cc.Sprite\",[\"node\",\"_materials\",\"_spriteFrame\"],3,1,3,6],[\"cc.Prefab\",[\"_name\"],2],[\"45989zWjktIeKF6TgZDgSP1\",[\"node\",\"sprGrid\",\"sprBarrierV\",\"sprBarrierH\",\"nodeBarrier\",\"sprSafeFlag\",\"sprIndication\",\"sprRocket\",\"sprBomb\",\"buttonClickGrid\",\"sprGreenCircle\",\"labGridIndex\"],3,1,1,1,1,1,1,1,1,1,1,1,1],[\"cc.Label\",[\"_fontSize\",\"_N$horizontalAlign\",\"_N$verticalAlign\",\"node\",\"_materials\"],0,1,3],[\"cc.Button\",[\"_N$interactable\",\"node\",\"clickEvents\"],2,1,9],[\"cc.ClickEvent\",[\"_componentId\",\"handler\",\"target\"],1,1]],[[4,0,1,2],[5,0,1,1],[0,0,1,2,3,4,5,3],[5,0,1,2,1],[3,0,1,2,3,4,2],[6,0,2],[2,0,1,3,2,4,2],[2,0,5,1,2,2],[0,0,2,3,4,5,6,2],[0,0,2,3,4,5,6,7,2],[0,0,1,2,3,4,5,6,3],[3,0,1,2,3,5,4,2],[7,0,1,2,3,4,5,6,7,8,9,10,11,1],[4,1,1],[8,0,1,2,3,4,4],[9,0,1,2,2],[10,0,1,2,3]],[[[[5,\"MapGrid\"],[6,\"MapGrid\",[-15,-16,-17,-18,-19,-20,-21,-22],[[-2,[12,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3]],1,4],[13,-1],[5,38,38]],[7,\"nodeBarrier\",1,[-23,-24],[0,\"9cxTeYRdFOaoXq8vP3HoBl\",1]],[8,\"sprBarrierV\",2,[[1,-25,[2]]],[0,\"3fDu7Z6bdK3amsuOwpiQTM\",1],[5,31,28],[0,0,0,0,0,0,1,1,-1,1]],[9,\"sprBarrierH\",2,[[1,-26,[3]]],[0,\"50dIoQ50tN6rXzzjLREueV\",1],[5,31,28],[0,0,0,0,0,-0.7071067811865475,0.7071067811865476,-1,1,-1],[1,0,0,-90]],[2,\"sprSafeFlag\",false,1,[[1,-27,[4]]],[0,\"afcUDf3DZOYI/0kZGv4NmP\",1],[5,28,26]],[2,\"sprRockect\",false,1,[[3,-28,[6],7]],[0,\"33dWrgaB9BIpmJvv4g/ZW3\",1],[5,31,41]],[10,\"sprBomb\",false,1,[[3,-29,[8],9]],[0,\"09a69LpF1P3ItKqlHwnyME\",1],[5,46,31],[-4.211,0,0,0,0,0,1,1,1,1]],[2,\"img_green_circle\",false,1,[[3,-30,[10],11]],[0,\"b4F4mxJcFEbo2eSbJQdUR4\",1],[5,43,43]],[4,\"sprGrid\",1,[-31],[0,\"15m6MghJtLuLcODAA+gIBY\",1],[5,38,38]],[1,9,[0]],[4,\"sprIndication\",1,[-32],[0,\"59SY1nGYdOZ4h3Kvf1stFP\",1],[5,33,33]],[1,11,[1]],[11,\"labGridIndex\",1,[-33],[0,\"3eTkkZ3FdCGbhVHGztcVsD\",1],[4,4293856768],[5,0,50.4]],[14,25,1,1,13,[5]],[15,false,1,[[16,\"45989zWjktIeKF6TgZDgSP1\",\"onClickGrid\",1]]]],0,[0,3,1,0,-1,15,0,4,14,0,5,8,0,6,15,0,7,7,0,8,6,0,9,12,0,10,5,0,11,2,0,12,4,0,13,3,0,14,10,0,0,1,0,-1,9,0,-2,11,0,-3,2,0,-4,5,0,-5,13,0,-6,6,0,-7,7,0,-8,8,0,-1,3,0,-2,4,0,0,3,0,0,4,0,0,5,0,0,6,0,0,7,0,0,8,0,-1,10,0,-1,12,0,-1,14,0,15,1,33],[0,0,0,0,0,0,0,0,0,0,0,0],[-1,-1,-1,-1,-1,-1,-1,1,-1,1,-1,1],[0,0,0,0,0,0,0,1,0,2,0,3]],[[{\"name\":\"img_green_circle\",\"rect\":[1,0,42,43],\"offset\":[0.5,0],\"originalSize\":[43,43],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[4]],[[{\"name\":\"img_rocket\",\"rect\":[0,0,31,41],\"offset\":[0,0],\"originalSize\":[31,41],\"capInsets\":[0,0,0,0]}],[1],0,[0],[2],[5]]]]"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/resources/import/0f/0fd4eb583.d1ec9.json", "sha256": "59f9ac48639ac35ab152c5dc26267a05b8dfe6e62472217492dd69e31c657b02", "offset": 0, "end": 5000, "total_chars": 10653, "content": "[1,[\"ecpdLyjvZBwrvm+cedCcQy\",\"e97GVMl6JHh5Ml5qEDdSGa\",\"f0BIwQ8D5Ml7nTNQbh1YlS\",\"29FYIk+N1GYaeWH/q1NxQO\",\"bdbmP7fm9J5KUPSSAEiY0a\",\"cdgn7e+CBOQpn0qcAVUcMS\",\"d6Iw0t/plKrqCsiHX1YxxG\",\"5566nAJU9GWJyaRaPQvWuw\",\"1fbuR4kDJPw7pn8tNijLTb\",\"c04Xvhyd9F4omzGPaBlUry\",\"achLoPxGxPHb3KbtVrH2+j\",\"c8VPLVp7dFl4DKIhQCVJSF\",\"f8KE9gYfhHPqNk2FIHSO4F\",\"84rG+eBUBBbbXbVOKbPeft\",\"9bzQH77g9HUaVXgdqOj1EJ\",\"fb35PsxGNKJapYkNlCpL9R\",\"07MFlSTN1BobNVDXf+H7lY\",\"dedqNjFmhLzY1gFVSJ7Dno\",\"71anrSDCBFtoxNRg8xQUtX\",\"72bXmvYYJCTK4NCRlZpz2w\"],[\"node\",\"_spriteFrame\",\"_parent\",\"_N$pressedSprite\",\"_N$hoverSprite\",\"_N$disabledSprite\",\"_N$file\",\"_N$normalSprite\",\"_textureSetter\",\"root\",\"add_base\",\"node_base\",\"data\",\"asset\"],[[\"cc.Node\",[\"_name\",\"_objFlags\",\"_id\",\"_prefab\",\"_components\",\"_contentSize\",\"_trs\",\"_parent\",\"_children\",\"_color\",\"_anchorPoint\"],0,4,9,5,7,1,2,5,5],\"cc.SpriteFrame\",[\"cc.Widget\",[\"_alignFlags\",\"_originalWidth\",\"_originalHeight\",\"alignMode\",\"_left\",\"_right\",\"_top\",\"_bottom\",\"node\"],-5,1],[\"cc.PrefabInfo\",[\"fileId\",\"sync\",\"root\",\"asset\"],1,1,6],[\"cc.Sprite\",[\"_sizeMode\",\"_type\",\"_isTrimmedMode\",\"_fillRange\",\"node\",\"_materials\",\"_spriteFrame\"],-1,1,3,6],[\"cc.Button\",[\"_N$transition\",\"node\",\"clickEvents\",\"_N$normalColor\",\"_N$pressedColor\",\"_N$disabledColor\",\"_N$target\",\"_N$pressedSprite\",\"_N$hoverSprite\",\"_N$disabledSprite\",\"_N$normalSprite\"],2,1,9,5,5,5,1,6,6,6,6],[\"cc.ClickEvent\",[\"_componentId\",\"handler\",\"customEventData\",\"target\"],0,1],[\"cc.Label\",[\"_string\",\"_isSystemFontUsed\",\"_N$horizontalAlign\",\"_N$verticalAlign\",\"_N$overflow\",\"_fontSize\",\"_lineHeight\",\"node\",\"_materials\",\"_N$file\"],-4,1,3,6],[\"cc.Prefab\",[\"_name\"],2],[\"cc.BlockInputEvents\",[\"node\"],3,1],[\"f26e7dno/FMh7ml5zz8a47h\",[\"node\",\"add_list\",\"del_list\",\"node_base\",\"add_base\"],3,1,2,2,1,1]],[[3,0,2,2],[0,0,7,8,4,3,5,6,2],[0,0,7,4,3,5,6,2],[2,3,0,4,5,6,7,1,2,8,9],[4,1,0,4,5,6,3],[0,0,1,8,4,3,5,6,3],[4,0,2,4,5,6,3],[5,0,1,2,3,4,5,6,10,7,8,9,2],[6,0,1,2,3,4],[7,0,5,6,1,2,3,7,8,9,7],[0,0,7,8,3,6,2],[2,0,1,2,8,4],[8,0,2],[0,0,8,4,3,5,6,2],[0,0,7,8,4,3,5,2],[0,0,1,4,3,5,6,3],[0,0,7,4,3,5,2],[0,2,0,7,3,3],[0,0,7,4,3,9,5,10,6,2],[2,0,8,2],[9,0,1],[10,0,1,2,3,4,1],[3,2,1],[3,0,1,2,3,3],[4,1,0,3,2,4,5,6,5],[5,0,1,2,3,4,5,6,7,8,9,2],[6,0,1,3,3],[7,0,1,2,3,4,7,8,9,6]],[[[{\"name\":\"img_bg_huang\",\"rect\":[0,0,146,146],\"offset\":[0,0],\"originalSize\":[146,146],\"capInsets\":[0,0,0,0]}],[1],0,[0],[8],[8]],[[{\"name\":\"img_bg_lv\",\"rect\":[0,0,146,146],\"offset\":[0,0],\"originalSize\":[146,146],\"capInsets\":[0,0,0,0]}],[1],0,[0],[8],[9]],[[[12,\"addPlay\"],[13,\"Add_Player\",[-15,-16],[[19,45,-2],[20,-3],[21,-14,[-10,-11,-12,-13],[-6,-7,-8,-9],-5,-4]],[22,-1],[5,720,1280],[360,640,0,0,0,0,1,1,1,1]],[14,\"node_base\",1,[-18,-19,-20,-21,-22,-23,-24,-25],[[11,45,720,1080,-17]],[0,\"6eTJlFNjVF0rO1xa5UWry0\",1],[5,720,1280]],[5,\"Background\",512,[-28],[[4,1,2,-26,[16],17],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-27]],[0,\"8bbaTxGH5EpJRdCMSqyPQ6\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[5,\"Background\",512,[-31],[[4,1,2,-29,[24],25],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-30]],[0,\"9c+vaIwoZAaKqXuxVZWgit\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[5,\"Background\",512,[-34],[[4,1,2,-32,[36],37],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-33]],[0,\"22gEVqz3lJWIF8NhonNlB/\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[5,\"Background\",512,[-37],[[4,1,2,-35,[44],45],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-36]],[0,\"e2jQoNfgxEFaxdA0TEKpes\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[5,\"Background\",512,[-40],[[4,1,2,-38,[56],57],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-39]],[0,\"9bwbLTHBtFDr9w/FqmsR99\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[5,\"Background\",512,[-43],[[4,1,2,-41,[64],65],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-42]],[0,\"4828+6FkVN97/YY75poc0R\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[5,\"Background\",512,[-46],[[4,1,2,-44,[76],77],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-45]],[0,\"5687SvG/1NBbVpZGQyYNui\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[5,\"Background\",512,[-49],[[4,1,2,-47,[84],85],[3,0,45,-3.5,-3.5,0.5,0.5,100,40,-48]],[0,\"96Fb3mFZpJx5F5U6OVcHLt\",1],[5,177,52],[0,0,0,0,0,0,1,1,1,0]],[15,\"Background\",512,[[4,1,2,-50,[3],4],[3,0,45,8,8,6.5,6.5,100,40,-51]],[0,\"34JLS5yBVE95/yvFquQhiA\",1],[5,59,62],[0,0,0,0,0,0,1,1,1,0]],[10,\"node_hong\",2,[-52,-53,-54],[0,\"57ZvB5GO1NFafMVSTU/lNY\",1],[-133,0,0,0,0,0,1,1,1,1]],[1,\"btn_add\",12,[3],[[7,3,-55,[[8,\"f26e7dno/FMh7ml5zz8a47h\",\"onAddClick\",\"1\",1]],[4,4293322470],[4,4291348680],[4,3363338360],3,18,19,20,21]],[0,\"34TK4jvM5GlrYkrjXffpQe\",1],[5,170,53],[0,-12,0,0,0,0,1,1,1,1]],[1,\"btn_del\",12,[4],[[7,3,-56,[[8,\"f26e7dno/FMh7ml5zz8a47h\",\"onDelClick\",\"1\",1]],[4,4293322470],[4,4291348680],[4,3363338360],4,26,27,28,29]],[0,\"ab6NVJXRVCOZiAlWJfklcL\",1],[5,170,53],[0,-12,0,0,0,0,1,1,1,1]],[10,\"node_lv\",2,[-57,-58,-59],[0,\"64TfiYCBhDUIiXr4mw8Gxj\",1],[126,0,0,0,0,0,1,1,1,1]],[1,\"btn_add\",15,[5],[[7,3,-60,[[8,\"f26e7dno/FMh7ml5zz8a47h\",\"onAddClick\",\"2\",1]],[4,4293322470],[4,4291348680],[4,3363338360],5,38,39,40,41]],[0,\"44j9F8fM9CPq//I7iWsV+Q\",1],[5,170,53],[0,-12,0,0,0,0,1,1,1,1]],[1,\"btn_del\",15,[6],[[7,3,-61,[[8,\"f26e7dno/FMh7ml5zz8a47h\",\"onDelClick\",\"2\",1]],[4,42"}
+Tool: {"archive": "公司skill整合/AHAgames/94034_Ludo_Superstar/Ludo_Superstar.zip", "archive_sha256": "9ec528932dff7b8ee0dff125aa57cc4663e1419435c7143dcef4533d3d3646b7", "total_entries": 651, "total_uncompressed_bytes": 6773526, "member": "www.hnyigegame.com/Ludo_Superstar/game/assets/main/native/86/86c887a9-2f38-49b0-8ea5-3864c0a7f386.78749.png", "path": "reference-assets/button-settings-native.png", "sha256": "6593a35d6e63d37a35003539ff59b6ce20112377f89ba4e925fee9c3f1e0feca", "bytes": 888, "reused": false, "purpose": "reference_asset"}
+AI: [{'name': 'write_todos', 'args': {'todos': [{'content': '读取冻结资料、上游与已有资源证据，核验所选原始契约', 'status': 'completed'}, {'content': '修复运行资源编码、补齐原板组件，完成单张原纹理参考编辑', 'status': 'in_progress'}, {'content': '核验最终资源哈希并写运行清单与美术交接报告', 'status': 'pending'}]}, 'id': 'call_MhH7naujSA7AZ7cxfwdIcFn3', 'type': 'tool_call'}]
+Tool: Updated todo list to [{'content': '读取冻结资料、上游与已有资源证据，核验所选原始契约', 'status': 'completed'}, {'content': '修复运行资源编码、补齐原板组件，完成单张原纹理参考编辑', 'status': 'in_progress'}, {'content': '核验最终资源哈希并写运行清单与美术交接报告', 'status': 'pending'}]
+AI: [{'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-00.png', 'destination': 'public/assets/roll-00.png', 'crop': None, 'target_size': None}, 'id': 'call_trQsPwXpbgIurpDzJfN7C1cj', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-01.png', 'destination': 'public/assets/roll-01.png', 'crop': None, 'target_size': None}, 'id': 'call_XMuVKrnzkwlOsOInoR5OSfmo', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-02.png', 'destination': 'public/assets/roll-02.png', 'crop': None, 'target_size': None}, 'id': 'call_jNQnrL7gmVBpc8RBLG0n2EQc', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-04.png', 'destination': 'public/assets/roll-04.png', 'crop': None, 'target_size': None}, 'id': 'call_TrjVxNtI8XWMB2uGE3ACebqI', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-05.png', 'destination': 'public/assets/roll-05.png', 'crop': None, 'target_size': None}, 'id': 'call_KzW87TN5HoIv2OZ0XFdb1DP3', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-06.png', 'destination': 'public/assets/roll-06.png', 'crop': None, 'target_size': None}, 'id': 'call_GUGHSaVaKy46EjPzvo0Qw4LA', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-08.png', 'destination': 'public/assets/roll-08.png', 'crop': None, 'target_size': None}, 'id': 'call_prcC6DA6I3lZj50RYqqZ65Le', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-10.png', 'destination': 'public/assets/roll-10.png', 'crop': None, 'target_size': None}, 'id': 'call_9ttVBVcP364swYKZHhJPsXT9', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-11.png', 'destination': 'public/assets/roll-11.png', 'crop': None, 'target_size': None}, 'id': 'call_C4cm9pEkjW6ANNw3LKJkOzlH', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-12.png', 'destination': 'public/assets/roll-12.png', 'crop': None, 'target_size': None}, 'id': 'call_f6DRfh2JctO1bbK7JBLZAZpY', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-13.png', 'destination': 'public/assets/roll-13.png', 'crop': None, 'target_size': None}, 'id': 'call_9LrbeJBmJvIFjHDOBEy6mxoW', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-14.png', 'destination': 'public/assets/roll-14.png', 'crop': None, 'target_size': None}, 'id': 'call_zGIF8jZ241MGhpl7nRBanGAt', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-15.png', 'destination': 'public/assets/roll-15.png', 'crop': None, 'target_size': None}, 'id': 'call_KByr4GI9ZlBcF4VP48WiyOP9', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-16.png', 'destination': 'public/assets/roll-16.png', 'crop': None, 'target_size': None}, 'id': 'call_llRW0tSBJ8TtonEDdRv5r1Xh', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-17.png', 'destination': 'public/assets/roll-17.png', 'crop': None, 'target_size': None}, 'id': 'call_Fw9jwhuB9MsA8VRHvFvUadXm', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-18.png', 'destination': 'public/assets/roll-18.png', 'crop': None, 'target_size': None}, 'id': 'call_LZy1zsq4uJyPe51AlYcnS4SY', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-20.png', 'destination': 'public/assets/roll-20.png', 'crop': None, 'target_size': None}, 'id': 'call_9nxkrC77GjxGkEiD2JaggYda', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-21.png', 'destination': 'public/assets/roll-21.png', 'crop': None, 'target_size': None}, 'id': 'call_EhYdOC3ti90qGzDxj4PLlI40', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-23.png', 'destination': 'public/assets/roll-23.png', 'crop': None, 'target_size': None}, 'id': 'call_xth2aKapv13it7G6VFMZkPtv', 'type': 'tool_call'}, {'name': 'process_art_image', 'args': {'source_path': 'public/assets/dice-roll-24.png', 'destination': 'public/assets/roll-24.png', 'crop': None, 'target_size': None}, 'id': 'call_9Hkx8tUlF5nU1SBc2M8VsW0K', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/public/assets/background-api-candidate.webp', 'offset': 0, 'limit': 100}, 'id': 'call_Hpru6nnvV8MsVEOU5C52arD5', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/public/assets/token-red.png', 'offset': 0, 'limit': 100}, 'id': 'call_y3LfzPp0c4Z8NtkrDKFULb9u', 'type': 'tool_call'}, {'name': 'read_file', 'args': {'file_path': '/public/assets/board-cross.png', 'offset': 0, 'limit': 100}, 'id': 'call_1wAHcNyrilJFN5WVALhgnPoW', 'type': 'tool_call'}]
+Tool: {"path": "public/assets/roll-00.png", "size": 18480, "sha256": "9040e9b44c1823eacc45193bcceb003ebe45cb35deb65b09a8489f3db383b755", "source_path": "public/assets/dice-roll-00.png", "source_sha256": "ec14c8260494e0541778a316caa565cc8914d899996970cbdb752c8829b115f3", "source_bytes": 1236, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38871, "opaque_pixels": 9142, "semitransparent_pixels": 387, "extrema": [0, 255], "sha256": "a79f5ac207ef75a4b02e5761145adadf19eb98036a43c1598564b52bf8216382"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-01.png", "size": 23869, "sha256": "cb9c3ad8df2a251502e28b9335659dcca7233e5016803cc0bdd5a348bf79a0c3", "source_path": "public/assets/dice-roll-01.png", "source_sha256": "4d22cfa7ca59c1a4e05cbf0f14318220d8c0458444662ceec8134f745585032f", "source_bytes": 1642, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38444, "opaque_pixels": 9778, "semitransparent_pixels": 178, "extrema": [0, 255], "sha256": "086335a10d6bb81e46e8287d19ef5a493abe8c24723d7353a56198fdac03b63c"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-02.png", "size": 25742, "sha256": "cf03e2eb71b77348b8d9058f9c414f5539dee5e036bef1841c9561c6aaec547a", "source_path": "public/assets/dice-roll-02.png", "source_sha256": "cec5646f0d58a37c90e327c20eb51c6a0ef5c53fd69b351deaa35f46685cfd85", "source_bytes": 1892, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38201, "opaque_pixels": 10030, "semitransparent_pixels": 169, "extrema": [0, 255], "sha256": "2df9262a3c620ca0cf775545aac2d66c80885b9de522d467470d046090793126"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-04.png", "size": 26597, "sha256": "bd3d4c8bb6b2602213e4e7a8c670cc3e349585b916752c19f4a02f72886eb284", "source_path": "public/assets/dice-roll-04.png", "source_sha256": "bff7b207c8c5bbd8a900a488ad31dcb19b6fa2ce80d7efd52212e107a826bbdf", "source_bytes": 1902, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38472, "opaque_pixels": 9691, "semitransparent_pixels": 237, "extrema": [0, 255], "sha256": "968fb143d558305f30b8a4455c690ee929f812320c50cb154268c97b838a0ec5"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-05.png", "size": 23620, "sha256": "b96fd2765063bdafa523351897573187ea1a4fd29107b36e9659433a0cb159d0", "source_path": "public/assets/dice-roll-05.png", "source_sha256": "c919f135a8675778a6c6992731187db52c2aa028ee4ce3ca685a6e6f35a3dec5", "source_bytes": 2106, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38096, "opaque_pixels": 9717, "semitransparent_pixels": 587, "extrema": [0, 255], "sha256": "ff34f921e57a74becd9d2c700974ed2cb2b45ad413d5d9b6729c0e591da7c1db"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-06.png", "size": 23969, "sha256": "1e96ac932dd4bdf2f0942dd5172b42df4edb6698866fd6a07fdd210104d60e02", "source_path": "public/assets/dice-roll-06.png", "source_sha256": "621fe6df1ce39fd0bdc9fce49ea4a0bc774f60040e241b6576bb3374e171fcdc", "source_bytes": 1672, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38324, "opaque_pixels": 9898, "semitransparent_pixels": 178, "extrema": [0, 255], "sha256": "dc5899a7a81ca68fb6c7faef33dbaa34617cb5241102065f76d0897ddec158d5"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-08.png", "size": 25229, "sha256": "4b602063e4448efaa3233f82b83b2560a68a3796a2e0ec0f9c748570f63553ec", "source_path": "public/assets/dice-roll-08.png", "source_sha256": "0308e74c262c193b0d9750c118da0f116ba8150077bbfd85d0b4131713748b68", "source_bytes": 1656, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 37930, "opaque_pixels": 10276, "semitransparent_pixels": 194, "extrema": [0, 255], "sha256": "14db896c937c60572996cc6cc6c7112de7fd48275714d6bbfadbe43ff0fd19f3"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-10.png", "size": 25896, "sha256": "21666630075240bfa3dd9dcf10830aacf0a58daedb11b57ffab65206cf5c4154", "source_path": "public/assets/dice-roll-10.png", "source_sha256": "c5d275b9eb4a13e081a57108077f95eb6bae7247d1034b8fe0ba3a3b7d2f1210", "source_bytes": 1860, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38310, "opaque_pixels": 9866, "semitransparent_pixels": 224, "extrema": [0, 255], "sha256": "9faebb7e0ef71cee18d4133f7d17bb98a6ab6c5b4963cddb8b44e0c173f1106a"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-11.png", "size": 26068, "sha256": "f91648e74b3a1bce39a3be79ff38d55e258dc988285ba7e6d1be7bf97ddf6775", "source_path": "public/assets/dice-roll-11.png", "source_sha256": "9f4e8207af38bdfbbc06c860c8c4ba9b79885926a552157568d69ac660040b7d", "source_bytes": 1978, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38083, "opaque_pixels": 9899, "semitransparent_pixels": 418, "extrema": [0, 255], "sha256": "cf7d9b18cf5511453c2e583c51324793b58825fdec90a91051adca4c4752825f"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-12.png", "size": 24117, "sha256": "605b4670ad626b3b86f44ddec4f913fab9b7df373a27a2331b77d7ba4af39f59", "source_path": "public/assets/dice-roll-12.png", "source_sha256": "c9e655453c0082d0b997c41d49a3fec0cd55e2872f2f92dba9bf9e679db4c476", "source_bytes": 1744, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38397, "opaque_pixels": 9688, "semitransparent_pixels": 315, "extrema": [0, 255], "sha256": "4b50cebdbbb24d1280586fb3d55499c00391a6a100398c1baddf774aa55b038d"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-13.png", "size": 23266, "sha256": "cc2dbb0b90e2c7d23f55fb5d66ac5819157f012e499d7066514d5005580c0272", "source_path": "public/assets/dice-roll-13.png", "source_sha256": "a01462573679d6a40107715092b284a49b00974a5a94a0d5a933cf8efdfad535", "source_bytes": 1598, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38398, "opaque_pixels": 9820, "semitransparent_pixels": 182, "extrema": [0, 255], "sha256": "df0f2add9e3a24d6230ee04dcb5970493b8cd42a6ff164cf8286dba072c5a0e3"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-14.png", "size": 23674, "sha256": "50e764b6e97e34fd5de63fb64d0b61d793e58aaddac39d97737e3ada48039480", "source_path": "public/assets/dice-roll-14.png", "source_sha256": "b5843990b2750a424d000c65ec55e8e9e38491a786ccebdd8384347d8ebffa56", "source_bytes": 1622, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38071, "opaque_pixels": 10032, "semitransparent_pixels": 297, "extrema": [0, 255], "sha256": "789e462d74aff80412f0288971af4e78bf5dbadcc49ad5f99c4ead4bd00278d8"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-15.png", "size": 23818, "sha256": "5dbc45b38fe2f83469e4f4eb38614fe5c95cb2d5adc4f9df30a3ac236bac7005", "source_path": "public/assets/dice-roll-15.png", "source_sha256": "2c8c5665a2e6462721924a6c3845c1cd38a2728ae4a594ec8eb317b7553a6737", "source_bytes": 1548, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38331, "opaque_pixels": 9875, "semitransparent_pixels": 194, "extrema": [0, 255], "sha256": "379ae339cf1beec6eb38866c12ff3fbbb42031d2ff484e6b840f413bdd4b81cd"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-16.png", "size": 25517, "sha256": "2c28e8f5ef93244fe8fea149d36ca5e24d0cc6646f2000307534b934893f29b4", "source_path": "public/assets/dice-roll-16.png", "source_sha256": "93354af6ed83362d91292f6d962ef4433dada2ba768f970243c2461264bebfbf", "source_bytes": 1594, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38282, "opaque_pixels": 9927, "semitransparent_pixels": 191, "extrema": [0, 255], "sha256": "d7d36ff389638ef1080fb0f8e7e6793e64a24e82ff2bf014a79512b5423ea3c6"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-17.png", "size": 23041, "sha256": "9c2a6de922639228852aa55647337c63b831dba3fb10af16f1cc9795b0f10aa4", "source_path": "public/assets/dice-roll-17.png", "source_sha256": "15b9f6d3d9ee195211fb915e0b8ce666cddc1f06d3633171bf46d64556e6d542", "source_bytes": 1554, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38120, "opaque_pixels": 10116, "semitransparent_pixels": 164, "extrema": [0, 255], "sha256": "528773d96a18a5f3736690885a3df54c97ae14af26c18b5d2414bb75289de0ae"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-18.png", "size": 19575, "sha256": "1ffd20915c3fa2f6f3b45ef07bd4dd1bb2b09105cf6db5b626a924cc3e8715f9", "source_path": "public/assets/dice-roll-18.png", "source_sha256": "c36c45d1909c30b4ef5cd92c99ccf7d9e9d8e7c5965b6ab61d940222e05abc2a", "source_bytes": 1374, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38561, "opaque_pixels": 9638, "semitransparent_pixels": 201, "extrema": [0, 255], "sha256": "f9ec13eef8c109149269d800ad18d2622e8626bc508c1340c94ecc53859feeea"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-20.png", "size": 24160, "sha256": "ef50e170b6fb808daa768320f22c97efe2bbc2559e1e48a6aa199f6a7273cb58", "source_path": "public/assets/dice-roll-20.png", "source_sha256": "03f6ecd9c6bdbee8ae0b2cc82ddc7ef6a7b24198c07d79706bb42b8741099288", "source_bytes": 1920, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 37920, "opaque_pixels": 9577, "semitransparent_pixels": 903, "extrema": [0, 255], "sha256": "c12e4ac5a9823c4ca29983ce720187dc96da95f2bcb84db272c6f4c34e5f31b7"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-21.png", "size": 24447, "sha256": "2270cda1f1682728ce25bc65e1b4f3f79d30b2e8422d53353e6fa7bd2437a299", "source_path": "public/assets/dice-roll-21.png", "source_sha256": "0b97ac886fb7a78a7563863ce692848fe314b067c32747f6910962d56b1366d8", "source_bytes": 1820, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38243, "opaque_pixels": 9965, "semitransparent_pixels": 192, "extrema": [0, 255], "sha256": "5ed91d5163ee2699673308fdf3c055c7ac8f776fc4aed07ee3f838cc42728412"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-23.png", "size": 25969, "sha256": "ce1ac4f8f6b7c02f1f12b35a3f20e5b1af333c24f4c76d2f57bc86bdf1c5af84", "source_path": "public/assets/dice-roll-23.png", "source_sha256": "209b40c41bbf1f1ebad29b9eca9903511b682ec296aafd1ac7291573a8eaeb93", "source_bytes": 1692, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38065, "opaque_pixels": 10135, "semitransparent_pixels": 200, "extrema": [0, 255], "sha256": "11c91b5eafe5ce21ee3a9f8e53aabfbb57bfb4b652ed37bf4ef15366f53d9cd3"}, "output_format": "PNG"}
+Tool: {"path": "public/assets/roll-24.png", "size": 25858, "sha256": "d2587cb9466a5e0da45e6bad0742c7e852fd7f32b14dec9df873fc0d8627e3ec", "source_path": "public/assets/dice-roll-24.png", "source_sha256": "0c898cb1ac95fc096c5332fc750a9d33356e1387892475e7167f8b89c5c9ae17", "source_bytes": 1738, "source": "工作区图片确定性裁切与等比装配", "provenance": "deterministic_image_processing", "input_format": "WEBP", "input_width": 220, "input_height": 220, "width": 220, "height": 220, "crop": [0, 0, 220, 220], "target_size": null, "resize_mode": "none", "content_size": [220, 220], "offset": [0, 0], "alpha": {"transparent_pixels": 38062, "opaque_pixels": 10128, "semitransparent_pixels": 210, "extrema": [0, 255], "sha256": "94c74aca338b6d99e0361fb40d6da030cba892acaf9f63dd09510a7e3e22ccac"}, "output_format": "PNG"}
+Tool: 
+Tool: 
+Tool: 
+

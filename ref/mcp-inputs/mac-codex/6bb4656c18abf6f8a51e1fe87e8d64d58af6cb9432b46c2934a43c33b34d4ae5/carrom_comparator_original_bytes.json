@@ -1,0 +1,349 @@
+{
+  "source_sha256": "4cf2ba474fc9aefda142fbdca46cf7b4d3ebf06a2114ecd8487a3e48448710b4",
+  "scope": "Local original ELF byte and relocation extraction; no independent decoder or runtime execution",
+  "rows": [
+    {
+      "name": "UnfouledStrikerComparator",
+      "name_file_offset": "0x12eb925",
+      "name_with_prefix": "25UnfouledStrikerComparator",
+      "name_context_hex": "74 6f 72 00 32 35 55 6e 66 6f 75 6c 65 64 53 74 72 69 6b 65 72 43 6f 6d 70 61 72 61 74 6f 72 00 32 37 48 69",
+      "pt_load_mapping": {
+        "p_offset": "0x0",
+        "p_vaddr": "0x0",
+        "p_filesz": "0x279d710",
+        "link_va": "0x12eb925"
+      },
+      "name_relocation": {
+        "section": ".rela.dyn",
+        "index": 647,
+        "r_offset": "0x27a2d18",
+        "r_info": "0x403",
+        "symbol_index": 0,
+        "type": 1027,
+        "addend": "0x12eb925"
+      },
+      "instructions": [
+        {
+          "va": "0x18cb8b4",
+          "file_offset": "0x18cb8b4",
+          "bytes": "49204139",
+          "instruction": "ldrb w9, [x2, #0x48]"
+        },
+        {
+          "va": "0x18cb8b8",
+          "file_offset": "0x18cb8b8",
+          "bytes": "2a204139",
+          "instruction": "ldrb w10, [x1, #0x48]"
+        },
+        {
+          "va": "0x18cb8bc",
+          "file_offset": "0x18cb8bc",
+          "bytes": "28008052",
+          "instruction": "mov w8, #1"
+        },
+        {
+          "va": "0x18cb8c0",
+          "file_offset": "0x18cb8c0",
+          "bytes": "3f010071",
+          "instruction": "cmp w9, #0"
+        },
+        {
+          "va": "0x18cb8c4",
+          "file_offset": "0x18cb8c4",
+          "bytes": "0805885a",
+          "instruction": "cneg w8, w8, ne"
+        },
+        {
+          "va": "0x18cb8c8",
+          "file_offset": "0x18cb8c8",
+          "bytes": "5f010071",
+          "instruction": "cmp w10, #0"
+        },
+        {
+          "va": "0x18cb8cc",
+          "file_offset": "0x18cb8cc",
+          "bytes": "08059f1a",
+          "instruction": "csinc w8, w8, wzr, eq"
+        },
+        {
+          "va": "0x18cb8d0",
+          "file_offset": "0x18cb8d0",
+          "bytes": "5f01096b",
+          "instruction": "cmp w10, w9"
+        },
+        {
+          "va": "0x18cb8d4",
+          "file_offset": "0x18cb8d4",
+          "bytes": "e003881a",
+          "instruction": "csel w0, wzr, w8, eq"
+        },
+        {
+          "va": "0x18cb8d8",
+          "file_offset": "0x18cb8d8",
+          "bytes": "c0035fd6",
+          "instruction": "ret "
+        }
+      ]
+    },
+    {
+      "name": "HigherScoredPucksComparator",
+      "name_file_offset": "0x12eb941",
+      "name_with_prefix": "27HigherScoredPucksComparator",
+      "name_context_hex": "74 6f 72 00 32 37 48 69 67 68 65 72 53 63 6f 72 65 64 50 75 63 6b 73 43 6f 6d 70 61 72 61 74 6f 72 00 32 36 4c 65",
+      "pt_load_mapping": {
+        "p_offset": "0x0",
+        "p_vaddr": "0x0",
+        "p_filesz": "0x279d710",
+        "link_va": "0x12eb941"
+      },
+      "name_relocation": {
+        "section": ".rela.dyn",
+        "index": 655,
+        "r_offset": "0x27a2d60",
+        "r_info": "0x403",
+        "symbol_index": 0,
+        "type": 1027,
+        "addend": "0x12eb941"
+      },
+      "instructions": [
+        {
+          "va": "0x18cbbe4",
+          "file_offset": "0x18cbbe4",
+          "bytes": "294c40b9",
+          "instruction": "ldr w9, [x1, #0x4c]"
+        },
+        {
+          "va": "0x18cbbe8",
+          "file_offset": "0x18cbbe8",
+          "bytes": "4a4c40b9",
+          "instruction": "ldr w10, [x2, #0x4c]"
+        },
+        {
+          "va": "0x18cbbec",
+          "file_offset": "0x18cbbec",
+          "bytes": "08008012",
+          "instruction": "mov w8, #-1"
+        },
+        {
+          "va": "0x18cbbf0",
+          "file_offset": "0x18cbbf0",
+          "bytes": "3f010a6b",
+          "instruction": "cmp w9, w10"
+        },
+        {
+          "va": "0x18cbbf4",
+          "file_offset": "0x18cbbf4",
+          "bytes": "0885885a",
+          "instruction": "cneg w8, w8, ls"
+        },
+        {
+          "va": "0x18cbbf8",
+          "file_offset": "0x18cbbf8",
+          "bytes": "e003881a",
+          "instruction": "csel w0, wzr, w8, eq"
+        },
+        {
+          "va": "0x18cbbfc",
+          "file_offset": "0x18cbbfc",
+          "bytes": "c0035fd6",
+          "instruction": "ret "
+        }
+      ]
+    },
+    {
+      "name": "LeastFouledPucksComparator",
+      "name_file_offset": "0x12eb95f",
+      "name_with_prefix": "26LeastFouledPucksComparator",
+      "name_context_hex": "74 6f 72 00 32 36 4c 65 61 73 74 46 6f 75 6c 65 64 50 75 63 6b 73 43 6f 6d 70 61 72 61 74 6f 72 00 33 31 4e 61",
+      "pt_load_mapping": {
+        "p_offset": "0x0",
+        "p_vaddr": "0x0",
+        "p_filesz": "0x279d710",
+        "link_va": "0x12eb95f"
+      },
+      "name_relocation": {
+        "section": ".rela.dyn",
+        "index": 663,
+        "r_offset": "0x27a2da8",
+        "r_info": "0x403",
+        "symbol_index": 0,
+        "type": 1027,
+        "addend": "0x12eb95f"
+      },
+      "instructions": [
+        {
+          "va": "0x18cbefc",
+          "file_offset": "0x18cbefc",
+          "bytes": "295040b9",
+          "instruction": "ldr w9, [x1, #0x50]"
+        },
+        {
+          "va": "0x18cbf00",
+          "file_offset": "0x18cbf00",
+          "bytes": "4a5040b9",
+          "instruction": "ldr w10, [x2, #0x50]"
+        },
+        {
+          "va": "0x18cbf04",
+          "file_offset": "0x18cbf04",
+          "bytes": "08008012",
+          "instruction": "mov w8, #-1"
+        },
+        {
+          "va": "0x18cbf08",
+          "file_offset": "0x18cbf08",
+          "bytes": "3f010a6b",
+          "instruction": "cmp w9, w10"
+        },
+        {
+          "va": "0x18cbf0c",
+          "file_offset": "0x18cbf0c",
+          "bytes": "0835885a",
+          "instruction": "cneg w8, w8, hs"
+        },
+        {
+          "va": "0x18cbf10",
+          "file_offset": "0x18cbf10",
+          "bytes": "e003881a",
+          "instruction": "csel w0, wzr, w8, eq"
+        },
+        {
+          "va": "0x18cbf14",
+          "file_offset": "0x18cbf14",
+          "bytes": "c0035fd6",
+          "instruction": "ret "
+        }
+      ]
+    },
+    {
+      "name": "ShortestShotComparator",
+      "name_file_offset": "0x12eb9d9",
+      "name_with_prefix": "22ShortestShotComparator",
+      "name_context_hex": "74 6f 72 00 32 32 53 68 6f 72 74 65 73 74 53 68 6f 74 43 6f 6d 70 61 72 61 74 6f 72 00 32 36 4c 65",
+      "pt_load_mapping": {
+        "p_offset": "0x0",
+        "p_vaddr": "0x0",
+        "p_filesz": "0x279d710",
+        "link_va": "0x12eb9d9"
+      },
+      "name_relocation": {
+        "section": ".rela.dyn",
+        "index": 695,
+        "r_offset": "0x27a2ec8",
+        "r_info": "0x403",
+        "symbol_index": 0,
+        "type": 1027,
+        "addend": "0x12eb9d9"
+      },
+      "instructions": [
+        {
+          "va": "0x18ccb5c",
+          "file_offset": "0x18ccb5c",
+          "bytes": "201440fd",
+          "instruction": "ldr d0, [x1, #0x28]"
+        },
+        {
+          "va": "0x18ccb60",
+          "file_offset": "0x18ccb60",
+          "bytes": "411440fd",
+          "instruction": "ldr d1, [x2, #0x28]"
+        },
+        {
+          "va": "0x18ccb64",
+          "file_offset": "0x18ccb64",
+          "bytes": "08008012",
+          "instruction": "mov w8, #-1"
+        },
+        {
+          "va": "0x18ccb68",
+          "file_offset": "0x18ccb68",
+          "bytes": "0020611e",
+          "instruction": "fcmp d0, d1"
+        },
+        {
+          "va": "0x18ccb6c",
+          "file_offset": "0x18ccb6c",
+          "bytes": "08459f1a",
+          "instruction": "csinc w8, w8, wzr, mi"
+        },
+        {
+          "va": "0x18ccb70",
+          "file_offset": "0x18ccb70",
+          "bytes": "e003881a",
+          "instruction": "csel w0, wzr, w8, eq"
+        },
+        {
+          "va": "0x18ccb74",
+          "file_offset": "0x18ccb74",
+          "bytes": "c0035fd6",
+          "instruction": "ret "
+        }
+      ]
+    },
+    {
+      "name": "LeastPoweredShotComparator",
+      "name_file_offset": "0x12eb9f2",
+      "name_with_prefix": "26LeastPoweredShotComparator",
+      "name_context_hex": "74 6f 72 00 32 36 4c 65 61 73 74 50 6f 77 65 72 65 64 53 68 6f 74 43 6f 6d 70 61 72 61 74 6f 72 00 00 75 73 65",
+      "pt_load_mapping": {
+        "p_offset": "0x0",
+        "p_vaddr": "0x0",
+        "p_filesz": "0x279d710",
+        "link_va": "0x12eb9f2"
+      },
+      "name_relocation": {
+        "section": ".rela.dyn",
+        "index": 703,
+        "r_offset": "0x27a2f10",
+        "r_info": "0x403",
+        "symbol_index": 0,
+        "type": 1027,
+        "addend": "0x12eb9f2"
+      },
+      "instructions": [
+        {
+          "va": "0x18cce74",
+          "file_offset": "0x18cce74",
+          "bytes": "201840fd",
+          "instruction": "ldr d0, [x1, #0x30]"
+        },
+        {
+          "va": "0x18cce78",
+          "file_offset": "0x18cce78",
+          "bytes": "411840fd",
+          "instruction": "ldr d1, [x2, #0x30]"
+        },
+        {
+          "va": "0x18cce7c",
+          "file_offset": "0x18cce7c",
+          "bytes": "08008012",
+          "instruction": "mov w8, #-1"
+        },
+        {
+          "va": "0x18cce80",
+          "file_offset": "0x18cce80",
+          "bytes": "0020611e",
+          "instruction": "fcmp d0, d1"
+        },
+        {
+          "va": "0x18cce84",
+          "file_offset": "0x18cce84",
+          "bytes": "08459f1a",
+          "instruction": "csinc w8, w8, wzr, mi"
+        },
+        {
+          "va": "0x18cce88",
+          "file_offset": "0x18cce88",
+          "bytes": "e003881a",
+          "instruction": "csel w0, wzr, w8, eq"
+        },
+        {
+          "va": "0x18cce8c",
+          "file_offset": "0x18cce8c",
+          "bytes": "c0035fd6",
+          "instruction": "ret "
+        }
+      ]
+    }
+  ]
+}

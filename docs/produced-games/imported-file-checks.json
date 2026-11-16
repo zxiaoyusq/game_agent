@@ -1,0 +1,22 @@
+[
+  {
+    "id": "arrow-out-puzzle-lite",
+    "source_game_files": 443,
+    "runtime_unchanged": true
+  },
+  {
+    "id": "crazy-knifes",
+    "source_game_files": 287,
+    "runtime_unchanged": true
+  },
+  {
+    "id": "solitaire-klondike-classic",
+    "source_game_files": 93,
+    "runtime_unchanged": true
+  },
+  {
+    "id": "checkers-pocket",
+    "source_game_files": 2,
+    "runtime_unchanged": false
+  }
+]

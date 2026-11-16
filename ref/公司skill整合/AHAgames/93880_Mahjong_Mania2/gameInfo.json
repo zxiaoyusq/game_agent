@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  93880,
+    "apiName":  "Mahjong Mania2",
+    "targetName":  "Mahjong Mania2",
+    "match":  "EXACT",
+    "bundleName":  "re_mahjong-mania-transsion-offline.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20251218/23306fc659386f3b37743a7cc62ddc95.zip",
+    "bundleMd5":  "23306fc659386f3b37743a7cc62ddc95",
+    "bundleSize":  4428265,
+    "updatedAt":  1767174088,
+    "gameLink":  "https://www.hkminih5game.com/Mahjong_Mania2/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_93880",
+    "category":  "Match",
+    "rate":  8.2,
+    "gameType":  1,
+    "localFile":  "Mahjong_Mania2.zip",
+    "localBytes":  4428265,
+    "verifiedAt":  "2026-10-20T10:36:19",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

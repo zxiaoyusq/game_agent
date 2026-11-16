@@ -71,13 +71,26 @@ class ProductionLibraryTests(unittest.TestCase):
     def test_seed_guides_are_available_without_sample_project_reference(self):
         library.import_production_library()
         catalog = library.get_catalog()
-        self.assertEqual(len(catalog["genres"]), 7)
-        self.assertEqual(len(catalog["frameworks"]), 2)
+        # 数量随正式注册项增长，同时检查 ID 唯一性和关键方案不会被意外遗漏。
+        genre_ids = {item["id"] for item in catalog["genres"]}
+        framework_ids = {item["id"] for item in catalog["frameworks"]}
+        self.assertEqual(genre_ids, {item["id"] for item in library.GENRES})
+        self.assertEqual(framework_ids, {item["id"] for item in library.FRAMEWORKS})
+        self.assertEqual(len(catalog["genres"]), len(genre_ids))
+        self.assertEqual(len(catalog["frameworks"]), len(framework_ids))
+        self.assertTrue({"general", "board-games"}.issubset(genre_ids))
+        self.assertTrue({"cocos-web", "canvas-web", "native-web"}.issubset(framework_ids))
+        # 每个品类与框架组合都必须引用真实可读正文，而不是只有可选目录项。
         for genre in catalog["genres"]:
-            profile = library.resolve_profile(genre["id"], "canvas-web")
-            snapshots = library.snapshot_knowledge(profile["knowledge_paths"])
-            self.assertTrue(all(item["content"] for item in snapshots))
-            self.assertNotIn("cocos-game-production/SKILL.md", profile["framework"]["recommended_skills"])
+            for framework in catalog["frameworks"]:
+                with self.subTest(genre=genre["id"], framework=framework["id"]):
+                    profile = library.resolve_profile(genre["id"], framework["id"])
+                    snapshots = library.snapshot_knowledge(profile["knowledge_paths"])
+                    self.assertTrue(snapshots)
+                    self.assertEqual({item["path"] for item in snapshots}, set(profile["knowledge_paths"]))
+                    self.assertTrue(all(item["content"] for item in snapshots))
+                    if framework["id"] != "cocos-web":
+                        self.assertNotIn("cocos-game-production/SKILL.md", profile["framework"]["recommended_skills"])
 
 
 if __name__ == "__main__":

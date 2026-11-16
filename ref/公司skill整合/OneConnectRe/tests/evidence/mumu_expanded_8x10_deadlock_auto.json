@@ -1,0 +1,30 @@
+[
+  {
+    "level": 17,
+    "direction": "up",
+    "events": [
+      "game.match",
+      "game.gravity_applied",
+      "game.auto_shuffle_start",
+      "game.auto_shuffle_complete"
+    ],
+    "tiles": 18,
+    "shuffle": 5,
+    "restored": true,
+    "nextPairTiles": 16
+  },
+  {
+    "level": 17,
+    "direction": "right",
+    "events": [
+      "game.match",
+      "game.gravity_applied",
+      "game.auto_shuffle_start",
+      "game.auto_shuffle_complete"
+    ],
+    "tiles": 18,
+    "shuffle": 5,
+    "restored": true,
+    "nextPairTiles": 16
+  }
+]

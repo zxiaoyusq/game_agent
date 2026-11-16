@@ -1,0 +1,11 @@
+{
+  "result": {
+    "progress": 11,
+    "level": 11,
+    "tiles": 32,
+    "timer": 168,
+    "errors": []
+  },
+  "firstTenEvidence": "result-first10.json",
+  "tenthStaticCandidate": true
+}

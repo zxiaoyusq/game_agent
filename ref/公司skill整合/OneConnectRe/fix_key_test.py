@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('tests/browser-key-events.cjs');s=p.read_text(encoding='utf8');s=s.replace("await p.mouse.click(1130,50);await p.waitForTimeout(3500);await p.screenshot({path:'screenshots/hint_debug.png'});await p.mouse.click(1010,50);await p.waitForTimeout(5000);", "await p.mouse.click(1010,50);await p.waitForTimeout(5000);await p.screenshot({path:'screenshots/shuffle_first.png'});await p.mouse.click(1130,50);await p.waitForTimeout(3500);");p.write_text(s,encoding='utf8')

@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const icons=[{style:{}},{style:{}},{style:{}}],illustration={querySelectorAll:()=>icons};
+const card={style:{cssText:'approved card'},children:[{},illustration]},seventh={style:{background:'approved backdrop'},firstElementChild:card};
+const document={head:{appendChild(){}},createElement:()=>({style:{}}),getElementById:id=>id==='oc-seventh-guide'?seventh:null};
+const window={addEventListener(){}};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/tutorial_visual_candidate.js','utf8'),{window,document,setInterval(){},Math});
+window.oneConnectTutorialVisualCandidate.install();
+assert.equal(card.style.cssText,'approved card','visual enhancement must preserve approved popup layout');
+assert.equal(seventh.style.background,'approved backdrop','visual enhancement must preserve approved backdrop');
+for(const icon of icons)assert.match(icon.style.animation,/oc-guide-frame-pulse.*infinite/);
+console.log('hammer guide preserves approved layout while icons pulse PASS');

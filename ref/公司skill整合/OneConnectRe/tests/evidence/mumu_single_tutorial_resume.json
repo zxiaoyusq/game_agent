@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "level": 3,
+      "tiles": 40,
+      "boardRestored": true,
+      "guideCompleted": true,
+      "inventoryPreserved": true
+    },
+    {
+      "level": 5,
+      "tiles": 40,
+      "boardRestored": true,
+      "guideCompleted": true,
+      "inventoryPreserved": true
+    },
+    {
+      "level": 7,
+      "tiles": 40,
+      "boardRestored": true,
+      "guideCompleted": true,
+      "inventoryPreserved": true
+    },
+    {
+      "level": 10,
+      "tiles": 48,
+      "boardRestored": true,
+      "guideCompleted": true,
+      "inventoryPreserved": true
+    }
+  ],
+  "errors": []
+}

@@ -236,6 +236,9 @@ uuid、尺寸是案例值（`DO_NOT_COPY_LITERAL_VALUES`）。
 - **Spine 组件动态新增不可编辑**：运行时 `new Node + addComponent(sp.Skeleton)` 即便显示正确，
   编辑器仍不可见。所有已接入骨骼先烘焙宿主与 SkeletonData，运行时只选择动画、坐标、缩放
   和显隐；完整数据修复/跨端 QA 见 `modules/cocos-qa/references/spine-fx-repair-qa.md`。
+- **生成器产出的 `.prefab` / `.meta` 是派生文件，禁止手改**；生成器确定性（双跑哈希一致）、
+  绑定声明表与"精修稿必须由专属补丁脚本维护"的工程侧约定见
+  `modules/cocos-project-standards/references/ui-prefab-pipeline.md`。
 - **玩法状态不可偷带程序框体**：收集目标、选中态、完成标记应由布尔/枚举状态驱动；不要在拼图块
   上临时 `new Graphics` 画呼吸描边并把它当状态本体。正式画面不需要该提示时只保留状态，销毁旧
   调试节点；运行态 QA 扫描目标容器内的 `Graphics`/特征节点名，断言拼好后覆盖框数量为 0。

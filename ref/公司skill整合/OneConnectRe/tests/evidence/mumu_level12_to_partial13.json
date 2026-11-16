@@ -1,0 +1,10 @@
+{
+  "result": {
+    "progress": 13,
+    "level": 13,
+    "tiles": 44,
+    "timer": 188,
+    "errors": []
+  },
+  "scope": "isolated test starts at level 12; not a fresh level 1 run"
+}

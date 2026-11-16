@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  77413,
+    "apiName":  "One Connect",
+    "targetName":  "One Connect",
+    "match":  "EXACT",
+    "bundleName":  "One_Connect.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20240313/12531964731.zip",
+    "bundleMd5":  "79859a6ae795650e23c6fb520adde84c",
+    "bundleSize":  2420336,
+    "updatedAt":  1776666651,
+    "gameLink":  "https://www.bhjgame.com/One_Connect/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_77413",
+    "category":  "Match",
+    "rate":  7.5,
+    "gameType":  1,
+    "localFile":  "One_Connect.zip",
+    "localBytes":  2420336,
+    "verifiedAt":  "2026-10-20T10:34:36",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

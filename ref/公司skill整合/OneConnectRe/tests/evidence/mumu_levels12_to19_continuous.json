@@ -1,0 +1,53 @@
+{
+  "scope": "isolated test storage starts at level 12; solver-guided ADB taps; levels 13-16 partial",
+  "runs": [
+    {
+      "level": 12,
+      "tiles": 40,
+      "seed": 2879543655,
+      "movement": "static"
+    },
+    {
+      "level": 13,
+      "tiles": 44,
+      "seed": 272466634,
+      "movement": "gravity_down"
+    },
+    {
+      "level": 14,
+      "tiles": 34,
+      "seed": 2568847050,
+      "movement": "gravity_up"
+    },
+    {
+      "level": 15,
+      "tiles": 42,
+      "seed": 2378837618,
+      "movement": "static"
+    },
+    {
+      "level": 16,
+      "tiles": 68,
+      "seed": 1214812287,
+      "movement": "static"
+    },
+    {
+      "level": 17,
+      "tiles": 44,
+      "seed": 159491480,
+      "movement": "gravity_left"
+    },
+    {
+      "level": 18,
+      "tiles": 42,
+      "seed": 1060221794,
+      "movement": "static"
+    }
+  ],
+  "end": {
+    "level": 19,
+    "progress": 19,
+    "tiles": 72,
+    "errors": []
+  }
+}

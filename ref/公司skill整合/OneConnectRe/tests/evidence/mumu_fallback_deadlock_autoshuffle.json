@@ -1,0 +1,9 @@
+{
+  "level": 13,
+  "fixture": "controlled injected 6x12 fallback board",
+  "before": 16,
+  "afterAutomaticShuffle": 14,
+  "afterRestoredNextPair": 12,
+  "stock": 5,
+  "boardRestored": true
+}

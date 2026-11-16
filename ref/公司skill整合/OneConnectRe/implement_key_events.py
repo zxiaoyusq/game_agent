@@ -1,0 +1,6 @@
+from pathlib import Path
+p=Path('game/event-hooks.js');s=p.read_text(encoding='utf8');s=s.replace("if (this.sid === 196425296963217 || this.sid === 431416332694720) {", "if (this.sid === 196425296963217 || this.sid === 431416332694720 || this.sid === 946296122197588) {")
+s=s.replace("if (v.name === 'level' || v.name === 'score')", "if (v.name === 'level' || v.name === 'score' || v.name === 'tip' || v.name === 'shuffle')")
+s=s.replace("this.sid === 196425296963217 ? 'game.match' : 'game.level_start'", "this.sid === 196425296963217 ? 'game.match' : this.sid === 946296122197588 ? 'game.hint' : 'game.level_start'")
+s=s.replace("    installed = true;", "    if (cr.action.prototype.run_object) {\n      var originalObject = cr.action.prototype.run_object;\n      cr.action.prototype.run_object = function () {\n        var result = originalObject.apply(this, arguments);\n        if (this.sid === 342934048923318) {\n          try { var state = {}; this.runtime.all_global_vars.forEach(function (v) { if (v.name === 'level' || v.name === 'shuffle') state[v.name] = v.data; }); window.oneConnectHost.emit('game.shuffle', state); }\n          catch (error) { console.warn('One Connect event hook failed', error); }\n        }\n        return result;\n      };\n    }\n    installed = true;")
+p.write_text(s,encoding='utf8')

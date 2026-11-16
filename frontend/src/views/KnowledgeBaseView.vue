@@ -1,4 +1,5 @@
 <script setup>
+import { apiFetch } from '../api/http.js'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import {
   KB_MODULES,
@@ -17,6 +18,8 @@ import {
   uploadKbItem as apiUpload,
 } from '../api/knowledge.js'
 import { renderMarkdown } from '../utils/markdown.js'
+import { fetchSkillSourceSync, syncSkillSources } from '../api/workflow.js'
+import ReferenceGameLibrary from '../components/ReferenceGameLibrary.vue'
 
 defineEmits(['navigate'])
 
@@ -27,7 +30,44 @@ const activeCategory = ref('docs')
 const activeFolder = ref('')
 const fileQuery = ref('')
 const isSkillModule = computed(() => activeModule.value === 'skill')
+// 公司游戏参考是原位读取的资料目录，不使用知识库的上传、删除操作。
+const isReferenceModule = computed(() => activeModule.value === 'reference-games')
 const maxFolderDepth = computed(() => isSkillModule.value ? 8 : 4)
+const syncPlan = ref(null)
+const syncChecking = ref(false)
+const syncApplying = ref(false)
+const syncError = ref('')
+const syncResult = ref(null)
+const syncReason = ref('来源资料更新')
+const changedSourceFiles = computed(() => (syncPlan.value?.files || []).filter((item) => item.status !== 'unchanged'))
+const syncPendingCount = computed(() => (syncPlan.value?.counts?.added || 0) + (syncPlan.value?.counts?.updated || 0))
+const syncBlocked = computed(() => !syncPlan.value || !syncPendingCount.value || !!syncPlan.value.counts?.conflicts
+  || !syncReason.value.trim() || syncChecking.value || syncApplying.value)
+
+function sourceStatusLabel(status) {
+  return { added: '新增', updated: '更新', unchanged: '一致', deleted_skipped: '保持删除', conflict: '冲突', conflicts: '冲突' }[status] || status
+}
+// 查看计划不会写入；摘要用于确保用户查看的计划与实际同步内容一致。
+async function checkSourceUpdates(clearResult = true) {
+  syncChecking.value = true
+  syncError.value = ''
+  if (clearResult) syncResult.value = null
+  try { syncPlan.value = await fetchSkillSourceSync() }
+  catch (cause) { syncPlan.value = null; syncError.value = cause.message || '读取来源更新失败' }
+  finally { syncChecking.value = false }
+}
+async function applySourceUpdates() {
+  if (syncBlocked.value) return
+  syncApplying.value = true
+  syncError.value = ''
+  try {
+    syncResult.value = await syncSkillSources({ reason: syncReason.value.trim(), expected_digest: syncPlan.value.digest })
+    await refreshKb()
+    await checkSourceUpdates(false)
+  } catch (cause) {
+    syncError.value = cause.message || '同步失败，请重新检查来源更新'
+  } finally { syncApplying.value = false }
+}
 
 // 上传表单字段（单文件模式）
 const uploadFile = ref(null)
@@ -519,6 +559,7 @@ function inlineUrl(item) {
 // Lightbox 浮层状态：null = 未打开
 const previewItem = ref(null)
 const previewContent = ref('')
+const previewHtml = ref('')
 const previewLoading = ref(false)
 const previewError = ref('')
 const previewMode = ref('read')
@@ -536,7 +577,7 @@ let previewController = null
 // 以当前文档所在目录解析相对附件，禁止路径越过知识库分类根目录。
 function resolvePreviewAttachment(url, image = false) {
   const item = previewItem.value
-  if (!item || item.moduleId !== 'skill') return ''
+  if (!item) return ''
   let path
   try {
     path = decodeURIComponent(url.split(/[?#]/)[0])
@@ -559,6 +600,74 @@ function resolvePreviewAttachment(url, image = false) {
     && candidate.category === item.category
     && [candidate.folder, candidate.filename].filter(Boolean).join('/') === targetPath)
   return target && (!image || isImage(target)) ? inlineUrl(target) : ''
+}
+
+// HTML 参考页只做静态阅读：重写已入库的本地图片，移除脚本和可执行入口。
+// srcdoc 与空 sandbox 保持独立来源，CSP 另外阻断远程请求和文档内脚本。
+function prepareHtmlPreview(content) {
+  const doc = new DOMParser().parseFromString(content, 'text/html')
+  // 来源历史样图页把图片写在 DATA JSON 中，再靠脚本拼界面。只解析该已知
+  // 数据段为静态图片，不求值 JavaScript，也不沿用文件内的事件与模板字符串。
+  for (const script of doc.querySelectorAll('script')) {
+    const dataMatch = script.textContent.match(/\bconst\s+DATA\s*=\s*(\[[\s\S]*?\])\s*,\s*PALETTES\s*=/)
+    if (!dataMatch) continue
+    try {
+      const records = JSON.parse(dataMatch[1])
+      if (!Array.isArray(records)) continue
+      const gallery = doc.createElement('section')
+      gallery.id = 'static-reference-gallery'
+      const heading = doc.createElement('h2')
+      heading.textContent = '历史样图（静态查看）'
+      gallery.append(heading)
+      for (const record of records) {
+        const src = record?.preview || record?.thumbnail || record?.file
+        if (typeof src !== 'string' || !/^data:image\/(?:png|jpe?g|gif|webp|avif);base64,/i.test(src)) continue
+        const figure = doc.createElement('figure')
+        figure.style.cssText = 'display:inline-block;vertical-align:top;width:min(100%,280px);margin:12px;padding:12px;border:1px solid #526879;border-radius:8px'
+        const caption = doc.createElement('figcaption')
+        caption.textContent = [record.region_name, record.style, record.style_name].filter((value) => typeof value === 'string').join(' · ')
+        const img = doc.createElement('img')
+        img.src = src
+        img.alt = caption.textContent
+        img.style.cssText = 'width:100%;height:auto;display:block;margin-top:10px'
+        figure.append(caption, img)
+        gallery.append(figure)
+      }
+      if (gallery.children.length > 1) (doc.querySelector('main') || doc.body).append(gallery)
+    } catch { /* 非标准 JSON 保留原页面静态内容，绝不退回执行源脚本。 */ }
+  }
+  doc.querySelectorAll('script, iframe, object, embed, base, meta, link, form').forEach((element) => element.remove())
+  doc.querySelectorAll('img:not([src])').forEach((element) => element.remove())
+  const imageUrl = (value) => {
+    if (/^data:image\/(?:png|jpe?g|gif|webp|avif);/i.test(value)) return value
+    const resolved = resolvePreviewAttachment(value, true)
+    return resolved ? new URL(resolved, window.location.origin).href : ''
+  }
+  const rewriteCss = (value) => value.replace(/url\(\s*(['"]?)(.*?)\1\s*\)/gi, (_, quote, path) => {
+    const resolved = imageUrl(path)
+    return resolved ? `url("${resolved}")` : 'none'
+  })
+  for (const element of doc.querySelectorAll('*')) {
+    for (const attribute of [...element.attributes]) {
+      if (/^on/i.test(attribute.name) || ['srcdoc', 'srcset', 'action', 'formaction', 'autofocus', 'ping'].includes(attribute.name)) element.removeAttribute(attribute.name)
+    }
+    if (element.hasAttribute('src')) {
+      const resolved = element.tagName === 'IMG' ? imageUrl(element.getAttribute('src')) : ''
+      if (resolved) element.setAttribute('src', resolved)
+      else element.removeAttribute('src')
+    }
+    if (element.hasAttribute('href')) {
+      const value = element.getAttribute('href')
+      if (!value.startsWith('#')) element.removeAttribute('href')
+    }
+    if (element.hasAttribute('style')) element.setAttribute('style', rewriteCss(element.getAttribute('style')))
+    if (element.tagName === 'STYLE') element.textContent = rewriteCss(element.textContent)
+  }
+  const policy = doc.createElement('meta')
+  policy.setAttribute('http-equiv', 'Content-Security-Policy')
+  policy.content = `default-src 'none'; img-src ${window.location.origin}/api/knowledge/ data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'`
+  doc.head.prepend(policy)
+  return '<!doctype html>\n' + doc.documentElement.outerHTML
 }
 
 // 同模块的附件在阅读窗内打开；不支持预览的文件使用已有下载入口。
@@ -587,19 +696,24 @@ async function openPreview(item) {
   const requestId = ++previewRequestId
   previewItem.value = item
   previewContent.value = ''
+  previewHtml.value = ''
   previewError.value = ''
   previewMode.value = 'read'
-  previewLoading.value = isText(item)
-  if (!isText(item)) return
+  previewLoading.value = isText(item) || isHtml(item)
+  if (!previewLoading.value) return
   previewController = new AbortController()
 
   try {
-    // 大文件保留下载能力，避免一次渲染过多源码影响整个页面操作。
-    if (item.size > 2 * 1024 * 1024) throw new Error('文件较大，请下载后查看完整内容。')
-    const response = await fetch(inlineUrl(item), { signal: previewController.signal })
+    // 美术 HTML 研究页可能内嵌图片，给予独立上限；纯文本仍限制为 2 MB。
+    const previewLimit = (isHtml(item) ? 20 : 2) * 1024 * 1024
+    if (item.size > previewLimit) throw new Error('文件较大，请下载后查看完整内容。')
+    const response = await apiFetch(inlineUrl(item), { signal: previewController.signal })
     if (!response.ok) throw new Error(`读取失败（${response.status}）`)
     const content = await response.text()
-    if (requestId === previewRequestId) previewContent.value = content
+    if (requestId === previewRequestId) {
+      if (isHtml(item)) previewHtml.value = prepareHtmlPreview(content)
+      else previewContent.value = content
+    }
   } catch (error) {
     if (requestId === previewRequestId && error.name !== 'AbortError') {
       previewError.value = error?.message || '文件读取失败，请下载后查看。'
@@ -614,6 +728,7 @@ function closePreview() {
   previewController?.abort()
   previewItem.value = null
   previewContent.value = ''
+  previewHtml.value = ''
   previewHistory.value = []
 }
 
@@ -632,7 +747,7 @@ onBeforeUnmount(() => {
         <span class="title-text">知识库管理</span>
         <span class="title-sub">所有 Agent 模块共享的物料与文档沉淀</span>
       </div>
-      <button class="refresh" :disabled="kbStore.loading" @click="refreshKb()">
+      <button v-if="!isReferenceModule" class="refresh" :disabled="kbStore.loading" @click="refreshKb()">
         {{ kbStore.loading ? '刷新中…' : '🔄 刷新' }}
       </button>
     </header>
@@ -676,10 +791,17 @@ onBeforeUnmount(() => {
             </button>
           </div>
         </div>
+        <div class="module-block" :class="{ active: isReferenceModule }">
+          <button class="module-head" :class="{ 'reference-tab-active': isReferenceModule }" type="button" @click="selectModule('reference-games')">
+            <span class="module-icon">🕹️</span><span class="module-name">公司游戏参考</span><span class="reference-readonly">只读</span>
+          </button>
+        </div>
       </aside>
 
       <!-- 右侧：上传 + 列表 -->
       <section class="content">
+        <ReferenceGameLibrary v-if="isReferenceModule" />
+        <template v-else>
         <!-- 面包屑 + 文件夹操作 -->
         <div class="folder-bar">
           <div class="crumbs-row">
@@ -719,6 +841,29 @@ onBeforeUnmount(() => {
               <input v-model="fileQuery" class="text-input" type="search" placeholder="技能名称、用途、文件名或路径" />
             </label>
           </div>
+          <section class="skill-source-sync" aria-label="Skill 来源同步">
+            <div class="skill-sync-heading">
+              <div><strong>来源资料同步</strong><p class="card-sub">检查工程与公司 Skill 的新增、更新，核对后同步到知识库。</p></div>
+              <button class="ghost sm" type="button" :disabled="syncChecking || syncApplying" @click="checkSourceUpdates()">{{ syncChecking ? '正在检查…' : '检查来源更新' }}</button>
+            </div>
+            <p v-if="syncError" class="upload-error" role="alert">{{ syncError }}</p>
+            <div v-if="syncResult" class="skill-sync-result" role="status">
+              <strong>同步完成：新增 {{ syncResult.counts?.added || 0 }} 份，更新 {{ syncResult.counts?.updated || 0 }} 份。</strong>
+              <p v-if="syncResult.summary">当前 {{ syncResult.summary.skill_entries }} 个技能入口 / {{ syncResult.summary.files }} 份文件。</p>
+              <details><summary>查看同步记录</summary><p>操作编号：{{ syncResult.operation_id }}</p><p v-if="syncResult.backup_path">备份目录：{{ syncResult.backup_path }}</p></details>
+            </div>
+            <template v-if="syncPlan">
+              <p class="skill-sync-counts">新增 {{ syncPlan.counts?.added || 0 }} · 更新 {{ syncPlan.counts?.updated || 0 }} · 一致 {{ syncPlan.counts?.unchanged || 0 }} · 保持删除 {{ syncPlan.counts?.deleted_skipped || 0 }} · 冲突 {{ syncPlan.counts?.conflicts || 0 }}</p>
+              <details v-if="changedSourceFiles.length" class="skill-sync-files" open>
+                <summary>查看变更文件（{{ changedSourceFiles.length }}）</summary>
+                <ul><li v-for="file in changedSourceFiles" :key="file.source || file.path"><span class="row-tag" :class="{ 'sync-conflict': ['conflict', 'conflicts'].includes(file.status) }">{{ sourceStatusLabel(file.status) }}</span><code>{{ file.path }}</code><small v-if="file.origin">来源：{{ file.origin }}</small><small v-if="file.reason">{{ file.reason }}</small></li></ul>
+              </details>
+              <p v-if="syncPlan.counts?.conflicts" class="upload-error">存在来源或路径冲突，请先处理列表中的冲突，再重新检查。当前计划不会写入。</p>
+              <p v-if="syncPlan.counts?.deleted_skipped" class="card-sub">知识库中已删除的文件保持删除，本次同步不会恢复。</p>
+              <div v-if="syncPendingCount" class="skill-sync-actions"><label>同步说明<input v-model="syncReason" class="text-input" maxlength="500" placeholder="填写这次更新的原因" :disabled="syncApplying" /></label><button class="primary" type="button" :disabled="syncBlocked" @click="applySourceUpdates">{{ syncApplying ? '正在同步…' : `同步 ${syncPendingCount} 份文件` }}</button></div>
+              <p v-else-if="!syncPlan.counts?.conflicts" class="card-sub">目前没有待同步的新增或更新。</p>
+            </template>
+          </section>
           <div v-if="!activeFolder && !searchTerm" class="skill-package-grid">
             <article v-for="pack in skillPackages" :key="pack.path" class="skill-package">
               <strong>{{ pack.entry?.title || pack.name }}</strong>
@@ -1052,6 +1197,7 @@ onBeforeUnmount(() => {
             </div>
           </div>
         </div>
+        </template>
       </section>
     </main>
 
@@ -1072,13 +1218,11 @@ onBeforeUnmount(() => {
             <button class="lb-close" type="button" @click="closePreview">×</button>
           </header>
           <div class="lb-body">
-            <iframe
-              v-if="isHtml(previewItem)"
-              class="report-preview"
-              :src="inlineUrl(previewItem)"
-              :title="previewItem.title"
-              sandbox="allow-scripts allow-modals allow-popups"
-            />
+            <template v-if="isHtml(previewItem)">
+              <div v-if="previewLoading" class="markdown-preview-state">正在加载静态预览…</div>
+              <div v-else-if="previewError" class="markdown-preview-state markdown-preview-error">{{ previewError }}</div>
+              <iframe v-else class="report-preview" :srcdoc="previewHtml" :title="previewItem.title" sandbox="" />
+            </template>
             <div v-else-if="isText(previewItem)" :key="previewItem.id" class="markdown-preview-scroll" :class="{ 'source-preview-scroll': !isMarkdown(previewItem) || previewMode === 'source' }">
               <div v-if="previewLoading" class="markdown-preview-state">正在加载文件…</div>
               <div v-else-if="previewError" class="markdown-preview-state markdown-preview-error">
@@ -1090,6 +1234,7 @@ onBeforeUnmount(() => {
             <img v-else :src="inlineUrl(previewItem)" :alt="previewItem.title" />
           </div>
           <footer class="lb-foot">
+            <span v-if="isHtml(previewItem)" class="card-sub">静态预览；交互脚本未执行，可下载原文件。</span>
             <button class="ghost sm" type="button" @click="downloadItem(previewItem)">
               {{ isImage(previewItem) ? '下载原图' : '下载文件' }}
             </button>
@@ -1546,6 +1691,24 @@ onBeforeUnmount(() => {
 }
 
 /* Skill 总览沿用知识库卡片，只补充技能用途与文档快捷入口。 */
+.reference-readonly { margin-left: auto; font-size: 10px; color: var(--text-tertiary); }
+.reference-tab-active { border-color: #56c7bc; color: #56c7bc; }
+.skill-source-sync { padding: 14px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); }
+.skill-sync-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.skill-sync-heading strong { font-size: 13px; }
+.skill-sync-heading p { margin: 6px 0 0; line-height: 1.6; }
+.skill-sync-counts { font-size: 12px; line-height: 1.8; color: var(--text-secondary); margin: 12px 0; }
+.skill-sync-files { font-size: 12px; color: var(--text-secondary); }
+.skill-sync-files summary,.skill-sync-result summary { cursor: pointer; }
+.skill-sync-files ul { max-height: 270px; overflow-y: auto; padding: 0; margin: 10px 0; list-style: none; }
+.skill-sync-files li { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; padding: 8px 0; border-top: 1px solid var(--border-color); }
+.skill-sync-files code { overflow-wrap: anywhere; flex: 1; min-width: 150px; font-size: 11px; }
+.skill-sync-files small { flex-basis: 100%; color: var(--text-tertiary); }
+.skill-sync-files .sync-conflict { color: #cf775b; }
+.skill-sync-actions { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; margin-top: 14px; }
+.skill-sync-actions label { flex: 1; min-width: 180px; color: var(--text-secondary); font-size: 12px; display: flex; flex-direction: column; gap: 6px; }
+.skill-sync-result { padding: 10px 12px; margin-top: 12px; border-radius: 6px; background: #3fb95012; color: var(--text-secondary); font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.skill-sync-result details { margin-top: 6px; }
 .skill-overview-head {
   display: flex;
   align-items: flex-start;
@@ -2197,5 +2360,31 @@ onBeforeUnmount(() => {
   padding: 10px 18px;
   border-top: 1px solid var(--border-color);
   background: var(--bg-tertiary);
+}
+
+/* 窄屏把模块导航放到上方，避免固定侧栏挤压参考目录和技能卡片。 */
+@media (max-width: 760px) {
+  .topbar { padding: 12px; gap: 10px; flex-wrap: wrap; }
+  .topbar-title { min-width: 0; gap: 6px; }
+  .title-text { font-size: 16px; }
+  .title-sub { display: none; }
+  .main { grid-template-columns: minmax(0, 1fr); }
+  .sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 12px; border-right: 0; border-bottom: 1px solid var(--border-color); }
+  .module-block { margin: 0; min-width: 0; }
+  .module-head { padding: 8px; gap: 6px; }
+  .module-name { min-width: 0; }
+  .content { padding: 14px 12px; overflow: visible; }
+  .card { padding: 14px 12px; }
+  .folder-bar,.upload-row,.upload-actions,.row,.lb-head,.lb-foot { flex-wrap: wrap; }
+  .folder-grid,.form-grid { grid-template-columns: minmax(0, 1fr); }
+  .crumb-btn { max-width: 100%; overflow-wrap: anywhere; text-align: left; }
+  .row-actions { margin-left: auto; }
+  .skill-sync-actions label { min-width: min(100%, 180px); }
+  .skill-sync-actions .primary { width: 100%; }
+  .lb-overlay { padding: 8px; }
+  .lb-head,.lb-foot { padding: 10px; }
+  .lb-head strong,.lb-sub { overflow-wrap: anywhere; min-width: 0; }
+  .lb-body { padding: 8px; }
+  .markdown-preview-scroll { padding: 14px; }
 }
 </style>

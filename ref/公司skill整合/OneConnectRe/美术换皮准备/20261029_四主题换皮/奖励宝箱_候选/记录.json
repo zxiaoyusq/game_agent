@@ -1,0 +1,62 @@
+[
+  {
+    "name": "bonus-sheet0.png",
+    "size": [
+      268,
+      309
+    ],
+    "source": "exec-dbf2d32f-4492-4b5a-87aa-6d9411ec962a.png",
+    "original_bbox": [
+      1,
+      1,
+      267,
+      308
+    ],
+    "candidate_bbox": [
+      1,
+      9,
+      267,
+      299
+    ]
+  },
+  {
+    "name": "bonus-sheet1.png",
+    "size": [
+      268,
+      309
+    ],
+    "source": "exec-babba943-7a76-4332-a5da-cf27dbc24d8f.png",
+    "original_bbox": [
+      1,
+      75,
+      268,
+      307
+    ],
+    "candidate_bbox": [
+      1,
+      103,
+      268,
+      278
+    ]
+  },
+  {
+    "name": "bonuslid-sheet0.png",
+    "size": [
+      268,
+      309
+    ],
+    "source": "exec-cf51e743-6bcd-42ef-afee-2ea3393e60e7.png",
+    "original_bbox": [
+      1,
+      0,
+      268,
+      249
+    ],
+    "candidate_bbox": [
+      1,
+      16,
+      268,
+      233
+    ]
+  }
+]

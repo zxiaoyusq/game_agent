@@ -1,0 +1,38 @@
+[
+  {
+    "id": "SA",
+    "file": "E:\\AIlab\\AHAgames\\art_direction\\界面效果图_20261022\\南亚_彩绘集市_900x2000.png",
+    "source": "C:\\Users\\nenghong.zhao\\.codex\\generated_images\\01a15d1e-ddf8-7312-ba0d-9aabc310ae20\\exec-1142d402-e227-4a72-8e8f-f88c2665e993.png",
+    "size": [
+      900,
+      2000
+    ],
+    "mode": "RGB",
+    "sha256": "1ea6e20bba891c56deed94f8750e1214f219f35d04debec9dea74d47e9ac9711",
+    "status": "generated_and_reviewed_not_user_accepted"
+  },
+  {
+    "id": "NG",
+    "file": "E:\\AIlab\\AHAgames\\art_direction\\界面效果图_20261022\\尼日利亚_社区小店_900x2000.png",
+    "source": "C:\\Users\\nenghong.zhao\\.codex\\generated_images\\01a15d1e-ddf8-7312-ba0d-9aabc310ae20\\exec-2e448a36-c8a2-458a-8147-5455513f1e61.png",
+    "size": [
+      900,
+      2000
+    ],
+    "mode": "RGB",
+    "sha256": "f9ae33b05542b1eb2eeebbbec0b043dbdba1415d974247d07366c5a64e868f84",
+    "status": "generated_and_reviewed_not_user_accepted"
+  },
+  {
+    "id": "SEA_PH",
+    "file": "E:\\AIlab\\AHAgames\\art_direction\\界面效果图_20261022\\东南亚_菲律宾街市_900x2000.png",
+    "source": "C:\\Users\\nenghong.zhao\\.codex\\generated_images\\01a15d1e-ddf8-7312-ba0d-9aabc310ae20\\exec-d9e5efdf-3650-4005-818b-48e9258041f2.png",
+    "size": [
+      900,
+      2000
+    ],
+    "mode": "RGB",
+    "sha256": "aac6ae4ada7fc3b483d2e1041ba2342f3f912a339c632033e40bc8cd9ff54962",
+    "status": "generated_and_reviewed_not_user_accepted"
+  }
+]

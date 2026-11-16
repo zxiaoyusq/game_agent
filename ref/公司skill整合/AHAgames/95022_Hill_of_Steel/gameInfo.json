@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "95022",
+    "apiName":  "Hill of Steel",
+    "targetName":  "Hill of Steel",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Hill_of_Steel.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260507/f624fa906c8de234856463eac5370ac7.zip",
+    "bundleMd5":  "f624fa906c8de234856463eac5370ac7",
+    "bundleSize":  23513703,
+    "updatedAt":  1779696941,
+    "gameLink":  "https://www.excellenth5game.com/Hill_of_Steel/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_95022",
+    "category":  "Action",
+    "rate":  8.2,
+    "gameType":  1,
+    "localFile":  "Hill_of_Steel.zip",
+    "localBytes":  23513703,
+    "verifiedAt":  "2026-10-20T11:18:11",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

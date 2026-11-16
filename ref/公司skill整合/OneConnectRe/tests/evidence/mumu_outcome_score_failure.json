@@ -1,0 +1,12 @@
+{
+  "level": 17,
+  "naturalPair": true,
+  "controlledTimeout": true,
+  "score": 260,
+  "event": {
+    "level": 17,
+    "score": 260,
+    "reason": "timeout"
+  },
+  "errors": []
+}

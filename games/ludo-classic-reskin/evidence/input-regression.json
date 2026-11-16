@@ -1,0 +1,31 @@
+[
+  {
+    "kind": "wrong-owner",
+    "revision": 0,
+    "rng": {
+      "algorithm": "mulberry32-v1",
+      "initialSeed": 1,
+      "state": 1831565814,
+      "rawDrawCount": 1
+    },
+    "inputs": [
+      "mouse",
+      "Enter",
+      "Space",
+      "touch"
+    ]
+  },
+  {
+    "kind": "reduced-stale-owner",
+    "oldOwner": 2,
+    "currentOwner": 0,
+    "revision": 2
+  },
+  {
+    "kind": "delayed-image",
+    "path": "assets/board-cross.png",
+    "startDisabled": true,
+    "resumeDisabled": true,
+    "readyResumeIdentical": true
+  }
+]

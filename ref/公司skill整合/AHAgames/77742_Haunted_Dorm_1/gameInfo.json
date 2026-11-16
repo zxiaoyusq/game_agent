@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "77742",
+    "apiName":  "Haunted Dorm 1",
+    "targetName":  "Haunted Dorm 1",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Ghost_3D.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260826/b80fb37d1ba8848bd62e198b147ab83c.zip",
+    "bundleMd5":  "b80fb37d1ba8848bd62e198b147ab83c",
+    "bundleSize":  3543397,
+    "updatedAt":  1787838858,
+    "gameLink":  "https://www.fatfishgame.com/Ghost_3D/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_77742",
+    "category":  "Adventure",
+    "rate":  7.1,
+    "gameType":  1,
+    "localFile":  "Haunted_Dorm_1.zip",
+    "localBytes":  3543397,
+    "verifiedAt":  "2026-10-20T11:12:16",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

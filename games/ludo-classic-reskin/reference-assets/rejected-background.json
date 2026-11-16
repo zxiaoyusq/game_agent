@@ -1,0 +1,6 @@
+{
+  "path": "reference-assets/rejected-background-no-reference.webp",
+  "sha256": "9d6c4c5b541c96b7d785f0e22e2988961898d681a3fb119864d5bb76009493f6",
+  "reason": "原包PNG扩展实际WEBP导致参考验证失败后，运行退回无参考生成；该候选不符合局部参考图编辑要求，已从运行资源目录移出，不得用于最终游戏。",
+  "run_id": "2c30a5ff7d2e41e59899b8ef099359cc"
+}

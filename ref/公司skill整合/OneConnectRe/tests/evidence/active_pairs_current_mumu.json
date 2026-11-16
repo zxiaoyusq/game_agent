@@ -1,0 +1,54 @@
+[
+  {
+    "name": "perf_original_20261031",
+    "pairs": 10,
+    "sample": {
+      "frames": 507,
+      "p95": 16.66700000000128,
+      "p99": 16.66700000000128,
+      "max": 16.66700000000128,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 7226936
+  },
+  {
+    "name": "perf_control_20261031",
+    "pairs": 10,
+    "sample": {
+      "frames": 511,
+      "p95": 16.66700000000128,
+      "p99": 16.66700000000128,
+      "max": 16.66700000000128,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 11026296
+  },
+  {
+    "name": "perf_control_20261031",
+    "pairs": 10,
+    "sample": {
+      "frames": 509,
+      "p95": 16.66700000000037,
+      "p99": 16.66700000000037,
+      "max": 16.66700000000037,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 12191528
+  },
+  {
+    "name": "perf_original_20261031",
+    "pairs": 10,
+    "sample": {
+      "frames": 510,
+      "p95": 16.66700000000037,
+      "p99": 16.66700000000037,
+      "max": 16.66700000000037,
+      "over50": 0,
+      "longtasks": 0
+    },
+    "used_heap_bytes": 8407376
+  }
+]

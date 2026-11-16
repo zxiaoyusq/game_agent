@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-21",
+  "games": 74,
+  "tiers": {
+    "P0": 6,
+    "P2": 44,
+    "P3": 8,
+    "P1": 16
+  },
+  "originalCardsPreserved": true,
+  "inlineImagesPreserved": 370,
+  "originalHtmlSHA256": "efa7056a22d99460114020c9442c2a57047ca1dc64ca7ae3af4d26f5728e9a10",
+  "modifiedHtmlSHA256": "e607c7626773b7cc491f5fecf713a54c67d326ac79a78e7718ff70e32fe1367a",
+  "browserVerification": "未执行：浏览器拒绝file协议访问；未绕过该限制",
+  "scope": "静态选型初筛；未修改游戏ZIP、玩法、代码或美术资产",
+  "interactionLogicChecks": {
+    "environment": "Node VM with minimal DOM contract; not a real browser",
+    "checks": [
+      "74 cards and 74 rows",
+      "P0 filter = 6",
+      "ID search",
+      "combined category/priority/search and empty result",
+      "Chinese note search",
+      "all five sorting modes",
+      "reset filters",
+      "jump reveals hidden target",
+      "card/table visibility synchronization",
+      "weighted scores",
+      "unique IDs and local links"
+    ],
+    "status": "PASS"
+  }
+}

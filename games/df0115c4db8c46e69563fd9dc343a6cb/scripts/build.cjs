@@ -1,0 +1,8 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const spec=JSON.parse(fs.readFileSync('workflow/visual-spec.json','utf8'));
+fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist',{recursive:true});
+for(const file of ['index.html','style.css','rules.js','storage.js','renderer.js','input.js','app.js']){let text=fs.readFileSync('src/'+file,'utf8');if(file==='app.js')text=text.replace('/* VISUAL_SPEC */null',JSON.stringify(spec));fs.writeFileSync('dist/'+file,text);}
+const manifest=JSON.parse(fs.readFileSync('workflow/art-manifest.json','utf8'));
+for(const relative of [...Object.values(spec.tiles).map(v=>v.path),spec.background.path]){const source='public/'+relative,entry=manifest.assets.find(a=>a.path===source);const buffer=fs.readFileSync(source),hash=crypto.createHash('sha256').update(buffer).digest('hex');if(!entry||entry.sha256!==hash)throw new Error('正式素材哈希不匹配：'+source);fs.mkdirSync(path.dirname('dist/'+relative),{recursive:true});fs.writeFileSync('dist/'+relative,buffer);}
+function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(dir+'/'+e.name):[dir+'/'+e.name]);}
+const entries=walk('dist').sort().map(p=>({path:p.slice(5),bytes:fs.statSync(p).size,sha256:crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex')}));const bytes=entries.reduce((s,e)=>s+e.bytes,0);if(bytes>=10*1024*1024)throw new Error('构建超过10MB');fs.mkdirSync('evidence',{recursive:true});fs.writeFileSync('evidence/build.json',JSON.stringify({entries,bytes},null,2));console.log('构建成功：'+entries.length+'个文件，'+bytes+'字节；普通本地脚本支持离线。');

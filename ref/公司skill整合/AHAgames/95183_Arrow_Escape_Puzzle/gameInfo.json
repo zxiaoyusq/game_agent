@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95183,
+    "apiName":  "Arrow Escape Puzzle",
+    "targetName":  "Arrow Escape Puzzle",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Arrow_Escape_Puzzle.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260610/9ce6e273beb30bab95766c12e261a467.zip",
+    "bundleMd5":  "9ce6e273beb30bab95766c12e261a467",
+    "bundleSize":  278325,
+    "updatedAt":  1781096889,
+    "gameLink":  "https://www.qianqiuh5game.com/Arrow_Escape_Puzzle/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95183",
+    "category":  "Puzzle",
+    "rate":  8.3,
+    "gameType":  1,
+    "localFile":  "Arrow_Escape_Puzzle.zip",
+    "localBytes":  278325,
+    "verifiedAt":  "2026-10-20T10:35:04",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

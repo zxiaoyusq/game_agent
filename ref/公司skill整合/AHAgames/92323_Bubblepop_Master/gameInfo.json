@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  92323,
+    "apiName":  "Bubblepop Master",
+    "targetName":  "Bubblepop Master",
+    "match":  "EXACT",
+    "bundleName":  "re_re_Bubblepop_Master.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260907/b6d2e2d5766111333d4b741ad110180b.zip",
+    "bundleMd5":  "b6d2e2d5766111333d4b741ad110180b",
+    "bundleSize":  11793675,
+    "updatedAt":  1788832776,
+    "gameLink":  "https://www.excellenth5game.com/Bubblepop_Master/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_92323",
+    "category":  "Puzzle",
+    "rate":  7.1,
+    "gameType":  1,
+    "localFile":  "Bubblepop_Master.zip",
+    "localBytes":  11793675,
+    "verifiedAt":  "2026-10-20T10:39:15",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

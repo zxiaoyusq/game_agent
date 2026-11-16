@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preload" href="c2runtime.js" as="script">
+<link rel="preload" href="jquery-3.4.1.min.js" as="script">
+<link rel="preload" href="data.js" as="fetch" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Onet Connect Classic</title>
+
+
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="true" />
+
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #181B39;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+
+
+</head>
+
+<body>
+	<div id="fb-root"></div>
+
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="1280" height="720">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>
+				Try to earn as many points as you can in this cute Mahjong connect game! Select your favorite theme - funny animals, yummy sweets or healthy food and start playing! Your task is to find pairs and remove all tiles from the field before the time is up. The path between two tiles can't have more than three lines or two 90 degree angles though. Play strategically because if there is no possible move left to link two tiles, the board reshuffles. If you have no shuffle left or the time has run out, the game is over! How many levels can you beat?
+				<br /><br />
+				Versuche in diesem süßen Mahjong Verbindespiel so viele Punkte wie möglich zu erreichen! Wähle dein Lieblingsthema - niedliche Tiere, leckere Süßigkeiten oder gesundes Essen und leg los! Ziel ist es, Paare zu finden und alle Steine vom Feld zu räumen, bevor die Zeit um ist. Zwei Steine können allerdings nur über maximal drei Linien oder zwei 90° Winkel verbunden sein. Spiele strategisch, denn wenn kein Zug mehr möglich ist, mischt sich das Feld neu durch. Wenn du keine Mischen-Hilfen mehr hast oder die Zeit abläuft, ist das Spiel vorbei. Wie viele Level schaffst du?
+			</h1>
+		</canvas>
+
+	</div>
+
+	<script>
+        (function () {
+            var elapsed = 0, previous = Date.now(), panel = null;
+            window.oneConnectRecoveryWatch = setInterval(function () {
+                var now = Date.now(); if (!document.hidden) elapsed += Math.min(now - previous, 1000); previous = now;
+                if (elapsed < 45000 || panel || !document.body) return;
+                panel = document.createElement('div'); panel.id = 'startup-slow-recovery'; panel.setAttribute('role', 'status');
+                panel.style.cssText = 'position:fixed;left:10%;right:10%;bottom:8%;z-index:2147483646;padding:16px;border-radius:18px;background:#1c3473;color:white;text-align:center;font:16px sans-serif';
+                var label = document.createElement('p'); label.textContent = 'Still loading. You can wait or retry.';
+                var retry = document.createElement('button'); retry.type = 'button'; retry.textContent = 'Retry'; retry.style.cssText = 'margin-top:12px;padding:10px 26px;border:0;border-radius:18px;background:#168fe9;color:white;font-weight:bold'; retry.onclick = function () { location.reload(); };
+                panel.appendChild(label); panel.appendChild(retry); document.body.appendChild(panel);
+                try { if (window.parent !== window && window.parent.h5_sdk && window.parent.h5_sdk.showGameLoadingError) window.parent.h5_sdk.showGameLoadingError(); } catch (_) {}
+            }, 250);
+            window.oneConnectRecoveryLoaded = function () { clearInterval(window.oneConnectRecoveryWatch); if (panel) panel.remove(); };
+        })();
+        window.oneConnectRecoveryMissing = function () {
+            window.oneConnectRecoveryLoaded();
+            window.oneConnectStartupFailed = true;
+            document.addEventListener('DOMContentLoaded', function () {
+                try { if (window.parent !== window && window.parent.h5_sdk && window.parent.h5_sdk.showGameLoadingError) window.parent.h5_sdk.showGameLoadingError(); } catch (_) {}
+                var panel = document.createElement('div'); panel.id = 'startup-recovery'; panel.setAttribute('role', 'alert');
+                panel.style.cssText = 'position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:#0a0f26;color:white;font:16px sans-serif;text-align:center';
+                var card = document.createElement('div'); card.style.cssText = 'padding:24px;border-radius:24px;background:#1c3473';
+                var message = document.createElement('p'); message.textContent = 'Unable to load the game. Check your connection and try again.';
+                var retry = document.createElement('button'); retry.textContent = 'Retry'; retry.type = 'button'; retry.style.cssText = 'margin-top:16px;padding:12px 32px;border:0;border-radius:18px;background:#168fe9;color:white;font-weight:bold'; retry.onclick = function () { location.reload(); };
+                card.appendChild(message); card.appendChild(retry); panel.appendChild(card); document.body.appendChild(panel);
+            });
+        };
+    </script>
+    <script src="startup-recovery.js" onload="oneConnectRecoveryLoaded()" onerror="oneConnectRecoveryMissing()"></script>
+	<script src="ad-policy.js"></script>
+	<script src="host-adapter.js"></script>
+    <script src="reward-lifecycle.js"></script>
+	<script src="event-hooks.js"></script>
+    <script src="level-progress.js"></script>
+    <script src="first-level-transition.js"></script>
+    <script src="menu-progress.js"></script>
+	<script src="level-config.js"></script>
+	<script src="board-generator.js"></script>
+    <script src="board-gravity.js"></script>
+    <script src="gravity-generator.js"></script>
+    <script src="gravity-runtime.js"></script>
+    <script src="hammer-model.js"></script>
+    <script src="hammer-runtime.js"></script>
+    <script src="round-save-model.js"></script>
+    <script src="round-save.js"></script>
+    <script src="board-error.js"></script>
+    <script src="board-hooks.js"></script>
+    <script src="auto-shuffle.js"></script>
+    <script src="tutorial-config.js"></script>
+    <script src="tutorial-first.js"></script>
+    <script src="tutorial-second.js"></script>
+    <script src="tutorial-third.js"></script>
+    <script src="tutorial-fifth.js"></script>
+    <script src="tutorial-seventh.js"></script>
+    <script src="tutorial-tenth.js"></script>
+    <script src="menu-score-plate.js"></script>
+	<script>
+	    // Package-ID
+	    window.famobi_gameID = "onet-connect-classic";
+	    window.famobi_gameJS = [
+	        "jquery-3.4.1.min.js",
+	        "c2runtime.js",
+	        function(){
+
+	        	// Create new runtime using the c2canvas
+	            if (window.oneConnectStartupFailed) return;
+            oneConnectInstrumentation.install();
+            oneConnectProgress.install();
+            oneConnectRoundSave.install();
+            oneConnectFirstTransition.install();
+            oneConnectMenuProgress.install();
+	            oneConnectBoard.install();
+            oneConnectGravityRuntime.install();
+            oneConnectHammer.install();
+            oneConnectAutoShuffle.install();
+            oneConnectTutorial.install();
+            oneConnectSecondGuide.install();
+            oneConnectThirdGuide.install();
+            oneConnectFifthGuide.install();
+            oneConnectSeventhGuide.install();
+            oneConnectTenthGuide.install();
+	            (function () {
+                        var start = function () { cr_createRuntime("c2canvas"); };
+                        if (!window.localforage || !localforage.setDriver) { start(); return; }
+                        localforage.setDriver(localforage.LOCALSTORAGE).then(function () { return localforage.ready(); }).then(start, function (error) { console.warn("Storage setup failed; continuing:", error); start(); });
+                    })();
+
+	            // Pause and resume on page becoming visible/invisible
+	            function onVisibilityChanged() {
+	            	if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+	            		cr_setSuspended(true);
+	            	else
+	            		cr_setSuspended(false);
+	            };
+
+	            document.addEventListener("visibilitychange", onVisibilityChanged, false);
+	            document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+	            document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+	            document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+	        }
+	    ];
+
+	    (function (document, url, fgJS, firstJS) {
+	            fgJS = document.createElement('script');
+	            firstJS = document.getElementsByTagName('script')[0];
+	            fgJS.src = url + encodeURIComponent(document.location.href);
+	            firstJS.parentNode.insertBefore(fgJS, firstJS);
+	    })(document, 'html5games/gameapi/v1.js?e=');
+	</script>
+
+
+<script>
+(function(){
+ if (!('serviceWorker' in navigator) || !(location.protocol === 'https:' || location.hostname === '127.0.0.1' || location.hostname === 'localhost')) return;
+ var timer=setInterval(function(){
+   var r=window.cr_getC2Runtime && window.cr_getC2Runtime();
+   if (!r || !r.running_layout) return;
+   clearInterval(timer);
+   navigator.serviceWorker.getRegistration(new URL('./',location.href).href).then(function(existing){
+     if(existing && (!existing.active || existing.active.scriptURL !== new URL('./offline-worker.js', location.href).href)) return;
+     return navigator.serviceWorker.register('./offline-worker.js',{scope:'./'});
+   }).catch(function(error){console.warn('Offline cache unavailable:',error)});
+ },1000);
+})();
+</script>
+<script src="offline-update-notice.js"></script>
+</body>
+</html>

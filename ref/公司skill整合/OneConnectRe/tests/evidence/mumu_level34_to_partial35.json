@@ -1,0 +1,11 @@
+{
+  "startLevel": 34,
+  "startTiles": 72,
+  "end": {
+    "level": 35,
+    "progress": 35,
+    "tiles": 60,
+    "errors": []
+  },
+  "scope": "isolated test progress; original fallback board; automated pair selection"
+}

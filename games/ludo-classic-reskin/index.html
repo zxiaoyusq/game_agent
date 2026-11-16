@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="LUDO经典飞行棋：原版十字棋盘与亮面棋子，真实摇骰、逐格跳动和吃子动画。支持2至4人同屏与人机、经典和快速对局。"
+    />
+    <title>LUDO · 原版贴图与动画版</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="scene" aria-label="LUDO游戏">
+      <canvas id="game" aria-label="四色十字棋盘"></canvas>
+      <div id="controls"></div>
+      <div id="menu" class="panel">
+        <h1>LUDO</h1>
+        <p>掷出六点出营 · 全部归家获胜</p>
+        <label
+          >模式
+          <select id="mode">
+            <option value="classic">经典 · 四枚归家</option>
+            <option value="quick">快速 · 一枚归家</option>
+          </select></label
+        >
+        <label
+          >人数
+          <select id="count">
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select></label
+        >
+        <label
+          >对局
+          <select id="players">
+            <option value="ai">人机</option>
+            <option value="human">同屏</option>
+          </select></label
+        >
+        <button id="start" class="texture" disabled>开始游戏</button>
+        <button id="resume" class="texture" hidden disabled>继续对局</button>
+        <button id="retry" class="texture" hidden>刷新重试</button>
+      </div>
+      <div id="settings" class="panel" hidden>
+        <h2>设置 · 已暂停</h2>
+        <label><input id="mute" type="checkbox" /> 静音</label>
+        <label><input id="reduced" type="checkbox" /> 减少动态</label>
+        <button id="close" class="texture">返回游戏</button>
+        <button id="restart" class="texture">重新选局</button>
+      </div>
+      <p id="status" aria-live="polite"></p>
+      <p id="error" role="alert"></p>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

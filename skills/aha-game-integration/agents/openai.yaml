@@ -1,0 +1,4 @@
+interface:
+  display_name: "AHA 游戏接入"
+  short_description: "接入 AHA 游戏埋点、插屏与激励广告，处理暂停恢复并完成联调验收"
+  default_prompt: "使用 $aha-game-integration 检查当前游戏工程，接入 AHA 埋点和广告，并输出配置清单与验收结果。"

@@ -31,6 +31,7 @@ description: Use when 要对 Android 游戏或应用执行可重复的真机视�
 - 字段或场景写不对 → `modules/vision-device-testing/references/scenario-schema.md`
 - 不清楚该采什么、或采到了敏感数据 → `modules/vision-device-testing/references/collection-boundaries.md`
 - 结论定不下来 → 正文「验收规则」与「状态」两节
+- H5 低内存、进程内存归属、帧耗时或 WebGL/后台恢复 → [H5 包体与运行优化](../hosted-minigame-harvest/references/h5-package-runtime-optimization.md) §7；这是专项证据参考，不替代本模块正式管线，局部浏览器冒烟单列
 
 全局五步循环与六条铁律见 `references/execution-protocol.md`。
 

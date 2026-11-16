@@ -1,0 +1,2556 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AHA Games 小游戏资源总览</title>
+<style>
+:root{
+  --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2a2f3a;
+  --fg:#e8eaed; --dim:#9aa3b2; --accent:#4c8dff; --accent2:#22c55e; --warn:#f59e0b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);
+  background:rgba(15,17,21,.86);border-bottom:1px solid var(--line);padding:16px 28px}
+h1{margin:0 0 6px;font-size:20px;letter-spacing:.3px}
+.sub{color:var(--dim);font-size:13px}
+.stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:10px;font-size:13px}
+.stats b{color:var(--fg);font-size:15px}
+.stats span{color:var(--dim)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;align-items:center}
+input[type=search],select{background:var(--panel2);border:1px solid var(--line);color:var(--fg);
+  border-radius:8px;padding:8px 12px;font-size:14px;outline:none;min-width:220px}
+input[type=search]:focus,select:focus{border-color:var(--accent)}
+.count{color:var(--dim);font-size:13px;margin-left:auto}
+main{padding:24px 28px 80px;max-width:1500px;margin:0 auto}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  margin-bottom:22px;overflow:hidden}
+.card-head{display:flex;gap:18px;padding:18px 20px;align-items:flex-start}
+.icon{width:88px;height:88px;border-radius:18px;flex:0 0 88px;object-fit:cover;
+  background:var(--panel2);border:1px solid var(--line)}
+.head-main{flex:1;min-width:0}
+.title-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.name{font-size:19px;font-weight:650}
+.idx{color:var(--dim);font-size:12px;font-variant-numeric:tabular-nums}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.badge{background:var(--panel2);border:1px solid var(--line);border-radius:999px;
+  padding:2px 11px;font-size:12px;color:var(--dim);white-space:nowrap}
+.badge.rate{color:#ffd166;border-color:#3a3320;background:#241f12}
+.badge.cat{color:var(--accent);border-color:#22334f;background:#141c2b}
+.badge.dev{color:#c084fc;border-color:#35244a;background:#1d1527}
+.folder{margin-top:9px;font:12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;
+  color:var(--accent2);background:#10151a;border:1px solid #1d2a22;
+  border-radius:7px;padding:5px 10px;display:inline-block;word-break:break-all}
+.desc{margin-top:10px;font-size:14px}
+.desc .lead{font-weight:600}
+.desc .body{color:var(--dim);margin-top:5px;font-size:13.5px}
+.art{display:flex;gap:14px;flex-wrap:wrap;padding:0 20px 18px;align-items:flex-start}
+.art figure{margin:0;background:var(--panel2);border:1px solid var(--line);
+  border-radius:10px;overflow:hidden}
+.art figcaption{font-size:11px;color:var(--dim);padding:5px 10px;
+  border-top:1px solid var(--line);letter-spacing:.4px}
+.art img{display:block;background:#0a0c10}
+.img-banner img{width:560px;height:auto;max-width:100%}
+.img-hot img{width:236px;height:auto}
+.img-theme img{width:196px;height:auto}
+.img-preview img{width:132px;height:auto}
+.links{padding:0 20px 18px;font-size:13px;color:var(--dim);display:flex;gap:16px;flex-wrap:wrap}
+.taglist{color:var(--dim);font-size:12.5px}
+footer{color:var(--dim);font-size:12.5px;text-align:center;padding:30px;
+  border-top:1px solid var(--line);margin-top:10px}
+.hl{background:#3a2f10;color:#ffd166;border-radius:3px;padding:0 2px}
+.hidden{display:none}
+@media(max-width:720px){
+  .card-head{flex-direction:column}.icon{width:72px;height:72px;flex-basis:72px}
+  .img-banner img{width:100%}
+}
+</style>
+</head><body>
+<header>
+<h1>AHA Games · 小游戏资源总览</h1>
+<div class="sub">来源 AHA Games (<code>net.bat.store</code>) 商店接口 + CDN 直链 · 生成于 2026-10-20 11:24</div>
+<div class="stats">
+  <div><b>74</b> <span>个游戏</span></div>
+  <div><b>758.0 MB</b> <span>原包体</span></div>
+  <div><b>370</b> <span>张美术素材</span></div>
+  <div><b>18</b> <span>个分类</span></div>
+</div>
+<div class="toolbar">
+  <input type="search" id="q" placeholder="搜索游戏名 / 文件夹名 / 分类 / 标签 …">
+  <select id="cat"><option value="">全部分类</option>
+    <option value="Action">Action</option>
+    <option value="Adventure">Adventure</option>
+    <option value="Arcade">Arcade</option>
+    <option value="Ball games">Ball games</option>
+    <option value="Card">Card</option>
+    <option value="Casual">Casual</option>
+    <option value="Children">Children</option>
+    <option value="Female">Female</option>
+    <option value="Match">Match</option>
+    <option value="Parkour">Parkour</option>
+    <option value="Puzzle">Puzzle</option>
+    <option value="Racing">Racing</option>
+    <option value="Shooting">Shooting</option>
+    <option value="Simulation">Simulation</option>
+    <option value="Single challenge">Single challenge</option>
+    <option value="Sports">Sports</option>
+    <option value="Strategy">Strategy</option>
+    <option value="Tabletop">Tabletop</option>
+  </select>
+  <span class="count" id="cnt"></span>
+</div>
+</header><main id="list">
+<section class="card" data-cat="Puzzle" data-s="arrow puzzle2 94098_arrow_puzzle2 puzzle arrow puzzle2 puzzle, level games, line">
+<div class="card-head">
+  <img class="icon" src="94098_Arrow_Puzzle2/art/icon.webp" alt="Arrow Puzzle2" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Arrow Puzzle2</span><span class="idx">#01 · id 94098</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.0</span>
+      <span class="badge">3.33M</span>
+      <span class="badge">包体 1.9 MB</span>
+      <span class="badge dev">开发商 HONGKONG MINIGAME TECHNOLOGY CO., LIMITED</span>
+    </div>
+    <div class="folder">📁 94098_Arrow_Puzzle2</div>
+    <div class="desc">
+      <div class="lead">Challenging logic line puzzles!</div>
+      <div class="body">Welcome to Arrows-Puzzle Escape, a minimalist puzzle game that challenges your logic, planning, and spatial thinking. Your goal is simple: extract each arrow without causing a collision.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94098_Arrow_Puzzle2/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94098_Arrow_Puzzle2/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94098_Arrow_Puzzle2/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94098_Arrow_Puzzle2/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260121/65585a6bf5ff7cc831bc1796562ca418.zip" target="_blank" rel="noreferrer">65585a6bf5ff7cc831bc1796562ca418.zip</a></span>
+  <span>MD5 <code>65585a6bf5ff7cc831bc1796562ca418</code></span>
+  <span>在线入口：<a href="https://www.hkminih5game.com/Arrow_Puzzle2/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94098" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Level Games, Line</span>
+</div>
+</section>
+<section class="card" data-cat="Strategy" data-s="haunted dorm original 91055_haunted_dorm_original strategy haunted dorm original ">
+<div class="card-head">
+  <img class="icon" src="91055_Haunted_Dorm_original/art/icon.webp" alt="Haunted Dorm original" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Haunted Dorm original</span><span class="idx">#02 · id 91055</span></div>
+    <div class="badges">
+      <span class="badge cat">Strategy</span>
+      <span class="badge rate">★ 8.7</span>
+      <span class="badge">35.28M</span>
+      <span class="badge">包体 20.0 MB</span>
+      <span class="badge dev">开发商 MIHUAN LIMITED</span>
+    </div>
+    <div class="folder">📁 91055_Haunted_Dorm_original</div>
+    <div class="desc">
+      <div class="lead">Five dead, one  alive, who&#39;s that?</div>
+      <div class="body">*Genuine ghost strategy and escape game. Escape the pursuit of ghosts and find a dorm to survive in!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="91055_Haunted_Dorm_original/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="91055_Haunted_Dorm_original/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="91055_Haunted_Dorm_original/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="91055_Haunted_Dorm_original/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250418/11122189169.zip" target="_blank" rel="noreferrer">11122189169.zip</a></span>
+  <span>MD5 <code>1bccbea7307b07f698c3541b8bc3a15f</code></span>
+  <span>在线入口：<a href="https://www.mihuanh5game.com/Haunted_Dorm_original/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_91055" target="_blank" rel="noreferrer">打开</a></span>
+</div>
+</section>
+<section class="card" data-cat="Card" data-s="classic spider solitaire 77856_classic_spider_solitaire card classic spider solitaire ">
+<div class="card-head">
+  <img class="icon" src="77856_Classic_Spider_Solitaire/art/icon.webp" alt="Classic Spider Solitaire" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Classic Spider Solitaire</span><span class="idx">#03 · id 77856</span></div>
+    <div class="badges">
+      <span class="badge cat">Card</span>
+      <span class="badge rate">★ 8.7</span>
+      <span class="badge">2.55M</span>
+      <span class="badge">包体 1.4 MB</span>
+      <span class="badge dev">开发商 厦门鹭小糖电子商务有限公司</span>
+    </div>
+    <div class="folder">📁 77856_Classic_Spider_Solitaire</div>
+    <div class="desc">
+      <div class="lead">Classic games never go out of style!</div>
+      <div class="body">Classic poker solitaire game, simple to play, easy to get started, can&#39;t stop!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="77856_Classic_Spider_Solitaire/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="77856_Classic_Spider_Solitaire/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="77856_Classic_Spider_Solitaire/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="77856_Classic_Spider_Solitaire/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250417/02144074610.zip" target="_blank" rel="noreferrer">02144074610.zip</a></span>
+  <span>MD5 <code>fecfcda7e7621b4aaad1ca6276f7294d</code></span>
+  <span>在线入口：<a href="https://www.lxtgame.com/Classic_Spider_Solitaire/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_77856" target="_blank" rel="noreferrer">打开</a></span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="arrow out puzzle 95176_arrow_out_puzzle puzzle arrow out puzzle puzzle, arrow">
+<div class="card-head">
+  <img class="icon" src="95176_Arrow_Out_Puzzle/art/icon.webp" alt="Arrow Out Puzzle" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Arrow Out Puzzle</span><span class="idx">#04 · id 95176</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">2.89M</span>
+      <span class="badge">包体 1.6 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 95176_Arrow_Out_Puzzle</div>
+    <div class="desc">
+      <div class="lead">Slide arrows out of the maze!</div>
+      <div class="body">* Tap or slide arrows in their facing direction.
+* Clear the board by finding every open path.
+* Use hints wisely and protect your heart lives.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95176_Arrow_Out_Puzzle/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95176_Arrow_Out_Puzzle/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95176_Arrow_Out_Puzzle/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95176_Arrow_Out_Puzzle/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260610/0188778ac266247ac542bb0e48fa03c0.zip" target="_blank" rel="noreferrer">0188778ac266247ac542bb0e48fa03c0.zip</a></span>
+  <span>MD5 <code>0188778ac266247ac542bb0e48fa03c0</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Arrow_Out_Puzzle/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95176" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Arrow</span>
+</div>
+</section>
+<section class="card" data-cat="Single challenge" data-s="princess rescue fruit connect 92300_princess_rescue_fruit_connect single challenge princess rescue fruit connect match 3, makeup">
+<div class="card-head">
+  <img class="icon" src="92300_Princess_Rescue_Fruit_Connect/art/icon.webp" alt="Princess Rescue Fruit Connect" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Princess Rescue Fruit Connect</span><span class="idx">#05 · id 92300</span></div>
+    <div class="badges">
+      <span class="badge cat">Single challenge</span>
+      <span class="badge rate">★ 7.0</span>
+      <span class="badge">5.57M</span>
+      <span class="badge">包体 2.9 MB</span>
+      <span class="badge dev">开发商 厦门途鹭</span>
+    </div>
+    <div class="folder">📁 92300_Princess_Rescue_Fruit_Connect</div>
+    <div class="desc">
+      <div class="lead">Come and save the princess!</div>
+      <div class="body">Come and help the princess to overcome the difficult situation! Quickly find the cards you want to eliminate, stop the stones from pushing the princess into the trap, test your powers of observation and accept exciting challenges to save the lovely princess.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="92300_Princess_Rescue_Fruit_Connect/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="92300_Princess_Rescue_Fruit_Connect/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="92300_Princess_Rescue_Fruit_Connect/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="92300_Princess_Rescue_Fruit_Connect/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260824/7a2dd9b39bd442c6c200dcd0d45e774b.zip" target="_blank" rel="noreferrer">7a2dd9b39bd442c6c200dcd0d45e774b.zip</a></span>
+  <span>MD5 <code>7a2dd9b39bd442c6c200dcd0d45e774b</code></span>
+  <span>在线入口：<a href="https://www.ooppgame.com/Princess_Rescue_Fruit_Connect/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_92300" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Match 3, Makeup</span>
+</div>
+</section>
+<section class="card" data-cat="Casual" data-s="candy crush 77924_candy_crush casual candy crush casual, brain teaser, candy">
+<div class="card-head">
+  <img class="icon" src="77924_Candy_Crush/art/icon.webp" alt="Candy Crush" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Candy Crush</span><span class="idx">#06 · id 77924</span></div>
+    <div class="badges">
+      <span class="badge cat">Casual</span>
+      <span class="badge rate">★ 7.6</span>
+      <span class="badge">4.22M</span>
+      <span class="badge">包体 2.3 MB</span>
+      <span class="badge dev">开发商 上海冰寒纪科技有限公司</span>
+    </div>
+    <div class="folder">📁 77924_Candy_Crush</div>
+    <div class="desc">
+      <div class="lead">Start playing Candy Crush Saga today</div>
+      <div class="body">*Play Candy Crush Saga and switch and match your way through hundreds of levels in this divine puzzle adventure.
+*you have to connect different colored candy by creating chains to make them disappear while also ranking up through at least 200 levels that you&#39;ll find along the way on your sugary</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="77924_Candy_Crush/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="77924_Candy_Crush/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="77924_Candy_Crush/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="77924_Candy_Crush/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20240408/12234588821.zip" target="_blank" rel="noreferrer">12234588821.zip</a></span>
+  <span>MD5 <code>98e857851684c18f2dead694115889e8</code></span>
+  <span>在线入口：<a href="https://www.bhjgame.com/Candy_Crush/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_77924" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Brain Teaser, Candy</span>
+</div>
+</section>
+<section class="card" data-cat="Parkour" data-s="subway surfers bali 88788_subway_surfers_bali parkour subway surfers bali ">
+<div class="card-head">
+  <img class="icon" src="88788_Subway_Surfers_Bali/art/icon.webp" alt="Subway Surfers Bali" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Subway Surfers Bali</span><span class="idx">#07 · id 88788</span></div>
+    <div class="badges">
+      <span class="badge cat">Parkour</span>
+      <span class="badge rate">★ 7.8</span>
+      <span class="badge">36M</span>
+      <span class="badge">包体 24.7 MB</span>
+      <span class="badge dev">开发商 COIHUB TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 88788_Subway_Surfers_Bali</div>
+    <div class="desc">
+      <div class="lead">The subway is about to leave!</div>
+      <div class="body">Dodge oncoming trains as fast as you can and choose your favorite character to surf the subway with a skateboard. Dodge the police and get high scores. The subway is about to leave, what are you waiting for?</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="88788_Subway_Surfers_Bali/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="88788_Subway_Surfers_Bali/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="88788_Subway_Surfers_Bali/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="88788_Subway_Surfers_Bali/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251209/b33954542af328fcd66a9c2276a99488.zip" target="_blank" rel="noreferrer">b33954542af328fcd66a9c2276a99488.zip</a></span>
+  <span>MD5 <code>b33954542af328fcd66a9c2276a99488</code></span>
+  <span>在线入口：<a href="https://www.volcanoh5game.com/Subway_Surfers_Bali/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_88788" target="_blank" rel="noreferrer">打开</a></span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="two player games 88251_two_player_games puzzle two player games challenge">
+<div class="card-head">
+  <img class="icon" src="88251_Two_Player_Games/art/icon.webp" alt="Two Player Games" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Two Player Games</span><span class="idx">#08 · id 88251</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 7.7</span>
+      <span class="badge">26.07M</span>
+      <span class="badge">包体 13.9 MB</span>
+      <span class="badge dev">开发商 HONGKONG MINIGAME TECHNOLOGY CO., LIMITED</span>
+    </div>
+    <div class="folder">📁 88251_Two_Player_Games</div>
+    <div class="desc">
+      <div class="lead">Challenge your friends with this 2-player game</div>
+      <div class="body">*Challenge your friends with this 2-player game and enjoy the awesome graphics of the mini-games!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="88251_Two_Player_Games/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="88251_Two_Player_Games/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="88251_Two_Player_Games/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="88251_Two_Player_Games/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260908/9367215492087370e7d1dafc83eeb407.zip" target="_blank" rel="noreferrer">9367215492087370e7d1dafc83eeb407.zip</a></span>
+  <span>MD5 <code>9367215492087370e7d1dafc83eeb407</code></span>
+  <span>在线入口：<a href="https://www.hkminih5game.com/Two_Player_Games/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_88251" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Challenge</span>
+</div>
+</section>
+<section class="card" data-cat="Shooting" data-s="bullet bros 93083_bullet_bros shooting bullet bros action, shooter, platformer">
+<div class="card-head">
+  <img class="icon" src="93083_Bullet_Bros/art/icon.webp" alt="Bullet Bros" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Bullet Bros</span><span class="idx">#09 · id 93083</span></div>
+    <div class="badges">
+      <span class="badge cat">Shooting</span>
+      <span class="badge rate">★ 9.1</span>
+      <span class="badge">7.92M</span>
+      <span class="badge">包体 5.4 MB</span>
+      <span class="badge dev">开发商 上海云端次元科技有限公司</span>
+    </div>
+    <div class="folder">📁 93083_Bullet_Bros</div>
+    <div class="desc">
+      <div class="lead">Jump, spin, shoot, hit every shot!</div>
+      <div class="body">You hold a powerful gun, adding a whole new dimension to the gameplay. Use the recoil of shooting to propel oneself in the air, rotate, and shoot down enemies! The more you play, the more cool costumes and powerful guns you can unlock!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93083_Bullet_Bros/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93083_Bullet_Bros/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93083_Bullet_Bros/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93083_Bullet_Bros/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250811/7ea5ac55b230dce5fe19094bcb400858.zip" target="_blank" rel="noreferrer">7ea5ac55b230dce5fe19094bcb400858.zip</a></span>
+  <span>MD5 <code>7ea5ac55b230dce5fe19094bcb400858</code></span>
+  <span>在线入口：<a href="https://www.shyunduangame.com/Bullet_Bros/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93083" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Action, Shooter, Platformer</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="hexa sort 91558_hexa_sort puzzle hexa sort brain teaser, color sorting">
+<div class="card-head">
+  <img class="icon" src="91558_Hexa_Sort/art/icon.webp" alt="Hexa Sort" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Hexa Sort</span><span class="idx">#10 · id 91558</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.8</span>
+      <span class="badge">2.84M</span>
+      <span class="badge">包体 1.5 MB</span>
+      <span class="badge dev">开发商 上海赤焰网络科技有限公司</span>
+    </div>
+    <div class="folder">📁 91558_Hexa_Sort</div>
+    <div class="desc">
+      <div class="lead">Put them together</div>
+      <div class="body">It combines challenging tile puzzle strategy, coordination, and a satisfying color-grading process that will leave you physically and mentally exhausted. This game stimulates your mind with clever puzzle solving and logical strategies, making it ideal for those looking for a brain workout.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="91558_Hexa_Sort/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="91558_Hexa_Sort/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="91558_Hexa_Sort/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="91558_Hexa_Sort/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20240919/10120155252.zip" target="_blank" rel="noreferrer">10120155252.zip</a></span>
+  <span>MD5 <code>f8b4936fb780f429cfd9a9e47623b95d</code></span>
+  <span>在线入口：<a href="https://www.shchiyangame.com/Hexa_Sort/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_91558" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Brain Teaser, Color Sorting</span>
+</div>
+</section>
+<section class="card" data-cat="Match" data-s="one connect 77413_one_connect match one connect match 3, puzzle">
+<div class="card-head">
+  <img class="icon" src="77413_One_Connect/art/icon.webp" alt="One Connect" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">One Connect</span><span class="idx">#11 · id 77413</span></div>
+    <div class="badges">
+      <span class="badge cat">Match</span>
+      <span class="badge rate">★ 7.5</span>
+      <span class="badge">3.41M</span>
+      <span class="badge">包体 2.3 MB</span>
+      <span class="badge dev">开发商 上海冰寒纪科技有限公司</span>
+    </div>
+    <div class="folder">📁 77413_One_Connect</div>
+    <div class="desc">
+      <div class="lead">Onet Connect is a classic connecting game</div>
+      <div class="body">*Your goal is to connect two same things and completely clear the board.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="77413_One_Connect/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="77413_One_Connect/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="77413_One_Connect/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="77413_One_Connect/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20240313/12531964731.zip" target="_blank" rel="noreferrer">12531964731.zip</a></span>
+  <span>MD5 <code>79859a6ae795650e23c6fb520adde84c</code></span>
+  <span>在线入口：<a href="https://www.bhjgame.com/One_Connect/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_77413" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Match 3, Puzzle</span>
+</div>
+</section>
+<section class="card" data-cat="Match" data-s="flowers match 95103_flowers_match match flowers match puzzle, relaxing, match 3d">
+<div class="card-head">
+  <img class="icon" src="95103_Flowers_Match/art/icon.webp" alt="Flowers Match" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Flowers Match</span><span class="idx">#12 · id 95103</span></div>
+    <div class="badges">
+      <span class="badge cat">Match</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">26.99M</span>
+      <span class="badge">包体 15.4 MB</span>
+      <span class="badge dev">开发商 上海羊羽计算机科技有限公司</span>
+    </div>
+    <div class="folder">📁 95103_Flowers_Match</div>
+    <div class="desc">
+      <div class="lead">Create floral masterpieces by merging!</div>
+      <div class="body">Flowers Match: Merge Mania perfectly blends classic match-3 gameplay with innovative flower merging, creating a fragrant wonderland! In this enchanting puzzle game, you&#39;ll become a master florist, arranging blooms to create stunning floral displays in your dream garden.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95103_Flowers_Match/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95103_Flowers_Match/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95103_Flowers_Match/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95103_Flowers_Match/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260604/c607ee51a665850ec459f848c6cc7638.zip" target="_blank" rel="noreferrer">c607ee51a665850ec459f848c6cc7638.zip</a></span>
+  <span>MD5 <code>c607ee51a665850ec459f848c6cc7638</code></span>
+  <span>在线入口：<a href="https://www.shyangyugame.com/Flowers_Match/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95103" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Relaxing, Match 3D</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="arrow escape puzzle 95183_arrow_escape_puzzle puzzle arrow escape puzzle arcade, action, maze">
+<div class="card-head">
+  <img class="icon" src="95183_Arrow_Escape_Puzzle/art/icon.webp" alt="Arrow Escape Puzzle" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Arrow Escape Puzzle</span><span class="idx">#13 · id 95183</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.3</span>
+      <span class="badge">513K</span>
+      <span class="badge">包体 0.3 MB</span>
+      <span class="badge dev">开发商 上海乐汾信息科技有限公司</span>
+    </div>
+    <div class="folder">📁 95183_Arrow_Escape_Puzzle</div>
+    <div class="desc">
+      <div class="lead">Shoot arrows, escape the maze!</div>
+      <div class="body">* Aim and shoot arrows to hit targets.
+* Solve puzzles to open doors.
+* Escape before time runs out.
+</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95183_Arrow_Escape_Puzzle/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95183_Arrow_Escape_Puzzle/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95183_Arrow_Escape_Puzzle/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95183_Arrow_Escape_Puzzle/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260610/9ce6e273beb30bab95766c12e261a467.zip" target="_blank" rel="noreferrer">9ce6e273beb30bab95766c12e261a467.zip</a></span>
+  <span>MD5 <code>9ce6e273beb30bab95766c12e261a467</code></span>
+  <span>在线入口：<a href="https://www.qianqiuh5game.com/Arrow_Escape_Puzzle/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95183" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Arcade, Action, Maze</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="tidy master 93876_tidy_master puzzle tidy master puzzle, goods sort, merge 3">
+<div class="card-head">
+  <img class="icon" src="93876_Tidy_Master/art/icon.webp" alt="Tidy Master" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Tidy Master</span><span class="idx">#14 · id 93876</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.9</span>
+      <span class="badge">12.81M</span>
+      <span class="badge">包体 6.8 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 93876_Tidy_Master</div>
+    <div class="desc">
+      <div class="lead">Craving some super satisfying organizing fun?</div>
+      <div class="body">Craving some super satisfying organizing fun? Step into Tidy Master and become a storage pro! Tackle cluttered shelves stuffed with snacks, drinks, and cute decor group ice creams into a neat row, stack milk cartons perfectly, and even reunite matching penguin figurines!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93876_Tidy_Master/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93876_Tidy_Master/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93876_Tidy_Master/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93876_Tidy_Master/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260909/9a36d2e2acb652d75061c759679e7d6d.zip" target="_blank" rel="noreferrer">9a36d2e2acb652d75061c759679e7d6d.zip</a></span>
+  <span>MD5 <code>9a36d2e2acb652d75061c759679e7d6d</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Tidy_Master/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93876" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Goods Sort, Merge 3</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="pixel shooter no wifi 89009_pixel_shooter_no_wifi action pixel shooter no wifi battle">
+<div class="card-head">
+  <img class="icon" src="89009_Pixel_Shooter_no_wifi/art/icon.webp" alt="Pixel Shooter no wifi" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Pixel Shooter no wifi</span><span class="idx">#15 · id 89009</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.8</span>
+      <span class="badge">8.55M</span>
+      <span class="badge">包体 4.9 MB</span>
+      <span class="badge dev">开发商 巩磊</span>
+    </div>
+    <div class="folder">📁 89009_Pixel_Shooter_no_wifi</div>
+    <div class="desc">
+      <div class="lead">Single player PK, 3v3, team RPG, multiple mode</div>
+      <div class="body">players should tap to move their character and tap on the screen to jump or shoot their weapons.
+Players should aim to defeat all their enemies while avoiding getting hit themselves. It&#39;s important to keep an eye on their health and use any available upgrades or power-ups to help them in the game. </div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="89009_Pixel_Shooter_no_wifi/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="89009_Pixel_Shooter_no_wifi/art/hotgame.jpg" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="89009_Pixel_Shooter_no_wifi/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="89009_Pixel_Shooter_no_wifi/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260130/0a923ab6b5e1adfdc0c9869bc8a53f25.zip" target="_blank" rel="noreferrer">0a923ab6b5e1adfdc0c9869bc8a53f25.zip</a></span>
+  <span>MD5 <code>0a923ab6b5e1adfdc0c9869bc8a53f25</code></span>
+  <span>在线入口：<a href="https://www.gongleih5game.com/PixelShooter/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_89009" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Battle</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="playground sandbox 93707_playground_sandbox simulation playground sandbox role playing, simulation, sandbox">
+<div class="card-head">
+  <img class="icon" src="93707_Playground_Sandbox/art/icon.webp" alt="Playground Sandbox" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Playground Sandbox</span><span class="idx">#16 · id 93707</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 8.4</span>
+      <span class="badge">3.24M</span>
+      <span class="badge">包体 1.7 MB</span>
+      <span class="badge dev">开发商 ORANGE JOY TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 93707_Playground_Sandbox</div>
+    <div class="desc">
+      <div class="lead">a Zombies-vs-Humans war simulation game</div>
+      <div class="body">* Build your own base,choose your weapons, add as many zombies as you want,and watch the epic battles unfold! No more mods required.
+* Cool ragdoll physics
+* Tanks, helicopters, and quadcopters
+* Build and destroy freely
+* Smarter zombies &amp; braver humans</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93707_Playground_Sandbox/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93707_Playground_Sandbox/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93707_Playground_Sandbox/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93707_Playground_Sandbox/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251204/7739623ad4ec06eac701dfdc00742007.zip" target="_blank" rel="noreferrer">7739623ad4ec06eac701dfdc00742007.zip</a></span>
+  <span>MD5 <code>7739623ad4ec06eac701dfdc00742007</code></span>
+  <span>在线入口：<a href="https://www.gztongmenggame.com/Playground_Sandbox/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93707" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Role Playing, Simulation, Sandbox</span>
+</div>
+</section>
+<section class="card" data-cat="Card" data-s="solitaireclassic no wifi 89159_solitaireclassic_no_wifi card solitaireclassic no wifi ">
+<div class="card-head">
+  <img class="icon" src="89159_SolitaireClassic_no_wifi/art/icon.webp" alt="SolitaireClassic no wifi" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">SolitaireClassic no wifi</span><span class="idx">#17 · id 89159</span></div>
+    <div class="badges">
+      <span class="badge cat">Card</span>
+      <span class="badge rate">★ 7.7</span>
+      <span class="badge">2.91M</span>
+      <span class="badge">包体 1.5 MB</span>
+      <span class="badge dev">开发商 巩磊</span>
+    </div>
+    <div class="folder">📁 89159_SolitaireClassic_no_wifi</div>
+    <div class="desc">
+      <div class="lead">Classic game multiple features sleek design</div>
+      <div class="body">- Drag cards in the tableau (seven piles that make up the main table) to build sequences in descending order and alternating color.
+- If you uncover an ace, place it first in one of the foundation piles (four piles at the top of the board).
+</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="89159_SolitaireClassic_no_wifi/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="89159_SolitaireClassic_no_wifi/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="89159_SolitaireClassic_no_wifi/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="89159_SolitaireClassic_no_wifi/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260906/ec6ae91b8cf9e655d4c64c147eb2727e.zip" target="_blank" rel="noreferrer">ec6ae91b8cf9e655d4c64c147eb2727e.zip</a></span>
+  <span>MD5 <code>ec6ae91b8cf9e655d4c64c147eb2727e</code></span>
+  <span>在线入口：<a href="https://www.gongleih5game.com/SolitaireClassic/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_89159" target="_blank" rel="noreferrer">打开</a></span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="superpowers battle ground 94445_superpowers_battle_ground action superpowers battle ground action, role playing, sandbox">
+<div class="card-head">
+  <img class="icon" src="94445_Superpowers_Battle_Ground/art/icon.webp" alt="Superpowers Battle Ground" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Superpowers Battle Ground</span><span class="idx">#18 · id 94445</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">12.8M</span>
+      <span class="badge">包体 6.5 MB</span>
+      <span class="badge dev">开发商 ORANGE JOY TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 94445_Superpowers_Battle_Ground</div>
+    <div class="desc">
+      <div class="lead">Fight against powerful enemies push your limit</div>
+      <div class="body">Fight against powerful enemies, push your limits, and unlock your second awakening!
+
+This online fighting game is made for both veterans and newcomers.
+Jump into intense, action-packed battles, gain experience, and challenge players from around the world.
+
+Rise through the ranks and claim ultimate </div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94445_Superpowers_Battle_Ground/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94445_Superpowers_Battle_Ground/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94445_Superpowers_Battle_Ground/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94445_Superpowers_Battle_Ground/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260321/c6bc181a31886f0c21d070346f8cc9e0.zip" target="_blank" rel="noreferrer">c6bc181a31886f0c21d070346f8cc9e0.zip</a></span>
+  <span>MD5 <code>c6bc181a31886f0c21d070346f8cc9e0</code></span>
+  <span>在线入口：<a href="https://www.gztongmenggame.com/Superpowers_Battle_Ground/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94445" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Action, Role Playing, Sandbox</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="fruit pair match 95486_fruit_pair_match puzzle fruit pair match puzzle, relaxing">
+<div class="card-head">
+  <img class="icon" src="95486_Fruit_Pair_Match/art/icon.webp" alt="Fruit Pair Match" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Fruit Pair Match</span><span class="idx">#19 · id 95486</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.3</span>
+      <span class="badge">7.67M</span>
+      <span class="badge">包体 4.1 MB</span>
+      <span class="badge dev">开发商 HONGKONG MINIGAME TECHNOLOGY CO., LIMITED</span>
+    </div>
+    <div class="folder">📁 95486_Fruit_Pair_Match</div>
+    <div class="desc">
+      <div class="lead">Match juicy fruits!</div>
+      <div class="body">Fruit Pair Match is a vibrant and addictive puzzle game where you clear colorful fruits to fill your crate. Enjoy a refreshing challenge as you match and collect juicy treats in this delightful adventure!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95486_Fruit_Pair_Match/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95486_Fruit_Pair_Match/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95486_Fruit_Pair_Match/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95486_Fruit_Pair_Match/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260713/f6d46f3045145b59549ecff4b1d1c72e.zip" target="_blank" rel="noreferrer">f6d46f3045145b59549ecff4b1d1c72e.zip</a></span>
+  <span>MD5 <code>f6d46f3045145b59549ecff4b1d1c72e</code></span>
+  <span>在线入口：<a href="https://www.hkminih5game.com/Fruit_Pair_Match/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95486" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Relaxing</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="cubes 2048 94905_cubes_2048 puzzle cubes 2048 merge puzzle, conquest">
+<div class="card-head">
+  <img class="icon" src="94905_Cubes_2048/art/icon.webp" alt="Cubes 2048" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Cubes 2048</span><span class="idx">#20 · id 94905</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">14.84M</span>
+      <span class="badge">包体 7.8 MB</span>
+      <span class="badge dev">开发商 郑州市烁云科技有限公司</span>
+    </div>
+    <div class="folder">📁 94905_Cubes_2048</div>
+    <div class="desc">
+      <div class="lead">Snake 2048: collect cubes, merge to grow</div>
+      <div class="body">Move to collect free cubes and grow
+Eat players with smaller numbers to get stronger
+Same-value cubes bumping will merge into bigger ones
+Avoid larger players to stay alive</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94905_Cubes_2048/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94905_Cubes_2048/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94905_Cubes_2048/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94905_Cubes_2048/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260511/d7ca8a784d55ef033ac5f754fe4f87b9.zip" target="_blank" rel="noreferrer">d7ca8a784d55ef033ac5f754fe4f87b9.zip</a></span>
+  <span>MD5 <code>d7ca8a784d55ef033ac5f754fe4f87b9</code></span>
+  <span>在线入口：<a href="https://www.fabboxh5game.com/Cubes_2048/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94905" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Merge Puzzle, Conquest</span>
+</div>
+</section>
+<section class="card" data-cat="Match" data-s="mahjong mania2 93880_mahjong_mania2 match mahjong mania2 puzzle, level games, merge puzzle">
+<div class="card-head">
+  <img class="icon" src="93880_Mahjong_Mania2/art/icon.webp" alt="Mahjong Mania2" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Mahjong Mania2</span><span class="idx">#21 · id 93880</span></div>
+    <div class="badges">
+      <span class="badge cat">Match</span>
+      <span class="badge rate">★ 8.2</span>
+      <span class="badge">7.13M</span>
+      <span class="badge">包体 4.2 MB</span>
+      <span class="badge dev">开发商 HONGKONG MINIGAME TECHNOLOGY CO., LIMITED</span>
+    </div>
+    <div class="folder">📁 93880_Mahjong_Mania2</div>
+    <div class="desc">
+      <div class="lead">Eliminate all Mahjong!</div>
+      <div class="body">Click the mahjong on the map to enter the display bar, and 3 identical mahjong can be cleared.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93880_Mahjong_Mania2/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93880_Mahjong_Mania2/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93880_Mahjong_Mania2/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93880_Mahjong_Mania2/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251218/23306fc659386f3b37743a7cc62ddc95.zip" target="_blank" rel="noreferrer">23306fc659386f3b37743a7cc62ddc95.zip</a></span>
+  <span>MD5 <code>23306fc659386f3b37743a7cc62ddc95</code></span>
+  <span>在线入口：<a href="https://www.hkminih5game.com/Mahjong_Mania2/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93880" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Level Games, Merge Puzzle</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="sort water now 93316_sort_water_now puzzle sort water now puzzle, water sort">
+<div class="card-head">
+  <img class="icon" src="93316_Sort_Water_Now/art/icon.webp" alt="Sort Water Now" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Sort Water Now</span><span class="idx">#22 · id 93316</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.8</span>
+      <span class="badge">2.84M</span>
+      <span class="badge">包体 1.6 MB</span>
+      <span class="badge dev">开发商 Fortune Star Technology Limited</span>
+    </div>
+    <div class="folder">📁 93316_Sort_Water_Now</div>
+    <div class="desc">
+      <div class="lead">This is a casual puzzle water splashing game!</div>
+      <div class="body">This is a casual puzzle water splashing game!
+The game starts simple and gradually becomes complex and challenging.
+Rich and charming levels and various combinations of props make classic puzzle games look brand new!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93316_Sort_Water_Now/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93316_Sort_Water_Now/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93316_Sort_Water_Now/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93316_Sort_Water_Now/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250926/4b7dde7daa56822684a7633dd89b84cf.zip" target="_blank" rel="noreferrer">4b7dde7daa56822684a7633dd89b84cf.zip</a></span>
+  <span>MD5 <code>4b7dde7daa56822684a7633dd89b84cf</code></span>
+  <span>在线入口：<a href="https://www.fortuneh5game.com/Sort_Water_Now/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93316" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Water Sort</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="bubble shooter with friends 87138_bubble_shooter_with_friends puzzle bubble shooter with friends stylized, bubble shooter, casual">
+<div class="card-head">
+  <img class="icon" src="87138_Bubble_Shooter_With_Friends/art/icon.webp" alt="Bubble Shooter With Friends" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Bubble Shooter With Friends</span><span class="idx">#23 · id 87138</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 7.7</span>
+      <span class="badge">6.46M</span>
+      <span class="badge">包体 3.7 MB</span>
+      <span class="badge dev">开发商 北京金玩科技有限公司</span>
+    </div>
+    <div class="folder">📁 87138_Bubble_Shooter_With_Friends</div>
+    <div class="desc">
+      <div class="lead">Play with your friends!</div>
+      <div class="body">Bubble blasting is more enjoyable than ever before! 
+
+Lose the track of time and dive into the bubble jungles where your bubble friends always wait for you to shoot bubbles and rescue animals trapped in bubble troubles.
+
+The fantastic and charming atmosphere and friendly and lovely animal characters</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="87138_Bubble_Shooter_With_Friends/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="87138_Bubble_Shooter_With_Friends/art/hotgame.jpg" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="87138_Bubble_Shooter_With_Friends/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="87138_Bubble_Shooter_With_Friends/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20241226/07291635145.zip" target="_blank" rel="noreferrer">07291635145.zip</a></span>
+  <span>MD5 <code>09b39521b32be7338d0cf6e0310dcab2</code></span>
+  <span>在线入口：<a href="https://www.bjjinwangame.com/Bubble_Shooter_With_Friends/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_87138" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Stylized, Bubble Shooter, Casual</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="plonky 93517_plonky action plonky adventure, action-adventure">
+<div class="card-head">
+  <img class="icon" src="93517_Plonky/art/icon.webp" alt="Plonky" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Plonky</span><span class="idx">#24 · id 93517</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">6.27M</span>
+      <span class="badge">包体 3.9 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 93517_Plonky</div>
+    <div class="desc">
+      <div class="lead">You will control the character to explore!</div>
+      <div class="body">You will control the character to explore in cartoon-style scenes, solve puzzles by interacting with mechanisms (such as switches and movable structures), start an adventure in a tropical environment.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93517_Plonky/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93517_Plonky/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93517_Plonky/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93517_Plonky/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251112/5c018ea1a10f2ca5a815e74578345461.zip" target="_blank" rel="noreferrer">5c018ea1a10f2ca5a815e74578345461.zip</a></span>
+  <span>MD5 <code>5c018ea1a10f2ca5a815e74578345461</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Plonky/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93517" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Adventure, Action-adventure</span>
+</div>
+</section>
+<section class="card" data-cat="Tabletop" data-s="carrom clash master 90189_carrom_clash_master tabletop carrom clash master board">
+<div class="card-head">
+  <img class="icon" src="90189_Carrom_Clash_Master/art/icon.webp" alt="Carrom Clash Master" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Carrom Clash Master</span><span class="idx">#25 · id 90189</span></div>
+    <div class="badges">
+      <span class="badge cat">Tabletop</span>
+      <span class="badge rate">★ 7.6</span>
+      <span class="badge">5.61M</span>
+      <span class="badge">包体 3.9 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 90189_Carrom_Clash_Master</div>
+    <div class="desc">
+      <div class="lead">Play the classic carrom board game</div>
+      <div class="body">Carrom Clash is a free, family-friendly board game that will bring back memories of your childhood. Carrom or Karrom or caram, the Indian version of the more colloquially named billiard disc or billiard billiards or carrom billiards or billiards city.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="90189_Carrom_Clash_Master/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="90189_Carrom_Clash_Master/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="90189_Carrom_Clash_Master/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="90189_Carrom_Clash_Master/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260306/743a70109241a74f3bfc99272a96fdad.zip" target="_blank" rel="noreferrer">743a70109241a74f3bfc99272a96fdad.zip</a></span>
+  <span>MD5 <code>743a70109241a74f3bfc99272a96fdad</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Carrom_Clash_Master/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_90189" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Board</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="sprunki playground 94158_sprunki_playground simulation sprunki playground simulation, physics, relaxing">
+<div class="card-head">
+  <img class="icon" src="94158_Sprunki_Playground/art/icon.webp" alt="Sprunki Playground" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Sprunki Playground</span><span class="idx">#26 · id 94158</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 8.1</span>
+      <span class="badge">4.63M</span>
+      <span class="badge">包体 2.6 MB</span>
+      <span class="badge dev">开发商 ORANGE JOY TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 94158_Sprunki_Playground</div>
+    <div class="desc">
+      <div class="lead">create real wars between Sprunkys</div>
+      <div class="body">Sprunki Playground is a new simulation and mod for the game, where you can create real wars between Sprunkys.
+Spawn characters, add weapons, build chaos, and just have fun
+
+Features:
+* Tons of characters, weapons, and armor to choose from.
+
+* Build structures  then destroy them however you like.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94158_Sprunki_Playground/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94158_Sprunki_Playground/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94158_Sprunki_Playground/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94158_Sprunki_Playground/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260204/7ed46cee6c8be07a3c156241a9f38449.zip" target="_blank" rel="noreferrer">7ed46cee6c8be07a3c156241a9f38449.zip</a></span>
+  <span>MD5 <code>7ed46cee6c8be07a3c156241a9f38449</code></span>
+  <span>在线入口：<a href="https://www.gztongmenggame.com/Sprunki_Playground/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94158" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Simulation, Physics, Relaxing</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="toca world 93706_toca_world simulation toca world role playing, simulation, sandbox">
+<div class="card-head">
+  <img class="icon" src="93706_Toca_world/art/icon.webp" alt="Toca world" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Toca world</span><span class="idx">#27 · id 93706</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 9.0</span>
+      <span class="badge">13.65M</span>
+      <span class="badge">包体 7.4 MB</span>
+      <span class="badge dev">开发商 ORANGE JOY TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 93706_Toca_world</div>
+    <div class="desc">
+      <div class="lead">Build, play, explore,your story starts in Toca</div>
+      <div class="body">* Chat &amp; Make Friends!
+
+* Character Creator!
+
+* Loads of New Furniture &amp; Decorations!
+
+* Many Houses to Choose From!
+
+* Expressive Characters!
+
+* Extra Character Slots!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93706_Toca_world/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93706_Toca_world/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93706_Toca_world/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93706_Toca_world/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251204/a7996ee3b8aadaa5b1ae858d0e09e445.zip" target="_blank" rel="noreferrer">a7996ee3b8aadaa5b1ae858d0e09e445.zip</a></span>
+  <span>MD5 <code>a7996ee3b8aadaa5b1ae858d0e09e445</code></span>
+  <span>在线入口：<a href="https://www.gztongmenggame.com/Toca_world/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93706" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Role Playing, Simulation, Sandbox</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="bubble shooter go 94215_bubble_shooter_go puzzle bubble shooter go casual, arcade, puzzle">
+<div class="card-head">
+  <img class="icon" src="94215_Bubble_Shooter_GO/art/icon.webp" alt="Bubble Shooter GO" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Bubble Shooter GO</span><span class="idx">#28 · id 94215</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">7.36M</span>
+      <span class="badge">包体 4.2 MB</span>
+      <span class="badge dev">开发商 云上创意（厦门）科技有限公司</span>
+    </div>
+    <div class="folder">📁 94215_Bubble_Shooter_GO</div>
+    <div class="desc">
+      <div class="lead">What&#39;s your longest combo in Bubble Shooter?</div>
+      <div class="body">Pop bubbles by forming groups of three or more of the same color. The field descends if you miss. Use power-ups and aim for big combos to score high! What&#39;s your longest combo?</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94215_Bubble_Shooter_GO/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94215_Bubble_Shooter_GO/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94215_Bubble_Shooter_GO/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94215_Bubble_Shooter_GO/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260206/2b5bf5f3010207e0624b73d2c0308444.zip" target="_blank" rel="noreferrer">2b5bf5f3010207e0624b73d2c0308444.zip</a></span>
+  <span>MD5 <code>2b5bf5f3010207e0624b73d2c0308444</code></span>
+  <span>在线入口：<a href="https://www.xmyunshanggame.com/Bubble_Shooter_GO/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94215" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Arcade, Puzzle</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="militarily playground 95060_militarily_playground action militarily playground simulation, single player, physics">
+<div class="card-head">
+  <img class="icon" src="95060_Militarily_Playground/art/icon.webp" alt="Militarily Playground" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Militarily Playground</span><span class="idx">#29 · id 95060</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">10.59M</span>
+      <span class="badge">包体 5.5 MB</span>
+      <span class="badge dev">开发商 BOOM TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 95060_Militarily_Playground</div>
+    <div class="desc">
+      <div class="lead">Ultimate military ragdoll sandbox!</div>
+      <div class="body">*Spawn unique ragdolls and zombies.
+*Command tanks, trucks, and helicopters.
+*Equip deadly firearms, RPGs, and TNT.
+*Trigger massive physics-based battles.
+*Unleash your ultimate sandbox chaos.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95060_Militarily_Playground/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95060_Militarily_Playground/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95060_Militarily_Playground/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95060_Militarily_Playground/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260528/fdc2663c322cda94c3937ba59f7910f3.zip" target="_blank" rel="noreferrer">fdc2663c322cda94c3937ba59f7910f3.zip</a></span>
+  <span>MD5 <code>fdc2663c322cda94c3937ba59f7910f3</code></span>
+  <span>在线入口：<a href="https://www.hzxinpigame.com/Militarily_Playground/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95060" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Simulation, Single Player, Physics</span>
+</div>
+</section>
+<section class="card" data-cat="Match" data-s="mahjong clear 93438_mahjong_clear match mahjong clear casual, puzzle">
+<div class="card-head">
+  <img class="icon" src="93438_Mahjong_Clear/art/icon.webp" alt="Mahjong Clear" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Mahjong Clear</span><span class="idx">#30 · id 93438</span></div>
+    <div class="badges">
+      <span class="badge cat">Match</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">3.28M</span>
+      <span class="badge">包体 1.8 MB</span>
+      <span class="badge dev">开发商 厦门途鹭</span>
+    </div>
+    <div class="folder">📁 93438_Mahjong_Clear</div>
+    <div class="desc">
+      <div class="lead">Start your mahjong fingertip healing journey!</div>
+      <div class="body">Inspired by classic mahjong, we create an immersive elimination experience, allowing the perfect collision of traditional Chinese charm and stress-relieving gameplay!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93438_Mahjong_Clear/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93438_Mahjong_Clear/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93438_Mahjong_Clear/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93438_Mahjong_Clear/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251027/760cccb0c5bf18d73c1ff702579df959.zip" target="_blank" rel="noreferrer">760cccb0c5bf18d73c1ff702579df959.zip</a></span>
+  <span>MD5 <code>760cccb0c5bf18d73c1ff702579df959</code></span>
+  <span>在线入口：<a href="https://www.ooppgame.com/Mahjong_Clear/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93438" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Puzzle</span>
+</div>
+</section>
+<section class="card" data-cat="Racing" data-s="real city bikes 95111_real_city_bikes racing real city bikes simulation, sandbox, motorcycle">
+<div class="card-head">
+  <img class="icon" src="95111_Real_City_Bikes/art/icon.webp" alt="Real City Bikes" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Real City Bikes</span><span class="idx">#31 · id 95111</span></div>
+    <div class="badges">
+      <span class="badge cat">Racing</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">56.65M</span>
+      <span class="badge">包体 28.3 MB</span>
+      <span class="badge dev">开发商 深圳市山之网络科技有限公司</span>
+    </div>
+    <div class="folder">📁 95111_Real_City_Bikes</div>
+    <div class="desc">
+      <div class="lead">Real City Bikes is an epic 3D motorbike stunt</div>
+      <div class="body">Real City Bikes is an exciting 3D motorbike stunt game. Players ride through a massive open world, drift on city streets, and leap off giant ramps to earn CR points. Use your rewards to unlock fast motorcycles in the shop and dominate the leaderboard with epic flips and long jumps!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95111_Real_City_Bikes/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95111_Real_City_Bikes/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95111_Real_City_Bikes/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95111_Real_City_Bikes/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260605/d1750c3a5194e5ac93fbdab17a1a6eb5.zip" target="_blank" rel="noreferrer">d1750c3a5194e5ac93fbdab17a1a6eb5.zip</a></span>
+  <span>MD5 <code>d1750c3a5194e5ac93fbdab17a1a6eb5</code></span>
+  <span>在线入口：<a href="https://www.shanzhih5game.com/Real_City_Bikes/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95111" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Simulation, Sandbox, Motorcycle</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="who dies last 95433_who_dies_last action who dies last action, relaxing, battle">
+<div class="card-head">
+  <img class="icon" src="95433_Who_Dies_Last/art/icon.webp" alt="Who Dies Last" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Who Dies Last</span><span class="idx">#32 · id 95433</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">50.13M</span>
+      <span class="badge">包体 25.2 MB</span>
+      <span class="badge dev">开发商 上海羊羽计算机科技有限公司</span>
+    </div>
+    <div class="folder">📁 95433_Who_Dies_Last</div>
+    <div class="desc">
+      <div class="lead">A unpredictable ragdoll action</div>
+      <div class="body">This game is packed with fun and unpredictable ragdoll action, featuring hilarious moments and over-the-top encounters. Choose your favorite hero, equip them with weapons, and jump into an epic stickman fight.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95433_Who_Dies_Last/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95433_Who_Dies_Last/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95433_Who_Dies_Last/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95433_Who_Dies_Last/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260708/3d6509bc2bc47ad54c10cdbf64ceddc9.zip" target="_blank" rel="noreferrer">3d6509bc2bc47ad54c10cdbf64ceddc9.zip</a></span>
+  <span>MD5 <code>3d6509bc2bc47ad54c10cdbf64ceddc9</code></span>
+  <span>在线入口：<a href="https://www.shyangyugame.com/Who_Dies_Last/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95433" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Action, Relaxing, Battle</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="bubblepop master 92323_bubblepop_master puzzle bubblepop master casual, stylized, bubble shooter">
+<div class="card-head">
+  <img class="icon" src="92323_Bubblepop_Master/art/icon.webp" alt="Bubblepop Master" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Bubblepop Master</span><span class="idx">#33 · id 92323</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 7.1</span>
+      <span class="badge">21.73M</span>
+      <span class="badge">包体 11.2 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 92323_Bubblepop_Master</div>
+    <div class="desc">
+      <div class="lead">Aim, shoot, and pop your way to victory!</div>
+      <div class="body">Step into the colorful world of Bubblepop Master! Aim and shoot bubbles to match 3 or more of the same color and pop them. Clear all bubbles or complete specific objectives to win. With fast-paced action and endless challenges, it&#39;s perfect for casual and competitive players alike!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="92323_Bubblepop_Master/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="92323_Bubblepop_Master/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="92323_Bubblepop_Master/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="92323_Bubblepop_Master/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260907/b6d2e2d5766111333d4b741ad110180b.zip" target="_blank" rel="noreferrer">b6d2e2d5766111333d4b741ad110180b.zip</a></span>
+  <span>MD5 <code>b6d2e2d5766111333d4b741ad110180b</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Bubblepop_Master/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_92323" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Stylized, Bubble Shooter</span>
+</div>
+</section>
+<section class="card" data-cat="Card" data-s="solitaire classic klondike 93571_solitaire_classic_klondike card solitaire classic klondike card, sort">
+<div class="card-head">
+  <img class="icon" src="93571_Solitaire_Classic_Klondike/art/icon.webp" alt="Solitaire Classic Klondike" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Solitaire Classic Klondike</span><span class="idx">#34 · id 93571</span></div>
+    <div class="badges">
+      <span class="badge cat">Card</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">3.17M</span>
+      <span class="badge">包体 1.8 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 93571_Solitaire_Classic_Klondike</div>
+    <div class="desc">
+      <div class="lead">Move the cards to organize the sequences.</div>
+      <div class="body">In the game &quot;Solitaire - Classic Klondike&quot;, the green table layout is clear. There are four empty &quot;A&quot; slots at the top for stacking sequences starting from A by suit. In the columns below, you can see that the Ace of Hearts and the 2 of Spades can be stacked in sequence. </div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93571_Solitaire_Classic_Klondike/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93571_Solitaire_Classic_Klondike/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93571_Solitaire_Classic_Klondike/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93571_Solitaire_Classic_Klondike/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251119/094327749443fdcd0bd4a25cb64c26df.zip" target="_blank" rel="noreferrer">094327749443fdcd0bd4a25cb64c26df.zip</a></span>
+  <span>MD5 <code>094327749443fdcd0bd4a25cb64c26df</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Solitaire_Classic_Klondike/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93571" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Card, Sort</span>
+</div>
+</section>
+<section class="card" data-cat="Strategy" data-s="survive 84696_survive strategy survive ">
+<div class="card-head">
+  <img class="icon" src="84696_Survive/art/icon.png" alt="Survive" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Survive</span><span class="idx">#35 · id 84696</span></div>
+    <div class="badges">
+      <span class="badge cat">Strategy</span>
+      <span class="badge rate">★ 7.6</span>
+      <span class="badge">22.66M</span>
+      <span class="badge">包体 16.4 MB</span>
+      <span class="badge dev">开发商 岩雀</span>
+    </div>
+    <div class="folder">📁 84696_Survive</div>
+    <div class="desc">
+      <div class="lead">Among us style and room defense game!</div>
+      <div class="body">*Unlock your favourite hero!
+*Hold this door, waiting for dawnlight!
+*Update your base and build your defenders!
+*3 modes.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="84696_Survive/art/banner.png" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="84696_Survive/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="84696_Survive/art/theme.png" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="84696_Survive/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20230404/10013874435.zip" target="_blank" rel="noreferrer">10013874435.zip</a></span>
+  <span>MD5 <code>9793a07cd1e511e80ca2752c87021ed8</code></span>
+  <span>在线入口：<a href="https://www.brigebirdgame.com/Survive/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_84696" target="_blank" rel="noreferrer">打开</a></span>
+</div>
+</section>
+<section class="card" data-cat="Parkour" data-s="noobs escape barrys prison 95222_noobs_escape_barrys_prison parkour obby escape from barry prison escape, school, escape room">
+<div class="card-head">
+  <img class="icon" src="95222_Noobs_Escape_Barrys_Prison/art/icon.webp" alt="Noobs Escape Barrys Prison" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Noobs Escape Barrys Prison</span><span class="idx">#36 · id 95222</span></div>
+    <div class="badges">
+      <span class="badge cat">Parkour</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">31.76M</span>
+      <span class="badge">包体 17.1 MB</span>
+      <span class="badge dev">开发商 NewbeeTech Limited</span>
+    </div>
+    <div class="folder">📁 95222_Noobs_Escape_Barrys_Prison</div>
+    <div class="desc">
+      <div class="lead">Run, jump, escape Barry&#39;s prison!</div>
+      <div class="body">* Escape Barry&#39;s prison by completing challenging obstacle courses.
+* On PC: Use WASD to move, Space to jump, mouse to rotate the camera.
+* On mobile: Use the joystick to move, tap right to jump, swipe to look around.
+* Stay patient, avoid traps, and survive to break out!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95222_Noobs_Escape_Barrys_Prison/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95222_Noobs_Escape_Barrys_Prison/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95222_Noobs_Escape_Barrys_Prison/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95222_Noobs_Escape_Barrys_Prison/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260612/d1e5df9ab5028cf3356780af56950876.zip" target="_blank" rel="noreferrer">d1e5df9ab5028cf3356780af56950876.zip</a></span>
+  <span>MD5 <code>d1e5df9ab5028cf3356780af56950876</code></span>
+  <span>在线入口：<a href="https://www.newbeetechh5game.com/Noobs_Escape_Barrys_Prison/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95222" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Escape, School, Escape Room</span>
+</div>
+</section>
+<section class="card" data-cat="Arcade" data-s="robby mini games 95426_robby_mini_games arcade robby mini games arcade, adventure, relaxing">
+<div class="card-head">
+  <img class="icon" src="95426_Robby_Mini_Games/art/icon.webp" alt="Robby Mini Games" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Robby Mini Games</span><span class="idx">#37 · id 95426</span></div>
+    <div class="badges">
+      <span class="badge cat">Arcade</span>
+      <span class="badge rate">★ 8.1</span>
+      <span class="badge">32.42M</span>
+      <span class="badge">包体 16.2 MB</span>
+      <span class="badge dev">开发商 上海羊羽计算机科技有限公司</span>
+    </div>
+    <div class="folder">📁 95426_Robby_Mini_Games</div>
+    <div class="desc">
+      <div class="lead">Hang out in a lively lobby packed</div>
+      <div class="body">Hang out in a lively lobby packed with activities, play soccer, complete a light-themed obstacle course, or relax on the swings while waiting for your next challenge.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95426_Robby_Mini_Games/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95426_Robby_Mini_Games/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95426_Robby_Mini_Games/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95426_Robby_Mini_Games/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260707/36f865753a40ef02f04004af68d8c196.zip" target="_blank" rel="noreferrer">36f865753a40ef02f04004af68d8c196.zip</a></span>
+  <span>MD5 <code>36f865753a40ef02f04004af68d8c196</code></span>
+  <span>在线入口：<a href="https://www.shyangyugame.com/Robby_Mini_Games/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95426" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Arcade, Adventure, Relaxing</span>
+</div>
+</section>
+<section class="card" data-cat="Casual" data-s="drop number 80845_drop_number casual drop number brain teaser">
+<div class="card-head">
+  <img class="icon" src="80845_Drop_Number/art/icon.webp" alt="Drop Number" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Drop Number</span><span class="idx">#38 · id 80845</span></div>
+    <div class="badges">
+      <span class="badge cat">Casual</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">2.85M</span>
+      <span class="badge">包体 1.6 MB</span>
+      <span class="badge dev">开发商 深圳市魔酷网络有限公司</span>
+    </div>
+    <div class="folder">📁 80845_Drop_Number</div>
+    <div class="desc">
+      <div class="lead">Looking for an addictive number cube game?</div>
+      <div class="body">Drop Number will help you train and entertain your brain.
+Believe us, getting to 2048 is much harder than reducing the numbers.
+Tap, drop and merge x2 blocks up to 2048 and more. The challenge increases gradually with large numbered squares.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="80845_Drop_Number/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="80845_Drop_Number/art/hotgame.jpg" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="80845_Drop_Number/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="80845_Drop_Number/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20240708/07333515753.zip" target="_blank" rel="noreferrer">07333515753.zip</a></span>
+  <span>MD5 <code>779ca55b90955ad54ffb1c5f6719e077</code></span>
+  <span>在线入口：<a href="https://www.jmbilegame.com/Drop_Number/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_80845" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Brain Teaser</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="war the knights battle arena swords 94847_war_the_knights_battle_arena_swords action war the knights battle arena swords role playing, simulation, war">
+<div class="card-head">
+  <img class="icon" src="94847_War_The_Knights_Battle_Arena_Swords/art/icon.webp" alt="War The Knights Battle Arena Swords" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">War The Knights Battle Arena Swords</span><span class="idx">#39 · id 94847</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">46.46M</span>
+      <span class="badge">包体 23.2 MB</span>
+      <span class="badge dev">开发商 ORANGE JOY TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 94847_War_The_Knights_Battle_Arena_Swords</div>
+    <div class="desc">
+      <div class="lead">War The Knights: Battle Arena Swords 3D</div>
+      <div class="body">Immerse yourself in the atmosphere of chivalrous medieval warfare! In the game &quot;War The Knights: Battle Arena Swords 3D&quot;, thrilling team battles await you, offering the chance to showcase your skills and lead your army to victory.
+
+You have an extensive arsenal at your disposal: swords, bows, spears</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94847_War_The_Knights_Battle_Arena_Swords/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94847_War_The_Knights_Battle_Arena_Swords/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94847_War_The_Knights_Battle_Arena_Swords/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94847_War_The_Knights_Battle_Arena_Swords/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260429/aa3d86c6c3506fad6603259aa8e3e59b.zip" target="_blank" rel="noreferrer">aa3d86c6c3506fad6603259aa8e3e59b.zip</a></span>
+  <span>MD5 <code>aa3d86c6c3506fad6603259aa8e3e59b</code></span>
+  <span>在线入口：<a href="https://www.gztongmenggame.com/War_The_Knights_Battle_Arena_Swords/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94847" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Role Playing, Simulation, War</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="escape room 93576_escape_room puzzle escape room puzzle, relaxing, escape">
+<div class="card-head">
+  <img class="icon" src="93576_Escape_Room/art/icon.webp" alt="Escape Room" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Escape Room</span><span class="idx">#40 · id 93576</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">26M</span>
+      <span class="badge">包体 14.2 MB</span>
+      <span class="badge dev">开发商 上海羊羽计算机科技有限公司</span>
+    </div>
+    <div class="folder">📁 93576_Escape_Room</div>
+    <div class="desc">
+      <div class="lead">Save Mita  Girlfriend</div>
+      <div class="body">It features a unique style and stunning graphics, as well as a rich variety of in-game items. Additionally, each level requires a fixed number of moves, and players must achieve the game objectives within the specified steps. Of course, there are various tools available in the game to help you clear</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93576_Escape_Room/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93576_Escape_Room/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93576_Escape_Room/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93576_Escape_Room/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260605/89cee630b0e2924d2cd8d5a34a973251.zip" target="_blank" rel="noreferrer">89cee630b0e2924d2cd8d5a34a973251.zip</a></span>
+  <span>MD5 <code>89cee630b0e2924d2cd8d5a34a973251</code></span>
+  <span>在线入口：<a href="https://www.shyangyugame.com/Escape_Room/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93576" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Relaxing, Escape</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="you monster 94799_you_monster action you monster action, io, battle">
+<div class="card-head">
+  <img class="icon" src="94799_You_Monster/art/icon.webp" alt="You Monster" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">You Monster</span><span class="idx">#41 · id 94799</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">3.59M</span>
+      <span class="badge">包体 1.9 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 94799_You_Monster</div>
+    <div class="desc">
+      <div class="lead">An action game where you become the monster!</div>
+      <div class="body">You Monster! is an action game where you become the monster! Devour zombies to grow bigger and stronger, then battle other terrifying monsters until only one remains standing. Use your victories to upgrade yourself and evolve into an unstoppable beast. Ready to feed, fight, and dominate? </div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94799_You_Monster/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94799_You_Monster/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94799_You_Monster/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94799_You_Monster/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260424/a38ea4a2dc5c29dd93cd78ce9882d585.zip" target="_blank" rel="noreferrer">a38ea4a2dc5c29dd93cd78ce9882d585.zip</a></span>
+  <span>MD5 <code>a38ea4a2dc5c29dd93cd78ce9882d585</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/You_Monster/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94799" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Action, IO, Battle</span>
+</div>
+</section>
+<section class="card" data-cat="Children" data-s="princess life 93888_princess_life children princess life casual, children, female">
+<div class="card-head">
+  <img class="icon" src="93888_Princess_Life/art/icon.webp" alt="Princess Life" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Princess Life</span><span class="idx">#42 · id 93888</span></div>
+    <div class="badges">
+      <span class="badge cat">Children</span>
+      <span class="badge rate">★ 8.0</span>
+      <span class="badge">37.29M</span>
+      <span class="badge">包体 22.6 MB</span>
+      <span class="badge dev">开发商 海南一个科技有限公司</span>
+    </div>
+    <div class="folder">📁 93888_Princess_Life</div>
+    <div class="desc">
+      <div class="lead">Dress-up princess and find the secret.</div>
+      <div class="body">This is a game full of creativity and fun.
+With this dress-up game, you can unleash your creativity and imagine your world in endless possibilities.
+The game offers several scenarios to explore, each hiding hidden diamonds used to unlock new characters.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93888_Princess_Life/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93888_Princess_Life/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93888_Princess_Life/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93888_Princess_Life/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260120/58cf224c873899c31020f612d410879a.zip" target="_blank" rel="noreferrer">58cf224c873899c31020f612d410879a.zip</a></span>
+  <span>MD5 <code>58cf224c873899c31020f612d410879a</code></span>
+  <span>在线入口：<a href="https://www.hnyigegame.com/Princess_Life/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93888" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Children, Female</span>
+</div>
+</section>
+<section class="card" data-cat="Adventure" data-s="haunted dorm 1 77742_haunted_dorm_1 adventure haunted dorm 1 adventure, action">
+<div class="card-head">
+  <img class="icon" src="77742_Haunted_Dorm_1/art/icon.webp" alt="Haunted Dorm 1" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Haunted Dorm 1</span><span class="idx">#43 · id 77742</span></div>
+    <div class="badges">
+      <span class="badge cat">Adventure</span>
+      <span class="badge rate">★ 7.1</span>
+      <span class="badge">6.7M</span>
+      <span class="badge">包体 3.4 MB</span>
+      <span class="badge dev">开发商 小胖鱼</span>
+    </div>
+    <div class="folder">📁 77742_Haunted_Dorm_1</div>
+    <div class="desc">
+      <div class="lead">Jointly resist the fierce ghosts!</div>
+      <div class="body">The light is going out ~ the light is going out ~ the fierce ghost dormitory tube broke into the dormitory building!
+&quot;Bang, Bang... Bang, Bang...&quot; - the fierce ghost angrily attacked the dormitory door.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="77742_Haunted_Dorm_1/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="77742_Haunted_Dorm_1/art/hotgame.jpg" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="77742_Haunted_Dorm_1/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="77742_Haunted_Dorm_1/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260826/b80fb37d1ba8848bd62e198b147ab83c.zip" target="_blank" rel="noreferrer">b80fb37d1ba8848bd62e198b147ab83c.zip</a></span>
+  <span>MD5 <code>b80fb37d1ba8848bd62e198b147ab83c</code></span>
+  <span>在线入口：<a href="https://www.fatfishgame.com/Ghost_3D/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_77742" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Adventure, Action</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="master chess 2 94778_master_chess_2 puzzle master chess 2 casual, board, strategy">
+<div class="card-head">
+  <img class="icon" src="94778_Master_Chess_2/art/icon.webp" alt="Master Chess 2" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Master Chess 2</span><span class="idx">#44 · id 94778</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">1.06M</span>
+      <span class="badge">包体 0.6 MB</span>
+      <span class="badge dev">开发商 成都模拟元素</span>
+    </div>
+    <div class="folder">📁 94778_Master_Chess_2</div>
+    <div class="desc">
+      <div class="lead">a board and thinking game that you can play</div>
+      <div class="body">This Master Chess game is developed by Codethislab and they made it in HTML5 so it&#39;s also available on your mobile phone and tablet. Think of a strategic plan to beat your oppenent and move your pieces over the board to lure them into your tactics.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94778_Master_Chess_2/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94778_Master_Chess_2/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94778_Master_Chess_2/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94778_Master_Chess_2/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260417/2545bc79b67fda9e6d6e7ae3c3243f1a.zip" target="_blank" rel="noreferrer">2545bc79b67fda9e6d6e7ae3c3243f1a.zip</a></span>
+  <span>MD5 <code>2545bc79b67fda9e6d6e7ae3c3243f1a</code></span>
+  <span>在线入口：<a href="https://www.cdmoniyuansugame.com/Master_Chess_2/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94778" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Board, Strategy</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="asmr organize2 93539_asmr_organize2 simulation asmr organize2 simulation, level games, manager">
+<div class="card-head">
+  <img class="icon" src="93539_Asmr_Organize2/art/icon.webp" alt="Asmr Organize2" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Asmr Organize2</span><span class="idx">#45 · id 93539</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">20.94M</span>
+      <span class="badge">包体 12.5 MB</span>
+      <span class="badge dev">开发商 HONGKONG MINIGAME TECHNOLOGY CO., LIMITED</span>
+    </div>
+    <div class="folder">📁 93539_Asmr_Organize2</div>
+    <div class="desc">
+      <div class="lead">Organize items with immersion!</div>
+      <div class="body">Use space wisely and put everything in containers!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93539_Asmr_Organize2/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93539_Asmr_Organize2/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93539_Asmr_Organize2/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93539_Asmr_Organize2/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251222/e4146ca4eef2c25e3c24318a89385b5d.zip" target="_blank" rel="noreferrer">e4146ca4eef2c25e3c24318a89385b5d.zip</a></span>
+  <span>MD5 <code>e4146ca4eef2c25e3c24318a89385b5d</code></span>
+  <span>在线入口：<a href="https://www.hkminih5game.com/Asmr_Organize2/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93539" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Simulation, Level Games, Manager</span>
+</div>
+</section>
+<section class="card" data-cat="Strategy" data-s="just ludo 82251_just_ludo strategy just ludo board, dice">
+<div class="card-head">
+  <img class="icon" src="82251_Just_Ludo/art/icon.webp" alt="Just Ludo" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Just Ludo</span><span class="idx">#46 · id 82251</span></div>
+    <div class="badges">
+      <span class="badge cat">Strategy</span>
+      <span class="badge rate">★ 7.7</span>
+      <span class="badge">5.45M</span>
+      <span class="badge">包体 3.2 MB</span>
+      <span class="badge dev">开发商 COIHUB TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 82251_Just_Ludo</div>
+    <div class="desc">
+      <div class="lead">Just Ludo is a tabletop dice board game.</div>
+      <div class="body">Just Ludo is a tabletop dice board game. Roll the dice and let your chess pieces reach the finish line first, so as to defeat the opponent and win rich rewards. Are you ready for the challenge?</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="82251_Just_Ludo/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="82251_Just_Ludo/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="82251_Just_Ludo/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="82251_Just_Ludo/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251210/3646536230e9e7cd758c9f8660cc7c36.zip" target="_blank" rel="noreferrer">3646536230e9e7cd758c9f8660cc7c36.zip</a></span>
+  <span>MD5 <code>3646536230e9e7cd758c9f8660cc7c36</code></span>
+  <span>在线入口：<a href="https://www.volcanoh5game.com/Just_Ludo/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_82251" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Board, Dice</span>
+</div>
+</section>
+<section class="card" data-cat="Ball games" data-s="soccer world cup 90848_soccer_world_cup ball games soccer world cup competition">
+<div class="card-head">
+  <img class="icon" src="90848_Soccer_World_Cup/art/icon.webp" alt="Soccer World Cup" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Soccer World Cup</span><span class="idx">#47 · id 90848</span></div>
+    <div class="badges">
+      <span class="badge cat">Ball games</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">10.14M</span>
+      <span class="badge">包体 5.3 MB</span>
+      <span class="badge dev">开发商 海南一个科技有限公司</span>
+    </div>
+    <div class="folder">📁 90848_Soccer_World_Cup</div>
+    <div class="desc">
+      <div class="lead">World Football Champion</div>
+      <div class="body">The smooth interface will fully immerse you in the thrilling drama of each game. Impress fans and pass, dribble and shoot your way to victory using intuitive swipe controls.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="90848_Soccer_World_Cup/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="90848_Soccer_World_Cup/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="90848_Soccer_World_Cup/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="90848_Soccer_World_Cup/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250102/10501914110.zip" target="_blank" rel="noreferrer">10501914110.zip</a></span>
+  <span>MD5 <code>cc02221268588e9e09e1998d03c90b28</code></span>
+  <span>在线入口：<a href="https://www.hnyigegame.com/Soccer_World_Cup/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_90848" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Competition</span>
+</div>
+</section>
+<section class="card" data-cat="Children" data-s="toca life world 93654_toca_life_world children toca life world casual, role playing, children">
+<div class="card-head">
+  <img class="icon" src="93654_Toca_Life_World/art/icon.webp" alt="Toca Life World" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Toca Life World</span><span class="idx">#48 · id 93654</span></div>
+    <div class="badges">
+      <span class="badge cat">Children</span>
+      <span class="badge rate">★ 9.0</span>
+      <span class="badge">21.51M</span>
+      <span class="badge">包体 10.8 MB</span>
+      <span class="badge dev">开发商 NewbeeTech Limited</span>
+    </div>
+    <div class="folder">📁 93654_Toca_Life_World</div>
+    <div class="desc">
+      <div class="lead">Create and capture hilarious stories with Taco</div>
+      <div class="body">Step into Taco Life World, a playful simulation game where you become the director of your own visual stories! Use the powerful photo studio tools to design scenes choose characters customize their outfits to bring your stories to life. Whether you creating funny comics, dramatic moments!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93654_Toca_Life_World/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93654_Toca_Life_World/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93654_Toca_Life_World/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93654_Toca_Life_World/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251128/782849e1cf1fdaff82731343ba4d4ab3.zip" target="_blank" rel="noreferrer">782849e1cf1fdaff82731343ba4d4ab3.zip</a></span>
+  <span>MD5 <code>782849e1cf1fdaff82731343ba4d4ab3</code></span>
+  <span>在线入口：<a href="https://www.newbeetechh5game.com/Toca_Life_World/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93654" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Role Playing, Children</span>
+</div>
+</section>
+<section class="card" data-cat="Arcade" data-s="baseball for brainrot 95540_baseball_for_brainrot arcade baseball for brainrot arcade, adventure, relaxing">
+<div class="card-head">
+  <img class="icon" src="95540_Baseball_For_Brainrot/art/icon.webp" alt="Baseball For Brainrot" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Baseball For Brainrot</span><span class="idx">#49 · id 95540</span></div>
+    <div class="badges">
+      <span class="badge cat">Arcade</span>
+      <span class="badge rate">★ 8.1</span>
+      <span class="badge">67.34M</span>
+      <span class="badge">包体 33.7 MB</span>
+      <span class="badge dev">开发商 上海羊羽计算机科技有限公司</span>
+    </div>
+    <div class="folder">📁 95540_Baseball_For_Brainrot</div>
+    <div class="desc">
+      <div class="lead">Meme filled 3D baseball chaos.</div>
+      <div class="body">Step up to the plate, smash lucky blocks with your bat, and send them flying across the field! Discover and collect hilarious Brainrot creatures, dodge zombie chasers, train your swing, and rebirth for even crazier power-ups in this meme-filled 3D baseball chaos.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95540_Baseball_For_Brainrot/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95540_Baseball_For_Brainrot/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95540_Baseball_For_Brainrot/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95540_Baseball_For_Brainrot/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260717/2fbf2384ef01d903f7776da06c484997.zip" target="_blank" rel="noreferrer">2fbf2384ef01d903f7776da06c484997.zip</a></span>
+  <span>MD5 <code>2fbf2384ef01d903f7776da06c484997</code></span>
+  <span>在线入口：<a href="https://www.shyangyugame.com/Baseball_For_Brainrot/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95540" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Arcade, Adventure, Relaxing</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="stickman battle 2 94165_stickman_battle_2 action stickman battle 2 action, stickman, fighting">
+<div class="card-head">
+  <img class="icon" src="94165_Stickman_Battle_2/art/icon.webp" alt="Stickman Battle 2" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Stickman Battle 2</span><span class="idx">#50 · id 94165</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.0</span>
+      <span class="badge">3.01M</span>
+      <span class="badge">包体 1.7 MB</span>
+      <span class="badge dev">开发商 NewbeeTech Limited</span>
+    </div>
+    <div class="folder">📁 94165_Stickman_Battle_2</div>
+    <div class="desc">
+      <div class="lead">Fight in fast-paced 1v1 stickman combat!</div>
+      <div class="body">* Engage in fast-paced 1v1 combat as a stickman warrior.
+* Move, jump, attack, and unleash special skills to defeat your opponent.
+* Play solo or challenge a friend in local 2-player mode.
+* Use WASD/arrow keys for movement and special buttons for skills.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94165_Stickman_Battle_2/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94165_Stickman_Battle_2/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94165_Stickman_Battle_2/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94165_Stickman_Battle_2/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260128/b9fe5cca353d75122f109cda421dd873.zip" target="_blank" rel="noreferrer">b9fe5cca353d75122f109cda421dd873.zip</a></span>
+  <span>MD5 <code>b9fe5cca353d75122f109cda421dd873</code></span>
+  <span>在线入口：<a href="https://www.newbeetechh5game.com/Stickman_Battle_2/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94165" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Action, Stickman, Fighting</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="wheel master bike 95000_wheel_master_bike action wheel master bike casual, physics, bike">
+<div class="card-head">
+  <img class="icon" src="95000_Wheel_Master_Bike/art/icon.webp" alt="Wheel Master Bike" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Wheel Master Bike</span><span class="idx">#51 · id 95000</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">8.9M</span>
+      <span class="badge">包体 6.0 MB</span>
+      <span class="badge dev">开发商 BOOM TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 95000_Wheel_Master_Bike</div>
+    <div class="desc">
+      <div class="lead">Master the ride, conquer every level!</div>
+      <div class="body">* Balance your bike across tricky paths.
+* Master physics-based controls to overcome obstacles.
+* Solve unique challenges in every stage.
+* Unlock cool characters and epic rides!
+* Test your skills and become the ultimate wheel master.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95000_Wheel_Master_Bike/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95000_Wheel_Master_Bike/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95000_Wheel_Master_Bike/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95000_Wheel_Master_Bike/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260522/4e6d780230d6754fc7c12a84f4907ca7.zip" target="_blank" rel="noreferrer">4e6d780230d6754fc7c12a84f4907ca7.zip</a></span>
+  <span>MD5 <code>4e6d780230d6754fc7c12a84f4907ca7</code></span>
+  <span>在线入口：<a href="https://www.hzxinpigame.com/Wheel_Master_Bike/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95000" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Physics, Bike</span>
+</div>
+</section>
+<section class="card" data-cat="Female" data-s="color by number 92117_color_by_number female color by number children, drawing, art&amp;design">
+<div class="card-head">
+  <img class="icon" src="92117_Color_By_Number/art/icon.webp" alt="Color By Number" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Color By Number</span><span class="idx">#52 · id 92117</span></div>
+    <div class="badges">
+      <span class="badge cat">Female</span>
+      <span class="badge rate">★ 8.8</span>
+      <span class="badge">8.64M</span>
+      <span class="badge">包体 5.0 MB</span>
+      <span class="badge dev">开发商 厦门途鹭</span>
+    </div>
+    <div class="folder">📁 92117_Color_By_Number</div>
+    <div class="desc">
+      <div class="lead">Lighting up the town with colour</div>
+      <div class="body">Grey colours fill the town, so grab your paintbrush and paint the town in bright colours! Let you immerse yourself in the fun of colouring, there are different colouring objects in the game, come to the game will turn the town colourful!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="92117_Color_By_Number/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="92117_Color_By_Number/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="92117_Color_By_Number/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="92117_Color_By_Number/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260824/ac10c9cf6c5ad674201553c25e761ee5.zip" target="_blank" rel="noreferrer">ac10c9cf6c5ad674201553c25e761ee5.zip</a></span>
+  <span>MD5 <code>ac10c9cf6c5ad674201553c25e761ee5</code></span>
+  <span>在线入口：<a href="https://www.ooppgame.com/Color_By_Number/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_92117" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Children, Drawing, Art&amp;Design</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="haunted dorm2 93105_haunted_dorm2 puzzle haunted dorm2 puzzle, tower defense strategy">
+<div class="card-head">
+  <img class="icon" src="93105_Haunted_Dorm2/art/icon.webp" alt="Haunted Dorm2" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Haunted Dorm2</span><span class="idx">#53 · id 93105</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.2</span>
+      <span class="badge">5M</span>
+      <span class="badge">包体 2.7 MB</span>
+      <span class="badge dev">开发商 HONGKONG MINIGAME TECHNOLOGY CO., LIMITED</span>
+    </div>
+    <div class="folder">📁 93105_Haunted_Dorm2</div>
+    <div class="desc">
+      <div class="lead">Dodge the Hunter&#39;s attack!</div>
+      <div class="body">Dodge the Hunter&#39;s attack!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93105_Haunted_Dorm2/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93105_Haunted_Dorm2/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93105_Haunted_Dorm2/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93105_Haunted_Dorm2/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260908/439ba6e0d48a7d079469a3eeadbf7127.zip" target="_blank" rel="noreferrer">439ba6e0d48a7d079469a3eeadbf7127.zip</a></span>
+  <span>MD5 <code>439ba6e0d48a7d079469a3eeadbf7127</code></span>
+  <span>在线入口：<a href="https://www.hkminih5game.com/Haunted_Dorm2/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93105" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Puzzle, Tower Defense Strategy</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="kpop demon hunters playground 94187_kpop_demon_hunters_playground simulation kpop demon hunters playground simulation, relaxing, sandbox">
+<div class="card-head">
+  <img class="icon" src="94187_KPop_Demon_Hunters_Playground/art/icon.webp" alt="KPop Demon Hunters Playground" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">KPop Demon Hunters Playground</span><span class="idx">#54 · id 94187</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 8.1</span>
+      <span class="badge">4.69M</span>
+      <span class="badge">包体 2.6 MB</span>
+      <span class="badge dev">开发商 ORANGE JOY TECHNOLOGY LIMITED</span>
+    </div>
+    <div class="folder">📁 94187_KPop_Demon_Hunters_Playground</div>
+    <div class="desc">
+      <div class="lead">Build your own armed squad, set up defenses</div>
+      <div class="body">KPop Demon Hunters Playground is a TV-inspired sandbox battle game where you can start an all-out war between humans and red-suited soldiers. Build your own armed squad, set up defenses, hit start, and watch how the fight plays out.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94187_KPop_Demon_Hunters_Playground/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94187_KPop_Demon_Hunters_Playground/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94187_KPop_Demon_Hunters_Playground/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94187_KPop_Demon_Hunters_Playground/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260204/e4792fa4cc77a0614de62f21107ba779.zip" target="_blank" rel="noreferrer">e4792fa4cc77a0614de62f21107ba779.zip</a></span>
+  <span>MD5 <code>e4792fa4cc77a0614de62f21107ba779</code></span>
+  <span>在线入口：<a href="https://www.gztongmenggame.com/KPop_Demon_Hunters_Playground/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94187" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Simulation, Relaxing, Sandbox</span>
+</div>
+</section>
+<section class="card" data-cat="Casual" data-s="making popsicle 88881_making_popsicle casual making popsicle casual, children">
+<div class="card-head">
+  <img class="icon" src="88881_Making_Popsicle/art/icon.webp" alt="Making Popsicle" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Making Popsicle</span><span class="idx">#55 · id 88881</span></div>
+    <div class="badges">
+      <span class="badge cat">Casual</span>
+      <span class="badge rate">★ 8.9</span>
+      <span class="badge">6.43M</span>
+      <span class="badge">包体 3.7 MB</span>
+      <span class="badge dev">开发商 深圳市山之网络科技有限公司</span>
+    </div>
+    <div class="folder">📁 88881_Making_Popsicle</div>
+    <div class="desc">
+      <div class="lead">Parkour while making popsicles!</div>
+      <div class="body">Making Popsicle brings you a wonderful popsicle making experience, a super smooth parkour game, easy to learn and fun! Be careful, this game will make you want ice cream!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="88881_Making_Popsicle/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="88881_Making_Popsicle/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="88881_Making_Popsicle/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="88881_Making_Popsicle/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251106/e2890aefbeb56ee4c4c7cc42129067d0.zip" target="_blank" rel="noreferrer">e2890aefbeb56ee4c4c7cc42129067d0.zip</a></span>
+  <span>MD5 <code>e2890aefbeb56ee4c4c7cc42129067d0</code></span>
+  <span>在线入口：<a href="https://www.shanzhih5game.com/Making_Popsicle/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_88881" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Children</span>
+</div>
+</section>
+<section class="card" data-cat="Puzzle" data-s="thief puzzle 3d 91447_thief_puzzle_3d puzzle thief puzzle 3d 3d, brainrot">
+<div class="card-head">
+  <img class="icon" src="91447_Thief_Puzzle_3D/art/icon.webp" alt="Thief Puzzle 3D" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Thief Puzzle 3D</span><span class="idx">#56 · id 91447</span></div>
+    <div class="badges">
+      <span class="badge cat">Puzzle</span>
+      <span class="badge rate">★ 8.9</span>
+      <span class="badge">36.9M</span>
+      <span class="badge">包体 22.4 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 91447_Thief_Puzzle_3D</div>
+    <div class="desc">
+      <div class="lead">Secretly take what you want.</div>
+      <div class="body">As a stickman, you are a thief in the martial arts world, stealing other people&#39;s things without being discovered by them.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="91447_Thief_Puzzle_3D/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="91447_Thief_Puzzle_3D/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="91447_Thief_Puzzle_3D/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="91447_Thief_Puzzle_3D/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260307/7dd58f8f46b210af1551a9044ffed702.zip" target="_blank" rel="noreferrer">7dd58f8f46b210af1551a9044ffed702.zip</a></span>
+  <span>MD5 <code>7dd58f8f46b210af1551a9044ffed702</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Thief_Puzzle_3D/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_91447" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：3D, brainrot</span>
+</div>
+</section>
+<section class="card" data-cat="Card" data-s="gin rummy pro 91534_gin_rummy_pro card gin rummy pro classic">
+<div class="card-head">
+  <img class="icon" src="91534_Gin_Rummy_Pro/art/icon.webp" alt="Gin Rummy Pro" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Gin Rummy Pro</span><span class="idx">#57 · id 91534</span></div>
+    <div class="badges">
+      <span class="badge cat">Card</span>
+      <span class="badge rate">★ 7.8</span>
+      <span class="badge">4.97M</span>
+      <span class="badge">包体 2.9 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 91534_Gin_Rummy_Pro</div>
+    <div class="desc">
+      <div class="lead">The classic two-player card game!</div>
+      <div class="body">Do you love playing classic online card games like Gin Rummy with friends? Start to play classic Gin Rummy with friends or great players from all around the world with the Gin Rummy now! No matter whether you call the card game Remi, Ramy, or Rummy - GIN RUMMY is a great free card game for you!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="91534_Gin_Rummy_Pro/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="91534_Gin_Rummy_Pro/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="91534_Gin_Rummy_Pro/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="91534_Gin_Rummy_Pro/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20240914/09063420925.zip" target="_blank" rel="noreferrer">09063420925.zip</a></span>
+  <span>MD5 <code>29f9f7cda1725403d355ccee3d96cd40</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Gin_Rummy_Pro/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_91534" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Classic</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="stick war saga 93797_stick_war_saga action stick war saga action, strategy, war">
+<div class="card-head">
+  <img class="icon" src="93797_Stick_War_Saga/art/icon.webp" alt="Stick War Saga" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Stick War Saga</span><span class="idx">#58 · id 93797</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">18.43M</span>
+      <span class="badge">包体 9.9 MB</span>
+      <span class="badge dev">开发商 北京游艺谷科技有限公司</span>
+    </div>
+    <div class="folder">📁 93797_Stick_War_Saga</div>
+    <div class="desc">
+      <div class="lead">Prepare for an epic clash in Stick War: Saga</div>
+      <div class="body">Take command of your stickman army and lead them through nervous war campaigns. Mine resources, build your army, and unleash your strategic power to conquer enemy lands. In this game, youll control miners to gather gold while training warriors, archers, and magical units to protect your tower.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93797_Stick_War_Saga/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93797_Stick_War_Saga/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93797_Stick_War_Saga/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93797_Stick_War_Saga/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251216/901e28fe04b1cb70661b4d1f5dc6abcc.zip" target="_blank" rel="noreferrer">901e28fe04b1cb70661b4d1f5dc6abcc.zip</a></span>
+  <span>MD5 <code>901e28fe04b1cb70661b4d1f5dc6abcc</code></span>
+  <span>在线入口：<a href="https://www.yygh5game.com/Stick_War_Saga/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93797" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Action, Strategy, War</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="capitalist bus driver 93464_capitalist_bus_driver simulation capitalist bus driver simulation, business empire, 3d">
+<div class="card-head">
+  <img class="icon" src="93464_Capitalist_Bus_Driver/art/icon.webp" alt="Capitalist Bus Driver" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Capitalist Bus Driver</span><span class="idx">#59 · id 93464</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 7.1</span>
+      <span class="badge">34.75M</span>
+      <span class="badge">包体 19.4 MB</span>
+      <span class="badge dev">开发商 上海云端次元科技有限公司</span>
+    </div>
+    <div class="folder">📁 93464_Capitalist_Bus_Driver</div>
+    <div class="desc">
+      <div class="lead">Driving is just the beginning!</div>
+      <div class="body">Pick up passengers from various locations in the city, take them to beach resorts, assist them in boarding, and experience a variety of facilities. Use your earnings to expand and upgrade the beach resort, turning it into a thriving and popular destination.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93464_Capitalist_Bus_Driver/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93464_Capitalist_Bus_Driver/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93464_Capitalist_Bus_Driver/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93464_Capitalist_Bus_Driver/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251104/0e24f86993cec2fa81d657b8a8263671.zip" target="_blank" rel="noreferrer">0e24f86993cec2fa81d657b8a8263671.zip</a></span>
+  <span>MD5 <code>0e24f86993cec2fa81d657b8a8263671</code></span>
+  <span>在线入口：<a href="https://www.shyunduangame.com/Capitalist_Bus_Driver/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93464" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Simulation, Business Empire, 3D</span>
+</div>
+</section>
+<section class="card" data-cat="Casual" data-s="mini relaxing game 92030_mini_relaxing_game casual mini relaxing game casual, puzzle, trivia">
+<div class="card-head">
+  <img class="icon" src="92030_Mini_Relaxing_Game/art/icon.webp" alt="Mini Relaxing Game" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Mini Relaxing Game</span><span class="idx">#60 · id 92030</span></div>
+    <div class="badges">
+      <span class="badge cat">Casual</span>
+      <span class="badge rate">★ 7.7</span>
+      <span class="badge">4.63M</span>
+      <span class="badge">包体 2.5 MB</span>
+      <span class="badge dev">开发商 海南一个科技有限公司</span>
+    </div>
+    <div class="folder">📁 92030_Mini_Relaxing_Game</div>
+    <div class="desc">
+      <div class="lead">Stress-free gaming</div>
+      <div class="body">Unwind with a collection of simple and satisfying mini-games. Easy to learn, hard to put down. Perfect for stress relief and relaxation.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="92030_Mini_Relaxing_Game/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="92030_Mini_Relaxing_Game/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="92030_Mini_Relaxing_Game/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="92030_Mini_Relaxing_Game/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250118/11013239762.zip" target="_blank" rel="noreferrer">11013239762.zip</a></span>
+  <span>MD5 <code>e71a6ee6ae8976e9e7ae58d7e7c07af2</code></span>
+  <span>在线入口：<a href="https://www.hnyigegame.com/Mini_Relaxing_Game/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_92030" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Puzzle, Trivia</span>
+</div>
+</section>
+<section class="card" data-cat="Racing" data-s="urban racer 92988_urban_racer racing urban racer racing, move car">
+<div class="card-head">
+  <img class="icon" src="92988_Urban_Racer/art/icon.webp" alt="Urban Racer" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Urban Racer</span><span class="idx">#61 · id 92988</span></div>
+    <div class="badges">
+      <span class="badge cat">Racing</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">5.19M</span>
+      <span class="badge">包体 2.9 MB</span>
+      <span class="badge dev">开发商 上海云端次元科技有限公司</span>
+    </div>
+    <div class="folder">📁 92988_Urban_Racer</div>
+    <div class="desc">
+      <div class="lead">Are you ready to dominate the roads?</div>
+      <div class="body">The city is your playground! As you embark on thrilling missions, you can speed through bustling downtown streets, drift along beaches, and weave through lively shopping districts. Unlock unique cars, explore every nook and cranny, and experience the ultimate driving freedom.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="92988_Urban_Racer/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="92988_Urban_Racer/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="92988_Urban_Racer/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="92988_Urban_Racer/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250717/04314968274.zip" target="_blank" rel="noreferrer">04314968274.zip</a></span>
+  <span>MD5 <code>aba04336fae36dc304c8e476860d7fa8</code></span>
+  <span>在线入口：<a href="https://www.shyunduangame.com/Urban_Racer/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_92988" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Racing, Move Car</span>
+</div>
+</section>
+<section class="card" data-cat="Tabletop" data-s="ludo superstar 94034_ludo_superstar tabletop ludo superstar casual, stylized, abstract">
+<div class="card-head">
+  <img class="icon" src="94034_Ludo_Superstar/art/icon.webp" alt="Ludo Superstar" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Ludo Superstar</span><span class="idx">#62 · id 94034</span></div>
+    <div class="badges">
+      <span class="badge cat">Tabletop</span>
+      <span class="badge rate">★ 8.8</span>
+      <span class="badge">8.94M</span>
+      <span class="badge">包体 5.0 MB</span>
+      <span class="badge dev">开发商 海南一个科技有限公司</span>
+    </div>
+    <div class="folder">📁 94034_Ludo_Superstar</div>
+    <div class="desc">
+      <div class="lead">Roll the dice, win!</div>
+      <div class="body">Roll the dice and let your chess pieces reach the finish line first, so as to defeat the opponent and win rich rewards. Are you ready for the challenge?</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94034_Ludo_Superstar/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94034_Ludo_Superstar/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94034_Ludo_Superstar/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94034_Ludo_Superstar/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260112/d30d7cb8efb83d3bd657eddab462cf9f.zip" target="_blank" rel="noreferrer">d30d7cb8efb83d3bd657eddab462cf9f.zip</a></span>
+  <span>MD5 <code>d30d7cb8efb83d3bd657eddab462cf9f</code></span>
+  <span>在线入口：<a href="https://www.hnyigegame.com/Ludo_Superstar/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94034" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Stylized, Abstract</span>
+</div>
+</section>
+<section class="card" data-cat="Sports" data-s="classic billiard 78388_classic_billiard sports classic billiard bike">
+<div class="card-head">
+  <img class="icon" src="78388_Classic_Billiard/art/icon.webp" alt="Classic Billiard" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Classic Billiard</span><span class="idx">#63 · id 78388</span></div>
+    <div class="badges">
+      <span class="badge cat">Sports</span>
+      <span class="badge rate">★ 8.8</span>
+      <span class="badge">3.88M</span>
+      <span class="badge">包体 2.2 MB</span>
+      <span class="badge dev">开发商 成都千御行网络科技有限公司</span>
+    </div>
+    <div class="folder">📁 78388_Classic_Billiard</div>
+    <div class="desc">
+      <div class="lead">Billiard Classic is the super fun 8 ball pool</div>
+      <div class="body">*Now slide your screen to aim the ball, drag down the power bar to strike, show off skills and concentration to dive into the pool ball game, you are the future billiards master in the world tournament.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="78388_Classic_Billiard/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="78388_Classic_Billiard/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="78388_Classic_Billiard/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="78388_Classic_Billiard/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250428/09433355586.zip" target="_blank" rel="noreferrer">09433355586.zip</a></span>
+  <span>MD5 <code>bb95307534013b80ce481218b1781d58</code></span>
+  <span>在线入口：<a href="https://www.qyxgame.com/Classic_Billiard/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_78388" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Bike</span>
+</div>
+</section>
+<section class="card" data-cat="Card" data-s="card solitaire 2026 95092_card_solitaire_2026 card card solitaire 2026 casual, puzzle, card">
+<div class="card-head">
+  <img class="icon" src="95092_Card_Solitaire_2026/art/icon.webp" alt="Card Solitaire 2026" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Card Solitaire 2026</span><span class="idx">#64 · id 95092</span></div>
+    <div class="badges">
+      <span class="badge cat">Card</span>
+      <span class="badge rate">★ 8.1</span>
+      <span class="badge">13.24M</span>
+      <span class="badge">包体 7.3 MB</span>
+      <span class="badge dev">开发商 上海羊羽计算机科技有限公司</span>
+    </div>
+    <div class="folder">📁 95092_Card_Solitaire_2026</div>
+    <div class="desc">
+      <div class="lead">Relax with Card Solitaire 2026!</div>
+      <div class="body">Card Solitaire 2026 is the classic single-player card game. Arrange cards in the tableau by alternating colors descending, move all cards to foundations Ace to King by suit to win.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95092_Card_Solitaire_2026/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95092_Card_Solitaire_2026/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95092_Card_Solitaire_2026/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95092_Card_Solitaire_2026/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260604/fee6c12792954c96896945066b8a76f9.zip" target="_blank" rel="noreferrer">fee6c12792954c96896945066b8a76f9.zip</a></span>
+  <span>MD5 <code>fee6c12792954c96896945066b8a76f9</code></span>
+  <span>在线入口：<a href="https://www.shyangyugame.com/Card_Solitaire_2026/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95092" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Puzzle, Card</span>
+</div>
+</section>
+<section class="card" data-cat="Racing" data-s="drive mad2 93407_drive_mad2 racing drive mad2 racing, driving">
+<div class="card-head">
+  <img class="icon" src="93407_Drive_Mad2/art/icon.webp" alt="Drive Mad2" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Drive Mad2</span><span class="idx">#65 · id 93407</span></div>
+    <div class="badges">
+      <span class="badge cat">Racing</span>
+      <span class="badge rate">★ 8.9</span>
+      <span class="badge">2.77M</span>
+      <span class="badge">包体 1.5 MB</span>
+      <span class="badge dev">开发商 HONGKONG MINIGAME TECHNOLOGY CO., LIMITED</span>
+    </div>
+    <div class="folder">📁 93407_Drive_Mad2</div>
+    <div class="desc">
+      <div class="lead">Control the vehicle and reach the end!</div>
+      <div class="body">Avoid obstacles, avoid falling apart, control the vehicle to reach the end safely!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="93407_Drive_Mad2/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="93407_Drive_Mad2/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="93407_Drive_Mad2/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="93407_Drive_Mad2/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20251023/1dc57b427f93202f6f476de1e709ffc9.zip" target="_blank" rel="noreferrer">1dc57b427f93202f6f476de1e709ffc9.zip</a></span>
+  <span>MD5 <code>1dc57b427f93202f6f476de1e709ffc9</code></span>
+  <span>在线入口：<a href="https://www.hkminih5game.com/Drive_Mad2/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_93407" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Racing, Driving</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="cat life simulator 95560_cat_life_simulator simulation cat life simulator casual, simulation, rpg">
+<div class="card-head">
+  <img class="icon" src="95560_Cat_Life_Simulator/art/icon.webp" alt="Cat Life Simulator" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Cat Life Simulator</span><span class="idx">#66 · id 95560</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 8.3</span>
+      <span class="badge">62.27M</span>
+      <span class="badge">包体 31.1 MB</span>
+      <span class="badge dev">开发商 深圳市山之网络科技有限公司</span>
+    </div>
+    <div class="folder">📁 95560_Cat_Life_Simulator</div>
+    <div class="desc">
+      <div class="lead">Be a chaotic cat in Grandma&#39;s 3D house.</div>
+      <div class="body">Play as a naughty cat in Cat Life Simulator. Explore Grandma&#39;s 3D house, knock over furniture, scratch walls, and cause chaos. Use collected fish treats to unlock cool rewards while evading Grandma&#39;s watchful eye.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95560_Cat_Life_Simulator/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95560_Cat_Life_Simulator/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95560_Cat_Life_Simulator/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95560_Cat_Life_Simulator/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260720/e8583785694cca79832e0915bc0641dd.zip" target="_blank" rel="noreferrer">e8583785694cca79832e0915bc0641dd.zip</a></span>
+  <span>MD5 <code>e8583785694cca79832e0915bc0641dd</code></span>
+  <span>在线入口：<a href="https://www.shanzhih5game.com/Cat_Life_Simulator/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95560" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Simulation, RPG</span>
+</div>
+</section>
+<section class="card" data-cat="Female" data-s="fashion battle 91898_fashion_battle female fashion battle battle">
+<div class="card-head">
+  <img class="icon" src="91898_Fashion_Battle/art/icon.webp" alt="Fashion Battle" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Fashion Battle</span><span class="idx">#67 · id 91898</span></div>
+    <div class="badges">
+      <span class="badge cat">Female</span>
+      <span class="badge rate">★ 7.2</span>
+      <span class="badge">73.94M</span>
+      <span class="badge">包体 51.4 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 91898_Fashion_Battle</div>
+    <div class="desc">
+      <div class="lead">Beat your opponent with your outfit.</div>
+      <div class="body">Dress up your model with outfits that perfectly match the given theme, making sure every detail is on point. As you walk the runway, the pressure builds with each step. The ultimate test comes at the end when a jury evaluates your look and crowns the most stylish competitor. </div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="91898_Fashion_Battle/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="91898_Fashion_Battle/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="91898_Fashion_Battle/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="91898_Fashion_Battle/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260309/fe798ca451ac7d1b0e5a40b158c6f7c2.zip" target="_blank" rel="noreferrer">fe798ca451ac7d1b0e5a40b158c6f7c2.zip</a></span>
+  <span>MD5 <code>fe798ca451ac7d1b0e5a40b158c6f7c2</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Fashion_Battle/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_91898" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Battle</span>
+</div>
+</section>
+<section class="card" data-cat="Children" data-s="coloring 95489_coloring children coloring casual, hyper-casual">
+<div class="card-head">
+  <img class="icon" src="95489_Coloring/art/icon.webp" alt="Coloring" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Coloring</span><span class="idx">#68 · id 95489</span></div>
+    <div class="badges">
+      <span class="badge cat">Children</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">27.91M</span>
+      <span class="badge">包体 14.7 MB</span>
+      <span class="badge dev">开发商 厦门途鹭</span>
+    </div>
+    <div class="folder">📁 95489_Coloring</div>
+    <div class="desc">
+      <div class="lead">An easy number coloring game</div>
+      <div class="body">Choose a cute outline template and select vibrant colors from the palette. Click or drag to fill the areas within the lines. Simple controls. Helps unleash creativity and relieve stress. Suitable for children to practice color matching.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95489_Coloring/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95489_Coloring/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95489_Coloring/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95489_Coloring/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260711/28786ee42352719b76da46bad45f1457.zip" target="_blank" rel="noreferrer">28786ee42352719b76da46bad45f1457.zip</a></span>
+  <span>MD5 <code>28786ee42352719b76da46bad45f1457</code></span>
+  <span>在线入口：<a href="https://www.ooppgame.com/Coloring/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95489" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Casual, Hyper-casual</span>
+</div>
+</section>
+<section class="card" data-cat="Action" data-s="hill of steel 95022_hill_of_steel action hill of steel arcade, action">
+<div class="card-head">
+  <img class="icon" src="95022_Hill_of_Steel/art/icon.webp" alt="Hill of Steel" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Hill of Steel</span><span class="idx">#69 · id 95022</span></div>
+    <div class="badges">
+      <span class="badge cat">Action</span>
+      <span class="badge rate">★ 8.2</span>
+      <span class="badge">40.72M</span>
+      <span class="badge">包体 22.4 MB</span>
+      <span class="badge dev">开发商 Excellent Innovation Limited DS</span>
+    </div>
+    <div class="folder">📁 95022_Hill_of_Steel</div>
+    <div class="desc">
+      <div class="lead">Dominate tank battles on hilly terrain!</div>
+      <div class="body">Earn resources from battles to upgrade firepower, armor, and speed.Use terrain for cover, aim precisely, and conquer every level ahead!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95022_Hill_of_Steel/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95022_Hill_of_Steel/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95022_Hill_of_Steel/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95022_Hill_of_Steel/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260507/f624fa906c8de234856463eac5370ac7.zip" target="_blank" rel="noreferrer">f624fa906c8de234856463eac5370ac7.zip</a></span>
+  <span>MD5 <code>f624fa906c8de234856463eac5370ac7</code></span>
+  <span>在线入口：<a href="https://www.excellenth5game.com/Hill_of_Steel/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95022" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Arcade, Action</span>
+</div>
+</section>
+<section class="card" data-cat="Single challenge" data-s="drive mad master no wifi 89810_drive_mad_master_no_wifi single challenge drive mad master no wifi 3d, destruction, brainrot">
+<div class="card-head">
+  <img class="icon" src="89810_Drive_Mad_Master_no_wifi/art/icon.webp" alt="Drive Mad Master no wifi" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Drive Mad Master no wifi</span><span class="idx">#70 · id 89810</span></div>
+    <div class="badges">
+      <span class="badge cat">Single challenge</span>
+      <span class="badge rate">★ 7.5</span>
+      <span class="badge">11.66M</span>
+      <span class="badge">包体 5.9 MB</span>
+      <span class="badge dev">开发商 巩磊</span>
+    </div>
+    <div class="folder">📁 89810_Drive_Mad_Master_no_wifi</div>
+    <div class="desc">
+      <div class="lead">Creative stunts and obstacles for you to enjoy</div>
+      <div class="body">Drive Mad is a car game where you drive on a track filled with obstacles. Your aim is to reach the finish line in one piece. You have to balance your speed so your car doesn&#39;t flip over. This is harder than it sounds, as there are many thrilling and creative stunts and obstacles for you to enjoy. </div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="89810_Drive_Mad_Master_no_wifi/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="89810_Drive_Mad_Master_no_wifi/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="89810_Drive_Mad_Master_no_wifi/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="89810_Drive_Mad_Master_no_wifi/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260917/cae15a25dcc0f633689a357dc521eb69.zip" target="_blank" rel="noreferrer">cae15a25dcc0f633689a357dc521eb69.zip</a></span>
+  <span>MD5 <code>cae15a25dcc0f633689a357dc521eb69</code></span>
+  <span>在线入口：<a href="https://www.gongleih5game.com/Drive_Mad_Master/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_89810" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：3D, Destruction, brainrot</span>
+</div>
+</section>
+<section class="card" data-cat="Parkour" data-s="bbq master run 95173_bbq_master_run parkour bbq master run arcade, runner, asmr">
+<div class="card-head">
+  <img class="icon" src="95173_BBQ_Master_Run/art/icon.webp" alt="BBQ Master Run" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">BBQ Master Run</span><span class="idx">#71 · id 95173</span></div>
+    <div class="badges">
+      <span class="badge cat">Parkour</span>
+      <span class="badge rate">★ 8.6</span>
+      <span class="badge">8.77M</span>
+      <span class="badge">包体 4.8 MB</span>
+      <span class="badge dev">开发商 深圳市山之网络科技有限公司</span>
+    </div>
+    <div class="folder">📁 95173_BBQ_Master_Run</div>
+    <div class="desc">
+      <div class="lead">Stack meats &amp; multiply skewers for a mega BBQ!</div>
+      <div class="body">Skew &amp; stack juicy meats in BBQ Master Run! Slide left or right to pass through math gates, multiply your steaks, and avoid obstacles. Build the ultimate mega-skewer to roast at the finish line. Simple, addictive runner fun!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="95173_BBQ_Master_Run/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="95173_BBQ_Master_Run/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="95173_BBQ_Master_Run/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="95173_BBQ_Master_Run/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260609/9f8c03fe8978ff199b21ff8bb90abbf7.zip" target="_blank" rel="noreferrer">9f8c03fe8978ff199b21ff8bb90abbf7.zip</a></span>
+  <span>MD5 <code>9f8c03fe8978ff199b21ff8bb90abbf7</code></span>
+  <span>在线入口：<a href="https://www.shanzhih5game.com/BBQ_Master_Run/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_95173" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Arcade, Runner, ASMR</span>
+</div>
+</section>
+<section class="card" data-cat="Simulation" data-s="level up bus 94229_level_up_bus simulation level up bus racing, casual, simulation">
+<div class="card-head">
+  <img class="icon" src="94229_Level_Up_Bus/art/icon.webp" alt="Level Up Bus" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Level Up Bus</span><span class="idx">#72 · id 94229</span></div>
+    <div class="badges">
+      <span class="badge cat">Simulation</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">111.15M</span>
+      <span class="badge">包体 60.1 MB</span>
+      <span class="badge dev">开发商 云上创意（厦门）科技有限公司</span>
+    </div>
+    <div class="folder">📁 94229_Level_Up_Bus</div>
+    <div class="desc">
+      <div class="lead">Ride, Race, Feel the Real Drive.</div>
+      <div class="body">This is a very fun overtaking game! Take your passengers, experience the thrill of racing, and simulate the thrill of actual driving!</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94229_Level_Up_Bus/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94229_Level_Up_Bus/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94229_Level_Up_Bus/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94229_Level_Up_Bus/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260210/e3b731499bf3066c9db77b0c4fcdc3ba.zip" target="_blank" rel="noreferrer">e3b731499bf3066c9db77b0c4fcdc3ba.zip</a></span>
+  <span>MD5 <code>e3b731499bf3066c9db77b0c4fcdc3ba</code></span>
+  <span>在线入口：<a href="https://www.xmyunshanggame.com/Level_Up_Bus/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94229" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Racing, Casual, Simulation</span>
+</div>
+</section>
+<section class="card" data-cat="Children" data-s="my avatar world 92191_my_avatar_world children my avatar world children, female, avatar life">
+<div class="card-head">
+  <img class="icon" src="92191_My_Avatar_World/art/icon.webp" alt="My Avatar World" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">My Avatar World</span><span class="idx">#73 · id 92191</span></div>
+    <div class="badges">
+      <span class="badge cat">Children</span>
+      <span class="badge rate">★ 7.3</span>
+      <span class="badge">29.16M</span>
+      <span class="badge">包体 17.8 MB</span>
+      <span class="badge dev">开发商 海南一个科技有限公司</span>
+    </div>
+    <div class="folder">📁 92191_My_Avatar_World</div>
+    <div class="desc">
+      <div class="lead">Design your character!Create your own joy!</div>
+      <div class="body">Explore and experience a fun and super cute world filled with incredible locations, towns, cities, and characters, as well as endless items and avatars for interaction.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="92191_My_Avatar_World/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="92191_My_Avatar_World/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="92191_My_Avatar_World/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="92191_My_Avatar_World/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20250509/10065055166.zip" target="_blank" rel="noreferrer">10065055166.zip</a></span>
+  <span>MD5 <code>a52181e40db3672a9a93e8918d63facc</code></span>
+  <span>在线入口：<a href="https://www.hnyigegame.com/My_Avatar_World/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_92191" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Children, Female, Avatar Life</span>
+</div>
+</section>
+<section class="card" data-cat="Racing" data-s="carnado stunt car 3d 94281_carnado_stunt_car_3d racing carnado stunt car 3d level games, move car, driving">
+<div class="card-head">
+  <img class="icon" src="94281_Carnado_Stunt_Car_3D/art/icon.webp" alt="Carnado Stunt Car 3D" loading="lazy">
+  <div class="head-main">
+    <div class="title-row"><span class="name">Carnado Stunt Car 3D</span><span class="idx">#74 · id 94281</span></div>
+    <div class="badges">
+      <span class="badge cat">Racing</span>
+      <span class="badge rate">★ 8.5</span>
+      <span class="badge">66.4M</span>
+      <span class="badge">包体 37.4 MB</span>
+      <span class="badge dev">开发商 成都模拟元素</span>
+    </div>
+    <div class="folder">📁 94281_Carnado_Stunt_Car_3D</div>
+    <div class="desc">
+      <div class="lead">Open-world stunt car racing</div>
+      <div class="body">Carnado Stunt Car is an open-world driving game where the city is your stunt playground. Explore massive maps packed with ramps, bridges, secret spots, and wild tracks. Drift through traffic, complete hidden missions, collect awesome cars, and push your skills to the limit.</div>
+    </div>
+  </div>
+</div>
+<div class="art">
+    <figure class="img-banner"><img src="94281_Carnado_Stunt_Car_3D/art/banner.webp" alt="banner" loading="lazy"><figcaption>BANNER</figcaption></figure>
+    <figure class="img-hot"><img src="94281_Carnado_Stunt_Car_3D/art/hotgame.webp" alt="hotgame" loading="lazy"><figcaption>HOT GAME</figcaption></figure>
+    <figure class="img-theme"><img src="94281_Carnado_Stunt_Car_3D/art/theme.webp" alt="theme" loading="lazy"><figcaption>THEME</figcaption></figure>
+    <figure class="img-preview"><img src="94281_Carnado_Stunt_Car_3D/art/preview.gif" alt="preview" loading="lazy"><figcaption>PREVIEW</figcaption></figure>
+</div>
+<div class="links">
+  <span>原包体：<a href="https://aha-zip-static.ahagamecenter.com/resources/20260305/1f5650bc78abcfcb76ee32190eb6c7b8.zip" target="_blank" rel="noreferrer">1f5650bc78abcfcb76ee32190eb6c7b8.zip</a></span>
+  <span>MD5 <code>1f5650bc78abcfcb76ee32190eb6c7b8</code></span>
+  <span>在线入口：<a href="https://www.cdmoniyuansugame.com/Carnado_Stunt_Car_3D/index_game.html?gamechannel=instant&amp;utm_source=InstantH5_94281" target="_blank" rel="noreferrer">打开</a></span>
+  <span class="taglist">标签：Level Games, Move Car, Driving</span>
+</div>
+</section>
+</main>
+<footer>
+  仅作逆向 / 对标研究留存 · 美术素材版权归各自开发商所有 · 本页由 pull_art.ps1 自动生成
+</footer>
+<script>
+const cards=[...document.querySelectorAll('.card')];
+const q=document.getElementById('q'),cat=document.getElementById('cat'),cnt=document.getElementById('cnt');
+function apply(){
+  const t=q.value.trim().toLowerCase(), c=cat.value;
+  let n=0;
+  for(const el of cards){
+    const okT=!t||el.dataset.s.includes(t);
+    const okC=!c||el.dataset.cat===c;
+    const show=okT&&okC;
+    el.classList.toggle('hidden',!show);
+    if(show)n++;
+  }
+  cnt.textContent=`显示 ${n} / ${cards.length}`;
+}
+q.addEventListener('input',apply);cat.addEventListener('change',apply);apply();
+</script>
+</body></html>

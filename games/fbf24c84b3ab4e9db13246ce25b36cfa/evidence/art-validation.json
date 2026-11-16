@@ -1,0 +1,34 @@
+{
+  "stage": "art",
+  "result": "通过文件与几何静态核验",
+  "checks": [
+    "64×64 viewBox",
+    "青绿色及描边一致",
+    "未绘制背景且无外部依赖",
+    "五角顶点及描边无越界",
+    "等比尺寸与峰值安全内边距",
+    "动画配置及五位置",
+    "静态预览引用真实资源"
+  ],
+  "files": [
+    {
+      "path": "public/assets/star.svg",
+      "bytes": 334,
+      "sha256": "7344a233421e96ed041f7a12fef32efc37e679707d6b32157e1e201d52035d53"
+    },
+    {
+      "path": "public/assets/visual-config.json",
+      "bytes": 1226,
+      "sha256": "84c9b8b3bcb69b9d7f09175e8cfc7e8cb1f44596d395a388ac546d7d39e54d0d"
+    },
+    {
+      "path": "workflow/art-preview.html",
+      "bytes": 2594,
+      "sha256": "19ca7c5d80c7e9b96c0793d986b543b6faf53ed37a7338b58724dfabffb0ce5d"
+    }
+  ],
+  "limitations": [
+    "未启动浏览器，未验证实际栅格透明度或视觉效果",
+    "未执行动画、游戏输入或真机测试"
+  ]
+}

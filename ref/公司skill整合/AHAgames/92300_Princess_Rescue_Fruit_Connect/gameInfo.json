@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  92300,
+    "apiName":  "Princess Rescue Fruit Connect",
+    "targetName":  "Princess Rescue Fruit Connect",
+    "match":  "EXACT",
+    "bundleName":  "re_1787562815459_www.ooppgame.com.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260824/7a2dd9b39bd442c6c200dcd0d45e774b.zip",
+    "bundleMd5":  "7a2dd9b39bd442c6c200dcd0d45e774b",
+    "bundleSize":  3051886,
+    "updatedAt":  1787839289,
+    "gameLink":  "https://www.ooppgame.com/Princess_Rescue_Fruit_Connect/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_92300",
+    "category":  "Single challenge",
+    "rate":  7.0,
+    "gameType":  1,
+    "localFile":  "Princess_Rescue_Fruit_Connect.zip",
+    "localBytes":  3051886,
+    "verifiedAt":  "2026-10-20T10:33:07",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

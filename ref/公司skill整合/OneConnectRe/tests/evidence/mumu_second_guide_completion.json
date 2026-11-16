@@ -1,0 +1,7 @@
+{
+  "blankTapDoesNotComplete": true,
+  "guideReturnsAfterInterruption": true,
+  "normalMatchCompletes": true,
+  "restartKeepsComplete": true,
+  "errors": []
+}

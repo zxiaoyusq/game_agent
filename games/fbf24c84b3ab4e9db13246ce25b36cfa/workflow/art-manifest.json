@@ -1,0 +1,28 @@
+{
+  "mode": "procedural",
+  "assets": [
+    {
+      "path": "public/assets/star.svg",
+      "sha256": "7344a233421e96ed041f7a12fef32efc37e679707d6b32157e1e201d52035d53",
+      "usage": "唯一采集目标图像，Canvas 2D 加载后以 drawImage 居中等比绘制为56×56 CSS像素；胜利后保留同图",
+      "source": "本项目按已确认青绿色原型，以十个顶点程序化创作五角SVG，无第三方素材或图片API",
+      "width": 64,
+      "height": 64,
+      "bytes": 334
+    },
+    {
+      "path": "public/assets/visual-config.json",
+      "sha256": "84c9b8b3bcb69b9d7f09175e8cfc7e8cb1f44596d395a388ac546d7d39e54d0d",
+      "usage": "代码阶段读取或等价使用的配色、尺寸、五位置和160毫秒缩放规格；其中asset路径以构建index.html为基准解析",
+      "source": "本项目依据workflow/prototype.md创作的程序化视觉配置，不含外部素材",
+      "bytes": 1226
+    },
+    {
+      "path": "workflow/art-preview.html",
+      "sha256": "19ca7c5d80c7e9b96c0793d986b543b6faf53ed37a7338b58724dfabffb0ce5d",
+      "usage": "仅供美术交接的响应式静态布局、透明底和等比缩放样本预览；不进入dist且不作为游戏或动画证据",
+      "source": "本项目手写HTML与CSS，引用同包真实star.svg，使用系统字体",
+      "bytes": 2594
+    }
+  ]
+}

@@ -1,0 +1,7893 @@
+[
+  {
+    "kind": "素材完成",
+    "at": 123.70000076293945
+  },
+  {
+    "restored": "moving",
+    "dice": 5,
+    "kind": "恢复",
+    "at": 243.9000015258789,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 66.69999999999982
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 26
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 27
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 256.5999984741211,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 66.69999999999982
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 27
+    },
+    "segmentKind": "walk",
+    "at": 306.70000076293945,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 116.69999999999982
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 27
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 28
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 306.70000076293945,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 116.69999999999982
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 28
+    },
+    "segmentKind": "walk",
+    "at": 423.20000076293945,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 233.3999999999998
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 28
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 29
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 423.20000076293945,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 233.3999999999998
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 29
+    },
+    "segmentKind": "walk",
+    "at": 523.7000007629395,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 333.3999999999998
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 29
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 30
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 523.7000007629395,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 333.3999999999998
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 30
+    },
+    "segmentKind": "walk",
+    "at": 642.0999984741211,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 450.09999999999985
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 30
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 31
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 642.0999984741211,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 450.09999999999985
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 31
+    },
+    "segmentKind": "walk",
+    "at": 739.9000015258789,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 1,
+    "elapsed": 550.0999999999998
+  },
+  {
+    "plan": {
+      "id": 2,
+      "p": 2,
+      "index": 0,
+      "path": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "from": 26,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 2,
+    "kind": "动作提交",
+    "at": 740.0999984741211,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 550.0999999999998
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 740.0999984741211,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 827.0999984741211,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰开始",
+    "at": 827.2999992370605,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰结束",
+    "at": 1673.2000007629395,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 1673.2000007629395,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 1725.7999992370605,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 3,
+      "p": 0,
+      "index": 2,
+      "path": [
+        0
+      ],
+      "from": -1,
+      "capture": null,
+      "home": false
+    },
+    "duration": 110,
+    "kind": "走子开始",
+    "at": 1726.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 2,
+      "pos": -1
+    },
+    "to": {
+      "p": 0,
+      "i": 2,
+      "pos": 0
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 1739.7999992370605,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 16.699999999999818
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 2,
+      "pos": 0
+    },
+    "segmentKind": "walk",
+    "at": 1839.7999992370605,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 2,
+    "elapsed": 116.69999999999982
+  },
+  {
+    "plan": {
+      "id": 3,
+      "p": 0,
+      "index": 2,
+      "path": [
+        0
+      ],
+      "from": -1,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 2,
+      "capture": null,
+      "home": false,
+      "extra": true
+    },
+    "action": 3,
+    "kind": "动作提交",
+    "at": 1839.7999992370605,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 116.69999999999982
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 1839.7999992370605,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 1943.400001525879,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰开始",
+    "at": 1943.599998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰结束",
+    "at": 2789.900001525879,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 2789.900001525879,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 2859.2999992370605,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 4,
+      "p": 0,
+      "index": 3,
+      "path": [
+        0
+      ],
+      "from": -1,
+      "capture": null,
+      "home": false
+    },
+    "duration": 110,
+    "kind": "走子开始",
+    "at": 2859.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 3,
+      "pos": -1
+    },
+    "to": {
+      "p": 0,
+      "i": 3,
+      "pos": 0
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 2873.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 16.59999999999991
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 3,
+      "pos": 0
+    },
+    "segmentKind": "walk",
+    "at": 2973.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 3,
+    "elapsed": 116.59999999999991
+  },
+  {
+    "plan": {
+      "id": 4,
+      "p": 0,
+      "index": 3,
+      "path": [
+        0
+      ],
+      "from": -1,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 3,
+      "capture": null,
+      "home": false,
+      "extra": true
+    },
+    "action": 4,
+    "kind": "动作提交",
+    "at": 2973.2000007629395,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 116.59999999999991
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 2973.2000007629395,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 3076.599998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰开始",
+    "at": 3076.7999992370605,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰结束",
+    "at": 3923.099998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 3923.099998474121,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 4025.7000007629395,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 5,
+      "p": 0,
+      "index": 0,
+      "path": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "from": 0,
+      "capture": null,
+      "home": false
+    },
+    "duration": 660,
+    "kind": "走子开始",
+    "at": 4025.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 0
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 1
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 4039.7000007629395,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 16.699999999999818
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 1
+    },
+    "segmentKind": "walk",
+    "at": 4139.799999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 116.69999999999982
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 1
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 2
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 4139.799999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 116.69999999999982
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 2
+    },
+    "segmentKind": "walk",
+    "at": 4256.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 233.39999999999964
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 2
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 3
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 4256.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 233.39999999999964
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 3
+    },
+    "segmentKind": "walk",
+    "at": 4356.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 333.39999999999964
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 3
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 4
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 4356.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 333.39999999999964
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 4
+    },
+    "segmentKind": "walk",
+    "at": 4473,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 450
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 4
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 5
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 4473,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 450
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 5
+    },
+    "segmentKind": "walk",
+    "at": 4573,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 550
+  },
+  {
+    "index": 5,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 5
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 6
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 4573,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 550
+  },
+  {
+    "segment": 5,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 6
+    },
+    "segmentKind": "walk",
+    "at": 4689.700000762939,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 4,
+    "elapsed": 666.6999999999998
+  },
+  {
+    "plan": {
+      "id": 5,
+      "p": 0,
+      "index": 0,
+      "path": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "from": 0,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": true
+    },
+    "action": 5,
+    "kind": "动作提交",
+    "at": 4689.799999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 666.6999999999998
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 4689.799999237061,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 4775.599998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰开始",
+    "at": 4775.700000762939,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰结束",
+    "at": 5623,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 5623.099998474121,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 5692.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 6,
+      "p": 0,
+      "index": 0,
+      "path": [
+        7,
+        8
+      ],
+      "from": 6,
+      "capture": null,
+      "home": false
+    },
+    "duration": 220,
+    "kind": "走子开始",
+    "at": 5692.700000762939,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 6
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 7
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 5706.299999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 16.600000000000364
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 7
+    },
+    "segmentKind": "walk",
+    "at": 5806.299999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 116.60000000000036
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 7
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 8
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 5806.299999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 116.60000000000036
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 8
+    },
+    "segmentKind": "walk",
+    "at": 5923,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 5,
+    "elapsed": 233.30000000000018
+  },
+  {
+    "plan": {
+      "id": 6,
+      "p": 0,
+      "index": 0,
+      "path": [
+        7,
+        8
+      ],
+      "from": 6,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 6,
+    "kind": "动作提交",
+    "at": 5923,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 233.30000000000018
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 5923,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 6011.299999237061,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰开始",
+    "at": 6011.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰结束",
+    "at": 6856.299999237061,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 6856.299999237061,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 6942.700000762939,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 7,
+      "p": 2,
+      "index": 0,
+      "path": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "from": 31,
+      "capture": null,
+      "home": false
+    },
+    "duration": 440,
+    "kind": "走子开始",
+    "at": 6942.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 31
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 32
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 6956.299999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 16.700000000000728
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 32
+    },
+    "segmentKind": "walk",
+    "at": 7058,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 116.60000000000036
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 32
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 33
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 7058,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 116.60000000000036
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 33
+    },
+    "segmentKind": "walk",
+    "at": 7173,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 233.30000000000018
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 33
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 34
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 7173,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 233.30000000000018
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 34
+    },
+    "segmentKind": "walk",
+    "at": 7272.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 333.3000000000002
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 34
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 35
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 7272.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 333.3000000000002
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 35
+    },
+    "segmentKind": "walk",
+    "at": 7391.799999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 6,
+    "elapsed": 450
+  },
+  {
+    "plan": {
+      "id": 7,
+      "p": 2,
+      "index": 0,
+      "path": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "from": 31,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 7,
+    "kind": "动作提交",
+    "at": 7391.799999237061,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 450
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 7391.799999237061,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 7493.400001525879,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰开始",
+    "at": 7493.599998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰结束",
+    "at": 8322.900001525879,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 833.4000000000005
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 8322.900001525879,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 8375.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 8,
+      "p": 0,
+      "index": 0,
+      "path": [
+        9,
+        10
+      ],
+      "from": 8,
+      "capture": null,
+      "home": false
+    },
+    "duration": 220,
+    "kind": "走子开始",
+    "at": 8375.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 8
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 9
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 8389.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 16.69999999999891
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 9
+    },
+    "segmentKind": "walk",
+    "at": 8489.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 9
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 10
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 8489.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 10
+    },
+    "segmentKind": "walk",
+    "at": 8606.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 7,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "plan": {
+      "id": 8,
+      "p": 0,
+      "index": 0,
+      "path": [
+        9,
+        10
+      ],
+      "from": 8,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 8,
+    "kind": "动作提交",
+    "at": 8606.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 8606.29999923706,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 8709.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰开始",
+    "at": 8710,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰结束",
+    "at": 9556.20000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 849.8999999999996
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 9556.20000076294,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 9624.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 9,
+      "p": 2,
+      "index": 0,
+      "path": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "from": 35,
+      "capture": null,
+      "home": false
+    },
+    "duration": 550,
+    "kind": "走子开始",
+    "at": 9625.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 35
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 36
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 9639.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 16.599999999998545
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 36
+    },
+    "segmentKind": "walk",
+    "at": 9739.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 36
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 37
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 9739.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 37
+    },
+    "segmentKind": "walk",
+    "at": 9856.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 233.1999999999989
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 37
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 38
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 9856.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 233.1999999999989
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 38
+    },
+    "segmentKind": "walk",
+    "at": 9957,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 38
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 39
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 9957,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 39
+    },
+    "segmentKind": "walk",
+    "at": 10072.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 450
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 39
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 40
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 10072.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 450
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 40
+    },
+    "segmentKind": "walk",
+    "at": 10172.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 8,
+    "elapsed": 550
+  },
+  {
+    "plan": {
+      "id": 9,
+      "p": 2,
+      "index": 0,
+      "path": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "from": 35,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 9,
+    "kind": "动作提交",
+    "at": 10172.900001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 550
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 10172.900001525879,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 10260.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰开始",
+    "at": 10260.79999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰结束",
+    "at": 11106.20000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 849.8999999999996
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 11106.20000076294,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 11175.599998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 10,
+      "p": 0,
+      "index": 0,
+      "path": [
+        11,
+        12
+      ],
+      "from": 10,
+      "capture": null,
+      "home": false
+    },
+    "duration": 220,
+    "kind": "走子开始",
+    "at": 11175.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 10
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 11
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 11189.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 16.69999999999891
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 11
+    },
+    "segmentKind": "walk",
+    "at": 11289.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 116.60000000000036
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 11
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 12
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 11289.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 116.60000000000036
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 12
+    },
+    "segmentKind": "walk",
+    "at": 11406.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 9,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "plan": {
+      "id": 10,
+      "p": 0,
+      "index": 0,
+      "path": [
+        11,
+        12
+      ],
+      "from": 10,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 10,
+    "kind": "动作提交",
+    "at": 11406.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 11406.20000076294,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 11526.29999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰开始",
+    "at": 11526.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰结束",
+    "at": 12372.79999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 12372.79999923706,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 12446.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 11,
+      "p": 2,
+      "index": 0,
+      "path": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "from": 40,
+      "capture": null,
+      "home": false
+    },
+    "duration": 440,
+    "kind": "走子开始",
+    "at": 12446.599998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 40
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 41
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 12458.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 16.599999999998545
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 41
+    },
+    "segmentKind": "walk",
+    "at": 12556.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 41
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 42
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 12556.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 42
+    },
+    "segmentKind": "walk",
+    "at": 12672.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 233.39999999999964
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 42
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 43
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 12672.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 233.39999999999964
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 43
+    },
+    "segmentKind": "walk",
+    "at": 12772.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 43
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 44
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 12772.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 44
+    },
+    "segmentKind": "walk",
+    "at": 12889.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 10,
+    "elapsed": 450
+  },
+  {
+    "plan": {
+      "id": 11,
+      "p": 2,
+      "index": 0,
+      "path": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "from": 40,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 11,
+    "kind": "动作提交",
+    "at": 12889.400001525879,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 450
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 12889.400001525879,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 12991.79999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰开始",
+    "at": 12992.099998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰结束",
+    "at": 13839.400001525879,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 849.8999999999996
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 13839.5,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 14025.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 12,
+      "p": 0,
+      "index": 0,
+      "path": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "from": 12,
+      "capture": null,
+      "home": false
+    },
+    "duration": 440,
+    "kind": "走子开始",
+    "at": 14026.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 12
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 13
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 14039.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 16.700000000000728
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 13
+    },
+    "segmentKind": "walk",
+    "at": 14139.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 116.70000000000073
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 13
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 14
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 14139.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 116.70000000000073
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 14
+    },
+    "segmentKind": "walk",
+    "at": 14256,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 233.39999999999964
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 14
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 15
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 14256,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 233.39999999999964
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 15
+    },
+    "segmentKind": "walk",
+    "at": 14356.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 333.39999999999964
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 15
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 16
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 14356.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 333.39999999999964
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 16
+    },
+    "segmentKind": "walk",
+    "at": 14476,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 11,
+    "elapsed": 450.10000000000036
+  },
+  {
+    "plan": {
+      "id": 12,
+      "p": 0,
+      "index": 0,
+      "path": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "from": 12,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 12,
+    "kind": "动作提交",
+    "at": 14476.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 450.10000000000036
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 14476.099998474121,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 14608.79999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰开始",
+    "at": 14609.099998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰结束",
+    "at": 15439.29999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 833.3999999999996
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 15439.29999923706,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 15508.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 13,
+      "p": 2,
+      "index": 3,
+      "path": [
+        26
+      ],
+      "from": -1,
+      "capture": null,
+      "home": false
+    },
+    "duration": 110,
+    "kind": "走子开始",
+    "at": 15509.099998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 3,
+      "pos": -1
+    },
+    "to": {
+      "p": 2,
+      "i": 3,
+      "pos": 26
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 15522.599998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 16.69999999999891
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 3,
+      "pos": 26
+    },
+    "segmentKind": "walk",
+    "at": 15622.599998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 12,
+    "elapsed": 116.69999999999891
+  },
+  {
+    "plan": {
+      "id": 13,
+      "p": 2,
+      "index": 3,
+      "path": [
+        26
+      ],
+      "from": -1,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 3,
+      "capture": null,
+      "home": false,
+      "extra": true
+    },
+    "action": 13,
+    "kind": "动作提交",
+    "at": 15622.599998474121,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 116.69999999999891
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 15622.70000076294,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 15758.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰开始",
+    "at": 15758.599998474121,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰结束",
+    "at": 16605.90000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 16605.90000152588,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 16708.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 14,
+      "p": 2,
+      "index": 0,
+      "path": [
+        45,
+        46,
+        47
+      ],
+      "from": 44,
+      "capture": null,
+      "home": false
+    },
+    "duration": 330,
+    "kind": "走子开始",
+    "at": 16708.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 44
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 45
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 16722.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 16.599999999998545
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 45
+    },
+    "segmentKind": "walk",
+    "at": 16822.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 116.70000000000073
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 45
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 46
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 16822.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 116.70000000000073
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 46
+    },
+    "segmentKind": "walk",
+    "at": 16939.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 46
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 47
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 16939.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 47
+    },
+    "segmentKind": "walk",
+    "at": 17039.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 13,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "plan": {
+      "id": 14,
+      "p": 2,
+      "index": 0,
+      "path": [
+        45,
+        46,
+        47
+      ],
+      "from": 44,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 14,
+    "kind": "动作提交",
+    "at": 17039.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 17040,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 17142.40000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰开始",
+    "at": 17142.59999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰结束",
+    "at": 17972.40000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 833.4000000000015
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 17972.5,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 18040.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 15,
+      "p": 0,
+      "index": 0,
+      "path": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "from": 16,
+      "capture": null,
+      "home": false
+    },
+    "duration": 550,
+    "kind": "走子开始",
+    "at": 18040.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 16
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 17
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 18040.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 16.700000000000728
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 17
+    },
+    "segmentKind": "walk",
+    "at": 18139.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 116.60000000000218
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 17
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 18
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 18139.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 116.60000000000218
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 18
+    },
+    "segmentKind": "walk",
+    "at": 18255.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 233.40000000000146
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 18
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 19
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 18255.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 233.40000000000146
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 19
+    },
+    "segmentKind": "walk",
+    "at": 18357,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 19
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 20
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 18357,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 20
+    },
+    "segmentKind": "walk",
+    "at": 18472.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 450
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 20
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 21
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 18472.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 450
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 21
+    },
+    "segmentKind": "walk",
+    "at": 18597.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 14,
+    "elapsed": 566.6000000000022
+  },
+  {
+    "plan": {
+      "id": 15,
+      "p": 0,
+      "index": 0,
+      "path": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "from": 16,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 15,
+    "kind": "动作提交",
+    "at": 18597.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 566.6000000000022
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 18597.20000076294,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 18726.09999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰开始",
+    "at": 18726.20000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰结束",
+    "at": 19577.59999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 19577.59999847412,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 19691.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 16,
+      "p": 2,
+      "index": 0,
+      "path": [
+        48,
+        49,
+        50
+      ],
+      "from": 47,
+      "capture": null,
+      "home": false
+    },
+    "duration": 330,
+    "kind": "走子开始",
+    "at": 19692.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 47
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 48
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 19705.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 16.69999999999709
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 48
+    },
+    "segmentKind": "walk",
+    "at": 19805.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 48
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 49
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 19805.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 49
+    },
+    "segmentKind": "walk",
+    "at": 19922.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 49
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 50
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 19922.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 50
+    },
+    "segmentKind": "walk",
+    "at": 20030.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 15,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "plan": {
+      "id": 16,
+      "p": 2,
+      "index": 0,
+      "path": [
+        48,
+        49,
+        50
+      ],
+      "from": 47,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 16,
+    "kind": "动作提交",
+    "at": 20030.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 20030.5,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 20175.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰开始",
+    "at": 20175.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰结束",
+    "at": 21022.40000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 849.8999999999978
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 21022.40000152588,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 21141.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 17,
+      "p": 0,
+      "index": 0,
+      "path": [
+        22,
+        23,
+        24
+      ],
+      "from": 21,
+      "capture": null,
+      "home": false
+    },
+    "duration": 330,
+    "kind": "走子开始",
+    "at": 21141.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 21
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 22
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 21155.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 16.599999999998545
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 22
+    },
+    "segmentKind": "walk",
+    "at": 21255.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 22
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 23
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 21255.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 23
+    },
+    "segmentKind": "walk",
+    "at": 21372.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 23
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 24
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 21372.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 24
+    },
+    "segmentKind": "walk",
+    "at": 21472.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 16,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "plan": {
+      "id": 17,
+      "p": 0,
+      "index": 0,
+      "path": [
+        22,
+        23,
+        24
+      ],
+      "from": 21,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 17,
+    "kind": "动作提交",
+    "at": 21472.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 21472.5,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 21609.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰开始",
+    "at": 21609.90000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰结束",
+    "at": 22455.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 22455.70000076294,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 22558.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 18,
+      "p": 2,
+      "index": 0,
+      "path": [
+        51,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "from": 50,
+      "capture": null,
+      "home": false
+    },
+    "duration": 660,
+    "kind": "走子开始",
+    "at": 22558.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 50
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 51
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 22574.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 16.599999999998545
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 51
+    },
+    "segmentKind": "walk",
+    "at": 22682,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 51
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 0
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 22682,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 0
+    },
+    "segmentKind": "walk",
+    "at": 22789.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 0
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 1
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 22789.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 1
+    },
+    "segmentKind": "walk",
+    "at": 22889,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 1
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 2
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 22889,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 2
+    },
+    "segmentKind": "walk",
+    "at": 23005.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 450
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 2
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 3
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 23005.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 450
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 3
+    },
+    "segmentKind": "walk",
+    "at": 23122.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 566.5999999999985
+  },
+  {
+    "index": 5,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 3
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 4
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 23122.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 566.5999999999985
+  },
+  {
+    "segment": 5,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 4
+    },
+    "segmentKind": "walk",
+    "at": 23232,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 17,
+    "elapsed": 666.5999999999985
+  },
+  {
+    "plan": {
+      "id": 18,
+      "p": 2,
+      "index": 0,
+      "path": [
+        51,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "from": 50,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": true
+    },
+    "action": 18,
+    "kind": "动作提交",
+    "at": 23232,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 666.5999999999985
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 23232,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 23374.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰开始",
+    "at": 23374.90000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰结束",
+    "at": 24222.29999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 849.9000000000015
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 24222.29999923706,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 24324.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 19,
+      "p": 2,
+      "index": 0,
+      "path": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": 4,
+      "capture": null,
+      "home": false
+    },
+    "duration": 550,
+    "kind": "走子开始",
+    "at": 24324.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 4
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 5
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 24339.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 16.600000000002183
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 5
+    },
+    "segmentKind": "walk",
+    "at": 24439,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 116.60000000000218
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 5
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 6
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 24439,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 116.60000000000218
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 6
+    },
+    "segmentKind": "walk",
+    "at": 24555.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 233.3000000000029
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 6
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 7
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 24555.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 233.3000000000029
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 7
+    },
+    "segmentKind": "walk",
+    "at": 24655.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 333.2000000000007
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 7
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 8
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 24655.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 333.2000000000007
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 8
+    },
+    "segmentKind": "walk",
+    "at": 24772.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 450
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 8
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 9
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 24772.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 450
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 9
+    },
+    "segmentKind": "walk",
+    "at": 24888.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 18,
+    "elapsed": 566.6000000000022
+  },
+  {
+    "plan": {
+      "id": 19,
+      "p": 2,
+      "index": 0,
+      "path": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": 4,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 19,
+    "kind": "动作提交",
+    "at": 24889,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 566.6000000000022
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 24889,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 25060.90000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰开始",
+    "at": 25061.09999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰结束",
+    "at": 25905.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 849.8999999999978
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 25905.5,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 26025,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 20,
+      "p": 0,
+      "index": 0,
+      "path": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "from": 24,
+      "capture": null,
+      "home": false
+    },
+    "duration": 440,
+    "kind": "走子开始",
+    "at": 26025.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 24
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 25
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 26041.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 16.599999999998545
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 25
+    },
+    "segmentKind": "walk",
+    "at": 26138.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 25
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 26
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 26138.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 26
+    },
+    "segmentKind": "walk",
+    "at": 26255.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 26
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 27
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 26255.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 27
+    },
+    "segmentKind": "walk",
+    "at": 26355.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 27
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 28
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 26355.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 28
+    },
+    "segmentKind": "walk",
+    "at": 26474.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 19,
+    "elapsed": 450
+  },
+  {
+    "plan": {
+      "id": 20,
+      "p": 0,
+      "index": 0,
+      "path": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "from": 24,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 20,
+    "kind": "动作提交",
+    "at": 26474.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 450
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 26474.29999923706,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 26624.40000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰开始",
+    "at": 26624.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 0
+  },
+  {
+    "dice": 2,
+    "kind": "摇骰结束",
+    "at": 27467.20000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 833.3999999999978
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 27467.20000076294,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 27625.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 21,
+      "p": 2,
+      "index": 2,
+      "path": [
+        27,
+        28
+      ],
+      "from": 26,
+      "capture": {
+        "p": 0,
+        "i": 0
+      },
+      "home": false
+    },
+    "duration": 1360,
+    "kind": "走子开始",
+    "at": 27625.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 2,
+      "pos": 26
+    },
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 27
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 27640.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 16.69999999999709
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 27
+    },
+    "segmentKind": "walk",
+    "at": 27738.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 2,
+      "pos": 27
+    },
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 28
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 27738.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 28
+    },
+    "segmentKind": "walk",
+    "at": 27855.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 233.39999999999782
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 28
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 28
+    },
+    "ms": 120,
+    "segmentKind": "capture",
+    "at": 27855.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 233.39999999999782
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 28
+    },
+    "segmentKind": "capture",
+    "at": 27972.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 350
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 28
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 27
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 27972.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 350
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 27
+    },
+    "segmentKind": "return",
+    "at": 28005.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 383.2999999999993
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 27
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 26
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28005.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 383.2999999999993
+  },
+  {
+    "value": "restartConfirm",
+    "kind": "覆盖层",
+    "at": 28009.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 383.2999999999993
+  },
+  {
+    "value": "",
+    "kind": "覆盖层",
+    "at": 28292.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 383.2999999999993
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 26
+    },
+    "segmentKind": "return",
+    "at": 28338.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 416.59999999999854
+  },
+  {
+    "index": 5,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 26
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 25
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28338.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 416.59999999999854
+  },
+  {
+    "segment": 5,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 25
+    },
+    "segmentKind": "return",
+    "at": 28366.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 433.2000000000007
+  },
+  {
+    "index": 6,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 25
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 24
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28366.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 433.2000000000007
+  },
+  {
+    "segment": 6,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 24
+    },
+    "segmentKind": "return",
+    "at": 28388.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 466.59999999999854
+  },
+  {
+    "index": 7,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 24
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 23
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28388.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 466.59999999999854
+  },
+  {
+    "segment": 7,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 23
+    },
+    "segmentKind": "return",
+    "at": 28422.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 499.7999999999993
+  },
+  {
+    "index": 8,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 23
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 22
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28422.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 499.7999999999993
+  },
+  {
+    "segment": 8,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 22
+    },
+    "segmentKind": "return",
+    "at": 28455.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 533.2000000000007
+  },
+  {
+    "index": 9,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 22
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 21
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28455.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 533.2000000000007
+  },
+  {
+    "segment": 9,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 21
+    },
+    "segmentKind": "return",
+    "at": 28488.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 566.5
+  },
+  {
+    "index": 10,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 21
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 20
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28488.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 566.5
+  },
+  {
+    "segment": 10,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 20
+    },
+    "segmentKind": "return",
+    "at": 28505.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 583.2000000000007
+  },
+  {
+    "index": 11,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 20
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 19
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28505.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 583.2000000000007
+  },
+  {
+    "segment": 11,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 19
+    },
+    "segmentKind": "return",
+    "at": 28539.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 616.5
+  },
+  {
+    "index": 12,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 19
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 18
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28539.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 616.5
+  },
+  {
+    "segment": 12,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 18
+    },
+    "segmentKind": "return",
+    "at": 28572.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 649.9000000000015
+  },
+  {
+    "index": 13,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 18
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 17
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28572.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 649.9000000000015
+  },
+  {
+    "segment": 13,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 17
+    },
+    "segmentKind": "return",
+    "at": 28606.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 683.2999999999993
+  },
+  {
+    "index": 14,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 17
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 16
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28606.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 683.2999999999993
+  },
+  {
+    "segment": 14,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 16
+    },
+    "segmentKind": "return",
+    "at": 28638.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 716.5
+  },
+  {
+    "index": 15,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 16
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 15
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28638.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 716.5
+  },
+  {
+    "segment": 15,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 15
+    },
+    "segmentKind": "return",
+    "at": 28655.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 733.2999999999993
+  },
+  {
+    "index": 16,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 15
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 14
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28655.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 733.2999999999993
+  },
+  {
+    "segment": 16,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 14
+    },
+    "segmentKind": "return",
+    "at": 28705.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 766.5
+  },
+  {
+    "index": 17,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 14
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 13
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28705.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 766.5
+  },
+  {
+    "segment": 17,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 13
+    },
+    "segmentKind": "return",
+    "at": 28723.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 799.9000000000015
+  },
+  {
+    "index": 18,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 13
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 12
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28723.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 799.9000000000015
+  },
+  {
+    "segment": 18,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 12
+    },
+    "segmentKind": "return",
+    "at": 28755.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 833.2000000000007
+  },
+  {
+    "index": 19,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 12
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 11
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28755.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 833.2000000000007
+  },
+  {
+    "segment": 19,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 11
+    },
+    "segmentKind": "return",
+    "at": 28788.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 866.5
+  },
+  {
+    "index": 20,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 11
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 10
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28788.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 866.5
+  },
+  {
+    "segment": 20,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 10
+    },
+    "segmentKind": "return",
+    "at": 28805.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 883.2000000000007
+  },
+  {
+    "index": 21,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 10
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 9
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28805.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 883.2000000000007
+  },
+  {
+    "segment": 21,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 9
+    },
+    "segmentKind": "return",
+    "at": 28838.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 916.5
+  },
+  {
+    "index": 22,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 9
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 8
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28838.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 916.5
+  },
+  {
+    "segment": 22,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 8
+    },
+    "segmentKind": "return",
+    "at": 28872.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 949.7999999999993
+  },
+  {
+    "index": 23,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 8
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 7
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28872.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 949.7999999999993
+  },
+  {
+    "segment": 23,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 7
+    },
+    "segmentKind": "return",
+    "at": 28905.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 983.2000000000007
+  },
+  {
+    "index": 24,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 7
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 6
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28905.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 983.2000000000007
+  },
+  {
+    "segment": 24,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 6
+    },
+    "segmentKind": "return",
+    "at": 28938.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1016.5999999999985
+  },
+  {
+    "index": 25,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 6
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 5
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28938.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1016.5999999999985
+  },
+  {
+    "segment": 25,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 5
+    },
+    "segmentKind": "return",
+    "at": 28955.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1033.2000000000007
+  },
+  {
+    "index": 26,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 5
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 4
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28955.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1033.2000000000007
+  },
+  {
+    "segment": 26,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 4
+    },
+    "segmentKind": "return",
+    "at": 28988.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1066.5
+  },
+  {
+    "index": 27,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 4
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 3
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 28988.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1066.5
+  },
+  {
+    "segment": 27,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 3
+    },
+    "segmentKind": "return",
+    "at": 29022.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1099.9000000000015
+  },
+  {
+    "index": 28,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 3
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 2
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 29022.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1099.9000000000015
+  },
+  {
+    "segment": 28,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 2
+    },
+    "segmentKind": "return",
+    "at": 29055.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1133.2000000000007
+  },
+  {
+    "index": 29,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 2
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 1
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 29055.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1133.2000000000007
+  },
+  {
+    "segment": 29,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 1
+    },
+    "segmentKind": "return",
+    "at": 29088.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1166.5
+  },
+  {
+    "index": 30,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 1
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 0
+    },
+    "ms": 30,
+    "segmentKind": "return",
+    "at": 29088.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1166.5
+  },
+  {
+    "segment": 30,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": 0
+    },
+    "segmentKind": "return",
+    "at": 29105.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1183.2000000000007
+  },
+  {
+    "index": 31,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 0,
+      "pos": 0
+    },
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": -1
+    },
+    "ms": 180,
+    "segmentKind": "return",
+    "at": 29105.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1183.2000000000007
+  },
+  {
+    "segment": 31,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 0,
+      "pos": -1
+    },
+    "segmentKind": "return",
+    "at": 29288.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 20,
+    "elapsed": 1366.5
+  },
+  {
+    "plan": {
+      "id": 21,
+      "p": 2,
+      "index": 2,
+      "path": [
+        27,
+        28
+      ],
+      "from": 26,
+      "capture": {
+        "p": 0,
+        "i": 0
+      },
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 2,
+      "capture": {
+        "p": 0,
+        "i": 0
+      },
+      "home": false,
+      "extra": true
+    },
+    "action": 21,
+    "kind": "动作提交",
+    "at": 29288.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 1366.5
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 29288.79999923706,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 29494.90000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰开始",
+    "at": 29495.20000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 0
+  },
+  {
+    "dice": 3,
+    "kind": "摇骰结束",
+    "at": 30338.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 30338.70000076294,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 30423.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 22,
+      "p": 2,
+      "index": 0,
+      "path": [
+        10,
+        11,
+        12
+      ],
+      "from": 9,
+      "capture": null,
+      "home": false
+    },
+    "duration": 330,
+    "kind": "走子开始",
+    "at": 30424,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 9
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 10
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 30440.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 16.600000000002183
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 10
+    },
+    "segmentKind": "walk",
+    "at": 30538.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 116.60000000000218
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 10
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 11
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 30538.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 116.60000000000218
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 11
+    },
+    "segmentKind": "walk",
+    "at": 30665.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 11
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 12
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 30665.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 12
+    },
+    "segmentKind": "walk",
+    "at": 30755.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 21,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "plan": {
+      "id": 22,
+      "p": 2,
+      "index": 0,
+      "path": [
+        10,
+        11,
+        12
+      ],
+      "from": 9,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 22,
+    "kind": "动作提交",
+    "at": 30755.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 30755.40000152588,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 30925.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰开始",
+    "at": 30925.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰结束",
+    "at": 31772,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 849.9000000000015
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 31772,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 31943.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 23,
+      "p": 0,
+      "index": 1,
+      "path": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "from": 0,
+      "capture": null,
+      "home": false
+    },
+    "duration": 440,
+    "kind": "走子开始",
+    "at": 31943.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 0
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 1
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 31963.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 16.69999999999709
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 1
+    },
+    "segmentKind": "walk",
+    "at": 32055.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 1
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 2
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 32055.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 116.59999999999854
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 2
+    },
+    "segmentKind": "walk",
+    "at": 32171.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 2
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 3
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 32171.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 233.29999999999927
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 3
+    },
+    "segmentKind": "walk",
+    "at": 32275.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 3
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 4
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 32275.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 333.2999999999993
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 4
+    },
+    "segmentKind": "walk",
+    "at": 32388.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 22,
+    "elapsed": 450
+  },
+  {
+    "plan": {
+      "id": 23,
+      "p": 0,
+      "index": 1,
+      "path": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "from": 0,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 1,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 23,
+    "kind": "动作提交",
+    "at": 32388.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 450
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 32388.70000076294,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 32542.40000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰开始",
+    "at": 32542.59999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰结束",
+    "at": 33388.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 849.9000000000015
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 33388.5,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 33524.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 24,
+      "p": 2,
+      "index": 0,
+      "path": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "from": 12,
+      "capture": null,
+      "home": false
+    },
+    "duration": 660,
+    "kind": "走子开始",
+    "at": 33524.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 12
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 13
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 33545.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 16.700000000004366
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 13
+    },
+    "segmentKind": "walk",
+    "at": 33638.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 116.60000000000582
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 13
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 14
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 33638.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 116.60000000000582
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 14
+    },
+    "segmentKind": "walk",
+    "at": 33755.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 233.3000000000029
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 14
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 15
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 33755.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 233.3000000000029
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 15
+    },
+    "segmentKind": "walk",
+    "at": 33865,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 333.3000000000029
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 15
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 16
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 33865,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 333.3000000000029
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 16
+    },
+    "segmentKind": "walk",
+    "at": 33971.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 450
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 16
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 17
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 33971.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 450
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 17
+    },
+    "segmentKind": "walk",
+    "at": 34071.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 550
+  },
+  {
+    "index": 5,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 17
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 18
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 34071.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 550
+  },
+  {
+    "segment": 5,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 18
+    },
+    "segmentKind": "walk",
+    "at": 34188.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 23,
+    "elapsed": 666.6000000000058
+  },
+  {
+    "plan": {
+      "id": 24,
+      "p": 2,
+      "index": 0,
+      "path": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "from": 12,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": true
+    },
+    "action": 24,
+    "kind": "动作提交",
+    "at": 34188.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 666.6000000000058
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 34188.70000076294,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 34342.90000152588,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰开始",
+    "at": 34343.20000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 0
+  },
+  {
+    "dice": 5,
+    "kind": "摇骰结束",
+    "at": 35188.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 849.9000000000015
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 35188.5,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 35308.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 25,
+      "p": 2,
+      "index": 0,
+      "path": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "from": 18,
+      "capture": null,
+      "home": false
+    },
+    "duration": 550,
+    "kind": "走子开始",
+    "at": 35308.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 18
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 19
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 35329.79999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 16.799999999995634
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 19
+    },
+    "segmentKind": "walk",
+    "at": 35422,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 19
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 20
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 35422,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 20
+    },
+    "segmentKind": "walk",
+    "at": 35538.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 233.40000000000146
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 20
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 21
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 35538.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 233.40000000000146
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 21
+    },
+    "segmentKind": "walk",
+    "at": 35654.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 333.29999999999563
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 21
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 22
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 35654.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 333.29999999999563
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 22
+    },
+    "segmentKind": "walk",
+    "at": 35755.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 450
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 22
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 23
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 35755.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 450
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 23
+    },
+    "segmentKind": "walk",
+    "at": 35858.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 24,
+    "elapsed": 550
+  },
+  {
+    "plan": {
+      "id": 25,
+      "p": 2,
+      "index": 0,
+      "path": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "from": 18,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 25,
+    "kind": "动作提交",
+    "at": 35858.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 550
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 35858.40000152588,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 36025.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 0
+  },
+  {
+    "dice": 1,
+    "kind": "摇骰开始",
+    "at": 36025.59999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 0
+  },
+  {
+    "dice": 1,
+    "kind": "摇骰结束",
+    "at": 36871.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 36871.79999923706,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 36974.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 26,
+      "p": 0,
+      "index": 1,
+      "path": [
+        5
+      ],
+      "from": 4,
+      "capture": null,
+      "home": false
+    },
+    "duration": 110,
+    "kind": "走子开始",
+    "at": 36974.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 4
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 5
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 36998.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 16.69999999999709
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 5
+    },
+    "segmentKind": "walk",
+    "at": 37089.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 25,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "plan": {
+      "id": 26,
+      "p": 0,
+      "index": 1,
+      "path": [
+        5
+      ],
+      "from": 4,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 1,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 26,
+    "kind": "动作提交",
+    "at": 37089.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 37089.5,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 37326,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰开始",
+    "at": 37326.29999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 0
+  },
+  {
+    "dice": 6,
+    "kind": "摇骰结束",
+    "at": 38171.79999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 849.9000000000015
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 38171.90000152588,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 38292.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 27,
+      "p": 2,
+      "index": 0,
+      "path": [
+        24,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "from": 23,
+      "capture": null,
+      "home": false
+    },
+    "duration": 660,
+    "kind": "走子开始",
+    "at": 38292.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 23
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 24
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 38328.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 16.60000000000582
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 24
+    },
+    "segmentKind": "walk",
+    "at": 38416.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 116.70000000000437
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 24
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 64
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 38416.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 116.70000000000437
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 64
+    },
+    "segmentKind": "walk",
+    "at": 38521.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 233.3000000000029
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 64
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 65
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 38521.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 233.3000000000029
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 65
+    },
+    "segmentKind": "walk",
+    "at": 38621.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 333.3000000000029
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 65
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 66
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 38621.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 333.3000000000029
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 66
+    },
+    "segmentKind": "walk",
+    "at": 38744.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 449.90000000000146
+  },
+  {
+    "index": 4,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 66
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 67
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 38744.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 449.90000000000146
+  },
+  {
+    "segment": 4,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 67
+    },
+    "segmentKind": "walk",
+    "at": 38855.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 566.6000000000058
+  },
+  {
+    "index": 5,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 67
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 68
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 38855.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 566.6000000000058
+  },
+  {
+    "segment": 5,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 68
+    },
+    "segmentKind": "walk",
+    "at": 38955.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 26,
+    "elapsed": 666.6000000000058
+  },
+  {
+    "plan": {
+      "id": 27,
+      "p": 2,
+      "index": 0,
+      "path": [
+        24,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "from": 23,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": false,
+      "extra": true
+    },
+    "action": 27,
+    "kind": "动作提交",
+    "at": 38955.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 666.6000000000058
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 38955.40000152588,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 39142.59999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰开始",
+    "at": 39143,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰结束",
+    "at": 39988.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 39988.70000076294,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 40174.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 28,
+      "p": 2,
+      "index": 2,
+      "path": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "from": 28,
+      "capture": null,
+      "home": false
+    },
+    "duration": 440,
+    "kind": "走子开始",
+    "at": 40174.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 2,
+      "pos": 28
+    },
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 29
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 40188.40000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 16.69999999999709
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 29
+    },
+    "segmentKind": "walk",
+    "at": 40298.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 2,
+      "pos": 29
+    },
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 30
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 40298.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 30
+    },
+    "segmentKind": "walk",
+    "at": 40405,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 233.40000000000146
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 2,
+      "pos": 30
+    },
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 31
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 40405,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 233.40000000000146
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 31
+    },
+    "segmentKind": "walk",
+    "at": 40506.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 333.40000000000146
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 2,
+      "pos": 31
+    },
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 32
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 40506.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 333.40000000000146
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 2,
+      "pos": 32
+    },
+    "segmentKind": "walk",
+    "at": 40621.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 27,
+    "elapsed": 450
+  },
+  {
+    "plan": {
+      "id": 28,
+      "p": 2,
+      "index": 2,
+      "path": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "from": 28,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 2,
+      "index": 2,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 28,
+    "kind": "动作提交",
+    "at": 40621.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 450
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 40621.59999847412,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 40842.09999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰开始",
+    "at": 40842.29999923706,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 0
+  },
+  {
+    "dice": 4,
+    "kind": "摇骰结束",
+    "at": 41689.59999847412,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 849.9000000000015
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 41689.59999847412,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 41875,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 29,
+      "p": 0,
+      "index": 1,
+      "path": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": 5,
+      "capture": null,
+      "home": false
+    },
+    "duration": 440,
+    "kind": "走子开始",
+    "at": 41875.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 5
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 6
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 41888.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 16.799999999995634
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 6
+    },
+    "segmentKind": "walk",
+    "at": 41988.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 6
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 7
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 41988.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 116.69999999999709
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 7
+    },
+    "segmentKind": "walk",
+    "at": 42113.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 233.39999999999418
+  },
+  {
+    "index": 2,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 7
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 8
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 42113.90000152588,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 233.39999999999418
+  },
+  {
+    "segment": 2,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 8
+    },
+    "segmentKind": "walk",
+    "at": 42212,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 333.3999999999942
+  },
+  {
+    "index": 3,
+    "kind": "动画段",
+    "from": {
+      "p": 0,
+      "i": 1,
+      "pos": 8
+    },
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 9
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 42212,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 333.3999999999942
+  },
+  {
+    "segment": 3,
+    "kind": "落地",
+    "to": {
+      "p": 0,
+      "i": 1,
+      "pos": 9
+    },
+    "segmentKind": "walk",
+    "at": 42321.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 28,
+    "elapsed": 450
+  },
+  {
+    "plan": {
+      "id": 29,
+      "p": 0,
+      "index": 1,
+      "path": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": 5,
+      "capture": null,
+      "home": false
+    },
+    "last": {
+      "p": 0,
+      "index": 1,
+      "capture": null,
+      "home": false,
+      "extra": false
+    },
+    "action": 29,
+    "kind": "动作提交",
+    "at": 42321.59999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 450
+  },
+  {
+    "value": "ready",
+    "kind": "阶段",
+    "at": 42321.59999847412,
+    "phase": "ready",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "value": "rolling",
+    "kind": "阶段",
+    "at": 42526.70000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "dice": 1,
+    "kind": "摇骰开始",
+    "at": 42527.20000076294,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "dice": 1,
+    "kind": "摇骰结束",
+    "at": 43377.5,
+    "phase": "rolling",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 850
+  },
+  {
+    "value": "choosing",
+    "kind": "阶段",
+    "at": 43377.5,
+    "phase": "choosing",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "value": "moving",
+    "kind": "阶段",
+    "at": 43557.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "plan": {
+      "id": 30,
+      "p": 2,
+      "index": 0,
+      "path": [
+        69
+      ],
+      "from": 68,
+      "capture": null,
+      "home": true
+    },
+    "duration": 510,
+    "kind": "走子开始",
+    "at": 43558.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "index": 0,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 68
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 69
+    },
+    "ms": 110,
+    "segmentKind": "walk",
+    "at": 43571.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 16.700000000004366
+  },
+  {
+    "segment": 0,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 69
+    },
+    "segmentKind": "walk",
+    "at": 43671.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 116.70000000000437
+  },
+  {
+    "index": 1,
+    "kind": "动画段",
+    "from": {
+      "p": 2,
+      "i": 0,
+      "pos": 69
+    },
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 69,
+      "parked": true
+    },
+    "ms": 400,
+    "segmentKind": "home",
+    "at": 43671.5,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 116.70000000000437
+  },
+  {
+    "value": "restartConfirm",
+    "kind": "覆盖层",
+    "at": 43857.70000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 300
+  },
+  {
+    "value": "",
+    "kind": "覆盖层",
+    "at": 44207.29999923706,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 300
+  },
+  {
+    "segment": 1,
+    "kind": "落地",
+    "to": {
+      "p": 2,
+      "i": 0,
+      "pos": 69,
+      "parked": true
+    },
+    "segmentKind": "home",
+    "at": 44438.09999847412,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 516.7000000000044
+  },
+  {
+    "plan": {
+      "id": 30,
+      "p": 2,
+      "index": 0,
+      "path": [
+        69
+      ],
+      "from": 68,
+      "capture": null,
+      "home": true
+    },
+    "last": {
+      "p": 2,
+      "index": 0,
+      "capture": null,
+      "home": true,
+      "extra": true
+    },
+    "action": 30,
+    "kind": "动作提交",
+    "at": 44438.20000076294,
+    "phase": "moving",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 516.7000000000044
+  },
+  {
+    "value": "celebrating",
+    "kind": "阶段",
+    "at": 44438.20000076294,
+    "phase": "celebrating",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "value": "restartConfirm",
+    "kind": "覆盖层",
+    "at": 45624.09999847412,
+    "phase": "celebrating",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 1183.2999999999956
+  },
+  {
+    "value": "",
+    "kind": "覆盖层",
+    "at": 45929,
+    "phase": "celebrating",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 1183.2999999999956
+  },
+  {
+    "value": "result",
+    "kind": "阶段",
+    "at": 46272,
+    "phase": "result",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  },
+  {
+    "value": "result",
+    "kind": "覆盖层",
+    "at": 46272.40000152588,
+    "phase": "result",
+    "id": "de2a1e20-8760-44f0-be81-221fba19424e",
+    "turn": 29,
+    "elapsed": 0
+  }
+]

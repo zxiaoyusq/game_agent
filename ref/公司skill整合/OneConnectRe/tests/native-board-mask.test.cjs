@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let sid=101,clips=0,errors=0;function Arr(){}Arr.prototype.Instance=function(){};Arr.prototype.Instance.prototype.at=function(x,y,z){return this.arr[x]?.[y]?.[z]||0};
+const board=new Arr.prototype.Instance();board.type={name:'t0'};board.arr=Array.from({length:8},()=>Array.from({length:6},()=>[0]));board.arr[4][2][0]=41;board.arr[1][1][0]=77;
+const tile={uid:41,instance_vars:[0,2,4]},runtime={tickcount:1,running_layout:{name:'game'},all_global_vars:[['ROWS_COUNT',4],['COLUMNS_COUNT',6],['ITEM_SIZE',80],['ITEM_SPACING',4]].map(([name,data])=>({name,data})),types:{t5:{instances:[tile]}},getCurrentEventStack:()=>({current_event:{sid}})};board.runtime=runtime;
+let clipResult={top:1,left:1,rows:4,cols:2};const cr={plugins_:{Arr}},window={cr,oneConnectNativePathSids:[101],oneConnectVisibleGravityBounds:{clip:()=>{clips++;return clipResult}},oneConnectHost:{emit:()=>errors++}};
+vm.runInNewContext(fs.readFileSync(process.argv[2]||'tools/native_board_mask_candidate.js','utf8'),{window,cr,Number,Array,Math,Set});window.oneConnectNativeBoardMask.install();
+assert.equal(board.at(4,2,0),41,'visible tiles stay readable');assert.equal(board.at(1,1,0),77,'occupied edge lane stays blocked by its real tile');assert.equal(clips,1,'bounds are reused in one runtime tick');
+assert.equal(board.at(1,2,0),0,'empty cell immediately beyond visible edge remains a legal path lane');
+assert.equal(board.at(0,1,0),0,'native perimeter remains available');sid=999;assert.equal(board.at(1,1,0),77,'non-path logic sees original board data');sid=101;assert.equal(board.at(1,1,1),0,'other array depths are untouched');
+runtime.tickcount++;clipResult=null;assert.equal(board.at(4,2,0),-1);assert.equal(errors,1,'unavailable geometry fails closed with recovery');board.at(4,2,0);assert.equal(errors,1,'recovery is not repeatedly emitted');
+runtime.tickcount++;clipResult={top:1,left:1,rows:4,cols:2};assert.equal(board.at(4,2,0),41,'mask recovers once geometry is available');
+runtime.tickcount++;clipResult={top:0,left:0,rows:6,cols:4};assert.equal(board.at(1,1,0),77,'an uncropped board retains all native cells');
+runtime.tickcount++;clipResult={top:1,left:1,rows:2,cols:2};assert.equal(board.at(1,2,0),-1,'cells beyond the one-cell perimeter stay outside the playable region');assert.equal(board.at(3,2,0),0,'the adjacent perimeter remains available');
+for(const [x,y] of [[3,2],[6,2],[4,1],[4,4],[3,1],[6,4]])assert.equal(board.at(x,y,0),0,`empty perimeter lane ${x},${y} remains usable`);
+board.arr[3][2][0]=91;assert.equal(board.at(3,2,0),91,'occupied perimeter cells still block a route');board.arr[3][2][0]=0;
+console.log('clipped cells are excluded from native path checks without changing the board PASS');

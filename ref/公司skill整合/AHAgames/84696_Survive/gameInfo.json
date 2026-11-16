@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  84696,
+    "apiName":  "Survive",
+    "targetName":  "Survive",
+    "match":  "EXACT",
+    "bundleName":  "www.brigebirdgame.com.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20230404/10013874435.zip",
+    "bundleMd5":  "9793a07cd1e511e80ca2752c87021ed8",
+    "bundleSize":  17245769,
+    "updatedAt":  1766161603,
+    "gameLink":  "https://www.brigebirdgame.com/Survive/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_84696",
+    "category":  "Strategy",
+    "rate":  7.6,
+    "gameType":  1,
+    "localFile":  "Survive.zip",
+    "localBytes":  17245769,
+    "verifiedAt":  "2026-10-20T10:39:48",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

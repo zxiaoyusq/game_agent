@@ -1,0 +1,325 @@
+{
+  "scope": "备用切片文件检查；不证明游戏未以图集形式包含相同内容，也不替代视觉或文化验收",
+  "tiles": [
+    {
+      "file": "斋月_01.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_02.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_03.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_04.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_05.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_06.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_07.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_08.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_09.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_10.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_11.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_12.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_13.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_14.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_15.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_16.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_17.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_18.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_19.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    },
+    {
+      "file": "斋月_20.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256_match": true,
+      "alpha_corner_values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_file_in_game": false
+    }
+  ]
+}

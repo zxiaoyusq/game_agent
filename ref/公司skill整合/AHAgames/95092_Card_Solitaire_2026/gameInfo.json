@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "95092",
+    "apiName":  "Card Solitaire 2026",
+    "targetName":  "Card Solitaire 2026",
+    "match":  "BY_ID",
+    "bundleName":  "re_re_Card_Solitaire_2026.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260604/fee6c12792954c96896945066b8a76f9.zip",
+    "bundleMd5":  "fee6c12792954c96896945066b8a76f9",
+    "bundleSize":  7634448,
+    "updatedAt":  1780651017,
+    "gameLink":  "https://www.shyangyugame.com/Card_Solitaire_2026/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_95092",
+    "category":  "Card",
+    "rate":  8.1,
+    "gameType":  1,
+    "localFile":  "Card_Solitaire_2026.zip",
+    "localBytes":  7634448,
+    "verifiedAt":  "2026-10-20T11:16:26",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

@@ -1,0 +1,195 @@
+{
+  "source_sha256": "2a036140fcf41e307b604373d307ff4014d061eef4bee5fb9504b90424b3460e",
+  "decoded_sha256": "7d0ef0f78f41ed4a6fd101357ebb7bc3828294aa56324eac818044b17b36330a",
+  "string_table_length": 1025,
+  "shift": 481,
+  "verified_mapping_anchors": 9,
+  "alias_count": 505,
+  "archive_asset_count": 321,
+  "registry_declaration_count": 297,
+  "effective_registry_count": 295,
+  "missing_in_shadowed_declarations": [
+    {
+      "key": "Carrom_coins_light",
+      "path": "assets/Carrom_coins_light.png"
+    },
+    {
+      "key": "carrom_spinning_wheel_base_brights",
+      "path": "assets/matchmaking/carrom_spinning_wheel_base_brights.png"
+    }
+  ],
+  "effective_missing_registry_paths": [],
+  "duplicate_keys": [
+    {
+      "key": "Carrom_coins_light",
+      "count": 2,
+      "declarations": [
+        {
+          "key": "Carrom_coins_light",
+          "path": "assets/Carrom_coins_light.png"
+        },
+        {
+          "key": "Carrom_coins_light",
+          "path": "assets/matchmaking/Carrom_coins_light.png"
+        }
+      ]
+    },
+    {
+      "key": "carrom_spinning_wheel_base_brights",
+      "count": 2,
+      "declarations": [
+        {
+          "key": "carrom_spinning_wheel_base_brights",
+          "path": "assets/matchmaking/carrom_spinning_wheel_base_brights.png"
+        },
+        {
+          "key": "carrom_spinning_wheel_base_brights",
+          "path": "assets/wheel/carrom_spinning_wheel_base_brights.png"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "path": "reference-assets/Carrom_black.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/Carrom_black.png",
+      "bytes": 598,
+      "sha256": "0281d1961343b1b7817de79324f02fa4eb2e0e862ddacbfb4d7b3a6efaa779d2",
+      "format": "WebP",
+      "width": 34,
+      "height": 38
+    },
+    {
+      "path": "reference-assets/Carrom_strike.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/Carrom_strike.png",
+      "bytes": 2112,
+      "sha256": "1ad6e6819b3dab9208b549d26a0b4e2daa64dfd29f46765db3671e31ee4c9098",
+      "format": "WebP",
+      "width": 86,
+      "height": 86
+    },
+    {
+      "path": "reference-assets/WOODEN_BASE.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/tutorial/WOODEN_BASE.png",
+      "bytes": 132154,
+      "sha256": "b183ba1fa0640d7fc03e45033eec4ac8ba2ec46aec68793b42efd6d6ef67c4fe",
+      "format": "WebP",
+      "width": 477,
+      "height": 707
+    },
+    {
+      "path": "reference-assets/carrom_spinning_wheel_base.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/wheel/carrom_spinning_wheel_base.png",
+      "bytes": 31038,
+      "sha256": "7d4193ba83c7e65e3911921a36e1a604c15534992ebee9431a516e0b43781184",
+      "format": "WebP",
+      "width": 576,
+      "height": 576
+    },
+    {
+      "path": "reference-assets/delhi_lounge_corners.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/tables/0/delhi_lounge_corners.png",
+      "bytes": 3370,
+      "sha256": "e1ff6318432cc27aa3f7248c4d00202e9378a9b7fd584caf1b8f49d6ac531716",
+      "format": "WebP",
+      "width": 630,
+      "height": 636
+    },
+    {
+      "path": "reference-assets/delhi_lounge_table.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/tables/0/delhi_lounge_table.png",
+      "bytes": 25322,
+      "sha256": "5e48e2001e53b8ec2f4d2592dcf9f6eb3c6ad28e4dd745493118f73db7622f3f",
+      "format": "WebP",
+      "width": 630,
+      "height": 637
+    },
+    {
+      "path": "reference-assets/delhi_lounge_table_01_background.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/tables/0/delhi_lounge_table_01_background.png",
+      "bytes": 20522,
+      "sha256": "43c501c92902dd41dc9fcf7356e9e710dbe3534f9053068385213801c4857c63",
+      "format": "WebP",
+      "width": 855,
+      "height": 1391
+    },
+    {
+      "path": "reference-assets/lobby_bg.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/lobby/lobby_bg.png",
+      "bytes": 6744,
+      "sha256": "98c7e86f79ff34576a05764ebeb842bcaf0787c916f2ac778eee7cb9dd19c52d",
+      "format": "WebP",
+      "width": 854,
+      "height": 1390
+    },
+    {
+      "path": "reference-assets/lobby_button_carrom.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/lobby/lobby_button_carrom.png",
+      "bytes": 12558,
+      "sha256": "d2cc5cbfb0c89545068e4471ba2e10156860d2b92a08c9f1c45c5965ddbed4f6",
+      "format": "WebP",
+      "width": 512,
+      "height": 180
+    },
+    {
+      "path": "reference-assets/lobby_button_carrom_hover.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/lobby/lobby_button_carrom_hover.png",
+      "bytes": 26576,
+      "sha256": "3f2bb75e6c334917bc59196bc0378c4cc75285cfda4ac129c0567735a2e9880c",
+      "format": "WebP",
+      "width": 512,
+      "height": 180
+    },
+    {
+      "path": "reference-assets/matchmaking_bg_delhilounge_slices.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/matchmaking/matchmaking_bg_delhilounge_slices.png",
+      "bytes": 25992,
+      "sha256": "1396b659d27b31be3060a00ae66ac5886868042d2cf4a9d088cef83f87befe2c",
+      "format": "WebP",
+      "width": 855,
+      "height": 1391
+    },
+    {
+      "path": "reference-assets/settings_pause_base.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/pause/settings_pause_base.png",
+      "bytes": 107298,
+      "sha256": "8907ecc6c435fa37f872aad0a4f703caa03b2f1d5d3467a853c1bc9b2f6329d9",
+      "format": "WebP",
+      "width": 556,
+      "height": 527
+    },
+    {
+      "path": "reference-assets/shop_bg.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/shop/shop_bg.png",
+      "bytes": 7306,
+      "sha256": "bf76a63a389dc77cad2a8b18095b73f81a06dc693e63fbcb92614a0d7748c028",
+      "format": "WebP",
+      "width": 854,
+      "height": 1390
+    },
+    {
+      "path": "reference-assets/tableselect_delhilounge_base.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/select/tableselect_delhilounge_base.png",
+      "bytes": 98422,
+      "sha256": "9da400dafac1d789bd591d43ac8492cd9a4f8eef74ba64994d2b60042a015339",
+      "format": "WebP",
+      "width": 502,
+      "height": 732
+    },
+    {
+      "path": "reference-assets/winner_background.png",
+      "member": "www.excellenth5game.com/Carrom_Clash_Master/assets/result/winner_background.png",
+      "bytes": 97952,
+      "sha256": "253869b760f4c368c01b8fac20a167dc466a7c988ec089978eae1cd0ac5d42a2",
+      "format": "WebP",
+      "width": 854,
+      "height": 1390
+    }
+  ],
+  "limitations": [
+    "未执行游戏",
+    "未读全部图像头",
+    "未验证网络、性能、交互、当前开发版",
+    "FNT读取被工具拒绝，字体页/字距未核对"
+  ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  95060,
+    "apiName":  "Militarily Playground",
+    "targetName":  "Militarily Playground",
+    "match":  "EXACT",
+    "bundleName":  "re_1779968254359_hippoo_boom-militarily_playground-1.0.0.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260528/fdc2663c322cda94c3937ba59f7910f3.zip",
+    "bundleMd5":  "fdc2663c322cda94c3937ba59f7910f3",
+    "bundleSize":  5719534,
+    "updatedAt":  1780046845,
+    "gameLink":  "https://www.hzxinpigame.com/Militarily_Playground/index_game.html?gamechannel=instant\u0026utm_source=InstantH5game_AHAGames_95060",
+    "category":  "Action",
+    "rate":  8.5,
+    "gameType":  1,
+    "localFile":  "Militarily_Playground.zip",
+    "localBytes":  5719534,
+    "verifiedAt":  "2026-10-20T10:37:27",
+    "source":  "api.ahagamecenter.com /searcher/v2/search + aha-zip-static CDN"
+}

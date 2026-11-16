@@ -1,0 +1,33 @@
+const assert = require('node:assert/strict');
+const fs = require('fs');
+const vm = require('vm');
+const context = {module:{exports:{}},Map,Set,Math,Object,Array,Error};
+vm.runInNewContext(fs.readFileSync('tools/in_game_layout_adapter.js','utf8'),context);
+const adapter = context.module.exports;
+
+const button = {cur_frame: 0, visible: true}, hint = {cur_frame: 1, visible: true};
+const count = {uid: 2, visible: true}, hiddenCount = {uid: 46, visible: false};
+const runtime = {types:{t26:{instances:[button,hint]},t25:{instances:[count,hiddenCount]}}};
+adapter.setToolsHidden(runtime, true);
+assert.deepEqual([button.visible,hint.visible,count.visible,hiddenCount.visible],[false,false,false,false]);
+adapter.setToolsHidden(runtime, false);
+assert.deepEqual([button.visible,hint.visible,count.visible,hiddenCount.visible],[true,true,true,false]);
+
+const callbacks = [], nodes = [];
+let listener;
+const pause = {name:'pause',data:0};
+const star = {uid:31,x:10,y:10,layer:{layerToCanvas:(x,y,isX)=>isX?x:y}};
+const r = {running_layout:{name:'game'},types:{t24:{instances:[star]}},canvas:{width:100,height:100,getBoundingClientRect:()=>({left:0,top:0,width:100,height:100})},all_global_vars:[pause]};
+const window = {cr_getC2Runtime:()=>r,addEventListener:(_,fn)=>{listener=fn;}};
+const document = {hidden:false,body:{appendChild:n=>nodes.push(n)},createElement:()=>({style:{},setAttribute(){},remove(){this.removed=true;}})};
+vm.runInNewContext(fs.readFileSync('tools/flystar_candidate.js','utf8'),{window,document,requestAnimationFrame:fn=>callbacks.push(fn),Number,Math});
+window.oneConnectFlyStarCandidate.install();
+listener({detail:{type:'candidate.link_points',detail:{selectedScreenPoints:[{x:20,y:20},{x:30,y:30}]}}});
+callbacks.shift()(0);
+pause.data=1;
+callbacks.shift()(50);
+assert.match(nodes[0].style.transform,/scale\(0\)/,'ordinary pause stops the animation');
+listener({detail:{type:'screen.SCREEN_BONUS'}});
+for(let t=100;t<=1050&&callbacks.length;t+=50) callbacks.shift()(t);
+assert(nodes.every(n=>n.removed),'final stars finish during settlement pause');
+console.log('settlement tool visibility and final star timing PASS');

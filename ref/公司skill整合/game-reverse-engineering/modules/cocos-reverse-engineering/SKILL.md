@@ -395,3 +395,11 @@ At the end of the workflow, deliver:
 ## 原生加载器 / JNI / 加壳分流（按需）
 
 Java/JNI 薄壳、加密资源 loader、匿名 native inner 或惰性 DEX 导致静态证据不足时，读 [原生代码取证](../../references/native-code-evidence.md) 与 [运行时恢复门禁](../../references/protected-runtime-recovery.md)。保留本模块 JS/资源恢复链，不把动态 DEX 恢复等同于游戏逻辑还原。
+
+## 逆向之后的工程化（衔接）
+
+解包/还原完成、要**基于结论写自己的工程**（新建工程、定代码与接口规范、评审既有工程结构、写交接文档）时，走 `modules/cocos-project-standards/SKILL.md`。
+
+分工：**本模块产出"原版是什么"，该模块产出"我们的工程该长什么样"**。迁移时**不要把原版的项目字面值（包名、路径、类名、表名、数值）直接搬进规范**——见 `references/scope-map.md` 的 `DO_NOT_COPY_LITERAL_VALUES`；该模块用 `[COCOS]` / `[CFW]` / `[DADA]` 三档标记区分"引擎通用 / 框架专有 / 项目专有"。
+
+另需注意：**原版工程可能没有成文规范，甚至它引用的架构文档已经丢失**。该模块的「整体架构设计」正是**从代码重建**的，并登记了重建过程与未取证项——**重建方法本身可复用**，可直接套用到新的逆向目标上。

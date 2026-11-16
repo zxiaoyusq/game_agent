@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "93888",
+    "apiName":  "Princess Life",
+    "targetName":  "Princess Life",
+    "match":  "BY_ID",
+    "bundleName":  "re_hippoo_hnyige-princess_life-1.0.2.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20260120/58cf224c873899c31020f612d410879a.zip",
+    "bundleMd5":  "58cf224c873899c31020f612d410879a",
+    "bundleSize":  23651537,
+    "updatedAt":  1768990948,
+    "gameLink":  "https://www.hnyigegame.com/Princess_Life/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_93888",
+    "category":  "Children",
+    "rate":  8.0,
+    "gameType":  1,
+    "localFile":  "Princess_Life.zip",
+    "localBytes":  23651537,
+    "verifiedAt":  "2026-10-20T11:12:08",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}

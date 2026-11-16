@@ -1,0 +1,11 @@
+{
+  "level": 16,
+  "configuredFixture": true,
+  "tiles": 96,
+  "pairs": 48,
+  "direction": "up",
+  "perMoveCompared": true,
+  "resumedAfterPairs": 10,
+  "finished": true,
+  "errors": []
+}

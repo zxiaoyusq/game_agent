@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const handlers={},docHandlers={},window={addEventListener(n,f){handlers[n]=f}},document={hidden:false,addEventListener(n,f){docHandlers[n]=f}};
+vm.runInNewContext(fs.readFileSync('tools/tool_press_candidate.js','utf8'),{window,document,Number});
+const icon={style:{}},box={style:{display:'block'},getBoundingClientRect(){return {left:10,top:20,right:50,bottom:60}}};let enabled=true;
+window.oneConnectToolPressCandidate.install(()=>[{box,icon}],()=>enabled);
+handlers.pointerdown({clientX:15,clientY:25,pointerId:1});assert.equal(icon.style.transform,'scale(.92)');
+handlers.pointerup({pointerId:2});assert.equal(icon.style.transform,'scale(.92)','other pointer must not release');
+handlers.pointercancel({pointerId:1});assert.equal(icon.style.transform,'');
+enabled=false;handlers.pointerdown({clientX:15,clientY:25,pointerId:1});assert.equal(icon.style.transform,'');
+enabled=true;handlers.pointerdown({clientX:15,clientY:25,pointerId:1});document.hidden=true;docHandlers.visibilitychange();assert.equal(icon.style.transform,'');
+document.hidden=false;handlers.pointerdown({clientX:15,clientY:25,pointerId:1});handlers['oneconnect:event']({detail:{type:'game.auto_shuffle_start'}});assert.equal(icon.style.transform,'','shuffle start releases a held icon');
+console.log('tool icon press and cancellation feedback PASS');

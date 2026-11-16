@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+
+# ---- AHAgames: derived / regenerable artifacts (do NOT commit) ----
+# Reproducible from art/ + index.html by AHAgames/_tools_inline.py
+AHAgames/_inlined_cache/
+# Backups of index.html (one is 64 MB; recoverable from git history or re-inlining)
+AHAgames/index.backup.html
+AHAgames/index.before_reskin_*.html
+# Self-contained (all images inlined) release build of index.html, ~64 MB.
+# The tracked source is the reference-style index.html; rebuild this via _tools_inline.py.
+AHAgames/index.inlined_*.html

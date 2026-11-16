@@ -1,0 +1,58 @@
+[
+  {
+    "level": 13,
+    "direction": "down",
+    "events": [
+      "game.match",
+      "game.gravity_applied",
+      "game.auto_shuffle_start",
+      "game.auto_shuffle_complete"
+    ],
+    "tiles": 18,
+    "shuffle": 0,
+    "restored": true,
+    "nextPairTiles": 16
+  },
+  {
+    "level": 13,
+    "direction": "down",
+    "events": [
+      "game.match",
+      "game.gravity_applied",
+      "game.auto_shuffle_start",
+      "game.auto_shuffle_complete"
+    ],
+    "tiles": 18,
+    "shuffle": 5,
+    "restored": true,
+    "nextPairTiles": 16
+  },
+  {
+    "level": 14,
+    "direction": "up",
+    "events": [
+      "game.match",
+      "game.gravity_applied",
+      "game.auto_shuffle_start",
+      "game.auto_shuffle_complete"
+    ],
+    "tiles": 18,
+    "shuffle": 0,
+    "restored": true,
+    "nextPairTiles": 16
+  },
+  {
+    "level": 14,
+    "direction": "up",
+    "events": [
+      "game.match",
+      "game.gravity_applied",
+      "game.auto_shuffle_start",
+      "game.auto_shuffle_complete"
+    ],
+    "tiles": 18,
+    "shuffle": 5,
+    "restored": true,
+    "nextPairTiles": 16
+  }
+]

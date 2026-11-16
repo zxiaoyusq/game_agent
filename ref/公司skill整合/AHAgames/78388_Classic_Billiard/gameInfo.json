@@ -1,0 +1,19 @@
+﻿{
+    "gameId":  "78388",
+    "apiName":  "Classic Billiard",
+    "targetName":  "Classic Billiard",
+    "match":  "BY_ID",
+    "bundleName":  "re_Classic_Billiard.zip",
+    "bundleUrl":  "https://aha-zip-static.ahagamecenter.com/resources/20250428/09433355586.zip",
+    "bundleMd5":  "bb95307534013b80ce481218b1781d58",
+    "bundleSize":  2301369,
+    "updatedAt":  1766562240,
+    "gameLink":  "https://www.qyxgame.com/Classic_Billiard/index_game.html?gamechannel=instant\u0026utm_source=InstantH5_78388",
+    "category":  "Sports",
+    "rate":  8.8,
+    "gameType":  1,
+    "localFile":  "Classic_Billiard.zip",
+    "localBytes":  2301369,
+    "verifiedAt":  "2026-10-20T11:16:15",
+    "source":  "api.ahagamecenter.com /ahaGames/detail/game + aha-zip-static CDN"
+}
